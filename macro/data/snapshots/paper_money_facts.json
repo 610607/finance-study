@@ -1,0 +1,12 @@
+{
+  "title": "Quantities and rates of Song, Yuan and Ming paper money quoted in the official histories, with the 1294 Ilkhanate episode",
+  "source": "李攸《宋朝事实》卷十五；脱脱等《宋史》卷一百八十一《食货志下三》；宋濂等《元史》卷九十三《食货志一》、卷九十七《食货志五》；张廷玉等《明史》卷八十一《食货志五》；《钦定续文献通考》卷九；P. Jackson, “ČĀV”, Encyclopaedia Iranica V/1 (1990)",
+  "url": "https://github.com/garychowcmu/daizhigev20/tree/4a6d6f2088825f132521d848c2ea86cf9c9a7620/%E5%8F%B2%E8%97%8F",
+  "series": "one row per quoted fact: id, dynasty, year, year_note, value, unit, numeral, file, juan, quote, note",
+  "retrieved": "2026-10-13",
+  "license": "The classical texts are in the public domain; the digital text is the daizhigev20 corpus, whose repository states no licence. Only short quotations are stored. The Encyclopaedia Iranica entry is cited, not copied.",
+  "used_in": [12],
+  "fetch": "data/fetch/verify_quotes.py",
+  "notes": "Rows with file songshi, songchaoshishi, yuanshi, mingshi or xuwenxiantongkao quote the daizhigev20 corpus (commit 4a6d6f2088825f132521d848c2ea86cf9c9a7620) and are verified verbatim by data/fetch/verify_quotes.py, which also reads every numeral. Second witness: the Song shi passages for the jiaozi quota, the reserve, the Sichuan totals and the 1268 value were compared with the Wikisource text of 宋史卷181 on 2026-10-13 and agree; for 绍定五年 (1232) the two disagree (三亿 in the corpus and in the 钦定续文献通考, 二亿 on Wikisource), so both readings are kept. The Yuan figures are consistent with Guan, Palma & Wu (2024); the Ming figures have one witness. Years: the year of the event or of the memorial reporting it; year_note gives the reign date or the uncertainty (e.g. 成化年间 is plotted at 1475). Values are as stated in the text; a quotation with 余 is a lower bound. jackson1990 rows summarize the Encyclopaedia Iranica entry ČĀV (Peter Jackson, 1990).",
+  "citation": "各史卷次见 juan 列；数字文本据殆知阁古代文献"
+}

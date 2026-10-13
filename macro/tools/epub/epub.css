@@ -1,0 +1,81 @@
+/* EPUB stylesheet for Volume 1.  Template: build_epub.py replaces a colour name in double braces
+   by that colour in preamble.tex, and name!N in double braces by the colour mixed with white as
+   xcolor's name!N does,
+   so the boxes have the colours of the PDF.  Kept to CSS 2.1 plus a few CSS 3 properties that
+   older reading systems ignore safely. */
+
+body { margin: 0 3%; color: {{ink}}; line-height: 1.75; text-align: justify; font-family: serif; }
+p { margin: 0.35em 0; text-indent: 2em; }
+li p, td p, th p, figcaption p, .box p, blockquote p { text-indent: 0; }
+a { color: {{accent}}; text-decoration: none; }
+code { font-family: monospace; font-size: 0.92em; word-break: break-all; }
+
+/* headings: h1 part, h2 chapter, h3 section */
+h1, h2, h3, h4 { font-family: sans-serif; color: {{accent}}; line-height: 1.35; text-align: left; }
+h1 { font-size: 1.6em; margin: 2.5em 0 0.6em; padding-bottom: 0.3em; border-bottom: 2px solid {{accent}}; }
+h2 { font-size: 1.4em; margin: 1.6em 0 0.8em; }
+h3 { font-size: 1.15em; margin: 1.6em 0 0.5em; }
+h4 { font-size: 1em; color: {{ink}}; margin: 1.2em 0 0.4em; }
+
+/* teaching boxes */
+div.box { margin: 1em 0; padding: 0.55em 0.9em; border-radius: 3px; page-break-inside: avoid; }
+div.box-title { font-family: sans-serif; font-weight: bold; margin-bottom: 0.3em; }
+span.label { font-family: sans-serif; font-weight: bold; font-variant: normal; }
+div.box ul, div.box ol { margin: 0.3em 0; padding-left: 1.6em; }
+
+div.chapterguide { background: {{accent!5}}; border-left: 4px solid {{accent}}; font-size: 0.95em; }
+div.chapterguide div.box { margin: 0.2em 0; padding: 0; background: none; border: 0; }
+div.chapterguide .box-title, div.chapterguide span.label { color: {{accent}}; }
+div.guideq p { font-size: 1.12em; }
+
+div.intuition { background: {{intuit!7}}; border-left: 3px solid {{intuit}}; }
+div.intuition .box-title { color: {{intuit}}; }
+div.pitfall { background: {{warn!5}}; border-left: 3px solid {{warn}}; }
+div.pitfall .box-title { color: {{warn}}; }
+div.deeper { border: 1px dashed {{deep!55}}; font-size: 0.95em; }
+div.deeper .box-title { color: {{deep}}; }
+div.case { background: {{casec!6}}; border-left: 3px solid {{casec}}; }
+div.case .box-title { color: {{casec}}; }
+div.example { background: {{exmp!6}}; border-left: 3px solid {{exmp}}; }
+div.example .box-title, div.example span.label { color: {{exmp}}; }
+div.compare { background: {{cmp!4}}; border-top: 2px solid {{cmp}}; font-size: 0.93em; }
+div.compare .box-title, div.compare span.label { color: {{cmp}}; }
+div.compare table { width: 100%; margin: 0.4em 0; }
+div.compare td:first-child { color: {{muted}}; white-space: nowrap; }
+td:first-child, th:first-child { min-width: 3.5em; }
+div.takeaways { background: {{accent!5}}; border-top: 2px solid {{accent}}; }
+div.takeaways .box-title, div.selfcheck .box-title { color: {{accent}}; }
+div.selfcheck { border: 1px solid {{accent!40}}; }
+div.answers { font-size: 0.92em; color: {{ink}}; padding-left: 0; padding-right: 0; }
+div.answers .box-title { color: {{muted}}; }
+div.stub { color: {{muted}}; font-family: sans-serif; font-size: 0.9em; padding: 0; }
+div.datasource { color: {{muted}}; font-size: 0.82em; margin: -0.4em 0 1em; padding: 0; }
+div.partintro { font-size: 1.05em; padding: 0; }
+div.partintro .box-title, div.partintro span.label { color: {{muted}}; }
+div.bibliography p { text-indent: -2em; padding-left: 2em; font-size: 0.92em; }
+
+/* equations: the number floats right of the displayed formula */
+div.equation { margin: 0.8em 0; text-align: center; }
+div.equation p { text-indent: 0; }
+div.keyeq { background: {{accent!4}}; border: 1px solid {{accent!35}}; border-radius: 3px; padding: 0.2em 0.6em; }
+span.eqno { float: right; font-family: serif; }
+math[display="block"] { margin: 0.2em auto; }
+
+/* figures and tables */
+figure { margin: 1.2em 0; text-align: center; page-break-inside: avoid; }
+figure img { max-width: 100%; height: auto; }
+figcaption { font-size: 0.88em; text-align: left; color: {{ink}}; margin-top: 0.4em; }
+table { border-collapse: collapse; margin: 0.8em auto; font-size: 0.9em; }
+th, td { padding: 0.25em 0.55em; border-bottom: 1px solid {{inst!35}}; vertical-align: top; text-align: left; }
+thead th, thead td { border-bottom: 1.5px solid {{ink}}; }
+caption { font-size: 0.9em; margin-bottom: 0.3em; }
+
+/* semantic colours used in the text (\textcolor{outp}{...}) */
+.c-outp { color: {{outp}}; } .c-pric { color: {{pric}}; } .c-mone { color: {{mone}}; }
+.c-fisc { color: {{fisc}}; } .c-extn { color: {{extn}}; } .c-inst { color: {{inst}}; }
+.c-accent { color: {{accent}}; } .c-intuit { color: {{intuit}}; } .c-warn { color: {{warn}}; }
+.c-cmp { color: {{cmp}}; } .c-exmp { color: {{exmp}}; } .c-deep { color: {{deep}}; } .c-casec { color: {{casec}}; }
+.c-muted { color: {{muted}}; }
+
+/* footnotes */
+section.footnotes, aside.footnote { font-size: 0.85em; }

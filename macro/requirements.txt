@@ -8,3 +8,5 @@ pillow>=10.0
 # statsmodels      filters, VARs, regressions (Chapters 53, 68, 80, ...)
 # quantecon        dynamic programming, Markov processes
 # sequence-jacobian  heterogeneous-agent (HANK) models (Chapter 71)
+# Not Python packages: XeLaTeX with xeCJK (PDF), pandoc >= 3.1 (EPUB, tools/epub/build_epub.py),
+# optionally epubcheck (Java) to validate the EPUB; see README.md and docs/EPUB.md.

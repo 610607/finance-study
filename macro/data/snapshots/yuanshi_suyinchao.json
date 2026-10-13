@@ -1,0 +1,14 @@
+{
+  "title": "Notes printed each year under the Yuan, 1260–1329 (《元史》“岁印钞数”)",
+  "source": "宋濂等《元史》卷九十三《食货志一·钞法》“岁印钞数”（明洪武三年成书）",
+  "url": "https://github.com/garychowcmu/daizhigev20/blob/4a6d6f2088825f132521d848c2ea86cf9c9a7620/%E5%8F%B2%E8%97%8F/%E6%AD%A3%E5%8F%B2/%E5%85%83%E5%8F%B2.txt",
+  "series": "zhongtong_ding (中统钞), zhiyuan_ding (至元钞), zhida_ding (至大银钞), in ding (锭) as printed; source_text is the entry for that year",
+  "retrieved": "2026-10-13",
+  "license": "The Yuan shi (1370) is in the public domain. The digital text is the daizhigev20 corpus, whose repository states no licence; only the issuance passage is stored here.",
+  "used_in": [
+    12
+  ],
+  "fetch": "data/fetch/yuanshi_suyinchao.py",
+  "notes": "Digital text: daizhigev20 corpus, commit 4a6d6f2088825f132521d848c2ea86cf9c9a7620, file 史藏/正史/元史.txt. Numerals are read without implied 零 (data/fetch/classical_numerals.py) and every value is confirmed by writing it back; the values for 1260, 1264, 1265, 1276, 1281 and 1287 agree with Guan, Palma & Wu (2024, Economic History Review 77(4), Table A1, in thousand ding). Reign years converted with the first year of each reign period (中统1260, 至元1264, 元贞1295, 大德1297, 至大1308, 皇庆1312, 延祐1314, 至治1321, 泰定1324, 天历1328). The table has one entry for every year 1260–1329 (70 entries). Unit: 1 ding = 50 guan (两) of notes; conversion between note types is done in checks/check_ch12.py at the official rates of 1287 (1 至元 = 5 中统) and 1309 (1 两 至大银钞 = 5 贯 至元钞).",
+  "citation": "《元史》卷九十三《食货志一》，据殆知阁古代文献数字文本"
+}

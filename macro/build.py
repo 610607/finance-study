@@ -5,6 +5,7 @@
     python build.py --book all            # whole volume, then each of the five books
     python build.py --checks              # run checks/check_*.py and validate_source.py first
     python build.py --regenerate-figures  # redraw the figures (figsrc/build.py) first
+    python build.py --epub                # also write the EPUB edition(s) (tools/epub/build_epub.py)
 
 Everything is compiled with XeLaTeX (three passes) into build/.  Chapter numbers are
 continuous across books.  A book build resolves references to chapters in other books from
@@ -74,11 +75,15 @@ def brace_groups(s: str, i: int, n: int) -> tuple[list[str], int]:
 
 
 def labels_in(files: list[Path]) -> set[str]:
+    """Labels defined in these files: \\label{...} and the label argument of \\fig / \\figH."""
     found: set[str] = set()
     for f in files:
         if f.exists():
             t = re.sub(r"(?<!\\)%.*", "", f.read_text(encoding="utf-8"))
             found |= set(re.findall(r"\\label\{([^}]+)\}", t))
+            for m in re.finditer(r"\\figH?(?![A-Za-z])(\[[^\]]*\])?", t):
+                groups, _ = brace_groups(t, m.end(), 3)
+                found.add(groups[2].strip())
     return found
 
 
@@ -171,6 +176,7 @@ def main() -> None:
     ap.add_argument("--book", default=None, help="1-5 for one book, 'all' for the volume and every book")
     ap.add_argument("--regenerate-figures", action="store_true")
     ap.add_argument("--checks", action="store_true")
+    ap.add_argument("--epub", action="store_true", help="after the PDF(s), write the same edition(s) as EPUB 3")
     a = ap.parse_args()
     BUILD.mkdir(exist_ok=True)
     if a.checks:
@@ -197,6 +203,13 @@ def main() -> None:
                 compile_tex(stem, f"Macroeconomics_Vol1_Book{b[0]}_ZH.pdf")
             finally:
                 (ROOT / f"{stem}.tex").unlink(missing_ok=True)
+    if a.epub:
+        # numbers come from build/main_zh.aux, so the whole volume must have been compiled
+        aux = BUILD / "main_zh.aux"
+        sources = [*ROOT.glob("zh/*.tex"), ROOT / "references_zh.tex", ROOT / "main_zh.tex"]
+        if not aux.exists() or max(p.stat().st_mtime for p in sources) > aux.stat().st_mtime + 1:
+            compile_tex("main_zh", "Macroeconomics_Vol1_ZH.pdf")
+        run([sys.executable, "tools/epub/build_epub.py"] + (["--book", a.book] if a.book else []))
 
 
 if __name__ == "__main__":

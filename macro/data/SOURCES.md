@@ -1,6 +1,17 @@
-# Planned data sources
+# Data sources
 
-These are the sources the chapters are expected to use. None has been downloaded yet. For each one, check the current terms of use and the exact series when the chapter is written, and record them in the snapshot's metadata (`README.md`).
+## In use
+
+| Source | Provider | Link | What it covers | Snapshots | Chapters |
+|---|---|---|---|---|---|
+| 殆知阁古代文献（daizhigev20） | digital texts of the classical corpus, mirrored on GitHub | https://github.com/garychowcmu/daizhigev20 (commit `4a6d6f2088825f132521d848c2ea86cf9c9a7620`) | 《宋史》《元史》《明史》《宋朝事实》《钦定续文献通考》 | `yuanshi_suyinchao`, `paper_money_facts` (quotations checked verbatim by `fetch/verify_quotes.py`; classical numerals read by `fetch/classical_numerals.py`) | 12 |
+| 维基文库《宋史》卷 181 | Wikisource | https://zh.wikisource.org | second witness for the Song quotations; the one variant (1232) is kept as its own row | `paper_money_facts` | 12 |
+| Guan, Palma & Wu (2024) | *Economic History Review* 77(4) | https://doi.org/10.1111/ehr.13305 | Yuan note issues and prices, 1260–1368; used to cross-check the 《元史》 table | (cross-check only) | 12 |
+| Encyclopaedia Iranica, “ČĀV” (P. Jackson, 1990) | Encyclopaedia Iranica | https://www.iranicaonline.org/articles/cav | the 1294 paper money of the Ilkhanate | `paper_money_facts` (rows `jackson1990`) | 12 |
+
+## Planned
+
+These are the sources the chapters are expected to use. For each one, check the current terms of use and the exact series when the chapter is written, and record them in the snapshot's metadata (`README.md`).
 
 | Source | Provider | Link | What it covers | Mainly for chapters |
 |---|---|---|---|---|

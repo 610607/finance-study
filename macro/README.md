@@ -2,9 +2,9 @@
 
 **Finance Study Series, Volume 1 · 金融学习丛书 · 第一卷**
 
-**Status (October 2026): skeleton.** All 84 chapters exist as stubs with their guide box (core question, learning goals, prerequisites); the plan for every chapter is in `docs/PLAN.md`. The volume compiles (`compiled/Macroeconomics_Vol1_ZH.pdf`); chapter text, figures and data will be written chapter by chapter. Chinese is the master text; an English edition is reserved.
+**Status (October 2026): skeleton and one sample chapter.** All 84 chapters exist with their guide box (core question, learning goals, prerequisites); the plan for every chapter is in `docs/PLAN.md`. Chapter 12 (Song, Yuan and Ming paper money) is written in full as the sample that sets the style; the others will follow chapter by chapter. The volume compiles to PDF and EPUB (`compiled/`). Chinese is the master text; an English edition is reserved.
 
-状态（2026 年 10 月）：骨架版。84 章均已建立，每章有导引框（核心问题、学习目标、前置章节）；各章写作计划见 `docs/PLAN.md`。正文、插图与数据将逐章写出。中文为母本，英文版预留。
+状态（2026 年 10 月）：骨架版加一章样章。84 章均已建立，每章有导引框（核心问题、学习目标、前置章节）；各章写作计划见 `docs/PLAN.md`。第 12 章（宋元明纸币）已作为样章完整写出，其余各章将逐章写出。全卷可编译为 PDF 与 EPUB（`compiled/`）。中文为母本，英文版预留。
 
 A question-driven course in macroeconomics that follows history: from temple accounts in Mesopotamia, Han granaries and Song paper money, through the gold standard, the Great Depression and Keynes, planned economies and the postwar golden age, stagflation and the expectations revolution, the Great Moderation and transition, the 2008 crisis, to the 2021–23 inflation, fiscal dominance and the currency hierarchy — ending with an outlook. Each era brings a crisis the old theory could not explain; each new theory is then tested by the next crisis.
 
@@ -46,9 +46,10 @@ figsrc/                      figure sources: style.py (palette, helpers), fig_ch
 figures_zh/, figures/        figure PDFs (Chinese / English), created as chapters are written
 validate_source.py           consistency of structure, labels, references, sources, data and checks
 tools/check_chapter.py       compile one chapter in isolation and report layout problems
-build.py                     builds the whole volume or one book
-docs/                        PLAN.md (chapter plan, label registry), STYLE.md, STATUS.md, agent_prompts/
-compiled/                    the built PDF(s)
+tools/epub/                  EPUB edition: build_epub.py (LaTeX -> pandoc), boxes.lua, epub.css, cover.py
+build.py                     builds the whole volume or one book (PDF; --epub also EPUB)
+docs/                        PLAN.md (chapter plan, label registry), STYLE.md, EPUB.md, STATUS.md, agent_prompts/
+compiled/                    the built PDFs and EPUBs
 ```
 
 ## Build / 编译
@@ -57,12 +58,15 @@ Requirements:
 - TeX Live 2023 or newer with **XeLaTeX** and **xeCJK** (Debian/Ubuntu: `texlive-xetex`, `texlive-latex-extra`, `texlive-lang-chinese`), including `fontspec`, `unicode-math`, `tcolorbox`, `titlesec`, `titletoc`, `fancyhdr`, `booktabs`, `tabularx`, `hyperref`, `tikz`.
 - Fonts: STIX Two Text and STIX Two Math, Inter, Noto Serif CJK SC and Noto Sans CJK SC. Fallbacks are built in (TeX Gyre Termes/Heros, Latin Modern Math, Fandol); no fonts are distributed here.
 - Python 3.10+ with the packages in `requirements.txt` for figures, checks and contact sheets; `pdftoppm` (poppler) for `tools/check_chapter.py`.
+- For the EPUB edition: pandoc 3.1 or newer; optionally epubcheck (Java) to validate it (`docs/EPUB.md`).
 
 ```bash
 python build.py                    # whole volume -> compiled/Macroeconomics_Vol1_ZH.pdf
 python build.py --book 2           # one book     -> compiled/Macroeconomics_Vol1_Book2_ZH.pdf
 python build.py --book all         # whole volume and all five books
 python build.py --checks           # run checks/check_*.py and validate_source.py first
+python build.py --book all --epub  # also the EPUB editions -> compiled/*.epub (numbers taken from the PDF build)
+python tools/epub/build_epub.py --check   # EPUB only, validated with epubcheck (docs/EPUB.md)
 python validate_source.py          # consistency checks only
 python tools/check_chapter.py zh/ch12_songming.tex   # compile one chapter and report layout problems
 ```

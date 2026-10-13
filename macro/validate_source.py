@@ -10,7 +10,9 @@ Structure (always):
   * labels are unique; every reference target is defined (or is fig:<existing figure>);
     every \\cite key has a \\bibitem; every figure file exists;
   * every data snapshot in data/snapshots/ has a metadata file with the required fields;
-  * every checks/check_chNN.py belongs to an existing chapter.
+  * every checks/check_chNN.py belongs to an existing chapter;
+  * EPUB conversion (tools/epub/build_epub.py): \\textsc and \\underline are reserved for the
+    converter; numbered equations, examples, figures and tables should carry a \\label.
 Bilingual (when en/ has chapter files): for every en/X.tex the pair zh/X.tex, en/X.tex must have
 the same labels, citations, reference targets, figure calls, teaching-box sequence and
 displayed mathematics (the same rules as in 610607/electromagnetics-study).
@@ -273,6 +275,22 @@ def check_data_and_checks(errors: list[str]) -> None:
             errors.append(f"checks/{f.name} does not belong to a chapter")
 
 
+def check_epub_rules(errors: list[str], warnings: list[str]) -> None:
+    """Rules that the EPUB edition depends on (docs/EPUB.md)."""
+    numbered = ["equation", "align", "gather", "multline", "keyeq", "example", "figure", "table"]
+    for f in sorted((ROOT / "zh").glob("*.tex")):
+        t = strip_comments(f.read_text(encoding="utf-8"))
+        front = f.name.startswith("front_")      # captions in the front matter are unnumbered
+        for cmd in ("textsc", "underline"):
+            if re.search(r"\\" + cmd + r"(?![A-Za-z])", t):
+                errors.append(f"zh/{f.name}: \\{cmd} is reserved for the EPUB converter (docs/EPUB.md)")
+        for env in ([] if front else numbered):
+            for m in re.finditer(r"\\begin\{" + env + r"\}(.*?)\\end\{" + env + r"\}", t, re.S):
+                if "\\label{" not in m.group(1):
+                    line = t[:m.start()].count("\n") + 1
+                    warnings.append(f"zh/{f.name}:{line}: numbered {env} without \\label (no number in the EPUB)")
+
+
 def main() -> int:
     errors: list[str] = []
     warnings: list[str] = []
@@ -281,6 +299,7 @@ def main() -> int:
     check_main(errors)
     check_labels_refs(errors, warnings)
     check_data_and_checks(errors)
+    check_epub_rules(errors, warnings)
     pending = []
     for zh in sorted((ROOT / "zh").glob("*.tex")):
         en = ROOT / "en" / zh.name

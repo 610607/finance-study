@@ -51,6 +51,7 @@ INSTIT = "#8C8279"
 INK = "#1E2328"
 MUTED = "#646B73"
 ACCENT = "#1F4E79"
+AMBER = "#B7791F"      # second series in a panel (as in the electromagnetics notes)
 CASE = "#7A5C3E"
 LIGHT = "#E9ECEF"
 SHADE = "#DDE1E5"      # recession / crisis shading in time-series plots

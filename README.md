@@ -6,7 +6,7 @@ A self-study series in economics and finance, written as question-driven textboo
 
 | Volume / 卷 | Folder | Status / 状态 |
 |---|---|---|
-| 1 宏观经济学：从古代货币到当下争论 · Macroeconomics: From Ancient Money to Present Debates | [`macro/`](macro/README.md) | skeleton, October 2026 · 骨架版，2026 年 10 月 |
+| 1 宏观经济学：从古代货币到当下争论 · Macroeconomics: From Ancient Money to Present Debates | [`macro/`](macro/README.md) | skeleton and sample Chapter 12, October 2026; PDF and EPUB · 骨架版加样章（第 12 章），2026 年 10 月；PDF 与 EPUB |
 | Later volumes (e.g. asset pricing) · 后续各卷（如资产定价） | — | not planned yet · 尚未规划 |
 
 Each volume is self-contained: its own sources, plan (`docs/PLAN.md`), style guide, data, checks and build script.
