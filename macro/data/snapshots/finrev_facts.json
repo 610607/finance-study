@@ -1,0 +1,155 @@
+{
+  "title": "Quotations on the Bank of Amsterdam, the VOC, Holland's and England's public debt, the Stop of the Exchequer and the Bank of England (Chapter 15)",
+  "source": "Smith (1776, third-edition text); Quinn & Roberds (2010); Frost, Shin & Wierts (2020); Gelderblom, de Jong & Jonker (2012); Gelderblom & Jonker (2004, 2011); Temple (1673); North & Weingast (1989); Andréadès (1909); Evelyn ed. Bray (1901); the Bill of Rights (1689); 5 & 6 Will. & Mar. c. 20 (1694) and 12 & 13 Will. III c. 12 (1701) in Statutes of the Realm; Stasavage (2002); Sussman & Yafeh (2006); Quinn (2001); Temin & Voth (2008); Pincus & Robinson (2014)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: country or city), year (approximate where year_note says so), year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page, section or diary date), quote (verbatim), note",
+  "retrieved": "2026-10-13",
+  "license": "Short quotations only, for comment and teaching. Smith, Temple, Evelyn, Andréadès and the statutes are in the public domain; the Bill of Rights is Crown copyright under the Open Government Licence; the modern research is quoted, not copied.",
+  "used_in": [
+    15
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py",
+  "notes": "Rows citing txt, pdf and html sources are checked against the downloaded documents by verify_web_quotes.py. Rows citing temple1673, andreades1909img and nw1989img were read by eye on the page images listed in each source's version (format image) and are counted but not checked by a script. Transcription: long s is written s; Temple's capitals and spelling are kept. North & Weingast's tables are quoted as their rows read in the text layer (columns separated by spaces). Translations into Chinese in the chapter are the book's own. Two accounts of the Bank of England's subscription differ (North & Weingast: a third on the first day; Luttrell via Andréadès: £300,000 of £1,200,000); the chapter shows both. Temple's 65 million guilders for Holland's debt is about half Gelderblom & Jonker's estimate for the same years (snapshot gj2011_holland_debt); the chapter shows the gap. Andréadès describes the 1701 settlement of the goldsmiths' debt as annuities that were to cease once half the capital was repaid; the Act itself (row st1701_redeem) charges 3 per cent on the principal 'for ever', redeemable on payment of half the principal, and the chapter follows the Act.",
+  "sources": {
+    "smith1776": {
+      "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
+      "format": "txt",
+      "sha256": "e91d52dca43fd0fd69baf7776b00a5d8e74b69675b6b608ca8a0378aaf3ae58d",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300; the text is that of a later edition (Book V, ch. I refers to 'the two first editions'); in the digression on the Bank of Amsterdam (Book IV, ch. III, pt. I) Smith dates the bank's prices 'at present {September 1775}'. When the digression entered the book was not checked against the first edition",
+      "retrieved": "2026-10-13"
+    },
+    "qr2010": {
+      "url": "https://fraser.stlouisfed.org/files/docs/historical/frbatl/wp/frbatl_wp_2010-17.pdf",
+      "format": "pdf",
+      "sha256": "da588115643620817582ee100ab58e7730251b62decfb03687d0bd00e1233f86",
+      "version": "S. Quinn and W. Roberds, 'How Amsterdam Got Fiat Money', Federal Reserve Bank of Atlanta Working Paper 2010-17 (December 2010), as archived on FRASER; published in Journal of Monetary Economics 66: 1-12 (2014); pages are those printed on the working paper (PDF page minus 2)",
+      "retrieved": "2026-10-13"
+    },
+    "fsw2020": {
+      "url": "https://ideas.repec.org/p/bis/biswps/902.html",
+      "format": "html",
+      "sha256": "038a25b8d6cdc8123bf2dda47c8fa08f9e4b50f9bb5aed38b7b263da5c91879c",
+      "version": "J. Frost, H. S. Shin and P. Wierts, 'An early stablecoin? The Bank of Amsterdam and the governance of money', BIS Working Papers 902 (November 2020); abstract on the IDEAS/RePEc page, whose surrounding links change, so the hash differs between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "gdj2012": {
+      "url": "https://repub.eur.nl/pub/32952/ERS-2012-007-FA.pdf",
+      "format": "pdf",
+      "sha256": "a66f9a3681695e566cbaa37e1c80b1da3116aaed6f18542449d3b24ae3addea0",
+      "version": "O. Gelderblom, A. de Jong and J. Jonker, 'The Formative Years of the Modern Corporation: The Dutch East India Company VOC, 1602-1623', ERIM Report Series ERS-2012-007-F&A, version 23 June 2012; published in Journal of Economic History 73(4): 1050-1076 (2013); pages are those printed on the report (PDF page minus 2)",
+      "retrieved": "2026-10-13"
+    },
+    "gj2004": {
+      "url": "https://dspace.library.uu.nl/server/api/core/bitstreams/70a76f9d-7749-4616-ada6-2f1910984734/content",
+      "format": "pdf",
+      "sha256": "f336424ddfbdadfe8c61bc50f9ec309fbdeecbfd83b413a70bbe7cbff7cab699",
+      "version": "O. Gelderblom and J. Jonker, 'Completing a Financial Revolution: The Finance of the Dutch East India Trade and the Rise of the Amsterdam Capital Market, 1595-1612', Journal of Economic History 64(3): 641-672 (2004); the publisher's version in the Utrecht University repository (handle 1874/386215), with a repository cover page; pages are the journal's",
+      "retrieved": "2026-10-13"
+    },
+    "gj2011": {
+      "url": "https://people.bu.edu/chamley/HSFref/GelderblomJonkerJEH11.pdf",
+      "format": "pdf",
+      "sha256": "ae400034e1148e92ac2bbb39750fe5272738dde47f1aec6af9fb95946f0dbd9e",
+      "version": "O. Gelderblom and J. Jonker, 'Public Finance and Economic Growth: The Case of Holland in the Seventeenth Century', Journal of Economic History 71(1): 1-39 (2011), the published article as posted on a course page at Boston University; its appendix tables are the snapshot gj2011_holland_debt",
+      "retrieved": "2026-10-13"
+    },
+    "temple1673": {
+      "url": "https://archive.org/details/bim_early-english-books-1641-1700_observations-upon-the-un_temple-sir-william_1673_0",
+      "format": "image",
+      "sha256": "",
+      "version": "Sir W. Temple, Observations upon the United Provinces of the Netherlands, the second edition corrected and augmented (London: A. Maxwell for Sa. Gellibrand, 1673); the preface and chap. VII 'Of their Forces and Revenues'; the Early English Books scan on archive.org, whose text layer is unusable, so the quotations were read on the page images https://archive.org/download/bim_early-english-books-1641-1700_observations-upon-the-un_temple-sir-william_1673_0/page/nN_w1600.jpg: n0 title page (SHA-256 e22e020e59941f915e9190f1606df1ac7152708f3e629c898dc03f39b8176eb9), n2 preface, sig. A3 (900589d5b64e0c602b552ceb1ee6147d2c546963e3337bc4c75c41ca5bce5c0d), n267 p. 252 (e36cbb7f4ce0715db536892f62092d78ad010f3156a55831e76f14d4a07d07b2), n268 p. 253 (4734aea0b533fb34a65410ca93758b9cb82325abe3ca07fba33d5a9a54b97fa6)",
+      "retrieved": "2026-10-13"
+    },
+    "nw1989": {
+      "url": "https://cdn.vanderbilt.edu/t2-my/my-prd/wp-content/uploads/sites/138/2016/12/NorthWeingast-1989-Constitutions-and-Commitment.pdf",
+      "format": "pdf",
+      "sha256": "e5ddfe114e7e10f9bdc415bc2dd2d562361416d9dbb454b14e3b57fc986abad6",
+      "version": "D. C. North and B. R. Weingast, 'Constitutions and Commitment: The Evolution of Institutions Governing Public Choice in Seventeenth-Century England', Journal of Economic History 49(4): 803-832 (1989); a JSTOR scan posted on a Vanderbilt course site; its text layer reads £ as ? and runs some words together, so quotations start after a £ sign; pages are the journal's",
+      "retrieved": "2026-10-13"
+    },
+    "nw1989img": {
+      "url": "https://cdn.vanderbilt.edu/t2-my/my-prd/wp-content/uploads/sites/138/2016/12/NorthWeingast-1989-Constitutions-and-Commitment.pdf",
+      "format": "image",
+      "sha256": "e5ddfe114e7e10f9bdc415bc2dd2d562361416d9dbb454b14e3b57fc986abad6",
+      "version": "the same PDF as nw1989 (the SHA-256 is that of the PDF); p. 821 read on the page image (PDF page 20) because the text layer runs words together and reads £ as ?",
+      "retrieved": "2026-10-13"
+    },
+    "andreades1909": {
+      "url": "https://archive.org/download/historyofbankofe00andruoft/historyofbankofe00andruoft_djvu.txt",
+      "format": "txt",
+      "sha256": "191c27dfe553450d589985e8548504b17c603f9999e29fa2515fb84db641dc54",
+      "version": "A. Andréadès, History of the Bank of England, tr. C. Meredith (London: P. S. King & Son, 1909); OCR text of the University of Toronto copy on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "andreades1909img": {
+      "url": "https://archive.org/details/historyofbankofe00andruoft",
+      "format": "image",
+      "sha256": "",
+      "version": "the same volume as andreades1909; p. 39 read on the page image https://archive.org/download/historyofbankofe00andruoft/page/n82_w1600.jpg (SHA-256 5a50c64c692e22fe3768f5f49c79892c419abce301612ddaeaff044f6dfb2969), because the text layer misreads the pound signs and the figure £1,300,000",
+      "retrieved": "2026-10-13"
+    },
+    "evelyn1901": {
+      "url": "https://www.gutenberg.org/cache/epub/42081/pg42081.txt",
+      "format": "txt",
+      "sha256": "912a1791a66b5199d34101866d536c701ecf46e8bc4c1fe643e79492dbfd51cb",
+      "version": "The Diary of John Evelyn, ed. W. Bray, vol. 2 (New York and London: M. Walter Dunne, 1901), Project Gutenberg eBook 42081; entries are cited by date",
+      "retrieved": "2026-10-13"
+    },
+    "billofrights1689": {
+      "url": "https://www.legislation.gov.uk/aep/WillandMarSess2/1/2/enacted/data.xml",
+      "format": "html",
+      "sha256": "7ea536db4e9bb61a6710bbc48fd3f4d9d154d55832c1f2140ad59afbe32d9f24",
+      "version": "Bill of Rights 1689 (1 Will. & Mar. sess. 2 c. 2), the text as enacted on legislation.gov.uk (XML, read with tags removed); editorial expansions are in square brackets",
+      "retrieved": "2026-10-13"
+    },
+    "statutes1694": {
+      "url": "https://www.british-history.ac.uk/statutes-realm/vol6/pp483-495",
+      "format": "html",
+      "sha256": "0e63256276299cdd47390d37a20ed1aa460053113bca1955dce68d564fb0eee6",
+      "version": "'William and Mary, 1694: An Act for granting to theire Majesties severall Rates and Duties upon Tunnage of Shipps and Vessells, and upon Beere, Ale, and other Liquors...' (5 & 6 Will. & Mar. c. 20), Statutes of the Realm vol. 6 (1819), pp. 483-495, on British History Online; the editors' marginal summaries of sections are quoted as such; the page's surrounding links change, so the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "statutes1701": {
+      "url": "https://www.british-history.ac.uk/statutes-realm/vol7/pp723-727",
+      "format": "html",
+      "sha256": "ceb110de24707112ba3540e84d42c1c2cb19a9246e23854b2faa13385ca51481",
+      "version": "'William III, 1700 & 1701: An Act for appropriating Three thousand seven hundred Pounds weekly...' (12 & 13 Will. III c. 12), Statutes of the Realm vol. 7 (1820), pp. 723-727, on British History Online; section XXIV settles the goldsmiths' debt of 1672; marginal summaries are quoted as such; the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "stasavage2002": {
+      "url": "https://eprints.lse.ac.uk/archive/00000227/01/credible_commitment.pdf",
+      "format": "pdf",
+      "sha256": "9d90220e77ec5f7f8d0bc17cfebcd55e3cb42d77eb4dbeec0e0ef1ec1b9038cc",
+      "version": "D. Stasavage, 'Credible Commitment in Early Modern Europe: North and Weingast Revisited', Journal of Law, Economics, and Organization 18(1): 155-186 (2002); the author's final manuscript in LSE Research Online; pages are those of the manuscript (PDF page minus 2)",
+      "retrieved": "2026-10-13"
+    },
+    "sy2006": {
+      "url": "https://ideas.repec.org/a/cup/jechis/v66y2006i04p906-935_00.html",
+      "format": "html",
+      "sha256": "551798fc83e7334627cfb18c707bdf6f26feaa7057dca50ced5335c872b2c5c1",
+      "version": "N. Sussman and Y. Yafeh, 'Institutional Reforms, Financial Development and Sovereign Debt: Britain 1690-1790', Journal of Economic History 66(4): 906-935 (2006); abstract on the IDEAS/RePEc page; the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "quinn2001": {
+      "url": "https://ideas.repec.org/a/cup/jechis/v61y2001i03p593-615_03.html",
+      "format": "html",
+      "sha256": "67ad285c88c10d8c0304f32c85d1cc6b232c4cbd67ccb60a1e3615c190a2df60",
+      "version": "S. Quinn, 'The Glorious Revolution's Effect on English Private Finance: A Microhistory, 1680-1705', Journal of Economic History 61(3): 593-615 (2001); abstract on the IDEAS/RePEc page; the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "tv2008": {
+      "url": "https://crei.cat/wp-content/uploads/users/working-papers/voth_privateborrowing.pdf",
+      "format": "pdf",
+      "sha256": "459ba066dcb547da88f2474331ee747a8bb51f50090a81701778b1db2c8878af",
+      "version": "P. Temin and H.-J. Voth, 'Private borrowing during the financial revolution: Hoare's Bank and its customers, 1702-24', Economic History Review 61(3): 541-564 (2008), the publisher's PDF as posted on the CREI site; pages are the journal's",
+      "retrieved": "2026-10-13"
+    },
+    "pincus2014": {
+      "url": "https://people.bu.edu/chamley/HSFref/PincusRobinson11.pdf",
+      "format": "pdf",
+      "sha256": "83eadb87880572bd8dc78cadbcab179da9e1a068a42d28f57d0042713a42b2bf",
+      "version": "S. C. A. Pincus and J. A. Robinson, 'What Really Happened During the Glorious Revolution?', ch. 9 of S. Galiani and I. Sened (eds), Institutions, Property Rights, and Economic Growth: The Legacy of Douglass North (Cambridge University Press, 2014), pp. 192-222, as posted on a course page at Boston University (file name of the 2011 NBER working paper, content of the book chapter); pages are the book's",
+      "retrieved": "2026-10-13"
+    }
+  }
+}

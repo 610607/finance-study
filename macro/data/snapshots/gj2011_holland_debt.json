@@ -1,0 +1,14 @@
+{
+  "title": "Holland's public debt, 1591-1720: total outstanding at the end of each year and its composition by instrument",
+  "source": "O. Gelderblom and J. Jonker, 'Public Finance and Economic Growth: The Case of Holland in the Seventeenth Century', Journal of Economic History 71(1): 1-39 (2011), Appendix Tables 1A (1591-1646) and 1B (1647-1720)",
+  "url": "https://people.bu.edu/chamley/HSFref/GelderblomJonkerJEH11.pdf",
+  "series": "year; total_guilders (total debt outstanding at the end of the year, current guilders); shares of the total in per cent: life_pct (A, life annuities), redeemable_pct (B, redeemable annuities), bills_pct (C, bills or obligaties), taxfree_life_pct (D, tax-exempt life annuities), taxfree_bills_pct (E, tax-exempt bills), lottery_pct (F, lottery loans); a column is empty in years before the instrument existed",
+  "retrieved": "2026-10-13",
+  "license": "Figures from a published table, stored for teaching with attribution; the article itself is not copied.",
+  "used_in": [
+    15
+  ],
+  "fetch": "data/fetch/gj2011_holland_debt.py",
+  "notes": "PDF SHA-256 ae400034e1148e92ac2bbb39750fe5272738dde47f1aec6af9fb95946f0dbd9e (the published article as posted on a course page at Boston University). The figures are the authors' reconstruction from the resolutions of the Estates of Holland and from earlier estimates by Dormans and by Liesker and Fritschy, which they amend (see their appendix); they are estimates, not ledger totals. As printed, the shares of 1655-1665 add up to only 96.5-99.4 per cent; they are stored as printed. The fetch script checks that the years run from 1591 to 1720 without a gap. The province of Holland only: the debts of the Generality, the other provinces, the towns and the VOC are not included.",
+  "citation": "Gelderblom, O. and J. Jonker (2011), 'Public Finance and Economic Growth: The Case of Holland in the Seventeenth Century', Journal of Economic History 71(1): 1-39, doi:10.1017/S0022050711000015, Appendix Tables 1A-1B"
+}

@@ -26,7 +26,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 10 (opening, §10.2 intuition and compare box, legacy) | 4 `ch:money` | Bank deposits are bank liabilities; a transfer moves a liability from one customer to another, and banks settle only net balances between them (clearing, correspondent banks) | open |
 | 10 (§10.1) | 9 `ch:india` | The Indian Ocean trade that the Islamic world joined to the Mediterranean | open |
 | 10 (legacy) | 5 `ch:external` | Covered interest parity: the forward–spot difference is set by the interest differential between two currencies | open |
-| 10 (compare box, legacy) | 15 `ch:finrevolution` | Bank money of the Bank of Amsterdam (accounts of merchants centralised in a public bank); joint-stock companies with limited liability and transferable shares | open |
+| 10 (compare box, legacy) | 15 `ch:finrevolution` | Bank money of the Bank of Amsterdam (accounts of merchants centralised in a public bank); joint-stock companies with limited liability and transferable shares | done (`sec:finrev-amsterdam`, `sec:finrev-voc`) |
 | 10 (compare box, legacy) | 21 `ch:divergence` | Institutional explanations of why Europe took off first, compared with the others (Chapter 10 ends the Maghribi traders debate — Greif's cultural beliefs vs Edwards & Ogilvie — by pointing here) | open |
 | 10 (closing sentence) | 11 `ch:medieval` | The Black Death and the relative price of labour and land; repeated debasement of the coinage | done (`sec:medieval-malthus`, `sec:medieval-plague`, `sec:medieval-debasement`) |
 | 11 (guide, §11.4 after the compare box, legacy) | 7 `ch:greekroman` | Diocletian's price edict (301) and why it failed; Chapter 11 says the price rises it faced were "inseparable from the debasement of the money" | open |
@@ -45,12 +45,12 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 13 (legacy) | 45 `ch:monetarism` | The quantity theory in twentieth-century monetarism; whether velocity is stable and whether money leads prices | open |
 | 13 (deeper box, legacy) | 50 `ch:budget` | $D^{*}=PS/(r-g)$ as the basic tool for judging public debt; the case $r\le g$ under today's low interest rates | open |
 | 13 (compare box, legacy) | 51 `ch:latamdebt`, 69 `ch:eurocrisis` | Modern sovereign restructurings: exchange offers, haircuts that differ widely from case to case, creditor committees and holdouts | open |
-| 13 (legacy) | 15 `ch:finrevolution` | How the Dutch Republic and England borrowed far more cheaply than Philip II | open |
+| 13 (legacy) | 15 `ch:finrevolution` | How the Dutch Republic and England borrowed far more cheaply than Philip II | done (`sec:finrev-holland`, `sec:finrev-bank`, `ex:finrev-debt`, `tab:finrev-four`) |
 | 13 (legacy) | 47 `ch:oil` | Governments that depend on volatile resource revenue (oil) | open |
 | 13 (closing sentence) | 14 `ch:africa` | Whether a large empire (the Inca) could do without money: labour tribute and storehouses | done (`sec:africa-inca`, `sec:africa-test`) |
 | 13 (§13.1, Potosí) | 14 `ch:africa` | The colonial mita (1573–1812) that mined Potosí's silver: its Inca origin, its human cost and its long-run effects (Dell 2010) | done (`sec:africa-inca`, subsection 殖民时期的米塔制 and the compare box) |
 | 14 (Inca, intuition box) | 6 `ch:mesopotamia` | Temples and palaces that organised production by keeping accounts rather than by using money | open |
-| 14 (closing sentence) | 15 `ch:finrevolution` | How a sovereign makes lenders believe it will repay, and so borrows a lot at low rates (Mansa Musa's lenders could not enforce) | open |
+| 14 (closing sentence) | 15 `ch:finrevolution` | How a sovereign makes lenders believe it will repay, and so borrows a lot at low rates (Mansa Musa's lenders could not enforce) | done (`sec:finrev-england`, `eq:finrev-commit`, `sec:finrev-test`) |
 | 14 (case box, legacy) | 16 `ch:mercantilism` | Restricting trade "that the treasure might be kept" at home: the European mercantilists' version of Adahoonzou II's pretext | open |
 | 14 (legacy) | 23 `ch:goldstandard` | Menger against Knapp: money as a commodity that emerges from trade or as a creature of the state (cowries, salt, cloth and cacao were not state-issued but were shaped by what rulers accepted in tax) | open |
 | 14 (legacy) | 24 `ch:periphery`, 76 `ch:hierarchy` | Economies whose money is supplied or set from elsewhere; colonial currencies (the West African pound) that replaced commodity monies | open |
@@ -58,3 +58,10 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 14 (legacy) | 63 `ch:minsky` | Modern monetary theory as the far end of the chartalist (Knapp) side of the question "must money be issued by the state?" | open |
 | 14 (legacy) | 66 `ch:zlb` | The cost of holding and storing cash sets how far below zero interest rates can go (cacao's negative own return) | open |
 | 14 (legacy) | 77 `ch:digitalmoney` | Money as record-keeping ("money is memory", Kocherlakota 1998): who keeps the ledger, what it records, who can see it; privately issued stablecoins as the other side of "must money be issued by the state?" | open |
+| 15 (debt example, legacy) | 50 `ch:budget` | The formal derivation of government debt dynamics (Chapter 15 reuses Chapter 13's `eq:silver-debt` to compare England 1714–1738 with Philip II, dividing debt by revenue) | open |
+| 15 (legacy) | 23 `ch:goldstandard` | Runs and the lender of last resort under the gold standard (the Bank of Amsterdam's 1672 run and its withdrawal fee are the early version) | open |
+| 15 (legacy) | 77 `ch:digitalmoney` | Privately issued stablecoins and the problems of the Bank of Amsterdam: metal reserves, hidden lending, collapse without fiscal backing (Frost, Shin and Wierts 2020) | open |
+| 15 (legacy) | 49 `ch:credibility`, 50 `ch:budget` | Central bank independence and fiscal rules as ways of making the costs of default or inflation fall on those who decide (Chapter 15's $K$ in `eq:finrev-commit`) | open |
+| 15 (legacy) | 50 `ch:budget`, 70 `ch:stagnation` | How high debt can be sustained when the interest rate is below or close to the growth rate | open |
+| 15 (legacy) | 16 `ch:mercantilism` | John Law's experiment in France and the South Sea bubble of 1720 (England's conversion of short-term debt into company shares) | open |
+| 15 (legacy) | 18 `ch:smith` | Smith's views on banks and paper money (Chapter 15 quotes only his digression on the Bank of Amsterdam) | open |

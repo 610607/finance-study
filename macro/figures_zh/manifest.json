@@ -2,10 +2,13 @@
   "language": "zh",
   "font": "Macro Noto Sans SC",
   "figures": [
+    "agio_band",
     "bill_flows",
     "carry_cost",
     "commenda_payoffs",
     "cowrie_value",
+    "finrev_debt",
+    "finrev_rates",
     "fx_implied_rates",
     "gold_silver_ratio",
     "inca_store",
