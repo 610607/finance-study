@@ -158,7 +158,7 @@ def commenda_payoffs():
     a1.text(v_star + 8, 60, T(f"{v_star:.0f}：两者相等", f"{v_star:.0f}: equal"), fontsize=7.4, color=MUTED, ha="left")
     a1.set_ylim(0, 600)
     a1.set_ylabel(T("收回（镑）", "received (pounds)"))
-    a1.set_title(T("(a) 投资人：合伙时亏损由他承担", "(a) investor: bears the loss in a commenda"), fontsize=8.8,
+    a1.set_title(T("(a) 出资人：合伙时亏损由他承担", "(a) investor: bears the loss in a commenda"), fontsize=8.8,
                  weight="bold", loc="left", pad=4)
 
     a2.axhline(0, color=MUTED, lw=0.6)

@@ -83,6 +83,10 @@ def bill_1442(F):
     sp = spread(e_ven, e_lon)
     quoted("1442: spread (%)", 100 * sp, F["bbm_1442"], tol=0.05)
     quoted("1442: spread of the quotes, 3 1/4 pence", e_ven - e_lon, 3.25, tol=1e-12)
+    # deeper box: a lender in London quotes ducats per penny (reciprocals) and earns the same spread
+    quoted("lender in London: spread from 1/41.25 and 1/44.5 ducats per penny (%)",
+           100 * spread(1 / e_lon, 1 / e_ven), 7.9, tol=0.05)
+    assert abs(spread(1 / e_lon, 1 / e_ven) - sp) < 1e-12, "the spread does not depend on the direction"
     quoted("1442: return on the ducats lent (%)", 100 * (back / ducats - 1), 7.9, tol=0.05)
     simple, comp = annualized(sp, 0.5)
     quoted("1442: simple annual rate over six months (%)", 100 * simple, F["bbm_1442_rates"], tol=0.05)
@@ -130,6 +134,13 @@ def bbm_table(F):
     quoted("London->Genoa negative (%)", row("London", "Genoa").negative_return_pct, F["bbm_neg_lg"], tol=0)
     quoted("Genoa->London negative (%)", gl.negative_return_pct, 4.5, tol=0.05)
     quoted("Venice->Florence negative (%)", vf.negative_return_pct, 18.5, tol=0.05)
+    # §10.7: how much a transaction earns is uncertain on long routes too (Table 5, SD of the spread)
+    quoted("Genoa->London SD of the spread (percentage points)", gl.spread_sd_pct, 3.87, tol=0)
+    assert gl.spread_sd_pct / gl.spread_pct > 0.5, "Genoa->London: SD of the spread is more than half its mean"
+    quoted("Florence->Venice SD of the spread (percentage points)", fv.spread_sd_pct, 0.74, tol=0)
+    # §10.4: exchange and rechange gave loans from about one month to six months
+    quoted("shortest round trip (days)", d.term_days.min(), 28, tol=0)
+    quoted("longest round trip (days, six months)", d.term_days.max(), 180, tol=0)
     short, long_ = d[d.term_days <= 30], d[d.term_days >= 120]
     quoted("directions with terms of 30 days or less", len(short), 4, tol=0)
     quoted("... mean share negative (%)", short.negative_return_pct.mean(), 12.4, tol=0.05)
