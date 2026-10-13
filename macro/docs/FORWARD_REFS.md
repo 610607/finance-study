@@ -23,3 +23,9 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 12 (legacy) | 75 `ch:fiscaldominance` | Fiscal dominance: the central bank forced to finance deficits | open |
 | 12 (legacy) | 77 `ch:digitalmoney` | Stablecoins as private notes backed by reserve assets | open |
 | 12 (legacy) | 49 `ch:credibility`, 55 `ch:consensus` | Central-bank independence and inflation targeting as an answer to the lack of commitment | open |
+| 10 (opening, §10.2 intuition and compare box, legacy) | 4 `ch:money` | Bank deposits are bank liabilities; a transfer moves a liability from one customer to another, and banks settle only net balances between them (clearing, correspondent banks) | open |
+| 10 (§10.1) | 9 `ch:india` | The Indian Ocean trade that the Islamic world joined to the Mediterranean | open |
+| 10 (legacy) | 5 `ch:external` | Covered interest parity: the forward–spot difference is set by the interest differential between two currencies | open |
+| 10 (compare box, legacy) | 15 `ch:finrevolution` | Bank money of the Bank of Amsterdam (accounts of merchants centralised in a public bank); joint-stock companies with limited liability and transferable shares | open |
+| 10 (compare box, legacy) | 21 `ch:divergence` | Institutional explanations of why Europe took off first, compared with the others (Chapter 10 ends the Maghribi traders debate — Greif's cultural beliefs vs Edwards & Ogilvie — by pointing here) | open |
+| 10 (closing sentence) | 11 `ch:medieval` | The Black Death and the relative price of labour and land; repeated debasement of the coinage | open |

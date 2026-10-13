@@ -1,0 +1,139 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+quran_2_275,阿拉伯半岛,,,,,,quran_majian_2_275,2:275,真主准许买卖，而禁止利息。,马坚译文
+quran_2_279,阿拉伯半岛,,,,,,quran_majian_2_279,2:279,你们得收回你们的资本，你们不致亏枉别人，你们也不致受亏枉。,马坚译文
+luke_6_35,,,,,,,cuv_luke,6:35,並要借給人不指望償還,和合本（维基文库繁体本）；正文用简体
+bbm_usury,欧洲,,,,,,bell2017,p. 5,"In its medieval form, usury did not refer solely to excessive rates of interest, but encompassed the exaction of anything above the principal.",
+muw_hawala,麦地那,,马立克（卒于 795 年）所辑,,,,muwatta31,31.39.85,"Delay in payment by a rich man is injustice, but when one of you is referred for payment to a wealthy man, let him be referred.",转移债务（ḥawāla）的依据
+muw_umar_loan,麦地那,,欧麦尔在位时（634—644）,,,,muwatta32,32.1.1,"Had the principal decreased or been destroyed, we would have guaranteed it.",借款人的说法：借款要担保本金
+muw_umar,麦地那,,欧麦尔在位时（634—644）,0.5,利润份额,,muwatta32,32.1.1,"Umar then took the principal and half of the profit, and Abdullah and Ubaydullah, the sons of Umar ibn al-Khattab took half of the profit.",改作齐拉德后的分配
+muw_no_guarantee,麦地那,,,,,,muwatta32,32.2.3,The recognised and permitted form of qirad is that a man take capital from an associate to use. He does not guarantee it,
+muw_no_fixed,麦地那,,,,,,muwatta32,32.3.5,"That is not good, even if it is only one dirham",投资人不得约定一笔归自己的固定利润
+muw_hire,麦地那,,,,,,muwatta32,32.4.6,"If any of that enters the qirad, it becomes hire",
+muw_loss,麦地那,,,,,,muwatta32,32.4.6,"If the principal does not increase or there is a loss, the agent does not have to make up for what he spent on himself or for the loss. That falls to the investor from the principal.",
+muw_shares,麦地那,,,,,,muwatta32,32.4.6,"Qirad is permitted upon whatever terms the investor and the agent make a mutual agreement, of half the profit, or a third or a fourth or whatever.",
+muw_guarantee_void,麦地那,,,,,,muwatta32,32.4.6,the stipulation of guarantees in qirad is null and void,
+pgp39110_deposit,巴格达,,年代不详（信中作“371 年”，纪年未明）,150,迪拉姆,,pgp39110,MS Meunier,I gave him one hundred fifty Maghribī drachmas,
+pgp39110_bills,巴格达—大马士革,,同上,100,迪拉姆,,pgp39110,MS Meunier,"he wrote one for fifty to Sahlawayh ben Ḥayyim, and for you, (one of) one hundred drachmas.",两张苏夫塔加：50 与 100
+pgp39110_tikrit,提克里特,,同上,6,月,,pgp39110,MS Meunier,I stayed in Tikrīt for six months,
+pgp39110_reduce,巴格达,,同上,30,迪拉姆,,pgp39110,MS Meunier,"For twenty, he took the suftaja that he had written for fifty gold coins and gave (it) for thirty to Sahlawayh b. Ḥayyim.",译文作 gold coins；项目的说明作 dirhams
+pgp39110_desc,巴格达,,同上,20,迪拉姆,,pgp39110,MS Meunier,"Shelomo b. Aharon reduced the suftaja for Sahlawayh from 50 to 30 dirhams, apparently pocketing the difference of 20 as a fee for provisions.",项目编者的说明；差额 20 迪拉姆的性质不完全清楚
+pgp6039_suftaja,福斯塔特,1045,约 1045 年（Gil 的断代）,44,第纳尔,,pgp6039,T-S J2.66,I still owe 44 dinars on a cheque (suftaja) from Busir.,纳赫拉伊·本·尼西姆的备忘录
+pgp6039_need,福斯塔特,1045,同上,,,,pgp6039,T-S J2.66,one that I previously wrote in Busir when I was in need of funds,缺钱时开出的苏夫塔加：用汇票融资
+pgp6039_note,福斯塔特,1045,同上,,,,pgp6039,T-S J2.66,"should rather be translated as ""letter of credit.""",编者注：Udovitch 译作 cheque 的 suftaja
+pgp2367_switch,比勒拜斯,1239,1239 年 9 月,,,,pgp2367,BL OR 10126(1).6,"Then it was switched to the fixed profit which he would take from him each month as interest on that amount, with a fixed term of 4 years.",
+pgp2367_interest,比勒拜斯,1239,同上,20,迪拉姆/月,,pgp2367,BL OR 10126(1).6,He took from him the fixed interest of twenty dirhams each month.,
+pgp2367_house,比勒拜斯,1239,同上,36,第纳尔,,pgp2367,BL OR 10126(1).6,"until (Abraham) signed over the residence to him, a sale legally valid in gentile law, for thirty-six Fusṭāṭ dinars.",
+pt_1199_capital,威尼斯,1199,1199 年 8 月，里亚尔托,300,威尼斯便士镑,,puga2014,Figure 2,300 pounds of Venetian pennies,Puga 与 Trefler 据原件的英译
+pt_1199_share,威尼斯,1199,同上,0.75,利润份额（投资人）,,puga2014,Figure 2,together with three parts of whatever profit God shall give us with just and truthful account and without any fraud. I am to keep for myself the remaining fourth.,
+pt_1199_risk,威尼斯,1199,同上,,,,puga2014,Figure 2,the aforesaid goods are to remain at your own risk from sea and people,
+pt_1199_penalty,威尼斯,1199,同上,1.2,倍/年,,puga2014,Figure 2,let the same capital and the double bear interest of six per five every year,罚息年率 20%（论文脚注 19）
+pt_archetype,威尼斯,,,75,%,,puga2014,p. 12,In the archetypical colleganza the sedentary merchant provides all the capital and receives 75% of the profits.,
+pt_limited,威尼斯,,,,,,puga2014,p. 12,"the colleganza provides limited liability and, specifically, the liability is limited to the joint stock of the partnership.",
+pt_origin,威尼斯,,,,,,puga2014,p. 12,is widely recognized as the origins of the great joint stock companies of a later period.,
+pt_voyage,威尼斯,,,,,,puga2014,p. 11,the outbound trip averaged about one month and the return trip about two months,
+pt_profit,威尼斯,,,100,%,,puga2014,p. 11,"would have earned enormous profits, over 100 percent and sometimes much more.",
+pt_stagnario,威尼斯,,,,,,puga2014,p. 14,"His grandfather, Dobramiro, was a Croatian slave who was freed when his Venetian owner died.",
+csp_bill,威尼斯—伦敦,1442,1442 年 12 月 31 日拒付,150,杜卡特,,brown1867,"p. 568, no. 1302",Protest for nonpayment of a Bill of Exchange for 150 ducats.,
+csp_drawn,威尼斯,1442,1442 年 9 月 26 日开出,,,,brown1867,"p. 568, no. 1302","Drawn at Venice at usance on the 26th September 1442, by Francesco Venier and Brothers, sons of the late Santo, on Obertino de Bardi and Company, in London, and payable to themselves; value received in Venice from Chosmo de' Medezi and Company",BBM 把伦敦的付款人写作 Uberto de' Medici；本章从档案目录
+csp_rate_venice,威尼斯,1442,同上,44.5,便士/杜卡特,,brown1867,"p. 568, no. 1302",at the exchange of 44½ sterlings per ducat,
+csp_rate_london,伦敦,1442,1442 年 12 月 31 日,41.25,便士/杜卡特,,brown1867,"p. 568, no. 1302",the ducat was worth 41¼ sterling,
+csp_protest,伦敦,1442,同上,,,,brown1867,"p. 568, no. 1302",on the 31st December 1442,
+csp_medici,威尼斯,1442,,,,,brown1867,"p. 568, n. 3",whose firm at Venice bought the bill of Francesco Venier,
+csp_earliest,,,,,,,brown1867,"p. 568, n. 3",the earliest English protest for nonpayment of a bill of exchange hitherto discovered by me in the Venetian Archives,编者 Rawdon Brown 的注
+bbm_usance_london,,,,3,月,,bell2017,p. 3,"The longest was between London and the Italian cities, where bills matured three months after they were issued or drawn.",
+bbm_parties,,,,,,,bell2017,p. 3,the bill stated that the seller (usually known as the taker or drawer) of the bill had received a sum of money in the local currency from the buyer (the giver or remitter) at place A.,
+bbm_local,,,,,,,bell2017,p. 4,"the same currency pair was quoted at different rates at each end of the transaction, with the local currency almost always valued more highly than the foreign",
+bbm_1442_sterling,,1442,,,,,bell2017,p. 4,£27 13s 3d sterling should have been debited from Venier,150 × 44½ 便士 = 6675 便士 = 27 镑 16 先令 3 便士；本章用计算值
+bbm_1442,,1443,约 1443 年 3 月 31 日到期,7.9,%,,bell2017,p. 4,Venier owed Cosimo 161 ducats 16 soldi and 4 denari – an increase of 7.9%.,
+bbm_1442_rates,,1443,,15.8,%/年（单利）,,bell2017,p. 4,this was equivalent to an annualised interest rate of 15.8% (non-compounded) or 16.4% (compounded),复利 16.4%
+bbm_scholastic,,,后期经院学者,,,,bell2017,p. 4,"absent money, which is worth less, is being bought or exchanged for present money, which is worth more",
+bbm_cambium,,,,,,,bell2017,pp. 5–6,cambium non est mutuum (an exchange is not a loan),
+bbm_notfixed,,,,,,,bell2017,p. 6,Neither the lender nor the borrower in any specific exchange and rechange transaction could know the interest rate in advance and thus bills of exchange were argued not to be usurious.,
+bbm_dry,,,,,,,bell2017,p. 6,was called 'dry exchange' (cambium secco) because it did not water the flows of trade.,
+bbm_archive,普拉托,1410,达蒂尼卒年,600,本账簿,,bell2017,p. 8,"including 600 account books and 150,000 items of correspondence",信件 15 万件
+bbm_datini_active,普拉托,1410,,,,,bell2017,p. 8,was active as an international merchant and banker from c.1383 to his death in 1410.,
+bbm_fv_usance,佛罗伦萨—威尼斯,,,5,见票后天数,,bell2017,p. 13,usance from Florence to Venice was five days after sight,
+bbm_round_trip,佛罗伦萨—威尼斯,,,30,天,,bell2017,p. 13,"usance from Venice to Florence was 20 days after drawing. In both directions, a complete exchange and rechange transaction would take thirty days",
+bbm_band,,,,,,,bell2017,p. 18,they fall into a much more consistent band ranging between 10% and 16%,
+bbm_deposits,佛罗伦萨,,中世纪后期,,,,bell2017,p. 18,on time deposits a discrezione at Florence varied between 6% and 10%,
+bbm_medici_loans,佛罗伦萨,,15 世纪,,,,bell2017,p. 18,charged 10-12% per annum on six month business loans,
+bbm_genoese_london,伦敦,,,,,,bell2017,p. 18,Genoese merchants in London charged 14-15% per annum for straight loans and 15.5% to 18% on sales credits extended,
+bbm_datini_invest,,,,26000,弗罗林,,bell2017,p. 18,"In total, Datini invested around 26,000 florins in his six merchant banking companies",
+bbm_equity,,,,,,,bell2017,p. 18,"average returns on equity were consistent at 15-16% per annum, with the Genoese company slightly underperforming at 12.34%.",
+bbm_monti,,,1376—1425,,,,bell2017,p. 19,"shares in the Genoese public debt paid a coupon of 7-8%, those of Venice around 4%, and Florence between 3.75% and 5%.",
+bbm_monti_price,,,,,,,bell2017,p. 19,the market price of Florentine debt fluctuated between 15% and 60% of par,
+bbm_land,,,1350—1450,,,,bell2017,p. 19,Clark calculates the annual return on land in Italy between 1350 and 1450 at 8.1% to 9.6%.,
+bbm_catasto,佛罗伦萨,1427,,7,%,,bell2017,p. 19,the Florentine Catasto of 1427 capitalised rental income at 7%,
+bbm_domenico,佛罗伦萨,,,,,,bell2017,p. 19,I would rather earn 12% with our merchandise than 18% on exchange dealings,达蒂尼在佛罗伦萨的合伙人 Domenico di Cambio
+bbm_neg_fv,,,,81,笔（共 832）,,bell2017,p. 20,some 9.4% of the transactions originating at Florence (81 of 832) and 18.5% of those at Venice (142 of 769) would have produced a negative return,81/832 = 9.7%，与表 5 的 9.74% 一致；正文的 9.4% 应是笔误
+bbm_neg_lg,,,,1.2,%,,bell2017,p. 20,only 1.20% of the exchange and rechange transactions from London to Genoa resulted in a negative return,
+bbm_courts,威尼斯,,,,,,bell2017,p. 21,The Venetian courts would enforce the collection of interest at moderate rates of 5-12% per annum,
+bbm_florence_ban,佛罗伦萨,1429,1435 年暂停,,,,bell2017,p. 21,"in 1429, Florence banned dry exchange (cambium sine litteris). However, in 1435 this was suspended",
+bbm_mazzei,佛罗伦萨,,,,,,bell2017,p. 21,"these exchanges, which you make at hazard, without any letter or coins, are as bad as playing at dice",公证人 Lapo Mazzei 致达蒂尼
+bbm_datini_1400,,1400,,,,,bell2017,p. 21,"once for all, I would have you a merchant and not a banker",达蒂尼致巴塞罗那分号负责人
+greif_geniza,福斯塔特,,,,,,greif2012,p. 1,the Geniza (a depository of documents in Fustat (Old Cairo)),
+greif_coalition,,,11 世纪,,,,greif2012,p. 1,deterred opportunism in bilateral agency relations by a credible threat of losing future profitable relations with many other merchants.,
+greif_genoa,热那亚,,12 世纪,,,,greif2012,p. 1,"I contrasted this with the Genoese traders, who relied on legally binding contracts.",
+greif_reply,,,,,,,greif2012,abstract,"Although their essay is rhetorically impressive, its methodology is deficient, its analysis is flawed, and its argument wrong.",
+eo_untenable,,,,,,,edwards2012,abstract,Not a single empirical example adduced as evidence of the putative coalition shows that any coalition actually existed.,
+eo_nonmaghribi,,,,,,,edwards2012,abstract,"Furthermore, the Maghribis entered business associations with non-Maghribis and used formal enforcement mechanisms.",
+eo_udovitch,,,,,,,edwards2012,p. 35,informal business cooperation is referred to 15-20 times more often than legal partnership,Udovitch 的估计
+eo_goldberg,,,,0.75,比例（书信篇幅）,,edwards2012,p. 35,three quarters of discussion in merchant letters is devoted to mutual service agency and only one quarter to legal partnership,Goldberg 的估计
+eo_1085,,1085,,,,,edwards2012,p. 40,"appointed him [Eli] to make the claim in any court he wants, even with the assistance of gentiles",
+eo_underrep,,,,,,,edwards2012,p. 41,likely to under-represent any type of legal conflict recorded in Arabic script,
+maimbo_meaning,喀布尔,2003,,,,,maimbo2003,"p. 2, n. 1","In Arabic, hawala simply means ""transfer.""",
+maimbo_speed,喀布尔,2003,,,,,maimbo2003,p. 7,"Transferring funds to Kabul from Peshawar, Dubai, and London usually takes 6 to 12 hours.",
+maimbo_cost,喀布尔,2003,,,,,maimbo2003,p. 7,The cost of making funds transfers into and around Afghanistan averages 1 to 2 percent.,
+maimbo_settle,喀布尔,2003,,,,,maimbo2003,p. 7,outstanding accounts between hawaladars are balanced weekly or monthly,
+maimbo_blacklist,喀布尔,2003,,,,,maimbo2003,p. 7,"any failure to honor contracts will result in immediate blacklisting, and possible expulsion, from the market",
+fib_incipit,比萨,1202,,1202,年,,fibonacci1857,p. 1,Incipit liber Abaci Compositus a leonardo filio Bonacij Pisano In Anno. M° cc° ij°,M° cc° ij° = 1202
+fib_dedication,,,传世本是修订本,,,,fibonacci1857,p. 1,"Scripsistis mihi domine mi magister Michael Scotte, summe philosophe, vt librum de numero, quem dudum composui, uobis transcriberem",
+fib_bugia,布日伊,,斐波那契少年时,,,,fibonacci1857,p. 1,Cvm genitor meus a patria publicus scriba in duana bugee pro pisanis mercatoribus ad eam confluentibus constitutus preesset,
+fib_indorum,,,,9,个数字,,fibonacci1857,p. 1,per nouem figuras indorum,
+fib_chapters,,,,15,章,,fibonacci1857,p. 1,hunc librum per .xv distinxi capitula,
+fib_societas,,,第十章,,,,fibonacci1857,p. 135,quorum unus misit in prescripta societate libras 18 alicuius monete; et alter misit in eadem libras 25; et lucrati fuerunt inde libras 7,解：第一人 126/43 镑；第二人 175/43 镑
+fib_societas_steps,,,第十章,126,,,fibonacci1857,p. 135,"multiplica portionem primi socii, scilicet 18, per lucrum, uidelicet per 7, erunt 126; que diuide per 43",该版第一处把第一人所得的便士印作 11 11/43，同页下文作 7 11/43；按计算应为 7 11/43
+fib_ch15,,,,,,,fibonacci1857,p. 387,"Incipit capitulum quintum decimum de regulis geometrie pertinentibus, et de questionibus aliebre et almuchabale.",
+fib_fairs,,,第十五章,200,镑,,fibonacci1857,p. 399,"Quidam habuit libras 100, de quibus lucratus est in quodam foro aliquid; ex quibus omnibus lucratus est in alio foro proportionaliter, secundum quod lucratus fuerat in primo foro, et habuit libras 200",解：第一个集市后约 141 镑 8 先令 5 便士多，即 √20000
+fib_fairs_root,,,第十五章,141,镑,,fibonacci1857,p. 399,"quorum radix, que est circa libre 141, et soldi 8",
+fib_voyage,,,第十五章,299,镑,,fibonacci1857,p. 399,"et tunc accepit alias libras 100 in societate; et cum his omnibus lucratus est eadem ratione, qua lucratus fuerat in primo uiagio; et sic habuit libras 299",
+fib_voyage_answer,,,第十五章,30,镑/百镑,,fibonacci1857,p. 399,"ergo ex libris 100 lucratus fuit 30; centesima pars quarum, scilicet soldos 6, lucratus fuit per libram in uno quoque uiagio",
+fib_three_fairs,,,第十五章,200,镑,,fibonacci1857,p. 399,"Item quidam habuit libras 100; de quibus, et de eorum proficuo lucratus est semper equaliter in tribus foris, et in fine habuit libras 200",
+muw_abumusa,麦地那,,欧麦尔在位时（634—644）,,,,muwatta32,32.1.1,Abu Musa al-Ashari who was the amir of Basra,
+muw_keep_profit,麦地那,,同上,,,,muwatta32,32.1.1,"Then give the principal to the amir al-muminin, and you keep the profit.",原先的安排：借款，利润归借款人
+pgp39110_damascus,巴格达—大马士革,,年代不详,100,迪拉姆,,pgp39110,MS Meunier,"who arranged two bills of exchange (suftajas), one of 100 dirhams payable to the three Tustarī brothers in Damascus and one of 50 dirhams payable to Sahlawayh b. Ḥayyim.",项目编者的说明
+pgp39110_funds,提克里特,,同上,50,迪拉姆,,pgp39110,MS Meunier,"he was stranded in Tikrīt for six months, where he exhausted his fifty dirhams of travel funds",项目编者的说明：50 迪拉姆是他自己的路费
+pgp39110_age,,,同上,80,岁,,pgp39110,MS Meunier,claims to be around 80 years old,
+pgp39110_negligent,阿勒颇（可能）,,同上,,,,pgp39110,MS Meunier,He appears to be trying to prove that he was not negligent with other people's money,项目编者的说明
+pgp6039_pay,福斯塔特,1045,同上,44,第纳尔,,pgp6039,T-S J2.66,"Please make very sure, my lord, to take from him both of these documents containing my obligation and to pay him the 44 gold dinars.",
+pgp2367_desc,比勒拜斯,1239,同上,36,第纳尔（本金）,,pgp2367,BL OR 10126(1).6,Initially described as commenda (qirāḍ) but re-negotiated into a loan with a fixed rate of interest at 20 dirhams on the 36 dinars of capital.,项目编者的说明
+pgp2367_courts,比勒拜斯,1239,同上,,,,pgp2367,BL OR 10126(1).6,Emerged both from Jewish and Islamic courts.,项目编者的说明
+pt_sum,威尼斯,1199,同上,,,,puga2014,p. 12,an unimaginable sum for an ordinary Venetian,
+pt_lands,威尼斯,1199,同上,,,,puga2014,Figure 2,compensate you and your heirs with double the amount of capital and profit out of my lands and houses,违约罚则：不是亏损的赔偿
+pt_elite,威尼斯,,,,,,puga2014,p. 15,Stagnario was welcomed into the ruling elite,
+bbm_borrower,,,,,,,bell2017,p. 3,"The seller of a bill of exchange was effectively a borrower, and the buyer a lender.",
+bbm_discrezione,佛罗伦萨,,,,,,bell2017,p. 5,"At least legally, the payment of interest on such deposits was purely voluntary on the part of the borrower; in practice, however, payment was essential to maintain business confidence.",存款 a discrezione
+bbm_prato,普拉托,,,,,,bell2017,p. 8,"Datini, known as the 'merchant of Prato'",
+bbm_sample,,,约 1383—1411 年,,,,bell2017,abstract,"collected from commercial correspondence in the archive of Francesco di Marco Datini of Prato, c.1383-1411",
+bbm_survivor,,,,,,,bell2017,p. 18,there is a significant survivorship bias as none of Datini's businesses failed and exposed him to significant capital losses,
+bbm_moneychangers,佛罗伦萨,1398,,,,,bell2017,p. 18,"most moneychangers tend to take up commerce and leave moneychanging, since they make more profit and also because it is more just in the eyes of God",达蒂尼的一位代理人的信
+bbm_wipeout,,,,,,,bell2017,p. 20,"Because the combined usance period between Florence and Venice was only 30 days, the spread required to produce a reasonable interest rate was less than one per cent.",
+bbm_medici_1433,佛罗伦萨,1433,,,,,bell2017,p. 21,the Medici account books show that they were still engaging in such transactions in 1433,
+greif_maghribi,,,11 世纪,,,,greif2012,p. 1,the 11th century Maghribi (Jewish) traders (from the Muslim west),
+greif_nocontract,,,11 世纪,,,,greif2012,p. 1,among the Maghribi traders most agency relations were established without legally binding contracts and multilateral reputation mechanism was particularly important,
+eo_5pct,,,,5,%（书信）,,edwards2012,p. 40,in just over 5 percent of their letters,Goldberg 的统计：提到法律行动的书信
+eo_benchmark,,,,,,,edwards2012,p. 41,it is impossible to assert that 5 percent of Geniza merchant letters mentioning legal proceedings is either very low or very high,
+bbm_deposits_when,佛罗伦萨,,中世纪晚期,,,,bell2017,p. 18,varied between 6% and 10% during the later middle ages,
+bbm_medici_when,佛罗伦萨,,15 世纪,,,,bell2017,p. 18,in fifteenth-century Florence,
+bbm_monti_when,,,1376—1425 年,,,,bell2017,p. 19,"Between 1376 and 1425, shares in the Genoese public debt paid a coupon of 7-8%",
+bbm_monti_venice,威尼斯,,,,,,bell2017,p. 19,that of Venice between 20% and 60%,威尼斯公债的市价，占面值的比例
+fib_pueritia,布日伊,,斐波那契少年时,,,,fibonacci1857,p. 1,me in pueritia mea ad se uenire faciens,
+fib_travels,,,,,,,fibonacci1857,p. 1,"quicquid studebatur ex ea apud egyptum, syriam, greciam, siciliam et prouinciam cum suis uariis modis, ad que loca negotiationis tam postea peragraui",后来为经商走遍这些地方，学习那里的各种算法
+fib_zephirum,,,第一章,,,,fibonacci1857,p. 2,"Cvm his itaque nouem figuris, et cum hoc signo 0, quod arabice zephirum appellatur",九个数字加上阿拉伯语称为 zephirum 的符号 0
+fib_ch8,,,章目,,,,fibonacci1857,p. 2,De emptione et venditione rerum uenalium et similium.,第八章：货物的买卖
+fib_ch9,,,章目,,,,fibonacci1857,p. 2,"De baractis rerum uenalium et de emptione bolsonalie, et quibusdam regulis similibus.",第九章：以货易货与买进金银
+fib_ch10,,,章目,,,,fibonacci1857,p. 2,De societatibus factis inter consocios.,第十章：合伙
+fib_ch11,,,章目,,,,fibonacci1857,p. 2,"De consolamine monetarum atque eorum regulis, que ad consolamen pertinent.",第十一章：钱币的合金
+bbm_collateral,佛罗伦萨,,15 世纪,,,,bell2017,p. 18,mostly fully-collateralised either by shares in the public debt or by third-party guarantors,
+bbm_monti_risk,,,,,,,bell2017,p. 19,"such investments were far from risk-free, given the frequent suspensions of interest payments",
+pgp39110_lost,,,1938 年刊布,,,,pgp39110,MS Meunier,"it was still there when Itzhak Ben Zvi edited the text in 1938, but hasn't been seen since",原件下落不明

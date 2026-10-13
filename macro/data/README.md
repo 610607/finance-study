@@ -36,7 +36,11 @@ the columns `id, dynasty, year, year_note, value, unit, numeral, file, juan, quo
 daizhigev20 corpus pinned at commit `4a6d6f2088825f132521d848c2ea86cf9c9a7620`;
 `python3 data/fetch/verify_quotes.py <corpus>` checks every quotation snapshot verbatim and reads every
 numeral with `fetch/classical_numerals.py`. Rows that quote a modern publication carry its key in
-`file`, and the snapshot's `.json` says how they were verified.
+`file`, and the snapshot's `.json` says how they were verified. When the `.json` has a `"sources"` object
+(one entry per document: `url`, `format` pdf/html/json/txt/image, `sha256`, `version`; example
+`snapshots/medieval_credit_facts.json`, Chapter 10), `python3 data/fetch/verify_web_quotes.py` downloads each document
+once into `~/.cache/finance-study/web`, compares its SHA-256 with the recorded one and finds every quotation verbatim
+in the extracted text; rows read on scanned page images (`format` image) are counted but not checked.
 
 ## Licences
 

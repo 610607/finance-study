@@ -8,6 +8,15 @@
 | 维基文库《宋史》卷 181 | Wikisource | https://zh.wikisource.org | second witness for the Song quotations; the one variant (1232) is kept as its own row | `paper_money_facts` | 12 |
 | Guan, Palma & Wu (2024) | *Economic History Review* 77(4) | https://doi.org/10.1111/ehr.13305 | Yuan note issues and prices, 1260–1368; used to cross-check the 《元史》 table | (cross-check only) | 12 |
 | Encyclopaedia Iranica, “ČĀV” (P. Jackson, 1990) | Encyclopaedia Iranica | https://www.iranicaonline.org/articles/cav | the 1294 paper money of the Ilkhanate | `paper_money_facts` (rows `jackson1990`) | 12 |
+| Bell, Brooks & Moore (2017) | *Economic History Review* 70(2); accepted manuscript on CentAUR (Reading) | https://doi.org/10.1111/ehr.12374 ; https://centaur.reading.ac.uk/57199/ | exchange and rechange spreads and implied interest rates from the Datini letters, 1383–1411 (Tables 4–5); the 1442 bill; comparable Italian interest rates | `bbm2017_implied_rates`, `medieval_credit_facts` (rows `bell2017`) | 10 |
+| Calendar of State Papers, Venice, vol. 2 (ed. R. Brown, 1867) | British History Online | https://www.british-history.ac.uk/cal-state-papers/venice/vol2/p568 | the protest of the 1442 bill of exchange | `medieval_credit_facts` (rows `brown1867`) | 10 |
+| Puga & Trefler (NBER WP 18288, 2012; *QJE* 2014) | NBER | https://www.nber.org/papers/w18288 | the Venetian colleganza of 1199 (Figure 2) and its terms | `medieval_credit_facts` (rows `puga2014`) | 10 |
+| Princeton Geniza Project, documents 39110, 6039, 2367 | Princeton University | https://geniza.princeton.edu | a traveller's suftajas; Nahray b. Nissim's memorandum; a qirad turned into a fixed-interest loan (Bilbays, 1239) | `medieval_credit_facts` (rows `pgp…`) | 10 |
+| Mālik, *al-Muwaṭṭaʾ*, books 31–32 (English translation) | International Islamic University Malaysia | https://www.iium.edu.my/deed/hadith/malik/ | ḥawāla; the rules of qirad | `medieval_credit_facts` (rows `muwatta31`, `muwatta32`) | 10 |
+| Qur'an 2:275, 2:279 (Ma Jian) and Luke 6:35 (CUV) | Quran.com API; Wikisource | https://api.quran.com ; https://zh.wikisource.org | the prohibitions of interest | `medieval_credit_facts` | 10 |
+| Greif (2012); Edwards & Ogilvie (CWPE 0928, 2009; *EHR* 2012) | Stanford (author's page); Cambridge repository | https://web.stanford.edu/~avner/ ; https://www.repository.cam.ac.uk/handle/1810/229428 | the Maghribi traders debate | `medieval_credit_facts` (rows `greif2012`, `edwards2012`) | 10 |
+| Maimbo (2003), World Bank Working Paper 13 | World Bank Open Knowledge Repository | https://openknowledge.worldbank.org/handle/10986/15087 | hawala in Kabul: speed, cost, settlement, enforcement | `medieval_credit_facts` (rows `maimbo2003`) | 10 |
+| Leonardo Pisano, *Liber abbaci*, ed. Boncompagni (1857) | archive.org (Google scan, public domain) | https://archive.org/details/bub_gb_w86fLKi88pYC | the prologue, chapter list, a partnership problem, the fairs and voyage problems (read on the page images) | `medieval_credit_facts` (rows `fibonacci1857`) | 10 |
 
 ## Planned
 

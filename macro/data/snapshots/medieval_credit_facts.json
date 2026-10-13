@@ -1,0 +1,106 @@
+{
+  "title": "Quotations on payment, partnership and credit in the medieval Islamic world and Mediterranean Europe (Chapter 10)",
+  "source": "Qur'an (trans. Ma Jian); Gospel of Luke (Chinese Union Version); Mālik ibn Anas, al-Muwaṭṭaʾ, books 31–32 (trans. ʿA'isha ʿAbdarahman at-Tarjumana and Yaʿqub Johnson); Princeton Geniza Project documents 2367, 6039, 39110; Puga & Trefler (NBER WP 18288, 2012); Calendar of State Papers, Venice, vol. 2, p. 568 (ed. Rawdon Brown, 1867); Bell, Brooks & Moore (2017, accepted manuscript); Greif (2012, manuscript of October 2011); Edwards & Ogilvie (CWPE 0928, 2009); Maimbo (World Bank Working Paper 13, 2003); Leonardo Pisano, Liber abbaci, ed. B. Boncompagni (Rome, 1857)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: place), year, year_note, value, unit, numeral (unused), file (key of sources below), juan (page, verse or section), quote (verbatim), note",
+  "retrieved": "2026-10-13",
+  "license": "Short quotations only, for comment and teaching. The Qur'an and Bible translations, Mālik's text, the 1867 calendar and the 1857 edition are old or public-domain texts (the archive.org scan of the 1857 edition carries the Public Domain Mark); the Princeton Geniza Project records are CC BY; the World Bank paper and the academic papers are quoted, not copied.",
+  "used_in": [
+    10
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py",
+  "notes": "Every document was downloaded in the shell on 2026-10-13 and the quotations were found verbatim in the extracted text (pdftotext for PDFs, tags removed for HTML), except the rows from fibonacci1857, which were read on the page images of the scan (PDF pages 9, 10, 143, 394 and 406 = pages 1, 2, 135, 387 and 399 of the edition) because its OCR text is too corrupt; those rows are counted but not checked by the script. data/fetch/verify_web_quotes.py repeats the check. Versions: Bell, Brooks & Moore are quoted from the accepted manuscript (CentAUR), Greif from his October 2011 manuscript of the 2012 EHR article, Edwards & Ogilvie from the 2009 Cambridge working paper (the published article is EHR 65(2), 2012), Puga & Trefler from the NBER working paper (published QJE 129(2), 2014); page numbers are those of these versions. Discrepancies kept visible: (1) Bell, Brooks & Moore give the sterling value of the 1442 bill as £27 13s 3d, but 150 ducats at 44½ pence are 6,675 pence = £27 16s 3d; the chapter uses the computed value. (2) They name the London drawee 'Uberto de'Medici', while the calendar of the protest says the bill was drawn 'on Obertino de Bardi and Company'; the chapter follows the calendar. (3) Their text gives 9.4% for the share of negative returns from Florence, but 81 of 832 is 9.7%, as in their table 5. (4) In the Liber abbaci partnership problem the edition first prints the first partner's pence as 11 11/43 and later as 7 11/43; the computation gives 7 11/43. (5) In the Geniza letter of the Baghdad traveller, the translation says the suftaja was for 'fifty gold coins' where the project's description (and the rest of the letter) has dirhams; the date in the letter, 'the year 371', has no stated era, so the chapter gives no date. (6) The Princeton Geniza Project's English for document 6039 renders suftaja as 'cheque' (Udovitch's translation); the project's editor notes that 'letter of credit' is better. Keys of sources are the bibliography keys of references_zh.tex, except that the Qur'an verses (quran_majian_2_275, quran_majian_2_279), the two books of the Muwatta (muwatta31, muwatta32) and Luke (cuv_luke) are separate documents of the entries quranmajian, muwatta and cuvbible.",
+  "sources": {
+    "quran_majian_2_275": {
+      "url": "https://api.quran.com/api/v4/verses/by_key/2:275?translations=56",
+      "format": "json",
+      "sha256": "96410ace6b9432419e05d6553f861bdf04c2b4657fdfb0b565ba279170fe60c7",
+      "version": "Ma Jian, Chinese translation (quran.com resource 56)"
+    },
+    "quran_majian_2_279": {
+      "url": "https://api.quran.com/api/v4/verses/by_key/2:279?translations=56",
+      "format": "json",
+      "sha256": "1d791d8daf3cace329d65e26c1c33fb71b476fccb949ae0de0352cbd5fff8d2c",
+      "version": "Ma Jian, Chinese translation (quran.com resource 56)"
+    },
+    "cuv_luke": {
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%81%96%E7%B6%93_(%E5%92%8C%E5%90%88%E6%9C%AC)/%E8%B7%AF%E5%8A%A0%E7%A6%8F%E9%9F%B3&action=raw",
+      "format": "txt",
+      "sha256": "7c91fd5e2e652ab375d3c9233000bd1c6bae5c3e1c5b72c0fcee913384de4ffc",
+      "version": "Chinese Union Version (1919), Wikisource wikitext; the hash changes with any later edit of the page"
+    },
+    "muwatta31": {
+      "url": "https://www.iium.edu.my/deed/hadith/malik/031_mmt.html",
+      "format": "html",
+      "sha256": "ff5053fa71c36eaa822c469e11a560215af1e7ce0019b49d68f20c7110b90a13",
+      "version": "Translation of Malik's Muwatta, book 31, translators ʿA'isha ʿAbdarahman at-Tarjumana and Yaʿqub Johnson (online text, IIUM)"
+    },
+    "muwatta32": {
+      "url": "https://www.iium.edu.my/deed/hadith/malik/032_mmt.html",
+      "format": "html",
+      "sha256": "0ad38f58a8e0937c079914defbaa0f7c8b569f987e4188cebbf0a86c89b44fd7",
+      "version": "Translation of Malik's Muwatta, book 32 (Qirad), same translators"
+    },
+    "pgp39110": {
+      "url": "https://geniza.princeton.edu/en/documents/39110/",
+      "format": "html",
+      "sha256": "94f68effb6be60dd70a57aaad3a3d6aa68208c5ae994a9c3e53dd21f985b9bd4",
+      "version": "Princeton Geniza Project, MS Meunier (Ben Zvi Institute); translation by Marina Rustow; the page carries the retrieval date, so its hash changes"
+    },
+    "pgp6039": {
+      "url": "https://geniza.princeton.edu/en/documents/6039/",
+      "format": "html",
+      "sha256": "b398ed93b467064c1a3d2d5af3c6bb79cf7019ccdf7e18754c8b982fea7a6d7a",
+      "version": "Princeton Geniza Project, T-S J2.66 (Cambridge University Library); translation after Udovitch"
+    },
+    "pgp2367": {
+      "url": "https://geniza.princeton.edu/en/documents/2367/",
+      "format": "html",
+      "sha256": "e0d521e2dea5d4441b44fe24c8458509a88fc44711147e284ec41909d944012d",
+      "version": "Princeton Geniza Project, BL OR 10126(1).6 (British Library); translation by Phillip Ackerman-Lieberman"
+    },
+    "puga2014": {
+      "url": "https://www.nber.org/system/files/working_papers/w18288/w18288.pdf",
+      "format": "pdf",
+      "sha256": "478f1014a76de86caccddab54867fffb538a41932d5d4eaf6bda66efbed6851f",
+      "version": "NBER Working Paper 18288 (August 2012)"
+    },
+    "brown1867": {
+      "url": "https://www.british-history.ac.uk/cal-state-papers/venice/vol2/p568",
+      "format": "html",
+      "sha256": "d17fd42d9f684a7703ee247dcfc5c13a8d5d4efe5d99df384e132f064775668b",
+      "version": "Calendar of State Papers Relating to English Affairs in the Archives of Venice, vol. 2, 1509–1519, ed. Rawdon Brown (London, 1867), Appendix, p. 568, British History Online; the page carries the retrieval date, so its hash changes"
+    },
+    "bell2017": {
+      "url": "https://centaur.reading.ac.uk/57199/1/Bell_Brooks_Moore_cambium_not_est_mutuum.pdf",
+      "format": "pdf",
+      "sha256": "5ca0d1dd0d4951de338eab3c913ef4446bd331555dbe36c67c58d1a9204330bd",
+      "version": "accepted manuscript of Economic History Review 70(2): 373–396 (2017)"
+    },
+    "greif2012": {
+      "url": "https://web.stanford.edu/~avner/Greif_Papers/2012_Greif_EHR.pdf",
+      "format": "pdf",
+      "sha256": "0a4b7519ed31e9a935c3b4f2c7c9b1f8146ca649ab8b4fd6f72589573c396755",
+      "version": "manuscript dated October 2011 of Economic History Review 65(2): 445–469 (2012)"
+    },
+    "edwards2012": {
+      "url": "https://web.stanford.edu/~avner/Greif_Papers/2009_Edwards&Ogilvie_%20CWP_0928.pdf",
+      "format": "pdf",
+      "sha256": "19aab2544a51536475c2f7ccf507e1b5dd042781c7a6c07ec4242ddc3104e817",
+      "version": "Cambridge Working Papers in Economics 0928 (June 2009); also https://www.repository.cam.ac.uk/handle/1810/229428"
+    },
+    "maimbo2003": {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/4cf33592-130b-5729-b2a8-cb4f064b21f1/content",
+      "format": "pdf",
+      "sha256": "15bde3033d383c5317a2090792dfdc4a6c396729280102032f65abf3f1ba2836",
+      "version": "World Bank Working Paper 13 (2003), Open Knowledge Repository handle 10986/15087"
+    },
+    "fibonacci1857": {
+      "url": "https://archive.org/download/bub_gb_w86fLKi88pYC/bub_gb_w86fLKi88pYC.pdf",
+      "format": "image",
+      "sha256": "3defbe48d841bc86e807cfc0913fd367754a63192dd9bc7d8d419b800ff7c23d",
+      "version": "Il Liber abbaci di Leonardo Pisano, ed. B. Boncompagni, Scritti di Leonardo Pisano vol. 1 (Rome, 1857), Google scan on archive.org; read on PDF pages 9, 10, 143, 394, 406 (edition pp. 1, 2, 135, 387, 399)"
+    }
+  },
+  "citation": "各条的出处见 file 与 juan 列，版本见 sources"
+}

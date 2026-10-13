@@ -250,6 +250,7 @@
 - **案例**：开罗格尼扎文书中的商人书信；美第奇银行的汇票网络
 - **对照框候选**：汇票 vs 运送铸币；合伙分利 vs 有息贷款
 - **前置**：第 4 章（货币、银行与央行的资产负债表），第 9 章（古代印度与印度洋贸易）
+- **已写成（2026-10）**：史料为《古兰经》2:275、2:279（马坚译）、《路加福音》6:35（和合本）、马立克《穆宛塔圣训集》第 31、32 卷（英译）、普林斯顿格尼扎项目文书 39110、6039、2367、威尼斯档案 1442 年拒付证书（Brown 1867 目录）、斐波那契《计算之书》1857 年校订本（扫描页逐字读）；研究文献 Bell, Brooks \& Moore (2017)、Puga \& Trefler (2014，引 2012 年工作论文)、Greif (1989, 2012)、Edwards \& Ogilvie (2012，引 2009 年工作论文)、Maimbo (2003)。引文逐字核对用新的 `data/fetch/verify_web_quotes.py`（下载原文件、比对 SHA-256、在抽出的文本里逐字查找）。对照框：汇票 vs 运送铸币；合伙分利 vs 有息贷款；多边声誉 vs 正式法庭。案例框：巴格达老人的苏夫塔加（格尼扎书信）。图：`bill_flows`、`fx_implied_rates`、`commenda_payoffs`。数据：`medieval_credit_facts`、`bbm2017_implied_rates`。单一来源的数字：1442 年汇票（拒付证书目录与 Bell 等互相印证，但两者的付款人与英镑金额不同，见快照说明）；1383—1411 年的隐含利率只有 Bell 等一个来源。
 
 #### 第 11 章 `ch:medieval` 中世纪欧洲：庄园、黑死病与货币贬值 — `zh/ch11_medieval.tex`
 *Medieval Europe: manors, the Black Death and debasement*
@@ -1357,5 +1358,6 @@ ch:labor ch:japanbubble ch:transition ch:euro ch:emcrises ch:moderation ch:minsk
 part:language part:ancient part:earlymodern part:classical part:keynes part:goldenage part:stagflation part:moderation part:aftercrisis part:present part:synthesis
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
+sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
 nav:contents nav:compare
 ```

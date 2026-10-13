@@ -2,6 +2,9 @@
   "language": "zh",
   "font": "Macro Noto Sans SC",
   "figures": [
+    "bill_flows",
+    "commenda_payoffs",
+    "fx_implied_rates",
     "note_value",
     "songming_timeline",
     "yuan_issuance"

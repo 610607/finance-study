@@ -21,7 +21,8 @@ bash tools/setup_env.sh          # system packages if missing (TeX Live, fonts, 
 export CORPUS=...                # as printed by the script
 export EPUBCHECK_JAR=...
 bash tools/probe_network.sh      # which source hosts the shell can reach in this session
-python3 data/fetch/verify_quotes.py $CORPUS && python3 validate_source.py && python3 build.py
+python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quotes.py \
+  && python3 validate_source.py && python3 build.py
 ```
 
 - `setup_env.sh` ends with a font check. The books are set in STIX Two Text and Math with Noto CJK;
@@ -53,7 +54,7 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 validate_source.py && pyt
 
 - Brief: `docs/agent_prompts/review_template.txt`, pointed at the chapter (and in parallel mode at the
   writer's worktree), with `$CORPUS`.
-- The reviewer checks every quotation in context (`verify_quotes.py` and the surrounding passage), every
+- The reviewer checks every quotation in context (`verify_quotes.py` or `verify_web_quotes.py`, and the surrounding passage), every
   cited work, every number against its check script, and the layout; fixes the chapter and its check
   script; reports what it did not fix.
 - The editor verifies the reviewer's substantive claims against the sources before accepting them
@@ -65,7 +66,8 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 validate_source.py && pyt
    (`.gitattributes`); remove duplicate `\bibitem` keys.
 2. Add the labels the chapters need to the PLAN.md registry; apply or decline shared-file requests.
 3. Redraw all figures: `MACRO_LANG=zh python3 figsrc/build.py` and `MACRO_LANG=en python3 figsrc/build.py`.
-4. Run, all clean: `checks/check_*.py`, `data/fetch/verify_quotes.py $CORPUS`, `validate_source.py`,
+4. Run, all clean: `checks/check_*.py`, `data/fetch/verify_quotes.py $CORPUS`,
+   `data/fetch/verify_web_quotes.py` (quotations from modern publications and online editions), `validate_source.py`,
    `tools/check_chapter.py` for each new chapter, `build.py --book all --epub`, epubcheck on the six EPUBs.
 5. Update `docs/STATUS.md`; commit and push; ask the author to review the part.
 
