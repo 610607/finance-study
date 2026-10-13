@@ -307,25 +307,25 @@
 \newtcolorbox{intuition}[1][]{teachbase,colback=intuit!7,colframe=intuit!7,
   borderline west={2.4pt}{0pt}{intuit},
   before upper={{\sffamily\bfseries\color{intuit!85!black}\ZE{直觉}{Intuition}%
-  \if\relax\detokenize{#1}\relax\else\ZE{：}{: }#1\fi}\par\vspace{2pt}}}
+  \if\relax\detokenize{#1}\relax\else\ZE{：}{: }#1\fi}\par\nobreak\vspace{2pt}}}
 
 % Pitfall
 \newtcolorbox{pitfall}[1][]{teachbase,colback=warn!5,colframe=warn!5,
   borderline west={2.4pt}{0pt}{warn},
   before upper={{\sffamily\bfseries\color{warn}\ZE{常见误区}{Common pitfall}%
-  \if\relax\detokenize{#1}\relax\else\ZE{：}{: }#1\fi}\par\vspace{2pt}}}
+  \if\relax\detokenize{#1}\relax\else\ZE{：}{: }#1\fi}\par\nobreak\vspace{2pt}}}
 
 % Optional deeper material (graduate-level derivations go here)
 \newtcolorbox{deeper}[1][]{teachbase,colback=white,colframe=deep!55,
   boxrule=0.5pt,borderline={0.5pt}{0pt}{deep!55,dashed},
   before upper={{\sffamily\bfseries\color{deep}\ZE{深入一步（初读可跳过）}{Going deeper (optional on first reading)}%
-  \if\relax\detokenize{#1}\relax\else\ZE{：}{: }#1\fi}\par\vspace{2pt}},
+  \if\relax\detokenize{#1}\relax\else\ZE{：}{: }#1\fi}\par\nobreak\vspace{2pt}},
   fontupper=\small}
 
 % Historical case: \begin{case}{地点 · 年代 · 标题} ... \end{case}  (indexed in Appendix C)
 \newtcolorbox{casebox}[1]{teachbase,colback=casec!6,colframe=casec!6,
   borderline west={2.4pt}{0pt}{casec},
-  before upper={{\sffamily\bfseries\color{casec}\ZE{案例}{Case}\enspace·\enspace #1}\par\vspace{2pt}}}
+  before upper={{\sffamily\bfseries\color{casec}\ZE{案例}{Case}\enspace·\enspace #1}\par\nobreak\vspace{2pt}}}
 \NewDocumentEnvironment{case}{m +b}{%
   \phantomsection\addcontentsline{cas}{section}{#1}%
   \begin{casebox}{#1}#2\end{casebox}}{}
@@ -333,12 +333,15 @@
 % Worked example (numbered per chapter)
 \makeatletter
 % \label{} inside the box body must refer to the example number (and link to the box)
-\newcommand{\tcbexamplelabelhere}{\phantomsection\protected@edef\@currentlabel{\thetcbcounter}}
+\newcommand{\tcbexamplelabelhere}{\phantomsection\protected@edef\@currentlabel{\thetcbcounter}%
+  \let\tcb@outerlabel\label\def\label##1{\tcb@outerlabel{##1}\ifvmode\nobreak\fi}}
+% (a \label right after \begin{example}{...} leaves a whatsit in vertical mode; without the \nobreak the
+% glue after it is a legal break and the box can split with only its title on the page)
 \makeatother
 \newtcolorbox[auto counter,number within=chapter,
   list inside=examples]{example}[2][]{teachbase,
   colback=exmp!6,colframe=exmp!6,borderline west={2.4pt}{0pt}{exmp},
-  before upper={\tcbexamplelabelhere{\sffamily\bfseries\color{exmp!90!black}\ZE{例}{Example}~\thetcbcounter\quad #2}\par\vspace{3pt}},
+  before upper={\tcbexamplelabelhere{\sffamily\bfseries\color{exmp!90!black}\ZE{例}{Example}~\thetcbcounter\quad #2}\par\nobreak\vspace{3pt}},
   #1}
 \newcommand{\solution}{\par\vspace{3pt}{\sffamily\bfseries\color{exmp}\ZE{解}{Solution}}\enspace}
 
@@ -379,9 +382,9 @@
 % End-of-chapter takeaways and self-checks
 \newtcolorbox{takeaways}{teachbase,colback=accent!5,colframe=accent!5,
   borderline north={1.6pt}{0pt}{accent},top=6pt,
-  before upper={{\sffamily\bfseries\color{accent}\ZE{本章要点}{Key points}}\par\vspace{2pt}}}
+  before upper={{\sffamily\bfseries\color{accent}\ZE{本章要点}{Key points}}\par\nobreak\vspace{2pt}}}
 \newtcolorbox{selfcheck}{teachbase,colback=white,colframe=accent!40,boxrule=0.6pt,
-  before upper={{\sffamily\bfseries\color{accent}\ZE{自测}{Check yourself}}\par\vspace{2pt}}}
+  before upper={{\sffamily\bfseries\color{accent}\ZE{自测}{Check yourself}}\par\nobreak\vspace{2pt}}}
 % \Needspace, not \needspace: the lower-case form adds stretchable glue before its break, which
 % made breaking before the answers the best choice and left the previous page half empty.
 \newenvironment{answers}{\par\Needspace{6\baselineskip}\vspace{6pt}%

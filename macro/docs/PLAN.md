@@ -295,6 +295,7 @@
 - **案例**：波托西银矿；马尼拉大帆船贸易；腓力二世 1557、1560、1575、1596 年的违约；一条鞭法
 - **对照框候选**：价格革命的货币解释 vs 人口解释；违约 vs 债务重组
 - **前置**：第 12 章（宋元明：世界最早的纸币及其崩溃），第 5 章（国际收支与汇率），第 11 章（中世纪欧洲：庄园、黑死病与货币贬值）
+- **已写成（2026-10）**：模型为金银套利条件（式 `eq:silver-arbitrage`）、数量方程（式 `eq:silver-qty`，以 $M^{d}=kPY$ 讨论一条鞭法提高的白银需求）、债务动态与可维持的债务 $D^{*}=PS/(r-g)$（式 `eq:silver-debt`，推导在“深入一步”），并沿用第 11 章的式 `eq:medieval-factor`（$\alpha=0.405$）。史料为《明史》卷七十八、二百二十、三百二十三、三百二十五与《皇明经世文编》卷四百三十三、四百六十（殆知阁数字文本逐字核对，《明史》另以维基文库对校，《皇明经世文编》以全汉昇 1969 年的引文对校）；Blair 与 Robertson 编《菲律宾群岛》英译史料（古腾堡计划）；马莱斯特鲁瓦与博丹 1578 年合刊本（扫描页逐字读）与 Le Branchu 1934 年校订本（博丹 1568 年初版）；Hamilton (1929) 表 A 与重量（扫描页）。研究文献为全汉昇 (1968, 1969)（代替候选文献中的 Flynn \& Giráldez；Kobata 1965 的产量据全汉昇转引）、Drelichman \& Voth (2010, 2011 两篇)（代替 2014 年的专著）、Edo \& Melitz (2019)、Palma (2018)、Allen (2001)；von Glahn (1996) 未用。数据：英格兰的铸币存量、产出、物价与人口（英格兰银行 A21、A22，`data/fetch/boe_millennium_money.py`），每镑含银量与 Allen 的白银物价指数（GPIH，`data/fetch/gpih_silver.py`），Clark 1490—1690 年的十年数据，Drelichman 与 Voth 的逐年账目（`data/fetch/dv_castile.py`）与表 2、表 3。对照框：价格革命的两种解释；腓力二世的违约 vs 今天的债务重组；两个白银财政（西班牙 vs 明朝）。案例框：马尼拉 · 1593—1605 · 机易山与华人的屠杀（非英美）；卡斯蒂利亚 · 1574—1578 · 停付与“总协议”。图：`silver_flows`、`gold_silver_ratio`、`price_revolution`、`philip_debt`。快照：`silver_century_facts`、`quan1969_manila_silver`、`hamilton1929_treasure`、`boe_millennium_england_money`、`gpih_silver_pound`、`gpih_allen_silver_cpi`、`clark2015_england_decadal_1490_1690`、`dv2010_castile_annual`、`dv2010_philip2`。未解决的不一致（正文“深入一步”已说明）：Hamilton 1929 年表 A 合计是他 1934 年总数的两倍；广州金价的英译文意不顺，读作 6.6—7 的范围；1603 年吕宋死者二万五千（叙事）与二万（诏书）。例 13.5 中“多一倍左右”的比较、例 13.6 中白银消失的情形是本章的粗算，正文已注明为教学假设。
 
 #### 第 14 章 `ch:africa` 非洲与美洲：黄金、贝币与没有货币的帝国 — `zh/ch14_africa.tex`
 *Africa and the Americas: gold, cowries and an empire without money*
@@ -1361,5 +1362,6 @@ app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
 sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
 sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
+sec:silver-china sec:silver-tiaobian sec:silver-revolution sec:silver-default eq:silver-arbitrage eq:silver-qty eq:silver-debt tab:silver-england tab:silver-castile
 nav:contents nav:compare
 ```

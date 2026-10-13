@@ -15,7 +15,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 |---|---|---|---|
 | 12 (opening, §12.2) | 4 `ch:money` | Fiat money is valuable because it is a central-bank liability backed by the state's taxes and laws; the policy rate as the "peg" of a floating currency (compare box 称提 vs today's central bank) | open |
 | 12 (§12.7, legacy) | 8 `ch:qinhan` | The 《管子》 轻重 line of thought on the quantity of money and prices | open |
-| 12 (§12.7) | 13 `ch:silver` | Bodin (1568) and the quantity theory; the Ming turn to silver and the market price of silver | open |
+| 12 (§12.7) | 13 `ch:silver` | Bodin (1568) and the quantity theory; the Ming turn to silver and the market price of silver | done (`sec:silver-world`, `sec:silver-china`, `sec:silver-revolution`) |
 | 12 (§12.7) | 19 `ch:bullion` | Hume and the quantity theory | open |
 | 12 (compare boxes, legacy) | 23 `ch:goldstandard`, 61 `ch:emcrises` | Reserves behind convertible money: the gold standard and currency boards | open |
 | 12 (legacy) | 50 `ch:budget` | The government budget constraint; "unpleasant arithmetic" | open |
@@ -35,4 +35,16 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 11 (§11.6 Oresme's second point, legacy) | 49 `ch:credibility` | The commitment problem of an authority that can change the money at will (time inconsistency) and central-bank independence as the answer | open |
 | 11 (§11.6 Oresme's first point, legacy) | 50 `ch:budget` | Seigniorage / the inflation tax as a transfer of purchasing power from money holders to the issuer | open |
 | 11 (compare box 铸币税 vs 通胀税, legacy) | 52 `ch:hyperinflation` | The revenue from the inflation tax is limited by money demand: at very high inflation people hold less money and the base shrinks | open |
-| 11 (legacy) | 13 `ch:silver` | The sixteenth-century price revolution, with population (`eq:medieval-factor`) and American silver compared as causes | open |
+| 11 (legacy) | 13 `ch:silver` | The sixteenth-century price revolution, with population (`eq:medieval-factor`) and American silver compared as causes | done (`sec:silver-revolution`, `ex:silver-malthus`, `sec:silver-test`) |
+| 13 (guide, §13.2, legacy) | 5 `ch:external` | The balance of payments and exchange rates; purchasing-power and interest parity as the modern form of the arbitrage condition `eq:silver-arbitrage` | open |
+| 13 (§13.2 after the intuition box, legacy) | 19 `ch:bullion`, 23 `ch:goldstandard` | Hume's price–specie flow mechanism and automatic adjustment of the balance of payments under the gold standard | open |
+| 13 (legacy) | 76 `ch:hierarchy`, 61 `ch:emcrises` | An economy whose money is set abroad: the currency hierarchy and "original sin"; pegs that break when capital flows reverse | open |
+| 13 (legacy) | 17 `ch:tokugawa` | Silver in Qing China and 银贵钱贱 (silver dear, copper cash cheap) | open |
+| 13 (legacy) | 4 `ch:money` | The text says Chapter 4 has already shown that what the state accepts in taxes largely decides what money people hold | open |
+| 13 (legacy) | 75 `ch:fiscaldominance` | Taxes, money demand and the relation between fiscal and monetary policy, returned to | open |
+| 13 (legacy) | 45 `ch:monetarism` | The quantity theory in twentieth-century monetarism; whether velocity is stable and whether money leads prices | open |
+| 13 (deeper box, legacy) | 50 `ch:budget` | $D^{*}=PS/(r-g)$ as the basic tool for judging public debt; the case $r\le g$ under today's low interest rates | open |
+| 13 (compare box, legacy) | 51 `ch:latamdebt`, 69 `ch:eurocrisis` | Modern sovereign restructurings: exchange offers, haircuts that differ widely from case to case, creditor committees and holdouts | open |
+| 13 (legacy) | 15 `ch:finrevolution` | How the Dutch Republic and England borrowed far more cheaply than Philip II | open |
+| 13 (legacy) | 47 `ch:oil` | Governments that depend on volatile resource revenue (oil) | open |
+| 13 (closing sentence) | 14 `ch:africa` | Whether a large empire (the Inca) could do without money: labour tribute and storehouses | open |
