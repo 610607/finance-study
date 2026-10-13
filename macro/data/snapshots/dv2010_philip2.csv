@@ -1,0 +1,61 @@
+table,period,item,value,unit
+2A,1566-1574,revenue,5.17,million ducats
+2A,1575-1584,revenue,7.88,million ducats
+2A,1585-1596,revenue,9.60,million ducats
+2A,1566-1574,military_expenditure,3.40,million ducats
+2A,1575-1584,military_expenditure,3.04,million ducats
+2A,1585-1596,military_expenditure,6.95,million ducats
+2A,1566-1574,non_military_expenditure,0.54,million ducats
+2A,1575-1584,non_military_expenditure,0.59,million ducats
+2A,1585-1596,non_military_expenditure,0.66,million ducats
+2A,1566-1574,primary_surplus,1.24,million ducats
+2A,1575-1584,primary_surplus,4.25,million ducats
+2A,1585-1596,primary_surplus,1.99,million ducats
+2A,1566-1574,long_term_debt_service,2.35,million ducats
+2A,1575-1584,long_term_debt_service,3.00,million ducats
+2A,1585-1596,long_term_debt_service,3.91,million ducats
+2A,1566-1574,short_term_debt_service,0.77,million ducats
+2A,1575-1584,short_term_debt_service,0.47,million ducats
+2A,1585-1596,short_term_debt_service,0.79,million ducats
+2A,1566-1574,fiscal_balance,-1.89,million ducats
+2A,1575-1584,fiscal_balance,0.78,million ducats
+2A,1585-1596,fiscal_balance,-2.71,million ducats
+2A,1566-1574,outstanding_debt,30.35,million ducats
+2A,1575-1584,outstanding_debt,37.37,million ducats
+2A,1585-1596,outstanding_debt,54.07,million ducats
+2C,1566-1574,military_expenditure,65.8,% of revenue
+2C,1575-1584,military_expenditure,38.6,% of revenue
+2C,1585-1596,military_expenditure,72.4,% of revenue
+2C,1566-1574,primary_surplus,24.0,% of revenue
+2C,1575-1584,primary_surplus,53.9,% of revenue
+2C,1585-1596,primary_surplus,20.7,% of revenue
+2C,1566-1574,fiscal_balance,-36.6,% of revenue
+2C,1575-1584,fiscal_balance,9.9,% of revenue
+2C,1585-1596,fiscal_balance,-28.2,% of revenue
+2C,1566-1574,outstanding_debt,587.0,% of revenue
+2C,1575-1584,outstanding_debt,474.2,% of revenue
+2C,1585-1596,outstanding_debt,563.2,% of revenue
+3,1565-74,g,3.38,%
+3,1565-74,r,10.20,%
+3,1565-74,PS_star,0.394,ratio to revenue
+3,1565-74,PS,0.249,ratio to revenue
+3,1565-74,D_star,3.645,ratio to revenue
+3,1565-74,D,5.863,ratio to revenue
+3,1574-84,g,3.28,%
+3,1574-84,r,9.30,%
+3,1574-84,PS_star,0.433,ratio to revenue
+3,1574-84,PS,0.454,ratio to revenue
+3,1574-84,D_star,7.534,ratio to revenue
+3,1574-84,D,4.787,ratio to revenue
+3,1584-96,g,3.44,%
+3,1584-96,r,8.80,%
+3,1584-96,PS_star,0.227,ratio to revenue
+3,1584-96,PS,0.201,ratio to revenue
+3,1584-96,D_star,3.744,ratio to revenue
+3,1584-96,D,5.728,ratio to revenue
+3,1565-96,g,3.37,%
+3,1565-96,r,9.40,%
+3,1565-96,PS_star,0.348,ratio to revenue
+3,1565-96,PS,0.315,ratio to revenue
+3,1565-96,D_star,5.229,ratio to revenue
+3,1565-96,D,5.476,ratio to revenue

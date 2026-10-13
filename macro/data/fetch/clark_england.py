@@ -2,12 +2,14 @@
 
     python3 data/fetch/clark_england.py              # download both workbooks and write the snapshot
     python3 data/fetch/clark_england.py DIR          # use Wages 2014.xlsx and the NNI workbook already in DIR
+    python3 data/fetch/clark_england.py --early-modern [DIR]   # the decades 1490-1690 (Chapter 13)
 
 Clark publishes the series on his data page (faculty.econ.ucdavis.edu/faculty/gclark/data.html):
 "Nominal and Real Wages, England, 1209-1869" (English Data/Wages 2014.xlsx) and "National Income,
 Prices, Wages, Land Rents, Population, England, 1209-1869" (English Data/England NNI - Clark - 2015.xlsx).
 The script reads the sheet "Decadal" of each workbook, checks the column headings, keeps the decades
-1250-1500 and writes data/snapshots/clark2015_england_decadal.csv. The SHA-256 of each workbook is
+1250-1500 and writes data/snapshots/clark2015_england_decadal.csv; with --early-modern it keeps 1490-1690
+and writes data/snapshots/clark2015_england_decadal_1490_1690.csv. The SHA-256 of each workbook is
 printed so that it can be compared with the one recorded in the snapshot's .json.
 """
 from __future__ import annotations
@@ -22,6 +24,7 @@ import openpyxl
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "snapshots" / "clark2015_england_decadal.csv"
+OUT_EARLY_MODERN = HERE.parent / "snapshots" / "clark2015_england_decadal_1490_1690.csv"
 BASE = "http://faculty.econ.ucdavis.edu/faculty/gclark/English%20Data/"
 FILES = {"wages": "Wages%202014.xlsx", "nni": "England%20NNI%20-%20Clark%20-%202015.xlsx"}
 UA = "Mozilla/5.0 (X11; Linux x86_64) finance-study data fetch"
@@ -49,7 +52,7 @@ def fetch(name: str, dest: Path) -> Path:
     return path
 
 
-def read(path: Path, columns, header_row: int) -> dict[int, dict[str, float | None]]:
+def read(path: Path, columns, header_row: int, first: int, last: int) -> dict[int, dict[str, float | None]]:
     ws = openpyxl.load_workbook(path, read_only=True, data_only=True)["Decadal"]
     rows = list(ws.iter_rows(values_only=True))
     head = rows[header_row]
@@ -58,20 +61,20 @@ def read(path: Path, columns, header_row: int) -> dict[int, dict[str, float | No
             raise ValueError(f"{path.name}: column {i} is {head[i]!r}, expected {title!r}")
     out = {}
     for r in rows[header_row + 1:]:
-        if isinstance(r[0], (int, float)) and FIRST <= r[0] <= LAST:
+        if isinstance(r[0], (int, float)) and first <= r[0] <= last:
             out[int(r[0])] = {name: (None if r[i] is None else float(r[i])) for i, _, name in columns}
     return out
 
 
-def main(dest: Path) -> None:
-    w = read(fetch("wages", dest), WAGES, header_row=0)
-    n = read(fetch("nni", dest), NNI, header_row=0)
-    decades = list(range(FIRST, LAST + 1, 10))
+def main(dest: Path, first: int = FIRST, last: int = LAST, out: Path = OUT) -> None:
+    w = read(fetch("wages", dest), WAGES, header_row=0, first=first, last=last)
+    n = read(fetch("nni", dest), NNI, header_row=0, first=first, last=last)
+    decades = list(range(first, last + 1, 10))
     missing = [d for d in decades if d not in w or d not in n]
     if missing:
         raise ValueError(f"decades missing: {missing}")
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    with OUT.open("w", encoding="utf-8", newline="") as f:
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w", encoding="utf-8", newline="") as f:
         names = ["decade"] + [c[2] for c in NNI] + [c[2] for c in WAGES]
         wr = csv.DictWriter(f, fieldnames=names)
         wr.writeheader()
@@ -79,10 +82,14 @@ def main(dest: Path) -> None:
             row = {"decade": d, **n[d], **w[d]}
             wr.writerow({k: ("" if v is None else (round(v, 4) if isinstance(v, float) else v))
                          for k, v in row.items()})
-    print(f"{len(decades)} decades {FIRST}-{LAST} -> {OUT}")
+    print(f"{len(decades)} decades {first}-{last} -> {out}")
 
 
 if __name__ == "__main__":
-    folder = Path(sys.argv[1]) if len(sys.argv) > 1 else Path.home() / ".cache" / "finance-study" / "clark"
+    args = [a for a in sys.argv[1:] if a != "--early-modern"]
+    folder = Path(args[0]) if args else Path.home() / ".cache" / "finance-study" / "clark"
     folder.mkdir(parents=True, exist_ok=True)
-    main(folder)
+    if "--early-modern" in sys.argv[1:]:
+        main(folder, 1490, 1690, OUT_EARLY_MODERN)
+    else:
+        main(folder)
