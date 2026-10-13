@@ -340,6 +340,7 @@
 - **案例**：约翰·劳体系与密西西比泡沫；南海泡沫
 - **对照框候选**：劳体系 vs 南海泡沫；重商主义 vs 重农学派
 - **前置**：第 15 章（早期金融革命：荷兰、英国与可信的国债），第 2 章（国民核算与恒等式）
+- **已写成（2026-10）**：模型为孟的贸易差额 $\Delta G=X-M$（不编号）、债务换股划算的条件 $E/(NP)<i\iff P/e>1/i$（式 `eq:merc-swap`，据 Velde 2003）、钉住股价时的货币供给 $\Delta M=\bar p\,\Delta S$（式 `eq:merc-peg`）、坎蒂隆效应的两群体模型（式 `eq:merc-cantillon`，用第 13 章的 `eq:silver-qty`）、经济表的收支相等与 $X=A+I+R$（式 `eq:merc-tableau`，接 `ch:accounts`）、戈登公式 $P=d/(r-g)$（式 `eq:merc-gordon`，$g=0$ 时即第 15 章的 `eq:finrev-perp`）。史料为孟《英格兰得自对外贸易的财富》（1664；Ashley 1895 年重印本，第 27 页据页面图像）、劳《论货币与贸易》（1705 年初版，第 100—102 页据页面图像）、坎蒂隆《论一般商业的性质》（1755，法文维基文库）、魁奈《经济表的算术公式分析》（1766，法文维基文库）、Oncken (1888) 所引杜邦（1769）关于第一张经济表日期的说法、斯密《国富论》（古腾堡计划本）。研究文献为 Velde (2003，表 3、4、6、10)、Garber (1990)、Temin \& Voth（2004，工作论文）、Frehen, Goetzmann \& Rouwenhorst（2009 年工作论文，2013 年刊出）。候选文献 Murphy (1997) 未能取得，劳的体系用 Velde (2003) 与 Garber (1990) 代替；魁奈 1758 年的第一张表未用，用数字更完整的 1766 年《分析》。数据：1718—1720 年八家公司的逐日股价（Frehen、Goetzmann 与 Rouwenhorst 的 1720 年股价数据库；作者不许转发，只保存 `data/fetch/fgr2009_1720_shares.py` 与 `.json`，`.csv` 列入 `.gitignore`），Velde 表 4 的纸币数量与白银价值（`merc_facts` 的行），法国 1715 年的债务据第 15 章的 `finrev_facts`。对照框：金银禁运与贸易差额；劳的体系与南海公司；重商主义者与重农学派。案例框：巴黎 · 1720 · 5 月 21 日的法令（非英美）；伦敦 · 1720 · 英格兰银行的挤兑。误区框：出口金银一定让国家变穷；泡沫说明买股票的人都失去了理智。图：`merc_system`（按 Velde 图 6 重画）、`merc_notes`、`merc_shares`、`merc_tableau`。快照：`merc_facts`（297 行，其中 4 行据页面图像）、`fgr2009_1720_shares`。教学假设（正文已注明）：例 16.1 远航的运费、保险费与关税每磅 18 便士；例 16.4 的 $M=100$、$m_A=20$、$\Delta M=25$；例 16.5 地主把 2 亿里弗尔转向用进口原料做的饰带。未解决的不一致（“深入一步”已说明）：南海公司的最高价（Neal 的 950 与 Scott 的 1,050）与两种历法下的日期，Garber 的 8 月 31 日 775 与数据库的 810；通用银行成立的月份（Velde 5 月，Garber 6 月）与国家票据的折价（37\% 与 60\%）；Velde 的几处笔误；劳的几个数（Garber 四次增发合计 14.9 亿，Velde 的 12.135 亿与表 4 的 11.452 亿；1720 年 1 月的物价 25\% 与 23\%；Visa 的 23.1\% 与 23.5\%）；几种估值（4,167 与 5,000 里弗尔；Garber 的约 4,000 万英镑按公式为 3,990 万，净值 2,610 万按本书算为 2,680 万，56.9 与“6,000 多万”）；经济表的日期（魁奈说 1758 年 12 月，米拉波说 1759 年）与印刷的合计 2,002 百万；斯密把孟的书名引作 \emph{England's Treasure in Foreign Trade}；坎蒂隆的作者署名；印度公司股价一栏的来源。
 
 #### 第 17 章 `ch:tokugawa` 德川日本与清代中国：东亚的前现代市场 — `zh/ch17_tokugawa.tex`
 *Tokugawa Japan and Qing China: premodern East Asian markets*
@@ -1366,5 +1367,7 @@ sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread
 sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
 sec:silver-china sec:silver-tiaobian sec:silver-revolution sec:silver-default eq:silver-arbitrage eq:silver-qty eq:silver-debt tab:silver-england tab:silver-castile
 sec:africa-gold sec:africa-cowrie sec:africa-inca sec:africa-cacao eq:africa-carry eq:africa-risk eq:africa-store eq:africa-hold
+sec:finrev-amsterdam sec:finrev-voc sec:finrev-holland sec:finrev-england sec:finrev-bank eq:finrev-agio eq:finrev-perp eq:finrev-commit tab:finrev-four
+sec:merc-mun sec:merc-law sec:merc-system sec:merc-southsea sec:merc-cantillon sec:merc-tableau sec:merc-test eq:merc-swap eq:merc-peg eq:merc-cantillon eq:merc-tableau eq:merc-gordon tab:merc-system tab:merc-tableau tab:merc-earnings
 nav:contents nav:compare
 ```
