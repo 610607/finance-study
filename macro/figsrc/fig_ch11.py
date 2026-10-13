@@ -154,7 +154,7 @@ def wage_ceiling():
     """(a) a ceiling at the old wage after the labour force shrinks; (b) day wages and the 1351 caps."""
     a = C.ALPHA
     pop = C.clark()["pop_england_m"]
-    l1 = pop[1400] / pop.loc[1300:1340].mean()
+    l1 = pop[1350] / pop.loc[1300:1340].mean()   # the 1350s, when the ordinance and statute were made
     w1, _ = C.factor_prices(l1)
     F = C.facts()
     caps = F["stat_1351_c3"]
@@ -166,15 +166,16 @@ def wage_ceiling():
     L = np.linspace(0.3, 1.25, 200)
     a1.plot(L, L ** (-a), color=OUTPUT, lw=2.0)
     a1.text(1.24, 0.85, T("劳动需求", "labour\ndemand"), fontsize=7.6, color=OUTPUT, ha="right", va="top")
-    for lv, txt, ls in [(1.0, T("瘟疫前的劳动力", "labour before"), "-"), (l1, T("瘟疫后", "after"), (0, (4, 2)))]:
+    for lv, txt, ls in [(1.0, T("瘟疫前的劳动力", "labour before"), "-"), (l1, T("1350 年代", "1350s"), (0, (4, 2)))]:
         a1.plot([lv, lv], [0.4, 1.75], color=AMBER, lw=1.6, ls=ls)
         a1.text(lv + 0.02, 1.70, txt, fontsize=7.4, color=AMBER, ha="left", va="top")
     a1.axhline(1.0, color=PRICE, lw=1.2, ls=(0, (1.5, 1.5)))
     a1.text(0.31, 0.97, T("法定上限\n= 旧工资", "cap =\nold wage"), fontsize=7.4, color=PRICE, ha="left", va="top",
             linespacing=1.25)
     a1.plot([l1], [w1], "o", color=OUTPUT, ms=5.5)
-    a1.annotate(T(f"市场工资 ×{w1:.2f}", f"market wage ×{w1:.2f}"), xy=(l1, w1), xytext=(0.62, 1.45), fontsize=7.4,
-                color=OUTPUT, ha="left", arrowprops=dict(arrowstyle="-", color=OUTPUT, lw=0.6))
+    a1.annotate(T(f"市场工资\n×{w1:.2f}", f"market\nwage ×{w1:.2f}"), xy=(l1, w1), xytext=(0.76, 1.38), fontsize=7.4,
+                color=OUTPUT, ha="left", va="bottom", linespacing=1.2,
+                arrowprops=dict(arrowstyle="-", color=OUTPUT, lw=0.6, shrinkA=1))
     a1.annotate("", xy=(l1, 0.93), xytext=(1.0, 0.93),
                 arrowprops=dict(arrowstyle="<->", color=INK, lw=0.8, shrinkA=0, shrinkB=0))
     a1.text((l1 + 1) / 2, 0.88, T(f"缺口 {1 - l1:.2f}", f"shortage {1 - l1:.2f}"), fontsize=7.4, color=INK,

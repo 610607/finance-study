@@ -181,10 +181,16 @@ def population(B, C):
     quoted("Clark: 1400s (m)", pop[1400], 2.64, tol=0.005)
     quoted("Clark: mean of 1300-49 (m)", pop.loc[1300:1340].mean(), 5.01, tol=0.005)
     quoted("Clark: 1400s / 1300-49", pop[1400] / pop.loc[1300:1340].mean(), 0.53, tol=0.005)
-    # before the plague: more people, lower real wages (Malthusian pattern)
-    quoted("Clark: population 1250s -> 1310s (%)", 100 * (pop[1310] / pop[1250] - 1), 46, tol=0.5)
+    # before the plague: more people, lower real wages (Malthusian pattern). The comparison ends in the
+    # 1300s, not at the population peak of the 1310s, because the 1310s include the Great Famine of
+    # 1315-17 and its price spike (cost of living +26% on the 1300s), which the text points out.
+    quoted("Clark: 1300s (m)", pop[1300], 5.32, tol=0.005)
+    quoted("Clark: population 1250s -> 1300s (%)", 100 * (pop[1300] / pop[1250] - 1), 38, tol=0.5)
     rb = C["real_blab_1860s_100"]
-    quoted("Clark: real building labourer wage 1250s -> 1310s (%)", 100 * (rb[1310] / rb[1250] - 1), -32, tol=0.5)
+    quoted("Clark: real building labourer wage 1250s -> 1300s (%)", 100 * (rb[1300] / rb[1250] - 1), -24, tol=0.5)
+    assert rb[1310] < rb[1300], "the real wage of the 1310s should be lower than in the 1300s"
+    col = C["col_1860s_100"]
+    quoted("Clark: cost of living 1300s -> 1310s (%)", 100 * (col[1310] / col[1300] - 1), 26, tol=0.5)
 
 
 def model():
@@ -204,8 +210,11 @@ def model():
     x = income_path(factor_prices(l)[0])
     quoted("income path after one generation (% above steady state)", 100 * (x[1] - 1), 17, tol=0.5)
     quoted("income path after four generations (% above steady state)", 100 * (x[4] - 1), 3, tol=0.5)
-    quoted("ceiling at the old wage: market wage", factor_prices(l)[0], 1.30, tol=0.005)
-    quoted("ceiling at the old wage: shortage 1 - L1", 1 - l, 0.47, tol=0.005)
+    l50 = C.loc[1350, "pop_england_m"] / C.loc[1300:1340, "pop_england_m"].mean()
+    quoted("ceiling example: Clark population 1350s / 1300-49", l50, 0.71, tol=0.005)
+    quoted("ceiling at the old wage: market wage (1350s labour)", factor_prices(l50)[0], 1.15, tol=0.005)
+    quoted("ceiling at the old wage: excess over the cap (%)", 100 * (factor_prices(l50)[0] - 1), 15, tol=0.5)
+    quoted("ceiling at the old wage: shortage 1 - L1", 1 - l50, 0.29, tol=0.005)
 
 
 def clark_benchmark(F):
@@ -331,7 +340,14 @@ def test(C, F):
     quoted("real building craftsman wage, 1400s", craft[1400], 1.45, tol=0.005)
     quoted("real land rent, 1400s", rent[1400], 0.97, tol=0.005)
     quoted("real land rent, 1350s", rent[1350], 0.82, tol=0.005)
+    quoted("real land rent, 1370s", rent[1370], 0.82, tol=0.005)
+    quoted("real land rent, lowest decade 1350s-1460s", rent.loc[1350:1460].min(), 0.82, tol=0.005)
+    quoted("real land rent, mean of the 1350s-1460s", rent.loc[1350:1460].mean(), 0.91, tol=0.005)
     quoted("real land rent, 1470s", rent[1470], 0.71, tol=0.005)
+    # fig:plague_wages caption: "1470 年代以后才降到七成多" (0.70-0.79 in every decade 1470-1500)
+    late = rent.loc[1470:1500]
+    assert 0.70 <= late.min() and late.max() < 0.80, late
+    print(f"ok  real land rent 1470s-1500s between {late.min():.3f} and {late.max():.3f} (text: 七成多)")
     quoted("real building labourer wage, 1350s", blab[1350], 1.24, tol=0.005)
     quoted("real building labourer wage, 1360s", blab[1360], 1.44, tol=0.005)
     quoted("real building labourer wage, 1370s", blab[1370], 1.55, tol=0.005)
@@ -339,6 +355,11 @@ def test(C, F):
     quoted("real farm wage, 1350s", farm[1350], 1.71, tol=0.005)
     quoted("real building labourer wage, 1440s", blab[1440], 2.26, tol=0.005)
     quoted("farm wage: mean of the 1400s-1490s against 1300-49 (% rise)", 100 * (farm.loc[1400:1490].mean() - 1), 141, tol=0.5)
+    # pitfall box: the 141% comes from nominal wages, not from the deflator
+    col = clark_index("col_1860s_100")
+    quoted("cost of living: mean of the 1400s-1490s against 1300-49 (% change)", 100 * (col.loc[1400:1490].mean() - 1), -1, tol=0.5)
+    nom = clark_index("farm_wage_d")
+    quoted("nominal farm wage: mean of the 1400s-1490s against 1300-49", nom.loc[1400:1490].mean(), 2.44, tol=0.005)
     quoted("real farm wage 1400s (% rise)", 100 * (farm[1400] - 1), 126, tol=0.5)
     quoted("real building labourer wage 1400s (% rise)", 100 * (blab[1400] - 1), 83, tol=0.5)
     quoted("real land rent 1400s (% change)", 100 * (rent[1400] - 1), -3, tol=0.5)

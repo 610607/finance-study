@@ -20,11 +20,13 @@ ord_1349_lords,英格兰,1349,,3,倍,,bbt1914,I.vi.12 (p. 164),at a penalty of t
 ord_1349_double,英格兰,1349,,2,倍,,bbt1914,I.vi.12 (p. 164),"under penalty of the double of that which shall be so paid, promised, demanded or received",
 ord_1349_victuals,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),shall be bound to sell such victuals for a reasonable price,
 ord_1349_date,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),"Witness the King at Westminster, the eighteenth day of June.",
+ord_1349_leave,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),"withdraw from the said service without reasonable cause or licence before the end of the term agreed upon, he shall undergo the penalty of imprisonment",雇期未满不得离开雇主
 chelmsford_denk,英格兰,1351,,20,先令/年,,bbt1914,I.vi.13 (p. 167),"William Denk, servant of Geoffrey le Smyth, took from the said Geoffrey 20s. a year, and is at his table, and was sworn before John de Sutton and his fellows to serve according to the Statute, etc., where he should not take but 8s., etc....",
 chelmsford_tailors,英格兰,1351,,3,倍,,bbt1914,I.vi.13 (p. 167),and this threefold that which they used to take.,
 chelmsford_smyth,英格兰,1351,,2,倍,,bbt1914,I.vi.13 (p. 167),"Richard Smyth of Great Baddow commonly takes for his work double that which he used to take, against the Statute.",
 layer_sum,英格兰,1351,,202,便士,,bbt1914,I.vi.15 (p. 169),"Sum, 16s. 10d.",Layer de la Hay 村 18 笔罚款逐项相加为 202 便士
 writ_1350_subsidy,英格兰,1350,,,,,bbt1914,I.vi.16 (p. 170),"to pay without delay that which they have so received in excess to the subtaxers and subcollectors of the singular towns to which the same artificers, servants and workmen belong, in aid of payment of the tenth and fifteenth aforesaid",
+writ_1350_fines,英格兰,1350,,,,,bbt1914,I.vi.16 (p. 170),"Provided that the fines made or to be made therefor, and other things belonging to us therefrom, be converted to our use, as is just.",罚金本身仍归国王
 winstree_sum,英格兰,1352,1351-2,4682,便士,,bbt1914,I.vi.17 (p. 171),"Sum of this hundred, 19l. 10s. 2d., whereof from the fifteenth [arises] 38s. 11d.. from fines of workmen 17l. 11s. 3d.","工人罚款 4,215 便士，占 4,682 便士的 90%"
 winstree_note,英格兰,1352,1351-2,,,,bbt1914,"I.vi.17 (p. 171), n. 216",Note that in half the towns in this hundred the inhabitants' share of the subsidy is wholly covered by the fines. The ordinance and statute were enforced in Essex more severely than elsewhere.,
 stat_1388_kept,英格兰,1388,,,,,bbt1914,"I.vi.18 (p. 171), c. 3","all the Statutes of artificers, labourers, servants and victuallers made as well in the time of our lord the King that now is as in the time of his noble grandfather, whom God assoil, not repealed, be straitly holden and kept and duly executed",
@@ -39,6 +41,7 @@ stat_1351_reapers,英格兰,1351,,2;3,便士/日,,sotr1810,"p. 311, c. 1","Reape
 stat_1351_meat,英格兰,1351,,,,,sotr1810,"p. 311, c. 1","without Meat or Drink, or other courtesie to be demanded, given, or taken",
 stat_1351_c3,英格兰,1351,,3;2;4;3;1.5;3;1.5,便士/日,,sotr1810,"p. 312, c. 3",A Master Carpenter iii d. and another ii d. A Master [Free Mason] iiii d. and other Masons iii d. and their Servants i d. ob. Tylers iii d. and their Knaves i d. ob.,ob. = obolus，半便士；方括号内是编者据另一抄本补的词，脚注作 free-stone mason
 stat_1351_c3_season,英格兰,1351,,,,,sotr1810,"p. 312, c. 3","from Easter to Saint Michael; and from that time less, according to the Rate and Discretion of the Justices",夏季（复活节至米迦勒节）工资；冬季更低
+stat_1351_summer,英格兰,1351,,,,,sotr1810,"p. 312, c. 2","that none of them go out of the Town, where he dwelleth in the Winter, to serve the Summer, if he may serve in the same Town",冬天住在哪里，夏天有活可干就不得外出受雇
 stat_1351_stocks,英格兰,1351,,3,日,,sotr1810,"p. 312, c. 2","be put in the Stocks by the said Lords, Stewards, Bailiffs, and Constables of the Towns by Three Days or more, or sent to the next Gaol",
 stat_1351_prison,英格兰,1351,,40,日,,sotr1810,"p. 312, c. 5","he shall have Imprisonment of Forty Days; and if he be another Time convict, he shall have Imprisonment of a Quarter of a Year, so that at every Time that he offendeth and is convict, he shall have double Pain",
 stat_1351_note,英格兰,1351,,,,,sotr1810,"p. 311, n.",Statute the First in all former Printed Copies; and entitled 'Statutum de Servientibus. The Statute of Labourers.',
@@ -48,6 +51,7 @@ wailly_prelates,法国,1304,约 1304,,,,wailly1857,p. 34,"Ils auraient voulu qu'
 wailly_refused,法国,1304,约 1304,,,,wailly1857,p. 34,"Mais il ne consentit pas à exempter les évêques du service militaire, ni surtout à prendre l'engagement qu'ils réclamaient à la fin de leur supplique.",
 wailly_jews,法国,1306,,,,,wailly1857,p. 34,"Les ressources nécessaires à l'exécution de la mesure, on se les procura, au moins en partie, par une mesure inique : on prononça, le 22 juillet 1306, l'exil des juifs et la confiscation de leurs biens",
 wailly_riot,法国,1306,,,,,wailly1857,p. 35,"Les petits locataires, qui s'étaient facilement habitués à voir décroître successivement les loyers jusqu'au-dessous du tiers de leur valeur primitive, refusèrent de les acquitter en bonne monnaie. Une émeute terrible éclata dans Paris, des maisons furent pillées et brûlées, le roi fut bloqué dans le Temple",
+wailly_hanged,法国,1306,,,,,wailly1857,p. 35,Il fallut livrer bataille et pendre les plus mutins,骚乱被武力平息，为首的人被绞死；原书 li-vrer 跨行
 wailly_22,法国,1314,,22,次,,wailly1857,p. 35,"Philippe le Bel laissa donc la livre tournois à peu près aux 10/11 de la valeur qu'elle avait eue à son avénement, mais après lui avoir fait subir vingt-deux variations dans les dix-neuf dernières années de son règne.",10/11 印作上下排的分数
 wailly_71,法国,1360,1351-1360,71,次,,wailly1857,p. 46,"de 1351 à 1360, la livre tournois a changé soixante et onze fois de valeur, et que les années 1359 et 1360 figurent à elles seules dans ce nombre total, l'une pour seize, l'autre pour dix-sept mutations",
 wailly_11,法国,1360,1351-1360,11,次,,wailly1857,p. 46,la hausse succéda onze fois à autant de baisses différentes,
@@ -106,3 +110,5 @@ hw_downscale,,,,,,,hw2019,abstract,Our new estimates not only downscale the medi
 hw_days,英格兰,,,150,日/年,,hw2019,abstract,from less than 150 days during the medieval period to well over 300 days during the Industrial Revolution,
 hw_one_other,英格兰,,,,,,hw2019,,"Even in the post-plague ‘Golden Age’, an unskilled working man would have struggled to support more than one other person",
 ag_black_death,,,,,,,ag2011,p. 5,"a decline in the population due to an epidemic such as the Black Death (1348-1350 CE) would temporarily reduce population, while temporarily increasing income per capita",
+vv_shock,,,,,,,vv2013,abstract,We show how a major shock to population can trigger a transition to a new steady state with higher per-capita income.,
+vv_wages,,,,,,,vv2013,abstract,In this way higher wages themselves reduced population pressure.,

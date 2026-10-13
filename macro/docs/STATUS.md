@@ -27,6 +27,10 @@ Updated 2026-10-13.
 - `docs/FORWARD_REFS.md` records what written chapters expect of unwritten ones (seeded with Chapter 12's references).
 - Part 3 is written sequentially (author's choice): one chapter at a time, each reviewed by one independent reviewer before the next (`docs/WORKFLOW.md`).
 
+## Part 3 — in progress (sequential, one reviewer per chapter)
+- Chapter 10 (伊斯兰世界与地中海的商业革命): written and reviewed; the review's fixes are in commit "Chapter 10: apply the independent review".
+- Chapter 11 (中世纪欧洲：庄园、黑死病与货币贬值): written and reviewed; fixes applied (including example 11.3 now set in the 1350s, labour 0.71, when the statutes were made; the intuition box now matches the one-quality-land model). Open points from the review, not done: the literature that followed Rolnick, Velde & Weber (Velde, Weber & Wright 1999; Sussman 1993; Sargent & Velde 2002) is not cited; Oresme's treatise is dated only by its 1864 editor (before 1373), not by the modern estimate (c. 1355–60), for want of a downloaded modern source; the tension between Oresme's fourth point (metal leaves the kingdom) and the mint inflows of the debasement puzzle is not discussed; the Peasants' Revolt of 1381 is not mentioned; in figure `plague_wages` (a) two labels could sit better and the shaded plague band is faint; the Great Famine of 1315–17 has no citation of its own (only Clark's cost-of-living series).
+
 ## Next
 1. Part 3 (Chapters 10, 11, 13–17), sequentially in that order, following `docs/WORKFLOW.md`: brief `docs/agent_prompts/batch_brief.txt`, chapter notes `docs/agent_prompts/part3_notes.md`, an independent review of each chapter. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. Then the other parts in the order of the books, each as a batch.
