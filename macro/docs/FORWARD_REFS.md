@@ -39,7 +39,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 13 (guide, §13.2, legacy) | 5 `ch:external` | The balance of payments and exchange rates; purchasing-power and interest parity as the modern form of the arbitrage condition `eq:silver-arbitrage` | open |
 | 13 (§13.2 after the intuition box, legacy) | 19 `ch:bullion`, 23 `ch:goldstandard` | Hume's price–specie flow mechanism and automatic adjustment of the balance of payments under the gold standard | open |
 | 13 (legacy) | 76 `ch:hierarchy`, 61 `ch:emcrises` | An economy whose money is set abroad: the currency hierarchy and "original sin"; pegs that break when capital flows reverse | open |
-| 13 (legacy) | 17 `ch:tokugawa` | Silver in Qing China and 银贵钱贱 (silver dear, copper cash cheap) | open |
+| 13 (legacy) | 17 `ch:tokugawa` | Silver in Qing China and 银贵钱贱 (silver dear, copper cash cheap) | done (`sec:toku-qing`, `sec:toku-debate`, `sec:toku-test`) |
 | 13 (legacy) | 4 `ch:money` | The text says Chapter 4 has already shown that what the state accepts in taxes largely decides what money people hold | open |
 | 13 (legacy) | 75 `ch:fiscaldominance` | Taxes, money demand and the relation between fiscal and monetary policy, returned to | open |
 | 13 (legacy) | 45 `ch:monetarism` | The quantity theory in twentieth-century monetarism; whether velocity is stable and whether money leads prices | open |
@@ -76,3 +76,11 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 16 (legacy) | 50 `ch:budget` | Debt sustainability; Velde's "government equity" (claims whose return varies with the state of the economy) as an alternative to fixed-interest debt | open |
 | 16 (legacy) | 32 `ch:generaltheory` | Whether more money raises output when there is unemployment (Law's claim of 1705; Velde notes that Law's reputation rose in the 1930s) | open |
 | 16 (§16.7, legacy) | 2 `ch:accounts`, 22 `ch:marx` | Sector accounts in which every payment is another sector's receipt, sector balances sum to zero, and output covers intermediate inputs, the upkeep of capital and incomes (Quesnay's Tableau, `eq:merc-tableau`, is the forerunner); Marx's schemes of reproduction and input–output tables built on it | open |
+| 17 (§17.2 越后屋的换算表, legacy) | 54 `ch:newkeynesian` | Menu costs as one reason for sticky prices (Echigoya's 60-momme table removed the part of the price that changed from the price tag) | open |
+| 17 (legacy, 期货与中央清算) | 64 `ch:gfc` | Moving over-the-counter derivatives to central counterparty clearing after the global financial crisis; the risk a clearinghouse bears when margins are low (`ex:toku-hedge`) | open |
+| 17 (legacy, 铸币税与贬值) | 75 `ch:fiscaldominance`, 52 `ch:hyperinflation` | The inflation tax as today's form of the revenue a debasement raised (`eq:toku-seign`, a rate of about 32% in 1695) | open |
+| 17 (legacy, 货币错配) | 61 `ch:emcrises`, 76 `ch:hierarchy` | Currency mismatch: income in one money, obligations in another (Qing taxpayers earned copper and owed silver), and the burden when the debt currency appreciates | open |
+| 17 (legacy, 名义合约与通缩) | 28 `ch:depressionus` | Fisher's debt deflation: how nominal debts redistribute wealth in inflation and deflation (the Genbun recoinage eased the samurai's debts; dear silver made silver debts and taxes heavier) | open |
+| 17 (legacy, 记账单位) | 4 `ch:money` | The functions of money can be separated: rice was the unit of account in Tokugawa Japan but not the medium of exchange (Schaede) | open |
+| 17 (pitfall box 银贵钱贱) | 24 `ch:periphery` | Opium, silver and China's money in the second half of the nineteenth century | open |
+| 17 (closing sentence) | 18 `ch:smith` | Smith as the first to ask systematically where the wealth of nations comes from and on what principle banks should lend | open |

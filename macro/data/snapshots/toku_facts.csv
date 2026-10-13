@@ -38,6 +38,54 @@ suz_15000,日本,1736,,10000;15000,匁,,suzuki2021,p. 18,"10,000 momme of the ol
 suz_debts,日本,1736,,,,,suzuki2021,p. 17,"The monetary policy of the shogunate tried not only to compensate for the empty treasury, but also to lighten the greatly increased debts of samurais.",
 suz_daimyo,日本,1736,,,,,suzuki2021,p. 18,many Daimyos (territorial lords) repaid their multitudinous debts with new kobans a few days after the debasement,
 suz_six_eight,日本,1736,,6;8,种,,suzuki2021,p. 16,six types of gold kobans and eight types of silver chogins were circulated in 1736 in the market,
+suz_1716,日本,1716,约 1716 年,,,,suzuki2021,p. 2,"Many Keicho kobans, which had completely disappeared from the market over the past two decades, began to be used. Ultimately, they amounted to nine-tenths of the kobans in the market",Suzuki 引太宰春台（1729）
+suz_arai_silver,日本,1714,,,,,suzuki2021,p. 2,"Arai Hakuseki, the adviser of the shogun, believed that new good silver coins could draw the hoarded good silver coins back into circulation",
+suz_arai_wrong,日本,1716,,,,,suzuki2021,p. 2,"Although he was wrong about this in terms of silver coins, it did work for gold coins.",
+suz_1674,日本,1674,,1674;90;8;2,年;%;%;%,,suzuki2021,p. 2,"In 1674, 90% of them were worn down, 8% had been repaired, and 2% were under the legal weight",庆长小判的磨损
+suz_1772,日本,1772,,1772,年,,suzuki2021,p. 2,"a type of silver coin was issued as a gold coin in 1772, which indicates a revolutionary change in the Tokugawa monetary system",
+suz_owned,日本,1700,,,,,suzuki2021,p. 10,"The shogunate owned almost all precious metal resources and managed gold, silver, and copper mints.",
+suz_taxes,日本,1700,,,,,suzuki2021,p. 12,"The shogunate also attempted to increase taxes on merchants. However, merchants added taxes to merchandise prices.",
+suz_gresham,日本,1714,,,,,suzuki2021,p. 9,"All types of coins, both good and bad, were present in the market.",
+suz_edo_gold,日本,1700,,,,,suzuki2021,p. 13,"the merchandise in Edo city was priced in gold-denominated moneys of account, which followed the non-decimal system, that is, the quaternary numeral system",
+suz_west_weight,日本,1700,,,,,suzuki2021,p. 13,"in West Japan, the merchandise was priced in terms of the silver-based moneys of account, wherein the prices were stated in weights of silver coins, which had no face values",
+suz_international,日本,1700,,,,,suzuki2021,p. 13,The East–West exchange rates were similar to the international exchange rate.,
+suz_edo_emergent,日本,1700,,,,,suzuki2021,p. 12,"Because Edo, the center of East Japan, was an emergent city that had gradually developed since the 17th century, sophisticated goods were largely imported into Edo from the old cities in West Japan.",
+suz_fn5b,日本,1700,,,,,suzuki2021,p. 15 n. 5,The floating exchange rates of the money markets in both the West and the East did not vary too much.,
+suz_genkin,日本,1719,,,,,suzuki2021,p. 16,"which means, “If you buy a kimono by cash, we will sell it at the cheapest price.”",越后屋的“现金掛值无”（Genkin Kakene Nashi）
+suz_tag_crisis,日本,1719,,,,,suzuki2021,p. 16,"the chaotic monetary policy began, and the cheapest price tag strategy faced a crisis because of the huge menu costs",
+suz_tags,日本,1719,,,,,suzuki2021,p. 16,"If the fluctuation in the latter was extreme, merchants in the West had to change their price tags tremendously. This meant enormous menu costs.",the latter 指西边的浮动比价
+suz_reutil,日本,1695,,,,,suzuki2021,p. 10,"Recoinage was an option to refill the treasury by effectively reutilizing the finite resources, namely, the minted coins in the market.",
+suz_common,日本,1713,,,,,suzuki2021,p. 10,The most common opinion was that the reduction in the quality of coins corresponded with rising prices.,Suzuki 据室鸠巢（1713）
+suz_petition,日本,1714,,,,,suzuki2021,p. 19,Arai wrote twice in his petition against the debasement that samurais originally did not think at all about the quality of money,新井白石反对改铸的意见书
+suz_shotoku_model,日本,1714,,,,,suzuki2021,p. 6,Shotoku koban was modeled after Keicho koban.,
+suz_diagrams,日本,1714,,,,,suzuki2021,p. 9,"To ease the confusion regarding money, diagrams were sold in the market",
+suz_contradictory,日本,1736,,,,,suzuki2021,p. 18,"This was a contradictory policy, “nominalistic” as well as “metallistic.”",
+suz_advance,日本,1736,,,,,suzuki2021,p. 18,Wealthy merchants mostly received information about the debasement in advance.,
+suz_sale_date,日本,1736,,1736,年,,suzuki2021,p. 18,"Echigoya held huge sales in both Edo and Osaka from June 15, 1736.",
+suz_popular,日本,1736,,,,,suzuki2021,p. 19,"popular with customers, so Echigoya was inundated with visitors from distant places every day",前半句 This sale was highly 在上一页
+suz_anxiety,日本,1736,,,,,suzuki2021,p. 19,"In general, people withheld from any purchases at the time of debasement because of anxiety. Echigoya brilliantly converted the business crisis into a good sales opportunity.",
+suz_vonglahn,中国,-300,,,,,suzuki2021,p. 11,the values of money and commodities were related in inverse proportion to each other. This equation can be seen as a quantity theory of money,Suzuki 引 von Glahn（1996）对《管子》的解读
+suz_proportional,中国,-300,,,,,suzuki2021,p. 11,"Therefore, the quality of copper coins was proportional to the quantity",
+suz_same_situation,日本,1695,,,,,suzuki2021,p. 11,"The Genroku debasement presented the same situation, namely, less quality and more quantity.",
+suz_fig5,日本,1700,1700 年以前,,,,suzuki2021,p. 14,"The delivered goods were purchased with gold coins in Edo, then the gross gold income was exchanged for silver in Osaka, and thus, the accounts were settled.",Suzuki 图 5 的例子
+suz_guilds,日本,1700,,10,个,,suzuki2021,p. 14,"Ten guilds, called the Edo Tokumi Donya, were annoyed by the East–West exchange rate, which caused inflation and cooled the Edo economy.",江户十组问屋
+suz_fn5,日本,1700,,60;1,匁;两,,suzuki2021,p. 15 n. 5,"the fixed exchange rate of 60 momme to 1 ryo in the commodity market in Edo was not the exchange rate of real money, but the rate used to calculate the gold denomination value in Edo based on the silver prices of the goods from the West",
+suz_disobey,日本,1700,,,,,suzuki2021,p. 15,"However, Western commodity merchants did not obey the fixed exchange rate law.",
+suz_menu,日本,1719,,,,,suzuki2021,p. 16,This meant enormous menu costs.,
+suz_mmt_how,日本,1719,,,,,suzuki2021,p. 16,"By multiplying the doubled price by the suitable ratio, the clerk was able to calculate the selling price immediately",越后屋的“60 匁换算表”
+suz_mmt_merit,日本,1719,,,,,suzuki2021,p. 17,"tag prices thanks to the double-price tag, even if the exchange rate in the West fluctuated intensely.",前半句为 one did not need to change the（跨页）
+suz_genbun_law,日本,1736,,,,,suzuki2021,p. 18,The law of the Genbun debasement stipulated that the new Genbun kobans would be as valuable as the old Keicho kobans in the market.,
+suz_one_ryo,日本,1736,,1;1,两,,suzuki2021,p. 18,"the shogunate maintained the nominalistic view that one ryo equaled one ryo, irrespective of the quality of the gold coins",
+suz_lender,日本,1736,1736 年 5 月 28 日,,,,suzuki2021,p. 18,the lender would face considerable loss,江户十组问屋向幕府的申诉
+suz_may28,日本,1736,1736 年 5 月 28 日,1736,年,,suzuki2021,p. 18,"complained to the shogunate about the acts of lending and borrowing on May 28, 1736",江户十组问屋（Tokumi Donya）的申诉
+suz_sale,日本,1736,1736 年 6 月 15 日起,120;60;48;0.8,匁;匁;匁;两,,suzuki2021,p. 18,"The doubled price, which was 120 momme (the original price was 60 momme = 1 ryo) before the debasement, was reduced to 48 momme. In other words, it was 0.8 ryo (3 gold bu and 3 silver momme), 20% off.",越后屋的大减价，用旧小判付款
+suz_sale_new,日本,1736,,79.2;1.32,匁;两,,suzuki2021,p. 18,"If one would make the purchase with new gold kobans, the price was 79.2 momme (1.32 gold ryo).",
+suz_sale_gold,日本,1736,,8.581726;11.9759232,克,,suzuki2021,p. 18,"the new 1 ryo koban contained 8.581726 grams of pure gold, while the sale price of 0.8 ryo with the old koban provided 11.9759232 grams of pure gold",与表 2 的重量不完全一致，见快照说明
+suz_sale_popular,日本,1736,,,,,suzuki2021,p. 19,They were willing to buy kimonos using old kobans.,
+suz_fourmon,日本,1768,明和五年,4,倍,,suzuki2021,p. 19,"whose worth was legally four times that of the normal copper coins in the market. Such coins circulated in East Japan, but not in West Japan",1768 年铸的四文钱（黄铜）
+suz_fourmon_weight,日本,1768,,1.5,倍,,suzuki2021,p. 20,"However, the actual weight of these coins was one and a half times that of normal copper coins.",
+suz_nominalistic,日本,1768,,,,,suzuki2021,p. 20,"Easterners tended to be legal and nominalistic, while Westerners tended to be illegal and metallistic.",
+suz_never_returned,日本,1736,,,,,suzuki2021,p. 20,"Most of the money the shogunate minted flowed into the market, which was controlled by merchants, and never returned.",
 suz_chogin,日本,1700,,161.25,克,,suzuki2021,p. 6,Chogin weighed approximately 161.25 g.,丁银的重量
 suz_kyoho_model,日本,1716,,,,,suzuki2021,p. 6,Kyoho koban was modeled after Sandaime Keicho koban.,
 suz_keicho_under,日本,1695,,,,,suzuki2021,p. 6,The amount of mintage of Keicho kobans in Table 2 is underestimated.,
@@ -124,6 +172,30 @@ sch_1869,日本,1869,,1869,年,,schaede1989,p. 506,"between 1866 and April 1869,
 sch_hedge,日本,1750,,,,,schaede1989,p. 507,could hedge his assets in rice bills against a possible decline in prices by simultaneously taking a futures position,
 sch_miyamoto,日本,1830,,1751;1830,年,,schaede1989,p. 507,"Miyamoto (1977a, b, 1986) demonstrated a high correlation between spot prices and futures prices from 1751 through to the 1830s",
 sch_margin_range,日本,1750,,5;30,%,,schaede1989,p. 511,The margin requirement was between 5 and 30% of the total trading sum.,
+sch_bond_forward,日本,1700,,,,,schaede1989,p. 493,"If the buyer had to furnish the whole amount of money on the day he bought a bill that was unbacked, he actually bought a bond. On the other hand, if the rice merchant bought a backed rice bill, he entered a forward contract.",
+sch_prepay,日本,1700,,,,,schaede1989,p. 493,Neither the issuer (the warehouse) nor the purchaser regarded them as titles to physical rice.,预付票（先纳切手）
+sch_kaga,日本,1700,18 世纪初,,,,schaede1989,p. 492,the Kaga domain replaced the non-guarantee clause on its bills by a full guarantee,加贺藩的仓库失火以后
+sch_10days_eff,日本,1663,,10,日,,schaede1989,p. 494,"the merchants now paid the total amount of the bill within 10 days, while the rice continued to remain in the warehouses and bills were traded as actively as before",
+sch_sumptuary,日本,1705,,,,,schaede1989,p. 494,The official reason for these actions was Yodoya’s violation of sumptuary restrictions.,
+sch_harvest,日本,1718,,,,,schaede1989,p. 494,"Rice prices fell not only in nominal terms, but also in real terms because of a series of good harvest years.",
+sch_temporary_aim,日本,1730,,,,,schaede1989,p. 495,the bakufu initially intended to prohibit trading on the book as soon as rice prices rose again,
+sch_suing_paid,日本,1773,,,,,schaede1989,p. 495,"If the suit was justified, the government paid out the claims.",
+sch_tonya30,日本,1700,17 世纪下半叶,30;70;30,%;%;日,,schaede1989,p. 500,The tonya had to pay the 70% balance due within the next 30 days and received the rice bill,此前一句：问屋先付 30% 作为保证金，取得银切手
+sch_rollover,日本,1750,,10,日,,schaede1989,p. 502,The market was closed for about 10 days between two succeeding trading periods in order to make a rollover of open positions to the following period impossible.,
+sch_3mai,日本,1750,,3;23;300;23,张;匁;石;匁,,schaede1989,p. 503,‘3 mai (bills) for 23’ would have been 300 koku rice for 23 monme per koku.,
+sch_maintenance,日本,1750,,,,,schaede1989,p. 505,those who had suffered losses were asked to pay the difference (maintenance margin) and those who had gained profits received disbursements from the clearing center,
+sch_tenpo,日本,1830,天保年间（1830—1843）,1830;1843,年,,schaede1989,p. 506,"Although the spot and forward prices of rice rose along with the general price level, futures prices did not rise because the ruiyo-system made regular price fixing impossible",
+sch_feat4,日本,1730,,,,,schaede1989,p. 511,contracts were written on a certain brand of standard rice which was designated for each period,1730 年获准的交易制度第 4 条
+sch_feat6,日本,1730,,,,,schaede1989,p. 511,"the central clearing place, which was an institution made up of a number of individual clearinghouses, assumed contract obligations when a default occurred",第 6 条
+sch_diff2,日本,1750,,,,,schaede1989,p. 512,"a margin was not an individual account of a client at his clearinghouse, but was traded along with his specific position",与今天的期货市场的第二个不同
+sch_diff3,日本,1750,,,,,schaede1989,p. 512,in the very long run the system proved to be unfeasible because it allowed market participants to influence the very existence of a closing price,第三个不同
+sch_neither,日本,1700,,,,,schaede1989,p. 510,"neither quantitatively limited nor controllable, but nevertheless is the basic measuring unit of the economy and of economic policy",
+sch_1871,日本,1871,,1871,年,,schaede1989,p. 507,the Dojima commodities exchange opened in 1871,
+sch_outstanding,日本,1688,,,,,schaede1989,p. 491,"of Yodoya, the outstanding trading house at the time",交易在淀屋门前进行
+sch_traffic,日本,1688,,,,,schaede1989,p. 491,the crowd of merchants who would gather there daily disturbed the traffic,
+sch_pricehiking,日本,1728,,,,,schaede1989,p. 495,merchants to be ‘fictitious’ and ‘price-hiking’,主语是 the bakufu regarded the trading practices of the Dojima rice（跨页）
+sch_own_interest,日本,1731,,,,,schaede1989,p. 497,"These houses were not permitted to trade in their own interest, but they could only fulfil orders.",
+sch_daily_loss,日本,1800,,,,,schaede1989,p. 498,"Probably because daily clearing constituted a highly labor-intensive business, the houses suffered a loss in daily clearing",
 sch_first,日本,1730,,,,,schaede1989,p. 487,The first thoroughly orgamzed futures exchange that fulfilled all the technical criteria specified by modern research in finance can be traced back to 18th century Japan.,识别文本把 organized 读作 orgamzed
 sch_frankfurt,德国、英国、美国,1848,,1867;1877;1848,年,,schaede1989,p. 487,"in Frankfurt (1867) and London (1877). To be sure, the Chicago Board of Trade was founded in 1848",
 sch_never_money,日本,1700,,,,,schaede1989,p. 510,"According to these criteria, rice was never money in the strictest sense of the word.",
@@ -139,6 +211,9 @@ tk_1840,日本,1840,,1840;1864,年,,takatsuki2007,p. 7,Table 2 also indicates th
 tk_halts,日本,1840,,,,,takatsuki2007,p. 7,Dojima in this period suffered from trading halts caused by some traders' illegal trades,
 tk_8070,日本,1864,1798—1864 年,80;70,%,,takatsuki2007,p. 9,"the null hypotheses in the spot market can not be rejected in about 80% of all periods, and those in the futures market can not be rejected in about 70% of all",
 tk_model,日本,1798,,,,,takatsuki2007,p. 7,"where the SCt is the spot price in the maturity date of the trading season t, the F O indicates the futures prices in the beginning of the trading season",
+ir_causation,清,1830,,,,,irigoin2013,p. 5,The intriguing question is thus if the causation runs,接着是 indeed from the Mexican mines to China or the other way round（中间夹着脚注号）
+ir_inverted,清,1830,,,,,irigoin2013,p. 5,Lin inverted the relation opium silver and assigned the scarcity of silver to the depletion of its traditional source,
+ir_lin_correlation,清,1830,,,,,irigoin2013,p. 5,she explained that the import of opium reacted to the growing scarcity of silver and gold by documenting the “temporal correlation” of opium imports and silver outflows,
 ir_1000,清,1800,,1000,文/两,,irigoin2013,p. 8,the rate of exchange between the two metals traditionally oscillated around 1000 copper cash per unit of silver,
 ir_not_issued,清,1800,,,,,irigoin2013,p. 8,Although silver enjoyed legal tender it was never a currency issued with the monopolistic authority of the government.,
 ir_tael,清,1800,,,,,irigoin2013,p. 8,standard for the tael which had different weights and fineness,前半句 there was no single 与之间夹着脚注号
@@ -153,6 +228,7 @@ ir_standard,清,1820,,,,,irigoin2013,p. 27,The Chinese demand for silver up to t
 ir_deflation,清,1820,,,,,irigoin2013,p. 27,"The sudden drop in supply of the qualitative good Carolus coin had to cause a deflationary shock, which was aggravated by the falling velocity of circulation, in itself a consequence of hoarding of good coins.",
 ir_copper,清,1830,,,,,irigoin2013,p. 27,This pressure may explain in part the copper inflation of the Daoguang period.,
 ir_premium50,清,1856,,50,%,,irigoin2013,p. 2,In Shanghai the coin was at 50% premium above of the Mexican coin or any other silver coin of equal weight in circulation.,1856 年的报道
+at_independence,清,1820,,,,,atwell2008,p. 575,"caused, at least in part, by the protracted struggle for political independence in Latin America",Atwell 转述林满红
 at_latin,清,1820,,,,,atwell2008,p. 575,"disrupted [Peruvian, Bolivian, and Mexican] silver mining and the global silver supply","Atwell 引 Lin (2006, p. 71)"
 at_not_opium,清,1830,,,,,atwell2008,p. 576,Professor Lin does not subscribe to the old idea that what eventually became an outflow of silver from China during the first half of the nineteenth century was simply the result of the country's increased imports of opium from India and the Middle East.,
 at_demand,清,1830,,,,,atwell2008,p. 576,"a steep decline in the global demand for Chinese products such as raw silk, silk textiles, and tea",
@@ -165,8 +241,8 @@ qsg_qiqi,清,1653,顺治十年,,,,qingshigao,卷一百二十四 志九十九 食
 qsg_kangxi_floor,清,1690,康熙二十三年以后,1000,文/两,一千,qingshigao,卷一百二十四 志九十九 食货五（钱法）,久之，钱贵如故，乃申定钱直禁，银一两易钱毋得不足一千，然钱直终不能平。,
 qsg_kangxi_880,清,1720,康熙季年,880,文/两,八百八十,qingshigao,卷一百二十四 志九十九 食货五（钱法）,季年银一两易钱八百八十至七百七十。,
 qsg_kangxi_770,清,1720,康熙季年,770,文/两,七百七十,qingshigao,卷一百二十四 志九十九 食货五（钱法）,季年银一两易钱八百八十至七百七十。,
-qsg_qianlong_800,清,1748,乾隆十三年以后,800,文/两,八百,qingshigao,卷一百二十四 志九十九 食货五（钱法）,复以京师钱价昂，银一两仅易八百文，诏发工部节慎库钱平价。,
-qsg_qianlong_edict,清,1748,乾隆,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,物之定直以银不以钱，而官民乃皆便钱不便银,乾隆的上谕
+qsg_qianlong_800,清,1748,乾隆十三年以前（在十三年条下以“先是”追述）,800,文/两,八百,qingshigao,卷一百二十四 志九十九 食货五（钱法）,复以京师钱价昂，银一两仅易八百文，诏发工部节慎库钱平价。,
+qsg_qianlong_edict,清,1748,乾隆十三年以前（在十三年条下以“先是”追述）,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,物之定直以银不以钱，而官民乃皆便钱不便银,乾隆的上谕
 qsg_leak,清,1830,道光,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,番船冒禁，岁漏出以千万计，御史黄中模、章沅咸以为言。,
 qsg_yangyin,清,1830,道光,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,至洋银日多，纹银日少而贵。,
 qsg_daoguang17,清,1837,道光十七年,17,年,十七,qingshigao,卷一百二十四 志九十九 食货五（钱法）,十七年，诏沿江沿海督抚、海关监督，饬属严稽偷漏,
@@ -179,19 +255,23 @@ qsg_huang_early,清,1821,道光初年,,,,qingshigao,卷一百二十五 志一百
 qsg_huang_2000,清,1834,道光十四年以前,2000,万两,二千,qingshigao,卷一百二十五 志一百 食货六（征榷）,十四年以前，岁漏二千馀万；,
 qsg_huang_3000,清,1838,近年,3000,万两,三千,qingshigao,卷一百二十五 志一百 食货六（征榷）,近年岁漏三千馀万。,
 qsg_huang_ports,清,1838,,,,,qingshigao,卷一百二十五 志一百 食货六（征榷）,此外各海口合之亦数千万。,
+qsg_daqian_idea,清,1835,道光中叶,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,先是道光中叶，银外泄而贵，朝野皆欲行大钱以救之。,
+qsg_guanpiao,清,1853,咸丰三年,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,额题“户部官票”,以银两计的官票
+qsg_baochao,清,1853,咸丰三年,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,钞额题“大清宝钞”,以制钱计的宝钞
 qsg_shunzhi_chao,清,1651,顺治八年,8,年,八,qingshigao,卷一百二十四 志九十九 食货五（钱法）,钞尝行于顺治八年，岁造十二万八千有奇。十年而罢。,每年造钞十二万八千有余，原文未写单位；“十年而罢”可读作行了十年，也可读作顺治十年停止
 qsg_xianfeng_need,清,1853,咸丰二年至三年,2000,万两,二千,qingshigao,卷一百二十四 志九十九 食货五（钱法）,是时银亏钱匮重，而军需河饷糜帑二千数百万，筹国计者，率以行官票请。,军费与河工用银二千数百万两
 qsg_chao_fail,清,1860,咸丰,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,其后京师以官号七折钱发钞，直益低落，至减发亦穷应付，钞遂不能行矣。,
-zeng_rice,清,1851,道光二十六年以后,3000,文/石,三千,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,东南产米之区。大率石米买钱三千。自古迄今。不甚悬远。,
-zeng_then,清,1851,,3,两,三,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,昔日两银换钱一千。则石米得银三两。,
-zeng_now,清,1851,,2000,文/两,二千,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,今日两银换钱二千。则石米仅得银一两五钱。,
-zeng_dou3,清,1851,,3,斗,三,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,昔日卖米三斗。输一亩之课而有余。,
-zeng_dou6,清,1851,,6,斗,六,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,今日卖米六斗。输一亩之课而不足。,
-zeng_double,清,1851,,,,,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,朝廷自守岁取之常。而小民暗加一倍之赋。,
-zeng_sell,清,1851,,,,,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,持米以售钱。则米价苦贱而民怨。持钱以易银。则银价苦昂而民怨。,
-zeng_jiangsu,清,1836,道光十六年,16,年,十六,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,故自道光十五年以前。江苏尚办全漕。自十六年至今。岁岁报歉。年年蠲缓。,
-zeng2_three,清,1846,道光二十四至二十六年,26,年,二十六,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,惟二十四年吴文镕一疏。二十五年刘良驹一疏。二十六年朱嶟一疏。,这道疏写于道光二十六年以后
-zeng2_1900,清,1851,,1900,文/两,一千九百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,如现在时价换一千九百有奇。部改为一千八百。,曾国藩主张的部定价
+zeng_rice,清,1836,道光十六年以后（原文未写年月）,3000,文/石,三千,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,东南产米之区。大率石米买钱三千。自古迄今。不甚悬远。,
+zeng_then,清,1836,道光十六年以后（原文未写年月）,3,两,三,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,昔日两银换钱一千。则石米得银三两。,
+zeng_now,清,1836,道光十六年以后（原文未写年月）,2000,文/两,二千,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,今日两银换钱二千。则石米仅得银一两五钱。,
+zeng_dou3,清,1836,道光十六年以后（原文未写年月）,3,斗,三,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,昔日卖米三斗。输一亩之课而有余。,
+zeng_dou6,清,1836,道光十六年以后（原文未写年月）,6,斗,六,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,今日卖米六斗。输一亩之课而不足。,
+zeng_double,清,1836,道光十六年以后（原文未写年月）,,,,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,朝廷自守岁取之常。而小民暗加一倍之赋。,
+zeng_sell,清,1836,道光十六年以后（原文未写年月）,,,,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,持米以售钱。则米价苦贱而民怨。持钱以易银。则银价苦昂而民怨。,
+zeng_jiangsu,清,1836,道光十六年以后（原文未写年月）,16,年,十六,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,故自道光十五年以前。江苏尚办全漕。自十六年至今。岁岁报歉。年年蠲缓。,
+zeng_xingbu,清,1836,道光十六年以后（原文未写年月）,,,,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,臣在刑部。见疏防盗犯之稿。日或数十件。,写这道疏时曾国藩在刑部任职
+zeng2_three,清,1846,道光二十六年以后（原文未写年月）,26,年,二十六,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,惟二十四年吴文镕一疏。二十五年刘良驹一疏。二十六年朱嶟一疏。,这道疏写于道光二十六年以后
+zeng2_1900,清,1846,道光二十六年以后（原文未写年月）,1900,文/两,一千九百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,如现在时价换一千九百有奇。部改为一千八百。,曾国藩主张的部定价
 liu_rate,清,1845,道光二十五年,2000,文/两,二千,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（刘良驹疏）,京中纹银每两易制钱几及二千文外。省则每两易制钱二千二三百文不等。,数字文本的断句有误，应为“几及二千文。外省则……”
 liu_cause,清,1845,,,,,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（刘良驹疏）,今之银贵由于钱贱。实由于用银太重用钱太轻。,
 liu_1500,清,1845,,1500,文/两,一千五百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（刘良驹疏）,以制钱一千五百文抵银一两之例,捐输案内的比价
@@ -213,6 +293,7 @@ bao_1885,清,1839,,1885,文,一千八百八十五,huangchaojingshiwenxubian,卷�
 bao_rule,清,1839,,1000,文/两,一千,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（包世臣《银荒小补说》）,定例制钱一千。准库纹一两。,
 bao_500,清,1839,,500,文/石,五百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（包世臣《银荒小补说》）,谷一石。仅值钱五百上下。,收获时
 bao_700,清,1839,,700,文/石,七百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（包世臣《银荒小补说》）,而谷价仍不过七百数十文。是小民完银一两。非粜谷二三石不可。,青黄不接时
+bao_qian,清,1839,,,,,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（包世臣《银荒小补说》）,下邑不通商处。民间完粮皆以钱折。,
 bao_zhenggong,清,1839,,40000000,两,四千万,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（包世臣《银荒小补说》）,查各省正供。年额四千万两。,各省田赋正额
 zhou_67,清,1840,,600;700;1500;1600,文/两,,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（周腾虎《银贵不足害说》）,向者银足之时。一两仅值钱六七百。今者一两。率准钱千五六百。,“千五六百”即一千五六百
 zhou_neutral,清,1840,,,,,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（周腾虎《银贵不足害说》）,夫银多则折价以平钱。银少则昂价以适用。其用一也。银质虽去。银用仍留。何损于中国哉。,
@@ -223,5 +304,6 @@ wei_cause,清,1838,,,,,huangchaojingshiwenxubian_ge,卷七十八（魏源《道�
 lin_36,清,1838,,36,两,三十六,huangchaojingshiwenxubian_ge,卷八十五（林则徐《重禁吸烟以杜弊源片》）,吸鸦片者每日除衣食外至少亦须另费银一钱是每人每年即另费银三十六两,
 lin_pop,清,1838,,400000000,人,,huangchaojingshiwenxubian_ge,卷八十五（林则徐《重禁吸烟以杜弊源片》）,以户部历年所奏各直省民数计之总不止于四万万人,
 lin_onepct,清,1838,,100000000,两,,huangchaojingshiwenxubian_ge,卷八十五（林则徐《重禁吸烟以杜弊源片》）,若一百分之中仅有一分之人吸食鸦片则一年之漏即不止于万万两,
+lin_ample,清,1838,,,,,huangchaojingshiwenxubian_ge,卷八十五（林则徐《重禁吸烟以杜弊源片》）,若一日有银一钱则诸凡宽裕矣,
 lin_huang,清,1838,,,,,huangchaojingshiwenxubian_ge,卷八十五（林则徐《重禁吸烟以杜弊源片》）,鸿胪寺卿黄爵滋原奏所云岁漏银数千万两尚系举其极少之数而言耳,
 lin_poor,清,1838,,,,,huangchaojingshiwenxubian_ge,卷八十五（林则徐《重禁吸烟以杜弊源片》）,若以食贫之人当中熟之岁大约一人有银四五分即可过一日,
