@@ -36,6 +36,8 @@
 | Clark, English data (as above), 1490–1690 | Gregory Clark, UC Davis | https://faculty.econ.ucdavis.edu/faculty/gclark/data.html | decadal wages, cost of living, real wages, population and land rents of England | `clark2015_england_decadal_1490_1690` (fetch: `fetch/clark_england.py --early-modern`) | 13 |
 | Drelichman & Voth (*JEH* 2010; *EEH* 2011; *EJ* 2011) and the 2010 dataset | Mauricio Drelichman, University of British Columbia | https://econ.sites.olt.ubc.ca/files/2013/05/excel_article_mauricio-drelichman-dataset-sustainable-debt.xls ; PDFs and SHA-256 in `snapshots/silver_century_facts.json` | Castile's revenue, Indies remittances, spending, primary surplus and debt, 1566–1596; Tables 2–3 (sustainability); the defaults and settlements; lenders' returns; the syndicate | `dv2010_castile_annual` (fetch: `fetch/dv_castile.py`), `dv2010_philip2`, `silver_century_facts` (rows `dv…`) | 13 |
 | Edo & Melitz (CEPII WP 2019-10) | CEPII | https://www.cepii.fr/PDF_PUB/wp/2019/wp2019-10.pdf | the money vs population debate on the price revolution; Barrett's gold–silver ratios; European silver output | `silver_century_facts` (rows `em…`) | 13 |
+| Álvarez-Nogal & Chamley (*EHR* 2014), abstract | EconPapers (RePEc) | https://econpapers.repec.org/RePEc:hal:journl:halshs-00941859 | the Cortes and the credibility of Castile's long-term debt; why short-term crises arose and how they were settled | `silver_century_facts` (rows `ac2014…`) | 13 |
+| Dell (*Econometrica* 2010), abstract | Econometric Society | https://www.econometricsociety.org/publications/econometrica/2010/11/01/persistent-effects-perus-mining | the colonial mining mita, 1573–1812 | `silver_century_facts` (row `dell2010_mita`) | 13 |
 
 ## Planned
 

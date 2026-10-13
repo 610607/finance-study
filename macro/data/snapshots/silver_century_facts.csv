@@ -162,3 +162,11 @@ em_european_silver,欧洲,1540,,2.5;7;60,吨/年,,em2019,PDF p. 15,"For Europe a
 em_barrett,欧洲,1600,16、17 世纪,11.3;13.9,银/金（重量）,,em2019,PDF p. 15,11.3:1 for gold to silver in the 16th century and 13.9:1 for the 17th century,Barrett (1990) 用的换算比率
 em_mccloskey,英格兰,1971,,,,,em2019,PDF p. 28,"higher population means more demand for money, which should have a deflationary not an inflationary impact",Edo & Melitz 转述 McCloskey (1971)
 em_liquidity,英格兰,2019,,,,,em2019,PDF p. 28,"People in this quandary might well keep up their consumption at the sacrifice of some liquidity, as historians predominantly think and as the English evidence says.",
+br19_common_gold,明,1610,同上,7.8,两银/两金,,br19,vol. 19,"The tae of common gold is worth about four or five maçes per tae, and it is sold in Xapon for seven taes and eight maçes",前一句：普通金在日本卖 7.8，所以下一句的 8.3 是精金在日本的价格
+lebranchu_en_partie,法国,1568,1568 年初版（Le Branchu 重印，fol. d.2.r°）,,,,lebranchu1934,"Response, fol. d.2.r°",C'est doncques abondance d'or & d'argent qui cause en partie la charte des choses.,与 1578 年版 bodin_en_partie 一句相同（拼写不同）
+lebranchu_cherruyt,法国,1934,Le Branchu 的导言,,,,lebranchu1934,introduction,"Jehan Cherruyt, Sgr. de Malestroit",马莱斯特鲁瓦的全名只见于一份 1568 年版上的手写批注
+lebranchu_cherruyt_unknown,法国,1934,Le Branchu 的导言,,,,lebranchu1934,introduction,sont restés sans résultat,Hauser 在国家图书馆手稿部的查找没有结果：生平不详
+dell2010_mita,秘鲁与玻利维亚,1573,1573—1812 年,1573;1812,年,,dell2010,abstract,an extensive forced mining labor system in effect in Peru and Bolivia between 1573 and 1812,米塔制：强迫采矿劳役
+ac2014_cortes,西班牙,1566,腓力二世时期,,,,ac2014,abstract,"The credibility of the debt, mostly in perpetual redeemable annuities, was enhanced by decentralized funding through taxes administered by cities making up the Realm in the Cortes.",长期债券的信用来自议会各城市征收的税
+ac2014_crises,西班牙,1566,腓力二世时期,,,,ac2014,abstract,Financial crises in the short-term debt occurred when the service of the long-term debt reached the revenues of its servicing taxes.,短期借款危机的起因
+ac2014_liquidity,西班牙,1566,腓力二世时期,,,,ac2014,abstract,They were not caused by liquidity crises and were resolved after protracted negotiations in the Cortes by tax increases and interest rate reductions.,危机的解决：加税与降息

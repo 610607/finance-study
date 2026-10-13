@@ -290,6 +290,14 @@ def manila_flows(F, Mn):
     per_year = F["quan1969_half"][0] / 250
     quoted("  (3) 400 million x 1/2 / 250 (10,000 pesos)", per_year / 1e4, 80, tol=1e-9)
     quoted("  (3) in taels (10,000)", per_year * TAEL_PER_PESO / 1e4, 57.6, tol=1e-9)
+    # De Comyn's total gives 1.6 million pesos a year at Manila, below Quan's usual 2-3 million
+    quoted("  (3) De Comyn: 400 million / 250 (10,000 pesos a year)", F["quan1969_decomyn"][0] / 250 / 1e4, 160,
+           tol=1e-9)
+    assert F["quan1969_decomyn"][0] / 250 < 2_000_000
+    low_ratio = per_year * TAEL_PER_PESO / F["quan1968_yinke_wuzong"][0]
+    print(f"    flows / Wuzong silver tax: {low_ratio:.1f} (De Comyn) to {taels / F['quan1968_yinke_wuzong'][0]:.1f}")
+    assert low_ratio > 10
+    print("ok  either way, more than ten times Wuzong's silver tax ('十几倍以上')")
 
 
 def china(F):
@@ -306,15 +314,15 @@ def china(F):
     quoted("Barrett: 16th century", eu16, 11.3, tol=0)
     quoted("Barrett: 17th century", eu17, 13.9, tol=0)
     quoted("tael = ducat of ten reals; a mace = one real", F["br19_tae"][0] / F["br19_tae"][1], 10, tol=0)
-    # ex:silver-arbitrage
-    quoted("(1) Japan/Canton common gold (%)", 100 * arbitrage_gross(japan, common), 18.6, tol=0.05)
-    quoted("(1) Japan/Canton fine gold (%)", 100 * arbitrage_gross(japan, fine), 25.8, tol=0.05)
+    # ex:silver-arbitrage: the memorial's 6.6 and 7 are read as the two ends of one range for Canton
+    quoted("(1) Japan/Canton at the high end 7 (%)", 100 * arbitrage_gross(japan, common), 18.6, tol=0.05)
+    quoted("(1) Japan/Canton at the low end 6.6 (%)", 100 * arbitrage_gross(japan, fine), 25.8, tol=0.05)
     quoted("(2) Europe 16th c. / 6.6 (%)", 100 * arbitrage_gross(eu16, fine), 71.2, tol=0.05)
     quoted("(2) Europe 16th c. / 7 (%)", 100 * arbitrage_gross(eu16, common), 61.4, tol=0.05)
     quoted("(2) Europe 17th c. / 7 (%)", 100 * arbitrage_gross(eu17, common), 98.6, tol=0.05)
     quoted("(3) teaching cost c (%)", 100 * ARBITRAGE_COST, 20, tol=0)
     assert arbitrage_gross(japan, fine) > ARBITRAGE_COST > arbitrage_gross(japan, common)
-    print("ok  (3) fine gold clears c = 20%, common gold does not")
+    print("ok  (3) at 6.6 the trade clears c = 20%, at 7 it does not: the gap is about the size of c")
     quoted("(4) silk 140/80 - 1 (%)", 100 * (silk[1] / silk[0] - 1), 75, tol=1e-9)
     quoted("(4) silk 150/80 - 1 (%)", 100 * (silk[2] / silk[0] - 1), 87.5, tol=1e-9)
     assert arbitrage_gross(eu16, common) > arbitrage_gross(japan, fine)
@@ -540,6 +548,10 @@ def castile_fiscal(F, C, T):
     print("ok  after the 1575 default the ratio falls back to 4-5")
     quoted("asientos 1565-1596: debt rose 40.9", F["dv_asiento_total"][0], 40.9, tol=0)
     quoted("asientos contracted 92.1", F["dv_asiento_total"][1], 92.1, tol=0)
+    rise_share = F["dv_asiento_total"][0] / F["dv_asiento_total"][1]
+    print(f"    debt increase / asientos contracted: {rise_share:.3f}")
+    assert rise_share < 0.5
+    print("ok  the rise in debt is less than half of the asientos ('还不到借款总额的一半')")
     # case box
     quoted("1574 military (million ducats)", C.loc[1574, "military"], 7.06, tol=0.005)
     quoted("1574 revenue", C.loc[1574, "revenue"], 5.65, tol=0.005)
@@ -578,6 +590,15 @@ def castile_fiscal(F, C, T):
     quoted("(1) ps*", ps_star(d0, row["r"] / 100, row["g"] / 100), 0.433, tol=0.0005)
     quoted("(1) actual", row["PS"], 0.454, tol=0)
     quoted("(1) debt/revenue 1584", dr[1584], 4.38, tol=0.005)
+    jump = C.loc[1575, "revenue"] / C.loc[1574, "revenue"] - 1
+    print(f"    revenue 1575 / 1574 - 1: {jump:.3f}")
+    assert 0.30 <= jump < 0.40
+    print("ok  (1) and case box: revenue in 1575 a third or more above 1574 ('三成多')")
+    # a surplus 0.02 above ps* alone would have lowered the ratio only a little in ten years
+    alone = debt_path(d0, row["PS"], row["r"] / 100, row["g"] / 100, 10)[-1]
+    print(f"    debt/revenue after ten years at the period-average r, g and PS: {alone:.2f} (actual 1584: {dr[1584]:.2f})")
+    assert alone > 6.5 > dr[1584]
+    print("ok  (1) the fall to 4.38 is not explained by the average surplus alone")
     whole = T.loc["1565-96"]
     rg = (whole["r"] - whole["g"]) / 100
     quoted("(2) r - g", rg, 0.0603, tol=1e-9)

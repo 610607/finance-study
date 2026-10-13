@@ -48,3 +48,4 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 13 (legacy) | 15 `ch:finrevolution` | How the Dutch Republic and England borrowed far more cheaply than Philip II | open |
 | 13 (legacy) | 47 `ch:oil` | Governments that depend on volatile resource revenue (oil) | open |
 | 13 (closing sentence) | 14 `ch:africa` | Whether a large empire (the Inca) could do without money: labour tribute and storehouses | open |
+| 13 (§13.1, Potosí) | 14 `ch:africa` | The colonial mita (1573–1812) that mined Potosí's silver: its Inca origin, its human cost and its long-run effects (Dell 2010) | open |

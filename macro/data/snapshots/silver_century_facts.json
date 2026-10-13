@@ -1,6 +1,6 @@
 {
   "title": "Quotations on American silver, Manila, Ming silver taxes, the price revolution and Philip II's debts (Chapter 13)",
-  "source": "《明史》（卷七十八、二百二十、三百二十三、三百二十五）与《皇明经世文编》（卷四百三十三、四百六十）；全汉昇 (1968, 1969)；Blair & Robertson, The Philippine Islands, vols. 10, 14, 19, 23, 24, 27；J. Bodin, Response aux paradoxes de Malestroit (1568; revised ed. 1578)；E. J. Hamilton (1929)；Drelichman & Voth (2010)；Edo & Melitz (2019)",
+  "source": "《明史》（卷七十八、二百二十、三百二十三、三百二十五）与《皇明经世文编》（卷四百三十三、四百六十）；全汉昇 (1968, 1969)；Blair & Robertson, The Philippine Islands, vols. 10, 14, 19, 23, 24, 27；J. Bodin, Response aux paradoxes de Malestroit (1568; revised ed. 1578)；E. J. Hamilton (1929)；Drelichman & Voth (2010)；Edo & Melitz (2019)；M. Dell (2010)；C. Álvarez-Nogal & C. Chamley (2014)",
   "url": "see sources",
   "series": "one row per quoted fact: id, dynasty (here: country or region), year, year_note, value (several values separated by ';'), unit, numeral (for corpus rows: the classical numeral that is read as value), file (a corpus key or a key of sources below), juan (卷 of a Chinese text, or page), quote (verbatim), note",
   "retrieved": "2026-10-13",
@@ -114,6 +114,20 @@
       "format": "pdf",
       "sha256": "b35143e3c332010811be754c3b793bcf86e229380f88d79a62fa17444f2255c5",
       "version": "accepted manuscript of M. Drelichman and H.-J. Voth, \"Lending to the Borrower from Hell: Debt and Default in the Age of Philip II\", Economic Journal 121(557), 2011, 1205-1227, doi:10.1111/j.1468-0297.2011.02442.x (author's page)",
+      "retrieved": "2026-10-13"
+    },
+    "dell2010": {
+      "url": "https://www.econometricsociety.org/publications/econometrica/2010/11/01/persistent-effects-perus-mining",
+      "format": "html",
+      "sha256": "1426501cbf74fdbaee37c751848258aa1a2b9bebd2ed145737bc6c1117b704c3",
+      "version": "M. Dell, 'The Persistent Effects of Peru's Mining Mita', Econometrica 78(6): 1863-1903 (2010); abstract on the Econometric Society's page (the article itself is not open access)",
+      "retrieved": "2026-10-13"
+    },
+    "ac2014": {
+      "url": "https://econpapers.repec.org/RePEc:hal:journl:halshs-00941859",
+      "format": "html",
+      "sha256": "200630e6ee98e3c3a42f9c3c505cd823d50c2f210c877be659d5432101249f97",
+      "version": "C. Álvarez-Nogal and C. Chamley, 'Debt policy under constraints: Philip II, the Cortes, and Genoese bankers', Economic History Review 67(1): 192-213 (2014); abstract on EconPapers (RePEc); the full text was not reachable from this session",
       "retrieved": "2026-10-13"
     }
   }
