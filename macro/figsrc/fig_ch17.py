@@ -68,7 +68,7 @@ def toku_dojima():
          FISCAL)
     _box(ax, x1, yt, w1, bh, T("问屋（tonya）", "wholesalers (tonya)"), T("拍卖的买主", "buyers at the auction"),
          INSTIT)
-    xl, xr = x1 + 0.55, x1 + w1 - 0.55
+    xl, xr = x1 + 1.1, x1 + w1 - 0.75
     arrow(ax, (xl, yt + bh), (xl, yw), color=INK, lw=1.1, ms=9)
     label(ax, xl - 0.1, (yt + bh + yw) / 2,
           T(f"先付 {pay:.0f}%\n{days:.0f} 天内\n付清 {bal:.0f}%", f"{pay:.0f}% at once,\n{bal:.0f}% within\n{days:.0f} days"),
@@ -103,7 +103,7 @@ def toku_dojima():
     _box(ax, x3, yw, w3, bh, T("批发商", "merchants"), T("需要实物米的人", "who want the rice"), INSTIT)
     _box(ax, x3, yt, w3, bh, T("各藩仓库", "domain warehouses"), T("凭票交米", "deliver against bills"), FISCAL)
     arrow(ax, (x2 + w2, ym + 1.25), (x3, yw + bh / 2), color=INK, lw=1.1, ms=9)
-    label(ax, (x2 + w2 + x3) / 2, ym + 1.55, T("买下\n米票", "buy\nbills"), size=7.6)
+    label(ax, (x2 + w2 + x3) / 2, ym + 1.68, T("买下\n米票", "buy\nbills"), size=7.6)
     xd = x3 + w3 / 2
     arrow(ax, (xd, yw), (xd, yt + bh), color=INK, lw=1.1, ms=9)
     label(ax, xd + 0.12, (yt + bh + yw) / 2, T("凭米票提米", "rice against\nthe bill"), size=7.6, ha="left")
@@ -149,7 +149,7 @@ def toku_rice():
     g, k = E.loc["genroku"], E.loc["genbun"]
     halo(a1.annotate(T(f"1696—1710：预测 {g['pred']:.3f}，实际 {g['actual']:.3f}",
                        f"1696–1710: predicted {g['pred']:.3f}, actual {g['actual']:.3f}"),
-                     (1703, g["pred"]), xytext=(1696, 2.35), fontsize=7.6, color=INK, ha="center", va="center",
+                     (1701, g["pred"]), xytext=(1696, 2.35), fontsize=7.6, color=INK, ha="center", va="center",
                      arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.6, shrinkB=2), zorder=6))
     halo(a1.annotate(T(f"1737—1750：预测 {k['pred']:.3f}，实际 {k['actual']:.3f}",
                        f"1737–1750: predicted {k['pred']:.3f}, actual {k['actual']:.3f}"),

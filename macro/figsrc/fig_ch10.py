@@ -41,14 +41,14 @@ def bill_flows():
         label(ax, 0.42, y + bh / 2, name, size=9.0, weight="bold", color=MUTED, rotation=90)
     # time columns
     cols = [(2.45, T("1442 年 9 月 26 日", "26 Sep 1442")), (5.75, T("1442 年 12 月 31 日", "31 Dec 1442")),
-            (8.85, T("约 1443 年 3 月 31 日", "c. 31 Mar 1443"))]
+            (8.75, T("约 1443 年 3 月 31 日", "c. 31 Mar 1443"))]
     for x, txt in cols:
         label(ax, x, H - 0.17, txt, size=7.8, color=MUTED)
 
     def party(x, y, w, title, sub, color):
         rbox(ax, x - w / 2, y, w, 0.92, fc=tint(color, 0.12), ec=tint(color, 0.6), lw=0.9, r=0.1, z=3)
         label(ax, x, y + 0.62, title, size=8.2, weight="bold", color=color, z=4)
-        label(ax, x, y + 0.27, sub, size=7.4, color=INK, z=4)
+        label(ax, x, y + 0.27, sub, size=7.6, color=INK, z=4)
 
     # Venice, September: the Medici company pays 150 ducats to the Venier brothers
     party(1.6, yv + 0.27, 1.9, T("美第奇公司", "Medici company"),
@@ -56,20 +56,20 @@ def bill_flows():
     party(3.95, yv + 0.27, 1.75, T("韦尼尔兄弟", "Venier brothers"), T("收下，开出汇票", "draw the bill"), EXTERNAL)
     arrow(ax, (2.6, yv + 0.73), (3.03, yv + 0.73), color=MONEY, lw=1.4)
     # London, December: Bardi company is to pay; the bill is protested
-    party(5.75, yl + 0.27, 2.55, T("巴尔迪公司（付款人）", "Bardi company (drawee)"),
+    party(5.75, yl + 0.27, 2.75, T("巴尔迪公司（付款人）", "Bardi company (drawee)"),
           T("应付 " + f"{pence:.0f} 便士" + "，拒付", f"owes {pence:.0f}d, does not pay"), PRICE)
     # bill travels to London
     arrow(ax, (4.1, yv + 0.25), (5.3, yl + 1.22), color=INK, lw=1.2, ls=(0, (4, 2)))
     label(ax, 2.85, 2.62, T(f"汇票：每杜卡特 {e_ven:g} 便士\n= {p} 镑 {s} 先令 {d:.0f} 便士\n惯例期 3 个月",
                             f"bill at {e_ven:g}d per ducat\n= £{p} {s}s {d:.0f}d\nusance 3 months"),
-          size=7.4, ha="center", color=INK)
+          size=7.6, ha="center", color=INK)
     # rechange bill back to Venice at the London rate
-    arrow(ax, (6.3, yl + 1.22), (8.4, yv + 0.25), color=INK, lw=1.2, ls=(0, (4, 2)))
-    label(ax, 8.85, 2.62, T(f"拒付证书与回汇票：\n按伦敦汇率 {e_lon:g} 便士\n再过 3 个月",
+    arrow(ax, (6.3, yl + 1.22), (8.3, yv + 0.25), color=INK, lw=1.2, ls=(0, (4, 2)))
+    label(ax, 8.75, 2.62, T(f"拒付证书与回汇票：\n按伦敦汇率 {e_lon:g} 便士\n再过 3 个月",
                            f"protest and rechange at\nthe London rate {e_lon:g}d\nanother 3 months"),
-          size=7.4, ha="center", color=INK)
+          size=7.6, ha="center", color=INK)
     # Venice, March: the Venier brothers owe the Medici
-    party(8.85, yv + 0.27, 2.6, T("韦尼尔兄弟", "Venier brothers"),
+    party(8.75, yv + 0.27, 2.85, T("韦尼尔兄弟", "Venier brothers"),
           T(f"欠美第奇 {back:.2f} 杜卡特", f"owe the Medici {back:.2f} ducats"), EXTERNAL)
     pill(ax, W / 2, 0.33, T(f"六个月：{ducats:.0f} → {back:.2f} 杜卡特，增加 {100 * sp:.1f}%；"
                             f"年率 {100 * simple:.1f}%（单利），{100 * comp:.1f}%（复利）",
@@ -92,19 +92,19 @@ def fx_implied_rates():
     x = np.linspace(0, 200, 50)
     for r in (0.10, 0.16):
         a1.plot(x, 100 * r * x / 365, color=MUTED, lw=0.8, ls=(0, (1.5, 2)), zorder=1)
-    a1.text(56, 100 * 0.16 * 56 / 365 + 0.2, T("年率 16%", "16% a year"), fontsize=7.4, color=MUTED, ha="right", va="bottom")
-    a1.text(203, 100 * 0.10 * 203 / 365 - 1.3, T("年率 10%", "10% a year"), fontsize=7.4, color=MUTED, ha="right", va="top")
+    a1.text(56, 100 * 0.16 * 56 / 365 + 0.2, T("年率 16%", "16% a year"), fontsize=7.6, color=MUTED, ha="right", va="bottom")
+    a1.text(203, 100 * 0.10 * 203 / 365 - 1.3, T("年率 10%", "10% a year"), fontsize=7.6, color=MUTED, ha="right", va="top")
     a1.plot(x, slope * x / 365, color=AMBER, lw=1.4, ls=(0, (4, 2)), zorder=2)
     a1.text(118, slope * 118 / 365 - 0.95, T(f"过原点的拟合线\n斜率 = 年率 {slope:.0f}%", f"line through 0:\n{slope:.0f}% a year"),
-            fontsize=7.4, color=AMBER, ha="left", va="top", linespacing=1.25)
+            fontsize=7.6, color=AMBER, ha="left", va="top", linespacing=1.25)
     a1.scatter(d.term_days, d.spread_pct, s=14, color=MONEY, zorder=4, lw=0)
     a1.scatter([182.5], [sp1442], s=34, marker="D", color=PRICE, zorder=5, lw=0)
-    a1.annotate(T("1442 年的汇票", "the 1442 bill"), xy=(182.5, sp1442), xytext=(150, 8.75), fontsize=7.4,
+    a1.annotate(T("1442 年的汇票", "the 1442 bill"), xy=(182.5, sp1442), xytext=(150, 8.75), fontsize=7.6,
                 color=PRICE, ha="right", va="center", arrowprops=dict(arrowstyle="-", color=PRICE, lw=0.6))
     for a, b, xt, yt in [("Florence", "Venice", 40, 0.3), ("Genoa", "London", 150, 7.8)]:
         r = d[(d.city_from == a) & (d.city_to == b)].iloc[0]
         txt = T({"Florence": "佛罗伦萨→威尼斯", "Genoa": "热那亚→伦敦"}[a], f"{a}→{b}")
-        a1.annotate(txt, xy=(r.term_days, r.spread_pct), xytext=(xt, yt), fontsize=7.4, color=MONEY,
+        a1.annotate(txt, xy=(r.term_days, r.spread_pct), xytext=(xt, yt), fontsize=7.6, color=MONEY,
                     ha="left" if a == "Florence" else "right", va="center",
                     arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
     a1.set_xlim(0, 205)
@@ -118,9 +118,9 @@ def fx_implied_rates():
     vf = d[(d.city_from == "Venice") & (d.city_to == "Florence")].iloc[0]
     lg = d[(d.city_from == "London") & (d.city_to == "Genoa")].iloc[0]
     a2.annotate(T("威尼斯→佛罗伦萨", "Venice→Florence"), xy=(vf.term_days, vf.negative_return_pct),
-                xytext=(22, 16.0), fontsize=7.4, color=MONEY, arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
+                xytext=(22, 16.0), fontsize=7.6, color=MONEY, arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
     a2.annotate(T("伦敦→热那亚", "London→Genoa"), xy=(lg.term_days, lg.negative_return_pct),
-                xytext=(203, 2.7), ha="right", va="center", fontsize=7.4, color=MONEY, arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
+                xytext=(203, 2.7), ha="right", va="center", fontsize=7.6, color=MONEY, arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
     a2.set_xlim(0, 205)
     a2.set_ylim(0, 22)
     a2.set_xlabel(T("总期限（天）", "round-trip term (days)"))
@@ -155,7 +155,7 @@ def commenda_payoffs():
     a1.text(640, 300 + s_inv * 340 + 18, T("合伙", "commenda"), fontsize=7.8, color=MONEY, ha="right", va="bottom")
     a1.text(690, repay + 15, T("借款（20%）", "loan (20%)"), fontsize=7.8, color=AMBER, ha="right", va="bottom")
     a1.axvline(v_star, color=MUTED, lw=0.6, ls=(0, (1, 2)))
-    a1.text(v_star + 8, 60, T(f"{v_star:.0f}：两者相等", f"{v_star:.0f}: equal"), fontsize=7.4, color=MUTED, ha="left")
+    a1.text(v_star + 8, 60, T(f"{v_star:.0f}：两者相等", f"{v_star:.0f}: equal"), fontsize=7.6, color=MUTED, ha="left")
     a1.set_ylim(0, 600)
     a1.set_ylabel(T("收回（镑）", "received (pounds)"))
     a1.set_title(T("(a) 出资人：合伙时亏损由他承担", "(a) investor: bears the loss in a commenda"), fontsize=8.8,
@@ -166,7 +166,7 @@ def commenda_payoffs():
     a2.plot(V, agent_l, color=AMBER, lw=1.8, ls=(0, (4, 2)))
     a2.text(690, (1 - s_inv) * 390 + 14, T("合伙", "commenda"), fontsize=7.8, color=MONEY, ha="right", va="bottom")
     a2.text(560, 560 - repay + 30, T("借款", "loan"), fontsize=7.8, color=AMBER, ha="right", va="bottom")
-    a2.text(175, -350, T("借款：亏多少，\n行商赔多少", "loan: he bears\nthe whole loss"), fontsize=7.4,
+    a2.text(K + 25, -350, T("借款：亏多少，\n行商赔多少", "loan: the traveller\nbears every loss"), fontsize=7.6,
             color=AMBER, ha="left", va="bottom", linespacing=1.25)
     a2.set_ylim(-380, 360)
     a2.set_ylabel(T("得到（镑）", "received (pounds)"))
@@ -177,5 +177,5 @@ def commenda_payoffs():
         a.set_xlim(0, 700)
         a.set_xlabel(T("运回威尼斯的货值 V（镑）", "value brought back, V (pounds)"))
         a.axvline(K, color=MUTED, lw=0.6, ls=(0, (1, 2)))
-    a2.text(K + 8, 300, T("本金 300", "capital 300"), fontsize=7.4, color=MUTED, ha="left")
+    a2.text(K + 8, 300, T("本金 300", "capital 300"), fontsize=7.6, color=MUTED, ha="left")
     return fig

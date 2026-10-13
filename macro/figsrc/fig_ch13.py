@@ -51,13 +51,13 @@ def silver_flows():
     a1.bar(mid[~early], 100 * H["share"][~early], width=width[~early], color=MONEY, lw=0, zorder=2)
     before = 100 * H.loc[early, "share"].sum()
     peak = H.loc[H["share"].idxmax()]
-    a1.text(1505, 3.2, T(f"1550 年以前\n合计 {before:.1f}%", f"before 1550\n{before:.1f}% in all"), fontsize=7.4,
+    a1.text(1501, 3.2, T(f"1550 年以前\n合计 {before:.1f}%", f"before 1550\n{before:.1f}% in all"), fontsize=7.6,
             color=tint(MONEY, 0.6), ha="left", va="bottom", linespacing=1.25)
     a1.text(peak["first"] - 1.5, 100 * peak["share"] + 0.3,
             T(f"1591—1600：{100 * peak['share']:.1f}%", f"1591–1600: {100 * peak['share']:.1f}%"),
-            fontsize=7.4, color=MONEY, ha="center", va="bottom")
+            fontsize=7.6, color=MONEY, ha="center", va="bottom")
     a1.axvline(1545, color=MUTED, lw=0.7, ls=(0, (1, 2)))
-    a1.text(1546, 13.2, T("1545\n波托西", "1545\nPotosí"), fontsize=7.2, color=MUTED, ha="left", va="top",
+    a1.text(1546, 13.2, T("1545\n波托西", "1545\nPotosí"), fontsize=7.6, color=MUTED, ha="left", va="top",
             linespacing=1.2)
     a1.set_xlim(1500, 1663)
     a1.set_ylim(0, 17.5)
@@ -67,16 +67,16 @@ def silver_flows():
 
     a2.plot([1593, 1700], [cap / 1e6] * 2, color=INSTIT, lw=1.2, ls=(0, (4, 2)))
     a2.text(1699, cap / 1e6 + 0.12, T("1593、1595 年敕令的上限 50 万", "legal cap of 1593/95: 0.5 m"),
-            fontsize=7.2, color=INSTIT, ha="right", va="bottom")
+            fontsize=7.6, color=INSTIT, ha="right", va="bottom")
     for _, r in M.iterrows():
         lo, hi = r["low_pesos"] / 1e6, r["high_pesos"] / 1e6
         if hi > lo:
             a2.plot([r["year"]] * 2, [lo, hi], color=MONEY, lw=1.4)
         filled = r["plus"] == 0
         a2.plot([r["year"]], [lo], "o", ms=5.2, color=MONEY, mfc=MONEY if filled else "white", mew=1.3)
-    a2.annotate(T("“250 万以上”", "“over 2.5 m”"), xy=(1604, 2.5), xytext=(1609, 1.55), fontsize=7.2, color=MONEY,
+    a2.annotate(T("“250 万以上”", "“over 2.5 m”"), xy=(1604, 2.5), xytext=(1609, 1.55), fontsize=7.6, color=MONEY,
                 ha="left", va="center", arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
-    a2.text(1601.8, 1.0, T("1598 年大主教的信", "1598 letter of the archbishop"), fontsize=7.0, color=MONEY,
+    a2.text(1601.8, 1.0, T("1598 年大主教的信", "1598 letter of the archbishop"), fontsize=7.6, color=MONEY,
             ha="left", va="center")
     a2.set_xlim(1590, 1705)
     a2.set_ylim(0, 4.0)
@@ -123,7 +123,7 @@ def gold_silver_ratio():
     ax.set_xlim(0, 15.5)
     ax.set_ylim(-0.6, len(rows) - 0.4)
     ax.set_xlabel(T("一份黄金换多少份白银（按重量）", "units of silver per unit of gold, by weight"))
-    ax.text(15.3, -0.05, T("比价越低，\n白银越贵", "the lower the ratio,\nthe dearer silver"), fontsize=7.4,
+    ax.text(15.3, -0.05, T("比价越低，\n白银越贵", "the lower the ratio,\nthe dearer silver"), fontsize=7.6,
             color=INK, ha="right", va="center", linespacing=1.25)
     clean_axes(ax)
     ax.grid(True, axis="x", color=LIGHT, lw=0.6, zorder=0)
@@ -151,7 +151,7 @@ def price_revolution():
     a1.text(1640, 1480, T("铸币存量", "coin"), fontsize=7.6, color=MONEY, ha="right", va="bottom")
     a1.text(1690, 520, T("物价（英镑）", "prices (£)"), fontsize=7.6, color=PRICE, ha="right", va="bottom")
     a1.text(1690, 250, T("物价（白银）", "prices (silver)"), fontsize=7.6, color=AMBER, ha="right", va="top")
-    a1.text(1550, 70, T("大贬值", "Great\nDebasement"), fontsize=7.0, color=INSTIT, ha="center", va="bottom",
+    a1.text(1550, 70, T("大贬值", "Great Debasement"), fontsize=7.6, color=INSTIT, ha="center", va="bottom",
             linespacing=1.15)
     a1.set_yscale("log")
     a1.set_ylim(60, 2200)
@@ -170,7 +170,7 @@ def price_revolution():
     for city, (col, lw, ls, name) in style.items():
         a2.plot(xa, A[city], color=col, lw=lw, ls=ls)
         if city in ends:
-            a2.text(1697, ends[city], name, fontsize=7.4, color=col, ha="left", va="center")
+            a2.text(1697, ends[city], name, fontsize=7.6, color=col, ha="left", va="center")
     a2.text(1645, 2.3, style["valencia"][3], fontsize=7.6, color=PRICE, ha="center", va="bottom")
     a2.set_yscale("log")
     a2.set_ylim(0.3, 2.6)
@@ -206,8 +206,8 @@ def philip_debt():
     a1.plot(years, D["indies"], "-s", color=AMBER, lw=1.5, ms=2.8, dashes=(4, 2))
     a1.text(1567, 6.6, T("全部收入", "revenue"), fontsize=7.6, color=FISCAL, ha="left", va="bottom")
     a1.text(1567, 2.2, T("白银收入", "silver"), fontsize=7.6, color=AMBER, ha="left", va="bottom")
-    a1.text(1575.4, 16.8, T("1575 停付", "1575 default"), fontsize=7.2, color=PRICE, ha="left", va="top")
-    a1.text(1595.6, 16.8, T("1596 停付", "1596 default"), fontsize=7.2, color=PRICE, ha="right", va="top")
+    a1.text(1575.4, 16.8, T("1575 停付", "1575 default"), fontsize=7.6, color=PRICE, ha="left", va="top")
+    a1.text(1595.6, 16.8, T("1596 停付", "1596 default"), fontsize=7.6, color=PRICE, ha="right", va="top")
     a1.set_ylim(0, 17)
     a1.set_ylabel(T("百万杜卡特", "million ducats"))
     _title(a1, T("(a) 白银收入的低谷之后是停付", "(a) silver dips before the defaults"))
@@ -221,7 +221,7 @@ def philip_debt():
             linespacing=1.15)
     for y in (1574, 1594):
         v = D.loc[y, "debt_ratio"]
-        a2.annotate(f"{v:.1f}", xy=(y, v), xytext=(y - 2.2, v + 0.35), fontsize=7.4, color=FISCAL, ha="center",
+        a2.annotate(f"{v:.1f}", xy=(y, v), xytext=(y - 2.2, v + 0.35), fontsize=7.6, color=FISCAL, ha="center",
                     arrowprops=dict(arrowstyle="-", color=FISCAL, lw=0.6))
     a2.set_ylim(2, 9.3)
     a2.set_ylabel(T("收入的倍数", "times revenue"))

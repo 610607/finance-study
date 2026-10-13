@@ -48,7 +48,7 @@ def malthus_dynamics():
 
     g = np.linspace(0, 1.35, 200)
     a1.plot(g, g, color=MUTED, lw=0.8, ls=(0, (1.5, 2)))
-    a1.text(1.30, 1.25, "45°", fontsize=7.6, color=MUTED, ha="right", va="bottom")
+    a1.text(1.20, 1.27, "45°", fontsize=7.6, color=MUTED, ha="right", va="center")
     a1.plot(g, C.labour_map(g, a), color=OUTPUT, lw=2.0)
     a1.text(0.05, 1.30, T("下一代的人口\n$L_{t+1}=\\varphi(L_t)$", "next generation\n$L_{t+1}=\\varphi(L_t)$"),
             fontsize=7.6, color=OUTPUT, ha="left", va="top", linespacing=1.3)
@@ -76,13 +76,13 @@ def malthus_dynamics():
     a2.axhline(1, color=MUTED, lw=0.6, ls=(0, (1, 2)))
     a2.plot(gen, 100 * yy, "-o", color=OUTPUT, lw=2.0, ms=5)
     a2.plot(gen, 100 * ll, "-s", color=AMBER, lw=1.8, ms=4.5, dashes=(4, 2))
-    a2.text(-0.2, 100 * x[0], T(f"人均收入\n+{100 * (x[0] - 1):.0f}%", f"income per\nperson +{100 * (x[0] - 1):.0f}%"),
+    a2.text(-0.6, 128, T(f"人均收入\n+{100 * (x[0] - 1):.0f}%", f"income\nper head\n+{100 * (x[0] - 1):.0f}%"),
             fontsize=7.8, color=OUTPUT, ha="right", va="center", linespacing=1.25)
     a2.text(1.25, 100 * ell[1] - 3, T("人口", "population"), fontsize=7.8, color=AMBER, ha="left", va="top")
     hl = C.half_life(a)
     a2.text(T_ + 0.3, 138, T(f"$\\alpha={a:.3f}$：每过一代，\n偏离只剩上一代的 $(1-\\alpha)$ 次方；\n约 {hl:.1f} 代后收入的增幅减半",
                             f"$\\alpha={a:.3f}$: each generation\nthe gap shrinks to its\n$(1-\\alpha)$ power; half gone\nin about {hl:.1f} generations"),
-            fontsize=7.4, color=INK, ha="right", va="top", linespacing=1.3)
+            fontsize=7.6, color=INK, ha="right", va="top", linespacing=1.3)
     a2.set_xlim(-2.4, T_ + 0.4)
     a2.set_ylim(45, 140)
     a2.set_xticks(range(-2, T_ + 1))
@@ -113,10 +113,10 @@ def plague_wages():
 
     a1.plot(B.index, B.values, "-", color=OUTPUT, lw=2.0)
     a1.plot(dec, d["pop_england_m"], "s", color=AMBER, ms=3.6, ls=(0, (4, 2)), lw=1.2)
-    a1.text(1395, 3.25, "Broadberry\n" + T("等", "et al."), fontsize=7.4, color=OUTPUT, ha="left", va="bottom",
+    a1.text(1395, 3.25, "Broadberry\n" + T("等", "et al."), fontsize=7.6, color=OUTPUT, ha="left", va="bottom",
             linespacing=1.2)
-    a1.text(1430, 2.62, "Clark", fontsize=7.4, color=AMBER, ha="left", va="bottom")
-    a1.text(1352, 5.55, T("1348—1349", "1348–49"), fontsize=7.2, color=PRICE, ha="left")
+    a1.text(1430, 2.62, "Clark", fontsize=7.6, color=AMBER, ha="left", va="bottom")
+    a1.text(1352, 5.55, T("1348—1349", "1348–49"), fontsize=7.6, color=PRICE, ha="left")
     a1.set_ylim(1.5, 6.0)
     a1.set_ylabel(T("百万人", "millions"))
     _title(a1, T("(a) 英格兰人口", "(a) population of England"))
@@ -125,10 +125,10 @@ def plague_wages():
     a2.plot(dec, blab, "-o", color=OUTPUT, lw=2.0, ms=3.6)
     a2.plot(dec, farm, "-", color=tint(OUTPUT, 0.45), lw=1.3)
     a2.plot(dec, w_m, color=AMBER, lw=1.6, dashes=(4, 2))
-    a2.text(1395, 2.45, T("农工", "farm"), fontsize=7.4, color=tint(OUTPUT, 0.45), ha="right", va="bottom")
-    a2.text(1500, 1.75, T("建筑小工", "building\nlabourer"), fontsize=7.4, color=OUTPUT, ha="right", va="top",
+    a2.text(1395, 2.45, T("农工", "farm"), fontsize=7.6, color=tint(OUTPUT, 0.45), ha="right", va="bottom")
+    a2.text(1500, 1.75, T("建筑小工", "building\nlabourer"), fontsize=7.6, color=OUTPUT, ha="right", va="top",
             linespacing=1.15)
-    a2.text(1500, 1.27, T("模型", "model"), fontsize=7.4, color=AMBER, ha="right", va="top")
+    a2.text(1500, 1.27, T("模型", "model"), fontsize=7.6, color=AMBER, ha="right", va="top")
     a2.set_ylim(0.6, 2.8)
     a2.set_ylabel(T("1300—1349 年 = 1", "1300–49 = 1"))
     _title(a2, T("(b) 实际工资涨得比模型多", "(b) wages rose more"))
@@ -136,8 +136,8 @@ def plague_wages():
     a3.axhline(1, color=MUTED, lw=0.6, ls=(0, (1, 2)))
     a3.plot(dec, rent, "-o", color=OUTPUT, lw=2.0, ms=3.6)
     a3.plot(dec, s_m, color=AMBER, lw=1.6, dashes=(4, 2))
-    a3.text(1500, 1.03, T("实际地租", "real rent"), fontsize=7.4, color=OUTPUT, ha="right", va="bottom")
-    a3.text(1440, 0.62, T("模型", "model"), fontsize=7.4, color=AMBER, ha="right", va="top")
+    a3.text(1500, 1.03, T("实际地租", "real rent"), fontsize=7.6, color=OUTPUT, ha="right", va="bottom")
+    a3.text(1440, 0.62, T("模型", "model"), fontsize=7.6, color=AMBER, ha="right", va="top")
     a3.set_ylim(0.4, 1.4)
     _title(a3, T("(c) 地租跌得比模型少", "(c) rents fell less"))
     for ax in (a1, a2, a3):
@@ -168,17 +168,17 @@ def wage_ceiling():
     a1.text(1.24, 0.85, T("劳动需求", "labour\ndemand"), fontsize=7.6, color=OUTPUT, ha="right", va="top")
     for lv, txt, ls in [(1.0, T("瘟疫前的劳动力", "labour before"), "-"), (l1, T("1350 年代", "1350s"), (0, (4, 2)))]:
         a1.plot([lv, lv], [0.4, 1.75], color=AMBER, lw=1.6, ls=ls)
-        a1.text(lv + 0.02, 1.70, txt, fontsize=7.4, color=AMBER, ha="left", va="top")
+        a1.text(lv + 0.02, 1.70, txt, fontsize=7.6, color=AMBER, ha="left", va="top")
     a1.axhline(1.0, color=PRICE, lw=1.2, ls=(0, (1.5, 1.5)))
-    a1.text(0.31, 0.97, T("法定上限\n= 旧工资", "cap =\nold wage"), fontsize=7.4, color=PRICE, ha="left", va="top",
+    a1.text(0.31, 0.97, T("法定上限\n= 旧工资", "cap =\nold wage"), fontsize=7.6, color=PRICE, ha="left", va="top",
             linespacing=1.25)
     a1.plot([l1], [w1], "o", color=OUTPUT, ms=5.5)
-    a1.annotate(T(f"市场工资\n×{w1:.2f}", f"market\nwage ×{w1:.2f}"), xy=(l1, w1), xytext=(0.76, 1.38), fontsize=7.4,
+    a1.annotate(T(f"市场工资\n×{w1:.2f}", f"market\nwage ×{w1:.2f}"), xy=(l1, w1), xytext=(0.76, 1.38), fontsize=7.6,
                 color=OUTPUT, ha="left", va="bottom", linespacing=1.2,
                 arrowprops=dict(arrowstyle="-", color=OUTPUT, lw=0.6, shrinkA=1))
     a1.annotate("", xy=(l1, 0.93), xytext=(1.0, 0.93),
                 arrowprops=dict(arrowstyle="<->", color=INK, lw=0.8, shrinkA=0, shrinkB=0))
-    a1.text((l1 + 1) / 2, 0.88, T(f"缺口 {1 - l1:.2f}", f"shortage {1 - l1:.2f}"), fontsize=7.4, color=INK,
+    a1.text((l1 + 1) / 2, 0.88, T(f"缺口 {1 - l1:.2f}", f"gap {1 - l1:.2f}"), fontsize=7.6, color=INK,
             ha="center", va="top")
     a1.set_xlim(0.3, 1.25)
     a1.set_ylim(0.4, 1.8)
@@ -192,13 +192,13 @@ def wage_ceiling():
     a2.plot(x, d["blab_wage_d"], "-s", color=AMBER, lw=1.8, ms=4, dashes=(4, 2))
     a2.axhline(caps[0], color=PRICE, lw=0.8, ls=(0, (1, 1.5)))
     a2.axhline(caps[4], color=AMBER, lw=0.8, ls=(0, (1, 1.5)))
-    a2.text(1301, caps[0] - 0.06, T("木匠师傅上限 3 便士", "master carpenter cap 3d"), fontsize=7.2, color=PRICE,
+    a2.text(1301, caps[0] - 0.06, T("木匠师傅上限 3 便士", "master carpenter\ncap 3d"), fontsize=7.6, color=PRICE,
             ha="left", va="top")
-    a2.text(1301, caps[4] - 0.06, T("帮工上限 1½ 便士", "servant cap 1½d"), fontsize=7.2, color=AMBER,
+    a2.text(1301, caps[4] - 0.06, T("帮工上限 1½ 便士", "servant cap 1½d"), fontsize=7.6, color=AMBER,
             ha="left", va="top")
     a2.text(1408, 4.38, T("建筑工匠", "craftsmen"), fontsize=7.6, color=PRICE, ha="right", va="top")
     a2.text(1408, 2.68, T("建筑小工", "labourers"), fontsize=7.6, color=AMBER, ha="right", va="top")
-    a2.text(1352, 0.95, T("1349 条例\n1351 法令", "1349 ordinance\n1351 statute"), fontsize=7.0, color=PRICE,
+    a2.text(1352, 0.95, T("1349 条例\n1351 法令", "1349 ordinance\n1351 statute"), fontsize=7.6, color=PRICE,
             ha="left", va="bottom", linespacing=1.2)
     a2.set_xlim(1300, 1410)
     a2.set_ylim(0.8, 5.2)
@@ -227,15 +227,15 @@ def livre_tournois():
     ax.text(1286, 21.4, T("腓力四世 1285—1314", "Philip IV 1285–1314"), fontsize=7.6, color=CASE, ha="left")
     ax.text(1361.5, 21.4, T("1351—1360：变动 71 次", "1351–60: 71 changes"), fontsize=7.6, color=PRICE, ha="right")
     ax.annotate(T(f"1305 年 4 月：{val['1305, avril']:.2f}", f"Apr 1305: {val['1305, avril']:.2f}"),
-                xy=(1305.3, val["1305, avril"]), xytext=(1300.5, 3.0), fontsize=7.4, color=MONEY, ha="center",
+                xy=(1305.3, val["1305, avril"]), xytext=(1300.5, 3.0), fontsize=7.6, color=MONEY, ha="center",
                 arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
     ax.annotate(T(f"1306 年 10 月\n恢复：{val['1306, oct.']:.2f}", f"restored\nOct 1306: {val['1306, oct.']:.2f}"),
-                xy=(1307.4, val["1306, oct."]), xytext=(1299.5, 19.6), fontsize=7.4, color=MONEY, ha="left",
+                xy=(1307.4, val["1306, oct."]), xytext=(1299.5, 19.6), fontsize=7.6, color=MONEY, ha="left",
                 va="center", linespacing=1.25, arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
     ax.annotate(T(f"1360 年 3 月：{val['1360, mars 15']:.2f}", f"Mar 1360: {val['1360, mars 15']:.2f}"),
-                xy=(1360.2, val["1360, mars 15"]), xytext=(1340, 1.6), fontsize=7.4, color=MONEY, ha="center",
+                xy=(1360.2, val["1360, mars 15"]), xytext=(1340, 1.6), fontsize=7.6, color=MONEY, ha="center",
                 arrowprops=dict(arrowstyle="-", color=MONEY, lw=0.6))
-    ax.text(1262, 18.2, T(f"圣路易时代\n{val['1258']:.2f} 法郎", f"St Louis\n{val['1258']:.2f} francs"), fontsize=7.4,
+    ax.text(1262, 18.2, T(f"圣路易时代\n{val['1258']:.2f} 法郎", f"St Louis\n{val['1258']:.2f} francs"), fontsize=7.6,
             color=MONEY, ha="left", va="top", linespacing=1.25)
     ax.set_xlim(1255, 1362)
     ax.set_ylim(0, 23)
