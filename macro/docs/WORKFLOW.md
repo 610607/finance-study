@@ -1,45 +1,69 @@
 # Writing chapters in batches
 
 Chapter 12 set the standard (`STYLE.md` §11, approved 2026-10-13). From Part 3 on, chapters are written
-one part at a time: several writers in parallel, each chapter then reviewed independently, the editor
-merges, rebuilds and checks everything, and the author reviews the part as a whole.
+one part at a time, each chapter then reviewed independently; the editor merges, rebuilds and checks
+everything, and the author reviews the part as a whole. There are two ways to run a part:
+
+- **Sequential (the author's choice for Part 3, 2026-10-13):** one chapter at a time, in the order of
+  the part. The editor writes the chapter on the working branch, then one independent reviewer agent
+  reviews it (never more than one agent at a time); the editor checks the review, commits and pushes,
+  and goes on to the next chapter. Later chapters can then use labels and results of earlier ones.
+- **Parallel:** several writers at once, each in its own git worktree, then one reviewer per chapter
+  (§1–§3 below). Faster, but the writers cannot see each other's chapters, so the part's notes file
+  must divide the ground between them.
 
 ## 0. Prepare the session
 
 ```bash
 cd macro
-bash tools/setup_env.sh          # Python packages, xeCJK if missing, the classical-Chinese corpus, epubcheck
+bash tools/setup_env.sh          # system packages if missing (TeX Live, fonts, pandoc, Java; ~5 min),
+                                 # Python packages, the classical-Chinese corpus, epubcheck, STIX Two
 export CORPUS=...                # as printed by the script
 export EPUBCHECK_JAR=...
+bash tools/probe_network.sh      # which source hosts the shell can reach in this session
 python3 data/fetch/verify_quotes.py $CORPUS && python3 validate_source.py && python3 build.py
 ```
 
-Network: in the cloud sessions used so far, the shell reached only github.com and PyPI; other hosts
-returned 403. Web pages and papers are read with the web tools, under the evidence rules of the brief.
+- `setup_env.sh` ends with a font check. The books are set in STIX Two Text and Math with Noto CJK;
+  without them `preamble.tex` falls back to TeX Gyre Termes and Latin Modern Math, and books built
+  that way must not be committed to `compiled/`.
+- Network access differs between sessions. In the first sessions (early October 2026) the shell
+  reached only github.com and PyPI. On 2026-10-13 it reached Wikipedia and Wikisource, ctext,
+  archive.org, JSTOR's front pages, NBER, the Bank of England, the GGDC (Maddison), MeasuringWorth,
+  GPIH, the Bank of Japan's IMES, the BIS, the ECB, the New York Fed, the World Bank and FRED
+  (intermittently), while Wiley, Elsevier, Cambridge, Oxford, Chicago journals, the IMF, CEPR,
+  openICPSR and Encyclopaedia Iranica answered 403. Always run the probe rather than trusting this
+  list. What can be downloaded is checked in the shell (evidence rule 3 of the brief); the web tools
+  are for what cannot.
 
-## 1. Write (one writer per chapter, in parallel)
+## 1. Write
 
-- Each writer works in its own git worktree of this repository (its own branch).
 - Brief: `docs/agent_prompts/batch_brief.txt` plus the chapter's section of the part's notes file
   (`docs/agent_prompts/part3_notes.md` for Part 3; write a similar file for later parts, dividing the
-  ground between chapters written at the same time).
-- The writer commits its chapter on its branch and reports: sources and how each was verified,
-  single-witness numbers, things left out, labels for the registry, requests for shared-file changes.
+  ground between the chapters of the part).
+- Read the rows of `docs/FORWARD_REFS.md` that point to your chapter and keep those promises; add a
+  row for every reference your chapter makes to an unwritten chapter whose content the reader needs.
+- Parallel mode: each writer works in its own git worktree of this repository (its own branch),
+  commits its chapter there and reports: sources and how each was verified, single-witness numbers,
+  things left out, labels for the registry, requests for shared-file changes.
+- Sequential mode: the editor writes on the working branch and keeps the same record (it goes into
+  the chapter's PLAN.md entry and the commit message).
 
 ## 2. Review (one independent reviewer per chapter)
 
-- Brief: `docs/agent_prompts/review_template.txt`, pointed at the writer's worktree, with `$CORPUS`.
+- Brief: `docs/agent_prompts/review_template.txt`, pointed at the chapter (and in parallel mode at the
+  writer's worktree), with `$CORPUS`.
 - The reviewer checks every quotation in context (`verify_quotes.py` and the surrounding passage), every
   cited work, every number against its check script, and the layout; fixes the chapter and its check
-  script on the same branch; reports what it did not fix.
+  script; reports what it did not fix.
 - The editor verifies the reviewer's substantive claims against the sources before accepting them
   (in Chapter 12 they all held; one diagnosis of a layout cause did not).
 
 ## 3. Merge and check (editor)
 
-1. Merge each branch into `main`. `references_zh.tex` and `data/SOURCES.md` merge as unions
+1. Parallel mode: merge each branch. `references_zh.tex` and `data/SOURCES.md` merge as unions
    (`.gitattributes`); remove duplicate `\bibitem` keys.
-2. Add the labels the writers asked for to the PLAN.md registry; apply or decline shared-file requests.
+2. Add the labels the chapters need to the PLAN.md registry; apply or decline shared-file requests.
 3. Redraw all figures: `MACRO_LANG=zh python3 figsrc/build.py` and `MACRO_LANG=en python3 figsrc/build.py`.
 4. Run, all clean: `checks/check_*.py`, `data/fetch/verify_quotes.py $CORPUS`, `validate_source.py`,
    `tools/check_chapter.py` for each new chapter, `build.py --book all --epub`, epubcheck on the six EPUBs.
@@ -47,4 +71,5 @@ returned 403. Web pages and papers are read with the web tools, under the eviden
 
 ## Status of the batches
 
-- Part 3 (第 10、11、13—17 章): notes ready in `docs/agent_prompts/part3_notes.md`; not started.
+- Part 3 (第 10、11、13—17 章): notes in `docs/agent_prompts/part3_notes.md`; written sequentially in
+  the order 10, 11, 13, 14, 15, 16, 17, started 2026-10-13.

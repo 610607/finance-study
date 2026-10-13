@@ -21,8 +21,14 @@ Updated 2026-10-13.
 ## EPUB edition — added 2026-10-13
 - `tools/epub/` converts the LaTeX sources to EPUB 3 with pandoc, taking every number from the PDF build (`docs/EPUB.md`). `python3 build.py --book all --epub` writes the volume and the five books; the EPUBs pass epubcheck 5.1 with no errors or warnings.
 
+## Hand-off repaired — 2026-10-13
+- `tools/setup_env.sh` now installs what a bare cloud container lacks (TeX Live, Noto CJK, fallback fonts, pandoc, Java) and the STIX Two fonts (stipub/stixfonts v2.13b171), and ends with a font check. The PDFs and EPUBs in `compiled/` were rebuilt with STIX Two Text and Math, the fonts `preamble.tex` intends (the earlier builds had fallen back to TeX Gyre Termes and Latin Modern Math); Chapter 12 checked clean with them (17 pages with its bibliography), all six EPUBs pass epubcheck.
+- `tools/probe_network.sh` reports which source hosts the shell can reach; on 2026-10-13 many could be downloaded from directly. Evidence rule 3 of the brief now asks for the original document to be downloaded and every number found in its text, with the file's SHA-256 recorded; WebFetch is the fallback for blocked hosts.
+- `docs/FORWARD_REFS.md` records what written chapters expect of unwritten ones (seeded with Chapter 12's references).
+- Part 3 is written sequentially (author's choice): one chapter at a time, each reviewed by one independent reviewer before the next (`docs/WORKFLOW.md`).
+
 ## Next
-1. Part 3 (Chapters 10, 11, 13–17) as one batch, following `docs/WORKFLOW.md`: writers' brief `docs/agent_prompts/batch_brief.txt`, chapter notes `docs/agent_prompts/part3_notes.md`, then an independent review of each chapter. Prepare a new session with `bash tools/setup_env.sh`.
+1. Part 3 (Chapters 10, 11, 13–17), sequentially in that order, following `docs/WORKFLOW.md`: brief `docs/agent_prompts/batch_brief.txt`, chapter notes `docs/agent_prompts/part3_notes.md`, an independent review of each chapter. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. Then the other parts in the order of the books, each as a batch.
 3. Chapter 1 is finalized last, because it previews the whole volume.
 

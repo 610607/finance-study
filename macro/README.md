@@ -47,9 +47,10 @@ figures_zh/, figures/        figure PDFs (Chinese / English), created as chapter
 validate_source.py           consistency of structure, labels, references, sources, data and checks
 tools/check_chapter.py       compile one chapter in isolation and report layout problems
 tools/epub/                  EPUB edition: build_epub.py (LaTeX -> pandoc), boxes.lua, epub.css, cover.py
-tools/setup_env.sh           prepares a fresh machine: Python packages, xeCJK if missing, the classical-Chinese corpus, epubcheck
+tools/setup_env.sh           prepares a fresh machine: system packages (TeX Live, fonts), Python packages, the classical-Chinese corpus, epubcheck, STIX Two
+tools/probe_network.sh       which source hosts the shell can reach in this session
 build.py                     builds the whole volume or one book (PDF; --epub also EPUB)
-docs/                        PLAN.md (chapter plan, label registry), STYLE.md, WORKFLOW.md (batch writing), EPUB.md, STATUS.md, agent_prompts/
+docs/                        PLAN.md (chapter plan, label registry), STYLE.md, WORKFLOW.md (batch writing), FORWARD_REFS.md, EPUB.md, STATUS.md, agent_prompts/
 compiled/                    the built PDFs and EPUBs
 ```
 
@@ -57,7 +58,7 @@ compiled/                    the built PDFs and EPUBs
 
 Requirements:
 - TeX Live 2023 or newer with **XeLaTeX** and **xeCJK** (Debian/Ubuntu: `texlive-xetex`, `texlive-latex-extra`, `texlive-lang-chinese`), including `fontspec`, `unicode-math`, `tcolorbox`, `titlesec`, `titletoc`, `fancyhdr`, `booktabs`, `tabularx`, `hyperref`, `tikz`.
-- Fonts: STIX Two Text and STIX Two Math, Inter, Noto Serif CJK SC and Noto Sans CJK SC. Fallbacks are built in (TeX Gyre Termes/Heros, Latin Modern Math, Fandol); no fonts are distributed here.
+- Fonts: STIX Two Text and STIX Two Math, Inter, Noto Serif CJK SC and Noto Sans CJK SC (`tools/setup_env.sh` installs STIX Two from stipub/stixfonts and checks the others). Fallbacks are built in (TeX Gyre Termes/Heros, Latin Modern Math, Fandol) so that the sources always compile, but the books in `compiled/` are built with the intended fonts; no fonts are distributed here.
 - Python 3.10+ with the packages in `requirements.txt` for figures, checks and contact sheets; `pdftoppm` (poppler) for `tools/check_chapter.py`.
 - For the EPUB edition: pandoc 3.1 or newer; optionally epubcheck (Java) to validate it (`docs/EPUB.md`).
 
