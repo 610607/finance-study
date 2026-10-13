@@ -362,7 +362,13 @@ class Converter:
             spec = re.sub(r"[@<>!]\{[^{}]*(\{[^{}]*\}[^{}]*)*\}", "", args[1])
             cols = len(re.findall(r"[lcrXYpmb]", re.sub(r"\{[^{}]*\}", "", spec)))
             return f"\\begin{{tabular}}{{{'l' * cols}}}{body}\\end{{tabular}}"
-        return sub_env(s, "tabularx", tabularx, nargs=2)
+        s = sub_env(s, "tabularx", tabularx, nargs=2)
+
+        def multicolumn(o, n, spec, cell):
+            # pandoc gives up on a table whose \multicolumn spec has @{} and prints the cells as text
+            spec = re.sub(r"[@<>!]\{[^{}]*\}", "", spec)
+            return f"\\multicolumn{{{n}}}{{{spec}}}{{{cell}}}"
+        return sub_cmd(s, "multicolumn", 3, multicolumn)
 
     # -- displayed equations ------------------------------------------------
     def equations(self, s: str) -> str:
