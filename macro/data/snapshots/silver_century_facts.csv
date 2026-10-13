@@ -18,10 +18,20 @@ ming_luzon_settlers,明,1580,佛郎机据吕宋之前,,,,mingshi,卷三百二十
 ming_jiyi_claim,明,1602,万历中（温纯任左都御史时）,100000;300000,两/年,,mingshi,卷二百二十 温纯传,或又言海外吕宋国有机易山，素产金银，岁可得金十万、银三十万,献言者的说法，不是事实
 ming_jiyi_reply,明,1602,同上,,,,mingshi,卷二百二十 温纯传,机易山在海外，必无遍地金银，任人往取；不过假借诏旨，阑出禁物与番人市易，利归群小，害贻国家,温纯的答复
 ming_1603_dead,明,1603,万历三十一年,25000,人,二万五千,mingshi,卷三百二十三 外国四（吕宋）,伏发，众大败，先后死者二万五千人,
+ming_luzon_1593_return,明,1594,万历二十一年（1593）驱逐之后,,,,mingshi,卷三百二十三 外国四（吕宋）,然华商嗜利，趋死不顾，久之复成聚,
+ming_jiyi_date,明,1602,万历三十年七月,100000;300000,两/年,,mingshi,卷三百二十三 外国四（吕宋）,言吕宋机易山素产金银，采之，岁可得金十万两、银三十万两，以三十年七月诣阙奏闻,阎应龙、张嶷的说法；与卷二百二十温纯传的记载可互证
+ming_jiyi_reply_luzon,明,1602,同上，《吕宋传》所载温纯疏,,,,mingshi,卷三百二十三 外国四（吕宋）,即机易越在海外，亦决无遍地金银，任人采取之理,与卷二百二十温纯传所载“机易山在海外，必无遍地金银，任人往取”是同一疏的两种节录
+ming_jiyi_question,明,1603,万历三十年至三十一年间，吕宋酋问明使,,,,mingshi,卷三百二十三 外国四（吕宋）,天朝欲遣人开山。山各有主，安得开？,
+ming_luzon_suspicion,明,1603,同上,,,,mingshi,卷三百二十三 外国四（吕宋）,吕宋人终自疑，谓天朝将袭取其国，诸流寓者为内应，潜谋杀之,
+ming_luzon_iron,明,1603,万历三十一年,,,,mingshi,卷三百二十三 外国四（吕宋）,厚价市铁器。华人贪利尽鬻之，于是家无寸铁,
+ming_luzon_no_redress,明,1605,万历三十二年十二月以后,,,,mingshi,卷三百二十三 外国四（吕宋）,学聚等乃移檄吕宋，数以擅杀罪，令送死者妻子归，竟不能讨也,
 ming_luzon_return,明,1605,屠杀之后,,,,mingshi,卷三百二十三 外国四（吕宋）,其后，华人复稍稍往，而蛮人利中国互市，亦不拒，久之复成聚,
 ming_1603_edict,明,1604,万历三十二年十二月,20000,人,二万,mingshi,卷三百二十三 外国四（吕宋）,致二万商民尽膏锋刃,神宗谕旨（议上于三十二年十二月）
 ming_dutch_1604,明,1604,万历三十二年七月,32,年（万历）,三十二,mingshi,卷三百二十五 外国六（和兰）,直抵彭湖。时三十二年之七月,荷兰船到彭湖；巡抚徐学聚其后劾李锦等罪
 li_tingji_luzon,明,1603,约万历三十一年（全汉昇 1969 注四四）,,,,huangmingjingshiwenbian,卷四百六十 李廷机《报徐石楼》,而所通乃吕宋诸番每以贱恶什物。贸其银钱。满载而归。往往致富。,
+li_tingji_ban,明,1603,约万历三十一年（全汉昇 1969 注四四）,,,,huangmingjingshiwenbian,卷四百六十 李廷机《报徐石楼》,及倭讧后始弛禁、民得明往。而稍收其税以饟兵。自是波恬,全汉昇 1969 第 70 页所引（据崇祯平露堂本影印本卷四六〇）与此相同
+li_tingji_closed,明,1603,同上，写于吕宋屠杀之后,,,,huangmingjingshiwenbian,卷四百六十 李廷机《报徐石楼》,而自此彼必不容留吾人。即吾人无敢留。亦未敢往实为中国闭绝此路也,李廷机以为此路从此断绝；《明史·吕宋传》说其后“久之复成聚”
+xu_xueju_prices,明,1604,万历三十二年（荷兰船到彭湖之年）,,,,huangmingjingshiwenbian,卷四百三十三 徐学聚《初报红毛番疏》,初时或可倍蓰。未几当尽知我国之价不复可欺有立贱耳,倍蓰：一倍到五倍
 xu_xueju_silver,明,1604,万历三十二年（荷兰船到彭湖之年）,,,,huangmingjingshiwenbian,卷四百三十三 徐学聚《初报红毛番疏》,漳人但知彼有银。银可欲。且其初易诳。可多致之我贩吕宋。直以有佛郎银钱之故。,
 quan1969_ming_mines,明,1600,,,,,quan1969,p. 60,明代政府曾經努力在各地開採銀礦，以增加銀的供應，但事實上因爲我國銀礦的蘊藏並不怎樣豐富，故每年銀產額非常有限。,
 quan1969_purchasing,明,1600,,2,倍（相对宋元）,,quan1969,p. 60,求過於供的結果，明代白銀的價值非常之大，據粗略的估計，其購買力約爲宋、元時代的兩倍左右。,
@@ -63,6 +73,12 @@ bodin_trade,法国,1578,,,,,bodin1578,p. 37,"l'Espagnol, qui ne tient vie que de
 bodin_ranking,法国,1578,,,,,bodin1578,p. 42,"tout est plus cher en Espagne & en Italie qu'en France, & plus en Espagne qu'en Italie",
 bodin_triple,法国,1578,,3,倍,,bodin1578,p. 42,"ce qui attire noz Auuergnaz & Limosins en Espagne, comme i'ay sçeu d'eux mesmes, parce qu'ils gaignent au triple de ce qu'ils font en France",
 bodin_en_partie,法国,1578,,,,,bodin1578,p. 42,C'est donques l'abondance d'or & d'argent qui cause en partie la charté des choses.,
+malestroit_syllogism,法国,1566,1566 年 3 月,,,,lebranchu1934,"Malestroit (1566), fol. A iiij (Le Branchu 1934, p. 57)","Lon ne peult dire, qu'une chose soit maintenant plus chère qu'elle n'estoit il y a trois cens ans, sinon que pour l'achapter il faille maintenant bailler plus",下文为 d'or ou d'argent que lon n'en bailloit alors（原刊折页处夹有页码标记）
+malestroit_philippe,法国,1328,腓力六世即位之年,1328,年,,lebranchu1934,"Malestroit (1566), fol. A iiij (Le Branchu 1934, p. 58)","Du temps du Roy Philippes de Valoys, qui commença à régner en l'an mil trois cens vingt huict",
+malestroit_ecu20,法国,1328,腓力六世时,20,苏/埃居,,lebranchu1934,"Malestroit (1566), fol. A iiij (Le Branchu 1934, p. 58)",ne valoit que vingt solz tournois,埃居金币当时作价 20 苏
+malestroit_velvet_then,法国,1328,同上,4;4,里弗尔;埃居,,lebranchu1934,"Malestroit (1566), fol. A iiij (Le Branchu 1934, p. 58)","l'aulne de bon velours ne valoit que quatre livres, pour paier ces quatre livres falloit bailler quatre escuz",
+malestroit_velvet_now,法国,1566,1566 年,10;4;50,里弗尔;埃居;苏/埃居,,lebranchu1934,"Malestroit (1566), fol. B i (Le Branchu 1934, p. 58)","pour paier ces dix livres ne faut que ladicte somme de quatre escuz, à raison de cinquante solz pièce",前文：encores qu'elle couste maintenant dix livres
+lebranchu_bodin_3to4,法国,1568,Le Branchu 的导言,3;4,倍,,lebranchu1934,"introduction, p. XLVIII",que les prix ont haussé de trois à quatre fois depuis un siècle,Le Branchu 对博丹论点的概括
 bodin1568_causes,法国,1568,1568 年初版（Le Branchu 1934 重印）,3,个原因,,lebranchu1934,"Response (1568), fol. b3v-b4r",le trouve que la charte que nous voyons vient pour trois causes,OCR 把 Ie 读作 le、把 charté 读作 charte；1578 年版改为“quatre ou cinq causes”
 bodin1568_principal,法国,1568,同上,,,,lebranchu1934,"Response (1568), fol. b3v-b4r",La principale & presque seule (que personne iusques icy n'a touchée) est l'abondance d'or & d'argent qui est auiourd'huy en ce royaume plus grande qu'elle n'a esté il y a quatre cens ans,
 bodin1568_ranking,法国,1568,同上,,,,lebranchu1934,"Response (1568), fol. d1v-d2r","aussi tout est plus cher en Espaigne & en Italie qu'en France, & plus en Espaigne qu'en Italie",
@@ -99,6 +115,19 @@ dv_juros,西班牙,1580,,,,,dv2010,PDF p. 6,"Juros were long-term bonds issued a
 dv_juros_safe,西班牙,1580,,,,,dv2010,PDF p. 6,"juros were perceived as safer investments than asientos, and Philip II never defaulted on them.",
 dv_genoese,西班牙,1566,,,,,dv2010,PDF p. 7,"Many of the new funds were provided by Genoese bankers, who introduced the practice of collateralizing asientos with juros.",
 dv_asiento_total,西班牙,1596,1565—1596,40.9;92.1,百万杜卡特,,dv2010,PDF p. 14,"Nominal debt increased by 40.9 million ducats between 1565 and 1596. Over the same period, the Crown entered into asiento loans for 92.1 million ducats.",
+dv_cortes43,西班牙,1596,1555—1596,43,%,,dv2010,PDF p. 4,"Between 1555 and 1596, taxes subject to approval by the Cortes amounted to 43% of Crown revenue.",
+dv_1540s,西班牙,1545,,1540,年代,,dv2010,PDF p. 5,"Beginning in the 1540s, Spain received large inflows of silver from the New World.",
+dv_casa,西班牙,1580,,,,,dv2010,PDF p. 5,the Crown enforced a trading monopoly through the Casa de la Contratación in Seville,
+dv_no_perpetuities,西班牙,1580,,,,,dv2010,PDF p. 5,"Since silver revenue was not a source of ordinary tax revenue, it could not be used to back perpetuities.",
+dv_free_cash,西班牙,1580,,,,,dv2010,PDF p. 5,"Since most ordinary taxes were committed to the service of long-term debt, silver was the largest component of the Crown's free cash-flow.",
+dv_three_of_four,西班牙,1596,,3;4,次,,dv2010,PDF p. 5,The timing of remittances was almost certainly a key factor in three of the four defaults of Philip's reign,
+dv_armada,西班牙,1588,,1588;10,年;百万杜卡特,,dv2010,PDF p. 6,"By the time the fleet sailed in 1588, over 10 million ducats, or fully two years' worth of revenue, had been spent.",
+dv_medio_conversion,西班牙,1577,,,,,dv2010,PDF p. 7,"Two years of negotiations with the bankers produced a settlement, known as a medio general, which converted all short-term loans to low interest perpetuities.",
+dv_fresh_lending,西班牙,1578,,1578,年,,dv2010,PDF p. 7,"Fresh lending started in 1578, and continued briskly.",
+dv_1577_surplus,西班牙,1577,1577 年以后,50;70,%,,dv2010,PDF p. 16,"After the rescheduling in 1577, and the big tax hike agreed by the Cortes, surpluses became substantial, varying between 50 and 70 percent of revenue.",
+dv_never_interest,西班牙,1596,,,,,dv2010,PDF p. 16,"Despite almost continuous warfare, Philip II almost never borrowed to pay interest.",
+dv_military,西班牙,1596,1566—1596,-1.07;9.4,系数;t,,dv2010,PDF p. 17,"Yet the prime determinant of the Crown's fiscal position was the scale of its military effort. If we regress pst on MEt, we obtain a coefficient of -1.07 (t-statistic 9.4).",
+dv_less_war,西班牙,1598,,,,,dv2010,PDF p. 23,"The key reason why Philip's finances would have looked healthy by the end of his reign would have been less war, not more taxes.",
 dveeh_reign,西班牙,1598,1556—1598 年在位,1556;1598,年,,dv2011eeh,PDF p. 3,"the bankruptcies of Philip II of Spain (1556-98). During his reign, payments to creditors were suspended four times.",
 dveeh_gdp,西班牙,1598,,60,% of GDP,,dv2011eeh,PDF p. 1,Philip II of Spain accumulated debts equivalent to 60% of GDP.,
 dveeh_profit,西班牙,1600,1566—1600,,,,dv2011eeh,PDF p. 1,Losses sustained during defaults were more than compensated by profits in normal times. Defaults were not catastrophic events.,
