@@ -1,0 +1,236 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+mun_written,英格兰,1664,约 1630 年写成,1630;1664,年,,mun1664,p. v-vi (Ashley 的前言),"probably written about 1630, was printed for the first time by his son in 1664",
+mun_eic,英格兰,1615,,1615,年,,mun1664,p. v (Ashley 的前言),"a director, of the recently established East India Company",孟是东印度公司的董事
+mun_outcry,英格兰,1621,,1621,年,,mun1664,p. v (Ashley 的前言),To defend the Company against the outcry caused by its exportation of precious metal,
+mun_rule,英格兰,1664,,,,,mun1664,"ch. II, p. 7",The ordinary means therefore to encrease our wealth and treasure is by Forraign,规则的前半句
+mun_rule2,英格兰,1664,,,,,mun1664,"ch. II, p. 7",to sell more to strangers yearly than wee consume of theirs in value,规则本身
+mun_ex_export,英格兰,1664,孟的假设数字,2200000,英镑,,mun1664,"ch. II, p. 7",forraign Countries to the value of twenty two hundred thousand pounds,出口 220 万英镑
+mun_ex_import,英格兰,1664,孟的假设数字,2000000,英镑,,mun1664,"ch. II, p. 7","forraign wares for our use and Consumptions, to the value of twenty hundred thousand pounds",进口 200 万英镑
+mun_ex_gain,英格兰,1664,孟的假设数字,200000,英镑,,mun1664,"ch. II, p. 7","we may rest assured that the Kingdom shall be enriched yearly two hundred thousand pounds, which must be brought to us in so much Treasure",差额以金银流入
+mun_pepper_home,英格兰,1664,孟的假设数字,24,便士/磅,,mun1664,"ch. III, p. 13",suppose Pepper to be worth here two Shillings the pound constantly,2 先令 = 24 便士
+mun_pepper_ams,阿姆斯特丹,1664,孟的假设数字,20,便士/磅,,mun1664,"ch. III, p. 13",the Merchant may give there twenty pence the pound,从阿姆斯特丹的荷兰人手里买
+mun_pepper_indies,东印度,1664,孟的假设数字,3,便士/磅,,mun1664,"ch. III, p. 13",he must not give above three pence the pound at the most,到东印度去买
+mun_kingdom,英格兰,1664,,,,,mun1664,"ch. III, p. 14","we must ever distinguish between the gain of the Kingdom, and the profit of the Merchant",
+mun_commutations,英格兰,1664,,,,,mun1664,"ch. III, p. 14","but yet all these in the Kingdoms accompt are but commutations among our selves, and no privation of the Kingdoms stock",运费、保险、关税在国家的账上只是内部的转移
+mun_husbandman,英格兰,1664,,,,,mun1664img,"ch. IV, p. 27","For if we only behold the actions of the husbandman in the seed-time when he casteth away much good corn into the ground, we will rather accompt him a mad man than a husbandman: but when we consider his labours in the harvest which is the end of his endeavours, we find the worth and plentiful encrease of his actions.",页图逐字读；长 s 写作 s
+mun_harvest,英格兰,1664,,,,,mun1664,"ch. IV, p. 27","when we consider his labours in the harvest which is the end of his endeavours, we find the worth and plentiful encrease of his actions",同一句的后半，识别文本里也能找到
+smith_spain,西班牙、葡萄牙,1776,,,,,smith1776,"Book IV, ch. I","Spain and Portugal, the proprietors of the principal mines which supply Europe with those metals, have either prohibited their exportation under the severest penalties, or subjected it to a considerable duty.",
+smith_scotch,苏格兰,1776,,,,,smith1776,"Book IV, ch. I","some old Scotch acts of Parliament, which forbid, under heavy penalties, the carrying gold or silver forth of the kingdom",
+smith_france_england,法国、英格兰,1776,,,,,smith1776,"Book IV, ch. I",The like policy anciently took place both in France and England.,
+smith_mun_seed,英格兰,1776,,,,,smith1776,"Book IV, ch. I",Mr Mun compares this operation of foreign trade to the seed-time and harvest of agriculture.,
+smith_smuggle,,1776,,,,,smith1776,"Book IV, ch. I","that this prohibition could not hinder the exportation of gold and silver, which, on account of the smallness of their bulk in proportion to their value, could easily be smuggled abroad",商人的第二条理由
+smith_confined,法国、英格兰,1776,,,,,smith1776,"Book IV, ch. I","The prohibition of exporting gold and silver was, in France and England, confined to the coin of those respective countries. The exportation of foreign coin and of bullion was made free.",
+smith_holland,荷兰,1776,,,,,smith1776,"Book IV, ch. I","In Holland, and in some other places, this liberty was extended even to the coin of the country.",
+smith_fruitless,,1776,,,,,smith1776,"Book IV, ch. I","From one fruitless care, it was turned away to another care much more intricate, much more embarrassing, and just equally fruitless.",
+smith_maxim,,1776,,,,,smith1776,"Book IV, ch. I","The title of Mun’s book, England’s Treasure in Foreign Trade, became a fundamental maxim in the political economy, not of England only, but of all other commercial countries.",
+smith_law_scotland,苏格兰,1705,,,,,smith1776,"Book II, ch. II","That the industry of Scotland languished for want of money to employ it, was the opinion of the famous Mr Law.",
+smith_law_lands,苏格兰,1705,,,,,smith1776,"Book II, ch. II",which he seems to have imagined might issue paper to the amount of the whole value of all the lands in the country,
+smith_law_scheme,法国,1720,,,,,smith1776,"Book II, ch. II","The idea of the possibility of multiplying paper money to almost any extent was the real foundation of what is called the Mississippi scheme, the most extravagant project, both of banking and stock-jobbing, that perhaps the world ever saw.",
+smith_ss_capital,英格兰,1720,,33800000,英镑,,smith1776,"Book V, ch. I, pt. III",The trading stock of the South Sea company at one time amounted to upwards of thirty-three millions eight hundred thousand pounds.,
+smith_ss_lent,英格兰,1722,,33800000,英镑,,smith1776,"Book V, ch. I, pt. III","their immense capital of more than thirty-three millions eight hundred thousand pounds, the whole of which had been lent to government",南海公司的资本全部借给了政府
+smith_ss_ship,西属美洲,1731,,10;1,次,,smith1776,"Book V, ch. I, pt. III","Of the ten voyages which this annual ship was allowed to make, they are said to have gained considerably by one, that of the Royal Caroline, in 1731; and to have been losers, more or less, by almost all the rest.",南海公司的贸易
+law_domestick,苏格兰,1705,,,,,law1705,"ch. II, p. 13",Domestick Trade depends on the Money. A greater Quantity employes more People than a lesser Quantity.,
+law_laws,苏格兰,1705,,,,,law1705,"ch. II, p. 13","But no Laws can make it go furder, nor can more People be set to Work,",
+law_credit,苏格兰,1705,,,,,law1705,"ch. II, p. 13","then that Credit is Money, and will have the same effects, on Home, and Forreign Trade.",
+law_addition,苏格兰,1705,,,,,law1705,"ch. II, p. 14","So an Addition to the Money, whether the Imployer gains or not, adds to the National Wealth",
+law_byvalue,苏格兰,1705,,,,,law1705img,"ch. VII, p. 100","Money is not the value for which Goods are exchanged, but the Value by which they are Exchanged",页图逐字读；识别文本把 exchanged 断成 exchan- ed
+law_land,苏格兰,1705,,,,,law1705,"ch. VII, p. 100","Land is what produces every thing, Silver is only the product.",
+law_demand,苏格兰,1705,,,,,law1705img,"ch. VII, p. 102","The Paper Money propos'd being always equal in Quantity to the Demand, the People will be employ'd, the Country improv'd, Manufacture advanc'd, Trade Domestick and Forreign will be carried on, and Wealth and Power attained.",页图逐字读
+velde_bank_1716,法国,1716,1716 年 5 月,1200;5000;60,股;里弗尔;%,,velde2003,p. 11,"1200 shares were offered at 5,000L each, payable mostly in billets d’État at face value (which stood at a 60% market discount to their face value at the time)",通用银行的首次发行
+velde_bank_notes,法国,1718,1716—1718 年,40-50;50;39.5,百万里弗尔/年;%;百万里弗尔,,velde2003,p. 12,"The result was that the Bank was able to issue a fairly large amount of notes, 40-50mL per year on average, while maintaining a reasonable specie reserve (about 50%); when the Bank was converted to a Royal Bank in December 1718, it had 39.5mL in circulation.",
+velde_bank_taxes,法国,1717,1717 年 4 月 10 日,,,,velde2003,p. 11,"On April 10, 1717, a decree made the bank notes explicit legal tender in the payment of taxes by individuals.",
+velde_royal,法国,1718,1718 年 12 月 4 日,5000,里弗尔,,velde2003,p. 13,"The Regent, on behalf of the king, bought out all the existing shareholders in cash at the face value of the shares (5,000L).",银行收归国王
+velde_press,法国,1718,,,,,velde2003,p. 13,it gave the king a functioning printing press for the first time,
+velde_four_stages,法国,1716,1716—1720 年,,,,velde2003,p. 10,Law’s experiment in public finance lasted from the creation of his General Bank in May 1716 to his escape from France in December 1720.,
+velde_ipo,法国,1717,1717 年 6 月—1718 年 12 月,200000;500,股;里弗尔,,velde2003,p. 17,"June 1717-Dec 1718 (IPO): 200,000 shares at 500L each, payable in government bonds (billets d’État) at face value",西方公司的首次发行
+velde_issue2,法国,1719,1719 年 6 月,50000;550,股;里弗尔,,velde2003,p. 18,"June 1719: 50,000 at 550L each in cash, 50L down and the rest payable in 20 monthly installments",“女儿”
+velde_issue3,法国,1719,1719 年 7 月,50000;1000,股;里弗尔,,velde2003,p. 18,"July 1719: 50,000 at 1,000L each in cash, payable in 20 monthly installments",“孙女”
+velde_issue4,法国,1719,1719 年 9—10 月,300000;5000,股;里弗尔,,velde2003,p. 18,"Sep–Oct 1719: 300,000 at 5,000L each in cash, payable in 10 monthly installments",“认购权证”（soumissions）
+velde_tobacco,法国,1718,1718 年 8 月 1 日,4.02,百万里弗尔/年,,velde2003,p. 15,"Aug. 1, 1718: the Company purchased the right to run the tobacco monopoly for 4.02mL per year.",
+velde_mints,法国,1719,1719 年 7 月 25 日,50,百万里弗尔,,velde2003,p. 15,"Jul. 25, 1719: it purchased the right to run the royal mints. The company paid a lump sum of 50mL to run the mints for nine years.",
+velde_farms,法国,1719,1719 年 8 月 27 日,30,%,,velde2003,p. 15,"Aug. 27, 1719: it bought the right to run the Fermes Générales (General Farms), which collected most of the excise taxes in France and about 30% of government revenues.",
+velde_farms_lease,法国,1719,,52;48.5,百万里弗尔/年,,velde2003,p. 16,"The lease was to run for 9 years, and be worth 52mL per year (instead of 48.5mL previously).",
+velde_recettes,法国,1719,1719 年 8 月下旬,55,%,,velde2003,p. 16,"late Aug 1719: it bought out the officers in charge of collecting all direct taxes (recettes générales, about 55% of revenues).",
+velde_prices_1718,法国,1718,1718—1719 年,250;237.5;500;650;1000,里弗尔,,velde2003,p. 18-19,"250L in May 1718, 240 in early June, 290L in late July and early August, 240L in early October, 238L on Nov. 10, 180L on Dec. 12, 237.5L on Feb. 6, 1719, 500L on May 10,",1719 年 8 月以前的零星股价
+velde_notes_1bn,法国,1720,,40;400;1000,百万里弗尔,,velde2003,p. 18,"In December 1718, the General Bank’s note issue had stood at 40mL; by July 1719, the Royal Bank’s issue stood at 400mL, and reached 1bnL in January 1720.",
+velde_lend,法国,1719,,,,,velde2003,p. 18,It appears that the Bank simply lent notes to the Company in exchange for IOUs (récépissés) signed by the treasurer of the Company,
+velde_quarter,法国,1716,1716 年 5 月,0.25,,,velde2003,p. 11,only 1/4 of the purchase price was required immediately,
+velde_bank_assets,法国,1716,1716 年 5 月,375000;1.125,里弗尔;百万里弗尔,,velde2003,p. 11,"The Bank’s assets consisted initially of 375,000L in cash and 1.125mL in billets d’État",
+velde_690,法国,1716,1716 年 5 月,690,里弗尔,,velde2003,p. 11,"Thus, it took only 690L in cash to initially buy a share.",
+velde_west,法国,1717,1717 年 8 月,,,,velde2003,p. 13,the Company of the West (Compagnie d’Occident),
+velde_west_aug,法国,1717,1717 年 8 月,,,,velde2003,p. 13,secured the government’s approval in August 1717,
+velde_louisiana,路易斯安那,1717,,500,人,,velde2003,p. 13,by 1717 its population was about 500,
+velde_ipo_closed,法国,1718,1718 年 12 月 31 日,100;40,百万里弗尔;%,,velde2003,p. 14,"The subscription was closed on Dec 31, 1718, with 100mL sold; of that, 40% was owned by the King",
+velde_indies,法国,1719,1719 年 5 月,,,,velde2003,p. 15,May 1719: the Company bought the Company of the Indies and the Company of China,此后称印度公司
+velde_metal,法国,1719,,,,,velde2003,p. 22,"consistent with Law’s stated belief that metallic money was inferior and wasteful, and would better be replaced by paper money or by a highly liquid, interest-bearing security.",
+velde_conv_date,法国,1719,1719 年 8 月 27 日起,1200;1600;3,百万里弗尔;百万里弗尔;%,,velde2003,p. 19,The Company offered the government a perpetual loan of 1200mL (raised on Sept. 17 and Oct. 10 to 1600mL) at 3%.,
+velde_conv_48,法国,1719,,36;48;52,百万里弗尔/年,,velde2003,p. 19,The annual 36mL payment (raised to 48mL) would in practice be deducted from the annual lease payment of 52mL that the Company owed for collecting the taxes of the General Farms.,
+velde_callable,法国,1719,,,,,velde2003,p. 19,"Perpetual annuities and offices, by their legal nature, included a call option: the creditor could never demand repayment of the capital, but the debtor could reimburse at any time.",
+velde_t3_total,法国,1719,1719 年 8 月 31 日下令偿还,1499839275,里弗尔,,velde2003,"p. 20, Table 3","total 1,499,839,275",表 3 第一部分的本金合计
+velde_t3_rentes,法国,1719,1719 年 8 月 31 日下令偿还,961731525,里弗尔,,velde2003,"p. 20, Table 3","rentes on the Hôtel de Ville 961,731,525",
+velde_t3_grand,法国,1720,到 1720 年 7 月为止,1977120061,里弗尔,,velde2003,"p. 20, Table 3","total 1,977,120,061",表 3 两部分合计的本金
+velde_3600,法国,1719,1719 年 8—9 月,3600;5350,里弗尔,,velde2003,p. 20,"On August 26, before the repayment of the debt was announced, the Company’s share stood at 3600L. By September 9, it had risen to 5350L.",
+velde_500ml,法国,1719,1719 年 9 月,500;5000;1000,百万里弗尔;里弗尔;百万里弗尔,,velde2003,p. 20,"Two days later, the Company asked the government permission to raise 500mL by selling shares at 5000L in cash. The success of the share issue led to other share issues at the same price (September 26, October 2) totalling another 1000mL.",
+velde_drafts,法国,1719,,,,,velde2003,p. 20,"Moreover, shares ceased to be sold for cash; instead, only drafts issued by the Treasury to bondholders and other government bearer debt were accepted. In the end, the Company never issued the 3% bonds.",
+velde_swap,法国,1719,,4.5;3,%,,velde2003,p. 22,"the operation was simply a gigantic swap of government bonds, bearing on average 4.5%, for Company equity. The company’s profits came from the 3% interest it was owed by the government, plus any profits on its commercial and tax-farming activities.",
+velde_90pct,法国,1720,,90;90;48,%;百万里弗尔;百万里弗尔,,velde2003,p. 22,"The end result of the process was that the company collected about 90% of taxes in France, passed on a fixed nominal amount to the government, and distributed the rest as dividends to its shareholders.","图 6：此前国家每年要付债权人约 9,000 万里弗尔；此后公司付股东的可变股息不少于 4,800 万"
+velde_fig6_90,法国,1719,体系以前,90,百万里弗尔/年,,velde2003,p. 22,The State was in turn creditor for an annual payment of roughly 90mL,"原文如此（creditor 应作 debtor），指国家每年要付约 9,000 万"
+velde_fig6_48,法国,1720,体系之下,48,百万里弗尔/年,,velde2003,p. 22,"The Company now owes a variable amount no less than 48mL to its shareholders, and the State has more to spend on g.",
+velde_before,法国,1719,体系以前,,,,velde2003,p. 22,were collected by various tax collectors and a fixed sum,图 6：税由各种包税人征收，交给国家一个固定的数
+velde_after,法国,1720,体系之下,,,,velde2003,p. 22,"In the System, the Company has consolidated all tax collection, and has also inserted itself between the State and its creditors.",
+velde_minister,法国,1720,1720 年 1 月 5 日,,,,velde2003,p. 19,"Its CEO also became minister of finance on January 5, 1720.",
+velde_apex,法国,1720,,,,,velde2003,p. 19,and freely issued fiat money which was sole legal tender,
+velde_specie,法国,1720,,1200,百万里弗尔,,velde2003,p. 24,Contemporary estimates of the gold and silver specie stock in the late 17th-early 18th century are around 1200mL.,
+velde_640,法国,1719,1719 年 12 月 1 日,640,百万里弗尔,,velde2003,p. 24,"the decree of Dec. 1, 1719 argues that the authorized issues of 640mL would be sufficient for “circulation and all operations of commerce.” Within three months, the amount was tripled.",
+velde_500coin,法国,1720,1720 年 2 月 27 日,500;100,里弗尔,,velde2003,p. 24,"On Feb. 27, 1720 it was made illegal for anyone to own more than 500L in gold or silver coins, and no payment above 100L could be made other than in notes.",
+velde_mar11,法国,1720,1720 年 3 月 11 日,,,,velde2003,p. 24,The complete elimination of gold and silver was announced on March 11.,
+velde_apr1,法国,1720,1720 年 4 月 1 日,,,,velde2003,p. 24,"On Apr. 1, 1720 all gold and silver clauses in contracts were voided.",
+velde_t4_apr19,法国,1719,1719 年 4 月 30 日,38.0;38.0,百万里弗尔,,velde2003,"p. 25, Table 4",30 Apr 1719 0.0 28.0 10.0 0.0 0.0 38.0 38.0,表 4：第 (1) 列与第 (4) 列（下同）
+velde_t4_may19,法国,1719,1719 年 5 月 31 日,109.9;109.9,百万里弗尔,,velde2003,"p. 25, Table 4",31 May 1719 0.0 96.0 13.0 0.0 0.9 109.9 109.9,
+velde_t4_jul19,法国,1719,1719 年 7 月 31 日,159.9;159.9,百万里弗尔,,velde2003,"p. 25, Table 4",31 Jul 1719 0.0 144.0 15.0 0.0 0.9 159.9 159.9,
+velde_t4_aug19,法国,1719,1719 年 8 月 31 日,380.6;380.6,百万里弗尔,,velde2003,"p. 25, Table 4",31 Aug 1719 0.0 334.4 45.0 0.0 1.2 380.6 380.6,
+velde_t4_sep19,法国,1719,1719 年 9 月 30 日,500.6;517.9,百万里弗尔,,velde2003,"p. 25, Table 4",30 Sep 1719 120.0 334.4 45.0 0.0 1.2 500.6 517.9,
+velde_t4_nov19,法国,1719,1719 年 11 月 30 日,620.6;642.0,百万里弗尔,,velde2003,"p. 25, Table 4",30 Nov 1719 240.0 334.4 45.0 0.0 1.2 620.6 642.0,
+velde_t4_dec19,法国,1719,1719 年 12 月 31 日,769.0;769.0,百万里弗尔,,velde2003,"p. 25, Table 4",31 Dec 1719 332.9 370.0 54.6 0.0 11.6 769.0 769.0,
+velde_t4_jan20,法国,1720,1720 年 1 月 30 日,810.1;810.1,百万里弗尔,,velde2003,"p. 25, Table 4",30 Jan 1720 358.6 379.9 57.2 0.0 14.4 810.1 810.1,
+velde_t4_feb20,法国,1720,1720 年 2 月 29 日,1069.7;1069.7,百万里弗尔,,velde2003,"p. 25, Table 4",29 Feb 1720 466.8 507.5 77.3 0.0 18.2 1069.7 1069.7,
+velde_t4_mar5,法国,1720,1720 年 3 月 5 日,1089.9;1089.9,百万里弗尔,,velde2003,"p. 25, Table 4",5 Mar 1720 458.6 530.9 82.2 0.0 18.2 1089.9 1089.9,
+velde_t4_mar20,法国,1720,1720 年 3 月 31 日,1261.5;841.0,百万里弗尔,,velde2003,"p. 25, Table 4",31 Mar 1720 — — — — — 1261.5 841.0,
+velde_t4_apr20,法国,1720,1720 年 4 月 30 日,2054.0;1369.3,百万里弗尔,,velde2003,"p. 25, Table 4",30 Apr 1720 — — — — — 2054.0 1369.3,
+velde_t4_may22,法国,1720,1720 年 5 月 22 日,2116.5;1539.3,百万里弗尔,,velde2003,"p. 25, Table 4",22 May 1720 — — — — — 2116.5 1539.3,
+velde_t4_may20,法国,1720,1720 年 5 月 31 日,2235.1;1625.5,百万里弗尔,,velde2003,"p. 25, Table 4",31 May 1720 804.8 1158.5 239.4 0.0 32.5 2235.1 1625.5,
+velde_t4_jun20,法国,1720,1720 年 6 月 30 日,2359.0;1190.3,百万里弗尔,,velde2003,"p. 25, Table 4",30 Jun 1720 — — — — — 2359.0 2289.0 1636.6 1190.3,第 (2)、(3) 列为 2289.0、1636.6
+velde_t4_jul20,法国,1720,1720 年 7 月 31 日,2081.7;515.2,百万里弗尔,,velde2003,"p. 25, Table 4",31 Jul 1720 — — — — — 2081.7 1873.4 1030.3 515.2,
+velde_t4_aug20,法国,1720,1720 年 8 月 31 日,2006.8;456.2,百万里弗尔,,velde2003,"p. 25, Table 4",31 Aug 1720 538.9 1065.3 341.5 0.0 61.2 2006.8 1526.8 912.4 456.2,
+velde_t4_sep20,法国,1720,1720 年 9 月 30 日,2001.7;248.2,百万里弗尔,,velde2003,"p. 25, Table 4",30 Sep 1720 529.4 1001.9 341.4 52.9 76.1 2001.7 1250.0 372.3 248.2,
+velde_t4_oct10,法国,1720,1720 年 10 月 10 日,2038.4;161.5,百万里弗尔,,velde2003,"p. 25, Table 4",10 Oct 1720 533.0 1009.0 342.2 73.6 80.7 2038.4 1218.4 242.3 161.5,
+velde_t4_oct20,法国,1720,1720 年 10 月 31 日,2069.0;157.4,百万里弗尔,,velde2003,"p. 25, Table 4",31 Oct 1720 524.1 987.8 342.0 131.6 83.6 2069.0 1128.2 236.0 157.4,
+velde_t4_nov20,法国,1720,1720 年 11 月 27 日,2069.1;80.3,百万里弗尔,,velde2003,"p. 25, Table 4",27 Nov 1720 521.6 979.7 341.1 134.9 91.7 2069.1 973.0 120.4 80.3,
+velde_t4_jan21,法国,1721,1721 年 1 月 8 日,2069.1;46.6,百万里弗尔,,velde2003,"p. 25, Table 4",8 Jan 1721 521.6 979.7 341.1 134.9 91.7 2069.1 673.8 58.2 46.6,
+velde_t4_cols,法国,1720,,60,里弗尔/马克,,velde2003,"p. 25, Table 4","column (4) converts column (3) into constant silver livres of 1719, at 60L per marc of silver",第 (4) 列的含义
+velde_hamilton,巴黎,1720,1720 年 1—8 月,25;19;2.6,%;%;倍,,velde2003,p. 27,"Indeed, the remarkable rise of the price level in January 1720 (+25% in one month) is what brings about the catch-up. Hamilton’s index continues to rise through 1720, but much more slowly, only 19% from January 1720 to the peak in August 1720. At the same time, the quantity of money in circulation multiplied by a factor of 2.6 (Table 4).",
+velde_hospital,巴黎,1720,,,,,velde2003,p. 27,note that Hamilton’s data is drawn from hospital records,
+velde_t6_jul19,法国,1719,1719 年 7 月 26 日宣布,60;250000;1960;33,里弗尔;股;里弗尔;倍,,velde2003,"p. 29, Table 6","1720:I 60 26 Jul 1719 250,000 1960 33",表 6：股息、股数、股价、价格股息比
+velde_t6_dec19,法国,1719,1719 年 12 月 29 日宣布,200;600000;9413;47,里弗尔;股;里弗尔;倍,,velde2003,"p. 29, Table 6","1720:I+II 200 29 Dec 1719 600,000 9413 47",
+velde_buy5000,法国,1719,1719 年 10 月 5 日,5000,里弗尔,,velde2003,p. 29,"As early as October 5, 1719 the Company had ordered its treasurer to buy any share offered at a price of 5000L",
+velde_buy5000b,法国,1719,,,,,velde2003,p. 29,"the Company’s policy effectively guaranteed any bondholder repayment of his bonds at par in notes, a first hint of the debt monetization that was to come",
+velde_office,法国,1720,1719 年 12 月下旬—1720 年 2 月中,800;16,百万里弗尔;%,,velde2003,p. 29,"during which time the Company bought 800mL worth of shares, or about 16% of its capitalization, with a corresponding addition to the money supply.",
+velde_cap,法国,1720,,300000;9925;300000;6600;4.96,股;里弗尔;份;里弗尔;十亿里弗尔,,velde2003,"p. 29, n. 32","The stock consisted at the time of 300,000 original shares, which the Company was buying at 9925L, and up to 300,000 subscriptions, valued at 6600L: a total capitalization of 4.96bnL.",
+velde_feb22,法国,1720,1720 年 2 月 22 日,100000;9000,股;里弗尔,,velde2003,p. 29,"the Company bought back from the King his 100,000 shares at 9000L each",
+velde_8500,法国,1720,1720 年 3 月 1 日,9925;8500,里弗尔,,velde2003,p. 30,from the support price of 9925L the market price of shares fell to 8500L by March 1,
+velde_peg,法国,1720,1720 年 3 月 5 日,9000,里弗尔,,velde2003,p. 30,"on March 5, opened another office for the buying and selling of shares at a fixed price of 9,000L",
+velde_1213,法国,1720,1720 年 3—5 月,1213.5;27,百万里弗尔;%,,velde2003,p. 30,"From March to late May 1720, the company spent another 1213.5mL (Hautchamp 1743, 1:121) to buy 27% of its stock, resulting in the increase in outstanding notes shown in Table 4.",
+velde_nochange,法国,1720,1720 年 3 月 5 日,,,,velde2003,p. 30,“the bank note is a form of money that is not subject to any variation.”,劳的承诺
+velde_may21,法国,1720,1720 年 5 月 21 日,9000;5000,里弗尔,,velde2003,p. 30,"Law devalued both the shares and the notes by roughly equal amounts, in monthly stages, from 9000L to 5000L for the shares, and the shares down to a half of their face value by December 1.",原文第二个 shares 应为 notes
+velde_may27,法国,1720,1720 年 5 月 27 日,,,,velde2003,p. 30,on May 27 the devaluation of May 21 was rescinded,
+velde_left,法国,1720,1720 年 12 月初,,,,velde2003,p. 35,Law left France in early December 1720.,
+velde_2800,法国,1721,,2800;2200;600,百万里弗尔,,velde2003,p. 38,"In summary, one can say that of the 2800mL of notes issued, 2200mL ended up in the Visa liquidation and became government bonds",
+velde_visa,法国,1721,,2211.2;1700;23.5,百万里弗尔;百万里弗尔;%,,velde2003,p. 38,"The 2211.2mL of Table 7 submitted to the Visa were reduced in face value to 1700mL, a 23.5% average reduction, but with much variation across individuals.",
+velde_visa_small,法国,1721,,500;40;39,里弗尔;%;%,,velde2003,p. 38,No claim of 500L or less was reduced: these small claims represent half of the individuals and 40% of the sums involved. This means that the remaining 60% of the sums were reduced by 39% on average.,
+velde_visa_20,法国,1722,1722 年 3 月,25;20,%,,velde2003,p. 38,"This means that the average holder of a note ultimately got about 20% of face value in March 1722, which was the market value as of early November 1720.",
+velde_visa_25,法国,1722,,25,%,,velde2003,p. 38,The cash value of the liquidation certificates issued by the Visa was around 25% of face value on the open market in 1722,
+velde_visa_1500,法国,1722,,190;1500;4;2,百万里弗尔;百万里弗尔;%;%,,velde2003,p. 38,"A supplementary tax on excessive profits from trading in the System was levied on about two hundred individuals and reduced the debt by another 190mL. The rest, about 1500mL, was converted into life annuities at 4% and perpetual annuities at 2%",
+velde_deficit,法国,1720,,50,百万里弗尔,,velde2003,p. 39,"The primary deficit at the peak of the System was over 50mL, which is as large as it was during the War of Spanish Succession.",
+velde_150,法国,1720,,150,百万里弗尔,,velde2003,p. 39,we can figure that about 150mL in deficits were financed by money creation during the System.,
+velde_default,法国,1724,,5;10,%,,velde2003,p. 50,"If default there was, it was on the order of 5 or 10%, which is modest by the standards of the Old Regime denounced by Marion.",
+velde_realestate,法国,1720,,9.5,百万里弗尔,,velde2003,p. 50,"he invested his fortune (at least 9.5mL according to Marion 1914, 1:99) in French real estate, not a good move for someone planning a quick getaway.",
+velde_suspend,法国,1720,1720 年 7 月 17 日,,,,velde2003,"p. 50, n. 48","refers to the date of July 17, 1720, when the Bank suspended payment.",
+velde_40fold,法国,1720,,250;10000;40,里弗尔;里弗尔;倍,,velde2003,p. 44,"During the year 1718, the price of a share in the Company of the West stood around 250L.",
+velde_40fold_b,法国,1720,1720 年 1 月,10000;40,里弗尔;倍,,velde2003,p. 44,"In-between, the price peaked at 10,000L in January 1720 (see Figure 4). Can a 40-fold rise and fall in the price of an asset be justified on the basis of reasonable beliefs about prospective returns on this asset?",
+velde_1722,法国,1722,1722 年改组以后,,,,velde2003,p. 44,"After the Company’s restructuring in 1722, the share price was about the same, adjusting for share splits and changes in the units of account.",
+velde_t10_debt,法国,1719,1719 年 12 月的预期,48;48;48;48,百万里弗尔/年,,velde2003,"p. 45, Table 10",King’s debt 48 48 48 48,表 10：劳 (1)、劳 (2)、Dutot、Velde 修订
+velde_t10_farms,法国,1719,,12;8;15;10,百万里弗尔/年,,velde2003,"p. 45, Table 10",General Farms 12 8 15 10,
+velde_t10_rec,法国,1719,,1;1;1.5;1,百万里弗尔/年,,velde2003,"p. 45, Table 10",Recettes Gales 1 1 1.5 1,
+velde_t10_mints,法国,1719,,12;10;4;0,百万里弗尔/年,,velde2003,"p. 45, Table 10",Mints 12 10 4 0,
+velde_t10_tob,法国,1719,,6;5;2;10,百万里弗尔/年,,velde2003,"p. 45, Table 10",Tobacco 6 5 2 10,
+velde_t10_trade,法国,1719,,12;8;10;6.5,百万里弗尔/年,,velde2003,"p. 45, Table 10",Trade 12 8 10 6.5,
+velde_t10_total,法国,1719,,91;80;80.5;75.5,百万里弗尔/年,,velde2003,"p. 45, Table 10",Total 91 80 80.5 75.5,
+velde_80ml,法国,1723,劳 1723 年的计算,80;200;400000,百万里弗尔;里弗尔;股,,velde2003,p. 45,"Law (1935, 3:212–13) counted that he needed revenues of 80mL to pay the 200L dividend to 400,000 shares, omitting 100,000 shares held by the Company as collateral for loans, and a like amount owned by the King",
+velde_125,法国,1719,,125,里弗尔,,velde2003,p. 46,"Paying dividend on those additional shares, based on the earnings estimate of Table 10, would bring the dividend down to 125L.",
+velde_pe45,法国,1719,,200;9000;45;2,里弗尔;里弗尔;倍;%,,velde2003,p. 46,"Even granting the 200L dividend, can one accept a valuation of 9000L per share, a P/E ratio of 45? Law clearly thought so, as he explicitly set a target interest rate of 2% for his System.",
+velde_pd15,法国,1769,1723—1769 年,4;24;15,倍,,velde2003,p. 47,"ratio fluctuated widely between 4 and 24, and averaged about 15 (Figure 15)",印度公司在 1725 年以后的价格股息比
+velde_growth,法国,1789,1726—1789 年,0.6;0.5,%,,velde2003,p. 47,"Overall fiscal revenues grew by about 0.6% annually in real terms from 1726 to 1789, slightly above the estimated 0.5% GDP growth (Maddison 2001).",
+velde_back,法国,1719,,75.5;15;1132;1875;9000;5,百万里弗尔;倍;百万里弗尔;里弗尔;里弗尔;倍,,velde2003,p. 47,"Annual revenues of 75.5mL and a factor of 15 yields a valuation of 1132mL, or a share price of 1875L, which is one fifth of the peak share price of 9000L, or overvaluation by a factor of 5.",
+velde_dutch,法国,1719,,3;1.5;2,%;%;倍,,velde2003,p. 48,"However, to justify the market valuation on the basis of 75mL in earnings would require, say, Dutch interest rates of 3% and a growth rate of 1.5%, which no European country enjoyed before the start of the industrial revolution. Assuming alone that Law’s System would have brought interest rates to Dutch levels would leave overvalued by a factor of 2;",
+velde_several,法国,1719,,,,,velde2003,p. 48,It seems difficult to avoid the conclusion that the Company was overvalued several times over.,
+velde_manip,法国,1720,,,,,velde2003,p. 48,"From January 1720 at the latest, probably from November or December 1719, one cannot consider the “market” price to represent anything but Law’s policies.",
+velde_pe22,法国,1719,,22;125;3;5000,倍;里弗尔;%;里弗尔,,velde2003,p. 49,"To offer the king better terms than he was paying on his debt, the PE ratio on the Company’s shares had to be higher than 22. A dividend of 125L (based on the revenue estimate of Table 10) and Dutch-like interest rates of 3% could bring valuation to about 5000L, the price at which Law launched his debt conversion in September 1719.",
+velde_couldwork,法国,1719,,,,,velde2003,p. 49,"With the benefit of modern theory and experience, and with a good dose of optimism, it is possible to accept that the System could have worked.",
+velde_peg_view,法国,1720,,,,,velde2003,p. 49,"In my view, the rise itself was the result of covert and later overt price support, carried out in part to entice the bondholders to submit willingly to the debt conversion.",
+velde_govequity,法国,1720,,,,,velde2003,p. 51,"The other concept that emerges from the System, that of government equity, is not one that has been formally reprised yet",
+velde_1930s,法国,1720,,,,,velde2003,p. 49,"By the 1930s, of course, increasing experience with fiat money and the notion that government policy (including monetary policy) could and should be used to stimulate the economy resulted in a rise in Law’s reputation.",
+garber_debt50,英格兰,1720,,50;18.3;3.4;3.2;11.7;16.5;15,百万英镑,,garber1990,p. 47,"The British debt in 1720 amounted to approximately 50 million pounds. Of this, 18.3 million was held by the three largest corporations: 3.4 million by the Bank of England, 3.2 million by the East India Company, and 11.7 million by the South Sea Company. Redeemable government bonds held privately amounted to 16.5 million;",
+garber_irred,英格兰,1720,,15;72;87;22,百万英镑;年;年;年,,garber1990,p. 47,About 15 million pounds of the debt was in the form of irredeemableannuities: long annuities of between 72 and 87 years and short annuities of 22 years in maturity.,原文 irredeemableannuities 连排
+garber_simpler,英格兰,1720,,,,,garber1990,p. 47,"the South Sea Company was not involved in large-scale takeovers of commercial companies nor in governmentfunctions such as the mint, the collection of taxes, or the creation of paper money.",原文 governmentfunctions 连排
+garber_blocked,英格兰,1720,,,,,garber1990,p. 48,"It was well-known that British trade with the South Americas was effectively blocked by the Spanish, so only the holdings of government debt are important to the economic story.",
+garber_31m,英格兰,1720,1720 年 3 月 21 日一读,7.5;31,百万英镑,,garber1990,p. 48,"To acquire this right, the company agreed to pay the government up to 7.5 million pounds if it managed to acquire the 31 million pounds of debt in noncorporate hands.",
+garber_terms,英格兰,1720,,2000;1400;100,英镑,,garber1990,p. 48,"For each 100 pounds per year of the long and short annuities acquired the company could increase the par value of its shares outstanding by 2000 pounds and by 1400 pounds, respectively. For each 100 pound par value of redeemables acquired, it could increase its stock issue by 100 pounds.",
+garber_5pct,英格兰,1727,,5;4,%,,garber1990,p. 48,The interest to be paid by the government on the debt acquired by the Company was 5 percent per year until 1727 and 4 percent per year thereafter.,
+garber_bribes,英格兰,1720,,1.3,百万英镑,,garber1990,p. 48,bribes to leading membersof Parliament and favorites of the king totalling 1.3 million pounds,原文 membersof 连排
+garber_par,英格兰,1720,,11.7;22.8,百万英镑,,garber1990,p. 48,"Prior to the refunding operation, the par value of South Sea sharesoutstanding was 11.7 million pounds; and this was increased to 22.8 million pounds by the end of the speculation.",原文 sharesoutstanding 连排
+garber_120,英格兰,1720,1720 年 1—3 月,120;200;300,英镑,,garber1990,p. 49,"Starting at about 120 pounds per 100 pound par value share in January 1720, prices moved upward as the refunding proposal was negotiated. With the passage of the refunding act on March 21, prices jumped from about 200 to 300.",
+garber_offer,英格兰,1720,1720 年 5 月 19 日,100;700;575;400;3375;1600,英镑,,garber1990,p. 49,"As an example, the holders of 100 pound long annuities were offered 700 pounds par value of stock (7 shares) and 575 pounds in bonds and cash. At the time of the offer, South Sea shares were selling for about 400 pounds, so the value of the offer was about 3375 pounds for a long annuity.",原文 100 pound 指每年 100 英镑的长期年金
+garber_offer_1600,英格兰,1720,,1600;146,英镑,,garber1990,p. 49-50,"estimates the market value of the annuity at about 1600 pounds prior to the conversion attempt. Since annuity holders would not lose unless share prices fell below 146 pounds, the offer was highly attractive.",
+garber_third,英格兰,1720,1720 年 6 月 17 日,5;50000;1000;745;950,百万英镑;股;英镑;英镑;英镑,,garber1990,p. 50,"the Company undertook a third cash subscription on June 17, 1720, in which it sold a par value of 5 million pounds (50,000 shares) for a market price of 1000 pounds per share.",
+garber_745,英格兰,1720,1720 年 6 月,745;950,英镑,,garber1990,p. 50,Share prices immediately jumped from 745 to 950.,
+garber_books,英格兰,1720,1720 年 6 月 24 日—8 月 22 日,,,,garber1990,"p. 50, n. 11","From June 24 to August 22, the transfer books of the Company were closed in preparation for a dividend payment, so the market prices depicted in Figure 3 for this period were future prices.",
+garber_peak,英格兰,1720,1720 年 7 月 1 日,950;1050;10,英镑;英镑;%,,garber1990,"p. 50, n. 11","Neal (1988) argues that the peak price was 950 on July 1. Scott (1911) indicates a peak price of 1050, but this apparently includes the announced stock dividend of 10 percent. Following Neal, I have used the peak price of 950.",
+garber_acquired,英格兰,1720,,80;85,%,,garber1990,p. 51,"By means of all the debt conversions, the South Sea Company acquired 80 percent of the public's holdings of the irredeemables and 85 percent of the redeemables.",
+garber_collapse,英格兰,1720,1720 年 8 月 31 日—10 月 1 日,775;290,英镑,,garber1990,p. 51,"South Sea share prices collapsed from about 775 on August 31 to about 290 on October 1, 1720.",
+garber_164,英格兰,1720,,212012;164;103,股;百万英镑;百万英镑,,garber1990,p. 51,"Shares outstanding or to be issued to the public after subscribers were entered on Company registers numbered 212,012. Thus, the market value of all shares on August 31 was 164 million pounds and about 103 million pounds of that total evaporated in one month, an amount exceeding twice the value of the original, burdensome government debt.",
+garber_bubbleact,英格兰,1720,1720 年 6 月,,,,garber1990,p. 51,"Parliament passed the Bubble Act in June 1720 to ban the formation of unauthorized corporations or the extension of existing corporate charters into new, unauthorized ventures.",
+garber_aug18,英格兰,1720,1720 年 8 月 18 日,,,,garber1990,p. 51,"When the act was enforced against some of the Company's competitors on August 18, 1720, immediate downward pressure was placed on the price of shares of the affected companies.",
+garber_fund,英格兰,1720,1720 年 9 月初,164;1.9;1727;1.5;4;40,百万英镑;百万英镑/年;年;百万英镑/年;%;百万英镑,,garber1990,p. 52,"The visible asset supporting this price was a flow of revenue from the Company's claim against the government of 1.9 million pounds per year until 1727 and 1.5 million pounds thereafter. At a 4 percent long term discount rate, this asset had a value of about 40 million pounds.",
+garber_net,英格兰,1720,,7.1;6;26.1;11;70;60,百万英镑,,garber1990,p. 52,"Against this, the Company had agreed to pay 7.1 million pounds for the conversion privilege and owed 6 million pounds in bonds and bills for a net asset value of 26.1 million pounds. In addition, the Company's cash receivables were 11 million pounds due on loans to stockholders and 70 million pounds eventually due from cash subscribers. Thus, share values exceeded asset values by more than 60 million pounds.",
+garber_five,英格兰,1720,,5,倍,,garber1990,p. 52,"Given the dubious value of the company's cash claims, share values exceeded tangible net assets by five times or more.",
+garber_forgave,英格兰,1721,,2;7.1,百万英镑,,garber1990,p. 51-52,"Finally, Parliament forgave payment of the 7.1 million pounds which the Company had contracted on receipt of the conversion privilege.",
+garber_stripped,英格兰,1721,,2,百万英镑,,garber1990,p. 51,Parliament eventually stripped the Directors of the Company and several government officials of their wealth (2 million pounds) and directed the payment of the proceeds to the company.,
+tv_hoare,英格兰,1720,,28000;200,英镑,,tv2004,p. 2,"Hoare’s made a profit of over £28,000, a great deal of money at a time when £200 was a comfortable income for a middle-class family",
+tv_knew,英格兰,1720,,,,,tv2004,p. 1,"We argue that Hoare's Bank, a fledgling West End London banker, knew that a bubble was in progress and nonetheless invested in the stock; it was profitable to ""ride the bubble.""",
+tv_coord,英格兰,1720,,,,,tv2004,p. 1,"Instead, this study demonstrates that predictable investor sentiment can prevent attacks on a bubble; rational investors may only attack when some coordinating event promotes joint action.",
+fgr_against,英格兰、荷兰,1720,,,,,fgr2009,abstract,we find evidence against indiscriminate irrational exuberance and evidence in favor of speculation about two factors: the Atlantic trade and the incorporation of insurance companies.,
+fgr_7to10,法国、英格兰、荷兰,1720,,7;10,倍,,fgr2009,p. 13,"The four major firms in Northern Europe engaged in Atlantic trade; the Mississippi Company, the Royal African Company, the South Sea Company and the Dutch West Indies Company all rose by factors of 7 to 10 in the global bubble.",
+fgr_asia,英格兰、荷兰,1720,,,,,fgr2009,p. 13,"The two major firms engaged in Asian trade, the Dutch and British East India companies, rose by much less.",
+fgr_nodutch,荷兰,1720,,,,,fgr2009,p. 18,No Dutch firm was launched to imitate the financial operations of the Mississippi Company or the South Sea Company.,
+fgr_notdebt,荷兰,1720,,,,,fgr2009,p. 18,suggests that the Mississippi and South Sea bubbles were not primarily due to speculation about the debt‐equity swap as a financial innovation.,原文用 U+2010 连字符
+fgr_t1_ins,英格兰,1720,,2013;1717;8,%;%;家,,fgr2009,"p. 20, Table 1",Insurance 2013% 1717% 8,表 1：相对面值的最大涨幅，全体、去掉大公司、家数
+fgr_t1_atl,英格兰,1720,,895;948;4,%;%;家,,fgr2009,"p. 20, Table 1",Atlantic 895% 948% 4,
+fgr_t1_pac,英格兰,1720,,349;349;1,%;%;家,,fgr2009,"p. 20, Table 1",Pacific 349% 349% 1,东印度公司
+fgr_t1_bank,英格兰,1720,,335;500;3,%;%;家,,fgr2009,"p. 20, Table 1",Bank/Finance 335% 500% 3,
+fgr_t1_total,英格兰,1720,,1172;995;45,%;%;家,,fgr2009,"p. 20, Table 1",Total 1172% 995% 45,
+fgr_dutch127,荷兰,1720,,127,%,,fgr2009,p. 25,Appendix 2 reports the maximum trough to peak percentage gain for the full sample of Dutch firms. The average was 127%; much lower than the average maximum percentage gain in the London bubble.,
+fgr_insurers,英格兰,1720,1720 年 8 月 26 日（格里历）,,,,fgr2009,p. 15,"The two British insurance companies reached their peak on the same day – August 26th [G], and began their drop on the 27th [G].",
+fgr_ss_crash,英格兰,1720,1720 年 9 月 19 日（格里历）,,,,fgr2009,p. 15,the crash in South Sea Company shares began on September 19[G],
+fgr_calendar,,1720,,11,天,,fgr2009,p. 14,there was an eleven‐day difference between the older Julian calendar used in London and the newer Gregorian calendar used on the continent.,原文用 U+2010 连字符
+fgr_survive,英格兰、荷兰,1720,,,,,fgr2009,p. 26,"The survival of Stad Rotterdam, London Assurance and Royal Exchange Assurance into the modern era proved the long‐term viability of incorporated insurance companies.",
+cant_land,,1755,,,,,cantillon1755,"Partie I, ch. 1",La Terre est la source ou la matiere d’où l’on tire la Richesse ; le travail de l’Homme est la forme qui la produit,
+cant_locke,,1755,,,,,cantillon1755,"Partie II, ch. 6","il a bien senti que l’abondance de l’argent enchérit toute chose, mais il n’a pas recherché comment cela se fait.",说洛克
+cant_voie,,1755,,,,,cantillon1755,"Partie II, ch. 6",La grande difficulté de cette recherche consiste à savoir par quelle voie,转录本 &dans 之间缺空格，只引到这里
+cant_mines,,1755,,,,,cantillon1755,"Partie II, ch. 6","Si l’augmentation de l’argent effectif vient des Mines d’or ou d’argent qui se trouvent dans un État, le Propriétaire de ces Mines, les Entrepreneurs, les Fondeurs, les Affineurs, & généralement tous ceux qui y travaillent, ne manqueront pas d’augmenter leurs dépenses à proportion de leurs gains.",
+cant_part,,1755,,,,,cantillon1755,"Partie II, ch. 6","toute cette augmentation de dépense en viande, en vin, en laine, &c. diminue nécessairement la part des autres habitans de l’État qui ne participent pas d’abord aux richesses des Mines en question.",
+cant_suffer,,1755,,,,,cantillon1755,"Partie II, ch. 6","Ceux donc, qui souffriront de cette cherté, & de l’augmentation de consommation, seront d’abord les Propriétaires des terres, pendant le terme de leurs Baux, puis leurs domestiques, & tous les ouvriers ou gens à gages fixes qui en entretiennent leur famille.",
+cant_1720,英格兰,1720,,5;50;60,%,,cantillon1755,"Partie II, ch. 9","Cependant cette abondance d’argent & de circulation au lieu de diminuer l’interêt courant qui étoit auparavant à cinq pour cent, & au-dessous, ne servit qu’à en augmenter le prix, qui fut porté à cinquante & soixante pour cent.",
+cant_1720b,英格兰,1720,,,,,cantillon1755,"Partie II, ch. 9","tout le monde étoit devenu Entrepreneur dans le systeme de la Mer du Sud, & demandoit à emprunter de l’argent pour acheter des Actions",
+cant_channel,,1755,,,,,cantillon1755,"Partie II, ch. 9","Si l’abondance d’argent dans l’État vient par les mains de gens qui prêtent, elle diminuera sans doute l’interêt courant en augmentant le nombre des prêteurs : mais si elle vient par l’entremise de personnes qui dépensent elle aura l’effet tout contraire",
+cant_minister,,1755,,,,,cantillon1755,"Partie III, ch. 8","Il est donc constant qu’une Banque d’intelligence avec un Ministre, est capable de hausser & de soutenir le prix des fonds publics, & de baisser le prix de l’intérêt dans l’État au gré de ce Ministre",
+cant_bombe,,1755,,,,,cantillon1755,"Partie III, ch. 8","mais si quelque crainte ou accident imprévu poussoit les Porteurs à demander l’argent à la Banque, on en viendroit à crever la bombe, & on verroit que ce sont des opérations dangereuses.",
+cant_bank1720,伦敦,1720,,,,,cantillon1755,"Partie III, ch. 8","Ce fut par ce dernier rafinement que le crédit de la Banque se maintint en mil sept cent vingt, lors de la chûte de la Mer du Sud",英格兰银行靠富人联合担保渡过 1720 年的挤兑
+ques_source,法国,1766,1766 年 6 月,,,,quesnay1766,"Journal d’agriculture, juin 1766","Journal d’agriculture, du commerce et des finances , Tome V, troisième partie , juin 1766 ( p. 11 - 41 )",
+ques_5,法国,1766,,5,十亿里弗尔,,quesnay1766,p. 11,rapporteroit tous les ans une réproduction de la valeur de cinq milliards,
+ques_classes,法国,1766,,3,个阶级,,quesnay1766,p. 12,"La Nation est réduite à trois classes de Citoyens : la classe productive , la classe des propriétaires & la classe stérile .",
+ques_avances,法国,1766,,2;5;2,十亿里弗尔,,quesnay1766,p. 13,"Les Avances annuelles de la classe productive , montantes à deux milliards [ 2 ] qui ont produit cinq milliards , dont deux milliards sont en produit net ou revenu .",
+ques_revenu,法国,1766,,2;1;1,十亿里弗尔,,quesnay1766,p. 14,"Le Revenu de deux milliards pour les propriétaires , dont un milliard se dépense en achats à la classe productive & ‘'l’autre milliard en achats à la classe stérile .",转录本里有一处多余的引号
+ques_sterile_adv,法国,1766,,1,十亿里弗尔,,quesnay1766,p. 14,Les Avances de la classe stérile de la somme d’ un milliard qui se dépense par la classe stérile en achats de matieres premieres à la classe productive .,
+ques_3,法国,1766,,3,十亿里弗尔,,quesnay1766,p. 15,"Total des achats faits par les propriétaires du revenu , & par la classe stérile à la classe productive , ci-contre… 3 milliards.",
+ques_pays,法国,1766,,3;2;1,十亿里弗尔,,quesnay1766,p. 15,"De ces trois milliards reçus par la classe productive pour trois milliards de productions qu’elle a vendues, elle en doit deux milliards aux propriétaires pour l’année courante du revenu, & elle en dépense un milliard en achats d’ouvrages pris à la classe stérile .",
+ques_sterile_2,法国,1766,,2;1,十亿里弗尔,,quesnay1766,p. 15,"Les matières premieres & le travail pour les ouvrages montent les ventes de la classe stérile à deux milliards , dont un milliard est dépensé pour la subsistance des agens dont cette classe est composée",
+ques_nothing,法国,1766,,,,,quesnay1766,p. 15,"ainsi ses avances ne produisent rien ; elle les dépense, elles lui sont rendues, & restent toujours en réserve.",不生产阶级的预付
+ques_250,法国,1766,,250,%,,quesnay1766,p. 17,"Selon cette hypothèse, les avances annuelles reproduisent deux cent cinquante pour cent.",
+ques_ble,法国,1766,,18,里弗尔/塞蒂埃,,quesnay1766,p. 17,"elles supposent que la liberté du commerce soutient le débit des productions à un bon prix, par exemple, le prix du blé à 18 liv. le septier",
+ques_shares,法国,1766,,572;1144;286,百万里弗尔,,quesnay1766,p. 18,"Selon ces données sur un revenu total de deux milliards, la part du Souverain seroit de 572 millions ; celle des propriétaires seroit de quatre septiemes ou un milliard 144 millions ; celle des Décimateurs d’un septieme ou 286 millions, l’impôt compris.",2/7、4/7、1/7
+ques_impot,法国,1766,,,,,quesnay1766,p. 18-19,"Les Propriétaires, le Souverain & toute la Nation ont un grand intérêt que l’impôt soit établi en entier sur le revenu des terres immédiatement",
+ques_reste2,法国,1766,,5;3;2;1;3,十亿里弗尔,,quesnay1766,p. 19,"Des cinq milliards de réproduction totale, les propriétaires du revenu & la classe stérile en ont acheté pour trois milliards pour leur consommation : ainsi il reste encore à la classe productive pour deux milliards de productions ; cette classe a en outre pour un milliard d’ouvrages qu’elle a acheté à la classe stérile , ce qui lui fait un fonds annuel de trois milliards",
+ques_interets,法国,1766,,10;1;10,十亿里弗尔;十亿里弗尔;%,,quesnay1766,p. 22,"dans l’hypothèse actuelle où les avances annuelles sont de deux milliards , les avances primitives sont donc de dix milliards , les intérêts annuels d’ un milliard ne sont que sur le taux de dix pour cent.",
+ques_luxe,法国,1766,,100,里弗尔,,quesnay1766,p. 26,Celui qui achète un litron de petits pois 100 livres les paye à un cultivateur qui les emploie en dépenses de culture à l’avantage de la reproduction annuelle. Celui qui achète un galon d’or 100 livres le paye à un ouvrier qui en emploie une partie à racheter chez l’étranger la matière première,生存之奢与装饰之奢
+oncken_1758,法国,1758,1758 年 12 月或 1759 年,1758;1759,年,,oncken1888,p. 126 (Oncken 引 Dupont 1769),"qui est, comme on sait, M. Quesnay, nous a dit plusieurs fois que cette édition était du mois de décembre 1758 et qu'il en avait des époques sûres",
+oncken_1759,法国,1759,,1759,年,,oncken1888,p. 126 (Oncken 引 Dupont 1769),"et même qu'elle n'est pas du commencement de cette année, et qu'il en a aussi des époques sûres",米拉波的说法：1759 年，而且不在年初

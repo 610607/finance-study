@@ -25,6 +25,7 @@ __pycache__/
 
 # Data whose licence forbids redistribution: list the .csv here, keep its .json and fetch script
 # macro/data/snapshots/<name>.csv
+macro/data/snapshots/fgr2009_1720_shares.csv
 
 # Worktrees created for parallel chapter writers
 .claude/worktrees/

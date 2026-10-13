@@ -1,0 +1,99 @@
+{
+  "title": "Quotations on mercantilism, John Law's System, the South Sea bubble, Cantillon and Quesnay's Tableau (Chapter 16)",
+  "source": "Mun (1664; Ashley's reprint, 1895); Smith (1776; Gutenberg text); Law (1705, first edition); Velde (2003); Garber (1990); Temin & Voth (2004); Frehen, Goetzmann & Rouwenhorst (2009); Cantillon (1755; French Wikisource); Quesnay (1766; French Wikisource); Oncken (1888)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: country or city), year (approximate where year_note says so), year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page, chapter or table), quote (verbatim), note",
+  "retrieved": "2026-10-13",
+  "license": "Short quotations only, for comment and teaching. Mun, Law, Smith, Cantillon, Quesnay and Oncken are in the public domain; the Wikisource transcriptions are under CC BY-SA; the modern research is quoted, not copied.",
+  "used_in": [
+    16
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py",
+  "notes": "Rows citing txt, pdf and html sources are checked against the downloaded documents by verify_web_quotes.py. Rows citing mun1664img and law1705img were read by eye on the page images listed in each source's version (format image) and are counted but not checked by a script. Transcription: long s is written s; the spelling of Mun and Law is kept. Velde's and Frehen, Goetzmann & Rouwenhorst's tables are quoted as their rows read in the text layer. Velde's Table 4 gives notes issued less notes burned (column 1) and their value in constant silver livres of 1719 (column 4); the rows keep both. Velde writes that the State was 'creditor' for 90mL a year, meaning that it owed it; and that the arrêt of 21 May 1720 reduced 'the shares down to a half of their face value', meaning the notes. South Sea peak: Neal's 950 (used by Garber and by the price data) against Scott's 1050, which includes a 10 per cent stock dividend. Date of the first Tableau: Quesnay said December 1758, Mirabeau 1759 (Dupont, 1769, quoted by Oncken). Translations into Chinese in the chapter are the book's own.",
+  "sources": {
+    "mun1664": {
+      "url": "https://archive.org/download/englands-treasure-by-forraign-trade.-1664/England%27s%20treasure%20by%20forraign%20trade.%201664_djvu.txt",
+      "format": "txt",
+      "sha256": "7ec24ffc3494089a4b64f7d39e52d5f27da7efb20e8431d85240450d12d2bad6",
+      "version": "T. Mun, England's Treasure by Forraign Trade (London, 1664; published by his son John Mun), reprinted in W. J. Ashley's Economic Classics (New York and London: Macmillan, 1895), which keeps the 1664 text and spelling; OCR text of the University of Toronto copy (archive.org item englandstre00muntuoft, posted again as englands-treasure-by-forraign-trade.-1664); pages are Ashley's; the preface (pp. v-vi) is Ashley's",
+      "retrieved": "2026-10-13"
+    },
+    "mun1664img": {
+      "url": "https://archive.org/download/englands-treasure-by-forraign-trade.-1664/England%27s%20treasure%20by%20forraign%20trade.%201664.pdf",
+      "format": "image",
+      "sha256": "1fd5e7335a88a0e51d1d40a8311c234cce9dc8d82963bcd53e2256cc1efa3297",
+      "version": "the same reprint as mun1664 (the SHA-256 is that of the PDF); p. 27 (PDF page 47) read on the page image, because the text layer reads 'seed-time' (long s) as 'geed-time' and 'feed-time'; p. 7 (PDF page 27) was compared too",
+      "retrieved": "2026-10-13"
+    },
+    "smith1776": {
+      "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
+      "format": "txt",
+      "sha256": "e91d52dca43fd0fd69baf7776b00a5d8e74b69675b6b608ca8a0378aaf3ae58d",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300; the text of a later edition (see the snapshot finrev_facts); Book IV, ch. I on the mercantile system, Book II, ch. II on Law, Book V, ch. I, pt. III on the South Sea Company",
+      "retrieved": "2026-10-13"
+    },
+    "law1705": {
+      "url": "https://archive.org/download/bim_eighteenth-century_money-and-trade-consider_law-john_1705/bim_eighteenth-century_money-and-trade-consider_law-john_1705_djvu.txt",
+      "format": "txt",
+      "sha256": "d2dd432e2f009899dc8029db2fedb26d0b595090effc280514efb73cccc96e50",
+      "version": "[J. Law], Money and Trade Consider'd, with a Proposal for Supplying the Nation with Money (Edinburgh: the heirs and successors of Andrew Anderson, 1705), the first edition; OCR text of the Eighteenth Century Collections scan on archive.org (item bim_eighteenth-century_money-and-trade-consider_law-john_1705), which keeps the long s (the check reads it as s); pages are those printed in the book (image n12 is p. 13)",
+      "retrieved": "2026-10-13"
+    },
+    "law1705img": {
+      "url": "https://archive.org/details/bim_eighteenth-century_money-and-trade-consider_law-john_1705",
+      "format": "image",
+      "sha256": "",
+      "version": "the same edition as law1705; pp. 100 and 102 read on the page images https://archive.org/download/bim_eighteenth-century_money-and-trade-consider_law-john_1705/page/n99_w900.jpg (SHA-256 2dbe03df2ec02c5ea26cffb04b4a4861692a3fe23dfce209940ee334363a3e6c) and n101_w900.jpg (eaed82cd2e3e73fd77354614e3d3aab26f136d59f958516ac7d4b4715d490076), because the text layer breaks 'exchanged' and misreads several words on p. 102",
+      "retrieved": "2026-10-13"
+    },
+    "velde2003": {
+      "url": "https://www.chicagofed.org/-/media/publications/working-papers/2003/wp2003-31-pdf.pdf",
+      "format": "pdf",
+      "sha256": "909db10084f2f066683347571431cf3cbc01edba8ab4409d9f903ee77d56cd34",
+      "version": "F. R. Velde, 'Government Equity and Money: John Law's System in 1720 France', Federal Reserve Bank of Chicago Working Paper 2003-31 (November 30, 2003); pages are those printed on the paper (PDF page minus 3); Tables 3, 4, 6 and 10 are quoted as their rows read in the text layer (columns separated by spaces)",
+      "retrieved": "2026-10-13"
+    },
+    "garber1990": {
+      "url": "https://ms.mcmaster.ca/~grasselli/Garber90.pdf",
+      "format": "pdf",
+      "sha256": "d2a3a6868708d71e54107ddd7663c50bb2cbee759144809bf766d8c1f11c12ce",
+      "version": "P. M. Garber, 'Famous First Bubbles', Journal of Economic Perspectives 4(2): 35-54 (1990); a JSTOR copy posted on a course page at McMaster University; its text layer runs some words together (kept as they read); pages are the journal's (PDF page plus 33)",
+      "retrieved": "2026-10-13"
+    },
+    "tv2004": {
+      "url": "https://econ-papers.upf.edu/papers/861.pdf",
+      "format": "pdf",
+      "sha256": "221bbf134a1d4d5c9d1e5483e9905ace319175461cf992cde14aacac7ed53823",
+      "version": "P. Temin and H.-J. Voth, 'Riding the South Sea Bubble', Universitat Pompeu Fabra Economics Working Paper 861, the version marked 'forthcoming, AER, December 2004'; published in American Economic Review 94(5): 1654-1668 (2004); pages are those of the working paper",
+      "retrieved": "2026-10-13"
+    },
+    "fgr2009": {
+      "url": "https://repec.som.yale.edu/icfpub/publications/2542.pdf",
+      "format": "pdf",
+      "sha256": "f2c8c1872e1b2b2b2b8ead77c164c15522c9cab9bac9e37c1ad596235d9e225c",
+      "version": "R. G. P. Frehen, W. N. Goetzmann and K. G. Rouwenhorst, 'New Evidence on the First Financial Bubble', Yale ICF Working Paper 09-04 (November 6, 2009); published in Journal of Financial Economics 108(3): 585-607 (2013); pages are those printed on the paper (PDF page minus 2); the price data are the snapshot fgr2009_1720_shares",
+      "retrieved": "2026-10-13"
+    },
+    "cantillon1755": {
+      "url": "https://fr.wikisource.org/w/index.php?title=Essai_sur_la_nature_du_commerce_en_g%C3%A9n%C3%A9ral/Texte_entier&oldid=14172437",
+      "format": "html",
+      "sha256": "18522be79d4e4fcae14d908bcec337253ded5cd9ca3489369e0020cd0f8e6f8e",
+      "version": "[R. Cantillon], Essai sur la nature du commerce en général (1755), the complete text on French Wikisource, revision 14172437 (27 March 2024), transcribed from the 1755 edition; the text is cited by part and chapter; the page's menus change, so the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "quesnay1766": {
+      "url": "https://fr.wikisource.org/w/index.php?title=Analyse_de_la_formule_arithm%C3%A9tique_du_tableau_%C3%A9conomique_de_la_distribution_des_d%C3%A9penses_annuelles_d%E2%80%99une_nation_agricole&oldid=11322854",
+      "format": "html",
+      "sha256": "e719774a93a36e482af0f758f895bdd869de482645d32cfdc943b5e42038be5e",
+      "version": "[F. Quesnay], 'Analyse de la formule arithmétique du Tableau économique de la distribution des dépenses annuelles d'une nation agricole', Journal de l'agriculture, du commerce et des finances, tome V, troisième partie (June 1766), pp. 11-41, on French Wikisource (revision 11322854), transcribed from the journal with its page breaks; pages are the journal's; the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "oncken1888": {
+      "url": "https://archive.org/download/oeuvresconomiq00ques/oeuvresconomiq00ques_djvu.txt",
+      "format": "txt",
+      "sha256": "4aa3417ec251adf088c3b4a8b07b83bda9d5adf6fa806ca321ebba1c34a61235",
+      "version": "A. Oncken (ed.), Oeuvres économiques et philosophiques de F. Quesnay (Frankfurt: J. Baer; Paris: Jules Peelman, 1888); OCR text of the archive.org copy (item oeuvresconomiq00ques); p. 126 (Oncken quoting Dupont de Nemours's Notice abrégée of April 1769 on the date of the first Tableau) was also read on the page image n159",
+      "retrieved": "2026-10-13"
+    }
+  }
+}
