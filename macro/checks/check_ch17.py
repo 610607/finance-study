@@ -34,7 +34,7 @@ DOU_PER_SHI = 10
 FIXED_RATE = 60            # momme per ryo: the Edo commodity market's rate after 1700 (suz_1700)
 
 # Qing reigns: the Gregorian year in which each 元年 falls
-REIGN = {"顺治": 1644, "康熙": 1662, "雍正": 1723, "乾隆": 1736, "道光": 1821, "咸丰": 1851}
+REIGN = {"顺治": 1644, "康熙": 1662, "雍正": 1723, "乾隆": 1736, "嘉庆": 1796, "道光": 1821, "咸丰": 1851}
 STEMS, BRANCHES = "甲乙丙丁戊己庚辛壬癸", "子丑寅卯辰巳午未申酉戌亥"
 
 # Teaching inputs stated in the text
@@ -257,6 +257,13 @@ def world(F):
     quoted("  warriors (%)", war, 5, tol=0)
     quoted("  merchants and artisans (%)", merch, 8, tol=0)
     assert farm + war + merch == 100 and F["sch_pop8"][0] == merch
+    # "stable" holds after 1700: the estimates of the National Land Agency (1974), as charted by MLIT (2011)
+    quoted("population 1603 (10k)", F["mlit_1603"][0], 1227, tol=0)
+    quoted("  Kyoho years (10k)", F["mlit_kyoho"][0], 3128, tol=0)
+    quoted("  Kyoho reform from", F["mlit_years"][0], 1716, tol=0)
+    quoted("  to", F["mlit_years"][1], 1745, tol=0)
+    quoted("  1868 (10k)", F["mlit_1868"][0], 3330, tol=0)
+    assert F["mlit_kyoho"][0] / F["mlit_1603"][0] > 2 and F["mlit_1868"][0] / F["mlit_kyoho"][0] < 1.1
     p1609, y, p1750 = F["sch_osaka"]
     quoted("Osaka 1609 (10k)", p1609 / 1e4, 20, tol=0)
     quoted("  1750s (10k), 'doubled'", p1750 / 1e4, 40, tol=0)
@@ -366,6 +373,7 @@ def genroku(F, R):
     assert math.isclose(S, new_g - old_g * (1 + phi))
     quoted("  rate (%)", 100 * seign_rate(ratio_g, phi), 32.7, tol=0.05)
     quoted("  rate by content (%)", 100 * seign_rate(r, phi), 31.3, tol=0.05)
+    quoted("  per 100 ryo collected: minted", 100 * ratio_g, 150, tol=0.05)
     quoted("  per 100 ryo collected: kept", 100 * (ratio_g - 1 - phi), 49, tol=0.05)
     quoted("  paid out", 100 * (1 + phi), 101, tol=1e-9)
     quoted("ex (3): gold reminted (%)", 100 * old_g / total_g, 44, tol=0.5)
@@ -650,6 +658,7 @@ def debate(F, G):
     quoted("Gamble 1807 -> 1824", e.loc[1807], 979, tol=0)
     quoted("  1824", e.loc[1824], 1208, tol=0)
     quoted("  rise (%)", 100 * (e.loc[1824] / e.loc[1807] - 1), 23, tol=0.5)
+    quoted("Qingshigao: thinner cash from 嘉庆十年", reign("嘉庆", F["qsg_jiaqing_thin"][0]), 1805, tol=0)
     print("\n-- case: Beijing --")
     quoted("military and river costs (10k taels): 二千数百万", F["qsg_xianfeng_need"][0], 2000, tol=0)
     quoted("顺治八年", reign("顺治", F["qsg_shunzhi_chao"][0]), 1651, tol=0)
@@ -677,6 +686,12 @@ def europe(F):
 def test(F, R, G):
     print("\n== sec:toku-test: tab:toku-test ==")
     E, O = edo_test(F, R), osaka_test(F, R)
+    # the years in which each coin is taken to be the one in use (teaching assumption stated in the text)
+    for k, y in (("genroku", 1696), ("kenji", 1711), ("kyoho", 1719), ("genbun", 1737)):
+        quoted(f"Edo: {k} from", E.loc[k, "start"], y, tol=0)
+    quoted("Osaka: first year with a price (base, Genrokugin)", R["osaka_monme_per_koku"].first_valid_index(), 1701, tol=0)
+    for k, y in (("genroku", 1701), ("futatsu", 1706), ("yotsu", 1711), ("kyoho", 1719), ("genbun", 1737)):
+        quoted(f"Osaka: {k} from", O.loc[k, "start"], y, tol=0)
     for k, c, pred, act in (("keicho", 15.05, None, 0.786), ("genroku", 10.24, 1.155, 1.148), ("kenji", 7.91, 1.496, 1.781),
                             ("kyoho", 15.49, 0.763, 0.838), ("genbun", 8.63, 1.371, 1.154)):
         quoted(f"Edo {k}: pure gold (g)", E.loc[k, "c"], c, tol=0.005)
@@ -824,6 +839,10 @@ def from_quotes(Q):
     said(Q, "suz_chogin", "161.25 g")
     said(Q, "suz_edo_emergent", "17th century")
     said(Q, "sch_pop", "30 million", "87%", "5%")
+    said(Q, "mlit_1603", "1,227")
+    said(Q, "mlit_kyoho", "3,128")
+    said(Q, "mlit_1868", "3,330")
+    said(Q, "mlit_years", "1716", "45")
     said(Q, "sch_pop8", "8%")
     said(Q, "sch_osaka", "200 000", "1609", "doubled", "400 000", "1750s")
     said(Q, "sch_koku", "1 koku = 10 to = 180 litres")
@@ -891,6 +910,7 @@ def from_quotes(Q):
     said(Q, "qsg_kangxi_floor", "毋得不足一千")
     said(Q, "qsg_kangxi_880", "八百八十至七百七十")
     said(Q, "qsg_qianlong_800", "仅易八百文")
+    said(Q, "qsg_jiaqing_thin", "至十年", "局私私铸相踵起", "轮郭肉好糢糊脆薄")
     said(Q, "qsg_leak", "以千万计")
     said(Q, "qsg_daoguang17", "十七年")
     said(Q, "qsg_2000", "常至二千")

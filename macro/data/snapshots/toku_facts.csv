@@ -8,6 +8,7 @@ suz_arai,日本,1713,新井白石的报告,8824350;287617.155;13236534;357535.38
 suz_officer,日本,1711,铸币官员的估计,20000000;400000,两;贯,,suzuki2021,p. 12 n. 3,"the mint officer put the number of Keicho gold coins at 20,000,000 ryo and the number of Keicho silver coins in the city at that time at 400,000 kan",庆长金、银的总量
 suz_half,日本,1711,,,,,suzuki2021,p. 12 n. 3,"broadly, one can say that half the Keicho coins were reminted and the remaining coins were hoarded",
 suz_unchanged,日本,1711,,,,,suzuki2021,p. 12 n. 3,This means that the total amount of currency in the market was unchanged or reduced a little.,
+suz_fire,日本,1695,,,,,suzuki2021,p. 12 n. 3,nobody knows the amount of coinage of Keicho gold coins because the mint documents were destroyed in a fire,庆长金币的铸造量无从知道
 suz_qtm,日本,1695,,,,,suzuki2021,p. 11,Japanese historians currently use the quantity theory of money to explain the Genroku inflation,
 suz_incorrect,日本,1695,,,,,suzuki2021,p. 12,"However, such an understanding is incorrect.",
 suz_quality,日本,1695,,,,,suzuki2021,p. 12,"Therefore, people attributed the inflation to the debasing of the quality of coins, not to the increase in quantity.",
@@ -113,6 +114,11 @@ suz_t4_1720,日本,1720,1720 年 1 月 1 日,1720,年,,suzuki2021img,表 4（PDF
 suz_t4_1736,日本,1736,1736 年 5 月,100;100;65,两,,suzuki2021img,表 4（PDF 第 8 页）,KTL1834 | 1736-05 | Keichokin/Kyohokin 100 ryo = Genbunkin 100 ryo + premium 65 ryo (at the mint),造币处的兑换
 suz_t5_1718,日本,1718,1718 年 11 月 1 日,10000;40000;8000,匁,,suzuki2021img,表 5（PDF 第 9 页）,"KTL1811 | 1718-11-01 | Keichogin/Kyohogin 10,000 [8,000] = Yotsuhogin 40,000 [8,000]",括号内为纯银
 sch_pop,日本,1750,德川时代,30;87;5;8,百万人;%;%;%,,schaede1989,p. 489,"Japan's population is estimated to have been remarkably stable at roughly 30 million people. Of this total, 87% were farmers, 5% were 'warriors' (bushi)",其余 8% 是城市里的商人与工匠
+mlit_1603,日本,1603,江户幕府成立,1227,万人,,mlit2011,p. 4,"1,227万人",国土厅（1974）的估计
+mlit_kyoho,日本,1721,享保改革（1716—1745）,3128,万人,,mlit2011,p. 4,"3,128万人",
+mlit_1868,日本,1868,明治维新,3330,万人,,mlit2011,p. 4,"3,330万人",
+mlit_years,日本,1716,,1716;1745,年,,mlit2011,p. 4,（1716～45年）,享保改革的年份
+mlit_source,日本,1974,,,,,mlit2011,p. 4,国土庁「日本列島における人口分布の長期時系列分析」（1974年）,图表的出典
 sch_pop8,日本,1750,,8,%,,schaede1989,p. 489,8% were merchants and artisans living in the cities,
 sch_osaka,日本,1609,,200000;1609;400000,人;年;人,,schaede1989,p. 489,The population of the city of Osaka was an estimated 200 000 in 1609; it doubled to 400 000 by the 1750s,
 sch_kitchen,日本,1700,,,,,schaede1989,p. 489,the so-called 'kitchen of the country',“天下的厨房”
@@ -171,6 +177,7 @@ sch_1866,日本,1866,,1866,年,,schaede1989,p. 506,"By April 1866, the authoriti
 sch_1869,日本,1869,,1869,年,,schaede1989,p. 506,"between 1866 and April 1869, when the authorities closed the Dojima rice market following the Meiji-Restoration",
 sch_hedge,日本,1750,,,,,schaede1989,p. 507,could hedge his assets in rice bills against a possible decline in prices by simultaneously taking a futures position,
 sch_miyamoto,日本,1830,,1751;1830,年,,schaede1989,p. 507,"Miyamoto (1977a, b, 1986) demonstrated a high correlation between spot prices and futures prices from 1751 through to the 1830s",
+sch_fn15,日本,1830,,,,,schaede1989,p. 507 n. 15,use of annual average data must bias the result toward higher correlation,年度数据包括现货与期货价格相等的结算日
 sch_margin_range,日本,1750,,5;30,%,,schaede1989,p. 511,The margin requirement was between 5 and 30% of the total trading sum.,
 sch_bond_forward,日本,1700,,,,,schaede1989,p. 493,"If the buyer had to furnish the whole amount of money on the day he bought a bill that was unbacked, he actually bought a bond. On the other hand, if the rice merchant bought a backed rice bill, he entered a forward contract.",
 sch_prepay,日本,1700,,,,,schaede1989,p. 493,Neither the issuer (the warehouse) nor the purchaser regarded them as titles to physical rice.,预付票（先纳切手）
@@ -234,6 +241,9 @@ at_not_opium,清,1830,,,,,atwell2008,p. 576,Professor Lin does not subscribe to 
 at_demand,清,1830,,,,,atwell2008,p. 576,"a steep decline in the global demand for Chinese products such as raw silk, silk textiles, and tea",
 at_back,清,1856,,1856,年,,atwell2008,p. 576,silver began to flow back into the country in substantial quantities after the mid-1850s,
 at_hoard,清,1840,,,,,atwell2008,p. 577,some of which was also caused by increased hoarding of precious metals as their value increased,
+at_many,清,1840,,,,,atwell2008,p. 577,was just one of many interrelated economic difficulties with which the people of China had to contend,
+at_neighbours,清,1840,,,,,atwell2008,p. 577,close neighbours Japan and Korea,同样受害的邻国；林满红指出两国与世界白银市场隔绝
+at_understates,清,1840,,,,,atwell2008,p. 578,she sometimes understates the importance of some other key economic variables,Atwell 对林满红的批评
 qsg_seven,清,1645,顺治二年,7,枚/分,七,qingshigao,卷一百二十四 志九十九 食货五（钱法）,二年，增重二分，定钱七枚准银一分，旧钱倍之。,即每两七百文
 qsg_ten,清,1645,顺治二年,10,枚/分,十,qingshigao,卷一百二十四 志九十九 食货五（钱法）,民间颇病钱贵，已更定十枚准一分。,即每两一千文
 qsg_1000,清,1653,顺治十年,1000,文/两,千,qingshigao,卷一百二十四 志九十九 食货五（钱法）,钱千准银一两，定为画一通行之制。,“是年”接上文的十年
@@ -241,6 +251,7 @@ qsg_qiqi,清,1653,顺治十年,,,,qingshigao,卷一百二十四 志九十九 食
 qsg_kangxi_floor,清,1690,康熙二十三年以后,1000,文/两,一千,qingshigao,卷一百二十四 志九十九 食货五（钱法）,久之，钱贵如故，乃申定钱直禁，银一两易钱毋得不足一千，然钱直终不能平。,
 qsg_kangxi_880,清,1720,康熙季年,880,文/两,八百八十,qingshigao,卷一百二十四 志九十九 食货五（钱法）,季年银一两易钱八百八十至七百七十。,
 qsg_kangxi_770,清,1720,康熙季年,770,文/两,七百七十,qingshigao,卷一百二十四 志九十九 食货五（钱法）,季年银一两易钱八百八十至七百七十。,
+qsg_jiaqing_thin,清,1805,嘉庆十年以后,10,年,十,qingshigao,卷一百二十四 志九十九 食货五（钱法）,至十年，直省未尽复卯，钱复贵，通饬各督抚按卯鼓铸。然嗣是局私私铸相踵起，京局钱至轮郭肉好糢糊脆薄,嘉庆十年以后钱越铸越劣
 qsg_qianlong_800,清,1748,乾隆十三年以前（在十三年条下以“先是”追述）,800,文/两,八百,qingshigao,卷一百二十四 志九十九 食货五（钱法）,复以京师钱价昂，银一两仅易八百文，诏发工部节慎库钱平价。,
 qsg_qianlong_edict,清,1748,乾隆十三年以前（在十三年条下以“先是”追述）,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,物之定直以银不以钱，而官民乃皆便钱不便银,乾隆的上谕
 qsg_leak,清,1830,道光,,,,qingshigao,卷一百二十四 志九十九 食货五（钱法）,番船冒禁，岁漏出以千万计，御史黄中模、章沅咸以为言。,
@@ -272,6 +283,7 @@ zeng_jiangsu,清,1836,道光十六年以后（原文未写年月）,16,年,十�
 zeng_xingbu,清,1836,道光十六年以后（原文未写年月）,,,,huangchaojingshiwenxubian,卷三十一 户政三 理财下（曾国藩《备陈民间疾苦疏》）,臣在刑部。见疏防盗犯之稿。日或数十件。,写这道疏时曾国藩在刑部任职
 zeng2_three,清,1846,道光二十六年以后（原文未写年月）,26,年,二十六,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,惟二十四年吴文镕一疏。二十五年刘良驹一疏。二十六年朱嶟一疏。,这道疏写于道光二十六年以后
 zeng2_1900,清,1846,道光二十六年以后（原文未写年月）,1900,文/两,一千九百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,如现在时价换一千九百有奇。部改为一千八百。,曾国藩主张的部定价
+zeng2_month,清,1846,道光二十六年以后（原文未写年月）,,,,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（曾国藩《拟银钱并用章程疏》）,臣于本月陈奏民间疾苦一疏。,两道疏同月所上
 liu_rate,清,1845,道光二十五年,2000,文/两,二千,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（刘良驹疏）,京中纹银每两易制钱几及二千文外。省则每两易制钱二千二三百文不等。,数字文本的断句有误，应为“几及二千文。外省则……”
 liu_cause,清,1845,,,,,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（刘良驹疏）,今之银贵由于钱贱。实由于用银太重用钱太轻。,
 liu_1500,清,1845,,1500,文/两,一千五百,huangchaojingshiwenxubian,卷五十八 户政三十 钱币上（刘良驹疏）,以制钱一千五百文抵银一两之例,捐输案内的比价

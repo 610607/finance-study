@@ -83,4 +83,4 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 17 (legacy, 名义合约与通缩) | 28 `ch:depressionus` | Fisher's debt deflation: how nominal debts redistribute wealth in inflation and deflation (the Genbun recoinage eased the samurai's debts; dear silver made silver debts and taxes heavier) | open |
 | 17 (legacy, 记账单位) | 4 `ch:money` | The functions of money can be separated: rice was the unit of account in Tokugawa Japan but not the medium of exchange (Schaede) | open |
 | 17 (pitfall box 银贵钱贱) | 24 `ch:periphery` | Opium, silver and China's money in the second half of the nineteenth century | open |
-| 17 (closing sentence) | 18 `ch:smith` | Smith as the first to ask systematically where the wealth of nations comes from and on what principle banks should lend | open |
+| 17 (closing sentence) | 18 `ch:smith` | Smith asking systematically where the wealth of nations comes from and on what principle banks should lend (not "the first": Chapter 16 covers Cantillon and Quesnay) | open |
