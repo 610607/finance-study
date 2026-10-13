@@ -1,0 +1,134 @@
+{
+  "title": "Quotations on gold, salt, copper, cloth and cowrie money in West Africa, the Inca economy and cacao money (Chapter 14)",
+  "source": "al-Umari tr. Gaudefroy-Demombynes (1927, with al-Maqrizi and Ibn Khaldun); Ibn Battuta tr. Defrémery & Sanguinetti, t. IV (1858); Barth (1857); Burton (1864); Ellis (1890); Dalzel (1793, with Norris and J. F.); Robinson (1896); Gardner (2015); Garcilaso de la Vega tr. Markham (1869, 1871, quoting Blas Valera); Acosta tr. Grimston ed. Markham (1880); Oviedo ed. Amador de los Ríos (1851); Peter Martyr tr. MacNutt (1912); Dell (2010); Kocherlakota (1998)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: country or region), year (approximate where year_note says so), year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page), quote (verbatim), note",
+  "retrieved": "2026-10-13",
+  "license": "Short quotations only, for comment and teaching. The translations and editions of 1793-1927 are in the public domain in the United States or of an age that puts them there; Gardner (2015), Dell (2010) and Kocherlakota (1998) are quoted, not copied.",
+  "used_in": [
+    14
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py",
+  "notes": "Rows citing txt, pdf and html sources are checked against the downloaded documents by verify_web_quotes.py. Rows citing battuta1858img, burton1864img, dalzel1793 and oviedo1851 were read by eye on the page images listed in each source's version (format image), because the OCR layers misread long s, ç, fractions and dates; they are counted but not checked by a script. Transcription: long s is written s; Dalzel's table on p. 135 is transcribed row by row, separated by ' | '. Translations into Chinese in the chapter are the book's own. Years are those of the event where the source dates it; rows marked approximate in year_note (al-Umari's time of writing, the Inca empire before 1532, Oviedo's Nicaragua) carry a round year for sorting only and are not quoted as dates. al-Umari's 'de gain' is ambiguous (a profit of 700, or 700 in all); the chapter shows both readings.",
+  "sources": {
+    "umari1927": {
+      "url": "https://archive.org/download/india.history.resource.91094/91094_djvu.txt",
+      "format": "txt",
+      "sha256": "423ad8b7207bcdca6a7cec27f3367b32ee9c8e781490ee978b2e59f0f84d585c",
+      "version": "Ibn Fadl Allah al-'Omari, Masalik el absar fi mamalik el amsar, I: L'Afrique, moins l'Egypte, tr. M. Gaudefroy-Demombynes (Paris: Paul Geuthner, 1927), with an appendix translating al-Maqrizi on the pilgrimages of the kings of Takrur (pp. 88-92) and additions translating Ibn Khaldun on Mansa Musa (p. 254); OCR text of the copy digitized in India (Digital Library of India) on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "battuta1858": {
+      "url": "https://archive.org/download/bub_gb_Jc58NhYL6oMC/bub_gb_Jc58NhYL6oMC_djvu.txt",
+      "format": "txt",
+      "sha256": "3b24f39ef91863dd366fb6dc24d32663d0367a7bb662364b4bcbfed4d770d566",
+      "version": "Voyages d'Ibn Batoutah, texte arabe accompagné d'une traduction par C. Defrémery et B. R. Sanguinetti, tome IV (Paris: Imprimerie impériale, 1858); OCR text of a Google scan on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "battuta1858img": {
+      "url": "https://archive.org/details/bub_gb_Jc58NhYL6oMC",
+      "format": "image",
+      "sha256": "",
+      "version": "the same volume as battuta1858, read on the page images https://archive.org/download/bub_gb_Jc58NhYL6oMC/page/nN_w1600.jpg where the text layer misreads dates and names: n167 p. 164 (SHA-256 dc5c2ae8c572a34bb39eb16de51a683d19bdb2342688332f44de6f46e7859680), n380 p. 377 (da7b7961d607086dde493b7c2fdaae85a382d970ccf4ab78404f164c3b9c5341), n381 p. 378 (504f80c180966895ba30fce3b849167b688168b6c880fdc72e63c03480256e6b), n448 p. 445 (1515e157665bde41bcf8eff04a51e40530443f5b9b22e2d411a9fee9b5e6b4ff)",
+      "retrieved": "2026-10-13"
+    },
+    "barth1857": {
+      "url": "https://archive.org/download/travelsdiscoveri02bart_2/travelsdiscoveri02bart_2_djvu.txt",
+      "format": "txt",
+      "sha256": "9a3eae1cb36ce0f4fdca1a424c91adac386a4b25991ccd1f48d8478faeea9d6e",
+      "version": "H. Barth, Travels and Discoveries in North and Central Africa ... in the Years 1849-1855, vol. 2 (London: Longman, Brown, Green, Longmans & Roberts, 1857); OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "burton1864": {
+      "url": "https://archive.org/download/missiontogelelek01burt_0/missiontogelelek01burt_0_djvu.txt",
+      "format": "txt",
+      "sha256": "6569ca6b36b77b161e8707faec5d205d5be21481a82ce217acc12c4910a96506",
+      "version": "R. F. Burton, A Mission to Gelele, King of Dahome, vol. 1 (London: Tinsley Brothers, 1864); OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "burton1864img": {
+      "url": "https://archive.org/details/missiontogelelek01burt_0",
+      "format": "image",
+      "sha256": "",
+      "version": "the same volume as burton1864; the footnote on p. 143 read on the page image https://archive.org/download/missiontogelelek01burt_0/page/n162_w1600.jpg (SHA-256 b8ca282c5bb975caaf45e2a2f59f6fe43c4ae2c5113998a03475d1b3452ddd02), because the text layer drops the fractions",
+      "retrieved": "2026-10-13"
+    },
+    "ellis1890": {
+      "url": "https://archive.org/download/isbn_9781142317102/isbn_9781142317102_djvu.txt",
+      "format": "txt",
+      "sha256": "3dd959485999a23859da188da27850f77c6201ec5d7402206ad73230a14b1eb5",
+      "version": "A. B. Ellis, The Ewe-Speaking Peoples of the Slave Coast of West Africa (London: Chapman and Hall, 1890); OCR text of a Nabu Press facsimile reprint on archive.org, which reproduces the pages and page numbers of 1890",
+      "retrieved": "2026-10-13"
+    },
+    "dalzel1793": {
+      "url": "https://archive.org/download/historydahomyan00dalzgoog/historydahomyan00dalzgoog.pdf",
+      "format": "image",
+      "sha256": "31bae44f23302e778662521cf7abd93bcea3e8341b9645ec85e8fa5e9d96a2a7",
+      "version": "A. Dalzel, The History of Dahomy, an Inland Kingdom of Africa; compiled from authentic memoirs (London: for the author, 1793), with R. Norris's journey of 1772 (pp. 105-148) and notes signed J. F. added by the editor; the life of Adahoonzou II from communications of L. Abson. Google scan of the Oxford copy (the SHA-256 is that of the PDF); the text layer reads long s as f, so every quotation was read on the page images https://archive.org/download/historydahomyan00dalzgoog/page/nN_w1600.jpg: n33 p. xxv (SHA-256 c59e7ff16dd3b599d8d994179fe8e142fc03f03d46d705c2940ae5c19933957e), n173 p. 105 (3f8afe22c3acee085a88203b1eae34f08d748545153b15f8843c113bbc99d002), n204 p. 134 (ad6eb69220d75762171bf613590fbb8528788cc33d0be74e754b9e6fd7bf50a8), n207 p. 135 (3ab1c707d534d02a6e66c5b8e773e8132aaa1aee17c1ae04d97cd852af63e40d), n267 p. 191 (93882c01697af3f023d7c696142fe4655abbc3c959709459b8c860d68c71eb09), n279 p. 203 (c6aaf885797d74622692d3647ea196fae99fe5527c0e0356e08b2ee3a961bc84), n289 p. 213 (63058e529151fae567fe4c9b4e5119aeb6fed89bf8d3819565b661f6aab2dae7), n290 p. 214 (32c28981554c5c58ad1d4df9ee59e6e4a8ea5b12f6737fab4785926d25711ec9), n291 p. 215 (9958f82157913ed325265a794cff3dde92ec2722ad7203ec192adda20ec6c5f2), n292 p. 216 (ec5b20578168d03e9f6bc5ce622aa192f0d3481cd1054c782cf0f5b8fb2f7cd5)",
+      "retrieved": "2026-10-13"
+    },
+    "robinson1896": {
+      "url": "https://archive.org/download/hausaland00robi/hausaland00robi_djvu.txt",
+      "format": "txt",
+      "sha256": "d244b6f448ff2868c55e68acc350bedd28b6bfd5b384489ec9022419cb091906",
+      "version": "C. H. Robinson, Hausaland, or Fifteen Hundred Miles through the Central Soudan (London: Sampson Low, Marston, 1896), first edition; OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "gardner2015": {
+      "url": "https://www.aehnetwork.org/wp-content/uploads/2016/01/Gardner.Monetary-systems-since-1800.pdf",
+      "format": "pdf",
+      "sha256": "c6b6f7bb7bff349757bdb2eedeabaf852cfbdb9cf031c6ad7e6fcd5401bdc40e",
+      "version": "L. Gardner, 'From cowries to mobile phones: African monetary systems since 1800', chapter of The History of African Development, African Economic History Network online textbook (PDF last modified February 2015); page numbers are those printed",
+      "retrieved": "2026-10-13"
+    },
+    "garcilaso1869": {
+      "url": "https://archive.org/download/firstpartofroyal01vega/firstpartofroyal01vega_djvu.txt",
+      "format": "txt",
+      "sha256": "e4492c2c56a836410d3a3db7e830f0752c31301963b0a8d0fa99335ef4bb27df",
+      "version": "Garcilaso de la Vega, First Part of the Royal Commentaries of the Yncas, tr. C. R. Markham, vol. 1 (London: Hakluyt Society, 1869); OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "garcilaso1871": {
+      "url": "https://archive.org/download/firstpartofroyal02vega/firstpartofroyal02vega_djvu.txt",
+      "format": "txt",
+      "sha256": "154f0b2fd4f5eb068a23a7fa4e5a9b1073dc03c8144fb9913c1342d2b69726f6",
+      "version": "the same, vol. 2 (London: Hakluyt Society, 1871), Books V-IX; Book V chapters XV-XVI quote Blas Valera; OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "acosta1880": {
+      "url": "https://archive.org/download/india.history.resource.85878/85878_djvu.txt",
+      "format": "txt",
+      "sha256": "37de1d8e1a3ecb81c6b0076b97af6ca5fa49c055a17b1e5942d5ddea9ec4caf8",
+      "version": "J. de Acosta, The Natural and Moral History of the Indies, reprinted from the English translation of E. Grimston (1604), ed. C. R. Markham, vol. 1 (London: Hakluyt Society, 1880), Books I-IV; OCR text of the copy digitized in India on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "oviedo1851": {
+      "url": "https://archive.org/details/generalynatural01fernrich",
+      "format": "image",
+      "sha256": "",
+      "version": "G. Fernández de Oviedo y Valdés, Historia general y natural de las Indias, ed. J. Amador de los Ríos, primera parte, tomo I (Madrid: Real Academia de la Historia, 1851), lib. VIII cap. XXX; the text layer reads ç as g, so the quotations were read on the page images https://archive.org/download/generalynatural01fernrich/page/nN_w1600.jpg: n433 p. 316 (SHA-256 8e0dceb0d88c928805985be38e3143988755e7249dc7cf42d6227a9d14b733fa), n434 p. 317 (1577df353a1b969c0920e56f716249d4374904467a2e592a7e763cdd84ce9101)",
+      "retrieved": "2026-10-13"
+    },
+    "martyr1912": {
+      "url": "https://archive.org/download/deorbenovoeightd02angh/deorbenovoeightd02angh_djvu.txt",
+      "format": "txt",
+      "sha256": "53bed1cb0c1c44bba7637686299ef1e5d9c4fd77b5d7796733462af56a703f8d",
+      "version": "P. Martyr d'Anghera, De Orbe Novo: The Eight Decades, tr. F. A. MacNutt, vol. 2 (New York: G. P. Putnam's Sons, 1912), Fifth Decade Book IV; OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "dell2010": {
+      "url": "https://www.econometricsociety.org/publications/econometrica/2010/11/01/persistent-effects-perus-mining",
+      "format": "html",
+      "sha256": "1426501cbf74fdbaee37c751848258aa1a2b9bebd2ed145737bc6c1117b704c3",
+      "version": "M. Dell, 'The Persistent Effects of Peru's Mining Mita', Econometrica 78(6): 1863-1903 (2010); abstract on the Econometric Society's page (the article itself is not open access)",
+      "retrieved": "2026-10-13"
+    },
+    "kocherlakota1998": {
+      "url": "https://www.minneapolisfed.org/research/staff-reports/money-is-memory",
+      "format": "html",
+      "sha256": "d04bd622267b4f946dbc32974dff019b77af494b1f69b4959f82860b920e6373",
+      "version": "N. R. Kocherlakota, 'Money Is Memory', Federal Reserve Bank of Minneapolis Staff Report 218 (1996), published in Journal of Economic Theory 81(2): 232-251 (1998); abstract on the Minneapolis Fed's page, whose surrounding links change, so the hash differs between downloads",
+      "retrieved": "2026-10-13"
+    }
+  }
+}

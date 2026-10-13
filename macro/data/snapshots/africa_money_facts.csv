@@ -1,0 +1,173 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+maqrizi_1324,马里/埃及,1324,伊斯兰历 724 年,724;1324,年,,umari1927,p. 89,"qui arriva au Caire en 724 — 1324, avec de nombreux présents et de l’or en abondance",马克里齐（al-Maqrizi）的记载，Gaudefroy-Demombynes 在附录中法译
+umari_gold_25,埃及,1324,曼萨·穆萨到开罗的那一年,25,迪拉姆/米斯卡勒金,,umari1927,p. 79,"Cette année-là, le mitqal d'or n'était pas descendu au-dessous de vingt-cinq drachmes",乌马里（al-Umari）自述；drachmes 即银币迪拉姆
+umari_gold_22,埃及,1336,写作时，约 1324 年后十二年,22;12,迪拉姆/米斯卡勒金;年,,umari1927,p. 79,Le mitqal ne dépasse pas vingt-deux drachmes et au-dessous. Il en est ainsi depuis douze ans,年份 1336 = 1324 + 12，是本书的推算
+umari_gold_cause,埃及,1324,,,,,umari1927,p. 79,à cause de la grande quantité d'or qu'ils apportèrent à Misr et qu'ils y dépensèrent,乌马里给出的原因
+umari_loads,马里,1324,,100,驮,,umari1927,p. 75,Il était sorti de son pays avec cent charges d'or,伊本·阿米尔·哈吉布（Ibn Amir Hajib）告诉乌马里
+umari_loan_gain,马里/埃及,1324,朝觐回程,300;700,第纳尔,,umari1927,p. 75,à tel point que pour trois cents dinars ils eurent sept cents dinars de gain,“de gain”可以读作利润七百，也可以读作连本带利共七百，见正文
+umari_loan_repaid,马里,1324,,,,,umari1927,p. 75,Il leur en envoya plus tard le montant avec large poids,同上：伊本·阿米尔·哈吉布说他后来还了
+umari_cowries_tekrur,马里,1324,,,,,umari1927,p. 76,"les marchands, dont les cauries sont la principale importation, tirent de ce commerce un profit considérable",同上：马里（Tekrur）的交易用贝币
+umari_copper,马里,1324,,100;66.6667,米斯卡勒,,umari1927,p. 81,cent mitqal de ce cuivre contre soixante-six mitqal et deux tiers d'or,曼萨·穆萨对伊本·阿米尔·哈吉布说：塔凯达的铜卖到南方，换铜重三分之二的金
+umari_mines,马里,1324,,,,,umari1927,p. 81,mais qu'il employait à extraire l'or dans les mines,不收人头税的异教徒被用来开采金矿
+umari_kanem_cloth,加奈姆,1340,约 14 世纪中叶（乌马里写作时）,10,肘,,umari1927,p. 44,chaque pièce d'étoffe a une longueur de dix coudées,加奈姆以布为货币
+umari_kanem_course,加奈姆,1340,同上,,,,umari1927,p. 44,mais tout cela suit le cours de l'étoffe,贝币、玻璃珠、铜块与银币都按布的价格计
+maqrizi_slaves,马里/埃及,1324,,14000,人,,umari1927,p. 90,était accompagné de quatorze mille jeunes esclaves affectées à son service,马克里齐：随行的女奴
+maqrizi_third,马里,1325,回程,,,,umari1927,p. 91,il n'en revint avec lui qu'à peu près le tiers,马克里齐：回程中寒冷致死，同伴与骆驼只回来约三分之一
+maqrizi_borrow,马里,1325,回程,,,,umari1927,p. 91,Il dut faire un gros emprunt aux marchands,马克里齐
+maqrizi_six,埃及,1324,,6,迪拉姆/第纳尔,,umari1927,p. 91,descendit jusqu'à six dirhems,马克里齐说第纳尔跌到六迪拉姆
+maqrizi_six_doubt,埃及,1324,,,,,umari1927,p. 91,La baisse du dinar à six drachmes est,编者注：这一跌幅不可信，与乌马里的记载相反
+khaldun_loan,马里/埃及,1324,,50000,第纳尔,,umari1927,p. 254,50.000 dinars ; il leur vendit le palais que le sultan lui avait donné en précaire,伊本·赫勒敦《历史》（编者法译）：库维克家族借给他五万第纳尔
+khaldun_default,马里,1337,曼萨·穆萨去世前,,,,umari1927,p. 254,mourut avant d'avoir payé et ils ne réussirent donc à rien tirer de lui,伊本·赫勒敦：债主一文也没收回
+battuta_units,马尔代夫,1344,,12000;100000,枚,,battuta1858,p. 122,"douze mille se nomment cotta, et cent mille bostoû",马尔代夫的贝币单位
+battuta_four_bostu,马尔代夫,1344,,400000,枚/第纳尔,,battuta1858,p. 122,sur le pied de quatre bostoû pour un dinar d'or,"4 bostoû = 400,000 枚"
+battuta_twelve_bostu,马尔代夫,1344,,1200000,枚/第纳尔,,battuta1858,p. 122,de sorte qu'on en vend douze bostoû pour un,"便宜的时候 12 bostoû = 1,200,000 枚"
+battuta_bengal,马尔代夫,1344,,,,,battuta1858,p. 122,"Les insulaires en vendent aux habitants du Bengale pour du riz, car c'est aussi la monnaie en usage chez ceux-ci",
+battuta_ballast,马尔代夫,1344,,,,,battuta1858,p. 122,"qui les mettent dans leurs navires comme lest, en place de sable",也门人把贝壳当压舱物
+battuta_mali_1150,马里,1352,伊本·白图泰在马里城与加奥所见,1150,枚/第纳尔,,battuta1858,p. 122,sur le pied de onze cent cinquante pour un dinar d'or,"前一句是“Je les ai vu vendre, à Mâly et à Djoudjou”"
+battuta_leave_maldives,马尔代夫,1344,伊斯兰历 745 年,1344,年,,battuta1858img,p. 164,nous en repartîmes au milieu du mois de rébi' second de l'année 745 (26 août 1344),离开马尔代夫
+battuta_sijilmasa,马格里布,1352,伊斯兰历 753 年,1352,年,,battuta1858img,p. 377,"Au commencement du mois divin de moharram de l'année 753 de l'hégire (18 février 1352 de J. C.), je me mis en route",从西吉尔马萨出发
+battuta_taghaza_days,撒哈拉,1352,,25,天,,battuta1858img,p. 377,"Après avoir voyagé vingt-cinq jours, nous arrivâmes à Taghâza",
+battuta_taghaza_slaves,撒哈拉,1352,,,,,battuta1858,p. 378,esclaves qui s'occupent de l'extraction du sel,塔加扎的盐由奴隶开采
+battuta_camel_two,撒哈拉,1352,,2,块,,battuta1858,p. 378,chameau ne peut porter ordinairement que deux de ces,一头骆驼通常只能驮两块盐板
+battuta_salt_price,撒哈拉/马里,1352,,8;10;20;30;40,第纳尔/驮,,battuta1858img,p. 378,"Une charge de chameau de ce minéral se vend, à Îouâlâten, de huit à dix mithkâls, ou dînârs d'or, ou ducats; à la ville de Mâlli, elle vaut de vingt à trente ducats, et quelquefois même quarante.",文本层把 Îouâlâten 与 mithkâls 认错，按扫描页读
+battuta_salt_money,马里,1352,,,,,battuta1858,p. 378,emploient le sel pour monnaie,“Les nègres emploient le sel pour monnaie”
+battuta_gao_cowries,加奥,1353,,,,,battuta1858,p. 435,"Le commerce de vente et d'achat chez les habitants se fait au moyen de petites coquilles ou cauris, au lieu de monnaie",
+battuta_takedda_bars,塔凯达,1353,,400;600;700,根/杜卡特,,battuta1858,p. 441,Quatre cents de celles-ci valent un ducat d'or ; six cents ou sept cents de celles-là valent aussi un ducat d'or,细铜条 400 根、粗铜条 600—700 根换一个金杜卡特
+battuta_takedda_slaves,塔凯达,1353,,,,,battuta1858,p. 441,Cette besogne est faite par les esclaves des deux sexes,铜由男女奴隶冶炼
+battuta_takedda_buy,塔凯达,1353,,,,,battuta1858,p. 441,"avec celles qui sont épaisses, on se procure les esclaves mâles et femelles, le millet, le beurre et le froment",
+battuta_takedda_cloth,撒哈拉,1353,,,,,battuta1858,p. 444,"c'est de la viande, du lait aigre et du beurre, que l'on achète avec des étoffes",塔凯达到图瓦特之间用布买食物
+battuta_1353,塔凯达,1353,伊斯兰历 754 年,1353,年,,battuta1858img,p. 445,(754 de l'hégire = 12 septembre 1353 de J. C.),离开塔凯达
+battuta_600,撒哈拉,1353,,600,人,,battuta1858,p. 445,La caravane renfermait environ six cents filles esclaves,同行商队里有约六百名女奴
+barth_kano_1851,卡诺,1851,,1851,年,,barth1857,p. 574,"in 1851, during my stay in Kano",
+barth_kano_dollar,卡诺,1851,,2500,枚/银元,,barth1857,p. 142,"2,500 of which are equal to the",下一页接“Spanish or Austrian dollar”
+barth_kano_dollar2,卡诺,1851,,,,,barth1857,p. 143,Spanish or Austrian dollar,
+barth_kano_mithkal,卡诺,1851,,4000,枚/米斯卡勒金,,barth1857,p. 142,"at four thousand kurdi, is usually maintained","前文：“a general standard, of the mithkal”"
+barth_timbuktu,廷巴克图,1851,,3500;4500,枚/米斯卡勒金,,barth1857,p. 142,from three thousand five hundred up to four thousand five hundred kurdi,
+barth_nominal,廷巴克图,1851,,,,,barth1857,p. 142,"this unreasonable fluctuation is but nominal, gold being scarcely ever bought in Timbuktu for ready money",
+barth_1848,卡诺/沿海,1848,,1848,年,,barth1857,p. 143,since the year 1848 the demand for these shells has so greatly increased on the coast,
+barth_bornu_intro,博尔努,1851,,,,,barth1857,p. 143,where they have been recently introduced as currency,大量贝币从卡诺运往博尔努
+barth_counted,津德尔,1851,,20000,枚/袋,,barth1857,p. 28,must be counted one by one,
+barth_sack,津德尔,1851,,20000,枚/袋,,barth1857,p. 28,"containing 20,000 kurdi each",
+barth_heroic,津德尔,1851,,500000,枚,,barth1857,p. 29,"counting 500,000 shells",“the really heroic work”
+barth_rotl,博尔努,1851,,,,,barth1857,p. 310,"the pound of copper, has long since fallen into disuse, though the name",铜磅（rotl）只剩下名字
+barth_supplanted,博尔努,1851,,,,,barth1857,p. 311,have lately begun to be supplanted by the cowries,被取代的是棉布条
+barth_austrian,博尔努,1851,,,,,barth1857,p. 311,"though less in intrinsic value, is better liked in Bornu than the Spanish one",脚注：奥地利银元
+barth_drain,博尔努,1851,,1849,年,,barth1857,p. 311,"by draining the Hausa country of this article, has exercised upon the demand for cowries in Yoruba and on the coast in the years following 1849",脚注：贝币流入博尔努
+barth_speculation,博尔努,1851,,,,,barth1857,p. 311,"rather by a speculation of the ruling people, than by a natural want of the inhabitants",贝币是统治者为投机引进的
+barth_32,博尔努,1851,,32,枚/罗特尔,,barth1857,p. 311,"two-and-thirty kungona, to one rotl",
+barth_detriment,博尔努,1851,,,,,barth1857,p. 311,speculated to the great detriment of the public,巴特的朋友哈吉·贝希尔
+barth_fall,博尔努,1851,,45;50,罗特尔/银元,,barth1857,p. 311,"forty or fifty rotls, while at other times it would",前文：“the dollar would suddenly fall as low as to five-and-”
+barth_100,博尔努,1851,,100;3200;700,罗特尔;枚,,barth1857,p. 312,"fetch as much as one hundred rotls, or three thousand two hundred shells; that is, seven hundred shells more than in",
+barth_standard,卡诺,1851,,,,,barth1857,p. 312,"there is one standard coin, which, if a too large amount of dollars be not on a sudden set in circulation, will always preserve the same value",
+barth_bartering,博尔努,1851,,,,,barth1857,p. 312,after a good deal of bartering he may thus succeed in buying the corn,先用银元买贝币，再用贝币买衬衫
+barth_corn,博尔努,1851,,,,,barth1857,p. 312,"must first exchange a dollar for shells, or rather buy shells",
+burton_march,达荷美,1863,,13,日,,burton1864,p. 121,"On December 13th, all was ready",1863 年 12 月从维达出发
+burton_merchandise,达荷美,1863,,,,,burton1864,p. 143,"Cowries, it must be remembered, are merchandise, and the price varies accordingly",
+burton_rates,达荷美/拉各斯,1863,,54;2.5;3;20;21.5,便士;头;串,,burton1864img,p. 143,"The dollar (4s. 6d.) now buys 2½ heads at Whydah and Agbome, 3 heads and 20 strings at Lagos and Abeokuta. The head, therefore, once worth a dollar, whence its name, now represents in Dahome 1s. 9½d.",文本层认不出分数，按扫描页读；一头的枚数见 ellis_head
+burton_blues,达荷美,1863,,,,,burton1864,p. 143,or large cheap cowries,"“Zanzibar “blues,” or large cheap cowries”"
+ellis_string,奴隶海岸,1890,,40,枚/串,,ellis1890,p. 253,"hoka, a string of cowries, consisting of forty shells",
+ellis_head,奴隶海岸,1890,,50,串/头,,ellis1890,p. 253,"a head of cowries, that is, fifty strings",后文：for “two thousand”
+dalzel_preface,达荷美,1793,编者序言,,,,dalzel1793,p. xxv,"this we are sure of, it is mercy to the unfortunate brave",编者序言为奴隶贸易辩护
+dalzel_1774,达荷美,1774,,1774,年,,dalzel1793,p. 105,"He died at about 70 years of age, on the 17th of May, 1774.",博萨·阿哈迪去世，阿达洪祖二世继位
+dalzel_successor,达荷美,1774,,,,,dalzel1793,p. 105,He was succeeded by Adahoonzou II.,
+dalzel_smallpox,达荷美,1789,,,,,dalzel1793,p. 203,The truth at last came out—Adahoonzou was dead of the small-pox!,第十一章开头
+dalzel_1789,达荷美,1789,,1789,年,,dalzel1793,p. 203,"This happened on the 17th of April, 1789.",阿达洪祖二世死于天花
+dalzel_norris_80,达荷美,1772,诺里斯 1772 年的游记,80;320;4000,盎司;人;枚,,dalzel1793,p. 134,"eighty ounces of cowries, which were brought in by three hundred and twenty of his wives, each carrying a cabess, or four thousand of them, in a brass pan",国王赏给乐师
+dalzel_ounce_value,达荷美,1793,编者注（J. F.）,4,英镑,,dalzel1793,p. 134,"An ounce here means an ounce value, of which there are two sorts: the ounce of gold, worth four pounds sterling; and the ounce trade, of only half that value, which is the quantity alluded to.",
+dalzel_ounce_weight,达荷美,1793,编者注（J. F.）,42,磅,,dalzel1793,p. 134,"the weight of each ounce is about forty-two pounds avoirdupoise, and the whole quantity about a ton and a half weight",
+dalzel_table,达荷美,1793,编者注（J. F.）的货币表,40;200;1000;4000;16000;10;40;42,枚;先令;磅,,dalzel1793,p. 135,"40 cowries 1 tocky, or string No. 40 value 0 1⅕ weight 0 1 7 | 5 tockys 1 galhina 200 0 6 0 8 4 | 5 galhinas 1 ackey 1000 2 6 2 10 0 | 4 ackeys 1 cabess 4000 10 0 10 8 0 | 4 cabess 1 ounce, trade 16000 40 0 42 0 0","表头：s. d. 与 lb. oz. tenths；表下注：“weighing on experiment about 45lb. troy, or 42lb. avoirdupoise”"
+dalzel_five_cabess,达荷美,1772,诺里斯游记,5;50,头;先令,,dalzel1793,p. 135,"five cabess of cowries, or fifty shillings",
+dalzel_1786,达荷美,1786,页边年份,30,英镑,,dalzel1793,p. 191,"At this time there were six slave ships in the road of Whydah, a great scarcity of trade, and the price of a prime slave little short of thirty pounds sterling.",
+dalzel_monopoly,达荷美,1774,阿达洪祖二世在位时，未记年份,,,,dalzel1793,p. 213,"To make amends for his bad success in war, he was resolved to try the effect of a monopoly in trade",
+dalzel_cap,达荷美,1774,同上,32;26,头,,dalzel1793,p. 213,"that no trader should, at any market, pay more than thirty-two cabesses of cowries for a man, and twenty-six cabesses for a woman, slave",限价
+dalzel_enforce,达荷美,1774,同上,,,,dalzel1793,p. 213,"setting his men to watch the traders, and confiscate their slaves and themselves, if vendible, for every breach of his ordinance; and if the traders so offending should not be saleable, they were to be beheaded",
+dalzel_cabess,达荷美,1793,注,10,先令,,dalzel1793,p. 213,"A cabess, cabeça, or head of cowries, is ten shillings sterling.",
+dalzel_pretext,达荷美,1774,同上,,,,dalzel1793,p. 214,"The pretext for these wise regulations was, that the treasure might be kept in his own country",
+dalzel_diversion,达荷美,1774,同上,,,,dalzel1793,p. 214,"the trade flowing on one side to Wemey, for the Porto Novo market; and on the other, to Peshie, for the Popo and Quitta markets",
+dalzel_two_slaves,达荷美,1774,同上,2;1;3;2,人,,dalzel1793,p. 214,"every trader, possessing two slaves, should relinquish one, and the best of them, to him; and if three, two were to be the King's, he paying the price which himself had fixed, in strung cowries",
+dalzel_short,达荷美,1774,同上,3;6,枚/串,,dalzel1793,pp. 214-215,they took care that there should be a deficiency of from three to six per string,短串
+dalzel_string,达荷美,1793,注,40;39,枚/串,,dalzel1793,p. 215,"Forty cowries make one string, if loose; 39, when strung: the 40th being allowed for the piercing and stringing.",
+dalzel_bankrupt,达荷美,1774,同上,60;70,人,,dalzel1793,p. 215,"many bankruptcies ensued; and some considerable traders, who had possessed property to the value of sixty or seventy slaves, were reduced to beggary",
+dalzel_duties,达荷美,1774,同上,,,,dalzel1793,p. 215,"the King imposed additional duties, which, for a while, gave the revenue a flourishing appearance",
+dalzel_no_trade,达荷美,1774,同上,,,,dalzel1793,p. 216,"Whydah, which had always been a precarious port of trade since its conquest by Trudo, was for some years without any trade at all.",
+robinson_1894,豪萨,1894,,1894,年,,robinson1896,p. 26,"June, 1894, in order to complete our final",
+robinson_1895,卡诺,1895,,1895,年,,robinson1896,p. 105,"January 6, 1895",
+robinson_carry4,洛科,1894,9 月,10000;5;95;4,枚;先令;磅;天,,robinson1896,p. 43,"ten thousand cowries, or in English money five shillings, for carrying a load weighing ninety-five pounds during a four days' march",
+robinson_horse,洛科,1894,9 月,15,人,,robinson1896,p. 46,"would require fifteen extra porters to carry, to whom we should have to pay all the money they carried and a great deal more besides",
+robinson_220000,卡菲,1894,,220000;6;1000,枚;英镑;磅,,robinson1896,p. 62,"two hundred and twenty thousand, were obtained. This number would represent about £6 in English money, and would weigh about a thousand pounds",
+robinson_mt_kaffi,卡菲,1894,,3.5,先令,,robinson1896,p. 62,obtained about three shillings and sixpence worth of cowries,在卡菲出售玛丽亚·特蕾莎银元
+robinson_mt_vienna,西苏丹,1894,,1780,年,,robinson1896,p. 62,"This coin, which is made in Vienna and bears date 1780, is manufactured exclusively for export to Central Africa",银元上的年份 1780 不是铸造年份
+robinson_kaffi,卡菲,1894,,10,天,,robinson1896,p. 61,"no less than ten days, owing to the difficulty which we experienced in obtaining sufficient cowries to give to our carriers as food-money",为了凑够发给脚夫的伙食钱
+robinson_retail,卡菲,1894,,,,,robinson1896,p. 61,"There being no shops or wholesale dealers, we had to employ men to carry our cloth round in the market, selling it by retail",
+robinson_slave_market,卡菲,1894,,,,,robinson1896,p. 61,a large number of slaves exposed for sale in the open market,
+robinson_mt_silver,西苏丹,1894,,2;3;4.5,先令,,robinson1896,p. 62,"It contains about two shillings' worth of silver, and its purchasing value in the Soudan varies from three to four shillings and sixpence",玛丽亚·特蕾莎银元
+robinson_counterfeit,卡诺,1894,,,,,robinson1896,p. 62,"counterfeit dollars, chiefly composed of lead",
+robinson_portable,西苏丹,1894,,,,,robinson1896,p. 62,is the lack of any really portable currency,
+robinson_zaria_carry,洛科贾—扎里亚,1894,10 月,20000;10;180,枚;先令;英里,,robinson1896,p. 66,"to pay each man twenty thousand cowries, or about ten shillings, for the carriage of his load to Zaria, distant one hundred and eighty miles",
+robinson_750k,扎里亚,1894,,750000,枚,,robinson1896,p. 85,nearly three-quarters of a million cowries,为了付脚夫的工钱
+robinson_barter_loss,扎里亚,1894,,,,,robinson1896,p. 85,it was impossible to sell them quickly except at a ridiculous loss,随身带的易货商品
+robinson_mt_140,扎里亚,1894,,140;5000,枚;枚/银元,,robinson1896,p. 85,one hundred and forty Maria Theresa dollars at five thousand cowries apiece,
+robinson_mt_20pct,扎里亚,1894,,20;5000;4000,%;枚,,robinson1896,p. 86,"20 per cent., i.e., from five thousand to four thousand cowries",
+robinson_value,洛科贾/扎里亚/卡诺,1894,,2000;12;16;18,枚;便士,,robinson1896,p. 86,"two thousand cowries, which at Lokoja were equal in value to a shilling, were worth about one shilling and fourpence at Zaria, and one shilling and sixpence at Kano",
+robinson_slave_price,扎里亚,1894,,100000;300000;3;9,枚;英镑,,robinson1896,p. 88,"fetch from one hundred thousand to three hundred thousand cowries, or from three to nine pounds sterling",
+robinson_300,扎里亚,1894,,300,人,,robinson1896,p. 88,of whom we saw as many as three hundred at one time on sale in the market-place,
+robinson_slave_currency,豪萨,1895,,,,,robinson1896,p. 134,"slaves are used for two distinct purposes, first as currency, where any large amount such as the State tribute is involved, and secondly as carriers",
+robinson_tribute,豪萨,1895,,0.75,,,robinson1896,p. 134,"Of the tribute payable by all the Hausa States to Sokoto, at least three quarters is paid in slaves",
+robinson_adamawa,阿达马瓦,1895,,10000,人/年,,robinson1896,p. 134,the King of Adamawa sends annually ten thousand slaves,罗宾逊说消息“似乎可靠”
+robinson_kano_cloth,卡诺,1895,,100,人,,robinson1896,p. 134,"Kano sends perhaps the smallest number, it is said about one hundred, the greater parts of its tribute being paid in cloth",
+robinson_three,豪萨,1895,,3,,,robinson1896,p. 136,"lacking as they do the three characteristics which, according to political economists, a medium of exchange should possess, namely, intrinsic value, scarcity and portability",罗宾逊说贝币缺的三样东西
+gardner_100t,西非,1800,19 世纪初,100,吨/年,,gardner2015,p. 3,the English alone were shipping approximately 100 tons of cowries to Africa every year,
+gardner_1720,西非,1720,,1720;100;4000;1,年;串;枚;英镑,,gardner2015,p. 4,"In 1720, a 'grand cabess' of 100 strings (or 4,000 shells) was worth around £1.",
+gardner_counterfeit,西非,1800,,,,,gardner2015,p. 4,They were impossible to counterfeit,
+gardner_barter,西非,1800,,,,,gardner2015,p. 3,assuming that the exchange of cloth or shells was merely 'barter' exchange in which money was not used,
+gardner_asym,西非,1800,,,,,gardner2015,p. 6,but not to receive such commodities for the purchase of other imported goods such as firearms,
+gardner_ban,西非,1900,19 世纪末起,,,,gardner2015,p. 6,banning the importation of cowries and manillas and declaring that they were no longer legal tender,
+gardner_zanzibar,西非,1850,19 世纪,,,,gardner2015,p. 7,supplementing the original cowries from the Maldives with a larger and more abundant species found in Zanzibar (Cypraea Annulus),
+gardner_inflation,西非,1850,19 世纪,,,,gardner2015,p. 7,The 'cowrie inflation' of the nineteenth century increased the costs of their use as a medium of exchange,
+garcilaso_coined,秘鲁,1580,西班牙统治下的秘鲁,20,年,,garcilaso1869,p. xi,"and for twenty years afterwards, there was no coined money in my country. In place of it the Spaniards, in buying and selling, weighed the gold or silver by the marc or the ounce","前文：in my time, which lasted down to the year 1560（文本层误作 15G0）；说的是西班牙人统治下的秘鲁"
+garcilaso_labour,印加,1500,,,,,garcilaso1871,p. 16,so that the Indians only had to give personal labour as their tribute. The vassals paid nothing to the Ynca from their own crops,第五卷第五章
+garcilaso_chuno,印加,1500,,,,,garcilaso1871,p. 17,Prepared in this way the papa will keep for a long time,冻干的马铃薯（chuño）
+garcilaso_stores,印加,1500,,3,种,,garcilaso1871,p. 23,"there were three kinds of storehouses, in which the crops and other tribute were shut up",第五卷第八章
+garcilaso_famine,印加,1500,,,,,garcilaso1871,p. 23,"In one was deposited the provision which was stored up for the people, to guard against famine in years of scarcity",
+garcilaso_roads,印加,1500,,3,里格,,garcilaso1871,p. 23,"There were other storehouses on the royal roads, at intervals of three leagues",
+valera_moderate,印加,1500,瓦莱拉,,,,garcilaso1871,p. 44,it was so moderate that none,第五卷第十五章，加西拉索引布拉斯·瓦莱拉
+valera_four_reals,印加,1500,瓦莱拉,4,里亚尔,,garcilaso1871,p. 44,many Indians scarcely paid the value of four reals,
+valera_boys,印加,1500,瓦莱拉,25,岁,,garcilaso1871,p. 45,all boys until they were twenty-five years of age,免役
+valera_fifty,印加,1500,瓦莱拉,50,岁,,garcilaso1871,p. 45,All men over fifty years of age were also exempt from tribute,
+valera_labour_only,印加,1500,瓦莱拉,,,,garcilaso1871,p. 45,"out of his own property in place of tribute, but that his only payment should be in the form of labour, time, or skill as a workman, devoted to the service of the king or the state",第三条法律
+valera_rich,印加,1500,瓦莱拉,,,,garcilaso1871,p. 45,They called a man rich when he had children,
+valera_pebbles,印加,1500,瓦莱拉,,,,garcilaso1871,p. 47,and also by means of little pebbles,征收贡赋时用绳结与小石子分摊
+garcilaso_quipu,印加,1500,,,,,garcilaso1871,p. 123,These knots or Quipus were in charge of Indians who were called Quipu-camayu,第六卷第八章
+garcilaso_nomoney,印加,1500,,,,,garcilaso1871,p. 123,"having no money. They exchanged one article of food for another, and no more",
+garcilaso_accountants,印加,1500,,4;20;30,人,,garcilaso1871,p. 123,"there were four accountants in it, and from that number up to twenty or thirty",
+garcilaso_checks,印加,1500,,,,,garcilaso1871,p. 123,desired that there should be several in each village to act as checks upon each other,
+acosta_barter,美洲,1590,,,,,acosta1880,p. 189,"They vsed no gold nor silver to trafficke or buy withall, but did change and trucke one thing for another",第四卷第三章
+acosta_cacao_money,墨西哥,1590,,,,,acosta1880,p. 189,"in steede of money they vse cacao, which is a small fruit, and therewith buy what they will",
+acosta_coca_money,秘鲁,1590,,,,,acosta1880,p. 189,"they vse coca to the same end, the which is a leafe the Indians esteeme much",接在可可豆一句之后
+acosta_alms,墨西哥,1590,,,,,acosta1880,p. 244,and they vse to give it to the poore that beg for almes,
+acosta_fairs,美洲,1590,,,,,acosta1880,p. 189,"yet had they no neede of mony, nor of brokers, for that every one had learned what he was to give in exchange for every kinde of merchandise",
+acosta_estado,波托西,1590,,,,,acosta1880,p. 203,estados or heights of a man,estado 是一人高
+acosta_dark,波托西,1590,,,,,acosta1880,p. 207,They labour in these mines in continuall darknes and obscuritie,第四卷第八章
+acosta_arrobas,波托西,1590,,2,阿罗巴,,acosta1880,p. 208,A man carries ordinarily the weight of two arrobas,编者脚注：50 lbs.
+acosta_hundredweight,美洲,1590,,4,阿罗巴,,acosta1880,p. 194,"four arrobas, that is a hundred weight",
+acosta_150,波托西,1590,,150,estado,,acosta1880,p. 208,commonly is above a hundred and fiftie estados,要爬的梯子总高
+acosta_dry,墨西哥,1590,,,,,acosta1880,p. 244,"for being a drie fruite, and that keepes long without corruption",第四卷第二十二章
+acosta_pirate,墨西哥,1590,,100000,驮,,acosta1880,p. 244,above a hundred thousand cargoes of Cacao,
+acosta_five,墨西哥,1590,,5,粒,,acosta1880,p. 244,with five Cacaos they buy one,"下一行接“thing, with thirtie an other”"
+acosta_thirty,墨西哥,1590,,30,粒,,acosta1880,p. 244,"thing, with thirtie an other",
+acosta_coca,波托西,1590,,500000,比索/年,,acosta1880,p. 245,the trafficke of Coca in Potosi doth yearley mount to above half a million of dollars,
+oviedo_money,尼加拉瓜,1530,,,,,oviedo1851,p. 316,é tienen en el mismo presçio é estimaçion que los chripstianos é otras gentes tienen el oro é la moneda,第八卷第三十章
+oviedo_rabbit,尼加拉瓜,1530,,10;4;8,粒;粒;个,,oviedo1851,p. 316,"un conejo vale diez almendras destas, é por quatro almendras dan ocho pomas ó nísperos",
+oviedo_slave,尼加拉瓜,1530,,100,粒,,oviedo1851,p. 316,"y un esclavo vale çiento, é mas é menos almendras destas",
+oviedo_fraud,尼加拉瓜,1530,,,,,oviedo1851,p. 316,Y aun en aquellas almendras hay sus fraudes para engañar unos á otros,
+oviedo_swallow,尼加拉瓜,1530,,,,,oviedo1851,p. 317,porque no es mas que empobreçer adrede é tragarse la moneda ó echalla en donde se pierda,
+oviedo_tribute,尼加拉瓜,1530,,,,,oviedo1851,p. 317,é les dan tributos destas tales monedas ó almendras,
+martyr_blessed,墨西哥,1520,,,,,martyr1912,p. 112,"O blessed money, which not only gives to the human race a useful and delightful drink, but also prevents its possessors from yielding to infernal avarice, for it cannot be piled up, or hoarded for a long time.",第五个十年第四卷
+martyr_taxes,墨西哥,1520,,,,,martyr1912,p. 112,There are caciques who pay their taxes with nothing but the fruit of these,
+dell_mita,秘鲁/玻利维亚,1573,,1573;1812,年,,dell2010,abstract,an extensive forced mining labor system in effect in Peru and Bolivia between 1573 and 1812,
+dell_25,秘鲁,2010,今天,25,%,,dell2010,abstract,lowers household consumption by around 25%,
+dell_6,秘鲁,2010,今天,6,百分点,,dell2010,abstract,increases the prevalence of stunted growth in children by around 6 percentage points in subjected districts today,
+dell_channels,秘鲁,2010,,,,,dell2010,abstract,has persisted through its impacts on land tenure and public goods provision,
+kocher_memory,,1998,,,,,kocherlakota1998,abstract,Memory is defined as knowledge on the part of an agent of the full histories of all agents with whom he has had direct or indirect contact in the past.,
+kocher_feasible,,1998,,,,,kocherlakota1998,abstract,any allocation that is feasible in an environment with money is also feasible in the same environment with memory,
+kocher_primitive,,1998,,,,,kocherlakota1998,abstract,money is equivalent to a primitive form of memory,
