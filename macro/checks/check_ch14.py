@@ -2,7 +2,8 @@
 
     python3 checks/check_ch14.py
 
-Input is the snapshot africa_money_facts (and, for one teaching input, Chapter 10's medieval_credit_facts): quotations from al-Umari (with al-Maqrizi and Ibn Khaldun), Ibn Battuta,
+Input is the snapshot africa_money_facts (and, for comparisons with earlier chapters, medieval_credit_facts and
+silver_century_facts): quotations from al-Umari (with al-Maqrizi and Ibn Khaldun), Ibn Battuta,
 Barth, Burton, Ellis, Dalzel (with Norris and J. F.), Robinson, Gardner, Garcilaso de la Vega (with Blas Valera),
 Acosta, Oviedo, Peter Martyr, Dell and Kocherlakota, checked by data/fetch/verify_web_quotes.py (rows read on page
 images are marked as such in the snapshot's metadata).
@@ -59,6 +60,13 @@ def quotes() -> dict[str, str]:
     """id -> verbatim quotation (for numbers the text takes straight from a quotation)."""
     df = _snapshot_facts()
     return dict(zip(df["id"], df["quote"].fillna("")))
+
+
+def ch13_facts() -> dict[str, float]:
+    """Chapter 13: what Philip II's bankers recovered after the defaults of 1575 and 1596 (per cent)."""
+    df, _ = load_snapshot("silver_century_facts", dtype={"value": str})
+    v = dict(zip(df["id"], df["value"]))
+    return {"1575": float(v["dv_1575_repaid"]), "1596": float(v["dv_1597_repaid"])}
 
 
 def ch10_quotes() -> dict[str, str]:
@@ -244,6 +252,10 @@ def gold(F):
     quoted("p, reading 1, r_f = 0", repay_prob(i_total, 0.0), 0.43, tol=0.005)
     quoted("p, reading 2, r_f = 0", repay_prob(i_profit, 0.0), 0.30, tol=1e-9)
     quoted("Ibn Khaldun: the Kuwayk lent 50,000 dinars", F["khaldun_loan"][0], 50_000, tol=0)
+    quoted("  the creditors went three times (agent; another with the son; the son)", 3, 3, tol=0)
+    rec = ch13_facts()
+    quoted("Ch. 13: Philip II's bankers recovered 62% (1575)", rec["1575"], 62, tol=0)
+    quoted("  and 80% (1596): 'six to eight tenths'", rec["1596"], 80, tol=0)
 
 
 def cowries(F):
@@ -300,6 +312,7 @@ def cowries(F):
     quoted("1863 Lagos", ps["lagos"], 1511, tol=0.5)
     quoted("Burton: a head now 21.5d", F["burton_rates"][4], 21.5, tol=0)
     quoted("  54/2.5 (d)", F["burton_rates"][0] / F["burton_rates"][1], 21.6, tol=1e-9)
+    quoted("  difference (d)", F["burton_rates"][0] / F["burton_rates"][1] - F["burton_rates"][4], 0.1, tol=1e-9)
     quoted("1894 Lokoja", ps["lokoja"], 2000, tol=0)
     quoted("1894 Kaffi (220,000 = 6 pounds)", ps["kaffi"], 1833, tol=0.5)
     quoted("1894 Zaria", ps["zaria"], 1500, tol=0)
@@ -501,10 +514,19 @@ def selfcheck():
     # 5: short strings
     quoted("Q5: 1 - 35/39 (%)", 100 * (1 - 35 / 39), 10.3, tol=0.05)
     quoted("Q5: 1 - 35/40 (%)", 100 * (1 - 35 / 40), 12.5, tol=0)
-    # 6: shells for a horse
-    quoted("Q6: 6 pounds at 1,500 a shilling", 6 * SHILLING_PER_POUND * 1500, 180_000, tol=0)
-    quoted("Q6: lb at 220 a lb", 6 * SHILLING_PER_POUND * 1500 / 220, 818, tol=0.5)
-    quoted("Q6: porter loads of 95 lb", 6 * SHILLING_PER_POUND * 1500 / 220 / 95, 8.6, tol=0.05)
+    # 6: shells for a horse (Robinson: good riding horses at Zaria, 15s to 6 pounds; Zaria 1,500 cowries a shilling)
+    F = facts()
+    zaria = dict((p, v) for p, _, v in per_shilling(F))["zaria"]
+    _, per_lb = shells_per_lb(F)
+    top = F["robinson_horse_price"][1]
+    quoted("Q6: a horse at Zaria, up to (pounds)", top, 6, tol=0)
+    quoted("Q6: Zaria, cowries a shilling", zaria, 1500, tol=0)
+    shells = top * SHILLING_PER_POUND * zaria
+    quoted("Q6: 6 pounds in cowries", shells, 180_000, tol=0)
+    quoted("Q6: lb at 220 a lb", shells / per_lb, 818, tol=0.5)
+    quoted("Q6: porter loads of 95 lb", shells / per_lb / F["robinson_carry4"][2], 8.6, tol=0.05)
+    quoted("Q6: porters", math.ceil(shells / per_lb / F["robinson_carry4"][2]), 9, tol=0)
+    quoted("Q6: the cheapest horse, 15s, in cowries", F["robinson_horse_price"][0] * zaria, 22_500, tol=0)
 
 
 def from_quotes(Q):
@@ -546,14 +568,14 @@ def from_quotes(Q):
     said(Q, "burton_rates", "4s. 6d.", "2½ heads", "3 heads and 20 strings", "1s. 9½d.")
     said(Q, "ellis_string", "forty")
     said(Q, "ellis_head", "fifty strings")
-    said(Q, "dalzel_1774", "70", "1774")
-    said(Q, "dalzel_1789", "1789")
+    said(Q, "dalzel_1774", "70", "17th of May", "1774")
+    said(Q, "dalzel_1789", "17th of April", "1789")
     said(Q, "dalzel_norris_80", "eighty ounces", "three hundred and twenty", "four thousand")
     said(Q, "dalzel_ounce_value", "four pounds", "half that value")
     said(Q, "dalzel_ounce_weight", "forty-two pounds", "a ton and a half")
     said(Q, "dalzel_table", "40 cowries", "200", "1000", "4000", "16000", "10 0", "40 0", "42 0 0")
     said(Q, "dalzel_five_cabess", "five cabess", "fifty shillings")
-    said(Q, "dalzel_1786", "thirty pounds")
+    said(Q, "dalzel_1786", "six slave ships", "thirty pounds")
     said(Q, "dalzel_cap", "thirty-two cabesses", "twenty-six cabesses")
     said(Q, "dalzel_cabess", "ten shillings")
     said(Q, "dalzel_two_slaves", "two slaves", "relinquish one", "if three, two")
@@ -576,6 +598,7 @@ def from_quotes(Q):
     said(Q, "robinson_value", "two thousand", "a shilling", "one shilling and fourpence", "one shilling and sixpence")
     said(Q, "robinson_slave_price", "one hundred thousand to three hundred thousand", "three to nine pounds")
     said(Q, "robinson_300", "three hundred")
+    said(Q, "robinson_horse_price", "fifteen shillings", "six pounds")
     said(Q, "robinson_tribute", "three quarters")
     said(Q, "robinson_adamawa", "ten thousand")
     said(Q, "robinson_kano_cloth", "one hundred")

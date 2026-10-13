@@ -3,9 +3,12 @@
   "font": "Macro Noto Sans SC",
   "figures": [
     "bill_flows",
+    "carry_cost",
     "commenda_payoffs",
+    "cowrie_value",
     "fx_implied_rates",
     "gold_silver_ratio",
+    "inca_store",
     "livre_tournois",
     "malthus_dynamics",
     "note_value",

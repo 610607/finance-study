@@ -310,6 +310,7 @@
 - **案例**：曼萨·穆萨朝觐与开罗金价；印加米塔制；阿兹特克可可豆
 - **对照框候选**：商品货币 vs 国家货币；劳役税 vs 货币税
 - **前置**：第 6 章（美索不达米亚与埃及：神庙、宫廷与记账），第 13 章（白银的世纪：波托西、马尼拉与价格革命）
+- **已写成（2026-10）**：模型为运费约束的价差（式 `eq:africa-carry`，第 13 章 `eq:silver-arbitrage` 的推广）、风险中性的违约定价（式 `eq:africa-risk`）、仓储方程与稳态库存 $S^{*}=(I-G)/\delta$（式 `eq:africa-store`）、商品货币的持有收益（式 `eq:africa-hold`），并沿用第 11 章的 `eq:medieval-seigniorage` 解释短串。史料为乌马里 Masālik al-abṣār 的法译本（Gaudefroy-Demombynes 1927，附马克里齐与伊本·赫勒敦）、伊本·白图泰游记法译本第四卷（1858）、Barth（1857）、Burton（1864）、Ellis（1890）、Dalzel（1793，含诺里斯与 J. F. 的注释，扫描页逐字读）、Robinson（1896）、加西拉索《印卡王室述评》英译本（1869—1871，引布拉斯·瓦莱拉）、阿科斯塔的英译本（1880）、奥维多（1851，扫描页逐字读）与彼得·马蒂尔的英译本（1912）。研究文献为 Gardner（2015）、Kocherlakota（1998）与 Dell（2010）。候选文献 Hogendorn \& Johnson (1986) 与 Murra 未能取得，分别以 Gardner（2015）与 Robinson、Barth、Dalzel 的原始记载，以及加西拉索、阿科斯塔的原始记载代替。对照框：商品货币 vs 国家货币；劳役税 vs 货币税；印加的劳役 vs 殖民时期的米塔。案例框：维达 · 1774—1789 · 阿达洪祖二世的垄断与短串（非英美）。图：`cowrie_value`、`carry_cost`、`inca_store`（教学模型）。快照：`africa_money_facts`。教学假设（正文已注明）：例 14.1 的 $r_f=15\%$；例 14.4 的结余、损耗率与饥荒；例 14.5 的损耗率与通胀。未解决的不一致（“深入一步”已说明）：马克里齐的“六迪拉姆”；“七百第纳尔的收益”的两种读法；伯顿的“头”按埃利斯的 2,000 枚折算；J. F. 与罗宾逊的贝壳重量；Gardner 1720 年与 J. F. 1793 年的记账基础；阿科斯塔与马蒂尔对可可豆能否久存的说法。
 
 #### 第 15 章 `ch:finrevolution` 早期金融革命：荷兰、英国与可信的国债 — `zh/ch15_finrevolution.tex`
 *The early financial revolution: Holland, England and credible public debt*
@@ -1363,5 +1364,6 @@ front:howto front:structure front:colours front:boxes front:traceability front:b
 sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
 sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
 sec:silver-china sec:silver-tiaobian sec:silver-revolution sec:silver-default eq:silver-arbitrage eq:silver-qty eq:silver-debt tab:silver-england tab:silver-castile
+sec:africa-gold sec:africa-cowrie sec:africa-inca sec:africa-cacao eq:africa-carry eq:africa-risk eq:africa-store eq:africa-hold
 nav:contents nav:compare
 ```

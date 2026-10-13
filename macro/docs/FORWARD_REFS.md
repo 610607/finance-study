@@ -47,5 +47,12 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 13 (compare box, legacy) | 51 `ch:latamdebt`, 69 `ch:eurocrisis` | Modern sovereign restructurings: exchange offers, haircuts that differ widely from case to case, creditor committees and holdouts | open |
 | 13 (legacy) | 15 `ch:finrevolution` | How the Dutch Republic and England borrowed far more cheaply than Philip II | open |
 | 13 (legacy) | 47 `ch:oil` | Governments that depend on volatile resource revenue (oil) | open |
-| 13 (closing sentence) | 14 `ch:africa` | Whether a large empire (the Inca) could do without money: labour tribute and storehouses | open |
-| 13 (§13.1, Potosí) | 14 `ch:africa` | The colonial mita (1573–1812) that mined Potosí's silver: its Inca origin, its human cost and its long-run effects (Dell 2010) | open |
+| 13 (closing sentence) | 14 `ch:africa` | Whether a large empire (the Inca) could do without money: labour tribute and storehouses | done (`sec:africa-inca`, `sec:africa-test`) |
+| 13 (§13.1, Potosí) | 14 `ch:africa` | The colonial mita (1573–1812) that mined Potosí's silver: its Inca origin, its human cost and its long-run effects (Dell 2010) | done (`sec:africa-inca`, subsection 殖民时期的米塔制 and the compare box) |
+| 14 (Inca, intuition box) | 6 `ch:mesopotamia` | Temples and palaces that organised production by keeping accounts rather than by using money | open |
+| 14 (closing sentence) | 15 `ch:finrevolution` | How a sovereign makes lenders believe it will repay, and so borrows a lot at low rates (Mansa Musa's lenders could not enforce) | open |
+| 14 (case box, legacy) | 16 `ch:mercantilism` | Restricting trade "that the treasure might be kept" at home: the European mercantilists' version of Adahoonzou II's pretext | open |
+| 14 (legacy) | 24 `ch:periphery`, 76 `ch:hierarchy` | Economies whose money is supplied or set from elsewhere; colonial currencies (the West African pound) that replaced commodity monies | open |
+| 14 (legacy) | 41 `ch:development` | Institutions with long-run effects on development (Dell's mining mita) | open |
+| 14 (legacy) | 66 `ch:zlb` | The cost of holding and storing cash sets how far below zero interest rates can go (cacao's negative own return) | open |
+| 14 (legacy) | 77 `ch:digitalmoney` | Money as record-keeping ("money is memory", Kocherlakota 1998): who keeps the ledger, what it records, who can see it | open |
