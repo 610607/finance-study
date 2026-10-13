@@ -5,8 +5,12 @@
     "bill_flows",
     "commenda_payoffs",
     "fx_implied_rates",
+    "livre_tournois",
+    "malthus_dynamics",
     "note_value",
+    "plague_wages",
     "songming_timeline",
+    "wage_ceiling",
     "yuan_issuance"
   ]
 }

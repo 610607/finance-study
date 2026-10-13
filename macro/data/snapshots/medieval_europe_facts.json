@@ -1,0 +1,70 @@
+{
+  "title": "Quotations on the manor, the Black Death, the labour laws, debasement and Oresme's De moneta (Chapter 11)",
+  "source": "Bland, Brown & Tawney (eds.), English Economic History: Select Documents (1914); Statutes of the Realm, vol. 1 (1810); N. de Wailly, Mémoire sur les variations de la livre tournois (1857); N. Oresme, De moneta, ed. L. Wolowski (1864); Rolnick, Velde & Weber (1996/1997); Clark (c. 1999 working paper; 2016 abstract); Humphries & Weisdorf (2019, accepted manuscript); Ashraf & Galor (NBER WP 17037, 2011)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: country), year, year_note, value, unit, numeral (unused), file (key of sources below), juan (part.section.number of a document, chapter or page), quote (verbatim), note",
+  "retrieved": "2026-10-13",
+  "license": "Short quotations only, for comment and teaching. The 1810, 1857, 1864 and 1914 texts are in the public domain (the 1914 collection is Project Gutenberg eBook #43211); the modern papers are quoted, not copied.",
+  "used_in": [
+    11
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py",
+  "notes": "Every downloadable document was fetched in the shell on 2026-10-13 and the rows from bbt1914, clark1999wp, clark2016, hw2019 and ag2011 were found verbatim in the extracted text; data/fetch/verify_web_quotes.py repeats the check. The rows from sotr1810, wailly1857, oresme1864 and rvw1997 were read by eye on the page images (format image), because their OCR text is too corrupt (the 1810, 1857 and 1864 scans) or merges the two columns of the page (the 1997 reprint); they are counted but not checked by the script. Page references: bbt1914 rows give part, section and number of the document with its first page in the 1914 edition (the Gutenberg text has no page markers); rvw1997 rows give the printed page of the Quarterly Review; clark1999wp rows give the page of the PDF. Discrepancies kept visible: (1) the South Frith receiver's account of 1349–50 itemizes defects of rent that add to 118s 10¼d, 5d less than the total of 119s 3¼d it states; the chapter uses only the stated totals (119s 3¼d − 15s 4d = 103s 11¼d, as the account says). (2) The 1349 Ordinance takes as its standard the wages of the twentieth year of the reign (1346–7) 'or in the five or six common years last preceding'; the 1351 Statute says 'the said Twentieth Year, or Four Years before' for farm servants. (3) Rolnick, Velde & Weber's text gives the Crown's seigniorage share during the Great Debasement as 25 percent, their Table 3 as 26 percent (1544–47); the chapter uses the table (snapshot rvw1996_mint_revenue). (4) Clark's working paper (c. 1999) finds no efficiency effect of the Black Death, his 2016 article finds a temporary efficiency gain; both are quoted and the chapter says which is which. (5) The Avalon Project's page titled 'The Statute of Laborers; 1351' prints the 1349 Ordinance (addressed to the archbishop, dated in the twenty-third year of the reign); it is not used. The 1349 Ordinance is quoted in the translation of Bland, Brown & Tawney; the 1351 Statute in the English translation printed beside the French text in the Statutes of the Realm. Latin quotations from Oresme are given as printed in Wolowski's edition, with its spelling (monete, monetæ).",
+  "citation": "各条的出处见 file 与 juan 列，版本见 sources",
+  "sources": {
+    "bbt1914": {
+      "url": "https://www.gutenberg.org/cache/epub/43211/pg43211.txt",
+      "format": "txt",
+      "sha256": "ed1a7e4dc7af7d3803a8b1a501bc77e915928d1834ce44c14c68cffe2382fe19",
+      "version": "A. E. Bland, P. A. Brown and R. H. Tawney (eds.), English Economic History: Select Documents (London: G. Bell, 1914), Project Gutenberg eBook #43211, plain text"
+    },
+    "sotr1810": {
+      "url": "https://archive.org/details/statutes-of-the-realm-v-1-1101-1377",
+      "format": "image",
+      "sha256": "",
+      "version": "The Statutes of the Realm, vol. 1 (London: Record Commission, 1810), 25 Edw. III st. 2, pp. 311-312, read on the page images https://archive.org/download/statutes-of-the-realm-v-1-1101-1377/page/n500_w1600.jpg (p. 311, SHA-256 6eda1a55cf8c9c7c439b6327619a3b5f8e50c035924a7341a256127de1287741) and .../page/n501_w1600.jpg (p. 312, SHA-256 7b86c1a3c678ea41100ae8524c013ecbae9d5363231ec79c41dbf6baf94b6083)"
+    },
+    "wailly1857": {
+      "url": "https://archive.org/download/bub_gb_FOUZAAAAYAAJ/bub_gb_FOUZAAAAYAAJ.pdf",
+      "format": "image",
+      "sha256": "072b2e76f10db4ec3036873a6341946a233556786d6e372b285b88fa8e15123f",
+      "version": "N. de Wailly, Mémoire sur les variations de la livre tournois (Paris: Imprimerie impériale, 1857; extract from Mémoires de l'Académie des inscriptions et belles-lettres, t. XXI, 2e partie); Google scan of the Harvard copy; pp. 32, 34, 35, 46 read on PDF pages 40, 42, 43, 54"
+    },
+    "oresme1864": {
+      "url": "https://archive.org/download/traictiedelaprem00oresuoft/traictiedelaprem00oresuoft.pdf",
+      "format": "image",
+      "sha256": "7576c8e16b6cdb00efd9f633811aecadec298fc3affc6bb6d38c2b446c5a6f34",
+      "version": "L. Wolowski (ed.), Traictie de la premiere invention des monnoies de Nicole Oresme ... et Tractatus de origine et jure nec non et de mutationibus monetarum (Paris: Guillaumin, 1864), University of Toronto copy; introduction pp. XXXIV and XLVIII (PDF pages 40 and 54) and Latin text pp. XC-CXXV (PDF pages 168-203; PDF page = 170 + roman page - 92)"
+    },
+    "rvw1997": {
+      "url": "https://researchdatabase.minneapolisfed.org/downloads/5q47rn915",
+      "format": "image",
+      "sha256": "7bf063565911d476c0cad71db091c1eee5ec0b02f362283fa882934388534ee5",
+      "version": "A. J. Rolnick, F. R. Velde and W. E. Weber, 'The Debasement Puzzle: An Essay on Medieval Monetary History', Federal Reserve Bank of Minneapolis Quarterly Review 21(4): 8-20 (1997), reprinted from Journal of Economic History 56(4): 789-808 (1996); a scan whose OCR layer merges the two columns, so the quotations were read on the page images (printed pp. 9-18 = PDF pages 4-13)"
+    },
+    "clark1999wp": {
+      "url": "https://faculty.econ.ucdavis.edu/faculty/gclark/papers/black1.pdf",
+      "format": "pdf",
+      "sha256": "91fd64cdb695304b7e21113e9d6a978fb86bc8d68c59a5350bc4b5e1a413c0a4",
+      "version": "G. Clark, 'Microbes and Markets: Was the Black Death an Economic Revolution?', undated working paper (PDF created 19 October 1999), linked from the author's data page"
+    },
+    "clark2016": {
+      "url": "https://api.crossref.org/works/10.1017/dem.2016.6",
+      "format": "json",
+      "sha256": "e598b0d3a5e4f09a8f2e1368913dccdb630d4c2a03b8909904a7ab19e00b45f4",
+      "version": "Crossref record of G. Clark, 'Microbes and Markets: Was the Black Death an Economic Revolution?', Journal of Demographic Economics 82(2): 139-165 (2016), with its abstract; the hash changes when Crossref updates the record"
+    },
+    "hw2019": {
+      "url": "https://researchonline.lse.ac.uk/id/eprint/90328/1/Humpries_Unreal%20wages.pdf",
+      "format": "pdf",
+      "sha256": "280bf7e46c59a97e5cb4f7aed09134e55d36d9f8b96b87b843add681fdfcf4bf",
+      "version": "J. Humphries and J. Weisdorf, 'Unreal Wages? Real Income and Economic Growth in England, 1260-1850', accepted manuscript (LSE Research Online) of Economic Journal 129(623): 2867-2887 (2019)"
+    },
+    "ag2011": {
+      "url": "https://www.nber.org/system/files/working_papers/w17037/w17037.pdf",
+      "format": "pdf",
+      "sha256": "dd179c07623f31e912f50837317e85b806a6648274d37c9675a51befe5700b90",
+      "version": "Q. Ashraf and O. Galor, 'Dynamics and Stagnation in the Malthusian Epoch', NBER Working Paper 17037 (2011); published in American Economic Review 101(5): 2003-2041 (2011)"
+    }
+  }
+}

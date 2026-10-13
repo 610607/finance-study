@@ -257,14 +257,15 @@
 
 - **核心问题**：一场夺走大量人口的瘟疫，为什么让幸存者的实际工资上升了？君主为什么一再让铸币贬值？
 - **学完本章应能**：
-  - 用人口—土地—工资的马尔萨斯关系分析黑死病（1347—1351）前后的实际工资
+  - 用人口—土地—工资的马尔萨斯关系分析黑死病（1348—1350）前后的实际工资与地租
   - 解释 1351 年《劳工法令》为什么压不住工资
   - 分析铸币贬值作为财政手段的收益与代价
-  - 概括奥雷姆《论货币》（约 1360）对君主操纵货币的批评
-- **候选文献**：奥雷姆《论货币》（约 1360）；Allen 与 Clark 的工资与价格序列
+  - 概括奥雷姆《论货币》对君主操纵货币的批评
+- **候选文献**：奥雷姆《论货币》（沃洛夫斯基断定写成于 1373 年以前）；Allen 与 Clark 的工资与价格序列
 - **案例**：黑死病后的英格兰工资；法国腓力四世的铸币贬值
 - **对照框候选**：实物冲击 vs 货币冲击；铸币税 vs 通胀税
 - **前置**：第 7 章（希腊与罗马：铸币、城邦财政与帝国的贬值），第 3 章（价格、通胀与利率）
+- **已写成（2026-10）**：模型为 Ashraf \& Galor (2011) 的马尔萨斯模型（式 `eq:medieval-output`、`eq:medieval-factor`、`eq:medieval-dynamics`），土地份额 $\alpha=0.405$ 由 Clark 1300—1349 年的要素份额在资本回报率不变下推出（“深入一步”）。史料为 Bland、Brown 与 Tawney (1914) 的哈弗林清册（1306—1307）、塞尔比院长的信与南弗里斯账目（1345—1350）、1349 年《劳工条例》及其在埃塞克斯的执行（1350—1352）、1388 年法令；1351 年《劳工法令》据 \emph{Statutes of the Realm} 第 1 卷（扫描页逐字读）；德瓦伊 (1857) 表五的里弗尔价值（1258—1360，扫描页逐字录入）；奥雷姆《论货币》据沃洛夫斯基 1864 年校订本（拉丁文，扫描页逐字读，中文为本书翻译）。数据：Clark 的十年平均工资、生活费用、人口与地租（作者网页的工作簿，`data/fetch/clark_england.py`），Broadberry 等 (2015) 的人口（英格兰银行 \emph{A Millennium of Macroeconomic Data}，`data/fetch/boe_millennium_pop.py`），Rolnick、Velde 与 Weber (1996) 表 2、表 3 的铸币收入。研究文献另有 Clark 1999 年工作论文与 2016 年论文、Humphries \& Weisdorf (2019)。对照框：法定工资上限 vs 市场工资；铸币税 vs 通胀税；实物冲击 vs 货币冲击。案例框：法国 · 1295—1306 · 腓力四世的贬值与恢复。图：`malthus_dynamics`、`plague_wages`、`wage_ceiling`、`livre_tournois`。快照：`medieval_europe_facts`、`clark2015_england_decadal`、`boe_millennium_pop_england`、`wailly1857_livre_tournois`、`rvw1996_mint_revenue`。导引框的年代按史料改为黑死病 1348—1350（Ashraf \& Galor），《论货币》不写年份。效率的“对偶”估计（1.24—1.38）是本章用 Clark 2015 年数据与他的公式做的粗算，正文已注明；反复瘟疫等于养育成本 $\rho$ 上升是本章的解读。
 
 #### 第 12 章 `ch:songming` 宋元明：世界最早的纸币及其崩溃 — `zh/ch12_songming.tex`
 *Song, Yuan and Ming: the first paper money and its collapse*
@@ -1359,5 +1360,6 @@ part:language part:ancient part:earlymodern part:classical part:keynes part:gold
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
 sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
+sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
 nav:contents nav:compare
 ```

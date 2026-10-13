@@ -4,6 +4,7 @@ pandas>=2.0
 matplotlib>=3.7
 fonttools>=4.40
 pillow>=10.0
+openpyxl>=3.1        # data/fetch scripts that read .xlsx workbooks (Chapter 11)
 # Added with pinned versions when the chapter that needs them is written (docs/STYLE.md §6):
 # statsmodels      filters, VARs, regressions (Chapters 53, 68, 80, ...)
 # quantecon        dynamic programming, Markov processes

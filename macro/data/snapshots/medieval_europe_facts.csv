@@ -1,0 +1,108 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+havering_demesne,英格兰,1306,1306-7,6,便士/英亩/年,,bbt1914,I.iv.1 (p. 56),"the King has there in demesne 223-1/2 acres of arable land, whereof the acre is worth 6d. a year.",
+havering_demesne_sum,英格兰,1306,1306-7,1341,便士,,bbt1914,I.iv.1 (p. 56),"Sum, 111s. 9d.","223.5 × 6d = 1,341d = 111s 9d"
+havering_assize,英格兰,1306,1306-7,40,维尔盖特,,bbt1914,I.iv.1 (p. 56),And thus there are in all in the aforesaid manor 40 virgates of land which render yearly in rent of assize,
+havering_assize_sum,英格兰,1306,1306-7,11513.5,便士,,bbt1914,I.iv.1 (p. 56),"Sum, 47l. 19s. 5-1/2d.",定额地租合计 47 镑 19 先令 5½ 便士
+havering_works,英格兰,1306,1306-7,14,镑/年,,bbt1914,I.iv.1 (p. 56),"Further, from works of the aforesaid 40 virgates 14l. yearly.",
+havering_virgate,英格兰,1306,1306-7,7,先令/年,,bbt1914,I.iv.1 (p. 56),the works of each virgate are worth by themselves 7s. a year.,
+havering_plough,英格兰,1306,1306-7,4,便士/英亩,,bbt1914,I.iv.1 (p. 56),"to plough 4 acres a year in the winter season, and the ploughing of each acre is worth 4d.",
+havering_own_cost,英格兰,1306,1306-7,,,,bbt1914,I.iv.1 (p. 56),And it ought to do all these customs beforewritten at its own cost.,
+havering_works_sum,英格兰,1306,1306-7,74,便士,,bbt1914,I.iv.1 (p. 56),"Sum of the aforesaid works, 6s. 2d. And of lawful increment for each virgate, 10d. a year. And thus the sum of the works of each virgate is 7s. a year.",各项劳役折价逐项相加为 74 便士
+selby_flesh,英格兰,1350,,,,,bbt1914,I.iv.27 (p. 102),"our discreeter and stronger brethren, on whom rested the governance of our house, have gone the way of all flesh through the pestilence",
+selby_rents,英格兰,1350,,,,,bbt1914,I.iv.27 (p. 102),our house both in decay of rents and in lack of corn and other victuals is suffering undue disaster,
+southfrith_waste,英格兰,1346,1345-6,160,便士/年,,bbt1914,I.iv.28 (p. 103),"lie waste for lack of a tenant, 13s. 4d. a year",
+southfrith_old,英格兰,1346,1345-6,184,便士,,bbt1914,I.iv.28 (p. 103),Sum:--15s. 4d.,瘟疫前的欠租合计
+southfrith_new,英格兰,1350,1349-50,1431.25,便士,,bbt1914,I.iv.28 (p. 103),Sum:--119s. 3-1/4d. Whereof 103s. 11-1/4d. is of new defect by reason of the pestilence.,逐项相加为 118s 10¼d，比所记总数少 5 便士
+ord_1349_preamble,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),"Because a great part of the people and specially of the workmen and servants has now died in this plague, some, seeing the necessity of lords and the scarcity of servants, will not serve unless they receive excessive wages",
+ord_1349_base,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),"in the twentieth year of our reign of England, or in the five or six common years last preceding",爱德华三世在位第 20 年：1346 年 1 月至 1347 年 1 月
+ord_1349_sixty,英格兰,1349,,60,岁,,bbt1914,I.vi.12 (p. 164),"every man and woman of our realm of England, of whatsoever condition, free or servile, able-bodied and under the age of sixty years",
+ord_1349_lords,英格兰,1349,,3,倍,,bbt1914,I.vi.12 (p. 164),at a penalty of threefold of that so paid or promised by them or their ministers,庄园或市镇的领主违反条例时的罚则
+ord_1349_double,英格兰,1349,,2,倍,,bbt1914,I.vi.12 (p. 164),"under penalty of the double of that which shall be so paid, promised, demanded or received",
+ord_1349_victuals,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),shall be bound to sell such victuals for a reasonable price,
+ord_1349_date,英格兰,1349,,,,,bbt1914,I.vi.12 (p. 164),"Witness the King at Westminster, the eighteenth day of June.",
+chelmsford_denk,英格兰,1351,,20,先令/年,,bbt1914,I.vi.13 (p. 167),"William Denk, servant of Geoffrey le Smyth, took from the said Geoffrey 20s. a year, and is at his table, and was sworn before John de Sutton and his fellows to serve according to the Statute, etc., where he should not take but 8s., etc....",
+chelmsford_tailors,英格兰,1351,,3,倍,,bbt1914,I.vi.13 (p. 167),and this threefold that which they used to take.,
+chelmsford_smyth,英格兰,1351,,2,倍,,bbt1914,I.vi.13 (p. 167),"Richard Smyth of Great Baddow commonly takes for his work double that which he used to take, against the Statute.",
+layer_sum,英格兰,1351,,202,便士,,bbt1914,I.vi.15 (p. 169),"Sum, 16s. 10d.",Layer de la Hay 村 18 笔罚款逐项相加为 202 便士
+writ_1350_subsidy,英格兰,1350,,,,,bbt1914,I.vi.16 (p. 170),"to pay without delay that which they have so received in excess to the subtaxers and subcollectors of the singular towns to which the same artificers, servants and workmen belong, in aid of payment of the tenth and fifteenth aforesaid",
+winstree_sum,英格兰,1352,1351-2,4682,便士,,bbt1914,I.vi.17 (p. 171),"Sum of this hundred, 19l. 10s. 2d., whereof from the fifteenth [arises] 38s. 11d.. from fines of workmen 17l. 11s. 3d.","工人罚款 4,215 便士，占 4,682 便士的 90%"
+winstree_note,英格兰,1352,1351-2,,,,bbt1914,"I.vi.17 (p. 171), n. 216",Note that in half the towns in this hundred the inhabitants' share of the subsidy is wholly covered by the fines. The ordinance and statute were enforced in Essex more severely than elsewhere.,
+stat_1388_kept,英格兰,1388,,,,,bbt1914,"I.vi.18 (p. 171), c. 3","all the Statutes of artificers, labourers, servants and victuallers made as well in the time of our lord the King that now is as in the time of his noble grandfather, whom God assoil, not repealed, be straitly holden and kept and duly executed",
+stat_1388_letter,英格兰,1388,,,,,bbt1914,"I.vi.18 (p. 171), c. 3","no servant or labourer, be it man or woman, depart at the end of his term out of the hundred, rape or wapentake where he is dwelling, to serve or dwell elsewhere, or by colour of going afar on pilgrimage, unless he carry a letter patent containing the cause of his going and the time of his return",理查二世第 12 年的法令；“祖父”指爱德华三世
+stat_1351_title,英格兰,1351,1350-1 (旧历),,,,sotr1810,p. 311,"STATUTES in the Parliament holden at WESTMINSTER, In the Octave of the Purification of the Blessed Virgin Mary",1351 年 2 月
+stat_1351_double,英格兰,1351,,,,,sotr1810,p. 311,"unless they have Livery and Wages to the double or treble of that they were wont to take the said Twentieth Year, and before",
+stat_1351_c1,英格兰,1351,,,,,sotr1810,"p. 311, c. 1","shall take Liveries and Wages, accustomed the said Twentieth Year, or Four Years before",
+stat_1351_year,英格兰,1351,,,,,sotr1810,"p. 311, c. 1","to serve by a whole year, or by other usual Terms, and not by the Day",
+stat_1351_hay,英格兰,1351,,1,便士/日,,sotr1810,"p. 311, c. 1",none pay in the Time of Sarcling or Hay-making but a penny the day,
+stat_1351_mower,英格兰,1351,,5,便士/英亩或日,,sotr1810,"p. 311, c. 1","a mower of Meadows for the Acre Five pence, or by the Day Five pence",
+stat_1351_reapers,英格兰,1351,,2;3,便士/日,,sotr1810,"p. 311, c. 1","Reapers of Corn in the First Week of August Two pence, and the Second Three pence",
+stat_1351_meat,英格兰,1351,,,,,sotr1810,"p. 311, c. 1","without Meat or Drink, or other courtesie to be demanded, given, or taken",
+stat_1351_c3,英格兰,1351,,3;2;4;3;1.5;3;1.5,便士/日,,sotr1810,"p. 312, c. 3",A Master Carpenter iii d. and another ii d. A Master [Free Mason] iiii d. and other Masons iii d. and their Servants i d. ob. Tylers iii d. and their Knaves i d. ob.,ob. = obolus，半便士；方括号内是编者据另一抄本补的词，脚注作 free-stone mason
+stat_1351_c3_season,英格兰,1351,,,,,sotr1810,"p. 312, c. 3","from Easter to Saint Michael; and from that time less, according to the Rate and Discretion of the Justices",夏季（复活节至米迦勒节）工资；冬季更低
+stat_1351_stocks,英格兰,1351,,3,日,,sotr1810,"p. 312, c. 2","be put in the Stocks by the said Lords, Stewards, Bailiffs, and Constables of the Towns by Three Days or more, or sent to the next Gaol",
+stat_1351_prison,英格兰,1351,,40,日,,sotr1810,"p. 312, c. 5","he shall have Imprisonment of Forty Days; and if he be another Time convict, he shall have Imprisonment of a Quarter of a Year, so that at every Time that he offendeth and is convict, he shall have double Pain",
+stat_1351_note,英格兰,1351,,,,,sotr1810,"p. 311, n.",Statute the First in all former Printed Copies; and entitled 'Statutum de Servientibus. The Statute of Labourers.',
+wailly_contracts,法国,1295,,,,,wailly1857,p. 32,"Il est impossible, en effet, que l'équilibre s'établisse dans les prix, quand il n'y a pas de sécurité pour les transactions commerciales; quand la cupidité d'un créancier ou la mauvaise foi d'un débiteur peut invoquer les dispositions iniques de la loi, pour changer arbitrairement le sens réel d'un contrat",
+wailly_1303,法国,1303,,6.97,法郎,,wailly1857,p. 32,"La livre tournois, réduite alors à 16f 72c, ne valut plus, au mois d'août 1303, que 6f 97c.",
+wailly_prelates,法国,1304,约 1304,,,,wailly1857,p. 34,"Ils auraient voulu qu'à l'avenir aucun changement de monnaie ne pût se faire qu'en cas de nécessité absolue, attestée par le serment du roi et des membres du conseil privé",高级教士的请愿；国王没有接受这项承诺
+wailly_refused,法国,1304,约 1304,,,,wailly1857,p. 34,"Mais il ne consentit pas à exempter les évêques du service militaire, ni surtout à prendre l'engagement qu'ils réclamaient à la fin de leur supplique.",
+wailly_jews,法国,1306,,,,,wailly1857,p. 34,"Les ressources nécessaires à l'exécution de la mesure, on se les procura, au moins en partie, par une mesure inique : on prononça, le 22 juillet 1306, l'exil des juifs et la confiscation de leurs biens",
+wailly_riot,法国,1306,,,,,wailly1857,p. 35,"Les petits locataires, qui s'étaient facilement habitués à voir décroître successivement les loyers jusqu'au-dessous du tiers de leur valeur primitive, refusèrent de les acquitter en bonne monnaie. Une émeute terrible éclata dans Paris, des maisons furent pillées et brûlées, le roi fut bloqué dans le Temple",
+wailly_22,法国,1314,,22,次,,wailly1857,p. 35,"Philippe le Bel laissa donc la livre tournois à peu près aux 10/11 de la valeur qu'elle avait eue à son avénement, mais après lui avoir fait subir vingt-deux variations dans les dix-neuf dernières années de son règne.",10/11 印作上下排的分数
+wailly_71,法国,1360,1351-1360,71,次,,wailly1857,p. 46,"de 1351 à 1360, la livre tournois a changé soixante et onze fois de valeur, et que les années 1359 et 1360 figurent à elles seules dans ce nombre total, l'une pour seize, l'autre pour dix-sept mutations",
+wailly_11,法国,1360,1351-1360,11,次,,wailly1857,p. 46,la hausse succéda onze fois à autant de baisses différentes,
+wailly_extremes,法国,1360,1351-1360,13.59;3.22,法郎,,wailly1857,p. 46,Les cours extrêmes firent osciller la valeur moyenne de la livre tournois entre 13f 59c et 3f 22c.,
+oresme_date,法国,1373,早于 1373,,,,oresme1864,p. XXXIV,Le travail d'Oresme est antérieur à 1373.,编者沃洛夫斯基的判断
+oresme_louvre,法国,1373,,,,,oresme1864,"p. XLVIII, n. 2","Cette traduction se trouvait, dès 1373, dans la librairie de la tour du Louvre",奥雷姆本人的法译本
+oresme_ms1397,法国,1397,,,,,oresme1864,p. XC,anno Domini 1397,所用抄本 A 的年代
+oresme_vi,法国,,,,,,oresme1864,"c. VI, p. CI",Est igitur pecunia communitatis et singularium personarum,
+oresme_xv_loss,法国,,,,,,oresme1864,"c. XV, p. CXV",quantum princeps capit ibi de lucro tantum necesse est ipsam communitatem habere de damno,
+oresme_xv_more,法国,,,,,,oresme1864,"c. XV, p. CXV","si princeps de jure potest facere unam simplicem mutationem monete et ibi capere aliquod lucrum, pari ratione potest facere majorem mutationem et capere majus lucrum",
+oresme_xvii_usury,法国,,,,,,oresme1864,"c. XVII, p. CXVIII",lucrum sumere in mutatione monetæ est adhuc pejus quam usura,
+oresme_xvii_invol,法国,,,,,,oresme1864,"c. XVII, p. CXVIII",princeps in indebita mutatione monetæ accipit simpliciter involuntarie pecuniam subditorum,
+oresme_xx_hidden,法国,,,,,,oresme1864,"c. XX, p. CXXIII","ita talis exactio, quanto minus percipitur, tanto periculosius exercetur; non enim ita cito gravamen ipsius sentitur a populo, sicut per unam aliam collectam",
+oresme_xx_export,法国,,,,,,oresme1864,"c. XX, p. CXXIII","aurum et argentum propter tales mutationes et impejorationes minorantur in regno; quia non obstante custodia deferuntur ad extra, ubi carius allocantur",
+oresme_xxi_insiders,法国,,,,,,oresme1864,"c. XXI, p. CXXV","aliqui per cautelas aut amicos hoc secrete provident, et tunc emunt mercimonia pro moneta debili, et postea vendunt pro forti, et subito fiunt divites",
+oresme_xxi_rents,法国,,,,,,oresme1864,"c. XXI, p. CXXV","necesse est reditus taxatos ad numerum pecuniæ aut injuste minui, aut injuste saltem augeri",
+rvw_puzzle,,,,,,,rvw1997,p. 9,"If coins are valued in circulation for their intrinsic content, then debasements can provide no additional incentive to bring metal to the mint. Yet, debasements did in fact attract a lot of metal.",
+rvw_brassage,,,,,,,rvw1997,p. 9,"They always received back less fine metal than they brought in. Part of what was withheld by the mint paid for production costs and was called brassage. The rest was sent to the sovereign as profit, or tax, and was called seigniorage.",
+rvw_reinforce,,,,,,,rvw1997,p. 9,"minting volumes following reinforcements (increases in the metal content of the currency) were also unusually large, about as large as those following debasements",
+rvw_gross,,,,,,,rvw1997,p. 10,"Gross seigniorage is simply the difference, ME – MP, withheld by the mint. The gross seigniorage rate is 1 – MP/ME.",
+rvw_debasement_def,,,,,,,rvw1997,p. 10,A decrease in C is called debasement. An increase is called reinforcement.,
+rvw_voluntary,,,,,,,rvw1997,p. 10,"As far as we know, metal was brought to the mint voluntarily, even during periods of debasement.",
+rvw_123,法国,,1285-1490,123,次,,rvw1997,p. 10,"In France, the silver currency went through 123 debasements between 1285 and 1490. Of these, 112 reduced the silver content of the currency by more than 5 percent. The single largest debasement reduced it by 50 percent.",
+rvw_england_stable,英格兰,,,20,%,,rvw1997,p. 10,the pound sterling never lost more than 20 percent at a time,
+rvw_83,英格兰,,1542-1551,83,%,,rvw1997,p. 10,"From 1542 to 1551, silver or gold was debased ten times, and the pound sterling lost 83 percent of its silver content. The gross seigniorage rate went from 2 percent to 57 percent.",
+rvw_rates,法国,,1354-1490,7.5;2.0,%,,rvw1997,p. 12,the gross seigniorage rate during normal years was 7.5 percent for silver and 2.0 percent for gold,
+rvw_debasement_rates,法国,,1354-1490,21.7;4.3,%,,rvw1997,p. 12,"In debasement years, however, the seigniorage rates were, on average, 21.7 percent for silver and 4.3 percent for gold.",
+rvw_costs,法国,1401,,3;0.5,%,,rvw1997,"p. 12, n. 11","The gross seigniorage rate included minting costs. In 1401, these costs were around 3 percent for silver and 0.5 percent for gold.",
+rvw_1412,英格兰,1412,,130,倍,,rvw1997,p. 12,"following the debasement of 1412, minting volume increased by a factor of almost 130",
+rvw_fragmentary,,,,,,,rvw1997,p. 14,"Unfortunately, the data are very fragmentary.",
+rvw_negligible,法国,,,,,,rvw1997,p. 14,"It appears that seigniorage was a negligible source of revenues during normal years, usually 5 percent or less. But in debasement years, seigniorage could represent 50 percent or more of revenues, as in the years 1299, 1327, and 1349.",
+rvw_england_25,英格兰,,1544-47,25,%,,rvw1997,p. 14,"during the Great Debasement, even as Henry VIII was extracting resources from all possible sources (forced loans and the sale of monasteries), seigniorage brought in 25 percent of revenues",表 3 印作 26%
+rvw_weeks,法国,,1345-56,,,,rvw1997,p. 18,"Even if price adjustment did not occur instantaneously, the lag could only have been a matter of a few weeks.",
+rvw_1350s,法国,,1350s,8;12,%,,rvw1997,p. 14,"If we compare seigniorage with revenues in the 1330s or in the 1370s, the ratio of seigniorage to total revenues is from 8 to 12 percent.",
+rvw_war,法国,,1350s,,,,rvw1997,p. 14,"In all likelihood, the ratio was in fact much higher, since the country was at war and regular tax collection probably at a low.",
+rvw_challenge,,,,,,,rvw1997,p. 18,Rejection of the existing explanations leaves us with the modeling challenge of solving the debasement puzzle.,
+rvw_debts,,,,,,,rvw1997,p. 18,"We also reject another explanation of the debasement puzzle, which is that debased coins were used to reduce the real burden of debts denominated in nominal terms.",
+clark_shares,英格兰,,1300-49,50;34,%,,clark1999wp,p. 9,"wages were 50% of the value of output in agriculture, and land 34%, in the years 1300-49",
+clark_40,英格兰,1400,,40,%,,clark1999wp,p. 10,the more than halving of the population level leads to only about a 40% rise in real wages and a 40% drop in real rents by 1400,
+clark_1350s,英格兰,,1350s,25,%,,clark1999wp,p. 10,In the 1350s wages are predicted to rise about 25%,
+clark_equal,英格兰,,,40;39,%,,clark1999wp,p. 10,"If wages rose by 40%, rents should have fallen by 39%.",
+clark_range,英格兰,,,0;86,%,,clark1999wp,p. 10,"the plague could have caused a rise in wages anywhere from 0% to 86%, and a fall in rents of anywhere from 0% to 100%",
+clark_044,英格兰,1400,,0.44,,,clark1999wp,p. 12,the labor force in 1400 was 0.44 of the labor force of 1300-49,
+clark_r_fixed,英格兰,,,,,,clark1999wp,p. 12,The table is constructed assuming that the rate of return on capital remained unchanged after 1349,
+clark_lag,英格兰,,1350-69,,,,clark1999wp,p. 14,in the decades 1350-9 and 1360-9 real wages were slightly lower than their average for the years 1300-49,
+clark_64,英格兰,,1400-99,64,%,,clark1999wp,p. 14,By the fifteenth century real agricultural wages average a 64% increase on their pre-plague level.,
+clark_deflator,英格兰,,,,,,clark1999wp,p. 14,Real wages are nominal wages deflated by agricultural prices,
+clark_statute,英格兰,1351,,,,,clark1999wp,p. 14,"This may be an artifact, however, created by the Statute of Laborers of 1351 which made paying wages higher than those of 1346-7 illegal.",
+clark_evaded,英格兰,,,,,,clark1999wp,p. 17,"The statute was probably widely evaded, but the evasion may have taken the form of allowing workers additional food on the job",
+clark_no_effect,英格兰,,,,,,clark1999wp,p. 1,These reveal first that there is no sign the Black Death had any effect on the efficiency of agriculture.,
+clark_r,英格兰,,1300-1400,10;5,%,,clark1999wp,p. 1,"the return on capital did fall from 10% around 1300 to about 5% by 1400, the biggest change in English history",
+clark_r_1300,英格兰,,1300-48,8.1,%,,clark1999wp,p. 31,Thus the median return in these years was 8.1%,
+clark_cycle,英格兰,,,,,,clark1999wp,p. 5,"First a period of high fertility and or low mortality, then a period of low fertility and or high mortality",
+clark2016_efficiency,英格兰,,,,,,clark2016,abstract,"the population losses of the Black Death were associated with a surprising increase in economic efficiency, despite the decline in the scale of the economy. But this efficiency gain disappeared when population rose again in the 16th century.",
+hw_downscale,,,,,,,hw2019,abstract,Our new estimates not only downscale the medieval ‘Golden Age of Labour’ that followed in the wake of the Black Death when almost half of Britain’s population perished,
+hw_days,英格兰,,,150,日/年,,hw2019,abstract,from less than 150 days during the medieval period to well over 300 days during the Industrial Revolution,
+hw_one_other,英格兰,,,,,,hw2019,,"Even in the post-plague ‘Golden Age’, an unskilled working man would have struggled to support more than one other person",
+ag_black_death,,,,,,,ag2011,p. 5,"a decline in the population due to an epidemic such as the Black Death (1348-1350 CE) would temporarily reduce population, while temporarily increasing income per capita",

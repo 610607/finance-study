@@ -28,4 +28,11 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 10 (legacy) | 5 `ch:external` | Covered interest parity: the forward–spot difference is set by the interest differential between two currencies | open |
 | 10 (compare box, legacy) | 15 `ch:finrevolution` | Bank money of the Bank of Amsterdam (accounts of merchants centralised in a public bank); joint-stock companies with limited liability and transferable shares | open |
 | 10 (compare box, legacy) | 21 `ch:divergence` | Institutional explanations of why Europe took off first, compared with the others (Chapter 10 ends the Maghribi traders debate — Greif's cultural beliefs vs Edwards & Ogilvie — by pointing here) | open |
-| 10 (closing sentence) | 11 `ch:medieval` | The Black Death and the relative price of labour and land; repeated debasement of the coinage | open |
+| 10 (closing sentence) | 11 `ch:medieval` | The Black Death and the relative price of labour and land; repeated debasement of the coinage | done (`sec:medieval-malthus`, `sec:medieval-plague`, `sec:medieval-debasement`) |
+| 11 (guide, §11.4 after the compare box, legacy) | 7 `ch:greekroman` | Diocletian's price edict (301) and why it failed; Chapter 11 says the price rises it faced were "inseparable from the debasement of the money" | open |
+| 11 (guide, Example 11.5, compare box 实物冲击 vs 货币冲击, legacy) | 3 `ch:prices` | Nominal vs real values; real wages and the choice of deflator; how inflation redistributes wealth under contracts written in nominal terms | open |
+| 11 (§11.2, legacy) | 21 `ch:divergence` | How Europe escaped the Malthusian steady state of `eq:medieval-dynamics` (income per head independent of technology and land) | open |
+| 11 (§11.6 Oresme's second point, legacy) | 49 `ch:credibility` | The commitment problem of an authority that can change the money at will (time inconsistency) and central-bank independence as the answer | open |
+| 11 (§11.6 Oresme's first point, legacy) | 50 `ch:budget` | Seigniorage / the inflation tax as a transfer of purchasing power from money holders to the issuer | open |
+| 11 (compare box 铸币税 vs 通胀税, legacy) | 52 `ch:hyperinflation` | The revenue from the inflation tax is limited by money demand: at very high inflation people hold less money and the base shrinks | open |
+| 11 (legacy) | 13 `ch:silver` | The sixteenth-century price revolution, with population (`eq:medieval-factor`) and American silver compared as causes | open |

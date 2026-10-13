@@ -1,0 +1,12 @@
+{
+  "title": "Population of England (millions), selected years 1290–1500",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1), sheet 'A2. Pop of Eng & GB 1086-1870', from Broadberry, Campbell, Klein, Overton and van Leeuwen (2015)",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "A2. Population of England and Great Britain 1086-1870: 'Population of England, millions' (pop_england_m), for the years listed in YEARS in the fetch script",
+  "retrieved": "2026-10-13",
+  "license": "The sheet states: 'When using this data, please cite this source.' (Broadberry et al. 2015). The Bank of England publishes the workbook as a research dataset; a subset of 30 values is stored here for teaching, with attribution.",
+  "used_in": [11],
+  "fetch": "data/fetch/boe_millennium_pop.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (27.5 MB). The sheet gives annual values, interpolated between the authors' benchmark estimates (for example 4.81 m in 1348 and 2.50 m in 1377); the chapter treats values between benchmarks as interpolations and does not read year-to-year changes in them as annual estimates. The fall from 1348 to 1351 (4.81 m to 2.60 m, −46%) is the series' representation of the Black Death of 1348–1349. Clark's population series (clark2015_england_decadal) is lower in the 1340s and higher around 1400; see the notes there.",
+  "citation": "Broadberry, S., B. M. S. Campbell, A. Klein, M. Overton and B. van Leeuwen (2015), British Economic Growth, 1270–1870, Cambridge: Cambridge University Press, doi:10.1017/CBO9781107707603; data via Bank of England, A millennium of macroeconomic data for the UK, v3.1"
+}
