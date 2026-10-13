@@ -1,6 +1,6 @@
 {
   "title": "Quotations on the Bank of Amsterdam, the VOC, Holland's and England's public debt, the Stop of the Exchequer and the Bank of England (Chapter 15)",
-  "source": "Smith (1776, third-edition text); Quinn & Roberds (2010); Frost, Shin & Wierts (2020); Gelderblom, de Jong & Jonker (2012); Gelderblom & Jonker (2004, 2011); Temple (1673); North & Weingast (1989); Andréadès (1909); Evelyn ed. Bray (1901); the Bill of Rights (1689); 5 & 6 Will. & Mar. c. 20 (1694) and 12 & 13 Will. III c. 12 (1701) in Statutes of the Realm; Stasavage (2002); Sussman & Yafeh (2006); Quinn (2001); Temin & Voth (2008); Pincus & Robinson (2014)",
+  "source": "Smith (1776; a later edition's text, checked against the first edition for the digression on the Bank of Amsterdam); Quinn & Roberds (2010); Frost, Shin & Wierts (2020); Gelderblom, de Jong & Jonker (2012); Gelderblom & Jonker (2004, 2011); Temple (1673); North & Weingast (1989); Andréadès (1909); Evelyn ed. Bray (1901); the Bill of Rights (1689); 5 & 6 Will. & Mar. c. 20 (1694) and 12 & 13 Will. III c. 12 (1701) in Statutes of the Realm; Stasavage (2002); Sussman & Yafeh (2006); Quinn (2001); Temin & Voth (2008); Pincus & Robinson (2014); Velde (2003)",
   "url": "see sources",
   "series": "one row per quoted fact: id, dynasty (here: country or city), year (approximate where year_note says so), year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page, section or diary date), quote (verbatim), note",
   "retrieved": "2026-10-13",
@@ -15,7 +15,14 @@
       "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
       "format": "txt",
       "sha256": "e91d52dca43fd0fd69baf7776b00a5d8e74b69675b6b608ca8a0378aaf3ae58d",
-      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300; the text is that of a later edition (Book V, ch. I refers to 'the two first editions'); in the digression on the Bank of Amsterdam (Book IV, ch. III, pt. I) Smith dates the bank's prices 'at present {September 1775}'. When the digression entered the book was not checked against the first edition",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300; the text is that of a later edition (Book V, ch. I refers to 'the two first editions'); in the digression on the Bank of Amsterdam (Book IV, ch. III, pt. I) Smith dates the bank's prices 'at present {September 1775}'. The digression is already in the first edition (source smith1776ed1)",
+      "retrieved": "2026-10-13"
+    },
+    "smith1776ed1": {
+      "url": "https://archive.org/download/10888061bsb/10888061bsb_djvu.txt",
+      "format": "txt",
+      "sha256": "d97a7d3a5663bcd188be8bdbcc0c7619b3a4733ff2608a968d463f26f7616236",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, first edition (London: W. Strahan and T. Cadell, 1776), vol. 2, the Bavarian State Library copy (urn:nbn:de:bvb:12-bsb10888061-3) on archive.org, item 10888061bsb; OCR text, which reads long s as f; used only to show that the digression on the Bank of Amsterdam, with its prices of September 1775, is in the first edition",
       "retrieved": "2026-10-13"
     },
     "qr2010": {
@@ -142,6 +149,13 @@
       "format": "pdf",
       "sha256": "459ba066dcb547da88f2474331ee747a8bb51f50090a81701778b1db2c8878af",
       "version": "P. Temin and H.-J. Voth, 'Private borrowing during the financial revolution: Hoare's Bank and its customers, 1702-24', Economic History Review 61(3): 541-564 (2008), the publisher's PDF as posted on the CREI site; pages are the journal's",
+      "retrieved": "2026-10-13"
+    },
+    "velde2003": {
+      "url": "https://www.chicagofed.org/-/media/publications/working-papers/2003/wp2003-31-pdf.pdf",
+      "format": "pdf",
+      "sha256": "909db10084f2f066683347571431cf3cbc01edba8ab4409d9f903ee77d56cd34",
+      "version": "F. R. Velde, 'Government Equity and Money: John Law's System in 1720 France', Federal Reserve Bank of Chicago Working Paper 2003-31 (November 30, 2003); pages are those printed on the paper (PDF page minus 3); Table 2 (the debt in France, 1700-26) is quoted as its row reads in the text layer",
       "retrieved": "2026-10-13"
     },
     "pincus2014": {

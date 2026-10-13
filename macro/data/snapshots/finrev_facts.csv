@@ -244,3 +244,12 @@ qr_t1_date,阿姆斯特丹,1669,1669 年 1 月 31 日,31;1669,日;年,,qr2010,"p
 nw_1628,英格兰,1628,,1628,年,,nw1989,p. 820,1628. Such behavior was hardly designed to gain the confidence of potential sources of loans.,前文：1624 年降息到 8%，此后直到 1628 年不付息也不还本
 gj11_aug1652,荷兰,1652,1652 年 8 月,1652,年,,gj2011,p. 15,"In August 1652 Johan de Witt, on his way to Holland's most powerful office of grand pensionary, presented radical plans.",
 and_100k,英格兰,1694,,100000,英镑,,andreades1909,p. 73,"100,000 per annum. The corporation was to have","前为 “in all £”（识别文本为 “,£”）"
+nw_t2_1625,英格兰,1625,,60000;8,英镑;%,,nw1989,"p. 820, Table 2","1625C 60,000 8 Unpaiduntil 1628",表 2 的文本层把注 c 并到年份后、把单词连在一起
+nw_t2_note_c,英格兰,1625,,,,,nw1989,"p. 820, Table 2",c Secured by Crownlands.,表 2 注 c，指 1625 年的借款
+gj11_small,荷兰,1673,,,,,gj2011,p. 19,"This benefitted big investors to the detriment of small ones, people below the tax threshold with a redeemable or life annuity as a pension provision.",1673 年对金融资产的财产税可以抵扣个人财富税
+velde_t2_1715,法国,1715,1715 年 9 月,1068.6;45.2;830.0;41.5;918.9;2817.5;86.7;165.6;47.7,百万里弗尔,,velde2003,"p. 8, Table 2",Sep 1715 1068.6 45.2 830.0 41.5 918.9 2817.5 86.7 165.6 47.7 1.78,依次为永续年金的本金与利息、官职的本金与利息、流动债务的本金、合计本金与利息、收入、基本盈余（最后一列为里弗尔含银指数）
+velde_floating,法国,1715,,40;4,百万里弗尔;%,,velde2003,p. 7,without even taking care of the floating debt which would add some 40mL at a 4% interest,
+velde_partial,法国,1715,1715—1717 年,,,,velde2003,p. 9,"carried out partial defaults and reductions in October 1715 (on perpetual bonds), January 1716 (on wages of offices), April 1716 (on the floating debt), and in June 1717 (on the perpetual bonds)",
+velde_billets,法国,1716,,4,%,,velde2003,p. 9,converted into bearer notes called billets d’État bearing 4%,
+velde_discount,法国,1716,1716 年年中,37,%,,velde2003,p. 9,"These notes traded at a 37% discount soon after their issue, in mid-1716",
+smith_ed1_1775,阿姆斯特丹,1775,,1775,年,,smith1776ed1,"vol. 2, Book IV ch. III",1775) receives bullion and coin of different kinds,初版第 2 卷的识别文本（长 s 识读为 f）；题外话在 1776 年初版里已经有了

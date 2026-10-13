@@ -189,10 +189,10 @@ def holland_rates(F) -> list[tuple[int, float, str]]:
 
 
 def crown_loans(F) -> list[tuple[float, float, bool]]:
-    """England's Crown loans the text quotes: (year, per cent, perpetual?) -- the forced loans of 1604-1625
-    (North & Weingast Table 2 and text) and the long-term loans of 1693-1739 (Table 4)."""
+    """England's Crown loans the text quotes: (year, per cent, perpetual?) -- the forced loans of 1604/5, 1611/2,
+    1617 and 1625 (North & Weingast Table 2 and text) and the long-term loans of 1693-1739 (Table 4)."""
     out = [(1604.5, F["nw_t2_1604"][1], True), (1611.5, F["nw_t2_1611"][1], True), (1617, F["nw_1617"][1], True),
-           (1624, F["nw_1624"][0], True)]
+           (1625, F["nw_t2_1625"][1], True)]
     for k, y in (("1693", 1693), ("1694a", 1694.2), ("1694b", 1694.2), ("1697", 1697), ("1698", 1698),
                  ("1707", 1707), ("1721", 1721), ("1728", 1728), ("1731", 1731), ("1739", 1739)):
         out.append((y, F[f"nw_t4_{k}"][1], k not in ("1693", "1694a")))
@@ -225,6 +225,9 @@ def world(F, H):
     lo, hi = H.loc[1648:1672, "total"].min(), H.loc[1648:1672, "total"].max()
     quoted("  1648-1672 range, low (m)", lo, 128.4, tol=0.05)
     quoted("  1648-1672 range, high (m) -- roughly flat", hi, 132.0, tol=0.05)
+    bills_all = H["bills_pct"] + H["taxfree_bills_pct"]
+    assert bills_all.loc[1640] < 50 and (bills_all.loc[1641:1720] > 50).all()   # fig. caption: bills over half from 1641
+    quoted("  bills incl. tax-free, lowest share 1641-1720 (%)", bills_all.loc[1641:1720].min(), 50.8, tol=0)
     quoted("Holland's debt 1672 (100m guilders)", H.loc[1672, "total"] / 100, 1.285, tol=0.0005)
     quoted("  bills share 1672 (%)", H.loc[1672, "bills_pct"], 56.4, tol=0)
     quoted("  redeemable share 1672 (%)", H.loc[1672, "redeemable_pct"], 34.8, tol=0)
@@ -242,6 +245,8 @@ def world(F, H):
     quoted("  at 10%", F["nw_1617"][1], 10, tol=0)
     quoted("  for one year", F["nw_1617"][2], 1, tol=0)
     quoted("1624: lowered to 8%", F["nw_1624"][0], 8, tol=0)
+    quoted("forced loan 1625 (GBP)", F["nw_t2_1625"][0], 60_000, tol=0)
+    quoted("  at (%)", F["nw_t2_1625"][1], 8, tol=0)
     quoted("  unpaid until", F["nw_1628"][0], 1628, tol=0)
     quoted("debt before 1688: about 1 million", F["nw_1m"][0], 1, tol=0)
     quoted("  2-3% of GNP (low)", F["nw_gnp1688"][0], 2, tol=0)
@@ -488,6 +493,11 @@ def england_commit(F, E):
     quoted("  default probability (%)", 100 * (1 - p17), 5.5, tol=0.05)
     quoted("p at 6%", repay_prob(F["nw_holland"][2] / 100), 0.981, tol=0.0005)
     quoted("p at 30%", repay_prob(F["nw_holland"][3] / 100), 0.80, tol=1e-9)
+    rf08 = F["gj11_7_625"][2] / 100                                          # Holland's 6.25% of 1608
+    quoted("  r_f = Holland 1608 (%)", 100 * rf08, 6.25, tol=0)
+    p17b = repay_prob(F["nw_1617"][1] / 100, r_f=rf08)
+    quoted("  p at 10% with r_f = 6.25%", p17b, 0.966, tol=0.0005)
+    quoted("  default probability (%)", 100 * (1 - p17b), 3.4, tol=0.05)
     d88, d20 = F["nw_1m"][0], F["nw_t3_1720"][1]
     quoted("debt 1688 (m)", d88, 1.0, tol=0)
     quoted("debt 1720 (m)", d20, 54.0, tol=0)
@@ -501,6 +511,11 @@ def england_commit(F, E):
     assert E.loc[1688, "receipts_gbp_m"] == E.loc[1689, "receipts_gbp_m"] == E.loc[1690, "receipts_gbp_m"]
     quoted("receipts 1720 (m)", r20, 5.95, tol=0.005)
     quoted("  ratio", r20 / r88, 2.1, tol=0.05)
+    # robustness: interest-only perpetual debt against a yearly cost of default, i D <= k, so D_max = k / i
+    perp_gain = (F["nw_1617"][1] / 100) / (F["nw_t4_1721"][1] / 100)
+    quoted("  D_max = k/i: 10% -> 5% (times)", perp_gain, 2, tol=1e-12)
+    quoted("  times the revenue ratio ('4 倍左右')", perp_gain * r20 / r88, 4, tol=0.2)
+    assert perp_gain * r20 / r88 < d20 / d88 / 10
     quoted("compare box: Bank loan 1694 (%)", F["nw_t4_1694b"][1], 8, tol=0)
 
 
@@ -596,6 +611,16 @@ def bank(F, E, T, H):
     quoted("Holland / Castile, debt ratio", H.loc[1648, "total"] / rev48 / tp["D"], 2.0, tol=0.05)
     quoted("England / Castile, rate", 100 * r / tp["r"], 0.49, tol=0.005)
     quoted("Holland / Castile, rate", 7 / H.loc[1648, "total"] * 100 / tp["r"], 0.58, tol=0.005)
+    # France, September 1715 (Velde 2003, Table 2): perpetual, offices, floating, total, revenue, surplus (m livres)
+    perp, perp_i, off, off_i, flo, tot, tot_i, rev, surp = F["velde_t2_1715"]
+    quoted("France 1715: capital adds up (m livres)", perp + off + flo, tot, tol=0.05)
+    quoted("  interest adds up (m livres)", perp_i + off_i, tot_i, tol=0.05)
+    quoted("  debt / revenue", tot / rev, 17.0, tol=0.05)
+    quoted("  interest / funded debt (%)", 100 * tot_i / (perp + off), 4.57, tol=0.005)
+    quoted("  France / England, debt ratio (text: higher)", tot / rev / D, 1.81, tol=0.005)
+    quoted("billets d'Etat: coupon (%)", F["velde_billets"][0], 4, tol=0)
+    quoted("  discount in mid-1716 (%)", F["velde_discount"][0], 37, tol=0)
+    quoted("  yield at that price (%)", 100 * perp_yield(F["velde_billets"][0], 100 - F["velde_discount"][0]), 6.3, tol=0.05)
 
 
 def test(F, E):
@@ -618,6 +643,7 @@ def test(F, E):
     m = E["mortgage_rate_pct"]
     assert (m.loc[1688:1703] == 6.0).all() and (m.loc[1704:1713] == 5.5).all()
     assert (m.loc[1714:1720] == 5.0).all() and (m.loc[1721:1730] == 4.5).all() and (m.loc[1731:1743] == 4.0).all()
+    assert (m.loc[1744:1760] == 4.25).all()                                  # fig. caption: 4.25% from 1744
     quoted("France: defaults", F["stas_france"][0], 1715, tol=0)
     quoted("  ", F["stas_france"][1], 1759, tol=0)
     quoted("  ", F["stas_france"][2], 1770, tol=0)
@@ -813,6 +839,15 @@ def from_quotes(Q):
     said(Q, "stas_southsea", "1711")
     said(Q, "stas_france", "1715", "1759", "1770")
     said(Q, "stas_france_sel", "1756", "1770")
+    said(Q, "velde_t2_1715", "Sep 1715", "2817.5", "165.6")
+    said(Q, "velde_billets", "billets", "4%")
+    said(Q, "velde_discount", "37%", "mid-1716")
+    said(Q, "velde_partial", "October 1715", "June 1717")
+    said(Q, "velde_floating", "40mL", "4%")
+    said(Q, "nw_t2_1625", "1625", "60,000", "8", "1628")
+    said(Q, "nw_t2_note_c", "Secured by Crownlands")
+    said(Q, "gj11_small", "small ones", "pension")
+    said(Q, "smith_ed1_1775", "1775")
     said(Q, "sy_four_decades", "four decades")
     said(Q, "sy_percapita", "1780")
     said(Q, "quinn01_war", "1690-1697")
