@@ -78,4 +78,5 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
 ## Status of the batches
 
 - Part 3 (第 10、11、13—17 章): notes in `docs/agent_prompts/part3_notes.md`; written sequentially in
-  the order 10, 11, 13, 14, 15, 16, 17, started 2026-10-13.
+  the order 10, 11, 13, 14, 15, 16, 17, started 2026-10-13; all seven written and reviewed and the figures redrawn
+  by 2026-10-13; awaiting the author's review.
