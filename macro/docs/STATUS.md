@@ -39,7 +39,7 @@ Updated 2026-10-13.
   - "盯市" translates Schaede's "ten-day mark-to-market mechanism" (it had been rendered 逐日结算), and the margin is a fraction m, not "m 倍".
   - Example 17.3 is spelled out per 100 ryō: 150 minted, 101 paid out, 49 kept. It also states that the quantity theory fails only if V and Y are fixed.
   - Example 17.4: the Genbun valuation is at the mint's rate (1.65), not the metal ratio (1.744).
-  - Schaede is "她".
+  - Schaede is named rather than given a pronoun, since no source states one (林满红 is "她", as in Irigoin and Atwell).
   - For balance:
     - Suzuki's reading of Arai's estimate is flagged as a challenge to the mainstream; the Keichō mintage is unknown because the mint documents burned (fn. 3).
     - Weak-form efficiency is defined, and Schaede's caveat on Miyamoto's annual averages is added (fn. 15).
@@ -57,6 +57,8 @@ Updated 2026-10-13.
   - The chapter relies on Suzuki (2021), a working paper, for the content theory. A mainstream quantity account (Shinbo, Saitō) was not obtained.
   - Notation clashes within the chapter: V and V_T, S and S_T.
   - The Kobe 近世経済データベース was not used (its terms forbid redistribution); the rice prices are Iwahashi's, through GPIH.
+- Pronouns: modern scholars whose pronoun no source states are referred to by name or in neutral wording (自己, 其, 原文, 原注). These are Greif (Ch10), Clark (Ch11), 全汉昇 and Hamilton (Ch13), Kocherlakota and Dalzel's annotator J. F. (Ch14), Velde, Garber and Shea (Ch16), and Suzuki, Irigoin, Takatsuki and Schaede (Ch17). Historical figures keep 他 where their own texts or the sources give it.
+- EPUB: pandoc printed Table 17.3 as plain text because its `\multicolumn` spec had `@{}`, so three links had no target. `tools/epub/build_epub.py` now strips `@{}` from `\multicolumn` specs as it does for tabularx. The six EPUBs pass epubcheck with no messages, and none has a table rendered as text.
 - Figures:
   - Every in-figure note in Part 3 is at least 7.6 pt in the source (STYLE.md §7.1).
   - The collisions the larger text caused are fixed in both languages, and text no longer sticks out of the canvas.
