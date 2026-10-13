@@ -101,6 +101,20 @@
       "sha256": "2d15f53561034becc2082e10ab5dba413959e9431645ec03a0563ff710950f0b",
       "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 27 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #26004, plain text",
       "retrieved": "2026-10-13"
+    },
+    "dv2011eeh": {
+      "url": "https://econ.sites.olt.ubc.ca/files/2013/05/pdf_article_mauricio-drelichman-prepress-serial-defaults-profits.pdf",
+      "format": "pdf",
+      "sha256": "17e3c46eb02eb016ad37b3d1dff68b19a9404f07134448e46727b8ec93e1b466",
+      "version": "accepted manuscript of M. Drelichman and H.-J. Voth, \"Serial Defaults, Serial Profits: Returns to Sovereign Lending in Habsburg Spain, 1566-1600\", Explorations in Economic History 48(1), 2011, 1-19, doi:10.1016/j.eeh.2010.08.002 (author's page)",
+      "retrieved": "2026-10-13"
+    },
+    "dv2011ej": {
+      "url": "https://econ.sites.olt.ubc.ca/files/2013/05/pdf_article_mauricio-drelichman-prepress-lending-borrower-hell.pdf",
+      "format": "pdf",
+      "sha256": "b35143e3c332010811be754c3b793bcf86e229380f88d79a62fa17444f2255c5",
+      "version": "accepted manuscript of M. Drelichman and H.-J. Voth, \"Lending to the Borrower from Hell: Debt and Default in the Age of Philip II\", Economic Journal 121(557), 2011, 1205-1227, doi:10.1111/j.1468-0297.2011.02442.x (author's page)",
+      "retrieved": "2026-10-13"
     }
   }
 }

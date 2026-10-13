@@ -18,6 +18,7 @@ ming_luzon_settlers,明,1580,佛郎机据吕宋之前,,,,mingshi,卷三百二十
 ming_jiyi_claim,明,1602,万历中（温纯任左都御史时）,100000;300000,两/年,,mingshi,卷二百二十 温纯传,或又言海外吕宋国有机易山，素产金银，岁可得金十万、银三十万,献言者的说法，不是事实
 ming_jiyi_reply,明,1602,同上,,,,mingshi,卷二百二十 温纯传,机易山在海外，必无遍地金银，任人往取；不过假借诏旨，阑出禁物与番人市易，利归群小，害贻国家,温纯的答复
 ming_1603_dead,明,1603,万历三十一年,25000,人,二万五千,mingshi,卷三百二十三 外国四（吕宋）,伏发，众大败，先后死者二万五千人,
+ming_luzon_return,明,1605,屠杀之后,,,,mingshi,卷三百二十三 外国四（吕宋）,其后，华人复稍稍往，而蛮人利中国互市，亦不拒，久之复成聚,
 ming_1603_edict,明,1604,万历三十二年十二月,20000,人,二万,mingshi,卷三百二十三 外国四（吕宋）,致二万商民尽膏锋刃,神宗谕旨（议上于三十二年十二月）
 ming_dutch_1604,明,1604,万历三十二年七月,32,年（万历）,三十二,mingshi,卷三百二十五 外国六（和兰）,直抵彭湖。时三十二年之七月,荷兰船到彭湖；巡抚徐学聚其后劾李锦等罪
 li_tingji_luzon,明,1603,约万历三十一年（全汉昇 1969 注四四）,,,,huangmingjingshiwenbian,卷四百六十 李廷机《报徐石楼》,而所通乃吕宋诸番每以贱恶什物。贸其银钱。满载而归。往往致富。,
@@ -88,6 +89,24 @@ dv_ratio,西班牙,1596,,5.9;4.8;5.7,倍收入,,dv2010,PDF p. 17,"Taking period 
 dv_required,西班牙,1596,1565—1596,35;31.5,%,,dv2010,PDF p. 18,"The primary surplus required to stabilize the debt to revenue ratio was 35 percent of revenue, which is only slightly higher than the number attained – 31.5 percent.",
 dv_sustainable,西班牙,1596,1565—1596,5.2;5.5,倍收入,,dv2010,PDF p. 18,"Average sustainable debt was 5.2 times revenue, and actual levels stood at 5.5 times",
 dv_counterfactual,西班牙,1598,,39;66,百万杜卡特,,dv2010,PDF p. 23,"As a result of victory in the Low Countries, Philip could have ended his reign with debts of 39 million ducats instead of 66 million.",反事实
+dv_four,西班牙,1596,,1557;1560;1575;1596,年,,dv2010,PDF p. 2,"Philip II failed to honor his debts four times, in 1557, 1560, 1575 and 1596.",
+dv_thirteen,西班牙,1900,1500—1900,13,次,,dv2010,PDF p. 2,having failed to meet its obligations 13 times between 1500 and 1900,
+dv_braudel,西班牙,1966,,,,,dv2010,PDF p. 2,only the indulgence of irrational bankers allowed Castile to incur towering debts,Drelichman & Voth 对 Braudel (1966) 观点的转述
+dv_philippines,西班牙,1571,,1571,年,,dv2010,PDF p. 4,In 1571 he acquired the Philippines.,
+dv_dips,西班牙,1596,,1560;1575;1596,年,,dv2010,PDF p. 5,"Figure 1 shows sizable dips in remittances in the years preceding the 1560, 1575 and 1596 bankruptcies.",
+dv_asientos,西班牙,1580,,,,,dv2010,PDF p. 6,Asientos were short-term debt contracts negotiated between the Crown and its bankers.,
+dv_juros,西班牙,1580,,,,,dv2010,PDF p. 6,"Juros were long-term bonds issued against a particular revenue stream, such as the sales taxes of Seville.",
+dv_juros_safe,西班牙,1580,,,,,dv2010,PDF p. 6,"juros were perceived as safer investments than asientos, and Philip II never defaulted on them.",
+dv_genoese,西班牙,1566,,,,,dv2010,PDF p. 7,"Many of the new funds were provided by Genoese bankers, who introduced the practice of collateralizing asientos with juros.",
+dv_asiento_total,西班牙,1596,1565—1596,40.9;92.1,百万杜卡特,,dv2010,PDF p. 14,"Nominal debt increased by 40.9 million ducats between 1565 and 1596. Over the same period, the Crown entered into asiento loans for 92.1 million ducats.",
+dveeh_reign,西班牙,1598,1556—1598 年在位,1556;1598,年,,dv2011eeh,PDF p. 3,"the bankruptcies of Philip II of Spain (1556-98). During his reign, payments to creditors were suspended four times.",
+dveeh_gdp,西班牙,1598,,60,% of GDP,,dv2011eeh,PDF p. 1,Philip II of Spain accumulated debts equivalent to 60% of GDP.,
+dveeh_profit,西班牙,1600,1566—1600,,,,dv2011eeh,PDF p. 1,Losses sustained during defaults were more than compensated by profits in normal times. Defaults were not catastrophic events.,
+dveeh_insurance,西班牙,1600,,,,,dv2011eeh,PDF p. 1,"short-term lending acted as an insurance mechanism, allowing the king to reduce his payments in harsh times in exchange for paying a premium in tranquil periods.",
+dveeh_return,西班牙,1600,,15.5;7.14;5,%,,dv2011eeh,PDF p. 18（印刷页 27）,"Our benchmark estimate uses a more realistic 7.14% reinvestment rate and 5% finance rate. In that case, short-term lending yielded a return of 15.5%, more than double that of long-dated bonds.",
+dvej_cutoff,西班牙,1600,,,,,dv2011ej,PDF p. 1,We argue that bankers' ability to cut off Philip II's access to smoothing services was key. A form of syndicated lending created cohesion among his Genoese bankers.,
+dvej_cheat,西班牙,1600,,2000,年,,dv2011ej,PDF p. 1,"lending moratoria were sustained through a 'cheat the cheater' mechanism (Kletzer and Wright, 2000)",
+dvej_four,西班牙,1598,,,,,dv2011ej,PDF p. 1,Philip II of Spain accumulated towering debts while stopping all payments to his lenders four times.,
 em_views,英格兰,2019,,,,,em2019,PDF p. 1,Historians tend to favor the view that the primary cause was population growth while economists strongly favor the view that it was precious metals instead. Both views make good economic sense and are compatible.,
 em_result,英格兰,2019,1500—1700,,,,em2019,PDF p. 1,An econometric test based on fresh English data strongly supports both explanations to an equal extent for 1500-1700.,
 em_timing,欧洲,1550,,,,,em2019,PDF p. 3,European inflation began in the 1530s or 1540s while the inflows of the metals from the New World became heavy only in the 1550s.,
