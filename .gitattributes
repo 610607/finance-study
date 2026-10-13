@@ -1,0 +1,3 @@
+# Chapters written in parallel each append their own block to these files; a union merge keeps both.
+macro/references_zh.tex merge=union
+macro/data/SOURCES.md merge=union
