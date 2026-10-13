@@ -43,9 +43,9 @@ def timeline():
           (1107, T("1107 超发二十倍", "1107 20× the quota"), "below")]),
         (T("南宋", "S. Song"), T("会子", "huizi"), 1160, 1276, None, None,
          [(1168, T("1168 三年一界", "1168 3-year issues"), "above"),
-          (1247, T("1247 永不收兑", "1247 no redemption"), "below"),
+          (1247, T("1247 不再分界", "1247 no more terms"), "below"),
           (1268, T("1268 一贯值 257 文", "1268 worth 257 wen"), "right")]),
-        (T("元", "Yuan"), T("中统钞、至元钞", "chao notes"), 1260, 1356, None, None,
+        (T("元", "Yuan"), T("中统钞、至元钞", "chao notes"), 1260, 1356, 1368, None,
          [(1260, T("1260 中统钞", "1260 Zhongtong"), "above"),
           (1287, T("1287 至元钞，一当五", "1287 Zhiyuan, 1 = 5"), "below"),
           (1351, T("1351 至正交钞", "1351 Zhizheng"), "right")]),
@@ -62,7 +62,8 @@ def timeline():
         if light:
             rbox(ax, X(b), y + 0.06, X(light) - X(b), rh - 0.12, fc="white", ec=tint(MUTED, 0.75), lw=0.9,
                  r=0.08, ls=(0, (3, 2)))
-            label(ax, X(b) + 0.1, y + rh / 2, light_txt, color=MUTED, size=7.6, ha="left")
+            if light_txt:
+                label(ax, X(b) + 0.1, y + rh / 2, light_txt, color=MUTED, size=7.6, ha="left")
         rbox(ax, X(a), y + 0.06, X(b) - X(a), rh - 0.12, fc=tint(MONEY, 0.16), ec=tint(MONEY, 0.6), lw=0.9, r=0.08)
         for yr, txt, where in events:
             ax.add_patch(Circle((X(yr), y + rh / 2), 0.075, fc=AMBER, ec="white", lw=0.8, zorder=6))

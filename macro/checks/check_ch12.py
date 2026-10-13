@@ -15,6 +15,10 @@ from common import load_snapshot, quoted
 ZT_PER_ZY = 5          # 1 guan 至元钞 = 5 guan 中统钞 (1287), fact yuan_1287_ratio
 ZY_PER_ZD = 5          # 1 liang 至大银钞 = 5 guan 至元钞 (1309), fact yuan_1309_zhida
 GUAN_PER_DING = 50     # fact yuan_ding
+# Southern Song 省陌: one guan of account = 770 wen zu.  宋史卷181 gives it for the 1268 guanzi
+# (fact guanzi_1268, “贯作七百七十文足”) and for the 18th-issue huizi (宝祐四年: “仿十八界会子……视淳祐
+# 之令，作七百七十陌”).  The face value of a one-guan huizi in wen zu is therefore 770, not 1000.
+SHENGMO_WEN_ZU = 770
 
 
 def facts() -> dict[str, float]:
@@ -44,6 +48,7 @@ def song(F):
     quoted("iron cash: jin per guan of small coins", F["song_iron_small"] / 10, 6.5, tol=1e-12)
     quoted("iron cash: weight of 3 guan (jin)", 3 * F["song_iron_small"] / 10, 19.5, tol=1e-12)
     quoted("iron cash: weight of 5 guan (jin)", 5 * F["song_iron_small"] / 10, 32.5, tol=1e-12)
+    quoted("宋朝事实 first-year issue / 宋史 quota (about three times)", F["song_first_year_issue"] / F["song_jiaozi_quota"], 3, tol=0.15)
     quoted("jiaozi reserve ratio (%)", 100 * F["song_jiaozi_reserve"] / F["song_jiaozi_quota"], 28.7, tol=0.05)
     quoted("jiaozi redemption fee (% of 1000 wen)", 100 * F["song_official_fee"] / 1000, 3.0, tol=1e-12)
     quoted("Daguan conversion: loss of an old note (%)", 100 * (1 - 1 / F["song_daguan_conversion"]), 75.0, tol=1e-12)
@@ -67,9 +72,12 @@ def huizi(F):
     quoted("1232 readings: difference of average growth (percentage points)",
            100 * (avg_rate(F["huizi_quota_1168"], F["huizi_outstanding_1232"], 64) - avg_rate(F["huizi_quota_1168"], F["huizi_outstanding_1232_variant"], 64)),
            0.6, tol=0.05)
-    quoted("self-check: copper price of huizi 1168-1268 if at par in 1168 (%/yr)", 100 * avg_rate(F["huizi_value_1268"], 1000, 100), 1.4, tol=0.05)
+    assert SHENGMO_WEN_ZU == F["guanzi_1268"], "省陌 constant must equal the guanzi rate quoted in the text"
+    quoted("self-check: copper price in huizi 1168-1268 if at par (770 wen zu) in 1168 (%/yr)",
+           100 * avg_rate(F["huizi_value_1268"], SHENGMO_WEN_ZU, 100), 1.1, tol=0.05)
     quoted("18th huizi in 1268 vs guanzi (%)", 100 * F["huizi_value_1268"] / F["guanzi_1268"], 33.4, tol=0.05)
-    quoted("18th huizi in 1268 vs 1000 wen (%)", 100 * F["huizi_value_1268"] / 1000, 25.7, tol=1e-9)
+    quoted("18th huizi in 1268 vs its face value of 770 wen zu (about one third)",
+           F["huizi_value_1268"] / SHENGMO_WEN_ZU, 1 / 3, tol=0.005)
 
 
 def yuan(F, df):
@@ -96,9 +104,6 @@ def yuan(F, df):
     quoted("ratio of the two means", late.mean() / early.mean(), 11.1, tol=0.05)
     quoted("issue 1276 (thousand ding)", y.loc[1276, "zt_equiv_ding"] / 1e3, 1420, tol=0.5)
     quoted("issue 1275 (thousand ding)", y.loc[1275, "zt_equiv_ding"] / 1e3, 398, tol=0.5)
-    cum_1264 = y.loc[1260:1264, "zt_equiv_ding"].sum()
-    quoted("cumulative issue 1260-1264 (thousand ding)", cum_1264 / 1e3, 356, tol=0.5)
-    quoted("1264 reserve / cumulative issue (%)", 100 * F["yuan_1264_reserve"] / cum_1264, 3.4, tol=0.05)
     quoted("issue 1287 in Zhongtong equivalent (thousand ding)", y.loc[1287, "zt_equiv_ding"] / 1e3, 5088, tol=0.5)
     quoted("issue 1310 in Zhongtong equivalent (million ding)", y.loc[1310, "zt_equiv_ding"] / 1e6, 36.3, tol=0.05)
     quoted("issue 1310 / issue 1260", y.loc[1310, "zt_equiv_ding"] / y.loc[1260, "zt_equiv_ding"], 494, tol=0.5)

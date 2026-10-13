@@ -382,7 +382,9 @@
   before upper={{\sffamily\bfseries\color{accent}\ZE{本章要点}{Key points}}\par\vspace{2pt}}}
 \newtcolorbox{selfcheck}{teachbase,colback=white,colframe=accent!40,boxrule=0.6pt,
   before upper={{\sffamily\bfseries\color{accent}\ZE{自测}{Check yourself}}\par\vspace{2pt}}}
-\newenvironment{answers}{\par\needspace{6\baselineskip}\vspace{6pt}%
+% \Needspace, not \needspace: the lower-case form adds stretchable glue before its break, which
+% made breaking before the answers the best choice and left the previous page half empty.
+\newenvironment{answers}{\par\Needspace{6\baselineskip}\vspace{6pt}%
   {\sffamily\bfseries\color{muted}\ZE{自测提示与答案}{Hints and answers}}\par\vspace{1pt}%
   \small\color{ink!85}\begin{enumerate}[itemsep=3pt]}{\end{enumerate}\par}
 

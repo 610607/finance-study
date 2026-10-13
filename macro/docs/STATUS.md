@@ -12,7 +12,8 @@ Updated 2026-10-13.
 - `references_zh.tex` holds the two verified general histories (De Vroey 2016; Snowdon & Vane 2005) and the sources of Chapter 12. Other candidate works in `PLAN.md` are not yet verified.
 
 ## Sample chapter — Chapter 12 (宋元明：世界最早的纸币及其崩溃), written 2026-10-13
-- `zh/ch12_songming.tex`: full text (8 sections, 4 worked examples, 4 comparison boxes, 1 case box, 2 tables, 3 figures, takeaways, self-check with answers); an independent review is under way.
+- `zh/ch12_songming.tex`: full text (8 sections, 4 worked examples, 4 comparison boxes, 1 case box, 2 tables, 3 figures, takeaways, self-check with answers). An independent reviewer checked every quotation against the corpus and Wikisource and every cited work; the fixes are in (deposit fee rather than redemption fee, the speaker of the 1023 memorial, 省陌 in the 1268 valuation, the 1276 recall of Southern Song notes, the cost of the 张商英 restoration, the 称提 comparison recast as intervention against a peg).
+- Open points from the review: the 《宋朝事实》 first-year issue (3,884,600 guan) is three times the 《宋史》 quota and is flagged in the text, not resolved; Guan et al.'s price index (direct evidence that official rates lag the market) is not yet in a snapshot.
 - Data: `data/snapshots/yuanshi_suyinchao` (the 《元史》 table of notes printed each year, 1260–1329) and `data/snapshots/paper_money_facts` (quotations with their numbers from the Song, Yuan and Ming histories, each checked verbatim against a pinned digital text by `data/fetch/verify_quotes.py`).
 - `checks/check_ch12.py` asserts every number in the text; `figsrc/fig_ch12.py` draws the figures in the style of the electromagnetics notes (STYLE.md §7.1).
 - What the sample settled is recorded in `STYLE.md` §11. Awaiting the author's approval.
