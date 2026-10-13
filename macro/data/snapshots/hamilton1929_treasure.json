@@ -1,0 +1,13 @@
+{
+  "title": "Registered imports of American treasure into Spain by ten-year periods, 1503-1660 (Hamilton 1929, Tables A and B)",
+  "source": "E. J. Hamilton, 'Imports of American Gold and Silver into Spain, 1503-1660', Quarterly Journal of Economics 43(3): 436-472 (1929), Table A (p. 464) and Table B (p. 468)",
+  "url": "https://archive.org/details/sim_quarterly-journal-of-economics_1929-05_43_3",
+  "series": "Table A 'Average Annual Imports of Treasure in Pesos by Ten-Year Periods': Period, Public, Private, Total (public_pesos, private_pesos, total_pesos; first, last and years added); Table B 'Gold and Silver': silver and gold percentage by weight (silver_pct, gold_pct), which begins with 1521-1530",
+  "retrieved": "2026-10-13",
+  "license": "Article of 1929 in the public domain in the United States (not renewed); a 16-row table transcribed for teaching, with attribution.",
+  "used_in": [
+    13
+  ],
+  "notes": "Transcribed by eye from the page images n77 (p. 464, SHA-256 68ab332f465d7f8e33500e23d92209799d76bae2068642470811abae9f713807) and n81 (p. 468, 562dfd31cc1101768662ebfebdda2ac23aa357b7a3eadd12920a1b72f5254a30); the OCR text misreads several cells (for example the 1503-1510 total). Checks (checks/check_ch13.py): public + private = total in every row to 0.1 peso; silver + gold = 100 in Table B. The peso is 450 maravedís' worth of gold or silver (p. 462 n. 8). Private receipts before 1536 are Hamilton's estimates from the public ones (public = 26.2 per cent of the total, p. 462). Discrepancy kept visible: the annual averages times the years of each period add up to 895.6 million pesos, twice the total of 447.8 million pesos for 1503-1660 in Hamilton (1934) as quoted by 全汉昇 (1969, p. 73 n. 53), while the weights Hamilton gives on p. 468 (16,632,648.20 kg of silver, 181,234.95 kg of gold) agree with the 1934 total at 652.635 grains of silver per peso. The chapter therefore uses Table A only for each period's share of the total, not for levels.",
+  "citation": "Hamilton (1929), Tables A and B"
+}

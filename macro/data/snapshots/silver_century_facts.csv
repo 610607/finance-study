@@ -1,0 +1,99 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+ming_1376_commute,明,1376,洪武九年,1,石米/两银,,mingshi,卷七十八 食货二,洪武九年，天下税粮，令民以银、钞、钱、绢代输。银一两、钱千文、钞一贯，皆折输米一石,官定折纳比价，不是市场价格
+ming_1397_gold,明,1397,洪武三十年,10,石米/两金,十,mingshi,卷七十八 食货二,金一两，十石,户部所定折收逋赋的比价（官定）
+ming_1397_silver,明,1397,洪武三十年,2,石米/两银,二,mingshi,卷七十八 食货二,银一两，二石,同上；金银比价 10/2 = 5（官定）
+ming_1397_double,明,1397,洪武三十年,,,,mingshi,卷七十八 食货二,金、银每两折米加一倍,太祖把金、银的折米数各加一倍，金银之比不变
+ming_yongle_ban,明,1420,永乐中,300000,两/年,三十万,mingshi,卷七十八 食货二,虽岁贡银三十万两有奇，而民间交易用银，仍有厉禁,
+ming_1436_jinhua_rate,明,1436,正统元年,0.25,两银/石米,,mingshi,卷七十八 食货二,米麦一石，折银二钱五分,金花银的折价（官定）；二钱五分 = 0.25 两
+ming_1436_jinhua_total,明,1436,正统元年,4000000;1000000,石;两,,mingshi,卷七十八 食货二,米麦共四百馀万石，折银百万馀两，入内承运库，谓之金花银,
+ming_1436_permanent,明,1436,正统元年以后,4,石米/两银,四,mingshi,卷七十八 食货二,粮四石收银一两解京，以为永例,
+ming_tiaobian_relief,明,1572,隆庆、万历之世,,,,mingshi,卷七十八 食货二,赖行一条鞭法，无他科扰，民力不大绌,
+ming_tiaobian_def,明,1581,,,,,mingshi,卷七十八 食货二,一条鞭法者，总括一州县之赋役，量地计丁，丁粮毕输於官,
+ming_tiaobian_silver,明,1581,,,,,mingshi,卷七十八 食货二,悉并为一条，皆计亩徵银，折办於官，故谓之一条鞭,
+ming_tiaobian_1581,明,1581,万历九年,9,年（万历）,九,mingshi,卷七十八 食货二,嘉靖间，数行数止，至万历九年乃尽行之,万历九年 = 1581
+ming_liaoxiang_1618,明,1618,万历四十六年,3000000,两,三百万,mingshi,卷七十八 食货二,至四十六年，骤增辽饷三百万,
+ming_liaoxiang_first,明,1618,万历四十六年,2000000,两,二百万,mingshi,卷七十八 食货二,亩加三厘五毫，天下之赋增二百万有奇,三厘五毫 = 0.0035 两/亩
+ming_liaoxiang_total,明,1620,万历四十八年,5200000,两/年,五百二十万,mingshi,卷七十八 食货二,通前后九厘，增赋五百二十万，遂为岁额,三厘五毫 + 三厘五毫 + 二厘 = 九厘 = 0.009 两/亩
+ming_luzon_settlers,明,1580,佛郎机据吕宋之前,,,,mingshi,卷三百二十三 外国四（吕宋）,闽人以其地近且饶富，商贩者至数万人，往往久居不返，至长子孙,
+ming_jiyi_claim,明,1602,万历中（温纯任左都御史时）,100000;300000,两/年,,mingshi,卷二百二十 温纯传,或又言海外吕宋国有机易山，素产金银，岁可得金十万、银三十万,献言者的说法，不是事实
+ming_jiyi_reply,明,1602,同上,,,,mingshi,卷二百二十 温纯传,机易山在海外，必无遍地金银，任人往取；不过假借诏旨，阑出禁物与番人市易，利归群小，害贻国家,温纯的答复
+ming_1603_dead,明,1603,万历三十一年,25000,人,二万五千,mingshi,卷三百二十三 外国四（吕宋）,伏发，众大败，先后死者二万五千人,
+ming_1603_edict,明,1604,万历三十二年十二月,20000,人,二万,mingshi,卷三百二十三 外国四（吕宋）,致二万商民尽膏锋刃,神宗谕旨（议上于三十二年十二月）
+ming_dutch_1604,明,1604,万历三十二年七月,32,年（万历）,三十二,mingshi,卷三百二十五 外国六（和兰）,直抵彭湖。时三十二年之七月,荷兰船到彭湖；巡抚徐学聚其后劾李锦等罪
+li_tingji_luzon,明,1603,约万历三十一年（全汉昇 1969 注四四）,,,,huangmingjingshiwenbian,卷四百六十 李廷机《报徐石楼》,而所通乃吕宋诸番每以贱恶什物。贸其银钱。满载而归。往往致富。,
+xu_xueju_silver,明,1604,万历三十二年（荷兰船到彭湖之年）,,,,huangmingjingshiwenbian,卷四百三十三 徐学聚《初报红毛番疏》,漳人但知彼有银。银可欲。且其初易诳。可多致之我贩吕宋。直以有佛郎银钱之故。,
+quan1969_ming_mines,明,1600,,,,,quan1969,p. 60,明代政府曾經努力在各地開採銀礦，以增加銀的供應，但事實上因爲我國銀礦的蘊藏並不怎樣豐富，故每年銀產額非常有限。,
+quan1969_purchasing,明,1600,,2,倍（相对宋元）,,quan1969,p. 60,求過於供的結果，明代白銀的價值非常之大，據粗略的估計，其購買力約爲宋、元時代的兩倍左右。,
+quan1969_potosi,西属美洲,1590,1581—1600,254000;60,公斤/年;%,,quan1969,p. 60,"於一五八一至一六〇〇年每年平均產銀多至254, 000公斤，約佔同時期世界銀產額百分之六十多點",据 Kobata (1965)，见 quan1968 p. 30 注一一
+quan1969_freight,西属美洲,1600,,,,,quan1969,p. 60,只有白銀因爲本身價值相對的大，體積、重量相對的小，能夠負擔得起高昂的運費，從而成爲美洲出口的主要商品,
+quan1969_range,菲律宾,1700,16—18 世纪,1000000;4000000,西元/年,,quan1969,p. 63,有時多達四百萬西元，有時只有一百萬西元，但以二三百萬西元的時候爲多,第一表的概括
+quan1969_cap,西班牙,1593,1593、1595,500000,西元/年,,quan1969,p. 63,規定每年自墨西哥運菲的銀子，以五十萬西元爲限,
+quan1969_cap_ignored,西班牙,1593,,,,,quan1969,p. 63,西國王這種規定限額的敕令，事實上並沒有好好的實行,
+quan1969_permiso,菲律宾,1636,1636 年总督 Corcuera 致国王信（全汉昇译）,250000;500000,西元/年,,quan1969,p. 64,有一項規定准許菲律賓臣民每年把價值二十五萬西元的絲貨運往新西班牙出賣，同時在新西班牙出賣所得的銀子，運回菲島，以五十萬西元爲限。,"Phil. Isls. vol. 26, pp. 136-137"
+quan1969_peso_tael,明,1600,,0.72,两/西元,,quan1969,p. 64 注一六,每一「篤卡」（ducados）約等於中國銀一兩，每一西元則約等於中國銀七錢二分。,
+quan1969_to_china,明,1600,,,,,quan1969,p. 68,大部分或甚至全部都給中國商人賺回本國,
+quan1969_decomyn,菲律宾,1696,1571—1821,400000000,西元,,quan1969,p. 63,在由一五七一年至一八二一年的二百五十年中，自西屬美洲運抵馬尼拉的銀子，共爲四萬萬西元,De Comyn 的估计
+quan1969_half,明清,1696,1571—1821,200000000,西元,,quan1969,p. 70,德科民說的四分之一，顯然估計得太低；他所估計的二分之一，即二萬萬西元或更多些，可能比較接近事實。,
+quan1969_luzon_1565,西班牙,1565,嘉靖四十四年,,,,quan1969,p. 70,西班牙人於明嘉靖四十四年（1565）佔領菲律賓後,
+quan1969_li_date,明,1603,,1603,年,,quan1969,p. 70 注四四,約於萬曆三十一年撰寫此文,李廷机《报徐石楼》的写作年代
+quan1969_hamilton_total,西班牙,1582,1503—1660,447820932.3;10;50,西元;%;%,,quan1969,p. 73 注五三,"共爲447,820,932.3西元。此外，走私入口的數目約爲這個官方登記數字的百分之十至百分之五十左右。","转引 Hamilton (1934) pp. 34, 37-38, 40"
+quan1969_summary,明,1600,,,,,quan1969,p. 73,明代的中國，因爲普遍用銀作貨幣，白銀求過於供，價值特別大，故中國商人樂於向菲島銷售各種貨物，以便把白銀賺回本國。,
+quan1968_supply_demand,明,1570,,,,,quan1968,p. 29,第一個因素是白銀在太平洋東西兩岸供求情況的不同,
+quan1968_paper,明,1500,,,,,quan1968,p. 29,結果大家爲着保護自己利益起見，都爭着用銀而拒絕用鈔,
+quan1968_yinke_chengzu,明,1412,成祖朝（1402—23）,224313,两/年,,quan1968,p. 29 注九,"成祖朝（1402—23）的224,313（+）兩",政府每年平均收到的银课（不是产量）
+quan1968_yinke_xuanzong,明,1430,宣宗朝（1426—34）,256450,两/年,,quan1968,p. 29 注九,"宣宗朝（1426—34）的256, 450（+）兩",同上
+quan1968_yinke_wuzong,明,1512,武宗朝（1505—20）,32920,两/年,,quan1968,p. 29 注九,"武宗朝（1505—20）的32,920兩（包括金課）",同上
+quan1968_value,明,1550,,,,,quan1968,p. 30,銀在中國求過于供的結果，價值自然要特別增大,
+quan1968_world,世界,1590,1581—1600,418900,公斤/年,,quan1968,p. 30 注一一,"一五八一至一六〇〇年，世界每年平均銀產額爲 418,900 公斤",据 Kobata (1965) p. 247
+br10_1598,菲律宾,1598,1598 年 6 月 24 日，马尼拉大主教 Ygnacio de Santibáñez 致腓力二世,1000000,比索/年,,br10,vol. 10,"There comes each year from Nueba España a million in money, contrary to the mandate of your Majesty, all of which passes on to the heathen of China",
+br14_1607,西班牙,1607,1607 年 12 月 18 日，国务会议报告,,,,br14,vol. 14,"the great drain of silver thus caused; it is occasioned by the large profits obtained by investing the silver in the merchandise which comes to those islands from China--partly through the cheapness of these goods, and partly through the great value of silver",
+br19_gold,明,1610,17 世纪初的佚名备忘录（编者推断）,6.6;7;8.3,两银/两金,,br19,vol. 19,"Fine gold is worth in Canton six taes six maçes, and seven taes per tae of common gold. It is sold in Xapon for eight taes and three maçes",广州 6.6—7、日本 8.3（市场价格）
+br19_silk,明,1610,同上,80;140;150,两/担,,br19,vol. 19,"It costs at Canton eighty taes per pico delivered in Macan, and is sold in Xapon for one hundred and forty or one hundred and fifty taes",白色生丝
+br19_tae,明,1610,同上,10;1,real/tae;real/maz,,br19,vol. 19,the _tae_ is equivalent to a ducado of ten reals of gold or silver; a _maz_ is equal to one of our reals,1 两 = 10 钱
+br23_treasury,明,1630,"Fray Juan de Medina, 1630",,,,br23,vol. 23,"the kingdom of China is the most powerful in the world; and we might even call it the world's treasury, since the silver is imprisoned there, and is given an eternal prison",
+br23_gold,明,1630,同上,,,,br23,vol. 23,they withdraw the gold from their own country in order to lock up the silver therein,
+br24_1633,菲律宾,1633,1633 年 8 月 14 日，总督 Juan Cerezo de Salamanca 致腓力四世,2000000,比索/年,,br24,vol. 24,"and I suspect that two millions are sent, and that the dearness occasioned by this abundance of silver results only to the benefit of Great China, where the money stops without your Majesty having collected your duties",
+br27_1637,西班牙,1637,"Juan Grau y Monfalcón, Informatory memorial, Madrid 1637",100;200,,,br27,vol. 27,what is bought from the Chinese for one hundred will immediately advance to two hundred,
+malestroit_1566,法国,1566,1566 年 3 月呈国王,300,年,,bodin1578,"leaf 1, Premier paradoxe","Que lon se plaint a tort en France de l'encherissement de toutes choses, attendu que rien n'y est enchery depuis trois cens ans.",马莱斯特鲁瓦的第一个悖论
+bodin_land,法国,1578,,10;60,倍;年,,bodin1578,p. 28,le pris des terres est dix fois plus haut qu'il n'estoit il y a soixante ans,
+bodin_causes_1578,法国,1578,,,,,bodin1578,p. 28,"Ie trouue que la charté que nous voyons, vient quasi pour quatre ou cinq causes. La principale & presque seule (que personne iusques icy n'a touchee) est l'abondance d'or & d'argent, qui est auiourd'huy en ce Royaume plus grande qu'elle n'a esté il y quatre cens ans",印本漏 a（il y [a]）
+bodin_peru,法国,1578,,1533;100,年;百万,,bodin1578,pp. 36-37,"Il est incroyable, & toutesfois veritable, qu'il est venu du Peru depuis l'an 1533. qui fut conquis par les Pyurres, plus de cent milions d'or, & deux fois autant d'argent",Pyurres 指皮萨罗兄弟
+bodin_trade,法国,1578,,,,,bodin1578,p. 37,"l'Espagnol, qui ne tient vie que de France, estant contraint par force ineuitable, de prendre icy les bleds, les toiles, les draps, le pastel, le rodon, le papier, les liures, voire la menuiserie & tous ouurages de main, nous va cercher au bout du monde l'or & l'argent & les epiceries",
+bodin_ranking,法国,1578,,,,,bodin1578,p. 42,"tout est plus cher en Espagne & en Italie qu'en France, & plus en Espagne qu'en Italie",
+bodin_triple,法国,1578,,3,倍,,bodin1578,p. 42,"ce qui attire noz Auuergnaz & Limosins en Espagne, comme i'ay sçeu d'eux mesmes, parce qu'ils gaignent au triple de ce qu'ils font en France",
+bodin_en_partie,法国,1578,,,,,bodin1578,p. 42,C'est donques l'abondance d'or & d'argent qui cause en partie la charté des choses.,
+bodin1568_causes,法国,1568,1568 年初版（Le Branchu 1934 重印）,3,个原因,,lebranchu1934,"Response (1568), fol. b3v-b4r",le trouve que la charte que nous voyons vient pour trois causes,OCR 把 Ie 读作 le、把 charté 读作 charte；1578 年版改为“quatre ou cinq causes”
+bodin1568_principal,法国,1568,同上,,,,lebranchu1934,"Response (1568), fol. b3v-b4r",La principale & presque seule (que personne iusques icy n'a touchée) est l'abondance d'or & d'argent qui est auiourd'huy en ce royaume plus grande qu'elle n'a esté il y a quatre cens ans,
+bodin1568_ranking,法国,1568,同上,,,,lebranchu1934,"Response (1568), fol. d1v-d2r","aussi tout est plus cher en Espaigne & en Italie qu'en France, & plus en Espaigne qu'en Italie",
+lebranchu_debasement,法国,1934,Le Branchu 的导言,1568;1578,年,,lebranchu1934,introduction,"Bodin en 1568, lors de la première édition de son œuvre, ne fait pour ainsi dire aucune mention de l'affaiblis","引文接着是 sement de la monnaie comme cause de hausse des prix（OCR 在行末断字处多出一个分号，故引到断字处为止）；下一句：En 1578, lors de la seconde édition de la Response, il consacre au contraire de longs développements à ce point de vue"
+hamilton_table_a,西班牙,1582,1503—1660,,,,hamilton1929,p. 462,"Table A shows in pesos the average annual imports of registered treasure for ten-year periods, public, private, and total receipts being listed separately.",表 A 本身见 hamilton1929_treasure.csv
+hamilton_peso,西班牙,1642,,450;652.635;522.09,maravedís;grains;grains,,hamilton1929,p. 462 n. 8,"In this case peso means 450 maravedís' worth of gold or silver. It was equivalent to 652.635 grains of pure silver until December 23, 1642, when its ""silver content"" was reduced to 522.09 grains.",
+hamilton_public,西班牙,1598,1536—1660,26.2,%,,hamilton1929,p. 462,"From 1536 to 1660, public receipts were 26.2 per cent of the total",
+hamilton_quint,西班牙,1598,,,,,hamilton1929,p. 462,Crown receipts consisted mainly of the royal quint,
+hamilton_wages,西班牙,1593,1591—95,21.333,日,,hamilton1929,p. 464,"at the rate prevailing for unskilled labor in Andalusia, the average annual receipts for 1591-95 would have paid for 21⅓ days' work of all the persons in the country employed for salaries and wages",
+hamilton_nosilver,西班牙,1519,,1519,年,,hamilton1929,p. 468,"Since no silver, except possibly as a sample, came before November 5, 1519",
+hamilton_kg,西班牙,1582,1503—1660,16632648.20;181234.95,公斤,,hamilton1929,p. 468,"In absolute amounts, 16,632,648.20 kilograms of pure silver and 181,234.95 kilograms of pure gold came registered from the Indies.",
+hamilton_smuggling,西班牙,1582,,10;50,%,,hamilton1929,pp. 468-469,"The amount of smuggled treasure has been estimated at from ten to fifty per cent of the registered, but there is reason to believe that it was rather nearer the former than the latter figure.",
+hamilton_potosi,西属美洲,1545,,1545,年,,hamilton1929,p. 469,"After 1545, the year that marked the discovery of Potosí, the percentage of receipts coming from Tierra Firme showed a steady increase.",
+hamilton_tierra_firme,西属美洲,1620,1581—1660,,,,hamilton1929,p. 469,"From 1581 to 1660, about half the period under investigation, Tierra Firme furnished roughly two thirds and New Spain one third of the total Spanish imports.",
+dv_abstract,西班牙,1598,,,,,dv2010,PDF p. 1,The king's debts were sustainable. Primary surpluses were large and rising. Debt/revenue ratios were broadly unchanged across Philip's reign.,
+dv_quint,西班牙,1598,,20,%,,dv2010,PDF p. 5,It taxed all remittances at a flat rate of 20%.,
+dv_one_in_four,西班牙,1598,腓力二世晚年,25,%,,dv2010,PDF p. 5,"By the end of Philip's reign, one in four ducats of Crown revenue came from silver taxes.",
+dv_1575,西班牙,1575,,14.6,百万杜卡特,,dv2010,PDF p. 7,"The total outstanding amount was 14.6 million ducats, or two years' worth of revenue.",
+dv_1575_repaid,西班牙,1577,1577 年的 medio general,62,%,,dv2010,PDF p. 7,"On average, the king repaid 62 percent of accumulated debt. The bankers provided a new loan of five million ducats.",
+dv_1597,西班牙,1597,1597 年的 medio general,7.04;80,百万杜卡特;%,,dv2010,PDF p. 7,"The medio general of 1597 rescheduled 7.04 million ducats, about two thirds of yearly revenue.",1596 年违约后偿还 80%
+dv_1597_repaid,西班牙,1597,同上,80,%,,dv2010,PDF p. 7,"In the 1596 default, the king repaid an average of 80 percent of outstanding debt and accrued interest.",
+dv_ps32,西班牙,1596,1566—1596,32,%,,dv2010,PDF p. 16,"Overall, it ran primary surpluses equivalent to 32 percent of revenues.",
+dv_ratio,西班牙,1596,,5.9;4.8;5.7,倍收入,,dv2010,PDF p. 17,"Taking period averages, they fell from 5.9 times annual revenue in 1566-74 to 4.8 times in 1575-84, before rising to 5.7 times in the final decade.",
+dv_required,西班牙,1596,1565—1596,35;31.5,%,,dv2010,PDF p. 18,"The primary surplus required to stabilize the debt to revenue ratio was 35 percent of revenue, which is only slightly higher than the number attained – 31.5 percent.",
+dv_sustainable,西班牙,1596,1565—1596,5.2;5.5,倍收入,,dv2010,PDF p. 18,"Average sustainable debt was 5.2 times revenue, and actual levels stood at 5.5 times",
+dv_counterfactual,西班牙,1598,,39;66,百万杜卡特,,dv2010,PDF p. 23,"As a result of victory in the Low Countries, Philip could have ended his reign with debts of 39 million ducats instead of 66 million.",反事实
+em_views,英格兰,2019,,,,,em2019,PDF p. 1,Historians tend to favor the view that the primary cause was population growth while economists strongly favor the view that it was precious metals instead. Both views make good economic sense and are compatible.,
+em_result,英格兰,2019,1500—1700,,,,em2019,PDF p. 1,An econometric test based on fresh English data strongly supports both explanations to an equal extent for 1500-1700.,
+em_timing,欧洲,1550,,,,,em2019,PDF p. 3,European inflation began in the 1530s or 1540s while the inflows of the metals from the New World became heavy only in the 1550s.,
+em_timing2,欧洲,1680,,,,,em2019,PDF p. 3,"the inflows of the metals continued to climb rapidly from 1550 to 1700, whereas European inflation abated and ceased in 1660-1700",
+em_rates,欧洲,1600,1530—1660,4;1.25;1.1,倍;%;%,,em2019,PDF p. 7,"price levels rose around 4-fold or more everywhere in Europe in 1530-1660, an impressive number, whereas annual rates of inflation were no higher than, say, around 1.25 percent (about 1.1 percent in England)",
+em_european_silver,欧洲,1540,,2.5;7;60,吨/年,,em2019,PDF p. 15,"For Europe as a whole, production went up from levels of 2.5 to 7 tonnes a year in the 1460s to levels of over 60 tonnes by the 1540s. As a result, inflows from the New World did not even match the European production until about 1540.",
+em_barrett,欧洲,1600,16、17 世纪,11.3;13.9,银/金（重量）,,em2019,PDF p. 15,11.3:1 for gold to silver in the 16th century and 13.9:1 for the 17th century,Barrett (1990) 用的换算比率
+em_mccloskey,英格兰,1971,,,,,em2019,PDF p. 28,"higher population means more demand for money, which should have a deflationary not an inflationary impact",Edo & Melitz 转述 McCloskey (1971)
+em_liquidity,英格兰,2019,,,,,em2019,PDF p. 28,"People in this quandary might well keep up their consumption at the sacrifice of some liquidity, as historians predominantly think and as the English evidence says.",

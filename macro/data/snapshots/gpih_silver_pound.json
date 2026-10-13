@@ -1,0 +1,14 @@
+{
+  "title": "Mint price of silver and grams of pure silver per pound sterling, England 1490-1700",
+  "source": "Global Price and Income History Group (UC Davis): 'Silver_value_of_1273-1977.xls' (P. Lindert, from R. W. Jastram, Silver: The Restless Metal, 1981, pp. 164-188)",
+  "url": "https://gpih.ucdavis.edu/files/Silver_value_of_1273-1977.xls",
+  "series": "'£ mint price per troy ounce' (of sterling silver, gbp_per_oz_sterling_mint) and 'Grams of silver per £, mint price' (grams_ag_per_gbp_mint)",
+  "retrieved": "2026-10-13",
+  "license": "GPIH publishes its files for research use with attribution to the compilers; a subset (211 years, 2 columns) is stored here for teaching.",
+  "used_in": [
+    13
+  ],
+  "fetch": "data/fetch/gpih_silver.py",
+  "notes": "File SHA-256 60b70038e322d1256134a5980b27c569746315a3d767bd21945609141f97e9ae. Values 1490-1700: 172.5871 g per £ (1490-1525), 153.44 (1526), 143.85 (1542-51), 115.0811 (1552-1600), 111.3832 (1601-1700). The series is the mint price of sterling-standard silver and does not show the base coins of the Great Debasement (1542-51), whose silver content fell much further; the chapter uses it only for years of sterling coinage (before 1542 and after the recoinage of 1560-61).",
+  "citation": "Jastram (1981) via GPIH"
+}

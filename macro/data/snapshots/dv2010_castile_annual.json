@@ -1,0 +1,14 @@
+{
+  "title": "Castile's fiscal accounts under Philip II, annual, 1566-1596 (millions of current ducats)",
+  "source": "Dataset of M. Drelichman and H.-J. Voth, 'The Sustainable Debts of Philip II: A Reconstruction of Castile's Fiscal Position, 1566-1596', Journal of Economic History 70(4) (2010): workbook 'excel_article_mauricio-drelichman-dataset-sustainable-debt.xls', sheets 'Revenues' and 'Fiscal accuonts'",
+  "url": "https://econ.sites.olt.ubc.ca/files/2013/05/excel_article_mauricio-drelichman-dataset-sustainable-debt.xls",
+  "series": "Revenues: 'Indies' (indies). Fiscal accounts: 'Revenue', 'Military expenditure', 'Non-military expenditure', 'Primary surplus', 'Long-term debt service', 'Short-term debt service', 'Fiscal balannce' [sic], 'Outstanding debt' (revenue, military, nonmilitary, primary_surplus, lt_debt_service, st_debt_service, fiscal_balance, debt)",
+  "retrieved": "2026-10-13",
+  "license": "The workbook's Notes sheet: 'Please cite the above publication if you use these data.' Stored here for teaching, with attribution.",
+  "used_in": [
+    13
+  ],
+  "fetch": "data/fetch/dv_castile.py",
+  "notes": "Workbook SHA-256 30ffb7b10b4dea363bb0dace4298892280b4df83a836a4dddc02cb5cb4ddd643. The accounts sheet has no year column; the fetch script assigns 1566-1596 to its 31 rows and confirms each by matching the revenue to the Revenues sheet's total for that year. The sheet notes 'Italics denote imputed missing data'; italics are not carried over. 'Indies' is the Crown's revenue from American silver; it is 0 in 1594 in the dataset. The period means reproduce Table 2 of the article (snapshot dv2010_philip2).",
+  "citation": "Drelichman & Voth (2010), data appendix"
+}

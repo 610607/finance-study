@@ -1,0 +1,14 @@
+{
+  "title": "England 1490-1700: nominal and real GDP, population, GDP deflator and coin in circulation (annual)",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'A21. GDP per capita 1086+', block 'England' (Broadberry, Campbell, Klein, Overton and van Leeuwen 2015), and sheet 'A22. Coin in circulation' (Palma 2017)",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "A21 England: 'Nominal GDP at market prices' (£ m, nominal_gdp_gbp_m), 'Real GDP, 2013 market prices' (£ m, real_gdp_2013_gbp_m), 'Population' (m, pop_england_m), 'GDP deflator at market prices' (2013 = 100, gdp_deflator_2013_100). A22: 'Palma (2017), preferred direct method B estimate', end year (£ m, coin_palma_gbp_m)",
+  "retrieved": "2026-10-13",
+  "license": "The workbook asks users to cite the underlying sources (Broadberry et al. 2015; Palma 2017). The Bank of England publishes it as a research dataset; a subset (211 years, 5 columns) is stored here for teaching, with attribution.",
+  "used_in": [
+    13
+  ],
+  "fetch": "data/fetch/boe_millennium_money.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb. Nominal GDP = deflator x real GDP / 100 in every year. Palma's coin series is built directly from mint output (the 'direct method'), not from GDP, so velocity (nominal GDP / coin) is a residual that carries the errors of both series; its jumps (for example the 1640s, when the coin stock nearly doubles) are not read as changes in behaviour. The pound's silver content fell during the Great Debasement (1542-1551) and again in 1601 (gpih_silver_pound); the chapter converts prices into silver only for years of sterling coinage.",
+  "citation": "Broadberry, S., B. M. S. Campbell, A. Klein, M. Overton and B. van Leeuwen (2015), British Economic Growth, 1270-1870, doi:10.1017/CBO9781107707603; Palma, N. (2018; online 2017), 'Reconstruction of money supply over the long run: the case of England, 1270-1870', Economic History Review 71(2): 373-392, doi:10.1111/ehr.12534; data via Bank of England, v3.1"
+}

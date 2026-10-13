@@ -1,0 +1,13 @@
+{
+  "title": "Castile under Philip II: fiscal accounts by period, 1566-1596, and debt sustainability (Drelichman & Voth 2010, Tables 2 and 3)",
+  "source": "M. Drelichman and H.-J. Voth, 'The Sustainable Debts of Philip II: A Reconstruction of Castile's Fiscal Position, 1566-1596', Journal of Economic History 70(4) (2010); unabridged version, Table 2 (PDF p. 15) and Table 3 (PDF p. 19)",
+  "url": "https://econ.sites.olt.ubc.ca/files/2013/05/pdf_article_mauricio-drelichman-unabridged-sustainable-debt.pdf",
+  "series": "Table 2 'Fiscal Accounts, 1566-96 (period averages)': Panel A (nominal, million of ducats) and Panel C (% of revenue); Table 3 'Sustainability calculations - baseline results': g (growth rate of revenue, %), r (interest rate, %), PS* (primary surplus required to stabilize the debt/revenue ratio), PS (actual primary surplus relative to revenue), D* (debt/revenue ratio that can be sustained given actual primary surpluses), D (actual debt/revenue). Columns: table, period, item, value, unit",
+  "retrieved": "2026-10-13",
+  "license": "Authors' unabridged working version, freely available on the first author's page; two small tables transcribed for teaching and comment, with attribution.",
+  "used_in": [
+    13
+  ],
+  "notes": "Transcribed from the PDF's text layer (pdftotext -layout; PDF SHA-256 b9f227a64f7c6cdcb234f0a36c770db222143ee2a3118ceae8ab06a3105a84da). Checks (checks/check_ch13.py): Table 2 Panel A equals the period means of the annual accounts in dv2010_castile_annual; revenue - expenditure = primary surplus; D* = PS/(r - g) in every row of Table 3 to rounding. Table 3's periods (1565-74, 1574-84, 1584-96) are written as printed and differ by a year from Table 2's. Note under Table 3: 'Growth rates are calculated as annualized compounded rates of growth between benchmark dates.'",
+  "citation": "Drelichman & Voth (2010), Tables 2 and 3"
+}

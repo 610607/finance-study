@@ -1,0 +1,13 @@
+{
+  "title": "American silver shipped each year from Mexico to Manila, 1598-1784 (全汉昇 1969, Table 1)",
+  "source": "全汉昇《明清间美洲白银的输入中国》，《香港中文大学中国文化研究所学报》2(1): 59-79 (1969)，第一表《十六、七、八世纪美洲白银每年运菲数额》（第 62—63 页）",
+  "url": "https://www.cuhk.edu.hk/ics/journal/articles/v02p059.pdf",
+  "series": "第一表：年代 (label, as printed), 数额（单位：西班牙银元）, 根据材料. Here: label, year (the year, the middle of a printed range, or the year before which 'X及以前' applies), low_pesos and high_pesos (equal unless the table gives a range), plus (1 where the table prints '(+)', i.e. 'more than'), source (the document the table cites)",
+  "retrieved": "2026-10-13",
+  "license": "Journal article (© The Chinese University of Hong Kong); a 19-row table transcribed for teaching and comment, with attribution.",
+  "used_in": [
+    13
+  ],
+  "notes": "Transcribed by eye from PDF pages 4-5 (printed pp. 62-63; PDF SHA-256 afdb04499d2070636d699c4ec308f28d1aaba4fbf9ac44bf9330f1a122ef7d45). The unit is the Spanish silver peso (西元), worth about 0.72 两 of Chinese silver (p. 64 n. 16); it is not Hamilton's peso of account. Most figures are contemporaries' estimates in letters and memorials (Phil. Isls. = Blair & Robertson, The Philippine Islands), not registered flows. The royal decrees of 1593 and 1595 limited the silver sent from Mexico to Manila to 500,000 pesos a year (p. 63); 全汉昇 notes that the limit was not enforced, and the 1764 row says the shipments then exceeded the limit (by then 1,000,000 pesos) by more than 2,000,000.",
+  "citation": "全汉昇 (1969), 第一表"
+}

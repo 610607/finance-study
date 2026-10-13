@@ -1,0 +1,14 @@
+{
+  "title": "England by decade, 1490-1690: population, land rents, day wages of farm and building workers, cost of living and real wages",
+  "source": "Gregory Clark, data on the history of the English economy (University of California, Davis): workbooks 'Wages 2014.xlsx' and 'England NNI - Clark - 2015.xlsx', sheet 'Decadal' of each (the same workbooks as clark2015_england_decadal)",
+  "url": "https://faculty.econ.ucdavis.edu/faculty/gclark/data.html",
+  "series": "As in clark2015_england_decadal: farm_wage_d, blab_wage_d, bcraft_wage_d (d/day), col_1860s_100, real_farm_1860s_100, real_blab_1860s_100, real_bcraft_1860s_100, pop_england_m, land_rents_gbp_m (£ m, nominal); decade = first year of the decade",
+  "retrieved": "2026-10-13",
+  "license": "No licence is stated on the data page; the author publishes the series for research use. A subset (21 decades) is stored here for teaching, with attribution.",
+  "used_in": [
+    13
+  ],
+  "fetch": "data/fetch/clark_england.py --early-modern",
+  "notes": "Workbook SHA-256s as in clark2015_england_decadal.json. Clark's population rises from 3.55 m in the 1590s to 4.40 m in the 1600s, a jump of 24 per cent in one decade, while the Broadberry et al. series (boe_millennium_england_money) rises from 4.00 m to 4.27 m; the chapter compares the 1500s with the 1600s in both series and says which it uses. Land rents are nominal; the chapter deflates them by the cost-of-living index.",
+  "citation": "Clark, Gregory (2010), 'The Macroeconomic Aggregates for England, 1209-2008', Research in Economic History 27: 51-140, doi:10.1108/S0363-3268(2010)0000027004"
+}

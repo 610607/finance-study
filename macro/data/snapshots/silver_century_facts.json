@@ -1,0 +1,106 @@
+{
+  "title": "Quotations on American silver, Manila, Ming silver taxes, the price revolution and Philip II's debts (Chapter 13)",
+  "source": "《明史》（卷七十八、二百二十、三百二十三、三百二十五）与《皇明经世文编》（卷四百三十三、四百六十）；全汉昇 (1968, 1969)；Blair & Robertson, The Philippine Islands, vols. 10, 14, 19, 23, 24, 27；J. Bodin, Response aux paradoxes de Malestroit (1568; revised ed. 1578)；E. J. Hamilton (1929)；Drelichman & Voth (2010)；Edo & Melitz (2019)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: country or region), year, year_note, value (several values separated by ';'), unit, numeral (for corpus rows: the classical numeral that is read as value), file (a corpus key or a key of sources below), juan (卷 of a Chinese text, or page), quote (verbatim), note",
+  "retrieved": "2026-10-13",
+  "license": "Short quotations only, for comment and teaching. The Ming texts, Bodin (1568, 1578), Blair & Robertson (Project Gutenberg) and Hamilton (1929) are in the public domain in the United States or of an age that puts them there; 全汉昇's articles, Le Branchu (1934), Drelichman & Voth and Edo & Melitz are quoted, not copied.",
+  "used_in": [
+    13
+  ],
+  "fetch": "data/fetch/verify_quotes.py (corpus rows); data/fetch/verify_web_quotes.py (other rows)",
+  "notes": "Corpus rows (file mingshi, huangmingjingshiwenbian) are checked against daizhigev20 at commit 4a6d6f2 by verify_quotes.py; rows citing br10-br27, lebranchu1934, dv2010 and em2019 are checked against the downloaded texts by verify_web_quotes.py. Rows citing bodin1578, hamilton1929, quan1968 and quan1969 were read by eye on the page images (format image), because the 1578 print and the 1929 page have no reliable text layer and 全汉昇's articles are scans without one; they are counted but not checked by a script. Transcription: Bodin's long s is written s and his tildes are expanded (argẽt → argent, viẽt → vient, gaignẽt → gaignent, cõquis → conquis), u/v and i/j are kept as printed; 全汉昇's quotations keep the printed traditional forms (爲, 着, 于 as printed), and the chapter quotes them in simplified characters. Cross-checks: the Bodin passages on the abundance of gold and silver, on Peru and on prices in Spain and Italy are also in the first edition of 1568 (Le Branchu's reprint; spelling Espaigne), but the 1568 edition counts three causes of dearness where the 1578 edition has 'quatre ou cinq'. The 1598 letter quoted from Blair & Robertson vol. 10 is by the archbishop of Manila, Fray Ygnacio de Santibáñez; 全汉昇's Table 1 cites the same letter for 1598. Units: Hamilton's peso is a unit of account of 450 maravedís (p. 462 n. 8); the pesos of the Manila trade in 全汉昇 are coins (西元), about 0.72 两 each (quan1969_peso_tael); the two are not converted into each other. br19_gold: the memorial's wording 'six taes six maçes, and seven taes per tae of common gold' is read as a range of 6.6 to 7 taes of silver per tae of gold in Canton. hamilton_table_a: summing Table A (hamilton1929_treasure) over its periods gives 895.6 million pesos, twice the 447.8 million that 全汉昇 quotes from Hamilton (1934) (quan1969_hamilton_total); the chapter uses Table A only for the distribution across decades.",
+  "sources": {
+    "bodin1578": {
+      "url": "https://archive.org/details/LESPARADOXESDVSEIGNEVRDEMALESTROITCONSEILLERDuRoyMaistreOrdinaireDeSesComptes",
+      "format": "image",
+      "sha256": "",
+      "version": "Les Paradoxes du seigneur de Malestroit ... presentez à sa Maiesté, au mois de Mars, M.D.LXVI. Auec la response de Iean Bodin ausdicts Paradoxes. Reueue corrigee & augmentee de nouueau, par ledit Bodin (Paris: Martin le Ieune, 1578). Read on the page images https://archive.org/download/LESPARADOXESDVSEIGNEVRDEMALESTROITCONSEILLERDuRoyMaistreOrdinaireDeSesComptes/page/nN_w1600.jpg: n0 title page (SHA-256 ccbaca125e736b61a7c85fe3515d200f05a595c804507700045d095fbf695f3e), n1 Malestroit's paradoxes (9ce7803dc8d93537f59dd5a19fe55ff5b885b2c87b99b5397f7ab6f7aba9abe3), n27 p. 28 (0eb58439b37e86dc3af070cf55882011b0a714d4f540be2e9a31427d2a9d7fa6), n35 p. 36 (892b6d438dd5a86065c6709e306fb3cc992f73886c82c596255898ddfa305b5c), n36 p. 37 (340439ad4e9113b5b5bb0ad2807b66a6a681fd693f1c8c6e60ddc9bd1c1ad201), n41 p. 42 (8b3e62732183dec7252f73f6f33de73474ab562f36e93a6e36c11460d952fcb8)",
+      "retrieved": "2026-10-13"
+    },
+    "lebranchu1934": {
+      "url": "https://archive.org/download/critsnotabless00lebruoft/critsnotabless00lebruoft_djvu.txt",
+      "format": "txt",
+      "sha256": "1031e7ccd5649c68390fb920e94242f4eca7c7003d867e07e6fef222ca1beeef",
+      "version": "J.-Y. Le Branchu (ed.), Écrits notables sur la monnaie, XVIe siècle, de Copernic à Davanzati, tome I (Paris: Félix Alcan, 1934), which reprints Bodin's Response of 1568 from the first edition (Bibliothèque nationale copies); OCR text of the University of Toronto copy on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "hamilton1929": {
+      "url": "https://archive.org/details/sim_quarterly-journal-of-economics_1929-05_43_3",
+      "format": "image",
+      "sha256": "",
+      "version": "E. J. Hamilton, 'Imports of American Gold and Silver into Spain, 1503-1660', Quarterly Journal of Economics 43(3): 436-472 (May 1929). Read on the page images https://archive.org/download/sim_quarterly-journal-of-economics_1929-05_43_3/page/nN_w1600.jpg: n75 p. 462 (SHA-256 4931a09199073a35c6fca320431e285e246de661878d32d6ace6d484e788075f), n77 p. 464 (68ab332f465d7f8e33500e23d92209799d76bae2068642470811abae9f713807), n81 p. 468 (562dfd31cc1101768662ebfebdda2ac23aa357b7a3eadd12920a1b72f5254a30), n82 p. 469 (a3d0f758ac4d7ddbf915a705a164547edd4d25dd18a30478adee1c9cdbf5fff3)",
+      "retrieved": "2026-10-13"
+    },
+    "quan1968": {
+      "url": "https://www.cuhk.edu.hk/ics/journal/articles/v01p027.pdf",
+      "format": "image",
+      "sha256": "92e45cb27a7c5a0fdb170cfb098de54c3ca06920d3f1ebfae962f576c5da7831",
+      "version": "全汉昇《明季中国与菲律宾间的贸易》，《香港中文大学中国文化研究所学报》第 1 卷（1968），第 27—49 页；扫描本，无文字层，逐页目读（PDF 页 = 印刷页码 − 26）",
+      "retrieved": "2026-10-13"
+    },
+    "quan1969": {
+      "url": "https://www.cuhk.edu.hk/ics/journal/articles/v02p059.pdf",
+      "format": "image",
+      "sha256": "afdb04499d2070636d699c4ec308f28d1aaba4fbf9ac44bf9330f1a122ef7d45",
+      "version": "全汉昇《明清间美洲白银的输入中国》，《香港中文大学中国文化研究所学报》第 2 卷第 1 期（1969），第 59—79 页；扫描本，无文字层，逐页目读（PDF 页 = 印刷页码 − 58）",
+      "retrieved": "2026-10-13"
+    },
+    "dv2010": {
+      "url": "https://econ.sites.olt.ubc.ca/files/2013/05/pdf_article_mauricio-drelichman-unabridged-sustainable-debt.pdf",
+      "format": "pdf",
+      "sha256": "b9f227a64f7c6cdcb234f0a36c770db222143ee2a3118ceae8ab06a3105a84da",
+      "version": "M. Drelichman and H.-J. Voth, 'The Sustainable Debts of Philip II: A Reconstruction of Castile's Fiscal Position, 1566-1596', unabridged version (38 pp.) of the article in Journal of Economic History 70(4): 813-842 (2010), from the first author's page at the University of British Columbia",
+      "retrieved": "2026-10-13"
+    },
+    "em2019": {
+      "url": "https://www.cepii.fr/PDF_PUB/wp/2019/wp2019-10.pdf",
+      "format": "pdf",
+      "sha256": "1ba328b969ab86778a455813a1bc395496fc105b11b9516e237e9bec3a0e3f4e",
+      "version": "A. Edo and J. Melitz, 'The Primary Cause of European Inflation in 1500-1700: Precious Metals or Population? The English Evidence', CEPII Working Paper 2019-10 (45 pp.)",
+      "retrieved": "2026-10-13"
+    },
+    "br10": {
+      "url": "https://www.gutenberg.org/cache/epub/14266/pg14266.txt",
+      "format": "txt",
+      "sha256": "ccdd3fc72e53fdb735da97a285b78a6401667717af8dca8e63641d00482816b3",
+      "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 10 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #14266, plain text",
+      "retrieved": "2026-10-13"
+    },
+    "br14": {
+      "url": "https://www.gutenberg.org/cache/epub/15445/pg15445.txt",
+      "format": "txt",
+      "sha256": "ace17f39a9a3d5f6f83c84838ddcb4838150ce90b792be13b445667a4267701a",
+      "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 14 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #15445, plain text",
+      "retrieved": "2026-10-13"
+    },
+    "br19": {
+      "url": "https://www.gutenberg.org/cache/epub/16086/pg16086.txt",
+      "format": "txt",
+      "sha256": "425209f8015220043b7c647277e8c4960b0bed7468c4dd26b5f046ba9e0dd497",
+      "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 19 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #16086, plain text",
+      "retrieved": "2026-10-13"
+    },
+    "br23": {
+      "url": "https://www.gutenberg.org/cache/epub/16451/pg16451.txt",
+      "format": "txt",
+      "sha256": "44a465e0ccf776e33cffa2d3144f8308f3b87e276cbe0042fb514796cc5cdcfc",
+      "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 23 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #16451, plain text",
+      "retrieved": "2026-10-13"
+    },
+    "br24": {
+      "url": "https://www.gutenberg.org/cache/epub/18102/pg18102.txt",
+      "format": "txt",
+      "sha256": "df5a18921f41601c83b2425afbbbc68b320b0f66350efa8a0c7957d6d3afcee7",
+      "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 24 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #18102, plain text",
+      "retrieved": "2026-10-13"
+    },
+    "br27": {
+      "url": "https://www.gutenberg.org/cache/epub/26004/pg26004.txt",
+      "format": "txt",
+      "sha256": "2d15f53561034becc2082e10ab5dba413959e9431645ec03a0563ff710950f0b",
+      "version": "E. H. Blair and J. A. Robertson (eds.), The Philippine Islands, 1493-1898, vol. 27 (Cleveland: A. H. Clark, 1903-1909), Project Gutenberg eBook #26004, plain text",
+      "retrieved": "2026-10-13"
+    }
+  }
+}

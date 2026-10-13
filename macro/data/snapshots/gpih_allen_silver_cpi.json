@@ -1,0 +1,14 @@
+{
+  "title": "Consumer price index in grams of silver, seventeen European cities, 1490-1700 (Allen)",
+  "source": "Global Price and Income History Group (UC Davis): 'Allen_European_labourers_1264-1913.xlsx', sheet 'Labourers (Allen)', block '(2) CONSUMER PRICE INDEX' - data of R. C. Allen, 'The Great Divergence in European Wages and Prices from the Middle Ages to the First World War', Explorations in Economic History 38(4): 411-447 (2001)",
+  "url": "https://gpih.ucdavis.edu/files/Allen_European_labourers_1264-1913.xlsx",
+  "series": "Consumer price index in silver for Antwerp, Amsterdam, London, Oxford, Paris, Strasbourg, Florence, Milan, Naples, Valencia, Madrid, Augsburg, Leipzig, Vienna, Gdansk, Krakow, Warsaw (column names lowercased); empty cells are years without an estimate (Oxford and Milan have none in 1490-1700)",
+  "retrieved": "2026-10-13",
+  "license": "GPIH publishes its files for research use with attribution to the compilers; a subset (211 years) is stored here for teaching.",
+  "used_in": [
+    13
+  ],
+  "fetch": "data/fetch/gpih_silver.py",
+  "notes": "File SHA-256 227478f85eb7a0e042dbfbf724766236dbd0186e0541fca3b29f4a74346bff3a. The index prices one basket of consumer goods in grams of silver on a common base for all cities (in the full workbook Strasbourg averages about 1.01 in 1745-54), so levels can be compared across cities as well as over time. Strasbourg was a free city of the Holy Roman Empire until 1681; the chapter counts only Paris as France when testing Bodin.",
+  "citation": "Allen (2001), doi:10.1006/exeh.2001.0775"
+}
