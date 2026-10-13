@@ -1,0 +1,147 @@
+\documentclass[11pt,a4paper,oneside,openany]{book}
+\newif\ifChinese
+\Chinesetrue
+\input{preamble}
+\newcommand{\bookline}{全卷（第一至第五分册）}
+\hypersetup{pdftitle={宏观经济学：从古代货币到当下争论},pdfauthor={Prepared for Biobot},
+  pdfsubject={Macroeconomics through history: money, prices, fiscal and monetary policy, crises and growth}}
+
+\begin{document}
+\input{zh/front_titlepage}
+
+\frontmatter
+\pagestyle{fancy}
+\inputchapter{zh/front_preface}
+\cleardoublepage
+\phantomsection\label{nav:contents}
+\tableofcontents
+
+\mainmatter
+\input{zh/parts}
+
+% ---- 第一部分 宏观的语言（第 1 分册）
+\partpage{1}
+\inputchapter{zh/ch01_intro}
+\inputchapter{zh/ch02_accounts}
+\inputchapter{zh/ch03_prices}
+\inputchapter{zh/ch04_money}
+\inputchapter{zh/ch05_external}
+
+% ---- 第二部分 古代世界（第 1 分册）
+\partpage{2}
+\inputchapter{zh/ch06_mesopotamia}
+\inputchapter{zh/ch07_greekroman}
+\inputchapter{zh/ch08_qinhan}
+\inputchapter{zh/ch09_india}
+
+% ---- 第三部分 中世纪与近世（第 1 分册）
+\partpage{3}
+\inputchapter{zh/ch10_islamic}
+\inputchapter{zh/ch11_medieval}
+\inputchapter{zh/ch12_songming}
+\inputchapter{zh/ch13_silver}
+\inputchapter{zh/ch14_africa}
+\inputchapter{zh/ch15_finrevolution}
+\inputchapter{zh/ch16_mercantilism}
+\inputchapter{zh/ch17_tokugawa}
+
+% ---- 第四部分 古典世界（第 2 分册）
+\partpage{4}
+\inputchapter{zh/ch18_smith}
+\inputchapter{zh/ch19_bullion}
+\inputchapter{zh/ch20_say}
+\inputchapter{zh/ch21_divergence}
+\inputchapter{zh/ch22_marx}
+\inputchapter{zh/ch23_goldstandard}
+\inputchapter{zh/ch24_periphery}
+\inputchapter{zh/ch25_wicksell}
+
+% ---- 第五部分 战争、萧条与凯恩斯革命（第 2 分册）
+\partpage{5}
+\inputchapter{zh/ch26_weimar}
+\inputchapter{zh/ch27_interwar}
+\inputchapter{zh/ch28_depressionus}
+\inputchapter{zh/ch29_depressionworld}
+\inputchapter{zh/ch30_alternatives}
+\inputchapter{zh/ch31_soviet}
+\inputchapter{zh/ch32_generaltheory}
+\inputchapter{zh/ch33_islm}
+\inputchapter{zh/ch34_warfinance}
+
+% ---- 第六部分 战后黄金时代：东方与西方（第 3 分册）
+\partpage{6}
+\inputchapter{zh/ch35_reconstruction}
+\inputchapter{zh/ch36_brettonwoods}
+\inputchapter{zh/ch37_mundell}
+\inputchapter{zh/ch38_phillips}
+\inputchapter{zh/ch39_consumption}
+\inputchapter{zh/ch40_solow}
+\inputchapter{zh/ch41_development}
+\inputchapter{zh/ch42_eastasia}
+\inputchapter{zh/ch43_planned}
+
+% ---- 第七部分 滞胀与预期革命（第 3 分册）
+\partpage{7}
+\inputchapter{zh/ch44_naturalrate}
+\inputchapter{zh/ch45_monetarism}
+\inputchapter{zh/ch46_floating}
+\inputchapter{zh/ch47_oil}
+\inputchapter{zh/ch48_ratex}
+\inputchapter{zh/ch49_credibility}
+\inputchapter{zh/ch50_budget}
+\inputchapter{zh/ch51_latamdebt}
+\inputchapter{zh/ch52_hyperinflation}
+
+% ---- 第八部分 大缓和、新共识与转轨（第 4 分册）
+\partpage{8}
+\inputchapter{zh/ch53_rbc}
+\inputchapter{zh/ch54_newkeynesian}
+\inputchapter{zh/ch55_consensus}
+\inputchapter{zh/ch56_endogenous}
+\inputchapter{zh/ch57_labor}
+\inputchapter{zh/ch58_japanbubble}
+\inputchapter{zh/ch59_transition}
+\inputchapter{zh/ch60_euro}
+\inputchapter{zh/ch61_emcrises}
+\inputchapter{zh/ch62_moderation}
+\inputchapter{zh/ch63_minsky}
+
+% ---- 第九部分 金融危机之后（第 4 分册）
+\partpage{9}
+\inputchapter{zh/ch64_gfc}
+\inputchapter{zh/ch65_frictions}
+\inputchapter{zh/ch66_zlb}
+\inputchapter{zh/ch67_abenomics}
+\inputchapter{zh/ch68_multipliers}
+\inputchapter{zh/ch69_eurocrisis}
+\inputchapter{zh/ch70_stagnation}
+\inputchapter{zh/ch71_heterogeneity}
+\inputchapter{zh/ch72_chinacredit}
+
+% ---- 第十部分 疫情通胀与当下（第 5 分册）
+\partpage{10}
+\inputchapter{zh/ch73_pandemic}
+\inputchapter{zh/ch74_inflation21}
+\inputchapter{zh/ch75_fiscaldominance}
+\inputchapter{zh/ch76_hierarchy}
+\inputchapter{zh/ch77_digitalmoney}
+\inputchapter{zh/ch78_fragmentation}
+\inputchapter{zh/ch79_demography}
+
+% ---- 第十一部分 综合与展望（第 5 分册）
+\partpage{11}
+\inputchapter{zh/ch80_evidence}
+\inputchapter{zh/ch81_datareliability}
+\inputchapter{zh/ch82_assetprices}
+\inputchapter{zh/ch83_longarcs}
+\inputchapter{zh/ch84_outlook}
+
+% =====================================================================
+\appendix
+\inputchapter{zh/appendices}
+\input{zh/app_index}
+\inputchapter{zh/app_timeline}
+
+\backmatter
+\input{references_zh}
+\end{document}

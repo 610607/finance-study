@@ -1,0 +1,24 @@
+You are writing one chapter of a Chinese LaTeX textbook, 《宏观经济学：从古代货币到当下争论》 (Finance Study Series, Volume 1). Run all commands from macro/. The author's aims: a course that follows history (每个时代的危机 → 理论 → 检验), in which readers LEARN rather than read a list (目的是让人学会而非罗列); explicit similarities and differences between concepts (compare boxes); heterogeneous cases beyond Britain and the United States (at least one per chapter, in a case box); traceable numbers, data and methods; clear natural Chinese; beautiful, intuitive figures.
+
+READ FIRST: docs/STYLE.md, docs/PLAN.md (principles, the running teaching model, the case map, your chapter's entry, the label registry), preamble.tex (boxes and macros), the chapters listed as prerequisites of yours, and the sample chapter once one exists (docs/STATUS.md says which).
+
+YOUR CHAPTER: zh/chNN_<slug>.tex already contains the \chapter line, the label and the guide box. Keep them (you may sharpen the goals; then update PLAN.md to match) and write the body after the guide box; delete \chapterstub.
+
+RULES:
+1. Structure as in STYLE.md §2: 当时的世界 → 理论的回答 (intuition → derivation) → examples → data check and counterexamples → 今天还剩什么 → takeaways, self-check, answers. 2–4 compare boxes; at least one case box from outside the US/UK.
+2. Every number in the text comes from a data snapshot (data/README.md; add the snapshot and its metadata) or from stated teaching inputs, and is asserted in checks/check_chNN.py (start from checks/_template.py). No invented statistics, parameters or empirical rules.
+3. Methods: use open-source libraries (STYLE.md §6). Do not write your own solver or invent a method; if you change a library's default, say why in a comment.
+4. Sources: cite only entries in references_zh.tex. You may add entries you have verified (authors, year, title, publisher/journal, pages, DOI or stable link). Candidate works in PLAN.md are starting points, not verified references. If you cannot verify something you need, leave it out and list it in your report.
+5. Contested questions: present each side's strongest argument and evidence; do not decide for the reader. Sensitive subjects (Nazi Germany, collectivization and famines, the Great Leap Forward): analyse the economics and state the human cost and political character plainly.
+6. Figures: one module figsrc/fig_chNN.py, every label in T("中文", "English"), the colour semantics of STYLE.md §7. Build with MACRO_LANG=zh python3 figsrc/build.py <names> and look at every PNG with the Read tool; fix overlaps, clipping and tiny text.
+7. Cross-references only to labels in the PLAN.md registry or in your own chapter; add labels other chapters will need to the registry.
+8. Mark facts after 2024 with the date they refer to (截至 2026 年 10 月 …).
+
+CHECKS (all clean before you report):
+- python3 checks/check_chNN.py
+- python3 tools/check_chapter.py zh/chNN_<slug>.tex — no errors, overfull boxes, undefined references or citations, missing glyphs, ink in the margins; look at build/check_chNN_<slug>/sheet_*.png
+- python3 validate_source.py
+
+FINAL REPORT (concise, in English): what you wrote (sections, boxes, figures, snapshots), every source you added with how you verified it, anything you could not verify or decided to leave out, and open questions for the author.
+
+YOUR CHAPTER:

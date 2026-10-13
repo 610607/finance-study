@@ -1,0 +1,28 @@
+% Title page.  \bookline (set in the entry file) names the whole volume or one book (分册).
+\begin{titlepage}
+\thispagestyle{empty}
+% Everything is placed absolutely on the page, so the layout does not depend on the text block.
+\begin{tikzpicture}[remember picture,overlay]
+\fill[accent] (current page.north west) rectangle ([yshift=-118mm]current page.north east);
+\node[anchor=north west,inner sep=0pt,text width=166mm] at ([xshift=22mm,yshift=-26mm]current page.north west) {%
+  {\color{white}\sffamily\large 金融学习丛书\enspace·\enspace 第一卷\par}
+  \vspace{9mm}
+  {\color{white}\sffamily\bfseries\fontsize{40}{48}\selectfont 宏观经济学\par}
+  \vspace{6mm}
+  {\color{white}\sffamily\fontsize{22}{28}\selectfont 从古代货币到当下争论\par}
+  \vspace{8mm}
+  {\color{white}\sffamily\large 以问题为线索的历史与理论\par}};
+% One strip per semantic colour used in the text and figures.
+\foreach \c [count=\k from 0] in {outp,pric,mone,fisc,extn,inst} {
+  \fill[\c] ([xshift=22mm+\k*28mm,yshift=-126mm]current page.north west) rectangle ++(25mm,-2.2mm);
+}
+\node[anchor=north west,inner sep=0pt,text width=166mm] at ([xshift=22mm,yshift=-140mm]current page.north west) {%
+  {\sffamily\Large\color{accent}\bookline\par}};
+\node[anchor=south west,inner sep=0pt,text width=166mm] at ([xshift=22mm,yshift=22mm]current page.south west) {%
+  {\sffamily\color{accent} 货币与信用\enspace·\enspace 价格与通胀\enspace·\enspace 财政与债务\enspace·\enspace 汇率与货币主权\enspace·\enspace 危机与增长\par}
+  \vspace{7mm}
+  {\color{muted}\rule{166mm}{.5pt}}\par\vspace{3mm}
+  {\sffamily\small 为 Biobot 编写\hfill 骨架版 · 2026 年 10 月\par}};
+\end{tikzpicture}
+\null
+\end{titlepage}
