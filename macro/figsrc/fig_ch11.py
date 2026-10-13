@@ -161,7 +161,7 @@ def wage_ceiling():
     d = C.clark().loc[1300:1400]
 
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.9), gridspec_kw=dict(width_ratios=[1, 1.1]))
-    fig.subplots_adjust(left=0.08, right=0.985, top=0.89, bottom=0.17, wspace=0.3)
+    fig.subplots_adjust(left=0.09, right=0.985, top=0.89, bottom=0.17, wspace=0.3)
 
     L = np.linspace(0.3, 1.25, 200)
     a1.plot(L, L ** (-a), color=OUTPUT, lw=2.0)

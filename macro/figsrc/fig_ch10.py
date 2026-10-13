@@ -149,7 +149,7 @@ def commenda_payoffs():
     agent_l = V - repay
 
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.85), sharex=True)
-    fig.subplots_adjust(left=0.085, right=0.985, top=0.89, bottom=0.17, wspace=0.28)
+    fig.subplots_adjust(left=0.095, right=0.985, top=0.89, bottom=0.17, wspace=0.28)
     a1.plot(V, inv_c, color=MONEY, lw=2.0)
     a1.plot(V, inv_l, color=AMBER, lw=1.8, ls=(0, (4, 2)))
     a1.text(640, 300 + s_inv * 340 + 18, T("合伙", "commenda"), fontsize=7.8, color=MONEY, ha="right", va="bottom")

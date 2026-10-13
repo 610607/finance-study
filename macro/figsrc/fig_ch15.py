@@ -87,7 +87,7 @@ def finrev_debt():
     """(a) Holland's debt by kind, 1591-1720; (b) England's debt over receipts, 1690-1760, against Philip II."""
     H, E, Tb = C.holland(), C.england(), C.table3()
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.95), gridspec_kw=dict(width_ratios=[1.15, 1.0]))
-    fig.subplots_adjust(left=0.085, right=0.985, top=0.89, bottom=0.15, wspace=0.3)
+    fig.subplots_adjust(left=0.095, right=0.985, top=0.89, bottom=0.15, wspace=0.3)
 
     yrs = H.index.values
     parts = [("bills", T("债券", "bills"), MONEY), ("redeemable", T("可赎回年金", "redeemable annuities"), OUTPUT),
@@ -129,7 +129,7 @@ def finrev_debt():
     a2.set_xticks([1690, 1710, 1730, 1750])
     a2.set_ylabel(T("债务（含年金）与收入之比", "debt (incl. annuities) / receipts"))
     _grid(a2, axis="y")
-    _title(a2, T("(b) 英格兰：债务是收入的 9 倍多", "(b) England: debt over 9 times revenue"))
+    _title(a2, T("(b) 英格兰：债务是收入的 9 倍多", "(b) England: debt above 9× revenue"))
     return fig
 
 
@@ -146,12 +146,12 @@ def finrev_rates():
             linespacing=1.15)
     m = E["mortgage_rate_pct"].dropna()
     ax.plot(m.index, m.values, color=MUTED, lw=1.0, ls=(0, (4, 2)), drawstyle="steps-post", zorder=2)
-    ax.text(1745, m.loc[1744] + 0.35, T("私人抵押贷款（Allen）", "mortgages (Allen)"), fontsize=7.6, color=MUTED,
-            ha="left", va="bottom")
+    ax.text(1759.5, m.loc[1744] + 0.35, T("私人抵押贷款（Allen）", "mortgages (Allen)"), fontsize=7.6, color=MUTED,
+            ha="right", va="bottom")
     y = E["yield_long_pct"].dropna()
     ax.plot(y.index, y.values, color=PRICE, lw=1.7, zorder=3)
-    ax.text(1726, 7.2, T("新发长期借款的收益率\n（1727 年起为 3% 永续年金）", "yield on new long-term loans\n(3% perpetuals from 1727)"),
-            fontsize=7.6, color=PRICE, ha="left", va="bottom", linespacing=1.25)
+    ax.text(1741, 7.0, T("新发长期借款的收益率\n（1727 年起为\n3% 永续年金）", "yield on new long-term\nloans (3% perpetuals\nfrom 1727)"),
+            fontsize=7.6, color=PRICE, ha="center", va="bottom", linespacing=1.25)
     for yr, r, perp in C.crown_loans(F):
         ax.plot(yr, r, "o", ms=4.6, zorder=4, mfc=PRICE if perp else "white", mec=PRICE, mew=1.1)
     ax.text(1614, 10.6, T("斯图亚特王朝的强制借款", "early Stuart forced loans"), fontsize=7.6, color=PRICE,

@@ -66,6 +66,10 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
    (`.gitattributes`); remove duplicate `\bibitem` keys.
 2. Add the labels the chapters need to the PLAN.md registry; apply or decline shared-file requests.
 3. Redraw all figures: `MACRO_LANG=zh python3 figsrc/build.py` and `MACRO_LANG=en python3 figsrc/build.py`.
+   Then run `MACRO_LANG=zh python3 tools/figlint.py` and the same with `en`. It reports text off the
+   6.0-inch canvas, which widens the cropped file so that `\fig` shrinks the whole figure, and text
+   overlapping other text. Then look at every PNG of the part in both languages for text on lines
+   or markers, which the script cannot see. English labels are longer and collide more often.
 4. Run, all clean: `checks/check_*.py`, `data/fetch/verify_quotes.py $CORPUS`,
    `data/fetch/verify_web_quotes.py` (quotations from modern publications and online editions), `validate_source.py`,
    `tools/check_chapter.py` for each new chapter, `build.py --book all --epub`, epubcheck on the six EPUBs.

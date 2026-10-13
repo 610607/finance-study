@@ -42,7 +42,7 @@ def silver_flows():
     cap = F["quan1969_cap"][0]
 
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.85), gridspec_kw=dict(width_ratios=[1.15, 1]))
-    fig.subplots_adjust(left=0.075, right=0.985, top=0.89, bottom=0.17, wspace=0.27)
+    fig.subplots_adjust(left=0.09, right=0.985, top=0.89, bottom=0.17, wspace=0.27)
 
     mid = (H["first"] + H["last"]) / 2 + 0.5
     width = H["years"] - 1.2
@@ -142,7 +142,7 @@ def price_revolution():
     xa = A.index.to_numpy() + 5
 
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.95))
-    fig.subplots_adjust(left=0.075, right=0.985, top=0.89, bottom=0.16, wspace=0.27)
+    fig.subplots_adjust(left=0.1, right=0.985, top=0.89, bottom=0.16, wspace=0.27)
 
     a1.axvspan(1540, 1560, color=tint(INSTIT, 0.12), lw=0, zorder=0)
     a1.plot(x, idx["M"], "-o", color=MONEY, lw=1.8, ms=3.2)

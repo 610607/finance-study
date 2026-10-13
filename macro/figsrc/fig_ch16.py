@@ -57,7 +57,7 @@ def merc_shares():
     x0, x1 = pd.Timestamp("1718-07-15"), pd.Timestamp("1721-01-10")
     ticks = ["1719-01-01", "1719-07-01", "1720-01-01", "1720-07-01", "1721-01-01"]
     fig, (a1, a2) = plt.subplots(2, 1, figsize=(FIG_W, 4.75), sharex=True)
-    fig.subplots_adjust(left=0.1, right=0.975, top=0.94, bottom=0.07, hspace=0.32)
+    fig.subplots_adjust(left=0.11, right=0.955, top=0.94, bottom=0.07, hspace=0.32)
 
     # (a) Paris
     _peg_band(a1, 11_300)
