@@ -212,7 +212,7 @@ def merc_system():
     def down(key, y1, y2, txt):
         flow((mid(key), y1), (mid(key), y2), txt, where="right")
 
-    g_box = lambda y: _party(ax, xs["state"] - 0.2, y, ws["state"] + 0.4, bh, T("政府支出", "spending"), "$g$", FISCAL)
+    g_box = lambda y: _party(ax, xs["state"] - 0.2, y, ws["state"] + 0.4, bh, T("政府支出", "spending"), "$G$", FISCAL)
 
     # before the System
     y0, yh = 3.3, 2.9
@@ -229,7 +229,7 @@ def merc_system():
     across("tax", "farm", yt + bh / 2, r"$\tau$")
     across("farm", "state", yt + bh / 2, T("$\\bar\\tau$\n（固定）", "$\\bar\\tau$\n(fixed)"))
     across("state", "right", yt + bh / 2, T(f"约 {b_txt}\n（固定）", f"about {b_txt}\n(fixed)"))
-    down("state", yt, yb + bh, T(f"$g\\leq\\bar\\tau-$ {b_txt}", f"$g\\leq\\bar\\tau-{before:.0f}$m"))
+    down("state", yt, yb + bh, T(f"$G\\leq\\bar\\tau-$ {b_txt}", f"$G\\leq\\bar\\tau-{before:.0f}$m"))
 
     # under the System
     y0, yh = 0.1, 3.0
@@ -247,7 +247,7 @@ def merc_system():
     flow((xs["tax"] + ws["tax"], yb + bh / 2), (xs["farm"] + 0.2, yt), T("利润", "profits"), where="left")
     across("farm", "state", yt + bh / 2, T(f"$\\bar\\tau-$\n{a_txt}", f"$\\bar\\tau-{after:.0f}$m"))
     down("farm", yt, yb + bh, T(f"股息不少于\n{a_txt}（可变）", f"dividend ≥ {a_txt}\n(variable)"))
-    down("state", yt, yb + bh, T(f"$g\\leq\\bar\\tau-$\n{a_txt}", f"$g\\leq\\bar\\tau-{after:.0f}$m"))
+    down("state", yt, yb + bh, T(f"$G\\leq\\bar\\tau-$\n{a_txt}", f"$G\\leq\\bar\\tau-{after:.0f}$m"))
     xn, wn = xs["right"] - 0.25, ws["right"] + 0.3
     rbox(ax, xn, yb, wn, yt + bh - yb, fc="white", ec=tint(FISCAL, 0.6), lw=0.8, r=0.1, z=3, ls=(0, (3, 2)))
     label(ax, xn + wn / 2, yb + (yt + bh - yb) / 2,

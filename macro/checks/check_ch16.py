@@ -10,8 +10,8 @@ licence forbids circulating it, so the fetch script above writes it) and, for Fr
 (Chapter 15). The figure module figsrc/fig_ch16.py imports the functions defined here.
 
 Models (the chapter's key equations):
-    balance of trade (Mun)      dG = X - M                                          (unnumbered)
-    debt-for-equity swap        E/(N P) < i  <=>  P/e > 1/i                          (eq:merc-swap; Velde 2003, p. 49)
+    balance of trade (Mun)      net inflow of treasure = EX - IM                    (unnumbered)
+    debt-for-equity swap        E/(N P) < i  <=>  P/(E/N) > 1/i                      (eq:merc-swap; Velde 2003, p. 49)
     pegged share price          dM = p_bar dS                                        (eq:merc-peg)
     Cantillon, two groups       s_B' = m_B/(M + dM) = s_B/(1 + dM/M)                 (eq:merc-cantillon)
     Tableau                     sum_j T_ij = sum_j T_ji;  X = A + I + R              (eq:merc-tableau; Quesnay 1766)
@@ -242,7 +242,7 @@ def mun(F):
     x, m, g = F["mun_ex_export"][0], F["mun_ex_import"][0], F["mun_ex_gain"][0]
     quoted("exports (GBP m)", x / 1e6, 2.2, tol=1e-9)
     quoted("imports (GBP m)", m / 1e6, 2.0, tol=1e-9)
-    quoted("dG = X - M (GBP m)", (x - m) / 1e6, 0.2, tol=1e-9)
+    quoted("net inflow = EX - IM (GBP m)", (x - m) / 1e6, 0.2, tol=1e-9)
     assert x - m == g
     home, ams, indies = F["mun_pepper_home"][0], F["mun_pepper_ams"][0], F["mun_pepper_indies"][0]
     quoted("pepper at home: two shillings = pence", 2 * PENCE_PER_SHILLING, home, tol=1e-9)
@@ -379,15 +379,32 @@ def system(F, T, S):
     quoted("  = 200 x 400,000", dv * n4 / 1e6, need, tol=1e-9)
     quoted("  omitted shares held as collateral", 100_000, 100_000, tol=1e-9)
     assert swap_cheaper(E=need * 1e6, N=n4, P=p2, i=i_old / 100)
+    # (3) why (1) and (3) do not contradict each other: N P is far above the debt retired (N P = D fails)
+    debt = F["velde_t3_grand"][0]
+    quoted("  600,000 x 9413 (100 mL, 'about 56')", n2 * p2 / 1e8, 56, tol=0.5)
+    quoted("  debt to be repaid (100 mL, 'about 20')", debt / 1e8, 20, tol=0.25)
+    quoted("  market value / debt ('nearly three times')", n2 * p2 / debt, 2.86, tol=0.005)
+    assert 2.5 < n2 * p2 / debt < 3
+    issue_prices = [p_ipo] + [p for _, p in issues]
+    assert max(issue_prices) == 5000                      # 'issued at 5,000L or less'
+    quoted("  P/D at the 5000 L issue price", 5000 / d2, 25, tol=1e-9)
+    assert 5000 / d2 > pe_threshold(i_old / 100)            # 'only a little above 22'
 
     print("\n== notes and the peg ==")
     a, b, c = F["velde_notes_1bn"]
     quoted("notes Dec 1718 (mL)", a, 40, tol=1e-9)
-    quoted("  Jul 1719 (100 mL)", b / 100, 4, tol=1e-9)
+    quoted("Table 4: 31 Aug 1719 (100 mL)", T.loc["1719-08-31", "col1"] / 100, 3.806, tol=1e-9)
+    quoted("Table 4: 29 Feb 1720 (100 mL)", T.loc["1720-02-29", "col1"] / 100, 10.697, tol=1e-9)
+    # deeper box: Velde's text (400mL 'by July 1719', 1bnL 'in January 1720') runs ahead of his Table 4
+    quoted("Velde's text: Jul 1719 (100 mL)", b / 100, 4, tol=1e-9)
     quoted("  Jan 1720 (100 mL)", c / 100, 10, tol=1e-9)
+    quoted("Table 4: 31 Jul 1719 (100 mL)", T.loc["1719-07-31", "col1"] / 100, 1.599, tol=1e-9)
+    quoted("Table 4: 30 Jan 1720 (100 mL)", T.loc["1720-01-30", "col1"] / 100, 8.101, tol=1e-9)
+    assert abs(T.loc["1719-08-31", "col1"] - b) < abs(T.loc["1719-07-31", "col1"] - b)    # 'close only by end-August'
+    assert abs(T.loc["1720-02-29", "col1"] - c) < abs(T.loc["1720-01-30", "col1"] - c)    # 'and end-February'
     quoted("specie stock (100 mL)", F["velde_specie"][0] / 100, 12, tol=1e-9)
     quoted("authorized issues Dec 1719 (100 mL)", F["velde_640"][0] / 100, 6.4, tol=1e-9)
-    quoted("  'tripled' = increased by two times", 3 - 1, 2, tol=1e-9)
+    quoted("  'tripled' = increased to three times", 3, 3, tol=1e-9)
     quoted("bought 5000 L from 5 Oct 1719", F["velde_buy5000"][0], 5000, tol=1e-9)
     bought, pct = F["velde_office"]
     quoted("office bought (100 mL)", bought / 100, 8, tol=1e-9)
@@ -582,7 +599,7 @@ def cantillon_sec(F):
     jan, rise, mult = F["velde_hamilton"]
     quoted("Jan-Aug 1720: money x", mult, 2.6, tol=1e-9)
     quoted("  prices (%)", rise, 19, tol=1e-9)
-    quoted("  V x Y fell to (%)", 100 * (1 + rise / 100) / mult, 46, tol=0.5)
+    quoted("  V / Y = P / M fell to (%)", 100 * (1 + rise / 100) / mult, 46, tol=0.5)
     i0, i1, i2 = F["cant_1720"]
     quoted("1720 interest before (%)", i0, 5, tol=1e-9)
     quoted("  raised to (%)", i1, 50, tol=1e-9)
@@ -723,6 +740,21 @@ def deeper(F, S, T):
     quoted("Visa computed (%)", 100 * (1 - F["velde_visa"][1] / F["velde_visa"][0]), 23.1, tol=0.05)
     quoted("Garber's 40m computed (10k GBP)", garber_value() * 100, 3990, tol=5)
     quoted("days between the calendars", F["fgr_calendar"][0], JULIAN_LAG_DAYS, tol=1e-9)
+    # Garber's "745 to 950" against the price data (London dates, Julian)
+    quoted("Garber: jumped from", F["garber_745"][0], 745, tol=1e-9)
+    quoted("  to", F["garber_745"][1], 950, tol=1e-9)
+    quoted("South Sea 10 Jun 1720 in the data", julian(S, "1720-06-10", "south_sea"), 745, tol=1e-9)
+    quoted("  17 Jun", julian(S, "1720-06-17", "south_sea"), 755, tol=1e-9)
+    j, ss = S["date_julian"], S["south_sea"]
+    quoted("  highest 17-22 Jun", ss[(j >= "1720-06-17") & (j <= "1720-06-22")].max(), 765, tol=1e-9)
+    assert ss[(j >= "1720-06-23") & (j <= "1720-06-28")].isna().all(), "no quotations 23-28 June"
+    first950 = ss[ss == 950].index[0]
+    assert S.loc[first950, "date_julian"] == "1720-06-29"
+    assert S.loc[first950, "date_julian"] >= "1720-06-24", "after the transfer books closed"
+    # what the company was to pay the government: up to 7.5m (if it took all 31m), 7.1m in the accounts
+    quoted("pay up to (GBP m)", F["garber_31m"][0], 7.5, tol=1e-9)
+    quoted("  in the net assets and the settlement (GBP m)", F["garber_net"][0], 7.1, tol=1e-9)
+    assert F["garber_forgave"][1] == F["garber_net"][0]
 
 
 def takeaways(F, T):
@@ -775,6 +807,14 @@ def from_quotes(Q):
     said(Q, "velde_quarter", "1/4")
     said(Q, "velde_bank_taxes", "April 10, 1717")
     said(Q, "velde_royal", "5,000L")
+    said(Q, "velde_dec4", "Dec. 4, 1718")
+    said(Q, "mun_dearer", "plenty of mony", "dearer")
+    said(Q, "cant_outflow", "chez l’Etranger")
+    said(Q, "smith_assiento", "Assiento", "Utrecht")
+    said(Q, "smith_barren", "barren and unproductive")
+    said(Q, "velde_daughters", "June", "July", "four mothers and one daughter")
+    said(Q, "velde_fn19", "second issue or daughters", "third issue or granddaughters")
+    said(Q, "velde_forfeit", "missing an installment", "options on shares")
     said(Q, "velde_west_aug", "August 1717")
     said(Q, "velde_louisiana", "1717", "500")
     said(Q, "velde_ipo_closed", "Dec 31, 1718", "100mL", "40%")
@@ -869,6 +909,13 @@ def from_quotes(Q):
     said(Q, "garber_scott400", "400")
     said(Q, "smith_ss_ship", "ten voyages", "1731")
     said(Q, "tv_hoare", "£28,000", "£200")
+    said(Q, "tv_goldsmith", "goldsmith", "1690")
+    said(Q, "fgr_triangle", "1720")
+    said(Q, "fgr_mirror", "1721")
+    said(Q, "djt_gaps", "subscription receipts", "wagering markets")
+    said(Q, "shea_options", "default options", "eighteenth-century")
+    said(Q, "shea_flawed", "Dale, Johnson, and Tang")
+    said(Q, "garber_first_passage", "first passage", "March 21, 1720")
     said(Q, "fgr_7to10", "7 to 10")
     said(Q, "fgr_t1_ins", "2013%")
     said(Q, "fgr_t1_atl", "895%")

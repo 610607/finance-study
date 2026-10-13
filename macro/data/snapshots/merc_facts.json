@@ -1,6 +1,6 @@
 {
   "title": "Quotations on mercantilism, John Law's System, the South Sea bubble, Cantillon and Quesnay's Tableau (Chapter 16)",
-  "source": "Mun (1664; Ashley's reprint, 1895); Smith (1776; Gutenberg text); Law (1705, first edition); Velde (2003); Garber (1990); Temin & Voth (2004); Frehen, Goetzmann & Rouwenhorst (2009); Cantillon (1755; French Wikisource); Quesnay (1766; French Wikisource); Oncken (1888)",
+  "source": "Mun (1664; Ashley's reprint, 1895); Smith (1776; Gutenberg text); Law (1705, first edition); Velde (2003); Garber (1990); Temin & Voth (2004); Frehen, Goetzmann & Rouwenhorst (2009); Cantillon (1755; French Wikisource); Quesnay (1766; French Wikisource); Oncken (1888); the abstracts of Dale, Johnson & Tang (2005) and Shea (2007)",
   "url": "see sources",
   "series": "one row per quoted fact: id, dynasty (here: country or city), year (approximate where year_note says so), year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page, chapter or table), quote (verbatim), note",
   "retrieved": "2026-10-13",
@@ -93,6 +93,20 @@
       "format": "txt",
       "sha256": "4aa3417ec251adf088c3b4a8b07b83bda9d5adf6fa806ca321ebba1c34a61235",
       "version": "A. Oncken (ed.), Oeuvres économiques et philosophiques de F. Quesnay (Frankfurt: J. Baer; Paris: Jules Peelman, 1888); OCR text of the archive.org copy (item oeuvresconomiq00ques); p. 126 (Oncken quoting Dupont de Nemours's Notice abrégée of April 1769 on the date of the first Tableau) was also read on the page image n159",
+      "retrieved": "2026-10-13"
+    },
+    "djt2005": {
+      "url": "https://ehs.org.uk/article/financial-markets-can-go-mad-evidence-of-irrational-behaviour-during-the-south-sea-bubble/",
+      "format": "html",
+      "sha256": "8fe48d395e0144c449875221e3fe51e373f27a41dc62be065c57116ce345b264",
+      "version": "R. S. Dale, J. E. V. Johnson and L. Tang, 'Financial Markets Can Go Mad: Evidence of Irrational Behaviour during the South Sea Bubble', Economic History Review 58(2): 233-271 (2005), doi:10.1111/j.1468-0289.2005.00304.x; the abstract on the Economic History Society's page for the article (the full text needs a login); the page's news panel changes, so the hash may differ between downloads",
+      "retrieved": "2026-10-13"
+    },
+    "shea2007": {
+      "url": "https://ehs.org.uk/article/financial-market-analysis-can-go-mad",
+      "format": "html",
+      "sha256": "73e59d1ef6e2c218148e668b901ff421a810cf024922ff38337e1bb432c83862",
+      "version": "G. S. Shea, 'Financial Market Analysis Can Go Mad (in the Search for Irrational Behaviour during the South Sea Bubble)', Economic History Review 60(4): 742-765 (2007), doi:10.1111/j.1468-0289.2007.00379.x (pages from Crossref); the abstract on the Economic History Society's page for the article (the full text needs a login); the hash may differ between downloads",
       "retrieved": "2026-10-13"
     }
   }
