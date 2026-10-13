@@ -195,9 +195,12 @@ def world(F):
     quoted("Takedda copper: 100 mithqal of copper", F["umari_copper"][0], 100, tol=0)
     quoted("  for 66 2/3 mithqal of gold", F["umari_copper"][1], 66.6667, tol=1e-4)
     quoted("  copper per unit of gold, by weight", F["umari_copper"][0] / F["umari_copper"][1], 1.5, tol=1e-4)
-    quoted("Takedda bars: thin, per gold ducat", F["battuta_takedda_bars"][0], 400, tol=0)
-    quoted("  thick, per gold ducat (low)", F["battuta_takedda_bars"][1], 600, tol=0)
-    quoted("  thick, per gold ducat (high)", F["battuta_takedda_bars"][2], 700, tol=0)
+    # "les unes minces, les autres épaisses. Quatre cents de celles-ci [the thick, named last] valent un ducat d'or ;
+    # six cents ou sept cents de celles-là [the thin] ..." -- thin bars buy meat and firewood, thick ones slaves and grain.
+    # (The snapshot's note on this row has thin and thick the other way round.)
+    quoted("Takedda bars: thick, per gold ducat", F["battuta_takedda_bars"][0], 400, tol=0)
+    quoted("  thin, per gold ducat (low)", F["battuta_takedda_bars"][1], 600, tol=0)
+    quoted("  thin, per gold ducat (high)", F["battuta_takedda_bars"][2], 700, tol=0)
     quoted("Kanem: a piece of cloth is ten cubits", F["umari_kanem_cloth"][0], 10, tol=0)
     quoted("Sijilmasa to Taghaza (days)", F["battuta_taghaza_days"][0], 25, tol=0)
     quoted("a camel carries two slabs of salt", F["battuta_camel_two"][0], 2, tol=0)
@@ -224,9 +227,15 @@ def world(F):
 
 def gold(F):
     print("\n== sec:africa-gold ==")
-    # al-Maqrizi's six dirhams
-    quoted("al-Maqrizi: the dinar fell to six dirhams", F["maqrizi_six"][0], 6, tol=0)
-    quoted("  six against al-Umari's 25: share", F["maqrizi_six"][0] / F["umari_gold_25"][0], 0.24, tol=1e-9)
+    # al-Maqrizi's six dirhams. The French has "descendit jusqu'à six dirhems" (fell TO six); the Arabic of the passage
+    # translated in the appendix (al-Dhahab al-masbuk, ed. and tr. Van Steenbergen 2016, para. 205) reads
+    # "fa-inhatta si'r al-dinar al-dhahab sitta darahim", "the price of the gold dinar was lowered BY six dirhams".
+    # From at least 25 dirhams, a fall of 6 is at most 6/25 = 24%, consistent with al-Umari's fall of at least 12%.
+    quoted("al-Maqrizi: the dinar fell by six dirhams", F["maqrizi_six"][0], 6, tol=0)
+    quoted("  the Arabic, as translated by Van Steenbergen: lowered by six", F["maqrizi_six_vs"][0], 6, tol=0)
+    quoted("  largest fall this implies, from at least 25 (%)", 100 * F["maqrizi_six"][0] / F["umari_gold_25"][0], 24,
+           tol=1e-9)
+    assert 100 * F["maqrizi_six"][0] / F["umari_gold_25"][0] >= 100 * (1 - F["umari_gold_22"][0] / F["umari_gold_25"][0])
     # salt: carrying cost
     lo_w, hi_w, lo_m, hi_m, top = F["battuta_salt_price"]
     quoted("salt gap, smallest: 20/10 - 1 (%)", 100 * gross_gap(lo_m, hi_w), 100, tol=1e-9)
@@ -385,6 +394,7 @@ def cowries(F):
     quoted("as many as 300 on sale at one time", F["robinson_300"][0], 300, tol=0)
     quoted("tribute to Sokoto in slaves: at least (%)", 100 * F["robinson_tribute"][0], 75, tol=0)
     quoted("Adamawa: 10,000 slaves a year", F["robinson_adamawa"][0], 10_000, tol=0)
+    quoted("  another account: 2,000", F["robinson_adamawa_2000"][0], 2_000, tol=0)
     quoted("Kano: about 100", F["robinson_kano_cloth"][0], 100, tol=0)
 
     print("\n== Bornu (Barth 1851) ==")
@@ -540,6 +550,7 @@ def from_quotes(Q):
     said(Q, "umari_kanem_cloth", "dix coudées")
     said(Q, "maqrizi_slaves", "quatorze mille")
     said(Q, "maqrizi_six", "six dirhems")
+    said(Q, "maqrizi_six_vs", "lowered by six dirhams")
     said(Q, "khaldun_loan", "50.000")
     said(Q, "battuta_units", "douze mille", "cent mille")
     said(Q, "battuta_four_bostu", "quatre bostoû")
@@ -601,6 +612,7 @@ def from_quotes(Q):
     said(Q, "robinson_horse_price", "fifteen shillings", "six pounds")
     said(Q, "robinson_tribute", "three quarters")
     said(Q, "robinson_adamawa", "ten thousand")
+    said(Q, "robinson_adamawa_2000", "2,000")
     said(Q, "robinson_kano_cloth", "one hundred")
     said(Q, "robinson_three", "three characteristics")
     said(Q, "gardner_100t", "100 tons")

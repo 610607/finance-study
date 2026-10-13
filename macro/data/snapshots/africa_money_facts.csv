@@ -14,8 +14,9 @@ umari_kanem_course,加奈姆,1340,同上,,,,umari1927,p. 44,mais tout cela suit 
 maqrizi_slaves,马里/埃及,1324,,14000,人,,umari1927,p. 90,était accompagné de quatorze mille jeunes esclaves affectées à son service,马克里齐：随行的女奴
 maqrizi_third,马里,1325,回程,,,,umari1927,p. 91,il n'en revint avec lui qu'à peu près le tiers,马克里齐：回程中寒冷致死，同伴与骆驼只回来约三分之一
 maqrizi_borrow,马里,1325,回程,,,,umari1927,p. 91,Il dut faire un gros emprunt aux marchands,马克里齐
-maqrizi_six,埃及,1324,,6,迪拉姆/第纳尔,,umari1927,p. 91,descendit jusqu'à six dirhems,马克里齐说第纳尔跌到六迪拉姆
+maqrizi_six,埃及,1324,,6,迪拉姆/第纳尔,,umari1927,p. 91,descendit jusqu'à six dirhems,法译本作第纳尔“跌到”六迪拉姆；阿拉伯原文是跌了六个迪拉姆（行 maqrizi_six_vs）
 maqrizi_six_doubt,埃及,1324,,,,,umari1927,p. 91,La baisse du dinar à six drachmes est,编者注：这一跌幅不可信，与乌马里的记载相反
+maqrizi_six_vs,埃及,1324,,6,迪拉姆,,vs2016,p. 401,The price of the gold dinar was lowered by six dirhams,Van Steenbergen 的校勘本与英译，第 205 段；阿拉伯原文 fa-inhatta si'r al-dinar al-dhahab sitta darahim（p. 400）：跌了六个迪拉姆，不是跌到六迪拉姆；法译者的怀疑针对的是“跌到”的误译
 khaldun_loan,马里/埃及,1324,,50000,第纳尔,,umari1927,p. 254,50.000 dinars ; il leur vendit le palais que le sultan lui avait donné en précaire,伊本·赫勒敦《历史》（编者法译）：库维克家族借给他五万第纳尔
 khaldun_default,马里,1337,曼萨·穆萨去世前,,,,umari1927,p. 254,mourut avant d'avoir payé et ils ne réussirent donc à rien tirer de lui,伊本·赫勒敦：债主一文也没收回
 battuta_units,马尔代夫,1344,,12000;100000,枚,,battuta1858,p. 122,"douze mille se nomment cotta, et cent mille bostoû",马尔代夫的贝币单位
@@ -32,7 +33,7 @@ battuta_camel_two,撒哈拉,1352,,2,块,,battuta1858,p. 378,chameau ne peut port
 battuta_salt_price,撒哈拉/马里,1352,,8;10;20;30;40,第纳尔/驮,,battuta1858img,p. 378,"Une charge de chameau de ce minéral se vend, à Îouâlâten, de huit à dix mithkâls, ou dînârs d'or, ou ducats; à la ville de Mâlli, elle vaut de vingt à trente ducats, et quelquefois même quarante.",文本层把 Îouâlâten 与 mithkâls 认错，按扫描页读
 battuta_salt_money,马里,1352,,,,,battuta1858,p. 378,emploient le sel pour monnaie,“Les nègres emploient le sel pour monnaie”
 battuta_gao_cowries,加奥,1353,,,,,battuta1858,p. 435,"Le commerce de vente et d'achat chez les habitants se fait au moyen de petites coquilles ou cauris, au lieu de monnaie",
-battuta_takedda_bars,塔凯达,1353,,400;600;700,根/杜卡特,,battuta1858,p. 441,Quatre cents de celles-ci valent un ducat d'or ; six cents ou sept cents de celles-là valent aussi un ducat d'or,细铜条 400 根、粗铜条 600—700 根换一个金杜卡特
+battuta_takedda_bars,塔凯达,1353,,400;600;700,根/杜卡特,,battuta1858,p. 441,Quatre cents de celles-ci valent un ducat d'or ; six cents ou sept cents de celles-là valent aussi un ducat d'or,celles-ci 指后说的粗铜条：粗铜条 400 根、细铜条 600—700 根换一个金杜卡特
 battuta_takedda_slaves,塔凯达,1353,,,,,battuta1858,p. 441,Cette besogne est faite par les esclaves des deux sexes,铜由男女奴隶冶炼
 battuta_takedda_buy,塔凯达,1353,,,,,battuta1858,p. 441,"avec celles qui sont épaisses, on se procure les esclaves mâles et femelles, le millet, le beurre et le froment",
 battuta_takedda_cloth,撒哈拉,1353,,,,,battuta1858,p. 444,"c'est de la viande, du lait aigre et du beurre, que l'on achète avec des étoffes",塔凯达到图瓦特之间用布买食物
@@ -116,6 +117,7 @@ robinson_300,扎里亚,1894,,300,人,,robinson1896,p. 88,of whom we saw as many 
 robinson_slave_currency,豪萨,1895,,,,,robinson1896,p. 134,"slaves are used for two distinct purposes, first as currency, where any large amount such as the State tribute is involved, and secondly as carriers",
 robinson_tribute,豪萨,1895,,0.75,,,robinson1896,p. 134,"Of the tribute payable by all the Hausa States to Sokoto, at least three quarters is paid in slaves",
 robinson_adamawa,阿达马瓦,1895,,10000,人/年,,robinson1896,p. 134,the King of Adamawa sends annually ten thousand slaves,罗宾逊说消息“似乎可靠”
+robinson_adamawa_2000,阿达马瓦,1895,,2000,人/年,,robinson1896,p. 105,"According to another account which I subsequently received this should be reduced to 2,000",1895 年 1 月 15 日的日记：另一个说法把阿达马瓦每年的一万名奴隶减为两千
 robinson_kano_cloth,卡诺,1895,,100,人,,robinson1896,p. 134,"Kano sends perhaps the smallest number, it is said about one hundred, the greater parts of its tribute being paid in cloth",
 robinson_three,豪萨,1895,,3,,,robinson1896,p. 136,"lacking as they do the three characteristics which, according to political economists, a medium of exchange should possess, namely, intrinsic value, scarcity and portability",罗宾逊说贝币缺的三样东西
 gardner_100t,西非,1800,19 世纪初,100,吨/年,,gardner2015,p. 3,the English alone were shipping approximately 100 tons of cowries to Africa every year,

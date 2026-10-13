@@ -52,7 +52,9 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 14 (Inca, intuition box) | 6 `ch:mesopotamia` | Temples and palaces that organised production by keeping accounts rather than by using money | open |
 | 14 (closing sentence) | 15 `ch:finrevolution` | How a sovereign makes lenders believe it will repay, and so borrows a lot at low rates (Mansa Musa's lenders could not enforce) | open |
 | 14 (case box, legacy) | 16 `ch:mercantilism` | Restricting trade "that the treasure might be kept" at home: the European mercantilists' version of Adahoonzou II's pretext | open |
+| 14 (legacy) | 23 `ch:goldstandard` | Menger against Knapp: money as a commodity that emerges from trade or as a creature of the state (cowries, salt, cloth and cacao were not state-issued but were shaped by what rulers accepted in tax) | open |
 | 14 (legacy) | 24 `ch:periphery`, 76 `ch:hierarchy` | Economies whose money is supplied or set from elsewhere; colonial currencies (the West African pound) that replaced commodity monies | open |
 | 14 (legacy) | 41 `ch:development` | Institutions with long-run effects on development (Dell's mining mita) | open |
+| 14 (legacy) | 63 `ch:minsky` | Modern monetary theory as the far end of the chartalist (Knapp) side of the question "must money be issued by the state?" | open |
 | 14 (legacy) | 66 `ch:zlb` | The cost of holding and storing cash sets how far below zero interest rates can go (cacao's negative own return) | open |
-| 14 (legacy) | 77 `ch:digitalmoney` | Money as record-keeping ("money is memory", Kocherlakota 1998): who keeps the ledger, what it records, who can see it | open |
+| 14 (legacy) | 77 `ch:digitalmoney` | Money as record-keeping ("money is memory", Kocherlakota 1998): who keeps the ledger, what it records, who can see it; privately issued stablecoins as the other side of "must money be issued by the state?" | open |

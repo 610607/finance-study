@@ -72,7 +72,7 @@ def cowrie_value():
     _title(a1, T("(a) 离产地越远，贝壳越值钱", "(a) the farther from the Maldives, the dearer"))
 
     pts = C.per_shilling(F)
-    lab = {"coast": T("西非海岸", "West African coast"), "jf": T("维达（J. F.）", "Whydah (J. F.)"),
+    lab = {"coast": T("西非海岸", "West African coast"), "jf": T("J. F. 记账价", "J. F. book rate"),
            "whydah": T("维达", "Whydah"), "lagos": T("拉各斯", "Lagos"), "kaffi": T("卡菲", "Kaffi"),
            "lokoja": T("洛科贾", "Lokoja"), "zaria": T("扎里亚", "Zaria"), "kano": T("卡诺", "Kano")}
     side = {"lokoja": 2200, "kaffi": 1800, "zaria": 1470, "kano": 1200}

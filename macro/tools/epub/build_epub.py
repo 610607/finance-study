@@ -402,6 +402,9 @@ class Converter:
                    r"|makeatletter|makeatother)\b", "", s)
         s = sub_cmd(s, "rule", 2, lambda o, w, h: "■", opt=True)
         s = re.sub(r"\\textcolor\{(\w+)[^}]*\}", r"\\textcolor{\1}", s)
+        # pandoc writes \tfrac and \dfrac as <mfrac displaystyle=...>, which EPUB's MathML 3 schema
+        # rejects; inline math is text style and display math display style anyway.
+        s = re.sub(r"\\[td]frac(?![A-Za-z])", r"\\frac", s)
         s = self.headings(s)
         s = self.boxes(s)
         s = self.floats(s)

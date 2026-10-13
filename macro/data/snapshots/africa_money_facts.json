@@ -1,15 +1,15 @@
 {
   "title": "Quotations on gold, salt, copper, cloth and cowrie money in West Africa, the Inca economy and cacao money (Chapter 14)",
-  "source": "al-Umari tr. Gaudefroy-Demombynes (1927, with al-Maqrizi and Ibn Khaldun); Ibn Battuta tr. Defrémery & Sanguinetti, t. IV (1858); Barth (1857); Burton (1864); Ellis (1890); Dalzel (1793, with Norris and J. F.); Robinson (1896); Gardner (2015); Garcilaso de la Vega tr. Markham (1869, 1871, quoting Blas Valera); Acosta tr. Grimston ed. Markham (1880); Oviedo ed. Amador de los Ríos (1851); Peter Martyr tr. MacNutt (1912); Dell (2010); Kocherlakota (1998)",
+  "source": "al-Umari tr. Gaudefroy-Demombynes (1927, with al-Maqrizi and Ibn Khaldun); Ibn Battuta tr. Defrémery & Sanguinetti, t. IV (1858); Barth (1857); Burton (1864); Ellis (1890); Dalzel (1793, with Norris and J. F.); Robinson (1896); Gardner (2015); Garcilaso de la Vega tr. Markham (1869, 1871, quoting Blas Valera); Acosta tr. Grimston ed. Markham (1880); Oviedo ed. Amador de los Ríos (1851); Peter Martyr tr. MacNutt (1912); Dell (2010); Kocherlakota (1998); Van Steenbergen (2016) for the Arabic of al-Maqrizi",
   "url": "see sources",
   "series": "one row per quoted fact: id, dynasty (here: country or region), year (approximate where year_note says so), year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page), quote (verbatim), note",
   "retrieved": "2026-10-13",
-  "license": "Short quotations only, for comment and teaching. The translations and editions of 1793-1927 are in the public domain in the United States or of an age that puts them there; Gardner (2015), Dell (2010) and Kocherlakota (1998) are quoted, not copied.",
+  "license": "Short quotations only, for comment and teaching. The translations and editions of 1793-1927 are in the public domain in the United States or of an age that puts them there; Gardner (2015), Dell (2010), Kocherlakota (1998) and Van Steenbergen (2016, open access) are quoted, not copied.",
   "used_in": [
     14
   ],
   "fetch": "data/fetch/verify_web_quotes.py",
-  "notes": "Rows citing txt, pdf and html sources are checked against the downloaded documents by verify_web_quotes.py. Rows citing battuta1858img, burton1864img, dalzel1793 and oviedo1851 were read by eye on the page images listed in each source's version (format image), because the OCR layers misread long s, ç, fractions and dates; they are counted but not checked by a script. Transcription: long s is written s; Dalzel's table on p. 135 is transcribed row by row, separated by ' | '. Translations into Chinese in the chapter are the book's own. Years are those of the event where the source dates it; rows marked approximate in year_note (al-Umari's time of writing, the Inca empire before 1532, Oviedo's Nicaragua) carry a round year for sorting only and are not quoted as dates. al-Umari's 'de gain' is ambiguous (a profit of 700, or 700 in all); the chapter shows both readings.",
+  "notes": "Rows citing txt, pdf and html sources are checked against the downloaded documents by verify_web_quotes.py. Rows citing battuta1858img, burton1864img, dalzel1793 and oviedo1851 were read by eye on the page images listed in each source's version (format image), because the OCR layers misread long s, ç, fractions and dates; they are counted but not checked by a script. Transcription: long s is written s; Dalzel's table on p. 135 is transcribed row by row, separated by ' | '. Translations into Chinese in the chapter are the book's own. Years are those of the event where the source dates it; rows marked approximate in year_note (al-Umari's time of writing, the Inca empire before 1532, Oviedo's Nicaragua) carry a round year for sorting only and are not quoted as dates. al-Umari's 'de gain' is ambiguous (a profit of 700, or 700 in all); the chapter shows both readings. al-Maqrizi's six dirhams: the French appendix has the dinar falling to six dirhams, which its translator doubted; the Arabic of al-Dhahab al-masbuk (Van Steenbergen 2016, para. 205) says it fell by six dirhams (row maqrizi_six_vs), so the chapter reads it as a fall of at most 24 per cent from al-Umari's 25. Takedda: celles-ci refers to the thick bars named last, so 400 thick or 600-700 thin bars make a gold ducat.",
   "sources": {
     "umari1927": {
       "url": "https://archive.org/download/india.history.resource.91094/91094_djvu.txt",
@@ -72,6 +72,13 @@
       "format": "txt",
       "sha256": "d244b6f448ff2868c55e68acc350bedd28b6bfd5b384489ec9022419cb091906",
       "version": "C. H. Robinson, Hausaland, or Fifteen Hundred Miles through the Central Soudan (London: Sampson Low, Marston, 1896), first edition; OCR text on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "vs2016": {
+      "url": "https://archive.org/download/oapen-20.500.12657-38085/9789004332362_ebook_content_text.pdf",
+      "format": "pdf",
+      "sha256": "117bbaa5bb93b7401203b40dbfe783bfb909d098f1f362a28af54863935636d1",
+      "version": "J. Van Steenbergen, Caliphate and Kingship in a Fifteenth-Century Literary History of Muslim Leadership and Pilgrimage: al-Dhahab al-masbuk fi dhikr man hajja min al-khulafa' wa-l-muluk. Critical Edition, Annotated Translation, and Study, Bibliotheca Maqriziana 4 (Leiden: Brill, 2016), open access (CC BY-NC 3.0); the OAPEN e-book PDF as mirrored on archive.org (SHA-1 0e9941d394965f14d4e25bb338dbe9a2440ea26a, as listed there); para. 205, Arabic p. 400, translation p. 401",
       "retrieved": "2026-10-13"
     },
     "gardner2015": {
