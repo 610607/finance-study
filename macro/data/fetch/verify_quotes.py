@@ -42,6 +42,8 @@ FILES = {
     "xuwenxiantongkao": "史藏/政书/钦定续文献通考.txt",
     "daminghuidian": "史藏/政书/大明会典.txt",
     "huangchaojingshiwenbian": "史藏/经世文编/皇朝经世文编.txt",
+    "huangchaojingshiwenxubian": "史藏/经世文编/皇朝经世文续编.txt",
+    "huangchaojingshiwenxubian_ge": "史藏/经世文编/皇朝经世文续编-清-葛士浚.txt",
     "huangmingjingshiwenbian": "史藏/经世文编/皇明经世文编.txt",
 }
 SNAPSHOTS = HERE.parent / "snapshots"

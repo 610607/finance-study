@@ -1,0 +1,14 @@
+{
+  "title": "Price of one koku of rice at Osaka (silver monme, 1701-1867) and in Edo (gold ryo, 1652-1863)",
+  "source": "Global Price and Income History Group (UC Davis): 'Japan_rice_P_1620-1867.xls', sheet 'koku of rice', from M. Iwahashi, Kinsei Nihon bukkashi no kenkyu (A Study of the History of Prices in Early Modern Japan), Tokyo: Ohara Shinseisha, 1981, Appendix Table 1, pp. 460-465; place names and price types clarified by O. Saito (2008, in the workbook)",
+  "url": "https://gpih.ucdavis.edu/files/Japan_rice_P_1620-1867.xls",
+  "series": "osaka_monme_per_koku: column 'Osaka' under 'Price in Monme (silver currency)', price type 'Market'; edo_ryo_per_koku: column 'Edo' under 'Price in Ryo (gold currency)', price type 'Bakufu gov't'. Annual values; empty cells are years without a value",
+  "retrieved": "2026-10-13",
+  "license": "GPIH publishes its files for research use with attribution to the compilers; two of the fourteen series are stored here for teaching.",
+  "used_in": [
+    17
+  ],
+  "fetch": "data/fetch/gpih_east_asia.py",
+  "notes": "File SHA-256 1a2b475aa47676111a07ae57300ebbd1f7701d09ae860b4a6a3e650e1f9ead35. 216 years with at least one value: Osaka 1701-1867 (167 years), Edo 1652-1863 (212 years). Saito's notes in the workbook: the Osaka series is the price at the Dojima market of rice from Higo (Kyushu); the Edo series is 'prices in Edo and environs', of the bakufu-government type; series other than Osaka, Otsu and Banshu 'are likely ... to have reflected prices set by han government authorities', which Iwahashi thought close to market levels over long periods but with 'year-to-year fluctuations ... dampened down'. 1 koku = 180.391 litres (the workbook's conversion). The workbook's second Osaka column (in ryo) is not stored. The silver monme is a unit of weight of the silver coins in use, whose fineness changed in 1695-1736 (Suzuki 2021, Table 3; snapshot toku_facts).",
+  "citation": "Iwahashi (1981) via GPIH"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Daily wages of unskilled workers in the suburbs of Beijing in copper cash, and the price of silver in copper cash, 1807-1902",
+  "source": "Global Price and Income History Group (UC Davis): 'China_wages_1807-1925.xls' (compiled by D. Ma), sheet 'Wages Beijing rural', from S. D. Gamble, 'Daily Wages of Unskilled Chinese Laborers, 1807-1902', The Far Eastern Quarterly 3(1), 1943, pp. 41-73",
+  "url": "https://gpih.ucdavis.edu/files/China_wages_1807-1925.xls",
+  "series": "wage_cash_per_day: 'Wages in copper cash (annual average)'; cash_per_tael: 'Copper/ silver conversion (cash/tael)'; wage_tael_per_day: 'Wages in silver tael per day'; wage_grams_silver: 'Wages in grams of silver'. Years without a row in the workbook are missing; 1860 has a wage but no conversion",
+  "retrieved": "2026-10-13",
+  "license": "GPIH publishes its files for research use with attribution to the compilers; one sheet (65 rows) is stored here for teaching.",
+  "used_in": [
+    17
+  ],
+  "fetch": "data/fetch/gpih_east_asia.py",
+  "notes": "File SHA-256 6a9ab1aa7a31d566855acedb1cc7e94be9065708eb20ba4de35a65bb84512b63. The sheet's note: 'All wages are doubled to allow for additional food payment. See the detailed explanation in Appendix II' of Allen, Bassino, Ma, Moll-Murata and van Zanden, 'Wages, Prices, and Living Standards in China, Japan, and Europe, 1738-1925', GPIH Working Paper no. 1 (published in the Economic History Review 64(S1), 2011). The cash price of silver jumps from 2,205 (1853) to 2,723 (1854) and 4,970 (1856), the years of the Xianfeng large-denomination coins (1853-); the chapter uses the series for 1807-1853 and does not interpret the later values, whose unit of account the workbook does not explain. Grams of silver = taels x 37 (the workbook's conversion, implied by its columns).",
+  "citation": "Gamble (1943) via GPIH"
+}
