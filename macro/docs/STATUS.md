@@ -16,15 +16,14 @@ Updated 2026-10-13.
 - Open points from the review: the 《宋朝事实》 first-year issue (3,884,600 guan) is three times the 《宋史》 quota and is flagged in the text, not resolved; Guan et al.'s price index (direct evidence that official rates lag the market) is not yet in a snapshot.
 - Data: `data/snapshots/yuanshi_suyinchao` (the 《元史》 table of notes printed each year, 1260–1329) and `data/snapshots/paper_money_facts` (quotations with their numbers from the Song, Yuan and Ming histories, each checked verbatim against a pinned digital text by `data/fetch/verify_quotes.py`).
 - `checks/check_ch12.py` asserts every number in the text; `figsrc/fig_ch12.py` draws the figures in the style of the electromagnetics notes (STYLE.md §7.1).
-- What the sample settled is recorded in `STYLE.md` §11. Awaiting the author's approval.
+- What the sample settled is recorded in `STYLE.md` §11. Approved by the author on 2026-10-13; §11 now binds every chapter.
 
 ## EPUB edition — added 2026-10-13
 - `tools/epub/` converts the LaTeX sources to EPUB 3 with pandoc, taking every number from the PDF build (`docs/EPUB.md`). `python3 build.py --book all --epub` writes the volume and the five books; the EPUBs pass epubcheck 5.1 with no errors or warnings.
 
 ## Next
-1. Author's review of the sample chapter; adjust `STYLE.md` if needed.
-2. Then the books in order, each chapter followed by an independent review (`docs/agent_prompts/review_template.txt`).
-3. Chapter 1 is finalized last, because it previews the whole volume.
+1. The books in order, each chapter followed by an independent review (`docs/agent_prompts/review_template.txt`).
+2. Chapter 1 is finalized last, because it previews the whole volume.
 
 ## English edition — reserved
 `\ZE{}{}` in the preamble, `T("中文", "English")` in figures, English titles in `structure.py` and `en/README.md` are in place. No translation has started.
