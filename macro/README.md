@@ -47,8 +47,9 @@ figures_zh/, figures/        figure PDFs (Chinese / English), created as chapter
 validate_source.py           consistency of structure, labels, references, sources, data and checks
 tools/check_chapter.py       compile one chapter in isolation and report layout problems
 tools/epub/                  EPUB edition: build_epub.py (LaTeX -> pandoc), boxes.lua, epub.css, cover.py
+tools/setup_env.sh           prepares a fresh machine: Python packages, xeCJK if missing, the classical-Chinese corpus, epubcheck
 build.py                     builds the whole volume or one book (PDF; --epub also EPUB)
-docs/                        PLAN.md (chapter plan, label registry), STYLE.md, EPUB.md, STATUS.md, agent_prompts/
+docs/                        PLAN.md (chapter plan, label registry), STYLE.md, WORKFLOW.md (batch writing), EPUB.md, STATUS.md, agent_prompts/
 compiled/                    the built PDFs and EPUBs
 ```
 

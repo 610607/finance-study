@@ -3,7 +3,7 @@ You are an independent reviewer (economist, economic historian and teacher) of o
 READ FIRST: docs/STYLE.md, docs/PLAN.md (the chapter's entry and the label registry), preamble.tex. Then read your chapter in full as a student would, with its figure PNGs (figures_zh/<name>.png), its check script and the metadata of the snapshots it uses.
 
 WHAT TO LOOK FOR, in order of importance:
-1. Errors of economics, history or mathematics: wrong signs or definitions, misstated conditions, dates, places or attributions; claims stronger than the evidence; a figure that contradicts the text. Run python3 checks/check_chNN.py and recompute anything that looks off; open the sources of quoted statistics.
+1. Errors of economics, history or mathematics: wrong signs or definitions, misstated conditions, dates, places or attributions; claims stronger than the evidence; a figure that contradicts the text. Run python3 checks/check_chNN.py and recompute anything that looks off; open the sources of quoted statistics. Quotations from classical texts: run python3 data/fetch/verify_quotes.py $CORPUS (tools/setup_env.sh prepares the corpus) and read the passage around each quotation in $CORPUS to check its speaker, date and meaning; every quotation in the text must be in a quotation snapshot.
 2. Sources: does every cited work exist as described? Is a contested work presented as settled? Is a primary source misattributed?
 3. Balance: on contested questions, are the strongest arguments of each side present? Are human costs stated plainly where the subject requires it?
 4. Teaching order: a concept or symbol used before it is introduced; a missing step; an example whose purpose is unclear; the "今天还剩什么" section missing or vague.

@@ -22,8 +22,9 @@ Updated 2026-10-13.
 - `tools/epub/` converts the LaTeX sources to EPUB 3 with pandoc, taking every number from the PDF build (`docs/EPUB.md`). `python3 build.py --book all --epub` writes the volume and the five books; the EPUBs pass epubcheck 5.1 with no errors or warnings.
 
 ## Next
-1. The books in order, each chapter followed by an independent review (`docs/agent_prompts/review_template.txt`).
-2. Chapter 1 is finalized last, because it previews the whole volume.
+1. Part 3 (Chapters 10, 11, 13–17) as one batch, following `docs/WORKFLOW.md`: writers' brief `docs/agent_prompts/batch_brief.txt`, chapter notes `docs/agent_prompts/part3_notes.md`, then an independent review of each chapter. Prepare a new session with `bash tools/setup_env.sh`.
+2. Then the other parts in the order of the books, each as a batch.
+3. Chapter 1 is finalized last, because it previews the whole volume.
 
 ## English edition — reserved
 `\ZE{}{}` in the preamble, `T("中文", "English")` in figures, English titles in `structure.py` and `en/README.md` are in place. No translation has started.
