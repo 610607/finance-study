@@ -214,7 +214,7 @@ def coin(F, Q):
     quoted("five beds for a house", F["ne_beds"][0], 5)
 
 
-def laurion(F):
+def laurion(F, Q):
     quoted("Herodotus: drachmas a head", F["hdt_laureion"][0], 10)
     quoted("    ships", F["hdt_ships"][0], 200)
     quoted("Ath. Pol.: talents of profit", F["ath_maroneia"][0], 100)
@@ -231,6 +231,9 @@ def laurion(F):
     quoted("    30,000 at 10 dr, in talents", F["hdt_30000"][0] * F["hdt_laureion"][0] / TALENT_DR, 50)
     quoted("    talents per trireme (Ath. Pol.)", F["ath_maroneia"][0] / F["ath_triremes"][0], 1)
     quoted("    Herodotus' 200 ships at 1 talent", F["hdt_ships"][0] * 1, 200)
+    quoted("        / the Maroneia profit", F["hdt_ships"][0] / F["ath_maroneia"][0], 2)
+    quoted("    50 talents / the Maroneia profit", 50 / F["ath_maroneia"][0], 0.5)
+    assert {"ath_distribute", "ath_terms", "hdt_naval"} <= Q
 
 
 def xenophon(F, Q):
@@ -248,6 +251,8 @@ def xenophon(F, Q):
     quoted("    6,000 slaves at an obol: talents a year", rev, 60)
     days = rev * TALENT_DR * OBOLS / n
     quoted("    implied days in the year", days, YEAR_DAYS)
+    quoted("    60 talents in drachmas", rev * TALENT_DR, 360000)
+    quoted("        in obols", rev * TALENT_DR * OBOLS, 2160000)
     quoted("    6,000 x 365 days, in talents", n * 365 / OBOLS / TALENT_DR, 60.8, tol=0.05)
     quoted("    10,000 slaves: talents", F["xen_100"][1], 100)
     quoted("        10,000 x 360 / 6 / 6,000", F["xen_100"][0] * YEAR_DAYS / OBOLS / TALENT_DR, 100)
@@ -255,6 +260,7 @@ def xenophon(F, Q):
     quoted("public slaves per citizen", F["xen_public"][0], 3)
     quoted("    for 30,000 citizens", 3 * F["hdt_30000"][0], 90000)
     quoted("        talents a year at an obol", 3 * F["hdt_30000"][0] * YEAR_DAYS / OBOLS / TALENT_DR, 900)
+    quoted("        / the Maroneia profit", 900 / F["ath_maroneia"][0], 9)
     quoted("Decelea (BC)", -F["xen_decelea"][0], 413)
     quoted("    deserted slaves, more than", F["xen_deserted"][0], 20000)
     assert {"xen_more", "xen_enough", "xen_hoard", "xen_gold", "xen_nodanger"} <= Q
@@ -284,6 +290,14 @@ def coins(F, Q):
     quoted("        6 scrupula, per mille", F["cope_tx6"][1], 1000 * 6 / SCRUPULA, tol=0.5)
     quoted("        3 scrupula, per mille", F["cope_tx3"][1], 1000 * 3 / SCRUPULA, tol=0.5)
     quoted("Kent: unciae per pound", F["kent_uncia"][0], UNCIAE)
+    quoted("Haklai n. 42 on Cope (1972): Gallienus, from (%)", F["hr_cope"][0], 2)
+    quoted("    to (%)", F["hr_cope"][1], 3)
+    quoted("tetradrachm: debasement began (AD 164/5)", F["hb_parthian"][0], 164)
+    quoted("    took hold (AD 167/8)", F["hb_parthian"][2], 167)
+    quoted("Diocletian's reforms: gold standard (CE)", F["hr_diocletian"][0], 286)
+    quoted("    monetary reform (294/96)", F["hr_diocletian"][1], 294)
+    quoted("    Currency Edict", F["hr_diocletian"][3], 301)
+    assert {"hr_xray", "hr_expect", "hr_mistrust", "hr_constantine"} <= Q
     # the Egyptian tetradrachm (Howgego Tables 2 and 3)
     t2 = F["hb_t2"]
     quoted("tetradrachm: to 167 (%)", t2[1], 18)
@@ -316,7 +330,15 @@ def seigniorage(F):
     quoted("(3) both: silver per denarius of face value / pre-193", new / old * w / 2, 0.47, tol=0.005)
 
 
-def egypt_prices():
+def egypt_prices(F):
+    quoted("Antonine plague: into Egypt (AD 166/7)", F["hb_loss"][0], 166)
+    quoted("    population loss, from (%)", F["hb_loss"][2], 20)
+    quoted("    to (%)", F["hb_loss"][3], 30)
+    quoted("Kelly: barley, private price points", F["kl_barley"][0], 21)
+    quoted("    state", F["kl_barley"][1], 4)
+    quoted("    share of state prices (%)", F["kl_barley"][2], 16)
+    quoted("    = the barley rows before 274", F["kl_barley"][0] + F["kl_barley"][1], 25)
+    quoted("    wheat: share of state prices (%)", 100 * F["kl_counts"][1] / sum(F["kl_counts"]), 44, tol=0.5)
     P = prices()
     w = table("wheat_private", P)
     pre = w[w["year"] < 160]
@@ -329,6 +351,10 @@ def egypt_prices():
     quoted("190-270: documents", len(mid), 27)
     quoted("    median (dr)", mid["dr_per_artaba"].median(), 16)
     quoted("    documents at exactly 16", (mid["dr_per_artaba"] == 16).sum(), 9)
+    quoted("    in estate accounts or letters", mid["nature"].str.contains("estate", case=False).sum(), 26)
+    quoted("    in a temple account", mid["nature"].str.contains("temple", case=False).sum(), 1)
+    quoted("    from the Arsinoite nome", (mid["nome"] == "Arsinoite").sum(), 20)
+    quoted("    a date range 202-231", mid["date"].str.startswith("202-31").sum(), 1)
     quoted("    lowest", mid["dr_per_artaba"].min(), 9)
     quoted("    highest", mid["dr_per_artaba"].max(), 28)
     late = w[(w["year"] >= 249) & (w["year"] <= 270)]
@@ -385,6 +411,7 @@ def model(F):
     quoted("    with the 190-270 median of 16: times", 16 / p0, 1.83, tol=0.005)
     quoted("        pass-through", math.log(16 / p0) / math.log(c0 / c1), 0.45, tol=0.005)
     quoted("        tau", trust(q / 16, c1, c0), 0.39, tol=0.005)
+    quoted("    (4) if q rose as much as the price: tau", trust(q * (p1 / p0) / p1, c1, c0), 1)
     # ex:greek-trust: the reform of 274
     ratio = 200 / 16
     quoted("ex:greek-trust: price jump", ratio, 12.5)
@@ -395,6 +422,7 @@ def model(F):
     quoted("        v / vbar", v_new, 0.08)
     quoted("        tau after", trust(v_new, c_new, vbar), 0.009, tol=0.0005)
     quoted("        tau = 0 would give x", vbar / c_new, 14)
+    quoted("    (3) lowest v / vbar before the reform", ratio * c_new, 0.89, tol=0.005)
     quoted("    with 24 (270): x", 200 / 24, 8.3, tol=0.05)
     quoted("        tau after", trust(vbar / (200 / 24), c_new, vbar), 0.05, tol=0.005)
 
@@ -430,11 +458,16 @@ def edict(F, Q):
     quoted("Aezani: denarii per pound of gold", F["hr_aezani"][0], 72000)
     quoted("    / Kent's 50,000", F["hr_aezani"][0] / gold, 1.44)
     quoted("    cents per denarius at 72,000", cents * gold / F["hr_aezani"][0], 0.301, tol=0.0005)
+    quoted("    Kent's dollar prices times", gold / F["hr_aezani"][0], 0.69, tol=0.005)
+    quoted("litres per US dry quart (stated)", LITRES_PER_DRY_QUART, 1.101, tol=0.0005)
     quoted("Haklai n. 108: years after Aurelian's reform", F["hr_n108"][1], 25)
     quoted("    301 - 274", 301 - 274, 27)
     assert {"kent_notfixed", "kent_maximum", "kent_capital", "kent_buyer", "kent_withhold", "kent_soldier",
             "kent_greed", "kent_debasing", "kent_tin", "kent_copper", "kent_upward", "kent_unknown",
-            "kent_impartial", "kent_wheat", "hr_n108b"} <= Q
+            "kent_impartial", "kent_wheat", "hr_n108b", "kent_christian", "kent_onesided", "kent_highest",
+            "kent_courts", "kent_vicious", "kent_standard", "kent_disappeared", "kent_observed", "kent_dealers", "kent_resisted",
+            "kent_hoarded", "kent_clandestine", "kent_region", "kent_withdrawn"} <= Q
+    quoted("Kent: 'not much if at all over four years'", F["kent_fouryears"][0], 4)
 
 
 def ceiling():
@@ -480,6 +513,13 @@ def test():
     quoted("    over 80 years: times", math.exp(80 * tb["b"]), 3.2, tol=0.05)
     bb = b[(b["year"] >= 190) & (b["year"] <= 270)]
     quoted("    state compulsory purchase among them (209)", bb.loc[bb["year"] == 209, "dr_per_artaba"].item(), 5)
+    t9 = trend(bb[bb["year"] != 209])
+    quoted("    without 209: documents", t9["n"], 9)
+    quoted("        slope (%)", 100 * t9["b"], 1.35, tol=0.005)
+    quoted("        95% interval, low", 100 * t9["lo"], 0.19, tol=0.005)
+    quoted("        high", 100 * t9["hi"], 2.52, tol=0.005)
+    quoted("        p", t9["p"], 0.029, tol=0.0005)
+    assert {"kl_sectors", "kl_dampen", "kl_taxes", "kl_noedict", "kl_plague", "kl_endogenous", "kl_poly"} <= facts().keys() | quotes()
     k = facts()["kl_r2"]
     quoted("Kelly: wheat R2 (log, from 190)", k[0], 0.01)
     quoted("    n", k[1], 27)
@@ -506,14 +546,15 @@ def case33(F, Q):
     quoted("    respite (years)", F["tac_respite"][0], 1.5)
     quoted("    two-thirds of debts in Italian land", F["tac_twothirds"][0], 2 / 3, tol=1e-9)
     quoted("    great sesterces lent", F["tac_loan"][0], 100000)
-    quoted("        sesterces (a great sesterce = 1,000)", F["tac_loan"][0] * 1000, 1e8)
+    quoted("    the Twelve Tables: twelve in the hundred", F["tac_tables"][0], 12)
     quoted("    years", F["tac_terms"][0], 3)
     quoted("    security, times the loan", F["tac_terms"][1], 2)
     quoted("Temin: crisis (CE)", F["tm_33"][0], 33)
     quoted("    three years", F["tm_tiberius"][0], 3)
     quoted("    interest rates from (%)", F["tm_interest"][0], 4)
     quoted("    to (%)", F["tm_interest"][1], 12)
-    assert {"tac_scarcity", "tac_hoard", "tac_restored", "tm_land", "tm_finley", "tm_wrong", "tm_rathbone"} <= Q
+    assert {"tac_scarcity", "tac_hoard", "tac_restored", "tm_land", "tm_finley", "tm_wrong", "tm_rathbone",
+            "tac_caesar", "tac_impunity", "tm_debate", "tm_polanyi", "tm_primarily", "tm_loose"} <= Q
 
 
 def selfcheck(F):
@@ -526,6 +567,7 @@ def selfcheck(F):
     quoted("    pass-through (log)", math.log(1 / v) / math.log(1 / SC["c_ratio"]), 0.42, tol=0.005)
     s = shortage(SC["t"], SC["pi"])
     quoted("SC5: real ceiling after 2 years at 20%", s["real"], 69.4, tol=0.05)
+    quoted("    demand", s["demand"], 130.6, tol=0.05)
     quoted("    shortage", s["x"], 61.1, tol=0.05)
     quoted("SC6: 1 - 44.4/70.6 (%)", 100 * (1 - fineness_unciae(15) / fineness_unciae(5)), 37, tol=0.5)
 
@@ -535,11 +577,11 @@ def main():
     opening(F, Q)
     world(F, Q)
     coin(F, Q)
-    laurion(F)
+    laurion(F, Q)
     xenophon(F, Q)
     coins(F, Q)
     seigniorage(F)
-    egypt_prices()
+    egypt_prices(F)
     model(F)
     edict(F, Q)
     ceiling()
