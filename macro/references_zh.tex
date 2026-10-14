@@ -369,4 +369,37 @@
 \bibitem{peru2002} Perú. Decreto Supremo N.º 151-2002-EF（以外币记账的规定）, 2002 年 9 月 24 日. 据经济与财政部在 gob.pe 上的副本，\url{https://cdn.www.gob.pe/uploads/document/file/249601/224965_file20181218-16260-xs0v5e.pdf}.
 
 \bibitem{minaya2017} E. Minaya, J. Lupú and M. Cabello. Macroprudential policies in Peru: the effects of dynamic provisioning and conditional reserve requirements. BIS Working Papers No 675, November 2017. \url{https://www.bis.org/publications/working-paper-675-macroprudential-policies-peru-effects-dynamic-provisioning-and-conditional-reserve-requirements.pdf}.
+% ---- 第 5 章：引文据下载的原文件，核对见 data/fetch/verify_web_quotes.py（网址与 SHA-256 记在
+% data/snapshots/external_facts.json 的 sources）；数据见 data/fetch/cbsl_reserves.py、bis_fx.py、wb_external.py 与 fred_external.py。
+\bibitem{cbsl2023ar} Central Bank of Sri Lanka. \emph{Annual Report 2022}, Chapter 5: External Sector Developments and Policies. Colombo, April 2023. \url{https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/publications/annual_report/2022/en/9_Chapter_05.pdf}. 2026 年 10 月 14 日下载；表 5.1、表 5.12 与表 5.15 的数字见 \texttt{data/snapshots/external\_facts.csv}。
+
+\bibitem{lktreasury2022} Ministry of Finance, Economic Stabilization and National Policies, Sri Lanka. Frequently Asked Questions (FAQs): Interim Policy Regarding the Servicing of Sri Lanka's External Public Debt. PDF dated April 17, 2022. \url{https://treasury.gov.lk/api/file/1e2d4962-d635-4f77-9aa7-2f84ee385fed}. 2026 年 10 月 14 日下载。
+
+\bibitem{cbsl2026rdt} Central Bank of Sri Lanka. International Reserves and Foreign Currency Liquidity（储备数据模板，Reserve Data Template - Historical，统计表 2.15.2），2013 年 11 月至 2026 年 7 月. \url{https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/statistics/sheets/table2.15.2_20260930_e.xlsx}. 2026 年 10 月 14 日下载；本书只提交摘出的数字（\texttt{data/snapshots/cbsl\_reserves.csv}）。斯里兰卡中央银行的出版物说明：“The material appearing in the Bulletin may be reproduced or translated in whole or in part without prior permission (unless it is indicated as copy-righted), provided due credit is given to the Central Bank of Sri Lanka and the Bulletin.”
+
+\bibitem{bea2026iea} U.S. Bureau of Economic Analysis. \emph{U.S. International Economic Accounts: Concepts and Methods}. September 2026. \url{https://www.bea.gov/sites/default/files/2026-09/BEA-International-Economic-Accounts-Concepts-and-Methods.pdf}. 引文出自第 8、9、21 与 23 章。
+
+\bibitem{bea2026q2} U.S. Bureau of Economic Analysis. U.S. International Transactions and Investment Position, 2nd Quarter 2026. News release BEA 26-41, September 24, 2026, \url{https://www.bea.gov/sites/default/files/2026-09/ita-iip226.pdf}；同日的 U.S. International Transactions, 2nd Quarter 2026: Historical Comparisons, \url{https://www.bea.gov/sites/default/files/2026-09/ita-iip226-hist.pdf}. 2026 年 10 月 14 日下载。
+
+\bibitem{fred2026x} Federal Reserve Bank of St. Louis. FRED, Federal Reserve Economic Data. 序列 IEABC、IEABCPI（经常账户与初次收入差额）、IIPUSASSQ、IIPUSLIAQ、IIPUSNETIQ（国际投资头寸），来源 U.S. Bureau of Economic Analysis. \url{https://fred.stlouisfed.org/}. 2026 年 10 月 14 日下载（BEA 2026 年 9 月 24 日发布的数）；数据见 \texttt{data/snapshots/fred\_us\_external.csv}。
+
+\bibitem{wdi2026} World Bank. World Development Indicators（2026 年 10 月 8 日更新）. 序列 FI.RES.TOTL.CD、BN.CAB.XOKA.CD、BN.FIN.TOTL.CD、BN.RES.INCL.CD、BN.TRF.KOGT.CD、NY.GDP.MKTP.CD、FP.CPI.TOTL、PA.NUS.FCRF、PA.NUS.PPP、NY.GDP.PCAP.CD、NY.GDP.PCAP.PP.CD 与各国的国别说明（Country notes）. \url{https://api.worldbank.org/v2/}. 2026 年 10 月 14 日下载；按 CC BY 4.0 使用。数据见 \texttt{data/snapshots/wb\_external\_annual.csv}、\texttt{wb\_price\_levels.csv} 与 \texttt{wb\_relppp.csv}。
+
+\bibitem{bis2026} Bank for International Settlements. BIS Data Portal: bilateral exchange rates (WS\_XRU) and effective exchange rates (WS\_EER). \url{https://data.bis.org/}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/bis\_fx.csv}。来源：BIS。本书对 BIS 统计数据名称与说明的中文翻译不是 BIS 的官方译文（the translation is not an official BIS translation）。
+
+\bibitem{du2018} W. Du, A. Tepper and A. Verdelhan. Deviations from Covered Interest Rate Parity. \emph{Journal of Finance}, 73(3): 915--957, 2018. 引文据 NBER Working Paper 23170, February 2017, \url{https://www.nber.org/system/files/working_papers/w23170/w23170.pdf}；© 2017 by Wenxin Du, Alexander Tepper, and Adrien Verdelhan.
+
+\bibitem{engel2014} C. Engel. Exchange Rates and Interest Parity. In \emph{Handbook of International Economics}, vol. 4, chapter 8, pp. 453--522. Elsevier, 2014. 引文据 NBER Working Paper 19336, August 2013, \url{https://www.nber.org/system/files/working_papers/w19336/w19336.pdf}；© 2013 by Charles Engel.
+
+\bibitem{taylor2004} A. M. Taylor and M. P. Taylor. The Purchasing Power Parity Debate. \emph{Journal of Economic Perspectives}, 18(4): 135--158, 2004. 引文据 NBER Working Paper 10607, June 2004, \url{https://www.nber.org/system/files/working_papers/w10607/w10607.pdf}；© 2004 by Alan M. Taylor and Mark P. Taylor.
+
+\bibitem{eichengreen1999} B. Eichengreen and R. Hausmann. Exchange Rates and Financial Fragility. In \emph{Proceedings: Economic Policy Symposium, Jackson Hole}, pp. 329--368. Federal Reserve Bank of Kansas City, 1999. 引文据 NBER Working Paper 7418, November 1999, \url{https://www.nber.org/system/files/working_papers/w7418/w7418.pdf}；© 1999 by Barry Eichengreen and Ricardo Hausmann.
+
+\bibitem{aizenman2007} J. Aizenman and J. Lee. International Reserves: Precautionary versus Mercantilist Views, Theory and Evidence. \emph{Open Economies Review}, 18(2): 191--214, 2007. 引文据 NBER Working Paper 11366, May 2005, \url{https://www.nber.org/system/files/working_papers/w11366/w11366.pdf}；© 2005 by Joshua Aizenman and Jaewoo Lee.
+
+\bibitem{dooley2003} M. P. Dooley, D. Folkerts-Landau and P. Garber. An Essay on the Revived Bretton Woods System. NBER Working Paper 9971, September 2003. \url{https://www.nber.org/system/files/working_papers/w9971/w9971.pdf}；© 2003 by Michael P. Dooley, David Folkerts-Landau, and Peter Garber. 刊本题为 The Revived Bretton Woods System，\emph{International Journal of Finance and Economics}, 9(4): 307--313, 2004.
+
+\bibitem{obstfeld2010} M. Obstfeld, J. C. Shambaugh and A. M. Taylor. Financial Stability, the Trilemma, and International Reserves. \emph{American Economic Journal: Macroeconomics}, 2(2): 57--94, 2010. 引文据 NBER Working Paper 14217, August 2008, \url{https://www.nber.org/system/files/working_papers/w14217/w14217.pdf}；© 2008 by Maurice Obstfeld, Jay C. Shambaugh, and Alan M. Taylor.
+
+\bibitem{safe2017} 国家外汇管理局国际收支分析小组.《2016 年中国国际收支报告》. 2017 年 3 月 30 日. \url{https://www.safe.gov.cn/safe/file/file/20170726/0fe969acf55a48d7baaa9ed01c355add.pdf}. 2026 年 10 月 14 日下载。信息来源：国家外汇管理局网站。外汇局网站的法律声明只许经许可的非商业性转载，本书因此只引用报告中的少量文字与数字，不提交它的数据文件。
 \end{thebibliography}

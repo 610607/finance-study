@@ -92,6 +92,7 @@ dtv_violated,国际,2017,,2008,,,dtv2017,"PDF p. 3, abstract","We show that the 
 dtv_before,国际,2017,,,,,dtv2017,"PDF p. 4, introduction","Before the global financial crisis, the log difference between the forward and the spot rate was approximately equal to the difference in London interbank offer rates (Libor) across countries",
 dtv_size,国际,2017,,24;27;2010;2016,basis points,,dtv2017,"PDF p. 4, introduction",The average annualized absolute value of the basis is 24 basis points at the three-month horizon and 27 basis points at the five-year horizon over the 2010–2016 sample.,
 dtv_yen,国际,2017,,-90;2015;-70,basis points,,dtv2017,"PDF p. 4, introduction","For example, the five-year basis for the Japanese yen was close to −90 basis points at the end of 2015",
+dtv_yen2,国际,2017,,-70,basis points,,dtv2017,"PDF p. 4, introduction",which was even greater in magnitude than the difference (of about −70 basis points) between the five-year Libor,
 dtv_quarter_end,国际,2017,,,,,dtv2017,"PDF p. 2, abstract","They are particularly strong for forward contracts that appear on the banks' balance sheets at the end of the quarter, pointing to a causal effect of banking regulation on asset prices.",
 engel_convention,国际,2013,,,,,engel2013,"PDF p. 3, section 1","This chapter follows the convention that the exchange rate of a country is the price of the foreign currency in units of the domestic currency, so an increase in the exchange rate is a depreciation in the home currency.",
 engel_fama,国际,2013,,1;0,,,engel2013,PDF p. 42,"a long history of empirical work has found the estimated value of b to be less than one, and usually less than zero.",b is the slope of the regression of the change in the log exchange rate on the interest differential (UIP predicts b = 1)
@@ -103,6 +104,9 @@ tt_longrun,国际,2004,,,,,taylor2004,PDF p. 8,"Neither absolute nor relative PP
 tt_halflife,国际,2004,,3;5,years,,taylor2004,PDF p. 16,Rogoff (1996) notes a high degree of consensus concerning the estimated half-lives of adjustment: they mostly tend to fall into the range of three to five years.,
 tt_bs,国际,2004,,,,,taylor2004,PDF p. 22,"If we measure the overall price index as a weighted average of traded and nontraded goods prices, relatively rich countries will tend to have ""overvalued"" currencies.",
 tt_elasticity,国际,2004,,0.5,,,taylor2004,PDF p. 23,"once close to zero, and statistically insignificant, the elasticity is now over one half.",the elasticity of the price level with respect to income per head across countries
+tt_1950,国际,2004,,1950,,,taylor2004,PDF p. 23,the cross-country relationship between income per capita and the price level has been intensifying since 1950,
+tt_pwt,国际,2004,,,,,taylor2004,PDF p. 23,The vertical axis shows the common-currency Penn World Table Consumer Price Index price level of other countries as a ratio of the U.S. CPI price level,
+tt_1995,国际,2004,,1995;142,,,taylor2004,"PDF p. 34, figure 3",(a) 1995 data (N=142),the latest of the three cross-sections behind 'the elasticity is now over one half'
 eh_sin,国际,1999,,,,,eichengreen1999,PDF p. 5,"This is a situation in which the domestic currency cannot be used to borrow abroad or to borrow long term, even domestically.",the definition of 'original sin'
 eh_open,国际,1999,,,,,eichengreen1999,PDF p. 13,Original sin seems to capture a fact about the world. What causes it is an open question.,
 safe_date,中国,2017,,2017;3;30,,,safe2016,"PDF p. 1, cover",国家外汇管理局国际收支分析小组2017年3月30日,
@@ -110,6 +114,7 @@ safe_ca,中国,2016,first published (later revised),1964;1.8,亿美元; per cent
 safe_nrfa,中国,2016,first published,2016;4170;4,亿美元; per cent,,safe2016,"PDF p. 2, 内容摘要",2016年，非储备性质的金融账户逆差4170亿美元，较上年下降4%。,
 safe_assets,中国,2016,first published,6611,亿美元,,safe2016,"PDF p. 2, 内容摘要",对外资产合计净增加6611亿美元。,
 safe_inflow,中国,2016,first published,2441;1010,亿美元,,safe2016,"PDF p. 2, 内容摘要",外来投资净流入2441亿美元，上年为净流出1010亿美元。,
+safe_diverse,中国,2016,,,,,safe2016,"PDF p. 2, 内容摘要",境内主体境外资金运用的方式更加多元化,
 safe_res_tx,中国,2016,first published,2016;4437,亿美元,,safe2016,PDF p. 13,2016年，我国交易形成的储备资产（剔除汇率、价格等非交易价值变动影响）减少4437亿美元。,
 safe_main_domestic,中国,2016,,,,,safe2016,PDF p. 19,当前我国跨境资本流出压力主要来自境内,
 safe_outflow_form,中国,2016,,,,,safe2016,PDF p. 19,跨境资本流出主要表现为境内主体增持对外资产,
@@ -128,6 +133,7 @@ safe_t_res,中国,2016,first published,4437,亿美元,,safe2016,"PDF p. 16, 表1
 safe_t_eo,中国,2016,first published,-2227,亿美元,,safe2016,"PDF p. 16, 表1-2",3.净误差与遗漏113 -2227,line 113
 safe_t_sign,中国,2016,,,,,safe2016,"PDF p. 16, 表1-2, 注2",“贷方”按正值列示，“借方”按负值列示，差额等于“贷方”加上“借方”。,
 safe_t_bpm6,中国,2016,,6,,,safe2016,"PDF p. 16, 表1-2, 注1",本表根据《国际收支和国际投资头寸手册》（第六版）编制。,
+safe_cny,中国,2016,end of 2016,2016;6.9370;2015;6.4,元/美元; per cent,,safe2016,PDF p. 48,2016年末，人民币对美元汇率中间价为6.9370元/美元，较2015年末贬值6.4%,
 al_test,国际,2005,,,,,aizenman2005,"PDF p. 2, abstract",This paper tests the importance of precautionary and mercantilist motives in accounting for the hoarding of international reserves by developing countries,
 al_result,国际,2005,,0,,,aizenman2005,"PDF p. 2, abstract","While the variables associated with the mercantilist motive are statistically significant, their economic importance in accounting for reserve hoarding is close to zero and is dwarfed by other variables.",
 al_merc,国际,2005,,,,,aizenman2005,PDF p. 4,"Under this strategy, reserves accumulation may facilitate export growth by preventing or slowing appreciation.",
@@ -136,6 +142,7 @@ al_sample,国际,2005,,1980;2000,,,aizenman2005,"PDF p. 17, concluding remarks",
 al_china,国际,2005,,,,,aizenman2005,"PDF p. 17, concluding remarks","These results hold for most countries, including China.",
 al_not_optimal,国际,2005,,,,,aizenman2005,"PDF p. 17, concluding remarks",Our empirical study does not imply that the hoarding of reserves by countries is optimal or efficient.,
 dfg_periphery,国际,2003,,,,,dfg2003,"PDF p. 2, abstract","We argue that the normal evolution of the international monetary system involves the emergence of a periphery for which the development strategy is export-led growth supported by undervalued exchange rates, capital controls and official capital outflows in the form of accumulation of reserve asset claims on the center country.",
+dfg_asia,国际,2003,,,,,dfg2003,"PDF p. 2, abstract",The economic emergence of a fixed exchange rate periphery in Asia has reestablished the United States as the center country in the Bretton Woods international monetary system.,
 ost_m2,国际,2008,,2,,,ost2008,"PDF p. 2, abstract","The size of domestic financial liabilities that could potentially be converted into foreign currency (M2), financial openness, the ability to access foreign currency through debt markets, and exchange rate policy are all significant predictors of reserve stocks.",
 bis_terms,国际,2026,page read 2026-10-14,,,,bis_legal,"Data Portal, Legal, 'BIS statistics'","The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation",
 cbsl_terms,斯里兰卡,2024,,,,,cbsl_bulletin2024,inside cover,"The material appearing in the Bulletin may be reproduced or translated in whole or in part without prior permission (unless it is indicated as copy-righted), provided due credit is given to the Central Bank of Sri Lanka and the Bulletin.",
