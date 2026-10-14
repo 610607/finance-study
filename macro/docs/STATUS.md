@@ -150,8 +150,26 @@ Updated 2026-10-14.
   - Chapter-local symbols ($F$, $\mathit{CA}$, $\mathit{KA}$, $\mathit{FA}$, $\mathit{EO}$) are not in Appendix B.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
 
+## Part 2 — in progress (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part2_notes.md`)
+- Started 2026-10-14: Chapters 6, 7, 8, 9 in that order; Chapter 1 after them.
+- Chapter 6 (美索不达米亚与埃及：神庙、宫廷与记账): written and reviewed. Fixes are in the commit "Chapter 6: independent review fixes".
+  - The edicts: Ammi-ṣaduqa's cancels debts owed to the crown; the innkeeper clause concerns the palace collector's claim (CAD M/2, Ṣ, Kraus's numbering 11′, 14′).
+  - § 48 follows King's "rent", which CAD reads as interest; the debt is not cancelled, only that year's payment.
+  - The CAD mathematical problem asks "how many years"; Erman's two statements (wages in kind; not to think the workmen wretched, pp. 125–126) stand side by side.
+  - The risk reading rests only on the loans the chapter cites (barley loans tied to the harvest at Mari; silver lent at interest at Kanesh); the repayment probability is written $\theta$, because $p$ is the price and $q$ the real exchange rate.
+  - The granary's tax is $I_t$ (harvests differ); Temin (2003) and Slotsky (1997) are cited separately.
+  - The deeper box explains clustered standard errors: dates show no seasonal pattern with errors clustered by year ($p=0.30$) but $p=0.001$ with ordinary errors; barley's joint test is $p=0.023$ (0.031 in $F$ form). The direction of the barley effect cannot be fixed, since the dataset's month numbers are not documented against the Babylonian calendar.
+  - `meso_prices` panel titles now state the finding. `meso_facts` has 123 rows, all verified verbatim; it gains Erman pp. 125–126 and 497, King's gloss on § 273 and Mitchell Innes, and drops the unused § 100 row. The check asserts the dataset's "per mina (=0.5 kg)" metadata.
+  - FORWARD_REFS: rows 53 and 113 done; new rows from Chapter 6 to Chapters 7, 8, 9, 51 and 77.
+  Open points:
+  - Humphrey (1985) and Graeber (2011) could not be obtained; their arguments are paraphrased, not quoted. Slotsky is cited from Temin's bibliography.
+  - The reign years of Sumulael, Samsuiluna, Abi-ešuḫ, Ammi-ṣaduqa and Ramesses IX are not given (no source in hand).
+  - The chapter borrows equations from Chapters 13 and 14 and restates them in place.
+  - Layout, all chapters: a long chapter title wraps and leaves its last character or two alone on the second line (账 in Chapter 6, 命 in Chapter 13, 帝国 in Chapter 14). The title format is in `preamble.tex`, which I have not changed; a ragged or balanced title setting would fix all three. Please say if you want it.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the three figures pass figlint in both languages.
+
 ## Next
-1. Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 2 (Chapters 7–9; Chapter 6 done), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
