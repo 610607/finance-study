@@ -126,7 +126,7 @@ def check_corpus(df: pd.DataFrame) -> None:
         assert n >= 1, f"{r.id}: quotation not found in {r.file}"
         if r.numeral:
             assert r.numeral in q and float(checked(r.numeral)) == float(r.value), r.id
-    quoted("管子 and 盐铁论 quotations found in the corpus", len(sub), 30)
+    quoted("管子 and 盐铁论 quotations found in the corpus", len(sub), 35)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -509,31 +509,45 @@ def band_figure():
     assert before["y"] > 0 and before["s_next"] < 1e-3 and f["stock"] < 1e-3 and f["price"] > P_H + 20   # almost used up
     chk("    famine: price with the granary", f["price"], None)
     chk("    maximum stock", sim["stock"].max(), None)
-    mc = monte_carlo()
+    split = 10                                   # 头十年 and 后二十年 of the text
+    mc = monte_carlo(split=split)
     chk("1000 paths: share of years above the selling price (%)", 100 * mc["need_high"], 20, tol=0.5)
     chk("    held (%)", 100 * mc["held_high"], 35, tol=0.5)
     chk("    share below the buying price (%)", 100 * mc["need_low"], 20, tol=0.5)
     chk("    held (%)", 100 * mc["held_low"], 100)
+    chk("    first 10 years (the granary starts empty): selling price held (%, 约四分之一)", 100 * mc["held_high_early"],
+        25, tol=2)
+    chk("    years 11-30: held (%, 约四成)", 100 * mc["held_high_late"], 40, tol=2.5)
+    chk("    the first (头十年) and the later (后二十年) years", split, 10)
+    chk("    ", cfg["years"] - split, 20)
 
 
-def monte_carlo(n: int = 1000, cfg: dict = BAND_FIG) -> dict:
-    """The band of ex:qinhan-band on n paths of the figure's harvests without the famine (seeds 0..n-1)."""
+def monte_carlo(n: int = 1000, cfg: dict = BAND_FIG, split: int = 10) -> dict:
+    """The band of ex:qinhan-band on n paths of the figure's harvests without the famine (seeds 0..n-1).
+
+    held_high_early / held_high_late: the share of years above the selling price that are held, in the first
+    `split` years of each path (the granary starts empty) and in the remaining years."""
     need_h = held_h = need_l = held_l = 0
+    need_e = held_e = 0
     for seed in range(n):
         q = np.clip(np.random.default_rng(seed).normal(1.0, cfg["sd"], cfg["years"]), *cfg["clip"])
         s = cfg["s0"]
-        for qt in q:
+        for t, qt in enumerate(q, start=1):
             r = band_year(qt, s)
             p = float(free_price(qt))
             if p > P_H + 1e-9:
                 need_h += 1
                 held_h += r["price"] <= P_H + 1e-9
+                if t <= split:
+                    need_e += 1
+                    held_e += r["price"] <= P_H + 1e-9
             if p < P_L - 1e-9:
                 need_l += 1
                 held_l += r["price"] >= P_L - 1e-9
             s = r["s_next"]
     years = n * cfg["years"]
-    return dict(need_high=need_h / years, held_high=held_h / need_h, need_low=need_l / years, held_low=held_l / need_l)
+    return dict(need_high=need_h / years, held_high=held_h / need_h, need_low=need_l / years, held_low=held_l / need_l,
+                held_high_early=held_e / need_e, held_high_late=(held_h - held_e) / (need_h - need_e))
 
 
 def monopoly(F, Y):
@@ -551,6 +565,8 @@ def debate(F, Y):
     chk("81 BC to 初元二年", Y["debate_81"] - Y["cpg_famine"], None)
     for y in (Y["cpg_famine"], Y["yd_abolish"]):
         assert 30 < y - Y["debate_81"] < 40      # 三十多年后
+    assert 30 < Y["debate_81"] - Y["wu_sanguan"] < 40   # 三官专铸到盐铁之议：三十多年后
+    assert Y["ytl_qx_ban"] == Y["debate_81"] == -81
 
 
 def mint(F, Y):
@@ -634,6 +650,30 @@ def wangmang(F, Y):
     chk("    ", sh[2], 30)
     chk("    ", sh[3], 10)
     chk("    ", sh[4], 3)
+    # sizes and weights printed in tab:qinhan-coins: (row, form in the quotation, form in the table); the table
+    # writes the leading 一 that the quotation omits, so both forms are read and compared
+    tex = TEX.read_text(encoding="utf-8")
+    quote = rows().set_index("id")["quote"]
+
+    def length_fen(s: str) -> int:
+        """尺二寸 -> 120, 寸五分 -> 15, 二寸四分 -> 24 (1 尺 = 10 寸 = 100 分; a unit without a numeral counts one)."""
+        return sum((checked(n) if n else 1) * {"尺": 100, "寸": 10, "分": 1}[u]
+                   for n, u in re.findall(r"([一二三四五六七八九十]?)([尺寸分])", s))
+
+    sizes = [("wm_turtle", "元龟岠冉长尺二寸", "元龟长一尺二寸", 120), ("wm_turtle", "公龟九寸", "公龟九寸", 90),
+             ("wm_turtle", "侯龟七寸以上", "侯龟七寸以上", 70), ("wm_turtle", "子龟五寸以上", "子龟五寸以上", 50),
+             ("wm_bu", "小布长寸五分", "小布长一寸五分", 15), ("wm_bu", "各相长一分", "每品长一分", 1),
+             ("wm_bu", "长二寸四分", "大布长二寸四分", 24)]
+    for rid, in_quote, in_table, fen in sizes:
+        assert in_quote in quote[rid] and in_table in tex, (rid, in_quote, in_table)
+        chk(f"tab:qinhan-coins: {in_table} (fen)", length_fen(in_table), length_fen(in_quote))
+        chk("    ", length_fen(in_table), fen)
+    chk("    小布 + 9 steps of 1 fen = 大布 (fen)", length_fen("寸五分") + (F["wm_bu"][5] - 1) * length_fen("一分"),
+        length_fen("二寸四分"))
+    for rid, in_quote, in_table, numeral, value in (("wm_gold", "黄金重一斤", "黄金一斤", "一", 1),
+                                                    ("wm_silver", "重八两为一流", "朱提银八两为一流", "八", 8)):
+        assert in_quote in quote[rid] and in_table in tex and numeral in in_quote and numeral in in_table
+        chk(f"tab:qinhan-coins: {in_table}", float(checked(numeral)), value)
     C = coins()
     q = C.set_index("name")
     for n, w, v in (("小钱", 1, 1), ("幺钱", 3, 10), ("幼钱", 5, 20), ("中钱", 7, 30), ("壮钱", 9, 40), ("大钱", 12, 50),
@@ -684,6 +724,9 @@ def wangmang(F, Y):
     chk("    ", F["wmz_penalty"][1], 5)
     chk("地皇二年", year("地皇", 2), 21)
     assert Y["wmz_100k"] == 21
+    wmz10 = rows().set_index("id").loc["wmz_10", "quote"]
+    assert "但行小大钱二品而已" in wmz10
+    chk("王莽传中, 始建国二年: coins still in use (小大钱二品)", len(F["wm_two"]), 2)
     chk("雒阳以东: rice per shi", F["wm_famine"][0], 2000)
     chk("建武十六年", year("建武", 16), 40)
     assert Y["hhs_wuzhu"] == 40
@@ -699,6 +742,9 @@ def test(F, Y):
     chk("    ", F["fsf_42"][1], 400)
     chk("    ", F["fsf_42"][2], 500)
     chk("    highest / lowest", F["fsf_42"][2] / F["fsf_42"][0], 2.5)
+    upper = F["fsf_42"][0] + 100            # 二百余: at least 200, below 300
+    chk("    二百余 below", upper, 300)
+    chk("    关东 / 京师 at least", F["fsf_42"][2] / upper, 1.7, tol=0.05)
     chk("赵充国: grain per hu", F["zcg_8"][0], 8)
     chk("神爵元年 (BC)", -year("神爵", 1), 61)
     chk("元康四年 (BC)", -year("元康", 4), 62)

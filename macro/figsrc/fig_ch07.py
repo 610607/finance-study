@@ -78,7 +78,7 @@ def greek_silver():
     x, y = zip(*egy)
     ax1.plot(x, y, color=AMBER, lw=1.8, ls=(0, (4, 2)), zorder=3)
     ax1.plot([138, 168, 175, 192], [t2[1], t2[2], t2[3], t2[2]], ls="none", color=AMBER, zorder=4, **SQ)
-    ax1.text(60, 3.9, T("埃及四德拉克马\n18% → 5%", "Egyptian tetradrachm\n18% → 5%"), fontsize=7.8, color=AMBER,
+    ax1.text(60, 3.9, T("埃及四德拉克马\n18% → 5%", "Egyptian\ntetradrachm\n18% → 5%"), fontsize=7.8, color=AMBER,
              ha="left", va="top", linespacing=1.2)
     ax1.set_xlim(50, 300)
     ax1.set_ylim(0.6, 140)
@@ -103,7 +103,7 @@ def greek_silver():
     ax2.plot(s["year"], s["dr_per_artaba"], ls="none", color=AMBER, zorder=3, **SQ)
     ax2.plot(w["year"], w["dr_per_artaba"], ls="none", color=PRICE, zorder=4, **DOT)
     ax2.plot(post["year"], post["dr_per_artaba"], ls="none", color=PRICE, zorder=4, **DOT)
-    ax2.text(60, 40, T("私人价格", "private prices"), fontsize=7.8, color=PRICE, ha="left", va="bottom")
+    ax2.text(45, 40, T("私人价格", "private prices"), fontsize=7.8, color=PRICE, ha="left", va="bottom")
     ax2.text(118, 3.3, T("国家价格", "state prices"), fontsize=7.8, color=AMBER, ha="left", va="top")
     pre = w[w["year"] < 160]["dr_per_artaba"].median()
     mid = w[(w["year"] >= 190) & (w["year"] <= 270)]["dr_per_artaba"].median()

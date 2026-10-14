@@ -127,7 +127,7 @@ def qinhan_wangmang():
     ax1.set_xlabel(T("重量（铢）", "weight (zhu)"), fontsize=9)
     ax1.set_ylabel(T("面值（钱）", "face value (qian)"), fontsize=9)
     _grid(ax1, axis="both")
-    _title(ax1, T("(a) 面值与铜没有比例", "(a) Face value ignores the copper"))
+    _title(ax1, T("(a) 宝货与货布都在五铢钱的比例线以上", "(a) All above the wuzhu line"))
 
     order = ["五铢", "小钱", "幺钱", "幼钱", "中钱", "壮钱", "大钱", "小布", "幺布", "幼布", "厚布", "差布", "中布", "壮布",
              "弟布", "次布", "大布", "货布", "货泉"]
@@ -206,5 +206,4 @@ def qinhan_prices():
     ax.text(-150, 680, T("空心：按金价折算", "hollow: converted at the gold price"), fontsize=7.6, color=AMBER,
             ha="left", va="center")
     _grid(ax)
-    _title(ax, T("记下来的粮价相差两千倍", "Recorded grain prices span a factor of 2,000"))
     return fig
