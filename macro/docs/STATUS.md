@@ -187,9 +187,32 @@ Updated 2026-10-14.
   - Tacitus' "hundred thousand great sesterces" is left as Gordon translates it; no source in hand converts it.
   - The Haklai-Rotenberg PDF (iDAI, personal use) is quoted in short passages only and not redistributed.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
+- Chapter 8 (先秦与秦汉：轻重之术、盐铁与常平仓): written and reviewed. The draft is in "Chapter 8: early China (qingzhong, salt and iron, the ever-normal granary), first draft"; the review fixes are in "Chapter 8: fixes after the independent review; rebuild compiled/".
+  - The model: the ever-normal granary as a price band with a stock (`eq:qinhan-band`). A Monte Carlo summary shows the floor always holds and the ceiling often does not: storage loses 10% a year and grain must be bought before it is sold. Teaching inputs are stated in `checks/check_ch08.py`.
+  - The 《管子》's 币重而万物轻 is set in Chapter 13's quantity equation, with the condition that velocity and the goods for sale stay fixed. The profit on a coin, $v-c-k$, uses Chapter 7's notation and explains 贾谊's two arguments and the 上林三官.
+  - Sources: the 史记, 汉书 and 后汉书 (`verify_quotes.py`), and the 管子 and 盐铁论 (unpunctuated 四库 texts, checked verbatim by the check script). Every quotation was compared with Wikisource. Kanaya (1984) is used for the date of the 轻重 chapters: compiled in the Han, adopted but not as settled, with the earlier datings given.
+  - Contested questions with each side's case: the date of the 轻重 chapters; the 大夫 against the 贤良 and 文学 at the salt and iron debate; free against state minting (贾谊, and the 文学's case against the 三官 coins); design against war and famine for Wang Mang. Law is kept apart from what happened (其货不行; 百姓不从，但行小大钱二品).
+  - Fixes after the review:
+    - The memorial that ended the debate (《盐铁论·取下》) also abolished the iron offices within the passes, not only the liquor monopoly. The reviewer's "最后一篇" is corrected to 取下.
+    - The 600万石 passage now says part of the full granaries was bought with offices and remissions (入粟补吏，及罪以赎).
+    - The 文学's reply on the 三官 coins is added after the 三官 section (或不中式，故有薄厚轻重; 择钱则物稽滞; 内不禁刀币以通民施).
+    - Kanaya's account of the earlier datings is paraphrased.
+    - Wang Mang's 宝货 were refused in the year they were issued (王莽传中).
+    - The Monte Carlo result is split: the first ten years about a quarter, the later twenty about 40%.
+    - 萧望之's objection is dated 五凤中 (57 BC).
+    - Also: the 关东 price ratio (1.7 to 2.5), the 所转贩者/所轉貶者 reading, the takeaway on the quantity equation (now conditional), and two figure titles (`qinhan_prices` loses its single-panel title; `qinhan_wangmang` (a) states the finding).
+    - `qinhan_facts` has 172 rows.
+    - The 本章要点 box no longer leaves its heading alone at the foot of a page.
+  - Outside the chapter: the English `greek_silver` (Chapter 7) had two overlapping labels, which figlint reported; the labels are moved.
+  Open points:
+  - 彭信威《中国货币史》 could not be obtained and is not cited; the chapter rests on the primary texts and Kanaya.
+  - The legacy section names no modern buffer-stock schemes (commodity stabilisation funds, state grain reserves), because no source is in hand.
+  - No dates of birth or death are given for persons (STYLE §3).
+  - The PLAN suggested comparing the 常平仓 with open market operations. The compare box sets it against the interest-rate corridor of Chapter 4 instead, and the text links 贾谊's 以术敛之、以术散之 to open market operations.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the three figures pass figlint in both languages.
 
 ## Next
-1. Part 2 (Chapters 8–9; Chapters 6 and 7 done), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 2 (Chapter 9; Chapters 6, 7 and 8 done), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
