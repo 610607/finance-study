@@ -1,10 +1,10 @@
 {
- "title": "Quotations for Chapter 6 (Mesopotamia and Egypt: temples, palaces and accounts): the Code of Hammurabi in King's translation and the Louvre's notice of the stele, the Chicago Assyrian Dictionary on interest, units, prices and the mīšarum edicts, Visible Language on the earliest writing and the Old Assyrian merchants, Teeter on the date of Ramesses III, Temin on Babylonian prices, Erman on payments, prices and strikes in New Kingdom Egypt, and Smith, Jevons, Menger and Mitchell Innes on the origin of money",
- "source": "L. W. King (1910, Avalon Project); Musée du Louvre; CAD vols. K (1971), M/2 (1977), Ṣ (1962), Š/3 (1992); C. Woods (ed., 2010); E. Teeter (2024); P. Temin (2003); A. Erman (1894, trans. Tirard); A. Smith (1776); W. S. Jevons (1875); C. Menger (1892, trans. Foley); A. Mitchell Innes (1913)",
+ "title": "Quotations for Chapter 6 (Mesopotamia and Egypt: temples, palaces and accounts): the Code of Hammurabi in King's translation and the Louvre's notice of the stele, the Chicago Assyrian Dictionary on interest, units, prices and the mīšarum edicts, Visible Language on the earliest writing and the Old Assyrian merchants, Teeter on the date of Ramesses III, Temin on Babylonian prices, Erman on payments, prices and strikes in New Kingdom Egypt, Smith, Jevons, Menger and Mitchell Innes on the origin of money, and Polanyi and Oppenheim (1957) on redistribution and markets",
+ "source": "L. W. King (1910, Avalon Project); Musée du Louvre; CAD vols. K (1971), M/2 (1977), Ṣ (1962), Š/3 (1992); C. Woods (ed., 2010); E. Teeter (2024); P. Temin (2003); A. Erman (1894, trans. Tirard); A. Smith (1776); W. S. Jevons (1875); C. Menger (1892, trans. Foley); A. Mitchell Innes (1913); K. Polanyi and A. L. Oppenheim in Polanyi, Arensberg & Pearson (eds., 1957)",
  "url": "https://avalon.law.yale.edu/ancient/hamcode.asp",
  "series": "id, dynasty (place), year (negative for BC; approximate where year_note names a period), year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim, as in the document's text layer), note",
  "retrieved": "2026-10-14",
- "license": "Quotations for criticism and teaching, each with its source. King's translation (1910), Erman (1894), Smith (1776), Jevons (1875), Menger (1892) and Mitchell Innes (1913) are in the public domain. The Chicago Assyrian Dictionary, Visible Language and Chicago on the Nile are published as free PDFs by the University of Chicago's Institute for the Study of Ancient Cultures (copyright the University of Chicago); Temin (2003) is an MIT working paper on DSpace@MIT; the Louvre's notice is quoted for the object's date, find-spot, material and size. Only short passages are quoted. Several of the PDFs are scans with a text layer; where that layer misreads a character the quotation keeps its reading and the note gives the printed form.",
+ "license": "Quotations for criticism and teaching, each with its source. King's translation (1910), Erman (1894), Smith (1776), Jevons (1875), Menger (1892) and Mitchell Innes (1913) are in the public domain. The Chicago Assyrian Dictionary, Visible Language and Chicago on the Nile are published as free PDFs by the University of Chicago's Institute for the Study of Ancient Cultures (copyright the University of Chicago); Temin (2003) is an MIT working paper on DSpace@MIT; the Louvre's notice is quoted for the object's date, find-spot, material and size; Polanyi, Arensberg & Pearson (1957, The Free Press) is in copyright and quoted in short passages from the Internet Archive's text of a library copy. Only short passages are quoted. Several of the PDFs are scans with a text layer; where that layer misreads a character the quotation keeps its reading and the note gives the printed form.",
  "used_in": [
   6
  ],
@@ -77,6 +77,13 @@
    "format": "txt",
    "sha256": "fca14cd8169f9b672e0de2fc44667bb5e119a311db08efec3628ee89d9a8b85a",
    "version": "A. Erman, Life in Ancient Egypt, translated by H. M. Tirard (London: Macmillan, 1894); Internet Archive text of the University of Toronto copy (lifeinancientegy00ermauoft)",
+   "retrieved": "2026-10-14"
+  },
+  "polanyi1957": {
+   "url": "https://archive.org/download/in.gov.ignca.36501/36501_djvu.txt",
+   "format": "txt",
+   "sha256": "cfb1cf028373b9d89d8d736406876fa903c30c3cdadaecc41aaa1011c0cf612f",
+   "version": "K. Polanyi, C. M. Arensberg and H. W. Pearson (eds.), Trade and Market in the Early Empires: Economies in History and Theory (Glencoe, Ill.: The Free Press, 1957); ch. II, K. Polanyi, 'Marketless Trading in Hammurabi's Time', pp. 12-26, and ch. III, A. L. Oppenheim, 'A Bird's-Eye View of Mesopotamian Economic History', pp. 27-37; Internet Archive text of the copy in the Central Archaeological Library, New Delhi (in.gov.ignca.36501)",
    "retrieved": "2026-10-14"
   },
   "innes1913": {
