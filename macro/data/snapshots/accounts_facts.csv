@@ -26,6 +26,20 @@ k_housewives,美国,1934,,,,,kuznets1934,p. 6,"including those efforts which, li
 k_distribution,美国,1934,,,,,kuznets1934,p. 6,Economic welfare cannot be adequately measured unless the personal distribution of income is known.,
 k_welfare,美国,1934,,,,,kuznets1934,p. 7,"The welfare of a nation can, therefore, scarcely be inferred from a measurement of national income as defined above.",
 k_30pct,美国,1934,,30,%,,kuznets1934,p. 7,"such inferences that a decline of 30 percent in the national income (in terms of ""constant"" dollars) means a 30 percent decline in the total productivity of the nation, and a corresponding decline in its welfare.",Kuznets's example of an abuse
+k_misleading,美国,1934,,,,,kuznets1934,p. 12,But this appears to be a misleading description of the situation during recent years.,the description: that the flow of net income to individuals was sustained through a draft by business enterprises upon their capital and surplus
+k_rigid,美国,1932,1931—1932,,,,kuznets1934,p. 12,"may be imputed not to the sustention of income payments to individuals but to the coverage of other, rather rigid costs.",a large part of the business losses incurred in 1931 and 1932
+k_bad_debts,美国,1931,1929—1931,5.4,十亿美元,,kuznets1934,p. 12,"The combined items of bad debts, depreciation, and depletion","amounted to 5.4 billion dollars in each of the 3 years 1929-1931 (corporations, Statistics of Income)"
+k_exaggerated,美国,1934,,,,,kuznets1934,p. 11,may have been exaggerated by accounting practices,net losses of enterprises (the word before is garbled in the text layer)
+k_imputed_rent,美国,1930,,2.7,十亿美元,,kuznets1934,p. 12,But there is some doubt as to the propriety of including this item,"imputed net rental of owner-occupied homes, about 2.7 billion dollars in 1930, left out of table 1"
+k_taxes_cost,美国,1934,,,,,kuznets1934,p. 26,"income produced (i.e., cost of goods, taxes, depreciation and depletion, bad debts",the cost items not covered under income produced
+k_withdrawals,美国,1934,,,,,kuznets1934,p. 2,Withdrawals by individual entrepreneurs.,item 6 of income paid out
+k_rents_entrepreneurial,美国,1934,,,,,kuznets1934,"p. 2, note",as an entrepreneurial income from the industry of real estate,"net rents and royalties, usually classified as property income, defined by Kuznets as entrepreneurial income (item 8)"
+k_urban_cpi,美国,1934,,,,,kuznets1934,p. 13,refers only to urban wage earners,the BLS cost of living index; its weights were based on a survey taken 15 years before
+k_all_inclusive,美国,1934,,,,,kuznets1934,p. 13,"Net income produced could best be adjusted by an all-inclusive price index, covering both commodities and services, at wholesale and at retail.",no such index was available
+k_wholesale_bias,美国,1932,1929—1932,,,,kuznets1934,p. 13,The latter index probably shows a larger decline from 1929 to 1932 than would have been indicated by a more inclusive price index.,the latter = the BLS wholesale price index
+k_real_paid_25,美国,1932,1929—1932,25,%,,kuznets1934,p. 13,the contraction in purchasing power of income paid out may have amounted to 25 percent of the 1929 volume.,income paid out against the cost of living index
+k_real_produced_30_40,美国,1932,1929—1932,30;40,%,,kuznets1934,p. 13,and by 1932 from 30 to 40 percent.,income produced against the wholesale price index
+k_straight_line,美国,1934,,,,,kuznets1934,p. 11,"the prevailing practice of straight-line depreciation based on cost of the fixed assets may mean, in a period of declining prices, not capital preservation but capital accumulation by the enterprise.",
 sna_va,,2009,,,,,sna2008,para. 2.138,"GDP is the sum of gross value added of all resident producer units plus that part (possibly the total) of taxes on products, less subsidies on products, that is not included in the valuation of output.",
 sna_final,,2009,,,,,sna2008,para. 2.139,"GDP is also equal to the sum of the final uses of goods and services (all uses except intermediate consumption) measured at purchasers’ prices, less the value of imports of goods and services.",
 sna_income,,2009,,,,,sna2008,para. 2.140,GDP is also equal to the sum of primary incomes distributed by resident producer units.,
@@ -117,3 +131,19 @@ ie_nfi,爱尔兰,2015,2014—2016,-28.7;-54.8;-47.8,十亿欧元,,cso2017,Table 
 ie_redomiciled,爱尔兰,2015,2014—2016,-6.9;-4.7;-5.8,十亿欧元,,cso2017,Table 1,of re-domiciled companies -6.9 -4.7 -5.8,less factor income (mainly profits) of re-domiciled companies
 ie_ip_dep,爱尔兰,2015,2014—2016,-0.8;-25.0;-27.8,十亿欧元,,cso2017,Table 1,less Depreciation on R&D related IP imports -0.8 -25.0 -27.8,
 ie_aircraft,爱尔兰,2015,2014—2016,-3.8;-4.6;-5.0,十亿欧元,,cso2017,Table 1,less Depreciation on aircraft related to leasing -3.8 -4.6 -5.0,
+sna_gni_taxes,,2009,,,,,sna2008,para. 2.143,"GNI is equal to GDP less taxes (less subsidies) on production and imports, compensation of employees and property income payable to the rest of the world plus the corresponding items receivable from the rest of the world.",taxes on production and imports are primary incomes (of government)
+sna_owner_occupied,,2009,,,,,sna2008,para. 6.34,The production of housing services for their own final consumption by owner occupiers has always been included within the production boundary in national accounts,
+sna2025_depletion,,2025,,,,,sna2025,Key changes (introduction),"Depletion is treated as a cost of production, alongside depreciation, in the calculation of net domestic product and other net measures.",pre-edit (white cover) version
+sna2025_ndp,,2025,,,,,sna2025,Key changes (introduction),"the volume change of net domestic product (NDP) is identified as the conceptually preferred measure of economic growth, not replacing but to be used alongside the volume change of gross domestic product (GDP).",pre-edit (white cover) version
+nobel_motivation,英国,1984,1984-10-18,,,,nobel1984,press release,"for having made fundamental contributions to the development of systems of national accounts and hence, greatly improved the basis for empirical economic analysis.","Royal Swedish Academy of Sciences, prize to Richard Stone"
+nobel_wartime,英国,1984,,,,,nobel1984,press release,This new analytical technique was introduced during the Second World War primarily in the United Kingdom where it was inspired by John Maynard Keynes.,
+nobel_balance,英国,1984,,,,,nobel1984,press release,"Keynes started from a balancing between total current resources (the real gross national product) on the supply side, and total consumption, investments and disbursements on warfare on the demand side.",
+nobel_assistants,英国,1984,,,,,nobel1984,press release,"As expert at the Treasury, Keynes was assisted by two young economists: James Meade (Economics prize Winner in 1977) and Richard Stone.",
+nobel_double_entry,英国,1984,,,,,nobel1984,press release,"Each item of revenue or expenditure on one side of an account should reappear as expenditure or revenue, respectively, in another account.","Stone, 1940"
+nobel_agree,英国,1984,,,,,nobel1984,press release,Figures from different sources had to agree.,
+nobel_un,英国,1984,,,,,nobel1984,press release,"Immediately after the war, Stone headed an international group of experts under the auspices of the United Nations (initially the League of Nations) for the preparation of standardized forms for national accounts which could be recommended for international use.",
+stone_dates,英国,1913,1913—1991,1913;1991,年,,nobel_stone,facts,"Born: 30 August 1913, London, United Kingdom Died: 6 December 1991, Cambridge, United Kingdom",
+meade_dates,英国,1907,1907—1995,1907;1995,年,,nobel_meade,facts,"Born: 23 June 1907, Swanage, United Kingdom Died: 22 December 1995, Cambridge, United Kingdom",
+kk_durables,美国,2019,,,,,kk2019,p. 2,Household production (table 1) is the value of these hours worked plus the consumer durables used.,
+nbs_trend,中国,2006,,,,,nbs2006a,section 1,修订之后的 GDP 基本保持了原数据时间序列的变化趋势。,after the trend-deviation revision of 1993-2004
+mps_scope,中国,1992,,,,,nbs2010,web page,将国民经济行业从物质生产部门扩大到国民经济的所有行业,what the new (1992) accounting system changed relative to the MPS

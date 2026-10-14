@@ -1,15 +1,15 @@
 {
-  "title": "Quotations on national accounting: Kuznets's 1934 report, the SNA, China's move from the MPS to the SNA and the 2004 census revision, US household production, Ireland's GNI* (Chapter 2)",
-  "source": "U.S. Senate Document 124 (1934, Kuznets); BEA's account of its origins (Survey of Current Business, 2020); System of National Accounts 2008; UN Statistics Division page on the 2025 SNA; National Bureau of Statistics of China (2006, 2010); Kanal & Kornegay (2019, BEA); Central Statistics Office, Ireland (2017)",
+  "title": "Quotations on national accounting: Kuznets's 1934 report, the SNA, China's move from the MPS to the SNA and the 2004 census revision, US household production, Ireland's GNI*, the wartime British origin of the accounts and the 2025 SNA (Chapter 2)",
+  "source": "U.S. Senate Document 124 (1934, Kuznets); BEA's account of its origins (Survey of Current Business, 2020); System of National Accounts 2008; UN Statistics Division page on the 2025 SNA; National Bureau of Statistics of China (2006, 2010); Kanal & Kornegay (2019, BEA); Central Statistics Office, Ireland (2017); the Royal Swedish Academy of Sciences' 1984 press release and the laureates' pages on nobelprize.org; System of National Accounts 2025 (pre-edit version)",
   "url": "see sources",
   "series": "one row per quoted fact: id, dynasty (here: country), year, year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page, paragraph or table), quote (verbatim), note",
   "retrieved": "2026-10-14",
-  "license": "Short quotations only, for comment and teaching. The 1934 Senate document and the BEA article are works of the US government (public domain); the SNA and the UN page are United Nations publications; the NBS and CSO documents are official publications, quoted, not copied.",
+  "license": "Short quotations only, for comment and teaching. The 1934 Senate document and the BEA article are works of the US government (public domain); the SNA and the UN page are United Nations publications; the NBS and CSO documents are official publications, quoted, not copied; the nobelprize.org pages (© Nobel Prize Outreach) are quoted, not copied.",
   "used_in": [
     2
   ],
   "fetch": "data/fetch/verify_web_quotes.py",
-  "notes": "Rows citing pdf and html sources are checked against the downloaded documents by verify_web_quotes.py (all files were downloaded twice on 2026-10-14 with the same SHA-256). Rows citing kuznets1934img were read by eye on page images of the same PDF: the text layer of the 1934 report is an OCR of a worn copy and garbles Table 1. In Table 1, line 1 (income paid out) plus line 2 (business savings) equals line 3 (income produced) exactly for 1929, 1930 and 1931; for 1932 the print of line 1 is damaged and is read as 48,894, the value that keeps the identity (the text layer has 43.891). The page numbers of the report are its printed numbers (PDF page 13 is p. 1, PDF page 22 is p. 10). Kuznets's national income is a net concept (after depreciation) and covers market activity; it is not comparable with today's BEA estimates for the same years without adjustment. The NBS tables (2006) give 2004 GDP and the revised 1993-2004 series after the first economic census, in 100 million yuan at current prices; the rows census_rev_YYYY quote each row of Table 1 of the first note. Kanal & Kornegay (2019) write that household production 'accounted for 37 percent of the satellite account's output in 1965' and 23 percent in 2017, but their Table 2 gives these as the impact on NIPA GDP (Table 1: 1,019.7 against 742.3 and 24,001.5 against 19,485.4 billion dollars); the chapter follows the tables. The CSO's 'level shift in GDP of 26%' for 2015 is the volume change as published in July 2016; Table 1 of the same notice gives current-price GDP of 194.5 and 262.0 billion euro for 2014 and 2015 (a different vintage: mid-2017).",
+  "notes": "Rows citing pdf and html sources are checked against the downloaded documents by verify_web_quotes.py (all files were downloaded twice on 2026-10-14 with the same SHA-256). Rows citing kuznets1934img were read by eye on page images of the same PDF: the text layer of the 1934 report is an OCR of a worn copy and garbles Table 1. In Table 1, line 1 (income paid out) plus line 2 (business savings) equals line 3 (income produced) exactly for 1929, 1930 and 1931; for 1932 the print of line 1 is damaged and is read as 48,894, the value that keeps the identity (the text layer has 43.891). The page numbers of the report are its printed numbers (PDF page 13 is p. 1, PDF page 22 is p. 10). Kuznets's national income and today's BEA national income are both net of depreciation, but they are not comparable without adjustment: BEA's follows the SNA and includes taxes on production and imports (primary incomes of government; SNA para. 2.143) and the imputed rent of owner-occupied homes (para. 6.34), both of which Kuznets left out (pp. 12, 26); Kuznets's business savings come from the firms' own books, with inventories and depreciation valued by accounting rules (p. 11); and his 1932 figures were provisional. The NBS tables (2006) give 2004 GDP and the revised 1993-2004 series after the first economic census, in 100 million yuan at current prices; the rows census_rev_YYYY quote each row of Table 1 of the first note. Kanal & Kornegay (2019) write that household production 'accounted for 37 percent of the satellite account's output in 1965' and 23 percent in 2017, but their Table 2 gives these as the impact on NIPA GDP (Table 1: 1,019.7 against 742.3 and 24,001.5 against 19,485.4 billion dollars); the chapter follows the tables. The CSO's 'level shift in GDP of 26%' for 2015 is the volume change as published in July 2016; Table 1 of the same notice gives current-price GDP of 194.5 and 262.0 billion euro for 2014 and 2015 (a different vintage: mid-2017). The pages on nobelprize.org (2026-10-14) give the Royal Swedish Academy's account of the wartime British origin of the accounts (Keynes, Meade and Stone) and the life dates of Stone and Meade; the 2025 SNA rows quote the pre-edit version's summary of key changes.",
   "sources": {
     "bea2020": {
       "url": "https://apps.bea.gov/scb/issues/2020/09-september/0920-reprints-1930s.htm",
@@ -80,6 +80,34 @@
       "format": "pdf",
       "sha256": "7a94ffa9b647963dbead7071a2a37029d4de907c0130d4282bcca1cdccd01200",
       "version": "Central Statistics Office, 'NIE 2016 Frequently Asked Questions', information notice published with National Income and Expenditure 2016 (2017)",
+      "retrieved": "2026-10-14"
+    },
+    "sna2025": {
+      "url": "https://unstats.un.org/unsd/nationalaccount/docs/2025_SNA_Pre-edit.pdf",
+      "format": "pdf",
+      "sha256": "5778ffe0350e634954473a59e9f85e2cb33da8f280b43de2a725847424ebcdb6",
+      "version": "System of National Accounts 2025, pre-edit ('white cover') version (European Commission, IMF, OECD, United Nations, World Bank; New York, 2025), 1,260 pages",
+      "retrieved": "2026-10-14"
+    },
+    "nobel1984": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1984/press-release/",
+      "format": "html",
+      "sha256": "0eba2bed6dd2dc0f5ae037a376fded37abde7b96fd60193c274cb71a781d1dea",
+      "version": "Royal Swedish Academy of Sciences, press release of 18 October 1984 (the prize in economic sciences to Richard Stone), on nobelprize.org",
+      "retrieved": "2026-10-14"
+    },
+    "nobel_stone": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1984/stone/facts/",
+      "format": "html",
+      "sha256": "5852d758197fd7aaf2243dcbd056c54af54b2366019c8784ebc8960bed4558a1",
+      "version": "nobelprize.org, 'Richard Stone - Facts'",
+      "retrieved": "2026-10-14"
+    },
+    "nobel_meade": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1977/meade/facts/",
+      "format": "html",
+      "sha256": "e4c0318902f37b80bdf430d4a3a81ba61887694fe86837c73786cc179f8fb1a2",
+      "version": "nobelprize.org, 'James E. Meade - Facts'",
       "retrieved": "2026-10-14"
     }
   }

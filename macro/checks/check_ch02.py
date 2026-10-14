@@ -182,7 +182,12 @@ def ex_kuznets(F):
     quoted("wholesale prices 1932 (1929 = 100)", idx[3], 68.0, tol=0)
     quoted("real income paid out 1932 (% of 1929)", 100 * idx[0] / idx[2], 75.0, tol=0.05)
     quoted("  real decline (%)", 100 - 100 * idx[0] / idx[2], 25.0, tol=0.05)
-    quoted("real income produced 1932 (% of 1929)", 100 * idx[1] / idx[2], 59.0, tol=0.05)
+    quoted("real income produced 1932, cost of living (% of 1929)", 100 * idx[1] / idx[2], 59.0, tol=0.05)
+    # Kuznets (p. 13) deflates income produced by the wholesale index, which falls more than an all-inclusive index
+    # would; the two indexes bound the real decline of income produced
+    quoted("real income produced 1932, wholesale prices (% of 1929)", 100 * idx[1] / idx[3], 69.7, tol=0.05)
+    quoted("  real decline of income produced: low end (%)", 100 - 100 * idx[1] / idx[3], 30, tol=0.5)
+    quoted("  real decline of income produced: high end (%)", 100 - 100 * idx[1] / idx[2], 41, tol=0.5)
 
 
 def cloth():
@@ -320,9 +325,14 @@ def balances(B):
 
 def gni(B, F):
     print("-- 2.5 GDP and GNI")
+    # BEA's GNP starts from GDP, its GNI from GDI: the two differ by the statistical discrepancy (BEA rounds each
+    # series separately; the largest residual, 18 million dollars in 2015, is under 0.0001% of GDP)
+    assert all((B.gnp - B.gni - B.stat_discrepancy).abs() <= 20), "GNP - GNI = statistical discrepancy"
     quoted("US 2024: GNP - GDP (% of GDP)", 100 * (B.gnp[2024] - B.gdp[2024]) / B.gdp[2024], -0.12, tol=0.005)
+    quoted("US 2024: GNI - GDP (% of GDP)", 100 * (B.gni[2024] - B.gdp[2024]) / B.gdp[2024], -0.41, tol=0.005)
     gdp, gni_, star = F["ie_gdp"], F["ie_gni"], F["ie_gnistar_values"]
     quoted("Ireland: GDP 2014 -> 2015, current prices (%)", 100 * (gdp[1] / gdp[0] - 1), 34.7, tol=0.05)
+    quoted("Ireland: GNI* 2014 (100 million euro)", 10 * star[0], 1545, tol=0)
     quoted("Ireland: GNI* 2014 -> 2015 (%)", 100 * (star[1] / star[0] - 1), 11.9, tol=0.05)
     quoted("Ireland 2015: GNI / GDP (%)", 100 * gni_[1] / gdp[1], 79.1, tol=0.05)
     quoted("Ireland 2015: GNI* / GDP (%)", 100 * star[1] / gdp[1], 66.0, tol=0.05)
