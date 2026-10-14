@@ -1,0 +1,90 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+ham_translator,巴比伦,-1750,,,,,king1910,title,Translated by L. W. King,
+ham_gap,巴比伦,-1750,,34,paragraphs,,king1910,after § 65,"[Here a portion of the text is missing, apparently comprising thirty-four paragraphs.]",
+ham_100,巴比伦,-1750,,,,,king1910,§ 100,"interest for the money, as much as he has received, he shall give a note therefor",
+ham_48a,巴比伦,-1750,,,,,king1910,§ 48,in that year he need not give his creditor any grain,
+ham_48b,巴比伦,-1750,,,,,king1910,§ 48,he washes his debt-tablet in water and pays no rent for this year,
+ham_117,巴比伦,-1750,,3;4,years,,king1910,§ 117,"they shall work for three years in the house of the man who bought them, or the proprietor, and in the fourth year they shall be set free",
+ham_257,巴比伦,-1750,,8,gur of corn per year,,king1910,§ 257,"If any one hire a field laborer, he shall pay him eight gur of corn per year.",
+ham_273,巴比伦,-1750,,6,gerahs per day,,king1910,§ 273,six gerahs in money per day,"from the New Year until the fifth month; King's 'gerah' renders the Babylonian grain (SE), 1/180 shekel"
+louvre_date,巴比伦,-1792,reign of Hammurabi,-1792;-1750,year,,louvre_sb8,notice,Code de Hammurabi -1792 / -1750 (1ère dynastie de Babylone : Hammurabi),
+louvre_found,苏萨,1901,,1901;1902,year,,louvre_sb8,notice,Date of discovery 1901-1902 Place of discovery Suse,
+louvre_basalt,巴比伦,-1750,,,,,louvre_sb8,notice,Matériau : basalte,
+louvre_height,巴比伦,-1750,,225,cm,,louvre_sb8,notice,Hauteur : 225 cm,
+cad_le18a,埃什努纳,-1800,Old Babylonian,36;100,grains per shekel; silas per kur,,cad_s,"vol. Ṣ, p. 159, s.v. ṣibtu A, mng. 1b ('in the codes'), citing Goetze LE § 18A","shekel one pays as interest 36 grains, per kur one pays as interest 100 (silas) of barley",the word 'per' before 'shekel' ends the preceding line of the two-column page
+cad_chL,巴比伦,-1750,,38,page,,cad_s,"vol. Ṣ, p. 159, s.v. ṣibtu A","of. also CH § L, see Driver and Miles Babylonian Laws p. 38",'of.' is the text layer's reading of 'cf.'
+cad_ch48,巴比伦,-1750,,,,,cad_s,"vol. Ṣ, p. 159, s.v. ṣibtu A (CH § 48:15)",he need not pay interest for that year,
+cad_60a,巴比伦,-1800,Old Babylonian,60,grains per shekel,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, mng. 1b-1' (OB, Babylonia) (PSBA 21 pl. opp. p. 159:2)","sixty grains' (i.e., one-","the sentence continues, after a line break, in row cad_60b"
+cad_60b,巴比伦,-1800,Old Babylonian,3,shekel = 3 x 60 grains,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, mng. 1b-1' (OB, Babylonia) (PSBA 21 pl. opp. p. 159:2)",third shekel) interest on each shekel,
+cad_third_mina,巴比伦,-1800,Old Babylonian,1;3,one-third mina per mina,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, mng. 1b-1' (OB, Babylonia) (PBS 8/2 195:2)","third mina(!) for one mina, as interest",the line before reads 'he pays one-'
+cad_100silas1,伊什查利、哈法耶,-1800,Old Babylonian,100,silas per gur,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, mng. 1b-1' (OB, Babylonia), 2' from Ishchali, Khafajah",he pays 100 silas as interest,continued after a line break by row cad_100silas2
+cad_100silas2,伊什查利、哈法耶,-1800,Old Babylonian,,,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, mng. 1b-1' (OB, Babylonia), 2' from Ishchali, Khafajah (UCP 10 120 No. 46:3)",on each gur of barley,
+cad_fair,巴比伦,-1800,Old Babylonian,,,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, mng. 1b-1' (OB, Babylonia) (Gautier Dilbat 51:2 and others)",fair (rate of) interest,
+cad_equal,,,Old Babylonian mathematical texts,,,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A (TMB 72 No. 146:2)",will (capital and interest) become equal?,"followed by 'TMB 72 No. 146:2, for other math. texts, see MKT'"
+cad_mari1,马里,-1780,"Old Babylonian, Mari",,,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, 3' from Mari (ARM 2 81:23)",heaven forbid that they collect from us the barley and the interest on it at harvest time,
+cad_mari2,马里,-1780,"Old Babylonian, Mari",,,,cad_s,"vol. Ṣ, p. 160, s.v. ṣibtu A, 3' from Mari (ARM 2 81, l. 17)",whether they have to return (the barley) with interest at harvest time or the principal only,
+cad_oa_rate,亚述（卡尼什）,-1900,Old Assyrian,1.5,shekels per month per mina,,cad_s,"vol. Ṣ, p. 159, s.v. ṣibtu A, mng. 1a-2' 'with indication of the rate of interest' (TCL 21 213:8, 'and passim')",he adds one and a half shekels per month for each mina,
+cad_oa_compound,亚述（卡尼什）,-1900,Old Assyrian,,,,cad_s,"vol. Ṣ, p. 159, s.v. ṣibtu A (KT Hahn 8:12f.)",we shall charge you interest and compound interest,
+cad_shekel,,,,60;8.33,shekels per mina; grams,,cad_sh3,"vol. Š/3, p. 96, s.v. šiqlu","shekel (a measure of weight, one sixtieth of a mina, about eight and one-third grams)",8.33 is 'eight and one-third'
+cad_standard,,,,1,shekel,,cad_sh3,"vol. Š/3, p. 97, s.v. šiqlu, mng. 1c-1'",one shekel (of silver or gold) as standard of value,
+cad_le1_barley,埃什努纳,-1800,Old Babylonian,1;1,kur of barley; shekel of silver,,cad_sh3,"vol. Š/3, p. 97, s.v. šiqlu, mng. 1c-1' (Goetze LE § 1 A i 8)",1 GUR e'um ana 1 GfN kaspim Goetze LE § 1 A i 8,"the text layer's reading of '1 GUR še'um ana 1 GÍN kaspim', 1 kur of barley for 1 shekel of silver"
+cad_le1_wool,埃什努纳,-1800,Old Babylonian,6;1,minas of wool; shekel of silver,,cad_sh3,"vol. Š/3, p. 63, s.v. šipātu",six minas of wool for one shekel of silver Goetze LE § 1 A i 13,
+cad_kurru,,,,300,qa per kur,,cad_k,"vol. K, p. 565, s.v. kurru A (discussion section)",the kurru has 300 qi-measures,'qi' is the text layer's reading of 'qû'; the sentence begins 'In OAkk. and OB texts'
+cad_grains180,,,,180,grains per shekel,,cad_k,"vol. K, p. 416, discussion of **kisal (AHw. 485a)",divided into 180 §E,"the text layer's reading of '[the NI+GIŠ] was divided into 180 ŠE exactly as the GÍN', i.e. the shekel"
+cad_misharum,巴比伦,,Old Babylonian,,,,cad_m2,"vol. M/2, p. 116, s.v. mīšaru A, mng. 1","redress (as a legislative act to remedy certain economic malfunctions, OB only)",
+cad_sumulael,巴比伦,,Old Babylonian,,,,cad_m2,"vol. M/2, p. 116, s.v. mīšaru A, mng. 1 (BE 6/1 8:19)",King Sumulael had promulgated a m.,
+cad_broke,巴比伦,,Old Babylonian,,,,cad_m2,"vol. M/2, p. 117, s.v. mīšaru A, mng. 1 (Studies Landsberger 234:9)",they broke the sales documents that had become invalid,the sentence continues 'according to the m.-promulgation'
+cad_abiesuh,巴比伦,,Old Babylonian,2,regnal year,,cad_m2,"vol. M/2, p. 117, s.v. mīšaru A, mng. 1 (Edzard Tell ed-Der No. 234:16)",(Abi-esuh year 2),a reference for the phrase 'the king established a m.'
+cad_samsuiluna,巴比伦,,Old Babylonian,,,,cad_m2,"vol. M/2, p. 252, s.v. mušaddinu, mng. a (Studies Landsberger 227:15)",(Edict of Samsuiluna),
+cad_innkeeper,巴比伦,,Edict of Ammiṣaduqa,,,,cad_m2,"vol. M/2, p. 252, s.v. mušaddinu, mng. a (Kraus Edikt § 14':9)","the collector will not collect the arrears stemming from those (transactions, i.e., credits given by the innkeeper)",
+cad_collector1,巴比伦,,Edict of Ammiṣaduqa,,,,cad_m2,"vol. M/2, p. 252, s.v. mušaddinu, mng. a (RA 63 48:10)",the collector may not demand payment from the house,
+cad_collector2,巴比伦,,Edict of Ammiṣaduqa,2,section,,cad_m2,"vol. M/2, p. 252, s.v. mušaddinu, mng. a",hold of any crown tributary (Edict of Ammisaduqa § 2),"the end of the sentence in row cad_collector1, after a line break of the two-column page"
+cad_arrears,巴比伦,,Edict of Ammiṣaduqa,,,,cad_m2,"vol. M/2, p. 252, s.v. mušaddinu, mng. a (Kraus Edikt § 11':27)",the arrears of the tenant farmers which were submitted to the collector for collecting are remitted,the sentence continues 'they will not be collected'
+vl_uruk,乌鲁克,-3350,,-3350;-3100,year,,woods2010,"p. 34 (C. Woods, ch. 2)",During the Late Uruk period (ca. 3350–3100 bc),
+vl_pop,乌鲁克,-3200,,20000;50000,people,,woods2010,"p. 34 (C. Woods, ch. 2)","swelling to a population of 20,000 to 50,000 individuals",
+vl_3200,乌鲁克,-3200,,-3200,year,,woods2010,"p. 34 (C. Woods, ch. 2)","The date traditionally given for the invention of writing in Mesopotamia is 3200 bc, but this is more or less conventional.",
+vl_lit,乌鲁克,-3200,,,,,woods2010,"p. 34 (C. Woods, ch. 2)",literature plays no role in the origins of writing in Mesopotamia,
+vl_90,乌鲁克,-3200,,90,percent,,woods2010,"p. 37 (C. Woods, ch. 2)",the majority of the archaic text corpus — about 90 percent — is administrative in nature,
+vl_eana,乌鲁克,-3200,,,,,woods2010,"p. 37 (C. Woods, ch. 2)","the Eana, the sacred precinct and central economic unit of Uruk",
+vl_ob,巴比伦,-2000,,-2000;-1595,year,,woods2010,"p. 92 (A. Seri, ch. 3)",in the Old Babylonian period (ca. 2000–1595 bc),
+vl_kanes,卡尼什,-2000,,-2000;-1730,year,,woods2010,"p. 99 (T. van den Hout, ch. 4)",lasted from about 2000 into the 1730s. The most important center was the city of Kanes,
+vl_20000,卡尼什,-1900,,20000,records,,woods2010,"p. 99 (T. van den Hout, ch. 4)",Over twenty thousand records,
+teeter_r3,埃及,-1184,reign of Ramesses III,-1184;-1153,year,,teeter2024,p. 10,"of Ramesses III (ca. 1184–1153 bc), because, in",
+temin_silver,地中海,-1000,,,,,temin2003,p. 10,"There were no coins as yet, and it was the weight of silver that determined the value of a transaction.",
+temin_six,巴比伦,-400,,6;400,commodities; years,,temin2003,p. 11,a series of monthly market prices for six agricultural commodities for 400 years in ancient Babylon,describing Slotsky (1997)
+temin_walk,巴比伦,-400,,,,,temin2003,p. 11,"the Babylonian agricultural prices moved like the random walk of modern prices, and they varied together in response to exogenous events that affected all crops.",Temin's summary of Temin (2002)
+temin_market,巴比伦,-400,,,,,temin2003,p. 11,These changes are clearly understood within a market framework; they are impossible to understand within an administrative one.,
+erman_salary,埃及,,New Kingdom,,,,erman1894,p. 121,"had to live on their salaries, which consisted as a rule of payment in kind",
+erman_default,埃及,,New Kingdom,,,,erman1894,p. 122,we have at any rate in the letters of that time many complaints of default of payment,
+erman_skins,埃及,,New Kingdom,4;8,pieces; uten,,erman1894,p. 123,"Skins, raw, 4 pieces, worth in copper 8 Uten.",
+erman_five,埃及,,New Kingdom,5,uten per year,,erman1894,p. 123,he had to pay five Uten,
+erman_corn28,底比斯,,Ramesses IX,28,day of the month,,erman1894,p. 125,The supply of corn was due to our company on the 28th of each month,
+erman_strike1,底比斯,,Ramesses IX,,,,erman1894,p. 125,"in Pharmuthi it was not delivered at all, and the workmen therefore went on strike",
+erman_year29,底比斯,,Ramesses III,29,regnal year,,erman1894,p. 125,in the 2Qth year of Ramses III.,'2Qth' is the text layer's reading of '29th'
+erman_strike2,底比斯,,Ramesses III,,,,erman1894,p. 125,they were almost always obliged to enforce the payment of every supply of the food owing to them by a strike of work,
+erman_18,底比斯,,Ramesses III,18,days,,erman1894,p. 126,We have been starving for 18 days,
+erman_hunger,底比斯,,Ramesses III,,,,erman1894,p. 126,"We have been driven here by hunger and thirst; we have no clothes, we have no oil, we have no food.",
+erman_empty,底比斯,,Ramesses III,,,,erman1894,p. 126,what he could give them when the storehouses were empty,
+erman_barter,埃及,,,,,,erman1894,p. 496,"for all the trade of Egypt was carried on by barter, and nothing was given in payment except goods or produce.",
+erman_nocoin,埃及,,,,,,erman1894,p. 496,"lend on interest, pay salaries, and collect taxes without even knowing the use of small coin",
+erman_amber,苏丹,1890,Erman's present day,,,,erman1894,p. 497,amber beads really play the part of money,
+erman_uten,埃及,,New Kingdom,1;91,uten; grams,,erman1894,p. 497,"a copper piece of one uten, i.e. of 91 grammes, was in use as a measure of value",
+erman_ox119,埃及,,New Kingdom,119,uten,,erman1894,p. 497,119 uten of copper were to be paid up in all,
+erman_ox111,埃及,,New Kingdom,111,uten,,erman1894,p. 497,1 1 1 uten for the animal itself,'1 1 1' is the text layer's reading of '111'
+erman_nochange,埃及,,New Kingdom,119,uten,,erman1894,p. 497,but of these 119 uten not one metal uten really changed hands,
+erman_subst,埃及,,New Kingdom,25;12;11;11,uten; uten; jars; uten,,erman1894,p. 497,"A stick (?) with inlaid work was substituted for 25 uten, and another of less elaborate design for 12 uten, 11 jars of honey for 11 uten",
+erman_donkey,埃及,,New Kingdom,40,uten,,erman1894,p. 497,gives the value of a donkey as 40 uten,
+erman_ratio,埃及,,New Kingdom,3;1,,,erman1894,p. 497,The relative value therefore of an ox and a donkey was as three to one.,
+smith_butcher,,1776,,,,,smith1776,"Book I, ch. IV","The butcher has more meat in his shop than he himself can consume, and the brewer and the baker would each of them be willing to purchase a part of it.",
+smith_cattle,,1776,,,,,smith1776,"Book I, ch. IV","In the rude ages of society, cattle are said to have been the common instrument of commerce",
+smith_nails,苏格兰,1776,,,,,smith1776,"Book I, ch. IV",for a workman to carry nails instead of money to the baker's shop or the ale-house,
+jevons_double,,1875,,,,,jevons1875,p. 3,"to allow of an act of barter, there must be a double coincidence",
+jevons_4950,,1875,,100;4950,articles; ratios,,jevons1875,p. 5,Between one hundred articles there must exist no less than 4950 possible ratios of exchange,
+jevons_measure,,1875,,,,,jevons1875,p. 5,The chosen commodity becomes a common denominator or common measure of value,
+menger_media,,1892,,,,,menger1892,p. 239,becoming universally acceptable media of exchange,
+menger_law,,1892,,,,,menger1892,p. 255,Money has not been generated by law.,
+innes_primitive,,1913,,,,,innes1913,p. 377,That under primitive conditions men lived and live by barter;,the first of the 'fundamental theories' Innes sets out to refute
+innes_sanctity,,1913,,,,,innes1913,p. 391,"What we have to prove is not a strange general agreement to accept gold and silver, but a general sense of the sanctity of an obligation.",
+innes_lawdebt,,1913,,,,,innes1913,p. 391,the present theory is based on the antiquity of the law of debt,
+innes_tablets,巴比伦,1913,,,,,innes1913,p. 395,far the most common commercial documents which have been found are what are called,the sentence continues 'contract tablets' or 'shubati tablets'
+innes_bill,,1913,,,,,innes1913,p. 403,"The modern bill is the lineal descendant of the medieval tally, and the more ancient Babylonian clay tablet.",

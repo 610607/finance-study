@@ -6,8 +6,8 @@ fonttools>=4.40
 pillow>=10.0
 openpyxl>=3.1        # data/fetch scripts that read .xlsx workbooks (Chapters 11, 13)
 xlrd==2.0.1          # data/fetch scripts that read legacy .xls workbooks (Chapter 13)
+statsmodels==0.14.5  # regressions (Chapter 6 seasonal price check; later filters and VARs, Chapters 53, 68, 80)
 # Added with pinned versions when the chapter that needs them is written (docs/STYLE.md §6):
-# statsmodels      filters, VARs, regressions (Chapters 53, 68, 80, ...)
 # quantecon        dynamic programming, Markov processes
 # sequence-jacobian  heterogeneous-agent (HANK) models (Chapter 71)
 # Not Python packages: XeLaTeX with xeCJK (PDF), pandoc >= 3.1 (EPUB, tools/epub/build_epub.py),

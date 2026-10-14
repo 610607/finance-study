@@ -1,0 +1,111 @@
+{
+ "title": "Quotations for Chapter 6 (Mesopotamia and Egypt: temples, palaces and accounts): the Code of Hammurabi in King's translation and the Louvre's notice of the stele, the Chicago Assyrian Dictionary on interest, units, prices and the mīšarum edicts, Visible Language on the earliest writing and the Old Assyrian merchants, Teeter on the date of Ramesses III, Temin on Babylonian prices, Erman on payments, prices and strikes in New Kingdom Egypt, and Smith, Jevons, Menger and Mitchell Innes on the origin of money",
+ "source": "L. W. King (1910, Avalon Project); Musée du Louvre; CAD vols. K (1971), M/2 (1977), Ṣ (1962), Š/3 (1992); C. Woods (ed., 2010); E. Teeter (2024); P. Temin (2003); A. Erman (1894, trans. Tirard); A. Smith (1776); W. S. Jevons (1875); C. Menger (1892, trans. Foley); A. Mitchell Innes (1913)",
+ "url": "https://avalon.law.yale.edu/ancient/hamcode.asp",
+ "series": "id, dynasty (place), year (negative for BC; approximate where year_note names a period), year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim, as in the document's text layer), note",
+ "retrieved": "2026-10-14",
+ "license": "Quotations for criticism and teaching, each with its source. King's translation (1910), Erman (1894), Smith (1776), Jevons (1875), Menger (1892) and Mitchell Innes (1913) are in the public domain. The Chicago Assyrian Dictionary, Visible Language and Chicago on the Nile are published as free PDFs by the University of Chicago's Institute for the Study of Ancient Cultures (copyright the University of Chicago); Temin (2003) is an MIT working paper on DSpace@MIT; the Louvre's notice is quoted for the object's date, find-spot, material and size. Only short passages are quoted. Several of the PDFs are scans with a text layer; where that layer misreads a character the quotation keeps its reading and the note gives the printed form.",
+ "used_in": [
+  6
+ ],
+ "sources": {
+  "king1910": {
+   "url": "https://avalon.law.yale.edu/ancient/hamcode.asp",
+   "format": "html",
+   "sha256": "93410a95441d28fd498df423ec7860ae5ee821df3811989bb469838075c9eb12",
+   "version": "The Code of Hammurabi, translated by L. W. King (1910), The Avalon Project, Lillian Goldman Law Library, Yale Law School",
+   "retrieved": "2026-10-14"
+  },
+  "louvre_sb8": {
+   "url": "https://collections.louvre.fr/en/ark:/53355/cl010174436",
+   "format": "html",
+   "sha256": "f9c8bd6c96e125b0af386783d4e49d1bc8017cdd93e490d3f285cf2f58b9d848",
+   "version": "Musée du Louvre, Collections, 'Code de Hammurabi', Département des Antiquités orientales, Sb 8",
+   "retrieved": "2026-10-14"
+  },
+  "cad_s": {
+   "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_s_tsade.pdf?VersionId=hp6HUPfphUzmha_zigPkn2xGlarcZVzM",
+   "format": "pdf",
+   "sha256": "7e895712bb4890f1effd9a73acc03b3cc5113273b594a32a0173478990e4a0ed",
+   "version": "The Assyrian Dictionary of the Oriental Institute of the University of Chicago (CAD), vol. 16, Ṣ (1962), free PDF from the Institute for the Study of Ancient Cultures (ISAC)",
+   "retrieved": "2026-10-14"
+  },
+  "cad_m2": {
+   "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_m2.pdf?VersionId=qTX7O7gz3vAmoQBD8h8JBMYXLcFmdQub",
+   "format": "pdf",
+   "sha256": "5086d5989d2ecf176b74edb99f5babe3a55eac844ecd513f2dfef17d8b46154c",
+   "version": "The Assyrian Dictionary of the Oriental Institute of the University of Chicago (CAD), vol. 10, M part 2 (1977), free PDF from ISAC",
+   "retrieved": "2026-10-14"
+  },
+  "cad_sh3": {
+   "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_s_shin_3.pdf?VersionId=l5d73XapTAqWNF0u8tOxId_JF2htXkeK",
+   "format": "pdf",
+   "sha256": "546909ae2ddf09ef4dac58e94e93cfff2ec40d9c54525fcdd21b7420423a0903",
+   "version": "The Assyrian Dictionary of the Oriental Institute of the University of Chicago (CAD), vol. 17, Š part 3 (1992), free PDF from ISAC",
+   "retrieved": "2026-10-14"
+  },
+  "cad_k": {
+   "url": "https://isac-assets.s3.amazonaws.com/isac-publications/cad_k.pdf?VersionId=iwhkiY2SkV8LiRCu7AfoxQmS58rX4BWo",
+   "format": "pdf",
+   "sha256": "c8bd91638357de8293fd8f1039290a9a0e926d1a56f15ac1786793e576a3e026",
+   "version": "The Assyrian Dictionary of the Oriental Institute of the University of Chicago (CAD), vol. 8, K (1971), free PDF from ISAC",
+   "retrieved": "2026-10-14"
+  },
+  "woods2010": {
+   "url": "https://isac-assets.s3.amazonaws.com/isac-publications/oimp32.pdf?VersionId=elNCVnMiJcG.sSqRiuGH8MfPEfSfLUAy",
+   "format": "pdf",
+   "sha256": "e41d1c3cc47997d666af6e110fbf92eaa4653ee58150bebdbc6fd842991360a2",
+   "version": "C. Woods (ed.), Visible Language: Inventions of Writing in the Ancient Middle East and Beyond, Oriental Institute Museum Publications 32 (Chicago, 2010; second printing with minor corrections, 2015); chapters by C. Woods (2), A. Seri (3) and T. van den Hout (4)",
+   "retrieved": "2026-10-14"
+  },
+  "teeter2024": {
+   "url": "https://isac-assets.s3.amazonaws.com/isac-publications/isacmp2.pdf?VersionId=sVHU33Oaol4UuWtRVWtbhLCm1xNI72Mt",
+   "format": "pdf",
+   "sha256": "a1ec430722fb5fdebad9b1005082db1d539b09cb71e09ba1aa6bafcd74d626f2",
+   "version": "E. Teeter, Chicago on the Nile: A Century of Work by the Epigraphic Survey of the University of Chicago, ISAC Museum Publications 2 (Chicago, 2024)",
+   "retrieved": "2026-10-14"
+  },
+  "temin2003": {
+   "url": "https://dspace.mit.edu/server/api/core/bitstreams/db7b5216-a308-4dbd-9afe-2db90378f779/content",
+   "format": "pdf",
+   "sha256": "3a30bfe0fcad0104da16c81998e9e2e7b42b04a9dabaa7bed5099686d6780bab",
+   "version": "P. Temin, 'Mediterranean Trade in Biblical Times', MIT Department of Economics Working Paper 03-1, March 2003 (DSpace@MIT, hdl:1721.1/63830)",
+   "retrieved": "2026-10-14"
+  },
+  "erman1894": {
+   "url": "https://archive.org/download/lifeinancientegy00ermauoft/lifeinancientegy00ermauoft_djvu.txt",
+   "format": "txt",
+   "sha256": "fca14cd8169f9b672e0de2fc44667bb5e119a311db08efec3628ee89d9a8b85a",
+   "version": "A. Erman, Life in Ancient Egypt, translated by H. M. Tirard (London: Macmillan, 1894); Internet Archive text of the University of Toronto copy (lifeinancientegy00ermauoft)",
+   "retrieved": "2026-10-14"
+  },
+  "innes1913": {
+   "url": "https://archive.org/download/sim_banking-law-journal_1913-05_30_5/sim_banking-law-journal_1913-05_30_5_djvu.txt",
+   "format": "txt",
+   "sha256": "9adfc9bfe64fc39030b3bfc7ad3af59012b7c290c7cb56488b5a9e411f666a7e",
+   "version": "A. Mitchell Innes, 'What is Money?', The Banking Law Journal 30(5), May 1913, pp. 377-408; Internet Archive text of the issue (sim_banking-law-journal_1913-05_30_5)",
+   "retrieved": "2026-10-14"
+  },
+  "jevons1875": {
+   "url": "https://archive.org/download/cu31924013816172/cu31924013816172_djvu.txt",
+   "format": "txt",
+   "sha256": "b2ba77c66ec881093f13ee353fb4717d8de321942200f255f55923accaeb9618",
+   "version": "W. S. Jevons, Money and the Mechanism of Exchange, International Scientific Series vol. XVII (New York: D. Appleton, 1875); Internet Archive text of the Cornell University Library copy (cu31924013816172)",
+   "retrieved": "2026-10-14"
+  },
+  "menger1892": {
+   "url": "https://archive.org/download/sim_economic-journal_march-december-1892_2_5-8/sim_economic-journal_march-december-1892_2_5-8_djvu.txt",
+   "format": "txt",
+   "sha256": "b40c83341ebd3da7a4742e67e6b4559b22d978dc15137e511d6f242c511e07f5",
+   "version": "C. Menger, 'On the Origin of Money', translated by C. A. Foley, The Economic Journal 2(6), June 1892, pp. 239-255; Internet Archive text of vol. 2, issues 5-8",
+   "retrieved": "2026-10-14"
+  },
+  "smith1776": {
+   "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
+   "format": "txt",
+   "sha256": "e91d52dca43fd0fd69baf7776b00a5d8e74b69675b6b608ca8a0378aaf3ae58d",
+   "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300; the text of a later edition (see the snapshot finrev_facts); Book I, ch. IV on the origin and use of money",
+   "retrieved": "2026-10-13"
+  }
+ }
+}

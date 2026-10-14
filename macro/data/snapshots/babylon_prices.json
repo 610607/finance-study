@@ -1,0 +1,14 @@
+{
+ "title": "Babylon: monthly prices of barley, dates, cuscuta, cress, sesame and wool, 582-61 BC (grams of silver)",
+ "source": "R. J. van der Spek, B. van Leeuwen and J. L. van Zanden, 'Monthly prices of various commodities in Babylon, -582BC to -61BC', DataverseNL, doi:10.34894/VJZ5Z9 (file appendix.xlsx)",
+ "url": "https://dataverse.nl/api/access/datafile/573029",
+ "series": "year (negative for BC, as in the workbook: -582 is 582 BC); month (the workbook's number 1-12; empty where the workbook has '?'); barley, dates, cuscuta, cress, sesame: grams of silver per 100 litres ('gramme silver /100 litre'); wool: grams of silver per mina of 0.5 kg ('gramme silver per mina (=0.5 kg)')",
+ "retrieved": "2026-10-14",
+ "license": "CC0 1.0 (the dataset's licence on DataverseNL: 'CC0-1.0', http://creativecommons.org/publicdomain/zero/1.0). The dataset asks to be cited as: Van der Spek, R.J., Van Leeuwen, B. & Van Zanden, J. L. (2014). Markets from Ancient Babylonia to the Modern World - An Introduction. In: R.J. Van der Spek, B. Van Leeuwen & J. L. Van Zanden (eds.). A History of Market Performance - From Ancient Babylonia to the Modern World. Abingdon, Routledge, 1 - 16.",
+ "citation": "Source: van der Spek, van Leeuwen and van Zanden (2014), dataset 'Monthly prices of various commodities in Babylon, -582BC to -61BC', DataverseNL, doi:10.34894/VJZ5Z9, downloaded 2026-10-14.",
+ "used_in": [
+  6
+ ],
+ "fetch": "data/fetch/babylon_prices.py",
+ "notes": "858 rows (one per month with at least one price); 548 barley prices, 504 dates, 330 cuscuta, 359 cress, 392 sesame, 338 wool. The workbook does not say how its month numbers relate to the Babylonian calendar (which had intercalary months) or to the Julian calendar, nor how a month with two reported prices was reduced to one; Chapter 6 uses the month numbers only as given and says so. The prices come from the astronomical diaries of Babylon, which recorded market prices month by month (Temin 2003, MIT Economics Working Paper 03-1, describing Slotsky 1997). Dataset deposited 2025-12-22; SHA-256 of appendix.xlsx downloaded 2026-10-14: 152deda20f2bb39b4798ec05ba5afc76e684195c4e4aa7355fbbf43cb665fce3 (37,149 bytes); the fetch script refuses a workbook with another hash."
+}
