@@ -1,6 +1,6 @@
 # Project status
 
-Updated 2026-10-13.
+Updated 2026-10-14.
 
 ## Skeleton — committed
 - `structure.py`: 11 parts, 5 books (分册), 84 chapters, 4 appendices.
@@ -79,10 +79,31 @@ Updated 2026-10-13.
   - `tools/figlint.py` reports text off the canvas or on other text (WORKFLOW §3).
   - Print size (resolved 2026-10-14, author's decision): `\fig` sets figures at the full text width and FIG_W is 5.90 in, so a figure cropped with its 0.04 in pad is 152 mm wide and prints at 1:1; the height cap is .5\textheight (4.65 in). `figlint.py` now reports the printed scale and any text printing below 7.5 pt; all 31 figures pass in both languages (printed scale 1.00–1.05). Fixed on the way: the Chapter 2 plots had no margins set (they printed 17% enlarged), the Chapter 12 timeline's row labels touched, and some labels in Chapters 11, 14, 16 and 17 stuck out of the narrower canvas or (English) overlapped.
 
+## Part 1 — in progress (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part1_notes.md`)
+- Started 2026-10-14 at the author's request ("按顺序继续"): Chapters 2, 3, 4, 5 in that order; Chapter 1 last, after Part 2.
+- Chapter 2 (国民核算与恒等式): written and reviewed. Fixes are in the commit "Chapter 2: apply the independent review".
+  - Kuznets's own reading of the negative business saving of 1931–32: he calls a draw on capital "misleading" and says the losses mostly covered rigid costs.
+  - The real reasons his national income differs from BEA's: taxes on production and imports, imputed rent, and book valuation (both figures are net of depreciation).
+  - Example 2.1 deflates income produced by both of Kuznets's price indexes, giving a real decline of 30–41%.
+  - The trend-deviation caveat on China's 2004 revision.
+  - The strongest case for each causal reading of the sector balances.
+  Added after the review:
+  - The wartime British origin of the accounts (Keynes, Meade, Stone), from the Royal Swedish Academy's 1984 press release.
+  - The 2025 SNA's changes: depletion as a cost, and NDP as the preferred growth measure (pre-edit text).
+  - Product taxes in the production line of eq. 2.1.
+  - 30 new snapshot rows; 142 quotations verify verbatim.
+  Open points:
+  - The 1941 white paper of Meade and Stone was not obtained.
+  - The two causal readings of the sector balances are not yet tied to their authors (Godley & Lavoie; Barro). Chapters 50 and 63 owe this (FORWARD_REFS).
+  - The 2025 SNA is quoted from its pre-edit version.
+  - `verify_web_quotes.py` takes a per-source `user_agent` (FRASER refuses the default one).
+  - Rebuilt with `python3 build.py --book all --epub` (figures now at 1:1). The six EPUBs pass epubcheck 5.1 with no messages. In the EPUB, Table 2.1 keeps its two-column 企业 header and eq. 2.1 is MathML.
+- Chapter 3 (价格、通胀与利率): sources collected (Boskin report; Fisher 1896 with the US currency/coin bonds and India's rupee paper; BoJ statements of 2016 and 2024 with MoF JGB yields, under PDL 1.0; DMO on index-linked gilts; the first TIPS auction; FRED series). Writing next.
+
 ## Next
-1. The author reviews Part 3 (Chapters 10, 11, 13–17) as a whole; the open points are listed under each chapter above. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
-2. Then the other parts in the order of the books, each as a batch.
-3. Chapter 1 is finalized last, because it previews the whole volume.
+1. Part 1: Chapters 3, 4, 5, then Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
+3. Then the other parts in the order of the books.
 
 ## English edition — reserved
 `\ZE{}{}` in the preamble, `T("中文", "English")` in figures, English titles in `structure.py` and `en/README.md` are in place. No translation has started.
