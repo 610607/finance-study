@@ -10,5 +10,5 @@
     1
   ],
   "fetch": "data/fetch/cbr_rub_usd.py",
-  "notes": "The Bank sets the rate for the next working day, so a rate dated a Saturday applies over the weekend; there is no rate on some holidays. 501 dates. SHA-256 of the 2026-10-14 response (windows-1251 XML): 448a2a0e485e74a09a7dc733d955797c61624bdbb5fb294e9f01a68038b9b0ef."
+  "notes": "Dates are as the response gives them; some days have no record (in August 1998 there are records for Saturday the 15th and Tuesday the 18th and none for the 16th and 17th), so Chapter 1 takes the record of 1998-08-15 as the last rate before the float. 501 dates. SHA-256 of the 2026-10-14 response (windows-1251 XML): 448a2a0e485e74a09a7dc733d955797c61624bdbb5fb294e9f01a68038b9b0ef."
 }
