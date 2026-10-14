@@ -1,0 +1,119 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+bea_resolution,美国,1932,,220;1929;1931,,,bea2020,web page,"In 1932, U.S. Senator Robert La Follette, in Senate Resolution 220, directed the BFDC to produce a report on U.S. national income for the period 1929-1931.",BFDC = Bureau of Foreign and Domestic Commerce
+bea_motive,美国,1932,,,,,bea2020,web page,La Follette believed increased federal spending was a key to coming out of the Great Depression. How best to allocate these funds required more information on the economy than was currently collected.,
+bea_first,美国,1934,,,,,bea2020,web page,was the first U.S. economics report of its kind,BEA's own characterization; the same page misnames Kuznets 'Samuel'
+k_resolution,美国,1934,1934 年 1 月 4 日送交参议院,220,号,,kuznets1934,title page,IN RESPONSE TO SENATE RESOLUTION NO. 220,"Senate Resolution 220 of the 72nd Congress; the title page (73d Congress, 2d Session, Senate Document No. 124) was read on the page image"
+k_transmitted,美国,1934,1934-01-04,1934;4;220,,,kuznets1934,p. II,"transmitted to the Senate on January 4, 1934, in response to Senate Resolution 220, Seventy-second Congress",the Senate's order to print the report as a Senate document (submitted by Mr. La Follette)
+k_kuznets,美国,1934,,,,,kuznets1934,Acknowledgment,"a member of its staff, Dr. Simon Kuznets, was retained by the Bureau of Foreign and Domestic Commerce to plan and supervise this study.",its staff = the National Bureau of Economic Research
+k_definition,美国,1934,,,,,kuznets1934,p. 1,"If all commodities produced and all personal services rendered during the year are added at their market value, and from the resulting total we subtract the value of that part of the nation's stock of goods which was expended (both as raw materials and as capital equipment) in producing this total, then the remainder constitutes the net product of the national economy during the year.",national income produced
+k_paid_vs_produced,美国,1934,,,,,kuznets1934,pp. 1-2,"is that the former does, and the latter does not, include savings by business establishments.",the difference between national income produced (the former) and national income paid out (the latter)
+k_corp_net,美国,1934,,1000000,美元,,kuznets1934img,p. 1,,"a manufacturing corporation whose net product ... amounts to $1,000,000 (read on the page image; the text layer has §1,000,000)"
+k_corp_split,美国,1934,,900000;100000,美元,,kuznets1934,p. 1,"may pay out only $900,000 in wages, salaries, rents and royalties, dividends, and interest, and retain $100,000 as corporate savings",
+k_provisional,美国,1932,,,,,kuznets1934,p. 10,"the figures for 1932 are provisional in character, especially for property incomes",
+k_table1_1929,美国,1929,,81136;1896;83032,百万美元,,kuznets1934img,"p. 10, Table 1",,"Table 1, lines 1-3 (millions of dollars), read on the page image (PDF page 22); the text layer garbles the table"
+k_table1_1930,美国,1930,,75410;-5065;70345,百万美元,,kuznets1934img,"p. 10, Table 1",,"Table 1, lines 1-3 (millions of dollars), read on the page image (PDF page 22); the text layer garbles the table"
+k_table1_1931,美国,1931,,63247;-8604;54643,百万美元,,kuznets1934img,"p. 10, Table 1",,"Table 1, lines 1-3 (millions of dollars), read on the page image (PDF page 22); the text layer garbles the table"
+k_table1_1932,美国,1932,,48894;-9529;39365,百万美元,,kuznets1934img,"p. 10, Table 1",,"Table 1, lines 1-3 (millions of dollars), read on the page image (PDF page 22); the text layer garbles the table. Line 1 is poorly printed: its last digit is damaged like the first 4 of the same number, and 48,894 is the reading that satisfies line 1 + line 2 = line 3 as the other three years do exactly (the text layer has 43.891)"
+k_table1_index_1932,美国,1932,1929 = 100,60.3;47.4;80.4;68.0,%,,kuznets1934img,"p. 10, Table 1",,"percentages of 1929 in 1932: income paid out, income produced, BLS cost of living index, BLS wholesale price index (page image)"
+k_paid_40,美国,1932,1929—1932,40,%,,kuznets1934,p. 10,The volume of net income paid out to individuals shrank by 40 percent during this period of 3 years.,
+k_king_series,美国,1934,,1909,,,kuznets1934,p. 10,"The longest series of authoritative annual estimates of national income for this country, that by Dr. Willford I. King, back to 1909, covers only one major depression.",
+k_king_14,美国,1921,1920—1921,14.4;40,%,,kuznets1934,p. 10,"amounted to a drop of 14.4 percent from the peak, as over against the shrinkage of 40 percent shown in the present depression.","King's series, 1920-1921, against 1929-1932"
+k_produced_53,美国,1932,1929—1932,53;40,%,,kuznets1934,p. 11,"the percentages of the contraction from 1929 to 1932 being 53 and 40 percent, respectively.",income produced and income paid out
+k_inventory,美国,1934,,,,,kuznets1934,p. 11,"in a period of rapidly declining prices, serve to reduce the savings of enterprises","the subject, garbled in the text layer, is 'the prevalent rule of valuing inventories at cost or market, whichever is lower' (page image)"
+k_business_savings,美国,1932,,1.9;9.5,十亿美元,,kuznets1934,p. 10,"Savings by unincorporated business establishments, corporations, and individual entrepreneurs which in 1929 were positive to the extent of 1.9 billion dollars, have, in the years following, turned into losses which by 1932 rose to the total of 9.5 billion dollars.",
+k_amalgam,美国,1934,,,,,kuznets1934,p. 9,"The national income total is thus an amalgam of accurate and approximate estimates rather than a unique, highly precise measurement.",
+k_housewives,美国,1934,,,,,kuznets1934,p. 6,"including those efforts which, like housewives' services, do not appear on the market",
+k_distribution,美国,1934,,,,,kuznets1934,p. 6,Economic welfare cannot be adequately measured unless the personal distribution of income is known.,
+k_welfare,美国,1934,,,,,kuznets1934,p. 7,"The welfare of a nation can, therefore, scarcely be inferred from a measurement of national income as defined above.",
+k_30pct,美国,1934,,30,%,,kuznets1934,p. 7,"such inferences that a decline of 30 percent in the national income (in terms of ""constant"" dollars) means a 30 percent decline in the total productivity of the nation, and a corresponding decline in its welfare.",Kuznets's example of an abuse
+sna_va,,2009,,,,,sna2008,para. 2.138,"GDP is the sum of gross value added of all resident producer units plus that part (possibly the total) of taxes on products, less subsidies on products, that is not included in the valuation of output.",
+sna_final,,2009,,,,,sna2008,para. 2.139,"GDP is also equal to the sum of the final uses of goods and services (all uses except intermediate consumption) measured at purchasers’ prices, less the value of imports of goods and services.",
+sna_income,,2009,,,,,sna2008,para. 2.140,GDP is also equal to the sum of primary incomes distributed by resident producer units.,
+sna_cfc,,2009,,,,,sna2008,para. 2.141,"In principle, the concept of value added should exclude the allowance for consumption of fixed capital.",
+sna_cfc_newvalue,,2009,,,,,sna2008,para. 2.141,"The latter, in effect, is not newly created value, but a reduction in the value of previously created fixed assets",the latter = consumption of fixed capital
+sna_gross_available,,2009,,,,,sna2008,para. 2.142,"gross figures are more often available, or available earlier, and they are generally considered more comparable between countries.",
+sna_gross_inferior,,2009,,,,,sna2008,para. 2.142,"So GDP is broadly used even if it is, on a conceptual basis, economically inferior to NDP.",
+sna_gni,,2009,,,,,sna2008,para. 2.143,GNI is equal to GDP less primary incomes payable to non-resident units plus primary incomes receivable from non-resident units.,
+sna_gni_income,,2009,,,,,sna2008,para. 2.143,"In contrast to GDP, GNI is not a concept of value added, but a concept of income.",
+sna_holding,,2009,,,,,sna2008,para. 7.24,"when profits are calculated at historic costs in business accounts, they also include nominal holding gains on the inventories and other assets owned by the enterprise",
+sna_household,,2009,,,,,sna2008,para. 1.39,domestic and personal services produced and consumed by members of the same household are omitted.,
+sna_exception,,2009,,,,,sna2008,para. 1.39,"Subject to this one major exception, GDP is intended to be a comprehensive measure of the total gross value added produced by all resident institutional units.",
+sna_productive,,2009,,,,,sna2008,para. 1.41,All of these activities are productive in an economic sense.,including domestic and personal services for consumption within the same household
+sna_obscure,,2009,,,,,sna2008,para. 1.41,The inclusion of large non-monetary flows of this kind in the accounts together with monetary flows can obscure what is happening on markets and reduce the analytic usefulness of the data.,the SNA's reason for leaving household services out
+sna_goods_in,,2009,,,,,sna2008,para. 1.42,The SNA therefore includes all production of goods for own use within its production boundary,
+sna_services_out,,2009,,,,,sna2008,para. 1.42,but it excludes all production of services for own final consumption within households (except for the services produced by employing paid domestic staff and the own-account production of housing services by,"the sentence ends 'owner-occupiers)', hyphenated across a line in the PDF"
+sna_before,,2009,,,,,sna2008,para. 1.42,The services are excluded because the decision to consume them within the household is made even before the service is provided.,
+sna_unemployment,,2009,,,,,sna2008,para. 1.42,"all persons engaged in such activities would become self-employed, making unemployment virtually impossible by definition.",if the production boundary included household services for own consumption
+sna_compromise,,2009,,,,,sna2008,para. 1.42,"The location of the production boundary in the SNA is a compromise, but a deliberate one that takes account of the needs of most users.",
+sna_depletion,,2009,,,,,sna2008,para. 1.47,the depletion of a natural resource as a result of its use in production is recorded in the other changes in volume of assets account,
+sna_versions,,2009,,1953;1968;1993;2008,年,,sna2008,Preface,"The first comprehensive set of national accounting standards was released in 1953, with major updates in 1968, 1993 and, now, 2008.",
+sna_quadruple,,2009,,,,,sna2008,para. 1.63,"a transaction between two different institutional units always requires four equal, simultaneous entries in the accounts of the SNA (that is, quadruple entry accounting) even if the transaction is a transfer and not an exchange and even if no money changes hands.",
+sna_netlending,,2009,,,,,sna2008,para. 2.111,"measuring the net amount a unit or a sector finally has available to finance, directly or indirectly, other units or sectors","the balancing item of the capital account, net lending when positive"
+sna_identical,,2009,,,,,sna2008,para. 2.113,"In principle, net lending or net borrowing is measured identically in both the capital and financial accounts. In practice, achieving this identity is one of the most difficult tasks in compiling national accounts.",
+sna2025_adopted,,2025,,56,届,,un2025sna,web page,was adopted by the United Nations Statistical Commission at its 56th Session in 2025 as the international statistical standard for national accounts statistics,
+sna2025_wellbeing,,2025,,,,,un2025sna,web page,the 2025 SNA broadens the national accounts framework to better account for elements affecting wellbeing and sustainability,
+mps_1953,中国,1953,,1953,年,,nbs2010,web page,1953 年开始试算国民收入,
+mps_whole,中国,1985,80 年代中期以后,,,,nbs2010,web page,在 MPS 体系下，核算结果无法全面反映我国国民经济发展的全貌,
+mps_1992,中国,1992,,1992,年,,nbs2010,web page,1992 年，国家统计局制定了《中国国民经济核算体系（试行方案）》。,
+mps_hybrid,中国,1992,,,,,nbs2010,web page,保留了 MPS 体系的部分内容，是一个 MPS 与 SNA 的混合体系。,
+mps_scope,中国,1992,,,,,nbs2010,web page,将国民经济行业从物质生产部门扩大到国民经济的所有行业,
+mps_1993,中国,1993,,1993,年,,nbs2010,web page,1993 年，取消了 MPS 体系下的国民收入核算,
+mps_2002,中国,2002,,2002,年,,nbs2010,web page,这也标志着我国国民经济核算体系向 SNA 全面转轨。,"the 《中国国民经济核算体系（2002）》, revised from 1999 on the basis of the 1993 SNA"
+census_2004,中国,2004,,159878;23002;16.8,亿元;亿元;%,,nbs2006a,section 1,我国 2004 年 GDP 现价总量为 159878 亿元，比快报核算数增加了 23002 亿元，增幅为 16.8% 。,
+census_rev_1993,中国,1993,,35334;6887;16455;11992;34634;6882;16428;11324;700;5;27;668,亿元,,nbs2006a,表 1,1993 35334 6887 16455 11992 34634 6882 16428 11324 700 5 27 668,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_1994,中国,1994,,48198;9471;22446;16281;46759;9457;22372;14930;1439;14;74;1351,亿元,,nbs2006a,表 1,1994 48198 9471 22446 16281 46759 9457 22372 14930 1439 14 74 1351,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_1995,中国,1995,,60794;12020;28680;20094;58478;11993;28538;17947;2316;27;142;2147,亿元,,nbs2006a,表 1,1995 60794 12020 28680 20094 58478 11993 28538 17947 2316 27 142 2147,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_1996,中国,1996,,71177;13886;33835;23456;67885;13844;33613;20428;3292;42;222;3028,亿元,,nbs2006a,表 1,1996 71177 13886 33835 23456 67885 13844 33613 20428 3292 42 222 3028,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_1997,中国,1997,,78973;14265;37543;27165;74463;14211;37223;23029;4510;54;320;4136,亿元,,nbs2006a,表 1,1997 78973 14265 37543 27165 74463 14211 37223 23029 4510 54 320 4136,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_1998,中国,1998,,84402;14618;39004;30780;78345;14552;38619;25174;6057;66;385;5606,亿元,,nbs2006a,表 1,1998 84402 14618 39004 30780 78345 14552 38619 25174 6057 66 385 5606,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_1999,中国,1999,,89677;14548;41034;34095;82067;14472;40558;27037;7610;76;476;7058,亿元,,nbs2006a,表 1,1999 89677 14548 41034 34095 82067 14472 40558 27037 7610 76 476 7058,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_2000,中国,2000,,99215;14716;45556;38943;89468;14628;44935;29905;9747;88;621;9038,亿元,,nbs2006a,表 1,2000 99215 14716 45556 38943 89468 14628 44935 29905 9747 88 621 9038,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_2001,中国,2001,,109655;15516;49512;44627;97315;15412;48750;33153;12340;104;762;11474,亿元,,nbs2006a,表 1,2001 109655 15516 49512 44627 97315 15412 48750 33153 12340 104 762 11474,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_2002,中国,2002,,120333;16239;53897;50197;105172;16117;52980;36075;15161;122;917;14122,亿元,,nbs2006a,表 1,2002 120333 16239 53897 50197 105172 16117 52980 36075 15161 122 917 14122,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_2003,中国,2003,,135823;17069;62436;56318;117390;16928;61274;39188;18433;141;1162;17130,亿元,,nbs2006a,表 1,2003 135823 17069 62436 56318 117390 16928 61274 39188 18433 141 1162 17130,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rev_2004,中国,2004,,159878;20956;73904;65018;136876;20768;72387;43721;23002;188;1517;21297,亿元,,nbs2006a,表 1,2004 159878 20956 73904 65018 136876 20768 72387 43721 23002 188 1517 21297,"Table 1 row: GDP and the three sectors after the revision, before it, and the change (GDP, primary, secondary, tertiary each)"
+census_rising,中国,2004,,,,,nbs2006a,section 1,GDP 总量的修订幅度是逐年递增的，也就是说，距离普查年度越近， GDP 总量的修订幅度越大,
+census_growth,中国,2004,,0.8,个百分点,,nbs2006a,section 1,对 GDP 不变价增长速度的修订幅度均在 0.8 个百分点之内,
+census_avg,中国,2004,1979—2004,9.6;9.4;0.2,%;%;个百分点,,nbs2006a,section 2,1979-2004 年我国 GDP 平均每年递增 9.6% ，比原数据（ 9.4% ）提高了 0.2 个百分点,
+census_method,中国,2004,,,,,nbs2006a,section 1,国家统计局采用了国际上常用的趋势离差法，主要对 1993 年以来的 GDP 总量及增长速度进行了修订,
+census_tertiary,中国,2004,,21297;48.7,亿元;%,,nbs2006b,section 1,第三产业增加值增加 21297 亿元，提高了 48.7% 。,
+census_93,中国,2004,,2.3;93,万亿元;%,,nbs2006b,section 1,在 GDP 总量多出的 2.3 万亿元中，有 93% 是第三产业引起的。,
+census_reason,中国,2004,,,,,nbs2006b,section 1,造成第三产业增加值增加较多的原因，主要在于资料来源的增加。,
+census_private,中国,2004,,,,,nbs2006b,section 1,大大补充了以往常规统计中难以准确全面反映的私营、个体服务业资料以及大量的新兴服务业资料,
+census_coverage,中国,2004,,,,,nbs2006b,section 1,经济普查覆盖了第二、三产业所有的法人单位、产业活动单位和个体经营户,
+census_primary,中国,2004,,,,,nbs2006b,section 1,第一产业因不在这次普查范围之内,
+census_construction,中国,2004,,8694;5.4;9572;7.0;-878;-1.6,亿元;%,,nbs2006b,表 1,建筑业 8694 5.4 9572 7.0 -878 -1.6,"after, share, before, share, change, change of share"
+census_finance,中国,2004,,5393;3.4;7026;5.1;-1633;-1.7,亿元;%,,nbs2006b,表 1,金融保险业 5393 3.4 7026 5.1 -1633 -1.7,"after, share, before, share, change, change of share"
+census_share,中国,2004,,31.9;40.7,%,,nbs2006b,section 1,第三产业比重由原来的 31.9 ％上升到 40.7 ％,
+hh_table1,美国,2017,1965 与 2017,742.3;19485.4;6.5;1019.7;24001.5;6.3,十亿美元;%,,kk2019,Table 1,"Gross domestic product 742.3 19,485.4 6.5 100.0 1,019.7 24,001.5 6.3 100.0",NIPA GDP 1965 and 2017 and its average annual rate of change; the same with household production
+hh_table2,美国,2017,1965 与 2017,37;23,%,,kk2019,Table 2,Gross domestic product 37 23 100 100 100 100,"impact of the adjustment on NIPA GDP, percent"
+hh_nonmarket,美国,2017,1965 与 2017,30;17,%,,kk2019,Table 2,Nonmarket services 30 17 n.a. n.a. 22 14,"impact of nonmarket services on NIPA GDP, percent"
+hh_growth,美国,2017,1965—2017,6.5;6.3,%,,kk2019,p. 3,"From 1965 to 2017, the average annual growth rate of nominal GDP was 6.5 percent. When household production is included, this growth rate drops to 6.3 percent.",
+hh_women,美国,2017,,,,,kk2019,p. 3,Household production has declined in significance over time as more women engage in market work.,"the next sentence of the article says 37 and 23 percent 'of the satellite account's output', but Table 2 gives them as the impact on NIPA GDP; the chapter follows the table"
+hh_wage,美国,2017,,,,,kk2019,p. 2,The value of nonmarket services is the product of the wage rate of general-purpose domestic workers and the number of hours worked.,
+hh_tasks,美国,2017,,,,,kk2019,p. 2,"housework, cooking, odd jobs, gardening, shopping, child care, and domestic travel",
+ie_shift,爱尔兰,2015,,26,%,,cso2017,question 1,The level shift in GDP of 26% in the 2015 results was driven by relocations of entire balance sheets to Ireland,
+ie_ip,爱尔兰,2015,,,,,cso2017,question 1,These relocated balance sheets were dominated by intellectual property products,
+ie_300,爱尔兰,2015,,300,十亿欧元,,cso2017,question 1,added €300 billion to Ireland’s capital stocks,
+ie_july2016,爱尔兰,2016,,,,,cso2017,question 1,The highly globalised nature of the Irish economy was demonstrated dramatically in July 2016 with the publication of the national accounts and balance of payments statistics for 2015.,
+ie_contract,爱尔兰,2015,,,,,cso2017,question 1,Associated with the relocations were significant increases in contract manufacturing activity attributable to Ireland.,
+ie_gnp,爱尔兰,2015,,,,,cso2017,question 1,GNP is often seen as a better measure of the underlying level of economic activity in Ireland as the effects of foreign direct investment profits are removed,
+ie_gnp_elevated,爱尔兰,2015,,,,,cso2017,question 1,"but as an indicator, it is now also elevated by these relocations.",the subject is GNP
+ie_gnistar,爱尔兰,2017,,,,,cso2017,question 3,Modified GNI (or GNI*) is defined in the recommendations as GNI less the impact of re-domiciled companies and the depreciation attributable to relocated capital assets.,
+ie_denominator,爱尔兰,2017,,,,,cso2017,question 2,Its primary use will be as a denominator in ratio analysis.,
+ie_supplementary,爱尔兰,2017,,,,,cso2017,question 3,will be a useful supplementary indicator of the level of the Irish economy,the subject is GNI*
+ie_gdp,爱尔兰,2015,2014—2016,194.5;262.0;275.6,十亿欧元,,cso2017,Table 1,GDP (current prices) 194.5 262.0 275.6,
+ie_gni,爱尔兰,2015,2014—2016,165.9;207.2;227.7,十亿欧元,,cso2017,Table 1,GNI (current prices) 165.9 207.2 227.7,
+ie_gnistar_values,爱尔兰,2015,2014—2016,154.5;172.9;189.2,十亿欧元,,cso2017,Table 1,= Modified GNI (or GNI*) 154.5 172.9 189.2,
+ie_debt,爱尔兰,2015,2014—2016，2017 年 3 月的数字,203.3;201.4;200.6,十亿欧元,,cso2017,Table 2,€203.3bn €201.4bn €200.6bn,general government gross debt
+ie_debt_gdp,爱尔兰,2015,2014—2016,104.5;76.9;72.8,%,,cso2017,Table 2,GGGD as % GDP 104.5% 76.9% 72.8%,
+ie_debt_gnistar,爱尔兰,2015,2014—2016,131.6;116.5;106.0,%,,cso2017,Table 2,131.6% 116.5% 106.0%,"the row 'GGGD as % Modified GNI (or GNI*)', whose label is split over two lines around the numbers"
+mps_mid80s,中国,1985,1980 年代中期,,,,nbs2010,web page,80 年代中期以后，我国逐步引进市场经济国家广泛采用的国民账户体系（ SNA ）,
+mps_sectors,中国,1992,,,,,nbs2010,web page,行业划分为物质生产部门和非物质生产部门,what the 1992 hybrid scheme kept of the MPS
+mps_gdp_on_ni,中国,1992,,,,,nbs2010,web page,GDP 是在国民收入的基础上计算,what the 1992 hybrid scheme kept of the MPS
+census_rank,中国,2004,,16537;19317;7;6,亿美元;亿美元;位;位,,nbs2006a,section 1,中国 GDP 总量为 16537 亿美元，排在世界第七位。数据修订后，我国 GDP 总量调整到 19317 亿美元，超过意大利，居世界第六位。,"the first figure is the IMF's for 2004, as cited by the NBS"
+census_missed,中国,2004,,,,,nbs2006b,section 1,进一步查清并补上了常规统计中第三产业漏统的部分,
+ie_nfi,爱尔兰,2015,2014—2016,-28.7;-54.8;-47.8,十亿欧元,,cso2017,Table 1,and EU taxes and subsidies -28.7 -54.8 -47.8,less net factor income from the rest of the world (which includes MNE profits) and EU taxes and subsidies
+ie_redomiciled,爱尔兰,2015,2014—2016,-6.9;-4.7;-5.8,十亿欧元,,cso2017,Table 1,of re-domiciled companies -6.9 -4.7 -5.8,less factor income (mainly profits) of re-domiciled companies
+ie_ip_dep,爱尔兰,2015,2014—2016,-0.8;-25.0;-27.8,十亿欧元,,cso2017,Table 1,less Depreciation on R&D related IP imports -0.8 -25.0 -27.8,
+ie_aircraft,爱尔兰,2015,2014—2016,-3.8;-4.6;-5.0,十亿欧元,,cso2017,Table 1,less Depreciation on aircraft related to leasing -3.8 -4.6 -5.0,

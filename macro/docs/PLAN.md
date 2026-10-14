@@ -128,6 +128,7 @@
 - **案例**：美国 1934 年第一次官方国民收入估算；中国从物质产品平衡表体系（MPS）到 SNA 的转换
 - **对照框候选**：恒等式 vs 行为方程；存量 vs 流量；GDP vs GNI
 - **前置**：第 1 章（一个问题引出整门课）
+- **已写成（2026-10）**：史料为 Kuznets（1934）向参议院提交的《国民收入，1929—1932》（FRASER 扫描本，表 1 与扉页按页面图像读）、BEA（2020）对其起源的回顾；标准为 SNA 2008（段 1.39—1.47、1.63、2.111—2.113、2.138—2.143、7.24）与联合国统计司的 2025 SNA 网页；案例为国家统计局（2010）的 MPS→SNA 回顾与 2006 年的两篇普查后 GDP 解读；另有 Kanal \& Kornegay（2019）的家庭生产卫星账户与爱尔兰 CSO（2017）的 GNI* 说明。引文全部由 `data/fetch/verify_web_quotes.py` 逐字核对。数据：BEA 的 NIPA 批量文件（`data/fetch/bea_nipa_annual.py`，1929—2025 年，2026-09-30 发布）。对照框：存量 vs 流量；恒等式 vs 行为方程；GDP vs GNI。案例框：中国 · 1953—2004 · 从 MPS 到 SNA。误区框：政府赤字“造成”私人盈余。深入一步：SNA 的账户序列。例题：库兹涅茨的表 1、棉布经济、1929—1933 年的价格与产量、节俭的一年、爱尔兰的债务比率。表：`tab:accounts-flows`（四部门资金流量，教学数字）。图：`accounts_chain`、`accounts_depression`、`accounts_balances`、`accounts_china`。数据：`accounts_facts`、`bea_nipa_annual`。单一来源的数字：库兹涅茨表 1 的 1932 年支付的国民收入（印刷模糊，按三行关系读作 48,894）；爱尔兰 2015 年的“26%”只有 CSO 一处。没有写入：Stone 与 Meade 的英国估计（1941，未找到可下载的原文）。
 
 #### 第 3 章 `ch:prices` 价格、通胀与利率 — `zh/ch03_prices.tex`
 *Prices, inflation and interest rates*
@@ -1366,6 +1367,7 @@ ch:labor ch:japanbubble ch:transition ch:euro ch:emcrises ch:moderation ch:minsk
 part:language part:ancient part:earlymodern part:classical part:keynes part:goldenage part:stagflation part:moderation part:aftercrisis part:present part:synthesis
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
+sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows
 sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
 sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
 sec:silver-china sec:silver-tiaobian sec:silver-revolution sec:silver-default eq:silver-arbitrage eq:silver-qty eq:silver-debt tab:silver-england tab:silver-castile

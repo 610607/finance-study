@@ -1,0 +1,86 @@
+{
+  "title": "Quotations on national accounting: Kuznets's 1934 report, the SNA, China's move from the MPS to the SNA and the 2004 census revision, US household production, Ireland's GNI* (Chapter 2)",
+  "source": "U.S. Senate Document 124 (1934, Kuznets); BEA's account of its origins (Survey of Current Business, 2020); System of National Accounts 2008; UN Statistics Division page on the 2025 SNA; National Bureau of Statistics of China (2006, 2010); Kanal & Kornegay (2019, BEA); Central Statistics Office, Ireland (2017)",
+  "url": "see sources",
+  "series": "one row per quoted fact: id, dynasty (here: country), year, year_note, value (several values separated by ';'), unit, numeral (unused here), file (a key of sources below), juan (here: page, paragraph or table), quote (verbatim), note",
+  "retrieved": "2026-10-14",
+  "license": "Short quotations only, for comment and teaching. The 1934 Senate document and the BEA article are works of the US government (public domain); the SNA and the UN page are United Nations publications; the NBS and CSO documents are official publications, quoted, not copied.",
+  "used_in": [
+    2
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py",
+  "notes": "Rows citing pdf and html sources are checked against the downloaded documents by verify_web_quotes.py (all files were downloaded twice on 2026-10-14 with the same SHA-256). Rows citing kuznets1934img were read by eye on page images of the same PDF: the text layer of the 1934 report is an OCR of a worn copy and garbles Table 1. In Table 1, line 1 (income paid out) plus line 2 (business savings) equals line 3 (income produced) exactly for 1929, 1930 and 1931; for 1932 the print of line 1 is damaged and is read as 48,894, the value that keeps the identity (the text layer has 43.891). The page numbers of the report are its printed numbers (PDF page 13 is p. 1, PDF page 22 is p. 10). Kuznets's national income is a net concept (after depreciation) and covers market activity; it is not comparable with today's BEA estimates for the same years without adjustment. The NBS tables (2006) give 2004 GDP and the revised 1993-2004 series after the first economic census, in 100 million yuan at current prices; the rows census_rev_YYYY quote each row of Table 1 of the first note. Kanal & Kornegay (2019) write that household production 'accounted for 37 percent of the satellite account's output in 1965' and 23 percent in 2017, but their Table 2 gives these as the impact on NIPA GDP (Table 1: 1,019.7 against 742.3 and 24,001.5 against 19,485.4 billion dollars); the chapter follows the tables. The CSO's 'level shift in GDP of 26%' for 2015 is the volume change as published in July 2016; Table 1 of the same notice gives current-price GDP of 194.5 and 262.0 billion euro for 2014 and 2015 (a different vintage: mid-2017).",
+  "sources": {
+    "bea2020": {
+      "url": "https://apps.bea.gov/scb/issues/2020/09-september/0920-reprints-1930s.htm",
+      "format": "html",
+      "sha256": "85dcd89efe4f7ac99894bfb645cabc8dc00b86a0edc304ec1017ab654c57d826",
+      "version": "'The Evolution of U.S. National Income Accounting', Survey of Current Business 100(9), September 2020 (centennial reprints, the 1930s), web version",
+      "retrieved": "2026-10-14"
+    },
+    "kuznets1934": {
+      "url": "https://fraser.stlouisfed.org/docs/publications/natincome_1934/19340104_nationalinc.pdf",
+      "format": "pdf",
+      "sha256": "f4ce9435d110339bc34ef3d938ef795c4b9c5d7d8097448aac8cfde695992d73",
+      "version": "National Income, 1929-32. 73d Congress, 2d Session, Senate Document No. 124 (Washington: GPO, 1934); the NBER's limited edition, digitized by FRASER (Federal Reserve Bank of St. Louis), OCR text layer",
+      "retrieved": "2026-10-14",
+      "user_agent": "curl/8.5.0"
+    },
+    "kuznets1934img": {
+      "url": "https://fraser.stlouisfed.org/docs/publications/natincome_1934/19340104_nationalinc.pdf",
+      "format": "image",
+      "sha256": "f4ce9435d110339bc34ef3d938ef795c4b9c5d7d8097448aac8cfde695992d73",
+      "version": "the same PDF, pages read on images rendered with pdftoppm: PDF page 2 (title page), PDF page 13 (printed p. 1, the corporation example), PDF page 22 (printed p. 10, Table 1, at 600 dpi)",
+      "retrieved": "2026-10-14"
+    },
+    "sna2008": {
+      "url": "https://unstats.un.org/unsd/nationalaccount/docs/SNA2008.pdf",
+      "format": "pdf",
+      "sha256": "854883ffc5769747480561c78ba4099ec40257ca8f44d91a85f654b5e715a9b6",
+      "version": "System of National Accounts 2008 (European Commission, IMF, OECD, United Nations, World Bank; New York, 2009), the UN Statistics Division's PDF",
+      "retrieved": "2026-10-14"
+    },
+    "un2025sna": {
+      "url": "https://unstats.un.org/unsd/nationalaccount/sna2025.asp",
+      "format": "html",
+      "sha256": "00bef59f38f14c847fa88a53068ef561ee559731d7a29192e386b35b38f826fc",
+      "version": "UN Statistics Division, 'System of National Accounts 2025 - 2025 SNA', web page as of 2026-10-14",
+      "retrieved": "2026-10-14"
+    },
+    "nbs2010": {
+      "url": "https://www.stats.gov.cn/zt_18555/zthd/sjtjr/d1tjr/zgtjfz/202302/t20230216_1909893.htm",
+      "format": "html",
+      "sha256": "2df46576dad88a6de2096393e5c90dd81f13944949f7ff2a0bd3627451362f7d",
+      "version": "《奋进中的中国统计：从MPS到SNA 国民经济核算体系不断发展完善》, 中国信息报, 2010-10-22, on the NBS website (第一届统计日专题)",
+      "retrieved": "2026-10-14"
+    },
+    "nbs2006a": {
+      "url": "https://www.stats.gov.cn/zt_18555/zdtjgz/zgjjpc/dycjjpc/cgfb/202303/t20230306_1935036.htm",
+      "format": "html",
+      "sha256": "d12bec59c40c8da571b2a32f0a1ef8cf8be44eab06325c97f8a0e948fc04a2c6",
+      "version": "国家统计局核算司,《经济普查后中国GDP数据解读之一：GDP总量、增长速度及人均GDP》, 2006-03-08, NBS website",
+      "retrieved": "2026-10-14"
+    },
+    "nbs2006b": {
+      "url": "https://www.stats.gov.cn/zt_18555/zdtjgz/zgjjpc/dycjjpc/cgfb/202303/t20230306_1935037.htm",
+      "format": "html",
+      "sha256": "585dd0e88f93d3505ddf3fecc00a57d38c5b941310522b944381ec989c4aa9ee",
+      "version": "国家统计局核算司,《经济普查后中国GDP数据解读之二：GDP三次产业结构及国际比较》, 2006-03-08, NBS website",
+      "retrieved": "2026-10-14"
+    },
+    "kk2019": {
+      "url": "https://apps.bea.gov/scb/2019/06-june/pdf/0619-household-production.pdf",
+      "format": "pdf",
+      "sha256": "f76e6a6f63ff8c3a47c892e655c54c36657839a93f66eab3f5a0e2b6e44642b6",
+      "version": "D. Kanal and J. T. Kornegay, 'Accounting for Household Production in the National Accounts: An Update, 1965-2017', Survey of Current Business 99(6), June 2019",
+      "retrieved": "2026-10-14"
+    },
+    "cso2017": {
+      "url": "https://www.cso.ie/en/media/csoie/methods/nationalincomeandexpenditureannualresults/NIE_2016_FAQS.pdf",
+      "format": "pdf",
+      "sha256": "7a94ffa9b647963dbead7071a2a37029d4de907c0130d4282bcca1cdccd01200",
+      "version": "Central Statistics Office, 'NIE 2016 Frequently Asked Questions', information notice published with National Income and Expenditure 2016 (2017)",
+      "retrieved": "2026-10-14"
+    }
+  }
+}

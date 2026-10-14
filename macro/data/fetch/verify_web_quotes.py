@@ -16,7 +16,8 @@ same for the other rows of a quotation snapshot (columns id, value, numeral, fil
 
 `format` is pdf (text extracted with pdftotext), html (tags removed), json (all string values),
 txt, or image (a scanned page read by eye: such rows are counted but not checked here, and the
-source entry says which page was read). Each document is downloaded once into
+source entry says which page was read). An entry may add "user_agent" for a host that refuses the default
+one. Each document is downloaded once into
 $WEB_CACHE (default ~/.cache/finance-study/web) and its SHA-256 is compared with the one recorded
 when the chapter was written; a different hash is reported (the site may have changed the file)
 but the quotations are still searched. Text and quotation are compared after normalizing
@@ -87,7 +88,8 @@ def fetch(key: str, src: dict, offline: bool) -> tuple[Path | None, str]:
         if offline:
             return None, "not in the cache (--offline)"
         try:
-            req = urllib.request.Request(src["url"], headers={"User-Agent": UA})
+            # a few hosts refuse browser-like agents (FRASER accepts curl's): a source may name its own
+            req = urllib.request.Request(src["url"], headers={"User-Agent": src.get("user_agent", UA)})
             with urllib.request.urlopen(req, timeout=90) as r:
                 path.write_bytes(r.read())
         except Exception as e:  # noqa: BLE001 - any network failure is reported, not fatal

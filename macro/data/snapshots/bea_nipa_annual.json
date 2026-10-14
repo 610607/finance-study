@@ -1,0 +1,11 @@
+{
+  "title": "US national accounts, annual 1929-2025: GDP (current and chained 2017 dollars), GDI and the statistical discrepancy, GNP, GNI, national income, private investment and depreciation, and saving, investment and net lending by sector",
+  "source": "U.S. Bureau of Economic Analysis, National Income and Product Accounts (NIPA tables 1.1.5, 1.1.6, 1.7.5, 1.10 and 5.1)",
+  "url": "https://apps.bea.gov/national/Release/TXT/NipaDataA.txt",
+  "series": "A191RC gdp; A191RX gdp_real_2017; A261RC gdi; A030RC stat_discrepancy; A001RC gnp; A023RC gni; A032RC national_income; A006RC gross_private_investment; A024RC private_cfc (Table 5.1 line 14); A557RC net_private_investment; A929RC gross_saving; W170RC gross_domestic_investment; W167RC capital_account_net; W162RC net_lending_nation; W994RC net_lending_private; AD01RC net_lending_government",
+  "retrieved": "2026-10-14",
+  "license": "Public domain: 'unless stated otherwise, the information posted on the BEA web site is in the public domain' and may be reproduced; BEA asks for the credit line 'Source: U.S. Bureau of Economic Analysis' (https://www.bea.gov/help/faq/145).",
+  "used_in": [2],
+  "fetch": "data/fetch/bea_nipa_annual.py",
+  "notes": "Millions of current dollars; gdp_real_2017 in millions of chained 2017 dollars. Downloaded 2026-10-14; NipaDataA.txt was last modified 2026-09-30 (the BEA release of that date) and had SHA-256 9f8e96bb72181d14d7b555f3e1b09c71e900fb8de4c305dc9217424de4757f27; SeriesRegister.txt 159175ff182598eaa0b99ac09724b8c0c7844276c52dab0cd946f21c5dc50f6d. BEA replaces the files at every release, so a later run of the fetch script gives revised numbers. The statistical discrepancy is GDP less GDI. Sector net lending (Table 5.1) starts in 1960 for the private and government sectors; net lending of the nation (W162RC) is the sum of the two, and the rest of the world's net lending to the United States is its negative. In Table 5.1, gross saving plus the statistical discrepancy equals gross domestic investment plus capital account transactions (net) plus net lending. The implicit price deflator used in the chapter is gdp / gdp_real_2017."
+}
