@@ -13,7 +13,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 
 | From | To | What the reader is promised | Status |
 |---|---|---|---|
-| 12 (opening, §12.2) | 4 `ch:money` | Fiat money is valuable because it is a central-bank liability backed by the state's taxes and laws; the policy rate as the "peg" of a floating currency (compare box 称提 vs today's central bank) | open |
+| 12 (opening, §12.2) | 4 `ch:money` | Fiat money is valuable because it is a central-bank liability backed by the state's taxes and laws; the policy rate as the "peg" of a floating currency (compare box 称提 vs today's central bank) | done (`sec:money-functions`, Knapp subsection; `sec:money-rate`) |
 | 12 (§12.7, legacy) | 8 `ch:qinhan` | The 《管子》 轻重 line of thought on the quantity of money and prices | open |
 | 12 (§12.7) | 13 `ch:silver` | Bodin (1568) and the quantity theory; the Ming turn to silver and the market price of silver | done (`sec:silver-world`, `sec:silver-china`, `sec:silver-revolution`) |
 | 12 (§12.7) | 19 `ch:bullion` | Hume and the quantity theory | open |
@@ -23,7 +23,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 12 (legacy) | 75 `ch:fiscaldominance` | Fiscal dominance: the central bank forced to finance deficits | open |
 | 12 (legacy) | 77 `ch:digitalmoney` | Stablecoins as private notes backed by reserve assets | open |
 | 12 (legacy) | 49 `ch:credibility`, 55 `ch:consensus` | Central-bank independence and inflation targeting as an answer to the lack of commitment | open |
-| 10 (opening, §10.2 intuition and compare box, legacy) | 4 `ch:money` | Bank deposits are bank liabilities; a transfer moves a liability from one customer to another, and banks settle only net balances between them (clearing, correspondent banks) | open |
+| 10 (opening, §10.2 intuition and compare box, legacy) | 4 `ch:money` | Bank deposits are bank liabilities; a transfer moves a liability from one customer to another, and banks settle only net balances between them (clearing, correspondent banks) | done (`sec:money-sheets`, 转账与结算) |
 | 10 (§10.1) | 9 `ch:india` | The Indian Ocean trade that the Islamic world joined to the Mediterranean | open |
 | 10 (legacy) | 5 `ch:external` | Covered interest parity: the forward–spot difference is set by the interest differential between two currencies | open |
 | 10 (compare box, legacy) | 15 `ch:finrevolution` | Bank money of the Bank of Amsterdam (accounts of merchants centralised in a public bank); joint-stock companies with limited liability and transferable shares | done (`sec:finrev-amsterdam`, `sec:finrev-voc`) |
@@ -40,7 +40,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 13 (§13.2 after the intuition box, legacy) | 19 `ch:bullion`, 23 `ch:goldstandard` | Hume's price–specie flow mechanism and automatic adjustment of the balance of payments under the gold standard | open |
 | 13 (legacy) | 76 `ch:hierarchy`, 61 `ch:emcrises` | An economy whose money is set abroad: the currency hierarchy and "original sin"; pegs that break when capital flows reverse | open |
 | 13 (legacy) | 17 `ch:tokugawa` | Silver in Qing China and 银贵钱贱 (silver dear, copper cash cheap) | done (`sec:toku-qing`, `sec:toku-debate`, `sec:toku-test`) |
-| 13 (legacy) | 4 `ch:money` | The text says Chapter 4 has already shown that what the state accepts in taxes largely decides what money people hold | open |
+| 13 (legacy) | 4 `ch:money` | ~~The text says Chapter 4 has already shown that what the state accepts in taxes largely decides what money people hold~~ Chapter 13's sentence was weakened when Chapter 4 was written: taxes give a money a floor of demand, quantity and trust decide the rest; Chapter 4 tests the strong version with Peru | done (`sec:money-test`, 秘鲁; Ch 13 changed) |
 | 13 (legacy) | 75 `ch:fiscaldominance` | Taxes, money demand and the relation between fiscal and monetary policy, returned to | open |
 | 13 (legacy) | 45 `ch:monetarism` | The quantity theory in twentieth-century monetarism; whether velocity is stable and whether money leads prices | open |
 | 13 (deeper box, legacy) | 50 `ch:budget` | $D^{*}=PS/(r-g)$ as the basic tool for judging public debt; the case $r\le g$ under today's low interest rates | open |
@@ -82,7 +82,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 17 (legacy, 铸币税与贬值) | 75 `ch:fiscaldominance`, 52 `ch:hyperinflation` | The inflation tax as today's form of the revenue a debasement raised (`eq:toku-seign`, a rate of about 32% in 1695) | open |
 | 17 (legacy, 货币错配) | 61 `ch:emcrises`, 76 `ch:hierarchy` | Currency mismatch: income in one money, obligations in another (Qing taxpayers earned copper and owed silver), and the burden when the debt currency appreciates | open |
 | 17 (legacy, 名义合约与通缩) | 28 `ch:depressionus` | Fisher's debt deflation: how nominal debts redistribute wealth in inflation and deflation (the Genbun recoinage eased the samurai's debts; dear silver made silver debts and taxes heavier) | open |
-| 17 (legacy, 记账单位) | 4 `ch:money` | The functions of money can be separated: rice was the unit of account in Tokugawa Japan but not the medium of exchange (Schaede) | open |
+| 17 (legacy, 记账单位) | 4 `ch:money` | The functions of money can be separated: rice was the unit of account in Tokugawa Japan but not the medium of exchange (Schaede) | done (`sec:money-functions`) |
 | 17 (pitfall box 银贵钱贱) | 24 `ch:periphery` | Opium, silver and China's money in the second half of the nineteenth century | open |
 | 17 (closing sentence) | 18 `ch:smith` | Smith asking systematically where the wealth of nations comes from and on what principle banks should lend (not "the first": Chapter 16 covers Cantillon and Quesnay) | open |
 | 2 (§2.3, deflator) | 3 `ch:prices` | How chained real GDP is built; why the GDP deflator differs from the consumer price index (Ch 2 defines the deflator only as nominal / real GDP) | done (`sec:prices-real`) |
@@ -95,7 +95,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 3 (§3.1, §3.4) | 23 `ch:goldstandard` | The politics of the gold standard in the 1890s (the bimetallic controversy that Fisher's *Appreciation and Interest*, 1896, was written for); Ch 3 uses Fisher only for the interest-rate formula and its tests | open |
 | 3 (§3.4, legacy) | 52 `ch:hyperinflation` | At high inflation the product term of the Fisher relation cannot be ignored; how very high inflation destroys nominal contracts themselves | open |
 | 3 (§3.4, §3.8 counterexample, legacy) | 66 `ch:zlb`, 67 `ch:abenomics` | The zero lower bound as an elastic "effective" bound (cash is costly to hold); QE, forward guidance and yield curve control as answers to it; Japan's negative rate (2016), YCC (2016) and the exit (2024) told in full (Ch 3 shows only the yield curves and the BoJ statements) | open |
-| 3 (§3.6, closing paragraph) | 4 `ch:money` | How the central bank sets the short-term rate, and whose liability money is (Ch 3 takes the short rate as given) | open |
+| 3 (§3.6, closing paragraph) | 4 `ch:money` | How the central bank sets the short-term rate, and whose liability money is (Ch 3 takes the short rate as given) | done (`sec:money-sheets`, `sec:money-rate`) |
 | 3 (§3.8) | 74 `ch:inflation21` | The 2021–2023 inflation, which the breakeven rate did not foresee | open |
 | 3 (legacy) | 55 `ch:consensus` | Inflation targeting (the FOMC's 2% PCE goal, adopted 2012) and the Taylor principle: the nominal rate moves more than inflation so that the real rate moves the right way | open |
 | 3 (legacy) | 25 `ch:wicksell` | What determines the real rate of interest, starting from Fisher and Wicksell; Ch 25 should refer back to `sec:prices-fisher` and `sec:prices-test` for Fisher (1896) rather than retell it | open |
