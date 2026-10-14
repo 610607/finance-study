@@ -87,7 +87,7 @@ def greek_silver():
     ax1.set_xlabel(T("公元年份", "year AD"), fontsize=9)
     ax1.set_ylabel(T("含银（%，对数）", "silver (%, log)"), fontsize=9)
     _grid(ax1)
-    _title(ax1, T("(a) 银从八成降到一两成", "(a) Silver: from 80% to 1–2%"))
+    _title(ax1, T("(a) 含银从 80% 降到 1%—2%", "(a) Silver: from 80% to 1–2%"))
 
     # (b) Egyptian wheat, drachmas per artaba
     P = C.prices()

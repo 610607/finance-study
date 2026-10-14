@@ -32,6 +32,7 @@ The regressions are OLS of the log price on the year (statsmodels), one observat
 from __future__ import annotations
 
 import math
+import re
 
 import numpy as np
 import pandas as pd
@@ -283,6 +284,11 @@ def coins(F, Q):
     quoted("    from 155 (%)", t1[2], 70)
     quoted("    from 180 (%)", t1[4], 67)
     quoted("Caracalla: weight of the antoninianus (denarii)", F["hr_caracalla"][2], 1.5)
+    # Cope (1974) p. 103 (row cope_alloy; also Table III item 10a, p. 107): the same alloy for denarii and
+    # antoniniani after AD 214, i.e. Severus' 15-unciae standard
+    quoted("    Cope: same alloy for denarius and antoninianus from AD", F["cope_alloy"][0], 214)
+    quoted("    Severus' standard, so Caracalla's antoninianus (%)", fineness_unciae(F["cope_severus"][3]), 44.4,
+           tol=0.05)
     quoted("Gallienus, Cope: 3 scrupula (%)", fineness_scrupula(F["cope_gallienus"][0]), 1.04, tol=0.005)
     quoted("    6 scrupula (%)", fineness_scrupula(F["cope_animal"][0]), 2.08, tol=0.005)
     quoted("    Cope Table X: 24 scrupula = 1 uncia", F["cope_tx24"][0] / F["cope_tx24"][1], SCRUPULA / UNCIAE)
@@ -297,7 +303,11 @@ def coins(F, Q):
     quoted("Diocletian's reforms: gold standard (CE)", F["hr_diocletian"][0], 286)
     quoted("    monetary reform (294/96)", F["hr_diocletian"][1], 294)
     quoted("    Currency Edict", F["hr_diocletian"][3], 301)
-    assert {"hr_xray", "hr_expect", "hr_mistrust", "hr_constantine"} <= Q
+    assert {"hr_xray", "hr_expect", "hr_mistrust", "hr_constantine", "hr_onlybankers", "hr_notlost", "pol_compact",
+            "kl_wine", "kent_meals", "hr_n108c"} <= Q
+    quoted("Haklai n. 108: the 301 rise from Diocletian's own reform of", F["hr_n108d"][1], 294)
+    quoted("    /", F["hr_n108d"][2], 96)
+    quoted("    the two edicts of", F["hr_n108c"][0], 301)
     # the Egyptian tetradrachm (Howgego Tables 2 and 3)
     t2 = F["hb_t2"]
     quoted("tetradrachm: to 167 (%)", t2[1], 18)
@@ -311,9 +321,9 @@ def coins(F, Q):
     quoted("    from 185/6 (g)", F["hb_t3f"][2], 0.6)
     quoted("    ratio", F["hb_t3b"][2] / F["hb_t3f"][2], 3.83, tol=0.005)
     quoted("    fall (%)", 100 * (1 - F["hb_t3f"][2] / F["hb_t3b"][2]), 74, tol=0.5)
-    quoted("denarius silver to 155 (g)", F["hb_t3a"][5], 2.7)
+    quoted("denarius silver to 167 (g), the same period as the tetradrachm", F["hb_t3b"][5], 2.4)
     quoted("    from 185/6 (g)", F["hb_t3f"][5], 1.9)
-    quoted("    fall (%)", 100 * (1 - F["hb_t3f"][5] / F["hb_t3a"][5]), 30, tol=0.5)
+    quoted("    fall (%)", 100 * (1 - F["hb_t3f"][5] / F["hb_t3b"][5]), 21, tol=0.5)
     quoted("silver per coin, from 80% to 2% (fall, %)", 100 * (1 - 2 / 80), 97.5, tol=1e-9)
     assert {"dio_debased", "hr_disguise", "hb_classic", "lac_taxpayers"} <= Q
 
@@ -327,6 +337,8 @@ def seigniorage(F):
     w = F["hr_caracalla"][2]
     quoted("(2) antoninianus: silver per denarius of face value / old", w / 2, 0.75)
     quoted("    gross seigniorage rate (%)", 100 * (1 - w / 2), 25)
+    quoted("    the minority view (Haklai n. 41): tariff (denarii)", F["hr_n41"][0], 1.5)
+    quoted("    if tariffed at 1.5 denarii (Haklai n. 41): seigniorage (%)", 100 * (1 - w / F["hr_n41"][0]), 0)
     quoted("(3) both: silver per denarius of face value / pre-193", new / old * w / 2, 0.47, tol=0.005)
 
 
@@ -345,6 +357,8 @@ def egypt_prices(F):
     quoted("private wheat before 160: documents", len(pre), 11)
     quoted("    from AD", pre["year"].min(), 45)
     quoted("    median (dr)", pre["dr_per_artaba"].median(), 8.73, tol=1e-9)
+    alt = pre["dr_per_artaba"].where(pre["year"] != 45, F["kl_p123"][1])   # Kelly's text: AD 45 at 3.0
+    quoted("    median with AD 45 at Kelly's 3.0 (deeper box)", alt.median(), 8.73, tol=1e-9)
     quoted("    lowest", pre["dr_per_artaba"].min(), 5)
     quoted("    highest", pre["dr_per_artaba"].max(), 12)
     mid = w[(w["year"] >= 190) & (w["year"] <= 270)]
@@ -361,7 +375,27 @@ def egypt_prices(F):
     quoted("249-270: documents", len(late), 18)
     quoted("    median", late["dr_per_artaba"].median(), 16)
     quoted("    multiples of four", (late["dr_per_artaba"] % 4 == 0).mean(), 1.0)
+    at160 = w[w["year"] == 160]
+    quoted("private wheat dated exactly 160: documents", len(at160), 2)
+    quoted("    lower price", at160["dr_per_artaba"].min(), 5.52, tol=1e-9)
+    quoted("    higher price", at160["dr_per_artaba"].max(), 11)
+    quoted("    median to 160 inclusive", w.loc[w["year"] <= 160, "dr_per_artaba"].median(), 8.73, tol=1e-9)
     quoted("no private wheat document between 160 and 190", ((w["year"] > 160) & (w["year"] < 190)).sum(), 0)
+    # Kelly: obol fractions in wine and barley, none in private wheat after 160
+    after160 = w[w["year"] > 160]
+    nums = [float(x) for a in after160["amounts"].astype(str) for x in re.findall(r"\d+(?:\.\d+)?", a)]
+    assert not after160["amounts"].astype(str).str.contains("ob").any() and all(x == int(x) for x in nums)
+    quoted("private wheat after 160: documents with obols or fractions",
+           int(after160["amounts"].astype(str).str.contains("ob").sum()) + sum(x != int(x) for x in nums), 0)
+    bm = table("barley", P)
+    bm = bm[(bm["year"] >= 190) & (bm["year"] <= 270)]
+    quoted("barley 190-270: documents", len(bm), 10)
+    quoted("    with obols", bm["amounts"].astype(str).str.contains("ob").sum(), 4)
+    quoted("Kelly: no private wheat price with obols after AD", F["kl_fraction"][0], 160)
+    quoted("Kelly: amounts in multiples of", F["kl_fours"][0], 4)
+    quoted("274/75: Egyptian tetradrachm reformed with the imperial coinage (Haklai n. 107)", F["hr_n107b"][0], 274)
+    quoted("    and 75", F["hr_n107b"][1], 75)
+    quoted("    slight increase in silver in", F["hr_n107"][2], 274)
     quoted("192 (P.Cair.Goodsp. 30)", w.loc[w["year"] == 192, "dr_per_artaba"].item(), 18)
     quoted("    prices behind the median", w.loc[w["year"] == 192, "n_prices"].item(), 3)
     quoted("190-270 median / pre-160 median", 16 / 8.73, 1.83, tol=0.005)
@@ -369,6 +403,8 @@ def egypt_prices(F):
     quoted("state wheat: documents", len(s), 31)
     eight = s[s["dr_per_artaba"] == 8]
     quoted("    at exactly 8 dr", len(eight), 20)
+    quoted("    below 8 (fig:greek_sectors)", (s["dr_per_artaba"] < 8).sum(), 6)
+    quoted("    above 8", (s["dr_per_artaba"] > 8).sum(), 5)
     quoted("    share (%)", 100 * len(eight) / len(s), 65, tol=0.5)
     quoted("    last price of 8 (AD)", eight["year"].max(), 216)
     quoted("    246, compulsory purchase (P.Oxy. XLII 3048)", s.loc[s["year"] == 246, "dr_per_artaba"].item(), 24)
