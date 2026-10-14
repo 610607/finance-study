@@ -1,0 +1,14 @@
+{
+  "title": "Consumer prices and exchange rates of 160 economies in 2001, 2020 and 2021, for tests of relative purchasing power parity over twenty years and over one year, with the WDI notes on the comparability of the exchange rate",
+  "source": "World Bank, World Development Indicators (API v2): consumer price indices and official exchange rates from the IMF's International Financial Statistics",
+  "url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL?format=json&per_page=20000&date=2001:2021",
+  "series": "FP.CPI.TOTL (cpi_2001, cpi_2020, cpi_2021: consumer price index, 2010 = 100); PA.NUS.FCRF (fx_2001, fx_2020, fx_2021: official exchange rate, LCU per US$, period average); flag: from the WDI country notes ('SpecialNotes' in https://api.worldbank.org/v2/sources/2/country/<iso3>/series/PA.NUS.FCRF/metadata, read 2026-10-14 for every economy in the file): 'dual_rate:Y1-Y2' where the notes say 'multiple or dual exchange rate activity exists' and 'this applies to the period Y1-Y2' (WDI then uses an alternative conversion factor, so the official rate is not the rate the economy trades at in those years; 'unspecified' when the notes give no period); 'euro:YYYY' where the notes give the 'irrevocable euro conversion rate' that 'entered into force on January 1, YYYY' (WDI restates national-currency series such as the PPP factor in euros by a simple multiplier, but the official exchange rate stays in the old currency for the years before YYYY); 'other_unit' where the notes say the national accounts are provided or reported in another unit (Liberia: US dollars; Zimbabwe: Zimbabwe Gold). Several flags are separated by ';'.",
+  "retrieved": "2026-10-14",
+  "license": "CC BY-4.0 (WDI metadata 'License_Type', 2026-10-14)",
+  "citation": "World Bank, World Development Indicators (last updated 2026-10-08).",
+  "used_in": [
+    5
+  ],
+  "fetch": "data/fetch/wb_external.py",
+  "notes": "Economies (aggregates excluded) with all six values. The exchange rate of an economy that adopted the euro between 2002 and 2021 is in its old currency in 2001 and in euros in 2021 (flag euro:YYYY), so its change is not an exchange-rate change; Chapter 5 leaves those economies, and those whose official rate the notes mark as not comparable in 2001, 2020 or 2021, out of the regressions. SHA-256 of the 2026-10-14 responses: FP.CPI.TOTL ab16d6f929fb6c93a949a790ce52caedc55ccc98eac1a518451d2dec48892704; PA.NUS.FCRF 04d8a520856d5e08d186b7d15ef0f9c62164e1962897ed271cdf27f20f923bbd."
+}

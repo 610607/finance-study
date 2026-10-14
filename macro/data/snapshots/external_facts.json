@@ -1,6 +1,6 @@
 {
-  "title": "Quotations for Chapter 5 (balance of payments, international investment position and exchange rates): Sri Lanka's 2022 crisis in the Central Bank of Sri Lanka's Annual Report 2022 and the Ministry of Finance's FAQ on the debt standstill, BEA's concepts manual (2026) and its release for the second quarter of 2026, Du, Tepper and Verdelhan on covered interest parity, Engel on uncovered interest parity, Taylor and Taylor on purchasing power parity, Eichengreen and Hausmann on original sin, SAFE's 2016 balance-of-payments report, and the terms of use of the BIS, CBSL and SAFE",
-  "source": "Central Bank of Sri Lanka (2023, 2024); Ministry of Finance, Sri Lanka (2022); U.S. Bureau of Economic Analysis (2026); Du, Tepper and Verdelhan (2017, NBER); Engel (2013, NBER); Taylor and Taylor (2004, NBER); Eichengreen and Hausmann (1999, NBER); 国家外汇管理局国际收支分析小组 (2017); BIS Data Portal",
+  "title": "Quotations for Chapter 5 (balance of payments, international investment position and exchange rates): Sri Lanka's 2022 crisis in the Central Bank of Sri Lanka's Annual Report 2022 and the Ministry of Finance's FAQ on the debt standstill, BEA's concepts manual (2026) and its release for the second quarter of 2026, Du, Tepper and Verdelhan on covered interest parity, Engel on uncovered interest parity, Taylor and Taylor on purchasing power parity, Eichengreen and Hausmann on original sin, Aizenman and Lee, Dooley, Folkerts-Landau and Garber, and Obstfeld, Shambaugh and Taylor on the motives for holding reserves, SAFE's 2016 balance-of-payments report, and the terms of use of the BIS, CBSL and SAFE",
+  "source": "Central Bank of Sri Lanka (2023, 2024); Ministry of Finance, Sri Lanka (2022); U.S. Bureau of Economic Analysis (2026); Du, Tepper and Verdelhan (2017, NBER); Engel (2013, NBER); Taylor and Taylor (2004, NBER); Eichengreen and Hausmann (1999, NBER); Aizenman and Lee (2005, NBER); Dooley, Folkerts-Landau and Garber (2003, NBER); Obstfeld, Shambaugh and Taylor (2008, NBER); 国家外汇管理局国际收支分析小组 (2017); BIS Data Portal",
   "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/publications/annual_report/2022/en/9_Chapter_05.pdf",
   "series": "id, dynasty (country), year, year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim), note",
   "retrieved": "2026-10-14",
@@ -79,6 +79,27 @@
       "format": "pdf",
       "sha256": "f112aa78ce5523049d4764a042fe65f78ff278cdad96ecdb84146ac1ea0dc920",
       "version": "国家外汇管理局国际收支分析小组，《2016年中国国际收支报告》，2017年3月30日",
+      "retrieved": "2026-10-14"
+    },
+    "aizenman2005": {
+      "url": "https://www.nber.org/system/files/working_papers/w11366/w11366.pdf",
+      "format": "pdf",
+      "sha256": "e7ab8862de7272e5ddfe957098f42dbb17a768276df647db4ff6c553fe3ac9f0",
+      "version": "J. Aizenman and J. Lee, 'International Reserves: Precautionary versus Mercantilist Views, Theory and Evidence', NBER Working Paper 11366, May 2005 (published in Open Economies Review 18(2), 2007, pp. 191-214)",
+      "retrieved": "2026-10-14"
+    },
+    "dfg2003": {
+      "url": "https://www.nber.org/system/files/working_papers/w9971/w9971.pdf",
+      "format": "pdf",
+      "sha256": "a8a9882bc7288697f70ed1f8823837241864479018ccd32a93bfb06264192797",
+      "version": "M. P. Dooley, D. Folkerts-Landau and P. Garber, 'An Essay on the Revived Bretton Woods System', NBER Working Paper 9971, September 2003",
+      "retrieved": "2026-10-14"
+    },
+    "ost2008": {
+      "url": "https://www.nber.org/system/files/working_papers/w14217/w14217.pdf",
+      "format": "pdf",
+      "sha256": "a70ef9cf53d6e9bdad08d8845170740834b2b27e9ca6a1191c9f45a4f1f37de4",
+      "version": "M. Obstfeld, J. C. Shambaugh and A. M. Taylor, 'Financial Stability, the Trilemma, and International Reserves', NBER Working Paper 14217, August 2008 (published in American Economic Journal: Macroeconomics 2(2), 2010, pp. 57-94)",
       "retrieved": "2026-10-14"
     },
     "bis_legal": {

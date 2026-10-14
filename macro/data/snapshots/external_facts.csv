@@ -81,6 +81,13 @@ beah_ca,美国,2026,2026 Q2,246.023,"billion dollars, s.a.",,bea_2026q2_hist,"p.
 beah_ka,美国,2026,2026 Q2,1.249,billion dollars,,bea_2026q2_hist,p. 1,Capital-account balance 1.249,
 beah_fa,美国,2026,2026 Q2,-369.699,billion dollars,,bea_2026q2_hist,p. 1,Net financial transactions -369.699,
 beah_sd,美国,2026,2026 Q2,-124.925,billion dollars,,bea_2026q2_hist,p. 1,Statistical discrepancy -124.925,
+beah_tx_a,美国,2026,2026 Q2,663.301,billion dollars,,bea_2026q2_hist,p. 1,Transactions in assets 663.301,
+beah_tx_l,美国,2026,2026 Q2,978.860,billion dollars,,bea_2026q2_hist,p. 1,Transactions in liabilities 978.860,
+beah_tx_d,美国,2026,2026 Q2,-54.139,billion dollars,,bea_2026q2_hist,p. 1,Transactions in financial derivatives -54.139,
+beah_goods,美国,2026,2026 Q2,291.302,"billion dollars, s.a.",,bea_2026q2_hist,p. 1,Goods trade deficit 291.302,
+beah_services,美国,2026,2026 Q2,91.485,"billion dollars, s.a.",,bea_2026q2_hist,p. 1,Services trade surplus 91.485,
+beah_primary,美国,2026,2026 Q2,-11.405,"billion dollars, s.a.",,bea_2026q2_hist,p. 1,Primary income balance * -11.405,
+beah_secondary,美国,2026,2026 Q2,34.802,"billion dollars, s.a.",,bea_2026q2_hist,p. 1,Secondary income deficit 34.802,
 dtv_violated,国际,2017,,2008,,,dtv2017,"PDF p. 3, abstract","We show that the CIP condition is systematically and persistently violated among G10 currencies, leading to significant arbitrage opportunities in currency and fixed income markets since the 2008 global financial crisis.",
 dtv_before,国际,2017,,,,,dtv2017,"PDF p. 4, introduction","Before the global financial crisis, the log difference between the forward and the spot rate was approximately equal to the difference in London interbank offer rates (Libor) across countries",
 dtv_size,国际,2017,,24;27;2010;2016,basis points,,dtv2017,"PDF p. 4, introduction",The average annualized absolute value of the basis is 24 basis points at the three-month horizon and 27 basis points at the five-year horizon over the 2010–2016 sample.,
@@ -113,6 +120,23 @@ safe_100pct,中国,2016,,100,per cent of short-term external debt,,safe2016,"PDF
 safe_structure,中国,2016,,,,,safe2016,"PDF p. 21, 专栏2",储备变化本质上反映了我国对外资产持有主体的结构变化,
 safe_private_nil,中国,2016,end of 2016; end of 2014,2016;1.3;2014;2.3,万亿美元,,safe2016,"PDF p. 21, 专栏2",2016年末，我国民间部门对外净负债1.3万亿美元，较2014年末的2.3万亿美元高点明显下降。,
 safe_not_only,中国,2016,,,,,safe2016,"PDF p. 21, 专栏2",而且，满足民间部门增持对外资产需求不一定全靠外汇储备。,
+safe_t_ca,中国,2016,first published,1964,亿美元,,safe2016,"PDF p. 14, 表1-2 2016年中国国际收支平衡表",1.经常账户1 1964,"line 1 of the table; text layer prints label, line number and value"
+safe_t_ka,中国,2016,first published,-3,亿美元,,safe2016,"PDF p. 15, 表1-2",2.1资本账户65 -3,capital account
+safe_t_fa,中国,2016,first published,267;-2174;2441,亿美元,,safe2016,"PDF p. 15, 表1-2",2.2金融账户68 267资产69 -2174负债70 2441,"financial account (lines 68-70): balance, assets, liabilities"
+safe_t_nrfa,中国,2016,first published,-4170;-6611;2441,亿美元,,safe2016,"PDF p. 15, 表1-2",2.2.1非储备性质的金融账户71 -4170资产72 -6611负债73 2441,lines 71-73
+safe_t_res,中国,2016,first published,4437,亿美元,,safe2016,"PDF p. 16, 表1-2",2.2.2储备资产107 4437,line 107: reserve assets
+safe_t_eo,中国,2016,first published,-2227,亿美元,,safe2016,"PDF p. 16, 表1-2",3.净误差与遗漏113 -2227,line 113
+safe_t_sign,中国,2016,,,,,safe2016,"PDF p. 16, 表1-2, 注2",“贷方”按正值列示，“借方”按负值列示，差额等于“贷方”加上“借方”。,
+safe_t_bpm6,中国,2016,,6,,,safe2016,"PDF p. 16, 表1-2, 注1",本表根据《国际收支和国际投资头寸手册》（第六版）编制。,
+al_test,国际,2005,,,,,aizenman2005,"PDF p. 2, abstract",This paper tests the importance of precautionary and mercantilist motives in accounting for the hoarding of international reserves by developing countries,
+al_result,国际,2005,,0,,,aizenman2005,"PDF p. 2, abstract","While the variables associated with the mercantilist motive are statistically significant, their economic importance in accounting for reserve hoarding is close to zero and is dwarfed by other variables.",
+al_merc,国际,2005,,,,,aizenman2005,PDF p. 4,"Under this strategy, reserves accumulation may facilitate export growth by preventing or slowing appreciation.",
+al_two,国际,2005,,,,,aizenman2005,PDF p. 4,"the precautionary approach links reserves accumulation directly to exposure to sudden stops, capital flight and volatility, whereas the mercantilist approach views reserves accumulation as a residual of an industrial policy, a policy that may impose negative externalities on other trading partners.",
+al_sample,国际,2005,,1980;2000,,,aizenman2005,"PDF p. 17, concluding remarks",Applying it to 1980-2000,
+al_china,国际,2005,,,,,aizenman2005,"PDF p. 17, concluding remarks","These results hold for most countries, including China.",
+al_not_optimal,国际,2005,,,,,aizenman2005,"PDF p. 17, concluding remarks",Our empirical study does not imply that the hoarding of reserves by countries is optimal or efficient.,
+dfg_periphery,国际,2003,,,,,dfg2003,"PDF p. 2, abstract","We argue that the normal evolution of the international monetary system involves the emergence of a periphery for which the development strategy is export-led growth supported by undervalued exchange rates, capital controls and official capital outflows in the form of accumulation of reserve asset claims on the center country.",
+ost_m2,国际,2008,,2,,,ost2008,"PDF p. 2, abstract","The size of domestic financial liabilities that could potentially be converted into foreign currency (M2), financial openness, the ability to access foreign currency through debt markets, and exchange rate policy are all significant predictors of reserve stocks.",
 bis_terms,国际,2026,page read 2026-10-14,,,,bis_legal,"Data Portal, Legal, 'BIS statistics'","The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation",
 cbsl_terms,斯里兰卡,2024,,,,,cbsl_bulletin2024,inside cover,"The material appearing in the Bulletin may be reproduced or translated in whole or in part without prior permission (unless it is indicated as copy-righted), provided due credit is given to the Central Bank of Sri Lanka and the Bulletin.",
 safe_terms,中国,2026,page read 2026-10-14,,,,safe_legal,法律声明,任何媒体、互联网站和商业机构不得利用本网发布的内容进行商业性转载，也不得歪曲和篡改本网发布的内容。经许可的媒体、网站可对本网内容进行非商业性转载，并注明“信息来源：国家外汇管理局网站”，违者将依法追究责任。,the reason why no SAFE data file is committed; the book quotes a few sentences and numbers of the 2016 report with the source stated
