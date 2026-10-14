@@ -83,6 +83,7 @@ def huizi(F):
 def yuan(F, df):
     zt_silver_1287 = F["yuan_1287_silver"] * F["yuan_1287_ratio"]       # guan 中统 per liang of silver
     quoted("silver price in Zhongtong notes, 1287 (guan/liang)", zt_silver_1287, 10, tol=0)
+    quoted("Guan et al.: huizi taken in per guan of Zhongtong notes (1276)", F["guan_huizi_rate"], 50, tol=0)
     quoted("Zhongtong value 1287 vs 1260 (%)", 100 * F["yuan_1260_parity"] / zt_silver_1287, 20, tol=1e-9)
     quoted("silver price in Zhongtong 1260-1287 (%/yr)", 100 * avg_rate(F["yuan_1260_parity"], zt_silver_1287, 1287 - 1260), 6.1, tol=0.05)
     zy_silver_1309 = F["yuan_1309_zhida"]                                 # guan 至元 per liang of silver
@@ -126,9 +127,20 @@ def ming(F):
     quoted("Chenghua: value below (%)", 100 * F["ming_chenghua"] / F["ming_1375_par"], 0.1, tol=1e-12)
 
 
-def cagan():
-    """Cagan (1956): hyperinflation begins at 50 per cent a month."""
-    quoted("50%/month as a yearly factor", 1.5 ** 12, 129.7, tol=0.05)
+def cagan(F):
+    """Cagan (1956): hyperinflation begins at 50 per cent a month (row cagan_threshold)."""
+    quoted("Cagan's threshold (%/month)", F["cagan_threshold"], 50, tol=0)
+    quoted("50%/month as a yearly factor", (1 + F["cagan_threshold"] / 100) ** 12, 129.7, tol=0.05)
+
+
+def ilkhanate(F):
+    """The 1294 paper money of Tabriz: d'Ohsson (1835) and Howorth (1888)."""
+    quoted("Tabriz 1294: notes obeyed for (days)", F["ohsson_1294_deserted"], 8, tol=0)
+    quoted("Tabriz 1294: trade stopped (months), d'Ohsson", F["ohsson_1294_two_months"], 2, tol=0)
+    quoted("Tabriz 1294: trade stopped (months), Howorth", F["howorth_1294_two_months"], 2, tol=0)
+    quoted("Tabriz 1294: horse worth (gold pieces)", F["howorth_1294_horse_coin"], 7.5, tol=0)
+    quoted("Tabriz 1294: horse asked (paper)", F["howorth_1294_horse_paper"], 750, tol=0)
+    quoted("Tabriz 1294: paper taken at (% of face)", 100 * F["howorth_1294_horse_coin"] / F["howorth_1294_horse_paper"], 1, tol=1e-12)
 
 
 def main():
@@ -137,10 +149,8 @@ def main():
     huizi(F)
     yuan(F, yuan_issuance())
     ming(F)
-    cagan()
-    quoted("Ilkhanate 1294: price rise (x, lower bound)", F["ilkhan_1294_prices"], 10, tol=0)
-    quoted("Ilkhanate 1294: monthly rise if tenfold within two months (%)",
-           100 * (F["ilkhan_1294_prices"] ** (1 / F["ilkhan_1294_duration"]) - 1), 216, tol=0.5)
+    cagan(F)
+    ilkhanate(F)
     print("Chapter 12: all quoted numbers reproduced.")
 
 

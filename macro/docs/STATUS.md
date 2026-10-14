@@ -17,6 +17,20 @@ Updated 2026-10-13.
 - Data: `data/snapshots/yuanshi_suyinchao` (the 《元史》 table of notes printed each year, 1260–1329) and `data/snapshots/paper_money_facts` (quotations with their numbers from the Song, Yuan and Ming histories, each checked verbatim against a pinned digital text by `data/fetch/verify_quotes.py`).
 - `checks/check_ch12.py` asserts every number in the text; `figsrc/fig_ch12.py` draws the figures in the style of the electromagnetics notes (STYLE.md §7.1).
 - What the sample settled is recorded in `STYLE.md` §11. Approved by the author on 2026-10-13; §11 now binds every chapter.
+- Brought in line with the Part 3 chapters on 2026-10-14, at the author's request ("保持12章与其他章节一致"):
+  - Cross-references: `\appref` replaces the hand-written "附录 B". The opening now points to every section with `\secref`, as Chapters 11 and 13–17 do (Chapter 10 got the same).
+  - Evidence: `paper_money_facts.json` has a `sources` block, so quotations from modern works and from Wikisource are checked verbatim by `verify_web_quotes.py`, as in Part 3.
+    - Guan, Palma & Wu (2024): the published PDF (CC BY 4.0, from figshare).
+    - Cagan's definition, as quoted by Fischer, Sahay & Végh (2002, NBER).
+    - The 1232 variant on Wikisource.
+    - von Glahn (1996): two passages read through archive.org's full-text search, which no script checks.
+  - Corrections, made because the sources do not support the old wording:
+    - The Encyclopaedia Iranica entry by Jackson (1990) answers 403 and could not be checked. The Tabriz case box now rests on d'Ohsson (1835) and Howorth (1888), and the Jackson citation is gone.
+    - Its "prices rose more than tenfold" and the derived 216% a month are in neither book and were removed. They are replaced by Wassaf's horse price (7½ gold pieces; 750 asked in paper), presented as one asking price, not a price level.
+    - Guan et al. say the 1276 jump came partly from converting huizi (at 50 to 1) and partly from Kublai's spending, not "很大一部分" from converting huizi.
+    - Their war finding is restated as they put it: civil war raised over-issue; disasters and grants did not.
+  - Still open: Guan et al.'s Table A1 is in the online Supporting Information (Wiley, 403), so the earlier six-year agreement with the 《元史》 table could not be checked again.
+  - The English `yuan_issuance` had one label touching another; it is moved down.
 
 ## EPUB edition — added 2026-10-13
 - `tools/epub/` converts the LaTeX sources to EPUB 3 with pandoc, taking every number from the PDF build (`docs/EPUB.md`). `python3 build.py --book all --epub` writes the volume and the five books; the EPUBs pass epubcheck 5.1 with no errors or warnings. `\tfrac` and `\dfrac` are set as `\frac` in the EPUB, because pandoc writes them as `<mfrac displaystyle=…>`, which epubcheck rejects (found with Chapter 10's partnership example, fixed 2026-10-13).

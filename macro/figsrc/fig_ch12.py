@@ -118,7 +118,7 @@ def yuan_issuance():
     clean_axes(ax)
     ax.grid(True, axis="y", color=LIGHT, lw=0.7, zorder=0)
     for x, txt, (tx, ty) in [(1287, T("1287 至元钞", "1287 Zhiyuan notes"), (1290.5, 2.6e7)),
-                             (1310, T("1310 至大银钞", "1310 Zhida silver notes"), (1313, 6.0e7))]:
+                             (1310, T("1310 至大银钞", "1310 Zhida silver notes"), (1313, T(6.0e7, 4.9e7)))]:
         ax.annotate(txt, xy=(x, y[x] * 1.08), xytext=(tx, ty), fontsize=7.8, color=INK, va="center",
                     arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.6))
     ax.text(1288, 9.0e7, T("1287 年后按至元钞一贯 = 中统钞五贯折算", "after 1287: 1 Zhiyuan guan = 5 Zhongtong guan"),

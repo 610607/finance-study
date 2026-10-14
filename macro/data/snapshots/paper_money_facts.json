@@ -9,6 +9,50 @@
     12
   ],
   "fetch": "data/fetch/verify_quotes.py",
-  "notes": "Rows with file songshi, songchaoshishi, yuanshi, mingshi or xuwenxiantongkao quote the daizhigev20 corpus (commit 4a6d6f2088825f132521d848c2ea86cf9c9a7620) and are verified verbatim by data/fetch/verify_quotes.py, which also reads every numeral. Second witness: the 宋史卷181 passages quoted in the chapter were compared with the Wikisource text on 2026-10-13 (first the quota, the reserve, the Sichuan totals and the 1268 value; then all of them, by the chapter's independent reviewer) and agrees, except 绍定五年 (1232), where the two disagree (三亿 in the corpus and in the 钦定续文献通考, 二亿 on Wikisource), so both readings are kept. The Yuan figures are consistent with Guan, Palma & Wu (2024); the Ming figures have one witness. Years: the year of the event or of the memorial reporting it; year_note gives the reign date or the uncertainty (e.g. 成化年间 is plotted at 1475). Values are as stated in the text; a quotation with 余 is a lower bound. jackson1990 rows summarize the Encyclopaedia Iranica entry ČĀV (Peter Jackson, 1990). The 宋朝事实 gives the first year's issue of the official jiaozi as 3,884,600 guan (row song_first_year_issue), about three times the 宋史 quota of 1,256,340 per issue; the chapter uses the 宋史 quota and says so. The year of huizi_perpetual (淳祐七年, 1247) is inferred from the order of the passage, whose preceding reign name is miswritten (淳熙 for 淳祐).",
-  "citation": "各史卷次见 juan 列；数字文本据殆知阁古代文献"
+  "notes": "Rows with file songshi, songchaoshishi, yuanshi, mingshi or xuwenxiantongkao quote the daizhigev20 corpus (commit 4a6d6f2088825f132521d848c2ea86cf9c9a7620) and are verified verbatim by data/fetch/verify_quotes.py, which also reads every numeral. Second witness: the 宋史卷181 passages quoted in the chapter were compared with the Wikisource text on 2026-10-13 (first the quota, the reserve, the Sichuan totals and the 1268 value; then all of them, by the chapter's independent reviewer) and agrees, except 绍定五年 (1232), where the two disagree (三亿 in the corpus and in the 钦定续文献通考, 二亿 on Wikisource), so both readings are kept. The Yuan figures are consistent with Guan, Palma & Wu (2024); the Ming figures have one witness. Years: the year of the event or of the memorial reporting it; year_note gives the reign date or the uncertainty (e.g. 成化年间 is plotted at 1475). Values are as stated in the text; a quotation with 余 is a lower bound. The 宋朝事实 gives the first year's issue of the official jiaozi as 3,884,600 guan (row song_first_year_issue), about three times the 宋史 quota of 1,256,340 per issue; the chapter uses the 宋史 quota and says so. The year of huizi_perpetual (淳祐七年, 1247) is inferred from the order of the passage, whose preceding reign name is miswritten (淳熙 for 淳祐). Rows whose file is a key of \"sources\" quote modern publications and older printed works and are checked verbatim by data/fetch/verify_web_quotes.py (added 2026-10-14, when Chapter 12 was brought to the evidence standard of Part 3): guan_* from Guan, Palma & Wu (2024), page numbers of the 29-page published version (Early View pagination); ohsson_* and howorth_* for the 1294 paper money of the Ilkhanate, from d'Ohsson (1835) and Howorth (1888), who retell Rashid al-Din, Wassaf and Bar Hebraeus; cagan_threshold from Cagan's definition as quoted by Fischer, Sahay & Végh (2002), since Cagan (1956) itself was not obtained. The horse price (7½ gold pieces, 750 in paper) was read on the page image (howorth1888img) because both text layers of the scans garble the fraction. The Encyclopaedia Iranica entry ČĀV (P. Jackson, 1990), on which the chapter first relied, answered 403 to the shell and to WebFetch on 2026-10-14 and has no archived copy, so its rows were dropped; the chapter's statement that prices rose more than tenfold came from it and is not in d'Ohsson or Howorth, so it was removed. Guan et al.'s Table A1 is in the article's online Supporting Information, which Wiley refused (403) on 2026-10-14; the agreement with the Yuan shi figures noted in yuanshi_suyinchao.json was checked when the chapter was written and could not be checked again. vg_* rows were read through the full-text search of the archive.org lending copy of von Glahn (1996) (identifier fountainoffortun0000vong; the search shows no page numbers); they are not in \"sources\", so no script checks them, and the chapter's own quotation from the 明史 (以金银易钞者听) is the second witness for the first of them.",
+  "citation": "各史卷次见 juan 列；数字文本据殆知阁古代文献",
+  "sources": {
+    "guan2024": {
+      "url": "https://ndownloader.figshare.com/files/65205354",
+      "format": "pdf",
+      "sha256": "96d070d9b0fb0e06357126204d3c6609183d2c079b2cd5dc01c6e0332fa33148",
+      "version": "published version (Early View, pp. 1-29; vol. 77(4): 1222-1250), CC BY 4.0, figshare item 32490186; found through Unpaywall, Wiley itself answered 403",
+      "retrieved": "2026-10-14"
+    },
+    "ohsson1835": {
+      "url": "https://archive.org/download/histoiredesmongo04ohss/histoiredesmongo04ohss_djvu.txt",
+      "format": "txt",
+      "sha256": "9c843ed11a99fcbe2cae051b4b0ece5aa3b02563e7882ec69436208fb848153e",
+      "version": "C. d'Ohsson, Histoire des Mongols depuis Tchinguiz-Khan jusqu'à Timour Bey ou Tamerlan, tome IV (La Haye et Amsterdam: Les frères Van Cleef, 1835); text layer of the University of Toronto scan of the Tientsin 1940 reprint, which keeps the pagination",
+      "retrieved": "2026-10-14"
+    },
+    "howorth1888": {
+      "url": "https://archive.org/download/india.history.resource.86895/86895_djvu.txt",
+      "format": "txt",
+      "sha256": "098465234f6ba086e28bf521a7facbfa345d2e9c59c8e59dde71d9c45018a4bb",
+      "version": "H. H. Howorth, History of the Mongols from the 9th to the 19th Century, Part III: The Mongols of Persia (London: Longmans, Green and Co., 1888); text layer of the scan of the Royal Asiatic Society (Bombay) copy",
+      "retrieved": "2026-10-14"
+    },
+    "howorth1888img": {
+      "url": "https://archive.org/details/india.history.resource.86895",
+      "format": "image",
+      "sha256": "",
+      "version": "the same volume as howorth1888; p. 371 read on the page image https://archive.org/download/india.history.resource.86895/page/n384_w1600.jpg",
+      "retrieved": "2026-10-14"
+    },
+    "fsv2002": {
+      "url": "https://www.nber.org/system/files/working_papers/w8930/w8930.pdf",
+      "format": "pdf",
+      "sha256": "2bfa5049f7ddda4e2d48b7f3e4dba5323ab3ac34337736602c5b525b63c0d011",
+      "version": "S. Fischer, R. Sahay and C. A. Végh, 'Modern Hyper- and High Inflations', NBER Working Paper 8930 (2002)",
+      "retrieved": "2026-10-14"
+    },
+    "wikisource_songshi181": {
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2/%E5%8D%B7181",
+      "format": "html",
+      "sha256": "9eac032fb27ed791fba02fee360d85a71c9513fdac867b068742599994aff980",
+      "version": "维基文库《宋史》卷181 as served on 2026-10-14 (a wiki page: the hash will change when the page is edited)",
+      "retrieved": "2026-10-14"
+    }
+  }
 }

@@ -280,7 +280,8 @@
 - **案例**：交子、会子、元中统钞、明宝钞
 - **对照框候选**：可兑换纸币 vs 不可兑换纸币；分界发行 vs 无期限发行
 - **前置**：第 8 章（先秦与秦汉：轻重之术、盐铁与常平仓），第 4 章（货币、银行与央行的资产负债表）
-- **已写成（样章，2026-10）**：史料为《宋朝事实》《宋史》《元史》《明史》《钦定续文献通考》（殆知阁数字文本，逐字核对）；研究文献 von Glahn (1996)、彭信威 (1958)、Guan, Palma \& Wu (2024)、Jackson (1990)、Cagan (1956)。对照框：可兑换 vs 不可兑换；分界 vs 无期限；称提 vs 公开市场操作；数量论解释 vs 背书解释。案例框：伊利汗国 1294 年的纸币。图：`songming_timeline`、`yuan_issuance`、`note_value`。数据：`yuanshi_suyinchao`、`paper_money_facts`。
+- **已写成（样章，2026-10）**：史料为《宋朝事实》《宋史》《元史》《明史》《钦定续文献通考》（殆知阁数字文本，逐字核对）；研究文献 von Glahn (1996)、彭信威 (1958)、Guan, Palma \& Wu (2024)、Cagan (1956)；伊利汗国的纸币据多桑 (1835) 与霍渥斯 (1888)。对照框：可兑换 vs 不可兑换；分界 vs 无期限；称提 vs 公开市场操作；数量论解释 vs 背书解释。案例框：伊利汗国 1294 年的纸币。图：`songming_timeline`、`yuan_issuance`、`note_value`。数据：`yuanshi_suyinchao`、`paper_money_facts`。
+- **2026-10-14 按第三部分的证据标准补齐**：`paper_money_facts` 加了 `sources`，对 Guan 等（2024）、多桑、霍渥斯、Cagan 定义（据 Fischer、Sahay 与 Végh 2002 的引文）与维基文库的引文由 `verify_web_quotes.py` 逐字核对；von Glahn 的两条经 archive.org 全文检索读到。Jackson (1990) 的 Iranica 条目已取不到（403），不再引用；原文“物价涨到原来的十倍以上”及由它算出的每月 216% 在多桑与霍渥斯书中都没有，已删去，改用瓦萨夫记载的马价（7½ 金币，纸币要价 750）。1276 年的跳升按 Guan 等的原文改为“一部分”收兑会子、一部分来自营建、宴乐与征战；战争与超发一句按原文改写。导语加了各节的 `\secref`；“附录 B”改用 `\appref`。
 
 #### 第 13 章 `ch:silver` 白银的世纪：波托西、马尼拉与价格革命 — `zh/ch13_silver.tex`
 *The silver century: Potosí, Manila and the price revolution*

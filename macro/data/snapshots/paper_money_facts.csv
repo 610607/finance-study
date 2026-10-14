@@ -40,7 +40,7 @@ huizi_gold_1209,南宋,1209,嘉定二年,1050000,两金,一百五万,songshi,卷
 huizi_1209_conversion,南宋,1209,嘉定二年,2,旧会/新会,二,songshi,卷一百八十一,以旧会之二，易新会之一,旧会二道换新会一道
 huang_chouruo,南宋,1209,嘉定初，黄畴若奏议（金使告主亡之后）,,,,songshi,列传·黄畴若传,物少则贵，多则贱，理之常也,同奏：先收十一界会子销毁，勿复支出
 huizi_outstanding_1232,南宋,1232,绍定五年,329000000,贯,,songshi,卷一百八十一,绍定五年，两界会子已及三亿二千九百余万,异文：维基文库本作“二亿二千九百余万”，见下一行
-huizi_outstanding_1232_variant,南宋,1232,绍定五年,229000000,贯,,wikisource_songshi181,卷一百八十一,紹定五年，兩界會子已及二億二千九百餘萬,维基文库《宋史》卷181，2026-10-13 查阅；与殆知阁本及《钦定续文献通考》不同
+huizi_outstanding_1232_variant,南宋,1232,绍定五年,229000000,贯,,wikisource_songshi181,卷一百八十一,兩界會子已及二億二千九百餘萬,维基文库《宋史》卷181（2026-10-14 重新下载核对）；年号在页面上另成一段，引文从“兩界”起；与殆知阁本及《钦定续文献通考》不同
 chuanyin_kaixi,南宋,1216,嘉定九年，四川安抚制置大使司言,,,,songshi,卷一百八十一,自开禧军兴以后，用度不给，展年收兑，遂至两界、三界通使,四川钱引：开禧用兵（1206）后展界，数界同时流通
 huaijiaozi_zhanjie,南宋,1222,嘉定十五年前后，两淮交子,,,,songshi,卷一百八十一,自是其数日增，价亦日损，称提无术，但屡与展界而已,
 huizi_perpetual,南宋,1247,年号存疑（宋史此处作“七年”）,,,,songshi,卷一百八十一,以十八界与十七界会子更不立限，永远行使,
@@ -83,6 +83,26 @@ ming_1426_rice,明,1426,宣德初,50,贯/石米,五十,mingshi,卷八十一,至�
 ming_chenghua,明,1475,成化年间（1465—1487）,1,文/贯（上限）,,mingshi,卷八十一,是时钞一贯不能直钱一文,
 ming_1525_silver,明,1525,嘉靖四年,0.003,两银/贯,,mingshi,卷八十一,钞一贯折银三厘,三厘 = 0.003 两
 ming_disuse,明,1570,隆庆四年前后,100,年以上,,mingshi,卷八十一,宝钞不用垂百馀年，课程亦鲜有收钞者，惟俸钱独支钞如故,隆庆年间：宝钞久已不用，只有官俸仍以钞支付
-ilkhan_1294_start,伊利汗国,1294,693 年 10 月 19 日（伊斯兰历），即 1294 年 9 月 12 日,,,,jackson1990,,,Rashid al-Din 记载的首次流通日期，大不里士
-ilkhan_1294_prices,伊利汗国,1294,,10,倍以上,,jackson1990,,,物价上涨十倍以上，市场停摆
-ilkhan_1294_duration,伊利汗国,1294,,2,月左右,,jackson1990,,,混乱持续约两个月后允许用铸币买粮并撤回法令
+guan_sole_tender,元,1260,,,,,guan2024,p. 1 (abstract),the first political regime to introduce a precious metal standard and deploy paper money as the sole legal tender,元朝以纸币为唯一法定货币
+guan_stages,元,1260,1260—1368,,,,guan2024,p. 6,"We divide the Yuan’s monetary regimes into three stages: full silver convertibility period (1260−75), nominal silver convertibility period (1276−309), and fiat standard (1310−68).",三个阶段的分期（正文与表 12.2）
+guan_nominal,元,1276,,,,,guan2024,p. 6,"Thus, the new issuance was no longer fully backed by reserves and was only convertible when the local exchange bureau had silver.",1276 年以后名义上可兑换
+guan_integrated,元,1276,,,,,guan2024,p. 6,when the former Song’s fiat money was integrated into Yuan’s paper money system in 1276,南宋的纸币并入元的纸币体系
+guan_huizi_rate,元,1276,收兑会子的比价,50,贯会子/贯中统钞,,guan2024,p. 5,"As the Yuan’s territory expanded to the south, the government increased the issuance of zhongtongchao to withdraw the Southern Song’s huizi, with an exchange rate of zhongtongchao 1 guan for huizi 50 guan.",用中统钞收兑会子
+guan_besides,元,1276,,,,,guan2024,p. 11,"Besides exchanging huizi, a surge in money issuance after 1276 may also be attributed to Kublai’s expenditures on construction projects, entertainment, and military campaigns.",1276 年以后印钞激增的另一来源：营建、宴乐与征战
+guan_four_indexes,元,1260,1260—1355,4,种价格指数,,guan2024,p. 12,"To assess the value of real money issues over time, we construct four price indexes",
+guan_price_stability,元,1290,1290 年代—1330 年代,,,,guan2024,p. 12,"The price level also indicates the period from the 1290s to the 1330s enjoyed price stability, despite the large increase in nominal monetary stock.",物价大体平稳
+guan_war,元,1260,,,,,guan2024,p. 1 (abstract),"We find that military pressure, particularly civil war, generated fiscal demands that led to the over-issuance of money. By contrast, natural disasters and imperial grants did not trigger the over-issue of money.",超发来自战争、特别是内战的财政需求
+guan_fiat_war,元,1310,,,,,guan2024,p. 1 (abstract),Warfare was much more likely to increase paper money issues under the fiat standard than during the silver standard period.,不兑现时期战争引起的超发更大
+ohsson_1294_first,伊利汗国,1294,,,,,ohsson1835,"t. IV, p. 104",La première émission du Tchao à Tébriz,扫描的文字层在这一句与下一行之间夹着页边的年份 693
+ohsson_1294_edict,伊利汗国,1294,1294 年 9 月 12 日,,,,ohsson1835,"t. IV, p. 104","eut lieu le 12 septembre 1294. Elle fut accompagnée d'un édit portant, que quiconque refuserait de prendre ce papier serait sur le champ puni de mort",首次发行与拒收者处死的命令（据把·赫卜烈思）
+ohsson_1294_deserted,伊利汗国,1294,,8,天,,ohsson1835,"t. IV, p. 104",La crainte du supplice le fit recevoir les huit premiers jours; mais bientôt les boutiques et les marchés furent déserts. On ne trouvait plus rien à acheter dans la ville; beaucoup de personnes en partirent.,照办八天后店铺与市场空了，许多人离城
+ohsson_1294_end,伊利汗国,1294,,,,,ohsson1835,"t. IV, p. 105","d'obtenir une ordonnance qui permettait la vente des comestibles pour de l'argent; peu après, le numéraire reparut dans tous les genres de commerce , et finalement la suppression du Tchao fut décidée","先准许用铸币买粮，最后撤销纸币（据拉施特）；“commerce ,”的空格照扫描文字层"
+ohsson_1294_two_months,伊利汗国,1294,,2,月,,ohsson1835,"t. IV, p. 105",pendant deux mois les transactions commerciales avaient cessé; les boutiques étaient vides,
+howorth_1294_edict,伊利汗国,1294,1294 年 9 月 12 日,,,,howorth1888,p. 371,"The first issue of chao took place at Tebriz on the 12th of September, 1294, and it was accompanied by an edict declaring that whoever refused to accept it, whoever bought and sold for other money than chao, and whoever did not take his coin to the mint to be exchanged for paper money, was to be punished with death.",强令以铸币兑换纸币
+howorth_1294_arbitrary,伊利汗国,1294,,,,,howorth1888,p. 371,"As in the famous panic at the time of the issuing of the French assignats, prices became quite arbitrary",
+howorth_1294_horse_coin,伊利汗国,1294,,7.5,金币,,howorth1888img,p. 371,the sellers of a horse not worth more than 7½ gold pieces asked 750 in paper,瓦萨夫记载的马价（霍渥斯转述）；扫描页上读出 7½，两种文字层分别误作 7% 与 7 yi
+howorth_1294_horse_paper,伊利汗国,1294,,750,（纸币）,,howorth1888img,p. 371,the sellers of a horse not worth more than 7½ gold pieces asked 750 in paper,同上，纸币要价
+howorth_1294_two_months,伊利汗国,1294,,2,月,,howorth1888,p. 371,"An ordinance permitting the use of coin in buying provisions was issued, and coin appeared again in other commercial affairs. Finally, the chao itself was suppressed, amidst universal joy. For two months commercial dealings had virtually ceased",
+cagan_threshold,20 世纪,1956,,50,%/月,,fsv2002,"PDF p. 46, Table 1, note 1/","Cagan defines hyperinflation ""as beginning in the month the rise in prices exceeds 50 percent and as ending in the month before the monthly rise in prices drops below that amount and stays below for at least a year.",Cagan（1956）的定义，据 Fischer、Sahay 与 Végh（2002，NBER WP 8930）的引文；原书本章未能取得，引文未注页码
+vg_nonconvertible,明,1375,,,,,vonglahn1996,页码未显示,from the first the Ming baochao were nonconvertible,archive.org 借阅本 fountainoffortun0000vong 的全文检索片段（2026-10-14）；verify_web_quotes 不核对此行；第二证据是本章所引《明史》“以金银易钞者听”
+vg_foreign_silver,明,1550,,,,,vonglahn1996,页码未显示,the importation of massive quantities of foreign silver from Japan and the Spanish dominions in the,同上，全文检索片段；白银输入
