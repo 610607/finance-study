@@ -1,0 +1,100 @@
+{
+  "title": "Quotations for Chapter 3 (prices, inflation and interest rates): Fisher (1896), the Boskin Commission (1996), BEA on the CPI and the PCE price index, index-linked gilts, the TIPS indexation rule, the chained CPI in the 2017 tax law, the Federal Reserve's inflation goal, and the Bank of Japan's negative rate and yield curve control",
+  "source": "Irving Fisher (1896); Advisory Commission to Study the Consumer Price Index (1996); McCully, Moyer and Stewart (2007, BEA); UK Debt Management Office; 31 CFR 356 App. B; Public Law 115-97; Federal Open Market Committee; Bank of Japan",
+  "url": "https://www.finance.senate.gov/imo/media/doc/Prt104-72.pdf",
+  "series": "id, dynasty (country), year, year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim, or a transcription for image rows), note",
+  "retrieved": "2026-10-14",
+  "license": "Quotations for criticism and teaching. Fisher (1896) is in the public domain; the Senate print, the BEA article, the CFR, the public law and the FOMC statement are works of the US government; the DMO page is Crown copyright, which its terms of use allow to be re-used 'under the terms of the Open Government Licence' (https://www.dmo.gov.uk/terms-of-use/, 2026-10-14); the Bank of Japan statements are quoted briefly with attribution.",
+  "used_in": [
+    3
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py checks every row whose source is not an image",
+  "notes": "Rows with file fisher1896img or boskin1996img were read on page images (the OCR or text layer garbles the numbers); their quote column is a transcription of the printed text, with '...' marking omissions. Values are the numbers the text uses, in the order they appear.",
+  "sources": {
+    "fisher1896": {
+      "url": "https://archive.org/download/appreciationinte00fish/appreciationinte00fish_djvu.txt",
+      "format": "txt",
+      "sha256": "4b61db096a98b59308c3d2608bf3f0003af7fae4e598a9b1cbc2a70c24038e7b",
+      "version": "Irving Fisher, Appreciation and Interest (Publications of the American Economic Association, vol. XI, no. 4, August 1896); Library of Congress copy digitized by the Internet Archive (item appreciationinte00fish), OCR text",
+      "retrieved": "2026-10-14"
+    },
+    "fisher1896img": {
+      "url": "https://archive.org/download/appreciationinte00fish/appreciationinte00fish.pdf",
+      "format": "image",
+      "sha256": "2c7c68eb33ce43271e8047b4e23045c526d620da900f343fae42f3a9fd14a497",
+      "version": "the same scan as a PDF; pages read on images rendered with pdftoppm: PDF pp. 19-21 (printed pp. 7-9), 42 (p. 30), 54-56 (pp. 42-44), 58 (p. 48). Printed page n is PDF page n + 12 up to p. 45; pp. 46-47 are missing from the scan",
+      "retrieved": "2026-10-14"
+    },
+    "boskin1996": {
+      "url": "https://www.finance.senate.gov/imo/media/doc/Prt104-72.pdf",
+      "format": "pdf",
+      "sha256": "dcd220eef988407694a36ea757d2f39d0df2d2edd01721a821253cd2255cfa73",
+      "version": "Final Report of the Advisory Commission to Study the Consumer Price Index, Committee on Finance, US Senate, S. Prt. 104-72 (December 1996), scan with OCR text layer on the Committee's site",
+      "retrieved": "2026-10-14"
+    },
+    "boskin1996img": {
+      "url": "https://www.finance.senate.gov/imo/media/doc/Prt104-72.pdf",
+      "format": "image",
+      "sha256": "dcd220eef988407694a36ea757d2f39d0df2d2edd01721a821253cd2255cfa73",
+      "version": "the same PDF; pages read on images rendered with pdftoppm: PDF pp. 6-7 (executive summary, pp. 1-2; its text layer is scrambled), 21 (p. 16, Table 1), 49 (p. 44, Table 3)",
+      "retrieved": "2026-10-14"
+    },
+    "mccully2007": {
+      "url": "https://apps.bea.gov/scb/pdf/2007/11%20November/1107_cpipce.pdf",
+      "format": "pdf",
+      "sha256": "2e8c3459f36cb6045e91f184639575f63e7e53e7eb5e3ff693c4b154cd10f454",
+      "version": "Clinton P. McCully, Brian C. Moyer and Kenneth J. Stewart, 'Comparing the Consumer Price Index and the Personal Consumption Expenditures Price Index', Survey of Current Business 87(11), November 2007, pp. 26-33",
+      "retrieved": "2026-10-14",
+      "user_agent": "curl/8.5.0"
+    },
+    "dmo_il": {
+      "url": "https://www.dmo.gov.uk/data/gilt-market/index-linked-gilts",
+      "format": "html",
+      "sha256": "3f61ff12b77ca72d7d34277695d1a3c082a69ec11b6efb01bab9d55d6be77d90",
+      "version": "UK Debt Management Office, 'Index-linked gilts' (web page with the history of index-linked gilts); the page may be edited",
+      "retrieved": "2026-10-14"
+    },
+    "cfr356": {
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title31-vol2/pdf/CFR-2025-title31-vol2-part356-appB.pdf",
+      "format": "pdf",
+      "sha256": "82ecaa4d5f9aeeea1258cb4939cbe5bcf88580221e82142ab1687fe00f04583c",
+      "version": "Code of Federal Regulations, title 31, part 356, appendix B ('Formulas and Tables'), edition revised as of July 1, 2025 (GovInfo annual edition)",
+      "retrieved": "2026-10-14"
+    },
+    "pl115_97": {
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+      "format": "pdf",
+      "sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+      "version": "Public Law 115-97, 131 Stat. 2054 (December 22, 2017), star print, GovInfo",
+      "retrieved": "2026-10-14"
+    },
+    "boj2016a": {
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2016/k160129a.pdf",
+      "format": "pdf",
+      "sha256": "604f4b9bb33f131864eb3f83dccb47bb15b3b9747e777b4c45caa19315500e90",
+      "version": "Bank of Japan, 'Introduction of \"Quantitative and Qualitative Monetary Easing with a Negative Interest Rate\"', statement of January 29, 2016",
+      "retrieved": "2026-10-14"
+    },
+    "boj2016b": {
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2016/k160921a.pdf",
+      "format": "pdf",
+      "sha256": "c15180b02d80fd86300bdcefbaa01cf27ef607b2ad8f32bbb4aafb59374804cb",
+      "version": "Bank of Japan, 'New Framework for Strengthening Monetary Easing: \"Quantitative and Qualitative Monetary Easing with Yield Curve Control\"', statement of September 21, 2016",
+      "retrieved": "2026-10-14"
+    },
+    "boj2024": {
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2024/k240319a.pdf",
+      "format": "pdf",
+      "sha256": "e07e26da39f4428bd5be1c870d7ec2229a98d0428f687b19fef220c6cc70e851",
+      "version": "Bank of Japan, 'Changes in the Monetary Policy Framework', statement of March 19, 2024",
+      "retrieved": "2026-10-14"
+    },
+    "fomc2026": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf",
+      "format": "pdf",
+      "sha256": "d9459e87b30dee0a5e3fd65d492848a36fe9dff09dd6e11f7c2008e20f2d0f43",
+      "version": "Federal Open Market Committee, 'Statement on Longer-Run Goals and Monetary Policy Strategy', as reaffirmed effective January 27, 2026; the file is replaced when the statement is reaffirmed or amended",
+      "retrieved": "2026-10-14"
+    }
+  }
+}

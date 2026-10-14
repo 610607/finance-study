@@ -282,4 +282,31 @@
 \bibitem{cso2017} Central Statistics Office, Ireland. NIE 2016 frequently asked questions. Information notice published with \emph{National Income and Expenditure 2016}, 2017. \url{https://www.cso.ie/en/media/csoie/methods/nationalincomeandexpenditureannualresults/NIE_2016_FAQS.pdf}. 表 1 的 GDP 与 GNI* 是 2017 年中的数字；“26\%”是 2016 年 7 月首次公布的实际增长率。
 
 \bibitem{bea2026} U.S. Bureau of Economic Analysis. National Income and Product Accounts, tables 1.1.5, 1.1.6, 1.7.5, 1.10 and 5.1, release of 30 September 2026; bulk files NipaDataA.txt and SeriesRegister.txt, \url{https://apps.bea.gov/national/Release/TXT/}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/bea\_nipa\_annual.csv}。
+% ---- 第 3 章：引文据下载的原文件，核对见 data/fetch/verify_web_quotes.py（网址与 SHA-256 记在
+% data/snapshots/prices_facts.json 的 sources）；数据见 data/fetch/fred_prices.py、mof_jgb.py 与 treasury_tips_auctions.py。
+\bibitem{fisher1896} I. Fisher. \emph{Appreciation and Interest}. Publications of the American Economic Association, 11(4), August 1896. New York: Macmillan. 据美国国会图书馆藏本的 Internet Archive 扫描（条目 appreciationinte00fish），\url{https://archive.org/details/appreciationinte00fish}；引文核对 OCR 文本，数字与表格按扫描页的图像读出。扫描缺第 46--47 页。
+
+\bibitem{boskin1996} Advisory Commission to Study the Consumer Price Index (M. J. Boskin, chairman; E. R. Dulberger, R. J. Gordon, Z. Griliches and D. Jorgenson). \emph{Final Report of the Advisory Commission to Study the Consumer Price Index}. Committee on Finance, United States Senate, Committee Print S. Prt. 104-72, 104th Congress, 2d Session, December 1996（致委员会的信件日期为 1996 年 12 月 4 日）. \url{https://www.finance.senate.gov/imo/media/doc/Prt104-72.pdf}. 摘要与表 1、表 3 按扫描页的图像读出（摘要的文本层错乱）。
+
+\bibitem{mccully2007} C. P. McCully, B. C. Moyer and K. J. Stewart. Comparing the Consumer Price Index and the Personal Consumption Expenditures Price Index. \emph{Survey of Current Business}, 87(11): 26--33, November 2007. \url{https://apps.bea.gov/scb/pdf/2007/11\%20November/1107_cpipce.pdf}.
+
+\bibitem{pl115_97} Public Law 115-97, 131 Stat. 2054, December 22, 2017（通称 Tax Cuts and Jobs Act）, section 11002. \url{https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf}.
+
+\bibitem{cfr356} Code of Federal Regulations, title 31, part 356, appendix B (Formulas and Tables), section I.B. Revised as of July 1, 2025. \url{https://www.govinfo.gov/content/pkg/CFR-2025-title31-vol2/pdf/CFR-2025-title31-vol2-part356-appB.pdf}.
+
+\bibitem{dmo_il} UK Debt Management Office. Index-linked gilts（网页）. \url{https://www.dmo.gov.uk/data/gilt-market/index-linked-gilts}. 2026 年 10 月 14 日读取；Crown copyright，按 Open Government Licence 使用。
+
+\bibitem{boj2016a} Bank of Japan. Introduction of ``Quantitative and Qualitative Monetary Easing with a Negative Interest Rate''. Statement on Monetary Policy, January 29, 2016. \url{https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2016/k160129a.pdf}.
+
+\bibitem{boj2016b} Bank of Japan. New Framework for Strengthening Monetary Easing: ``Quantitative and Qualitative Monetary Easing with Yield Curve Control''. Statement on Monetary Policy, September 21, 2016. \url{https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2016/k160921a.pdf}.
+
+\bibitem{boj2024} Bank of Japan. Changes in the Monetary Policy Framework. Statement on Monetary Policy, March 19, 2024. \url{https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2024/k240319a.pdf}.
+
+\bibitem{fomc2026} Federal Open Market Committee. Statement on Longer-Run Goals and Monetary Policy Strategy. Adopted effective January 24, 2012; as reaffirmed effective January 27, 2026. \url{https://www.federalreserve.gov/monetarypolicy/files/FOMC_LongerRunGoals.pdf}. 2026 年 10 月 14 日下载；文件在每次重申或修订时替换。
+
+\bibitem{fred2026} Federal Reserve Bank of St. Louis. FRED, Federal Reserve Economic Data. 序列 CPIAUCSL、CPIAUCNS、SUUR0000SA0、AHETPI（来源 BLS），PCEPI、GDPDEF（来源 BEA），DGS10、DGS2、DFII10（来源联邦储备委员会 H.15）. \url{https://fred.stlouisfed.org/}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/fred\_prices\_monthly.csv}、\texttt{fred\_prices\_quarterly.csv} 与 \texttt{fred\_yields\_daily.csv}。
+
+\bibitem{mof2026} Ministry of Finance, Japan. Interest Rate: historical data（国债固定期限收益率，1974 年起）. \url{https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv}. 2026 年 10 月 14 日下载，按 Public Data License 1.0 使用；本书的快照 \texttt{data/snapshots/mof\_jgb\_curves.csv} 经过编辑：2013 年以前只保留每月最后一个营业日，“-”（未公布）改为空格。
+
+\bibitem{fiscaldata2026} U.S. Department of the Treasury, Bureau of the Fiscal Service. Treasury Securities Auctions Data. Fiscal Data API, endpoint v1/accounting/od/auctions\_query. API 说明见 \url{https://fiscaldata.treasury.gov/api-documentation/}. 2026 年 10 月 14 日查询；前六次 TIPS 拍卖见 \texttt{data/snapshots/treasury\_tips\_first.csv}。
 \end{thebibliography}

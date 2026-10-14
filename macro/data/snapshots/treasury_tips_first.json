@@ -1,0 +1,13 @@
+{
+  "title": "The first six auctions of US Treasury inflation-indexed securities (TIPS), January 1997 to April 1998",
+  "source": "U.S. Department of the Treasury, Bureau of the Fiscal Service, Fiscal Data, 'Treasury Securities Auctions Data' (endpoint v1/accounting/od/auctions_query)",
+  "url": "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query?filter=inflation_index_security:eq:Yes&sort=auction_date&page%5Bsize%5D=6",
+  "series": "cusip, security_type, security_term, auction_date, issue_date, maturity_date, int_rate (coupon, percent), high_yield (the real yield at which the auction cleared, percent), offering_amt, total_tendered, total_accepted (dollars), ref_cpi_on_dated_date (the reference CPI on the dated date), auction_format",
+  "retrieved": "2026-10-14",
+  "license": "Fiscal Data, API documentation, 'License and Authorization': 'The data is offered free, without restriction, and available to copy, adapt, redistribute, or otherwise use for non-commercial or commercial purposes.' (https://fiscaldata.treasury.gov/api-documentation/, 2026-10-14). A work of the US government.",
+  "used_in": [
+    3
+  ],
+  "fetch": "data/fetch/treasury_tips_auctions.py",
+  "notes": "Downloaded 2026-10-14; SHA-256 of the API response 98cee2388bae1a089c76f77766811695aaceff226872bb8121fd02900ce8b690. The first auction (10-year note 9128272M3, 1997-01-29) cleared at a real yield of 3.449%; its reference CPI on the dated date 1997-01-15 is 158.43548, interpolated from the non-seasonally-adjusted CPI-U of October and November 1996 (the three-month lag): 158.3 + 14/31 x (158.6 - 158.3). The Treasury's rule for the reference CPI is checked in checks/check_ch03.py against CPIAUCNS in fred_prices_monthly."
+}

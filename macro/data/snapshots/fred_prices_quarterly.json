@@ -1,0 +1,13 @@
+{
+  "title": "US GDP implicit price deflator, quarterly (1947-2026)",
+  "source": "U.S. Bureau of Economic Analysis, via FRED, Federal Reserve Bank of St. Louis",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPDEF",
+  "series": "GDPDEF (gross domestic product: implicit price deflator, 2017 = 100, seasonally adjusted, quarterly; NIPA table 1.1.9)",
+  "retrieved": "2026-10-14",
+  "license": "FRED labels the series 'Public Domain: Citation Requested'; FRED's terms ask users to 'cite the data source and acknowledge that you obtained the data from FRED (example, \"Source: BLS via FRED\")' (https://fred.stlouisfed.org/legal/). The data are a work of the US government (BEA).",
+  "used_in": [
+    3
+  ],
+  "fetch": "data/fetch/fred_prices.py",
+  "notes": "Downloaded 2026-10-14 (latest observation: 2026 Q2, from BEA's release of 2026-09-30). SHA-256 of the fredgraph file: GDPDEF 6ee7315cb9cb9ca8519b37253735eacea67f76d6f0ccde6da08018cad1a0cad1. Dates are the first day of the quarter. Annual values in the chapter are means of the four quarterly values."
+}

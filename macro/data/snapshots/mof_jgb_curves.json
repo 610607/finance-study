@@ -1,0 +1,14 @@
+{
+  "title": "Japanese government bond yields by maturity, 1 to 40 years (constant maturity, percent): daily from 2013, month-end 1974-2012",
+  "source": "Ministry of Finance, Japan, 'Interest Rate' (JGB constant-maturity yields), historical data",
+  "url": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv",
+  "series": "columns 1Y, 2Y, ..., 10Y, 15Y, 20Y, 25Y, 30Y, 40Y of jgbcme_all.csv",
+  "retrieved": "2026-10-14",
+  "license": "Public Data License (Version 1.0; PDL 1.0): 'The copyright for information posted or published on this website ... belongs to the Ministry of Finance unless otherwise provided, and Public Data License (Version 1.0; PDL 1.0) [Digital Agency website] applies unless any rights are indicated.' (https://www.mof.go.jp/english/about_mof/notice/index.html, 2026-10-14). PDL 1.0 allows reuse with a source citation and a statement of any editing.",
+  "citation": "Source: Ministry of Finance, Japan, 'Interest Rate' (jgbcme_all.csv); rows selected by this project (see notes).",
+  "used_in": [
+    3
+  ],
+  "fetch": "data/fetch/mof_jgb.py",
+  "notes": "Edited (PDL 1.0): the snapshot keeps every business day from 2013-01-04 and the last business day of each month before 2013; '-' (no bond of that maturity) is written as an empty cell; dates are ISO. The file downloaded on 2026-10-14 ran from 1974-09-24 to 2026-09-30 and had SHA-256 ffeb33ecaf557f4e443b9aebc0a2d66550dbd3d9648dcf6a61dd552fc5d7ccdd. The Bank of Japan applied -0.1% to part of the current accounts from the reserve maintenance period starting 2016-02-16 and ended the negative rate on 2024-03-21 (its statements are quoted in prices_facts)."
+}

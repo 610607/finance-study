@@ -1,0 +1,13 @@
+{
+  "title": "US consumer prices, chained CPI, PCE prices and hourly earnings, monthly (1913-2026)",
+  "source": "U.S. Bureau of Labor Statistics (CPI-U, chained CPI-U, average hourly earnings) and U.S. Bureau of Economic Analysis (PCE price index), via FRED, Federal Reserve Bank of St. Louis",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL",
+  "series": "CPIAUCSL (CPI-U, all items, seasonally adjusted, 1982-84 = 100); CPIAUCNS (the same, not seasonally adjusted: the index TIPS are linked to); SUUR0000SA0 (chained CPI-U, not seasonally adjusted, December 1999 = 100); PCEPI (PCE chain-type price index, 2017 = 100, seasonally adjusted); AHETPI (average hourly earnings of production and nonsupervisory employees, total private, dollars, seasonally adjusted)",
+  "retrieved": "2026-10-14",
+  "license": "FRED labels every series used here 'Public Domain: Citation Requested' (series pages, 2026-10-14); FRED's terms ask users to 'cite the data source and acknowledge that you obtained the data from FRED (example, \"Source: BLS via FRED\")' (https://fred.stlouisfed.org/legal/). The underlying data are works of the US government (BLS, BEA, Federal Reserve Board).",
+  "used_in": [
+    3
+  ],
+  "fetch": "data/fetch/fred_prices.py",
+  "notes": "Downloaded 2026-10-14 (latest observations: CPI August 2026, AHETPI September 2026). SHA-256 of the fredgraph files: CPIAUCSL f8ecddf53a9a9a74dda92c2c4204e6039466fcb744bc74171b73b5f6aac48119; CPIAUCNS f79e3a78837142293449cee4a1a9b1da7be677fb3e989ffb2ef48e8e7cf4cdd7; SUUR0000SA0 69273ff3461dc49019e02991439867572aa04ceafb521b2ac969adcd1935395b; PCEPI 0f416a343a73a3b723af3315679596eecd7300abb433e8999c6a161d46c22e4f; AHETPI d564b359cc80dbb142b079038f220dac549143633dcaf324cd437621ac0d55bf. Dates are the first day of the month. Annual values in the chapter are means of the twelve monthly values. The chained CPI-U is published preliminary and revised for about a year; its last values are preliminary."
+}

@@ -1,0 +1,13 @@
+{
+  "title": "US Treasury constant-maturity yields: 10-year and 2-year nominal, 10-year TIPS, daily (1997-2026)",
+  "source": "Board of Governors of the Federal Reserve System, H.15 Selected Interest Rates (from Treasury yield curves), via FRED, Federal Reserve Bank of St. Louis",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+  "series": "DGS10 (market yield on US Treasury securities at 10-year constant maturity, percent); DGS2 (2-year); DFII10 (10-year constant maturity, inflation-indexed, percent; from 2003-01-02)",
+  "retrieved": "2026-10-14",
+  "license": "FRED labels every series used here 'Public Domain: Citation Requested' (series pages, 2026-10-14); FRED's terms ask users to 'cite the data source and acknowledge that you obtained the data from FRED (example, \"Source: BLS via FRED\")' (https://fred.stlouisfed.org/legal/). The underlying data are works of the US government (BLS, BEA, Federal Reserve Board).",
+  "used_in": [
+    3
+  ],
+  "fetch": "data/fetch/fred_prices.py",
+  "notes": "Business days from 1997-01-02 to 2026-10-09; an empty cell is a holiday or a series not yet published (DFII10 before 2003). SHA-256 of the fredgraph files: DGS10 5ec8d94ff0d1971760ded0dcd2965b2fd4d6d1086cee1df587010cb7a12c49f3; DGS2 4b4853bf93d8174d0c3b87d2d21220ddc2bc90a2e9eea2f9bca2ad0db4b0b6f4; DFII10 71c56454f50aedae202f22d64b5ff89655928e958d8d841c74a3201a52dca040. The 10-year breakeven inflation rate used in the chapter is DGS10 - DFII10 (FRED publishes the same difference as T10YIE)."
+}

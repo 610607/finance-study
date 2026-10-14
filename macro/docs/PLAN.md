@@ -143,6 +143,7 @@
 - **案例**：英国 1981 年起发行通胀挂钩国债；美国 1997 年起发行 TIPS；负利率时期日本的收益率曲线
 - **对照框候选**：名义利率 vs 实际利率；CPI vs GDP 平减指数；到期收益率 vs 持有期收益率
 - **前置**：第 2 章（国民核算与恒等式）
+- **已写成（2026-10）**：公式为拉氏、帕氏与费雪指数（式 `eq:prices-index`）、费雪关系的事前与事后形式（式 `eq:prices-fisher`）、债券价格、久期与修正久期（式 `eq:prices-bond`）、收益率曲线的预期加期限溢价（式 `eq:prices-curve`）、盈亏平衡通胀率的分解（式 `eq:prices-breakeven`）。史料为费雪《升值与利息》（1896；国会图书馆藏本的 Internet Archive 扫描，引文核对 OCR 文本，数字与表格按页面图像读，扫描缺第 46—47 页）、博斯金委员会的最终报告（1996，参议院财政委员会 S. Prt. 104-72；摘要与表 1、表 3 按页面图像读）、BEA 的 McCully, Moyer \& Stewart（2007）、Public Law 115-97 第 11002 节、31 CFR 356 附录 B（2025 年版）、英国债务管理办公室的通胀挂钩国债网页、日本银行 2016 年 1 月 29 日、9 月 21 日与 2024 年 3 月 19 日的声明、FOMC《关于长期目标与货币政策策略的声明》（2026 年 1 月重申）。引文全部由 `data/fetch/verify_web_quotes.py` 逐字核对。数据：FRED（BLS 的 CPI-U、链式 CPI-U 与时薪，BEA 的 PCE 价格指数与 GDP 平减指数，H.15 的 10 年期与 2 年期国债收益率和 10 年期 TIPS 收益率；`data/fetch/fred_prices.py`）、日本财务省的国债固定期限收益率（`data/fetch/mof_jgb.py`）、财政部 Fiscal Data 的前六次 TIPS 拍卖（`data/fetch/treasury_tips_auctions.py`）。对照框：CPI vs GDP 平减指数；名义利率 vs 实际利率；到期收益率 vs 持有期收益率。案例框：日本 · 2016—2024 · 负利率下的收益率曲线。误区框：美国普通工人的实际工资五十年没涨。直觉框：为什么价格与收益率反向变动。深入一步：为什么拉氏指数是上界。例题：博斯金报告的牛肉与鸡肉、面包与电脑（链式实际 GDP）、实际工资涨了多少、从小麦到房贷、一张 10 年期债券、从曲线里读出远期利率（2026 年 9 月 30 日的日本国债）、第一张 TIPS。表：`tab:prices-boskin`。图：`prices_wages`、`prices_bond`、`prices_jgb`、`prices_breakeven`。快照：`prices_facts`（93 行，其中 14 行据页面图像或没有引文）、`fred_prices_monthly`、`fred_prices_quarterly`、`fred_yields_daily`、`mof_jgb_curves`、`treasury_tips_first`。教学假设（正文已注明）：例 3.2 的面包与电脑经济；例 3.4 的 10 万元贷款；例 3.5 票面利率 3\% 的 10 年期债券；对照框与图 3.3 用 10 年期固定期限收益率给 10 年期零息票债券近似定价。不一致与缺口：博斯金表 1 印的第 2 期份额 0.43/0.57 与价格和数量算出的 0.444/0.556 不符（托恩奎斯特指数 1.10 与 1.11，例 3.1 已说明）；费雪的金价年升值 2.1\% 按 9 年复利为 2.04\%（正文已说明）；2025 年 10 月的 CPI 缺失，年度比较止于 2024 年，2015 年 10 月不进入盈亏平衡通胀率的检验。没有写入：BLS 网站拒绝访问（403），链式 CPI-U 的说明用 BEA（2007）；2008 年 11 月盈亏平衡通胀率接近零的原因只按两种读法陈述，不归因于某一事件。
 
 #### 第 4 章 `ch:money` 货币、银行与央行的资产负债表 — `zh/ch04_money.tex`
 *Money, banks and the central bank's balance sheet*
@@ -1369,6 +1370,7 @@ part:language part:ancient part:earlymodern part:classical part:keynes part:gold
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
 sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows
+sec:prices-world sec:prices-index sec:prices-real sec:prices-fisher sec:prices-bonds sec:prices-curve sec:prices-breakeven sec:prices-test sec:prices-legacy eq:prices-index eq:prices-fisher eq:prices-bond eq:prices-curve eq:prices-breakeven tab:prices-boskin
 sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
 sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
 sec:silver-china sec:silver-tiaobian sec:silver-revolution sec:silver-default eq:silver-arbitrage eq:silver-qty eq:silver-debt tab:silver-england tab:silver-castile
