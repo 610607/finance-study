@@ -81,4 +81,4 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   the order 10, 11, 13, 14, 15, 16, 17, started 2026-10-13; all seven written and reviewed and the figures redrawn
   by 2026-10-13; awaiting the author's review.
 - Part 1 (第 2—5 章; 第 1 章 last, after Part 2): notes in `docs/agent_prompts/part1_notes.md`; written
-  sequentially in the order 2, 3, 4, 5, started 2026-10-14; Chapter 2 written and reviewed 2026-10-14.
+  sequentially in the order 2, 3, 4, 5, started 2026-10-14; Chapters 2 and 3 written and reviewed 2026-10-14.

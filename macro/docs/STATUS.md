@@ -98,10 +98,24 @@ Updated 2026-10-14.
   - The 2025 SNA is quoted from its pre-edit version.
   - `verify_web_quotes.py` takes a per-source `user_agent` (FRASER refuses the default one).
   - Rebuilt with `python3 build.py --book all --epub` (figures now at 1:1). The six EPUBs pass epubcheck 5.1 with no messages. In the EPUB, Table 2.1 keeps its two-column 企业 header and eq. 2.1 is MathML.
-- Chapter 3 (价格、通胀与利率): sources collected (Boskin report; Fisher 1896 with the US currency/coin bonds and India's rupee paper; BoJ statements of 2016 and 2024 with MoF JGB yields, under PDL 1.0; DMO on index-linked gilts; the first TIPS auction; FRED series). Writing next.
+- Chapter 3 (价格、通胀与利率): written and reviewed. Fixes are in the commit "Chapter 3: fixes after the independent review".
+  - Example 3.3 (4) follows BEA (McCully et al. 2007) on why CPI and PCE inflation differ: in 2002–07 the formula explains about half and the weights most of the rest (rent of shelter 32% vs 15%), with scope partly offsetting; in 1972–80 two-thirds come from owners' housing (Triplett 1981), and the CPI-U before 1983 was never revised.
+  - Real hourly earnings deflated by the CPI-U first exceed their 1972 level again in 2020 (not "never since 1972").
+  - The BoJ's 80 trillion yen is the annual increase in its JGB holdings; the TIPS principal has a floor at par (31 CFR 356, App. C).
+  - The pitfall box's cumulative bias is over twenty years; the breakeven test has 163 months and few independent decades (overlapping windows).
+  Added after the review:
+  - The other side of the Boskin estimate: Lebow & Rudd (2001) put the bias at 0.6 pp (0.1–1.2) and report the Commission's members at 0.8 by 1999; BLS's switch to geometric means at the lower level in January 1999 (three-fifths of the weight, about 0.2 pp a year).
+  - The two readings of breakeven inflation name their sources: Gürkaynak, Sack & Wright (2008) on time-varying premiums, Campbell, Shiller & Viceira (2009) on the fall of 2008.
+  - A note on the chapter's local symbols; the monthly breakeven series keeps complete months only (to 2026-09).
+  - `prices_facts` has 119 rows; 105 quotations verify verbatim, 14 are read from page images or carry no quotation.
+  Open points:
+  - Why the October 2025 CPI is missing (the BLS website returns 403); annual comparisons stop at 2024.
+  - A composition effect in the 2020 jump in real hourly earnings is not measured.
+  - Recession outcomes after yield-curve inversions, and the 2006–07 inversion left out of the breakeven discussion.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four new figures pass figlint in both languages.
 
 ## Next
-1. Part 1: Chapters 3, 4, 5, then Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 1: Chapters 4, 5, then Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
