@@ -1377,8 +1377,9 @@ sec:prices-world sec:prices-index sec:prices-real sec:prices-fisher sec:prices-b
 sec:money-world sec:money-sheets sec:money-creation sec:money-rate sec:money-functions sec:money-test sec:money-legacy eq:money-base eq:money-reserves eq:money-mult eq:money-corridor tab:money-fed tab:money-steps
 sec:external-world sec:external-bop sec:external-position sec:external-rates sec:external-constraint sec:external-test sec:external-legacy eq:external-bop eq:external-sectors eq:external-iip eq:external-real eq:external-ppp eq:external-cip eq:external-uip tab:external-srilanka
 sec:meso-world sec:meso-unit sec:meso-credit sec:meso-misharum sec:meso-egypt sec:meso-debate sec:meso-test sec:meso-legacy eq:meso-ratios eq:meso-own eq:meso-debt tab:meso-rates
+sec:greek-world sec:greek-coin sec:greek-laurion sec:greek-denarius sec:greek-prices sec:greek-edict sec:greek-debate sec:greek-test sec:greek-legacy eq:greek-value eq:greek-ceiling tab:greek-silver
 sec:islamic-transfer sec:islamic-partnership sec:islamic-bills eq:islamic-spread eq:islamic-annual tab:islamic-rates
-sec:medieval-malthus sec:medieval-plague sec:medieval-debasement eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
+sec:medieval-malthus sec:medieval-plague sec:medieval-debasement sec:medieval-oresme eq:medieval-output eq:medieval-factor eq:medieval-dynamics eq:medieval-seigniorage
 sec:silver-china sec:silver-tiaobian sec:silver-revolution sec:silver-default eq:silver-arbitrage eq:silver-qty eq:silver-debt tab:silver-england tab:silver-castile
 sec:africa-gold sec:africa-cowrie sec:africa-inca sec:africa-cacao eq:africa-carry eq:africa-risk eq:africa-store eq:africa-hold
 sec:finrev-amsterdam sec:finrev-voc sec:finrev-holland sec:finrev-england sec:finrev-bank eq:finrev-agio eq:finrev-perp eq:finrev-commit tab:finrev-four
