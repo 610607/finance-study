@@ -148,9 +148,7 @@ def india_scale():
     fig.subplots_adjust(left=0.34, right=0.97)
     ax.barh(y, v, height=0.62, color=[tint(c, 0.9) for c in cols], zorder=3)
     for yi, vi, c, k in zip(y, v, cols, keys):
-        s = f"{vi:.2f}%" if vi < 1 else f"{vi:.1f}%"
-        if vi < 0.05:
-            s = f"{vi:.3f}%" if vi < 0.01 else f"{vi:.2f}%"
+        s = f"{vi:.2f}%" if vi < 1 else f"{vi:.1f}%"      # two decimals below 1%, as the text
         if k in doubt:      # inside the bar, clear of the dashed line
             ax.text(vi / 1.12, yi, s, fontsize=7.8, color="white", ha="right", va="center", zorder=4)
         else:

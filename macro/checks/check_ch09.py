@@ -132,6 +132,16 @@ def greek() -> dict[str, list[float]]:
     return {r.id: [num(x) for x in r.value.split(";")] for r in df.itertuples() if r.value}
 
 
+def later_years() -> dict[str, int]:
+    """Years the text measures 一千多年 to: the outcry against the East India Company's silver (Chapter 16) and the
+    drain of silver to China (Chapter 13)."""
+    out = {}
+    for name, rid in (("merc_facts", "mun_outcry"), ("silver_century_facts", "br14_1607")):
+        df, _ = load_snapshot(name, dtype=str, keep_default_na=False)
+        out[rid] = int(df.set_index("id").loc[rid, "year"])
+    return out
+
+
 def qinhan_years() -> dict[str, int]:
     df, _ = load_snapshot("qinhan_facts", dtype=str, keep_default_na=False)
     return {r.id: int(r.year) for r in df.itertuples() if r.year}
@@ -232,9 +242,9 @@ WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven"
          "eighteen": 18, "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60,
          "seventy": 70, "eighty": 80, "ninety": 90}
 SCALES = {"thousand": 1e3, "million": 1e6, "millions": 1e6}
-DENOMS = {"half": 2, "fourth": 4, "fourths": 4, "fifth": 5, "sixth": 6, "eighth": 8, "sixteenth": 16}
-ORDINALS = {"sixth": 6, "third": 3}
-ROMAN = {"D": 500, "L": 50}
+DENOMS = {"half": 2, "quarter": 4, "fourth": 4, "fourths": 4, "fifth": 5, "sixth": 6, "eighth": 8, "sixteenth": 16}
+ORDINALS = {"sixth": 6, "third": 3, "second": 2}
+ROMAN = {"M": 1000, "D": 500, "C": 100, "L": 50, "X": 10, "V": 5, "I": 1}
 
 
 def english(s: str) -> float:
@@ -280,6 +290,7 @@ READINGS = {
     "pl_coptos": [("three hundred and eight", "en"), ("twelve", "en")],
     "pl_berenice": [("two hundred and fifty-seven", "en")],
     "pl_desert": [("twelve", "en")],
+    "pl_juliopolis": [("Two", "en")],
     "pl_ocelis": [("thirty", "en")],
     "pl_muziris": [("forty", "en")],
     "pl_return": [("sixth day", "ord")],
@@ -289,6 +300,9 @@ READINGS = {
     "pl_100k": [("one hundred thousand", "en")],
     "lc_drain": [("D", "roman")],
     "my_app": [("DL", "roman")],
+    "lc_hippalus": [("XIII", "roman"), ("XXXII", "roman")],
+    "lc_juliopolis": [("MM", "roman")],
+    "lc_coptos": [("CCCVIIII", "roman"), ("XII", "roman")],
     "st_120": [("one hundred and twenty", "en")],
     "st_twenty": [("twenty", "en")],
     "ar_just": [("a pana and a quarter", 1.25), ("Five", "en"), ("Ten", "en"), ("Twenty", "en")],
@@ -300,10 +314,14 @@ READINGS = {
     "ar_saltimport": [("one-sixth", "en")],
     "ar_store": [("half", "en")],
     "ar_toll": [("1/5th", "num")],
+    "ar_toll6": [("1/6th", "num")],
+    "ar_toll10": [("1/10th", "num"), ("1/15th", "num")],
+    "ar_toll20": [("1/20th", "num"), ("1/25th", "num")],
     "ar_profit": [("five", "en"), ("ten", "en")],
     "ar_wages": [("one-fourth", "en")],
     "fl_date": [("321", "bc"), ("296", "bc")],
     "cu_buddha": [("1,000", "bc")],
+    "cu_exceptional": [("3", "num"), ("one grain and a half", 1.5)],   # 'grain' stands between the number words
     "ca_quarter": [("one-fourth", "en")],
     "ca_default": [("three-fourths", "en")],
     "ca_missing": [("three", "en")],
@@ -342,6 +360,19 @@ def read(phrase: str, how) -> float:
     return float(checked(how))       # a classical numeral; the phrase is its context
 
 
+def in_quote(rid: str, phrase: str) -> str:
+    """A phrase of a row's quotation that a number of the text rests on (the row has no value for it)."""
+    q = rows().set_index("id").loc[rid, "quote"]
+    assert phrase in q, f"{rid}: {phrase!r} not in the quotation"
+    return phrase
+
+
+def century_in(rid: str, phrase: str) -> int:
+    """The century named by an English ordinal in a row's quotation: 'mid-second A.D.' -> 2."""
+    in_quote(rid, phrase)
+    return ORDINALS[re.search("|".join(ORDINALS), phrase).group(0)]
+
+
 def check_readings(df: pd.DataFrame) -> None:
     n = 0
     for r in df.itertuples():
@@ -367,7 +398,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [float(x.replace(",", "")) for x in re.findall(r"\d[\d,]*(?:\.\d+)?", r.quote)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 84)
+    quoted("rows with values, each read from its quotation", n, 94)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -383,13 +414,14 @@ WITNESS = {"船行可八月": "船行可八月，到日南", "八月": "船行�
 # the chapter's Chinese renderings of the English, Latin and French quotations: rendering -> row
 TRANSLATIONS = {
     "按最低的估计，印度、赛里斯（Seres）与阿拉伯半岛每年从我们的帝国拿走一亿塞斯特斯——我们为奢侈与女人付的代价就是这么高。": "pl_100m",
-    "按最低的估计": "pl_100m", "一亿": "pl_100m", "至少一亿": "pl_100m", "我们为奢侈与女人付的代价就是这么高。": "pl_100m",
+    "按最低的估计": "pl_100m", "一亿": "pl_100m", "我们为奢侈与女人付的代价就是这么高。": "pl_100m",
     "赫尔玛波隆号（Hermapollon）船上运出的六批货，以银计": "ca_total", "以银计": "ca_total",
     "每枚与一第纳尔等值": "hw_tetra",
     "伽卢斯（Gallus）任埃及长官时，我和他在一起": "st_gallus",
     "了解到，大约一百二十条船从米奥斯·霍尔莫斯（Myos Hormos）开往印度，而在托勒密王朝的时候，几乎没有人敢走这条航线、做印度的生意": "st_ptolemies",
     "从前，连二十条船都不敢驶入阿拉伯湾，或驶出湾口的海峡哪怕一点点；如今，大批船队被派往远至印度与埃塞俄比亚尽头的地方。": "st_twenty",
     "三百零八英里，在季节风吹的时候，十二天走完": "pl_coptos",
+    "二英里": "pl_juliopolis",
     "二百五十七英里": "pl_berenice",
     "从科普托斯到贝勒尼基，全程要走十二天": "pl_desert",
     "一般在仲夏、天狼星升起之前或刚过之后启航，大约三十天到达奥克利斯（Ocelis）": "pl_ocelis", "仲夏": "pl_ocelis",
@@ -405,7 +437,7 @@ TRANSLATIONS = {
     "完成于公元 79 年以前": "da_pliny79",
     "酒，主要是意大利的": "pe_wine",
     "金币与银币，换成当地的钱有利可图": "pe_specie_b", "换成当地的钱有利可图": "pe_specie_b", "第纳尔": "pe_specie_b",
-    "刻着阿波罗多托斯（Apollodotos）与米南德（Menander）希腊铭文的旧德拉克马，至今在巴利加萨流通": "pe_drachmai",
+    "刻着阿波罗多托斯（Apollodotos）与米南德（Menander）希腊铭文的旧德拉克马，在巴利加萨流通": "pe_drachmai",
     "来这些港口的船都很大，因为它们装的胡椒与蒌叶又多又占地方": "pe_ships",
     "大量的钱币": "pe_specie_m", "少量的素布": "pe_muz_cloth", "白玻璃、铜或黄铜": "pe_muz_glass", "锡、铅": "pe_muz_tin",
     "不多，大约与巴利加萨一样多": "pe_muz_wine", "只供船员吃，因为商人不卖它": "pe_corn",
@@ -435,17 +467,17 @@ TRANSLATIONS = {
     "国家要把采矿与（矿产品的）买卖都作为国家专营。": "ar_monopoly",
     "盐的长官要按时收取钱租（prakraya）和应归国家的那份盐；卖掉这些盐，不仅要收回它的价值（múlyam），还要加收 5\\% 的溢价（vyájím），都收现钱（rúpa）": "ar_saltshare",
     "进口的盐（ágantulavanam）要向国王交六分之一": "ar_saltimport",
-    "在盐里掺假的，处以最重的罚金；除苦行者（vánaprastha）以外，未经许可制盐的也一样": "ar_saltlicence",
+    "在盐里掺假的，处以最重的罚金；除隐士（vánaprastha）以外，未经许可制盐的也一样": "ar_saltlicence",
     "商业长官要弄清各种商品——无论是陆上还是水里的产品，从陆路还是水路运来——有没有需求，价格是涨是跌": "ar_demand",
     "分散在各处的商品要集中起来，抬高价格。抬高的价格被接受以后，再宣布另一个价格": "ar_centralise",
     "他要避免那种会伤害百姓的高额利润": "ar_harm",
     "商业长官要为本地商品在规定的价格之上定 5\\% 的利润，外国商品定 10\\%。": "ar_profit",
-    "进口外国商品的船主（návika）与商人，要免除贸易税，让他们能得到一些利润。": "ar_importers",
+    "进口外国商品的航海者（návika）与商人，要减免贸易税，以示优待，让他们能得到一些利润。": "ar_importers",
     "进口商品要按价值的五分之一交通行税。": "ar_toll",
     "付完（外国国王的）通行税等各项费用以后，还有没有利润的余地": "ar_abroad", "还有没有利润的余地": "ar_abroad",
     "这样收来的储备，一半要留着，以防百姓遭灾，只用另一半；旧的储备要用新的替换。": "ar_store",
     "可以把自己储存的粮食或富人囤积的收入分给百姓，以示恩惠": "ar_famine",
-    "国王应把养活仆从的开支定在全部收入的四分之一以下。": "ar_wages",
+    "国王应把供养臣仆的开支定在全部收入的四分之一以下。": "ar_wages",
     "每月每百帕纳一又四分之一帕纳的利息是公正的。每月每百帕纳五帕纳是商业利息（vyávaháriki）。每月每百帕纳十帕纳，通行于林中。每月每百帕纳二十帕纳，通行于海上商人（sámudránám）。": "ar_just",
     "公正": "ar_just", "林中": "ar_just", "海上": "ar_just",
     "超过上述利率、或使别人超过上述利率的，处以初级罚金": "ar_exceed",
@@ -455,7 +487,7 @@ TRANSLATIONS = {
     "正像几个世纪以前德摩斯梯尼时代的商人那样": "ca_demos",
     "如果船沉了，担保就毫无意义": "ca_shipdown",
     "大致同时，都在 2 世纪中期": "ca_date",
-    "我会在看守与担保之下，把（货物）经沙漠运到科普托斯收取税款的公共仓库": "ca_desert",
+    "我会在看守与保护之下，把（货物）经沙漠运到科普托斯收取税款的公共仓库": "ca_desert",
     "把它们顺流运到亚历山大里亚收四分之一关税的仓库": "ca_quarter",
     "原来的合同是在穆齐里斯订的": "ca_muziris",
     "借贷双方或其中一方，很可能是住在那里的外国侨民": "ca_colony",
@@ -474,8 +506,10 @@ TRANSLATIONS = {
     "吸干": "lc_drain",
     "货币黄金是货币当局拥有所有权、作为储备资产持有的黄金": "bea_mgold",
     "与作为金融资产的货币黄金不同，非货币的实物黄金被归为货物": "bea_ngold",
+    "非纪念性的金币": "bea_coins",
+    "由中央银行或政府发行或授权、面值固定的纸币与硬币": "bea_currency",
     "没有看到要点：这些钱币在印度市场上是一种有价值的商品，凭它们的外观，作价高于所含的金属": "da_commodity",
-    "凭它们的外观，作价高于所含的金属": "da_commodity",
+    "凭它们的外观，作价高于所含的金属": "da_commodity", "凭它们的外观": "da_commodity",
     "2 世纪的罗马帝国": "sc_century", "略少于 200 亿": "sc_gdp", "这是一个更宽的可能区间的中点": "sc_gdp18",
     "GDP 不可能低很多，否则社会就会普遍贫困，而考古记录没有反映这一点": "sc_poverty",
     "为简单起见，取 7000 万": "sc_pop",
@@ -489,7 +523,7 @@ TRANSLATIONS = {
     "与银币含银的不断降低同时发生，这强烈地提示：罗马对印度的贸易改用金币，是因为对罗马银币成色的不信任，而不是因为对白银本身失去了兴趣": "da_trust",
     "对成色的不信任": "da_trust",
     "大概经过埃及流到印度，在那里有相当数量的发现": "hw_gold",
-    "那种妇女特有的奢侈，为了宝石，把我们的财富转移到外族乃至敌国手里。": "ta_jewels",
+    "那种妇女特有的奢侈，为了宝石，把我们的财富转移到外族或敌国手里。": "ta_jewels",
     "他的数字是整数，又在他抨击罗马精英挥霍的长篇议论里起着修辞的作用，这应当让人在用它们做定量分析时极其谨慎": "da_round",
     "这里的论点不是说普林尼肯定没有看到政府的档案，而是说，没有证据，就不能假定他看到了": "da_records",
     "所有这些虚假的数字都应当抛弃。它们暗示了一种证据所不能支持的准确与精确": "da_raschke",
@@ -543,6 +577,7 @@ def opening(F, U):
     P, c = pliny(F), cargo(F)
     chk("Pliny 12.84: sesterces a year", P["three"], 1e8)
     chk("后汉书: 利有十倍 / 银钱十当金钱一", F["hhs_coins"][0], 10)
+    chk("papyrus: century (mid-second A.D.)", century_in("ca_date", "mid-second A.D."), 2)
     chk("Hermapollon: parcels", F["ca_total"][0], 6)
     chk("    talents", F["ca_total"][1], 1154)
     chk("    drachmas", F["ca_total"][2], 2852)
@@ -586,6 +621,7 @@ def ex_route(F):
     R = route(F)
     rome = sum(R["rome"].values())
     chk("ex:india-route (1): days", rome, 94)
+    assert 3 < rome / MONTH_DAYS < 4, "三个多月"
     chk("    from Berenice", R["rome"]["red_sea"] + R["rome"]["ocean"], 70)
     quoted("    Nile miles a day", F["pl_coptos"][0] / F["pl_coptos"][1], 25.7, tol=0.05)
     quoted("    desert miles a day", F["pl_berenice"][0] / F["pl_desert"][0], 21.4, tol=0.05)
@@ -595,6 +631,7 @@ def ex_route(F):
     chk("    days by ship and on foot", ds + dw, 30)
     out = sum(R["han_out"].values())
     chk("    days out, at least", out, 360)
+    quoted("    about a year (years)", out / 365.25, 1, tol=0.05)
     chk("    months back", sum(F["hs_return"]), 10)
     chk("    days back", sum(R["han_back"].values()), 300)
     chk("    Wikisource: months back", 2 * F["hs_return"][0], 16)
@@ -616,7 +653,11 @@ def artha(F, Y, G, QY):
     chk("    56 - 37 = the loss", F["cu_cut"][0] - F["cu_three"][1], F["cu_loss"][0])
     chk("    years", F["cu_loss"][1], 600)
     pct("    loss (%)", 100 * (F["cu_cut"][0] - F["cu_three"][1]) / F["cu_cut"][0], 34, digits=0)
+    chk("    very exceptional: grains a century, upwards of", F["cu_exceptional"][0], 3)
+    chk("    the average loss a century, not more than", F["cu_exceptional"][1], 1.5)
+    assert F["cu_loss"][0] / (F["cu_loss"][1] / 100) > F["cu_exceptional"][0] > F["cu_exceptional"][1]
     chk("    as early as (BC)", -F["cu_buddha"][0], 1000)
+    chk("    current in the n-th century BC", century_in("cu_buddha", "sixth century B.C."), 6)
     src = meta()["sources"]
     assert "1891" in src["cunningham1891"]["version"] and "1914" in src["fleet1914"]["version"]
     assert "1915" in src["artha_b2"]["version"] and "2013" in src["francis2013"]["version"]
@@ -635,6 +676,10 @@ def artha(F, Y, G, QY):
     chk("mint: parts of copper", copper, 4)
     chk("    other metal (1/16 part)", other * mashas, 1)
     chk("    mashas per dharana", mashas, 16)
+    chk("    or saibya seeds", digits(in_quote("ar_dharana", "20 saibya seeds").split()[0]), 20)
+    for phrase, word, v in (("half a pana", "half", 1 / 2), ("a quarter", "quarter", 1 / 4), ("one-eighth", "one-eighth", 1 / 8)):
+        in_quote("ar_mint", phrase)
+        chk(f"    coins: {phrase} (pana)", english(word), v)
     silver = mashas - copper - other * mashas
     chk("    parts of silver", silver, 11)
     pct("    silver (%)", 100 * silver / mashas, 68.75, digits=2)
@@ -646,6 +691,7 @@ def artha(F, Y, G, QY):
     chk("    vyaji (%)", v, 5)
     chk("    testing charge, pana per cent", t, 0.125)
     pct("    together (%)", r + v + t, 13.125, digits=3)
+    assert 10 < r + v + t < 20, "一成多"
     chk("ex:india-mint (1) below the denarius by (points)", G["hr_nero"][1] - 100 * silver / mashas, 11.25)
     chk("(2) paid for 100 panas", 100 * (1 + (r + v + t) / 100), 113.125)
     chk("(3) testing charge (%)", t, 0.125)
@@ -654,6 +700,13 @@ def artha(F, Y, G, QY):
     chk("commerce: profit on local goods (%)", F["ar_profit"][0], 5)
     chk("    on foreign goods (%)", F["ar_profit"][1], 10)
     chk("toll on imports", F["ar_toll"][0], 1 / 5)
+    for rid, vals in (("ar_toll6", [1 / 6]), ("ar_toll10", [1 / 10, 1 / 15]), ("ar_toll20", [1 / 20, 1 / 25])):
+        for got, v in zip(F[rid], vals):
+            chk(f"    lower tolls ({rid})", got, v)
+            assert got < F["ar_toll"][0], "更低的税率"
+    for rid, word in (("ar_toll6", "flower, fruit, vegetables"), ("ar_toll6", "dried fish"), ("ar_toll10", "wine, ivory"),
+                      ("ar_toll20", "Of cloths"), ("ar_toll20", "grains, oils, sugar")):
+        in_quote(rid, word)
     chk("    Alexandria's duty", F["ca_quarter"][0], 1 / 4)
     assert F["ca_quarter"][0] > F["ar_toll"][0]
     chk("store: kept in reserve", F["ar_store"][0], 1 / 2)
@@ -667,6 +720,8 @@ def interest(F):
         chk(f"{k}: per month per cent", R.loc[k, "monthly"], m)
         quoted("    a year (%)", 100 * R.loc[k, "annual"], a, tol=1e-9)
         quoted("    p", R.loc[k, "p"], p, tol=0.005)
+    assert rows().set_index("id").loc["ar_just", "juan"] == "Arthashastra III.11"     # fig:india_rates: 第三卷第 11 章
+    quoted("sea: about a third repaid", R.loc["sea", "p"], 1 / 3, tol=0.01)
     chk("commercial / just", R.loc["commercial", "monthly"] / R.loc["just", "monthly"], 4)
     chk("sea / just", R.loc["sea", "monthly"] / R.loc["just", "monthly"], 16)
     chk("r_f (%)", 100 * R_F, 15)
@@ -679,6 +734,10 @@ def interest(F):
 
 def cargo_section(F):
     c = cargo(F)
+    J = rows().set_index("id")["juan"]
+    pages = [int(J[k].removeprefix("p. ")) for k in J.index if k.startswith(("ca_nard", "ca_ivory", "ca_fab", "ca_total"))]
+    chk("tab:india-cargo: from page", min(pages), 200)
+    chk("    to page", max(pages), 202)
     chk("tab:india-cargo: nard containers", F["ca_nard_a"][0], 60)
     chk("    drachmas per container", F["ca_nard_b"][0], 4500)
     chk("    talents", F["ca_nard"][0], 45)
@@ -753,6 +812,17 @@ def bop(F, us):
     P, c, U = pliny(F), cargo(F), units(F)
     chk("Pliny 6.101 (translation): sesterces", P["translation"], 5.5e8)
     chk("    times the cost", P["hundred"], 100)
+    chk("Latin: MM p. (no bar), paces", F["lc_juliopolis"][0], 2000)
+    chk("    English, miles", F["pl_juliopolis"][0], 2)
+    chk("    paces a mile", F["lc_juliopolis"][0] / F["pl_juliopolis"][0], 1000)
+    chk("    CCCVIIII p. (bar), thousand paces", F["lc_coptos"][0], 309)
+    chk("        days", F["lc_coptos"][1], F["pl_coptos"][1])
+    chk("        English miles, one less", F["lc_coptos"][0] - F["pl_coptos"][0], 1)
+    chk("    |XIII| (frame), hundred thousand paces", F["lc_hippalus"][0], 13)
+    chk("        XXXII (bar), thousand paces", F["lc_hippalus"][1], 32)
+    miles = (F["lc_hippalus"][0] * 1e5 + F["lc_hippalus"][1] * 1e3) / 1e3
+    chk("        Roman miles", miles, 1332)
+    chk("        English (1335), framed XIII read as 1300", F["pl_hippalus"][0] // 100, F["lc_hippalus"][0])
     chk("Teubner: numeral D", F["lc_drain"][0], 500)
     chk("    multiple", F["pl_100k"][0], 1e5)
     chk("    12.84: miliens centena milia = 1000 x 100,000", 1000 * F["pl_100k"][0], P["three"])
@@ -764,6 +834,8 @@ def bop(F, us):
     juan = rows().set_index("id")["juan"]
     assert "[12.84]" in juan["pl_100m"] and "6.101" in juan["pl_drain"] and "[33.133]" in juan["pl_100k"]
     gdp = F["sc_gdp18"][0] * GDP_SCALE
+    chk("Scheidel: the n-th century", century_in("sc_century", "second century"), 2)
+    chk("    money stock by the middle of the n-th century", century_in("sc_dj", "mid-second century"), 2)
     chk("Scheidel: GDP, a little less than (亿)", F["sc_gdp"][0] * GDP_SCALE / 1e8, 200)
     chk("    for computation (亿)", gdp / 1e8, 180)
     chk("    population (万)", F["sc_pop"][0] * POP_SCALE / 1e4, 7000)
@@ -785,6 +857,7 @@ def bop(F, us):
     cent = P["india"] * P["hundred"]
     chk("ex:india-scale (1) (亿)", cent / 1e8, 50)
     pct("    % of GDP", 100 * cent / gdp, 27.8)
+    assert 100 * cent / gdp > 25, "四分之一以上"
     quoted("(3) per head", cent / (F["sc_pop"][0] * POP_SCALE), 71, tol=0.5)
     pct("    % of GDP per head", S.loc["centiplicato", "pct_gdp"], 27.8)
     # the compare box: 0.3%-0.6%
@@ -806,6 +879,13 @@ def coins(F):
     chk("    silver", T["AR"].sum(), 4181)
     chk("    gold", T["AV"].sum(), 1260)
     chk("    copper", T["AE"].sum(), 717)
+    chk("    silver after the 1st century (全是 1 世纪以前与 1 世纪的)", T.loc[CENTURIES[2:], "AR"].sum(), 0)
+    assert "Fig. 5.8" in rows().set_index("id").loc["da_totals", "juan"]
+    chk("Darley Fig. 5.7: Roman coins", F["da_fig57"][2], 6446)
+    chk("    of which silver", F["da_fig57"][3], 4792)
+    assert F["da_fig57"][2] != total and F["da_fig57"][3] != T["AR"].sum(), "图 5.7 给的合计又不一样"
+    chk("    Karur, coins of no century (fig:india_coins)", F["da_karur"][0], 4120)
+    assert "Appendix 6" in load_snapshot("darley2014_coin_finds")[1]["title"]
     chk("hoards: Akenpalle", F["da_akenpalle"][0], 1531)
     chk("    Budinatham", F["da_budinatham"][0], 1398)
     chk("    Vellalur", F["da_vellalur"][0], 522)
@@ -818,6 +898,8 @@ def coins(F):
     pct("    share (%)", 100 * early / ident, 99.3)
     chk("    Augustus/Tiberius", I.loc["Augustus/Tiberius", "silver"], 233)
     chk("    Nero", I.loc["Nero", "silver"], 4)
+    chk("    Caligula and Claudius, before the reform too", I.loc[["Caligula", "Claudius"], "silver"].sum(), 14)
+    chk("trade in denarii until the n-th century", century_in("da_denarii", "late second century"), 2)
     chk("    unidentified", D[(D.century == "1st") & (D.issuer == "Unidentified") & (D.metal == "silver")].coins.sum(), 1675)
     chk("    all 1st-century silver in the table", ident + 1675, 4172)
     chk("gold: Claudius", I.loc["Claudius", "gold"], 215)
@@ -844,7 +926,7 @@ def debate(F, Y):
     chk("    tax (%)", F["da_young2"][0], 25)
     duty = P["three"] * F["da_young2"][0] / 100
     chk("    duty on 100 million (万)", duty / 1e4, 2500)
-    quoted("    Hermapollon duties", duty / c["duty"], 14, tol=0.5)
+    quoted("    Hermapollon duties", duty / c["duty"], 14.4, tol=0.05)
 
 
 def china(F, Y):
@@ -858,6 +940,12 @@ def china(F, Y):
     chk("银钱十当金钱一", F["hhs_coins"][0], 10)
     chk("    against denarii per aureus", F["pl_aureus"][0], 25)
     assert Y["hs_wangmang"] == ERA["元始"]
+    chk("利有十倍", checked(in_quote("hhs_coins", "利有十倍")[2]), 10)
+    L = later_years()
+    for rid, what in (("mun_outcry", "the outcry against the Company (pitfall)"), ("br14_1607", "silver to China")):
+        gap = L[rid] - Y["da_pliny79"]
+        assert 1000 < gap < 2000, (rid, gap)
+        print(f"ok 一千多年: Pliny ({Y['da_pliny79']}) to {what} ({L[rid]}): {gap} years")
 
 
 def test(F, Y):

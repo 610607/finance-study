@@ -5,6 +5,7 @@ pl_archers,罗马,,,,,,pliny_br6,NH 6.26 [6.101-106],"At the present day voyages
 pl_coptos,埃及,,,308;12,miles; days,,pliny_br6,NH 6.26 [6.101-106],"The distance thence to Coptos, up the Nile, is three hundred and eight miles; the voyage is performed, when the Etesian winds are blowing, in twelve days",
 pl_berenice,埃及,,,257,miles,,pliny_br6,NH 6.26 [6.101-106],"situate upon a harbour of the Red Sea, and distant from Coptos two hundred and fifty-seven miles",
 pl_desert,埃及,,,12,days,,pliny_br6,NH 6.26 [6.101-106],takes twelve days to perform the whole journey from Coptos to Berenice,
+pl_juliopolis,埃及,,,2,miles,,pliny_br6,NH 6.26 [6.101-106],Two miles distant from Alexandria is the town of Juliopolis,
 pl_ocelis,阿拉伯,,,30,days,,pliny_br6,NH 6.26 [6.101-106],"Passengers generally set sail at midsummer, before the rising of the Dog-star, or else immediately after, and in about thirty days arrive at Ocelis",
 pl_muziris,印度,,,40,days,,pliny_br6,NH 6.26 [6.101-106],"it is possible to arrive in forty days at the nearest mart of India, Muziris",
 pl_return,印度,,,6,day of Mechir,,pliny_br6,NH 6.26 [6.101-106],"at the beginning of the Egyptian month Tybis, which is our December, or at all events before the sixth day of the Egyptian month Mechir, the same as",
@@ -19,6 +20,9 @@ lc_drain,罗马,,,500,,,lacus_pliny6,NH 6.101,"nullo anno minus HS·| D | imperi
 my_drain,罗马,,,,,,mayhoff_pliny,NH 6.101,nullo anno minus HS,the numeral after HS is printed with combining marks that the XML does not keep; see my_app
 my_app,罗马,,,550,,,mayhoff_pliny,"NH 6.101, apparatus",v. DL rS.,the apparatus records the reading DL; the sigla are not explained in the file
 my_100m,罗马,,,,,,mayhoff_pliny,NH 12.84,minimaque computatione miliens centena milia sestertium annis omnibus India et,an apparatus note follows 'et'; Mayhoff's marginal note at this place refers to VI 101
+lc_hippalus,阿拉伯,,,13;32,hundreds of thousands of paces; thousands of paces,,lacus_pliny6,NH 6.100,"ab Syagro Arabiae promunturio Patalen favonio, quem hippalum ibi vocant, peti certissimum videbatur, | XIII |· XXXII p. aestimatione","both numerals carry a bar (the class 'overline' of the HTML: thousands), XIII also a frame (hundreds of thousands): 1,332,000 paces, 1332 miles, where the English has 1335 (pl_hippalus)"
+lc_juliopolis,埃及,,,2000,paces,,lacus_pliny6,NH 6.102,MM p. ab Alexandria abest oppidum Iuliopolis,"MM has no bar: two thousand paces, 'Two miles' in the English (pl_juliopolis)"
+lc_coptos,埃及,,,309;12,thousands of paces; days,,lacus_pliny6,NH 6.102,"inde navigant Nilo Coptum CCCVIIII p., qui cursus etesiis flantibus peragitur XII diebus","CCCVIIII carries a bar (thousands): 309,000 paces, 309 miles, where the English has 308 (pl_coptos); XII (days) has no bar"
 ta_jewels,罗马,22,the consulship of C. Sulpicius and D. Haterius (Annals 3.52),,,,tacitus_cb,Annals 3.53,"that peculiar luxury of women which, for the sake of jewels, diverts our wealth to strange or hostile nations",a letter of Tiberius to the senate
 pe_drachmai,印度,,,,,,periplus_mc,Periplus 47,old _drachmai_ bearing the Greek inscriptions of +Apollodotos+ and +Menander+ are current in Barugaza,_ and + are the eBook's markup of italics and small capitals
 pe_wine,印度,,,,,,periplus_mc,Periplus 49,"Οἶνος προηγουμένος Ἰταλικὸς—Wine, principally Italian.",
@@ -31,8 +35,9 @@ pe_muz_tin,印度,,,,,,periplus_mc,Periplus 56,"Tin, lead",
 pe_muz_glass,印度,,,,,,periplus_mc,Periplus 56,"White glass, copper or brass",
 pe_corn,印度,,,,,,periplus_mc,Periplus 56,"Corn, only for the use of the ship’s company, as the merchants do not sell it",
 pe_pepper,印度,,,,,,periplus_mc,Periplus 56,"Pepper in great quantity, produced in only one of these marts, and called the pepper of Kottonara",
-pe_july,埃及,,,,,,periplus_mc,Periplus 49,"The proper season to set sail from Egypt for this part of India is about the month of July—that is, Epiphi",
+pe_july,埃及,,,,,,periplus_mc,Periplus 56,"The proper season to set sail from Egypt for this part of India is about the month of July—that is, Epiphi",
 pe_hippalos,阿拉伯,,,,,,periplus_mc,Periplus 57,"was the pilot who first, by observing the bearings of the ports and the configuration of the sea, discovered the direct course across the ocean",
+pe_hippalos2,阿拉伯,,,,,,periplus_mc,Periplus 57,"this wind, which is the south-west, is, it seems, called in these seas Hippalos [after the name of the pilot who first discovered the",the bracket is the translator's
 st_gallus,埃及,,,,,,strabo_hf1,Geography 2.5.12,I was with Gallus at the time he was prefect of Egypt,
 st_120,埃及,,,120,ships,,strabo_hf1,Geography 2.5.12,I found that about one hundred and twenty ships sail from Myos-hormos,
 st_ptolemies,埃及,,,,,,strabo_hf1,Geography 2.5.12,"to India, although, in the time of the Ptolemies, scarcely any one would venture on this voyage and the commerce with the Indies",a footnote marker separates this phrase from st_120
@@ -57,15 +62,20 @@ ar_harm,印度,,,,,,artha_b2,Arthashastra II.16,He shall avoid such large profit
 ar_importers,印度,,,,,,artha_b2,Arthashastra II.16,"mariners (návika) and merchants who import foreign merchandise shall be favoured with remission of the trade-taxes, so that they may derive some profit",
 ar_abroad,印度,,,,,,artha_b2,Arthashastra II.16,whether there is any margin left for profit after meeting the payments (to the foreign king) such as the toll (sulka),
 ar_toll,印度,,,1/5,,,artha_b2,Arthashastra II.22,Imported commodities shall pay 1/5th of their value as toll.,
+ar_toll6,印度,,,1/6,,,artha_b2,Arthashastra II.22,"Of flower, fruit, vegetables (sáka), roots (múla), bulbous roots (kanda), pallikya (?), seeds, dried fish, and dried meat, the superintendent shall receive 1/6th as toll.",
+ar_toll10,印度,,,1/10;1/15,,,artha_b2,Arthashastra II.22,"of wine, ivory, skins, raw materials used in making fibrous or cotton garments, carpets, curtains (právarana), and products yielded by worms (krimijáta); and of wool and other products yielded by goats and sheep, he shall receive 1/10th or 1/15th as toll.",
+ar_toll20,印度,,,1/20;1/25,,,artha_b2,Arthashastra II.22,"Of cloths (vastra), quadrupeds, bipeds, threads, cotton, scents, medicines, wood, bamboo, fibres (valkala), skins, and clay-pots; of grains, oils, sugar (kshára), salt, liquor (madya) cooked rice and the like, he shall receive 1/20th or 1/25th as toll.",
 ar_profit,印度,,,5;10,per cent,,artha_b4,Arthashastra IV.2,"The Superintendent of Commerce shall fix a profit of five per cent over and above the fixed price of local commodities, and ten per cent on foreign produce.",
 ar_famine,印度,,,,,,artha_b4,Arthashastra IV.3,he may show favour by distributing either his own collection of provisions or the hoarded income of the rich among the people,
 ar_wages,印度,,,1/4,,,artha_b5,Arthashastra V.3,the king should fix under one-fourth of the total revenue the charges of maintaining his servants,
 ar_nanda,印度,,,,,,artha_b15,Arthashastra XV.1,This Sástra has been made by him who from intolerance (of misrule) quickly rescued the scriptures and the science of weapons and the earth which had passed to the Nanda king.,
+fl_judges,印度,,,,,,fleet1914,Introductory note,And it seems to be agreed by competent judges that,the sentence goes on with fl_text
 fl_date,印度,,,-321;-296,year,,fleet1914,Introductory note,"The work accordingly claims to date from the period 321-296 b,c.: and its archaic style is well in agreement with the claim.","the scan's text layer reads 'b,c.' for the printed B.C."
 fl_text,印度,,,,,,fleet1914,Introductory note,"though the existing text is, perhaps, not absolutely word for word that which was written by Kautilya, still we have essentially a work that he did compose in the period stated above",
 fl_megas,印度,,,,,,fleet1914,Introductory note,"it not only endorses and extends much of what we learn in some of its lines from the Greek writer, Megasthenes",
 fl_ms,印度,,,,,,fleet1914,Introductory note,he has had only the one manuscript and the partial commentary which have been mentioned above,
 fr_kautilya,印度,,,50;125,year,,francis2013,p. 418,qui aurait été composée entre 50 et 125 de notre ère,
+fr_convincing,印度,,,,,,francis2013,p. 418,"La démonstration, globalement convaincante, est complexe",
 fr_sastra,印度,,,175;300,year,,francis2013,p. 418,"Une rédaction ultérieure, effectuée entre 175 et 300, aurait donné à l'ouvrage une forme de sâstra",
 fr_ident,印度,,,,,,francis2013b,p. 419,"l'identification de Kautilya avec Cânakya, le ministre de Candragupta Maurya",
 fr_gupta,印度,,,,,,francis2013b,p. 419,est une fiction de l'époque des Gupta,
@@ -77,6 +87,7 @@ cu_gaya,印度,150,about A.D. 150,150,year,,cunningham1891,p. 55,"As this deposi
 cu_avg,印度,,,800;47,coins; grains,,cunningham1891,p. 55,the general average of upwards of 800 of these coins from all parts of India is upwards of 47 grains,
 cu_loss,印度,,,19;600,grains; years,,cunningham1891,p. 55,I am willing to accept a loss of 19 grains in weight in about 600 years circulation,
 cu_three,印度,,,111;37,grains,,cunningham1891,p. 55,"The three coins weigh 111 grains, giving an average of only 37 grains",
+cu_exceptional,印度,,,3;1.5,grains per century,,cunningham1891,p. 55,"as very exceptional. These three coins show a loss of upwards of 3 grains per century, while the average loss of these ptinch-marked coins was not more than one grain and a half in a ceatury",'ptinch-marked' and 'ceatury' are the text layer's readings of 'punch-marked' and 'century'
 cu_buddha,印度,,,-1000,year,,cunningham1891,p. 43,"They were certainly current in the time of Buddha, that is, in the sixth century B.C. But I see no difficulty in thinking that they might mount as high as 1,000 B.C.",
 ca_date,埃及,,mid-second century A.D.,,,,casson1990,p. 195,"are more or less contemporary, mid-second A.D., and both deal with a shipment of goods from India",
 ca_maritime,印度,,,,,,casson1990,p. 195,the loan in question must have been a maritime loan that made possible the acquisition of the goods,
@@ -109,6 +120,8 @@ ca_security,埃及,,,25,per cent,,casson1990,p. 202,the security was not a ship 
 ca_demos,埃及,,,,,,casson1990,p. 202,precisely as merchants had done centuries earlier in Demosthenes' day,
 ca_shipdown,埃及,,,,,,casson1990,p. 206,"since, if the ship went down, the security ceased to have any relevance",
 ca_muziris,印度,,,,,,casson1990,p. 206,the original contract was drawn up at Muziris,
+ca_thur,埃及,,,,,,casson1990,p. 202,"According to Thür, the contract between ego and tu was drawn up in Alexandria in two separate documents",
+ca_thur2,印度,,,,,,casson1990,p. 203,"as an elliptical way of referring to ""loan agreements (concerning a voyage) to Muziris","Casson's account of how Thür reads the phrase kata Mouzeirin of the papyrus (the Greek is garbled in the text layer, so the quotation starts after it)"
 ca_colony,印度,,,,,,casson1990,p. 206,Either ego or tu or both may well have been members of the foreign colony resident there,
 hw_tetra,埃及,,Antonine period,1,denarius,,howgego2010,p. 3,"base silver tetradrachms, equivalent in value to one denarius each",
 hw_gold,埃及,,,,,,howgego2010,p. 4,"gold presumably moved through Egypt to India, where it is found in some quantity",
@@ -117,6 +130,7 @@ da_raschke,罗马,,,,,,darley2014,"p. 64, n. 54",ll of these fake figures need t
 da_absolute,罗马,,,,,,darley2014,"p. 64, n. 54",All absolute calculations of value are avoided for precisely this reason.,
 da_young,罗马,,,100000000,sesterces,,darley2014,p. 87,of Pliny overstates both the quantitative reliability of his figure (100 million sesterces),
 da_young2,罗马,,,25,per cent,,darley2014,p. 87,Young concedes that using Pliny's figure to gauge the value to the Roman economy of the twenty-five per cent tax applied to Indian goods entering the Red Sea is risky,
+da_young3,罗马,,,,,,darley2014,p. 87,on the basis that if Pliny is assumed to have used tax receipts then the figure is likely to be of the appropriate order of magnitude,
 da_round,罗马,,,,,,darley2014,p. 88,the roundness of his figures and their rhetorical importance in his diatribe against what he perceived as the profligacy of the Roman elite should generate extreme caution about submitting his numbers to quantitative examination,
 da_records,罗马,,,,,,darley2014,p. 88,"The contention here is not that Pliny definitively did not have access to government records, but that without supporting evidence this cannot be assumed.",
 da_pliny79,罗马,79,completed before A.D. 79,79,year,,darley2014,"p. 127, n. 212",Natural History (completed pre A.D. 79),
@@ -127,6 +141,10 @@ da_third,印度,,,,,,darley2014,"p. 127, n. 212","This argument has, however, fa
 da_third_date,印度,,,3,century,,darley2014,"p. 127, n. 212",The suggestion of a third century date derives primarily from the,
 da_totals,印度,,,7;6;0;4174;756;0;0;378;0;0;12;0;0;1;616;0;84;101;0;21;0;0;2;0,coins (AR; AV; AE by century),,darley2014,"p. 249, note to Fig. 5.8","Pre-1st century A.D.: AR =7, AV = 6, AE = 0; 1st century: AR =4174, AV = 756, AE = 0; 2 nd century: AR = 0, AV = 378, AE =0; 3rd century: AR = 0, AV = 12, AE = 0; 4th century: AR = 0, AV = 1, AE = 616; 5 th century: AR = 0, AV = 84, AE = 101; 6th century: AR = 0; AV = 21, AE = 0; 7th century: AR = 0, AV = 2, AE = 0","AR silver, AV gold, AE copper; 'pre-1st century', then the 1st to the 7th century A.D."
 da_suggestive,印度,,,,,,darley2014,p. 249,these figures are intended to be suggestive only,
+da_stockpile,印度,,,,,,darley2014,p. 246,there can be no numismatically reliable basis for establishing stockpiling of specific coins in Indian contexts,
+da_skill,印度,,,,,,darley2014,p. 246,the argument that some types were more ‘trusted’ than others implies a low level of skill in assessing bullion on the part of Indian merchants for which there is no evidentiary basis,
+da_fig57,印度,,,189;4405;6446;4792,coins,,darley2014,"p. 248, Fig. 5.7","Total figures: 189 late Roman gold, 4405 late Roman copper and 6446 Roman (of which 4792 are silver)",
+da_karur,印度,,,4120,coins,,darley2014,"p. 249, n. 456",represents the 4120 unidentifiable coins from Karur in Krishnamurthy’s collection,
 da_justin,印度,,,,,,darley2014,p. 250,"Numismatically, the reign of Justin I marks a major watershed",
 da_commodity,印度,,,,,,darley2014,pp. 290-291,"an imbalance of trade misses the point that such coins were a valued commodity on the Indian market, overvalued against their bullion content by their appearance",
 da_denarii,印度,,,,,,darley2014,p. 314,"The argument that silver was not desired in Indian Ocean trade is unsustainable since, at least until the late second century, Roman trade with India was conducted in denarii",
@@ -137,6 +155,7 @@ da_budinatham,印度,,,1398,pieces,,darley2014,"p. 314, n. 564",Budinatham (TN) 
 da_vellalur,印度,,,522,pieces,,darley2014,"p. 314, n. 564",Vellalur (TN) 522 pieces,
 sc_gdp,罗马,,second century CE,20,billion sesterces,,scheidel2019,p. 4,Relative to an annual GDP of the order of a little less than 20 billion,
 sc_gdp18,罗马,,,18,billion sesterces,,scheidel2019,"p. 4, n. 12","a GDP estimate of 18 billion for computational purposes, the center point of a wider plausible range",
+sc_friesen,罗马,,,,,,scheidel2019,"p. 4, n. 12","See Scheidel and Friesen 2009: 63-74, esp. 74 n.45 for",the note goes on with sc_gdp18
 sc_poverty,罗马,,,,,,scheidel2019,p. 4,GDP could not have been much lower without creating a society characterized by universal poverty that is not reflected in the archaeological record,
 sc_century,罗马,,,,,,scheidel2019,p. 3,the Roman empire of the second century CE,
 sc_pop,罗马,,,70,million,,scheidel2019,p. 8,"say, for the sake of simplicity, 70 million",
@@ -161,3 +180,6 @@ hhs_tianzhu,印度,,,,,,houhanshu,卷八十八 西域传第七十八,西与大�
 hhs_pepper,印度,,,,,,houhanshu,卷八十八 西域传第七十八,诸香﹑石蜜﹑胡椒﹑姜﹑黑盐。,
 bea_mgold,,,,,,,bea_iea2026,"ch. 9, para. 9.33",Monetary gold is gold for which the monetary authorities have title and is held as reserve assets.,
 bea_ngold,,,,,,,bea_iea2026,"ch. 9, para. 9.33","In contrast to monetary gold, which is a financial asset, nonmonetary physical gold is classified as a good.",
+bea_coins,,,,,,,bea_iea2026,"ch. 11, para. 11.17","nonmonetary gold can be in the form of bullion, gold powder, finished metal shapes of gold, noncommemorative gold coins",
+bea_currency,,,,,,,bea_iea2026,"ch. 9, para. 9.23",Currency consists of notes and coins with fixed nominal values that are issued or authorized by central banks or governments.,
+bea_debt,,,,,,,bea_iea2026,"ch. 9, para. 9.17","Debt instruments consist of IMF special drawing rights (SDRs), currency and deposits",
