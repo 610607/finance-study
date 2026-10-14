@@ -150,8 +150,8 @@ Updated 2026-10-14.
   - Chapter-local symbols ($F$, $\mathit{CA}$, $\mathit{KA}$, $\mathit{FA}$, $\mathit{EO}$) are not in Appendix B.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
 
-## Part 2 — in progress (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part2_notes.md`)
-- Started 2026-10-14: Chapters 6, 7, 8, 9 in that order; Chapter 1 after them.
+## Part 2 — written and reviewed (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part2_notes.md`)
+- Started 2026-10-14: Chapters 6, 7, 8, 9 in that order, all four written and reviewed 2026-10-14; Chapter 1 after them.
 - Chapter 6 (美索不达米亚与埃及：神庙、宫廷与记账): written and reviewed. Fixes are in the commit "Chapter 6: independent review fixes".
   - The edicts: Ammi-ṣaduqa's cancels debts owed to the crown; the innkeeper clause concerns the palace collector's claim (CAD M/2, Ṣ, Kraus's numbering 11′, 14′).
   - § 48 follows King's "rent", which CAD reads as interest; the debt is not cancelled, only that year's payment.
@@ -211,8 +211,32 @@ Updated 2026-10-14.
   - The PLAN suggested comparing the 常平仓 with open market operations. The compare box sets it against the interest-rate corridor of Chapter 4 instead, and the text links 贾谊's 以术敛之、以术散之 to open market operations.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the three figures pass figlint in both languages.
 
+- Chapter 9 (古代印度与印度洋贸易): written and reviewed. The draft is in "Write Chapter 9: ancient India and the Indian Ocean trade"; the review fixes are in "Chapter 9: fixes after the independent review; rebuild compiled/".
+  - The model: Rome's coins sent east in the balance of payments (`eq:india-coin`, a keyeq): as goods the current account balances ($X+C-M=0$); as Rome's financial asset it shows a deficit $C$ met by a fall in foreign assets. The BEA manual (monetary against nonmonetary gold, noncommemorative gold coins) supports the first; a third reading, coins as the issuer's currency (a liability, $\Delta L=C$), is set out and rejected because no one in India guaranteed the face value.
+  - Pliny's 6.101 is read from the Latin: the framed D is 500 hundred-thousands, 50 million sesterces (Mayhoff's apparatus DL, 55 million); the English 550 million is ten times DL and clashes with 12.84's 100 million for three regions. The bar and the frame of the numerals on the LacusCurtius page are checked against the English distances (MM p. = 2 miles; CCCVIIII p. = 309 against 308; |XIII|·XXXII p. = 1332 against 1335).
+  - Scale: Pliny's figures are 0.3%–0.6% of Scheidel and Friesen's 18 billion sesterces; the "hundred times" would be 27.8% of GDP and is read as rhetoric. The Muziris papyrus (Casson 1990) gives the Hermapollon's cargo, 6.927 million drachmas, and its quarter duty; the talent and the mina are solved exactly from the papyrus's own arithmetic.
+  - The Arthashastra's interest rates by risk (1¼, 5, 10 and 20 per month per cent) are read with Chapter 14's $p=(1+r_f)/(1+i)$; its mint, salt, mines, commerce and tolls (1/5 on imports, lower rates for many goods) are compared with Chapter 8. Its date is given both ways (Fleet 1914; Olivelle via Francis's review).
+  - Coins: Darley's (2014) totals by century and Appendix 6 by issuer (the counts CSV is gitignored; see below): 99.3% of the identified first-century silver is of Augustus and Tiberius. Read with `eq:greek-value` ($\tau=0$ in India, the fineness must be known), with two limits: Caligula and Claudius are also before the reform (14 coins), and Darley warns that "trusted" types imply unskilled assayers.
+  - Contested questions with each side's strongest case: the drain as a loss (Pliny, Tacitus); Raschke and Darley against using Pliny's numbers; Casson and Young for the papyrus and the duties; Thür (Alexandria, two documents) against Casson (Muziris) on where the loan was drawn up.
+  - Fixes after the review:
+    - The Periplus only says the wind "it seems" is called Hippalos; the bracket is the translator's. 直到《周航记》的时代 stands outside the quotation.
+    - Cunningham's 19-grain loss is "very exceptional" (3 grains a century against 1½); Fleet's claim is what "competent judges" seem to agree; Francis finds Olivelle's layers "globalement convaincante".
+    - Arthashastra wording (隐士, 航海者…减免…以示优待, 供养臣仆) and the lower tolls of II.22 (1/6; 1/10 or 1/15; 1/20 or 1/25).
+    - Casson: Thür's view; 几乎可以肯定; 计税重量; the Arabarchs. Young's rationale is paraphrased from Darley p. 87.
+    - Scheidel's 18 billion is Scheidel and Friesen's figure. Darley's appearance premium is about late Roman coins; his Fig. 5.7 totals (6446 Roman, 4792 silver) differ from Fig. 5.8's and are mentioned; the 4120 undatable Karur coins are named in the caption.
+    - Also: the route example starts at Alexandria (94 days; the Han route 3.8 times as long), Strabo's 120 ships "if a year's number", the full 王莽 quotation (元始元年 = AD 1), an intuition box on knowing a coin's fineness, `sec:india-test` admits the counts cannot separate the explanations, the pitfall matches Chapter 16 on Mun, and pronouns replaced by names.
+    - `india_facts` has 184 rows from 23 sources, all verified verbatim (168 web rows, 16 corpus rows); 94 rows with values are read from their quotations.
+  - FORWARD_REFS: rows 27, 126 and 137 done; new rows from Chapter 9 to Chapters 19 and 76. The label registry gains Chapter 9's labels and `sec:islamic-world`.
+  Open points:
+  - Darley's thesis forbids further distribution: it is quoted in short passages, the PDF is not in the repository, and the counts of its Appendix 6 (`data/fetch/darley2014_coin_finds.py` writes them) are gitignored. Please decide whether a derived table of counts may be committed.
+  - Thür's articles (Tyche 2 and 3) could not be obtained; his view is given through Casson.
+  - No reign years are given for the emperors (no source row in hand); no modern dating of the punch-marked coins (only Cunningham 1891).
+  - Mayhoff's sigla ("v. DL rS.") are not explained in the file and are not interpreted.
+  - The chapter has one keyeq (`eq:india-coin`).
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
+
 ## Next
-1. Part 2 (Chapter 9; Chapters 6, 7 and 8 done), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 2 is written (Chapters 6–9); next Chapter 1, reviewed like the others. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
