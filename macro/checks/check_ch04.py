@@ -22,7 +22,7 @@ Notation of the chapter (local; Appendix B uses M for the money stock): H base m
 public (not consumption), R reserves, D deposits, c = C/M, r = R/D.
     base and broad money   H = C + R,  M = C + D                                     (eq:money-base)
     multiplier             M = H / (c + r - c r)                                     (eq:money-mult)
-    reserve identity       R = A - (N + G + Q + X + K)                               (eq:money-reserves)
+    reserve identity       R = A - N - D^T - Q - X - K  (R: reserve balances)       (eq:money-reserves)
     rate corridor          i_D <= i <= i_L; floor: i ~ i_D when R is ample           (eq:money-corridor)
 The five-step economy of tab:money-steps (a loan of 10, a tax of 8, a bond of 8 sold to a household, spending of
 16, a purchase of the bond by the central bank), the variants in ex:money-tax and the self-check are teaching
@@ -497,6 +497,12 @@ def pbc_case(F, P):
     quoted("FX share, Dec 2002 (%)", P.loc["2002-12", "fx_sh"], 43.3, tol=0.05)
     quoted("FX share, peak (%)", P.fx_sh.max(), 83.3, tol=0.05)
     quoted("  in (yyyymm)", float(P.fx_sh.idxmax().replace("-", "")), 201403, tol=0)
+    s = P.fx_sh.loc["2011-01":"2014-12"]           # legacy section: 'in 2011-2014 about four-fifths'
+    quoted("FX share 2011-2014: lowest (%), 'about 80%'", s.min(), 78.6, tol=0.05)
+    quoted("  highest (%)", s.max(), 83.3, tol=0.05)
+    above80 = P.fx_sh[P.fx_sh > 80]
+    quoted("  months above 80%: first (yyyymm)", float(above80.index[0].replace("-", "")), 201102, tol=0)
+    quoted("    last (yyyymm)", float(above80.index[-1].replace("-", "")), 201412, tol=0)
     quoted("FX, peak (tn yuan)", P.fx.max() / 1e4, 27.30, tol=0.005)
     quoted("  in (yyyymm)", float(P.fx.idxmax().replace("-", "")), 201405, tol=0)
     quoted("bonds issued (central bank bills), peak (tn yuan)", P.bonds.max() / 1e4, 4.75, tol=0.005)
@@ -538,6 +544,7 @@ def functions(F):
     quoted("(3) £100 sterling = £130 currency: one currency pound in sterling (£)", ex[0] / ex[1], 0.77, tol=0.005)
     quoted("    £1100 currency (£)", ex[0] / ex[2], 0.091, tol=0.0005)
     quoted("    ratio of the two values", ex[2] / ex[1], 8.5, tol=0.05)
+    quoted("    the £1100 colony's paper relative to the £130 colony's", ex[1] / ex[2], 0.12, tol=0.005)
     quoted("    discount on sterling, 15 years at 6% (pv/face), for comparison", pv / 100, 0.417, tol=0.0005)
     quoted("Knapp: first edition", F["kn_editions"][0], 1905, tol=0)
     quoted("  fourth edition", F["kn_editions"][3], 1923, tol=0)
