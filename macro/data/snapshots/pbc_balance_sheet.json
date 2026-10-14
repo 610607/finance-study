@@ -4,7 +4,7 @@
   "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116319/index.html",
   "series": "货币当局资产负债表 (Balance Sheet of Monetary Authority): 国外资产 (foreign_assets), 其中外汇 (fx), 货币黄金 (gold); 对政府债权 (claims_gov); 对其他存款性公司债权 (claims_banks; before 2006 the sum of 对存款货币银行债权 and 对特定存款机构债权); 对其他金融性公司债权 (claims_ofc); 对非金融性部门债权 / 对非金融性公司债权 (claims_nonfin); 其他资产 (other_assets); 总资产 (total_assets); 储备货币 (reserve_money), 其中货币发行 (currency), 其他存款性公司存款 (bank_deposits; before 2006 the sum of the deposits of 存款货币银行 and 特定存款机构), 非金融机构存款 (nonfin_deposits); 不计入储备货币的金融性公司存款 (fc_deposits_excl); 发行债券 (bonds, mainly central bank bills); 国外负债 (foreign_liab); 政府存款 (gov_deposits); 自有资金 (own_capital); 其他负债 (other_liab); 总负债 (total_liab)",
   "retrieved": "2026-10-14",
-  "license": "Official statistics published by the People's Bank of China; no terms of use were found on the site (2026-10-14). The snapshot is an extract of factual figures with the source cited; the author is asked to confirm that committing it is acceptable (docs/STATUS.md).",
+  "license": "Official statistics published by the People's Bank of China; no terms of use were found on the site (2026-10-14). The snapshot is an extract of factual figures with the source cited; the author confirmed on 2026-10-14 that it may be committed.",
   "citation": "Source: People's Bank of China, Department of Statistics, Balance Sheet of Monetary Authority (yearly tables 2002-2026).",
   "used_in": [
     4
