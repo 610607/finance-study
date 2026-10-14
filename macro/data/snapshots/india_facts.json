@@ -1,0 +1,185 @@
+{
+ "title": "Quotations for Chapter 9 (ancient India and the Indian Ocean trade): Pliny, Strabo, the Periplus and Tacitus on the voyage to India and the drain of money, the Arthashastra on interest, the mint, salt, commerce and tolls (with Fleet's note and Francis's review of Olivelle on its date), Cunningham (1891) on punch-marked coins, Casson (1990) on the Muziris papyrus, Howgego et al. (2010), Darley (2014) on Roman coins in India and on Pliny's figures, Scheidel (2019) on Roman GDP and money, and the 汉书 and 后汉书 on the sea route to 黄支 and on 大秦",
+ "source": "Pliny, Natural History (trans. Bostock and Riley; Latin: LacusCurtius and Mayhoff's Teubner edition); Strabo (trans. Hamilton and Falconer); the Periplus of the Erythraean Sea (trans. McCrindle); Tacitus, Annals (trans. Church and Brodribb); Kautilya, Arthashastra (trans. Shamasastry, 1915, with J. F. Fleet's introductory note); E. Francis (2013); A. Cunningham (1891); L. Casson (1990); C. Howgego, K. Butcher, M. Ponting and V. Heuchert (2010); R. R. Darley (2014); W. Scheidel (2019); 汉书·地理志下 and 后汉书·西域传 (daizhigev20 corpus)",
+ "url": "https://www.gutenberg.org/ebooks/60230",
+ "series": "id, dynasty (place), year (negative for BC; empty where the source gives no year, see year_note), year_note, value (numbers in the quotation, ';'-separated; fractions as a/b), unit, numeral (classical numeral of a corpus row, read by verify_quotes.py), file (corpus key, or key of 'sources'), juan (chapter heading of the corpus, or the location in the document: book and chapter of an ancient text, the printed page of a modern one), quote (verbatim, as in the document's text or text layer), note",
+ "retrieved": "2026-10-14",
+ "license": "Quotations for criticism and teaching, each with its source. The translations of Pliny (Bostock and Riley 1855-57), Strabo (Hamilton and Falconer 1854-57), the Periplus (McCrindle 1879), Tacitus (Church and Brodribb 1876) and the Arthashastra (Shamasastry 1915), the Teubner texts of Pliny (LacusCurtius: public domain as stated on the site for single-asterisk pages; Mayhoff 1906 via the Perseus Digital Library) and Cunningham (1891) are in the public domain; Fleet's note was written in 1914 (Fleet died in 1917), but the 1951 edition in which it is read is marked 'All rights reserved', so only short passages are quoted. Scheidel (2019) is CC BY 4.0. Casson (1990, (c) Habelt), Francis (2013, Persee), Howgego et al. (2010) and Darley (2014) are in copyright and quoted in short passages; Darley's thesis states that 'Further distribution or reproduction in any format is prohibited without the permission of the copyright holder', so the PDF is not redistributed (the counts of its Appendix 6 are in darley2014_coin_finds, which is not kept in the repository). The 汉书 and 后汉书 are quoted from the daizhigev20 corpus.",
+ "used_in": [
+  9
+ ],
+ "fetch": "data/fetch/verify_quotes.py (rows with file hanshu, houhanshu); data/fetch/verify_web_quotes.py (every other row); checks/check_ch09.py (the readings and every quotation of the text)",
+ "notes": "Web rows are checked verbatim by data/fetch/verify_web_quotes.py against the document named in the file column (downloaded from its url; --offline uses the cached copy, whose SHA-256 is recorded); the juan column gives the location. The checker joins a word hyphenated at a line end and normalises typographic quotes and dashes; PDF rows are found in the text layer (pdftotext, plain or -layout; rows of a table or of a column of figures are quoted as the -layout text gives them, with the dots of the leaders). HTML and XML pages are read with their tags replaced by spaces, so the apparatus notes of Mayhoff's edition stand between the words of the text where the edition places them. The Wikisource pages of the Arthashastra are read as wikitext (action=raw). The chapter's Chinese renders the English, Latin and French; the ancient authors are quoted in English translations, so the Chinese is a translation of a translation. Readings: (1) Pliny 6.101. The Teubner texts print a numeral D after HS (LacusCurtius: 'HS·| D |', the frame of the numeral rendered with bars; Mayhoff's XML loses the marks of the numeral); Mayhoff's apparatus records the reading DL ('v. DL rS.'; the sigla are not explained in the file). Pliny says that 'we reckon by multiples of' one hundred thousand (33.133, row pl_100k), and 12.84 writes out such a multiple in words: miliens centena milia sestertium, a thousand times a hundred thousand, translated 'one hundred millions' (rows my_100m, pl_100m). Read as hundreds of thousands, D is 50,000,000 sesterces and DL 55,000,000; Bostock and Riley translate 'five hundred and fifty millions', ten times DL. The chapter reads D and DL in this way and says that it is a reading. (2) Units: 1 denarius = 4 sesterces (33.45: 16 and 4 asses); 1 aureus = 25 denarii (the translators' note 793); in Antonine Egypt the tetradrachm was 'equivalent in value to one denarius' (Howgego et al.), so 1 Egyptian drachma = 1 sestertius; 1 talent = 6000 drachmas, from the arithmetic of the papyrus (76 t. 45 m. at 100 d. per m. = 76 t. 4500 d.: 4605 minas x 100 = 460,500 = 76 x 6000 + 4500) and as in Chapter 7; 6 obols = 1 drachma (1592 d. 3 ob. = 22 3/4 m. x 70 d.). (3) The Arthashastra's rates are 'per month per cent'; the chapter multiplies by 12 for a simple annual rate. (4) Years: 永元元年 = AD 89, 延熹元年 = AD 158, 元始元年 = AD 1; the 汉书 dates the 王莽 embassy only to 元始中. Tacitus 3.53: the letter of Tiberius is in the year of the consuls C. Sulpicius and D. Haterius (Annals 3.52), AD 22. (5) Second witnesses of the corpus rows (Wikisource, see witnesses): 漢書/卷028 reads 船行可八月，到日南、象林界 where the corpus has 船行可二月 (row hs_return; the chapter gives both), and 珠劯 for the corpus's 珠厓 (not quoted); 後漢書/卷88 reads 交市 for the corpus's 交巿 (row hhs_coins), 瑇瑁 for 檋瑁 (row hhs_envoy), 若遇遲風 where the corpus has 若遇彁风 (not quoted; the chapter paraphrases it), and 好毾㲪 where the corpus has a lost character (not quoted). (6) Casson's note 29 gives 528,775 drachmas for the ivory and the fabric; the papyrus's values (rows ca_ivory_tot, ca_fab_tot) add up to 515,557.5 drachmas and the same prices at the gross weights (78 t. 54 3/4 m. and 13 t. 9 3/4 m.) to 528,757.5; the chapter uses the papyrus's values.",
+ "witnesses": {
+  "wikisource_hanshu028": "https://zh.wikisource.org/wiki/漢書/卷028 (section 下; the page 漢書/卷028下 redirects to it)",
+  "wikisource_houhanshu088": "https://zh.wikisource.org/wiki/後漢書/卷88"
+ },
+ "sources": {
+  "pliny_br6": {
+   "url": "https://www.gutenberg.org/cache/epub/60230/pg60230.txt",
+   "format": "txt",
+   "sha256": "a2b16e7a491062b59a27d1ae5b84d3f2269e5e7824a07833d58a7889b2549bfe",
+   "version": "The Natural History of Pliny, translated by John Bostock and H. T. Riley, vol. II (London: Henry G. Bohn, 1855; Project Gutenberg eBook 60230); Book VI, ch. 26 (6.100-106 in the modern numbering)",
+   "retrieved": "2026-10-14"
+  },
+  "pliny_br12": {
+   "url": "https://www.gutenberg.org/cache/epub/59131/pg59131.txt",
+   "format": "txt",
+   "sha256": "697bf75aa517edc38c47d6d181233f55f526604467077bf95cbe7c809cc51406",
+   "version": "The Natural History of Pliny, translated by John Bostock and H. T. Riley, vol. III (London: Henry G. Bohn, 1855; Project Gutenberg eBook 59131); Book XII, ch. 41 (12.84)",
+   "retrieved": "2026-10-14"
+  },
+  "pliny_br33": {
+   "url": "https://www.gutenberg.org/cache/epub/62704/pg62704.txt",
+   "format": "txt",
+   "sha256": "214743378d9f59c157093a1d04722fc2f6caf9f65aabf10a033df1f24c32b28c",
+   "version": "The Natural History of Pliny, translated by John Bostock and H. T. Riley, vol. VI (London: Henry G. Bohn, 1857; Project Gutenberg eBook 62704); Book XXXIII, ch. 13 (33.45) with the translators' note 793, and ch. 47 (33.133)",
+   "retrieved": "2026-10-14"
+  },
+  "lacus_pliny6": {
+   "url": "https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/6*.html",
+   "format": "html",
+   "sha256": "b11b08a0a068a13e7943e1963af5a054b5e8be930d7bfdeb1322c5f6ad2384d4",
+   "version": "Pliny the Elder, Naturalis Historia, Book VI, Latin text (Teubner) as reproduced by Bill Thayer on LacusCurtius; 6.101",
+   "retrieved": "2026-10-14"
+  },
+  "mayhoff_pliny": {
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi0978/phi001/phi0978.phi001.perseus-lat2.xml",
+   "format": "html",
+   "sha256": "113b3df1fa7efe9fbb337fac01aec07cee474ca533386c1b6f3332fd34251c37",
+   "version": "C. Plini Secundi Naturalis Historiae, ed. C. Mayhoff (Leipzig: Teubner), TEI XML of the Perseus Digital Library (canonical-latinLit, phi0978.phi001.perseus-lat2; the XML header gives the Teubner edition of 1906); 6.101 with its apparatus, 12.84",
+   "retrieved": "2026-10-14"
+  },
+  "tacitus_cb": {
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/master/data/phi1351/phi005/phi1351.phi005.perseus-eng1.xml",
+   "format": "html",
+   "sha256": "56f2d18ab2b3623f9b210c22f238fad820edf8781756dbd331c0ffcf67e67f84",
+   "version": "Tacitus, Annals, translated by A. J. Church and W. J. Brodribb (1876), TEI XML of the Perseus Digital Library (canonical-latinLit, phi1351.phi005.perseus-eng1); 3.53",
+   "retrieved": "2026-10-14"
+  },
+  "periplus_mc": {
+   "url": "https://www.gutenberg.org/cache/epub/55054/pg55054.txt",
+   "format": "txt",
+   "sha256": "c312d7632745c2d5a73265b744a54eee7a0ca62ee03c2afbd7e5f50b199457d9",
+   "version": "The Commerce and Navigation of the Erythraean Sea, translated by J. W. McCrindle (Calcutta, 1879; Project Gutenberg eBook 55054); sections 47, 49, 56 and 57 of the Periplus",
+   "retrieved": "2026-10-14"
+  },
+  "strabo_hf1": {
+   "url": "https://www.gutenberg.org/cache/epub/44884/pg44884.txt",
+   "format": "txt",
+   "sha256": "2359fdb2bcdb0133416c7eac8d07a58eae6f55408c77747921ac8c07e53e2162",
+   "version": "The Geography of Strabo, literally translated by H. C. Hamilton and W. Falconer, vol. I (London: Henry G. Bohn, 1854; Project Gutenberg eBook 44884); 2.5.12",
+   "retrieved": "2026-10-14"
+  },
+  "strabo_hf3": {
+   "url": "https://www.gutenberg.org/cache/epub/44886/pg44886.txt",
+   "format": "txt",
+   "sha256": "25ce4d3bef0565d3c3b333d1efa8fc59480b6a476ed2481f0f608eaaa6d9d7b9",
+   "version": "The Geography of Strabo, literally translated by H. C. Hamilton and W. Falconer, vol. III (London: Henry G. Bohn, 1857; Project Gutenberg eBook 44886); 17.1.13",
+   "retrieved": "2026-10-14"
+  },
+  "artha_b2": {
+   "url": "https://en.wikisource.org/w/index.php?title=Arthashastra/Book%20II&action=raw",
+   "format": "txt",
+   "sha256": "72e88dc57b5f3db1f610c36266dfb2194481678365bb2d4606301a1e10a2d3fb",
+   "version": "Kautilya's Arthashastra, translated by R. Shamasastry (Bangalore: Government Press, 1915), English Wikisource, page Arthashastra/Book II (wikitext); chapters 12, 15, 16, 19 and 22",
+   "retrieved": "2026-10-14",
+   "user_agent": "finance-study-quote-check/1.0 (https://github.com/610607/finance-study)"
+  },
+  "artha_b3": {
+   "url": "https://en.wikisource.org/w/index.php?title=Arthashastra/Book%20III&action=raw",
+   "format": "txt",
+   "sha256": "9e6b86cc604184865dc8e7e288039dd87bb03cc88f55957160c8f4db1d77ba59",
+   "version": "Kautilya's Arthashastra, translated by R. Shamasastry (1915), English Wikisource, page Arthashastra/Book III (wikitext); chapter 11",
+   "retrieved": "2026-10-14",
+   "user_agent": "finance-study-quote-check/1.0 (https://github.com/610607/finance-study)"
+  },
+  "artha_b4": {
+   "url": "https://en.wikisource.org/w/index.php?title=Arthashastra/Book%20IV&action=raw",
+   "format": "txt",
+   "sha256": "d8758dd5a1ab69fa9cf2c026ac29e8b0f93a817f9dd90fb220d26fb6d43f715f",
+   "version": "Kautilya's Arthashastra, translated by R. Shamasastry (1915), English Wikisource, page Arthashastra/Book IV (wikitext); chapters 2 and 3",
+   "retrieved": "2026-10-14",
+   "user_agent": "finance-study-quote-check/1.0 (https://github.com/610607/finance-study)"
+  },
+  "artha_b5": {
+   "url": "https://en.wikisource.org/w/index.php?title=Arthashastra/Book%20V&action=raw",
+   "format": "txt",
+   "sha256": "d84966e9d82f5e6a781f832250fb54b2611b0da0b920a812800c5936969085f3",
+   "version": "Kautilya's Arthashastra, translated by R. Shamasastry (1915), English Wikisource, page Arthashastra/Book V (wikitext); chapter 3",
+   "retrieved": "2026-10-14",
+   "user_agent": "finance-study-quote-check/1.0 (https://github.com/610607/finance-study)"
+  },
+  "artha_b15": {
+   "url": "https://en.wikisource.org/w/index.php?title=Arthashastra/Book%20XV&action=raw",
+   "format": "txt",
+   "sha256": "2cd5101f96847aceae6b1b425d80ceee5ccf1603a705b59875a2d3f56030bf8d",
+   "version": "Kautilya's Arthashastra, translated by R. Shamasastry (1915), English Wikisource, page Arthashastra/Book XV (wikitext); chapter 1",
+   "retrieved": "2026-10-14",
+   "user_agent": "finance-study-quote-check/1.0 (https://github.com/610607/finance-study)"
+  },
+  "fleet1914": {
+   "url": "https://archive.org/download/kautilyas-arthashastra/Kautilya%27s%20Arthashastra_R%20Shamasastri_djvu.txt",
+   "format": "txt",
+   "sha256": "4229a3338720176929aaab49887bb3fa6bfc2e1a6a225510675d94897676b851",
+   "version": "J. F. Fleet, introductory note (dated 1914) to Shamasastry's translation of the Arthashastra, as printed in the 4th edition (Mysore, 1951); text layer of the scan on the Internet Archive (item kautilyas-arthashastra)",
+   "retrieved": "2026-10-14"
+  },
+  "francis2013": {
+   "url": "https://www.persee.fr/doc/page/befeo_0336-1519_2012_num_99_1_6163_t1_0416_0000_2/befeo_0336-1519_2012_num_99_1_T1_0418_0000",
+   "format": "html",
+   "sha256": "63db28faa9e0e7d8479c5327b4f4ee57912a8965d6040f26fa911c875715c0ef",
+   "version": "E. Francis, review of P. Olivelle, King, Governance, and Law in Ancient India: Kautilya's Arthasastra (2013), Bulletin de l'Ecole francaise d'Extreme-Orient 99 (2012-2013), Persee page view, p. 418",
+   "retrieved": "2026-10-14"
+  },
+  "francis2013b": {
+   "url": "https://www.persee.fr/doc/page/befeo_0336-1519_2012_num_99_1_6163_t1_0416_0000_2/befeo_0336-1519_2012_num_99_1_T1_0419_0000",
+   "format": "html",
+   "sha256": "9ebdfb4fc2b381f40fa9089637f14362406f50991376dc612bda24a6cbe83804",
+   "version": "E. Francis, review of Olivelle (2013), BEFEO 99 (2012-2013), Persee page view, p. 419",
+   "retrieved": "2026-10-14"
+  },
+  "cunningham1891": {
+   "url": "https://archive.org/download/coinsancientind00cunngoog/coinsancientind00cunngoog_djvu.txt",
+   "format": "txt",
+   "sha256": "7eccae0e29403c155093da70d890fd8172573a0bbb6122601410e24a55222d98",
+   "version": "A. Cunningham, Coins of Ancient India from the Earliest Times down to the Seventh Century A.D. (London: B. Quaritch, 1891); text layer of the Google scan on the Internet Archive (item coinsancientind00cunngoog)",
+   "retrieved": "2026-10-14"
+  },
+  "casson1990": {
+   "url": "https://www.uni-koeln.de/phil-fak/ifa/zpe/downloads/1990/084pdf/084195.pdf",
+   "format": "pdf",
+   "sha256": "a33dd218614bcaff95d158311774d20984a4a28414d86aa5c5e32290818c1ff6",
+   "version": "L. Casson, 'New Light on Maritime Loans: P. Vindob G 40822', Zeitschrift fur Papyrologie und Epigraphik 84 (1990), pp. 195-206 (PDF of the ZPE archive, (c) Dr. Rudolf Habelt GmbH, Bonn)",
+   "retrieved": "2026-10-14"
+  },
+  "howgego2010": {
+   "url": "https://oxrep.classics.ox.ac.uk/docs/Howgego2010.pdf",
+   "format": "pdf",
+   "sha256": "8d5f23c5f3603e0538b6474a60bebc8b8ca6483866a1f94bcdc9df38b7608b73",
+   "version": "C. Howgego, K. Butcher, M. Ponting and V. Heuchert, 'Coinage and the Roman Economy in the Antonine Period: the view from Egypt', paper on the Oxford Roman Economy Project website (OXREP 2010; PDF dated 2013)",
+   "retrieved": "2026-10-14"
+  },
+  "darley2014": {
+   "url": "https://etheses.bham.ac.uk/id/eprint/5357/1/Darley14PhD_redacted.pdf",
+   "format": "pdf",
+   "sha256": "c3400e2bb1366ae4178b72b98224fea5cbbc43c6751294d3611b457df7b74536",
+   "version": "R. R. Darley, Indo-Byzantine Exchange, 4th to 7th Centuries: a Global History, PhD thesis, University of Birmingham, 2014 (redacted version, University of Birmingham eTheses Repository, eprint 5357)",
+   "retrieved": "2026-10-14"
+  },
+  "bea_iea2026": {
+   "url": "https://www.bea.gov/sites/default/files/2026-09/BEA-International-Economic-Accounts-Concepts-and-Methods.pdf",
+   "format": "pdf",
+   "sha256": "fe90e51d02f05fc4862e3f820c2a3f0e63914546003fce64726839a60543121f",
+   "version": "U.S. Bureau of Economic Analysis, U.S. International Economic Accounts: Concepts and Methods, September 2026",
+   "retrieved": "2026-10-14"
+  },
+  "scheidel2019": {
+   "url": "https://zenodo.org/api/records/3458611/files/Roman%20Wealth%20and%20Wealth%20Inequality%20in%20Comparative%20Perspective.pdf/content",
+   "format": "pdf",
+   "sha256": "89ecc472a2291339f259edb044516178eb23ee6d8b84c0898fbe2b05af04808c",
+   "version": "W. Scheidel, 'Roman Wealth and Wealth Inequality in Comparative Perspective', Working Paper, Stanford University, Version 1, September 2019 (Zenodo record 3458611, CC BY 4.0)",
+   "retrieved": "2026-10-14"
+  }
+ }
+}
