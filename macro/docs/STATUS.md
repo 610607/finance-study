@@ -148,6 +148,7 @@ Updated 2026-10-14.
   - IMF sites return 403. BPM6 is quoted through BEA's manual, and the IMF programme is described as CBSL tells it.
   - The month in which the PBoC swap entered Sri Lanka's reserves is not documented (the jump of December 2021 is left unexplained).
   - Chapter-local symbols ($F$, $\mathit{CA}$, $\mathit{KA}$, $\mathit{FA}$, $\mathit{EO}$) are not in Appendix B.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
 
 ## Next
 1. Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
