@@ -197,7 +197,7 @@ def qing_cash():
     idx = C.wage_index(G)
     W = C.wages(G)
     fig, (a1, a2) = plt.subplots(2, 1, figsize=(FIG_W, 4.3), sharex=True)
-    fig.subplots_adjust(left=0.1, right=0.975, top=0.94, bottom=0.085, hspace=0.34)
+    fig.subplots_adjust(left=0.11, right=0.975, top=0.94, bottom=0.085, hspace=0.34)
 
     # (a)
     a1.axhline(1000, color=MUTED, lw=0.7, ls=(0, (1, 2)), zorder=1)

@@ -57,7 +57,7 @@ def merc_shares():
     x0, x1 = pd.Timestamp("1718-07-15"), pd.Timestamp("1721-01-10")
     ticks = ["1719-01-01", "1719-07-01", "1720-01-01", "1720-07-01", "1721-01-01"]
     fig, (a1, a2) = plt.subplots(2, 1, figsize=(FIG_W, 4.75), sharex=True)
-    fig.subplots_adjust(left=0.11, right=0.955, top=0.94, bottom=0.07, hspace=0.32)
+    fig.subplots_adjust(left=0.12, right=0.95, top=0.94, bottom=0.07, hspace=0.32)
 
     # (a) Paris
     _peg_band(a1, 11_300)
@@ -145,7 +145,7 @@ def merc_notes():
             fontsize=7.6, color=AMBER, ha="left", va="bottom")
     dl, vl = Tb.index[-1], Tb["col4"].iloc[-1]
     ax.annotate(T(f"1721 年 1 月 8 日\n{vl * 100:,.0f} 万",
-                  f"8 Jan 1721\n{vl:.1f} m"), (dl, vl / k), xytext=(8, 0), textcoords="offset points", fontsize=7.6,
+                  f"8 Jan 1721\n{vl:.1f} m"), (dl, vl / k), xytext=(4, 0), textcoords="offset points", fontsize=7.6,
                 color=AMBER, ha="left", va="bottom", linespacing=1.2)
     m5 = pd.Timestamp("1720-03-05")
     ax.annotate(T("3 月 5 日：金属里弗尔\n贬值三分之一", "5 Mar: metallic livre\ndevalued by a third"),

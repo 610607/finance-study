@@ -2,6 +2,10 @@
   "language": "zh",
   "font": "Macro Noto Sans SC",
   "figures": [
+    "accounts_balances",
+    "accounts_chain",
+    "accounts_china",
+    "accounts_depression",
     "agio_band",
     "bill_flows",
     "carry_cost",

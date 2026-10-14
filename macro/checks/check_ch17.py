@@ -14,7 +14,7 @@ Models (the chapter's key equations):
     one good, two moneys        P_a = e P_b,  g_Pa ~ g_e + g_Pb                       (eq:toku-twoprice)
     content theory              P = q / c,  pi ~ g_q - g_c                            (eq:toku-content)
     profit from a recoinage     S = N (c_old / c_new - 1 - phi)                       (eq:toku-seign; eq:medieval-seigniorage)
-    short hedge                 V_T = Q S_T + Q (F_0 - F_T) = Q F_0 + Q (S_T - F_T);
+    short hedge                 H_T = Q p_T + Q (F_0 - F_T) = Q F_0 + Q (p_T - F_T);
                                 change in margin / margin = dF / (m F_0)              (eq:toku-hedge)
 Units: 1 ryo = 4 bu = 16 shu; 1 kan = 1,000 momme; 1 两 (tael) = 10 钱 = 100 分; 1 石 (koku) = 10 斗;
 Qing reign years are converted with reign() below (元年 = the first year).
@@ -534,13 +534,13 @@ def dojima(F, R):
     h = hedge(H["Q"], H["F0"], ST, ST)
     quoted("  bills lose (momme)", h["bills"] - H["Q"] * H["F0"], -600, tol=1e-9)
     quoted("  futures gain", h["futures"], 600, tol=1e-9)
-    quoted("  V_T", h["total"], 6000, tol=1e-9)
+    quoted("  H_T", h["total"], 6000, tol=1e-9)
     assert math.isclose(h["total"], h["locked"])
     quoted("ex (2): loss / margin at 1/3 (%)", 100 * margin_shock(H["drop"], H["m"]), 30, tol=1e-9)
     quoted("  margin at 5% (momme per contract)", H["Q"] * H["F0"] * 0.05, 300, tol=1e-9)
     quoted("  loss / margin at 5% (%)", 100 * margin_shock(H["drop"], 0.05), 200, tol=1e-9)
     hb = hedge(H["Q"], H["F0"], ST, H["F_basis"])
-    quoted("ex (3): V_T with basis (momme)", hb["total"], 5900, tol=1e-9)
+    quoted("ex (3): H_T with basis (momme)", hb["total"], 5900, tol=1e-9)
     quoted("  basis cost (momme)", h["total"] - hb["total"], 100, tol=1e-9)
     print("\n-- efficiency --")
     a, b = F["tk_ito"]
@@ -793,7 +793,7 @@ def selfcheck():
     quoted("  at 1800", burden(0.5, 1800, 2500), 0.36, tol=1e-9)
     quoted("  and rice 10% cheaper", burden(0.5, 1800, 2500 * 0.9), 0.4, tol=1e-9)
     h = hedge(200, 50, 45, 45.5)
-    quoted("4: V_T (momme)", h["total"], 9900, tol=1e-9)
+    quoted("4: H_T (momme)", h["total"], 9900, tol=1e-9)
     quoted("  unhedged", 200 * 45, 9000, tol=0)
     quoted("  difference", h["total"] - 200 * 45, 900, tol=1e-9)
     quoted("  basis loss", 200 * 0.5, 100, tol=1e-9)

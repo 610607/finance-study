@@ -44,6 +44,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 13 (legacy) | 75 `ch:fiscaldominance` | Taxes, money demand and the relation between fiscal and monetary policy, returned to | open |
 | 13 (legacy) | 45 `ch:monetarism` | The quantity theory in twentieth-century monetarism; whether velocity is stable and whether money leads prices | open |
 | 13 (deeper box, legacy) | 50 `ch:budget` | $D^{*}=PS/(r-g)$ as the basic tool for judging public debt; the case $r\le g$ under today's low interest rates | open |
+| 13 (§13 debt, `eq:silver-debt`) | 50 `ch:budget` | Chapter 13 derives $d'=\frac{1+r}{1+g}d-ps$ and $D^{*}=PS/(r-g)$ with royal revenue as the denominator (kept by the author, 2026-10, as the exception in PLAN §1); Chapter 50 refers back to it and explains the change of denominator to GDP | open |
 | 13 (compare box, legacy) | 51 `ch:latamdebt`, 69 `ch:eurocrisis` | Modern sovereign restructurings: exchange offers, haircuts that differ widely from case to case, creditor committees and holdouts | open |
 | 13 (legacy) | 15 `ch:finrevolution` | How the Dutch Republic and England borrowed far more cheaply than Philip II | done (`sec:finrev-holland`, `sec:finrev-bank`, `ex:finrev-debt`, `tab:finrev-four`) |
 | 13 (legacy) | 47 `ch:oil` | Governments that depend on volatile resource revenue (oil) | open |

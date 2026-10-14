@@ -141,9 +141,10 @@ def configure_fonts() -> str:
 
 FONT = configure_fonts()
 
-# Width of the text block (152 mm) in inches; figures are drawn at this size so that
-# 9.5 pt figure text matches the body text after inclusion.
-FIG_W = 6.0
+# Figures are drawn so that, cropped with the 0.04 in pad of save(), a full-width figure is
+# exactly the text block (152 mm = 5.984 in): \fig (preamble.tex) then prints it at 1:1, and the
+# point sizes set here are the printed sizes (STYLE.md §7.1).
+FIG_W = 5.90
 
 # ----------------------------------------------------------------------------
 # Registry and output

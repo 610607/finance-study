@@ -62,7 +62,7 @@ def malthus_dynamics():
     a1.plot([1], [1], "o", color=OUTPUT, ms=5.5)
     a1.annotate(T(f"瘟疫后：{l0:.2f}", f"after the plague: {l0:.2f}"), xy=(ell[0], ell[0]), xytext=(0.62, 0.30),
                 fontsize=7.6, color=AMBER, ha="left", va="center", arrowprops=dict(arrowstyle="-", color=AMBER, lw=0.6))
-    a1.annotate(T("稳态 $\\bar L$", "steady state $\\bar L$"), xy=(1, 1), xytext=(1.05, 0.72), fontsize=7.6,
+    a1.annotate(T("稳态 $\\bar L$", "steady\nstate $\\bar L$"), xy=(1, 1), xytext=(1.05, 0.72), fontsize=7.6,
                 color=OUTPUT, ha="left", arrowprops=dict(arrowstyle="-", color=OUTPUT, lw=0.6))
     a1.set_xlim(0, 1.35)
     a1.set_ylim(0, 1.35)

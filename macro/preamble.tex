@@ -268,13 +268,16 @@
 \setlength{\textfloatsep}{14pt plus 2pt}
 \setlength{\intextsep}{12pt plus 2pt}
 
-% Figure helpers: \fig{file}{caption}{label} (float) and \figH (here)
+% Figure helpers: \fig{file}{caption}{label} (float) and \figH (here).
+% Figures are drawn FIG_W = 5.90 in wide (figsrc/style.py), so a canvas cropped with its
+% 0.04 in pad is the text width (152 mm) and prints at 1:1: a 7.6 pt note prints at 7.6 pt.
+% The height cap (half the text height) only binds for figures taller than 4.65 in.
 \newcommand{\figdir}{\ifChinese figures_zh\else figures\fi}
-\newcommand{\fig}[4][.96]{\begin{figure}[htbp]\centering
-  \includegraphics[width=#1\linewidth,height=.46\textheight,keepaspectratio]{\figdir/#2.pdf}%
+\newcommand{\fig}[4][1]{\begin{figure}[htbp]\centering
+  \includegraphics[width=#1\linewidth,height=.5\textheight,keepaspectratio]{\figdir/#2.pdf}%
   \caption{#3}\label{#4}\end{figure}}
-\newcommand{\figH}[4][.96]{\begin{figure}[H]\centering
-  \includegraphics[width=#1\linewidth,height=.46\textheight,keepaspectratio]{\figdir/#2.pdf}%
+\newcommand{\figH}[4][1]{\begin{figure}[H]\centering
+  \includegraphics[width=#1\linewidth,height=.5\textheight,keepaspectratio]{\figdir/#2.pdf}%
   \caption{#3}\label{#4}\end{figure}}
 
 % Source line under a data figure or table: \datasource{FRED, series CPIAUCSL, retrieved 2026-10-13}

@@ -28,7 +28,7 @@ from style import (ACCENT, AMBER, FIG_W, INK, LIGHT, MONEY, MUTED, ZH, T, canvas
 def timeline():
     """Four note systems on one time axis, with the events discussed in the chapter."""
     W = 10.4
-    H = 6.2
+    H = 6.44
     fig, ax = canvas(FIG_W, FIG_W * H / W, xlim=(0, W), ylim=(0, H))
     y0, y1 = 1000, 1580
     X0, X1 = 2.05, W - 0.1
@@ -53,12 +53,12 @@ def timeline():
          [(1375, T("1375 大明宝钞", "1375 baochao"), "above"),
           (1525, T("1525 一贯折银三厘", "1525 3 li of silver"), "below")]),
     ]
-    rh, gap, top = 0.56, 0.74, H - 0.34
+    rh, gap, top = 0.62, 0.74, H - 0.34
     for i, (period, name, a, b, light, light_txt, events) in enumerate(rows):
         y = top - (i + 1) * rh - i * gap
         rbox(ax, 0.05, y, 1.75, rh, fc=tint(ACCENT, 0.88), r=0.1)
-        label(ax, 0.925, y + rh * 0.7, period, color="white", size=7.8)
-        label(ax, 0.925, y + rh * 0.3, name, color="white", size=8.6 if ZH else 7.6, weight="bold")
+        label(ax, 0.925, y + rh * 0.72, period, color="white", size=7.8)
+        label(ax, 0.925, y + rh * 0.28, name, color="white", size=8.6 if ZH else 7.6, weight="bold")
         if light:
             rbox(ax, X(b), y + 0.06, X(light) - X(b), rh - 0.12, fc="white", ec=tint(MUTED, 0.75), lw=0.9,
                  r=0.08, ls=(0, (3, 2)))
@@ -123,7 +123,7 @@ def yuan_issuance():
                     arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.6))
     ax.text(1288, 9.0e7, T("1287 年后按至元钞一贯 = 中统钞五贯折算", "after 1287: 1 Zhiyuan guan = 5 Zhongtong guan"),
             fontsize=7.6, color=MONEY, ha="left", va="center")
-    fig.subplots_adjust(left=0.115, right=0.985, top=0.97, bottom=0.15)
+    fig.subplots_adjust(left=0.125, right=0.985, top=0.97, bottom=0.15)
     return fig
 
 

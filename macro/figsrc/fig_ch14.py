@@ -43,7 +43,7 @@ def cowrie_value():
              "timbuktu": T("廷巴克图", "Timbuktu"), "kano": T("卡诺", "Kano")}
     rows = C.per_gold(F)
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.9), gridspec_kw=dict(width_ratios=[1.0, 1.12]))
-    fig.subplots_adjust(left=T(0.15, 0.175), right=0.985, top=0.89, bottom=0.17, wspace=0.36)
+    fig.subplots_adjust(left=T(0.157, 0.175), right=T(0.985, 0.975), top=0.89, bottom=0.17, wspace=0.36)
 
     h = 0.56
     for i, (place, year, lo, hi) in enumerate(rows):
@@ -152,7 +152,7 @@ def carry_cost():
     a2.text(116, 2.5, T("运费", "carrying cost"), fontsize=7.6, color=AMBER, ha="right", va="center",
             weight="bold")
     _grid(a2, axis="x")
-    _title(a2, T("(b) 贝币：运费大于价差", "(b) cowries: carrying costs exceed the gap"))
+    _title(a2, T("(b) 贝币：运费大于价差", "(b) cowries: carriage exceeds the gap"))
     return fig
 
 

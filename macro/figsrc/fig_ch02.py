@@ -86,6 +86,7 @@ def accounts_chain():
     _grid(ax2)
     ax2.tick_params(labelsize=8.5)
     _title(ax2, T("(b) 三种算法得到同一个数", "(b) Three approaches, one total"))
+    fig.subplots_adjust(left=0.085, right=0.985, top=0.9, bottom=0.14)
     return fig
 
 
@@ -138,6 +139,7 @@ def accounts_depression():
     _grid(ax2)
     ax2.tick_params(labelsize=8.5)
     _title(ax2, T("(b) 今天的数据：物价跌了约四分之一", "(b) Today: prices fell by a quarter"))
+    fig.subplots_adjust(left=0.09, right=0.985, top=0.89, bottom=0.15)
     return fig
 
 
@@ -184,6 +186,7 @@ def accounts_balances():
     _grid(ax2)
     ax2.tick_params(labelsize=8.5)
     _title(ax2, T("(b) 支出法与收入法之差：统计误差", "(b) Expenditure less income: the statistical discrepancy"))
+    fig.subplots_adjust(left=0.085, right=0.975, top=0.94, bottom=0.07)
     return fig
 
 
@@ -227,4 +230,5 @@ def accounts_china():
     _grid(ax2)
     ax2.tick_params(labelsize=8.5)
     _title(ax2, T("(b) 离普查年越近，修订越大", "(b) Larger near the census year"))
+    fig.subplots_adjust(left=0.085, right=0.985, top=0.89, bottom=0.15)
     return fig
