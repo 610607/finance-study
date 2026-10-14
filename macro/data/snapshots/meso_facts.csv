@@ -1,12 +1,12 @@
 id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
 ham_translator,巴比伦,-1750,,,,,king1910,title,Translated by L. W. King,
 ham_gap,巴比伦,-1750,,34,paragraphs,,king1910,after § 65,"[Here a portion of the text is missing, apparently comprising thirty-four paragraphs.]",
-ham_100,巴比伦,-1750,,,,,king1910,§ 100,"interest for the money, as much as he has received, he shall give a note therefor",
 ham_48a,巴比伦,-1750,,,,,king1910,§ 48,in that year he need not give his creditor any grain,
 ham_48b,巴比伦,-1750,,,,,king1910,§ 48,he washes his debt-tablet in water and pays no rent for this year,
 ham_117,巴比伦,-1750,,3;4,years,,king1910,§ 117,"they shall work for three years in the house of the man who bought them, or the proprietor, and in the fourth year they shall be set free",
 ham_257,巴比伦,-1750,,8,gur of corn per year,,king1910,§ 257,"If any one hire a field laborer, he shall pay him eight gur of corn per year.",
 ham_273,巴比伦,-1750,,6,gerahs per day,,king1910,§ 273,six gerahs in money per day,"from the New Year until the fifth month; King's 'gerah' renders the Babylonian grain (SE), 1/180 shekel"
+ham_273gloss,巴比伦,-1750,,5,month,,king1910,§ 273,"from the New Year until the fifth month (April to August, when days are long and the work hard)",
 louvre_date,巴比伦,-1792,reign of Hammurabi,-1792;-1750,year,,louvre_sb8,notice,Code de Hammurabi -1792 / -1750 (1ère dynastie de Babylone : Hammurabi),
 louvre_found,苏萨,1901,,1901;1902,year,,louvre_sb8,notice,Date of discovery 1901-1902 Place of discovery Suse,
 louvre_basalt,巴比伦,-1750,,,,,louvre_sb8,notice,Matériau : basalte,
@@ -78,6 +78,16 @@ erman_strike2,底比斯,,Ramesses III,,,,erman1894,p. 125,they were almost alway
 erman_18,底比斯,,Ramesses III,18,days,,erman1894,p. 126,We have been starving for 18 days,
 erman_hunger,底比斯,,Ramesses III,,,,erman1894,p. 126,"We have been driven here by hunger and thirst; we have no clothes, we have no oil, we have no food.",
 erman_empty,底比斯,,Ramesses III,,,,erman1894,p. 126,what he could give them when the storehouses were empty,
+erman_nine,底比斯,,Ramesses III,9,days,,erman1894,p. 125,they waited full nine days,
+erman_walls,底比斯,,Ramesses III,5,walls,,erman1894,p. 126,they crossed the five walls of the necropolis,
+erman_third,底比斯,,Ramesses III,3,day,,erman1894,p. 126,on the third day they even penetrated into the building,
+erman_oaths,底比斯,,Ramesses III,,,,erman1894,p. 126,"tried to entice them back by "" great oaths,"" the workmen were wise and remained outside",
+erman_tybi,底比斯,,Ramesses III,,,,erman1894,p. 126,on that day they received the provision for the month Tybi.,
+erman_month,底比斯,,Ramesses III,,,,erman1894,p. 126,did not last long ; in fact only a month.,
+erman_understand,底比斯,,Ramesses III,,,,erman1894,p. 126,(if I understand rightly),
+erman_half,底比斯,,Ramesses III,,,,erman1894,p. 126,at the same time he ordered half at least of the rations that were overdue to be paid down to them,
+erman_notwretched,底比斯,,Ramesses III,,,,erman1894,p. 126,"We must not, however, imagine that their life was a very wretched one.",
+erman_house,底比斯,,Ramesses III,,,,erman1894,p. 126,he had his own house,
 erman_barter,埃及,,,,,,erman1894,p. 496,"for all the trade of Egypt was carried on by barter, and nothing was given in payment except goods or produce.",
 erman_nocoin,埃及,,,,,,erman1894,p. 496,"lend on interest, pay salaries, and collect taxes without even knowing the use of small coin",
 erman_amber,苏丹,1890,Erman's present day,,,,erman1894,p. 497,amber beads really play the part of money,
@@ -85,7 +95,7 @@ erman_uten,埃及,,New Kingdom,1;91,uten; grams,,erman1894,p. 497,"a copper piec
 erman_ox119,埃及,,New Kingdom,119,uten,,erman1894,p. 497,119 uten of copper were to be paid up in all,
 erman_ox111,埃及,,New Kingdom,111,uten,,erman1894,p. 497,1 1 1 uten for the animal itself,'1 1 1' is the text layer's reading of '111'
 erman_nochange,埃及,,New Kingdom,119,uten,,erman1894,p. 497,but of these 119 uten not one metal uten really changed hands,
-erman_subst,埃及,,New Kingdom,25;12;11;11,uten; uten; jars; uten,,erman1894,p. 497,"A stick (?) with inlaid work was substituted for 25 uten, and another of less elaborate design for 12 uten, 11 jars of honey for 11 uten",
+erman_subst,埃及,,New Kingdom,25;12;11;11,uten; uten; jars; uten,,erman1894,p. 497,"A stick (?) with inlaid work was substituted for 25 uten, and another of less elaborate design for 12 uten, 11 jars of honey for 11 uten, and so on.",
 erman_donkey,埃及,,New Kingdom,40,uten,,erman1894,p. 497,gives the value of a donkey as 40 uten,
 erman_ratio,埃及,,New Kingdom,3;1,,,erman1894,p. 497,The relative value therefore of an ox and a donkey was as three to one.,
 smith_butcher,,1776,,,,,smith1776,"Book I, ch. IV","The butcher has more meat in his shop than he himself can consume, and the brewer and the baker would each of them be willing to purchase a part of it.",
@@ -106,6 +116,7 @@ opp_coexist,,1957,,,,,polanyi1957,"p. 31 (A. L. Oppenheim, ch. III)","coexistenc
 opp_impression,,1957,,,,,polanyi1957,"p. 31 (A. L. Oppenheim, ch. III)",Their number has created the impression that this organization represented the entire economic set-up of the city-states.,'their number' is the number of the documents of the temple and palace bookkeeping
 opp_equiv,,1957,,,,,polanyi1957,"p. 32 (A. L. Oppenheim, ch. III)","An elaborate system of equivalences was developed to manage in an efficient way the array of different foodstuffs, materials for manufacturing, payments in kind to the personnel, etc.",
 opp_control,,1957,,,,,polanyi1957,"p. 32 (A. L. Oppenheim, ch. III)","In the control of the prices of staples, of the rate of interest and of weighing standards, exercised or at least attempted by temple or palace",
+innes_fund,,1913,,,,,innes1913,p. 377,The fundamental theories on which the modern science of political economy is based are these:,
 innes_primitive,,1913,,,,,innes1913,p. 377,That under primitive conditions men lived and live by barter;,the first of the 'fundamental theories' Innes sets out to refute
 innes_sanctity,,1913,,,,,innes1913,p. 391,"What we have to prove is not a strange general agreement to accept gold and silver, but a general sense of the sanctity of an obligation.",
 innes_lawdebt,,1913,,,,,innes1913,p. 391,the present theory is based on the antiquity of the law of debt,

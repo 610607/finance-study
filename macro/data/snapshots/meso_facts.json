@@ -8,6 +8,8 @@
  "used_in": [
   6
  ],
+ "fetch": "data/fetch/verify_web_quotes.py checks every row",
+ "notes": "Every row is checked verbatim by data/fetch/verify_web_quotes.py against the document named in its file column (downloaded from the url below; --offline uses the cached copy, whose SHA-256 is recorded). The column juan gives the page (printed page numbers; for the CAD the volume, page and entry) or the section of the law. Values are the numbers the text uses. Quotations from scanned books (CAD, Erman, Mitchell Innes, Menger, Jevons, Polanyi 1957) keep the text layer's spelling, including its misreadings (for example '1 1 1' for 111, '2Qth' for 29th, 'of.' for 'cf.'); the note gives the printed form. Where a sentence runs across a page or column break, or a hyphenated word breaks across lines, it is quoted in two rows.",
  "sources": {
   "king1910": {
    "url": "https://avalon.law.yale.edu/ancient/hamcode.asp",

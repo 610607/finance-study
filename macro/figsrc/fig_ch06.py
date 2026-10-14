@@ -183,7 +183,7 @@ def meso_prices():
     ax1.set_xlabel(T("", "year BC"), fontsize=9)
     ax1.set_ylabel(T("克白银 / 100 升（对数）", "g of silver per 100 l (log)"), fontsize=9)
     _grid(ax1)
-    _title(ax1, T("(a) 价格大起大落，两种作物一起涨", "(a) Large swings, both crops together"))
+    _title(ax1, T("(a) 价格大起大落，两种作物多半一起涨", "(a) Big swings, mostly in both crops"))
 
     m = np.arange(1, 13)
     for good, col, kw, dx, txt in (("barley", PRICE, DOT, -0.13, T("大麦", "barley")),
@@ -206,5 +206,5 @@ def meso_prices():
     ax2.set_ylabel(T("比全年平均（对数百分点）", "vs. the year's mean (log points)"), fontsize=9)
     _grid(ax2)
     ax2.tick_params(axis="x", labelsize=7.8)
-    _title(ax2, T("(b) 大麦有季节，椰枣没有", "(b) Barley has a season, dates do not"))
+    _title(ax2, T("(b) 大麦有季节，椰枣看不出", "(b) Barley seasonal, dates not"))
     return fig

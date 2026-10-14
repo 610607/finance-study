@@ -17,7 +17,7 @@ Notation of the chapter:
     own rates          1 + i_b = (1 + i_s) p_0 / p_1                                          (eq:meso-own)
                        p: price of barley in silver; i_s, i_b: interest on silver and on barley loans;
                        eq:prices-fisher (Chapter 3) with silver as the money and barley as the good
-    debt               D_{t+1} = (1 + i) D_t - x_t,  D_bar = x_bar / i,  T_2 = ln 2 / ln(1 + i)   (eq:meso-debt)
+    debt               D_{t+1} = (1 + i) D_t - x_{t+1},  D_bar = x_bar / i,  T_2 = ln 2 / ln(1 + i)  (eq:meso-debt)
 Units (CAD): 1 mina = 60 shekels, 1 shekel = 180 grains (about 8 1/3 g), 1 kur = 300 qa (sila); Erman: 1 uten
 (deben) = 91 g of copper. The examples ex:meso-ox, ex:meso-own and ex:meso-debt, and the self-check, use the
 teaching inputs defined below and stated in the text.
@@ -91,7 +91,7 @@ def doubling(i: float) -> float:
 
 
 def debt_path(d0: float, i: float, x_bar: float, bad=(), s48: bool = False, years: int = 8) -> np.ndarray:
-    """eq:meso-debt year by year: D_{t+1} = (1 + i) D_t - x_t, x_t = min(x_bar, (1 + i) D_t).
+    """eq:meso-debt year by year: D_{t+1} = (1 + i) D_t - x_{t+1}, x_{t+1} = min(x_bar, (1 + i) D_t).
 
     In a bad year (t + 1 in `bad`) nothing is repaid; with s48 (Code of Hammurabi § 48) no interest accrues that
     year either. Once repaid the debt stays at zero."""
@@ -132,7 +132,10 @@ def seasonal(good: str, P: pd.DataFrame | None = None) -> dict:
     R = np.zeros((11, len(m.params)))
     for r, j in enumerate(idx):
         R[r, j] = 1.0
-    w = m.wald_test(R, scalar=True)
+    w = m.wald_test(R, scalar=True)                 # chi-squared form, statsmodels' default for clustered errors
+    p_f = float(m.wald_test(R, use_f=True, scalar=True).pvalue)          # the same test in F form
+    m0 = smf.ols("lp ~ C(year) + C(month, Treatment(1))", data=s).fit()  # ordinary (non-clustered) errors
+    p_iid = float(m0.wald_test(R, use_f=True, scalar=True).pvalue)
     s["hi"] = s["month"].isin(HIGH).astype(int)
     s["lo"] = s["month"].isin(LOW).astype(int)
     m2 = smf.ols("lp ~ C(year) + hi + lo", data=s).fit(**kw)
@@ -140,7 +143,7 @@ def seasonal(good: str, P: pd.DataFrame | None = None) -> dict:
     diff = m2.params["hi"] - m2.params["lo"]
     dse = math.sqrt(V2.loc["hi", "hi"] + V2.loc["lo", "lo"] - 2 * V2.loc["hi", "lo"])
     return dict(n=len(s), years=s["year"].nunique(), eff=eff, se=se, wald=float(w.statistic),
-                p=float(w.pvalue), diff=float(diff), dse=dse)
+                p=float(w.pvalue), p_f=p_f, p_iid=p_iid, diff=float(diff), dse=dse)
 
 
 def annual(P: pd.DataFrame | None = None) -> pd.DataFrame:
@@ -240,6 +243,7 @@ def units(F):
     quoted("§ 257: field labourer, kur of barley a year", F["ham_257"][0], 8)
     quoted("    per month", F["ham_257"][0] / 12, 0.67, tol=0.005)
     quoted("§ 273: grains a day, months 1-5", F["ham_273"][0], 6)
+    quoted("    King's gloss: busy season ends with month", F["ham_273gloss"][0], 5)
     quoted("    30 days in shekels", F["ham_273"][0] * 30 / SHEKEL_GRAINS, 1.0, tol=1e-9)
     quoted("    in grams of silver", F["ham_273"][0] * 30 / SHEKEL_GRAINS * SHEKEL_G, 8.33, tol=0.005)
     quoted("    later months: 5 grains a day, 30 days in shekels", 5 * 30 / SHEKEL_GRAINS, 0.83, tol=0.005)
@@ -343,7 +347,12 @@ def egypt(F, Q):
     quoted("corn due on day", F["erman_corn28"][0], 28)
     quoted("year of Ramesses III", F["erman_year29"][0], 29)
     quoted("days starving", F["erman_18"][0], 18)
-    assert {"erman_strike1", "erman_strike2", "erman_hunger", "erman_empty", "erman_govcorn", "erman_rations"} <= Q
+    quoted("days the workmen waited", F["erman_nine"][0], 9)
+    quoted("walls of the necropolis crossed", F["erman_walls"][0], 5)
+    quoted("day they entered the temple", F["erman_third"][0], 3)
+    assert {"erman_strike1", "erman_strike2", "erman_hunger", "erman_empty", "erman_govcorn", "erman_rations",
+            "erman_oaths", "erman_tybi", "erman_month", "erman_understand", "erman_half", "erman_notwretched",
+            "erman_house"} <= Q
 
 
 def data_check():
@@ -353,18 +362,23 @@ def data_check():
     quoted("barley: observations in the regression", b["n"], 518)
     quoted("    years", b["years"], 144)
     quoted("    joint test of the month effects, p", b["p"], 0.023, tol=0.0005)
-    quoted("    month 1 effect (%)", 100 * b["eff"][0], 15.3, tol=0.05)
-    quoted("    month 2 (%)", 100 * b["eff"][1], 12.2, tol=0.05)
-    quoted("    month 6 (%)", 100 * b["eff"][5], -14.8, tol=0.05)
+    quoted("    month 1 effect (log points)", 100 * b["eff"][0], 15.3, tol=0.05)
+    quoted("    month 2 (log points)", 100 * b["eff"][1], 12.2, tol=0.05)
+    quoted("    month 6 (log points)", 100 * b["eff"][5], -14.8, tol=0.05)
     quoted("    highest month", int(np.argmax(b["eff"])) + 1, 1)
     quoted("    lowest month", int(np.argmin(b["eff"])) + 1, 6)
     quoted("    months 12-4 minus months 5-8 (log points)", 100 * b["diff"], 16.9, tol=0.05)
+    quoted("        rounded ('about 17 log points')", 100 * b["diff"], 17, tol=0.5)
     quoted("        standard error", 100 * b["dse"], 4.5, tol=0.05)
     quoted("        as a ratio (%)", 100 * (math.exp(b["diff"]) - 1), 18.4, tol=0.05)
     quoted("dates: observations", d["n"], 468)
     quoted("    years", d["years"], 132)
     quoted("    joint test, p", d["p"], 0.30, tol=0.005)
-    quoted("    month 12 (%)", 100 * d["eff"][11], -15.7, tol=0.05)
+    quoted("    month 12 (log points)", 100 * d["eff"][11], -15.7, tol=0.05)
+    # the deeper box on standard errors: the same joint tests with ordinary errors, and in F form
+    quoted("dates: joint test with ordinary errors, p", d["p_iid"], 0.001, tol=0.0005)
+    assert b["p_iid"] < 0.001, b["p_iid"]          # barley: 'far below 0.001' with ordinary errors
+    quoted("barley: clustered joint test in F form, p", b["p_f"], 0.031, tol=0.0005)
     quoted("    months 12-4 minus 5-8 (log points)", 100 * d["diff"], -0.4, tol=0.05)
     c = comovement(P)
     quoted("years with both prices", c["n_years"], 134)
@@ -384,13 +398,21 @@ def data_check():
         r = P[P["year"] == y]
         quoted(f"{-y} BC: highest barley price / median", r["barley"].max() / med_b, xb, tol=0.05)
         quoted(f"    highest dates price / median", r["dates"].max() / med_d, xd, tol=0.05)
+    # the exception: a barley spike that dates did not share
+    r = P[P["year"] == -124]
+    quoted("124 BC: highest barley price / median", r["barley"].max() / med_b, 7.4, tol=0.05)
+    quoted("    highest dates price / median", r["dates"].max() / med_d, 2.2, tol=0.05)
+    top = (P.groupby("year")["barley"].max() / med_b).sort_values(ascending=False)
+    assert list(top.index[:4]) == [-83, -309, -124, -322], top.head()   # the four highest barley years
     quoted("barley, highest price (83 BC)", P["barley"].max(), 149.13, tol=0.005)
     quoted("barley, lowest price", P["barley"].min(), 2.14, tol=0.005)
     q1, q3 = P["barley"].quantile([0.25, 0.75])
     quoted("barley, lower quartile", q1, 6.94, tol=0.005)
     quoted("barley, upper quartile", q3, 19.24, tol=0.005)
     quoted("    ratio of quartiles", q3 / q1, 2.8, tol=0.05)
-    quoted("dataset: grams per mina of wool", 500, MINA_SHEKELS * SHEKEL_G, tol=1e-9)
+    _, meta = load_snapshot("babylon_prices")
+    assert "per mina (=0.5 kg)" in meta["series"], meta["series"]   # the workbook's unit for wool
+    quoted("dataset: kg per mina of wool", 0.5, MINA_SHEKELS * SHEKEL_G / 1000, tol=1e-9)
     return b
 
 
@@ -415,6 +437,8 @@ def main():
     debt(F, i_s, i_b)
     misharum(F, Q)
     egypt(F, Q)
+    # the debate section quotes these rows (Innes's list of 'fundamental theories' and its first item)
+    assert {"innes_fund", "innes_primitive", "innes_sanctity", "innes_lawdebt"} <= Q
     data_check()
     selfcheck(F, i_s)
     print("all Chapter 6 checks passed")
