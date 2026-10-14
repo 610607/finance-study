@@ -113,9 +113,22 @@ Updated 2026-10-14.
   - A composition effect in the 2020 jump in real hourly earnings is not measured.
   - Recession outcomes after yield-curve inversions, and the 2006–07 inversion left out of the breakeven discussion.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four new figures pass figlint in both languages.
+- Chapter 4 (货币、银行与中央银行的资产负债表): written and reviewed. Fixes are in the commit "Chapter 4: fixes after the independent review".
+  - The leaky floor of 2008 now gives both changes in how interest on excess reserves was set (target less 35 bp from 23 October, equal to the target from 6 November), from FRED's daily IOER and target series.
+  - The reverse repos of 7 October 2026 are split by holder: 331.4 of the 333.7 billion dollars are foreign official and international accounts, 2.3 billion the ON RRP facility (H.4.1). The federal funds market is "dominated by the Federal Home Loan Banks" (FOMC minutes, November 2018).
+  - Smith's colonial exchange rates start from the units: Pennsylvania passed 5s sterling for 6s 8d, so £100 sterling was £133 currency even in coin.
+  - Peru: most of the rise in the foreign-currency share of broad money in 2013–15 is the exchange rate (2.80 to 3.41 soles per dollar); at the December 2013 rate the December 2015 share is still 32.9%. BCRP series PN00023MM and PN00024MM were added to the snapshot for this.
+  - Floor vs corridor is argued from both sides of the November 2018 minutes; September 2019 and the standing repo facility of July 2021 show the floor needs a ceiling. The PBoC's foreign-exchange share "about 80%" is limited to 2011–14.
+  - `money_facts` has 168 rows; 167 quotations verify verbatim. The PBoC balance sheet has no terms of use; the author confirmed on 2026-10-14 that the snapshot may be committed.
+  - FORWARD_REFS has ten new rows from Chapter 4 (Chapters 5, 28, 45, 52, 61, 63, 64, 66, 75, 76, 77).
+  Open points:
+  - The label `ex:money-tax` does not match its example's title (换一个买家); left so as not to move references.
+  - The stigma of the discount window is not discussed (no citable source found).
+  - The shrinking of interbank lending is covered only through the FHLBs.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
 
 ## Next
-1. Part 1: Chapters 4, 5, then Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 1: Chapter 5, then Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
