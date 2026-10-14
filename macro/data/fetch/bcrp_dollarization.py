@@ -1,16 +1,20 @@
 """Dollarization of money and inflation in Peru, monthly, from the Banco Central de Reserva del Perú (BCRPData API).
 
     python3 data/fetch/bcrp_dollarization.py         # query the API and write the snapshot
-    python3 data/fetch/bcrp_dollarization.py DIR     # use saved API responses (DIR/PN00025MM.json, DIR/PN01273PM.json)
+    python3 data/fetch/bcrp_dollarization.py DIR     # use saved API responses (DIR/PN00025MM.json, ...)
 
-Two series:
+Four series:
   PN00025MM  "Liquidez de las sociedades creadoras de depósito (fin de periodo) - Coeficiente de Dolarización de la
              Liquidez (%)": the share of the broad money of Peru's depository corporations held in foreign currency,
              end of month, January 1992 onward
   PN01273PM  "Índice de precios Lima Metropolitana (var% 12 meses) - IPC": consumer prices in Lima, change over twelve
              months, January 1985 onward
-The script writes data/snapshots/bcrp_dollarization.csv (month, dollarization_pct, cpi_12m_pct; a cell is empty
-before its series starts) and prints the SHA-256 of each response. BCRPData's terms of use allow reproduction
+  PN00023MM, PN00024MM  "Liquidez de las sociedades creadoras de depósito (fin de periodo) - Liquidez - ME" in millions
+             of soles and in millions of dollars, January 1992 onward. Their ratio is the end-of-month exchange rate
+             at which the foreign-currency part enters the coefficient, so the coefficient can be recomputed at a
+             constant exchange rate (checks/check_ch04.py)
+The script writes data/snapshots/bcrp_dollarization.csv (month, dollarization_pct, cpi_12m_pct, fc_liq_msol,
+fc_liq_musd; a cell is empty before its series starts) and prints the SHA-256 of each response. BCRPData's terms of use allow reproduction
 "siempre y cuando se cite la fuente" (https://estadisticas.bcrp.gob.pe/estadisticas/series/ayuda/condiciones-de-uso).
 """
 from __future__ import annotations
@@ -32,6 +36,10 @@ SERIES = {   # column: (code, first month queried, the series name the API must 
     "dollarization_pct": ("PN00025MM", "1992-1", "Liquidez de las sociedades creadoras de depósito (fin de periodo) - "
                           "Coeficiente de Dolarización de la Liquidez (%)"),
     "cpi_12m_pct": ("PN01273PM", "1985-1", "Índice de precios Lima Metropolitana (var% 12 meses) - IPC"),
+    "fc_liq_msol": ("PN00023MM", "1992-1", "Liquidez de las sociedades creadoras de depósito (fin de periodo) - "
+                    "Liquidez - ME (millones S/)"),
+    "fc_liq_musd": ("PN00024MM", "1992-1", "Liquidez de las sociedades creadoras de depósito (fin de periodo) - "
+                    "Liquidez - ME (millones US$)"),
 }
 
 

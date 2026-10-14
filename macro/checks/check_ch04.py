@@ -225,6 +225,16 @@ def world(F, Wk, R):
     quoted("EFFR - IOER, 2008-10-09 to 2008-12-15: lowest (bp)", late.sp_ior.min(), -89, tol=0.5)
     quoted("  mean (bp)", late.sp_ior.mean(), -43, tol=0.5)
     quoted("  EFFR below the target on every day", float((late.EFFR < late.DFEDTAR).all()), 1, tol=0)
+    quoted("IOER from 2008-10-23 (%)", R.loc["2008-10-23", "IOER"], 1.15, tol=0)
+    quoted("  the day before (%)", R.loc["2008-10-22", "IOER"], 0.75, tol=0)
+    quoted("  target less IOER, 2008-10-23 to 2008-10-28 (bp)",
+           100 * (R.loc["2008-10-23":"2008-10-28", "DFEDTAR"] - R.loc["2008-10-23":"2008-10-28", "IOER"]).max(), 35, tol=1e-9)
+    quoted("    and 2008-10-29 to 2008-11-05 (bp)",
+           100 * (R.loc["2008-10-29":"2008-11-05", "DFEDTAR"] - R.loc["2008-10-29":"2008-11-05", "IOER"]).min(), 35, tol=1e-9)
+    quoted("IOER from 2008-11-06 (%)", R.loc["2008-11-06", "IOER"], 1.00, tol=0)
+    quoted("  the day before (%)", R.loc["2008-11-05", "IOER"], 0.65, tol=0)
+    eq = R.loc["2008-11-06":"2008-12-15"]
+    quoted("  IOER = target on every day 2008-11-06 to 2008-12-15", float((eq.IOER == eq.DFEDTAR).all()), 1, tol=0)
     quoted("BoE: three sets of constraints", F["mc_three"][0], 3, tol=0)
 
 
@@ -344,6 +354,15 @@ def reserves_identity(T):
            T["foreign"] + T["other_dep"] + T["dai"] + T["contrib"] + T["oth_l"], 23944, tol=0)
     quoted("other liabilities in the table (100m dollars)", (T["dai"] + T["contrib"] + T["oth_l"]) / 100, -2253, tol=0.5)
     quoted("TGA as a share of reserves (%)", 100 * T["tga"] / T["res"], 29.3, tol=0.05)
+
+def rrp_split(F):
+    print("== deeper box: who holds the reverse repos (H.4.1, 7 October 2026, 100m dollars)")
+    rrp, foreign, others = F["h4_rrp_split"]
+    quoted("reverse repos", rrp / 100, 3337, tol=0.5)
+    quoted("  foreign official and international accounts", foreign / 100, 3314, tol=0.5)
+    quoted("  others (money market funds and others, the ON RRP facility)", others / 100, 23, tol=0.5)
+    quoted("  parts add up ($m)", foreign + others, rrp, tol=0)
+    quoted("  same total as tab:money-fed ($m)", rrp, F["h4_rrp"][0], tol=0)
 
 
 def settlement(F):
@@ -546,6 +565,12 @@ def functions(F):
     quoted("    ratio of the two values", ex[2] / ex[1], 8.5, tol=0.05)
     quoted("    the £1100 colony's paper relative to the £130 colony's", ex[1] / ex[2], 0.12, tol=0.005)
     quoted("    discount on sterling, 15 years at 6% (pv/face), for comparison", pv / 100, 0.417, tol=0.0005)
+    pr = F["sm_penn_rate"]
+    quoted("Pennsylvania: 5s sterling passed for (s)", pr[1], 6.25, tol=0)
+    quoted("  and later for (s)", pr[2], 6 + 8 / 12, tol=0.0001)
+    quoted("  so £100 sterling in coin = £ currency", 100 * pr[2] / pr[0], 133, tol=0.5)
+    quoted("  above the £130 in Smith's other example", float(100 * pr[2] / pr[0] > ex[1]), 1, tol=0)
+    quoted("  'more than thirty per cent. below' (%)", F["sm_penn_thirty"][0], 30, tol=0)
     quoted("Knapp: first edition", F["kn_editions"][0], 1905, tol=0)
     quoted("  fourth edition", F["kn_editions"][3], 1923, tol=0)
 
@@ -619,6 +644,15 @@ def test(F, Mn, Wk, R, B):
     quoted("  Dec 2010 (%)", d["2010-12"], 37.6, tol=0.05)
     quoted("  Dec 2013 (%)", d["2013-12"], 32.9, tol=0)
     quoted("  Dec 2015 (%)", d["2015-12"], 37.4, tol=0.05)
+    a, b = B.loc["2013-12"], B.loc["2015-12"]
+    fx = lambda r: r.fc_liq_msol / r.fc_liq_musd                           # soles per dollar, end of month
+    mn = lambda r: r.fc_liq_msol * (100 / r.dollarization_pct - 1)       # the soles part (millions of soles)
+    quoted("exchange rate Dec 2013 (soles per dollar)", fx(a), 2.80, tol=0.005)
+    quoted("  Dec 2015", fx(b), 3.41, tol=0.005)
+    quoted("growth Dec 2013 to Dec 2015: foreign-currency part in dollars (%)", 100 * (b.fc_liq_musd / a.fc_liq_musd - 1), 14.0, tol=0.05)
+    quoted("  soles part (%)", 100 * (mn(b) / mn(a) - 1), 14.0, tol=0.05)
+    quoted("dollarization Dec 2015 at the Dec 2013 exchange rate (%)",
+           100 * b.fc_liq_musd * fx(a) / (mn(b) + b.fc_liq_musd * fx(a)), 32.9, tol=0.05)
     quoted("  lowest (%)", d.min(), 25.4, tol=0.05)
     quoted("  in (yyyymm)", float(d.idxmin().replace("-", "")), 202512, tol=0)
     quoted("  Aug 2026, the last month (%)", d["2026-08"], 26.0, tol=0.05)
@@ -669,6 +703,7 @@ def main():
     steps()
     settlement(F)
     reserves_identity(T)
+    rrp_split(F)
     creation(F, Mn)
     china_multiplier(F, P)
     rate_section(F, R)

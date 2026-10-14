@@ -317,8 +317,8 @@ def money_peru():
     ax2.text(pd.Timestamp("2014-08-01"), 16, T("去美元化\n计划", "de-dollar-\nization\nplan"), color=MONEY, fontsize=7.6,
              ha="center", va="top", linespacing=1.2)
     ax2.axvline(pd.Timestamp("2002-09-24"), color=MUTED, lw=0.7, ls=":", zorder=1)
-    ax2.text(pd.Timestamp("2002-03-01"), 16, T("2002 年 9 月：\n纳税用本币", "Sep 2002: taxes\nin soles"), color=MUTED,
-             fontsize=7.6, ha="right", va="top", linespacing=1.2)
+    ax2.text(pd.Timestamp("2003-04-01"), 27, T("2002 年 9 月法令：\n按本币申报纳税", "Sep 2002 decree:\ntaxes in soles"), color=MUTED,
+             fontsize=7.6, ha="left", va="top", linespacing=1.2)
     ax2.plot(td, d, color=EXTERNAL, lw=2.0, zorder=3)
     for m, dy, va in ((d.idxmax(), 2.0, "bottom"), ("1992-01", -6.5, "top"), (d.index[-1], -2.5, "top")):
         ax2.plot([pd.Timestamp(m + "-01")], [d[m]], color=EXTERNAL, zorder=4, **dict(DOT, mfc=EXTERNAL))

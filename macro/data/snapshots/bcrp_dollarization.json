@@ -1,14 +1,14 @@
 {
-  "title": "Peru: dollarization of broad money (1992-2026) and twelve-month consumer price inflation in Lima (1985-2026), monthly, percent",
+  "title": "Peru: dollarization of broad money and its foreign-currency part (1992-2026) and twelve-month consumer price inflation in Lima (1985-2026), monthly",
   "source": "Banco Central de Reserva del Perú, BCRPData (API)",
   "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN00025MM/json/1992-1/2026-12/ing",
-  "series": "PN00025MM, 'Liquidez de las sociedades creadoras de depósito (fin de periodo) - Coeficiente de Dolarización de la Liquidez (%)' (dollarization_pct); PN01273PM, 'Índice de precios Lima Metropolitana (var% 12 meses) - IPC' (cpi_12m_pct)",
+  "series": "PN00025MM, 'Liquidez de las sociedades creadoras de depósito (fin de periodo) - Coeficiente de Dolarización de la Liquidez (%)' (dollarization_pct); PN01273PM, 'Índice de precios Lima Metropolitana (var% 12 meses) - IPC' (cpi_12m_pct); PN00023MM and PN00024MM, 'Liquidez de las sociedades creadoras de depósito (fin de periodo) - Liquidez - ME' in millions of soles (fc_liq_msol) and millions of US dollars (fc_liq_musd)",
   "retrieved": "2026-10-14",
   "license": "BCRPData's terms of use: 'Puede reproducirse total o parcialmente, sin autorización expresa, siempre y cuando se cite la fuente.' (https://estadisticas.bcrp.gob.pe/estadisticas/series/ayuda/condiciones-de-uso, 2026-10-14; quoted in money_facts)",
-  "citation": "Fuente: Banco Central de Reserva del Perú (BCRPData), series PN00025MM y PN01273PM.",
+  "citation": "Fuente: Banco Central de Reserva del Perú (BCRPData), series PN00025MM, PN01273PM, PN00023MM y PN00024MM.",
   "used_in": [
     4
   ],
   "fetch": "data/fetch/bcrp_dollarization.py",
-  "notes": "Downloaded 2026-10-14. Dollarization: share of the liquidity (broad money) of the depository corporations held in foreign currency, end of month, January 1992 to August 2026. Inflation: change of the Lima consumer price index over twelve months, January 1985 to September 2026. Values rounded to two decimals. SHA-256 of the API responses: PN00025MM e3c4fef760f39db930bb0639048214838d23b584e1760e8ffd230a47fc18b641; PN01273PM 5c449d21905d674b28cb12c017fd1cd9396217471c490513964b4e61ff6b6402."
+  "notes": "Downloaded 2026-10-14. Dollarization: share of the liquidity (broad money) of the depository corporations held in foreign currency, end of month, January 1992 to August 2026. Inflation: change of the Lima consumer price index over twelve months, January 1985 to September 2026. Foreign-currency liquidity of the depository corporations, end of month, January 1992 to August 2026, in millions of soles and of dollars (added 2026-10-14 after the review): their ratio is the end-of-month exchange rate, which shows that the coefficient values the foreign-currency part at the current exchange rate. Values rounded to two decimals. SHA-256 of the API responses: PN00025MM e3c4fef760f39db930bb0639048214838d23b584e1760e8ffd230a47fc18b641; PN01273PM 5c449d21905d674b28cb12c017fd1cd9396217471c490513964b4e61ff6b6402; PN00023MM 6cd4287682a48d60811590bb9d6c7c121f7d6e06797e8d77879dd91755f346f7; PN00024MM b2544b972d36c9f31a7d2e330eaad28258a73ec33c926c5071f4e3245a455a0e."
 }

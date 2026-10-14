@@ -46,6 +46,20 @@
       "version": "Minutes of the Federal Open Market Committee, 28-29 October 2008",
       "retrieved": "2026-10-14"
     },
+    "fomcmin20181108": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20181108.htm",
+      "format": "html",
+      "sha256": "650363344a75ca67188590e96a170b1e8efea801a9e0658a9887f6d6dc20576a",
+      "version": "Minutes of the Federal Open Market Committee, 7-8 November 2018 (long-run monetary policy implementation frameworks)",
+      "retrieved": "2026-10-14"
+    },
+    "fomc20210728": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20210728b.htm",
+      "format": "html",
+      "sha256": "59f42b8857f2b5998029f841d75e82f233e6231ebb4f58211e1ec2457788d7b8",
+      "version": "Federal Open Market Committee, Statement Regarding Repurchase Agreement Arrangements, 28 July 2021",
+      "retrieved": "2026-10-14"
+    },
     "fed20140917": {
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20140917c.htm",
       "format": "html",
