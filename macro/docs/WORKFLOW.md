@@ -83,4 +83,4 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
 - Part 1 (第 2—5 章; 第 1 章 last, after Part 2): notes in `docs/agent_prompts/part1_notes.md`; written
   sequentially in the order 2, 3, 4, 5, started 2026-10-14; Chapters 2, 3, 4 and 5 written and reviewed 2026-10-14.
 - Part 2 (第 6—9 章): notes in `docs/agent_prompts/part2_notes.md`; written sequentially in the order
-  6, 7, 8, 9, started 2026-10-14; Chapter 6 written and reviewed 2026-10-14.
+  6, 7, 8, 9, started 2026-10-14; Chapters 6 and 7 written and reviewed 2026-10-14.

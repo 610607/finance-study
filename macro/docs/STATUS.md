@@ -167,9 +167,29 @@ Updated 2026-10-14.
   - The chapter borrows equations from Chapters 13 and 14 and restates them in place.
   - Layout, all chapters: a long chapter title wraps and leaves its last character or two alone on the second line (账 in Chapter 6, 命 in Chapter 13, 帝国 in Chapter 14). The title format is in `preamble.tex`, which I have not changed; a ragged or balanced title setting would fix all three. Please say if you want it.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the three figures pass figlint in both languages.
+- Chapter 7 (希腊与罗马：铸币、城邦财政与帝国的贬值): written and reviewed. The draft is in "Chapter 7: Greece and Rome, first draft"; the review fixes are in "Chapter 7: fixes after the independent review; rebuild compiled/".
+  - The model: a coin's exchange value lies between its metal value and its official value, $v=c+\tau(\bar v-c)$ (`eq:greek-value`), so a debasement raises prices by $(1-\tau)$ of its size; $\tau=0$ is Chapter 17's `eq:toku-content`. The text says plainly that $q$ (the silver price of wheat) and $v$ cannot be separated in the data.
+  - The tests, on Kelly's (2021) Egyptian prices (CC BY 4.0, one row per document): private wheat 190–270 shows no trend (−0.09% a year, $p=0.75$, 27 documents) while barley rises 1.46% a year ($p=0.021$, 10 documents); 31 state wheat prices, 20 of them exactly 8 drachmas; the 274 reform (more silver, a tenfold price rise) read as a loss of trust (Haklai-Rotenberg 2011); wheat prices after the Edict of 301 rising 20.2% a year to 314.
+  - Contested questions with each side's strongest case: metallism against nominalism (Aristotle's two passages); plague against money for 160–190; four views of debasement and inflation; Finley against Temin, reconciled through Kelly's two sectors. The Edict is read as law against enforcement (Kent's three readings of Lactantius' "much blood", Egyptian prices after 301).
+  - Fixes after the review:
+    - Haklai-Rotenberg's n. 108 rules out the same-year explanation of the 301 price rise; her conclusion (Diocletian's own 294/96 reform) is now quoted.
+    - The denarius is compared over the same period as the tetradrachm (2.4 → 1.9 g).
+    - Caracalla's antoninianus has the same alloy as the denarius (Cope p. 103); the minority 1.5-denarii tariff gives zero seigniorage.
+    - Kelly's obol evidence replaces the reading of steps of four as convention.
+    - Also: Aristotle's *Politics* 1257b, P.Oxy. 1411's limits, the 274/75 Egyptian reform, the two documents dated 160, Kent on meals, Kent's 1920 account set against Diocletian's reforms, and the slaves' human cost. Pronouns were replaced by names.
+    - `greek_facts` has 204 rows, all verified verbatim. The `greek_silver` panel title was wrong (一两成 for 1%–2%).
+  - FORWARD_REFS: rows 32 and 124 done; new rows from Chapter 7 to Chapters 8, 23, 26, 43, 47, 49, 52, 75 and 76. The label registry gains Chapter 7's labels and `sec:medieval-oresme`.
+  Open points:
+  - Finley (1973) and Rathbone (1997) could not be obtained; Finley is quoted through Temin, and the text says the "Finley side" evidence is the book's own arrangement of Kelly's data.
+  - No BC year is given for the Laurion and Maroneia strike; only Xenophon's dates are given (from the note at the head of the Gutenberg e-book).
+  - The 190–270 test sets Roman debasement against Egyptian prices; the chapter has no year-by-year fineness of the Egyptian tetradrachm for 190–270 and says so.
+  - Kelly's printed text and his appendix differ for P.Mich. II 123/127 (AD 45/46); the deeper box records it, and the pre-160 median is 8.73 either way.
+  - Tacitus' "hundred thousand great sesterces" is left as Gordon translates it; no source in hand converts it.
+  - The Haklai-Rotenberg PDF (iDAI, personal use) is quoted in short passages only and not redistributed.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
 
 ## Next
-1. Part 2 (Chapters 7–9; Chapter 6 done), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 2 (Chapters 8–9; Chapters 6 and 7 done), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
