@@ -21,7 +21,8 @@ one. Each document is downloaded once into
 $WEB_CACHE (default ~/.cache/finance-study/web) and its SHA-256 is compared with the one recorded
 when the chapter was written; a different hash is reported (the site may have changed the file)
 but the quotations are still searched. Text and quotation are compared after normalizing
-whitespace, line-end hyphenation, typographic quotes and dashes, and Unicode compatibility forms.
+whitespace (a space next to a Chinese character is dropped), line-end hyphenation, typographic quotes
+and dashes, and Unicode compatibility forms.
 A site that cannot be reached is reported, not counted as a failure: network access differs
 between sessions (docs/WORKFLOW.md §0).
 """
@@ -43,6 +44,9 @@ HERE = Path(__file__).resolve().parent
 SNAPSHOTS = HERE.parent / "snapshots"
 CACHE = Path(os.environ.get("WEB_CACHE", Path.home() / ".cache" / "finance-study" / "web"))
 UA = "Mozilla/5.0 (X11; Linux x86_64) finance-study quotation check"
+# A space next to a Chinese character is dropped: pdftotext turns the line ends of a Chinese text into spaces,
+# and Chinese writing has none of its own (applied to text and quotation alike, so no match is lost).
+CJK_GAP = re.compile(r"(?<=[\u3000-\u303f\u3400-\u9fff]) | (?=[\u3000-\u303f\u3400-\u9fff])")
 
 
 def normalize(s: str) -> str:
@@ -52,7 +56,8 @@ def normalize(s: str) -> str:
     for a, b in [("‘", "'"), ("’", "'"), ("“", '"'), ("”", '"'), ("–", "-"), ("—", "-"),
                  ("­", ""), ("‎", ""), ("‏", "")]:
         s = s.replace(a, b)
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    return CJK_GAP.sub("", s)                                # a line break inside Chinese text
 
 
 def strings_in(obj) -> list[str]:

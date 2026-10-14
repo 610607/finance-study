@@ -1,0 +1,13 @@
+{
+  "title": "US monetary base, M2 and total reserves, monthly (1959-2026), billions of dollars",
+  "source": "Board of Governors of the Federal Reserve System (H.3 Aggregate Reserves of Depository Institutions and the Monetary Base; H.6 Money Stock Measures), via FRED, Federal Reserve Bank of St. Louis",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BOGMBASE",
+  "series": "BOGMBASE (monetary base: currency in circulation plus reserve balances, not seasonally adjusted); M2NS (M2, not seasonally adjusted); M2SL (M2, seasonally adjusted); TOTRESNS (total reserves of depository institutions, not seasonally adjusted)",
+  "retrieved": "2026-10-14",
+  "license": "Works of the US government (Federal Reserve Board, H.3 and H.6). FRED's terms ask users to 'cite the data source and acknowledge that you obtained the data from FRED' (https://fred.stlouisfed.org/legal/; quoted in fred_prices_monthly.json).",
+  "used_in": [
+    4
+  ],
+  "fetch": "data/fetch/fred_money.py",
+  "notes": "Downloaded 2026-10-14 (latest month August 2026). Dates are the first day of the month; values are monthly averages. The money stock is revised (benchmarks and seasonal factors), so later downloads can differ slightly; Chapter 4 approximates currency held outside banks by BOGMBASE - TOTRESNS (total reserves include vault cash used to satisfy reserve requirements); see checks/check_ch04.py. SHA-256 of the fredgraph files: BOGMBASE 07e99361fc8806d330863bc7fa6ac336b178265bb4c8dfb10e85b7de920749a5; M2NS 23263ce038c5cf79d36a4c9f9f35b398e1fe7c38a3b8e46d1e98394a4834db32; M2SL 63b673baffae16f7683963ddde0664012a7ac93ab775a82d3c98a0311e103e5a; TOTRESNS e9491674f1e21ee9a9c9f6d2b313f8c83d607f453cc05643ad45588dfe57c700."
+}

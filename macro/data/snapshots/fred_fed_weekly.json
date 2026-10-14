@@ -1,0 +1,13 @@
+{
+  "title": "The Federal Reserve's balance sheet, Wednesday levels, weekly (December 2002 to October 2026), millions of dollars",
+  "source": "Board of Governors of the Federal Reserve System, H.4.1 Factors Affecting Reserve Balances, via FRED, Federal Reserve Bank of St. Louis",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WALCL",
+  "series": "WALCL (total assets); TREAST (U.S. Treasury securities held outright); WSHOMCB (mortgage-backed securities held outright); WLFN (Federal Reserve notes, net of F.R. Bank holdings); WLODLL (other deposits held by depository institutions, i.e. reserve balances); WDTGAL (U.S. Treasury, General Account); WLRRAL (reverse repurchase agreements, foreign official and others); WLTLECL (total liabilities); WCTCL (total capital); all Wednesday levels",
+  "retrieved": "2026-10-14",
+  "license": "Works of the US government (Federal Reserve Board, H.4.1). FRED's terms ask users to 'cite the data source and acknowledge that you obtained the data from FRED' (https://fred.stlouisfed.org/legal/; quoted in fred_prices_monthly.json).",
+  "used_in": [
+    4
+  ],
+  "fetch": "data/fetch/fred_money.py",
+  "notes": "Downloaded 2026-10-14 (last Wednesday 2026-10-07; the values of that week equal table 5 of the H.4.1 release of 8 October 2026, quoted in money_facts). H.4.1 levels are not revised. SHA-256 of the fredgraph files: WALCL c6519d91e9d8546ce63f6a8ea20b82c1a7ddd0d6bd3a1146e448d574cc4d2c1c; TREAST 91592681f8221589b5665fde0883a7d033158dadd86febe1fb9e70c8e23849c7; WSHOMCB b904c87cfcdf813fdeaeb27463c7f0de8470f5c7e5dbb87a9eef4e2eaf1d57fd; WLFN f34b96a6dc7ad334b0a1f8af595c23162d94f5e4717a9e42b855429a4b0cb0e9; WLODLL f57f33b3e307f60e05a2715cb7f6422ff3a7508042d8bc6e2c6c520b751ea0cf; WDTGAL 84afe907f5cafa42ea20061544e7eab7b4af850d27a51d013234598d3ccdd729; WLRRAL 260aaf7879ed010dcd2ba4a734d422c98497f0b4fd4fd697cf7cc2a71ba0bec5; WLTLECL 2311d04d9eed1fc8f1ff05829b690bad229774496bd1bf243c9504a75839d886; WCTCL 22a43be9b9c7ae243751c4cc2b074e58404a4712c471aa59131d004d848358a7."
+}

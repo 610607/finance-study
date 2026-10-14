@@ -1,0 +1,204 @@
+{
+  "title": "Quotations for Chapter 4 (money, banks and the central bank's balance sheet): the Bank of England on money creation (2014), Cagan's identity (1965), the Federal Reserve's interest on reserves, floor system and ample reserves (2008-2026), the September 2019 repo spike, the H.4.1 balance sheet of 8 October 2026, Fed settlement services, the ECB's 2024 operational framework, the People's Bank of China's monetary policy reports (2011-2026), Smith (1776) on colonial paper money, Knapp's State Theory of Money, and Peru's tax rules and de-dollarization",
+  "source": "McLeay, Radia and Thomas (2014, Bank of England); Cagan (1965, NBER); Board of Governors of the Federal Reserve System and the FOMC (2008-2026); Anbil, Anderson and Senyuz (2020, FEDS Notes); Federal Reserve Financial Services; European Central Bank (2024); 中国人民银行货币政策分析小组 (2012-2026); Adam Smith (1776); G. F. Knapp (1905; English translation 1924); Decreto Supremo Nº 151-2002-EF (Peru); Minaya, Lupú and Cabello (2017, BIS); BCRPData",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf",
+  "series": "id, dynasty (country), year, year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim, or a transcription for image rows), note",
+  "retrieved": "2026-10-14",
+  "license": "Quotations for criticism and teaching. Federal Reserve Board, FOMC and H.4.1 documents are works of the US government; Smith (1776) and the 1924 translation of Knapp are quoted from public-domain scans; the Peruvian decree is an official legal text; BCRPData allows reproduction 'siempre y cuando se cite la fuente'. The Bank of England article, Cagan's chapter (NBER), the FEDS Note, the Federal Reserve Financial Services pages, the ECB press release (the ECB permits reproduction with the source acknowledged), the BIS working paper ('Brief excerpts may be reproduced or translated provided the source is stated') and the People's Bank of China reports are quoted briefly with attribution.",
+  "used_in": [
+    4
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py checks every row whose source is not an image",
+  "notes": "The row with file cagan1965img was read on the page image (the text layer garbles the fractions); its quote column is a transcription. Values are the numbers the text uses, in the order they appear. The H.4.1 rows quote the release's table cells as the verifier sees them after removing the HTML tags (row label, footnote number and the week's changes).",
+  "sources": {
+    "mcleay2014": {
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/2014/money-creation-in-the-modern-economy.pdf",
+      "format": "pdf",
+      "sha256": "cfc4a6262631e7b5582a427aec1215c1568f240c45d54696bb9a2093992b62b2",
+      "version": "M. McLeay, A. Radia and R. Thomas, 'Money creation in the modern economy', Bank of England Quarterly Bulletin 2014 Q1, pp. 14-27",
+      "retrieved": "2026-10-14"
+    },
+    "cagan1965": {
+      "url": "https://www.nber.org/chapters/c1640.pdf",
+      "format": "pdf",
+      "sha256": "2931e1e6bcfeb934146460f691cc8ac514b7d35ec09c57974da85ed107b1545c",
+      "version": "P. Cagan, Determinants and Effects of Changes in the Stock of Money, 1875-1960 (NBER, 1965), ch. 1 'The Money Stock and Its Three Determinants', pp. 1-16; NBER's scan with a text layer",
+      "retrieved": "2026-10-14"
+    },
+    "cagan1965img": {
+      "url": "https://www.nber.org/chapters/c1640.pdf",
+      "format": "image",
+      "sha256": "2931e1e6bcfeb934146460f691cc8ac514b7d35ec09c57974da85ed107b1545c",
+      "version": "the same file; identity (1) on p. 12 (PDF p. 13) read on the page image, because the text layer garbles the fractions",
+      "retrieved": "2026-10-14"
+    },
+    "fed20081006": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20081006a.htm",
+      "format": "html",
+      "sha256": "a37d81eb40e979cb40f2824d63337ef0a4866b520dd6064094cbd7f1030748ed",
+      "version": "Board of Governors of the Federal Reserve System, press release of 6 October 2008 (interest on reserves; Term Auction Facility)",
+      "retrieved": "2026-10-14"
+    },
+    "fomcmin20081029": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20081029.htm",
+      "format": "html",
+      "sha256": "37f0ffe494a82978c6888c29a21a2bd2e4ea0cc0d727a44805c19093060b2f49",
+      "version": "Minutes of the Federal Open Market Committee, 28-29 October 2008",
+      "retrieved": "2026-10-14"
+    },
+    "fed20140917": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20140917c.htm",
+      "format": "html",
+      "sha256": "9befb541881690c25745ecf606c2b70827abed72ef6e73c26ae85aaabecc850c",
+      "version": "Federal Open Market Committee, Policy Normalization Principles and Plans, 17 September 2014",
+      "retrieved": "2026-10-14"
+    },
+    "fed20190130": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20190130c.htm",
+      "format": "html",
+      "sha256": "316ec2662ff87650339e8743b95f8c8b2618ee81f247a0a3bedbefb6187d6b94",
+      "version": "Federal Open Market Committee, Statement Regarding Monetary Policy Implementation and Balance Sheet Normalization, 30 January 2019",
+      "retrieved": "2026-10-14"
+    },
+    "fed20200315": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315b.htm",
+      "format": "html",
+      "sha256": "29aa3fa1201c38509b57fc71355af9ee9443b6702d3a93cf27431d543ad5390c",
+      "version": "Board of Governors of the Federal Reserve System, press release of 15 March 2020 (discount window, reserve requirements)",
+      "retrieved": "2026-10-14"
+    },
+    "feds20200227": {
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/what-happened-in-money-markets-in-september-2019-20200227.html",
+      "format": "html",
+      "sha256": "9bea504d06b11d5896e513b78f93fe54db909c2af02102c42740a918bf9ed7aa",
+      "version": "S. Anbil, A. Anderson and Z. Senyuz, 'What Happened in Money Markets in September 2019?', FEDS Notes, 27 February 2020",
+      "retrieved": "2026-10-14"
+    },
+    "fomc20251029": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251029a.htm",
+      "format": "html",
+      "sha256": "f130cc498bc3bb576b87961276a9b6012f84fb644790c947006e6358f832fb7d",
+      "version": "FOMC statement, 29 October 2025",
+      "retrieved": "2026-10-14"
+    },
+    "fomc20251210": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a.htm",
+      "format": "html",
+      "sha256": "cc9ae43298f35ab15f9a138aa8b9392c166acf0423b4e4d7e02385f6367109fd",
+      "version": "FOMC statement, 10 December 2025",
+      "retrieved": "2026-10-14"
+    },
+    "fomc20251210n": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251210a1.htm",
+      "format": "html",
+      "sha256": "df8686efe1175e7cc1c0087b61c766c48993a472feedcc059b0c3e816bc655a9",
+      "version": "Implementation Note issued 10 December 2025",
+      "retrieved": "2026-10-14"
+    },
+    "fomc20260916": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "format": "html",
+      "sha256": "057e8ce5e75b8d25dee5bf1510137cb4307c34222e2ea3b935757b1957fc1951",
+      "version": "FOMC statement, 16 September 2026",
+      "retrieved": "2026-10-14"
+    },
+    "fomc20260916n": {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a1.htm",
+      "format": "html",
+      "sha256": "be28dbbfa2722263d0e860e29f45509d45e51c7c645d9d8dcbf2567a2008fedf",
+      "version": "Implementation Note issued 16 September 2026",
+      "retrieved": "2026-10-14"
+    },
+    "h41_20261008": {
+      "url": "https://www.federalreserve.gov/releases/h41/20261008/",
+      "format": "html",
+      "sha256": "ebf55eb76acb7efe8130af3659bfb72489c83689554f970708560d2677b37c2f",
+      "version": "Federal Reserve statistical release H.4.1, Factors Affecting Reserve Balances, 8 October 2026 (Wednesday levels of 7 October 2026)",
+      "retrieved": "2026-10-14"
+    },
+    "frbs_nss": {
+      "url": "https://www.frbservices.org/financial-services/national-settlement-service",
+      "format": "html",
+      "sha256": "8e24feab7cc485081f502e8132895b6b3cd90943ec912052ad69e1f2af0682b1",
+      "version": "Federal Reserve Financial Services, National Settlement Service page",
+      "retrieved": "2026-10-14"
+    },
+    "frbs_fedwire": {
+      "url": "https://www.frbservices.org/financial-services/wires",
+      "format": "html",
+      "sha256": "0691e2166f4f6b064e96e01f1384673c5b6c6e81144e247fdcecfcc347d07776",
+      "version": "Federal Reserve Financial Services, Fedwire Funds Service page",
+      "retrieved": "2026-10-14"
+    },
+    "ecb20240313": {
+      "url": "https://www.ecb.europa.eu/press/pr/date/2024/html/ecb.pr240313~807e240020.en.html",
+      "format": "html",
+      "sha256": "498c08be6bae7b90e6d83fb5079f584cc73f95ecb1b51a0642e931d01bfabdf3",
+      "version": "European Central Bank, press release of 13 March 2024, 'Changes to the operational framework for implementing monetary policy'",
+      "retrieved": "2026-10-14"
+    },
+    "pbc2011q4": {
+      "url": "https://www.pbc.gov.cn/eportal/fileDir/image_public/UserFiles/goutongjiaoliu/upload/File/2011%E5%B9%B4%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%BA%A6%E4%B8%AD%E5%9B%BD%E8%B4%A7%E5%B8%81%E6%94%BF%E7%AD%96%E6%89%A7%E8%A1%8C%E6%8A%A5%E5%91%8A20120215.pdf",
+      "format": "pdf",
+      "sha256": "fa5818d55277cfa1f493974a8ae8f86ce8ebc041fb93aa8023406434fcfe5332",
+      "version": "中国人民银行货币政策分析小组，《中国货币政策执行报告 二○一一年第四季度》，2012 年 2 月 15 日",
+      "retrieved": "2026-10-14"
+    },
+    "pbc2025q2": {
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/f5c4690f2cbd40918bf24c2d39ac58af/b3e8c1a2b07d4facb38f4a7426415252/2025081819132397368.pdf",
+      "format": "pdf",
+      "sha256": "6c456ec683bb622c61eafbad95da6125739f739a0432e31156f61dbdbaea7fb2",
+      "version": "中国人民银行货币政策分析小组，《中国货币政策执行报告 2025 年第二季度》，2025 年 8 月 15 日",
+      "retrieved": "2026-10-14"
+    },
+    "pbc2025q4": {
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/attachDir/2026/02/2026021019001885059.pdf",
+      "format": "pdf",
+      "sha256": "1406e9f5aee0667643dd7fadb9b88a3fc98a38eb4b49ad9bca2bb3d1b1ccf751",
+      "version": "中国人民银行货币政策分析小组，《中国货币政策执行报告 2025 年第四季度》，2026 年 2 月 10 日",
+      "retrieved": "2026-10-14"
+    },
+    "pbc2026q2": {
+      "url": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125227/125957/2026nhbzczxbg/2026081218435062865/2026081218435024793.pdf",
+      "format": "pdf",
+      "sha256": "82c3f62136439902d9d8c464748afd9913503e53487257b61e1b31cc3d1e8ad9",
+      "version": "中国人民银行货币政策分析小组，《中国货币政策执行报告 2026 年第二季度》，2026 年 8 月 12 日",
+      "retrieved": "2026-10-14"
+    },
+    "smith1776": {
+      "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
+      "format": "txt",
+      "sha256": "e91d52dca43fd0fd69baf7776b00a5d8e74b69675b6b608ca8a0378aaf3ae58d",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300 (the text of a later edition; see the snapshot finrev_facts); Book II, ch. II on the paper money of the North American colonies",
+      "retrieved": "2026-10-13"
+    },
+    "knapp1924": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.224223/2015.224223.The-State_djvu.txt",
+      "format": "txt",
+      "sha256": "dc07f62c0a440c07fe123e7da6bd26631c49e9b1c8be1c7af2a8d54a0f2272ec",
+      "version": "G. F. Knapp, The State Theory of Money, abridged edition translated by H. M. Lucas and J. Bonar from the 4th German edition (1923), London: Macmillan for the Royal Economic Society, 1924; Digital Library of India copy on archive.org (item in.ernet.dli.2015.224223), OCR text",
+      "retrieved": "2026-10-14"
+    },
+    "ds151_2002": {
+      "url": "https://cdn.www.gob.pe/uploads/document/file/249601/224965_file20181218-16260-xs0v5e.pdf",
+      "format": "pdf",
+      "sha256": "e31fb5e1077c11cf1dc5a6dcee949a40eb0c6952847624cdc15d78ce871f5747",
+      "version": "Perú, Decreto Supremo Nº 151-2002-EF (contabilidad en moneda extranjera), dado el 24 de setiembre de 2002; copy on gob.pe (Ministerio de Economía y Finanzas)",
+      "retrieved": "2026-10-14"
+    },
+    "bis_wp675": {
+      "url": "https://www.bis.org/publications/working-paper-675-macroprudential-policies-peru-effects-dynamic-provisioning-and-conditional-reserve-requirements.pdf",
+      "format": "pdf",
+      "sha256": "759df3e7045f30c7b31f21491bfea881b721de38a440e6957ab83a5ec15b9abb",
+      "version": "E. Minaya, J. Lupú and M. Cabello, 'Macroprudential Policies in Peru: The effects of Dynamic Provisioning and Conditional Reserve Requirements', BIS Working Papers No 675, November 2017",
+      "retrieved": "2026-10-14"
+    },
+    "bcrp_terms": {
+      "url": "https://estadisticas.bcrp.gob.pe/estadisticas/series/ayuda/condiciones-de-uso",
+      "format": "html",
+      "sha256": "ed37a8412336743a65fe796b36c40e35deaf6d747b7d3156bb6c4546ceb0b32c",
+      "version": "Banco Central de Reserva del Perú, BCRPData, Condiciones de uso",
+      "retrieved": "2026-10-14"
+    }
+  }
+}

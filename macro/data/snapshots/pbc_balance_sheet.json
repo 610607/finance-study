@@ -1,0 +1,14 @@
+{
+  "title": "Balance sheet of the monetary authority (People's Bank of China), monthly, January 2002 to August 2026, 100 million yuan",
+  "source": "中国人民银行调查统计司，统计数据，各年“货币当局资产负债表” (People's Bank of China, Department of Statistics)",
+  "url": "https://www.pbc.gov.cn/diaochatongjisi/116219/116319/index.html",
+  "series": "货币当局资产负债表 (Balance Sheet of Monetary Authority): 国外资产 (foreign_assets), 其中外汇 (fx), 货币黄金 (gold); 对政府债权 (claims_gov); 对其他存款性公司债权 (claims_banks; before 2006 the sum of 对存款货币银行债权 and 对特定存款机构债权); 对其他金融性公司债权 (claims_ofc); 对非金融性部门债权 / 对非金融性公司债权 (claims_nonfin); 其他资产 (other_assets); 总资产 (total_assets); 储备货币 (reserve_money), 其中货币发行 (currency), 其他存款性公司存款 (bank_deposits; before 2006 the sum of the deposits of 存款货币银行 and 特定存款机构), 非金融机构存款 (nonfin_deposits); 不计入储备货币的金融性公司存款 (fc_deposits_excl); 发行债券 (bonds, mainly central bank bills); 国外负债 (foreign_liab); 政府存款 (gov_deposits); 自有资金 (own_capital); 其他负债 (other_liab); 总负债 (total_liab)",
+  "retrieved": "2026-10-14",
+  "license": "Official statistics published by the People's Bank of China; no terms of use were found on the site (2026-10-14). The snapshot is an extract of factual figures with the source cited; the author is asked to confirm that committing it is acceptable (docs/STATUS.md).",
+  "citation": "Source: People's Bank of China, Department of Statistics, Balance Sheet of Monetary Authority (yearly tables 2002-2026).",
+  "used_in": [
+    4
+  ],
+  "fetch": "data/fetch/pbc_balance_sheet.py",
+  "notes": "One table per year (HTML, end-of-month stocks, 亿元), downloaded 2026-10-14 by following the links from the statistics index; the SHA-256 of each table is printed by the script. Names of lines changed in 2006 and 2011; the script maps them to the columns listed under series (prefix match, values of several old lines added). Total assets equal total liabilities in every month of the snapshot. Lines that a year's table leaves blank are empty cells (发行债券 from June 2017 to October 2018). The latest months of a year can be revised in later tables."
+}
