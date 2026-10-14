@@ -1,0 +1,64 @@
+{
+  "title": "Quotations for Chapter 18 (Adam Smith): the Wealth of Nations (1776) on the division of labour, the extent of the market, the three states of wages, paper money, real bills, the Ayr Bank, the regulation of banking, productive labour and parsimony, China and Bengal, checked in the first edition; Rockoff (2009) on Smith and the crisis of 1772; Thornton (1802) on real and fictitious bills, drawing and redrawing and the quantity of paper; the letter of Warren Hastings and his council at Fort William of 3 November 1772 and Hunter (1868) on the famine of 1770; the Census Bureau's estimates of the population of the American colonies; the 清史稿 on the registered population of the Qing",
+  "source": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (1776), Project Gutenberg eBook 3300 and the first edition on archive.org (vols. 1 and 2); H. Rockoff (2009), NBER Working Paper 15594; H. Thornton, An Enquiry into the Nature and Effects of the Paper Credit of Great Britain (1802), on archive.org; W. W. Hunter, The Annals of Rural Bengal, vol. I (1868), with Appendix A; U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970 (1975), series Z 1-19; 赵尔巽等《清史稿》卷一百二十《食货一》（户口）, daizhigev20 corpus",
+  "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated; fractions as a/b), unit, numeral (unused: the 清史稿 row's numerals are read in checks/check_ch18.py), file (key of 'sources', or qingshigao for the corpus), juan (location: book and chapter of the Wealth of Nations; printed page of the others), quote (verbatim, as in the document's text, or a transcription for the image rows), note",
+  "retrieved": "2026-10-14",
+  "license": "Quotations for criticism and teaching, each with its source. Smith (1776), Thornton (1802) and Hunter (1868), with the letter of 1772 it prints, are in the public domain; the Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here) and the archive.org texts are OCR of public-domain scans. Historical Statistics of the United States (1975) is a publication of the United States government and in the public domain. Rockoff (2009): '(c) 2009 by Hugh Rockoff. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source' (row rk_notice); only short passages are quoted. The 清史稿 (1928) is in the public domain. The chapter's Chinese renders the English; the translations are the book's.",
+  "used_in": [
+    18
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (rows citing smith1776, smith1776ed1v1, smith1776ed1, rockoff2009, thornton1802 and hunter1868; the census1975img rows are read on the page images); data/fetch/verify_quotes.py (rows citing qingshigao); checks/check_ch18.py (the readings and every quotation of the text)",
+  "notes": "Editions. The Gutenberg text is that of a later edition (see finrev_facts). The main passages of Books I-III that the chapter quotes were found in the OCR of the first edition, vol. 1 (rows e1_*; the OCR reads long s as f and is quoted as it reads; much of it is too garbled to search phrase by phrase), and the invisible hand in vol. 2 (row e2_invisible). Two passages of the later text are not in the first edition: the note in braces on the exchange between Edinburgh and London, which raises the cost of drawing and redrawing to 'at least, fourteen per cent. in the year' (rows wn_exch3 and wn_14pct; the first edition, vol. 1, pp. 375-377, has the eight per cent of row wn_8pct and its commission, row e1_commission, but not the note), and the chapter 'Conclusion of the Mercantile System' (Book IV, ch. VIII of the later text, rows wn_conclusion and wn_soleend) with its sentence 'Consumption is the sole end and purpose of all production': in the first edition ch. VIII of Book IV is the chapter on the agricultural systems (row e2_ch8). The chapter mentions the sentence only to say so. The first edition gives the debt of the four French wars in words ('more than a hundred and forty five millions of debt', row e1_145), the later text as £145,000,000. Dates of 1772: Rockoff's text says that the Ayr Bank was 'forced to stop payment on its notes' on June 22 (row rk_june22), his chronology that it 'suspends payment of gold and silver for notes' on June 25 (row rk_june25); the chapter gives both. Hunter's OCR (Appendix A, p. 381) reads the year of the letter's comparison as '177 1'; the quotation stops before it (row hu_third) and resumes with 'exceeded even those of 1768' (row hu_exceeded). Numbers: Hunter prints rupees in the Indian grouping (1,57,26,576 = 15,726,576); the abstract's net collections are 1,52,54,856 for 1768-69 and 1,53,33,660 (with annas and smaller units) for 1771-72. Hunter gives two views of the famine policy: his own, that the Council's proclamations against 'hoarding or monopolizing grain' kept prices from rising and the stock from being husbanded (pp. 35, 43; rows hu_proclaim, hu_interdict, hu_spread, hu_farthings), and the Court of Directors' accusation that agents of the Company's servants monopolized grain (Appendix B, section VI, pp. 420-421, rows hu_court and hu_court2; p. 41, note, row hu_reproach); the date of the Court's letter is garbled in the OCR and is not given. Hunter's 'ten millions of human beings' is his own inference from the official 'one-third' and an estimate of the population (p. 34); the letter of 1772 says 'at least one-third of the Inhabitants'. Smith's figure of 'three or four hundred thousand people' dying of hunger in one year is in the first edition (row e1_bengal). The Census series Z 1 (p. 1168) counts white and Negro inhabitants (footnote 7 on one cell: 'Includes some Indians.'), compiled from the reports of colonial officials; the text for the series says the figures for Negroes in the seventeenth century are 'doubtless too low' (row cz_slavery). The 清史稿 gives the registered population (民数) of 乾隆二十九年 (1764) as 二万五百五十九万一千一十七口 = 205,591,017 and of 六十年 (1795) as 二万九千六百九十六万五百四十五口 = 296,960,545; the repeated 万 is read as (2 x 10,000 + 559) x 10,000 + 1,017. Rockoff's Table 1 (p. 38) is that of the Bank of Scotland after Checkland (1975a). Pages of Rockoff are those printed, which are the PDF pages. Thornton's OCR reads the page header 32 as 52 and 33 as 53; his pages are given as printed, and quotations avoid the OCR's misreadings ('e^cpence', 'caii').",
+  "sources": {
+    "smith1776": {
+      "url": "https://www.gutenberg.org/cache/epub/3300/pg3300.txt",
+      "format": "txt",
+      "sha256": "e91d52dca43fd0fd69baf7776b00a5d8e74b69675b6b608ca8a0378aaf3ae58d",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, Project Gutenberg eBook 3300; the text of a later edition (see the snapshot finrev_facts): it carries the note in braces on the cost of drawing and redrawing (Book II, ch. II), which the first edition does not have (rows wn_exch3 and wn_14pct; compare source smith1776ed1v1). Book I, chs. I, III, VIII and IX; Book II, chs. II, III and IV; Book IV, chs. I, II and V",
+      "retrieved": "2026-10-13"
+    },
+    "smith1776ed1v1": {
+      "url": "https://archive.org/download/10888060bsb/10888060bsb_djvu.txt",
+      "format": "txt",
+      "sha256": "f443b3677e93dba051c7cb212e216d2c0f2e2863baaddf5642a426d7be3ab894",
+      "version": "A. Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, first edition (London: W. Strahan and T. Cadell, 1776), vol. 1 (Books I-III), the Bavarian State Library copy on archive.org, item 10888060bsb; OCR text, which reads long s as f; used to show that the passages the chapter quotes from Books I-III are in the first edition (rows e1_*)",
+      "retrieved": "2026-10-14"
+    },
+    "smith1776ed1": {
+      "url": "https://archive.org/download/10888061bsb/10888061bsb_djvu.txt",
+      "format": "txt",
+      "sha256": "d97a7d3a5663bcd188be8bdbcc0c7619b3a4733ff2608a968d463f26f7616236",
+      "version": "A. Smith, Wealth of Nations, first edition (1776), vol. 2, the Bavarian State Library copy (urn:nbn:de:bvb:12-bsb10888061-3) on archive.org, item 10888061bsb; OCR text, which reads long s as f; the copy cached for Chapter 15 (finrev_facts); here for the invisible hand of Book IV, ch. II",
+      "retrieved": "2026-10-13"
+    },
+    "rockoff2009": {
+      "url": "https://www.nber.org/system/files/working_papers/w15594/w15594.pdf",
+      "format": "pdf",
+      "sha256": "440dcb420d34ec0cbc705c8982b50cbc0925f53839d46f2b2fb87fee88b368a9",
+      "version": "H. Rockoff, 'Upon Daedalian Wings of Paper Money: Adam Smith and the Crisis of 1772', NBER Working Paper 15594, December 2009; the printed page numbers are those of the PDF",
+      "retrieved": "2026-10-14"
+    },
+    "thornton1802": {
+      "url": "https://archive.org/download/enquiryintonatur00thorrich/enquiryintonatur00thorrich_djvu.txt",
+      "format": "txt",
+      "sha256": "1e98ceacc0ac7d29f456eb054bcfba8df585d59929fd07b83c3e07486d253d0b",
+      "version": "H. Thornton, An Enquiry into the Nature and Effects of the Paper Credit of Great Britain (London: J. Hatchard, 1802), University of California Libraries copy on archive.org, item enquiryintonatur00thorrich; OCR text; ch. II on bills of exchange (pp. 32-35) and ch. III on the circulation of notes (p. 46)",
+      "retrieved": "2026-10-14"
+    },
+    "census1975img": {
+      "url": "https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p2-chZ.pdf",
+      "format": "image",
+      "sha256": "a88d14e51c0bd85b41f02f677974901d5c6c495a7f546e66be2a7a814600b4b1",
+      "version": "U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970, Bicentennial Edition, Part 2 (Washington, 1975), chapter Z 'Colonial and Pre-Federal Statistics'; the PDF has no text layer, so the rows are read on the page images rendered with pdftoppm at 300 dpi: series Z 1-19 on p. 1168 (PDF page 16) and the text for the series on p. 1152 (PDF page 1)",
+      "retrieved": "2026-10-14"
+    },
+    "hunter1868": {
+      "url": "https://archive.org/download/annalsofruralben00huntuoft/annalsofruralben00huntuoft_djvu.txt",
+      "format": "txt",
+      "sha256": "413b5093b3e9334dbb2e4b5949e062a5e796ae36c23b2f40130949d91ba3a9bd",
+      "version": "W. W. Hunter, The Annals of Rural Bengal, vol. I (London: Smith, Elder and Co., 1868), University of Toronto copy on archive.org, item annalsofruralben00huntuoft; OCR text; ch. II, 'The State of the Country when it passed under British Rule', on the famine of 1770 (pp. 32-43); Appendix A, 'Bengal in 1772, portrayed by Warren Hastings', the letter of Warren Hastings and his council at Fort William to the Court of Directors, 3 November 1772 (pp. 379-381); Appendix B, section VI, a letter of the Court of Directors after the famine (pp. 420-421)",
+      "retrieved": "2026-10-14"
+    }
+  }
+}

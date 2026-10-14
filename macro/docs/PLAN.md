@@ -1392,5 +1392,6 @@ sec:africa-gold sec:africa-cowrie sec:africa-inca sec:africa-cacao eq:africa-car
 sec:finrev-amsterdam sec:finrev-voc sec:finrev-holland sec:finrev-england sec:finrev-bank eq:finrev-agio eq:finrev-perp eq:finrev-commit tab:finrev-four
 sec:merc-mun sec:merc-law sec:merc-system sec:merc-southsea sec:merc-cantillon sec:merc-tableau sec:merc-test eq:merc-swap eq:merc-peg eq:merc-cantillon eq:merc-tableau eq:merc-gordon tab:merc-system tab:merc-tableau tab:merc-earnings
 sec:toku-world sec:toku-koku sec:toku-genroku sec:toku-dojima sec:toku-qing sec:toku-debate sec:toku-europe sec:toku-test sec:toku-legacy eq:toku-burden eq:toku-twoprice eq:toku-content eq:toku-seign eq:toku-hedge tab:toku-coins tab:toku-europe tab:toku-test
+sec:smith-world sec:smith-division sec:smith-capital sec:smith-mercantile sec:smith-paper sec:smith-realbills sec:smith-ayr sec:smith-regulation sec:smith-states sec:smith-test sec:smith-legacy eq:smith-twofactors eq:smith-saving eq:smith-reflux eq:smith-redraw tab:smith-states
 nav:contents nav:compare
 ```
