@@ -1,0 +1,106 @@
+{
+  "title": "Quotations for Chapter 5 (balance of payments, international investment position and exchange rates): Sri Lanka's 2022 crisis in the Central Bank of Sri Lanka's Annual Report 2022 and the Ministry of Finance's FAQ on the debt standstill, BEA's concepts manual (2026) and its release for the second quarter of 2026, Du, Tepper and Verdelhan on covered interest parity, Engel on uncovered interest parity, Taylor and Taylor on purchasing power parity, Eichengreen and Hausmann on original sin, SAFE's 2016 balance-of-payments report, and the terms of use of the BIS, CBSL and SAFE",
+  "source": "Central Bank of Sri Lanka (2023, 2024); Ministry of Finance, Sri Lanka (2022); U.S. Bureau of Economic Analysis (2026); Du, Tepper and Verdelhan (2017, NBER); Engel (2013, NBER); Taylor and Taylor (2004, NBER); Eichengreen and Hausmann (1999, NBER); 国家外汇管理局国际收支分析小组 (2017); BIS Data Portal",
+  "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/publications/annual_report/2022/en/9_Chapter_05.pdf",
+  "series": "id, dynasty (country), year, year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim), note",
+  "retrieved": "2026-10-14",
+  "license": "Quotations for criticism and teaching. BEA documents are works of the US government. The CBSL permits reproduction of its Bulletin with due credit (row cbsl_terms); the Annual Report and the Ministry of Finance FAQ are official publications quoted briefly with attribution. The NBER working papers are quoted in short passages with full credit, as NBER's notice allows ('Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source'). SAFE's report is quoted in a few sentences with the source stated; SAFE's legal statement (row safe_terms) bars commercial reproduction of its content, so no SAFE data file is part of this repository.",
+  "used_in": [
+    5
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py checks every row",
+  "notes": "Values are the numbers the text uses, in the order they appear. Rows of tables quote the row as pdftotext prints it (label and values separated by spaces). The CBSL Annual Report is set in two columns; long sentences that the text layer interleaves with the other column are quoted in contiguous fragments (rows lk_dep_april and lk_dep_april2, lk_swap_val and lk_swap_val2, lk_swap_inacc and lk_swap_cond). SAFE's 2016 figures are as first published; WDI (snapshot wb_external_annual) has the revised figures used for calculations.",
+  "sources": {
+    "cbsl_ar2022": {
+      "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/publications/annual_report/2022/en/9_Chapter_05.pdf",
+      "format": "pdf",
+      "sha256": "0b36745103f98ad4f9a1000134cd62b907cae142913f06b8553fdbde755a632f",
+      "version": "Central Bank of Sri Lanka, Annual Report 2022, chapter 5 'External Sector Developments and Policies' (published April 2023)",
+      "retrieved": "2026-10-14"
+    },
+    "lk_treasury_faq": {
+      "url": "https://treasury.gov.lk/api/file/1e2d4962-d635-4f77-9aa7-2f84ee385fed",
+      "format": "pdf",
+      "sha256": "df996b6045e5bd3c8b41aa02f02c2da76d9dbc39c7b0e8409dbbfbb3e16b2bc1",
+      "version": "Ministry of Finance, Sri Lanka, 'Frequently Asked Questions (FAQs): Interim Policy Regarding the Servicing of Sri Lanka's External Public Debt' (PDF dated 17 April 2022)",
+      "retrieved": "2026-10-14"
+    },
+    "bea_iea2026": {
+      "url": "https://www.bea.gov/sites/default/files/2026-09/BEA-International-Economic-Accounts-Concepts-and-Methods.pdf",
+      "format": "pdf",
+      "sha256": "fe90e51d02f05fc4862e3f820c2a3f0e63914546003fce64726839a60543121f",
+      "version": "U.S. Bureau of Economic Analysis, U.S. International Economic Accounts: Concepts and Methods, September 2026",
+      "retrieved": "2026-10-14"
+    },
+    "bea_2026q2": {
+      "url": "https://www.bea.gov/sites/default/files/2026-09/ita-iip226.pdf",
+      "format": "pdf",
+      "sha256": "65efd4327b2c2389ac6700a5c6e0e1f913232fa05c3ae2903ed3a2319d56b533",
+      "version": "U.S. Bureau of Economic Analysis, news release BEA 26-41, 'U.S. International Transactions and Investment Position, 2nd Quarter 2026', 24 September 2026",
+      "retrieved": "2026-10-14"
+    },
+    "bea_2026q2_hist": {
+      "url": "https://www.bea.gov/sites/default/files/2026-09/ita-iip226-hist.pdf",
+      "format": "pdf",
+      "sha256": "6accf1f63970ed7bb0ff1e24cefa3f9c53602b19c43f152a5ec9608482748273",
+      "version": "U.S. Bureau of Economic Analysis, 'U.S. International Transactions, 2nd Quarter 2026: Historical Comparisons', 24 September 2026",
+      "retrieved": "2026-10-14"
+    },
+    "dtv2017": {
+      "url": "https://www.nber.org/system/files/working_papers/w23170/w23170.pdf",
+      "format": "pdf",
+      "sha256": "3d103c4eb0ab41a7d06c1bdbde2af8e040f185ac5478736af1cf112bd330b4df",
+      "version": "W. Du, A. Tepper and A. Verdelhan, 'Deviations from Covered Interest Rate Parity', NBER Working Paper 23170, February 2017 (published in the Journal of Finance 73(3), 2018, pp. 915-957)",
+      "retrieved": "2026-10-14"
+    },
+    "engel2013": {
+      "url": "https://www.nber.org/system/files/working_papers/w19336/w19336.pdf",
+      "format": "pdf",
+      "sha256": "31818e8153d29eb405e714602e04fca85b97bd2671757e8c792c8f2d893e0d04",
+      "version": "C. Engel, 'Exchange Rates and Interest Parity', NBER Working Paper 19336, August 2013 (published in the Handbook of International Economics, vol. 4, 2014, pp. 453-522)",
+      "retrieved": "2026-10-14"
+    },
+    "taylor2004": {
+      "url": "https://www.nber.org/system/files/working_papers/w10607/w10607.pdf",
+      "format": "pdf",
+      "sha256": "29399da871a545600aa0530af87f4998de858f80d2a551c307cdce4ccdc1cc9e",
+      "version": "A. M. Taylor and M. P. Taylor, 'The Purchasing Power Parity Debate', NBER Working Paper 10607, June 2004 (published in the Journal of Economic Perspectives 18(4), 2004, pp. 135-158)",
+      "retrieved": "2026-10-14"
+    },
+    "eichengreen1999": {
+      "url": "https://www.nber.org/system/files/working_papers/w7418/w7418.pdf",
+      "format": "pdf",
+      "sha256": "0572479585b817ed15bd378c7f046d4fe4e9bc5e19fea8021302397f01e6b546",
+      "version": "B. Eichengreen and R. Hausmann, 'Exchange Rates and Financial Fragility', NBER Working Paper 7418, November 1999 (prepared for the Federal Reserve Bank of Kansas City's Jackson Hole conference, August 1999)",
+      "retrieved": "2026-10-14"
+    },
+    "safe2016": {
+      "url": "https://www.safe.gov.cn/safe/file/file/20170726/0fe969acf55a48d7baaa9ed01c355add.pdf",
+      "format": "pdf",
+      "sha256": "f112aa78ce5523049d4764a042fe65f78ff278cdad96ecdb84146ac1ea0dc920",
+      "version": "国家外汇管理局国际收支分析小组，《2016年中国国际收支报告》，2017年3月30日",
+      "retrieved": "2026-10-14"
+    },
+    "bis_legal": {
+      "url": "https://data.bis.org/help/legal",
+      "format": "html",
+      "sha256": "eba9123ace81e8ab70d6c23522f73058aafb89c2de4c7ee2d1ca004dee5883e0",
+      "version": "BIS Data Portal, Legal (terms of use of the statistics)",
+      "retrieved": "2026-10-14"
+    },
+    "cbsl_bulletin2024": {
+      "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/statistics/mbt/monthly_bulletin_feb_to_july_2024_e_1.pdf",
+      "format": "pdf",
+      "sha256": "f1a5b8ac47e15facac83e4bb4cb05bc812d355b0120c01204725c094eb5da589",
+      "version": "Central Bank of Sri Lanka, Bulletin, February - July 2024 (inside cover)",
+      "retrieved": "2026-10-14"
+    },
+    "safe_legal": {
+      "url": "https://www.safe.gov.cn/safe/flsm/index.html",
+      "format": "html",
+      "sha256": "d303846868752e0450d2ec500234dc9da5ea62cc096499e8fd169e26d781175a",
+      "version": "国家外汇管理局门户网站，法律声明",
+      "retrieved": "2026-10-14"
+    }
+  }
+}

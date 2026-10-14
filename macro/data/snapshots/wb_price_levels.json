@@ -1,0 +1,14 @@
+{
+  "title": "Price levels across economies in 2021 (the ICP benchmark year): PPP conversion factor, market exchange rate, their ratio and GDP per capita",
+  "source": "World Bank, World Development Indicators (API v2): International Comparison Program (PPP) and IMF International Financial Statistics (exchange rates)",
+  "url": "https://api.worldbank.org/v2/country/all/indicator/PA.NUS.PPP?format=json&per_page=20000&date=2021",
+  "series": "PA.NUS.PPP (ppp: PPP conversion factor, GDP, LCU per international $); PA.NUS.FCRF (fx: official exchange rate, LCU per US$, period average); NY.GDP.PCAP.CD (gdppc: GDP per capita, current US$); price_level = ppp / fx, computed by the fetch script (the US = 1)",
+  "retrieved": "2026-10-14",
+  "license": "CC BY-4.0 (WDI metadata 'License_Type', 2026-10-14)",
+  "citation": "World Bank, World Development Indicators (last updated 2026-10-08); International Comparison Program 2021.",
+  "used_in": [
+    5
+  ],
+  "fetch": "data/fetch/wb_external.py",
+  "notes": "193 economies with all three values for 2021; regional and income aggregates excluded (region 'Aggregates' in the WDI country list). price_level is the ratio of the PPP conversion factor to the market exchange rate: the price of GDP in the economy relative to the United States at market exchange rates. SHA-256 of the 2026-10-14 responses: PA.NUS.PPP 6faf93468b4dfb2fb1a5c7320cfb609899d91f362816daeae2b7e1ab7463f84e; PA.NUS.FCRF 33dce256c74f21302feb82658519f83d4cd9c5f5a13171d834fe2236f5737abc; NY.GDP.PCAP.CD 5396bb2f6409c4996fadd72c68e98fa8ed602935f814293788587f599596088f; country list c9acf3932785191a649cbc04c3056af4cf64a236e5c3b49d49be25ddb0440bce."
+}

@@ -1,0 +1,14 @@
+{
+  "title": "United States: current-account and primary-income balances (quarterly, seasonally adjusted, 1999-2026) and the net international investment position, assets and liabilities (end of quarter, 2006-2026), millions of dollars",
+  "source": "U.S. Bureau of Economic Analysis, International Transactions and International Investment Position accounts, via FRED (Federal Reserve Bank of St. Louis)",
+  "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=IIPUSNETIQ",
+  "series": "IEABC (balance on current account), IEABCPI (balance on primary income), IIPUSNETIQ (US net international investment position), IIPUSASSQ (US assets), IIPUSLIAQ (US liabilities)",
+  "retrieved": "2026-10-14",
+  "license": "BEA statistics are works of the US government (public domain). Source: U.S. Bureau of Economic Analysis via FRED.",
+  "citation": "U.S. Bureau of Economic Analysis, retrieved from FRED, Federal Reserve Bank of St. Louis, 2026-10-14.",
+  "used_in": [
+    5
+  ],
+  "fetch": "data/fetch/fred_external.py",
+  "notes": "Values as of BEA's release of 24 September 2026 (second quarter 2026). BEA revises the accounts every June: the net position at the end of 2024, first published as -26.23 trillion (March 2025), is -22.13 trillion in this vintage. IEABCPIN is a different FRED series; IEABCPI matches the primary income balance in BEA's release. SHA-256 of the 2026-10-14 files: IEABC ed05c5231dc469643a54b94c5007a2a3ae6c3131ac27eefa43450f27128200fb; IEABCPI ebaee6476acb8ca68e05fa311d4cc1321865e46b88c4513878dbf1ba24ca8e60; IIPUSNETIQ a014a7128eba29016a05dcd2d046d19f72495137216c0e6a515a397252d905c3; IIPUSASSQ 12c316398ad97abd98d4d1d68ef06113898190247e2cc2a85e0e9ad1c4628bd2; IIPUSLIAQ 43ebdd4a1552143fca506ae1ed3fae6d87b7a7d309787887f5ae4382d9752c5e."
+}

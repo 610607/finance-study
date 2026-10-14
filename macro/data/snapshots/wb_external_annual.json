@@ -1,0 +1,14 @@
+{
+  "title": "China, Sri Lanka and the United States: reserves, current, capital and financial accounts, GDP, consumer prices and the exchange rate, annual, 1982-2025",
+  "source": "World Bank, World Development Indicators (API v2); the balance-of-payments series come from the IMF's Balance of Payments Statistics and International Financial Statistics",
+  "url": "https://api.worldbank.org/v2/country/CHN;LKA;USA/indicator/BN.CAB.XOKA.CD?format=json&per_page=20000&date=1982:2025",
+  "series": "FI.RES.TOTL.CD (reserves: total reserves including gold, current US$); BN.CAB.XOKA.CD (ca: current account balance, BoP, current US$); BN.FIN.TOTL.CD (fa: net financial account, BoP, current US$); BN.RES.INCL.CD (res_bop: reserves and related items, BoP, current US$); NY.GDP.MKTP.CD (gdp, current US$); BN.TRF.KOGT.CD (ka: net capital account, current US$); FP.CPI.TOTL (cpi: consumer price index, 2010 = 100); PA.NUS.FCRF (fx: official exchange rate, LCU per US$, period average)",
+  "retrieved": "2026-10-14",
+  "license": "CC BY-4.0 (the 'License_Type' of every series in the WDI metadata, https://api.worldbank.org/v2/sources/2/series/<code>/metadata, 2026-10-14)",
+  "citation": "World Bank, World Development Indicators (last updated 2026-10-08).",
+  "used_in": [
+    5
+  ],
+  "fetch": "data/fetch/wb_external.py",
+  "notes": "WDI last updated 2026-10-08. Signs follow BPM6: fa is net lending (net acquisition of financial assets less net incurrence of liabilities), positive when residents add more to their foreign assets than to their foreign liabilities; res_bop is the transaction in reserve assets, positive when reserves rise. Net errors and omissions = fa - ca - ka. Values revise with each WDI release; the IMF's and the national compilers' later revisions make some years differ from the figures first published (e.g. SAFE's 2016 report gave China's 2016 current account as 196.4 billion; WDI now has 191.3). SHA-256 of the 2026-10-14 responses: FI.RES.TOTL.CD a45b429b3a7bfd49a5b9951eb53351aba6b98ebcc92b00dc97beaaba28796388; BN.CAB.XOKA.CD da7dc9a42049d1d6af11929dc72b8295a4e263c01bf87c794817d42afd216934; BN.FIN.TOTL.CD a4d50b7d38688b7943e3eb9552efe55073099f4332f114ceacd91b22ab00aa01; BN.RES.INCL.CD 2f357649539864b97ce67e04978b737d249265e1ed8d72dc6fabb2a9d5cd05b0; NY.GDP.MKTP.CD be471f515bb6fb4aa17a8e584964340328cd15f1f0b511a811982dfa4958c062; BN.TRF.KOGT.CD 794b38dafade27d50008ab02ef51b5a11e277e6f1be9aa4980da568d0debfeb2; FP.CPI.TOTL 6b62cb0c7a9702f33548a7508296a27ff7a02cb4f2225fd2f92dda3f78f0a6be; PA.NUS.FCRF fb9ce13dc826642d134c8ec3f77080cc9b002a5ca8889376f832e0f265edd055."
+}

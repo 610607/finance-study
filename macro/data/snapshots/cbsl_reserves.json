@@ -1,0 +1,14 @@
+{
+  "title": "Sri Lanka: official reserve assets, foreign currency reserves and gold, with the notes on the PBOC swap and on import cover, monthly, November 2013 to July 2026 (US$ million)",
+  "source": "Central Bank of Sri Lanka, 'Reserve Data Template - Historical' (table 2.15.2 of the external-sector statistical tables)",
+  "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/statistics/sheets/table2.15.2_20260930_e.xlsx",
+  "series": "Template 'Data Template on International Reserves/Foreign Currency Liquidity', Table I: A. Official reserve assets (official_reserve_assets); A(1) Foreign currency reserves (fx_reserves); A(4) Gold (gold). Country notes: 'This includes proceeds from the PBOC swap equivalent to around US dollars X billion, which is subject to conditionalities on usability' (pboc_swap_note, pboc_swap_bn); 'gross official reserves were equivalent to X months of imports' (gor_months)",
+  "retrieved": "2026-10-14",
+  "license": "The CBSL website states no terms of use for its statistical tables. Its Bulletin carries the notice 'The material appearing in the Bulletin may be reproduced or translated in whole or in part without prior permission (unless it is indicated as copy-righted), provided due credit is given to the Central Bank of Sri Lanka and the Bulletin' (Monthly Bulletin, February to July 2024; quoted in external_facts, row cbsl_terms). The snapshot is a small extract of official statistics with the source credited; flagged for the author's confirmation (STATUS.md).",
+  "citation": "Source: Central Bank of Sri Lanka, Reserve Data Template - Historical (table 2.15.2), downloaded 2026-10-14.",
+  "used_in": [
+    5
+  ],
+  "fetch": "data/fetch/cbsl_reserves.py",
+  "notes": "One sheet per month in the workbook; the sheets before June 2015 give only foreign currency reserves (line A(1)), so official_reserve_assets is empty there. Values are provisional as published (note (I)). The CBSL's Annual Report 2022 says the gross official reserves of end-2021 and end-2022 included the PBOC swap, valued at US$1,574 million and US$1,433 million, which 'remained inaccessible during the year'; the monthly notes give the swap amount (rounded to US$0.1 billion) from March 2022 to February 2024 and mention it without an amount from March 2024. SHA-256 of the workbook downloaded 2026-10-14: cce47b62dda44e5d0e3bf3e0ef5cf255daff1db7c92839df663d2f326586f202. The file name carries the latest month, so the URL changes when the CBSL updates it."
+}
