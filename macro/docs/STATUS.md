@@ -79,8 +79,8 @@ Updated 2026-10-14.
   - `tools/figlint.py` reports text off the canvas or on other text (WORKFLOW §3).
   - Print size (resolved 2026-10-14, author's decision): `\fig` sets figures at the full text width and FIG_W is 5.90 in, so a figure cropped with its 0.04 in pad is 152 mm wide and prints at 1:1; the height cap is .5\textheight (4.65 in). `figlint.py` now reports the printed scale and any text printing below 7.5 pt; all 31 figures pass in both languages (printed scale 1.00–1.05). Fixed on the way: the Chapter 2 plots had no margins set (they printed 17% enlarged), the Chapter 12 timeline's row labels touched, and some labels in Chapters 11, 14, 16 and 17 stuck out of the narrower canvas or (English) overlapped.
 
-## Part 1 — in progress (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part1_notes.md`)
-- Started 2026-10-14 at the author's request ("按顺序继续"): Chapters 2, 3, 4, 5 in that order; Chapter 1 last, after Part 2.
+## Part 1 — written and reviewed (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part1_notes.md`)
+- Started 2026-10-14 at the author's request ("按顺序继续"): Chapters 2, 3, 4, 5 in that order; Chapter 1 last, after Part 2. With Chapter 1, 17 of the 84 chapters are written.
 - Chapter 2 (国民核算与恒等式): written and reviewed. Fixes are in the commit "Chapter 2: apply the independent review".
   - Kuznets's own reading of the negative business saving of 1931–32: he calls a draw on capital "misleading" and says the losses mostly covered rigid costs.
   - The real reasons his national income differs from BEA's: taxes on production and imports, imputed rent, and book valuation (both figures are net of depreciation).
@@ -149,6 +149,32 @@ Updated 2026-10-14.
   - The month in which the PBoC swap entered Sri Lanka's reserves is not documented (the jump of December 2021 is left unexplained).
   - Chapter-local symbols ($F$, $\mathit{CA}$, $\mathit{KA}$, $\mathit{FA}$, $\mathit{EO}$) are not in Appendix B.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
+- Chapter 1 (一个问题引出整门课): written after Part 2 and reviewed. The draft is in "Chapter 1: write the introduction (six stories, the consolidated budget constraint, four layers)"; the review fixes are in "Chapter 1: fixes after the independent review". PLAN §7 asks for Chapter 1 to be settled last, once the book's conclusions exist, so it is to be revisited at the end.
+  - Six stories (the Ming notes, Weimar 1923, Zimbabwe 2008, Japan 1990–2026, Russia 1998, Sri Lanka 2022) are sorted with one identity: the government and central bank's consolidated budget constraint. The tools are the four-layer reading (identity, behaviour, closure, data) and a reading route through the eleven parts.
+  - Sources: the Federal Reserve Bulletin of December 1923 and January 1924, Koech (2011), Chiodo & Owyang (2002), Reinhart & Rogoff (2008), the BoJ Flow of Funds, BIS, the Bank of Russia, WDI, the MoF yields and the CBSL. `intro_facts` has 81 rows; all but the one image row verify verbatim. New data: `bis_japan_govcredit`, `bis_japan_govsec`, `boj_jgb_holders`, `cbr_rub_usd`, `wb_inflation_annual`.
+  - Review fixes:
+    - The "who did not repay" comparison now includes Zimbabwe's 2006 domestic-debt restructuring.
+    - Russia's official rate is described as the data show it: a small rise after 17 August, and the large fall in early September.
+    - A Reinhart–Rogoff quotation on domestic creditors not being "strictly junior" was cited for the opposite point and is removed.
+    - "Weimar never repudiated" becomes "did not openly repudiate in 1920–1923", since Reinhart–Rogoff list Germany's 1948 reform.
+    - Reinhart–Rogoff's domestic and external debt are defined by governing law, so they correspond only roughly to local- and foreign-currency debt; "almost two-thirds" is now translated as such.
+    - Chapter 1 is read first, so its references to Chapters 5 and 13 now point forward.
+    - The reserves symbol is $A^{f}$, because Chapter 5 uses $F$ for the forward rate.
+    - Added: each part's question; the main line shown in the chapter's own cases (Cagan 1956; the three generations of crisis models); the human costs in Zimbabwe and Sri Lanka. Each has its own snapshot row.
+    - The claim that Russia's and Sri Lanka's debt ratios were far below Japan's had no snapshot behind it and is removed. WDI gives Russia's central government debt as 143.9% of GDP in 1998.
+    - In example 1.2, prices are only part of the denominator's growth (consumer prices +12% in 2022–2025).
+    - The pitfall points forward to functional finance and MMT (Chapters 34 and 63).
+  - FORWARD_REFS: ten rows from Chapter 1 (Chapters 20/32/44/48/64/65/74/75, 26, 34/63, 49/75, 50, 52, 58/66/67, 59/61, 76, 81).
+  For the author:
+  - **Koech (2011), Dallas Fed:** the reprint condition is "that the source is credited and a copy is provided to the Globalization and Monetary Policy Institute". The book quotes short passages with the source; sending the Institute a copy is for you to decide.
+  - **Bank of Russia:** copying is allowed with a link to the source, but not for commercial purposes. `cbr_rub_usd` is committed with the link; if the book is ever sold, this needs a second look.
+  - **Bank of Japan:** the Flow of Funds figures are credited to the Bank of Japan; the BoJ's chart itself is not reproduced (images are excepted from its permission).
+  Open points (to settle when Chapter 1 is revisited):
+  - The strongest case on the "Japan is safe" side needs data not yet in a snapshot: net external assets, the current-account surplus, and general government net debt.
+  - Sri Lanka's 2023 domestic debt optimisation and its 2024 bond exchange; Weimar's human costs.
+  - The von Glahn sentence on the Ming notes rests on Chapter 12's row `vg_nonconvertible`, which was read through archive.org's search, with no page number.
+  - The single-witness items are Zimbabwe's official and IMF inflation figures for 2008 (Koech only) and the 1997 band of 5 to 6 roubles (Chiodo & Owyang only).
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
 
 ## Part 2 — written and reviewed (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part2_notes.md`)
 - Started 2026-10-14: Chapters 6, 7, 8, 9 in that order, all four written and reviewed 2026-10-14; Chapter 1 after them.
@@ -236,7 +262,7 @@ Updated 2026-10-14.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
 
 ## Next
-1. Part 2 is written (Chapters 6–9); next Chapter 1, reviewed like the others. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Next, Part 4 (Chapters 18–25), in order, one reviewer per chapter. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
