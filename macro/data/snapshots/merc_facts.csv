@@ -299,6 +299,8 @@ oncken_1759,法国,1759,,1759,年,,oncken1888,p. 126 (Oncken 引 Dupont 1769),"e
 mun_dearer,英格兰,1664,,,,,mun1664,"ch. IV, p. 24",all men do consent that plenty of mony in a Kingdom doth make the native commodities dearer,
 mun_dearer2,英格兰,1664,,,,,mun1664,"ch. IV, p. 24","for as plenty of mony makes wares dearer, so dear wares decline their use and consumption",
 mun_keep_trading,英格兰,1664,,,,,mun1664,"ch. IV, p. 24","lest when wee have gained some store of mony by trade, wee lose it again by not trading with our mony.",
+mun_balance_exports,英格兰,1664,,,,,mun1664,"ch. XX, p. 114","for fraight of Ships, ensurance of the Adventure, and the Merchants Gains",编全国的贸易差额：出口按原价再加 25%（识别文本作“twenty-five per cenz.”），计运费、保险与商人的利润
+mun_balance_imports,英格兰,1664,,,,,mun1664,"ch. XX, p. 114","but as they cost us with all charges laden into our Ships beyond the Seas, in the respective places where they are bought",进口不按本国关税簿的估价，而按在外国装船时的成本计价
 cant_cheaper,,1755,,,,,cantillon1755,"Partie II, ch. 6","les Artisans & les Ouvriers tiendront si haut leurs ouvrages qu’il y aura un profit considérable à les tirer de l’Étranger, qui les fait à bien meilleur marché.",矿山的新钱抬高物价，外国货变得便宜
 cant_outflow,,1755,,,,,cantillon1755,"Partie II, ch. 6",l’argent du produit des Mines passera nécessairement chez l’Etranger pour païer ce qu’on en tire,金银流往外国
 smith_assiento,西属美洲,1713,《乌得勒支和约》,,,,smith1776,"Book V, ch. I, pt. III","The first trade which they engaged in, was that of supplying the Spanish West Indies with negroes, of which (in consequence of what was called the Assiento Contract granted them by the treaty of Utrecht) they had the exclusive privilege.",南海公司

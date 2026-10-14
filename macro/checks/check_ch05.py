@@ -254,6 +254,7 @@ def world(F, LR, B, W, U):
            tol=0.005)
     quoted("    months of imports", LR.loc["2026-07", "gor_months"], 3.2)
     assert LR.index[-1] == "2026-07"
+    assert LR.loc["2026-07", "pboc_swap_note"] == 1          # 'still includes the swap subject to conditions'
     # the United States
     quoted("US CA deficit widened by (US$ bn)", F["bea_ca"][0], 33.4)
     quoted("    (亿美元)", F["bea_ca"][0] * 10, 334, tol=1e-9)
@@ -334,6 +335,7 @@ def compare_ca(F, W):
 
 def safe_signs(F):
     print("== SAFE sign convention")
+    quoted("BPM7 published (2025 SNA, para. 1.70)", F["sna_bpm7"][0], 2025)
     ca, ka = F["safe_t_ca"][0], F["safe_t_ka"][0]
     fa, fa_a, fa_l = F["safe_t_fa"]
     eo = F["safe_t_eo"][0]
@@ -350,6 +352,9 @@ def safe_signs(F):
     quoted("non-reserve FA (SAFE sign)", F["safe_t_nrfa"][0], -4170)
     quoted("    BPM6 sign", -F["safe_t_nrfa"][0], 4170)
     quoted("    = net reserve-free FA in the text", F["safe_nrfa"][1], 4170)
+    quoted("    net acquisition of non-reserve assets (BPM6 sign)", -F["safe_t_nrfa"][1], 6611)
+    quoted("    net incurrence of liabilities", F["safe_t_nrfa"][2], 2441)
+    quoted("    assets - liabilities", -F["safe_t_nrfa"][1] - F["safe_t_nrfa"][2], 4170)
     quoted("reserve assets (SAFE sign; a fall)", F["safe_t_res"][0], 4437)
     quoted("    text", F["safe_res_tx"][1], 4437)
     quoted("    FA = non-reserve + reserves (SAFE sign)", F["safe_t_nrfa"][0] + F["safe_t_res"][0], 267)
@@ -361,6 +366,7 @@ def pitfall(F):
     quoted("imports 2021 (亿美元)", F["lk_t51_imports"][0] / 100, 206.37, tol=0.005)
     quoted("imports 2022 (亿美元)", F["lk_t51_imports"][1] / 100, 182.91, tol=0.005)
     quoted("    change (%)", 100 * (F["lk_t51_imports"][1] / F["lk_t51_imports"][0] - 1), -11.4, tol=0.05)
+    quoted("rice imports 2022 over 2021 (%, 'about')", F["lk_rice"][0], 300)
     quoted("overall balance 2022 (亿美元)", F["lk_t512_ob"][4] / 100, -28.06, tol=0.005)
     quoted("    Table 5.1", F["lk_t51_ob"][1] / 100, -28.06, tol=0.005)
     quoted("    = change in NIR", (F["lk_t512_nir"][4] - F["lk_t512_nir"][3]) / 100, -28.06, tol=0.005)
@@ -404,8 +410,11 @@ def ex_us(F, U):
     quoted("    = the release", F["bea_fa"][0] * 10, -3697, tol=1e-9)
     price = F["bea_assets_why"][0] - F["bea_liab_why"][0]
     quoted("    price changes", price, -0.92, tol=1e-9)
-    rest = d - tx - price
-    quoted("    remainder (exchange rates, other, derivatives)", rest, 0.08, tol=0.01)
+    # the remainder as the student computes it, from the rounded numbers in the example
+    rest = round(d, 2) - round(tx, 2) - round(price, 2)
+    quoted("    remainder (exchange rates, other, derivatives), -1.15 + 0.32 + 0.92", rest, 0.09, tol=1e-9)
+    d_exact = (U.loc["2026-04-01", "IIPUSNETIQ"] - U.loc["2026-01-01", "IIPUSNETIQ"]) / 1000   # US$ bn -> 万亿
+    print(f"    (from the unrounded positions the remainder is {d_exact - tx - price:.3f}; BEA rounds the price changes)")
     quoted("(2) FA (万亿美元)", F["bea_fa"][0] / 1000, -0.37, tol=0.005)
     quoted("    price changes / change in NIIP", price / d, 0.80, tol=0.01)
     # cross-check against the FRED positions
@@ -431,6 +440,9 @@ def position(F, U, W):
     quoted("primary income 2023", pi[2023] * 10, 335, tol=0.5)
     quoted("primary income 2024", pi[2024] * 10, -687, tol=0.5)
     quoted("primary income 2025", pi[2025] * 10, -476, tol=0.5)
+    # the two readings of the asymmetry (Gourinchas & Rey; Curcuru, Dvorak & Warnock)
+    quoted("'exorbitant privilege': Giscard d'Estaing, February", F["gr_giscard"][0], 1965)
+    quoted("Gourinchas-Rey positions at market value since", F["gr_since1952"][0], 1952)
     quoted("    Q2 2026 (history table, US$ bn)", F["beah_primary"][0], U.loc["2026-04-01", "IEABCPI"], tol=1e-6)
 
 
@@ -553,6 +565,10 @@ def china_case(F, W, B, P):
     quoted("CNY/USD December 2016", B.loc["2016-12", "cny_usd_avg"], 6.92, tol=0.005)
     quoted("SAFE: central parity end-2016", F["safe_cny"][1], 6.9370)
     quoted("    depreciation (%)", F["safe_cny"][3], 6.4)
+    p15, p16 = F["safe_cny2015"][1], F["safe_cny"][1]
+    quoted("SAFE: central parity end-2015", p15, 6.4936)
+    quoted("    dollar value of the renminbi (%), 6.4936/6.9370 - 1", 100 * (p15 / p16 - 1), -6.4, tol=0.05)
+    quoted("    rise in e (%)", 100 * (p16 / p15 - 1), 6.8, tol=0.05)
     quoted("Aizenman & Lee sample", F["al_sample"][0], 1980)
     quoted("    to", F["al_sample"][1], 2000)
 
@@ -590,6 +606,18 @@ def relative_ppp(RP, RPX, F):
     quoted("2020-2021 slope", r1.slope, 0.56, tol=0.005)
     quoted("    standard error", r1.stderr, 0.29, tol=0.005)
     quoted("    R^2", r1.rvalue ** 2, 0.03, tol=0.005)
+    # how much of the one-year result is Libya's official devaluation (fig ext_ppp (c), the triangle)
+    lby = RP.set_index("iso3").loc["LBY"]
+    quoted("Libya: official rate 2020 (LYD per US$)", float(lby.fx_2020), 1.39, tol=0.005)
+    quoted("    2021", float(lby.fx_2021), 4.51, tol=0.005)
+    quoted("    inflation gap 2020-2021 (log; 'close to zero')", lby.dx_2020_2021, -0.018, tol=0.0005)
+    nl = RP[RP.iso3 != "LBY"]
+    r1n = regress(nl.dx_2020_2021, nl.dy_2020_2021)
+    quoted("2020-2021 slope without Libya", r1n.slope, 0.65, tol=0.005)
+    quoted("    standard error", r1n.stderr, 0.11, tol=0.005)
+    quoted("    R^2 ('one fifth')", r1n.rvalue ** 2, 0.20, tol=0.005)
+    quoted("dispersion of the inflation gap, 2001-2021 / 2020-2021 (sd ratio; 'small in one year')",
+           RP.dx_2001_2021.std() / RP.dx_2020_2021.std(), 18.2, tol=0.05)
     quoted("half-lives (years)", F["tt_halflife"][0], 3)
     quoted("    to", F["tt_halflife"][1], 5)
     k = RP.set_index("iso3")
@@ -597,7 +625,8 @@ def relative_ppp(RP, RPX, F):
     quoted("    as a percentage", 100 * (math.exp(k.loc["CHN", "dx_2001_2021"]) - 1), 4, tol=0.5)
     quoted("China dy", k.loc["CHN", "dy_2001_2021"], -0.25, tol=0.005)
     dq = k.loc["CHN", "dy_2001_2021"] - k.loc["CHN", "dx_2001_2021"]
-    quoted("    real appreciation (%; 'about a quarter')", -100 * (math.exp(dq) - 1), 25, tol=1)
+    quoted("    log change in q, -0.25 - 0.036", dq, -0.29, tol=0.005)
+    quoted("    fall in q (%; 'about a quarter'), a real appreciation", -100 * (math.exp(dq) - 1), 25, tol=1)
     quoted("Sri Lanka dx", k.loc["LKA", "dx_2001_2021"], 1.02, tol=0.005)
     quoted("Sri Lanka dy", k.loc["LKA", "dy_2001_2021"], 0.80, tol=0.005)
     quoted("figure (c): Libya, beyond the frame (log change 2020-2021)", k.loc["LBY", "dy_2020_2021"], 1.18, tol=0.005)

@@ -6,7 +6,8 @@
   "retrieved": "2026-10-13",
   "license": "Short quotations only, for comment and teaching. Mun, Law, Smith, Cantillon, Quesnay and Oncken are in the public domain; the Wikisource transcriptions are under CC BY-SA; the modern research is quoted, not copied.",
   "used_in": [
-    16
+    16,
+    5
   ],
   "fetch": "data/fetch/verify_web_quotes.py",
   "notes": "Rows citing txt, pdf and html sources are checked against the downloaded documents by verify_web_quotes.py. Rows citing mun1664img and law1705img were read by eye on the page images listed in each source's version (format image) and are counted but not checked by a script. Transcription: long s is written s; the spelling of Mun and Law is kept. Velde's and Frehen, Goetzmann & Rouwenhorst's tables are quoted as their rows read in the text layer. Velde's Table 4 gives notes issued less notes burned (column 1) and their value in constant silver livres of 1719 (column 4); the rows keep both. Velde writes that the State was 'creditor' for 90mL a year, meaning that it owed it; and that the arrêt of 21 May 1720 reduced 'the shares down to a half of their face value', meaning the notes. South Sea peak: Neal's 950 (used by Garber and by the price data) against Scott's 1050, which includes a 10 per cent stock dividend. Date of the first Tableau: Quesnay said December 1758, Mirabeau 1759 (Dupont, 1769, quoted by Oncken). Garber dates the General Bank to June 1716 (Velde: May 1716) and puts the inflation of January 1720 at 23 per cent (Velde: 25); his four note issues during the peg of March-May 1720 sum to 1490mL, against Velde's 1213.5mL spent on shares and the rise of 1145.2mL in Table 4. Velde's discount on the billets d'Etat is 37 per cent in mid-1716 (p. 9) and 60 per cent at the Bank's share issue (p. 11). Translations into Chinese in the chapter are the book's own.",

@@ -23,7 +23,6 @@ import check_ch05 as C  # noqa: E402
 from style import (ACCENT, AMBER, EXTERNAL, FIG_W, INK, INSTIT, LIGHT, MUTED, T, arrow, canvas, clean_axes,  # noqa: E402
                    figure, label, pill, rbox, tint)
 
-SQUARE = dict(marker="s", ms=4.6, mfc=AMBER, mec="white", mew=0.6)
 DOT = dict(marker="o", ms=5.0, mec="white", mew=0.6)
 MINUS = "−"
 
@@ -59,7 +58,7 @@ def _years(ax, years):
 # ---------------------------------------------------------------------------
 @figure("ext_srilanka")
 def ext_srilanka():
-    LR, B, F = C.lk_reserves(), C.bis(), C.facts()
+    LR, B = C.lk_reserves(), C.bis()
     r = LR.loc["2018-01":"2026-07"]
     t = _months(r.index)
     gor = r.official_reserve_assets / 100                      # 亿美元
@@ -69,11 +68,11 @@ def ext_srilanka():
 
     ax1.fill_between(ts, 0, swap.values, step="mid", color=tint(AMBER, 0.40), lw=0, zorder=2)
     ax1.plot(t, gor, color=EXTERNAL, lw=1.9, zorder=3)
-    ax1.plot([pd.Timestamp("2021-12-01")], [F["lk_swap_val2"][0] / 100], color=AMBER, zorder=5, **SQUARE)
     ax1.text(pd.Timestamp("2024-04-01"), 3.0, T("其中：中国人民银行\n的互换（受使用\n条件限制）",
                                                "of which:\nPBoC swap\n(conditions\non use)"),
              fontsize=7.6, color=AMBER, ha="left", va="bottom", linespacing=1.25)
     lo = gor.idxmin()
+    ax1.plot([pd.Timestamp(lo + "-01")], [gor.min()], color=EXTERNAL, zorder=4, **DOT)
     ax1.annotate(T(f"{_num(gor.min())} 亿美元\n2021 年 11 月", f"{_num(gor.min())}\nNov 2021"),
                  xy=(pd.Timestamp(lo + "-01"), gor.min()), xytext=(pd.Timestamp("2019-07-01"), 22),
                  fontsize=7.6, color=EXTERNAL, ha="center", va="center", linespacing=1.25,
@@ -231,11 +230,11 @@ def ext_china():
     _stacked(ax1, x, [(cn.ca, EXTERNAL), (-cn.nrfa, INSTIT), (cn.eo, tint(INSTIT, 0.35))])
     ax1.plot(x, cn.res_bop, color=INK, lw=0, marker="D", ms=3.6, mec="white", mew=0.4, zorder=5)
     ax1.axhline(0, color=INK, lw=0.7, zorder=4)
-    ax1.text(2003.2, 9700, T("经常账户", "current account"), color=EXTERNAL, fontsize=7.6, ha="left", va="center")
-    ax1.text(2003.2, 8800, T("非储备性质的资本净流入", "non-reserve capital inflow"), color=INSTIT, fontsize=7.6,
-             ha="left", va="center")
-    ax1.text(2003.2, 7900, T("净误差与遗漏", "errors and omissions"), color=tint(INSTIT, 0.75), fontsize=7.6,
-             ha="left", va="center")
+    for y, colour, text in ((9700, EXTERNAL, T("经常账户", "current account")),
+                            (8800, INSTIT, T("非储备性质的资本净流入", "non-reserve capital inflow")),
+                            (7900, tint(INSTIT, 0.35), T("净误差与遗漏", "errors and omissions"))):
+        ax1.plot([2003.5], [y], color=colour, lw=0, marker="s", ms=5.0, mec="none")
+        ax1.text(2004.1, y, text, color=INK, fontsize=7.6, ha="left", va="center")
     ax1.plot([2003.5], [7000], color=INK, lw=0, marker="D", ms=3.6, mec="white", mew=0.4)
     ax1.text(2004.1, 7000, T("储备资产的交易 = 三者之和", "reserve transactions = their sum"), color=INK, fontsize=7.6,
              ha="left", va="center")

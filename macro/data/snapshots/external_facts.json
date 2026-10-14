@@ -1,10 +1,10 @@
 {
-  "title": "Quotations for Chapter 5 (balance of payments, international investment position and exchange rates): Sri Lanka's 2022 crisis in the Central Bank of Sri Lanka's Annual Report 2022 and the Ministry of Finance's FAQ on the debt standstill, BEA's concepts manual (2026) and its release for the second quarter of 2026, Du, Tepper and Verdelhan on covered interest parity, Engel on uncovered interest parity, Taylor and Taylor on purchasing power parity, Eichengreen and Hausmann on original sin, Aizenman and Lee, Dooley, Folkerts-Landau and Garber, and Obstfeld, Shambaugh and Taylor on the motives for holding reserves, SAFE's 2016 balance-of-payments report, and the terms of use of the BIS, CBSL and SAFE",
-  "source": "Central Bank of Sri Lanka (2023, 2024); Ministry of Finance, Sri Lanka (2022); U.S. Bureau of Economic Analysis (2026); Du, Tepper and Verdelhan (2017, NBER); Engel (2013, NBER); Taylor and Taylor (2004, NBER); Eichengreen and Hausmann (1999, NBER); Aizenman and Lee (2005, NBER); Dooley, Folkerts-Landau and Garber (2003, NBER); Obstfeld, Shambaugh and Taylor (2008, NBER); 国家外汇管理局国际收支分析小组 (2017); BIS Data Portal",
+  "title": "Quotations for Chapter 5 (balance of payments, international investment position and exchange rates): Sri Lanka's 2022 crisis in the Central Bank of Sri Lanka's Annual Report 2022 and the Ministry of Finance's FAQ on the debt standstill, BEA's concepts manual (2026) and its release for the second quarter of 2026, Du, Tepper and Verdelhan on covered interest parity, Engel on uncovered interest parity, Taylor and Taylor on purchasing power parity, Eichengreen and Hausmann on original sin, Aizenman and Lee, Dooley, Folkerts-Landau and Garber, and Obstfeld, Shambaugh and Taylor on the motives for holding reserves, Gourinchas and Rey and Curcuru, Dvorak and Warnock on the returns of US external assets and liabilities, SAFE's 2016 balance-of-payments report and its annual report for 2015, the 2025 SNA on BPM7, and the terms of use of the BIS, CBSL and SAFE",
+  "source": "Central Bank of Sri Lanka (2023, 2024); Ministry of Finance, Sri Lanka (2022); U.S. Bureau of Economic Analysis (2026); Du, Tepper and Verdelhan (2017, NBER); Engel (2013, NBER); Taylor and Taylor (2004, NBER); Eichengreen and Hausmann (1999, NBER); Aizenman and Lee (2005, NBER); Dooley, Folkerts-Landau and Garber (2003, NBER); Obstfeld, Shambaugh and Taylor (2008, NBER); Gourinchas and Rey (2005, NBER); Curcuru, Dvorak and Warnock (2008, NBER); 国家外汇管理局国际收支分析小组 (2017); BIS Data Portal",
   "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/publications/annual_report/2022/en/9_Chapter_05.pdf",
   "series": "id, dynasty (country), year, year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document), quote (verbatim), note",
   "retrieved": "2026-10-14",
-  "license": "Quotations for criticism and teaching. BEA documents are works of the US government. The CBSL permits reproduction of its Bulletin with due credit (row cbsl_terms); the Annual Report and the Ministry of Finance FAQ are official publications quoted briefly with attribution. The NBER working papers are quoted in short passages with full credit, as NBER's notice allows ('Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source'). SAFE's report is quoted in a few sentences with the source stated; SAFE's legal statement (row safe_terms) bars commercial reproduction of its content, so no SAFE data file is part of this repository.",
+  "license": "Quotations for criticism and teaching. BEA documents are works of the US government. The CBSL permits reproduction of its Bulletin with due credit (row cbsl_terms); the Annual Report and the Ministry of Finance FAQ are official publications quoted briefly with attribution. The NBER working papers are quoted in short passages with full credit, as NBER's notice allows ('Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source'). SAFE's 2016 balance-of-payments report and its annual report for 2015 are quoted in a few sentences with the source stated; SAFE's legal statement (row safe_terms) bars commercial reproduction of its content, so no SAFE data file is part of this repository.",
   "used_in": [
     5
   ],
@@ -102,6 +102,27 @@
       "version": "M. Obstfeld, J. C. Shambaugh and A. M. Taylor, 'Financial Stability, the Trilemma, and International Reserves', NBER Working Paper 14217, August 2008 (published in American Economic Journal: Macroeconomics 2(2), 2010, pp. 57-94)",
       "retrieved": "2026-10-14"
     },
+    "gr2005": {
+      "url": "https://www.nber.org/system/files/working_papers/w11563/w11563.pdf",
+      "format": "pdf",
+      "sha256": "4b7a952917b6b729e7e5661a38515a9eddc3d703b2b47e5c8639a4d1378e34ca",
+      "version": "P.-O. Gourinchas and H. Rey, 'From World Banker to World Venture Capitalist: US External Adjustment and the Exorbitant Privilege', NBER Working Paper 11563, August 2005 (published in R. H. Clarida, ed., G7 Current Account Imbalances: Sustainability and Adjustment, University of Chicago Press, 2007)",
+      "retrieved": "2026-10-14"
+    },
+    "cdw2008": {
+      "url": "https://www.nber.org/system/files/working_papers/w13768/w13768.pdf",
+      "format": "pdf",
+      "sha256": "865f0f44f99d8ee6690005ea108dab477c1b92b872dabc64aa94e76dd0f764a2",
+      "version": "S. E. Curcuru, T. Dvorak and F. E. Warnock, 'Cross-Border Returns Differentials', NBER Working Paper 13768, February 2008 (published in the Quarterly Journal of Economics 123(4), 2008)",
+      "retrieved": "2026-10-14"
+    },
+    "sna2025": {
+      "url": "https://unstats.un.org/unsd/nationalaccount/docs/2025_SNA_Pre-edit.pdf",
+      "format": "pdf",
+      "sha256": "5778ffe0350e634954473a59e9f85e2cb33da8f280b43de2a725847424ebcdb6",
+      "version": "System of National Accounts 2025, pre-edit ('white cover') version (European Commission, IMF, OECD, United Nations, World Bank; New York, 2025), 1,260 pages (the same file as in accounts_facts)",
+      "retrieved": "2026-10-14"
+    },
     "bis_legal": {
       "url": "https://data.bis.org/help/legal",
       "format": "html",
@@ -114,6 +135,13 @@
       "format": "pdf",
       "sha256": "f1a5b8ac47e15facac83e4bb4cb05bc812d355b0120c01204725c094eb5da589",
       "version": "Central Bank of Sri Lanka, Bulletin, February - July 2024 (inside cover)",
+      "retrieved": "2026-10-14"
+    },
+    "safe_ar2015": {
+      "url": "https://www.safe.gov.cn/safe/file/file/20170727/fb91f805187144d893d3360212ac0240.pdf",
+      "format": "pdf",
+      "sha256": "e725a047711ad64ecbcecc94d11bfd5c3dc157349a6ea8756fcf95d3e2c9771e",
+      "version": "国家外汇管理局，《国家外汇管理局年报（2015）》（PDF created 2016-05-13）",
       "retrieved": "2026-10-14"
     },
     "safe_legal": {
