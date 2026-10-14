@@ -4,8 +4,10 @@
 
 Inputs are six snapshots:
   prices_facts           quotations from Fisher (1896), the Boskin Commission (1996), McCully, Moyer & Stewart
-                         (2007, BEA), the UK DMO, 31 CFR 356 App. B, Public Law 115-97, the FOMC and the Bank of
-                         Japan; checked by data/fetch/verify_web_quotes.py, twelve rows read on page images
+                         (2007, BEA), Lebow & Rudd (2001), Gurkaynak, Sack & Wright (2008), Campbell, Shiller &
+                         Viceira (2009), the UK DMO, 31 CFR 356 App. B and C, Public Law 115-97, the FOMC and the
+                         Bank of Japan; checked by data/fetch/verify_web_quotes.py, fourteen rows read on page
+                         images or without a quotation
   fred_prices_monthly    CPI-U (SA and NSA), chained CPI-U, PCE price index, average hourly earnings (FRED)
   fred_prices_quarterly  GDP implicit price deflator (FRED)
   fred_yields_daily      10-year and 2-year Treasury yields and the 10-year TIPS yield (FRED)
@@ -303,6 +305,14 @@ def boskin_bias(F, M):
     quoted("areas", F["b_upper_level"][1], 44, tol=0)
     quoted("1.1 pp for 12 years: cumulative (%)", 100 * (1.011 ** 12 - 1), 14.0, tol=0.05)
     quoted("  Boskin's 14%", F["b_14pct"][1], 14, tol=0)
+    lr = F["lr_total"]
+    quoted("Lebow & Rudd: bias (pp a year)", lr[0], 0.6, tol=0)
+    quoted("  interval low", lr[1], 0.1, tol=0)
+    quoted("  interval high", lr[2], 1.2, tol=0)
+    quoted("  Commission members' revised estimate by", F["lr_commission"][0], 1999, tol=0)
+    quoted("    (pp a year)", F["lr_commission"][1], 0.8, tol=0)
+    quoted("geometric means from January", F["lr_geo1999"][0], 1999, tol=0)
+    quoted("  effect on the CPI (pp a year)", F["lr_geo_effect"][0], 0.2, tol=0)
     # chained CPI-U against CPI-U, both not seasonally adjusted, December 1999 to December 2024 (final values)
     a, b = pd.Timestamp("1999-12-01"), pd.Timestamp("2024-12-01")
     c0, c1 = M.loc[a, "CPIAUCNS"], M.loc[b, "CPIAUCNS"]
@@ -317,7 +327,8 @@ def boskin_bias(F, M):
     quoted("  Boskin's upper-level substitution bias", t3[0], 0.15, tol=0)
     quoted("indexed benefit of 1,000 in Dec 1999, by CPI-U", 1000 * c1 / c0, 1875, tol=0.5)
     quoted("  by chained CPI-U", 1000 * s1 / s0, 1752, tol=0.5)
-    quoted("  difference (%)", 100 * ((c1 / c0) / (s1 / s0) - 1), 7.0, tol=0.05)
+    quoted("  chained-indexed benefit is lower by ($)", 1000 * (c1 / c0 - s1 / s0), 123, tol=0.5)
+    quoted("  lower by (% of the CPI-U-indexed benefit)", 100 * (1 - (s1 / s0) / (c1 / c0)), 6.6, tol=0.05)
     quoted("TCJA: taxable years beginning after December 31 of", F["tcja_effective"][0], 2017, tol=0)
 
 
@@ -369,7 +380,7 @@ def real_side(F, M, Q):
     return W
 
 
-def ex_wages(W):
+def ex_wages(F, W):
     print("== ex:prices-wages")
     quoted("hourly earnings 1972 ($)", W.loc[1972, "AHETPI"], 3.90, tol=0.005)
     quoted("hourly earnings 2024 ($)", W.loc[2024, "AHETPI"], 30.12, tol=0.005)
@@ -382,13 +393,31 @@ def ex_wages(W):
     rp = 100 * (W.loc[2024, "real_pce"] / W.loc[1972, "real_pce"] - 1)
     quoted("real wage 1972-2024 by CPI-U (%)", rc, 2.9, tol=0.05)
     quoted("real wage 1972-2024 by PCE (%)", rp, 33.1, tol=0.05)
+    quoted("rent of shelter: weight in the CPI (%)", F["m_rent_weight"][0], 32, tol=0)
+    quoted("  in the PCE price index (%)", F["m_rent_weight"][1], 15, tol=0)
+    quoted("Triplett (1981) studied", F["m_triplett"][0], 1981, tol=0)
+    quoted("  the years 1972", F["m_triplett_years"][0], 1972, tol=0)
+    quoted("  to 1980", F["m_triplett_years"][1], 1980, tol=0)
+    quoted("asset approach before / rental equivalence from", F["m_asset"][0], 1983, tol=0)
+    quoted("  revised CPI-U kept the old housing method before", F["b_housing_old"][0], 1983, tol=0)
     pre = W.loc[1964:1994, "real_cpi"]
     quoted("CPI-deflated peak before 1995 (year)", pre.idxmax(), 1972, tol=0)
     quoted("CPI-deflated trough (year)", W["real_cpi"].dropna().idxmin(), 1995, tol=0)
+    rc_all = W["real_cpi"].dropna()
+    above = rc_all.loc[1973:][rc_all.loc[1973:] > rc_all.loc[1972]]
+    quoted("CPI-deflated real wage first above 1972 again (year)", above.index[0], 2020, tol=0)
     quoted("  1972-1995 by CPI-U (%)", 100 * (W.loc[1995, "real_cpi"] / W.loc[1972, "real_cpi"] - 1), -18.1, tol=0.05)
     quoted("  1972-1995 by PCE (%)", 100 * (W.loc[1995, "real_pce"] / W.loc[1972, "real_pce"] - 1), -6.1, tol=0.05)
     quoted("1972 real wage in 2024 dollars by CPI-U", W.loc[1972, "AHETPI"] * W.loc[2024, "CPIAUCSL"] / W.loc[1972, "CPIAUCSL"], 29.26, tol=0.005)
     quoted("  by PCE", W.loc[1972, "AHETPI"] * W.loc[2024, "PCEPI"] / W.loc[1972, "PCEPI"], 22.63, tol=0.005)
+
+
+def pitfall_wages(F, W):
+    print("== pitfall box: real wages")
+    b = F["b_past_img"][0] / 100                                   # Boskin: 1.3 pp a year before 1996
+    quoted("Boskin's pre-1996 bias for 20 years: 1.013^20", (1 + b) ** 20, 1.29, tol=0.005)
+    quoted("  CPI-deflated 1972-2024 multiple x 1.013^20 ('up a third')",
+           W.loc[2024, "real_cpi"] / W.loc[1972, "real_cpi"] * (1 + b) ** 20, 1.33, tol=0.005)
 
 
 def fisher_section(F):
@@ -474,7 +503,7 @@ def curve(F, D, J):
     quoted("  effective from February 16", F["boj_nirp_start"][0], 16, tol=0)
     quoted("YCC vote for", F["boj_ycc_vote"][0], 7, tol=0)
     quoted("  against", F["boj_ycc_vote"][1], 2, tol=0)
-    quoted("  JGB purchases (trn yen a year)", F["boj_ycc_pace"][0], 80, tol=0)
+    quoted("  annual increase in JGB holdings (trn yen)", F["boj_ycc_pace"][0], 80, tol=0)
     quoted("exit: call rate upper bound (%)", F["boj_exit"][1], 0.1, tol=0)
     quoted("  effective March 21", F["boj_exit_start"][0], 21, tol=0)
     c = {d: J.loc[d] for d in JGB_DATES}
@@ -511,6 +540,8 @@ def ex_forward(J):
     f55 = forward(c["5Y"], 5, c["10Y"], 10)
     quoted("5-year rate five years ahead (%)", f55, 3.72, tol=0.005)
     quoted("  shortcut 2 x 3.057 - 2.399", 2 * c["10Y"] - c["5Y"], 3.715, tol=0.0005)
+    quoted("(3) 1-year rate now, 'about 1.7%'", c["1Y"], 1.7, tol=0.05)
+    quoted("    one year ahead, '2.2%'", f11, 2.2, tol=0.05)
 
 
 def breakeven_section(F, D, T, M):
@@ -579,7 +610,9 @@ def ex_tips(F, T, M):
     g = 100 * ((r1 / r0) ** 0.1 - 1)
     quoted("inflation over the life of the bond (% a year)", g, 2.44, tol=0.005)
     quoted("breakeven at auction - realized (pp)", 6.63 - 3.449 - g, 0.74, tol=0.005)
+    quoted("  1 + realized inflation, as printed (1.02442)", 1 + g / 100, 1.02442, tol=0.000005)
     quoted("TIPS: real yield plus realized inflation, approx (%)", 100 * ((1.03449) * (1 + g / 100) - 1), 5.98, tol=0.005)
+    quoted("  the same with the printed factors 1.03449 x 1.02442", 100 * (1.03449 * 1.02442 - 1), 5.98, tol=0.005)
     quoted("principal of 1,000 at maturity ($)", 1000 * r1 / r0, 1272.85, tol=0.005)
 
 
@@ -610,6 +643,12 @@ def test(F, D, M):
     ft = forecast_test(D, M)
     ft = ft.loc[TEST_FROM:TEST_TO]
     quoted("months in the test", len(ft), 163, tol=0)
+    quoted("  calendar months 2003-01 to 2016-08", len(pd.period_range(TEST_FROM, TEST_TO, freq="M")), 164, tol=0)
+    quoted("  2015-10 excluded (CPI of 2025-10 missing)", float(pd.Timestamp("2015-10-01") in ft.index), 0, tol=0)
+    quoted("    CPI-U NSA 2025-10 missing", float(pd.isna(M.loc["2025-10-01", "CPIAUCNS"])), 1, tol=0)
+    span = len(pd.period_range(TEST_FROM, (ft.index[-1] + pd.DateOffset(years=10)).strftime("%Y-%m"), freq="M")) - 1
+    quoted("  months from 2003-01 to 2026-08", span, 283, tol=0)
+    quoted("  non-overlapping ten-year windows in it ('two and a bit', between 2 and 3)", span / 120, 2.5, tol=0.5)
     quoted("mean breakeven (%)", ft["be"].mean(), 2.11, tol=0.005)
     quoted("mean realized (%)", ft["realized"].mean(), 2.22, tol=0.005)
     err = ft["be"] - ft["realized"]
@@ -633,6 +672,9 @@ def test(F, D, M):
     quoted("  at most 1.9%", late["be"].max(), 1.87, tol=0.005)
     quoted("  realized inflation after them, at least 3%", late["realized"].min(), 3.06, tol=0.005)
     quoted("share of months with breakeven below realized", (err < 0).mean(), 0.51, tol=0.005)
+    quoted("Campbell, Shiller & Viceira: breakeven stable from", F["csv_stable"][0], 2003, tol=0)
+    quoted("  until the fall of", F["csv_stable"][1], 2008, tol=0)
+    quoted("  Lehman: positions unwound in the fall of", F["csv_unwinding"][0], 2008, tol=0)
 
 
 def legacy(F):
@@ -672,7 +714,8 @@ def main():
     boskin_bias(F, M)
     ex_chain()
     W = real_side(F, M, Q)
-    ex_wages(W)
+    ex_wages(F, W)
+    pitfall_wages(F, W)
     fisher_section(F)
     ex_fisher(F)
     ex_bond()
