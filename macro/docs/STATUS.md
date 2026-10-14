@@ -126,9 +126,31 @@ Updated 2026-10-14.
   - The stigma of the discount window is not discussed (no citable source found).
   - The shrinking of interbank lending is covered only through the FHLBs.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
+- Chapter 5 (国际收支与汇率): written and reviewed. Fixes are in the commit "Chapter 5: fixes after the independent review".
+  - The opening sets Sri Lanka's reserves running out in 2022 against the long US deficit. The balance of payments is built from a worked example in BPM6 net-lending form, with SAFE's opposite sign convention beside it. The sector balances are extended to the open economy through gross national disposable income.
+  - Exchange rates: real rates, PPP (tested on 181 price levels in 2021 and on 137 economies over 2001–21 and 2020–21), covered parity after 2008 (Du, Tepper & Verdelhan) and the failure of uncovered parity (Engel). Reserves, original sin and regimes are covered, with a case on China's reserves 2004–16 that gives both the precautionary and the mercantilist reading.
+  - Review fixes:
+    - The standstill's four categories of debt are listed in full.
+    - The capital account's examples follow BEA (patents are in R&D services).
+    - Most of the one-year PPP result comes from Libya alone; without it the slope is 0.65 and R² 0.20.
+    - SAFE's 6.4% is checked against the end-2015 central parity.
+    - The US income asymmetry now gives both readings: Gourinchas & Rey's "exorbitant privilege", and Curcuru, Dvorak & Warnock's critique.
+    - BPM7 (2025) is mentioned, dated from the 2025 SNA.
+    - The cost of import compression (real incomes, rice imports) is stated.
+  - Mun was wrongly described as counting goods only, here and in Chapter 16. In fact, when drawing up the national balance he adds freight, insurance and merchants' gains to exports (ch. XX). Chapter 16's sentence, self-check 1 and its answer are corrected, and `merc_facts` has two new rows (316 quotations verify).
+  - `external_facts` has 169 rows, all of which verify verbatim. The data snapshots are `cbsl_reserves`, `bis_fx`, `fred_us_external`, `wb_external_annual`, `wb_price_levels`, `wb_relppp` and `pbc_balance_sheet`.
+  - FORWARD_REFS: five promises to Chapter 5 are marked done; there are eleven new rows from Chapter 5 (Chapters 6, 19/23, 36/46, 37, 61, 62, 64, 69, 72, 76, 82). Appendix B now has $q$ and the superscript-$f$ convention for foreign variables.
+  For the author:
+  - **CBSL reserve data:** only the derived extract `cbsl_reserves` is committed. The basis is the CBSL Bulletin's notice that its material "may be reproduced or translated in whole or in part without prior permission … provided due credit is given". Please confirm that this covers the reserve data template.
+  - **SAFE:** SAFE's legal statement allows only non-commercial reproduction with permission, so no SAFE data file is committed. The chapter quotes a few sentences and numbers from the 2016 report and the 2015 annual report, with "信息来源：国家外汇管理局网站". China's numbers for calculation come from the World Bank (CC BY 4.0).
+  - **Libya:** its 2020 official rate may not have been the rate most transactions used. The WDI notes do not flag it, so it stays in the sample and is marked in the figure. Dropping it would change the one-year headline to 0.65 / R² 0.20 and the figure.
+  Open points:
+  - IMF sites return 403. BPM6 is quoted through BEA's manual, and the IMF programme is described as CBSL tells it.
+  - The month in which the PBoC swap entered Sri Lanka's reserves is not documented (the jump of December 2021 is left unexplained).
+  - Chapter-local symbols ($F$, $\mathit{CA}$, $\mathit{KA}$, $\mathit{FA}$, $\mathit{EO}$) are not in Appendix B.
 
 ## Next
-1. Part 1: Chapter 5, then Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Part 2 (Chapters 6–9), then Chapter 1; each reviewed before the next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
