@@ -32,7 +32,7 @@ What is checked here:
 Notation of the chapter (eq:intro-budget):
     G_t - T_t + i_{t-1} B_{t-1} + e_t i^f_{t-1} B^f_{t-1} = Delta B_t + e_t Delta B^f_t + Delta H_t
 consolidated government (Treasury and central bank); B is held outside the central bank; the deeper box adds the
-reserves F: B^f becomes B^f - F.
+foreign-exchange reserves A^f (F is the forward rate in Chapter 5): B^f becomes B^f - A^f.
 """
 from __future__ import annotations
 
@@ -297,10 +297,13 @@ READINGS = {
     "ko_extdebt": [("119 percent", "num"), ("11 percent", "num")],
     "ko_output": [("50 percent", "num")],
     "ko_bonus": [("3 percent", "num")],
+    "ko_cagan7": [("seven instances", "en"), ("six European", "en"), ("1920", "num"), ("1946", "num")],
+    "ko_cagandef": [("50 percent", "num")],
     "co_gko30": [("30 percent", "num")],
     "co_aug17": [("17,", "num")],
     "co_sep2": [("2,", "num")],
     "co_depleted": [("17,", "num")],
+    "co_generations": [("three generations", "en")],
     "rr_twothirds": [("64 countries", "num"), ("two-thirds", "en")],
     "rr_triple": [("66 percent", "num")],
     "rr_japan45": [("80 percent", "num"), ("500 percent", "num")],
@@ -336,7 +339,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [float(x.replace(",", "")) for x in re.findall(r"\d[\d,]*(?:\.\d+)?", r.quote)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 43)
+    quoted("rows with values, each read from its quotation", n, 48)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -380,11 +383,10 @@ TRANSLATIONS = {
     "俄罗斯政府的高债务与下降的收入，大大增加了它遭受投机攻击的可能": "co_revenue",
     "保卫卢布耗尽了俄罗斯的外汇储备": "co_depleted",
     "利息支付增加，债务迅速增长": "co_debtgrew",
-    "收入的短缺意味着可能通过增加货币供给来减轻公共债务负担": "co_expect",
+    "收入的短缺预示着可能通过增加货币供给来减轻公共债务负担": "co_expect",
     "停止支付": "co_halt",
     "让汇率浮动": "co_floated",
-    "国内债务约占公共债务总额的三分之二": "rr_twothirds",
-    "国内居民的债权严格排在外国债权人之后": "rr_junior", "得不到广泛支持": "rr_junior",
+    "国内债务占公共债务总额的将近三分之二": "rr_twothirds",
     "在通胀之后，把所有的钞票按一比一换成新发行的钞票，每人以 100 日元为限，其余的存进冻结账户": "rr_jp46",
     "政府可能用通胀把债务抹掉，但公开拒付国内公共债务极为罕见": "rr_assume",
     "货币与债务存量指每段时期开始时的水平": "rr_t3_note",
@@ -556,6 +558,10 @@ def afford(F, B, Y):
     chk("paths: Russia yields (%)", F["co_yield"][0], 200)
     chk("    Zimbabwe under a year (%)", F["rr_zw"][0], 98.5)
     chk("    Sri Lanka months", F["lk_gor_months"][0], 1.2)
+    de, zw = F["ko_t1_de"][0], F["ko_t1_zw"][0]                   # 一个月涨几十倍甚至几百倍
+    chk("money: Germany's highest month (%)", de, 29525.71)
+    chk("    Zimbabwe's last official month (%)", zw, 2600.2)
+    assert 10 <= 1 + zw / 100 < 100 and 100 <= 1 + de / 100 < 1000, (zw, de)
     P = peg()
     chk("ex:intro-peg (1): not held (亿)", P["excess"], 60)
     chk("    reserves lost (亿 dollars)", P["lost"], 10)
@@ -603,10 +609,14 @@ def layers(F, B):
     quoted("    2026-Q1", B.nominal_jpy_bn["2026-Q1"] / 1e3, 1302.19, tol=0.005)
     pct("    debt (%)", 100 * E["debt"], 6.7)
     pct("    ratio (%)", 100 * E["ratio"], -12.1)
+    pct("    ratio (percentage points)", B.nominal_pct["2020-Q4"] - B.nominal_pct["2026-Q1"], 26.7)
     quoted("    printed factors", 1302.19 / 1219.96, 1.0674, tol=0.00005)
     quoted("        ", 193.6 / 220.3, 0.8788, tol=0.00005)
     pct("    denominator (%)", 100 * E["denominator"], 21.5)
     pct("    from the printed factors (%)", 100 * (1.0674 / 0.8788 - 1), 21.5)
+    cpi = japan_level(2021, 2025)                                                 # 2022-2025, chained
+    pct("    consumer prices 2022-2025 (%)", 100 * (cpi - 1), 12, 0)
+    assert cpi - 1 < E["denominator"]                                             # only a part of it
     quoted("    market 2020-Q4 (万亿 yen)", B.market_jpy_bn["2020-Q4"] / 1e3, 1281.40, tol=0.005)
     quoted("    market 2026-Q1", B.market_jpy_bn["2026-Q1"] / 1e3, 1181.30, tol=0.005)
     pct("    market value (%)", 100 * E["market"], -7.8)
@@ -655,9 +665,11 @@ def test(F, B, W):
     pct("CBR 1998-08-18", c["1998-08-18"], 6.43, 2)
     pct("    1998-09-01", c["1998-09-01"], 9.33, 2)
     pct("    1998-09-04", c["1998-09-04"], 13.46, 2)
-    hi, lo = F["co_band"][1], F["co_band"][0]
-    assert c["1998-08-18"] > hi and c[CBR_BEFORE] > hi       # beyond the band of 1997 already
-    assert lo < c["1998-01-01"] < hi
+    # the official rate starts to rise after August 17; the large fall is in early September (the timeline's float)
+    assert 0 < c["1998-08-18"] / c[CBR_BEFORE] - 1 < 0.05, c["1998-08-18"]
+    assert c["1998-09-04"] / c["1998-08-18"] > 2, c["1998-09-04"]
+    assert c.loc["1998-08-18":"1998-08-31"].max() < c["1998-09-01"]
+    assert c[CBR_BEFORE] > F["co_band"][1]              # 6.29 is above the band of 1997 already (PLAN, review)
 
 
 def check_routes():
@@ -678,6 +690,13 @@ def check_routes():
     chk("parts", len(structure.PARTS), 11)
     chk("De Vroey (2016)", bib_year("devroey"), 2016)
     chk("Snowdon and Vane (2005)", bib_year("snowdonvane"), 2005)
+    chk("Cagan (1956)", bib_year("cagan1956"), 1956)
+    F = facts()                                         # the main line in the chapter's own cases (Koech; Chiodo-Owyang)
+    chk("    episodes", F["ko_cagan7"][0], 7)
+    chk("    countries", F["ko_cagan7"][1], 6)
+    chk("    from", F["ko_cagan7"][2], 1920)
+    chk("    to", F["ko_cagan7"][3], 1946)
+    chk("Chiodo and Owyang: generations of models", F["co_generations"][0], 3)
 
 
 def legacy(F, Y, B, W):
