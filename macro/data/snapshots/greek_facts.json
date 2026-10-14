@@ -1,0 +1,120 @@
+{
+ "title": "Quotations for Chapter 7 (Greece and Rome: coinage, civic finance and imperial debasement): Herodotus on the Lydians and the silver of Laureion, Aristotle on Maroneia, the mina and the origin and nature of money, Xenophon's Revenues on Athenian silver and the mines, Cassius Dio on Caracalla's coins, Tacitus on the credit crisis of AD 33, Lactantius and Kent (1920) on Diocletian's Edict of 301, Haklai-Rotenberg (2011), Howgego et al. (2010) and Cope (1974) on the fineness of Roman coins, Temin (2001) on the market economy, and Kelly (2021) on prices in Roman Egypt",
+ "source": "Herodotus (trans. Macaulay); Aristotle, Athenian Constitution (trans. Kenyon), Politics (trans. Ellis), Nicomachean Ethics (Everyman edition); Xenophon, On Revenues (trans. Dakyns); Cassius Dio 78 (trans. Cary, Loeb 1927); Tacitus, Annals VI (trans. Gordon); Lactantius (trans. Fletcher, ANF 7); R. G. Kent (1920); M. Haklai-Rotenberg (2011); C. Howgego, K. Butcher, M. Ponting and V. Heuchert (2010); L. H. Cope (1974); P. Temin (2001); P. V. Kelly (2021)",
+ "url": "https://www.gutenberg.org/ebooks/1179",
+ "series": "id, dynasty (place), year (negative for BC; empty where the source gives no year, see year_note), year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location in the document: book and chapter of an ancient text, or the printed page of a modern one), quote (verbatim, as in the document's text layer), note",
+ "retrieved": "2026-10-14",
+ "license": "Quotations for criticism and teaching, each with its source. The translations of Herodotus (Macaulay 1890), Aristotle (Kenyon, Ellis, the Everyman Ethics), Xenophon (Dakyns), Tacitus (Gordon), Lactantius (Fletcher 1886) and Cassius Dio (Cary, Loeb 1927, public domain as stated on LacusCurtius) and Kent (1920, JSTOR Early Journal Content, free to anyone) are in the public domain. Kelly (2021) is CC BY 4.0. Haklai-Rotenberg (2011) is published by the Deutsches Archäologisches Institut on iDAI.publications for personal use (only short passages are quoted and the PDF is not redistributed); Howgego et al. (2010), Cope (1974, a thesis in the LJMU repository) and Temin (2001, an MIT working paper on DSpace@MIT) are in copyright and quoted in short passages. Some of the documents are scans with a text layer; where that layer misreads a character the quotation keeps its reading and the note gives the printed form.",
+ "used_in": [
+  7
+ ],
+ "fetch": "data/fetch/verify_web_quotes.py checks every row",
+ "notes": "Every row is checked verbatim by data/fetch/verify_web_quotes.py against the document named in its file column (downloaded from the url below; --offline uses the cached copy, whose SHA-256 is recorded). The column juan gives the book and chapter of an ancient text, or the printed page of a modern publication. Values are the numbers the text uses. The checker joins a word hyphenated at a line end, so such words are quoted joined and the note gives the printed form; table rows are quoted as the -layout text of pdftotext gives them (columns separated by spaces). The ancient authors are quoted in English translations, and the chapter's Chinese is a translation of the translation. Herodotus and the Athenian Constitution date the Laureion and Maroneia finds by archon and by Xerxes' invasion; none of the documents here gives a year BC for them, and the chapter gives none.",
+ "sources": {
+  "herodotus_v1": {
+   "url": "https://www.gutenberg.org/cache/epub/2707/pg2707.txt",
+   "format": "txt",
+   "sha256": "b4a845d38e9051690201561803d2aa83f6589a7b3f80273b97d79801981e64a3",
+   "version": "The History of Herodotus, translated by G. C. Macaulay, vol. 1 (Project Gutenberg eBook 2707); Book I, ch. 94",
+   "retrieved": "2026-10-14"
+  },
+  "herodotus_v2": {
+   "url": "https://www.gutenberg.org/cache/epub/2456/pg2456.txt",
+   "format": "txt",
+   "sha256": "7b28f25dbed0064cd8f66c662eaa776cccd535cdeb6e3ff94c37dd1cc2a752db",
+   "version": "The History of Herodotus, translated by G. C. Macaulay, vol. 2 (Project Gutenberg eBook 2456); Book V, ch. 97 and Book VII, ch. 144",
+   "retrieved": "2026-10-14"
+  },
+  "athcon_kenyon": {
+   "url": "https://www.gutenberg.org/cache/epub/26095/pg26095.txt",
+   "format": "txt",
+   "sha256": "e7b95d4d2fe35c1f6ab09899c3781a0b9622983571b71c5f4e2b9b49ae88690b",
+   "version": "Aristotle, The Athenian Constitution, translated by Sir Frederic G. Kenyon (Project Gutenberg eBook 26095); parts 10 and 22",
+   "retrieved": "2026-10-14"
+  },
+  "xen_revenues": {
+   "url": "https://www.gutenberg.org/cache/epub/1179/pg1179.txt",
+   "format": "txt",
+   "sha256": "80447360ddb24038aa710770bb60ead86c884703a1e13e4dc9226e0b0290c130",
+   "version": "Xenophon, On Revenues, translated by H. G. Dakyns, with the translator's notes (Project Gutenberg eBook 1179); chapters III and IV",
+   "retrieved": "2026-10-14"
+  },
+  "politics_ellis": {
+   "url": "https://www.gutenberg.org/cache/epub/6762/pg6762.txt",
+   "format": "txt",
+   "sha256": "4b5f5d1bc2859780ba5954f5e98b5a8ebf0a0945ace77c861d5b164454155e9f",
+   "version": "Aristotle, Politics: A Treatise on Government, translated by William Ellis (Project Gutenberg eBook 6762); Book I, ch. 9 [1257a]",
+   "retrieved": "2026-10-14"
+  },
+  "ethics_pg": {
+   "url": "https://www.gutenberg.org/cache/epub/8438/pg8438.txt",
+   "format": "txt",
+   "sha256": "a68264a6537bb58b899ed68e25d1c7d8ea1bcb3e9544b4d1b464f74d99c3d059",
+   "version": "The Nicomachean Ethics of Aristotle, Everyman's Library edition with an introduction by J. A. Smith (Project Gutenberg eBook 8438; the eBook does not name the translator); Book V, ch. VIII of this edition",
+   "retrieved": "2026-10-14"
+  },
+  "dio78": {
+   "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/78*.html",
+   "format": "html",
+   "sha256": "b19d1a5c6c2cd6e9e6cfe1dd9b8d4eb93d5906c5b1aae6d061c7b862495914e2",
+   "version": "Cassius Dio, Roman History, Book 78, translated by E. Cary, Loeb Classical Library vol. IX (1927), as reproduced by Bill Thayer on LacusCurtius (public domain); ch. 14.4",
+   "retrieved": "2026-10-14"
+  },
+  "tacitus_gordon": {
+   "url": "https://www.gutenberg.org/cache/epub/7959/pg7959.txt",
+   "format": "txt",
+   "sha256": "d702716cba1deefe61e5845ca8bd78bd1c7fb50e5f2a37d0bc6bb7aef4892e39",
+   "version": "The Reign of Tiberius, Out of the First Six Annals of Tacitus, translated by Thomas Gordon (Project Gutenberg eBook 7959); Annals VI.16-17, with Gordon's footnotes",
+   "retrieved": "2026-10-14"
+  },
+  "lactantius_anf": {
+   "url": "https://www.newadvent.org/fathers/0705.htm",
+   "format": "html",
+   "sha256": "a88f2fdadd869e67aa59f334e7c55612606c6c381b147de29425a7db23214b0c",
+   "version": "Lactantius, Of the Manner in Which the Persecutors Died, translated by William Fletcher, Ante-Nicene Fathers vol. 7 (Buffalo: Christian Literature Publishing Co., 1886), revised and edited for New Advent by Kevin Knight; ch. 7",
+   "retrieved": "2026-10-14"
+  },
+  "kent1920": {
+   "url": "https://archive.org/download/jstor-3314009/3314009_djvu.txt",
+   "format": "txt",
+   "sha256": "e8d930d7de4054cfa3deff513fbef135ff6de4652b280743e74bd950b7fd9a47",
+   "version": "R. G. Kent, 'The Edict of Diocletian Fixing Maximum Prices', University of Pennsylvania Law Review and American Law Register 69(1), 1920, pp. 35-47; text layer of the JSTOR Early Journal Content scan on the Internet Archive (jstor-3314009)",
+   "retrieved": "2026-10-14"
+  },
+  "haklai2011": {
+   "url": "https://publications.dainst.org/journals/chiron/article/download/438/5046",
+   "format": "pdf",
+   "sha256": "d51894fb3c1ffcc98689352b61b2bef3f0b696c596006e62a2032273c92cfdbd",
+   "version": "M. Haklai-Rotenberg, 'Aurelian's Monetary Reform: Between Debasement and Public Trust', Chiron 41 (2011), pp. 1-40 (iDAI.publications PDF; page n of the article is page n+1 of the PDF)",
+   "retrieved": "2026-10-14"
+  },
+  "howgego2010": {
+   "url": "https://oxrep.classics.ox.ac.uk/docs/Howgego2010.pdf",
+   "format": "pdf",
+   "sha256": "8d5f23c5f3603e0538b6474a60bebc8b8ca6483866a1f94bcdc9df38b7608b73",
+   "version": "C. Howgego, K. Butcher, M. Ponting and V. Heuchert, 'Coinage and the Roman Economy in the Antonine Period: the view from Egypt', paper on the Oxford Roman Economy Project website (OXREP 2010; PDF dated 2013)",
+   "retrieved": "2026-10-14"
+  },
+  "cope1974": {
+   "url": "https://researchonline.ljmu.ac.uk/id/eprint/5590/1/373706.pdf",
+   "format": "pdf",
+   "sha256": "2d10acf718cf4bca23bc594c972a893df6f71a19eed598d8e4c8e866aa185165",
+   "version": "L. H. Cope, The Metallurgical Development of the Roman Imperial Coinage during the First Five Centuries A.D., PhD thesis, Council for National Academic Awards (Liverpool Polytechnic), March 1974; LJMU Research Online, eprint 5590 (scanned typescript with a text layer; printed pages are numbered in the typescript)",
+   "retrieved": "2026-10-14"
+  },
+  "temin2001": {
+   "url": "https://dspace.mit.edu/server/api/core/bitstreams/228b4ae7-6bd4-4eb3-8333-e74bddf2e281/content",
+   "format": "pdf",
+   "sha256": "74d829bb5c59b7cfb83ba715ca3623b148636d0d0cb83165503d43f2561885d1",
+   "version": "P. Temin, 'A Market Economy in the Early Roman Empire', MIT Department of Economics Working Paper 01-08, February 2001 (DSpace@MIT, hdl:1721.1/63869; page n of the paper is page n+8 of the PDF)",
+   "retrieved": "2026-10-14"
+  },
+  "kelly2021": {
+   "url": "https://traj.openlibhums.org/article/4338/galley/14514/download/",
+   "format": "pdf",
+   "sha256": "ae39085b5fd581498976fb1ec68d8a7b377c2fa4850724e83a6fb9d0f8bf5106",
+   "version": "P. V. Kelly, 'Third-Century Price Inflation Reassessed', Theoretical Roman Archaeology Journal 4(1): 5 (2021), doi:10.16995/traj.4338, CC BY 4.0 (PDF galley)",
+   "retrieved": "2026-10-14"
+  }
+ }
+}

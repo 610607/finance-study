@@ -1,0 +1,131 @@
+table,date,year_from,year_to,year,uncertain,amounts,dr_per_artaba,n_prices,nature,nome,reference
+wheat_private,45,45,45,45,0,"4.36, 5.71, 8, 7.27, 7.62, 8",7.445,6,A range of prices in private account.,Arsinoite,"P.Mich. II 127 i.8, i.12, i.13-6, i.17, i.37, i.38"
+wheat_private,46,46,46,46,0,8.73,8.73,1,Price in private account.,Arsinoite,P.Mich. II 123 v.xi.26-7
+wheat_private,46-7,46,47,46.5,0,6,6,1,Price in expenditure account.,Arsinoite,SB XX 14576 l.34
+wheat_private,78,78,78,78,0,10,10,1,Price in expenditure account.,Other,"SB VIII 9699 l.177-8, 181"
+wheat_private,79,79,79,79,0,"11, 11",11,2,Two prices in expenditure account.,Other,"SB VIII 9699 l.360-2, 454-5"
+wheat_private,c.75-125,75,125,100,1,5,5,1,General price in conversion of private(?) rent payments.,Arsinoite(?),"P.Louvre II 103 l.5, 12, 17"
+wheat_private,112,112,112,112,0,12,12,1,Within a land lease an alternative to paying rent of 2 artabas per aroura is given at 24 dr. per aroura implying a notional value of 12 dr.,Other,P.Oxy. XXII 2351 l.18-20
+wheat_private,124,124,124,124,0,9,9,1,Price in estate account.,Other,P.Sarap. 60 l.10
+wheat_private,c.100-30,100,130,115,1,7,7,1,General price in estate letter.,Other,P.Sarap. 92 l.18-9
+wheat_private,c.128(?),128,128,128,1,12,12,1,Price in estate account.,Other,P.Sarap. 79b i.13
+wheat_private,138-9,138,139,138.5,0,5.6(?),5.6,1,Price for 'grain' in estate letter.,Oxyrhynchite,PSI IV 281 l.7-9
+wheat_private,160,160,160,160,0,5.52(?) or 3.68(?). Assumed to be 5.52,5.52,1,Price in private account.,Arsinoite,P.Berl.Leihg. II 39 r l.64
+wheat_private,c.160,160,160,160,1,11,11,1,Price in private account.,Arsinoite,P.Stras. IX 847 l.42
+wheat_private,192,192,192,192,0,"18, 20, 18",18,3,A range of prices in estate account.,Arsinoite,"P.Cair.Goodsp. 30 xiii.10-13, xv.24, xx.22-3"
+wheat_private,215(?),215,215,215,1,28,28,1,Price in estate account.,Arsinoite,"P.Louvre I 51 l.5, 10"
+wheat_private,216(?),216,216,216,1,28,28,1,Price in estate account.,Arsinoite,"P.Louvre I 51 l.17, 23, 24, 42-3, 46, 47, 51"
+wheat_private,217(?),217,217,217,1,"10, <8(?), 8",9,2,A range of prices in estate account.,Arsinoite,"P.Louvre I 51 l.90, 94, 104, 118-9, 126, 128-9"
+wheat_private,202-31(?),202,231,216.5,1,20,20,1,Price in temple account.,Arsinoite,P.Lund. IV 11 i.25-6
+wheat_private,202-32(?),202,232,217,1,16,16,1,Price in estate account.,Oxyrhynchite(?),P.NYU VIII 8 l.9
+wheat_private,217(?),217,217,217,1,"10, 10, 12",10,3,A range of prices in estate account.,Arsinoite,"P.Louvre I 54 l.8, 11, 12"
+wheat_private,218(?),218,218,218,1,"20, 18, 16, 16",17,4,A range of prices in estate account.,Arsinoite,"P.Louvre I 54 l.29, 34, 42, 45"
+wheat_private,226-42,226,242,234,0,12,12,1,Price in estate account.,Arsinoite,P.Laur. I 11 A l.10-1
+wheat_private,249,249,249,249,0,24,24,1,Price in estate account.,Arsinoite,P.Flor. I 9b
+wheat_private,250,250,250,250,0,20,20,1,Price in estate account.,Arsinoite,P.Prag.Varcl. II 2 l.12
+wheat_private,250,250,250,250,0,20,20,1,Price in estate account.,Arsinoite,"P.Prag. III 240 l.29, 31, 33, 57, 78, 81, 99-100, 122"
+wheat_private,251,251,251,251,0,20,20,1,Price in estate account.,Arsinoite,SB XX 14645 l.10
+wheat_private,252,252,252,252,0,24,24,1,Price in estate account.,Arsinoite,P.Prag.Varcl. II 4 l.8
+wheat_private,253,253,253,253,0,16,16,1,Price in estate account.,Arsinoite,SB XX 14197 r l.9
+wheat_private,254,254,254,254,0,12,12,1,Price in estate account.,Arsinoite,P.Lond. III 1226 l.10
+wheat_private,255,255,255,255,0,16,16,1,Price in estate account.,Other,BGU I 14 ii.14
+wheat_private,255-9,255,259,257,0,12,12,1,Price in estate account.,Arsinoite,P.Flor. III 321 l.9
+wheat_private,255-60,255,260,257.5,0,16,16,1,Price in estate account.,Arsinoite,P.Sorb.inv. 2186 ined.
+wheat_private,259,259,259,259,0,16,16,1,Price in estate account.,Arsinoite,P.Prag. III 236 l.11
+wheat_private,260,260,260,260,0,16,16,1,Price in estate letter.,Oxyrhynchite,P.Oxy. XLIX 3513
+wheat_private,260,260,260,260,0,16,16,1,Price in estate letter.,Oxyrhynchite,P.Oxy. XLIX 3516
+wheat_private,260,260,260,260,0,16,16,1,Price in estate letter.,Oxyrhynchite,P.Oxy. XLIX 3518
+wheat_private,260,260,260,260,0,16,16,1,Price in estate letter.,Oxyrhynchite,P.Oxy. XLIX 3519
+wheat_private,260,260,260,260,0,12,12,1,Price in estate account.,Arsinoite,P.Prag.Varcl. II 6 l.10
+wheat_private,263,263,263,263,0,12,12,1,Price in estate account.,Arsinoite,P.Prag. III 238 l.85
+wheat_private,270,270,270,270,0,24,24,1,Price in estate account.,Oxyrhynchite,P.Erl. 101 l.30-1
+wheat_state,33,33,33,33,0,3,3,1,Adaeratio.,Other,O.Wilck. 1372
+wheat_state,56,56,56,56,0,4 dr. 3.5 ob.(?),4.5833,1,Adaeratio.,Other,O.Wilck. 1558
+wheat_state,65,65,65,65,0,2 dr. 1 ob.,2.1667,1,Probably adaeratio.,Other,O.Petr. 210
+wheat_state,79,79,79,79,0,8,8,1,Annona.,Other,SB VIII 9699 l.456-7
+wheat_state,99,99,99,99,0,16,16,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2958
+wheat_state,99,99,99,99,0,16,16,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLVII 3335
+wheat_state,100,100,100,100,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2960
+wheat_state,101,101,101,101,0,10,10,1,Frumentum emptum receipt.,Other,PSI XVII 1681
+wheat_state,125,125,125,125,0,7 dr. 1 ob.,7.1667,1,Cash equivalent for wheat allowance to liturgists.,Arsinoite,BGU III 834 l.22-3
+wheat_state,c.100-50,100,150,125,1,8,8,1,Pyros synagoristikos.,Arsinoite,P.Iand. VII 138
+wheat_state,128,128,128,128,0,8,8,1,Probably pyros synagoristikos.,Other,SB VIII 9732.III l.11-3
+wheat_state,137,137,137,137,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,PSI XII 1262
+wheat_state,149,149,149,149,0,7,7,1,Pyros synagoristikos.,Arsinoite,P.Tebt. II 394
+wheat_state,153,153,153,153,0,6(?),6,1,Payment of bath tax in wheat: 6(?).,Other,O.Wilck. 1587
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2961
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2962
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2963
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2964
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2965
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2966
+wheat_state,154,154,154,154,0,8,8,1,Pyros synagoristikos.,Oxyrhynchite,P.Oxy. XLI 2967
+wheat_state,154-5,154,155,154.5,0,8,8,1,Pyros synagoristikos.,Other,P.Oxy. IX 4056
+wheat_state,154-5,154,155,154.5,0,8,8,1,Cash equivalent for wheat allowance to liturgists.,Arsinoite,SB XVI 13060
+wheat_state,155,155,155,155,0,8,8,1,Cash equivalent for wheat allowance to liturgists.,Arsinoite,P.Berl.Frisk. 1
+wheat_state,155,155,155,155,0,8,8,1,Cash equivalent for wheat allowance to liturgists.,Arsinoite,P.Col. II 1r l.4
+wheat_state,155,155,155,155,0,8,8,1,Cash equivalent for wheat allowance to liturgists.,Arsinoite,P.Graux. IV 30
+wheat_state,162,162,162,162,0,8 dr. 2 ob.,8.3333,1,Customs duty on wheat.,Arsinoite,P.Ryl. II 197a
+wheat_state,183,183,183,183,0,8,8,1,Cash equivalent for wheat allowance to liturgists.,Arsinoite,BGU I 200
+wheat_state,198,198,198,198,0,8,8,1,Conversion of wheat paid for tax due in cash.,Arsinoite,SB X 10293
+wheat_state,216,216,216,216,0,8,8,1,Adaeratio.,Other(?),O.Amst. 58
+wheat_state,246,246,246,246,0,24,24,1,Compulsory purchase at time of shortage.,Oxyrhynchite,P.Oxy. XLII 3048 l.5-6
+barley,3,3,3,3,0,3,3,1,Penalty price in loan.,Arsinoite(?),SB IV 7341
+barley,45,45,45,45,0,"3.33, 4",3.665,2,Prices in personal expenditure account.,Arsinoite,"P.Mich. II 127 ii.1, ii.44"
+barley,c.75-125,75,125,100,1,3 dr. 3 ob.,3.5,1,General price in conversion of private(?) rent payments.,Arsinoite(?),P.Louvre II 102 l.16
+barley,c.75-125(?),75,125,100,1,16,16,1,Price in private letter between soldiers.,Other,SB VI 9017 l.8
+barley,c.128(?),128,128,128,1,8(?),8,1,Price in estate account.,Other,P.Sarap. 79b ii.12
+barley,138-9,138,139,138.5,0,5.6(?),5.6,1,Price for 'grain' in estate letter.,Oxyrhynchite,PSI IV 281 l.7-9
+barley,c.138-61,138,161,149.5,1,5,5,1,Price in private account.,Arsinoite,P.Fay. 333v descr.
+barley,155,155,155,155,0,4 dr. 2 ob./3 ob.,4.3333,1,Cash equivalent for barley allowance to liturgists.,Arsinoite,"P.Berl.Frisk. 1 i, iv"
+barley,155,155,155,155,0,4 dr. 2 ob./3 ob.,4.3333,1,Cash equivalent for barley allowance to liturgists.,Arsinoite,P.Col. II 1 r l.4
+barley,155,155,155,155,0,4.8,4.8,1,Cash equivalent for barley allowance to liturgists.,Arsinoite,"P.Graux. IV 30 ii-iii, x"
+barley,157,157,157,157,0,5.96(?),5.96,1,Price in private note of payment.,Oxyrhynchite,P.Wisc. II 82
+barley,160,160,160,160,0,3.03,3.03,1,Price in private account.,Arsinoite,P.Berl.Leihg. II 39 r l.58
+barley,c.160,160,160,160,1,"4.83, 4.83, 4.83, 4.83, 4.83, 4.83, 4.21, 4.21, 4, 4",4.83,10,A range of prices in private account.,Arsinoite,"P.Stras. IX 847 l.1, 4, 5, 6, 17, 26"
+barley,162-3,162,163,162.5,0,6,6,1,Price in estate account.,Arsinoite,P.Mil.Vogl. I 28 l.68
+barley,168,168,168,168,0,6,6,1,Price in estate account.,Arsinoite,P.Mil.Vogl. IV 215 l.8-9
+barley,192,192,192,192,0,10+,10,1,Price in estate account.,Arsinoite,P.Cair.Goodsp. 30 xxxiii.21
+barley,200,200,200,200,0,4,4,1,Price in estate account.,Arsinoite,P.Prag. III 242 l.14
+barley,209,209,209,209,0,5,5,1,State compulsory purchase.,Arsinoite,P.Bingen 106 l.11
+barley,216(?),216,216,216,1,15 dr. 5 ob.,15.7143,1,Price in estate account.,Arsinoite,P.Louvre I 51 l.37
+barley,217(?),217,217,217,1,"6 dr. 5 ob., 9 dr. 4 ob.",8.1429,2,Prices in estate account.,Arsinoite,"P.Louvre I 51 l.110, 127"
+barley,217(?),217,217,217,1,"6 dr. 6 ob., 8 dr. 4 ob.",7.7143,2,Prices in estate account.,Arsinoite,"P.Louvre I 54 l.6-7, 14"
+barley,218(?),218,218,218,1,"10 dr. 2 ob., 11 dr. 3 ob., 12",11.4286,3,Prices in estate account.,Arsinoite,"P.Louvre I 54 l.26, 31, 43"
+barley,c.190-225,190,225,207.5,1,8,8,1,Price in estate letter where agent told to sell if price reaches 8 dr.,Other(?),P.Muench. III 121
+barley,c.250-70,250,270,260,1,16,16,1,Price in estate letter.,Arsinoite,P.Gron. 16 l.19-20
+barley,c.265-75(?),265,275,270,1,20,20,1,Price in private account.,Other,P.Grenf. II 77 l.26
+wheat_post274,276,276,276,276,0,200,200,1,Adaeratio.,Arsinoite,O.Mich. I 157 with TAPhA 76 (1945) 144-146
+wheat_post274,c.275-295(?),275,295,285,1,240(?),240,1,Price in private letter where name of crop is in lacuna.,Oxyrhynchite,P.Oxy. LXXXV 5063 l.2
+wheat_post274,293(?),293,293,293,1,300,300,1,Compulsory(?) purchase for annona.,Oxyrhynchite,P.Oxy. XVII 2142
+wheat_post274,294,294,294,294,0,"216, 220, 208(?), 232",218,4,Cash equivalent for wheat allowance to liturgists.,Oxyrhynchite(?),"P.Harr. I 93.v l.5, v l.3-4, v l.2, r ii.13"
+wheat_post274,301,301,301,301,0,640,640,1,Private receipt.,Other,CPR VI 75
+wheat_post274,c.300-10,300,310,305,1,852,852,1,Official(?) account.,Other,SB XX 14657 l.18
+wheat_post274,304-5,304,305,304.5,0,"1,200",1200,1,Private receipt.,Oxyrhynchite,P.Oxy. XXXVI 2798
+wheat_post274,c.305-10(?),305,310,307.5,1,"1,200",1200,1,Private notice of payment.,Unknown,SB XVI 12666
+wheat_post274,311,311,311,311,0,"1,200",1200,1,Wheat tax equivalence.,Arsinoite,P.Cair.Isid. 11 l.50
+wheat_post274,312-3,312,313,312.5,0,"2,000",2000,1,Private account.,Arsinoite,"P.NYU I 18. l.4-5, cf. 9-10"
+wheat_post274,314,314,314,314,0,"6,000(?) and 8,000",7000,2,Private account.,Other,"CPR VIII 22 l.16, 18, 27-9"
+wheat_post274,315,315,315,315,0,"3,000",3000,1,Adaeratio.,Arsinoite,SB V 7621 l.157
+wheat_post274,c.310-30,310,330,320,1,"2,000",2000,1,"Estate Account: 2,000 given for wheat, 5,000 for barley: wrong way round? Assumed 2,000.",Other,"P.Ryl. IV 706.v l.9, cf. 12"
+wheat_post274,c.296-300 or 312-23(?),,,,1,"3,936",,1,Official account (adaeratio?). Note Bagnall’s (1985b: 57) assumption that the later date range is correct is not adopted since Bagnall proposes these dates on grounds of pricing.,Oxyrhynchite,"P.Oxy. XXIV 2421 l.2, 4-8"
+wheat_post274,c.310-30,310,330,320,1,"6,000",6000,1,Fiscal account (adaeratio?).,Arsinoite,P.Cair.Isid. 28
+wheat_post274,c.310-30,310,330,320,1,"7,000",7000,1,Private account.,Arsinoite(?),P.Stras. VI 559 l.7-9
+wheat_post274,327,327,327,327,0,"17,333",17333,1,State compulsory purchase.,Oxyrhynchite,PSI IV 309
+wheat_post274,335,335,335,335,0,14 talents,84000,1,Private letter.,Other(?),P.Lond. VI 1914 l.51
+wheat_post274,338,338,338,338,0,24 talents,144000,1,Price declaration by traders.,Oxyrhynchite,SB XVI 12648 l.64-5
+wheat_post274,c.340,340,340,340,1,26 talents,156000,1,Account of official expenditure.,Other,"SB XIV 11593 l.14, 21"
+wheat_post274,c.340,340,340,340,1,30 talents,180000,1,Military account.,Other,SPP XX 75 ii.23
+wheat_post274,c.340,340,340,340,1,"45, 45, 46, 50, 50, 45, 40 talents",270000,7,Price declarations by traders.,Oxyrhynchite,P.Oxy. LIV 3773
+wheat_post274,c.340-50,340,350,345,1,50 talents,300000,1,Private(?) account.,Arsinoite,P.Abinn. 68 r l.38
+barley_post274,c.275- 95(?),275,295,285,1,160 and 140,150,2,Estate Account.,Oxyrhynchite,"P.Oxy. XIV 1733 l.1, 7, 13"
+barley_post274,c.300-10,300,310,305,1,54[0],540,1,Official(?) account.,Other,SB XX 14657 l.19
+barley_post274,315,315,315,315,0,"1,000",1000,1,State compulsory purchase.,Arsinoite,P.Cair.Isid. 58
+barley_post274,316,316,316,316,0,"1,000",1000,1,Adaeratio.,Arsinoite,SB V 7621 l.114
+barley_post274,c.310-30,310,330,320,1,"5,000",5000,1,"Estate Account: 2,000 given for wheat, 5,000 for barley: wrong way round? Assumed 5,000.",Other,"P.Ryl. IV 706v l.6, 8, 12"
+barley_post274,c.296-300 or 312-23(?),,,,1,"2,620",,1,Official account (adaeratio?). Note Bagnall’s (1985b: 57) assumption that the later date range is correct is not adopted since Bagnall proposes these dates on grounds of pricing.,Oxyrhynchite,"P.Oxy. XXIV 2421 l.1, 3-6, 8"
+barley_post274,c.330 (or 315),,,,1,11 and 2/3rds talents,,1,Private account.,Arsinoite,P.Bodl. I 143.7-8 with BL XI 48
+barley_post274,338,338,338,338,0,13 and 1/3rd talents,80000,1,Price declaration by traders.,Oxyrhynchite,SB XVI 12648 l.96
+barley_post274,c.340,340,340,340,1,15(?) talents,90000,1,Military account.,Other,SPP XX 75 ii.21-22
+barley_post274,c.340,340,340,340,1,"20 talents, 25 talents, 120,000, 150,000, 15 talents, 90,000, 20 talents, 22 talents",120000,8,Prices from declarations by traders.,Oxyrhynchite,P.Oxy. LIV 3773
+barley_post274,c.350,350,350,350,1,30 talents,180000,1,Private(?) account.,Arsinoite,P.Abinn. 43 l.13-5
