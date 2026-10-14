@@ -14,7 +14,8 @@
 #      installed into TEXMFHOME. The build follows ctex-kit's own l3build configuration
 #      (support/build-config.lua: unpack the .dtx with luatex and ctxdocstrip.tex).
 #   3. The classical-Chinese corpus daizhigev20 (sparse checkout of the standard histories,
-#      statecraft compilations and 经世文编), pinned at the commit the quotation snapshots cite.
+#      statecraft compilations and 经世文编, plus 管子 and 盐铁论 for Chapter 8), pinned at the commit
+#      the quotation snapshots cite.
 #   4. epubcheck 5.1.0 (w3c/epubcheck release) for `tools/epub/build_epub.py --check`.
 #   5. STIX Two Text and STIX Two Math (the body and mathematics fonts of preamble.tex), from the
 #      built OTF files of stipub/stixfonts at tag v2.13b171 (SIL Open Font License), installed into
@@ -27,7 +28,7 @@ set -euo pipefail
 
 CACHE_DIR="${CACHE_DIR:-$HOME/.cache/finance-study}"
 CORPUS_COMMIT=4a6d6f2088825f132521d848c2ea86cf9c9a7620
-CORPUS_PATHS="${CORPUS_PATHS:-史藏/正史 史藏/政书 史藏/经世文编}"
+CORPUS_PATHS="${CORPUS_PATHS:-史藏/正史 史藏/政书 史藏/经世文编 子藏/法家/管子.txt 儒藏/语录/盐铁论.txt}"
 CTEXKIT_TAG=xeCJK-v3.9.1
 EPUBCHECK_VERSION=5.1.0
 STIX_TAG=v2.13b171

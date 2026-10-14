@@ -14,7 +14,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | From | To | What the reader is promised | Status |
 |---|---|---|---|
 | 12 (opening, §12.2) | 4 `ch:money` | Fiat money is valuable because it is a central-bank liability backed by the state's taxes and laws; the policy rate as the "peg" of a floating currency (compare box 称提 vs today's central bank) | done (`sec:money-functions`, Knapp subsection; `sec:money-rate`) |
-| 12 (§12.7, legacy) | 8 `ch:qinhan` | The 《管子》 轻重 line of thought on the quantity of money and prices | open |
+| 12 (§12.7, legacy) | 8 `ch:qinhan` | The 《管子》 轻重 line of thought on the quantity of money and prices | done (`sec:qinhan-qingzhong`, `ex:qinhan-nine`, compare box 轻重论 vs 数量论) |
 | 12 (§12.7) | 13 `ch:silver` | Bodin (1568) and the quantity theory; the Ming turn to silver and the market price of silver | done (`sec:silver-world`, `sec:silver-china`, `sec:silver-revolution`) |
 | 12 (§12.7) | 19 `ch:bullion` | Hume and the quantity theory | open |
 | 12 (compare boxes, legacy) | 23 `ch:goldstandard`, 61 `ch:emcrises` | Reserves behind convertible money: the gold standard and currency boards | open |
@@ -122,7 +122,7 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 5 (§5.3 primary income, legacy) | 76 `ch:hierarchy` | The dollar's asymmetry: US primary income stayed positive until 2024 although the US is a large net debtor, and its liabilities are in its own currency; what counts as usable reserves (Sri Lanka's swap with the PBoC) | open |
 | 5 (§5.6 carry trade) | 82 `ch:assetprices` | What risk the carry trade's average profit rewards (UIP slope below one, Engel 2014) | open |
 | 6 (closing sentence, legacy) | 7 `ch:greekroman` | Coinage after credit: Ch 6's closing sentence says Ch 7 starts from Lydia, where stamped pieces of metal made money something counted rather than weighed; Polanyi's question whether the ancient economy was a market economy asked again for Greece and Rome (Ch 6 ends the redistribution-or-market debate for Babylon by pointing here) | done (opening and `sec:greek-coin`: Herodotus on the Lydians, Aristotle's stamp that saves weighing; `sec:greek-debate`: Finley and Polanyi against Temin, reconciled through Kelly's two sectors in `sec:greek-test`) |
-| 6 (legacy) | 8 `ch:qinhan` | The ever-normal granary (常平仓) as a state store that buys low and sells high; Ch 6 reads the Egyptian granary with `eq:africa-store` and names 常平仓 as the Chinese counterpart | open |
+| 6 (legacy) | 8 `ch:qinhan` | The ever-normal granary (常平仓) as a state store that buys low and sells high; Ch 6 reads the Egyptian granary with `eq:africa-store` and names 常平仓 as the Chinese counterpart | done (`sec:qinhan-granary`, `eq:qinhan-band` with the stock in the form of `eq:africa-store`, `ex:qinhan-band`) |
 | 6 (legacy) | 9 `ch:india` | The Arthashastra's interest rates graded by risk (Ch 6's legacy item says rates differ with risk and that Ch 9 will show the Arthashastra's graded rates) | open |
 | 6 (§6.4 misharum, legacy) | 51 `ch:latamdebt` | Debt overhang: a debt too large to be repaid removes the borrower's reason to work and pay taxes, so forgiving it can help the creditor too; the Brady plan (Ch 6 reads the mīšarum edicts this way and points here) | open |
 | 6 (legacy) | 77 `ch:digitalmoney` | Whether digital money changes the separation between the unit of account and the means of payment | open |
@@ -133,4 +133,9 @@ promise is recorded here, so that the later chapter keeps it, or the earlier one
 | 7 (§7.5 after the 274 reform, legacy) | 49 `ch:credibility` | Credibility: the trust parameter $\tau$ in `eq:greek-value` depends on how the issuer is expected to treat the money in future; once expectations change, restoring the metal content does not bring them back (Aurelian, 274) | open |
 | 7 (§7.6 pitfall 罚得够重，限价就能管住, legacy) | 43 `ch:planned` | Long-lasting price controls and queues in planned economies, read with the shortage logic of `eq:greek-ceiling` (a fixed nominal ceiling under rising prices) | open |
 | 7 (§7.7 case box 罗马 · 公元 33 年, legacy) | 23 `ch:goldstandard` | The lender of last resort in a panic and Bagehot's principle; Ch 7 describes Tiberius' interest-free three-year loans of a fixed sum against land worth twice the loan as an ancient liquidity rescue and points here; Ch 23 should say how this differs from Bagehot's rule | open |
-| 7 (closing sentence) | 8 `ch:qinhan` | How the early Chinese state managed grain prices and money (Ch 7 ends by handing this question to the next chapter) | open |
+| 7 (closing sentence) | 8 `ch:qinhan` | How the early Chinese state managed grain prices and money (Ch 7 ends by handing this question to the next chapter) | done (`sec:qinhan-granary`, `sec:qinhan-mint`, `sec:qinhan-wangmang`) |
+| 8 (closing sentence) | 9 `ch:india` | Why Roman gold and silver flowed to India; how the monsoon trade joined the Mediterranean, Arabia and South Asia into one market (Ch 8 ends by handing these questions to the next chapter) | open |
+| 8 (legacy) | 43 `ch:planned` | How a planned economy sets prices and runs production by the state (Ch 8 links the salt and iron monopolies to it) | open |
+| 8 (pitfall, legacy) | 49 `ch:credibility` | The credibility of the issuer: whether a face value holds depends on how the issuer is expected to treat the money later (Ch 8 reads Wang Mang's 宝货 this way) | open |
+| 8 (legacy) | 52 `ch:hyperinflation` | Hyperinflation as the end point of printing money to pay for spending | open |
+| 8 (legacy) | 45 `ch:monetarism` | Monetarism turns "more money, higher prices" into a rule for controlling the quantity of money | open |
