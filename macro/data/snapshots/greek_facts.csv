@@ -8,6 +8,7 @@ ath_lend,雅典,,archonship of Nicodemus,100;1,men; talent each,,athcon_kenyon,A
 ath_triremes,雅典,,archonship of Nicodemus,100,triremes,,athcon_kenyon,Ath. Pol. 22.7,"he had a hundred triremes built, each of the hundred individuals building one; and it was with these ships that they fought the battle of Salamis against the barbarians",
 ath_xerxes,雅典,,archonship of Hypsichides,3,years later,,athcon_kenyon,Ath. Pol. 22.8,"Three years later, however, in the archonship of Hypsichides, all the ostracized persons were recalled, on account of the advance of the army of Xerxes",
 ath_mina,雅典,,Solon,70;100,drachmas per mina,,athcon_kenyon,Ath. Pol. 10,"the mina, which previously had a standard of seventy drachmas, was raised to the full hundred",
+ath_talent,雅典,,Solon,63;3,minas,,athcon_kenyon,Ath. Pol. 10,"He also made weights corresponding with the coinage, sixty-three minas going to the talent; and the odd three minas were distributed among the staters and the other values.",
 xen_born,雅典,-431,,-431,year,,xen_revenues,editor's preface,Xenophon the Athenian was born 431 B.C.,
 xen_died,雅典,-354,,-354,year,,xen_revenues,editor's preface,He died in 354 B.C.,
 xen_frontier,雅典,,,,,,xen_revenues,Revenues III,since the current coin (3) has no circulation beyond the frontier,(3) is the edition's footnote marker
@@ -70,11 +71,13 @@ kent_withhold,罗马,301,,,,,kent1920,p. 44 (preamble 17),the penalty ought to b
 kent_gold,罗马,301,,50000;0.434,denarii per pound of gold; US cents per denarius,,kent1920,p. 45,"the price of one Roman pound of refined gold was set at 50,000 denarii; the copper denarius was therefore worth .434 cents.",
 kent_barley,罗马,301,,0.873,US dollars per bushel,,kent1920,p. 45,Barley per bushel $.873,
 kent_labor,罗马,301,,0.108,US dollars per day,,kent1920,p. 46,Farm laborers' ^^ day .108,'^^' is the text layer's reading of the ditto mark ('per') in the printed table
+kent_mason,罗马,301,,0.217,US dollars per day,,kent1920,p. 46,"Mason, carpenter ii 11 .217",'ii 11' is the text layer's reading of the ditto marks ('per day') in the printed table
 kent_pound,罗马,,,0.722;0.875,lbs avoirdupois; lbs troy,,kent1920,"p. 45, note","the pound, which was equal to .722 lbs. avoirdupois and to .875 lbs. troy",
 kent_uncia,罗马,,,12,unciae per pound,,kent1920,"p. 45, note","the uncia, the ounce, which was one-twelfth of the Roman pound",
 kent_modius,罗马,,,7.95;2,dry quarts; times,,kent1920,"p. 45, note","the Italian peck, which equaled 7.95 dry quarts, or almost precisely one peck; the castrensts modius, the military peck, had double the capacity of the Italian peck",'castrensts' is the text layer's reading of 'castrensis'
 kent_wheat,罗马,301,,,,,kent1920,"p. 45, note",It is regrettable that the price of wheat is lost on the record,
 hr_nero,罗马,64,,64;80;4;1,CE; per cent silver; parts silver; part copper,,haklai2011,p. 7,"Nero was probably the first emperor to debase the denarius, when in 64 CE he introduced a new standard of 80 per cent silver (4 parts silver and 1 part copper).",
+hr_pre64,罗马,64,after 64,64;80;90,CE; per cent silver,,haklai2011,p. 7,"his successors used both the new, debased standard and the old, pre-64 standard, striking denarii at either 80 per cent silver or circa 90 per cent",
 hr_trajan,罗马,100,,100,CE,,haklai2011,p. 7,"until 100 CE, when Trajan had reintroduced and fully established the debased Neronian standard",
 hr_disguise,罗马,,,,,,haklai2011,"p. 7, n. 35, quoting Butcher and Ponting (2005a) 173",Minting authorities in the past were experts at disguising the declining silver content of their coinages,
 hr_severus,罗马,193,early years of Septimius Severus,50,per cent silver,,haklai2011,p. 8,"especially in the early years of Septimius Severus' reign, whose newly minted coins had only about 50 per cent silver","printed 'Septi-mius', hyphenated at a line end"
@@ -91,6 +94,7 @@ hr_improved,罗马,274,,2;3;5,per cent silver,,haklai2011,p. 16,their silver con
 hr_newvalue,罗马,274,,,,,haklai2011,p. 21,a new and increased official value was probably applied to both new and old coins,
 hr_anyvalue,罗马,274,,,,,haklai2011,p. 21,"once intervention had occurred and the tool of arbitrary increase in official values had been applied, any value could be imposed",
 hr_tenfold,埃及,274,,10,times,,haklai2011,p. 21,"a relative consistency in price level from the last decades of the second century until the reign of Aurelian, when suddenly a tenfold rise in prices is observed",
+hr_n107,埃及,274,,260;280;274,CE,,haklai2011,"p. 22, n. 107",For metal analyses of Roman-Egyptian tetradrachms of the 260-280 and especially the slight increase in their silver content in 274,
 hr_n108,罗马,301,,301;25,CE; years,,haklai2011,"p. 22, n. 108","The price increase, which provoked Diocletian's famous Prices Edict of 301, is not likely to have been a continuation of the reaction to Aurelian's monetary reform, 25 years earlier.",
 hr_n108b,罗马,301,,,,,haklai2011,"p. 22, n. 108",The price increase provoking this edict could have been an immediate reaction to the monetary reform of the same year,
 hr_values,罗马,,,,,,haklai2011,p. 23,"three distinct types of values: Metallic Value (VM), Official Value (VO) and Value of Exchange (VE)","printed 'Ex-change', hyphenated at a line end"
