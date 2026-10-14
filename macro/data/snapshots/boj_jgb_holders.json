@@ -1,0 +1,14 @@
+{
+  "title": "Japan: holders of central government securities and FILP bonds, and of these with treasury discount bills, shares by sector at market value, quarter-ends from March 2012 to June 2026, and amounts outstanding at the latest quarter-end",
+  "source": "Bank of Japan, Research and Statistics Department, 'Basic Figures: Flow of Funds for the Second Quarter of 2026 (Preliminary report)', September 17, 2026, Chart 6-2 'Government bonds and treasury bills holdings by sector'",
+  "url": "https://www.boj.or.jp/en/statistics/sj/sjexp.pdf",
+  "series": "panel (jgb: (2) central government securities and FILP bonds; tb_jgb: (1) treasury discount bills and central government securities and FILP bonds), month (quarter-end, YYYY-MM), unit (share_pct: percent of the total; tn_yen: trillion yen), and the sectors central_bank, depository (depository corporations), insurance_pension (insurance and pension funds), public_pensions, households, overseas, others, total",
+  "retrieved": "2026-10-14",
+  "license": "Bank of Japan terms (https://www.boj.or.jp/en/copyright.htm, 2026-10-14): 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' The exceptions are commercial use, material marked as needing permission, and graphics and other image data; the snapshot keeps the figures, not the chart.",
+  "citation": "Source: Bank of Japan, Flow of Funds (Basic Figures, 2026 Q2 preliminary), Chart 6-2.",
+  "used_in": [
+    1
+  ],
+  "fetch": "data/fetch/boj_jgb_holders.py",
+  "notes": "'Figures are evaluated on a market value basis' (note 1 of the chart; row boj_market of intro_facts). The chart's figures are read from the PDF's text layer; the shares of each quarter add up to 100 within rounding. The address serves the latest release, which revises recent quarters; the snapshot was written from the release of September 17, 2026, SHA-256 e9d23d7bcf26ef6dbbc47bc031570dc022beacc43aaae2a9b6b628f9f0675177 (cached as boj2026ff.pdf). Sector names are the chart's; 'others' includes the general government's own holdings."
+}

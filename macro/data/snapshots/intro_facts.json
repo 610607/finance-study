@@ -1,0 +1,64 @@
+{
+ "title": "Quotations for Chapter 1 (introduction): the Federal Reserve Bulletin of December 1923 and January 1924 on the Rentenbank, gold and reparations and the exchange rate of the mark; Koech (2011) on the hyperinflation in Zimbabwe; Chiodo and Owyang (2002) on the Russian default of 1998; Reinhart and Rogoff (2008) on domestic debt and its defaults; and the Bank of Japan's Flow of Funds on the valuation of the holdings of government bonds",
+ "source": "Federal Reserve Board, Federal Reserve Bulletin, December 1923 and January 1924 (FRASER, Federal Reserve Bank of St. Louis); J. Koech (2011), Federal Reserve Bank of Dallas, Globalization and Monetary Policy Institute 2011 Annual Report (FRASER); A. J. Chiodo and M. T. Owyang (2002), Federal Reserve Bank of St. Louis Review 84(6) (FRASER); C. M. Reinhart and K. S. Rogoff (2008), NBER Working Paper 13946; Bank of Japan, Basic Figures: Flow of Funds for the Second Quarter of 2026 (Preliminary report)",
+ "url": "https://fraser.stlouisfed.org/files/docs/publications/FRB/1920s/frb_011924.pdf",
+ "series": "id, dynasty (country), year, year_note, value (numbers in the quotation, ';'-separated; fractions as a/b), unit, numeral (unused), file (key of 'sources'), juan (location in the document: the printed page, with the table, timeline or note), quote (verbatim, as in the document's text layer, or a transcription for the image row), note",
+ "retrieved": "2026-10-14",
+ "license": "Quotations for criticism and teaching, each with its source. The Federal Reserve Bulletin of 1923-24 is a publication of the United States government and in the public domain. Koech (2011): 'Articles may be reprinted on the condition that the source is credited and a copy is provided to the Globalization and Monetary Policy Institute' (inside cover, row ko_terms); only short passages are quoted. Chiodo and Owyang (2002), Federal Reserve Bank of St. Louis Review: short passages, with the source. Reinhart and Rogoff (2008): 'Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source' (row rr_notice); (c) 2008 by Carmen M. Reinhart and Kenneth S. Rogoff. Bank of Japan: 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (https://www.boj.or.jp/en/copyright.htm, 2026-10-14). The chapter's Chinese renders the English; the translations are the book's.",
+ "used_in": [
+  1
+ ],
+ "fetch": "data/fetch/verify_web_quotes.py (every row but fx_mark, which is read on the page image); checks/check_ch01.py (the readings and every quotation of the text)",
+ "notes": "Rows are checked verbatim by data/fetch/verify_web_quotes.py against the document named in the file column (downloaded from its url; --offline uses the cached copy, whose SHA-256 is recorded); the juan column gives the printed page. The checker joins a word hyphenated at a line end and normalises typographic quotes and dashes; rows of a table are quoted as the -layout text gives them. Where the text layer interleaves a sentence with a chart or the other column, the sentence is quoted in contiguous fragments (ko_bonus, ko_veterans, ko_tax and ko_monet; co_printing and co_printing2). Readings: (1) The Bulletin's table of exchange rates (January 1924, p. 74) gives rates in cents per unit of foreign currency; the row Germany gives the par, 23.82 cents per mark, and six market rates (low, high and average of December 1 to 21 and of November 1923) carrying footnote 3, 'In cents per billion marks'. The text layer reads the footnote marker into the figures, so the row is transcribed from the page image (row fx_mark, file frb1924img). The chapter computes 100/23.82 = 4.198 marks per dollar at par and 100/0.0222 x 10^9 = 4.505 x 10^12 marks per dollar at the December average. (2) Reinhart and Rogoff's Table 3 (p. 20) gives, for each year, inflation and domestic debt and base money as percentages of GDP, and domestic debt as a percentage of total domestic liabilities; the note says that 'Money and Debt stock refer to levels at the beginning of each episode'. (3) Chiodo and Owyang date the float of the ruble differently in their text (August 17, row co_floated) and their timeline (September 2, row co_sep2); the chapter gives both and compares them with the Bank of Russia's official rates (cbr_rub_usd). (4) Koech's pages are those printed in the annual report (the PDF has two pages before p. 1); Reinhart and Rogoff's are the paper's own (PDF page minus 2).",
+ "sources": {
+  "frb1923": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/FRB/1920s/frb_121923.pdf",
+   "format": "pdf",
+   "sha256": "bc28225e65ddac4f0f22ca1cc038ec0ecf0b944276a5f79ce6b2e72e10df19de",
+   "version": "Federal Reserve Bulletin, December 1923 (Washington: Federal Reserve Board), scan on FRASER (Federal Reserve Bank of St. Louis); pp. 1280-1281, 'Currency values and trade movements abroad'",
+   "retrieved": "2026-10-14"
+  },
+  "frb1924": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/FRB/1920s/frb_011924.pdf",
+   "format": "pdf",
+   "sha256": "96aa280db69d867eaa86692b4dd19ade7ea5228e8a8721353f43d3abdf2e6110",
+   "version": "Federal Reserve Bulletin, January 1924, scan on FRASER; p. 74 (PDF page 78), table 'Foreign exchange rates', heading and footnote 3",
+   "retrieved": "2026-10-14"
+  },
+  "frb1924img": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/FRB/1920s/frb_011924.pdf",
+   "format": "image",
+   "sha256": "96aa280db69d867eaa86692b4dd19ade7ea5228e8a8721353f43d3abdf2e6110",
+   "version": "the same scan (the SHA-256 is that of the PDF); the row Germany of the table 'Foreign exchange rates' on p. 74 (PDF page 78) read on the page image rendered with pdftoppm, because the text layer reads the footnote marker 3 into the figures ('3,0153', '». 0222')",
+   "retrieved": "2026-10-14"
+  },
+  "koech2011": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/frbdal_gmpi/frbdal_gmpiAR11.pdf",
+   "format": "pdf",
+   "sha256": "42d9741b8630ed0bc57724eaa72db09f4a4625a90fa1a70e14c094775a14b7c9",
+   "version": "J. Koech, 'Hyperinflation in Zimbabwe', Federal Reserve Bank of Dallas, Globalization and Monetary Policy Institute 2011 Annual Report (published February 2012), pp. 2-12; PDF of the whole report on FRASER",
+   "retrieved": "2026-10-14"
+  },
+  "chiodo2002": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/frbslreview/rev_stls_2002_v84_no6.pdf",
+   "format": "pdf",
+   "sha256": "75ef87a859cfea7d108e564e7a23efe0787edd8b8401d67256ae818aeec71b8e",
+   "version": "A. J. Chiodo and M. T. Owyang, 'A Case Study of a Currency Crisis: The Russian Default of 1998', Federal Reserve Bank of St. Louis Review 84(6), November/December 2002, pp. 7-17; PDF of the whole issue on FRASER",
+   "retrieved": "2026-10-14"
+  },
+  "rr2008": {
+   "url": "https://www.nber.org/system/files/working_papers/w13946/w13946.pdf",
+   "format": "pdf",
+   "sha256": "3faca7d63e2e929b8eac5ac0e32b52a6769622950021f88c0d826a424ef5bdec",
+   "version": "C. M. Reinhart and K. S. Rogoff, 'The Forgotten History of Domestic Debt', NBER Working Paper 13946, April 2008",
+   "retrieved": "2026-10-14"
+  },
+  "boj2026ff": {
+   "url": "https://www.boj.or.jp/en/statistics/sj/sjexp.pdf",
+   "format": "pdf",
+   "sha256": "e9d23d7bcf26ef6dbbc47bc031570dc022beacc43aaae2a9b6b628f9f0675177",
+   "version": "Bank of Japan, Research and Statistics Department, 'Basic Figures: Flow of Funds for the Second Quarter of 2026 (Preliminary report)', September 17, 2026; Chart 6-2 (pp. 10-11). The address serves the latest release: a later download has another SHA-256",
+   "retrieved": "2026-10-14"
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Official exchange rate of the Russian rouble to the US dollar set by the Bank of Russia, every date on which a rate was set, 1998-01-01 to 1999-12-30",
+  "source": "Bank of Russia, XML service 'dynamics of the official exchange rate' (XML_dynamic.asp), currency R01235 (US dollar)",
+  "url": "https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/01/1998&date_req2=31/12/1999&VAL_NM_RQ=R01235",
+  "series": "date (ISO), rub_per_usd (roubles per US dollar; new roubles of 1 January 1998)",
+  "retrieved": "2026-10-14",
+  "license": "Bank of Russia terms ('About the Site', https://www.cbr.ru/eng/about/, 2026-10-14): 'Copying of information available at http://www.cbr.ru/ ... is allowed provided that the link to the source of this information is indicated'; the information 'cannot be used for commercial purposes'.",
+  "citation": "Source: Bank of Russia, official exchange rates (https://www.cbr.ru/).",
+  "used_in": [
+    1
+  ],
+  "fetch": "data/fetch/cbr_rub_usd.py",
+  "notes": "The Bank sets the rate for the next working day, so a rate dated a Saturday applies over the weekend; there is no rate on some holidays. 501 dates. SHA-256 of the 2026-10-14 response (windows-1251 XML): 448a2a0e485e74a09a7dc733d955797c61624bdbb5fb294e9f01a68038b9b0ef."
+}

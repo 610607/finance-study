@@ -1,0 +1,14 @@
+{
+  "title": "Japan: credit to the general government from all sectors, nominal and market value, percent of GDP and billions of yen, quarterly, 1997-Q4 to 2026-Q1",
+  "source": "Bank for International Settlements, BIS Data Portal (dataset WS_TC, total credit statistics)",
+  "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_TC/2.0/Q.JP.G.A.N.770.A?format=csv",
+  "series": "WS_TC Q.JP.G.A.N.770.A (nominal_pct: nominal value, percentage of GDP), Q.JP.G.A.M.770.A (market_pct: market value, percentage of GDP), Q.JP.G.A.N.XDC.A (nominal_jpy_bn: nominal value, domestic currency, billions), Q.JP.G.A.M.XDC.A (market_jpy_bn: market value, domestic currency, billions); all 'Adjusted for breaks'",
+  "retrieved": "2026-10-14",
+  "license": "BIS Data Portal terms (https://data.bis.org/help/legal, 2026-10-14): 'The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation'. The Chinese labels in the book are not an official BIS translation.",
+  "citation": "Source: BIS, total credit statistics (WS_TC), credit to the general government.",
+  "used_in": [
+    1
+  ],
+  "fetch": "data/fetch/bis_credit_gov.py",
+  "notes": "Credit to the general government is the BIS's measure of the debt of the general government (the central and local governments and the social security funds, sector S13 of the national accounts) to all lenders. The ratios to GDP use the BIS's own GDP denominator; the denominator implied by the yen and percent columns is nominal_jpy_bn / nominal_pct x 100, which is what the chapter computes with (it does not use GDP from another source). Market value prices the debt securities at market prices; nominal value at face value. The series begin in 1997-Q4. SHA-256 of the 2026-10-14 responses: nominal_pct aa99cdb3bdf5b4e0583abe88f3ba5c240b71acf70474dc696b138b9e57ac6c15; market_pct 00840bc2377d1ebfc15d11a7e9ad69d26682c07855ff2f963301aa2af68eadc3; nominal_jpy_bn b4034453da2a8221a98d3f9e2018e85ca5e075fcf453eb2e828493d2313b7dc2; market_jpy_bn 1c1bd3db04f72a5b2e7f0ccc25b21fcf3d011e8695c10730290a95be05540e34."
+}

@@ -7,6 +7,7 @@
   "license": "Public Data License (Version 1.0; PDL 1.0): 'The copyright for information posted or published on this website ... belongs to the Ministry of Finance unless otherwise provided, and Public Data License (Version 1.0; PDL 1.0) [Digital Agency website] applies unless any rights are indicated.' (https://www.mof.go.jp/english/about_mof/notice/index.html, 2026-10-14). PDL 1.0 allows reuse with a source citation and a statement of any editing.",
   "citation": "Source: Ministry of Finance, Japan, 'Interest Rate' (jgbcme_all.csv); rows selected by this project (see notes).",
   "used_in": [
+    1,
     3
   ],
   "fetch": "data/fetch/mof_jgb.py",

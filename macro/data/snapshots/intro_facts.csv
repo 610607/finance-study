@@ -1,0 +1,70 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+frb_gold,德国,1923,May to October 1923,30;50000000,per cent; dollars,,frb1923,p. 1280,"About 30 per cent ($50,000,000) of the gold imports from May to October have come out of the German Reichsbank reserves in connection with reparation payments to Belgium",gold imports of the United States
+frb_renten,德国,1923,,15,October (day),,frb1923,p. 1281,"the organization, by Government decree, on October 15, of a new bank of issue in Germany, known as the Rentenbank",
+frb_capital,德国,1923,,3200000000,Rentenmarks,,frb1923,p. 1281,"The capital of the bank is 3,200,000,000 Rentenmarks",
+frb_loan,德国,1923,,1200000000,Rentenmarks,,frb1923,p. 1281,"The Government is to receive from the new bank a loan of 1,200,000,000 Rentenmarks",
+frb_bills,德国,1923,,2,years,,frb1923,p. 1281,With this credit the Government proposes to redeem all its treasury bills discounted with the Reichsbank and to cover the deficit of the budget during the next two years,
+frb_legal,德国,1923,,,,,frb1923,p. 1281,"Rentenmarks are receivable in all payments to the Government, but are not legal tender, a quality retained by the old paper mark",
+fx_head,德国,1923,,,,,frb1924,p. 74,Noon buying rates for cable transfers in New York as published,
+fx_cents,德国,1923,,,,,frb1924,p. 74,cents per unit of foreign currency.,the text layer spaces the letters of 'by' and 'In' in between ('b y Treasury. I n cents')
+fx_billion,德国,1923,,,,,frb1924,"p. 74, footnote 3",In cents per billion marks.,
+fx_mark,德国,1923,"December 1 to 21, 1923 and November 1923",23.82;0.0153;0.0249;0.0222;0.0140;0.2900;0.0430,cents per mark (par); cents per billion marks,,frb1924img,"p. 74, row Germany",Germany Reichsmark 23.82 .0153 .0249 .0222 .0140 .2900 .0430,"columns: par of exchange; Dec. 1 to 21, inclusive: low, high, average; November: low, high, average; the six market rates carry footnote 3 'In cents per billion marks'"
+ko_official,津巴布韦,2008,,231000000;489000000000,percent a year,,koech2011,"p. 9, note to Table 1","The official annual rate recorded for July 2008 is 231 million percent, and the International Monetary Fund estimated the annual inflation rate for September 2008 at 489 billion percent.",
+ko_cso,津巴布韦,2008,,,,,koech2011,"p. 9, note to Table 1","Zimbabwe's last official month-to-month recording of inflation by the country's Central Statistics Office, July 2008, although estimates are much higher.",
+ko_2006,津巴布韦,2006,"Aug. 1, 2006",3;1000,zeros; old dollars,,koech2011,"p. 10, timeline","The Zimbabwean dollar is redenominated by lopping off three zeros from the old currency. The new (second) Zimbabwean dollar is revalued at one new dollar = 1,000 old dollars.",
+ko_2008,津巴布韦,2008,"Aug. 1, 2008",10;10000000000,zeros; old dollars,,koech2011,"p. 10, timeline",The government slashes 10 zeros from each second Zimbabwean dollar bill and the third Zimbabwean dollar is valued at 10 billion old dollars (second Zimbabwean dollars).,
+ko_2009,津巴布韦,2009,"Feb. 3, 2009",12;1000000000000,zeros; old dollars,,koech2011,"p. 10, timeline","The Reserve Bank of Zimbabwe introduces the fourth Zimbabwean dollar, with 12 zeros removed from old bills, making 1 trillion old dollars equal to one new dollar.",
+ko_100tn,津巴布韦,2009,"Jan. 16, 2009",100000000000000,Zimbabwe dollars (third),,koech2011,"p. 10, timeline",the largest banknote ever—the Z$100 trillion bill,
+ko_t1,,,,,,,koech2011,"p. 9, Table 1",Hyperinflation in History,
+ko_t1_col,,,,,,,koech2011,"p. 9, Table 1",Highest inflation per month (percent),
+ko_t1_de,德国,1923,1920-23,29525.71,percent a month,,koech2011,"p. 9, Table 1","Germany 1920–23 29,525.71",
+ko_t1_zw,津巴布韦,2008,2007-09,2600.2,percent a month,,koech2011,"p. 9, Table 1","Zimbabwe 2007–09 2,600.2*","the asterisk refers to the note (rows ko_cso, ko_official)"
+ko_demise,津巴布韦,2009,,,,,koech2011,p. 9,"The official demise of the currency occurred in February 2009, when authorities established a multicurrency system.",
+ko_extdebt,津巴布韦,2008,,119;11,percent of GDP,,koech2011,p. 4,External debt as a share of GDP increased to 119 percent in 2008 from 11 percent in 1980.,
+ko_output,津巴布韦,2009,2000 to 2009,50,percent,,koech2011,p. 4,Output fell 50 percent between 2000 and 2009,
+ko_bonus,津巴布韦,1997,,3,percent of GDP,,koech2011,p. 5,"In 1997, authorities approved unbudgeted expenditures, amounting to almost 3 percent of GDP, for bonuses to",
+ko_monet,津巴布韦,1997,,,,,koech2011,p. 5,ment to begin monetization (printing additional,the word government is broken at the line end ('govern-') and the line runs on beside the figures of Chart 2
+ko_printed,津巴布韦,,the 2000s,,,,koech2011,p. 5,"support expenditures and obligations, the government printed yet more money.",
+ko_drought,津巴布韦,1999,,1999,year,,koech2011,p. 4,"Weakening began in 1999, coinciding with periods of drought that adversely affected the agriculturally dependent nation.",
+ko_land,津巴布韦,2000,2000 and 2001,2000;2001,years,,koech2011,p. 4,"Land reallocation in 2000 and 2001, which redistributed large agricultural tracts, depressed commercial farming output.",
+ko_veterans,津巴布韦,1997,,60000,veterans,,koech2011,p. 5,"mately 60,000 independence war veterans. Efforts to cover the payment with tax increases failed after","the word approximately is broken at the line end ('approxi-', after row ko_bonus) and Chart 2 stands between the two halves in the text layer"
+ko_tax,津巴布韦,1997,,,,,koech2011,p. 5,"trade-union-led protests, prompting the","the line after row ko_veterans, separated from it by the figures of Chart 2"
+ko_terms,,2012,,,,,koech2011,inside cover,Articles may be reprinted on the condition that the source is credited and a copy is provided to the Globalization and Monetary Policy Institute,
+co_band,俄罗斯,1997,the conditions of 1997,5;6,rubles per dollar,,chiodo2002,p. 9,A narrow exchange rate band was in place keeping the exchange rate between 5 and 6 rubles to the dollar,
+co_gko30,俄罗斯,1997,late 1997,30,percent,,chiodo2002,p. 9,"By late 1997, roughly 30 percent of the GKO (a short-term government bill) market was accounted for by nonresidents.",
+co_lending,俄罗斯,1998,"May 27, 1998",150,percent,,chiodo2002,"p. 10, timeline",CBR increases the lending rate again to 150 percent.,
+co_yield,俄罗斯,1998,"August 13, 1998",200,percent,,chiodo2002,p. 14,Annual yields on rubledenominated bonds were more than 200 percent.,'rubledenominated' as in the text layer: the printed word ruble-denominated is broken at the line end
+co_aug17,俄罗斯,1998,,17,August (day),,chiodo2002,"p. 10, timeline","August 17, 1998 Russian government devalues the ruble, defaults on domestic debt, and declares a moratorium on payment to foreign creditors.",
+co_halt,俄罗斯,1998,"August 17, 1998",90,days,,chiodo2002,p. 14,"halted payment on ruble-denominated debt (primarily GKOs), and declared a 90-day moratorium on payment by commercial banks to foreign creditors.",
+co_sep2,俄罗斯,1998,,2,September (day),,chiodo2002,"p. 10, timeline","September 2, 1998 The ruble is floated.",
+co_output,俄罗斯,1998,December 1998,4.9,percent,,chiodo2002,"p. 10, timeline",Year ends with a decrease in real output of 4.9 percent.,
+co_depleted,俄罗斯,1998,,17,August (day),,chiodo2002,p. 15,"Defending the ruble depleted Russia's foreign reserves. Once depleted, the Russian government had no choice but to devalue on August 17, 1998.",
+co_revenue,俄罗斯,1998,,,,,chiodo2002,p. 15,Russia's high government debt and falling revenue contributed significantly to its susceptibility to a speculative attack.,
+co_seign,俄罗斯,1998,,,,,chiodo2002,p. 15,"Under the exchange rate peg, however, Russia was unable to finance through seigniorage.",
+co_printing,俄罗斯,1998,,,,,chiodo2002,p. 15,Printing rubles would only have increased this pressure because the private sector would still have been able,
+co_printing2,俄罗斯,1998,,,,,chiodo2002,p. 15,to trade rubles for foreign currency at the fixed rate.,
+co_only,俄罗斯,1998,,,,,chiodo2002,p. 15,Russia's only alternative under the fixed exchange rate regime was to deplete its stock of foreign reserves.,
+co_expect,俄罗斯,1998,,,,,chiodo2002,p. 16,the revenue shortfall signaled the possible reduction of the public debt burden via an increase in the money supply.,
+co_floated,俄罗斯,1998,"August 17, 1998",17,August (day),,chiodo2002,p. 14,"On August 17 the government floated the exchange rate, devalued the ruble, defaulted on its domestic debt,",the article's text; its timeline dates the float to September 2 (row co_sep2)
+co_attack,俄罗斯,1998,November 1997 and summer 1998,1997;1998,years,,chiodo2002,p. 15,The defense was successful in November 1997 but fell short in the summer of 1998.,
+co_shortterm,俄罗斯,1998,,1998,year,,chiodo2002,p. 15,a large amount of short-term foreign debt was coming due in 1998,
+co_twice,俄罗斯,1998,May 1998,30;150;1998,percent; percent; year,,chiodo2002,p. 15,"twice increasing the lending rate to banks, raising it from 30 to 150 percent. Both rate hikes occurred in May 1998",
+co_debtgrew,俄罗斯,1998,,,,,chiodo2002,p. 15,Its debt grew rapidly as interest payments mounted.,
+co_firms,俄罗斯,1998,,,,,chiodo2002,p. 15,increasing the interest rate did not increase the supply of lending capital available to firms,
+rr_twothirds,,,1914-2007 for most countries,64;2/3,countries; share of total public debt,,rr2008,abstract,"for the 64 countries for which we have long time series, domestic debt accounts for almost two-thirds of total public debt",
+rr_junior,,,,,,,rr2008,abstract,the widely-held view that domestic residents are strictly junior to external creditors does not find broad support,
+rr_assume,,,,,,,rr2008,p. 10,"the general assumption throughout the literature is, whereas governments may inflate away debt, outright defaults on domestic public debt are extremely rare",
+rr_68,,,,68;250;1800,cases; cases; year,,rr2008,p. 10,"overt de jure defaults on domestic public debt, while less common than external defaults, are hardly rare. Our data set includes 68 cases of overt default (compared to 250 post-1800 external debt defaults).",
+rr_triple,德国,1920,,66,percent,,rr2008,p. 18,"when post–World War I inflation first spiked up to 66 percent in Germany in 1920, domestic debt was almost triple the size of the monetary base",
+rr_japan45,日本,1945,,80;500,percent,,rr2008,p. 18,"Domestic public debt was almost 80 percent of total domestic liabilities (including currency) in 1945 Japan, when inflation went over 500 percent.",
+rr_t3,,,,,,,rr2008,"p. 20, Table 3","Table 3. Inflation and Domestic Debt: Selected Episodes, 1917–1994",
+rr_t3_de20,德国,1920,,66.5;52.6;19.4;73.0,percent,,rr2008,"p. 20, Table 3",Germany 1920 66.5 52.6 19.4 73.0,"columns: inflation, domestic debt/GDP, base money/GDP, domestic debt/total domestic liabilities (percent)"
+rr_t3_de23,德国,1923,,22220194522.37;0.0;0.0;1.0,percent,,rr2008,"p. 20, Table 3",1923 22220194522.37 0.0 0.0 1.0,the row of Germany below 1920
+rr_t3_jp44,日本,1944,,26.6;236.7;27.8;89.5,percent,,rr2008,"p. 20, Table 3",Japan 1944 26.6 236.7 27.8 89.5,
+rr_t3_jp45,日本,1945,,568.1;266.5;74.4;78.2,percent,,rr2008,"p. 20, Table 3",1945 568.1 266.5 74.4 78.2,the row of Japan below 1944
+rr_t3_note,,,,,,,rr2008,"p. 20, Table 3",Money and Debt stock refer to levels at the beginning of each episode.,
+rr_ru,俄罗斯,1998,1998-1999,39000000000,US dollars,,rr2008,"p. 42, Appendix Table 3",Russia 1998–1999 Largest local currency debt default (US $39 billion) since Brazil 1990.,
+rr_zw,津巴布韦,2006,,98.5,percent,,rr2008,"p. 42, Appendix Table 3","Zimbabwe 2006 With over 98.5 percent of domestic debt with maturities less than a year, there is a restructuring.",
+rr_jp46,日本,1946,"March 2, 1946-1952",100,yen per person,,rr2008,"p. 41, Appendix Table 3","Japan March 2, 1946–1952 After inflation, exchange of all bank notes for new issue (1 to 1) limited to 100 yen per person. Remaining balances were deposited in blocked accounts.",
+rr_notice,,2008,,,,,rr2008,title page,"Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+boj_market,日本,2026,,,,,boj2026ff,"p. 10, Chart 6-2, note 1",Figures are evaluated on a market value basis.,

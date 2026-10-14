@@ -6,6 +6,7 @@
   "retrieved": "2026-10-14",
   "license": "Quotations for criticism and teaching. Fisher (1896) is in the public domain; the Senate print, the BEA article, the CFR, the public law and the FOMC statement are works of the US government; the DMO page is Crown copyright, which its terms of use allow to be re-used 'under the terms of the Open Government Licence' (https://www.dmo.gov.uk/terms-of-use/, 2026-10-14); the Bank of Japan statements, the two Federal Reserve working papers and the Brookings paper are quoted briefly with attribution.",
   "used_in": [
+    1,
     3
   ],
   "fetch": "data/fetch/verify_web_quotes.py checks every row whose source is not an image",

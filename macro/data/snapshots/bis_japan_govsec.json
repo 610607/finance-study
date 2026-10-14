@@ -1,0 +1,14 @@
+{
+  "title": "Japan: debt securities issued by the general government, all markets, by currency of denomination, nominal value, billions of yen, quarterly, 1997-Q4 to 2026-Q1",
+  "source": "Bank for International Settlements, BIS Data Portal (dataset WS_NA_SEC_DSS, debt securities statistics)",
+  "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_NA_SEC_DSS/1.0/Q.N.JP.XW.S13.S1.N.L.LE.F3.T._Z.JPY._T.N.V.N._T?format=csv",
+  "series": "WS_NA_SEC_DSS Q.N.JP.XW.S13.S1.N.L.LE.F3.T._Z.JPY.{c}.N.V.N._T with {c} = _T (all_jpy_bn: all currencies), XDC (domestic_jpy_bn: domestic currency), X1 (foreign_jpy_bn: foreign currency); issued by the general government (S13), all markets, all original maturities, nominal value, stocks, billions of yen",
+  "retrieved": "2026-10-14",
+  "license": "BIS Data Portal terms (https://data.bis.org/help/legal, 2026-10-14): 'The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation'. The Chinese labels in the book are not an official BIS translation.",
+  "citation": "Source: BIS, debt securities statistics (WS_NA_SEC_DSS).",
+  "used_in": [
+    1
+  ],
+  "fetch": "data/fetch/bis_credit_gov.py",
+  "notes": "The split by currency starts in 2012-Q1; the column all_jpy_bn starts in 1997-Q4. domestic_jpy_bn + foreign_jpy_bn = all_jpy_bn. Debt securities are part of the general government's debt (loans are the rest; see bis_japan_govcredit). SHA-256 of the 2026-10-14 responses: all_jpy_bn 35cbed1a25a0dbee5fa6a5d949dd9b8b2cf38ffbd7f9fd630fa27bbbcfa6b833; domestic_jpy_bn 3b4132663e38f150825d2bc7d3d3297a872d83454758b44cc55ea4b194351308; foreign_jpy_bn 02043913380a7d79a35b51ea066546c2a037724ca2d62f344ed47e3277a5cb49."
+}

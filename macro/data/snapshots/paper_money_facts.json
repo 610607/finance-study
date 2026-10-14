@@ -6,6 +6,7 @@
   "retrieved": "2026-10-13",
   "license": "The classical texts are in the public domain; the digital text is the daizhigev20 corpus, whose repository states no licence. Only short quotations are stored. The Encyclopaedia Iranica entry is cited, not copied.",
   "used_in": [
+    1,
     12
   ],
   "fetch": "data/fetch/verify_quotes.py",

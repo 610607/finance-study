@@ -383,9 +383,9 @@
 
 \bibitem{fred2026x} Federal Reserve Bank of St. Louis. FRED, Federal Reserve Economic Data. 序列 IEABC、IEABCPI（经常账户与初次收入差额）、IIPUSASSQ、IIPUSLIAQ、IIPUSNETIQ（国际投资头寸），来源 U.S. Bureau of Economic Analysis. \url{https://fred.stlouisfed.org/}. 2026 年 10 月 14 日下载（BEA 2026 年 9 月 24 日发布的数）；数据见 \texttt{data/snapshots/fred\_us\_external.csv}。
 
-\bibitem{wdi2026} World Bank. World Development Indicators（2026 年 10 月 8 日更新）. 序列 FI.RES.TOTL.CD、BN.CAB.XOKA.CD、BN.FIN.TOTL.CD、BN.RES.INCL.CD、BN.TRF.KOGT.CD、NY.GDP.MKTP.CD、FP.CPI.TOTL、PA.NUS.FCRF、PA.NUS.PPP、NY.GDP.PCAP.CD、NY.GDP.PCAP.PP.CD 与各国的国别说明（Country notes）. \url{https://api.worldbank.org/v2/}. 2026 年 10 月 14 日下载；按 CC BY 4.0 使用。数据见 \texttt{data/snapshots/wb\_external\_annual.csv}、\texttt{wb\_price\_levels.csv} 与 \texttt{wb\_relppp.csv}。
+\bibitem{wdi2026} World Bank. World Development Indicators（2026 年 10 月 8 日更新）. 序列 FI.RES.TOTL.CD、BN.CAB.XOKA.CD、BN.FIN.TOTL.CD、BN.RES.INCL.CD、BN.TRF.KOGT.CD、NY.GDP.MKTP.CD、FP.CPI.TOTL、FP.CPI.TOTL.ZG、PA.NUS.FCRF、PA.NUS.PPP、NY.GDP.PCAP.CD、NY.GDP.PCAP.PP.CD 与各国的国别说明（Country notes）. \url{https://api.worldbank.org/v2/}. 2026 年 10 月 14 日下载；按 CC BY 4.0 使用。数据见 \texttt{data/snapshots/wb\_external\_annual.csv}、\texttt{wb\_price\_levels.csv}、\texttt{wb\_relppp.csv} 与 \texttt{wb\_inflation\_annual.csv}。
 
-\bibitem{bis2026} Bank for International Settlements. BIS Data Portal: bilateral exchange rates (WS\_XRU) and effective exchange rates (WS\_EER). \url{https://data.bis.org/}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/bis\_fx.csv}。来源：BIS。本书对 BIS 统计数据名称与说明的中文翻译不是 BIS 的官方译文（the translation is not an official BIS translation）。
+\bibitem{bis2026} Bank for International Settlements. BIS Data Portal: bilateral exchange rates (WS\_XRU), effective exchange rates (WS\_EER), total credit statistics (WS\_TC) and debt securities statistics (WS\_NA\_SEC\_DSS). \url{https://data.bis.org/}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/bis\_fx.csv}、\texttt{bis\_japan\_govcredit.csv} 与 \texttt{bis\_japan\_govsec.csv}。来源：BIS。本书对 BIS 统计数据名称与说明的中文翻译不是 BIS 的官方译文（the translation is not an official BIS translation）。
 
 \bibitem{du2018} W. Du, A. Tepper and A. Verdelhan. Deviations from Covered Interest Rate Parity. \emph{Journal of Finance}, 73(3): 915--957, 2018. 引文据 NBER Working Paper 23170, February 2017, \url{https://www.nber.org/system/files/working_papers/w23170/w23170.pdf}；© 2017 by Wenxin Du, Alexander Tepper, and Adrien Verdelhan.
 
@@ -517,4 +517,20 @@
 \bibitem{darley2014} R. R. Darley. \emph{Indo-Byzantine Exchange, 4th to 7th Centuries: a Global History}. PhD thesis, University of Birmingham, 2014. 删节版，\url{https://etheses.bham.ac.uk/id/eprint/5357/}. 2026 年 10 月 14 日下载。摘要，第 64、87、88、127、249、250、290—291、314 页与附录 6。论文声明未经版权所有者许可不得以任何形式分发或复制，本书只引短句；附录 6 的加总不放进本书的仓库，见 \texttt{data/fetch/darley2014\_coin\_finds.py}。文中转述的 Raschke（1978）、Young（2001）与 Turner（1989）据该文。
 
 \bibitem{scheidel2019} W. Scheidel. Roman Wealth and Wealth Inequality in Comparative Perspective. Working paper, Stanford University, version 1, September 2019. Zenodo，\url{https://zenodo.org/records/3458611}. 2026 年 10 月 14 日下载；CC BY 4.0。第 3、4、7、8 页；文中转述的 Duncan-Jones 的估计据该文。
+% ---- 第 1 章：引文据下载的原文件，核对见 data/fetch/verify_web_quotes.py（网址与 SHA-256 记在
+% data/snapshots/intro_facts.json 的 sources）；数据见 data/fetch/bis_credit_gov.py、boj_jgb_holders.py、cbr_rub_usd.py
+% 与 wb_inflation.py。
+\bibitem{frb1923} Federal Reserve Board. Currency Values and Trade Movements Abroad. \emph{Federal Reserve Bulletin}, December 1923: 1280--1281. 扫描本据 FRASER（Federal Reserve Bank of St. Louis），\url{https://fraser.stlouisfed.org/files/docs/publications/FRB/1920s/frb_121923.pdf}. 2026 年 10 月 14 日下载。
+
+\bibitem{frb1924} Federal Reserve Board. Foreign Exchange Rates. \emph{Federal Reserve Bulletin}, January 1924: 74. 扫描本据 FRASER，\url{https://fraser.stlouisfed.org/files/docs/publications/FRB/1920s/frb_011924.pdf}. 2026 年 10 月 14 日下载；德国一行据页面图像读出。
+
+\bibitem{koech2011} J. Koech. Hyperinflation in Zimbabwe. In Federal Reserve Bank of Dallas, Globalization and Monetary Policy Institute, \emph{2011 Annual Report}: 2--12, 2012. 据 FRASER 上的全文 PDF，\url{https://fraser.stlouisfed.org/files/docs/publications/frbdal_gmpi/frbdal_gmpiAR11.pdf}. 2026 年 10 月 14 日下载。年报说明：“Articles may be reprinted on the condition that the source is credited and a copy is provided to the Globalization and Monetary Policy Institute”。
+
+\bibitem{chiodo2002} A. J. Chiodo and M. T. Owyang. A Case Study of a Currency Crisis: The Russian Default of 1998. \emph{Federal Reserve Bank of St. Louis Review}, 84(6): 7--17, 2002. 据 FRASER 上该期的 PDF，\url{https://fraser.stlouisfed.org/files/docs/publications/frbslreview/rev_stls_2002_v84_no6.pdf}. 2026 年 10 月 14 日下载。
+
+\bibitem{reinhart2008} C. M. Reinhart and K. S. Rogoff. The Forgotten History of Domestic Debt. NBER Working Paper 13946, April 2008. \url{https://www.nber.org/system/files/working_papers/w13946/w13946.pdf}. 2026 年 10 月 14 日下载；© 2008 by Carmen M. Reinhart and Kenneth S. Rogoff. 摘要，第 10、18、20（表 3）、41—42 页（附表 3）。
+
+\bibitem{boj2026ff} Bank of Japan, Research and Statistics Department. Basic Figures: Flow of Funds for the Second Quarter of 2026 (Preliminary report). September 17, 2026. 图表 6-2. \url{https://www.boj.or.jp/en/statistics/sj/sjexp.pdf}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/boj\_jgb\_holders.csv}。来源：日本银行（Bank of Japan）。
+
+\bibitem{cbr2026} Bank of Russia. Official exchange rate of the US dollar against the ruble, dynamics, 1 January 1998 -- 31 December 1999（XML 服务）. \url{https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/01/1998&date_req2=31/12/1999&VAL_NM_RQ=R01235}. 2026 年 10 月 14 日下载；数据见 \texttt{data/snapshots/cbr\_rub\_usd.csv}。来源：俄罗斯中央银行，\url{https://www.cbr.ru/}。
 \end{thebibliography}

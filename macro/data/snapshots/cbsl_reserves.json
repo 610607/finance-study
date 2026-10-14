@@ -7,6 +7,7 @@
   "license": "The CBSL website states no terms of use for its statistical tables. Its Bulletin carries the notice 'The material appearing in the Bulletin may be reproduced or translated in whole or in part without prior permission (unless it is indicated as copy-righted), provided due credit is given to the Central Bank of Sri Lanka and the Bulletin' (Monthly Bulletin, February to July 2024; quoted in external_facts, row cbsl_terms). The snapshot is a small extract of official statistics with the source credited; flagged for the author's confirmation (STATUS.md).",
   "citation": "Source: Central Bank of Sri Lanka, Reserve Data Template - Historical (table 2.15.2), downloaded 2026-10-14.",
   "used_in": [
+    1,
     5
   ],
   "fetch": "data/fetch/cbsl_reserves.py",

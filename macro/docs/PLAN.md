@@ -104,11 +104,11 @@
 #### 第 1 章 `ch:intro` 一个问题引出整门课 — `zh/ch01_intro.tex`
 *A question that leads to the whole course*
 
-- **核心问题**：明朝宝钞、魏玛马克和津巴布韦元都崩溃了；日本政府债务超过 GDP 的两倍，却长期低息、低通胀；1998 年的俄罗斯和 2022 年的斯里兰卡违约了。差别在哪里？要回答它，需要知道什么？
+- **核心问题**：明朝宝钞、魏玛马克和津巴布韦元都崩溃了；日本政府债务约为 GDP 的两倍，却长期低息、低通胀；1998 年的俄罗斯和 2022 年的斯里兰卡违约了。差别在哪里？要回答它，需要知道什么？
 - **学完本章应能**：
   - 说出全书的主线：每一次理论革命都起于一场旧理论解释不了的危机，新理论又被下一场危机检验
   - 用“四层读法”（会计恒等式、行为关系、均衡与预期的闭合、数据与政策观测量）拆解一个宏观论断
-  - 说明本币债与外币债、固定汇率与浮动汇率怎样改变一个国家“付得起”的含义
+  - 用政府与中央银行合并的预算约束，说明本币债与外币债、固定汇率与浮动汇率怎样改变一个国家“付得起”的含义
   - 找到全书十一个部分各自回答的问题，并据此规划自己的阅读路线
 - **候选文献**：De Vroey (2016)；Snowdon & Vane (2005)（全书的思想史参照）
 - **案例**：明宝钞；魏玛 1923；津巴布韦 2008；日本 1990—2026；俄罗斯 1998；斯里兰卡 2022
@@ -1375,10 +1375,11 @@ ch:labor ch:japanbubble ch:transition ch:euro ch:emcrises ch:moderation ch:minsk
 part:language part:ancient part:earlymodern part:classical part:keynes part:goldenage part:stagflation part:moderation part:aftercrisis part:present part:synthesis
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
+sec:intro-world sec:intro-afford sec:intro-layers sec:intro-cases sec:intro-test sec:intro-map sec:intro-legacy eq:intro-budget tab:intro-layers tab:intro-cases ex:intro-peg ex:intro-ratio
 sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows
 sec:prices-world sec:prices-index sec:prices-real sec:prices-fisher sec:prices-bonds sec:prices-curve sec:prices-breakeven sec:prices-test sec:prices-legacy eq:prices-index eq:prices-fisher eq:prices-bond eq:prices-curve eq:prices-breakeven tab:prices-boskin
 sec:money-world sec:money-sheets sec:money-creation sec:money-rate sec:money-functions sec:money-test sec:money-legacy eq:money-base eq:money-reserves eq:money-mult eq:money-corridor tab:money-fed tab:money-steps
-sec:external-world sec:external-bop sec:external-position sec:external-rates sec:external-constraint sec:external-test sec:external-legacy eq:external-bop eq:external-sectors eq:external-iip eq:external-real eq:external-ppp eq:external-cip eq:external-uip tab:external-srilanka
+sec:external-world sec:external-bop sec:external-position sec:external-rates sec:external-constraint sec:external-test sec:external-legacy eq:external-bop eq:external-sectors eq:external-iip eq:external-real eq:external-ppp eq:external-cip eq:external-uip tab:external-srilanka ex:external-sin
 sec:meso-world sec:meso-unit sec:meso-credit sec:meso-misharum sec:meso-egypt sec:meso-debate sec:meso-test sec:meso-legacy eq:meso-ratios eq:meso-own eq:meso-debt tab:meso-rates
 sec:greek-world sec:greek-coin sec:greek-laurion sec:greek-denarius sec:greek-prices sec:greek-edict sec:greek-debate sec:greek-test sec:greek-legacy eq:greek-value eq:greek-ceiling tab:greek-silver
 sec:qinhan-world sec:qinhan-qingzhong sec:qinhan-granary sec:qinhan-monopoly sec:qinhan-debate sec:qinhan-mint sec:qinhan-wangmang sec:qinhan-test sec:qinhan-legacy eq:qinhan-band tab:qinhan-coins tab:qinhan-prices ex:qinhan-nine ex:qinhan-budget ex:qinhan-band ex:qinhan-cast ex:qinhan-wm

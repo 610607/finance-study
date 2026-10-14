@@ -1,0 +1,14 @@
+{
+  "title": "Inflation, consumer prices (annual percent): Japan, Russia, Sri Lanka and Zimbabwe, 1960-2025",
+  "source": "World Bank, World Development Indicators (API v2); the series comes from the IMF's International Financial Statistics",
+  "url": "https://api.worldbank.org/v2/country/JPN;RUS;LKA;ZWE/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1960:2025",
+  "series": "FP.CPI.TOTL.ZG (inflation: consumer prices, annual percent); columns country (ISO3), year, inflation",
+  "retrieved": "2026-10-14",
+  "license": "CC BY-4.0 (the 'License_Type' of the series in the WDI metadata, https://api.worldbank.org/v2/sources/2/series/FP.CPI.TOTL.ZG/metadata, 2026-10-14)",
+  "citation": "World Bank, World Development Indicators (last updated 2026-10-08).",
+  "used_in": [
+    1
+  ],
+  "fetch": "data/fetch/wb_inflation.py",
+  "notes": "WDI last updated 2026-10-08. One row per year with a value: WDI has none for Zimbabwe before 2010 and none for Russia before 1993. The chapter builds a price index for Japan by chaining (1 + inflation/100). Sri Lanka's value for 2025 (-4.76) is not used. SHA-256 of the 2026-10-14 response: 753cfaa6605f4a682e5c1cf9b4abf97aaf1bec79364af0fd678f8a961a4f340b."
+}
