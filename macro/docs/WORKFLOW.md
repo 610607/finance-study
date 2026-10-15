@@ -87,4 +87,5 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
 - Chapter 1 (`ch:intro`): written and reviewed 2026-10-14, after Part 2; to be revisited when the book is complete
   (PLAN §7).
 - Part 4 (第 18—25 章): notes in `docs/agent_prompts/part4_notes.md`; written sequentially in the order
-  18, 19, …, 25, started 2026-10-15; Chapters 18, 19 and 20 written and reviewed 2026-10-15. Next: Chapter 21 (`ch:divergence`).
+  18, 19, …, 25, started 2026-10-15; Chapters 18, 19, 20 and 21 written and reviewed 2026-10-15; paused after Chapter 21 at the
+  author's request. Next: Chapter 22 (`ch:marx`).
