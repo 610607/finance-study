@@ -356,8 +356,9 @@ Updated 2026-10-14.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages; `tools/check_chapter.py` reports no errors, overfull boxes, undefined references or margin ink (57 pages).
 ## Next
 1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Part 4 (Chapters 18–25) is under way, in order, one reviewer per chapter; Chapters 18, 19, 20 and 21 are done. Paused after Chapter 21 at the author's request; next is Chapter 22 (`ch:marx`), whose FORWARD_REFS rows (from Chapters 16, 20 and 21) should be read first. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
-2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
-3. Then the other parts in the order of the books.
+2. Readability and narrative (2026-10-15): the author asked for more readable chapters with more story. `docs/NARRATIVE.md` diagnoses Chapters 1–21, summarizes what narrative social-science books and writing guides do, and gives templates for a chapter, section, paragraph and sentence, rules for keeping the evidence while telling the story, rewrites of real passages and a checklist with metrics. Awaiting the author's decisions (its §11): whether to point `STYLE.md` and the prompt templates to it, the paraphrase anchors and the metrics script (shared files), and which chapter to rewrite first as a trial. Until then the chapters are unchanged.
+3. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
+4. Then the other parts in the order of the books.
 
 ## English edition — reserved
 `\ZE{}{}` in the preamble, `T("中文", "English")` in figures, English titles in `structure.py` and `en/README.md` are in place. No translation has started.
