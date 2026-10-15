@@ -1,0 +1,14 @@
+{
+  "title": "Great Britain 1790-1830: wholesale prices (Gayer, Rostow and Schwartz), consumer prices and the national debt (annual)",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'M6. Mthly prices and wages' (monthly wholesale price index of domestic and imported commodities 1790-1850, Gayer, Rostow and Schwartz 1953, 1821-5 = 100), sheet 'A47. Wages and prices' (consumer price index, preferred measure; Feinstein 1998 for these years; 2015 = 100) and sheet 'A29. The National Debt' (Mitchell 1988)",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "wholesale_1821_25: the mean of the twelve monthly values of the Gayer-Rostow-Schwartz index in sheet M6, column headed 'Domestic and imported commodities 1790-1850' / 'Gayer et al (1953)' / '1821-5=100' (the annual mean is the snapshot's calculation). cpi_2015: sheet A47, 'Consumer Price Index (CPI) -  preferred measure', 2015 = 100. total_debt_gbp_m: sheet A29, 'Total funded and unfunded debt of the UK', par value, £ m, end of the financial year (the year '1815/16' is stored as 1815). debt_pct_gdp: sheet A29, the spliced total 'as a % of UK nominal GDP according to relevant political boundary'",
+  "retrieved": "2026-10-14",
+  "license": "The workbook asks users to cite the underlying sources. The Bank of England publishes it as a research dataset; a subset (41 years, 4 columns) is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    19
+  ],
+  "fetch": "data/fetch/boe_millennium_gb19.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for boe_millennium_england_debt and boe_millennium_gb_1660_1780). The prices of 1797-1821 are paper prices under the Restriction (Silberling 1919, bullion_facts row sb_paperprices). The Gayer-Rostow-Schwartz index is a wholesale index of domestic and imported commodities; Feinstein's index is a cost-of-living index that moves less. The chapter uses the wholesale index for the rise and fall of prices between 1797, 1813 and 1821, compares it with the premium on bullion (bullion_facts, Silberling's Table 6), and gives the debt at par in 1792, 1815 and 1821 and its ratio to GDP in 1815 and 1821.",
+  "citation": "Gayer, A. D., W. W. Rostow and A. J. Schwartz (1953), The Growth and Fluctuation of the British Economy 1790-1850, Oxford: Clarendon Press; Feinstein, C. H. (1998), 'Pessimism Perpetuated: Real Wages and the Standard of Living in Britain during and after the Industrial Revolution', Journal of Economic History 58(3): 625-658; Mitchell, B. R. (1988), British Historical Statistics, Cambridge University Press; data via Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017)"
+}

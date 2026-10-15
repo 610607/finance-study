@@ -203,7 +203,7 @@
 
 \bibitem{allen1988} R. C. Allen. The price of freehold land and the interest rate in the seventeenth and eighteenth centuries. \emph{Economic History Review}, 41(1): 33--50, 1988. \url{https://doi.org/10.2307/2597331}. 抵押贷款利率据英格兰银行 \emph{A Millennium of Macroeconomic Data for the UK}（3.1 版）表 A31 转引。
 
-\bibitem{boe2017} R. Thomas and N. Dimsdale. \emph{A Millennium of Macroeconomic Data for the UK}, version 3.1. Bank of England, 2017. 用到表 A27（中央政府收支，财政年度截至米迦勒节，以起始年标记）、A29（国债，含定期与终身年金的估计价值）与 A31（利率：1703—1726 年是新发长期借款的收益率，1727—1753 年是 3\% 永续年金的收益率）。数据见 \texttt{data/fetch/boe\_millennium\_debt.py}；第 18 章另用表 A2（英格兰人口）与 A21（英格兰与大不列颠的人均实际 GDP、名义 GDP 与人口，按 2013 年价格），见 \texttt{data/fetch/boe\_millennium\_gb18.py}，\url{https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx}.
+\bibitem{boe2017} R. Thomas and N. Dimsdale. \emph{A Millennium of Macroeconomic Data for the UK}, version 3.1. Bank of England, 2017. 用到表 A27（中央政府收支，财政年度截至米迦勒节，以起始年标记）、A29（国债，含定期与终身年金的估计价值）与 A31（利率：1703—1726 年是新发长期借款的收益率，1727—1753 年是 3\% 永续年金的收益率）。数据见 \texttt{data/fetch/boe\_millennium\_debt.py}；第 18 章另用表 A2（英格兰人口）与 A21（英格兰与大不列颠的人均实际 GDP、名义 GDP 与人口，按 2013 年价格），见 \texttt{data/fetch/boe\_millennium\_gb18.py}；第 19 章用表 M6（Gayer、Rostow 与 Schwartz 的月度批发物价指数，1821—1825 年 $=100$，本书取每年 12 个月的平均）、A47（消费物价指数，这些年份据 Feinstein 1998）与 A29（国债），见 \texttt{data/fetch/boe\_millennium\_gb19.py}，\url{https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx}.
 
 % ---- 第 16 章：史料。引文逐字核对见 data/fetch/verify_web_quotes.py（版本、网址与 SHA-256 记在
 % data/snapshots/merc_facts.json 的 sources）；股价数据见 data/snapshots/fgr2009_1720_shares.json。
@@ -538,9 +538,33 @@
 % 数据见 data/fetch/boe_millennium_gb18.py。
 \bibitem{rockoff2009} H. Rockoff. Upon Daedalian Wings of Paper Money: Adam Smith and the Crisis of 1772. NBER Working Paper 15594, December 2009. \url{https://www.nber.org/system/files/working_papers/w15594/w15594.pdf}. 2026 年 10 月 14 日下载；© 2009 by Hugh Rockoff. 第 3、7、8、11、14、18—20、24—26、31—38 页（第 38 页表 1）；页码即 PDF 的页码。文中转述的 Mints、Laidler、Schwartz 与白芝浩的看法据该文。
 
-\bibitem{thornton1802} H. Thornton. \emph{An Enquiry into the Nature and Effects of the Paper Credit of Great Britain}. London: J. Hatchard, 1802. 第二章（第 32、34、35 页）与第三章（第 46 页）。引文据 Internet Archive 上加利福尼亚大学图书馆藏本的识别文本，\url{https://archive.org/details/enquiryintonatur00thorrich}. 2026 年 10 月 14 日下载。
+\bibitem{thornton1802} H. Thornton. \emph{An Enquiry into the Nature and Effects of the Paper Credit of Great Britain}. London: J. Hatchard, 1802. 第二章（第 32、34、35 页）与第三章（第 46 页）。第 19 章用到第三章（第 47、50 页）、第四章（第 95 页）、第八章（第 236 页）与第十章（第 287、288、290、295 页）。引文据 Internet Archive 上加利福尼亚大学图书馆藏本的识别文本，\url{https://archive.org/details/enquiryintonatur00thorrich}. 2026 年 10 月 14 日下载。
 
 \bibitem{hunter1868} W. W. Hunter. \emph{The Annals of Rural Bengal}, vol. I. London: Smith, Elder and Co., 1868. 第二章（第 32—53 页，1770 年的饥荒，及其与 1866 年奥里萨饥荒的比较）；附录 A（第 379—381 页，沃伦·黑斯廷斯与参事会 1772 年 11 月 3 日自威廉堡致董事会的信及所附账目）；附录 B 第六节（第 420—421 页，董事会在饥荒以后的来信）。引文据 Internet Archive 上多伦多大学藏本的识别文本，\url{https://archive.org/details/annalsofruralben00huntuoft}. 2026 年 10 月 14 日下载。
 
 \bibitem{census1975} U.S. Bureau of the Census. \emph{Historical Statistics of the United States, Colonial Times to 1970}, Bicentennial Edition, Part 2. Washington, D.C., 1975. 第 Z 章（Colonial and Pre-Federal Statistics），系列 Z 1-19（第 1168 页）及其说明（第 1152 页）。\url{https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p2-chZ.pdf}. 2026 年 10 月 14 日下载；该 PDF 没有文字层，数字据 300 dpi 的页面图像读出。
+% ---- 第 19 章：引文据下载的原文件，核对见 data/fetch/verify_web_quotes.py（网址与 SHA-256 记在
+% data/snapshots/bullion_facts.json 的 sources；Cannan 的表与 Silberling 的表按页面图像读）；
+% 数据见 data/fetch/boe_millennium_gb19.py 与 data/fetch/riksbank_sweden19.py。
+\bibitem{hume1752} D. Hume. \emph{Political Discourses}. Edinburgh: R. Fleming for A. Kincaid and A. Donaldson, 1752. 第三篇《论货币》（Of Money）与第五篇《论贸易差额》（Of the Balance of Trade）。引文据 Project Gutenberg 电子书 59792（\emph{Hume's Political Discourses}, ed. W. B. Robertson, London: Walter Scott, 无出版年），其文本出自休谟后来的版本，\url{https://www.gutenberg.org/ebooks/59792}；与初版（Internet Archive 上麦吉尔大学图书馆藏本的识别文本，\url{https://archive.org/details/McGillLibrary-125702-2590}）核对，两版的出入见正文。2026 年 10 月 15 日下载。
+
+\bibitem{cannan1919} E. Cannan (ed.). \emph{The Paper Pound of 1797--1821: A Reprint of the Bullion Report}. London: P. S. King and Son, 1919. Cannan 的导言（第 vii—xlv 页），其中表 I（政府收支、Jevons 的物价指数、英格兰银行贴现的商业票据）与表 II（英格兰银行的银行券与金银储备）在第 xliii—xlv 页。引文据 Internet Archive 上多伦多大学藏本的识别文本，识别文本读错数字与分数的段落和两张表按同一扫描本的页面图像读，\url{https://archive.org/details/paperpoundof179700greauoft}. 2026 年 10 月 15 日下载。
+
+\bibitem{bullion1810} House of Commons. \emph{Report from the Select Committee on the High Price of Gold Bullion}. Ordered to be printed 8 June 1810. 引文据 Cannan（1919）的重印本（第 1—70 页），页码是重印本的页码；证词的页码（Min. p.）据报告的引注。
+
+\bibitem{ricardo1810} D. Ricardo. \emph{The High Price of Bullion, a Proof of the Depreciation of Bank Notes}. 3rd ed., with additions. London: John Murray, 1810. 序言（1809 年 12 月 1 日）与第 3、4、16（脚注）、50、51 页。引文据 Internet Archive 上伊利诺伊大学藏本的识别文本，\url{https://archive.org/details/highpriceofbulli10rica}. 2026 年 10 月 15 日下载。
+
+\bibitem{tooke1838} T. Tooke. \emph{A History of Prices, and of the State of the Circulation, from 1793 to 1837}, vol. I. London: Longman, Orme, Brown, Green, and Longmans, 1838. 序论（第 2—4 页）、第三部分第一、二章（第 127、130 页）与第四部分第三章（第 246、252、253 页）。引文据 Internet Archive 上多伦多大学藏本的识别文本，\url{https://archive.org/details/historyofpriceso01tookuoft}. 2026 年 10 月 15 日下载。
+
+\bibitem{silberling1919} N. J. Silberling. British Financial Experience 1790--1830. \emph{The Review of Economic Statistics} 1(4), 1919: 282--297. 第 285、287、288 页与表 6、表 7（第 287 页）。引文据 Internet Archive 上 JSTOR 早期期刊内容（Early Journal Content）的识别文本，两张表按页面图像读，\url{https://archive.org/details/jstor-1928689}. 2026 年 10 月 15 日下载。
+
+\bibitem{edvinsson2010} R. Edvinsson. The multiple currencies of Sweden-Finland 1534--1803. In R. Edvinsson, T. Jacobson and D. Waldenström (eds.), \emph{Historical Monetary and Financial Statistics for Sweden: Exchange rates, prices, and wages, 1277--2008}. Stockholm: Ekerlids Förlag and Sveriges Riksbank, 2010: 133--237. 第 179—184 页（4.4.3 节与 4.5.1 节）与表 I.A4.7（里克斯达勒的马克价格，1534—1776）。引文据瑞典中央银行网站上该章的 PDF，\url{https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/4.pdf}. 2026 年 10 月 15 日下载。
+
+\bibitem{fregert2014} K. Fregert. The Riksbank balance sheet, 1668--2011. In R. Edvinsson, T. Jacobson and D. Waldenström (eds.), \emph{Historical Monetary and Financial Statistics for Sweden, Volume II: House Prices, Stock Returns, National Accounts, and the Riksbank Balance Sheet, 1620--2012}. Stockholm: Ekerlids Förlag and Sveriges Riksbank, 2014: 339--393. 第 342、349—351 页与表 II.A8.1、II.A8.2（资产与负债，折合瑞典克朗）。引文据瑞典中央银行网站上该章的 PDF，\url{https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym2/chapter8_-volume2_140613.pdf}. 2026 年 10 月 15 日下载。
+
+\bibitem{riksbank2026} Sveriges riksbank. Historical Monetary and Financial Statistics for Sweden: Volume I, ch. 4, Table I.A4.7 (Riksdaler in mark 1534--1776); Volume II, ch. 8, Tables II.A8.1 (Riksbank assets) and II.A8.2 (Riksbank liabilities and equity). Excel 文件，\url{https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich4exchangerates1534_1803.xls}，\url{https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym2/volumeiich8riksbankbalancesheet.xls}. 来源：Sveriges riksbank，2026 年 10 月 15 日。数据见 \texttt{data/fetch/riksbank\_sweden19.py}；正文与图中的比值是本书的计算，不是瑞典中央银行发布的统计。
+
+\bibitem{gayer1953} A. D. Gayer, W. W. Rostow and A. J. Schwartz. \emph{The Growth and Fluctuation of the British Economy 1790--1850}. Oxford: Clarendon Press, 1953. 国内与进口商品的月度批发物价指数（1821—1825 年 $=100$），据英格兰银行《千年宏观数据》表 M6 转引。
+
+\bibitem{feinstein1998} C. H. Feinstein. Pessimism Perpetuated: Real Wages and the Standard of Living in Britain during and after the Industrial Revolution. \emph{Journal of Economic History} 58(3), 1998: 625--658. 消费物价指数，据英格兰银行《千年宏观数据》表 A47 转引。
 \end{thebibliography}

@@ -1,0 +1,92 @@
+{
+  "title": "Quotations for Chapter 19 (the quantity theory and the bullion controversy): Hume's 'Of Money' and 'Of the Balance of Trade' (1752, first edition and a later text); the crisis of 1797, the Restriction and the resumption of 1821 in Cannan's introduction to The Paper Pound (1919), with his Tables I and II; the Bullion Report (1810); Ricardo's High Price of Bullion (1810); Thornton (1802) on the velocity of notes and the Bank's rate of discount; Tooke's History of Prices (1838); Silberling (1919) on the premium on bullion and the Hamburg exchange, with his Tables 6 and 7; Edvinsson (2010) and Fregert (2014) on Sweden's paper standard of 1745-1776",
+  "source": "D. Hume, Political Discourses (Edinburgh, 1752), first edition on archive.org, and Hume's Political Discourses, ed. W. B. Robertson (Walter Scott, undated), Project Gutenberg eBook 59792; E. Cannan (ed.), The Paper Pound of 1797-1821 (London: P. S. King, 1919), with the Report of the Select Committee on the High Price of Gold Bullion (1810), on archive.org; D. Ricardo, The High Price of Bullion, a Proof of the Depreciation of Bank Notes, 3rd ed. (London: John Murray, 1810), on archive.org; H. Thornton, An Enquiry into the Nature and Effects of the Paper Credit of Great Britain (1802), on archive.org; T. Tooke, A History of Prices, vol. I (1838), on archive.org; N. J. Silberling, 'British Financial Experience 1790-1830', The Review of Economic Statistics 1(4), 1919, JSTOR Early Journal Content on archive.org; R. Edvinsson (2010) and K. Fregert (2014), chapters of Historical Monetary and Financial Statistics for Sweden, vols. I and II (Ekerlids forlag and Sveriges Riksbank), the PDFs on the Riksbank's website",
+  "url": "https://archive.org/download/paperpoundof179700greauoft/paperpoundof179700greauoft_djvu.txt",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated; fractions as a/b; for the table rows, the column's values for each year in order, an empty field for a year without a value), unit, numeral (unused), file (key of 'sources'), juan (location: printed page, with the PDF page for the image rows), quote (verbatim, as in the document's text, or a transcription for the image rows), note",
+  "retrieved": "2026-10-15",
+  "license": "Quotations for criticism and teaching, each with its source. Hume (1752), the Bullion Report (1810), Ricardo (1810), Thornton (1802) and Tooke (1838) are in the public domain; Cannan's introduction (1919) and Silberling (1919) are public-domain publications of 1919 (Silberling's article is in JSTOR's Early Journal Content: 'People may post this content online or redistribute in any way for non-commercial purposes'). The Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here); the archive.org texts are OCR of public-domain scans. Edvinsson (2010) and Fregert (2014) are quoted in short passages from the PDFs that Sveriges riksbank publishes on its website, with the authors, the book and the page. The chapter's Chinese renders the English; the translations are the book's.",
+  "used_in": [
+    19
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (rows citing hume_pd, hume1752ed1, cannan1919, ricardo1810, thornton1802, tooke1838, silberling1919, edvinsson2010 and fregert2014; the cannan1919img and silberling1919img rows are read on the page images); checks/check_ch19.py (the readings and every quotation of the text)",
+  "notes": "Hume. The Gutenberg text (Robertson's edition) is the text of Hume's later editions; the first edition of 1752 (rows h1_*, OCR that reads long s as f, quoted as it reads) differs in the thought experiment of 'Of the Balance of Trade': 'four parts' of the money annihilated and the money 'multiply'd four-fold' (rows h1_fourparts, h1_fourfold), where the later text has 'four-fifths' and 'fivefold' (rows hm_fourfifths, hm_fivefold); both versions say the same thing, and the chapter quotes the later text and gives the first edition's numbers. The later text's 'three-sevenths' (row hm_louis) is 'three fevenths' in the first edition (row h1_louis). Cannan (1919). The OCR text omits the running heads of the odd pages and garbles fractions and some numbers ('51 £ and 57!' for 51¾ and 57¾; '1 80' for 180 (row ci_divisions); '£i' for £1); those passages are read on the page images (rows ci_*), and the text rows quote only what the OCR reads correctly, with the page as printed (introduction in roman numerals, the Report from p. 1). Cannan's Table I gives the public expenditure and revenue of Great Britain and Ireland, their difference, Jevons's index of prices and the Bank of England's commercial bills under discount (from 1795); Table II the Bank's notes in circulation and coin and bullion at the end of February and of August; columns not used here are not transcribed. The Report quotes the Bank's witnesses with a quotation mark at the start of each line; the OCR keeps them and the rows quote them as they read (row br_same) or quote a fragment within a line (rows br_force, br_revert). Ricardo (1810). The passages on cause and effect (rows rc_effect, rc_value, rc_wholly) are in a footnote that runs from p. 15 to p. 16, in which Ricardo answers a passage of 'the work to which I have already alluded'; the third edition is quoted. Tooke (1838). Rows tk_peel and tk_50to100 state views that Tooke reports in order to dispute them: the critics of Peel's bill (that it lowered prices by 30 to 50 per cent, not by the 4 or 5 per cent difference between paper and gold that Ricardo expected), and 'those persons' who ascribe the rise and fall of prices between 1797 and 1814 to the currency; Tooke's own view is that the seasons and the war, not the currency, explain most of the movement (rows tk_theories, tk_erroneous, tk_beyond). Silberling (1919). Table 6 measures the premium on bullion with Spanish silver dollars: the paper price in pence per ounce against the 'theoretical price (gold)', 913.277d. divided by Soetbeer's ratio of gold to silver at Hamburg (rows sb_silver, sb_430, sb_913); the percentage deviation is the premium of the paper price over the gold price. The row for 1813 prints 81.2, 56.2, +23.0 and +40.9: the deviation and the percentage agree with each other (23.0/56.2 = 40.9 per cent) but not with 81.2 (81.2 - 56.2 = 25.0, which would be 44.5 per cent), and Silberling's Chart 3 (p. 288) plots 1813 at about +41; the chapter uses the percentage column, and 81.2 is probably a misprint for 79.2. Table 7 gives the London exchange on Hamburg in schillings Flemish banco per pound, its par (the ratio of gold to silver times 2.3177, row si_par) and the percentage deviation from par. Sweden. Edvinsson's pages (179-184) and Fregert's (342-351) are those printed (the PDF page plus 132 and 338). Edvinsson's notes of 1743 (9.5 million daler silvermynt) rest on another source than Fregert's balance sheet (see riksbank_sweden_1740_1777).",
+  "sources": {
+    "cannan1919": {
+      "url": "https://archive.org/download/paperpoundof179700greauoft/paperpoundof179700greauoft_djvu.txt",
+      "format": "txt",
+      "sha256": "55992f70fe57b18c4a7df24a466f8c816ab3ba5731518c3a808e85ed5fe9b0dc",
+      "version": "E. Cannan (ed.), The Paper Pound of 1797-1821: A Reprint of the Bullion Report, with an introduction (London: P. S. King and Son, 1919), University of Toronto (Robarts) copy on archive.org, item paperpoundof179700greauoft; OCR text. Introduction (pp. vii-xlv) and the Report of the Select Committee on the High Price of Gold Bullion, ordered to be printed 8 June 1810 (pp. 1-70 of the reprint); pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "cannan1919img": {
+      "url": "https://archive.org/download/paperpoundof179700greauoft/paperpoundof179700greauoft.pdf",
+      "format": "image",
+      "sha256": "34010a52b32da5780aeb943012446da1be2d3de75bbe12e75a217c3a5ce3e94f",
+      "version": "The same book, read on the page images of the archive.org PDF where the OCR garbles numbers and fractions (PDF page = printed roman page + 4 in the introduction, printed page + 54 in the Report): Tables I and II (pp. xliii-xlv, PDF pages 47-49), pp. x, xxi, xxv, xxvii, xxix, xxx and xxxiv of the introduction and pp. 3 and 25 of the Report",
+      "retrieved": "2026-10-15"
+    },
+    "hume_pd": {
+      "url": "https://www.gutenberg.org/cache/epub/59792/pg59792.txt",
+      "format": "txt",
+      "sha256": "8566dfd8643b6fea046ea7a431273d5f02d74bcb5c89be12dabcd75016c349aa",
+      "version": "D. Hume, Hume's Political Discourses, with an introduction by W. B. Robertson (London and Felling-on-Tyne: Walter Scott, The Scott Library, undated), Project Gutenberg eBook 59792, prepared from the archive.org copy humespolitical00humeuoft; the text of Hume's later editions (it includes 'Of the Jealousy of Trade', first published in 1758): 'Of Money' and 'Of the Balance of Trade'",
+      "retrieved": "2026-10-15"
+    },
+    "hume1752ed1": {
+      "url": "https://archive.org/download/McGillLibrary-125702-2590/125702_djvu.txt",
+      "format": "txt",
+      "sha256": "0d2625c072c698fdea28eb94f93cd78404a897cb525559848372e1dc061667b3",
+      "version": "D. Hume, Political Discourses (Edinburgh: printed by R. Fleming for A. Kincaid and A. Donaldson, 1752), the first edition, McGill University Library copy on archive.org, item McGillLibrary-125702-2590; OCR text, which reads long s as f: Discourse III 'Of Money' and Discourse V 'Of the Balance of Trade'",
+      "retrieved": "2026-10-15"
+    },
+    "ricardo1810": {
+      "url": "https://archive.org/download/highpriceofbulli10rica/highpriceofbulli10rica_djvu.txt",
+      "format": "txt",
+      "sha256": "65463ac971fb5545cc35af2ddf063a3ba188142a8def6ff5ea3a298fccb90d70",
+      "version": "D. Ricardo, The High Price of Bullion, a Proof of the Depreciation of Bank Notes, third edition, with additions (London: John Murray, 1810), University of Illinois copy on archive.org, item highpriceofbulli10rica; OCR text; the introduction (dated Dec. 1, 1809) and pp. 1-4, 16-17 and 50-51",
+      "retrieved": "2026-10-15"
+    },
+    "thornton1802": {
+      "url": "https://archive.org/download/enquiryintonatur00thorrich/enquiryintonatur00thorrich_djvu.txt",
+      "format": "txt",
+      "sha256": "1e98ceacc0ac7d29f456eb054bcfba8df585d59929fd07b83c3e07486d253d0b",
+      "version": "H. Thornton, An Enquiry into the Nature and Effects of the Paper Credit of Great Britain (London: J. Hatchard, 1802), University of California Libraries copy on archive.org, item enquiryintonatur00thorrich; OCR text (the copy cached for Chapter 18, smith_facts); ch. III on the velocity of notes, ch. IV (p. 95), ch. VIII (p. 236) and ch. X on the rate of interest and the limitation of the Bank's paper (pp. 287-295)",
+      "retrieved": "2026-10-14"
+    },
+    "tooke1838": {
+      "url": "https://archive.org/download/historyofpriceso01tookuoft/historyofpriceso01tookuoft_djvu.txt",
+      "format": "txt",
+      "sha256": "66130b804ea9525a54af288c0690ea4431304fe173312d1bd85ce70d10c926c8",
+      "version": "T. Tooke, A History of Prices, and of the State of the Circulation, from 1793 to 1837, vol. I (London: Longman, Orme, Brown, Green, and Longmans, 1838), University of Toronto copy on archive.org, item historyofpriceso01tookuoft; OCR text; the Introduction (pp. 1-4) and Part III, chs. I-II (pp. 127, 130) and Part IV, ch. III (pp. 246, 252-253)",
+      "retrieved": "2026-10-15"
+    },
+    "silberling1919": {
+      "url": "https://archive.org/download/jstor-1928689/1928689_djvu.txt",
+      "format": "txt",
+      "sha256": "bd305d84fd457b1a142a7c3a9b7eac5783761eb5f0c5fa84c5e2d4172eca22ab",
+      "version": "N. J. Silberling, 'British Financial Experience 1790-1830', The Review of Economic Statistics 1(4), October 1919, pp. 282-297, in JSTOR's Early Journal Content on archive.org, item jstor-1928689; OCR text",
+      "retrieved": "2026-10-15"
+    },
+    "silberling1919img": {
+      "url": "https://archive.org/download/jstor-1928689/1928689.pdf",
+      "format": "image",
+      "sha256": "0cb3f501e31d5d9d1059cabd7a7856918841a167b85ee39f1dbbc9b5c8c460cd",
+      "version": "The same article, read on the page images (PDF page 7 = p. 287): Tables 6 and 7",
+      "retrieved": "2026-10-15"
+    },
+    "edvinsson2010": {
+      "url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/4.pdf",
+      "format": "pdf",
+      "sha256": "f57d5ad370e42cb8cf895783635e0acd0d5efb69afdb96a7c52c5504bfab88ad",
+      "version": "R. Edvinsson, 'The multiple currencies of Sweden-Finland 1534-1803', ch. 4 (pp. 133-237) of R. Edvinsson, T. Jacobson and D. Waldenstrom (eds.), Historical Monetary and Financial Statistics for Sweden: Exchange rates, prices, and wages, 1277-2008 (Stockholm: Ekerlids forlag and Sveriges Riksbank, 2010), the chapter's PDF on the Riksbank's website; section 4.4.3 'The fiat standard of 1745-76' and 4.5.1 'The minting reform of 1776' (pp. 179-184); pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "fregert2014": {
+      "url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym2/chapter8_-volume2_140613.pdf",
+      "format": "pdf",
+      "sha256": "064a9068041543d0ff4770059435f3c2dec0e8f64a2ed25df7d61c4e43b5a7fa",
+      "version": "K. Fregert, 'The Riksbank balance sheet, 1668-2011', ch. 8 (pp. 339-393) of R. Edvinsson, T. Jacobson and D. Waldenstrom (eds.), Historical Monetary and Financial Statistics for Sweden, Volume II: House Prices, Stock Returns, National Accounts, and the Riksbank Balance Sheet, 1620-2012 (Stockholm: Ekerlids forlag and Sveriges Riksbank, 2014), the chapter's PDF on the Riksbank's website; pp. 342-343 and 349-351; pages as printed",
+      "retrieved": "2026-10-15"
+    }
+  }
+}
