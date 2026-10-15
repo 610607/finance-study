@@ -1,0 +1,14 @@
+{
+  "title": "England by decade, 1250-1860: population, land rents, wage income, net national income, real national income per head, day wages, cost of living and real wages",
+  "source": "Gregory Clark, data on the history of the English economy (University of California, Davis): workbooks 'Wages 2014.xlsx' and 'England NNI - Clark - 2015.xlsx', sheet 'Decadal' of each (the same workbooks as clark2015_england_decadal)",
+  "url": "https://faculty.econ.ucdavis.edu/faculty/gclark/data.html",
+  "series": "As in clark2015_england_decadal (pop_england_m, land_rents_gbp_m, farm_wage_d, blab_wage_d, bcraft_wage_d, col_1860s_100, real_farm_1860s_100, real_blab_1860s_100, real_bcraft_1860s_100), plus three columns of the NNI workbook: 'Total Wage Income' (wage_income_gbp_m, £ m, nominal), 'Net National Income' (nni_gbp_m, £ m, nominal) and 'Real NNI/N' (real_nni_pc_1860s_100, an index, 1860s = 100); decade = first year of the decade",
+  "retrieved": "2026-10-15",
+  "license": "No licence is stated on the data page; the author publishes the series for research use. A subset (62 decades) is stored here for teaching, with attribution.",
+  "used_in": [
+    21
+  ],
+  "fetch": "data/fetch/clark_england.py --long",
+  "notes": "Workbook SHA-256s as in clark2015_england_decadal.json (Wages 2014.xlsx 8959af72be11af1d574ebf69c9c31784bf385dd7a925f22aaa323e7d72a37781; England NNI - Clark - 2015.xlsx 214ae3b58c2da845b408cb18587ba1f02304a65c4fc609b0b2f6f9aa4320b090). The chapter's land share is land rents / (land rents + wage income), the share of land in the income of the two factors of the Malthusian model (the capital income of the workbook is left out, as in Chapter 11's adjustment of Clark's shares). Clark's real NNI per head and the Broadberry et al. real GDP per head (boe_millennium_england_1270_1913) disagree before 1700: the chapter shows both.",
+  "citation": "Clark, Gregory (2010), 'The Macroeconomic Aggregates for England, 1209-2008', Research in Economic History 27: 51-140, doi:10.1108/S0363-3268(2010)0000027004"
+}

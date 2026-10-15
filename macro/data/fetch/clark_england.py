@@ -3,14 +3,17 @@
     python3 data/fetch/clark_england.py              # download both workbooks and write the snapshot
     python3 data/fetch/clark_england.py DIR          # use Wages 2014.xlsx and the NNI workbook already in DIR
     python3 data/fetch/clark_england.py --early-modern [DIR]   # the decades 1490-1690 (Chapter 13)
+    python3 data/fetch/clark_england.py --long [DIR]           # the decades 1250-1860 with national income (Ch 21)
 
 Clark publishes the series on his data page (faculty.econ.ucdavis.edu/faculty/gclark/data.html):
 "Nominal and Real Wages, England, 1209-1869" (English Data/Wages 2014.xlsx) and "National Income,
 Prices, Wages, Land Rents, Population, England, 1209-1869" (English Data/England NNI - Clark - 2015.xlsx).
 The script reads the sheet "Decadal" of each workbook, checks the column headings, keeps the decades
 1250-1500 and writes data/snapshots/clark2015_england_decadal.csv; with --early-modern it keeps 1490-1690
-and writes data/snapshots/clark2015_england_decadal_1490_1690.csv. The SHA-256 of each workbook is
-printed so that it can be compared with the one recorded in the snapshot's .json.
+and writes data/snapshots/clark2015_england_decadal_1490_1690.csv; with --long it keeps 1250-1860, adds the total
+wage income, net national income and real NNI per head of the NNI workbook, and writes
+data/snapshots/clark2015_england_decadal_1250_1860.csv. The SHA-256 of each workbook is printed so that it can be
+compared with the one recorded in the snapshot's .json.
 """
 from __future__ import annotations
 
@@ -25,6 +28,7 @@ import openpyxl
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "snapshots" / "clark2015_england_decadal.csv"
 OUT_EARLY_MODERN = HERE.parent / "snapshots" / "clark2015_england_decadal_1490_1690.csv"
+OUT_LONG = HERE.parent / "snapshots" / "clark2015_england_decadal_1250_1860.csv"
 BASE = "http://faculty.econ.ucdavis.edu/faculty/gclark/English%20Data/"
 FILES = {"wages": "Wages%202014.xlsx", "nni": "England%20NNI%20-%20Clark%20-%202015.xlsx"}
 UA = "Mozilla/5.0 (X11; Linux x86_64) finance-study data fetch"
@@ -40,6 +44,9 @@ WAGES = [(1, "Farm Laborers, d/day", "farm_wage_d"),
          (10, "Real Building Craftsman Wage (1860s=100)", "real_bcraft_1860s_100")]
 NNI = [(2, "Pop England", "pop_england_m"),
        (9, "Land rents", "land_rents_gbp_m")]
+NNI_LONG = NNI + [(8, "Total Wage Income", "wage_income_gbp_m"),
+                  (14, "Net National Income", "nni_gbp_m"),
+                  (21, "Real NNI/N", "real_nni_pc_1860s_100")]
 
 
 def fetch(name: str, dest: Path) -> Path:
@@ -66,16 +73,16 @@ def read(path: Path, columns, header_row: int, first: int, last: int) -> dict[in
     return out
 
 
-def main(dest: Path, first: int = FIRST, last: int = LAST, out: Path = OUT) -> None:
+def main(dest: Path, first: int = FIRST, last: int = LAST, out: Path = OUT, nni=NNI) -> None:
     w = read(fetch("wages", dest), WAGES, header_row=0, first=first, last=last)
-    n = read(fetch("nni", dest), NNI, header_row=0, first=first, last=last)
+    n = read(fetch("nni", dest), nni, header_row=0, first=first, last=last)
     decades = list(range(first, last + 1, 10))
     missing = [d for d in decades if d not in w or d not in n]
     if missing:
         raise ValueError(f"decades missing: {missing}")
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8", newline="") as f:
-        names = ["decade"] + [c[2] for c in NNI] + [c[2] for c in WAGES]
+        names = ["decade"] + [c[2] for c in nni] + [c[2] for c in WAGES]
         wr = csv.DictWriter(f, fieldnames=names)
         wr.writeheader()
         for d in decades:
@@ -86,10 +93,12 @@ def main(dest: Path, first: int = FIRST, last: int = LAST, out: Path = OUT) -> N
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if a != "--early-modern"]
+    args = [a for a in sys.argv[1:] if a not in ("--early-modern", "--long")]
     folder = Path(args[0]) if args else Path.home() / ".cache" / "finance-study" / "clark"
     folder.mkdir(parents=True, exist_ok=True)
     if "--early-modern" in sys.argv[1:]:
         main(folder, 1490, 1690, OUT_EARLY_MODERN)
+    elif "--long" in sys.argv[1:]:
+        main(folder, 1250, 1860, OUT_LONG, NNI_LONG)
     else:
         main(folder)

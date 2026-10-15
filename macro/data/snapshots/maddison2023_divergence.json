@@ -1,0 +1,14 @@
+{
+  "title": "GDP per head and population of the United Kingdom, the Netherlands, China, India, Japan and the United States, 1500-1913 (Maddison Project Database 2023)",
+  "source": "Maddison Project Database, version 2023 (J. Bolt and J. L. van Zanden), workbook 'mpd2023_web.xlsx', sheet 'Full data', DataverseNL, doi:10.34894/INZBF2",
+  "url": "https://dataverse.nl/api/access/datafile/421302",
+  "series": "country (ISO code: GBR, NLD, CHN, IND, JPN, USA), year, gdppc_2011usd ('gdppc': real GDP per head in 2011 international dollars), pop_thousands ('pop': mid-year population, thousands). Only the rows in which GDP per head or population has a value are kept; before 1820 most economies have estimates only for some years (China: 1500, 1510, ..., 1620, 1661, 1685, 1690, 1700, ...; India: 1600, 1650, 1700, 1750, 1801, 1811, ...)",
+  "retrieved": "2026-10-15",
+  "license": "CC BY 4.0 (DataverseNL). The workbook's 'Notes' sheet sets a citation policy: 'CONDITIONS UNDER WHICH ALL ORIGINAL PAPERS MUST BE CITED: a) If the data is shown in any graphical form b) If subsets of the full dataset that include less than a dozen (12) countries are used for statistical analysis or any other purposes'. The chapter shows the data in a figure and cites the original papers named in the 'Sources' sheet for the six economies.",
+  "used_in": [
+    21
+  ],
+  "fetch": "data/fetch/maddison2023.py",
+  "notes": "Workbook SHA-256 ecc5916ca12789b983fc4be437f8a354bbf4291323605324ac3e0aea4c57cbb6. Sources for these economies in the 'Sources' sheet: United Kingdom, 1252-1870 (England to 1700): Broadberry, Campbell, Klein, Overton and van Leeuwen (2015); Netherlands: van Zanden and van Leeuwen (2012) for Holland 1348-1807 and Smits, Horlings and van Zanden (2000) for 1807-1913; China, 1000-1933: Broadberry, Guan and Li (2018), with Xu, Shi, van Leeuwen, Ni, Zhang and Ma (2016) for 1661-1933; India, 1600-1870: Broadberry, Custodis and Gupta (2015); Japan, 724-1874: Bassino, Broadberry, Fukao, Gupta and Takashima (2018), 1874-1940 Fukao et al. (2015); United States: McCusker (colonial statistics, 1650-1790), Sutch (2006, 1790-1870) and Prados de la Escosura (2009, 1800-1830). The MPD expresses all series in 2011 dollars, so its levels are not those of the 1990-dollar tables of Broadberry, Guan and Li (divergence_facts); the chapter quotes ratios and growth rates from each source separately. The database gives no error margins; the chapter takes them from the original papers.",
+  "citation": "Bolt, J. and J. L. van Zanden (2024), 'Maddison style estimates of the evolution of the world economy: A new 2023 update', Journal of Economic Surveys, doi:10.1111/joes.12618"
+}

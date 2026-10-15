@@ -1,0 +1,14 @@
+{
+  "title": "Welfare ratios of unskilled labourers in London, Amsterdam, Leipzig, Milan, Beijing, Suzhou/Shanghai, Canton, Kyoto/Tokyo, Bengal and Oxford, 1730-1913 (Allen et al. 2011)",
+  "source": "Global Price and Income History Group (UC Davis): 'China_1730-1933_Allen_et_al.xls', sheet 'Figures2-6', block 'Real Wage in Welfare Ratios', the data of Figures 2-6 of R. C. Allen, J.-P. Bassino, D. Ma, C. Moll-Murata and J. L. van Zanden, 'Wages, Prices, and Living Standards in China, 1738-1925: in comparison with Europe, Japan, and India' (GPIH Working Paper No. 1; Economic History Review 64(S1), 2011)",
+  "url": "https://gpih.ucdavis.edu/files/China_1730-1933_Allen_et_al.xls",
+  "series": "year; one column per city (london, amsterdam, leipzig, milan, beijing, suzhou_shanghai, canton, kyoto_tokyo, bengal, oxford): the welfare ratio of an unskilled male labourer, i.e. full-time earnings (250 days a year) divided by the annual cost of a 'bare bones' basket for a family (three adult baskets, plus 5% for rent); 1 = bare subsistence. Empty cells are years without an estimate",
+  "retrieved": "2026-10-15",
+  "license": "GPIH publishes its files for research use with attribution to the compilers; one block of one sheet (184 years, 10 cities) is stored here for teaching.",
+  "used_in": [
+    21
+  ],
+  "fetch": "data/fetch/gpih_welfare.py",
+  "notes": "File SHA-256 657004218866752a9ef34df2c130c0f455ee5794b461f87d88a47252c87f4a3d (dated January 2010 in the sheet). The method (250 days, three baskets plus 5% for rent) is stated in section VI of the paper (divergence_facts, rows al11_*). The column 'Suzhou/ Shanghai' joins Suzhou (eighteenth century) and Shanghai (twentieth); 'Kyoto/ Tokyo' likewise. The sheet continues to 1933 for the Asian cities; the snapshot stops in 1913. The Beijing wages are those of Gamble (1943), doubled by the compilers to allow for food (gpih_gamble_beijing.json).",
+  "citation": "Allen, Bassino, Ma, Moll-Murata and van Zanden (2011), doi:10.1111/j.1468-0289.2010.00515.x"
+}

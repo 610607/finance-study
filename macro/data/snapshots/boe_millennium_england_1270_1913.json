@@ -1,0 +1,14 @@
+{
+  "title": "England 1270-1913: population (to 1870) and real GDP per head (annual)",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'A2. Pop of Eng & GB 1086-1870' (Broadberry, Campbell, Klein, Overton and van Leeuwen 2015) and sheet 'A21. GDP per capita 1086+', block 'England'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "A2: 'Population of England, millions' (pop_england_m, 1270-1870). A21, block 'England': 'Real GDP per capita' at 2013 market prices, £ (england_real_gdp_pc_2013gbp, 1270-1913)",
+  "retrieved": "2026-10-15",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source.', sheet A2, for Broadberry et al. 2015). The Bank of England publishes it as a research dataset; a subset (644 years, 2 columns) is stored here for teaching, with attribution.",
+  "used_in": [
+    21
+  ],
+  "fetch": "data/fetch/boe_millennium_gb21.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for boe_millennium_gb_1660_1780). The populations are annual values interpolated between benchmark estimates, and real GDP per head is an annual reconstruction: the chapter compares levels over decades and does not read year-to-year changes.",
+  "citation": "Broadberry, S., B. M. S. Campbell, A. Klein, M. Overton and B. van Leeuwen (2015), British Economic Growth, 1270-1870, Cambridge University Press; data via Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017)"
+}

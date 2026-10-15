@@ -334,7 +334,24 @@ Updated 2026-10-14.
   - Becker and Baumol's "Say's equality" is not cited (only Baumol's abstract was obtained; the PDF is blocked); Malthus's other extreme (consumption beyond production) is garbled in the OCR and not quoted.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
 ## Next
-1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Part 4 (Chapters 18–25) is under way, in order, one reviewer per chapter; Chapters 18, 19 and 20 are done, Chapter 21 (`ch:divergence`) is next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Part 4 (Chapters 18–25) is under way, in order, one reviewer per chapter; Chapters 18, 19 and 20 are done, Chapter 21 (`ch:divergence`) is in progress. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+   - **Chapter 21, done so far (2026-10-15):** the data and quotation snapshots, all with `used_in` [21]:
+     - `maddison2023_divergence`, from `data/fetch/maddison2023.py`: GBR, NLD, CHN, IND, JPN and USA, 1500–1913, in 2011 dollars;
+     - `gpih_allen2011_welfare`, from `data/fetch/gpih_welfare.py`: welfare ratios for ten cities, 1730–1913;
+     - `clark2015_england_decadal_1250_1860`, from `data/fetch/clark_england.py --long`: adds wage income, NNI and real NNI per head;
+     - `boe_millennium_england_1270_1913`, from `data/fetch/boe_millennium_gb21.py`: tables A2 and A21 for England;
+     - `divergence_facts`: 195 quotation rows from 12 documents, all found verbatim by `verify_web_quotes.py`. The documents are Malthus 1798; the EH.Net reviews of Pomeranz, Allen, Mokyr and Clark; Allen et al. WP 123/09; Broadberry–Guan–Li CAGE 324; Broadberry–Gupta 2005; Humphries–Schneider 2018/2019; Allen 2018; and AJR w9378. Page locations were checked against the printed page numbers.
+   - **Chapter 21, still to do:** `checks/check_ch21.py`, `figsrc/fig_ch21.py`, the chapter text, the new bibitems (including the original MPD papers from the workbook's Sources sheet, which its citation policy requires for figures), then the review, build and docs. Planned sections:
+     - world (FORWARD row 157);
+     - Malthus and `eq:divergence-escape`, which extends `eq:medieval-dynamics` with TFP growth $g$ and a population response $\beta$: $z_{t+1}=(1-\alpha\beta)z_t+g$, $z^*=g/(\alpha\beta)$ (FORWARD row 34);
+     - takeoff (MPD, BGL grades, Clark vs Broadberry);
+     - when (Pomeranz, Allen et al., BGL; case box Jiangnan; FORWARD row 160);
+     - why (Allen and the spinning debate, Pomeranz/Lal, Mokyr/Harley, Clark/Margo, institutions with AJR and BGL; FORWARD row 30; case box on Indian cotton with `eq:divergence-ulc`);
+     - test (Clark decades). Exploratory results:
+       - before 1640, ln real NNI per head on ln population has slope −0.72 (HAC 95% interval −0.83 to −0.60, R² 0.88), against a land share of about 0.24;
+       - implied TFP growth is −0.03%/yr for 1250–1640, 0.25%/yr for 1640–1800 and 0.80%/yr for 1800–1860;
+       - the land share falls from 0.28 (1250s) to 0.21 (1800s) and 0.095 (1860s);
+     - legacy.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 

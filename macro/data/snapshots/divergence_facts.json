@@ -1,0 +1,99 @@
+{
+  "title": "Quotations for Chapter 21 (the industrial revolution and the great divergence): Malthus's first Essay on population (1798); four EH.Net reviews of the books of the debate (Lal on Pomeranz 2000, Leunig on Allen 2009, Harley on Mokyr 2009, Margo on Clark 2007); Allen, Bassino, Ma, Moll-Murata and van Zanden on wages and living standards in China, 1738-1925 (2009 working paper); Broadberry, Guan and Li on China's GDP, 980-1850 (2017 working paper); Broadberry and Gupta on Lancashire, India and cotton textiles (2005 working paper); the exchange between Humphries and Schneider and Allen on the wages of hand spinners (2018-2019); Acemoglu, Johnson and Robinson on Atlantic trade and institutions (2002 working paper)",
+  "source": "T. R. Malthus, An Essay on the Principle of Population (London, 1798), Project Gutenberg eBook 4239; EH.Net book reviews by D. Lal (2000), T. Leunig (2011), C. K. Harley (2010) and R. A. Margo (2008); R. C. Allen et al., LSE Department of Economic History Working Paper 123/09 (2009); S. Broadberry, H. Guan and D. D. Li, CAGE Working Paper 324 (2017); S. Broadberry and B. Gupta, GEHN conference paper (LSE, 2005); J. Humphries and B. Schneider, accepted manuscript (Economic History Review 2019) and Oxford Economic and Social History Working Paper 174 (2019); R. C. Allen, Oxford Discussion Paper in Economic and Social History 166 (2018); D. Acemoglu, S. Johnson and J. Robinson, NBER Working Paper 9378 (2002)",
+  "url": "https://www.gutenberg.org/cache/epub/4239/pg4239.txt",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated), unit, numeral (unused), file (key of 'sources'), juan (location: chapter, printed page or table), quote (verbatim, as in the document's text; for a table, the cells of one printed line separated by spaces), note",
+  "retrieved": "2026-10-15",
+  "license": "Quotations for criticism and teaching, each with its source. Malthus (1798) is in the public domain; the Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here). EH.Net reviews: 'Copyright (c) [year] by EH.Net. All rights reserved. This work may be copied for non-profit educational uses if proper credit is given to the author and the list.' (Lal's review of 2000 carries no copyright line; it is quoted on the same terms, with credit to the author and the list.) The working papers and the accepted manuscript are quoted in short passages (a sentence or part of one) with full credit; Acemoglu, Johnson and Robinson (2002): '(c) 2002 by Daron Acemoglu, Simon Johnson and James Robinson. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source.' The chapter's Chinese renders the English; the translations are the book's.",
+  "used_in": [
+    21
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (every row: the keys of 'sources'); checks/check_ch21.py (the readings and every quotation of the text)",
+  "notes": "The books of the debate (Pomeranz 2000, Allen 2009, Mokyr 2009, Clark 2007) are not quoted from the books themselves, which could not be consulted: their sentences come from EH.Net reviews, which give the reviewer's summary or quote the book with a page number; the year_note says which (\"Lal's summary of Pomeranz\", \"Allen (2009), p. 2, quoted by Leunig\"). Harley's review header prints 'Princeton: Princeton University Press, 2010' with the ISBN 978-0-300-12455-2 of Yale University Press, which published the book in 2009 (rows hr_header, hr_isbn). Allen et al. (2009) is the working-paper version of the article in the Economic History Review 64(S1), 2011; the sentence of row al11_one runs across a page break and a footnote (pp. 25-26) and the row quotes the part after it. Broadberry, Guan and Li (2017) is the working-paper version of the article in the Journal of Economic History 78(4), 2018; its estimates are in 1990 international dollars (Maddison's unit), not in the 2011 dollars of the Maddison Project Database 2023 (data/snapshots/maddison2023_divergence.csv), so the two are not compared in levels. Its Table 3 grades the reliability of each series (A: error under 5 per cent; B: 5-15; C: 15-25; D: over 25; rows bgl_grade*). Broadberry and Gupta (2005) is the conference version of the article in the Economic History Review 62(2), 2009 (the CEPR Discussion Paper 5183 has the same title); the tables are printed two columns of years side by side (Tables 1 and 11), so a row quotes one printed line, e.g. '1700-09 1.1 1780-89 15.5'. In Table 10 the three numbers for each year are British wages, British labour productivity and British unit labour costs, India = 100. In Table 7 the earnings are in shillings and pence (s/d), and the last column is Lancashire as a percentage of India. Humphries and Schneider (2019): the accepted manuscript has no printed page numbers; 'manuscript p.' is the page of the PDF. Appendix I columns: period, observations, daily wage (d), Allen's CPI basket, welfare ratio, women's casual wage, ratio to it (the table continues with women's annual wages and men's casual wages, not quoted). Allen (2018) numbers its pages from the first page of the text (the abstract page is numbered 2). Malthus (1798): the Gutenberg text heads its chapters 'CHAPTER 1' etc.; the rows give the chapter in Roman numerals. The PDF texts are searched in pdftotext's normal and -layout output.",
+  "sources": {
+    "malthus1798": {
+      "url": "https://www.gutenberg.org/cache/epub/4239/pg4239.txt",
+      "format": "txt",
+      "sha256": "e277e7d298315051a465d85b56a6564f13b97c4b5c612fb59f641bc8af5bd1c6",
+      "version": "T. R. Malthus, An Essay on the Principle of Population, as it affects the future improvement of society, with remarks on the speculations of Mr. Godwin, M. Condorcet, and other writers (London: J. Johnson, 1798), the first edition (anonymous), Project Gutenberg eBook 4239 (produced by Charles Aldarondo; updated 27 December 2020); chapters 1, 2, 4 and 16; the e-text does not keep the page numbers",
+      "retrieved": "2026-10-15"
+    },
+    "ehnet_pomeranz2000": {
+      "url": "https://eh.net/book_reviews/the-great-divergence-china-europe-and-the-making-of-the-modern-world-economy/",
+      "format": "html",
+      "sha256": "21ed4d2224bd9145291de4b3f8b8dd3bd3ee526260b7bf2f529465ac33560d92",
+      "version": "D. Lal, review of K. Pomeranz, The Great Divergence: China, Europe and the Making of the Modern World Economy (Princeton University Press, 2000), EH.Net, October 2000. The page carries no copyright line (EH.Net's later reviews read: 'This work may be copied for non-profit educational uses if proper credit is given to the author and the list'); short passages are quoted with credit to the author and the list. Lal's summary of the book and his quotations of it (p. 200)",
+      "retrieved": "2026-10-15"
+    },
+    "ehnet_allen2009": {
+      "url": "https://eh.net/book_reviews/the-british-industrial-revolution-in-global-perspective/",
+      "format": "html",
+      "sha256": "e1d7b6d8597b39f03b0425f54c0a02b2ab01abf7ba92ad99a08e81abe90b152e",
+      "version": "T. Leunig, review of R. C. Allen, The British Industrial Revolution in Global Perspective (Cambridge University Press, 2009), EH.Net, February 2011. 'Copyright (c) 2011 by EH.Net. All rights reserved. This work may be copied for non-profit educational uses if proper credit is given to the author and the list.' The page shows '?' for the typographic quotation marks and apostrophes; the rows quote the words between them",
+      "retrieved": "2026-10-15"
+    },
+    "ehnet_mokyr2009": {
+      "url": "https://eh.net/book_reviews/the-enlightened-economy-an-economic-history-of-britain-1700-1850/",
+      "format": "html",
+      "sha256": "d9f2f08b2b7e7da699a040c33a39b0ed0c0ba131ce062d2d10238274cb25b174",
+      "version": "C. K. Harley, review of J. Mokyr, The Enlightened Economy: An Economic History of Britain, 1700-1850, EH.Net, December 2010. 'Copyright (c) 2010 by EH.Net. All rights reserved. This work may be copied for non-profit educational uses if proper credit is given to the author and the list.' The review's header names the publisher as 'Princeton: Princeton University Press, 2010' with the ISBN 978-0-300-12455-2, which is a Yale University Press number; the page shows '?' for some apostrophes",
+      "retrieved": "2026-10-15"
+    },
+    "ehnet_clark2007": {
+      "url": "https://eh.net/book_reviews/a-farewell-to-alms-a-brief-economic-history-of-the-world/",
+      "format": "html",
+      "sha256": "f7a2ddcd652bfcf71c6c0a2c765101e7ab49f98d05596b15b3f2f5bda5832159",
+      "version": "R. A. Margo, review of G. Clark, A Farewell to Alms: A Brief Economic History of the World (Princeton University Press, 2007), EH.Net, March 2008. 'Copyright (c) 2008 by EH.Net. All rights reserved. This work may be copied for non-profit educational uses if proper credit is given to the author and the list.'",
+      "retrieved": "2026-10-15"
+    },
+    "allen2009wp": {
+      "url": "https://www.lse.ac.uk/asset-library/information/wp123.pdf",
+      "format": "pdf",
+      "sha256": "fbbf6975381a379a273b568c596e6e4d51cbd44f59271a5ca7e75b26d2b3f14f",
+      "version": "R. C. Allen, J.-P. Bassino, D. Ma, C. Moll-Murata and J. L. van Zanden, 'Wages, Prices, and Living Standards in China, 1738-1925: in Comparison with Europe, Japan and India', London School of Economics, Department of Economic History, Working Papers No. 123/09 (July 2009), the working-paper version of the article in the Economic History Review 64(S1), 2011; '(c) Robert C. Allen, Oxford, Jean-Pascal Bassino, Montpelier, Debin Ma, LSE, Christine Moll-Murata, Bochum, Jan Luiten van Zanden, Utrecht/IISH'; sections VI-VII; pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "bgl2017": {
+      "url": "https://www2.warwick.ac.uk/fac/soc/economics/research/centres/cage/manage/publications/324-2017_broadberry.pdf",
+      "format": "pdf",
+      "sha256": "05b1e0a0e4adfb8190f76065f23deaef0e34115ce9a6b4218a9829f8678798d8",
+      "version": "S. Broadberry, H. Guan and D. D. Li, 'China, Europe and the Great Divergence: A Study in Historical National Accounting, 980-1850', CAGE Working Paper No. 324, University of Warwick (17 April 2017), the working-paper version of the article in the Journal of Economic History 78(4), 2018; sections III-V and Tables 3, 5, 6 and 8 (1990 international dollars); pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "bg2005": {
+      "url": "https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/GEHNConferences/conf6/Conf6-BroadberryGupta.pdf",
+      "format": "pdf",
+      "sha256": "c57d1cf42687f9d63359f9a2256a279ee3e11064da2fefaecfe596fd6dd8a5e8",
+      "version": "S. Broadberry and B. Gupta, 'Cotton Textiles and the Great Divergence: Lancashire, India and Shifting Competitive Advantage, 1600-1850', paper for the sixth conference of the Global Economic History Network (LSE), the working-paper version (CEPR Discussion Paper 5183, 2005) of 'Lancashire, India, and shifting competitive advantage in cotton textiles, 1700-1850: the neglected role of factor prices', Economic History Review 62(2), 2009; text and Tables 1-14; pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "hs2018": {
+      "url": "https://ora.ox.ac.uk/objects/uuid:4f321519-a0b7-4879-a521-139cbca81b25/files/r0v8380664",
+      "format": "pdf",
+      "sha256": "0761fb408d4abe92ddd7a39689f91eedad5aa569db8f2286d2f3eeeb350b7ea1",
+      "version": "J. Humphries and B. Schneider, 'Spinning the Industrial Revolution', Economic History Review 72(1), 2019, pp. 126-155: the authors' accepted manuscript in the Oxford University Research Archive (word count 12,112; Appendix I); pages of the manuscript",
+      "retrieved": "2026-10-15"
+    },
+    "allen2018": {
+      "url": "https://ora.ox.ac.uk/objects/uuid:563fc182-60d8-4e75-a14d-b38570f07829/files/sk06988017",
+      "format": "pdf",
+      "sha256": "e95f3f400be7e66873734c0921fa6e8d3d812f8b29e9250893512eb789c925d4",
+      "version": "R. C. Allen, 'Spinning their Wheels: A Reply to Jane Humphries and Benjamin Schneider', University of Oxford, Discussion Papers in Economic and Social History, Number 166 (July 2018), in the Oxford University Research Archive; published in the Economic History Review 73(4), 2020; pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "hs2019": {
+      "url": "https://ora.ox.ac.uk/objects/uuid:f2cdf60d-cc96-485f-97e4-b4cf2df03ebb/files/sm900nt89p",
+      "format": "pdf",
+      "sha256": "a8ac708333c459c14e091d5f4f6fc3b5bb3d4ba30ce48c920d75d6a7d1210e76",
+      "version": "J. Humphries and B. Schneider, 'Wages at the Wheel: Were Spinners Part of the High Wage Economy?', Oxford Economic and Social History Working Papers, Number 174 (October 2019), in the Oxford University Research Archive; a shorter version is 'Losing the thread: a response to Robert Allen', Economic History Review 73(4), 2020; the abstract and the opening pages",
+      "retrieved": "2026-10-15"
+    },
+    "ajr2002": {
+      "url": "https://www.nber.org/system/files/working_papers/w9378/w9378.pdf",
+      "format": "pdf",
+      "sha256": "1ee1ab2239665eda23276acd04196c206a26303349c7874fce8cfb9934fe7a15",
+      "version": "D. Acemoglu, S. Johnson and J. Robinson, 'The Rise of Europe: Atlantic Trade, Institutional Change and Economic Growth', NBER Working Paper 9378 (December 2002), published in the American Economic Review 95(3), 2005. '(c) 2002 by Daron Acemoglu, Simon Johnson and James Robinson. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source.' The abstract",
+      "retrieved": "2026-10-15"
+    }
+  }
+}
