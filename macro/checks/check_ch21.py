@@ -42,6 +42,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 
+import check_ch11
 import check_ch18
 from common import ROOT, load_snapshot, quoted
 
@@ -339,7 +340,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(quote)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 125)
+    quoted("rows with values, each read from its quotation", n, 133)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -357,7 +358,7 @@ TRANSLATIONS = {
     "每二十五年翻一番": "mt_rule",
     "这个岛的人口据计算约为七百万": "mt_island",
     "第一个世纪结束时，人口将是一亿一千二百万，而生活资料只够养活三千五百万，剩下七千七百万人完全没有着落": "mt_century",
-    "国家财富的增长对改善劳动贫民的处境几乎没有或完全没有作用。": "mt_wealth",
+    "国家财富的增长对改善劳动贫民的处境几乎没有或完全没有起过作用。": "mt_wealth",
     # sec:divergence-world
     "不是每二十五年翻一番，而是要三四百年或更久": "mt_europe",
     "确实一直在迅速前进": "mt_commerce",
@@ -445,7 +446,7 @@ TRANSLATIONS = {
     "在英格兰要花一先令的劳动，在印度两便士就能得到": "bg_shilling",
     "印度的谷物价格也相对便宜": "bg_grain",
     "同印度生产者竞争的英国厂商必须按白银工资考虑问题，因为它们必须按世界的白银价格在世界市场上出售": "bg_world",
-    "到 1750 年雇用了一百多万妇女与儿童": "hs_million",
+    "到 1750 年涉及一百多万妇女与儿童": "hs_million",
     "纺纱这个工业化的主导部门，并不存在这样的‘高工资经济’": "hs_nohwe",
     "机械化的动机必须到别处去找": "hs_elsewhere",
     "确实在缓慢上升，但速度只有每年 0.3\\%": "hs_03",
@@ -469,6 +470,7 @@ TRANSLATIONS = {
     "即使同其他女工相比也很低，其变化轨迹也不能解释珍妮纺纱机的发明与推广": "hs19_low",
     "质疑这样一个奇怪的假定：纺纱工虽然贫困，却选择放弃挣钱的机会而宁要闲暇": "hs19_leisure",
     "在原地空转纺车的是 Allen 教授，不是我们。": "hs19_wheels",
+    "女纺纱工是大规模技术性失业的第一个例子": "al18_unemployed",
     "为英国工业革命提供燃料的煤，在地理上对 18 世纪中国南方的核心地区并不那么容易得到，因为它集中在西北": "lal_coal",
     "把长江三角洲与西北的煤矿连起来，回报是巨大的，但这些回报事前是看不见的": "lal_invisible",
     "Pomeranz 对大分流原因的回答的第二部分，是欧洲对新大陆的发现与开发——部分是通过贸易": "lal_newworld",
@@ -487,7 +489,7 @@ TRANSLATIONS = {
     "我们与启蒙运动联系在一起的那套不断变化的信念": "hr_beliefs",
     "一个社会，其中占主导的是这样一种心态：相信通过观察与实验获得的有用知识可以带来进步": "hr_define",
     "持续的变化取决于持续的技术进步，而技术进步又取决于知识及其发展的过程": "hr_knowledge",
-    "所谓工业启蒙，似乎至少是在描述成功的变化是什么样子，而不是它的原因": "hr_cause",
+    "所谓工业启蒙，似乎几乎是在描述成功的变化是什么样子，其程度至少不亚于在说明它的原因": "hr_cause",
     "没有完全说服人：为什么一场英国特有的工业启蒙，应当在理解 18 世纪现代经济增长的出现时占首要的位置": "hr_notfully",
     "问题在于，这样的改进太零星、太有限了": "mg_sporadic",
     "要得到持续的经济增长，我们需要持续的全要素生产率增长": "mg_tfp",
@@ -516,7 +518,7 @@ TRANSLATIONS = {
     "一直有效到 1774 年": "bg_1774",
     "保护对英国棉纺织业的作用似乎是中性的，《印花布法》被规避了": "bg_neutral",
     "如果《印花布法》成功了，英国棉纺织业也许会像美国的同行一样，永远不能在世界市场上竞争": "bg_us",
-    "1770 年，英国的工资约为印度的 6 倍，但英国的劳动生产率只比印度高两到三倍": "bg_1770",
+    "1770 年，英国的工资约为印度的 6 倍，但英国的劳动生产率只是印度的两到三倍": "bg_1770",
     "到 1820 年，由于英国的生产率提高到 6.53 倍，并假定印度停滞，英国的生产率上升到印度水平的 1625\\%": "bg_1625",
     "由于这时英国的工资已经回落到印度水平的 517\\% 左右，英国的单位劳动成本已经低于印度": "bg_517",
     "1818 年，达卡的商馆关闭了。促使董事会在 1818 年放弃它的，不是运费，也不是保护性关税，而是英国同类棉制品价格的大幅下降": "bg_dacca",
@@ -528,6 +530,40 @@ TRANSLATIONS = {
     "星号表示作为计价标准的国家，这里是英国": "bg_numeraire",
     "星号表示外国，这里取为印度": "bg_foreign",
     "我们假定最初的离岸价格之比是 200": "bg_fob200",
+    # added after the independent review
+    "虽然低于人口的最大能力": "mt_short",
+    "实际经验的结果": "mt_short",
+    "并不一定排除这样的可能：按更广的指标，长江三角洲的人均收入与生活水平仍然更高": "al11_preclude",
+    "承认他早先说中国晚至 1800 年仍与欧洲不相上下是夸大了": "bgl_exaggerated",
+    "现在愿意接受 1700 至 1750 年之间一个较早的日期": "bgl_settle",
+    "加州学派说得对，考虑到地区差别，中国与欧洲在历史上经济表现的差别比过去以为的小得多": "bgl_right",
+    "加州学派早先的说法走得远了一点": "bgl_toofar",
+    "Maddison（1998）……只作了一些小的调整": "bgl_maddison",
+    "修正得到了广泛的支持": "bgl_correction",
+    "没有告诉我们做这些活儿花了多长时间。一个办法是用成本除以一个妇女的工资率": "al18_divide",
+    "比较用手工与用机器生产许多重要产品所需的时间": "al18_wright1899",
+    "每道工序的劳动小时都记录了下来": "al18_hours1899",
+    "一个全天等于 12 小时": "al18_12h",
+    "Wright 的数字意味着每磅需要 1.15 天，Guest 的成本意味着 1.09 天": "al18_wright",
+    "常被重复的当时的数字看来不是一个坏的经验法则": "al18_rule",
+    "这个解释肯定站不住，因为中国的国家在宋代就曾采取行动，把新的水稻技术推广到中国南方": "lal_willnotdo",
+    "强大的官僚威权国家": "lal_link",
+    "采取必要的行动，把它治下的这两个地区连起来": "lal_link",
+    "这是关键所在": "lal_crucial",
+    "令人信服地表明，这些观念是 18 与 19 世纪英国经济变化的核心": "hr_persuasive",
+    "有力地论证了这样的看法：理解那场变化需要长远的眼光，观念的历史及其在社会中的位置需要处在故事的核心": "hr_strongcase",
+    "竟会有经济史学者认真反对这样的看法": "mg_dispute",
+    "作为原因存在于工业革命之中": "mg_present",
+    "真正的问题，一如既往，是有多大": "mg_howmuch",
+    "喜欢去前人没有去过的地方，因此也就走得更远": "mg_beyond",
+    "证据实际可能支持的": "mg_evidence",
+    "包括与殖民和奴隶制有关的活动": "ajr_slavery",
+    "在欧洲的兴起中起了重要作用": "ajr_role",
+    "不大": "ajr_modest",
+    "海外贸易及其利润还没有大到能够直接造成欧洲的增长": "ajr_notlarge",
+    "维持着以奴隶制与强迫劳动为基础的、高度榨取性的制度": "ajr_planters",
+    "给了英国棉纺织业重要的推动": "bg_obrien",
+    "保护可以看作减少了创新的激励，因而推迟了竞争优势的转移": "bg_reducing",
 }
 
 
@@ -565,7 +601,7 @@ def n_max(F) -> float:
 
 def opening(F, Y, B, G):
     chk("Malthus, first edition", Y["mt_food"], 1798)
-    chk("North America: twenty-five years; the rule", F["mt_usa"] + F["mt_rule"], [25, 25])
+    chk("the United States: twenty-five years; the rule", F["mt_usa"] + F["mt_rule"], [25, 25])
     m, d = F["mt_island"][0], F["mt_rule"][0]
     n = 100 / d                                            # doublings in a century
     chk("the Island: seven millions", m, 7)
@@ -603,8 +639,14 @@ def world(F, Y, B, G):
     chk("MPD: 1500-1913", [G.index.min(), G.index.max()], [1500, 1913])
     both = G[["GBR", "NLD"]].dropna()
     ahead = both.GBR > both.NLD
-    chk("Britain passes the Netherlands", ahead.idxmax(), 1808)
-    assert ahead.loc[1808:].all()
+    chk("Britain above the Netherlands from", ahead.idxmax(), 1808)
+    assert ahead.loc[1808:].all() and not ahead.loc[:1807].any()                       # below Holland until 1807
+    notes = " ".join(load_snapshot("maddison2023_divergence")[1]["notes"].split())
+    assert "van Zanden and van Leeuwen (2012) for Holland 1348-1807" in notes
+    assert "Smits, Horlings and van Zanden (2000) for 1807-1913" in notes
+    assert "United Kingdom, 1252-1870 (England to 1700)" in notes                       # 1700 is England
+    pct("NLD 1807 (Holland)", G.NLD[1807], 3863, 0)
+    pct("    1808 (the Netherlands)", G.NLD[1808], 2632, 0)
     nld = G.NLD.reindex(range(1808, 1816))
     assert nld.loc[1809:1814].isna().all() and nld[[1808, 1815]].notna().all()        # no figures 1809-1814
     both = G[["GBR", "USA"]].dropna()
@@ -663,7 +705,7 @@ def malthus_model(F):
 
 def takeoff(F, Y, B, C, G):
     for c, a, b, v in [("GBR", 1700, 1820, 0.26), ("GBR", 1820, 1870, 1.13), ("GBR", 1870, 1913, 0.80),
-                       ("NLD", 1700, 1820, -0.10), ("CHN", 1700, 1820, -0.47), ("JPN", 1700, 1820, 0.17),
+                       ("CHN", 1700, 1820, -0.47), ("JPN", 1700, 1820, 0.17),
                        ("USA", 1820, 1870, 1.17), ("USA", 1870, 1913, 1.73), ("JPN", 1870, 1913, 1.00)]:
         pct(f"MPD {c} {a}-{b} (% a year)", growth(G[c], a, b), v, 2)
     pct("    doubling at Britain's 1700-1820 rate (years)", doubling(G.GBR, 1700, 1820), 264, 0)
@@ -682,6 +724,7 @@ def takeoff(F, Y, B, C, G):
     assert "100 lb" in note and "80s yarn" in note
     chk("Catling: India, 50,000 hours, around 1780", F["bg_t8_india"], [50000, 1780])
     chk("    Crompton's mule 1780: 2,000; Roberts 1825: 135", F["bg_t8_1780"] + F["bg_t8_1825"], [1780, 2000, 1825, 135])
+    chk("    the whole industry, 1770: 2.5 times (Table 10)", F["bg_t10_1770"][2] / 100, 2.5)
     Q = quotes()
     assert "Crompton" in Q["bg_t8_1780"] and "Roberts" in Q["bg_t8_1825"]
     chk("grades: A < 5; B 5-15; C 15-25, D > 25", F["bgl_gradeA"] + F["bgl_gradeB"] + F["bgl_gradeC"],
@@ -711,8 +754,11 @@ def welfare_check(F, Y, W):
     for c, v in t.items():
         pct(f"1750s: {c}", decade_mean(W[c], 1750, 1759), v, 2)
     for c, a, b, v in [("beijing", 1840, 1849, 0.76), ("beijing", 1850, 1859, 0.56), ("beijing", 1900, 1913, 1.49),
-                       ("london", 1850, 1859, 4.53), ("london", 1900, 1913, 7.77), ("amsterdam", 1850, 1859, 2.31)]:
+                       ("london", 1850, 1859, 4.53), ("london", 1900, 1913, 7.77), ("amsterdam", 1850, 1859, 2.31),
+                       ("amsterdam", 1900, 1913, 5.03)]:
         pct(f"{c} {a}-{b}", decade_mean(W[c], a, b), v, 2)
+    for c in ("beijing", "amsterdam"):                                     # above the 1750s
+        assert decade_mean(W[c], 1900, 1913) > decade_mean(W[c], 1750, 1759), c
     chk("1913", F["al11_1913"], [1913])
     # ex:divergence-welfare
     w, fam = F["al11_p12"][0], F["al11_2259"][2]
@@ -798,11 +844,33 @@ def why(F, Y, W):
     # ex:divergence-spinners
     s9, c9 = F["al18_9d"]
     day1, _, day2 = F["al18_109"]
-    pct("(1) 9 / 1.09 (d)", s9 / day1, 8.26, 2)
+    sv = F["al18_8275"][-1]
     chk("    18", s9 + c9, 18)
-    pct("    18 / 2.18 (d)", (s9 + c9) / day2, 8.26, 2)
-    pct("(2) 3.68 / 8.26", ap[1750][3] / (s9 / day1), 0.45, 2)
-    pct("    0.4 x 8.26 (d)", F["al18_40"][0] / 100 * s9 / day1, 3.30, 2)
+    pct("(1) 9 / 8.275 (days): Allen's 1.09", s9 / sv, day1, 2)
+    pct("    18 / 8.275: Allen's 2.18", (s9 + c9) / sv, day2, 2)
+    pct("    1 / 1.09 (lb a day)", 1 / day1, 0.92, 2)
+    pct("    9 / 1.09 (d)", s9 / day1, 8.26, 2)
+    assert abs(s9 / day1 - sv) < 0.02                                       # rounding only
+    pct("(2) 3.68 / 8.275", ap[1750][3] / sv, 0.44, 2)
+    pct("    0.4 x 8.275 (d)", F["al18_40"][0] / 100 * sv, 3.31, 2)
+    # Wright's hours of labour (1899): days per pound that do not use the servants' wage
+    w115, g109 = F["al18_wright"]
+    chk("Wright 1.15 days a pound; Guest 1.09", [w115, g109], [1.15, day1])
+    chk("    a full day of 12 hours", F["al18_12h"], [12])
+    assert "US Commissioner of Labor" in Q["al18_wright1899"] and "by hand and by machine" in Q["al18_wright1899"]
+    pct("    9 / 1.15 (d)", s9 / w115, 7.83, 2)
+    pct("    7.83 / 8.275", s9 / w115 / sv, 0.95, 2)
+    assert "divide the cost by a woman" in Q["al18_divide"] and "Dividing Guest" in Q["al18_dividing"]
+    # Pomeranz (2011) as reported by Broadberry, Guan and Li; the registered population
+    chk("Pomeranz (2011): 1800 exaggerated", F["bgl_exaggerated"], [2011, 1800])
+    chk("    settles for 1700-1750", F["bgl_settle"], [1700, 1750])
+    chk("Maddison (1998); Liu and Hwang (1979); Perkins (1969)", F["bgl_maddison"] + F["bgl_correction"],
+        [1998, 1979, 1969])
+    assert "correction to the recorded census estimates for the Ming and Qing" in Q["bgl_correction"]
+    # O'Brien et al. (1991) on protection; AJR on slavery
+    chk("O'Brien et al. 1991: 413-418, until 1774", F["bg_obrien"], [1991, 413, 418, 1774])
+    chk("Engerman (1972), O'Brien (1982)", F["ajr_modest"], [1972, 1982])
+    assert Q["ajr_modest"].endswith("is modest.") and "slavery-related" in Q["ajr_slavery"]
     # Pomeranz and Lal
     assert "eighteenth-century core in southern China" in Q["lal_coal"]
     assert "in the eleventh century" in Q["lal_hartwell"] and "invaders of the twelfth century" in Q["lal_hartwell"]
@@ -885,6 +953,8 @@ def test(F, B, C, W):
     pct("land share: mean", a.mean(), 0.235, 3)
     pct("    min", a.min(), 0.163, 3)
     pct("    max", a.max(), 0.314, 3)
+    pct("Chapter 11's agricultural land share", check_ch11.ALPHA, 0.405, 3)
+    assert a.max() < check_ch11.ALPHA                       # the economy-wide share is smaller
     f = frontier(C, 1250, 1630)
     lo, hi = f.conf_int().loc["lL"]
     chk("frontier 1250-1630: n", f.nobs, 39)
@@ -913,6 +983,9 @@ def test(F, B, C, W):
         pct("    population", r[k]["L"], L, 2)
     for d, v in {1250: 0.284, 1600: 0.314, 1700: 0.252, 1800: 0.211, 1850: 0.109, 1860: 0.095}.items():
         pct(f"land share {d}s", C.alpha[d], v, 3)
+    chk("    highest in the 1600s", C.alpha.idxmax(), 1600)
+    per_decade = lambda a, b: (C.alpha[b] - C.alpha[a]) / ((b - a) / 10)
+    assert per_decade(1780, 1860) < per_decade(1600, 1780) < 0                    # falls faster after the 1780s
     nm = n_max(F)
     pct("1640-1800: alpha about 0.25", r[(1640, 1800)]["alpha"], 0.25, 2)
     pct("    threshold (%)", 100 * 0.25 * nm, 0.69, 2)
@@ -946,6 +1019,11 @@ def test(F, B, C, W):
         if ch is not None:
             pct("    change (%)", 100 * (C[col][1800] / C[col][1700] - 1), ch)
         assert (C[col][1800] > C[col][1700]) == (col == "real_nni_pc_1860s_100")
+    sw, sr = C.wage_income_gbp_m / C.nni_gbp_m, C.land_rents_gbp_m / C.nni_gbp_m
+    for d, w_, r_, k_ in [(1700, 0.571, 0.193, 0.237), (1800, 0.535, 0.143, 0.322)]:
+        pct(f"    {d}s: wage share of NNI", sw[d], w_, 3)
+        pct("    rent share", sr[d], r_, 3)
+        pct("    the rest", 1 - sw[d] - sr[d], k_, 3)
     for col, v in [("real_farm_1860s_100", 45.9), ("real_blab_1860s_100", 62.2), ("real_bcraft_1860s_100", 63.2)]:
         pct(f"    1800-1850 {col} (%)", 100 * (C[col][1850] / C[col][1800] - 1), v)
     # the pitfalls
