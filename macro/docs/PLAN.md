@@ -1379,7 +1379,7 @@ part:language part:ancient part:earlymodern part:classical part:keynes part:gold
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
 sec:intro-world sec:intro-afford sec:intro-layers sec:intro-cases sec:intro-test sec:intro-map sec:intro-legacy eq:intro-budget tab:intro-layers tab:intro-cases ex:intro-peg ex:intro-ratio
-sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows
+sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows ex:accounts-thrift
 sec:prices-world sec:prices-index sec:prices-real sec:prices-fisher sec:prices-bonds sec:prices-curve sec:prices-breakeven sec:prices-test sec:prices-legacy eq:prices-index eq:prices-fisher eq:prices-bond eq:prices-curve eq:prices-breakeven tab:prices-boskin
 sec:money-world sec:money-sheets sec:money-creation sec:money-rate sec:money-functions sec:money-test sec:money-legacy eq:money-base eq:money-reserves eq:money-mult eq:money-corridor tab:money-fed tab:money-steps ex:money-smith
 sec:external-world sec:external-bop sec:external-position sec:external-rates sec:external-constraint sec:external-test sec:external-legacy eq:external-bop eq:external-sectors eq:external-iip eq:external-real eq:external-ppp eq:external-cip eq:external-uip tab:external-srilanka ex:external-sin
@@ -1396,5 +1396,6 @@ sec:merc-mun sec:merc-law sec:merc-system sec:merc-southsea sec:merc-cantillon s
 sec:toku-world sec:toku-koku sec:toku-genroku sec:toku-dojima sec:toku-qing sec:toku-debate sec:toku-europe sec:toku-test sec:toku-legacy eq:toku-burden eq:toku-twoprice eq:toku-content eq:toku-seign eq:toku-hedge tab:toku-coins tab:toku-europe tab:toku-test
 sec:smith-world sec:smith-division sec:smith-capital sec:smith-mercantile sec:smith-paper sec:smith-realbills sec:smith-ayr sec:smith-regulation sec:smith-states sec:smith-test sec:smith-legacy eq:smith-twofactors eq:smith-saving eq:smith-reflux eq:smith-redraw tab:smith-states
 sec:bullion-world sec:bullion-hume sec:bullion-equation sec:bullion-restriction sec:bullion-report sec:bullion-debate sec:bullion-resumption sec:bullion-test sec:bullion-legacy eq:bullion-hume eq:bullion-exchange eq:bullion-premium eq:bullion-goldpoint tab:bullion-goldpoint ex:bullion-hume ex:bullion-velocity ex:bullion-mint ex:bullion-goldpoint ex:bullion-sweden ex:bullion-decomp
+sec:say-world sec:say-law sec:say-glut sec:say-debate sec:say-walras sec:say-1825 sec:say-test sec:say-legacy eq:say-identity eq:say-walras eq:say-yield tab:say-loans ex:say-hats ex:say-walras ex:say-yield ex:say-leverage ex:say-decomp
 nav:contents nav:compare
 ```

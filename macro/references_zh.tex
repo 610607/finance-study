@@ -53,7 +53,7 @@
 % ---- 第 11 章：数据与研究文献
 \bibitem{clark2010} G. Clark. The macroeconomic aggregates for England, 1209--2008. \emph{Research in Economic History}, 27: 51--140, 2010. \url{https://doi.org/10.1108/S0363-3268(2010)0000027004}. 数据据作者网页上的工作簿 \emph{Wages 2014} 与 \emph{England NNI -- Clark -- 2015}（\url{https://faculty.econ.ucdavis.edu/faculty/gclark/data.html}），2026 年 10 月下载。
 
-\bibitem{broadberry2015} S. Broadberry, B. M. S. Campbell, A. Klein, M. Overton and B. van Leeuwen. \emph{British Economic Growth, 1270--1870}. Cambridge University Press, 2015. \url{https://doi.org/10.1017/CBO9781107707603}. 人口数据据英格兰银行 \emph{A Millennium of Macroeconomic Data for the UK}（3.1 版）表 A2；第 18 章的人均实际 GDP 据同一数据集的表 A21。
+\bibitem{broadberry2015} S. Broadberry, B. M. S. Campbell, A. Klein, M. Overton and B. van Leeuwen. \emph{British Economic Growth, 1270--1870}. Cambridge University Press, 2015. \url{https://doi.org/10.1017/CBO9781107707603}. 人口数据据英格兰银行 \emph{A Millennium of Macroeconomic Data for the UK}（3.1 版）表 A2；第 18 章的人均实际 GDP 据同一数据集的表 A21；第 20 章的部门产出与八个主要行业的产出据表 A7 与 A4。
 
 \bibitem{rvw1996} A. J. Rolnick, F. R. Velde and W. E. Weber. The debasement puzzle: an essay on medieval monetary history. \emph{Journal of Economic History}, 56(4): 789--808, 1996. \url{https://doi.org/10.1017/S0022050700017472}. 引文、页码与表 2、表 3 据重印本：Federal Reserve Bank of Minneapolis \emph{Quarterly Review}, 21(4): 8--20, 1997，\url{https://doi.org/10.21034/qr.2142}.
 
@@ -203,7 +203,7 @@
 
 \bibitem{allen1988} R. C. Allen. The price of freehold land and the interest rate in the seventeenth and eighteenth centuries. \emph{Economic History Review}, 41(1): 33--50, 1988. \url{https://doi.org/10.2307/2597331}. 抵押贷款利率据英格兰银行 \emph{A Millennium of Macroeconomic Data for the UK}（3.1 版）表 A31 转引。
 
-\bibitem{boe2017} R. Thomas and N. Dimsdale. \emph{A Millennium of Macroeconomic Data for the UK}, version 3.1. Bank of England, 2017. 用到表 A27（中央政府收支，财政年度截至米迦勒节，以起始年标记）、A29（国债，含定期与终身年金的估计价值）与 A31（利率：1703—1726 年是新发长期借款的收益率，1727—1753 年是 3\% 永续年金的收益率）。数据见 \texttt{data/fetch/boe\_millennium\_debt.py}；第 18 章另用表 A2（英格兰人口）与 A21（英格兰与大不列颠的人均实际 GDP、名义 GDP 与人口，按 2013 年价格），见 \texttt{data/fetch/boe\_millennium\_gb18.py}；第 19 章用表 M6（Gayer、Rostow 与 Schwartz 的月度批发物价指数，1821—1825 年 $=100$，本书取每年 12 个月的平均）、A47（消费物价指数，这些年份据 Feinstein 1998）与 A29（国债），见 \texttt{data/fetch/boe\_millennium\_gb19.py}，\url{https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx}.
+\bibitem{boe2017} R. Thomas and N. Dimsdale. \emph{A Millennium of Macroeconomic Data for the UK}, version 3.1. Bank of England, 2017. 用到表 A27（中央政府收支，财政年度截至米迦勒节，以起始年标记）、A29（国债，含定期与终身年金的估计价值）与 A31（利率：1703—1726 年是新发长期借款的收益率，1727—1753 年是 3\% 永续年金的收益率）。数据见 \texttt{data/fetch/boe\_millennium\_debt.py}；第 18 章另用表 A2（英格兰人口）与 A21（英格兰与大不列颠的人均实际 GDP、名义 GDP 与人口，按 2013 年价格），见 \texttt{data/fetch/boe\_millennium\_gb18.py}；第 19 章用表 M6（Gayer、Rostow 与 Schwartz 的月度批发物价指数，1821—1825 年 $=100$，本书取每年 12 个月的平均）、A47（消费物价指数，这些年份据 Feinstein 1998）与 A29（国债），见 \texttt{data/fetch/boe\_millennium\_gb19.py}；第 20 章用表 A7（大不列颠的部门实际 GDP、名义 GDP 与 GDP 平减指数）、A4（Broadberry 等人表 4.02 的八个主要行业的产出）、M13（Gayer、Rostow 与 Schwartz 的月度股价指数）、M9（英格兰银行贴现率与三个月优质票据的市场贴现率，后者据 Overend, Gurney 的数字）、M10（3\% 统一公债的收益率，据 Odlyzko 2014 的周数据）与 M6（月度批发物价），见 \texttt{data/fetch/boe\_millennium\_gb20.py}，\url{https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx}.
 
 % ---- 第 16 章：史料。引文逐字核对见 data/fetch/verify_web_quotes.py（版本、网址与 SHA-256 记在
 % data/snapshots/merc_facts.json 的 sources）；股价数据见 data/snapshots/fgr2009_1720_shares.json。
@@ -564,7 +564,36 @@
 
 \bibitem{riksbank2026} Sveriges riksbank. Historical Monetary and Financial Statistics for Sweden: Volume I, ch. 4, Table I.A4.7 (Riksdaler in mark 1534--1776); Volume II, ch. 8, Tables II.A8.1 (Riksbank assets) and II.A8.2 (Riksbank liabilities and equity). Excel 文件，\url{https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym1/volumeich4exchangerates1534_1803.xls}，\url{https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym2/volumeiich8riksbankbalancesheet.xls}. 来源：Sveriges riksbank，2026 年 10 月 15 日。数据见 \texttt{data/fetch/riksbank\_sweden19.py}；正文与图中的比值是本书的计算，不是瑞典中央银行发布的统计。
 
-\bibitem{gayer1953} A. D. Gayer, W. W. Rostow and A. J. Schwartz. \emph{The Growth and Fluctuation of the British Economy 1790--1850}. Oxford: Clarendon Press, 1953. 国内与进口商品的月度批发物价指数（1821—1825 年 $=100$），据英格兰银行《千年宏观数据》表 M6 转引。
+\bibitem{gayer1953} A. D. Gayer, W. W. Rostow and A. J. Schwartz. \emph{The Growth and Fluctuation of the British Economy 1790--1850}. Oxford: Clarendon Press, 1953. 国内与进口商品的月度批发物价指数（1821—1825 年 $=100$），据英格兰银行《千年宏观数据》表 M6 转引；第 20 章另用它的月度股价指数（63 家公司，包括与不包括矿业公司，1840 年 6 月 $=100$），据同一数据集的表 M13 转引。
 
 \bibitem{feinstein1998} C. H. Feinstein. Pessimism Perpetuated: Real Wages and the Standard of Living in Britain during and after the Industrial Revolution. \emph{Journal of Economic History} 58(3), 1998: 625--658. 消费物价指数，据英格兰银行《千年宏观数据》表 A47 转引。
+% ---- 第 20 章：引文据下载的原文件，核对见 data/fetch/verify_web_quotes.py（网址与 SHA-256 记在
+% data/snapshots/say_facts.json 的 sources；English 的外国借款表按页面图像读）；数据见 data/fetch/boe_millennium_gb20.py。
+\bibitem{say1803} J.-B. Say. \emph{Traité d'économie politique, ou simple exposition de la manière dont se forment, se distribuent, et se consomment les richesses}, tome I. Paris, an XI (1803). 初版。第一篇第二十二章 Des Débouchés（第 152—155 页）。引文据 Internet Archive 上 Google 图书扫描本的识别文本，\url{https://archive.org/details/bub_gb_LWhDAAAAcAAJ}. 2026 年 10 月 15 日下载。
+
+\bibitem{say1821} J.-B. Say. \emph{A Treatise on Political Economy}, translated from the fourth edition of the French by C. R. Prinsep, vol. I. London: Longman, Hurst, Rees, Orme, and Brown, 1821. 第一篇第十五章 Of the Vent or Demand for Products（第 162—172 页），含萨伊的脚注与译者注。引文据 Internet Archive 上多伦多大学藏本的识别文本，\url{https://archive.org/details/treatiseonpoliti01sayjuoft}. 2026 年 10 月 15 日下载。
+
+\bibitem{saylet1821} J.-B. Say. \emph{Letters to Mr. Malthus, on Several Subjects of Political Economy, and on the Cause of the Stagnation of Commerce}. Translated by J. Richter. London: Sherwood, Neely, and Jones, 1821. 第一封信（第 1—6 页）。引文据 Internet Archive 上加利福尼亚大学图书馆藏本的识别文本，\url{https://archive.org/details/letterstomrmalth00sayjrich}. 2026 年 10 月 15 日下载。
+
+\bibitem{malthus1820} T. R. Malthus. \emph{Principles of Political Economy Considered with a View to Their Practical Application}. London, 1820. 初版。序论（第 8—9 页）与第七章第三节（第 353—357 页）。引文据 Internet Archive 上巴伐利亚州立图书馆藏本的识别文本，\url{https://archive.org/details/10389061bsb}. 2026 年 10 月 15 日下载。
+
+\bibitem{ricardo1817} D. Ricardo. \emph{On the Principles of Political Economy, and Taxation}. London: John Murray, 1817. 初版：第七章 On Taxes 与第十九章 Effects of Accumulation on Profits and Interest（第三版的第二十一章）；这一版有两个第五章与两个第八章。引文据 Project Gutenberg 电子本 33310，\url{https://www.gutenberg.org/ebooks/33310}. 2026 年 10 月 15 日下载。
+
+\bibitem{ricardo_letters} J. Bonar (ed.). \emph{Letters of David Ricardo to Thomas Robert Malthus, 1810--1823}. Oxford: Clarendon Press, 1887. 第 XIX（1814 年 9 月 16 日）、LXXII（1820 年 9 月 4 日）、LXXIII（1820 年 10 月 10 日）与 LXXVII（1821 年 7 月 21 日）封信。引文据 Project Gutenberg 电子本 36345，\url{https://www.gutenberg.org/ebooks/36345}. 2026 年 10 月 15 日下载。
+
+\bibitem{sismondi1819} J.-C.-L. Simonde de Sismondi. \emph{Nouveaux principes d'économie politique, ou de la richesse dans ses rapports avec la population}, tome I. Paris, 1819. 初版。序言（Avertissement，第 iv—v 页）、第二篇第六章（第 123—126 页）与第四篇第四章（第 338—342 页）。引文据 Internet Archive 上巴伐利亚州立图书馆藏本的识别文本；识别文本丢掉了大部分重音符号，引文照识别文本，\url{https://archive.org/details/10725753bsb}. 2026 年 10 月 15 日下载。
+
+\bibitem{walras1874} L. Walras. \emph{Éléments d'économie politique pure, ou théorie de la richesse sociale}, premier fascicule. Lausanne: L. Corbaz; Paris: Guillaumin; Bâle: H. Georg, 1874. 第七课第 45—46 节（第 54—56 页）。引文据 Internet Archive 上 Google 图书扫描本的识别文本，\url{https://archive.org/details/lmentsdconomiep00walrgoog}. 2026 年 10 月 15 日下载。
+
+\bibitem{lange1942} O. Lange. Say's Law: A Restatement and Criticism. In O. Lange, F. McIntyre and T. O. Yntema (eds.), \emph{Studies in Mathematical Economics and Econometrics in Memory of Henry Schultz}. Chicago: University of Chicago Press, 1942: 49--68. 第 49、50、66 页。Copyright 1942 by the University of Chicago；本书只引短句。引文据 Internet Archive 上该书扫描本的识别文本，\url{https://archive.org/details/StudiesInMathematicalEconomicsAndEconometrics}. 2026 年 10 月 15 日下载。
+
+\bibitem{jsmill1844} J. S. Mill. \emph{Essays on Some Unsettled Questions of Political Economy}. London, 1844. 序言与第二篇 Of the Influence of Consumption on Production（写于 1829—1830 年）。引文据 Project Gutenberg 电子本 12004，\url{https://www.gutenberg.org/ebooks/12004}. 2026 年 10 月 15 日下载。
+
+\bibitem{tooke1838v2} T. Tooke. \emph{A History of Prices, and of the State of the Circulation, from 1793 to 1837}, vol. II. London: Longman, Orme, Brown, Green, and Longmans, 1838. 第四部分第六章第 3、7 节（第 12、37—38、45—46 页）、第七章第 5 节（第 113 页）与第八章第 4—7 节（第 148—163 页），其中引了图克 1826 年 1 月的小册子。引文据 Internet Archive 上 Robert E. Gross 藏本的识别文本，\url{https://archive.org/details/historyofpriceso02took}. 2026 年 10 月 15 日下载。
+
+\bibitem{english1827} H. English. \emph{A Complete View of the Joint Stock Companies Formed during the Years 1824 and 1825}. London: Boosey and Sons, 1827. 第 30—32 页的总表与评论；第 42 页的外国借款表按页面图像读。引文据 Internet Archive 上加拿大历史缩微文献（CIHM 52947）的识别文本与 PDF，\url{https://archive.org/details/cihm_52947}. 2026 年 10 月 15 日下载。
+
+\bibitem{reinhart2008tid} C. M. Reinhart and K. S. Rogoff. This Time is Different: A Panoramic View of Eight Centuries of Financial Crises. NBER Working Paper 13882, March 2008. \url{https://www.nber.org/system/files/working_papers/w13882/w13882.pdf}. 2026 年 10 月 15 日下载；© 2008 by Carmen M. Reinhart and Kenneth S. Rogoff. 表 3（19 世纪的外债违约与重组）、表 8（金融中心的危机）与表 3 之前的正文。
+
+\bibitem{baumol1999} W. J. Baumol. Retrospectives: Say's Law. \emph{Journal of Economic Perspectives} 13(1), 1999: 195--204. \url{https://doi.org/10.1257/jep.13.1.195}. 本书只用了美国经济学会网站上的摘要，\url{https://www.aeaweb.org/articles?id=10.1257/jep.13.1.195}；全文没能下载。
 \end{thebibliography}
