@@ -85,4 +85,6 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
 - Part 2 (第 6—9 章): notes in `docs/agent_prompts/part2_notes.md`; written sequentially in the order
   6, 7, 8, 9, started 2026-10-14; all four written and reviewed 2026-10-14.
 - Chapter 1 (`ch:intro`): written and reviewed 2026-10-14, after Part 2; to be revisited when the book is complete
-  (PLAN §7). Next: Part 4 (第 18—25 章), in order.
+  (PLAN §7).
+- Part 4 (第 18—25 章): notes in `docs/agent_prompts/part4_notes.md`; written sequentially in the order
+  18, 19, …, 25, started 2026-10-15; Chapter 18 written and reviewed 2026-10-15. Next: Chapter 19 (`ch:bullion`).

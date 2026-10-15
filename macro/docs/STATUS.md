@@ -261,8 +261,36 @@ Updated 2026-10-14.
   - The chapter has one keyeq (`eq:india-coin`).
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
 
+## Part 4 — in progress (sequential, one reviewer per chapter; notes in `docs/agent_prompts/part4_notes.md`)
+- Started 2026-10-15: Chapters 18–25 in order.
+- Chapter 18 (亚当·斯密：分工、积累与真实票据): written and reviewed. The draft is in "Chapter 18: Adam Smith — division of labour, accumulation and real bills"; the review fixes are in "Chapter 18: apply the independent review".
+  - The models: output per head as productivity times the share of useful labour (`eq:smith-twofactors`); the gain from replacing gold with paper, $\Delta Y/Y=(M/Y)(1-\rho)r$ (`eq:smith-saving`, 1.6% at Smith's one-fifth); the reflux of excess notes, $R=\rho\bar N+(N-\bar N)$ (`eq:smith-reflux`, Smith's £40,000/£44,000 bank); the cost of drawing and redrawing, $c=i+nk$ (`eq:smith-redraw`, 8%–14% a year).
+  - The 1772 crisis frames the chapter (Rockoff 2009): Fordyce's failure, the Ayr Bank's notes and loans (£800,000 at 5%, the cost of replenishing its coffers above 8%), Hume's letter, the Bank of England's terms; Smith's real-bills rule and its critics (Thornton 1802 on fictitious bills and the rate of interest; Mints; Laidler), set against Chapter 16's John Law.
+  - Tests: the North American colonies doubled in 22.6 years 1700–1770 (Census 1975, Z 1, read from the page images), within Smith's 20–25; England took about 205 years (107 in 1750–1780), so the "five hundred years" is too pessimistic for England; Qing registered population rose 44.4% 1764–1795 (《清史稿》卷一百二十), a counterexample to "stationary" China unless read per head; GB real GDP per head rose 22.8% 1700–1776 while the debt rose 9.7 times (BoE Millennium A2, A21); the Bank of Scotland's notes and deposits 1753–1764 (Rockoff's table 1).
+  - Cases outside the UK/US: Bengal 1770–1772 (the Council's letter of 3 November 1772 and Hunter 1868: a third of the people gone, the revenue kept up by 纳贾伊, the ban on hoarding against the Company's servants' monopoly); China in Smith's three states.
+  - Contested questions with each side's strongest case: real bills against the quantity of money; the Ayr Bank as rescue or as cause (Smith against Rockoff's insider lending); Smith's regulation (small notes, the optional clause) against free banking; whether saving is always spent (left to Chapters 20 and 32).
+  - Fixes after the review:
+    - Glasgow and Scotland's growth in Smith's own hedged words ("I do not pretend to know", "too great to be accounted for"); the hunters and fishers of the Introduction; the third of the three causes as the one for growth; the physiocrats point back to `sec:merc-tableau`.
+    - Book II ch I added for the argument that a prudent man employs his stock; the pitfall box cites it.
+    - The cash accounts: both of Smith's advantages and the saved expense; the order of the complaints, then the expedient of circulating bills.
+    - Thornton: three two-month bills; his concession on the rate of interest; a new paragraph on Law's question and Mints, quoting "只贴现真实票据" as a term.
+    - Slavery: an unsourced sentence replaced by Smith's own (Book III ch II): freemen in the corn colonies, slaves in the sugar colonies and much of the tobacco colonies.
+    - Hunter reads 1770 through the Orissa famine of 1866 (p. 53: the pressure indicated by the price of rice "precisely the same"); "the most careful" non-official writers; a third of the people "dead and fled".
+    - The loan-office passage as Smith puts it (perhaps five hundred people the directors know little about); Rockoff's "Bagheot" as "usually associated"; Schwartz (1987); 2008 linked to `ch:gfc`.
+    - Fordyce named in the dates box (no dates found); Catherine II's reign years; the back-reference to Chapter 4's colonial paper money; the states table wraps; the Census rows: Sutherland, footnote 7 on two cells, "selected" series.
+    - `smith_facts` has 336 rows from 7 sources, all quotations verbatim; the check reads 153 values from their quotations (and the 清史稿 row). The smith1776 note says only the main passages of Books I–III were checked against the first edition (the OCR is too noisy for a mechanical check of every row).
+  - FORWARD_REFS: rows 68, 71 and 87 done; new rows from Chapter 18 to Chapters 19, 20/32, 21 (twice), 23 (twice), 40 and 64.
+  Open points:
+  - Modern scholarship on the Bengal famine (the death toll, the Company's part) is not cited; the chapter rests on Hunter (1868) and the Council's letter.
+  - The modern real-bills debate (Sargent and Wallace 1982; the early Federal Reserve) and White (1984) on Scottish free banking could not be obtained; the free-banking question is handed to Chapter 23.
+  - China per head (wages, output) and the reliability of the registered population are handed to Chapter 21; the chapter's Qing counterexample uses registered numbers only.
+  - Schwartz's definition of a crisis is narrow (a run on the banking system); the chapter quotes it through Rockoff without discussing it.
+  - GDP per head 1700–1776: +22.8% between the end years; with ten-year averages at each end (1700–09, 1767–76) it is +17.6%, 0.24% a year. The text gives the end-year figure.
+  - Notation: $r$ is the rate of profit in `eq:smith-saving`; $\rho=1/5$ and $M/Y=1/5$ coincide in the example.
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
+
 ## Next
-1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Next, Part 4 (Chapters 18–25), in order, one reviewer per chapter. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Part 4 (Chapters 18–25) is under way, in order, one reviewer per chapter; Chapter 18 is done, Chapter 19 (`ch:bullion`) is next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 
