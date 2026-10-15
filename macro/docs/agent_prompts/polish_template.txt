@@ -1,0 +1,41 @@
+You are polishing the language of one written chapter of a Chinese LaTeX textbook, 《宏观经济学：从古代货币到当下争论》 (Finance Study Series, Volume 1). Run all commands from macro/. The author's request (2026-10-15): polish the written chapters to the existing conventions; do not go back to the sources for new material; do not re-verify the numbers; this round changes the language of the written chapters and serves as a reference for the chapters still to be written.
+
+READ FIRST: docs/NARRATIVE.md in full (§3–§8 are the rules, §9 the worked rewrites, §10 the checklist and targets); docs/STYLE.md §1, §2 and §11 (conventions you must keep: names, years, bold terms, structure); your chapter; its check script checks/check_chNN.py (look for TRANSLATIONS and ALLOW). zh/ch12_songming.tex is the sample chapter for tone.
+
+THIS IS POLISHING, NOT REWRITING. Keep the sections, their order and their titles (retitle only a title that is a formula), the boxes and figures where they are, and the passages that already work (NARRATIVE §1.3). Change how things are said, not what is said.
+
+NEVER:
+1. Go back to the sources: no web, no downloads, no new reading of data/snapshots or raw texts for material. Work from what the chapter already says. The one exception: when you re-translate a foreign-language quotation, you may read its row in the local snapshot CSV to keep the meaning exact.
+2. Add a fact, number, citation, person, date or claim. Delete a fact, number, caveat or one side of a controversy. Moving a caveat into an existing box or into the chapter's source note (史料说明) is allowed.
+3. Change a number. Every Arabic number stays exactly as written: value, digits, decimals and units. Do not round, recompute or convert. If a sentence holds too many numbers, split the sentence; never drop a number.
+4. Touch \label keys, \cite keys (every key must still appear; you may move a \cite to the end of the sentence that now carries the claim), \fig file names, equations and other display math, the numbers in tables, exercises and solutions (their logic and numbers), the \chapter line or the chapterguide box.
+5. Alter a classical or other Chinese-language quotation (史记、汉书、宋史、明史、奏议 …). Keep it verbatim, or drop the quotation marks and paraphrase it in modern Chinese with the \cite kept. Never change, add or remove characters inside it.
+6. Alter licence notices and credits. Copy them verbatim: the New York Fed EFFR notice, “信息来源：国家外汇管理局网站”, the Riksbank and Bank of Japan credits, the Maddison, BIS, NBER and EH.Net credits, © lines. Search the chapter for 信息来源, ©, Sveriges, Federal Reserve Bank, Bank of Japan, BIS, Maddison before you start.
+7. Edit any file except zh/chNN_*.tex and, for quotations only, the TRANSLATIONS and ALLOW dictionaries in checks/check_chNN.py. Run no git command that changes state (no commit, checkout, stash, reset, restore).
+
+DO, in this order of priority:
+1. OPENING (NARRATIVE §3). Delete the roadmap paragraph (“这一章回答导引框里的问题……依次讨论：……（\secref…）”) and the translation notice (“本章引用的外文史料／文献，中文都是本书的翻译”); the book-wide notice now sits in the preface. Keep the chapter's question in one plain sentence at the end of the opening, for example “答案要从……说起”. Anything else in the roadmap paragraph (a unit gloss, a source caveat) moves to where it is first needed or into the 史料说明. Exception: in Chapters 1 and 5 keep the sentence saying the Chinese names of BIS data are the book's translation, not the BIS's official one, next to the first use of BIS data (a licence condition).
+2. SECTION OPENINGS AND ENDINGS (NARRATIVE §4). No “这一节回答：”“这一节交代：”“这一节讨论”“这一节看”. Open with one of the four kinds in §4 and vary them; the section's question still appears in its first two or three sentences. End with a checkable conclusion and a question or loose end that leads on; no “下一节讨论……”.
+3. EXPLAIN BEFORE USE (NARRATIVE §7.6; see the chapter notes below). Currencies, units and mechanisms are explained at their first use in the chapter. Move unit notes from the end of the chapter up to the first use (a short pointer may stay at the end). A term used in the opening, a box or a table before its definition gets a half-clause gloss built from wording the chapter already has, or plain words there and the term later. A unit the chapter never explains: say what kind of unit it is (coin, unit of account, weight, measure of length or volume) without adding a number. A mechanism defined in a later chapter gets a one-clause gloss plus the existing \chref.
+4. QUOTATIONS (NARRATIVE §7.1). Keep a quotation only for the four reasons in §7.1; otherwise paraphrase in the narrator's voice with the \cite at the end of the sentence. Targets: quoted text at most 15% of the main text, at most two quotations per paragraph, no strings of fragments. A paraphrase keeps the meaning exactly: hedges (可能、似乎、几乎), conditions, negations, degree, and who said it. Re-translating a foreign quotation into natural Chinese is allowed when the meaning is unchanged (§6.4). In chapters whose check script has TRANSLATIONS (1, 8, 9, 18, 19, 20, 21), every “…” left in the text must be a key of TRANSLATIONS or ALLOW: when you change a rendering, change its key and keep its row ids; when you remove a quotation, delete its entry, or check_text reports “listed but not in the text”. Quotation marks around terms (ALLOW) are fine.
+5. PARAGRAPHS (NARRATIVE §5). The first sentence states the point; one idea per paragraph; split every paragraph over 400 characters; keep one subject through a paragraph.
+6. SENTENCES (NARRATIVE §6.1–§6.5). Sentence median 40 characters or fewer; split sentences over 80; at most three numbers per sentence. Use a colon only before a quotation or a list; use at most one semicolon per sentence; allow one Chinese aside in brackets per sentence, longer asides become their own sentence (names, original terms and years in brackets per STYLE.md are not asides). Remove 的-chains, nominalizations, needless passives and 进行＋verb. No meta phrases (下面我们来看、如前所述、值得注意的是、需要指出的是). No sentences about the book itself in the main text (本书没有找到、没能取得): state what is known (“生卒年未详”“这一点没有定论”); the search history goes into the 史料说明. No “不是 X，而是 Y” used only for emphasis; keep it where it corrects a real misreading. No summary one-liners at paragraph ends. Do not over-correct: vary sentence length; do not turn connected prose into bullet points.
+7. ENDING (NARRATIVE §3). The last paragraph of the main text returns to the opening scene or person and hands the reader one question for the next chapter, not a list of pointers.
+8. BOXES, CAPTIONS AND TAKEAWAYS: the same language rules with a light touch. A caption must still describe the same figure and keep its “看……” guidance and credits.
+
+PROCESS:
+- The pre-polish copy is OLD (path below). Compare as you go:
+    cd /tmp && python3 -I FIDELITY OLD /home/user/finance-study/macro/zh/chNN_<slug>.tex
+  The report lists what was removed or added (numbers, quotations, cite keys, labels, refs, figures, inline math, environments) and readability metrics before and after. At the end it must show no removed or added numbers, cite keys, labels, figures or inline math. Every removed or added quotation must be intended (paraphrased or re-translated). Only the refs of the deleted roadmap may disappear.
+- Checks, all clean before you report:
+    python3 checks/check_chNN.py
+    python3 validate_source.py
+    python3 tools/check_chapter.py zh/chNN_<slug>.tex   (no errors, overfull boxes, undefined references or citations, missing glyphs)
+
+FINAL REPORT (English, concise):
+1. The last three lines of the fidelity report, and every removed or added item with the reason.
+2. What you changed, by kind, with rough counts (openings, section openings, quotations paraphrased, paragraphs split, units explained, …).
+3. Four to six short before/after pairs (Chinese, with the line number in the new file) that best show a rule at work; they go into the polishing reference for later chapters.
+4. Anything you were unsure about (the meaning of a quotation, a caveat you moved, a term you could not explain without new material) and anything you left for the author.
+
+CHAPTER:
