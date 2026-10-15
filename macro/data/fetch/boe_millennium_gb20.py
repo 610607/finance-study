@@ -10,6 +10,8 @@ Monthly, 1822-1827 (data/snapshots/boe_millennium_gb_1822_1827_monthly.csv):
   companies, inclusive of mines and excluding mines (June 1840 = 100), and Hayek's unweighted index (1841 = 100);
   sheet "M9. Mthly short-term rates": Bank Rate (end month) and the rate of discount for three-month prime bills
   (Overend Gurney, monthly average of weekly data, from 1824);
+  sheet "M10. Mthly long-term rates": the yield on 3% consols (Odlyzko 2014, monthly average of weekly
+  observations, from 1823);
   sheet "M6. Mthly prices and wages": the Gayer-Rostow-Schwartz wholesale price index (1821-5 = 100).
 Annual, 1815-1830 (data/snapshots/boe_millennium_gb_1815_1830.csv):
   sheet "A7. GB GDP(O) 1700-1870": real GDP of Great Britain by sector (1700 = 100), nominal GDP (£ m) and the
@@ -38,6 +40,7 @@ M_FIRST, M_LAST = 1822, 1827
 A_FIRST, A_LAST = 1815, 1830
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 M13, M9, M6 = "M13. Mthly share prices 1709+ ", "M9. Mthly short-term rates", "M6. Mthly prices and wages"
+M10 = "M10. Mthly long-term rates"
 A7, A4 = "A7. GB GDP(O) 1700-1870", "A4. Ind Production 1270-1870"
 # monthly series: (sheet, column, [(row, expected heading)], name in the snapshot)
 MONTHLY = [
@@ -51,6 +54,7 @@ MONTHLY = [
     (M9, 2, [(5, "D1. Official rates"), (6, "End month")], "bank_rate"),
     (M9, 6, [(4, "Rate of  discount for three month prime or first class bills 1824-1939"),
              (6, "Monthly average of weekly data")], "prime_bills_rate"),
+    (M10, 4, [(3, "Yield on 3% consols 1823-1860"), (5, "Monthly average of weekly observations")], "consol_yield"),
     (M6, 4, [(4, "Domestic and imported commodities 1790-1850"), (5, "Gayer et al (1953)"), (6, "1821-5=100")],
      "wholesale_1821_25"),
 ]
@@ -97,8 +101,10 @@ def main(path: Path) -> None:
     for sheet, col, heads, name in MONTHLY:
         rows = sheets.setdefault(sheet, list(wb[sheet].iter_rows(values_only=True)))
         check(rows, sheet, col, heads)
+        if sheet == M10:
+            check(rows, sheet, 3, [(4, "Odlyzko (2014)")])  # the source cell spans columns 3 and 4
         s = {}
-        for r in rows[7:]:
+        for r in rows[6:]:
             y = year_of(r[0])
             if y is not None and M_FIRST <= y <= M_LAST and r[1] in MONTHS and isinstance(r[col], (int, float)):
                 s[(y, MONTHS.index(r[1]) + 1)] = float(r[col])
