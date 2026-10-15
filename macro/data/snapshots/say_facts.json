@@ -1,0 +1,120 @@
+{
+  "title": "Quotations for Chapter 20 (Say's law and the general glut): Say's chapter 'Des Débouchés' (1803) and its English translation (1821), with Say's Letters to Malthus (1821); Malthus's Principles (1820); Ricardo's Principles (1817, ch. XIX) and his letters to Malthus (1814-1821); Sismondi's Nouveaux principes (1819); Walras (1874) on the offer and demand of two commodities; Lange (1942), who named 'Walras' law' and distinguished it from Say's law; J. S. Mill's essay of 1829-30 on consumption and production; the boom and crisis of 1825 in Tooke's History of Prices (1838, vol. II) and in English (1827), with the foreign loans contracted in London in 1824 and 1825; Reinhart and Rogoff (2008) on the Latin American defaults of the 1820s; Baumol (1999) on the name of the law",
+  "source": "J.-B. Say, Traité d'économie politique (Paris, 1803), first edition, and A Treatise on Political Economy, tr. C. R. Prinsep (London, 1821), and Letters to Mr. Malthus (London, 1821), on archive.org; T. R. Malthus, Principles of Political Economy (London, 1820), on archive.org; D. Ricardo, On the Principles of Political Economy, and Taxation (London, 1817), first edition, and J. Bonar (ed.), Letters of David Ricardo to Thomas Robert Malthus (1887), Project Gutenberg eBooks 33310 and 36345; J.-C.-L. Simonde de Sismondi, Nouveaux principes d'économie politique, tome I (Paris, 1819), on archive.org; L. Walras, Éléments d'économie politique pure (Lausanne, 1874), on archive.org; O. Lange, 'Say's Law: A Restatement and Criticism' (1942), on archive.org; J. S. Mill, Essays on Some Unsettled Questions of Political Economy (1844), Project Gutenberg eBook 12004; T. Tooke, A History of Prices, vol. II (1838), on archive.org; H. English, A Complete View of the Joint Stock Companies formed during the years 1824 and 1825 (1827), on archive.org; C. M. Reinhart and K. S. Rogoff, NBER Working Paper 13882 (2008); W. J. Baumol, 'Retrospectives: Say's Law', Journal of Economic Perspectives 13(1), 1999, the abstract on the AEA's website",
+  "url": "https://archive.org/download/bub_gb_LWhDAAAAcAAJ/bub_gb_LWhDAAAAcAAJ_djvu.txt",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated; fractions as a/b, mixed numbers as n+a/b), unit, numeral (unused), file (key of 'sources'), juan (location: printed page, chapter or letter; the PDF page for the image rows), quote (verbatim, as in the document's text, or a transcription for the image rows, with the columns separated by ' | '), note",
+  "retrieved": "2026-10-15",
+  "license": "Quotations for criticism and teaching, each with its source. Say (1803, 1821), Malthus (1820), Ricardo (1817) and his letters (Bonar 1887), Sismondi (1819), Walras (1874), Mill (1844), Tooke (1838) and English (1827) are in the public domain; the Project Gutenberg texts are used under the Project Gutenberg licence (no Project Gutenberg trademark is used here), and the archive.org texts are OCR of public-domain scans. Lange (1942): 'Copyright 1942 by the University of Chicago'; five short passages are quoted. Reinhart and Rogoff (2008): '© 2008 by Carmen M. Reinhart and Kenneth S. Rogoff. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' Baumol (1999): three phrases of the abstract on the American Economic Association's article page. The chapter's Chinese renders the English and French; the translations are the book's.",
+  "used_in": [
+    20
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (rows citing say1803, say1821, saylet1821, malthus1820, ricardo1817, ricardo_letters, sismondi1819, walras1874, lange1942, jsmill1844, tooke1838v2, english1827, rr2008tid and baumol1999; the english1827img rows are read on the page image); checks/check_ch20.py (the readings and every quotation of the text)",
+  "notes": "Say. The first edition (1803) is quoted in French for the chapter's core sentences (rows sy03_*); its OCR keeps the space before commas and the line-end hyphen of 'dé- bouchés', quoted as it reads. Prinsep translated the fourth edition (1819); the English rows (sy21_*) give the later Say, who added the footnotes on hoarding, on France in 1811-1813 and on Brazil, and the reservation that 'one product' can be raised in too great abundance in relation to all others (row sy21_notmaintain). The note on Sismondi, Malthus and Ricardo (row sy21_prinsep) is the translator's (marked T.), not Say's. Malthus (1820). The OCR garbles a few words near the quoted passages ('abe' for 'at which', 'ynsume' for 'consume'); the rows stop before them or quote them as they read. Malthus's footnote names James Mill's reply to Spence (Commerce Defended, 1808) as the source of the doctrine that 'one half' of commodities furnishes a market for the other half (row ml_mill). Ricardo's letters. Bonar numbers the letters; the rows give the number, the place and the date printed at the head of each letter. Sismondi (1819). The OCR drops most accents and misreads some letters ('eclaireis' for 'éclaircis', '& leurs yeux' for 'à leurs yeux'); the rows quote it as it reads, and the chapter quotes the French with the accents restored. The hats of livre II, ch. VI (a hat factory of Lyon that made 100,000 hats in 1817 and 110,000 in 1818, or made 100,000 and sold 90,000) are Sismondi's illustration in his reply to a passage of Ricardo's ch. VII, not a statistic. Walras (1874). Section 45 states that to demand 200 hectolitres of oats at the price of ½ in wheat is to offer 100 hectolitres of wheat (the OCR reads the fraction ½ as '-^'); §46 draws the conclusion for two commodities. Lange (1942) gives Walras's identity its name (row lg_walras) and distinguishes it from Say's law; Lange's own phrase for the weaker form is 'an equation which holds only in equilibrium' (row lg_equation). Mill. The preface dates the essays to 1829 and 1830; Essay II was published in 1844. Tooke (1838), vol. II. The passages of pp. 150-152 are quotations from the Annual Register for 1824, which Tooke prints in footnotes; the 'eight times' leverage of a £100 share with £5 paid at a premium of £40 is the Annual Register's example (row tk2_eight). The 770 country bankers and 63 failures are from Mr. Ridley's speech in the House of Commons of 3 June 1828, quoted by Tooke (row tk2_ridley). The box of one-pound notes (row tk2_box) is told in a footnote: the Bank found a box of about £600,000 or £700,000 in one-pound notes that had not been destroyed and issued them in the panic. English (1827). The text (pp. 30-31) gives the companies formed or projected in 1824 and 1825 and the foreign loans; the table of the foreign loans (p. 42) is read on the page image (rows en_l24_*, en_l25_*, en_l24_total, en_l25_total). In the table, 'Cont. Price' is the price at which the contractor took the loan, per £100 of nominal capital, and 'Money advanced' is the nominal capital times that price; two rows do not agree with the rule: Denmark (75½ printed, but £2,718,750 is 75 per cent of £3,625,000) and Guatemala (73 per cent of £1,428,571 is £1,042,857, not £1,042,988); both column totals add the printed figures. Reinhart and Rogoff (2008). Table 3 lists, by country, the year of independence (for the countries independent in the nineteenth century) and the years of external default or rescheduling in four columns, 1800-1824, 1825-1849, 1850-1874 and 1875-1899; the rows rr_t3_* quote the name, the year of independence and the column 1825-1849 (for Brazil, whose only entry is 1898, the column 1875-1899); Table 8 lists the crises at the financial centre (rows rr_t8_*). The PDF's text is searched in pdftotext's normal and -layout output.",
+  "sources": {
+    "say1803": {
+      "url": "https://archive.org/download/bub_gb_LWhDAAAAcAAJ/bub_gb_LWhDAAAAcAAJ_djvu.txt",
+      "format": "txt",
+      "sha256": "38086fffdcd8990a3e54464bbd5219e41f13233909dcc4384bb281097eeeaf4f",
+      "version": "J.-B. Say, Traité d'économie politique, ou simple exposition de la manière dont se forment, se distribuent, et se consomment les richesses, tome I (Paris, an XI - 1803), the first edition, a Google Books scan on archive.org, item bub_gb_LWhDAAAAcAAJ; OCR text; livre I, chapitre XXII 'Des Débouchés' (pp. 152-155); pages as printed",
+      "retrieved": "2026-10-15"
+    },
+    "say1821": {
+      "url": "https://archive.org/download/treatiseonpoliti01sayjuoft/treatiseonpoliti01sayjuoft_djvu.txt",
+      "format": "txt",
+      "sha256": "47686e48abd4c57afedb9a997f811f43928929d132881ba80640c9cf1c500bf2",
+      "version": "J.-B. Say, A Treatise on Political Economy, translated from the fourth edition of the French by C. R. Prinsep, vol. I (London: Longman, Hurst, Rees, Orme, and Brown, 1821), University of Toronto copy on archive.org, item treatiseonpoliti01sayjuoft; OCR text; book I, ch. XV 'Of the vent or demand for products' (pp. 162-172), with Say's footnotes and the translator's notes (marked T.)",
+      "retrieved": "2026-10-15"
+    },
+    "saylet1821": {
+      "url": "https://archive.org/download/letterstomrmalth00sayjrich/letterstomrmalth00sayjrich_djvu.txt",
+      "format": "txt",
+      "sha256": "0d7cfabc38d1da14eff8687ce01febcd92421b41de97020b5cf6eaa79bbc390a",
+      "version": "J.-B. Say, Letters to Mr. Malthus, on several subjects of political economy, and on the cause of the stagnation of commerce, translated by J. Richter (London: Sherwood, Neely, and Jones, 1821), University of California Libraries copy on archive.org, item letterstomrmalth00sayjrich; OCR text; Letter I (pp. 1-6)",
+      "retrieved": "2026-10-15"
+    },
+    "malthus1820": {
+      "url": "https://archive.org/download/10389061bsb/10389061bsb_djvu.txt",
+      "format": "txt",
+      "sha256": "8154aecfba25e39aae7947e44544a361f67df5aa4f501c3ce76d3585725565e3",
+      "version": "T. R. Malthus, Principles of Political Economy considered with a view to their practical application (London, 1820), the first edition, Bavarian State Library copy on archive.org, item 10389061bsb; OCR text; the Introduction (pp. 8-9) and ch. VII, sect. III 'Of Accumulation, or the Saving from Revenue to add to Capital, considered as a Stimulus to the Increase of Wealth' (pp. 353-357)",
+      "retrieved": "2026-10-15"
+    },
+    "ricardo1817": {
+      "url": "https://www.gutenberg.org/cache/epub/33310/pg33310.txt",
+      "format": "txt",
+      "sha256": "099aaa16de8fc4f68a0b0bd85d62fd596bffba059d397c71d352945de18050c5",
+      "version": "D. Ricardo, On the Principles of Political Economy, and Taxation (London: John Murray, 1817), the first edition (its duplicate chapter numbers are kept and marked with asterisks), Project Gutenberg eBook 33310 from the Posner Memorial Collection's images; ch. XIX 'Effects of Accumulation on Profits and Interest' (ch. XXI in the third edition of 1821)",
+      "retrieved": "2026-10-15"
+    },
+    "ricardo_letters": {
+      "url": "https://www.gutenberg.org/cache/epub/36345/pg36345.txt",
+      "format": "txt",
+      "sha256": "c18f0922f619c78fd0e3df0f6a5c2577face4731397e2e465942deb8788aae11",
+      "version": "J. Bonar (ed.), Letters of David Ricardo to Thomas Robert Malthus, 1810-1823 (Oxford: Clarendon Press, 1887), Project Gutenberg eBook 36345; letters numbered as in Bonar's edition (XIX of 16 Sept. 1814, LXXII of 4 Sept. 1820, LXXIII of 10 Oct. 1820, LXXVII of 21 July 1821)",
+      "retrieved": "2026-10-15"
+    },
+    "sismondi1819": {
+      "url": "https://archive.org/download/10725753bsb/10725753bsb_djvu.txt",
+      "format": "txt",
+      "sha256": "46507e69f2d83ad40bb957325c6fa0dd1fa49f79ab39b4c05fa974a759c0e2cb",
+      "version": "J.-C.-L. Simonde de Sismondi, Nouveaux principes d'économie politique, ou de la richesse dans ses rapports avec la population, tome premier (Paris, 1819), the first edition, Bavarian State Library copy on archive.org, item 10725753bsb; OCR text, which drops most accents and garbles some letters (quoted as it reads); the Avertissement (pp. iv-v), livre II, chapitre VI (pp. 123-126) and livre IV, chapitre IV (pp. 338-342)",
+      "retrieved": "2026-10-15"
+    },
+    "walras1874": {
+      "url": "https://archive.org/download/lmentsdconomiep00walrgoog/lmentsdconomiep00walrgoog_djvu.txt",
+      "format": "txt",
+      "sha256": "2c3702278b3dfe0454205407acd8ffc918dd71ed34940436c4ead14bbf6824f2",
+      "version": "L. Walras, Éléments d'économie politique pure, ou théorie de la richesse sociale, première édition, premier fascicule (Lausanne: L. Corbaz; Paris: Guillaumin; Bâle: H. Georg, 1874; the preface is dated 30 June 1874), a Google Books scan on archive.org, item lmentsdconomiep00walrgoog; OCR text; leçon 7 (§45-46, pp. 54-56)",
+      "retrieved": "2026-10-15"
+    },
+    "lange1942": {
+      "url": "https://archive.org/download/StudiesInMathematicalEconomicsAndEconometrics/StudiesInMathematicalEconomicsAndEconometrics_djvu.txt",
+      "format": "txt",
+      "sha256": "0605413c8ef19afeef65ca2c0b79b77eb45ce197b0747ee7bce9c3fb37e84b5d",
+      "version": "O. Lange, 'Say's Law: A Restatement and Criticism', in O. Lange, F. McIntyre and T. O. Yntema (eds.), Studies in Mathematical Economics and Econometrics in Memory of Henry Schultz (Chicago: University of Chicago Press, 1942), pp. 49-68; the volume's scan on archive.org, item StudiesInMathematicalEconomicsAndEconometrics; OCR text. Copyright 1942 by the University of Chicago: short passages only",
+      "retrieved": "2026-10-15"
+    },
+    "jsmill1844": {
+      "url": "https://www.gutenberg.org/cache/epub/12004/pg12004.txt",
+      "format": "txt",
+      "sha256": "bcd9627e2847cf035945dc4fc4a137bdfc9dbe367adb8aadcf092474071c823b",
+      "version": "J. S. Mill, Essays on Some Unsettled Questions of Political Economy (London, 1844), Project Gutenberg eBook 12004; the preface ('written in 1829 and 1830') and Essay II, 'Of the Influence of Consumption on Production'",
+      "retrieved": "2026-10-15"
+    },
+    "tooke1838v2": {
+      "url": "https://archive.org/download/historyofpriceso02took/historyofpriceso02took_djvu.txt",
+      "format": "txt",
+      "sha256": "0569ae124f4c5116c49445348d375b68892ecb60f9ba7f7498d0b9944ebcc054",
+      "version": "T. Tooke, A History of Prices, and of the State of the Circulation, from 1793 to 1837, vol. II (London: Longman, Orme, Brown, Green, and Longmans, 1838), copy of the Robert E. Gross Collection on archive.org, item historyofpriceso02took; OCR text; part V, ch. I, sections 4-7 (pp. 148-163), which quote Tooke's own pamphlet of January 1826 and the Annual Register for 1824 and 1825",
+      "retrieved": "2026-10-15"
+    },
+    "english1827": {
+      "url": "https://archive.org/download/cihm_52947/cihm_52947_djvu.txt",
+      "format": "txt",
+      "sha256": "d8985c00337f18eb57b47ffb97969643a4407923f4bd465b2e840b05ce22dfdb",
+      "version": "H. English, A Complete View of the Joint Stock Companies formed during the years 1824 and 1825 (London: Boosey and Sons, 1827), Canadiana (CIHM 52947) microform copy on archive.org, item cihm_52947; OCR text; the summary and remarks (pp. 30-31)",
+      "retrieved": "2026-10-15"
+    },
+    "english1827img": {
+      "url": "https://archive.org/download/cihm_52947/cihm_52947.pdf",
+      "format": "image",
+      "sha256": "9d2d9435b53673ba3747d5e0dda0f3e3945a8dda83ba611f8e6d92cb6e9ecd4f",
+      "version": "The same book, read on the page image of the archive.org PDF (PDF page 44 = p. 42): 'Foreign Loans contracted for in 1824' and 'in 1825', with the nominal capital, contract price and money advanced of each loan, and the summary",
+      "retrieved": "2026-10-15"
+    },
+    "rr2008tid": {
+      "url": "https://www.nber.org/system/files/working_papers/w13882/w13882.pdf",
+      "format": "pdf",
+      "sha256": "b93082497b211cf0142816027dbb81a40966fd6ba0e1b67c556c283043a83e87",
+      "version": "C. M. Reinhart and K. S. Rogoff, 'This Time is Different: A Panoramic View of Eight Centuries of Financial Crises', NBER Working Paper 13882 (March 2008); Table 3 (external default and rescheduling, nineteenth century) and Table 8 (crises at the financial center, 1800s). (c) 2008 by Carmen M. Reinhart and Kenneth S. Rogoff: short sections quoted with the notice",
+      "retrieved": "2026-10-15"
+    },
+    "baumol1999": {
+      "url": "https://www.aeaweb.org/articles?id=10.1257/jep.13.1.195",
+      "format": "html",
+      "sha256": "61940b769deab71809792f18b1d6d3685a3b07daf211d6fc2a33002d38359dfb",
+      "version": "W. J. Baumol, 'Retrospectives: Say's Law', Journal of Economic Perspectives 13(1), 1999, pp. 195-204: the abstract on the American Economic Association's article page (the PDF could not be downloaded from this environment)",
+      "retrieved": "2026-10-15"
+    }
+  }
+}

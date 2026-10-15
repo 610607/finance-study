@@ -1,0 +1,216 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+sy03_title,法国,1803,,22,chapter,,say1803,"tome I, livre I, ch. XXII, p. 152",CHAPITRE SlXII. Des Débouchés.,OCR reads the chapter number XXII as 'SlXII'; the table of contents reads 'Chap. XXII. Des Débouché'
+sy03_truth,法国,1803,,,,,say1803,"tome I, livre I, ch. XXII, p. 153","ce n'est point tant l'abondance de l'argent qui rend les dé- bouchés faciles , que l'abondance des autres produits en général. C'est une des vérités les plus importantes de l'Économie politique.",
+sy03_passager,法国,1803,,,,,say1803,"tome I, livre I, ch. XXII, p. 154",L'argent ne remplit qu'un office passager dans ce double échange.,
+sy03_produits,法国,1803,,,,,say1803,"tome I, livre I, ch. XXII, p. 154",il se trouve qu'on a payé des produits avec des produits,
+sy03_genre,法国,1803,,,,,say1803,"tome I, livre I, ch. XXII, p. 154","quand une nation a trop de produits dans un genre , le moyen de les écouler est d'en créer d'un autre genre.",
+sy03_cent,法国,1803,,100000,persons (in words),,say1803,"tome I, livre I, ch. XXII, p. 154",Ce que je viens de dire d'un seul homme industrieux peut se dire de cent mille.,
+sy21_title,法国,1821,"fourth edition (1819), translated 1821",15,chapter,,say1821,"vol. I, book I, ch. XV, p. 162",CHAP. XV. OP THE VENT OR DEMAND (a) FOR PRODUCTS.,OCR reads 'OF' as 'OP'
+sy21_nosooner,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 167","a product is no sooner created, than it, from that instant, affords a market for other products to the full extent of its, own value.",OCR prints a comma after 'its'
+sy21_perishable,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 167",for the value of money is also perishable,
+sy21_vent,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 167","Thus, the mere circumstance of the creation of one product immediately opens a vent for other products.",
+sy21_hoard,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 164, footnote","Even when money is obtained with a view to hoard or bury it, the ultimate object is always to employ it in a purchase of some kind.",
+sy21_means,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 165","to say that sales are dull, owing to the scarcity of money, is to mistake the means for the cause",
+sy21_glut,法国,1821,,2,ways,,say1821,"vol. I, book I, ch. XV, p. 168","the glut of a particular commodity arises from its having outrun the total demand for it in one of two ways; either because it has been produced in excessive abundance, or because the produce of other commodities has fallen short.",
+sy21_france,法国,1811,,1811;1812;1813,years,,say1821,"vol. I, book I, ch. XV, p. 168, footnote","We have had a striking instance in France, during the years 1811, 1812, and 1813",
+sy21_brazil,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 169, footnote","Did Brazil produce wherewithal to purchase the English goods exported thither, those goods would not glut her market.",
+sy21_notmaintain,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 170, footnote","I would not be understood to maintain in this chapter, that one product cannot be raised in too great abundance, in relation to all others",
+sy21_prinsep,英国,1821,translator's note,,,,say1821,"vol. I, book I, ch. XV, p. 170, note (c), T.","The views of Sismondi, in this particular, have been since adopted by our own Malthus, and those of our author by Ricardo.",
+sl_cause,法国,1820,Letter I; English translation 1821,,,,saylet1821,"Letter I, p. 1-2","What is the cause of the general glut of all the markets in the world, to which merchandize is incessantly carried to be sold at a loss ?",
+sl_alone,法国,1820,,,,,saylet1821,"Letter I, p. 3","that if certain goods remain unsold, it is because other goods are not produced ; and that it is production alone which opens markets to produce.",
+sl_assert,法国,1820,,,,,saylet1821,"Letter I, p. 5","You, on the contrary, assert that there may be a superabundance of goods of all sorts at once",
+ml_excess,英国,1820,,,,,malthus1820,"Introduction, p. 8","the principle of saving, pushed to excess, would destroy the motive to production.",
+ml_point,英国,1820,,,,,malthus1820,"Introduction, p. 9","there must be some intermediate point, though the resources of political economy may not be able to ascertain it",
+ml_powerwill,英国,1820,,,,,malthus1820,"Introduction, p. 9",both the power to produce and the will to consume,
+ml_mill,英国,1808,James Mill's reply to Spence,1808;1/2,year; share,,malthus1820,"ch. VII, sect. III, p. 354, footnote","Mr. Mill, in a reply to Mr, Spence, published in 1808, has laid down very broadly the doctrine that commodities are only purchased by commodities, and that one half of them must always furnish a market for the other half.",
+ml_unfounded,英国,1820,,,,,malthus1820,"ch. VII, sect. III, p. 353",appears to me to be utterly unfounded,
+ml_labour,英国,1820,,,,,malthus1820,"ch. VII, sect. III, p. 354","The great mass of commodities is exchanged directly for labour, either productive",
+ml_general,英国,1820,,,,,malthus1820,"ch. VII, sect. III, p. 354","But this is precisely what is meant by the term glut, which, in this case, is evidently general not partial.",
+ml_figures,英国,1820,,,,,malthus1820,"ch. VII, sect. III, p. 355","they have considered commodities as if they were so many mathematical figures, or arithmetical characters",
+ml_effectual,英国,1820,,,,,malthus1820,"ch. VII, sect. III, p. 355",It is asserted that effectual demand is nothing more than the offering of one commodity in exchange for another.,
+rp_say,英国,1817,first edition,,,,ricardo1817,ch. XIX,"M. Say
+has however most satisfactorily shewn, that there is no amount of
+capital which may not be employed in a country, because demand is only
+limited by production.",
+rp_noman,英国,1817,,,,,ricardo1817,ch. XIX,"No man produces, but with a view to consume or
+sell, and he never sells, but with an intention to purchase some other
+commodity",
+rp_chest,英国,1817,,10000;100000,£,,ricardo1817,ch. XIX,"If ten
+thousand pounds were given to a man having 100,000_l._ per annum, he
+would not lock it up in a chest",
+rp_productions,英国,1817,,,,,ricardo1817,ch. XIX,"Productions are always bought by productions, money is only the medium
+by which the exchange is effected.",
+rp_cease,英国,1817,,,,,ricardo1817,ch. XIX,"If men ceased to consume, they would cease to produce.",
+rp_admission,英国,1817,,,,,ricardo1817,ch. XIX,"This admission, does not impugn the general principle.",
+rl_will,英国,1814,16 Sept. 1814,,,,ricardo_letters,"letter XIX, Gatcomb Park, 16 Sept. 1814","We agree too that effectual demand consists of two elements, the _power_
+and the _will_ to purchase; but I think the will is very seldom wanting
+where the power exists",
+rl_remedy,英国,1820,4 Sept. 1820,,,,ricardo_letters,"letter LXXII, Gatcomb Park, 4 Sept. 1820","But surely the true remedy is in regulating future
+production; if there is a glut of one commodity, produce less of that
+and more of another",
+rl_err,英国,1820,10 Oct. 1820,,,,ricardo_letters,"letter LXXIII, Gatcomb Park, 10 Oct. 1820",Men err in their production; there is no deficiency of demand.,
+rl_delusion,英国,1820,10 Oct. 1820,,,,ricardo_letters,"letter LXXIII, Gatcomb Park, 10 Oct. 1820","we are guilty of some such folly now, and I can
+scarcely account for the length of time that this delusion continues.",
+rl_stagnation,英国,1821,21 July 1821,,,,ricardo_letters,"letter LXXVII, Gatcomb Park, 21 July 1821","I do not think that stagnation is a proper term to apply to a state of
+things, in which for a time there is no motive to a further increase of
+production.",
+rl_savings,英国,1821,21 July 1821,,,,ricardo_letters,"letter LXXVII, Gatcomb Park, 21 July 1821","I should not make a protest
+against an increase of consumption as a remedy to the stagnation of
+trade, if I thought as you do, that we were now suffering from too great
+savings",
+sm_crise,欧洲,1819,,,,,sismondi1819,"tome I, Avertissement, pp. iv-v",J’etais vivement emu de la crise commerciale que l’Europe a eprouvee dans’ ces dernieres annees; des souffrances cruelles des ouvriers de manufactures,OCR drops the accents (j'étais vivement ému ... éprouvée dans ces dernières années)
+sm_hats,法国,1817,,100000;1817;110000;1818,hats; year,,sismondi1819,"tome I, livre II, ch. VI, p. 124","d’avoir fait cent mille chapeaux en 1817, et. d’en avoir fait cent dix mille en 1818",
+sm_sold,法国,1818,,100000;90000,hats (in words),,sismondi1819,"tome I, livre II, ch. VI, p. 124","ou bien d’en avoir fait cent mille cette derniere annee, mais de n’en avoir vendu que quatrevingt-dix mille",
+sm_demand,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 338","de cette fabrication qui se proportionne non point a la demande, mais aux capitaux qu’on veut employer",
+sm_quart,欧洲,1818,,1/4;1/3,share of the capital lost,,sismondi1819,"tome I, livre IV, ch. IV, p. 339",ont ete obliges de les ceder avec un quart ou un tiers de perte au lieu de benefice,
+sm_faillites,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 340",que leurs rangs ne sont jamais eclaireis que par des faillites,
+sm_engorgement,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 341",il devient absolument impossible de comprendre ou d’expliquer le fait le plus demontre de tous dans l’histoire du commerce; c’est l’engorgement des marches.,
+sm_revenu,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 341",la production annuelle est la meme chose que le revenu.,
+wl_avoine,瑞士,1874,,200;100,hectolitres,,walras1874,"§45, p. 54","qu'on demande 200 hectolitres d'avoine au prix de -^ en blé, c'est dire par cela même qu'on offre 100 hectolitres de blé.",OCR reads the fraction 1/2 as '-^'
+wl_offre,瑞士,1874,,,,,walras1874,"§45, p. 55","on n'offre que parce qu'on ne peut pas demander sans offrir; l'offre, en un mot, n'est qu'une consé- quence de la demande.",
+wl_sachons,瑞士,1874,,,,,walras1874,"§46, p. 56","Sachons donc que si la demande et l'offre effectives de (A) sont égales, l'offre et la demande effectives de (B) le seront aussi",
+lg_def,美国,1942,,,,,lange1942,p. 49,there can be no excess of total supply of commodities (general oversupply),
+lg_walras,美国,1942,,,,,lange1942,p. 50,I propose to call this identity Walras’ law because Walras was the first to recognize its fundamental importance in the formulation of the mathematical theory of prices.,
+lg_each,美国,1942,,,,,lange1942,p. 50,"Walras’ law does not require that the demand and supply of each commodity, or of any of them, be in equilibrium.",
+lg_precludes,美国,1942,,,,,lange1942,p. 66,Say's law precludes any monetary theory.,
+lg_equation,美国,1942,,,,,lange1942,p. 66,"With this observation Wicksell, and with him all monetary theorists, gave up Say's law by substituting for the identity an equation which holds only in equilibrium.",
+lg_cash,美国,1942,,,,,lange1942,p. 66,"Instead of assuming that total demand and total supply of com¬ modities are identically equal or, what is equivalent, that the total demand for cash balances is identically equal to the amount of money available",
+lg_moneyless,美国,1942,,,,,lange1942,"p. 50, note 2","Walras' law holds also in absence of a uniform medium of exchange, i.e., in a moneyless system.",
+jm_written,英国,1829,"written 1829-30, published 1844",1829;1830,years,,jsmill1844,Preface,"Of these Essays, which were written in 1829 and 1830",
+jm_barter,英国,1829,,,,,jsmill1844,Essay II,"This argument is evidently founded on the supposition of a state of
+barter; and, on that supposition, it is perfectly incontestable.",
+jm_twoacts,英国,1829,,,,,jsmill1844,Essay II,"it enables this one act of interchange to be divided into two
+separate acts or operations; one of which may be performed now, and the
+other a year hence",
+jm_inclination,英国,1829,,,,,jsmill1844,Essay II,"a very
+general inclination to sell with as little delay as possible, accompanied with an equally
+general inclination to defer all purchases as long as possible.",
+jm_distress,英国,1829,,,,,jsmill1844,Essay II,"There is stagnation to those who are not obliged to
+sell, and distress to those who are.",
+jm_deficiency,英国,1829,,,,,jsmill1844,Essay II,"they held that there was not an excess, but
+a deficiency of the circulating medium.",
+jm_relatively,英国,1829,,,,,jsmill1844,Essay II,"a superabundance of all commodities relatively to
+money.",
+jm_hoarded,英国,1829,,,,,jsmill1844,Essay II,"In extreme cases, money is collected in masses,
+and hoarded; in the milder cases, people merely defer parting with their
+money",
+jm_temporary,英国,1829,,,,,jsmill1844,Essay II,"excess of all
+commodities, in the only sense in which it is possible, means only a
+temporary fall in their value relatively to money.",
+jm_general,英国,1829,,,,,jsmill1844,Essay II,"there cannot be excessive
+production of commodities in general.",
+jm_toofast,英国,1829,,,,,jsmill1844,Essay II,"so far as it applies to the doctrine that a country may
+accumulate capital too fast",
+tk2_rate,英国,1822,summer,1822;5;4,year; per cent,,tooke1838v2,"vol. II, p. 149, footnote",In the summer of 1822 the Bank reduced its rate of discount from 5 to 4 per cent.,
+tk2_flaming,英国,1824,,,,,tooke1838v2,"vol. II, p. 150",The most flaming accounts were at the same time brought before the public of the productiveness of some of the principal mines of Mexico and South America,
+tk2_mexico,英国,1824,"Annual Register for 1824, quoted by Tooke",,,,tooke1838v2,"vol. II, p. 150, footnote",The mines of Mexico was a phrase which suggested to every imagination unbounded wealth,
+tk2_instalment,英国,1824,Annual Register for 1824,5,per cent,,tooke1838v2,"vol. II, p. 151, footnote","only a small instalment, seldom exceeding 5 per cent., was paid at first",
+tk2_eight,英国,1824,Annual Register for 1824,100;5;40;8,£; £; £; times,,tooke1838v2,"vol. II, p. 152, footnote","If, for instance, shares of 100^., on which 5l. had been paid, rose to a premium of 40/., this yielded on every share a profit equal to eight times the amount of the money which had been paid.",OCR reads '100l.' as '100^.' and '40l.' as '40/.'
+tk2_height,英国,1825,,4;1825,months; year,,tooke1838v2,"vol. II, p. 152",The excitement reached its height in the first four months of 1825.,
+tk2_loans,英国,1825,,,,,tooke1838v2,"vol. II, p. 159",The South American loans entailed a loss of nearly the whole of the sums subscribed,
+tk2_mining,英国,1825,,,,,tooke1838v2,"vol. II, p. 159","the Mexican and South American mining subscriptions, with only one or two exceptions, proved to be a total loss of the capital paid.",
+tk2_pamphlet,英国,1826,January,1826,year,,tooke1838v2,"vol. II, p. 160","In a pamphlet of mine on the currency, in January, 1826",
+tk2_seventy,英国,1825,December,70;1825,banks; year,,tooke1838v2,"vol. II, p. 161","nearly seventy banks, in town and country, suspended their payments in the course of the single month of December last (1825).",
+tk2_ridley,英国,1828,"Ridley, House of Commons, 3 June 1828",1825;1826;770;63,years; bankers,,tooke1838v2,"vol. II, p. 161, footnote","in 1825 and 1826 there were 770 country bankers, and of these sixty-three had stopped payment.",
+tk2_suspension,英国,1825,December,,,,tooke1838v2,"vol. II, p. 162","doubts were entertained whether cash payments could be continued. Happily, the public escaped the calamity of a second suspension.",
+tk2_reserves,英国,1825,December,,,,tooke1838v2,"vol. II, p. 162",the detention of sums for the purpose of increased reserves by bankers and others,
+tk2_box,英国,1825,week ending 24 December,600000;700000;24;1825,£; day; year,,tooke1838v2,"vol. II, p. 162, footnote","A box containing about 600,000/. or 700,000/. of one pound notes","OCR reads '600,000l.' as '600,000/.'"
+tk2_miraculous,英国,1825,,,,,tooke1838v2,"vol. II, p. 162, footnote",partakes of the nature of the marvellous or miraculous.,
+tk2_distrust,英国,1826,,,,,tooke1838v2,"vol. II, p. 163","unbounded confidence, and all the delusion of unfounded anticipation, have been succeeded by distrust and dismay.",
+en_624,英国,1827,,624;1824;1825;372173100,companies; years; £,,english1827,p. 31,"the total amount of capital required for the six hundred and twenty-four Companies, formed or projected in the years 1824 and 1825, was, the sum of £372,173,100",
+en_advanced,英国,1827,,17605625;15185950;9303950,£,,english1827,p. 31,"The amount actually advanced, not including the premiums, was, £17,605,625 ; and that now invested in the Companies is £15,185,950, which at the present price of the shares may be valued at £9,303,950.",
+en_existing,英国,1827,,102781600,£,,english1827,p. 31,"the capital of those Companies now existing amounting to £102,781 ,600.",OCR puts a space before the last comma
+en_loans,英国,1827,,32069571;25308468,£,,english1827,"p. 31, footnote","In addition to Foreign Loans £32,069,571, of which £25,308,468 was the amount paid,",
+en_mining,英国,1827,,74;38370000,companies; £,,english1827,p. 30,"74 Mining Companies +++ ++ . 38,370,000",the summary of companies classed in the foregoing lists; OCR reads the dotted leader as '+++ ++ .'
+en_l24_austria,欧洲,1824,contracted in London,3500000;82+1/2;2887500,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Austria, 5 per cent | 3,500,000 | 82 1/2 | 2,887,500","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_brazil,拉丁美洲,1824,contracted in London,1200000;75;900000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Brazil....ditto | 1,200,000 | 75 | 900,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_portugal,欧洲,1824,contracted in London,1500000;87;1305000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Portugal..ditto | 1,500,000 | 87 | 1,305,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_greece,欧洲,1824,contracted in London,800000;59;472000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Greece....ditto | 800,000 | 59 | 472,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_colombia,拉丁美洲,1824,contracted in London,4750000;88+1/2;4203750,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Columbia, 6 per cent | 4,750,000 | 88 1/2 | 4,203,750","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_buenosaires,拉丁美洲,1824,contracted in London,1000000;85;850000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Buenos Ayres, ditto | 1,000,000 | 85 | 850,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_mexico,拉丁美洲,1824,contracted in London,3200000;58;1856000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Mexico, 5 per cent | 3,200,000 | 58 | 1,856,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_peru,拉丁美洲,1824,contracted in London,750000;77;577500,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Peru, 6 per cent | 750,000 | 77 | 577,500","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l24_naples,欧洲,1824,contracted in London,2500000;92+1/2;2312500,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Naples, 5 per cent | 2,500,000 | 92 1/2 | 2,312,500","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l25_brazil,拉丁美洲,1825,contracted in London,2000000;85;1700000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Brazil, 5 per cent | 2,000,000 | 85 | 1,700,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l25_mexico,拉丁美洲,1825,contracted in London,3200000;89+3/4;2872000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Mexico, 6 per cent | 3,200,000 | 89 3/4 | 2,872,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l25_greece,欧洲,1825,contracted in London,2000000;56+1/2;1130000,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Greece, 5 per cent | 2,000,000 | 56 1/2 | 1,130,000","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l25_denmark,欧洲,1825,contracted in London,3625000;75+1/2;2718750,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Denmark, 3 per cent | 3,625,000 | 75 1/2 | 2,718,750","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½); the money advanced, £2,718,750, is 75 per cent of the nominal capital, not the 75½ printed in the price column"
+en_l25_peru,拉丁美洲,1825,contracted in London,616000;78;480480,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Peru, 6 per cent | 616,000 | 78 | 480,480","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½)"
+en_l25_guatemala,拉丁美洲,1825,contracted in London,1428571;73;1042988,£ nominal; contract price per £100; £ advanced,,english1827img,p. 42 (PDF page 44),"Guatimala, 6 per cent | 1,428,571 | 73 | 1,042,988","transcribed from the page image; the price is per £100 of nominal capital (fractions as printed: 82½, 88½, 92½, 89¾, 56½, 75½); 73 per cent of £1,428,571 is £1,042,857, not the £1,042,988 printed (the column total, £9,944,218, adds the printed figures)"
+en_l24_total,英国,1824,,19200000;15364250,£,,english1827img,p. 42 (PDF page 44),"£19,200,000 | £15,364,250",the total for 1824
+en_l25_total,英国,1825,,12869571;9944218,£,,english1827img,p. 42 (PDF page 44),"£12.869,571 | £9,944,218","the total for 1825; the page prints '£12·869,571' with a raised point"
+rr_1820s,拉丁美洲,1820s,,,,,rr2008tid,text before Table 3,"many countries in both Latin
+
+America (plus their mother country Spain) defaulted during the 1820s.",
+rr_wars,拉丁美洲,1820s,,,,,rr2008tid,text before Table 3,"Most of these
+
+defaults are associated with Latin America’s wars of independence.",
+rr_t3_argentina,拉丁美洲,1827,years of external default or rescheduling in the column 1825-1849 of Table 3,1816;1827,year of independence; years of default,,rr2008tid,Table 3,"Argentina, 1816 1827",
+rr_t3_chile,拉丁美洲,1826,years of external default or rescheduling in the column 1825-1849 of Table 3,1818;1826,year of independence; years of default,,rr2008tid,Table 3,"Chile, 1818 1826",
+rr_t3_colombia,拉丁美洲,1826,years of external default or rescheduling in the column 1825-1849 of Table 3,1819;1826,year of independence; years of default,,rr2008tid,Table 3,"Colombia, 1819 1826",
+rr_t3_costarica,拉丁美洲,1828,years of external default or rescheduling in the column 1825-1849 of Table 3,1825;1828,year of independence; years of default,,rr2008tid,Table 3,"Costa Rica, 1825 1828",
+rr_t3_ecuador,拉丁美洲,1826,years of external default or rescheduling in the column 1825-1849 of Table 3,1830;1826,year of independence; years of default,,rr2008tid,Table 3,"Ecuador, 1830 1826",the table gives 1830 as the year of independence and 1826 as a year of default
+rr_t3_elsalvador,拉丁美洲,1828,years of external default or rescheduling in the column 1825-1849 of Table 3,1821;1828,year of independence; years of default,,rr2008tid,Table 3,"El Salvador, 1821 1828",
+rr_t3_guatemala,拉丁美洲,1828,years of external default or rescheduling in the column 1825-1849 of Table 3,1821;1828,year of independence; years of default,,rr2008tid,Table 3,"Guatemala, 1821 1828",
+rr_t3_honduras,拉丁美洲,1828,years of external default or rescheduling in the column 1825-1849 of Table 3,1821;1828,year of independence; years of default,,rr2008tid,Table 3,"Honduras, 1821 1828",
+rr_t3_mexico,拉丁美洲,1827,years of external default or rescheduling in the column 1825-1849 of Table 3,1821;1827;1833;1844,year of independence; years of default,,rr2008tid,Table 3,"Mexico, 1821 1827, 1833, 1844",
+rr_t3_nicaragua,拉丁美洲,1828,years of external default or rescheduling in the column 1825-1849 of Table 3,1821;1828,year of independence; years of default,,rr2008tid,Table 3,"Nicaragua, 1821 1828",
+rr_t3_peru,拉丁美洲,1826,years of external default or rescheduling in the column 1825-1849 of Table 3,1821;1826,year of independence; years of default,,rr2008tid,Table 3,"Peru, 1821 1826",
+rr_t3_venezuela,拉丁美洲,1826,years of external default or rescheduling in the column 1825-1849 of Table 3,1830;1826;1848,year of independence; years of default,,rr2008tid,Table 3,"Venezuela, 1830 1826, 1848",the table gives 1830 as the year of independence and 1826 as a year of default
+rr_t3_greece,欧洲,1826,years of external default or rescheduling in the column 1825-1849 of Table 3,1829;1826;1843,year of independence; years of default,,rr2008tid,Table 3,"Greece, 1829 1826, 1843",
+rr_t3_portugal,欧洲,1828,years of external default or rescheduling in the column 1825-1849 of Table 3,1828;1837;1841,years,,rr2008tid,Table 3,"Portugal 1828, 1837, 1841,",the column continues with 1845 on the next line of the table
+rr_t3_brazil,拉丁美洲,1898,"Brazil's only entry in Table 3, in the column 1875-1899",1822;1898,year of independence; year of default,,rr2008tid,Table 3,"Brazil, 1822 1898",
+rr_t8_peru,拉丁美洲,1826,,1826,year,,rr2008tid,Table 8,"Upon Peru’s 1826 default, London bond holders immediately become concerned about other Latin American countries’ ability to service their debts; bond prices collapse.",
+rr_t8_1828,拉丁美洲,1828,,1828,year,,rr2008tid,Table 8,"By 1828, all of Latin America, with the exception of Brazil, had defaulted.",
+bm_keynes,美国,1999,,,,,baumol1999,abstract,John Maynard Keynes summarized the law as 'supply creates its own demand' but it is now generally agreed that Keynes did not get it quite right.,
+bm_coined,美国,1999,,,,,baumol1999,abstract,"it appears to be a twentieth century appellation, preceding Keynes's use.",
+bm_first,美国,1999,,,,,baumol1999,abstract,none of Say's contemporaries—including Say himself—credits him with having been first to enunciate its principles.,
+rp_particular,英国,1817,,,,,ricardo1817,ch. XIX,"Too much of a particular commodity may be produced, of which there may
+be such a glut in the market, as not to repay the capital expended on it;
+but this cannot be the case with respect to all commodities",
+rp_wish,英国,1817,,,,,ricardo1817,ch. XIX,"nothing is required but the means, and nothing can afford
+the means, but an increase of production.",
+rp_universal,英国,1817,,,,,ricardo1817,ch. XIX,"If every man were to forego the use of luxuries, and be
+intent only on accumulation, a quantity of necessaries might be produced,
+for which there could not be any immediate consumption. Of commodities so
+limited in number, there might undoubtedly be an universal glut",
+sy21_less,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 168","To use a more hackneyed phrase, people have bought less, because they have made less profit",
+sy21_colonial,法国,1811,,,,,say1821,"vol. I, book I, ch. XV, p. 168, footnote","when the high prices of colonial produce, of wheat, and other articles, went hand in hand with the low price of many others that could find no advantageous vent.",
+sy21_itself,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 169","One kind of production would seldom outstrip the rest, and its products be disproportionately cheapened, were production left entirely to itself.",
+sy21_sismondi,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 169, footnote","instances the immense quantity of manufactured produce, with which England has of late inundated the markets of other nations, as a proof, that it is possible for industry to be too productive.","the subject is Sismondi, cited as 'Nouv. Prin. liv. iv. c. 4.'"
+sy21_feeble,法国,1821,,,,,say1821,"vol. I, book I, ch. XV, p. 169, footnote","But the glut thus occasioned proves nothing more than the feebleness of production in those countries, that have been thus glutted with English manufactures.",
+jm_equipoise,英国,1829,,,,,jsmill1844,Essay II,"The sellers and the buyers, for all commodities taken together, must, by the metaphysical necessity of the case, be an exact equipoise to each other",
+jm_naming,英国,1829,,,,,jsmill1844,Essay II,"This is merely a question of naming, but an important one",
+jm_commodity,英国,1829,,,,,jsmill1844,Essay II,"money must itself be considered as a commodity. It must, undoubtedly, be admitted that there cannot be an excess of all other commodities, and an excess of money at the same time.",
+jm_possess,英国,1829,,,,,jsmill1844,Essay II,liked better to possess money than any other commodity,
+jm_eagerness,英国,1829,,,,,jsmill1844,Essay II,"general eagerness to buy and general reluctance to buy, succeed one another",
+jm_onlytemporary,英国,1829,,,,,jsmill1844,Essay II,"It is true that this state can be only temporary, and must even be succeeded by a reaction of corresponding violence",
+wl_150,瑞士,1874,,150;75,hectolitres,,walras1874,"§45, p. 54","qu'on offre 150 hectolitres d'avoine au prix de -f en blé , c'est dire par cela même qu'on demande 75 heciolitres de blé.",the OCR reads the price ½ as '-f' and 'hectolitres' as 'heciolitres'
+wl_proportion,瑞士,1874,,,,,walras1874,"§46, p. 56","que si la demande effective de (Â) est supérieure à son offre effective, Toffre effective de (B) sera supérieure dans la même proportion à sa demande effective","the OCR reads '(A)' as '(Â)' and ""l'offre"" as 'Toffre'"
+tk2_greatest,英国,1825,,1825,year,,tooke1838v2,"vol. II, p. 159","after the greatest elevation in January and February, 1825, there was a pause in the first instance, then a slight decline, and, after a few weeks, namely, in the May and June following, a rapid decline.",
+tk2_instalments,英国,1825,,,,,tooke1838v2,"vol. II, p. 158","a general deficiency of means among the subscribers to pay up the succeeding instalments, as they had relied for the most part upon a continued rise",
+tk2_ratehere,英国,1825,,,,,tooke1838v2,"vol. II, p. 158","the ris^ of the rate of interest in this country, which had the same depressing effect upon all of them",the subject is the foreign loans; the OCR reads 'rise' as 'ris^'
+tk2_insolvent,英国,1826,Tooke's pamphlet of January 1826,,,,tooke1838v2,"vol. II, p. 160","several of the banks had been, for some time before, insolvent, and had been kept afloat merely by the confidence of their customers",
+tk2_pole,英国,1825,early December,1825,year,,tooke1838v2,"vol. II, p. 161","One of the most considerable of these (the house of Pole and Co.), after struggling through difficulties for upwards of a week, stopped payment early in December (1825).",
+tk2_onlymedium,英国,1825,December,,,,tooke1838v2,"vol. II, p. 161",Bank of England notes and gold were almost the only medium which would then be accepted in payment throughout the country,
+tk2_resumed,英国,1828,"Ridley, 3 June 1828",63;23;20,bankers; bankers; shillings in the pound,,tooke1838v2,"vol. II, p. 161","Out of the sixty-three, twenty-three had subsequently resumed their payments, and paid 20s. in the pound",
+tk2_seventeen,英国,1828,"Ridley, 3 June 1828",1826;17;6,year; shillings; pence,,tooke1838v2,"vol. II, p. 161","The country bankers who had failed in 1826, had paid, on an average, 17s. 6d. in the pound.",
+tk2_drain,英国,1825,December,,,,tooke1838v2,"vol. II, p. 162","The drain upon the Bank coffers for gold, for internal purposes, was, from these causes, so great, that, following a previous drain for exportation, doubts were entertained whether cash payments could be continued.",
+tk2_discounts,英国,1825,December,,,,tooke1838v2,"vol. II, p. 162",an enlarged issue of Bank of England notes had been made through the medium of extended discounts of mercantile bills,
+en_exclusive,英国,1827,,,,,english1827,p. 31,"exclusive of many provincial Companies, and others formed in Scotland and Ireland",
+en_abandoned,英国,1827,,118;56606500;2419675,companies; £; £,,english1827,p. 30,"118 Ditto Abandoned .... 56,606,500 2,419,675",the general summary: capital required and amount advanced of the 118 companies abandoned
+en_sinister,英国,1827,,,,,english1827,p. 32,only to be attributed to some sinister motive of the projector.,the subject is the majority of the companies formed in 1824 and 1825
+sm_italie,欧洲,1818,,,,,sismondi1819,"tome I, livre IV, ch. IV, pp. 338-339","marchandises de tout genre, mais surtout celles de l'Angleterre, la grande puissance manufacturiere, abonder sur tous les marches de I'Italie",OCR 'I'Italie' for l'Italie
+sm_torrent,欧洲,1818,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 339","Le torrent du commerce, repousse de l'Italie, s'est jete sur l'Allemagne, sur la Russie, sur le Bresil, ety a bientöt rencontre les m&mes obstacles.",
+sm_cap,欧洲,1818,August,1818,year,,sismondi1819,"tome I, livre IV, ch. IV, p. 339","on se plaignait au cap de Bonne-Esperance, que tous les magasins etaient 'remplis de marchandises europeennes, qu'on offrait a plus bas prix qu'en Europe, sans pouvoir les vendre.",
+sm_buenos,拉丁美洲,1818,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 340","Buenos- ‚Ayres, la Nouvelle-Grenade, le Chili, regorgent de m&me deja demarchandises.",
+sm_fearon,美国,1818,"Fearon's journey, ended in the spring of 1818",,,,sismondi1819,"tome I, livre IV, ch. IV, p. 340","il n'y a pas une ville, pas une petite bourgade, oü la quantite de marchandises oflertes en vente ne soit infini- ment superieure aux moyens des acheteurs",
+sm_disproportion,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 340","Aucun fait ne se represente & nous en plus de lieux, sous plus de faces, que la disproportion des moyens de consommation. avec. ceux de production",
+sm_philosophes,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 340",Comment se fait-il que les philosophes ne veuillent pas voir ce qui de toutes parts saute aux yeux du vulgaire ?,
+sm_ricardo,欧洲,1819,,,,,sismondi1819,"tome I, livre IV, ch. IV, p. 341","M. Ricardo, d'apres M. Say, le repete et l'afirme. « M. Say a prouve de » la maniere la plus satisfaisante","Sismondi then quotes, in French, the passage of Ricardo's ch. XIX of which row rp_say is the beginning"
+sl_strongest,法国,1820,,,,,saylet1821,"Letter I, p. 5","I am happy to quote here his strongest expressions, that I may not deprive you of any of your advantages","Say then quotes Sismondi's passage of livre IV, ch. IV (rows sm_demand, sm_italie, sm_torrent, sm_cap) in English"
+sl_consumers,法国,1820,,,,,saylet1821,"Letter I, p. 2","the only true consumers are those who on their side produce, because they alone can buy the produce of others",
+sl_desert,法国,1820,,,,,saylet1821,"Letter I, p. 3",It is the power of producing which makes the difference between a country and a desert,
+sl_several,法国,1820,,,,,saylet1821,"Letter I, p. 5","whenever there is a glut, a superabundance, of several sorts of merchandize, it is because other articles are not produced in sufficient quantities to be exchanged for the former",
+ml_simplest,英国,1820,,,,,malthus1820,"Introduction, p. 8","If every person were satisfied ""with the simplest food, the poorest clothing, and the meanest houses, it is certain that no other sort",the OCR prints a stray quotation mark before 'with'
+ml_wantwill,英国,1820,,,,,malthus1820,"Introduction, p. 9",the motive to accumulate and produce must cease from the want of will to ynsume.,OCR 'ynsume' for 'consume'

@@ -1,0 +1,14 @@
+{
+  "title": "Great Britain 1815-1830, annual: real GDP by sector, nominal GDP, the GDP deflator and the output of eight key industries (Broadberry et al. 2015)",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'A7. GB GDP(O) 1700-1870' (real GDP by sector, 1700 = 100; nominal GDP, £ million; price indices, 1700 = 100) and sheet 'A4. English and GB Industrial Production 1270-1870' (Table 4.02: output of key industries, 1700 = 100), both from Broadberry, Campbell, Klein, Overton and van Leeuwen (2015)",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; real_agriculture, real_industry, real_services, real_gdp: real GDP of Great Britain by sector and in total, 1700 = 100; nominal_gdp_gbp_m: nominal GDP, £ million; gdp_deflator: the GDP deflator, 1700 = 100; ind_tin, ind_iron, ind_coal, ind_textiles (the sheet's 'Wool/Textiles'), ind_leather, ind_foodstuffs, ind_construction, ind_books ('Printed books'): output indices of Table 4.02, 1700 = 100",
+  "retrieved": "2026-10-15",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    20
+  ],
+  "fetch": "data/fetch/boe_millennium_gb20.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb. The sheet A4 notes that 'The data for Wool/Textiles in Table 4.02 in an earlier version of this spreadsheet have been corrected'; the values stored are those of version 3.1. The sheets cite Broadberry et al. (2015) and ask users to cite it. The chapter uses the change from 1825 to 1826 (the year after the crisis) by sector and by industry, and the growth of real GDP from 1815 to 1830.",
+  "citation": "Broadberry, S., B. M. S. Campbell, A. Klein, M. Overton and B. van Leeuwen (2015), British Economic Growth, 1270-1870, Cambridge: Cambridge University Press; data via Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017)"
+}
