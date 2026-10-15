@@ -16,6 +16,8 @@ Inputs:
                                        Rate, the rate on three-month prime bills, the yield on 3% consols (Odlyzko 2014)
                                        and the wholesale price index, monthly, 1822-1827
   bullion_facts                        Cannan (1919) on the usury laws (row cn_usury5; Chapter 19's snapshot)
+  smith_facts                          Smith (1776): a nation is not liable to a merchant's accident (row wn_nation;
+                                       Chapter 18's snapshot)
 The figure module figsrc/fig_ch20.py imports the functions defined here.
 
 What is checked here:
@@ -29,7 +31,7 @@ What is checked here:
 Models (the chapter's key equations):
     Say's identity   sum_{i<n} p_i (D_i - S_i) == 0, from sum_i p_i d_ih = sum_i p_i s_ih for every h    (eq:say-identity)
     Walras' law      sum_{i<=n} p_i (D_i - S_i) == 0, so p_n (D_n - S_n) == 0 under Say's identity       (eq:say-walras)
-    current yield    y = 100 c / P,  y ~ r + lambda (a loan lost on default, a default rate lambda)  (eq:say-yield)
+    current yield    y = 100 c / P,  y ~ i + lambda (a loan lost on default, a default rate lambda)  (eq:say-yield)
     deflator         ln(nominal) = ln(real) + ln(deflator)                                       (eq:accounts-deflator)
 """
 from __future__ import annotations
@@ -111,7 +113,11 @@ def years() -> dict[str, int]:
 
 
 def quotes() -> dict[str, str]:
-    return {r.id: r.quote for r in _rows().itertuples()}
+    q = {r.id: r.quote for r in _rows().itertuples()}
+    df, m = load_snapshot("smith_facts", dtype=str, keep_default_na=False)   # Chapter 18's snapshot
+    assert 20 in m["used_in"]
+    q["wn_nation"] = df.set_index("id").loc["wn_nation", "quote"]
+    return q
 
 
 def column(name: str) -> dict[str, str]:
@@ -397,7 +403,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(quote)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 83)
+    quoted("rows with values, each read from its quotation", n, 86)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -406,6 +412,22 @@ def check_readings(df: pd.DataFrame) -> None:
 ALLOW = {"什么都卖不出去", "普遍过剩", "千年宏观数据", "无", "—", "过剩"}
 # the chapter's Chinese renderings of the quotations: rendering -> row (or rows)
 TRANSLATIONS = {
+    # added after the independent review
+    "相对令人满意": "tk2_workers",
+    "劳动的价格远没有按必需品价格下跌的比例下跌": "tk2_workers",
+    "绝大多数劳动人口的处境改善了": "tk2_bulk",
+    "确实有工人因为许多行业的萧条而失业的抱怨": "tk2_outofemploy",
+    "造成了暂时的过剩": "tk2_outofemploy",
+    "一个商人仓库里货物很多，有时会因为不能及时卖掉而破产，一个国家却不会遭遇同样的意外": "wn_nation",
+    "普遍的供给过剩固然必然只是暂时的，但这对每一种局部的供给过剩也同样可以这样说。": "jm_partial",
+    "为了得到比本国公债高得多的利息": "tk2_hazard",
+    "那个关键时期商人与银行家的困苦大大加重，从中可以清楚地看出高利贷法的作用": "tk2_usurylaw",
+    "货物卖不出去了，消费者眼前迫切需要的除外": "tk2_unsaleable",
+    "终于引来了足够的黄金，使英格兰银行脱离了眼前的危险": "tk2_influx",
+    "其他谷物与豆类都受了旱灾，大大不足": "tk2_drought",
+    "在制造业人口困苦的状况下，这是一个高价": "tk2_april60",
+    "越来越响，在一些工业区演变成暴力行为": "tk2_violence",
+    "智利与大哥伦比亚（包括今天的哥伦比亚、厄瓜多尔与委内瑞拉）在同一年晚些时候违约": "rr_t8_granc",
     # opening
     "全世界的市场普遍过剩，商品不断运去，只能亏本出售，原因是什么？": "sl_cause",
     "尤其是制造业大国英国的商品，充斥意大利的每一个市场": "sm_italie",
@@ -458,7 +480,7 @@ TRANSLATIONS = {
     "可能生产得太多，在市场上过剩到收不回投入的资本；但对所有商品来说，这种情形不可能发生": "rp_particular",
     "在一个国家里，不可能积累起用不出去的资本，除非必需品价格上涨，工资随之涨得那么高，留给资本利润的那么少，以致积累的动机"
     "消失。": "rp_wages",
-    "如果每个人都放弃奢侈品的享用，一心只求积累，那就可能生产出一批无法立即消费的必需品。对于这样数量有限的商品，无疑可能出现"
+    "如果每个人都放弃奢侈品的享用，一心只求积累，那就可能生产出一批无法立即消费的必需品。对于种类这样有限的商品，无疑可能出现"
     "普遍的过剩。": "rp_universal",
     "如果人们不再消费，他们也就不再生产。这个让步并不损害一般的原理。": ("rp_cease", "rp_admission"),
     "没有人出售不是为了购买": "rp_noman",
@@ -469,7 +491,7 @@ TRANSLATIONS = {
     "最简单的食物、最差的衣服与最简陋的房屋": "ml_simplest",
     "积累与生产的动机必定因为缺乏消费的意愿而消失": "ml_wantwill",
     "必定有某个中间点，虽然政治经济学的手段也许还确定不了它": "ml_point",
-    "既有生产的能力，又有消费的意愿": "ml_powerwill",
+    "生产的能力与消费的意愿": "ml_powerwill",
     "有人断言，有效需求不过是用一种商品交换另一种商品。": "ml_effectual",
     "完全没有根据": "ml_unfounded",
     "大量的商品是直接与劳动交换的，无论是生产性的还是非生产性的劳动": "ml_labour",
@@ -613,7 +635,7 @@ def text_quotations() -> list[str]:
 
 
 def check_text(df: pd.DataFrame) -> None:
-    ids = set(df["id"])
+    ids = set(df["id"]) | set(quotes())                    # with the row of Chapter 18 (wn_nation)
     used, n = set(), 0
     for q in text_quotations():
         n += 1
@@ -635,7 +657,9 @@ def opening(F, Y, Q):
     chk("Say's letters, 1820", Y["sl_cause"], 1820)
     assert "English translation 1821" in column("year_note")["sl_cause"]
     chk("Sismondi's book, 1819", Y["sm_crise"], 1819)
-    chk("    the markets of 1818", [Y["sm_italie"], Y["sm_torrent"], Y["sm_cap"], Y["sm_buenos"]], [1818] * 4)
+    chk("    the markets of about 1818", [Y["sm_italie"], Y["sm_torrent"], Y["sm_cap"], Y["sm_buenos"]], [1818] * 4)
+    assert column("year_note")["sm_cap"] == "August"                    # the only dated one: 1818 年前后
+    assert all(column("year_note")[k].startswith("undated") for k in ("sm_italie", "sm_torrent", "sm_buenos"))
     chk("a quarter or a third", F["sm_quart"], [1 / 4, 1 / 3])
     assert "twentieth century appellation" in Q["bm_coined"]
 
@@ -671,6 +695,10 @@ def world(F, Y, A):
     chk("    against the three years ending 1816", cb[7], 1816)
     chk("the stagnation at the close of 1818", F["tk2_stag1818"][0], 1818)
     chk("Sismondi's preface, 1819", Y["sm_crise"], 1819)
+    Q = quotes()
+    assert "1814 and 1815" in Q["tk2_workers"] and "not fallen" in Q["tk2_workers"]
+    assert "1811 and 1812" in Q["tk2_bulk"] and "improved" in Q["tk2_bulk"]
+    assert "thrown out of employ" in Q["tk2_outofemploy"] and "army and navy" in Q["tk2_outofemploy"]
 
 
 def law(F, Y, Q):
@@ -698,6 +726,11 @@ def glut(F, Y):
     assert U["ml_effectual"].startswith("ch. VII, sect. III")
     chk("Sismondi a year before Malthus", Y["ml_excess"] - Y["sm_crise"], 1)
     assert U["rp_capital"].startswith("ch. VII 'On Taxes'")
+    Q = quotes()
+    assert "to the extent in which it has" in Q["ml_extent"]           # Malthus's qualifier
+    assert Q["ml_errors"].startswith("M. Say, Mr. Mill, and Mr. Ricardo") and "fundamental errors" in Q["ml_errors"]
+    assert "In the first place" in Q["ml_first"]                        # the first of several errors
+    assert "a nation or country is not liable to the same accident" in Q["wn_nation"]
     h = F["sm_hats"]
     chk("hats: 100,000 in 1817, 110,000 in 1818", h, [100_000, 1817, 110_000, 1818])
     chk("    or 100,000 made, 90,000 sold", F["sm_sold"], [100_000, 90_000])
@@ -781,6 +814,12 @@ TRANSLATED_MILL = ["jm_barter", "jm_twoacts", "jm_inclination", "jm_distress", "
 
 def boom(F, Y, Mo, L):
     chk("Tooke: summer of 1822, from 5 to 4 per cent", F["tk2_rate"], [1822, 5, 4])
+    Q = quotes()
+    assert "close of 1822" in Q["tk2_conversion"] and "early in 1824" in Q["tk2_conversion"]   # two conversions
+    assert "income was thus reduced" in Q["tk2_hazard"] and "mode of living" in Q["tk2_hazard"]
+    assert "Annual Register for 1824" in Q["tk2_annreg"]
+    for k in ("tk2_mexico", "tk2_instalment", "tk2_eight"):        # the Annual Register, in Tooke's footnotes
+        assert "Annual Register" in column("year_note")[k] and "footnote" in column("juan")[k]
     chk("Bank Rate: 5 in May 1822, 4 in June", [Mo.bank_rate[1822, 5], Mo.bank_rate[1822, 6]], [5, 4])
     chk("    4 from June 1822 to November 1825", Mo.bank_rate.loc[(1822, 6):(1825, 11)].unique().tolist(), [4])
     pb = Mo.prime_bills_rate
@@ -931,6 +970,9 @@ def mania_and_panic(F, Y, Mo, L):
     br = Mo.bank_rate
     chk("Bank Rate: 4 in November 1825, 5 in December", [br[1825, 11], br[1825, 12]], [4, 5])
     chk("    the usury limit (Cannan)", usury(), 5)
+    chk("Tooke: bills at 7 or 8 per cent, but for the usury law", F["tk2_usury78"], [7, 8])
+    assert min(F["tk2_usury78"]) > usury() and "Had it not been for" in quotes()["tk2_usury78"]
+    assert "at length" in quotes()["tk2_influx"]
     assert br.max() <= usury()
     chk("£600,000 or £700,000 of £1 notes (万)", [v / WAN for v in F["tk2_box"]], [60, 70])
     chk("    the week ending 24 December 1825", Y["tk2_box"], 1825)
@@ -991,6 +1033,12 @@ def test(F, Y, A):
     chk("    three down, five up", [sum(g[c][1826] < 0 for c, _, _ in INDUSTRIES),
                                     sum(g[c][1826] > 0 for c, _, _ in INDUSTRIES)], [3, 5])
     pct("1827: real GDP (%)", g.real_gdp[1827], 7.7)
+    chk("April 1826: wheat at 60s.", F["tk2_april60"][0], 60)
+    chk("    the corn in bond, 1 May 1826", F["tk2_bond"], [1, 1826])
+    Q = quotes()
+    assert "acts of violence" in Q["tk2_violence"] and "distressed state" in Q["tk2_april60"]
+    assert "wheat crop had been favoured" in Q["tk2_drought"] and "greatly deficient" in Q["tk2_drought"]
+    chk("    the drought of 1826", Y["tk2_drought"], 1826)
     pct("    deflator (%)", g.gdp_deflator[1827], -2.7)
     d = decomp(g.nominal_gdp_gbp_m[1826] / 100, g.real_gdp[1826] / 100)
     pct("the fall of nominal GDP 1826: the price share (%)", 100 * d["share"], 62.1)
@@ -1017,6 +1065,12 @@ def test(F, Y, A):
     pct("    deflator (%)", change(A.gdp_deflator, 1815, 1830), -24.9)
     pct("    nominal GDP (%)", change(A.nominal_gdp_gbp_m, 1815, 1830), -4.7)
     pct("1817: real GDP (%)", g.real_gdp[1817], 1.7)
+    # the first slump was long: real GDP fell a little in 1818 and 1819 and passed 1815 only in 1820;
+    # the second was short: 1827 was above 1825
+    chk("    1818 and 1819 fell a little", [g.real_gdp[1818] < 0, g.real_gdp[1819] < 0], [True, True])
+    chk("    below 1815 in 1816-1819, above in 1820",
+        [A.real_gdp[y] < A.real_gdp[1815] for y in range(1816, 1821)], [True, True, True, True, False])
+    chk("    1827 above 1825", A.real_gdp[1827] > A.real_gdp[1825], True)
     chk("the annual series: 1815-1830", [A.index[0], A.index[-1], len(A)], [1815, 1830, 16])
 
 
@@ -1035,12 +1089,14 @@ def deeper(F, Y):
     chk("    printed (£)", F["en_l25_guatemala"][2], 1_042_988)
     n24, p24 = F["en_l24_total"]
     n25, p25 = F["en_l25_total"]
-    pct("1824: nominal, paid (万)", n24 / WAN, 1920, 0)
+    pct("1824: nominal, paid (万)", n24 / WAN, 1920.0)
     pct("    ", p24 / WAN, 1536.4)
     pct("1825: nominal, paid (万)", n25 / WAN, 1287.0)
     pct("    ", p25 / WAN, 994.4)
     chk("    together", [n24 + n25, p24 + p25], F["en_loans"])
     Un = column("unit")
+    assert "Colombia, Ecuador, and Venezuela" in quotes()["rr_t8_granc"]
+    chk("    Gran Colombia defaults in the year of Peru's default", Y["rr_t8_granc"], F["rr_t8_peru"][0])
     for k in ("rr_t3_ecuador", "rr_t3_venezuela"):
         chk(f"{k}: independence 1830, default 1826", F[k][:2], [1830, 1826])
         assert Un[k].startswith("year of independence")

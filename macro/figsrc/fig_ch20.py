@@ -93,7 +93,7 @@ def say_walras():
             (T("谷物", "corn"), C.SPLIT["corn"], tint(OUTPUT, 0.6)),
             (T("货币", "money"), -goods, MONEY),
             (T("合计，包括货币", "sum with money"), C.SPLIT["cloth"] + C.SPLIT["corn"] - goods, INK),
-            (T("合计，不包括货币", "sum without money"), goods, PRICE)]
+            (T("合计，不包括货币", "sum without money"), goods, OUTPUT)]
     ys = [5, 4, 3, 1.5, 0.5]
     for y, (name, v, col) in zip(ys, rows):
         if v == 0:
@@ -106,7 +106,7 @@ def say_walras():
     a2.axvline(0, color=MUTED, lw=0.8, zorder=2)
     a2.set_yticks(ys)
     a2.set_yticklabels([r[0] for r in rows], fontsize=7.8)
-    a2.text(29, 0.5, T("萨伊恒等式不成立", "Say's identity fails"), fontsize=7.6, color=PRICE, ha="center",
+    a2.text(29, 0.5, T("萨伊恒等式不成立", "Say's identity fails"), fontsize=7.6, color=OUTPUT, ha="center",
             va="center")
     a2.text(29, 1.5, T("瓦尔拉斯定律", "Walras' law"), fontsize=7.6, color=INK, ha="center", va="center")
     a2.set_xlim(-58, 58)
@@ -265,8 +265,9 @@ def say_output():
     a1.set_xticks(range(1815, 1831, 5))
     a1.set_ylabel(T("1815 年 = 100", "1815 = 100"))
     _grid(a1)
-    _title(a1, T(f"(a) 两次下降都只有一年；15 年里实际 GDP 增加 {C.change(A.real_gdp, 1815, 1830):.1f}%",
-                 f"(a) Both falls lasted a year; real GDP grew {C.change(A.real_gdp, 1815, 1830):.1f}% in 15 years"))
+    last = max(y for y in range(1816, 1826) if A.real_gdp[y] < A.real_gdp[1815])     # 1819
+    _title(a1, T(f"(a) 实际 GDP：1816—{last} 年都低于 1815 年，1826 年的下降只有一年",
+                 f"(a) Real GDP stayed below 1815 until {last}; the fall of 1826 lasted a year"))
 
     # (b) 1825-1826 by sector and industry
     rows = [(T("实际 GDP", "real GDP"), g.real_gdp[1826], INK)]
