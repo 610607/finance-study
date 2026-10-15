@@ -2,6 +2,10 @@ id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
 wn_annual,,1776,,,,,smith1776,Introduction and Plan of the Work,The annual labour of every nation is the fund which originally supplies it with all the necessaries and conveniencies of life which it annually consumes,
 wn_two,,1776,,2,circumstances,,smith1776,Introduction and Plan of the Work,"this proportion must in every nation be regulated by two different circumstances: first, by the skill, dexterity, and judgment with which its labour is generally applied; and, secondly, by the proportion between the number of those who are employed in useful labour, and that of those who are not so employed",
 wn_former,,1776,,,,,smith1776,Introduction and Plan of the Work,"The abundance or scantiness of this supply, too, seems to depend more upon the former of those two circumstances than upon the latter.",
+wn_hunters,,1776,,,,,smith1776,Introduction and Plan of the Work,"Among the savage nations of hunters and fishers, every individual who is able to work is more or less employed in useful labour",
+wn_abandon,,1776,,,,,smith1776,Introduction and Plan of the Work,"sometimes of directly destroying, and sometimes of abandoning their infants, their old people, and those afflicted with lingering diseases",
+wn_civilized,,1776,,,,,smith1776,Introduction and Plan of the Work,"Among civilized and thriving nations, on the contrary, though a great number of people do not labour at all",
+wn_supplied,,1776,,,,,smith1776,Introduction and Plan of the Work,"yet the produce of the whole labour of the society is so great, that all are often abundantly supplied",
 wn_pinone,,1776,,1;20,pins a day,,smith1776,"Book I, ch. I","could scarce, perhaps, with his utmost industry, make one pin in a day, and certainly could not make twenty",a workman not educated to the trade
 wn_eighteen,,1776,,18,operations,,smith1776,"Book I, ch. I","the important business of making a pin is, in this manner, divided into about eighteen distinct operations",
 wn_ten,,1776,,10,men,,smith1776,"Book I, ch. I","I have seen a small manufactory of this kind, where ten men only were employed",
@@ -57,6 +61,8 @@ wn_considerable,,1776,,,,,smith1776,"Book II, ch. II","it must make a very consi
 wn_glasgow,苏格兰,1776,,15;4,years; times,,smith1776,"Book II, ch. II","I have heard it asserted, that the trade of the city of Glasgow doubled in about fifteen years after the first erection of the banks there; and that the trade of Scotland has more than quadrupled since the first erection of the two public banks at Edinburgh",
 wn_banks,苏格兰,1776,,1695;1727,years,,smith1776,"Book II, ch. II","the one, called the Bank of Scotland, was established by act of parliament in 1695, and the other, called the Royal Bank, by royal charter in 1727",
 wn_notknow,苏格兰,1776,,,,,smith1776,"Book II, ch. II","during so short a period, I do not pretend to know",
+wn_toogreat,苏格兰,1776,,,,,smith1776,"Book II, ch. II","If either of them has increased in this proportion, it seems to be an effect too great to be accounted for by the sole operation of this cause.",
+wn_contributed,苏格兰,1776,,,,,smith1776,"Book II, ch. II","That the trade and industry of Scotland, however, have increased very considerably during this period, and that the banks have contributed a good deal to this increase, cannot be doubted.",
 wn_1707,苏格兰,1707,,1707;411117.5375,year; pounds,,smith1776,"Book II, ch. II","The value of the silver money which circulated in Scotland before the Union in 1707, and which, immediately after it, was brought into the Bank of Scotland, in order to be recoined, amounted to £411,117: 10: 9 sterling.","£411,117 10s. 9d."
 wn_metal_m,苏格兰,1707,,1000000,pounds,,smith1776,"Book II, ch. II","The whole value of the gold and silver, therefore, which circulated in Scotland before the Union, cannot be estimated at less than a million sterling.",
 wn_twomillion,苏格兰,1776,,2000000;500000,pounds,,smith1776,"Book II, ch. II","the whole circulation of Scotland cannot be estimated at less than two millions, of which that part which consists in gold and silver, most probably, does not amount to half a million",
@@ -74,12 +80,19 @@ wn_realbill,,1776,,,,,smith1776,"Book II, ch. II","When a bank discounts to a me
 wn_pond,,1776,,,,,smith1776,"Book II, ch. II","resemble a water-pond, from which, though a stream is continually running out, yet another is continually running in, fully equal to that which runs out",
 wn_months,,1776,,4;5;6;8,months,,smith1776,"Book II, ch. II","in the course of some short period (of four, five, six, or eight months, for example), the sum of the repayments which it commonly receives from them, is, or is not, fully equal to that of the advances which it commonly makes to them",
 wn_books,,1776,,500,debtors,,smith1776,"Book II, ch. II","But a banking company, which lends money to perhaps five hundred different people, and of which the attention is continually occupied by objects of a very different kind, can have no regular information concerning the conduct and circumstances of the greater part of its debtors, beyond what its own books afford it.",
+wn_coffers2,苏格兰,1776,,,,,smith1776,"Book II, ch. II","besides saving almost entirely the extraordinary expense of replenishing their coffers, they gained two other very considerable advantages",
+wn_secondly,苏格兰,1776,,,,,smith1776,"Book II, ch. II","Secondly, by this attention they secured themselves from the possibility of issuing more paper money than what the circulation of the country could easily absorb and employ.",
+wn_repayments,苏格兰,1776,,,,,smith1776,"Book II, ch. II","the repayments of a particular customer were, upon most occasions, fully equal to the advances which they had made to him",
 wn_fixed,,1776,,,,,smith1776,"Book II, ch. II",Still less could a bank afford to advance him any considerable part of his fixed capital,
 wn_mine,,1776,,,,,smith1776,"Book II, ch. II","of the capital which the undertaker of a mine employs in sinking his shafts, in erecting engines for drawing out the water, in making roads and waggon-ways",
 wn_bond,,1776,,,,,smith1776,"Book II, ch. II","ought not to be borrowed of a bank, but ought to be borrowed upon bond or mortgage, of such private people as propose to live upon the interest of their money",
 wn_25years,苏格兰,1776,,25,years,,smith1776,"Book II, ch. II","It is now more than five and twenty years since the paper money issued by the different banking companies of Scotland was fully equal, or rather was somewhat more than fully equal, to what the circulation of the country could easily absorb and employ.",
 wn_reams,苏格兰,1776,,,,,smith1776,"Book II, ch. II","could extend their credits to whatever sum might be wanted, without incurring any other expense besides that of a few reams of paper",
 wn_dastardly,苏格兰,1776,,,,,smith1776,"Book II, ch. II",They complained of the contracted views and dastardly spirit of the directors of those banks,
+wn_stillmore,苏格兰,1776,,,,,smith1776,"Book II, ch. II","Those traders and other undertakers, having got so much assistance from banks and bankers, wished to get still more.",
+wn_refusing,苏格兰,1776,,,,,smith1776,"Book II, ch. II","upon their refusing to extend their credits, some of those traders had recourse to an expedient",
+wn_everyday,,1776,,,,,smith1776,"Book II, ch. II",making every day greater and greater difficulties about discounting,
+wn_enraged,,1776,,,,,smith1776,"Book II, ch. II","not only alarmed, but enraged, in the highest degree, those projectors",
 wn_brink,,1776,,,,,smith1776,"Book II, ch. II","the shift to which unfortunate traders have sometimes recourse, when they are upon the brink of bankruptcy",
 wn_latewar,,1776,,,,,smith1776,"Book II, ch. II","during the course of the late war, when the high profits of trade afforded a great temptation to over-trading, is said to have been carried on to a very great extent",
 wn_crazy,,1776,,,,,smith1776,"Book II, ch. II","The house is crazy, says a weary traveller to himself, and will not stand very long; but it is a chance if it falls to-night, and I will venture, therefore, to sleep in it to-night.",
@@ -116,6 +129,8 @@ wn_realdistress,苏格兰,1776,,,,,smith1776,"Book II, ch. II","In the long-run,
 wn_openarms,苏格兰,1776,,,,,smith1776,"Book II, ch. II","had recourse to this new bank, where they were received with open arms",
 wn_buckets,,1776,,,,,smith1776,"Book II, ch. II","by employing a number of people to go continually with buckets to a well at some miles distance, in order to bring water to replenish it",
 wn_loanoffice,,1776,,,,,smith1776,"Book II, ch. II",It could only have erected this bank into a sort of general loan office for the whole country.,
+wn_augment,,1776,,,,,smith1776,"Book II, ch. II","This operation could not augment, in the smallest degree, the quantity of money to be lent.",
+wn_judicious,,1776,,500,people,,smith1776,"Book II, ch. II","But a bank which lends money, perhaps to five hundred different people, the greater part of whom its directors can know very little about, is not likely to be more judicious in the choice of its debtors than a private person",
 wn_engine,英格兰,1776,,,,,smith1776,"Book II, ch. II","It acts, not only as an ordinary bank, but as a great engine of state.",
 wn_houses,英格兰,1776,,,,,smith1776,"Book II, ch. II","It likewise discounts merchants' bills, and has, upon several different occasions, supported the credit of the principal houses, not only of England, but of Hamburgh and Holland.",
 wn_1763,英格兰,1763,,1763;1600000,year; pounds,,smith1776,"Book II, ch. II","Upon one occasion, in 1763, it is said to have advanced for this purpose, in one week, about £1,600,000, a great part of it in bullion. I do not, however, pretend to warrant either the greatness of the sum, or the shortness of the time.",
@@ -156,6 +171,12 @@ wn_consumers,,1776,,,,,smith1776,"Book II, ch. III","The consumption is the same
 wn_benefactor,,1776,,,,,smith1776,"Book II, ch. III","every prodigal appears to be a public enemy, and every frugal man a public benefactor",
 wn_effect,,1776,,,,,smith1776,"Book II, ch. III","The exportation of gold and silver is, in this case, not the cause, but the effect of its declension",
 wn_bankrupt,,1776,,1/1000,of those in trade,,smith1776,"Book II, ch. III","not much more, perhaps, than one in a thousand",
+wn_prudent,,1776,,,,,smith1776,"Book II, ch. III",the number of prudent and successful undertakings is everywhere much greater than that of injudicious and unsuccessful ones,
+wn_stockcrazy,,1776,,,,,smith1776,"Book II, ch. I","A man must be perfectly crazy, who, where there is a tolerable security, does not employ all the stock which he commands",
+wn_bury,,1776,,,,,smith1776,"Book II, ch. I","where men are continually afraid of the violence of their superiors, they frequently bury or conceal a great part of their stock",
+wn_capitalerror,,1776,,,,,smith1776,"Book IV, ch. IX","The capital error of this system, however, seems to lie in its representing the class of artificers, manufacturers, and merchants, as altogether barren and unproductive.",
+wn_freemen,北美,1776,,,,,smith1776,"Book III, ch. II","In the English colonies, of which the principal produce is corn, the far greater part of the work is done by freemen.",
+wn_tobacco,北美,1776,,,,,smith1776,"Book III, ch. II","the whole work is done by slaves, and in our tobacco colonies a very great part of it.","begins 'In our sugar colonies, on the contrary,'"
 wn_better,,1776,,,,,smith1776,"Book II, ch. III","But the principle which prompts to save, is the desire of bettering our condition; a desire which, though generally calm and dispassionate, comes with us from the womb, and never leaves us till we go into the grave.",
 wn_public,,1776,,,,,smith1776,"Book II, ch. III","Great nations are never impoverished by private, though they sometimes are by public prodigality and misconduct.",
 wn_twomeans,,1776,,,,,smith1776,"Book II, ch. III","The annual produce of the land and labour of any nation can be increased in its value by no other means, but by increasing either the number of its productive labourers, or the productive powers of those labourers who had before been employed.",
@@ -223,6 +244,7 @@ rk_whichbank,苏格兰,,,,,,rockoff2009,p. 18,but it is clear which bank he was 
 rk_size,苏格兰,1772,,1769;1772;25;25;40,year; year; %; %; %,,rockoff2009,p. 18,"Founded in 1769, by 1772 the bank supplied 25 percent of the notes in circulation by Scottish banks, 25 percent of total deposits, and 40 percent of total Scottish bank assets.",
 rk_public21,苏格兰,1772,,21,% of assets,,rockoff2009,p. 18,"The public banks, a category that includes the Bank of Scotland and the Royal Bank of Scotland, accounted for only 21 percent of total assets.",
 rk_colossus,苏格兰,1772,,,,,rockoff2009,p. 18,In three years the Ayr Bank had become a colossus,
+rk_fordyce,英格兰,1772,,,,,rockoff2009,p. 18,"Alexander Fordyce, a London speculator, was one of the key figures.",
 rk_short,英格兰,1772,,,,,rockoff2009,p. 18,"Fordyce had financed a large short position in English East India stock with loans from his bank, Neale, James, Fordyce, and Downe, which in turn was heavily indebted to the Ayr Bank.",
 rk_june9,英格兰,1772,,9;1772,day; year,,rockoff2009,p. 19,"Fordyce went bankrupt and fled to France on June 9, 1772.",
 rk_june12,苏格兰,1772,,12,day,,rockoff2009,p. 19,On June 12 a horseman reached Edinburgh with news of Fordyce's bankruptcy and the alarm in London.,
@@ -256,6 +278,8 @@ rk_insider,苏格兰,1772,,,,,rockoff2009,p. 34,"The main problem was not sophis
 rk_substantial,苏格兰,,,1769,year,,rockoff2009,p. 34,"This might have had a substantial effect, if it had been in effect before 1769",
 rk_sophisticated,苏格兰,,,,,,rockoff2009,p. 35,Aye Bank to rely on a more limited and sophisticated class of note holder for some of its funds.,continues rk_substantial ('because it would have forced the') after the page break; 'Aye' as printed
 rk_lolr,英格兰,,,,,,rockoff2009,p. 35,The real end to banking crises in Britain (until now) was the assumption by the Bank of England of the role of lender of last resort.,
+rk_usually,英格兰,,,1873,year,,rockoff2009,p. 35,This idea came later and is usually associated with Bagheot (1873),Rockoff's spelling
+rk_complex,英格兰,,,,,,rockoff2009,p. 36,complex than they are usually portrayed.,continues 'although Bagehot's views on the role of the lender of last resort were more' from p. 35
 rk_notendorse,英格兰,,,,,,rockoff2009,p. 35,Smith does not explicitly endorse the use of these powers as a means of ameliorating or preventing crises.,
 rk_1763,阿姆斯特丹,1763,,1763,year,,rockoff2009,"p. 35, note 19","Although the Bank of England acted as a lender of last resort in the Crisis of 1763, the Crisis was centered in Amsterdam, and does not appear to have had a major impact on Smith’s thinking about banking.",
 rk_schwartz,英格兰,1866,,1987;276;77;1866,year; pages; year,,rockoff2009,p. 36,"As Anna J. Schwartz (1987, 276-77) pointed out, as a result of the adoption of the policy of acting as lender of last resort by the Bank of England there were no banking crises in England after 1866.",
@@ -271,6 +295,8 @@ rk_june25,苏格兰,1772,,25,day,,rockoff2009,"p. 37, chronology",June 25 The Ay
 rk_reopen,苏格兰,1772,,28,day,,rockoff2009,"p. 37, chronology",September 28 The Ayr bank reopens with a promise to pay notes in full.,
 rk_windup,苏格兰,1773,,12,day,,rockoff2009,"p. 37, chronology",August 12 Proprietors resolve to wind up the Ayr Bank,
 th_justice,,1802,,,,,thornton1802,p. 32 (ch. II),"real bills represent property, and that fictitious bills do not, seems, therefore, to be one by which more than justice is done to one of these species of bills, and something less than justice to the other.",begins 'The supposition that'
+th_punctually,,1802,,,,,thornton1802,p. 32 (ch. II),"the fictitious bill is, in general, less likely to be punctually paid than the real one.",
+th_limitation,,1802,,,,,thornton1802,p. 32 (ch. II),"fictitious bills, besides being less safe, are less subject to limitation as to their quantity.",goes on: the extent of a man's actual sales forms some limit to the amount of his real notes
 th_less,,1802,,,,,thornton1802,p. 34 (ch. II),to those engaged in it than Dr. Smith imagines.,"the practice of drawing and redrawing, 'often carried on at much less' expense"
 th_six,,1802,,2,months,,thornton1802,p. 34 (ch. II),"A, for instance, of London, draws a bill at two months on B, of Amsterdam, and receives immediate money for the bill.",OCR 'Lon- don' joined; continues with B drawing on A
 th_joint,,1802,,6,months,,thornton1802,p. 34 (ch. II),"The transaction is, in substance, obviously the same as if A and B had borrowed, on their joint security, the sum in question for six months.",
@@ -281,9 +307,11 @@ th_ten,,1802,,10;1;1;10,payments; days,,thornton1802,p. 46 (ch. III),"The same n
 cz_title,北美,1780,,1;19;1610;1780,series; series; years,,census1975img,p. 1168 (PDF page 16),Series Z 1-19. Estimated Population of American Colonies: 1610 to 1780,
 cz_total,北美,1780,"columns 1780, 1770, ..., 1630, every ten years",2780369;2148076;1593625;1170760;905563;629445;466185;331711;250888;210372;151507;111935;75058;50368;26634;4646,persons,,census1975img,"p. 1168 (PDF page 16), series Z 1, 'White and Negro', row Total","Total 2,780,369 2,148,076 1,593,625 1,170,760 905,563 629,445 466,185 331,711 250,888 210,372 151,507 111,935 75,058 50,368 26,634 4,646",transcribed from the page image; columns are the years 1780 to 1630 in steps of ten years
 cz_negro,北美,1780,"columns 1780, 1770, ..., 1630, every ten years",575420;459822;325806;236420;150024;91021;68839;44866;27817;16729;6971;4535;2920;1600;597;60,persons,,census1975img,"p. 1168 (PDF page 16), series Z 1, 'Negro', row Total","Total 575,420 459,822 325,806 236,420 150,024 91,021 68,839 44,866 27,817 16,729 6,971 4,535 2,920 1,600 597 60",transcribed from the page image
-cz_indians,北美,,,,,,census1975img,"p. 1168 (PDF page 16), footnote 7",Includes some Indians.,a footnote to one cell only: the series counts white and Negro inhabitants
+cz_indians,北美,,,,,,census1975img,"p. 1168 (PDF page 16), footnote 7",Includes some Indians.,"a footnote to two cells, Rhode Island and Connecticut, Negro, 1780: the series counts white and Negro inhabitants"
 cz_reports,北美,,,,,,census1975img,"p. 1152 (PDF page 1), text for series Z 1-19",The original data were obtained from the reports of the colonial officials to the Lords Commissioners of Trade and Plantations.,
 cz_slavery,北美,,,17,century,,census1975img,"p. 1152 (PDF page 1), text for series Z 1-19","The figures for Negroes for the 17th century, which are doubtless too low, are largely estimates based upon references to purchase and sale, and laws governing slavery, and occasionally to reports of more or less exact numbers.",
+cz_compiled,北美,,,,,,census1975img,"p. 1152 (PDF page 1), text for series Z 1-19",Compiled by Stella H. Sutherland,
+cz_selected,北美,,,,,,census1975img,"p. 1152 (PDF page 1), text for series Z 1-19","However, such estimates were selected in accordance with the general pattern of population growth.",the estimates of officials and contemporaries who did not disclose the figures behind them
 hu_date,孟加拉,1772,,3;1772,day; year,,hunter1868,p. 379 (Appendix A),"William, the 3d November 1772.",after 'Dated Fort-'; the OCR splits the name at the line end
 hu_sicca,孟加拉,1772,Bengal year 1771-72,15726576,sicca rupees,,hunter1868,p. 379 (Appendix A),"sicca rupees 1,57,26,576","the letter's total receipts for the last Bengal year, in the Indian grouping of digits"
 hu_third,孟加拉,1772,,1/3,of the inhabitants,,hunter1868,p. 381 (Appendix A),"withstanding the loss of at least one-third of the Inhabitants of the Province, and the consequent decrease of the Cultivation, the nett collections of the year","'not-' ends p. 380; the sentence goes on 'year 1771 exceeded even those of 1768', which the OCR reads '177 1' (row hu_exceeded)"
@@ -293,7 +321,7 @@ hu_net1771,孟加拉,1771,"Bengal year 1178 [1771-72], after deficiencies",15333
 hu_kept,孟加拉,1772,,,,,hunter1868,p. 381 (Appendix A),"That it did not, was owing to its being violently kept up to its former Standard.",
 hu_najay,孟加拉,1772,,,,,hunter1868,p. 381 (Appendix A),"It is called Najay, and it is an Assessment upon the actual inhabitants of every Inferior Description of the Lands, to make up for the Loss sustained in the Rents of their neighbours who are either dead or have fled the Country.",
 hu_may1770,孟加拉,1770,,1770;1/3,year; of the population,,hunter1868,p. 32,"Before the end of May 1770, one-third of the population was officially calculated to have disappeared",
-hu_accepted,孟加拉,,,,,,hunter1868,p. 34,This estimate has been accepted by all official and by the most accurate,
+hu_accepted,孟加拉,,,,,,hunter1868,p. 34,This estimate has been accepted by all official and by the most accurate,continues 'non-official writers' (the OCR breaks 'non-' at the line end)
 hu_24_30,孟加拉,1790,,20;24;30,years; millions,,hunter1868,p. 34,Twenty years after the famine the remaining population was estimated at from twenty-four to thirty millions,
 hu_ten,孟加拉,1770,,9;10000000,months; people,,hunter1868,p. 34,had within nine months swept away ten millions of human beings,
 hu_proclaim,孟加拉,1770,,,,,hunter1868,p. 35,At an early period they issued proclamations against hoarding or monopolizing grain,the English Council in Calcutta
@@ -301,6 +329,8 @@ hu_reproach,孟加拉,1770,,,,,hunter1868,"p. 41, note","The Court seemed well s
 hu_interdict,孟加拉,1770,,1770,year,,hunter1868,p. 43,"In 1770, the Government, by interdicting what it was pleased to term the monopoly of grain, prevented prices from rising at once to their natural rates.",
 hu_spread,孟加拉,1770,,,,,hunter1868,p. 43,The general stock would thus have been husbanded and the pressure equally spread over the whole nine months,
 hu_farthings,孟加拉,1770,,1.5;1865;66;0.75,pence a pound; years; pence a pound,,hunter1868,p. 43,"The price of grain, in place of promptly rising to three-halfpence a pound as in 1865-66, continued at three-farthings during the earlier months of the famine.",
+hu_samepressure,孟加拉,1866,,,,,hunter1868,p. 53,"the actual pressure, as indicated by the price of rice, was precisely the same in both famines",Orissa in 1866 against the whole province in 1770
+hu_samescarcity,孟加拉,,,,,,hunter1868,p. 53,"It may be inferred, therefore, that the natural scarcity was the same.",
 hu_court,孟加拉,,,,,,hunter1868,"p. 420 (Appendix B, section VI)","not barely for monopolizing grain, but for compelling the poor ryots to sell even the seed requisite for the next harvest.","a letter of the Court of Directors to the Council after the famine (the OCR garbles its date), quoting the accusation against 'the gomashtas of English gentlemen' (Hunter's gloss: English servants of the Company)"
 hu_court2,孟加拉,,,,,,hunter1868,"p. 421 (Appendix B, section VI)","the ryots were compelled to sell their rice to these monopolizing Europeans, we have reason to suspect that they could be no other than persons of some rank in our service",
 qs_qianlong,清,1764,乾隆二十九年与乾隆六十年（1795）,205591017;296960545,口,,qingshigao,卷一百二十 志九十五 食货一（户口）,乾隆二十九年，二万五百五十九万一千一十七口。六十年，二万九千六百九十六万五百四十五口。,民数，户部的登记数，不是普查；数字里的“万”叠用，按 (2×10000+559)×10000+1017 读

@@ -382,6 +382,7 @@ READINGS = {
     "wn_200k": [("two hundred thousand", EN)],
     "wn_600k": [("six hundred thousand", EN)],
     "wn_800k": [("eight hundred thousand", EN), ("five per", EN)],
+    "wn_judicious": [("five hundred", EN)],
     "wn_loss3": [("eight per", EN), ("three per", EN), ("three fourths", "frac")],
     "wn_longer": [("two years", EN)],
     "wn_sooner": [("two years", EN)],
@@ -432,7 +433,7 @@ def check_readings(df: pd.DataFrame) -> None:
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
     qing()
-    quoted("rows with values, each read from its quotation (and the 清史稿 row)", n + 1, 151)
+    quoted("rows with values, each read from its quotation (and the 清史稿 row)", n + 1, 153)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -440,7 +441,7 @@ def check_readings(df: pd.DataFrame) -> None:
 PUNCT = re.compile(r"[\s，。、；：！？“”‘’（）《》·…—﹑,.;:!?'\"()\[\]|\-]")
 # terms of the text and claims it examines, which are not quotations
 ALLOW = {"千年宏观数据", "真实的", "循环的", "虚构的", "生产性的", "生产", "普遍过剩", "先令", "万", "1771", "177 1",
-         "节俭必然有益"}
+         "节俭必然有益", "只贴现真实票据"}
 # the chapter's Chinese renderings of the English quotations: rendering -> row (or rows)
 TRANSLATIONS = {
     # opening
@@ -544,7 +545,7 @@ TRANSLATIONS = {
     "平均约八十五万英镑": "wn_boe_coin",
     "这样损失二点五到三个百分点": "wn_boe_loss",
     "很少低于一点五或两个百分点": "wn_agents", "四分之三个百分点，即每一百英镑十五先令": "wn_agents",
-    "英国两个地区的一些大胆的投机者过度经营，是纸币过度流通的根本原因": "wn_projectors",
+    "英格兰与苏格兰两地的一些大胆的投机者过度经营，是纸币过度流通的根本原因": "wn_projectors",
     "有人说，纸币的增加增加了整个通货的数量，因而降低了它的价值，必然抬高商品的货币价格。": "wn_hume",
     "从流通中取走的金银，总是等于加进来的纸币，所以纸币不一定增加整个通货的数量。": "wn_equal",
     "苏格兰的粮食却从没有那样便宜过": "wn_1759",
@@ -620,7 +621,7 @@ TRANSLATIONS = {
     "为了防止火灾蔓延而规定修筑隔墙，同样是对天赋自由的侵犯，与这里提议的银行业管制完全属于同一类": ("wn_party", "e1_party"),
     "如果禁止银行家发行面额低于一定数额的流通银行券或见票即付的票据，如果他们有义务一经提示就立即无条件地兑付这些银行券，那么，在其他一切方面，他们的营业都可以完全自由，而不危及公众的安全。": ("wn_free", "e1_free"),
     "完全自由": ("wn_free", "e1_free"),
-    "最近英国两个地区银行公司的增多，许多人为之惊慌，其实不但没有减少，反而增加了公众的安全": "wn_security",
+    "最近英格兰与苏格兰两地银行公司的增多，许多人为之惊慌，其实不但没有减少，反而增加了公众的安全": "wn_security",
     "把整个流通分成更多的部分，任何一家公司的倒闭，这种事在事物的进程中总会发生，对公众的影响就小了": "wn_failure",
     "这种自由竞争也迫使所有银行家对客户更宽厚，免得对手把客户抢走。": "wn_compet",
     "现行的法定利率 5\\% 也许和任何利率一样合适": "wn_legal5",
@@ -636,7 +637,7 @@ TRANSLATIONS = {
     "不仅是一家普通的银行，而且是国家的一部大机器": "wn_engine",
     "支撑了不仅英格兰、而且汉堡与荷兰的主要商号的信用": "wn_houses",
     "在一个星期里": "wn_1763", "不过，我不敢担保数额有这么大，时间有这么短": "wn_1763", "不敢担保": "wn_1763",
-    "斯密没有明确赞成用这些权力来缓和或防止危机": "rk_notendorse",
+    "斯密没有明确赞成用这些权力来缓和或防止危机": "rk_notendorse", "直到现在": "rk_lolr",
     "苏格兰那样的自由银行制度": "rk_bagehot",
     "斯密是一个经验主义者，愿意根据当时与历史的经验修改自己的看法。": "rk_empiricist",
     # sec:smith-states
@@ -665,7 +666,7 @@ TRANSLATIONS = {
     "也许": "wn_drought",
     # the case of Bengal
     "1770 年 5 月底以前，官方估计人口的三分之一已经消失": "hu_may1770", "三分之一": "hu_may1770",
-    "为所有官方的与最审慎的": "hu_accepted",
+    "为所有官方的与最严谨的": "hu_accepted",
     "在九个月里夺去了一千万人的生命": "hu_ten", "一千万人": "hu_ten",
     "1772 年 11 月 3 日，于威廉堡": "hu_date",
     "尽管全省至少失去了三分之一的居民，耕地也随之减少": "hu_third", "至少三分之一的居民": "hu_third",
@@ -674,6 +675,7 @@ TRANSLATIONS = {
     "纳贾伊": "hu_najay",
     "是向各类田地上实际还活着的居民加征的一种摊派，用来弥补邻居死去或逃走而损失的地租": "hu_najay",
     "只要政府允许自由贸易": "wn_freetrade",
+    "米价所反映的实际压力，两次饥荒完全一样": "hu_samepressure",
     "有时在一季开始的时候就造成饥荒": "wn_reasonable",
     "发布公告，禁止囤积或垄断粮食": "hu_proclaim",
     "1770 年，政府禁止它所谓的粮食垄断，阻止了价格立即涨到它自然的水平": "hu_interdict",
@@ -683,6 +685,7 @@ TRANSLATIONS = {
     "纵容了粮食的垄断与私人贸易": "hu_reproach",
     # sec:smith-test
     "无疑偏低": "cz_slavery",
+    "绝大部分活是自由人做的": "wn_freemen", "全部的活是奴隶做的": "wn_tobacco",
     "银行券增加到 2.5 倍以上，年率 8.5\\%；存款增加到将近 3.3 倍，年率 10.8\\%。": "rk_bos2",
     "小额银行券狂热": "rk_zenith",
     "我的猜测是，小面额铸币的短缺是最重要的因素": "rk_coins",
@@ -691,6 +694,7 @@ TRANSLATIONS = {
     "一亿四千五百多万": "e1_145",
     "消费是一切生产的唯一目的": "wn_soleend", "重商主义的结论": ("wn_conclusion", "e2_ch8"),
     "被迫停止兑付银行券": "rk_june22", "停止以金银兑付银行券": "rk_june25",
+    "关键人物之一": "rk_fordyce",
     "包括一些印第安人": "cz_indians",
 }
 
@@ -940,6 +944,9 @@ def regulation(F, Y):
     chk("    year", F["wn_1763"][0], 1763)
     chk("    the 1763 crisis centred in Amsterdam", Y["rk_1763"], 1763)
     chk("Schwartz: no crises after 1866", F["rk_schwartz"][3], 1866)
+    chk("    Schwartz (1987)", F["rk_schwartz"][0], 1987)
+    chk("Rockoff wrote in 2009 ('until now')", F["rk_notice"][0], 2009)
+    chk("    the crisis of 2008", F["rk_meltdown"][1], 2008)
 
 
 def states(F, Y, B):
@@ -994,6 +1001,7 @@ def test(F, Y, B):
     chk("Negro 1770", C.negro[1770], 459_822)
     pct("    share (%)", 100 * C.negro[1770] / C.total[1770], 21.4)
     chk("    17th century", F["cz_slavery"][0], 17)
+    chk("deeper box: footnote 7 in the 1780 column (the first of series Z 1)", CENSUS_YEARS[0], 1780)
     pct("white doubling 1700-1770", doubling(C.white[1700], C.white[1770], 70), 24.0)
     pct("Negro doubling 1700-1770", doubling(C.negro[1700], C.negro[1770], 70), 17.3)
     pct("England 1700 (万)", B.pop_england_m[1700] * 100, 520, 0)
