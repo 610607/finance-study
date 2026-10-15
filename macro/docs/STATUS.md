@@ -289,8 +289,31 @@ Updated 2026-10-14.
   - Notation: $r$ is the rate of profit in `eq:smith-saving`; $\rho=1/5$ and $M/Y=1/5$ coincide in the example.
   - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the four figures pass figlint in both languages.
 
+- Chapter 19 (数量论、价格–铸币流动与金块论战): written and reviewed. The draft is in "Chapter 19: the quantity theory, price-specie flow and the bullion controversy"; the review fixes are in "Chapter 19: apply the independent review".
+  - The models: Hume's price-specie flow, $x_{t+1}=(1-\kappa)x_t$ (`eq:bullion-hume`, half-life 3.1 years at $\kappa=0.2$); the equation of exchange $MV\equiv PT$ as an identity (`eq:bullion-exchange`); paper prices as the premium times prices in gold, $P=(1+\pi)P^{g}$ (`eq:bullion-premium`); the gold point, $1-\delta\ge(1-c)/(1+\pi)$ (`eq:bullion-goldpoint`).
+  - The Restriction of February 1797 frames the chapter (Cannan 1919: the run, the Order in Council, the Bank's £1.1m of coin and bullion against £9.7m of notes); then the first twelve years, the Bullion Report (1810), Ricardo against the anti-bullionists, and the resumption of 1819–1821 (Tooke's defence of Peel's bill).
+  - Tests: Silberling's premium and the Hamburg exchange move as mirror images (correlation −0.906, −0.926 without 1810–12); the least cost of sending gold is negative in 30 of 35 years and above 1% only in 1809–1811 (15.8% in 1811, the blockade); about two-thirds of the rise and fall of wholesale prices 1797–1821 is the premium, the rest prices in gold (most of 1797–1801 and 1819–1821); notes did not explain the premium year by year (1810 and 1813 the same £24.8m in August, the premium 16.2% and 40.9%).
+  - Case outside the UK/US: Sweden 1745–1776 (Edvinsson 2010, Fregert 2014, the Riksbank's tables): the Caps' attempt at the old par, the deflation of 1764–1768 (the riksdaler −45.3%, notes −23.3%), and the reform of 1776 at the market rate.
+  - Contested questions with each side's strongest case: bullionists against the Bank and Vansittart; Tooke on the seasons (European produce up, trans-Atlantic produce down in 1799–1800) against the currency; whether Peel's bill lowered prices beyond the premium.
+  - Fixes after the review:
+    - The first road of `ch:external` is the pound's depreciation ($e$ rises); the quoted exchange runs the other way, now said where $\delta$ is defined; $\pi$ is the premium in this chapter, not Appendix B's inflation; the step $x_{t+1}-x_t=-\kappa x_t$ is written out.
+    - Thornton on 1793: the notes were not fewer than usual (new row `th_notfewer`); the panic example says its comparison is hypothetical.
+    - Tooke on 1799–1800: food prices against the three years ending 1795, the trans-Atlantic produce, the exported guineas, and his concession that 1800 should have been held to 1799 (rows `tk_probablyless`, `tk_transatlantic`, `tk_guineas`, `tk_limit1799`).
+    - Cannan against Tooke's 5% rate (the Directors could lower the rate and lent to the Government below it; they expected resumption soon, slackened in the middle years, were pulled up by the controversy); Cannan's concession that gold too lost purchasing power in the war; his third cause of the post-war fall (public spending, easier supply); the Bank's coin and bullion rising from £3.6m (August 1819) to £11.9m (February 1821).
+    - Hume's French figures are Dutot's (Hume's note: the facts often suspicious, the general observation just); the Report's date is Smart's (via Cannan); Silberling's own explanation of 1811 (freight and insurance).
+    - The debt ratio rises from 176.8% (1819) to 194.1% (1821) as nominal GDP shrinks; Sweden's ratios are marked as the book's calculations, Heckscher through Edvinsson, 礼帽党 for the Hats, "tried to return" to the old par (also in the figure title).
+    - Rounding: the examples use the printed numbers (9.8%, 20.2%; "about 59%").
+    - `bullion_facts` has 271 rows (38 read from page images); 15 rows added after the review. The `boe_millennium_gb_1790_1830` note on Feinstein's index corrected (it rose more and fell less than the wholesale index). Chapter 18's sentence that left Thornton's bills critique to Chapter 19 now leaves only his interest-rate argument.
+  - FORWARD_REFS: the six rows to Chapter 19 done; new rows from Chapter 19 to Chapters 20 (twice), 23 (twice), 25, 27, 38, 45, 49/75, 52, 55 and 66.
+  Open points:
+  - The later critiques of Hume's mechanism (the speed of adjustment, the rules of the game) are handed to Chapter 23 with sources still to be found.
+  - The human cost of the deflations of 1815–16 and 1819–22 is handed to Chapter 20; Sweden's late-1760s hardship is not described (no sourced rows).
+  - The critics' case that resumption raised the world value of gold has no world numbers here; the chapter gives the Bank's accumulation only.
+  - Bosanquet's Practical Observations (1810) and Ricardo's Reply (1811) are not named (texts not obtained).
+  - The date of the prorogation of 1810 is Smart's (June 8 the day before); the reviewer recalls 21 June; not verified (Hansard is blocked).
+  - Rebuilt with `python3 build.py --book all --epub`; the six EPUBs pass epubcheck 5.1 with no messages; the five figures pass figlint in both languages.
 ## Next
-1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Part 4 (Chapters 18–25) is under way, in order, one reviewer per chapter; Chapter 18 is done, Chapter 19 (`ch:bullion`) is next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
+1. Parts 1, 2 and 3 are written (Chapters 1–17), Chapter 1 to be revisited at the end. Part 4 (Chapters 18–25) is under way, in order, one reviewer per chapter; Chapters 18 and 19 are done, Chapter 20 (`ch:say`) is next. Prepare a new session with `bash tools/setup_env.sh` and `bash tools/probe_network.sh`.
 2. The author's review of Part 3 (Chapters 10, 11, 13–17) can come at any time; the open points are listed under each chapter above.
 3. Then the other parts in the order of the books.
 

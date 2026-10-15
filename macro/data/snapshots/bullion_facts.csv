@@ -255,3 +255,23 @@ fr_1765,瑞典,1765,,1765,year,,fregert2014,p. 349,"In 1765, Parliament decided 
 fr_devalued,瑞典,1777,,1777,year,,fregert2014,p. 349,After convertibilty was reinstated in 1777 at a devalued rate,sic: 'convertibilty'
 fr_1924,瑞典,1924,,1924,year,,fregert2014,p. 350,"At the return to the gold standard in 1924, at the old, pre-World War I parity",
 fr_wars,瑞典,1741,1741-1762,1741;1743;1738;1757;1762,years,,fregert2014,p. 351,"The Hats’ Russian war (1741–1743) initiated a new period of large loans to the government, coinciding with an increase from 1738 in private lending, now wholly financed by new notes. Another surge in lending to the government occurred with Sweden’s participation in the Seven Years’ War 1757–1762.",
+hm_dutot,法国,1752,,,,,hume_pd,"Of Money, note [14]","These facts I give upon the authority of Monsieur du Tot in his
+_Reflexions politiques_, an author of reputation; though I must confess
+that the facts which he advances on other occasions are often so
+suspicious as to make his authority less in this matter.",
+hm_dutotjust,法国,1752,,,,,hume_pd,"Of Money, note [14]","the
+general observation that the augmenting the money in France does not at
+first proportionably augment the prices is certainly just.",
+th_notfewer,英国,1793,,,,,thornton1802,"ch. III, p. 49","It does not appear that the Bank of England notes, at that time in circulation, were fewer than usual.",
+tk_probablyless,英国,1800,1799-1800,3,years,,tooke1838,"Part IV, ch. III, p. 246",but was probably less than it had been in the three years ending in 179-5,continues row tk_notincreased; the OCR reads 1795 as '179-5'
+tk_limit1799,英国,1800,,1800;1799,years,,tooke1838,"Part IV, ch. III, p. 246",without limiting the amount in 1800 to what it had been in 1799,"the sentence: 'it was the duty of the Directors of the Bank to preserve the value of their paper on a level with gold, and this they could not have done without contracting their issues, or, at least, ...'"
+tk_guineas,英国,1800,,,,,tooke1838,"Part IV, ch. III, p. 245","the chasm which must have been caused in the metallic circulation by the clandestine export of guineas, which the low exchange must have forced abroad",Tooke's argument that the increase of the Bank's notes and of the country notes did not make up for the guineas exported
+tk_transatlantic,英国,1800,1799-1800,,,,tooke1838,"Part IV, ch. III, p. 253","a very great fall took place in all trans- Atlantic produce ; thus negativing the inference of the operation of a common cause, such as that of mere increase of money.",
+cn_rate4,英国,,,4,per cent,,cannan1919,"introduction, p. xxxv","inasmuch as the Directors could at any moment, if they had chosen, reduce the rate to 4 or less",
+cn_lowerrates,英国,,,,,,cannan1919,"introduction, p. xxxv",it often lent them to the Government at lower rates,
+cn_expected,英国,,,,,,cannan1919,"introduction, p. xxxv","In the earlier part and again during the last part of the Suspension, the Directors expected Resumption to take place very soon",
+cn_discussed,英国,1810,,,,,cannan1919,"introduction, p. xxiv (Smart, Annals)","and could not, of course, be discussed",
+cn_goldless,英国,,,,,,cannan1919,"introduction, p. xxiii","since then, as in most, if not all, modern wars, no one could possibly deny that gold had in fact ied less from its normal purchasing power than the paper currency",the OCR drops the first letters of the verb ('ied less'); the next sentences say that prices were much above their normal level and that the gold 'would also exchange for much less'
+cn_endwar,英国,1815,,,,,cannan1919,"introduction, p. xxviii-xxix",was caused in the first place by the sharp drop in public expenditure (just as the rise at the beginning of a war is caused by the opposite) and was maintained by the increased ease of obtaining ordinary commodities,"the subject is the fall of prices at the end of the war ('That fall, like other falls at the ends of wars in face of a currency stationary in amount, ...')"
+sb_freight,英国,1811,,,,,silberling1919,p. 288,the consequent probable rise of freight and insurance may have produced the peculiar results indicated for that year on Chart 3,
+cn_slacker,英国,,,,,,cannan1919,"introduction, p. xxxvi","the Directors did become somewhat slacker, but they were sharply pulled up by the criticism to which they were subjected in the Bullion controversy",

@@ -334,7 +334,7 @@ def bullion_sweden():
     a1.set_ylim(25, 112)
     a1.set_ylabel(T("马克（铜本位）", "marks kopparmynt"))
     _grid(a1)
-    _title(a1, T("(a) 便帽党按旧平价回去：里克斯达勒四年跌了 45%", "(a) The Caps' return to the old par: down 45% in four years"))
+    _title(a1, T("(a) 便帽党试图回到旧平价：里克斯达勒四年跌了 45%", "(a) The Caps try for the old par: down 45% in four years"))
 
     # (b) notes and reserves
     shade_periods(a2, FIAT_SE)

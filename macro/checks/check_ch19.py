@@ -194,11 +194,8 @@ def decompose(B: pd.DataFrame, S: pd.DataFrame, a: int, b: int) -> dict:
 
 
 def corr(x: list[float], y: list[float]) -> float:
-    mx, my = sum(x) / len(x), sum(y) / len(y)
-    sxy = sum((a - mx) * (b - my) for a, b in zip(x, y))
-    sxx = sum((a - mx) ** 2 for a in x)
-    syy = sum((b - my) ** 2 for b in y)
-    return sxy / math.sqrt(sxx * syy)
+    """Pearson's correlation coefficient (pandas.Series.corr; STYLE.md §6: no hand-written methods)."""
+    return float(pd.Series(x, dtype=float).corr(pd.Series(y, dtype=float)))
 
 
 PERIODS = [(1797, 1801), (1801, 1813), (1813, 1819), (1819, 1821)]     # fig:bullion_prices (b)
@@ -308,6 +305,7 @@ READINGS = {
     "rc_fiveyears": [("one year", EN), ("five", EN)],
     "th_fivepct": [("five per", EN)],
     "tk_4and20": [("twelve years", EN), ("4", "num"), ("hve", "ocr"), ("20", "num")],
+    "tk_probablyless": [("three years", EN)],
     "th_sixfour": [("six per", EN), ("five", EN), ("four per", EN)],
     "sb_430": [("43/48", "slash"), ("2", "num"), ("54", "num"), ("430", "num")],
     "sb_max": [("1813", "num"), ("two years", EN)],
@@ -338,7 +336,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(r.quote)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 129)
+    quoted("rows with values, each read from its quotation", n, 132)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -574,7 +572,7 @@ TRANSLATIONS = {
     "1760 年代后期出现了严重的通缩": "ed_gradually",
     "流通中的银行券并没有像汇率的下跌所表明的那样减少那么多": "ed_heckscher",
     "大量银行券被从流通中撤出，存起来，期待它们升值": "ed_saved",
-    "1769 年，帽子党从便帽党手里重新夺回权力，汇率又上升了。36 马克的平价不得不放弃。": "ed_1769",
+    "1769 年，礼帽党从便帽党手里重新夺回权力，汇率又上升了。36 马克的平价不得不放弃。": "ed_1769",
     "都可以说是过度反应，或者说超调": "ed_overshoot",
     "贬值 50\\%，即 1 里克斯达勒等于 6 银达勒（72 马克），与里克斯达勒的市价一致": "ed_1776",
     "1924 年回到金本位，按的是旧的、第一次世界大战以前的平价": "fr_1924",
@@ -752,6 +750,9 @@ def restriction(F, Y, T, B, S):
     chk("Tooke: 1799 and 1800", F["tk_harvests"], [1799, 1800])
     pct("wholesale 1802", P[1802], 122.2)
     chk("Tooke: money in 1799 and 1800 not increased", F["tk_notincreased"], [1799, 1800])
+    chk("    compared with the three years ending in 1795", F["tk_probablyless"][0], 3)
+    chk("    at least limit 1800 to 1799", F["tk_limit1799"], [1800, 1799])
+    chk("Cannan: the Directors could reduce the rate to 4", F["cn_rate4"][0], 4)
     pct("notes, end of February 1799 (万)", T.notes_f[1799] * 100, 1300, 0)
     pct("    1800 (万)", T.notes_f[1800] * 100, 1680, 0)
     chk("1808", F["cn_1808"][0], 1808)
@@ -829,6 +830,11 @@ def debate(F, Y, T):
     chk("the embargoes of 1811", Y["sb_embargo"], 1811)
     chk("123¼ grains", F["ci_1809"][4], 123.25)
     chk("double or half; a year or two ago", F["cn_doubled"], [2, 0.5, 1, 2])
+    # Cannan: in practice gold lost purchasing power too, only less than paper (sec:bullion-test numbers)
+    B, S = boe(), silberling()
+    G = gold_prices(B, S)
+    pct("prices in gold 1797-1813 (%)", 100 * (G[1813] / G[1797] - 1), 17.3)
+    quoted("    1809-1813: about a tenth lower", 1 - G[1813] / G[1809], 0.1, tol=0.02)
     chk("from 1810 to 1816", [Y["cn_admitted"], F["cn_admitted"][0]], [1810, 1816])
     chk("August 1810 to August 1813", F["cn_notincrease"], [1810, 1813])
     chk("    notes, end of August 1810 and 1813", [T.notes_a[1810], T.notes_a[1813]], [24.8, 24.8])
@@ -881,8 +887,13 @@ def resumption(F, Y, T, B):
     pct("    1813-1821 (%)", 100 * (P[1821] / P[1813] - 1), -41.0)
     chk("Tooke: 4 or 5 per cent; 30 and 40, even 50", F["tk_peel"], [4, 5, 30, 40, 50])
     pct("debt 1821 (亿)", B.total_debt_gbp_m[1821] / 100, 8.312, 3)
-    pct("    % of GDP, 1815", B.debt_pct_gdp[1815], 213.7)
+    pct("    % of GDP, 1819", B.debt_pct_gdp[1819], 176.8)
     pct("    1821", B.debt_pct_gdp[1821], 194.1)
+    pct("the Bank's coin and bullion, end of August 1819 (万)", T.coin_a[1819] * 100, 360, 0)
+    pct("    end of February 1821 (万)", T.coin_f[1821] * 100, 1190, 0)
+    assert 3 < T.coin_f[1821] / T.coin_a[1819] < 3.5          # more than threefold
+    gdp = B.total_debt_gbp_m / (B.debt_pct_gdp / 100)
+    assert gdp[1821] < gdp[1819]          # nominal GDP shrank as prices fell
 
 
 def sweden_case(F, Y, W):
@@ -919,9 +930,10 @@ def sweden_case(F, Y, W):
     chk("1924", F["fr_1924"][0], 1924)
     # ex:bullion-sweden, with the rounded numbers of the question
     m, p = 3.27, 2.09
-    pct("(1) ln 3.27", math.log(m), 1.18, 2)
-    pct("    ln 2.09", math.log(p), 0.74, 2)
-    pct("    ln(V/T)", math.log(p) - math.log(m), -0.45, 2)
+    pct("(1) ln 3.27", math.log(m), 1.185, 3)
+    pct("    ln 2.09", math.log(p), 0.737, 3)
+    pct("    ln(V/T)", math.log(p) - math.log(m), -0.448, 3)
+    chk("    0.737 - 1.185 (the rounded numbers of the text)", round(0.737 - 1.185, 3), -0.448)
     pct("    V/T", p / m, 0.64, 2)
     dn, dp = 0.233, 0.453
     pct("(2) ln(1 - 0.453)", math.log(1 - dp), -0.603, 3)
@@ -977,7 +989,7 @@ def test(F, Y, B, S, T):
         pct("    in gold", G[y], g)
     # the decomposition
     d = decompose(B, S, 1797, 1813)
-    pct("1797-1813: wholesale (%)", 100 * d["change"], 59.1)
+    pct("1797-1813: wholesale, about (%)", 100 * d["change"], 59, 0)
     pct("    ln", d["total"], 0.464, 3)
     pct("    premium", d["prem"], 0.305, 3)
     pct("    share (%)", 100 * d["share"], 65.6)
@@ -1004,8 +1016,9 @@ def test(F, Y, B, S, T):
     pct("(3) 1819-1821: wholesale (%)", 100 * d["change"], -22.2)
     pct("    ln", -d["total"], 0.251, 3)
     pct("    premium: ln(1.035/1.010)", -d["prem"], 0.0245, 4)
-    pct("    share (%)", 100 * d["share"], 9.7)
-    pct("    in gold (%)", 100 * d["gold_change"], -20.3)
+    # the share and the price in gold, from the rounded numbers of the question
+    pct("    share (%)", 100 * math.log(1.035 / 1.010) / -math.log(99.7 / 128.1), 9.8)
+    pct("    in gold (%)", 100 * ((99.7 / 1.010) / (128.1 / 1.035) - 1), -20.2)
     quoted("    nine tenths in gold", 1 - d["share"], 0.9, tol=0.01)
     d = decompose(B, S, 1797, 1801)
     pct("1797-1801: wholesale (%)", 100 * d["change"], 46.6)
