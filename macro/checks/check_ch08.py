@@ -235,9 +235,7 @@ WITNESS = {"淡食", "真工", "五物", "坐市列贩物求利", "贩卖", "以
 # notes of the corpus's annotations 【…】 quoted in the text (each must occur inside 【】 in a quotation)
 ANNOTATIONS = {"音谈"}
 # the chapter's Chinese renderings of Kanaya's English summary
-TRANSLATIONS = {"可以肯定不是一个人、一时写成的": "kn_notone", "是在汉代编成的": "kn_han", "到武帝末年": "kn_wu",
-                "基本上与战国时期的原始材料相同": "kn_source",
-                "在一定程度上反映了汉代直到武帝时的经济状况": "kn_reflects"}
+TRANSLATIONS = {}
 
 
 def norm(s: str) -> str:
