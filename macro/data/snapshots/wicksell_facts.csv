@@ -1,0 +1,266 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+ej_read,英国,1906,,1906,year,,wicksell1907,"p. 213, note","A paper read before the Economic Section of the British Association, 1906.",
+ej_editor,英国,1907,,,,,wicksell1907,masthead of the number,EDITED BY F. Y. EDGEWORTH,
+ej_lower,英国,1906,,1,per cent,,wicksell1907,p. 213,"If, other things remaining the same, the leading banks of the world were to lower their rate of interest, say 1 per cent. below its ordinary level, and keep it so for some years, then the prices of all commodities would rise and rise and rise without any limit whatever",
+ej_raise,英国,1906,,1,per cent,,wicksell1907,p. 213,"if the leading banks were to raise their rate of interest, say 1 per cent. above its normal level, and keep it so for some years, then all prices would fall and fall and fall without any limit except Zero.",
+ej_noproof,英国,1906,,,,,wicksell1907,p. 213,"Now this proposition cannot be proved directly by experience, because the fact required in its hypothesis never happens.",
+ej_create,英国,1906,,,,,wicksell1907,p. 214,"by concentrating in their hands almost all payments, they themselves create the money required",
+ej_pure,英国,1906,,,,,wicksell1907,p. 215,"In a pure system of credit, where all payments were made by transference in the bank-books, the banks would be able to grant at any moment any amount of loans at any, however diminutive, rate of interest.",
+ej_nolink,英国,1906,,,,,wicksell1907,p. 215,"In my opinion there is no such link, except precisely the effect on prices, which would be caused by their difference.",the link between the rate of interest on money and the profit on capital
+ej_melt,英国,1906,,,,,wicksell1907,p. 215,"the bank reserves will melt away while the amount of their liabilities very likely has increased, which will force them to raise their rate of interest.",
+ej_tooke,英国,1906,,,,,wicksell1907,p. 215,"as Thomas Tooke asserted, and even Ricardo in his earlier writings seems to have believed, a low rate of interest, by cheapening, as they put it, one of the elements of production, would lower prices",
+ej_bill100,英国,1906,,100,£,,wicksell1907,p. 215,If as a merchant I have sold my goods to the amount of £100 against a bill or promissory note of three months,
+ej_bill4,英国,1906,,4,per cent,,wicksell1907,p. 215,the rate of discount being 4 per,the OCR reads 'ceat.' for 'cent.' after the quotation
+ej_bill99,英国,1906,,99,£,,wicksell1907,p. 215,then in fact I have received a cash price for my goods amounting to £99.,
+ej_bill3,英国,1906,,3;1/4;1,per cent; a quarter of 1 per cent,,wicksell1907,p. 216,"bank at 3 per cent., then the cash price of my goods have ipso facto risen, if only a quarter of 1 per cent.",the bill of £100 discounted at 3 per cent instead of 4
+ej_rail,英国,1906,,4;5,per cent,,wicksell1907,p. 216,"building companies and railway companies will be able to raise money, say at 4 per cent. instead of 5 per cent.",
+ej_125,英国,1906,,25;4;125;5;100,per cent; per cent; £; per cent; £,,wicksell1907,p. 216,"anything up to 25 per cent. more than before, 4 per cent. on £125 being the same as 5 per cent. on £100.",
+ej_never,英国,1906,,,,,wicksell1907,p. 216,"the upward movement of prices, whether great or small in the first instance, can never cease so long as the rate of interest is kept lower than its normal rate",
+ej_normal,英国,1906,,,,,wicksell1907,p. 216,"i.e., the rate consistent with the then existing marginal productivity of real capital.",
+ej_newlevel,英国,1906,,,,,wicksell1907,p. 216,"a new level of prices has formed itself which in its turn will serve as basis for all calculations for the future, and all contracts.",
+ej_remain,英国,1906,,,,,wicksell1907,p. 216,"if the bank-rate now goes up to its normal height, the level of prices will not go down; it will simply remain where it is",
+ej_current,英国,1906,,,,,wicksell1907,p. 216,just as the electric current never ceases as long as the difference of tension between the poles remains.,
+ej_sauerbeck,英国,1906,,,,,wicksell1907,p. 216,"if you consider the figures given, e.g., by Sauerbeck in his well-known tables in the Journal of the Statistical Society, you will generally find that high prices do not correspond with a low rate of interest, and vice versa; it rather comes the opposite way, interest and prices very often rising and falling together.",
+ej_support,英国,1906,,,,,wicksell1907,pp. 216-217,it turns into a positive support of our,
+ej_relative,英国,1906,,,,,wicksell1907,p. 217,"The rate of interest is never high or low in itself, but only in relation to the profit which people can make with the money in their hands, and this, of course, varies.",
+ej_dragged,英国,1906,,,,,wicksell1907,p. 217,"it is, as it were, dragged after the rate of profit by the movement of prices and the consequent changes in the state of bank reserve",
+ej_seems,英国,1906,,,,,wicksell1907,p. 217,"the interest on money is, in reality, very often low when it seems to be high, and high when it seems to be low.",
+ej_single,英国,1906,,,,,wicksell1907,p. 217,"if it did, it would in the former case lose all profitable business; in the latter case its speedy insolvency would be the inevitable consequence.",a single bank putting its rates much higher or much lower than the market
+ej_country,英国,1906,,,,,wicksell1907,p. 217,"Not even all the banks of a single country united could do it in the long run; a too high or too low rate would influence its balance of trade, and thereby cause an influx or reflux of gold",
+ej_goldlead,英国,1906,,,,,wicksell1907,p. 218,"so long as the gold itself remains the standard of value, this factor evidently will take the lead in the long run.",
+ej_plethora,英国,1906,,,,,wicksell1907,p. 218,"a plethora of gold supply, and the rise of prices thereby caused, could not be effectually met in any way, so long as free coinage of gold exists.",
+ej_goldrate,英国,1906,,,,,wicksell1907,p. 218,"effect of an increased gold supply will be a rise, not a fall, in the rate of interest",'In any case the ultimate effect ...' (the OCR reads 'wltimate')
+ej_imports,英国,1906,,,,,wicksell1907,p. 218,"the gold comes to us not as lending capital, but as payment for the imports of the gold","'But mostly, I suppose, the gold comes to us ...-producing countries'"
+ej_destroyed,英国,1906,,,,,wicksell1907,p. 218,have actually destroyed large amounts of real capital and thereby given the rate of profit a tendency,the large mining enterprises and the buying up of gold by the non-producing countries; the OCR reads 'torise' after it
+ej_seldom,英国,1906,,,,,wicksell1907,p. 218,"very seldom being accompanied by a low rate of interest, but generally by a high one.",'a rise of prices even when apparently caused by a surplus of gold supply very seldom ...' (the OCR reads '# surplus')
+ej_rational,英国,1906,,,,,wicksell1907,p. 218,this most essential step on the way to a rational monetary system,the suppression of the free coinage of gold
+ej_fundamental,英国,1906,,,,,wicksell1907,p. 219,"average level of money prices at a constant height, which evidently is to be regarded as the fundamental problem of monetary science, would be solvable theoretically and practically to any extent.",
+ej_rule,英国,1906,,,,,wicksell1907,p. 219,"simply in a proper manipulation of general bank-rates, lowering them when prices are getting low, and raising them when prices are getting high.",
+ej_fantastic,英国,1906,,,,,wicksell1907,p. 219,need not be sought in some more or less fantastic scheme like that of a central issuing bank for all the world,
+ej_comply,英国,1906,,,,,wicksell1907,p. 219,"the alterations of which we, of course, cannot control, but only have to comply with.","the marginal productivity of real capital, about which the rate of interest would oscillate"
+ej_palgrave,英国,1906,,,,,wicksell1907,"p. 219, P.S.",it was objected by Mr. Palgrave that the banks could not possibly be charged with the regulation of prices,
+ej_reserves,英国,1906,,,,,wicksell1907,"p. 219, P.S.",restricted by the necessity of protecting their own reserves,
+ej_both,英国,1906,,,,,wicksell1907,"p. 219, P.S.","as well from getting too low in consequence of an unfavourable balance of trade, as from running to an unprofitable height by an influx of gold","the banks' own reserves, in Palgrave's objection"
+ej_twodeg,英国,1906,,,,,wicksell1907,"p. 219, P.S.","the international rate policy of banks has, as it were, two degrees of freedom",
+ej_lowering,英国,1906,,,,,wicksell1907,"p. 219, P.S.","not only by raising the rate of discount in the country from which the metal flows, but also by lowering it in the country, or countries, to which gold is flowing",
+ej_common,英国,1906,,,,,wicksell1907,"p. 219, P.S.",might logically be concomitant with a common action for the purpose of keeping the universal value of money and level of prices at a constant height,
+ej_goldlimit,英国,1906,,,,,wicksell1907,"p. 219, P.S.",only can be done within the limits prescribed by the general supply of gold.,
+ej_edgeworth,英国,1906,,,,,wicksell1907,"p. 219, P.S.","it was remarked by Professor Edgeworth that if the free coinage of gold be suppressed, the Governments themselves have in their hand the regulating of general prices.",
+ej_production,英国,1906,,,,,wicksell1907,"p. 219, P.S.","This, too, is true, at any rate so long as the present large production of gold persists",Wicksell on Edgeworth's remark
+ej_paper,英国,1906,,,,,wicksell1907,"p. 219, P.S.","the Governments, no doubt, might supplant the lack in currency by a judicious emission of paper-money.",
+ej_choice,英国,1906,,,,,wicksell1907,"p. 219, P.S.",But a single Government has in this respect only the choice between two alternatives,
+ej_steady,英国,1906,,,,,wicksell1907,"p. 219, P.S.","it may try to keep the value of its money steady towards the commodities, but then it necessarily sacrifices the parity of its",
+ej_par,英国,1906,,,,,wicksell1907,"p. 220, P.S.","or else it may manage to keep its exchanges strictly at par, but then it has of itself no power over the level of prices.",
+ej_agreement,英国,1906,,,,,wicksell1907,"p. 220, P.S.","Some international agreement, either regarding the amount of gold to be coined by each country or else involving a common rate-policy of the banks",
+ej_jena,德国,1898,,1898,year,,wicksell1907,"p. 220, note","Jena: Gustav Fischer, 1898; being the further development of an article in Conrad’s",the note on Geldzins und Güterpreise
+ba_meeting,英国,1906,,1906,year,,baas1907,front matter,"General Committee at the York Meeting, August 1906.",
+ba_seventysixth,英国,1906,,,,,baas1907,title page,SEVENTY-SIXTH MEETING OF THE,
+ba_section,英国,1906,,,,,baas1907,contents,Section F.—ECONOMIC SCIENCE AND STATISTICS.,
+ba_thursday,英国,1906,,2,day of August,,baas1907,contents,"THURSDAY, AUGUST 2.",
+ba_edgeworth,英国,1906,,,,,baas1907,contents (Thursday 2 August),2. Theory of Distribution. By Professor F. Y.,"Edgeworth's paper, read the day before Wicksell's"
+ba_friday,英国,1906,,3,day of August,,baas1907,contents,"FRIDAY, AUGUST 3.",
+ba_title,英国,1906,,,,,baas1907,contents (Friday 3 August),The Influence of the Rate of Interest on Prices.,"'1, The Influence ... By Professor Wicksell' (the OCR garbles the name), the first paper of Friday 3 August"
+ba_specie,英国,1906,,,,,baas1907,contents (Friday 3 August),2. The Specie Reserve of the United Kingdom.,"the second paper, by R. H. Inglis Palgrave"
+ba_relative,英国,1906,,,,,baas1907,p. 643,"The rate of interest influences prices not by its absolute, but by its relative, height, in proportion to the existing rate of profit on capital",
+ba_followed,英国,1906,,,,,baas1907,p. 643,"which are followed, but not very rapidly, by similar changes in the rate of interest",the alterations in the rate of profit itself
+ba_goldlead,英国,1906,,,,,baas1907,p. 643,the production of gold always takes the lead in the long run in determining the average level of prices,
+ba_constant,英国,1906,,,,,baas1907,p. 643,"an appropriate manipulation of the rate of interest by common action of the leading banks of the world would be the means of keeping the general level of prices, and consequently ‘the value of money,’ practically constant",
+ws_wicksell,瑞典,,,1851;1926,years,,ws_wicksell,Author:Knut Wicksell,Knut Wicksell (1851–1926),
+ws_wicksell_who,瑞典,,,,,,ws_wicksell,Author:Knut Wicksell,Swedish economist,
+ws_edgeworth,英国,,,1845;1926,years,,ws_edgeworth,Author:Francis Ysidro Edgeworth,Francis Ysidro Edgeworth (1845–1926),
+ws_edgeworth_who,英国,,,,,,ws_edgeworth,Author:Francis Ysidro Edgeworth,English economist and statistician.,
+ws_palgrave,英国,,,1827;1919,years,,ws_palgrave,Author:Robert Harry Inglis Palgrave,Robert Harry Inglis Palgrave (1827–1919),
+ws_palgrave_who,英国,,,,,,ws_palgrave,Author:Robert Harry Inglis Palgrave,British economist. Editor of The Economist,
+dnb_joplin,英国,,,1790;1847;1790,years,,dnb1892_joplin,"DNB vol. 30 (1892), 'Joplin, Thomas'","THOMAS (1790?–1847), writer on banking, born about 1790 at Newcastle-upon-Tyne",
+ka_title,英国,1936,,,,,kahn1936,title page,Translated from the German by R. F. KAHN,
+ka_ohlin,英国,1936,,,,,kahn1936,title page,With an Introduction by PROFESSOR BERTIL OHLIN,
+ka_preface,瑞典,1898,,1898,year,,kahn1936,"author's preface, end",January 1898.,"the preface is dated 'Upsala, January 1898' (the OCR reads 'Ups ala')"
+ka_kind,瑞典,1898,,,,,kahn1936,"author's preface, p. xxv",if real capital were lent in kind without the intervention of money,
+ka_business,瑞典,1898,,,,,kahn1936,"author's preface, p. xxv",This natural rate is roughly the same thing as the real interest of actual business.,
+ka_pendulum,瑞典,1898,,,,,kahn1936,"ch. 7, p. 101",for instance a pendulum,relative prices compared with a mechanical system in stable equilibrium
+ka_cylinder,瑞典,1898,,,,,kahn1936,"ch. 7, p. 101",rests on a horizontal plane in so-called neutral equilibrium,the analogous picture for money prices: a cylinder
+ka_force,瑞典,1898,,,,,kahn1936,"ch. 7, p. 101",the raising or lowering of the rate of interest,the force that sets the price-cylinder in motion and keeps it in motion
+ka_rest,瑞典,1898,,,,,kahn1936,"ch. 7, p. 101",there is no tendency for it to be restored to its original position.,once the cylinder has come to rest
+ka_metal,瑞典,1898,,,,,kahn1936,"ch. 7, p. 101",if a precious metal or some other material substance serves as a monetary basis.,such (opposing) forces can never be entirely absent ... if ...
+ka_neutral,瑞典,1898,,,,,kahn1936,"ch. 8, p. 102",There is a certain rate of interest on loans which is neutral in respect to commodity prices,
+ka_current,瑞典,1898,,,,,kahn1936,"ch. 8, p. 102",the current value of the natural rate of interest on capital,
+ka_depends,瑞典,1898,,,,,kahn1936,"ch. 8, p. 106","it depends on the efficiency of production, on the available amount of fixed and liquid capital, on the supply of labour and land",
+ka_jumps,瑞典,1898,,1/2;1,per cent,,kahn1936,"ch. 8, p. 106",discontinuous jumps of one-half or one per cent,"the money rate, as regulated by the large monetary institutions; the natural rate changes continuously"
+ka_1851,英国,1898,,1851;73,years,,kahn1936,"ch. 11, p. 174","Though the period 1851-73 was not, as was the Napoleonic era, a time of uninterrupted warfare",
+ka_railway,英国,1898,,,,,kahn1936,"ch. 11, p. 174",the completion of the west European railway system,
+ka_high,英国,1898,,,,,kahn1936,"ch. 11, p. 174",the natural rate of interest is generally admitted to have stood abnormally high,
+ka_wars,瑞典,1898,,,,,kahn1936,"ch. 11, p. 174","among other wars, the Crimean War, the extremely exhausting and expensive American Civil War","'... and the wars between Germany and Denmark, Germany and Austria, and finally Germany and France'"
+ka_freezing,瑞典,1898,,,,,kahn1936,"ch. 11, p. 174",the freezing of enormous quantities of liquid capital as a result of the completion of the west European railway,
+ka_reasons,瑞典,1898,,,,,kahn1936,"ch. 11, p. 174","For both of these reasons, the natural rate of interest is generally admitted to have stood abnormally high.",
+ka_asmuch,瑞典,1898,,,,,kahn1936,"ch. 11, p. 174",it seems very doubtful whether it rose as much as the natural rate,"the money rate of interest, on the average higher in 1851-73 than before or after"
+ka_rule,瑞典,1898,,,,,kahn1936,"ch. 12, p. 189",So long as prices remain unaltered the banks' rate of interest is to remain unaltered,
+ka_failure,瑞典,1898,,,,,kahn1936,"ch. 12, p. 189",the main cause of the instability of prices resides in the inability or failure of the banks to follow this rule.,
+oh_mainproblem,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. vii",Why do prices rise or fall,the question that Wicksell at an early stage came to regard as the main problem of monetary theory (row oh_main)
+oh_main,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. vii",that Wicksell at an early stage came to regard as the main problem of monetary theory,
+oh_discount,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. vii",The stress which the Ricardian school placed on the influence of discount policy on the quantity of money and on prices,
+oh_admirer,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. vii","he was a close student and admirer of the English classical school of economists, above all of Ricardo.",
+oh_tooke,英国,1936,,,,,kahn1936,"Ohlin, introduction, pp. vii-viii",had on the whole been low during times of falling prices,"'the rate of interest, as pointed out by Tooke, had on the whole been low during times of falling prices and high during times of rising prices' (the OCR reads 'tintos')"
+oh_ricardian,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. viii",whereas the Ricardian doctrine seemed to suggest the opposite.,after Tooke's observation (row oh_tooke)
+oh_bohm,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. viii",through his study and amplification of Bohm-Bawerk’s theory of interest,
+oh_natural,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. viii",governed by the marginal productivity of capital,the “natural” rate of interest
+oh_roundabout,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. viii",the roundabout methods of production which would exist if money were not used,
+oh_connection,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. viii",have some connection with the rate of interest as it actually appears on the capital market,
+oh_quantity,英国,1936,,,,,kahn1936,"Ohlin, introduction, p. viii",this reasoning did not mean more than an amplification of the old quantity theory,
+f12_printing,美国,1912,,,,,fisher1912,verso of the title page,Reprinted February,
+f12_mprime,美国,1911,,,,,fisher1912,"ch. III, §1",we shall now use M' to express the total deposits subject to transfer by check,
+f12_equation,美国,1911,,,,,fisher1912,"ch. X, §1","required by the equation of exchange, MV+M'V'=PT.",
+f12_qt,美国,1911,,,,,fisher1912,"contents, ch. VIII, §3",Quantity theory not strictly true during transition periods,
+f12_ratio,美国,1911,,,,,fisher1912,"ch. IV, §1, p. 55",the quantity of bank deposits normally maintains a definite ratio to the quantity of money in circulation and to the amount of bank reserves.,
+f12_transition,美国,1911,,,,,fisher1912,"ch. IV, §1, p. 55",But during periods of transition this relation between,'... money (M) and deposits (M′) is by no means rigid' (row f12_rigid)
+f12_rigid,美国,1911,,,,,fisher1912,"ch. IV, §1, p. 55",is by no means rigid.,
+f12_double,美国,1911,,,,,fisher1912,"ch. IV, §1, p. 55","The ultimate effect is, as we have seen, to double prices",if the quantity of money were suddenly doubled
+f12_oscillate,美国,1911,,,,,fisher1912,"ch. IV, §1, p. 55",the prices oscillate up and down,"'but before this happens, ...'"
+f12_hill,美国,1911,,,,,fisher1912,"ch. IV, p. 56","Rising prices mark the transition between a low and a high level of prices, just as a hill marks the transition between flat lowlands and flat highlands.",
+f12_3pct,美国,1911,,3;100;5;103;100;5;108.15,per cent; $; per cent; $; $; per cent; $,,fisher1912,"ch. IV, p. 57","let us suppose that prices are rising at the rate of 3 per cent each year. It is plain that the man who lends $100 at the beginning of the year must, in order to get 5 per cent interest in purchasing power, receive back both $103 (then the equivalent of the $100 lent) plus 5 per cent of this, or a total of $108.15.",
+f12_normal,美国,1911,,,,,fisher1912,"ch. IV, p. 58",i.e. the rate which would exist were prices stationary,the 'normal rate of interest'
+f12_815,美国,1911,,5;8.15,per cent,,fisher1912,"ch. IV, p. 58","is 5 per cent, the actual rate, though it ought (in order to make up for the rising prices) to be 8.15 per cent",
+f12_67,美国,1911,,6;7,per cent,,fisher1912,"ch. IV, p. 58","but it may reach, say, 6 per cent, and later, 7 per cent.",
+f12_law,美国,1911,,,,,fisher1912,"ch. IV, p. 58","This inadequacy and tardiness of adjustment are fostered, moreover, by law and custom, which arbitrarily tend to keep down the rate of interest.",
+f12_97,美国,1911,,97;100,$,,fisher1912,"ch. IV, p. 58","Suppose that, by the end of a year, $97 will buy as much as $100 at the beginning.",
+f12_10185,美国,1911,,101.85,$,,fisher1912,"ch. IV, p. 58",or $101.85.,"'should get, not $105, but only $97 + 5 per cent of $97 or $101.85' (the OCR garbles the dollar signs before)"
+f12_185,美国,1911,,1.85;2;5,per cent,,fisher1912,"ch. IV, p. 58","Thus the rate of interest in money should in this case be 1.85 per cent, or less than 2 per cent, instead of the original 5 per cent.",
+f12_far,美国,1911,,2,per cent,,fisher1912,"ch. IV, p. 58","such a perfect adjustment is seldom reached, and money interest keeps far above 2 per cent for a considerable time.",
+f26_mprime,美国,1911,,,,,fisher1926,"ch. IV, p. 59","Therefore, deposit currency (M') will increase",the 1912 copy reads 'will mcrease'
+f12_wicksell,德国,1897,,1897;68;228;243,year; volume; pages,,fisher1912,"ch. IV, p. 59, note","1897 (Band 68), pp. 228-243, entitled",
+f26_bankzins,德国,1897,,,,,fisher1926,"ch. IV, p. 59, note",Der Bankzins als Regulator der Warenpreise.,the 1912 copy reads 'Kegulator'
+f26_points,德国,1897,,,,,fisher1926,"ch. IV, p. 59, note",points out the connection between the rate of interest on bank loans and changes in the level of prices due to the resulting expansion and contraction of such loans.,Fisher on Wicksell's article of 1897
+f12_beguiled,美国,1911,,,,,fisher1912,"ch. IV, p. 60","Beguiled by the higher nominal rates into the belief that fairly high interest is being realized, they extend their loans",
+f12_step1,美国,1911,,,,,fisher1912,"ch. IV, p. 60",Prices rise (whatever the first cause may be,step 1 of Fisher's sequence
+f12_step2,美国,1911,,,,,fisher1912,"ch. IV, p. 60","The rate of interest rises, but not sufficiently. 3. Enterprisers",step 2 and the start of step 3 (the 1912 copy reads '2.*' before it)
+f12_step3,美国,1911,,,,,fisher1912,"ch. IV, p. 60","Enterprisers (to use Professor Fetter's term), encouraged by large profits, expand their loans.",
+f12_step4,美国,1911,,,,,fisher1912,"ch. IV, p. 60",expands relatively to money,step 4: deposit currency (M') expands relatively to money (M) (the 1912 copy reads 'cmrency')
+f12_step5,美国,1911,,,,,fisher1912,"ch. IV, p. 60","Prices continue to rise, that is, phenomenon No. 1 is repeated.",
+f12_profits,美国,1911,,,,,fisher1912,"ch. IV, p. 59",Thus the profits will rise faster than prices.,"the interest the business man pays does not, at first, rise with prices"
+f12_lagging,美国,1911,,,,,fisher1912,"ch. IV, p. 60","nominal interest may be forced up somewhat, still it keeps lagging below the normal level.",
+f26_generates,美国,1911,,,,,fisher1926,"ch. IV, p. 60","Rise of prices generates rise of prices, and continues to do so as long as the interest rate lags behind its normal figure.",the 1912 copy is garbled after 'continues to'
+f30_chapter,美国,1930,,,,,fisher1930,"ch. XIX, heading","PART IV, CHAPTER XIX THE RELATION OF INTEREST TO MONEY AND PRICES",
+f30_pd,美国,1930,,,,,fisher1930,"Econlib, notice",The text of this edition is in the public domain,
+f30_debated,美国,1930,,,,,fisher1930,"ch. XIX, §1",No problem in economics has been more hotly debated than that of the various relations of price levels to interest rates.,
+f30_dollar,美国,1930,,,,,fisher1930,"ch. XIX, §1",that “a dollar is a dollar!”,
+f30_illusion,美国,1930,,,,,fisher1930,"ch. XIX, §1","Most people are subject to what may be called “the money illusion,” and think instinctively of money as constant and incapable of appreciation or depreciation.",
+f30_table14,美国,1930,,11;.62;6.1;8;1.07;8.5;7;.73;5.0;11;.57;7.5;5;.69;7.0,periods; standard deviations (points),,fisher1930,"ch. XIX, Table 14",London 11 .62 6.1 New York 8 1.07 8.5 Berlin 7 .73 5.0 Calcutta 11 .57 7.5 Tokyo 5 .69 7.0,"number of periods, standard deviation of the market rate and of the computed real rate"
+f30_variable,美国,1930,,7;13,times,,fisher1930,"ch. XIX, after Table 14",This table shows that the real rate of interest in terms of commodities is from seven to thirteen times as variable as the market rate of interest expressed in terms of money.,
+f30_germany,德国,1930,,100,per cent,,fisher1930,"ch. XIX, after Table 14",The rate was nearly minus 100 per cent in Germany during the period of most rapid inflation.,
+f30_1852,英国,1930,,1852;1857,years,,fisher1930,ch. XIX,"Attention is called to the period 1852-1857 in London, during which prices rose very fast (that is, money depreciated) simultaneously with, and mainly because of, the great gold production.",
+f30_47,英国,1930,,4.7,per cent,,fisher1930,ch. XIX,"The market rate of interest averaged 4.7 per cent, which was higher than in any subsequent or in any previous period. Yet during this period of apparently highest interest rates, lenders were receiving, in real interest, less than nothing for their savings.",
+f30_1820,英国,1930,,1820;1864,years,,fisher1930,ch. XIX,The British figures for 1820-1864 give the lowest correlations of any included in this study.,
+f30_r980,英国,1930,,1898;1924;0.980;28;9.3,years; correlation; years; years,,fisher1930,ch. XIX,"for Great Britain in 1898-1924, the highest value of r (+0.980) is reached when effects of price changes are assumed to be spread over 28 years or for a weighted average of 9.3 years",
+f30_follow,英国,1930,,,,,fisher1930,ch. XIX,"over long periods at least, interest rates follow price movements.",
+f30_high,英国,1930,,,,,fisher1930,"ch. XIX, §10",The rate of interest tends definitely to be high with a high price level and low with a low price level.,the fourth of the four relationships
+f30_accidental,英国,1930,,,,,fisher1930,"ch. XIX, §10","The fourth relationship stated above must be, I think, regarded as an accidental consequence of the other three.",
+f30_gibson,英国,1923,,1923;15,year; page,,fisher1930,"ch. XIX, note 54","The British bond yields here used were taken from an article by A. H. Gibson, The Future Course of High Class Investment Values, The Bankers’, Insurance Managers’ and Agents’ Magazine, January, 1923, p. 15.",
+ke_corr,英国,1930,,,,,keynes1930,"vol. II, p. 198","emphasising the extraordinarily close correlation over a period of more than a hundred years between the rate of interest, as measured by the yield of Consols, and the level of prices, as measured by the Wholesale Index",Gibson's articles; the OCR then reads 'Index -Number'
+ke_bm,英国,1930,,1923;1926,years,,keynes1930,"vol. II, p. 198, note","Bankers Magazine , Jan. 1923 and Nov. 1926.","'Vide, in particular, Bankers' Magazine, Jan. 1923 and Nov. 1926'"
+ke_call,英国,1930,,,,,keynes1930,"vol. II, p. 198",as we may fairly call it,the “Gibson Paradox”
+ke_fact,英国,1930,,,,,keynes1930,"vol. II, p. 198","is one of the most completely established empirical facts within the whole field of quantitative economics, though theoretical economists have mostly ignored it.",
+ke_gibsonown,英国,1930,,,,,keynes1930,"vol. II, p. 198, note",less the cost of living the greater must necessarily be the margin available for investment,"Gibson's own explanation, as Keynes quotes it ('it is obviously due to the fact that the less ...'; the OCR reads 'tho')"
+ke_rejected,英国,1930,,,,,keynes1930,"vol. II, p. 198, note","must, I am afraid, be rejected unreservedly",
+ke_coates,英国,1930,,1825;1924,years,,keynes1930,"vol. II, p. 200",has worked out the Pearsonian coefficient of correlation both for the hundred years 1825-1924,
+ke_coates_who,英国,1930,,,,,keynes1930,"vol. II, p. 200",Mr. W. H. Coates,
+ke_893,英国,1930,,0.893;0.014;1825;1924,correlation; probable error; years,,keynes1930,"vol. II, p. 200, table",Statist Index Gross yield of Consols + 0-893 0-014 1825-1924 in same year,the coefficient of correlation +0·893 with a probable error of 0·014 (the OCR prints the decimal point as '-')
+ke2_893,英国,1930,,0.893,correlation,,keynes1930b,"vol. II, p. 200, table",Statist Index Gross yield of Consols f 0-893,a second copy: the OCR reads 'f' for '+'
+ke_colwyn,英国,1930,,101,page,,keynes1930,"vol. II, p. 200, note","Report on National Debt and Taxation, Appendix XI. p. 101.","Coates's computation, in the Colwyn Committee's report (the OCR reads 'Colivyn')"
+ke_1873,英国,1930,,1873;1896;1896;1900,years,,keynes1930,"vol. II, p. 201","fell together from 1873 to 1896, rose together from 1896 to 1900",prices and interest
+ke_peake,英国,1930,,,,,keynes1930,"vol. II, p. 201",shows that the correlation is higher for the long-term rate of interest than for the short-term.,"E. G. Peake (Bankers' Magazine, May 1928)"
+ke_fisher,英国,1930,,,,,keynes1930,"vol. II, p. 202",Nor can we regard the facts as an example of Professor Irving Fisher's well-known theorem,
+ke_contrary,英国,1930,,,,,keynes1930,"vol. II, p. 202",Indeed quite the contrary.,
+ke_107,英国,1930,,5;2;107;100,per cent; per cent; money; money,,keynes1930,"vol. II, p. 202","Thus, if real interest is 5 per cent per annum and the value of money is falling 2 per cent per annum, the lender requires the repayment of 107 in terms of money a year hence in return for 100 loaned to-day.",
+ke_2pa,英国,1930,,2;2,per cent,,keynes1930,"vol. II, p. 203","if prices are rising (e.g.) 2 per cent per annum, this will usually be associated with a tendency for the capital value of long-dated securities to be falling 2 per annum",
+ke_4worse,英国,1930,,4,per cent,,keynes1930,"vol. II, p. 203",so that he is 4 per cent worse off,
+ke_tentative,英国,1930,,,,,keynes1930,"vol. II, p. 203",My tentative explanation of the phenomenon is as follows,
+ke_sticky,英国,1930,,,,,keynes1930,"vol. II, p. 203","as measured by the yield on long-dated securities, is very “sticky” in relation to the natural","'the market-rate of interest, as measured by ...'"
+ke_usury,英国,1930,,,,,keynes1930,"vol. II, p. 203",The usury laws may have played a part in this in the earlier nineteenth century.,
+ke_decades,英国,1930,,,,,keynes1930,"vol. II, p. 204",movements extending over decades,movements of the natural rate of interest
+ke_lag,英国,1930,,,,,keynes1930,"vol. II, p. 206","of interest moves in the same direction as the natural-rate of interest but always lags behind it, then the movements of the price-level will tend, even over longish periods, to be in the same direction as the movements of the rate of interest.",'if the market-rate of interest moves ...'
+ke_1820,英国,1930,,1820;1900;1855;1875,years,,keynes1930,"vol. II, p. 206","Between 1820 and 1900, on the other hand, the rate of interest did not fall fast enough to keep investment level with savings, except during the great mid-nineteenth-century investment boom, 1855-1875.",
+ke_prospect,英国,1930,,,,,keynes1930,"vol. II, p. 207",the prospect for the next twenty years appears to me to be a strong tendency,
+ke_natural,英国,1930,,,,,keynes1930,"vol. II, p. 203",is the rate at which savings and investment are exactly balanced.,"the natural-rate of interest, as Keynes defines it"
+ke_detect,英国,1930,,,,,keynes1930,"vol. II, p. 203",the banking world does not quickly detect this or respond to it,when the natural rate is falling or rising
+ke_drag,英国,1930,,,,,keynes1930,"vol. II, p. 204","It is a slight, long-continued drag in a particular direction.",
+ke_fall,英国,1930,,,,,keynes1930,"vol. II, p. 208","for the natural-rate of interest to fall, with a danger lest this consummation be delayed",
+bs_wp,美国,1985,,1680,number,,barsky1985,title page,Working Paper No. 1680,
+bs_date,美国,1985,,1985,year,,barsky1985,title page,August 1985,
+bs_recip,英国,1985,,,,,barsky1985,abstract,"Under a gold standard, the price level is the reciprocal of the real price of gold.",
+bs_durable,英国,1985,,,,,barsky1985,abstract,"Because gold is a durable asset, its relative price is systematically affected by fluctuations in the real productivity of capital, which also determine real interest rates.",
+bs_1730,英国,1985,,1730;1930,years,,barsky1985,p. 1,"Between 1730 and 1930, the British consol yield exhibits close co-movement with the wholesale price index, alongside an essentially zero correlation with the inflation rate.",
+bs_fs,美国,1985,,1976;288,year; page,,barsky1985,p. 1,"Friedman and Schwartz (1976, p. 288) conclude",
+bs_fsquote,美国,1985,,,,,barsky1985,p. 1,The Gibson Paradox remains an empirical phenomenon without a theoretical explanation,
+bs_misquote,英国,1985,,,,,barsky1985,p. 1,one of the most completely established empirical facts in the whole field of quantitative economics,"Barsky and Summers quote Keynes with 'in'; Keynes (1930, vol. II, p. 198) has 'within' (row ke_fact)"
+bs_peg,英国,1985,,,,,barsky1985,p. 2,"Since the authorities peg the nominal price of gold at a constant, the general price level is the reciprocal of the price of gold in terms of goods.",
+bs_wk,英国,1985,,,,,barsky1985,p. 2,if (as in Wicksell and Keynes) innovations in the productivity of capital are an important exogenous disturbance,
+bs_negative,英国,1985,,,,,barsky1985,p. 2,"there will be a negative equilibrium relationship between the relative price of gold and the real interest rate, giving rise to Gibson's Paradox.",
+bs_melted,英国,1985,,,,,barsky1985,p. 26,"Coin can be melted for conversion into art objects, and non—monetary stocks can be coined or brought to the bank in exchange for deposits.",
+bs_bk,英国,1985,,1984,year,,barsky1985,p. 2,Recent claims by Benjamin and Kochin (1984) that much of the correlation is spurious and that it is in any event largely a,
+bs_unwarranted,英国,1985,,,,,barsky1985,p. 3,wartime phenomenon are shown to be unwarranted.,
+bs_fiat,英国,1985,,,,,barsky1985,p. 3,The Gibson correlation evaporates in recent decades when a fiat money standard prevailed.,
+bs_randomwalk,英国,1985,,,,,barsky1985,p. 3,It is also inconsistent with the empirical observation that prices followed a process very close to a random walk during the Gibson Paradox period.,the Fisher explanation
+bs_kw,美国,1985,,1914,year,,barsky1985,p. 3,The Keynes-Wicksell explanation based on the workings of the banking system founders on the observation that variation in the American money stock during the pre-1914 period reflected largely variation in the monetary gold stock,
+bs_prices,英国,1985,,1846,year,,barsky1985,p. 5,"linking the Elizabeth Schumpeter Index with the annual average of the Gayer, Rostow, and Schwartz Monthly Index of British Commodity Prices, and then (beginning in 1846) the Sauerbeck-Statist Overall Price Index.",
+bs_homer,英国,1985,,1977,year,,barsky1985,p. 6,"we treat the British consol rate (from Homer, 1977) as a measure of the world long-term interest rate.",
+bs_bkrw,英国,1985,,,,,barsky1985,p. 7,"and interest rates were close to random walks, and thus the risk of spurious",Benjamin and Kochin note that both prices ...
+bs_regularity,英国,1985,,,,,barsky1985,p. 7,"when two random walks are regressed, the regularity conditions for least squares may be violated.",
+bs_factor5,英国,1985,,5,factor,,barsky1985,p. 7,the associated standard errors are likely to be underestimated by a factor of five or more.,
+bs_diff,英国,1985,,1977,year,,barsky1985,p. 7,A standard diagnostic procedure recommended explicitly by Granger and Newbold (1977) is estimation in first differences.,
+bs_measurement,英国,1985,,,,,barsky1985,p. 7,Measurement error in the regressors is likely to lead to far more serious errors in differenced regressions than in level regressions.,
+bs_both,英国,1985,,1821;1913,years,,barsky1985,p. 8,"The period 1821 to 1913, on the other hand, as well as its various subperiods, exhibits the Gibson correlation both in levels and in first difference form.",
+bs_granger,英国,1985,,50;10;0.7;90;95,observations; t-statistic; R2; percent,,barsky1985,p. 8,"with fifty observations, an ordinary ""t—statistic"" greater than 10 or so (corresponding to an R2 of about .7) would properly lead to a rejection at the 90 to 95 percent level.","Granger and Newbold (1974, 1977): the null hypothesis that two random walks are independent"
+bs_fivefold,英国,1985,,5,times,,barsky1985,p. 8,This suggests that the estimated standard errors should be inflated by fivefold or a little more.,
+bs_ww1,英国,1985,,1,World War,,barsky1985,p. 8,"the last year before World War I, which was accompanied by indefinite suspension of specie payments by most countries.","1913, the end of the period 1821-1913"
+bs_sargent,美国,1985,,1973,year,,barsky1985,p. 13,"Sargent (1973) challenged the Fisher explanation on the grounds that it appears inconsistent with rationality, given the process actually followed by inflation.",
+bs_zero,英国,1985,,,,,barsky1985,p. 13,"During the gold standard years, a forecast of zero inflation each year would have been superior to Fisher's scheme",
+bs_t2_lev,英国,1985,,0.38;0.03;0.44;0.65,coefficient; standard error; D-W; adjusted R2,,barsky1985,"Table 2, p. 8a",British Levels .38 0.44 65,"1821-1913, British prices, levels; page image: .38 (.03), D-W 0.44, R2 .65 (the text layer drops the point of .65)"
+bs_t2_dif,英国,1985,,0.16;0.05;1.71;0.10,coefficient; standard error; D-W; adjusted R2,,barsky1985,"Table 2, p. 8a",1st Differences .16 1.71 .10,"1821-1913, British prices, first differences; page image: .16 (.05), D-W 1.71, R2 .10"
+bs_t2_lev1,英国,1985,,0.16;0.06;0.52;0.11,coefficient; standard error; D-W; adjusted R2,,barsky1985,"Table 2, p. 8a",British Levels .16 0.52 .11,"1821-1871, levels; page image: .16 (.06), D-W 0.52, R2 .11"
+bs_t2_dif1,英国,1985,,0.14;0.06;1.77;0.08,coefficient; standard error; D-W; adjusted R2,,barsky1985,"Table 2, p. 8a",1st Differences .14 1.77 .08,"1821-1871, first differences; page image: .14 (.06), D-W 1.77, R2 .08"
+bs_t2_lev2,英国,1985,,0.41;0.05;0.28;0.67,coefficient; standard error; D-W; adjusted R2,,barsky1985,"Table 2, p. 8a",British Levels .41 0.28 .67,"1872-1913, levels; page image: .41 (.05), D-W 0.28, R2 .67"
+bs_t2_dif2,英国,1985,,0.24;0.09;1.50;0.14,coefficient; standard error; D-W; adjusted R2,,barsky1985,"Table 2, p. 8a",1st Differences .24 1.50 .14,"1872-1913, first differences; page image: .24 (.09), D-W 1.50, R2 .14"
+hu_journal,美国,1986,,1986,year,,humphrey1986,running head,"ECONOMIC REVIEW, MAY/JUNE 1986",
+hu_notwicksell,美国,1986,,,,,humphrey1986,p. 18,it was not Knut Wicksell but rather two British economists writing long before him in the first third of the nineteenth century who first presented the theory.,
+hu_70,美国,1986,,70,years,,humphrey1986,p. 18,the model was already more than 70 years old when Wicksell presented it in his Interest and Prices,
+hu_tj,英国,1986,,1802;1811;1823;1828;1832,years,,humphrey1986,p. 18,"Henry Thornton (1802, 1811) and Thomas Joplin (1823, 1828, 1832) had already constructed versions of the model",
+hu_invention,英国,1986,,,,,humphrey1986,p. 18,framework was as much their invention as Wicksell,"the model's two-rate, saving-investment, loanable-funds framework (Thornton and Joplin)"
+hu_usury,英国,1986,,,,,humphrey1986,p. 18,inflation stems from usury ceilings and bankers,'... attempts to peg loan rates at levels other than those that clear the market for real capital investment'
+hu_lacked,英国,1986,,,,,humphrey1986,p. 18,All they lacked was an automatic stabilizing mechanism that brings the cumulative process to a halt by the convergence of the loan rate on the natural rate.,
+hu_provided,英国,1986,,,,,humphrey1986,p. 19,And this was provided by Wicksell in the form of the feedback effect of price changes on the loan rate.,
+hu_first,美国,1986,,,,,humphrey1986,p. 19,The first equation states that investment I exceeds saving S when the loan rate of interest i falls below its natural equilibrium level r,
+hu_bidsup,美国,1986,,,,,humphrey1986,p. 19,"The fourth equation says that this excess demand bids up prices, which rise by an amount dP/dt proportionate to the excess demand",
+hu_eq5,美国,1986,,5,equation number,,humphrey1986,p. 19,(5) dP/dt = ka(r - i),
+hu_eq7,美国,1986,,7,equation number,,humphrey1986,p. 19,(7) di/dt = b dP/dt.,
+hu_drains,美国,1986,,,,,humphrey1986,p. 19,bankers adjust their rates upward in proportion to the price rises so as to protect their gold reserves from being exhausted by inflation,equation (7)
+hu_coin,美国,1986,,,,,humphrey1986,p. 19,rising prices increase the quantity of coin required for that purpose.,the public makes a certain proportion of its real payments in coin (equation 7)
+hu_ch10,英国,1986,,10,chapter,,humphrey1986,p. 20,The origins of the cumulative process model are to be found in Chapter 10 of Henry Thornton,
+hu_4pct,英国,1986,,4;5,percent,,humphrey1986,p. 24,"if loan rates fell to 4 percent when the natural rate was 5 percent, prices would rise.",
+hu_together,英国,1986,,,,,humphrey1986,p. 24,prices and loan rates would tend to move together if the natural rate itself moves and the loan rate lags behind,
+hu_active,英国,1986,,,,,humphrey1986,p. 24,movements of the active natural rate about the lagging loan rate.,Wicksell's explanation of the long-term price changes in nineteenth-century Britain
+hu_leij,美国,1986,,,,,humphrey1986,p. 24,"Certainly it is not true, as suggested in Axel Leijonhufvud’s recent essay on the “Wicksell Connection,” that the model derives solely from Wicksell.",
+bj_wp,瑞典,1998,,290,number,,berg1998,title page,SSE/EFI Working Paper Series in Economics and Finance No 290,
+bj_date,瑞典,1998,,1998,year,,berg1998,title page,December 1998,
+bj_1931,瑞典,1931,,1931,year,,berg1998,abstract,"In September 1931, Sweden became the first country to make the stabilization of the domestic price level the official goal of its monetary policy",
+bj_only,瑞典,1998,,,,,berg1998,abstract,actually the only country that so far has adopted such an explicit price level target,
+bj_left,瑞典,1931,,1931,year,,berg1998,p. 2,"When Sweden left the gold standard in the fall of 1931, the government, under the influence of the economics profession, introduced a monetary program of stabilization of the domestic price level.",
+bj_1898,瑞典,1898,,1898,year,,berg1998,p. 4,In 1898 Knut Wicksell presented for the first time in Sweden the view that price level stabilization should be the proper guide for central bank policy.,
+bj_rule,瑞典,1898,,,,,berg1998,p. 4,"the central bank should raise its discount rate as long as prices were rising, lower it as long as prices were falling and keep it constant when the price level was stable.",
+lg_equation,,1942,,,,,lange1942,p. 66,"With this observation Wicksell, and with him all monetary theorists, gave up Say's law by substituting for the identity an equation which holds only in equilibrium.",
+lg_wicksell,,1942,,,,,lange1942,p. 66,must be able to show how and why the monetary or pecuniary demand for goods exceeds or falls short of the supply of goods in given conditions.,"Wicksell, as Lange quotes him"
+lg_worthy,,1942,,,,,lange1942,p. 66,worthy of the name must be able to show how and why,"Wicksell, as Lange quotes him: 'Any theory of money worthy of the name ...'"
+lg_conscience,,1942,,,,,lange1942,p. 66,He finally appeased his conscience by stating that total demand and total supply must be,
+lg_ultimately,,1942,,,,,lange1942,p. 66,equal only “ultimately” but may differ “in the first place.”,
+rk_title,瑞典,1873,,1873,year,,riksbank1873,page heading,1873 - Sweden gets the krona,
+rk_krona,瑞典,1873,,,,,riksbank1873,text,"When the gold standard is introduced, the new unit of coinage is named the krona.",
+rk_gram,瑞典,1873,,1;0.403225,krona; grams of gold,,riksbank1873,text,1 krona was the equivalent of 0.403225 grams of gold.,
+rk_fixed,瑞典,1873,,,,,riksbank1873,text,The krona thereby got a fixed exchange rate against the other currencies participating in the system.,
+wa_1856,瑞典,1856,,1856;1980,year; decade,,waldenstrom2014,p. 238,"The discount rate was set by the central bank, the Riksbank, from November 1856 until the early 1980s.",
+wa_law,瑞典,1856,,,,,waldenstrom2014,p. 238,banking laws stipulated that commercial banks had to follow it when setting their own borrowing and lending rates.,
+wa_bonds,瑞典,1874,,1872;4;1880;4;1887;3.6;1914;5,year; coupon per cent,,waldenstrom2014,p. 239,"Government bonds of 1872 (4 per cent coupon), 1880 (4 per cent), 1887 (3.6 per cent) and 1914 (5 per cent) were used.",
+wa_brokers,瑞典,1874,,,,,waldenstrom2014,p. 239,the stockbrokers John Håkansson and J. H. Zethreaus published price lists in the local newspapers.,
+es_title,瑞典,2010,,1290;2008,years,,edvinsson2010b,p. 412,"The evolution of Swedish consumer prices, 1290–2008",
+es_basis,瑞典,2010,,1732;1914;1972;1933,years,,edvinsson2010b,p. 431,For the period 1732–1914 the present CPI is based on data in Jörberg (1972) and Myrdal (1933),
+es_weights,瑞典,2010,,1732;82;1782;1830;1830;70;1870;1913,years,,edvinsson2010b,p. 431,"Different weights apply to each of the periods 1732–82, 1782–1830, 1830–70 and 1870–1913",
+es_base,瑞典,2010,,1914;100,year; index,,edvinsson2010b,Table A8.1,(July 1914 = 100),
+es_1887,瑞典,1887,,1887;66.91,year; index,,edvinsson2010b,"Table A8.1, p. 447",1887 66.91,the printed table; the same value as Table I.A8.1 of the workbook
+es_1913,瑞典,1913,,1913;98.80,year; index,,edvinsson2010b,"Table A8.1, p. 447",1913 98.80,the printed table; the same value as Table I.A8.1 of the workbook
