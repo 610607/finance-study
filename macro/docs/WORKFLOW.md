@@ -98,4 +98,6 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   (PLAN §7).
 - Part 4 (第 18—25 章): notes in `docs/agent_prompts/part4_notes.md`; written sequentially in the order
   18, 19, …, 25, started 2026-10-15; Chapters 18, 19, 20 and 21 written and reviewed 2026-10-15; paused after Chapter 21 at the
-  author's request. Next: Chapter 22 (`ch:marx`).
+  author's request. Resumed 2026-10-16 with the narrative plan (NARRATIVE.md, write_template rule 9, batch_brief's NARRATIVE AND
+  LANGUAGE): Chapter 22 (`ch:marx`) written and reviewed 2026-10-16. Next: Chapter 23 (`ch:goldstandard`); after Chapter 25,
+  pause for the author's review of Part 4.

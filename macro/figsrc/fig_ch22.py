@@ -89,14 +89,14 @@ def marx_1857():
     _dashed(a1, xs, m.prime_bills_rate.values, color=AMBER, **SQUARE)
     for day, _ in EVENTS:
         a1.axvline(pd.Timestamp(day), color=MUTED, lw=0.6, ls=(0, (1, 2)), zorder=2)
-    a1.text(pd.Timestamp("1857-10-20"), 10.75, T("10 月 27 日—11 月 12 日：\n两家银行倒闭，财政部的信",
-                                                 "27 Oct-12 Nov: failures;\nthe Treasury letter"),
+    a1.text(pd.Timestamp("1857-09-20"), 10.75, T("10 月 27 日—\n11 月 12 日：两家银行\n倒闭；财政部的信",
+                                                 "27 Oct-12 Nov:\ntwo failures;\nthe Treasury letter"),
             fontsize=7.8, color=INK, ha="right", va="top", linespacing=1.25)
     top = D.max()
     a1.annotate(f"{top:g}%", (pd.Timestamp("1857-11-12"), top), xytext=(pd.Timestamp("1858-02-20"), top - 0.3),
                 fontsize=7.8, color=MONEY, ha="left", va="center",
                 arrowprops=dict(arrowstyle="-", lw=0.6, color=MONEY))
-    a1.text(pd.Timestamp("1856-02-01"), 7.6, T("贴现率", "Bank Rate"), fontsize=8.0, color=MONEY, ha="left")
+    a1.text(pd.Timestamp("1856-02-01"), 7.35, T("贴现率", "Bank Rate"), fontsize=8.0, color=MONEY, ha="left")
     a1.text(pd.Timestamp("1858-06-01"), 4.0, T("优质票据\n市场贴现率", "market rate,\nprime bills"), fontsize=7.8,
             color=AMBER, ha="left", va="bottom", linespacing=1.2)
     a1.set_xlim(a, b)
@@ -207,7 +207,7 @@ def marx_schemes():
     a2.annotate(T(f"印作 {P.II[4]:,.0f}\n应为 {E.II[4]:,.1f}", f"printed {P.II[4]:,.0f},\nrule {E.II[4]:,.1f}"),
                 (4, P.II[4]), xytext=(2.3, 2400), fontsize=7.6, color=AMBER, ha="center", va="center",
                 linespacing=1.2, arrowprops=dict(arrowstyle="-", lw=0.6, color=AMBER))
-    a2.text(0.1, 12500, T("线：按规则\n点：马克思印出", "lines: the rule\npoints: as printed"), fontsize=7.6,
+    a2.text(0.1, 16000, T("线：按规则\n点：马克思印出", "lines: the rule\npoints: as printed"), fontsize=7.6,
             color=MUTED, ha="left", va="center", linespacing=1.25)
     a2.set_yscale("log")
     a2.set_ylim(2000, 20000)
@@ -241,7 +241,7 @@ def marx_shares():
     a1.text(1712, 15.0, T("地租", "land rents"), fontsize=7.6, color=OUTPUT, ha="left", va="top")
     for dec, va in ((1700, "bottom"), (1800, "top"), (1860, "bottom")):
         v = 100 * d.wage_share[dec]
-        a1.text(dec + 5, v + (1.6 if va == "bottom" else -1.8), f"{v:.0f}", fontsize=7.6, color=OUTPUT,
+        a1.text(dec + 5, v + (1.6 if va == "bottom" else -2.6), f"{v:.0f}", fontsize=7.6, color=OUTPUT,
                 ha="center", va=va)
     a1.axvline(1805, color=MUTED, lw=0.6, ls=(0, (1, 2)), zorder=2)
     a1.set_xlim(1700, 1870)
@@ -288,9 +288,9 @@ def marx_uk():
     a1.plot(u.index, u.values, color=OUTPUT, lw=1.7, zorder=3)
     a1.plot(cy["peaks"], u[cy["peaks"]], ls="none", marker="o", ms=4.6, mfc=OUTPUT, mec="white", mew=0.5, zorder=4)
     for y in cy["peaks"]:
-        left = y == cy["peaks"][1]                     # 1862 sits between 1858 and 1868
-        t = a1.text(y + (0.6 if left else 0), u[y] + 0.35, f"{y}", fontsize=7.5, color=OUTPUT,
-                    ha="right" if left else "center", va="bottom")
+        right = y == cy["peaks"][1]                    # 1862 sits between 1858 and 1868: label it on the right
+        t = a1.text(y + (0.9 if right else 0), u[y] + (0 if right else 0.35), f"{y}", fontsize=7.5, color=OUTPUT,
+                    ha="left" if right else "center", va="center" if right else "bottom")
         halo(t, 2.0)
     g = np.diff(cy["peaks"])
     a1.text(1854, 13.9, T(f"高峰间隔 {g.min()}—{g.max()} 年，平均约 {g.mean():.0f} 年",
@@ -309,7 +309,7 @@ def marx_uk():
     a3 = _right_axis(a2, AMBER)
     _dashed(a3, pr.index, pr.values, color=AMBER, lw=1.3)
     a2.text(1856, 57.6, T("工资份额（左）", "wage share (left)"), fontsize=7.6, color=OUTPUT, ha="left", va="center")
-    a3.text(1913, 30.2, T("利润率代理（右）", "profit proxy (right)"), fontsize=7.6, color=AMBER, ha="right",
+    a3.text(1911.5, 30.2, T("利润率代理（右）", "profit proxy (right)"), fontsize=7.6, color=AMBER, ha="right",
             va="center")
     a2.set_xlim(1855, 1913)
     a2.set_ylim(40, 60)

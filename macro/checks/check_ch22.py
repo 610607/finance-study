@@ -305,6 +305,7 @@ WORDS = {"a": 1, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
          "ten": 10, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60, "seventy": 70, "eighty": 80,
          "ninety": 90}
 VULGAR = {"⅓": Fraction(1, 3), "⅔": Fraction(2, 3)}
+GERMAN = {"zwei": 2}
 
 
 def cardinal(s: str) -> float:
@@ -329,6 +330,8 @@ def read(phrase: str, how: str) -> list[float]:
         return [cardinal(phrase)]
     if how == "vulgar":                       # '66⅓'
         return [figure(phrase[:-1]) + float(VULGAR[phrase[-1]])]
+    if how == "de":
+        return [float(GERMAN[phrase])]
     raise ValueError(how)
 
 
@@ -339,6 +342,7 @@ SCHEME = "num"
 READINGS = {
     "ev_western": [("ninety-eight", EN), ("1,500,000", "num"), ("5,000,000", "num")],
     "ev_fortnight": [("two", EN), ("three", EN)],
+    "wi_twoweeks": [("zwei", "de")],
     # the schemes: the figures of the two lines; the OCR noise between them is not read
     "k2_B2": [(x, SCHEME) for x in ("4840", "1210", "1210", "7260", "1760", "880", "880", "3520")],
     "k2_B4": [(x, SCHEME) for x in ("5856", "1464", "1464", "8784", "2129", "1065", "1065", "4249", "13,033")],
@@ -370,7 +374,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(quote)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 84)
+    quoted("rows with values, each read from its quotation", n, 88)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -758,6 +762,8 @@ def crisis(F, Y, Q, J):
     assert "Say" in Q["tu_synthesis"] and "Ricardo" in Q["tu_synthesis"] and "anbestreitbar" in Q["tu_kernel"]
     assert "unüberwindliche" in Q["tu_hard"] and "Anarchie" in Q["tu_anarchy"]
     assert "So fragte Sis" in Q["lu_sismondi"] and "Imperialismus" in Q["lu_imperialism"]
+    assert "sicherste Mittel" in Q["lu_end"] and "Boden unter den Füßen" in Q["lu_ground"]   # 最可靠的办法；脚下的地面
+    assert "Ueberschuss an Produktivkräften" in Q["tu_surplus"]                       # 用不尽已有的生产力
     assert J["k3_imagine"] == J["k3_letzter"] == "Kap. 30"                             # 第三十章
     assert "wages rise generally" in Q["k2_wages"] and "larger share" in Q["k2_wages"]
 
@@ -783,6 +789,11 @@ def hamburg(F, Y, Q):
     chk("Vienna: 1,000 万 at 6%, by the end of 1858", [F["wi_nationalbank"][0] * MILL / WAN] + F["wi_6pct"],
         [1000, 6, 1858])
     chk("    = Evans: the first 10,000,000 marks banco", F["ev_vienna"][0] / MILL, F["wi_nationalbank"][0])
+    chk("the second measure, 27 November", F["wi_nov27"], [27])
+    assert "zweite" in Q["wi_second"] and "Solawech" in Q["wi_sola"] and "Waaren und" in Q["wi_pledge"]
+    assert "verfilbern" in Q["wi_cash"]                                                 # versilbern: 换成现钱
+    chk("hard to place for two weeks; from 15 December 4%-5%; bills hardly at 10%", F["wi_twoweeks"] + F["wi_dec15"],
+        [2, 15, 5, 4, 10])
     chk("12 December", F["ev_dec12"], [12])
     chk("repaid about Johanni 1858", F["wi_repaid"], [1858])
     assert "Johanni" in Q["wi_repaid"] and "24 June" in column("note")["wi_repaid"]
@@ -818,6 +829,7 @@ def test(F, Y, Q, A, C):
     chk("    the shares in the note", F["al_t1_shares"], [0.35, 0.15])
     assert (T1.tl < 0).all()                                                          # the lost minus signs
     assert "doubled" in Q["al_doubled"] and "first four decades" in Q["al_inequality"]
+    assert "as he expected" in Q["al_expected"] and "capital stock" in Q["al_mediate"]       # 像马克思预料的那样；资本存量
     chk("    the 19th century", F["al_inequality"], [19])
     # cycles
     cy = cycles(A)
@@ -892,6 +904,12 @@ def test(F, Y, Q, A, C):
 def deeper(F, Y, Q):
     chk("versions: 1867, 1887; 1885, 1894; Kerr 1909", [Y["k1_value"], Y["k1_organic"], Y["k2_date"], Y["k3_date"],
                                                       Y["k2_depts"]], [1867, 1887, 1885, 1894, 1909])
+    # the copy of Untermann's vol. II: printed 1933, copyright page 1909 (its title page and verso, as scanned)
+    _, meta = load_snapshot("marx_facts", dtype=str, keep_default_na=False)
+    src = meta["sources"]
+    assert "copyright 1909" in src["marx1909k2"]["version"] and "printed 1933" in src["marx1909k2"]["version"]
+    assert "1859)" in src["evans1859"]["version"]                                    # Evans 1859 年出版
+    assert "Wirth" in src["wirth1858"]["version"] and "1858;" in src["wirth1858"]["version"]   # 维尔特 1858 年出版
     # dates: Evans 11 November; the Commons speech 9 November; D1 12 November
     chk("Evans: 10% on 11 November", F["ev_rate10"], [11, 10])
     s = F["ev_rates_commons"]
@@ -899,9 +917,18 @@ def deeper(F, Y, Q):
     D = bank_rate()
     chk("D1: 7% on 15 October; 10% on 12 November", [D[pd.Timestamp("1857-10-15")], D[pd.Timestamp("1857-11-12")]],
         [7, 10])
-    chk("Leontief: born 5 August 1906; 1905; died 1999", F["nb_born"] + F["nb_1905"] + [F["nb_died"][1]],
-        [5, 1906, 1905, 1999])
+    chk("Leontief: born 5 August 1906 (autobiography); 1905 (the site's note); died 1999",
+        F["nb_born"] + F["nb_1905"] + [F["nb_died"][1]], [5, 1906, 1905, 1999])
     assert "August 5, 1906" in Q["nb_born"] and "Munich" in Q["nb_1905"]
+    assert "里昂惕夫（Wassily Leontief，1906—1999，生年一说 1905）" in tex_text()                # the text gives both
+    # the transformation: Marx's own answer (vol. III, ch. 9) and Hilferding's reply to Böhm-Bawerk
+    assert "Summe der Produktionspreise" in Q["k3_sum"] and "Summe ihrer Werthe" in Q["k3_sum"]
+    assert "auf dem Markt gekauft" in Q["k3_market"] and "Kostpreis" in Q["k3_costprice"]
+    assert "nicht nöthig" in Q["k3_notnow"]
+    chk("Hilferding 1904 (1877—1941)", [Y["hi_total"]] + F["hi_dates"], [1904, 1877, 1941])
+    assert "Gesamtwert" in Q["hi_total"] and "Einzelware" in Q["hi_single"] and "Zirkulation" in Q["hi_production"]
+    assert "Gesamtmehrwert" in Q["hi_profit"] and "quantitativ bestimmt" in Q["hi_quantity"]
+    assert "希法亭（Rudolf Hilferding，1877—1941）1904 年" in tex_text()
 
 
 def legacy(F, Y, Q):
