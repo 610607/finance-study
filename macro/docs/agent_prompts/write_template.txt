@@ -1,6 +1,6 @@
 You are writing one chapter of a Chinese LaTeX textbook, 《宏观经济学：从古代货币到当下争论》 (Finance Study Series, Volume 1). Run all commands from macro/. The author's aims: a course that follows history (每个时代的危机 → 理论 → 检验), in which readers LEARN rather than read a list (目的是让人学会而非罗列); explicit similarities and differences between concepts (compare boxes); heterogeneous cases beyond Britain and the United States (at least one per chapter, in a case box); traceable numbers, data and methods; clear natural Chinese; beautiful, intuitive figures.
 
-READ FIRST: docs/STYLE.md, docs/PLAN.md (principles, the running teaching model, the case map, your chapter's entry, the label registry), preamble.tex (boxes and macros), the chapters listed as prerequisites of yours, and the sample chapter zh/ch12_songming.tex with STYLE.md §11, which records what it settled.
+READ FIRST: docs/STYLE.md, docs/NARRATIVE.md (§3–§8 are the rules for openings, sections, paragraphs, sentences, quotations and units; §10 the checklist and targets), docs/POLISH.md §3–§4 (the rules that mattered most when Chapters 1–21 were polished, and the overreach the editor undid), docs/PLAN.md (principles, the running teaching model, the case map, your chapter's entry, the label registry), preamble.tex (boxes and macros), the chapters listed as prerequisites of yours, the opening and ending of the chapter before yours, and the sample chapter zh/ch12_songming.tex with STYLE.md §11, which records what it settled. zh/ch21_divergence.tex is the model for the narrative after the 2026-10 polish.
 
 YOUR CHAPTER: zh/chNN_<slug>.tex already contains the \chapter line, the label and the guide box. Keep them (you may sharpen the goals; then update PLAN.md to match) and write the body after the guide box; delete \chapterstub.
 
@@ -13,12 +13,22 @@ RULES:
 6. Figures: one module figsrc/fig_chNN.py, every label in T("中文", "English"), the colour semantics of STYLE.md §7 and the drawing rules of §7.1 (after the electromagnetics notes; figsrc/fig_ch12.py is the example). Build with MACRO_LANG=zh python3 figsrc/build.py <names> and look at every PNG with the Read tool; fix overlaps, clipping and tiny text.
 7. Cross-references only to labels in the PLAN.md registry or in your own chapter; add labels other chapters will need to the registry.
 8. Mark facts after 2024 with the date they refer to (截至 2026 年 10 月 …).
+9. Narrative and language (NARRATIVE.md; the author decided on 2026-10-16 that Chapter 22 onwards is written to it from the start):
+   - Open with a person, an event and the chapter's question within the first page; no roadmap paragraph ("这一章回答……依次讨论……" with a string of \secref) and no translation notice (the preface carries it). End by returning to the opening scene or person and handing the reader one question for the next chapter; the hand-off paragraph sits after \end{answers}.
+   - No "这一节回答／交代／讨论": each section opens with a fact, a scene, a puzzle or a link to the last section (§4) and ends with a checkable conclusion.
+   - The first sentence of a paragraph states its point; no paragraph over 400 characters; sentence median 40 characters or fewer; no sentence over 80; at most three numbers per sentence; no three-decimal numbers in the narrative (tables and examples take the strings of numbers).
+   - Quote only for the four reasons of §7.1 (a voice, a famous phrase, a contested wording, a dated document); otherwise paraphrase with the \cite at the end of the sentence. At most two quotations per paragraph; quoted text about 8–15% of the main text. Classical Chinese quotations stay verbatim; foreign ones are translated into natural Chinese.
+   - Explain every currency, unit and mechanism at its first use in the chapter (§7.6): what kind of thing it is and how it converts; a term used in the opening, a box or a table first gets a half-clause gloss; a mechanism from a later chapter gets one clause plus \chref. Point out same-name-different-thing (马克, 两, 石, 盎司).
+   - A colon only before a quotation or a list; at most one semicolon and one Chinese aside in brackets per sentence. No meta phrases (如前所述、值得注意的是、下面我们来看), no sentences about the book in the main text (本书没有找到: say what is known, the search history goes into the 史料说明), no aphorisms or morals of your own, no "不是 X，而是 Y" used only for emphasis.
+   - A person whose years cannot be verified is named with “生卒年未详” (STYLE.md §3), not hidden.
+   - Licence notices and credits are copied verbatim (EFFR, SAFE, Riksbank, Bank of Japan, Maddison, BIS, NBER, EH.Net, ©).
 
 CHECKS (all clean before you report):
 - python3 checks/check_chNN.py
 - python3 tools/check_chapter.py zh/chNN_<slug>.tex — no errors, overfull boxes, undefined references or citations, missing glyphs, ink in the margins; look at build/check_chNN_<slug>/sheet_*.png
 - python3 validate_source.py
+- readability: cd /tmp && python3 -I /home/user/finance-study/macro/docs/agent_prompts/polish_fidelity.py FILE FILE (the same file twice) and compare the metrics with NARRATIVE.md §10.3; go through the checklist of NARRATIVE.md §10.2.
 
-FINAL REPORT (concise, in English): what you wrote (sections, boxes, figures, snapshots), every source you added with how you verified it, anything you could not verify or decided to leave out, and open questions for the author.
+FINAL REPORT (concise, in English): what you wrote (sections, boxes, figures, snapshots), every source you added with how you verified it, anything you could not verify or decided to leave out, the readability metrics row with any value over its NARRATIVE.md §10.3 target and the reason, the question your ending hands to the next chapter, and open questions for the author.
 
 YOUR CHAPTER:

@@ -17,8 +17,10 @@ record in `docs/POLISH.md`). New chapters are written to the same rules from the
 `NARRATIVE.md` §3–§8 and `POLISH.md` §3–§4 before writing, and measure the draft against
 `NARRATIVE.md` §10.3 with
 `cd /tmp && python3 -I <repo>/macro/docs/agent_prompts/polish_fidelity.py CH.tex CH.tex` (the same
-file twice gives its metrics). Whether the write and review prompt templates should quote these rules
-is the author's decision (`NARRATIVE.md` §11 item 2).
+file twice gives its metrics). The author decided on 2026-10-16 that Chapter 22 onwards is written to
+these rules from the start; `docs/agent_prompts/write_template.txt` (rule 9) and `review_template.txt`
+(item 7) now carry the checklist of `NARRATIVE.md` §10.2 and ask for the metrics row in the report.
+Name a person whose years cannot be verified with “生卒年未详” (`STYLE.md` §3).
 
 ## 0. Prepare the session
 

@@ -310,4 +310,4 @@
 - 动笔前读 `NARRATIVE.md` §10.1 的四个问题，以及本文件 §3。
 - 写完以后量一遍：`cd /tmp && python3 -I <仓库>/macro/docs/agent_prompts/polish_fidelity.py 新稿 新稿`，指标对照 `NARRATIVE.md` §10.3。
 - 结尾写之前，先读下一章已有的导引框和开场；下一章还没写，就把要交的问题记进 `FORWARD_REFS.md`。
-- 交给子任务写或审时，`polish_template.txt` 的“不做”七条可以原样加进写作与审稿提示词。是否加，由作者决定（`NARRATIVE.md` §11 第 2 条）。
+- 交给子任务写或审时，用 `write_template.txt` 与 `review_template.txt`。作者 2026-10-16 同意把 `NARRATIVE.md` §10.2 的清单加进去：写作模板的第 9 条、审稿模板的第 7 条就是，其中也收了 `polish_template.txt` 里适用于新写章节的几条“不做”（路线图、翻译声明、关于本书的句子、自拟的格言、授权声明照抄）。
