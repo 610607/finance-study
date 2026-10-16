@@ -538,6 +538,16 @@ def model(F):
     g = rn - i
     chk("    g_{t+1} / g_t, the first ten years", list(g[1:11] / g[:10]), [0.8] * 10, tol=1e-9)
     chk("    in three years by half: 0.8^3", 0.8 ** 3, 0.512)
+    chk("    beta kappa in the example", b * k, 0.2, tol=1e-12)
+    assert 0 < b * k < 1                                                  # 只要 βκ<1，利差每年缩小一个固定的比例
+    i2, p2, pi2 = cumulative(np.full(400, rn), i0, k, 0.75)              # βκ = 1.5: the bank overshoots
+    g2 = rn - i2
+    assert all(g2[t] * g2[t + 1] < 0 for t in range(20))                 # 利差正负交替
+    chk("    beta kappa = 1.5: the gap vanishes; the total rise g_0 / beta", [abs(g2[-1]), pi2.sum()],
+        [0, (rn - i0) / 0.75], tol=1e-9)
+    i3, _, _ = cumulative(np.full(60, rn), i0, k, 1.1)                   # βκ = 2.2: no longer
+    assert abs(rn - i3[-1]) > abs(rn - i0)                                # 只要 βκ<2，利差最后都会消失
+    say("只要 $\\beta\\kappa<1$", "本章的例子里 $\\beta\\kappa=0.2$", "利差正负交替", "只要 $\\beta\\kappa<2$")
     assert 0.8 ** 3 > 0.5 > 0.8 ** 4                                     # 约 3 年缩小一半
     # (3) the total rise
     chk("(3) the total rise g_0 / beta", (rn - i0) / b, 10)
@@ -559,8 +569,10 @@ def model(F):
     say("自然利率在 5\\% 与 6\\% 之间以 40 年为周期起伏", "在 120 年里", "$-0.1$ 左右")
 
 
-def history(F, Y, Q):
+def history(F, Y, Q, G):
     chk("1851-73", F["ka_1851"], [1851, 73])
+    pct("    UK wholesale prices 1851 -> 1873 (%)", 100 * (math.exp(G.lnP[1873] - G.lnP[1851]) - 1), 47, 0)
+    say("1873 年确实比 1851 年高约 47\\%")
     assert "Crimean War" in Q["ka_wars"] and "American Civil War" in Q["ka_wars"]
     assert "Germany" in column("note")["ka_wars"]                                    # 德国的几场战争
     assert "Both of these reasons".lower() in Q["ka_reasons"].lower()
@@ -689,7 +701,19 @@ def test(F, Y, Q, G):
     assert late_l["b"] / late_l["se"] > 10 and late_d["b"] / late_d["se"] > 2.5       # 1872—1913 年两种回归都很强
     early = R[(1821, 1871, False)]
     assert early["r2adj"] < 0.02 and corr(G.lnP.loc[:1871], G.consol_yield.loc[:1871]) < 0.2   # 几乎没有相关
+    for d in (False, True):                                                   # 重算的两种回归都不显著
+        x = R[(1821, 1871, d)]
+        assert x["b"] / x["se"] < 1.96, (d, x["b"] / x["se"])
+    for rid in ("bs_t2_lev1", "bs_t2_dif1"):                                   # 按表上的标准误仍然显著
+        assert F[rid][0] / F[rid][1] > 1.96, rid
     assert F["bs_t2_lev1"][0] < F["bs_t2_lev2"][0] and F["bs_t2_lev1"][3] < F["bs_t2_lev2"][3]  # 前半段弱得多
+    # D-W: levels 0.3 to 0.5 or so, far below 2; differences 1.5 to 1.9
+    lev = [v[3] for (a, b, d), v in printed.items() if not d] + [F[bs[k]][2] for k in bs if not k[2]]
+    dif = [v[3] for (a, b, d), v in printed.items() if d] + [F[bs[k]][2] for k in bs if k[2]]
+    assert all(0.25 <= w <= 0.55 for w in lev) and all(abs(R[k]["dw"] - printed[k][3]) < 0.005 for k in R), lev
+    assert all(1.5 <= w <= 1.9 for w in dif), dif
+    say("水平回归的 D-W 都在 0.3 到 0.5 上下，远低于 2", "差分回归的 D-W 在 1.5 到 1.9 之间",
+        "重算的两种回归都不显著", "只是按表上的标准误仍然显著")
     # why: Keynes, then ex:wicksell-keynes
     chk("Keynes: 1820-1900; the boom 1855-1875", F["ke_1820"], [1820, 1900, 1855, 1875])
     say("1820—1900 年，利率降得不够快", "只有 1855—1875 年的投资热潮是例外")
@@ -705,6 +729,13 @@ def test(F, Y, Q, G):
     say("$1.05\\times1.02=1.071$", "$(1-0.02)\\times(1-0.02)=0.9604$", "$3\\%/0.98=3.06\\%$", "升 0.06 个百分点")
     # Barsky and Summers on the two explanations
     chk("the pre-1914 American money stock", F["bs_kw"], [1914])
+    # Keynes's own answer to the money-supply objection (Treatise, vol. II, pp. 204-205)
+    assert "obvious objection" in Q["ke_objection"] and "supply of money" in Q["ke_objection"]
+    assert "quite independent of the rate of interest" in Q["ke_independent"]
+    assert "past hundred years" in Q["ke_management"] and "underestimated" in Q["ke_management"]
+    assert "more adaptable to changes in the supply of gold" in Q["ke_adaptable"]
+    assert "gold-hoarders" in Q["ke_hoarders"] and "absorbed" in Q["ke_absorbed"]
+    say("凯恩斯自己预料到了这个反驳", "过去一百年里")
     pct("the autocorrelation of UK wholesale inflation, 1822-1913", G.infl.autocorr(1), 0.10, 2)
     say("与上一年涨幅的相关系数只有 0.10")
     chk("Sargent (1973)", F["bs_sargent"], [1973])
@@ -720,6 +751,9 @@ def case(F, Y, Q, S, M):
     d = M.discount_rate.loc[f"{a}-01":f"{b}-12"]
     chk("1874-1913: the discount rate between 3.5% and 7%", [d.min(), d.max()], [3.5, 7.0])
     chk("    the months in which it changed", int((d.diff().dropna() != 0).sum()), 70)
+    # July 1876 (5.032) is the monthly mean of one cut from 5.5% to 5%: 69 changes on the half-point grid
+    assert sorted(set(d.round(3)) - {5.032}) == [3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0]
+    chk("    the changes of the rate itself (约 70 次)", int(((d * 2).round().diff().dropna() != 0).sum()), 69)
     chk("the bonds of 1872, 1880, 1887 and 1914", F["wa_bonds"][0::2], [1872, 1880, 1887, 1914])
     assert "John Håkansson and J. H. Zethreaus" in Q["wa_brokers"]                    # 两家证券经纪商
     chk("Edvinsson and Soederberg: 1732-1914 on Joerberg (1972) and Myrdal (1933)", F["es_basis"],
@@ -732,8 +766,14 @@ def case(F, Y, Q, S, M):
     pct("    1887 -> 1913 (%)", 100 * (cpi[1913] / cpi[1887] - 1), 48, 0)
     by = M.bond_yield.dropna()
     assert by.index[0] == "1874-02"                                                   # the series starts in 1874
-    assert by.idxmin() == "1896-08", by.idxmin()                                     # the monthly low
+    assert by.idxmin() == "1896-08", by.idxmin()                    # the monthly low: first reached in August 1896
     pct("    at (%)", by.min(), 3.52, 2)
+    lows = list(by[by <= by.min() + 1e-9].index)
+    chk("    the months at the low", len(lows), 5)
+    assert lows[0] == "1896-08" and lows[-1] == "1897-11", lows
+    plateau = by.loc["1896-08":"1897-11"]
+    assert round(plateau.min(), 2) == 3.52 and round(plateau.max(), 2) == 3.56, (plateau.min(), plateau.max())
+    assert by.loc["1897-12":].min() > by.min()                      # 此后一年多一直在 3.52% 与 3.56% 之间
     A = annual(M)
     assert int(A.bond_yield.loc[a:b].idxmin()) in (1896, 1897)                    # the annual means: 1897
     chk("    nine years after the prices (1887)", int(by.idxmin()[:4]) - 1887, 9)
@@ -743,8 +783,9 @@ def case(F, Y, Q, S, M):
     pct("    1874-1896", corr(q.loc[a:1896], A.bond_yield.loc[a:1896]), 0.81, 2)
     pct("    1897-1913", corr(q.loc[1897:b], A.bond_yield.loc[1897:b]), 0.93, 2)
     pct("corr(ln CPI, discount rate), 1874-1913", corr(q.loc[a:b], A.discount_rate.loc[a:b]), 0.62, 2)
-    say("跌了约 26\\%", "涨了约 48\\%", "1896 年 8 月的 3.52\\%", "只有 0.51", "1874—1896 年是 0.81，1897—1913 年是 0.93",
-        "贴现率与物价对数的相关系数是 0.62", "1 克朗合 0.403225 克黄金", "在 3.5\\% 与 7\\% 之间变动了 70 次")
+    say("跌了约 26\\%", "涨了约 48\\%", "1896 年 8 月，月度的收益率第一次跌到最低点 3.52\\%",
+        "一直在 3.52\\% 与 3.56\\% 之间", "只有 0.51", "1874—1896 年是 0.81，1897—1913 年是 0.93",
+        "贴现率与物价对数的相关系数是 0.62", "1 克朗合 0.403225 克黄金", "在 3.5\\% 与 7\\% 之间变动了约 70 次")
     chk("Sweden left gold: autumn 1931", F["bj_left"] + F["bj_1931"], [1931, 1931])
     assert "fall of 1931" in Q["bj_left"] and "first country" in Q["bj_1931"] and "only country" in Q["bj_only"]
 
@@ -894,7 +935,7 @@ def main() -> None:
     world(F, Y, Q)
     cumulative_sec(F, Y, Q)
     model(F)
-    history(F, Y, Q)
+    history(F, Y, Q, G)
     rule(F, Y, Q)
     fisher(F, Y, Q)
     test(F, Y, Q, G)
