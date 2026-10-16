@@ -963,7 +963,9 @@ def witnesses(F, Q):
     assert "freely" in Q["bg_ultimate"] and "good securities" in Q["bg_ultimate"]
     assert "yesterday" in Q["hq_calamitous"] and "rapidity" in Q["hs_rapidity"]          # 前一天傍晚开始的
     bib = (ROOT / "references_zh.tex").read_text(encoding="utf-8")
-    block = bib[bib.index("% ---- 第 23 章"):bib.index("\\end{thebibliography}")]
+    start = bib.index("% ---- 第 23 章")
+    nxt = bib.find("% ---- 第", start + 1)                   # the next chapter's block, if any
+    block = bib[start:nxt if nxt > 0 else bib.index("\\end{thebibliography}")]
     items = {m.group(1): m.group(2) for m in re.finditer(r"\\bibitem\{([^}]+)\}(.*)", block)}
     for key in ("bordo1984", "dutton1984", "mcgouldrick1984", "dornbusch1984"):
         assert Q["nb_notice"] in items[key] and "All rights reserved" in items[key], key

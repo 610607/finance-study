@@ -1064,7 +1064,9 @@ def book(F, Q):
 def witnesses(F, Q):
     """The notices of the bibliography, and every cited work in it."""
     bib = (ROOT / "references_zh.tex").read_text(encoding="utf-8")
-    block = bib[bib.index("% ---- 第 24 章"):bib.index("\\end{thebibliography}")]
+    start = bib.index("% ---- 第 24 章")
+    nxt = bib.find("% ---- 第", start + 1)                   # the next chapter's block, if any
+    block = bib[start:nxt if nxt > 0 else bib.index("\\end{thebibliography}")]
     items = {m.group(1): m.group(2) for m in re.finditer(r"\\bibitem\{([^}]+)\}(.*)", block)}
     for key, row in (("obstfeld2002", "ot_notice"), ("meissner2002", "me_notice"),
                      ("mitchener2007", "mw_notice"), ("mitchener2009", "ms_notice")):

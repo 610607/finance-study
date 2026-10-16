@@ -1405,5 +1405,6 @@ sec:say-world sec:say-law sec:say-glut sec:say-debate sec:say-walras sec:say-182
 sec:divergence-world sec:divergence-malthus sec:divergence-takeoff sec:divergence-when sec:divergence-why sec:divergence-test sec:divergence-legacy eq:divergence-escape eq:divergence-ulc tab:divergence-why ex:divergence-plateau ex:divergence-welfare ex:divergence-spinners ex:divergence-ulc ex:divergence-tfp
 sec:marx-world sec:marx-accumulation sec:marx-schemes sec:marx-profit sec:marx-crisis sec:marx-test sec:marx-legacy eq:marx-rates eq:marx-schemes eq:marx-kalecki tab:marx-path tab:marx-readings ex:marx-rates ex:marx-reserve ex:marx-expanded ex:marx-io ex:marx-profit ex:marx-tugan ex:marx-okishio
 sec:gold-world sec:gold-1844 sec:gold-bagehot sec:gold-rules sec:gold-state sec:gold-test sec:gold-legacy eq:gold-issue eq:gold-goschen tab:gold-week1866 tab:gold-three tab:gold-limits ex:gold-week1866 ex:gold-goschen ex:gold-rules ex:gold-debt
+sec:periph-world sec:periph-silver sec:periph-india sec:periph-china sec:periph-baring sec:periph-test sec:periph-legacy eq:periph-silver eq:periph-band eq:periph-drain tab:periph-seal ex:periph-rupee ex:periph-band ex:periph-naoroji ex:periph-boxer ex:periph-peso ex:periph-yen
 nav:contents nav:compare
 ```
