@@ -1,0 +1,14 @@
+{
+  "title": "The weekly returns of the Bank of England's Issue Department and Banking Department, 7 September 1844 - 29 July 1914",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'W1. Issue Department' and 'W2. Banking Department' (£ millions, weekly)",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "date (ISO 8601; the date of the weekly return as sheet W1 gives it); W1: issue_coin_bullion (total coin and bullion), issue_gold (o/w gold coin and bullion), issue_silver (o/w silver bullion; to July 1861), fiduciary_issue (memo: the notes issued against securities), notes_circulation (notes in circulation, i.e. outside the Bank), notes_in_banking_dept (notes held by the Banking Department); W2: bd_govt_securities (government securities), bd_other_securities ('Discounts, advances and other securities'), bd_discounts_advances and bd_other_sec_other (its two parts as the sheet splits them), bd_reserve ('Reserve of notes and coin'), bd_coin (o/w gold and silver coin), public_deposits, other_deposits ('Other deposits and accounts'), bankers_deposits (o/w bankers' deposits); all £ m",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    23
+  ],
+  "fetch": "data/fetch/boe_millennium_gb23.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-22). The script checks the headings of every column it reads and pairs the rows of the two sheets by position; the dates agree except for one return, which W1 dates 26 December 1888 and W2 24 December 1888 (the snapshot keeps W1's date). In 1844-1914 the fiduciary issue rose from £14 m by Orders in Council as country banks gave up their note issue (Bank Charter Act s. V), and stood at £16.475 m from 18 November to 23 December 1857, when the Bank issued beyond the legal limit under the Treasury letter of 12 November. The Banking Department's 'reserve' is the notes it holds plus its gold and silver coin; Bagehot's weekly reserves of October-November 1857 equal the notes alone. Bagehot's 'loans on private securities' in 1847, 1857 and 1866 equal bd_other_securities on the dates named in goldstandard_facts.json.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets W1 and W2"
+}

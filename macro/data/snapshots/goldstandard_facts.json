@@ -1,0 +1,204 @@
+{
+  "title": "Quotations for Chapter 23 (the gold standard, runs and the lender of last resort): Hansard on Black Friday, 11 May 1866, and on 17 May; the Bank Charter Act 1844; Bagehot's Lombard Street (1873); Andréadès on the crises of 1847, 1857 and 1866; Bordo, Dutton (with Moggridge's comment), McGouldrick and Dornbusch-Frenkel in Bordo and Schwartz (eds.), A Retrospective on the Classical Gold Standard (1984); the Reichsbank, 1876-1900, and Sprague's History of Crises (National Monetary Commission, 1910); the Federal Reserve Act (1913) and the Gold Standard Act (1900); Bryan's First Battle (1896); Menger (1892), Knapp (1924), Fisher (1896), Rockoff (2009) and Tacitus (Gordon's translation)",
+  "source": "Hansard, HC Deb 11 May 1866 vol 183 cc772-4 and cc840-2, 17 May 1866 cc1050-3 (Historic Hansard, UK Parliament); Bank Charter Act 1844, 7 & 8 Vict. c. 32 (legislation.gov.uk, as enacted); W. Bagehot, Lombard Street (1873; Project Gutenberg eBook 4359, and the New York edition of 1874 on archive.org); A. Andréadès, History of the Bank of England (1909); M. D. Bordo and A. J. Schwartz (eds.), A Retrospective on the Classical Gold Standard, 1821-1931 (University of Chicago Press for the NBER, 1984), chapters by Bordo, Dutton, McGouldrick, Dornbusch and Frenkel; National Monetary Commission, The Reichsbank, 1876-1900 (1910); O. M. W. Sprague, History of Crises under the National Banking System (1910); A. T. Huntington and R. J. Mawhinney, Laws of the United States concerning Money, Banking, and Loans, 1778-1909 (1910); the Federal Reserve Act (1913, Wikisource); W. J. Bryan, The First Battle (1896); C. Menger (1892); G. F. Knapp (1924); I. Fisher (1896); H. Rockoff (2009); Tacitus, tr. T. Gordon",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1866/may/11/suspension-of-the-bank-charter-act",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated; fractions as a/b), unit, numeral (unused), file (key of 'sources'), juan (location: column, section, chapter or printed page), quote (verbatim, as in the document's text, OCR misreadings included), note",
+  "retrieved": "2026-10-16",
+  "license": "Quotations for criticism and teaching, each with its source. Hansard: '© UK Parliament', reproduced under the Open Parliament Licence. The Bank Charter Act 1844 on legislation.gov.uk: Crown copyright, Open Government Licence v3.0. Bagehot (1873, 1874), Andréadès (1909), the National Monetary Commission's volumes (1910; publications of the United States government), the Federal Reserve Act and the Gold Standard Act (edicts of government), Bryan (1896), Menger (1892), Knapp's translation (1924), Fisher (1896) and Gordon's Tacitus are in the public domain; the Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here) and the archive.org texts are OCR of public-domain scans; the Wikisource pages are CC BY-SA (the transcribed texts themselves are in the public domain). The NBER volume (Bordo and Schwartz, eds., 1984): '© 1984 by The National Bureau of Economic Research. All rights reserved.' (rows nb_notice, nb_rights); the chapter PDFs carry no notice of their own; only short passages (a sentence or part of one) are quoted, with full credit to the authors, the volume and the NBER. Rockoff (2009): '© 2009 by Hugh Rockoff. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source' (row rk_notice). The chapter's Chinese renders the English; the translations are the book's.",
+  "used_in": [
+    23
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (every row; no page images); checks/check_ch23.py (the readings and every quotation of the text)",
+  "notes": "Dates and figures that the sources give differently. Bank Rate in 1866: Andréadès (p. 360, rows an_10pct, an_aug6) says 10 per cent from 11 May to 6 August; the Bank of England's table D1 (snapshot boe_millennium_bank_rate_1844_1914) gives 9 per cent on 11 May, 10 per cent from 12 May and 8 per cent from 16 August; the chapter follows D1 and records the difference in its notes on sources. The advances on Government securities on Black Friday: £919,000 in Hansard (row hm_govsec), £929,000 in Andréadès (row an_929); the chapter follows Hansard. The reserve on the morning of 11 May: 'a sum approaching £6,000,000' (Gladstone, row hs_reserve), £5,727,000 (the Governor's letter, in Andréadès, row an_5727), £5,812,000 'just before' (Bagehot, row bg_13m; the weekly return of 9 May in the Bank of England's sheet W2 gives 5.811745 £ m). Bagehot's loans on 'private securities' (rows bg_loans1847, bg_loans1857, bg_loans1866) are the column 'Discounts, advances and other securities' of sheet W2 (16 and 30 October 1847, 24 October and 25 November 1857, 25 April and 30 May 1866); checks/check_ch23.py compares them. Bagehot's reserve of 1,176,000 L. in October 1847 (ch. VII, row bg_reserve1847) is the notes held by the Banking Department on 30 October 1847 in sheet W1 (1.17674 £ m), without its coin; Andréadès (p. 336) puts the same figure on 23 October. The phrase 'rules of the game': Moggridge (row mo_kindersley) dates its first use to Kindersley's evidence to the Macmillan Committee in February 1930; the chapter does not attribute it to Keynes (1925). Bloomfield's counts (rows du_34_60, du_boe) are taken from Dutton's summary; Bloomfield (1959) itself could not be downloaded (FRASER was not reachable from the shell, and the archive.org copy is restricted), so they rest on that one witness; Bordo (rows bo_opposite, bo_managed) quotes Bloomfield's conclusions. Bryan's vote counts (rows br_votes, br_plurality, br_19436) are his own figures in his own book. The OCR texts are quoted as they read; the notes give the readings where they differ.",
+  "sources": {
+    "hansard1866a": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1866/may/11/question-5",
+      "format": "html",
+      "sha256": "eb5a5a91ddbd8cf7330bfe1249466c97d4570e6a98853eb987e12589299d9862",
+      "version": "Hansard, House of Commons, 11 May 1866, 'Question' (the monetary crisis), HC Deb vol 183 cc772-4: Disraeli's, Bazley's and Biddulph's questions and the reply of the Chancellor of the Exchequer (Gladstone); the digitised Historic Hansard of UK Parliament ('© UK Parliament')",
+      "retrieved": "2026-10-16"
+    },
+    "hansard1866b": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1866/may/11/suspension-of-the-bank-charter-act",
+      "format": "html",
+      "sha256": "d11a5640025f2fcca94355941e1eeb086a5925323a3d2696aa4cbc1b2c706b72",
+      "version": "Hansard, House of Commons, 11 May 1866 (evening), 'Suspension of the Bank Charter Act', HC Deb vol 183 cc840-2: Bazley's question and Gladstone's statement; Historic Hansard ('© UK Parliament')",
+      "retrieved": "2026-10-16"
+    },
+    "hansard1866c": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1866/may/17/the-monetary-crisis-bank-advances",
+      "format": "html",
+      "sha256": "cbffa748cad34bc4b6754a1ea9cb9a013e9a68257b0c1700d2b196e950e887e8",
+      "version": "Hansard, House of Commons, 17 May 1866, 'The Monetary Crisis-Bank Advances', HC Deb vol 183 cc1050-3: Gridley's and Wyld's questions and Gladstone's reply; Historic Hansard ('© UK Parliament')",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_gladstone": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-we-gladstone/index.html",
+      "format": "html",
+      "sha256": "cee410ef1562a03b66fb21442fec9589d695bbf590ff41c6338992ae48c470bb",
+      "version": "Historic Hansard, people: 'Mr W.E. Gladstone' (years of life, constituencies and offices; 'prepared from the XML source files, together with information from the History of Parliament Trust, the work of Leigh Rayment and public sources')",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_disraeli": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-benjamin-disraeli/index.html",
+      "format": "html",
+      "sha256": "1d3a863e8b6fae563dbfe9003815da35cc7d0af7416358d38a660b8c7c57477a",
+      "version": "Historic Hansard, people: 'Mr Benjamin Disraeli'",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_goschen": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-george-goschen/index.html",
+      "format": "html",
+      "sha256": "ad8aeb96c30743825f5be17fb6b973fc63c12af6a8afc2f131d5b3a962c71af2",
+      "version": "Historic Hansard, people: 'Mr George Goschen'",
+      "retrieved": "2026-10-16"
+    },
+    "act1844": {
+      "url": "https://www.legislation.gov.uk/ukpga/Vict/7-8/32/enacted",
+      "format": "html",
+      "sha256": "b427b353115dddf46e133e44826b4384b3025c4fa7c92fbef277b3a9b06d3449",
+      "version": "Bank Charter Act 1844 (7 & 8 Vict. c. 32), the text as enacted on legislation.gov.uk (The National Archives; Crown copyright, Open Government Licence v3.0); the site's transcription has a few misreadings ('Grovernor'), and the quotations avoid them; sections I-VI",
+      "retrieved": "2026-10-16"
+    },
+    "bagehot1873": {
+      "url": "https://www.gutenberg.org/cache/epub/4359/pg4359.txt",
+      "format": "txt",
+      "sha256": "fb0f41f842b1c86820e9d92d6c800a55e107878d19680e47cb7173faa7c00eda",
+      "version": "W. Bagehot, Lombard Street: A Description of the Money Market (1873), Project Gutenberg eBook 4359 (release 2003, updated 2014); the eBook does not name the edition it follows; chapters II, VII and XIII",
+      "retrieved": "2026-10-16"
+    },
+    "bagehot1874": {
+      "url": "https://archive.org/download/lombardstreet00bageguat/lombardstreet00bageguat_djvu.txt",
+      "format": "txt",
+      "sha256": "93df7146b2485a428db828244947548310e4fc1275694992f55b3b706fe87a75",
+      "version": "W. Bagehot, Lombard Street: A Description of the Money Market (New York: Scribner, Armstrong & Co., 1874), archive.org item lombardstreet00bageguat (a Google scan); OCR text; the second witness for the rule of chapter VII and the remedy of chapter II",
+      "retrieved": "2026-10-16"
+    },
+    "andreades1909": {
+      "url": "https://archive.org/download/historyofbankofe00andruoft/historyofbankofe00andruoft_djvu.txt",
+      "format": "txt",
+      "sha256": "191c27dfe553450d589985e8548504b17c603f9999e29fa2515fb84db641dc54",
+      "version": "A. Andréadès, History of the Bank of England, tr. C. Meredith (London: P. S. King & Son, 1909); OCR text of the University of Toronto copy on archive.org",
+      "retrieved": "2026-10-13"
+    },
+    "bordo1984": {
+      "url": "https://www.nber.org/system/files/chapters/c11126/c11126.pdf",
+      "format": "pdf",
+      "sha256": "3e1417d56db23361e9902c3c21c56f815f0aff1d6aab60b889af1f2bba8786c4",
+      "version": "M. D. Bordo, 'The Gold Standard: The Traditional Approach', in M. D. Bordo and A. J. Schwartz (eds.), A Retrospective on the Classical Gold Standard, 1821-1931 (Chicago: University of Chicago Press for the NBER, 1984), pp. 23-120, with the discussion (pp. 117-120); NBER chapter PDF c11126 of the out-of-print volume; pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "dutton1984": {
+      "url": "https://www.nber.org/system/files/chapters/c11128/c11128.pdf",
+      "format": "pdf",
+      "sha256": "2ae9d2d720b6f7fae63c24f8a64d019d67d43f734a73689a24cdbba9e0b35721",
+      "version": "J. Dutton, 'The Bank of England and the Rules of the Game under the International Gold Standard: New Evidence', in Bordo and Schwartz (eds.), 1984, pp. 173-202, with the comment by D. E. Moggridge (pp. 195-199); NBER chapter PDF c11128; pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "mcgouldrick1984": {
+      "url": "https://www.nber.org/system/files/chapters/c11132/c11132.pdf",
+      "format": "pdf",
+      "sha256": "f2aeae8c9c3e324eea8e7200d95ecfd35f927f278fcbc3f3207cf0b98dcdab49",
+      "version": "P. McGouldrick, 'Operations of the German Central Bank and the Rules of the Game, 1879-1913', in Bordo and Schwartz (eds.), 1984, pp. 311-360; NBER chapter PDF c11132; pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "dornbusch1984": {
+      "url": "https://www.nber.org/system/files/chapters/c11130/c11130.pdf",
+      "format": "pdf",
+      "sha256": "bb254c5cfc2aaf10d04dff700c5e45b77fc55c941ede784558906ce7a73ea94d",
+      "version": "R. Dornbusch and J. A. Frenkel, 'The Gold Standard and the Bank of England in the Crisis of 1847', in Bordo and Schwartz (eds.), 1984, pp. 233-276; NBER chapter PDF c11130; only the epigraph (Peel, 1847) is quoted",
+      "retrieved": "2026-10-16"
+    },
+    "nber1984fm": {
+      "url": "https://www.nber.org/system/files/chapters/c11124/c11124.pdf",
+      "format": "pdf",
+      "sha256": "dad63ab86ac5bc7eca72e084893f21280b35f7f610ed69ce79f5437369605eef",
+      "version": "Bordo and Schwartz (eds.), A Retrospective on the Classical Gold Standard, 1821-1931 (1984): front matter, preface and table of contents, NBER PDF c11124 (the copyright page of the volume)",
+      "retrieved": "2026-10-16"
+    },
+    "reichsbank1910": {
+      "url": "https://archive.org/download/cu31924032490975/cu31924032490975_djvu.txt",
+      "format": "txt",
+      "sha256": "aa8b69f73b77450854ab280d28a7b66898dfe4c7cea193c5d5d5d8c96911da81",
+      "version": "The Reichsbank, 1876-1900, translated from the German by L. Lieder (Washington: Government Printing Office, 1910; National Monetary Commission, Senate Document 408, 61st Congress, 2nd session), Cornell University Library copy, archive.org item cu31924032490975; OCR text; pages from the page numbers of the OCR",
+      "retrieved": "2026-10-16"
+    },
+    "sprague1910": {
+      "url": "https://archive.org/download/historyofcrisesu00spra/historyofcrisesu00spra_djvu.txt",
+      "format": "txt",
+      "sha256": "b7c4390857641ee698d4e353ac8300b503fb47adbbf4d01918a09515ee58b755",
+      "version": "O. M. W. Sprague, History of Crises under the National Banking System (Washington: Government Printing Office, 1910; National Monetary Commission, Senate Document 538, 61st Congress, 2nd session), archive.org item historyofcrisesu00spra; OCR text; ch. I (1873, p. 46) and ch. V (1907, pp. 251-253, 271-279); pages from the page numbers of the OCR",
+      "retrieved": "2026-10-16"
+    },
+    "fra1913": {
+      "url": "https://en.wikisource.org/wiki/Federal_Reserve_Act",
+      "format": "html",
+      "sha256": "7ece07442771d1161e8a5380422a766504d547d70322e3cfab24fee56d936181",
+      "version": "Federal Reserve Act, Public Law 63-43, 38 Stat. 251, approved 23 December 1913, the original text as enacted, transcribed on Wikisource (an edict of government, in the public domain); the transcription has a few typing errors ('furrish', 'snail'), which the quotations avoid; the page is generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "huntington1910": {
+      "url": "https://archive.org/download/lawsofunitedstat0012athu/lawsofunitedstat0012athu_djvu.txt",
+      "format": "txt",
+      "sha256": "c2d9ae927146f85a9b824f0ae2c0a9b91c7f8a6c4edd50cd78a2079f26adacd6",
+      "version": "A. T. Huntington and R. J. Mawhinney (compilers), Laws of the United States concerning Money, Banking, and Loans, 1778-1909 (Washington: Government Printing Office, 1910; National Monetary Commission, Senate Document 580, 61st Congress, 2nd session), Harvard College Library copy, archive.org item lawsofunitedstat0012athu; OCR text; the Act of March 14, 1900 (31 Stat. L., ch. 41), which the volume prints several times; the quotations come from the copy on pp. 610-611, whose OCR is clean",
+      "retrieved": "2026-10-16"
+    },
+    "bryan1896": {
+      "url": "https://archive.org/download/firstbattlestory00bryauoft/firstbattlestory00bryauoft_djvu.txt",
+      "format": "txt",
+      "sha256": "81c5bc19ce10a8b642a2b13b3cf3680c5dd6ab0fa1f8391a8bcfded986c87d0e",
+      "version": "W. J. Bryan, The First Battle: A Story of the Campaign of 1896 (Chicago: W. B. Conkey Company, 1896), University of Toronto copy, archive.org item firstbattlestory00bryauoft; OCR text; ch. XI (the Chicago convention and the speech, pp. 199-206), ch. XXVIII (the Democratic platform) and ch. L (Bryan's analysis of the vote)",
+      "retrieved": "2026-10-16"
+    },
+    "ws_bryan": {
+      "url": "https://en.wikisource.org/wiki/Author:William_Jennings_Bryan",
+      "format": "html",
+      "sha256": "2945acaea20ddd31d8c7df9cd19850bcd380c1ccb95ee72a3b388e807bd97bb0",
+      "version": "Wikisource, author page 'William Jennings Bryan' (gives his years); generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "ws_mckinley": {
+      "url": "https://en.wikisource.org/wiki/Author:William_McKinley",
+      "format": "html",
+      "sha256": "2a8b929e1353ae2e4a6f9618978a15e94c4c58e2eaf08e4d550a68ce2adf6c00",
+      "version": "Wikisource, author page 'William McKinley Jr.' (gives his years and presidency); generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "menger1892": {
+      "url": "https://archive.org/download/sim_economic-journal_march-december-1892_2_5-8/sim_economic-journal_march-december-1892_2_5-8_djvu.txt",
+      "format": "txt",
+      "sha256": "b40c83341ebd3da7a4742e67e6b4559b22d978dc15137e511d6f242c511e07f5",
+      "version": "C. Menger, 'On the Origin of Money', translated by C. A. Foley, The Economic Journal 2(6), June 1892, pp. 239-255; Internet Archive text of vol. 2, issues 5-8",
+      "retrieved": "2026-10-14"
+    },
+    "knapp1924": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.224223/2015.224223.The-State_djvu.txt",
+      "format": "txt",
+      "sha256": "dc07f62c0a440c07fe123e7da6bd26631c49e9b1c8be1c7af2a8d54a0f2272ec",
+      "version": "G. F. Knapp, The State Theory of Money, abridged edition translated by H. M. Lucas and J. Bonar from the 4th German edition (1923), London: Macmillan for the Royal Economic Society, 1924; Digital Library of India copy on archive.org (item in.ernet.dli.2015.224223), OCR text",
+      "retrieved": "2026-10-14"
+    },
+    "fisher1896": {
+      "url": "https://archive.org/download/appreciationinte00fish/appreciationinte00fish_djvu.txt",
+      "format": "txt",
+      "sha256": "4b61db096a98b59308c3d2608bf3f0003af7fae4e598a9b1cbc2a70c24038e7b",
+      "version": "Irving Fisher, Appreciation and Interest (Publications of the American Economic Association, vol. XI, no. 4, August 1896); Library of Congress copy digitized by the Internet Archive (item appreciationinte00fish), OCR text",
+      "retrieved": "2026-10-14"
+    },
+    "rockoff2009": {
+      "url": "https://www.nber.org/system/files/working_papers/w15594/w15594.pdf",
+      "format": "pdf",
+      "sha256": "440dcb420d34ec0cbc705c8982b50cbc0925f53839d46f2b2fb87fee88b368a9",
+      "version": "H. Rockoff, 'Upon Daedalian Wings of Paper Money: Adam Smith and the Crisis of 1772', NBER Working Paper 15594, December 2009; the printed page numbers are those of the PDF",
+      "retrieved": "2026-10-14"
+    },
+    "tacitus_gordon": {
+      "url": "https://www.gutenberg.org/cache/epub/7959/pg7959.txt",
+      "format": "txt",
+      "sha256": "d702716cba1deefe61e5845ca8bd78bd1c7fb50e5f2a37d0bc6bb7aef4892e39",
+      "version": "The Reign of Tiberius, Out of the First Six Annals of Tacitus, translated by Thomas Gordon (Project Gutenberg eBook 7959); Annals VI.16-17, with Gordon's footnotes",
+      "retrieved": "2026-10-14"
+    }
+  }
+}

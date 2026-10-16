@@ -1,0 +1,14 @@
+{
+  "title": "Price indices of the United Kingdom and the United States, annual, 1821-1913",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'A47. Wages and prices'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; uk_cpi_2015_100: 'Consumer Price Index (CPI) - preferred measure', GB/UK, spliced index 2015 = 100 (1770-1882 Feinstein 1998, 1882-1914 Feinstein, as the sheet's source line gives); uk_wholesale_2010_100: 'Spliced Wholesale/producer price index', GB/UK, 2010 = 100; us_cpi_1982_84_100: 'US CPI', Williamson (2017a), 1982-1984 = 100",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series. The US CPI is the workbook's copy of S. H. Williamson's series (MeasuringWorth), cited by the workbook as Williamson (2017a).",
+  "used_in": [
+    23
+  ],
+  "fetch": "data/fetch/boe_millennium_gb23.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-22). The chapter uses the indices relative to their own 1873 level (1873 = 100).",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet A47"
+}

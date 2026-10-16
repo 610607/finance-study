@@ -1,0 +1,14 @@
+{
+  "title": "Bank Rate on 1 January 1844 and on each day it changed, 1844-1914",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'D1. Official Interest Rates' (Bank Rate 1833-1972 ...), daily",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "date (ISO 8601): 1 January 1844 and each day on which the rate differs from the previous row of the sheet; bank_rate: the new rate, per cent a year",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    23
+  ],
+  "fetch": "data/fetch/boe_millennium_gb23.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-22). The 1856-1858 rows agree with boe_millennium_bank_rate_1856_1858 (Chapter 22). The sheet dates the rise to 9 per cent 11 May 1866 and to 10 per cent 12 May, and the fall to 8 per cent 16 August 1866; Andréadès (1909, p. 360) says 10 per cent from 11 May to 6 August (goldstandard_facts rows an_10pct, an_aug6). The chapter follows the Bank's table.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet D1"
+}
