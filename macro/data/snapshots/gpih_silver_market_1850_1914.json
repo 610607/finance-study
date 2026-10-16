@@ -1,0 +1,14 @@
+{
+  "title": "London market price of silver, 1850-1914",
+  "source": "Global Price and Income History Group (UC Davis): 'Silver_value_of_1273-1977.xls' (P. Lindert, 2006, from R. W. Jastram, Silver: The Restless Metal, 1981, pp. 164-188)",
+  "url": "https://gpih.ucdavis.edu/files/Silver_value_of_1273-1977.xls",
+  "series": "year; gbp_per_oz_standard_market: '£ market price per troy ounce' of standard silver (0.925 fine), column 2; gbp_per_oz_pure_market: '£ market price per troy ounce' of pure silver, column 5; pence_per_oz_standard: the first times 240 (pence per pound), as the sources of the time quoted the price",
+  "retrieved": "2026-10-16",
+  "license": "GPIH publishes its files for research use with attribution to the compilers; a subset (65 years, 2 columns) is stored here for teaching.",
+  "used_in": [
+    24
+  ],
+  "fetch": "data/fetch/gpih_silver24.py",
+  "notes": "File SHA-256 60b70038e322d1256134a5980b27c569746315a3d767bd21945609141f97e9ae (the copy used for Chapter 13, whose snapshot gpih_silver_pound takes the mint price from the same file). The pure price is the standard price divided by 0.925. The Herschell report gives 59¼d for 1873 and 51¼d for 1879 (periphery_facts row hr_silver); the series has 59.256d and 51.24d; Brunyate's 'nearly 40d.' for 1892-93 (row ky_silver40) compares with 39.8d for 1892 and 35.6d for 1893.",
+  "citation": "Jastram (1981) via GPIH"
+}

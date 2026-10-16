@@ -1,0 +1,14 @@
+{
+  "title": "The United Kingdom's current account, net external assets, nominal GDP and the yield on consols, annual, 1850-1913",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'A46. Net external assets', 'A9. Nominal GDP (A)' and 'A31. Interest rates & asset ps '",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; ca_surplus: A46 column 2, 'Current account deficit including non-monetary bullion flows', £ m (Mitchell 1988 for 1816-1920, from Imlah 1958), positive in years of surplus, i.e. of net lending abroad; net_external_assets: A46 column 3, 'UK Net external assets', £ m, Imlah's estimate for 1815 followed by cumulation of the current account; gdp_market_prices: A9, nominal UK GDP, headline measure at market prices, £ m; consol_yield: A31, 'Yield on perpetual annuities/consols', per cent",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    24
+  ],
+  "fetch": "data/fetch/boe_millennium_gb24.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-23). The heading of A46 says 'deficit', but the values are positive while Britain lent abroad and net external assets grow by exactly them each year (the fetch script checks this), so the snapshot names the column the surplus. The chapter uses the surplus and the net external assets as shares of nominal GDP.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets A46 (Imlah 1958; Mitchell 1988), A9 and A31"
+}

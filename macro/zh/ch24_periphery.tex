@@ -1,15 +1,412 @@
-% 第 24 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 24 章”，写法见 docs/STYLE.md。
+% 第 24 章。数字：checks/check_ch24.py；引文：data/snapshots/periphery_facts.csv（逐字核对见
+% data/fetch/verify_web_quotes.py 与 data/fetch/verify_quotes.py）；数据：gpih_silver_market_1850_1914
+% （data/fetch/gpih_silver24.py）、boe_millennium_external_1850_1913、boe_millennium_bank_rate_1888_1892
+% （data/fetch/boe_millennium_gb24.py）；图：figsrc/fig_ch24.py。
+% 转述快照行的段落，段末注明“% 据: 行号”（STYLE.md §5）。
 \chapter{第一次全球化中的边缘}\label{ch:periphery}
 
 \begin{chapterguide}
 \guidequestion{殖民地和白银国家怎样经历金本位时代？}
 \begin{guidegoals}
-\item 描述 1870—1914 年资本流动、贸易与移民的规模；
-\item 分析印度“财富外流”论（Naoroji 1901）的论证与争议；
-\item 解释清代的白银外流与鸦片贸易，以及明治日本的货币现代化（1882 年设日本银行，1897 年采用金本位）；
+\item 描述 1870—1914 年资本流动的规模与金本位的扩散，解释白银跌价怎样传到银本位国家的汇率；
+\item 解释印度 1893 年关闭铸币厂与金汇兑本位（Keynes 1913），分析印度“财富外流”论（Naoroji 1901）的论证与争议；
+\item 解释 1850 年以后的鸦片、白银与清朝的赔款，以及明治日本的货币现代化（1882 年设日本银行，1897 年采用金本位）；
 \item 用美国自由银运动与 1890 年巴林危机，说明金本位对债务人与边缘国家的约束。
 \end{guidegoals}
 \guideprereq{\chref{ch:goldstandard}\enspace\nameref{ch:goldstandard}；\chref{ch:external}\enspace\nameref{ch:external}}
 \end{chapterguide}
 
-\chapterstub
+1893 年 6 月 26 日是个星期一。这一天，首相格拉德斯通（William Ewart Gladstone，1809—1898）在下院宣读了印度总督当天发来的电报\cite{hansard1893,hansardpeople}。总督的参事会通过了一项立即生效的法令，执行赫歇尔勋爵（Farrer Herschell，1837—1899）的委员会建议的方案\cite{hansard1893,hansardpeople24}。法令关闭印度的铸币厂，从通过之日起不再自由铸造白银\cite{hansard1893}。自由铸造，就是谁都可以把银块送进铸币厂，铸成卢比。卢比是印度的银币。今后铸币厂只按定好的比价，用卢比兑换黄金\cite{hansard1893}。
+% 据: hc_ref, hc_gladstone, hc_telegram, hc_act, hc_close, hc_16d, hp_gladstone, hp_gladstone_pm, hp_herschell, hp_herschell_baron
+
+前财政大臣戈申（George Goschen，1831—1907）起身发问\cite{hansard1893,hansardpeople}。银价要是再跌，卢比就会与它所含白银本身的价值不同\cite{hansard1893}。他问：“他实际上是不是要让整个印度帝国都用代用币？”\cite{hansard1893}代用币是面值高于所含金属价值的铸币。二十七年前，格拉德斯通以财政大臣的身份，在同一个下院报告过伦敦的恐慌（\chref{ch:goldstandard}）。那一次，英格兰银行把贴现率提到 10\%，等着黄金回来。印度手里没有这根杠杆，它的钱是白银，而银价已经跌了二十年。殖民地和白银国家怎样经历金本位时代？
+% 据: hc_goschen, hc_inherent, hc_token, hp_goschen, hp_goschen_ce, hp_gladstone_cx
+
+\section{当时的世界}\label{sec:periph-world}
+
+1870 年以后，资本大规模地流出欧洲。对外资产是一国居民持有的对外国的债权与股权。Obstfeld 与 Taylor 估计，1870 年世界的对外资产只有世界 GDP 的 7\%，1900—1914 年升到将近 20\%\cite{obstfeld2002}。英国在高峰时占全球对外投资的将近 80\%\cite{obstfeld2002}。他们说，英国人被称作“世界的银行家”，是名副其实的\cite{obstfeld2002}。
+% 据: ot_7, ot_80, ot_bankers
+
+英国的经常账户记下了钱是怎样流出去的。经常账户顺差，意味着一国在这一年对外净放款，对外净资产随之增加（式~\eqref{eq:external-bop}）。按英格兰银行的《千年宏观数据》，1850—1913 年英国每年都是顺差\cite{boe2017}。顺差占 GDP 的比例时高时低，1872 年是 8.1\%，1877 年降到 0.7\%\cite{boe2017}。1890 年又升到 7.1\%，1902 年降到 0.8\%，1913 年是 9.7\%\cite{boe2017}。累积起来，英国的对外净资产从 1870 年相当于 GDP 的 70\%，增加到 1913 年的 170\%\cite{boe2017}。
+
+\fig{periph_world}{第一次全球化里的资本与金本位。(a) 看顺差的两个高峰落在哪里：英国的经常账户顺差占 GDP 的比例，1850—1913 年；浅色底大致标出 Reinhart 与 Rogoff 说的两段主权违约集中期，19 世纪 60 年代末到 70 年代中、80 年代中到 90 年代初，起止年份按他们的文字取整。(b) 看金本位怎样在 19 世纪 70 年代与 90 年代两次扩散（浅色底）：Meissner 表 1 里已经开始只兑换黄金的国家数，阿根廷与智利按第一次的年份计，表里没有英国；到 1913 年还有 13 个国家没有采用。数据：英格兰银行《千年宏观数据》表 A46 与 A9；Reinhart 与 Rogoff（2008）；Meissner（2002）表 1。}{fig:periph_world}
+
+钱流出去的节奏，与边缘国家违约的节奏连在一起。主权违约就是一国政府不按约还债。Reinhart 与 Rogoff 发现，19 世纪有两段违约集中的时期，一段从 60 年代末到 70 年代中，一段从 80 年代中到 90 年代初\cite{reinhart2008tid}。他们把金融中心英国与美国的经常账户与新的违约数画在一起，说两者的高峰之间有“明显的视觉相关”\cite{reinhart2008tid}。资本流动骤减时，就有更多的国家违约\cite{reinhart2008tid}。英国顺差的两个高峰，1872 年与 1890 年，正落在这两段里（\figref{fig:periph_world}）。
+% 据: rr_cluster, rr_center, rr_corr, rr_sensitive
+
+这一时期也是白银跌价的开始。1892 年 9 月 1 日，卡拉奇商会向赫歇尔委员会递交请愿书，回顾了这件事\cite{herschell1893}。卡拉奇是印度西北的港口。请愿书说，1872 年德国废除了白银的货币地位，法国为了挡住德国的白银，限制了银币的铸造\cite{herschell1893}。吉芬（Robert Giffen，生卒年未详）在 1892 年 12 月 3 日向委员会作证说，美国在 1873 年与 1874 年决定正式改用单一的金本位\cite{herschell1893}。
+% 据: hr_karachi_title, hr_karachi, hr_karachi_germany, hr_day8, hr_giffen_who, hr_giffen
+
+银价从此往下走。按 Lindert 的数据，1850—1872 年，一盎司标准银在伦敦一直值 60 到 62 便士\cite{lindert2006}。盎司是称金银用的重量单位，标准银含纯银 92.5\%。便士是英国的辅币单位，十二便士合一先令，二十先令合一英镑。卡拉奇的请愿书说，以黄金计的银价已经从 60 便士跌到 38 到 39 便士\cite{herschell1893}。跌幅在 35\% 以上，卢比的汇率也从 24 便士跌到 14.65 便士\cite{herschell1893}。24 便士就是两先令，瑙罗吉后来也说，旧的比价是一卢比合两先令\cite{naoroji1901}。这些是请愿者的说法，伦敦的市价 1892 年是 39.8 便士\cite{lindert2006}。
+% 据: hr_karachi_fall, nr_shillings
+
+银价下跌的同时，金本位扩散到了世界各地。Meissner 的表 1 记下了各国开始只能兑换黄金的年份\cite{meissner2002}。德国是 1872 年，瑞典、丹麦与挪威是 1873 年，荷兰是 1875 年\cite{meissner2002}。法国、比利时与瑞士是 1878 年，美国是 1879 年\cite{meissner2002}。日本与俄国是 1897 年，印度是 1899 年，墨西哥是 1905 年\cite{meissner2002}。到 1913 年还有 13 个国家没有采用，其中有中国、西班牙与奥匈帝国\cite{meissner2002}。
+% 据: me_note, me_germany, me_sweden, me_denmark, me_norway, me_netherlands, me_france, me_belgium, me_switzerland, me_unitedstates, me_japan, me_russia, me_india, me_mexico, me_dash, me_china, me_spain, me_austriahungary
+
+谁先谁后，有迹可循。Meissner 发现，与金本位国家的贸易占 GDP 的比重越大，一国采用金本位越早\cite{meissner2002}。公债负担重的国家，转得也晚\cite{meissner2002}。
+% 据: me_trade, me_debt
+
+\section{白银跌价怎样传到汇率上}\label{sec:periph-silver}
+
+卢比的价值拴在白银上。凯恩斯（John Maynard Keynes，1883—1946）在《印度的通货与财政》（1913）里说，一枚卢比含 $\tfrac38$ 盎司白银，成色是十二分之十一\cite{keynes1913,wikisource24}。他说，到 1893 年为止，印度的通货以自由铸造的白银为基础，卢比的黄金价值随银块的黄金价值波动\cite{keynes1913}。谁手里有银块，都可以送进铸币厂换成卢比，所以一枚卢比就值它所含的白银。
+% 据: ws_keynes, ky_contains, ky_until
+
+这可以写成一个式子。一枚卢比所含的纯银是 $\tfrac38\times\tfrac{11}{12}=\tfrac{11}{32}$ 盎司。伦敦市价是标准银的价格，所以一枚卢比的白银折合 $s=\tfrac{11}{32}/0.925$ 盎司标准银。设伦敦一盎司标准银值 $P$ 便士，卢比的白银价值就是 $sP$ 便士。汇率按本书的方向写作一英镑合多少卢比，记作 $e$（\secref{sec:external-rates}）。设一卢比合 $x$ 便士，一英镑是 240 便士，于是
+\begin{keyeq}
+x\approx s\,P,\qquad s=\frac{11/32}{0.925}\approx0.372;\qquad e=\frac{240}{x},\qquad \frac{\Delta x}{x}\approx\frac{\Delta P}{P}.\label{eq:periph-silver}
+\end{keyeq}
+自由铸造时，汇率 $x$ 与银值 $sP$ 只能相差把白银运到印度、铸成卢比的费用，道理与黄金输送点相同（式~\eqref{eq:bullion-goldpoint}）。银价跌一成，卢比的英镑价值也跌一成，$e$ 就涨一成多。
+
+数据大致合乎这个式子。按 Lindert 的银价，1873 年卢比的白银价值是 22.0 便士，1892 年是 14.8 便士\cite{lindert2006}。赫歇尔委员会的报告附有一张汇率表，按财政年度列出伦敦对印度汇票的平均汇率\cite{herschell1893}。1873 年度是 22.35 便士，1892 年度是 14.98 便士\cite{herschell1893}。两者都比银值略高，分别高 1.5\% 与 1.2\%。报告里的银价，1873 年是 $59\tfrac14$ 便士，1879 年是 $51\tfrac14$ 便士，与 Lindert 的数据一致\cite{herschell1893,lindert2006}（\figref{fig:periph_silver}）。
+% 据: hr_heading, hr_x1873, hr_x1892, hr_silver
+
+\fig{periph_silver}{白银跌价与卢比。(a) 看 1873 年以后银价怎样一路往下走：伦敦一盎司标准银的市价，1850—1914 年，竖线标出 1873 年与印度关闭铸币厂的 1893 年。(b) 看汇率怎样先跟着银值走，1898 年以后又离开它：实线是按式~\eqref{eq:periph-silver} 算出的卢比白银价值，圆点是赫歇尔委员会表里伦敦对印度汇票的平均汇率（财政年度），虚线是 1898 年起稳定下来的 16 便士。数据：Lindert（2006，GPIH，据 Jastram 1981）；赫歇尔委员会报告（1893）；凯恩斯（1913）。}{fig:periph_silver}
+
+卢比跌价，先扰乱的是印度政府的财政。凯恩斯说，政府每年要在英国用英镑付一大笔钱，所以公共财政被严重扰乱\cite{keynes1913}。这笔钱包括债务的利息、退休金、付给陆军部的款项与政府采购的物资，每年 1,900 万或 2,000 万英镑\cite{keynes1913}。其中每年必须汇往英国的，是 1,500 万到 1,800 万英镑\cite{keynes1913}。税收是卢比，支出是英镑，卢比跌一成，同样的英镑就要多花一成多的卢比。
+% 据: ky_finance, ky_home, ky_remit
+
+\begin{example}{卢比跌价与英镑汇款}\label{ex:periph-rupee}
+（1）1898 年伦敦的银价是 26.93 便士。用式~\eqref{eq:periph-silver} 求卢比的白银价值。（2）按赫歇尔委员会的汇率表，1873 年度一卢比合 22.35 便士，1892 年度合 14.98 便士。两年的 $e$ 各是多少？（3）设印度政府每年要汇往英国 1,600 万英镑，这是教学用的假设，取凯恩斯说的 1,500 万到 1,800 万英镑之间。按两年的汇率，各要多少卢比？（4）1898 年以后，卢比稳定在 16 便士。它比自己所含的白银贵多少？
+\solution （1）$0.372\times26.93\approx10.0$ 便士。（2）$240/22.35=10.74$，$240/14.98=16.02$，一英镑从 10.74 卢比涨到 16.02 卢比。（3）$1{,}600\text{ 万}\times10.74\approx1.72$ 亿卢比，$1{,}600\text{ 万}\times16.02\approx2.56$ 亿卢比，多了 49\%。同样的英镑，要多收将近一半的税。（4）$16/10.0-1\approx60\%$。卢比的价值有将近四成不是白银给的，戈申说的代用币成了事实。
+\end{example}
+
+美国的白银政治也传到了印度。\secref{sec:gold-state}讲过 1896 年的复本位之争，美国的债务人要用白银抬高物价。在白银国家，美国买不买白银，直接改变它们的汇率。1890 年的谢尔曼法把美国每年收购的白银提高到 5,400 万盎司\cite{herschell1893}。按委员会的附录，1890 年世界的白银产量约为 1.48 亿盎司\cite{herschell1893}。美国一家就要买下三分之一以上。
+% 据: hr_sherman, hr_world1890, hr_world
+
+伦敦的银价从 1889 年的 42.7 便士回升到 1890 年的 47.4 便士\cite{lindert2006}。卢比的汇率随之从 1888 年度的 16.4 便士升到 1890 年度的 18.1 便士\cite{herschell1893}。收购没有止住下跌，1892 年银价跌到 39.8 便士，汇率也跌回 15 便士左右\cite{lindert2006,herschell1893}。印度的汇率先随美国的收购涨，又随它的失败跌，这都不是印度政府能左右的。
+% 据: hr_x1888, hr_x1890, hr_x1892
+
+\begin{compare}{金本位与银本位：银价下跌时}{金本位国（英国）}{银本位国（1893 年以前的印度、中国）}
+\cmprow{货币拴在什么上}{一定重量的黄金（\secref{sec:gold-world}）}{一定重量的白银，一枚卢比含 $\tfrac{11}{32}$ 盎司纯银\cite{keynes1913}}
+\cmprow{对另一方的汇率}{对白银国家的货币升值}{本币对英镑贬值，$e=240/x$ 上升（式~\eqref{eq:periph-silver}）}
+\cmprow{以黄金计的付款}{不受影响}{要用更多的本币，印度的财政被严重扰乱\cite{keynes1913}}
+\cmprow{出口}{要与变便宜的白银国家商品竞争}{据说跌价的卢比等于给出口商发补贴\cite{keynes1913}}
+\cmprow{对金本位国的贸易}{从白银国家的进口变便宜}{涩泽荣一说，日本 1878—1893 年对金本位国家的出口增加了 260\% 以上，进口只增加了 70\%\cite{mitchener2009}}
+\cmprow{后来的选择}{留在金本位上}{印度 1893 年关闭铸币厂，日本 1897 年改用黄金，中国留在白银上\cite{keynes1913,meissner2002}}
+\cmpsum{银价下跌，对白银国家就是对金本位货币的一次贬值。欠金债、要汇英镑的人吃亏，向金本位国家出口的人得利，谁赢谁输，要看他的债务与生意用哪一种金属计价。}
+\end{compare}
+
+\section{印度：从关闭铸币厂到金汇兑本位}\label{sec:periph-india}
+
+印度每年汇往英国的钱，当时叫作“本国费用”（Home Charges），这里的本国指英国\cite{maddison1971}。Maddison（1971）说，这是殖民政府向英国的官方转移，主要是债务的利息、退休金、印度事务部在英国的开支，以及军需品与铁路设备的采购\cite{maddison1971}。凯恩斯给过 1911—1912 年度的细目。退休金与休假津贴约 500 万英镑，债务约 1,100 万英镑，军费约 225 万英镑\cite{keynes1913}。
+% 据: md_homecharges, md_items, ky_1911
+
+钱怎样从印度到伦敦？印度事务大臣在伦敦出售参事会汇票（Council Bills），每个星期三上午在英格兰银行投标\cite{keynes1913}。买汇票的人在伦敦付英镑，在印度凭汇票向政府的国库领卢比。买主主要是银行\cite{keynes1913}。凯恩斯说，印度政府因此是外汇的最大交易者之一\cite{keynes1913}。Maddison 说，印度的商品与金银贸易一直是顺差\cite{maddison1971}。顺差换来的英镑，正好用来付伦敦的本国费用。
+% 据: ky_wednesday, ky_ceiling, ky_dealer, md_positive
+
+\subsubsection{1893 年}
+关闭铸币厂以前，赫歇尔委员会在 1892 年底听取了证词。11 月 26 日作证的是汇丰银行的经理杰克逊（Thomas Jackson，生卒年未详）\cite{herschell1893}。他说，中国的通货是白银，北方用两及其十进制的辅币，南方用墨西哥银元\cite{herschell1893}。委员问他，印度的措施使白银对黄金跌价，会不会改善中国的贸易？他答，最终肯定会，但在此期间会使它瘫痪\cite{herschell1893}。
+% 据: hr_day7, hr_jackson, hr_mexican, hr_paralyse
+
+委员会最后的建议很谨慎。报告第 155 段说，委员会不能劝国务大臣否决印度政府关闭铸币厂、采用金本位的提议\cite{herschell1893}。第 156 段说，关闭铸币厂的同时应当宣布，铸币厂虽然不再对公众开放，政府仍会用它，按届时确定的比价用卢比兑换黄金\cite{herschell1893}。比价“比如 1 先令 4 便士”\cite{herschell1893}。1893 年 6 月 26 日的通告照此办理，比价就是 16 便士\cite{fowler1899}。
+% 据: hr_155, hr_156, hr_ratio, fw_notif
+
+1 先令 4 便士就是 16 便士。照这个比价，一英镑合 15 卢比。格拉德斯通那天读的电报说，铸币厂按每卢比 16 便士，用卢比兑换黄金与金镑，各地国库也按同一比价收金镑与半金镑，用来缴纳政府的款项\cite{hansard1893}。金镑（sovereign）是面值一英镑的英国金币。电报说：“打算在印度实行金本位，但黄金目前不作法偿货币。”\cite{hansard1893}法偿货币是还债时债主不能拒收的钱（\secref{sec:gold-world}）。戈申问，印度人手里那 1 亿英镑的白银，是不是从此不能再拿去铸造\cite{hansard1893}。格拉德斯通说，他只能谨慎而有保留地回答\cite{hansard1893}。
+% 据: hc_16d, hc_dues, hc_intended, hc_100m, hc_legal, hc_caution
+
+方案还没有公布，消息就漏了出去。这是 1898 年委员会里两位委员坎贝尔（Robert Campbell，生卒年未详）与缪尔（John Muir，生卒年未详）在异议书里的说法\cite{fowler1899}。报告直到 6 月 26 日才公布，内容却几乎一签字就被一群投机者知道了\cite{fowler1899}。6 月 7 日，一家欧洲大陆的报纸还登出了准确的摘要\cite{fowler1899}。5 月 31 日到 6 月 6 日，被买走的参事会汇票达 Rx 378 万，另有 118 万英镑的银块运往印度\cite{fowler1899}。Rx 是印度账目用的单位，一个 Rx 合 10 卢比。他们说，当时人们相信关闭铸币厂会确立 16 便士的汇率\cite{fowler1899}。汇率在 6 月 27 日碰到了这个水平，只有一天，很快就显出涨过了头\cite{fowler1899}。
+% 据: fw_dissent, fw_signed, fw_public, fw_purport, fw_bills, fw_barsilver, fw_believed, fw_27
+
+关闭以后，银价跌得更快。凯恩斯说，1892—1893 年度一盎司白银平均将近 40 便士，第二年跌到 $33\tfrac13$ 便士，再一年约 29 便士\cite{keynes1913}。汇率跌到 16 便士以下很多，国务大臣只好有什么价就按什么价卖他的汇票\cite{keynes1913}。坎贝尔与缪尔说，关闭铸币厂以后的五年里，汇率从来没有真正达到能把黄金吸进通货的水平\cite{fowler1899}。到 1898 年 1 月，汇率才稳定在 16 便士\cite{keynes1913}。汇率稳住的时候，印度的利率很高，孟加拉银行的最低利率 1 月 6 日是 10\%，2 月 24 日升到 12\%\cite{fowler1899}。
+% 据: ky_silver40, ky_unfav, fw_five, ky_1898, fw_bengal
+
+汇率为什么最后还是上去了？坎贝尔与缪尔的解释是供给。铸币厂一关，卢比就成了“垄断的卢比”，早晚会涨到政府选定的任何黄金价格\cite{fowler1899}。他们认为 16 便士定得太高，卢比被大大地抬高了\cite{fowler1899}。他们主张改成 15 便士，即一金镑合 16 卢比，而不是 15 卢比\cite{fowler1899}。委员会的多数没有接受，报告的日期是 1899 年 7 月 7 日\cite{fowler1899}。同年的法令宣布英国金镑在印度是法偿货币，比价仍是 16 便士\cite{keynes1913}。
+% 据: fw_monopoly, fw_appreciated, fw_1s3d, fw_date, ky_dates1899
+
+卢比却始终没有换成金币。凯恩斯说，按法律，卢比是无限法偿的，而且不能兑现\cite{keynes1913}。不能兑现，是说法律没有规定谁必须用黄金赎回卢比。在 1898 年的委员会上，罗斯柴尔德（Alfred de Rothschild，生卒年未详）甚至说，“没有金币的金本位完全不可能”\cite{keynes1913}。凯恩斯说，印度后来采用的金汇兑本位，叫作林赛方案是公道的\cite{keynes1913}。林赛（A. M. Lindsay，生卒年未详）是孟加拉银行的副秘书，1876 年与 1878 年就提出了最初的方案\cite{keynes1913}。
+% 据: ky_inconvertible, ky_alfred, ky_rothschild, ky_lindsay, ky_lindsay_who, ky_lindsay1876
+
+\subsubsection{汇率的上限与下限}
+金汇兑本位的关键，是把汇率管在一个窄带里。凯恩斯 1913 年描述的制度有四条。第一，卢比是无限法偿的，法律上不能兑现\cite{keynes1913}。第二，金镑也是无限法偿的，一金镑合 15 卢比，政府必须按这个比价用卢比兑换金镑\cite{keynes1913}。第三，政府通常也愿意按这个比价用金镑兑换卢比，但有时会暂停\cite{keynes1913}。第四，政府在加尔各答出售在伦敦付英镑的汇票，汇率不低于 $15\tfrac{29}{32}$ 便士\cite{keynes1913}。他说，第四条对维持卢比的英镑价值至关重要\cite{keynes1913}。
+% 据: ky_inconvertible, ky_15, ky_convertible, ky_third, ky_calcutta, ky_fourth
+
+上限靠市场自己守。金镑在印度随时能按 16 便士换成卢比，所以银行买参事会汇票，出价不会超过 16 便士加上把黄金运到印度的费用\cite{keynes1913}。凯恩斯说，这笔费用时高时低，很少超过 $\tfrac18$ 便士\cite{keynes1913}。1904 年，国务大臣通告，愿意按 $16\tfrac18$ 便士无限量出售参事会汇票\cite{keynes1913}。下限要靠政府。1900 年，政府用铸币的利润设立了金本位储备\cite{keynes1913}。1908 年，政府在加尔各答按 $15\tfrac{29}{32}$ 便士出售对伦敦的英镑汇票，用金本位储备的钱兑付\cite{keynes1913}。把黄金从印度运回伦敦，费用大约是 $\tfrac{3}{32}$ 便士\cite{keynes1913}。
+% 据: ky_ceiling, ky_eighth, ky_dates1904, ky_dates1900, ky_dates1908, ky_back
+
+\begin{intuition}[上限谁都能守，下限只有政府能守]
+卢比太贵的时候，谁都可以把金镑运到印度，按 16 便士换成卢比，套利的人自己就把汇率压回来。卢比太贱的时候，要有人拿出黄金或英镑来买卢比。私人手里只有卢比，法律又没有规定谁必须用黄金赎回卢比。这时只有政府能出手，它在伦敦存着黄金与英镑，在加尔各答把它们卖出去。
+\end{intuition}
+
+把这两条写成一个式子。设 $c_{\text{去}}$ 是把黄金运到印度的费用，$c_{\text{回}}$ 是把黄金运回伦敦的费用，都按每卢比多少便士计。于是
+\begin{keyeq}
+16-c_{\text{回}}\ \le\ x\ \le\ 16+c_{\text{去}},\qquad c_{\text{去}}\approx\tfrac18,\qquad c_{\text{回}}\approx\tfrac{3}{32}.\label{eq:periph-band}
+\end{keyeq}
+上限 $16\tfrac18$ 便士就是黄金输送点。下限 $15\tfrac{29}{32}$ 便士在形式上也是一个输送点，可是能用黄金赎回卢比的只有政府，所以要靠政府在加尔各答卖汇票来守（\figref{fig:periph_council}）。国内流通的是卢比，储备放在伦敦，这样的制度叫\textbf{金汇兑本位}。
+
+\fig{periph_council}{金汇兑本位怎样守住汇率带。左边是伦敦，右边是印度。上面一条路是上限：银行可以向印度事务大臣买参事会汇票，也可以把金镑运到印度按 16 便士换成卢比，所以汇票的价格超不过 $16\tfrac18$ 便士。下面一条路是下限：政府在加尔各答卖对伦敦的英镑汇票，用金本位储备在伦敦兑付，汇率就跌不破 $15\tfrac{29}{32}$ 便士。右边的标尺是式~\eqref{eq:periph-band} 的汇率带。据凯恩斯（1913）第一章与第五章绘制的示意图。}{fig:periph_council}
+
+\begin{example}{汇率带里的套利}\label{ex:periph-band}
+（1）一家银行要在印度付 15 万卢比。它可以买参事会汇票，也可以把金镑运去按 16 便士换成卢比，运费按 $\tfrac18$ 便士计。国务大臣开价 $16\tfrac{3}{16}$ 便士时，哪一种便宜？便宜多少？（2）一个商人在加尔各答要把 15 万卢比汇往伦敦。按 $15\tfrac{29}{32}$ 便士的下限，能换多少英镑？按 16 便士呢？（3）1908 年伦敦的银价是 24.38 便士。用式~\eqref{eq:periph-silver} 算卢比的白银价值。这个数还决定卢比的汇率吗？
+\solution （1）运金每卢比 $16\tfrac18$ 便士，15 万卢比要 $150{,}000\times16.125=2{,}418{,}750$ 便士，约 10,078 英镑。汇票要 $150{,}000\times16.1875=2{,}428{,}125$ 便士。运金便宜 9,375 便士，约 39 英镑。所以国务大臣的开价一高于 $16\tfrac18$ 便士，汇票就卖不出去，黄金就流向印度。（2）$150{,}000\times15\tfrac{29}{32}/240\approx9{,}941$ 英镑，按 16 便士是 10,000 英镑。汇款人最多损失约 0.6\%。（3）$0.372\times24.38\approx9.1$ 便士，还不到 16 便士的六成。汇率由式~\eqref{eq:periph-band} 的汇率带决定，银价只说明卢比是一种代用币。
+\end{example}
+
+这个办法很快被别人学了去。1903 年，美国政府在菲律宾实行了一个明言以它为蓝本的制度\cite{keynes1913}。英国的殖民部在海峡殖民地采用了它，又准备推广到西非殖民地\cite{keynes1913}。海峡殖民地是英国在马来半岛的殖民地。凯恩斯说，金汇兑本位已经成了亚洲通行的货币制度\cite{keynes1913}。\chref{ch:africa}讲过，西非的贝币是用印度洋的小海贝充当的货币，殖民政府后来用西非镑这样的新货币取代了它。
+% 据: ky_philippines, ky_westafrica, ky_asia
+
+凯恩斯把各国排成一个序列。一端是英国与法国，它们是短期借贷市场上的债权国\cite{keynes1913}。其次是俄国与奥匈帝国，富有而强大，有巨大的黄金储备，却是债务国，短期借贷要依赖别人\cite{keynes1913}。他说，把一部分准备存在国际货币市场上，是一切没有达到金融上的高度优势、自己不是国际银行家的国家的办法，不只是二流或穷国的权宜之计\cite{keynes1913}。1912 年，日本政府与日本银行在欧洲与美国存着约 3,700 万英镑的黄金资金\cite{keynes1913}。凯恩斯认为，日本应当公正地归入金汇兑本位\cite{keynes1913}。
+% 据: ky_creditor, ky_russia, ky_bankers, ky_abroad, ky_japan37, ky_japan_class
+
+\begin{compare}{中心的金本位与边缘的金本位}{中心（英国）}{边缘（印度、日本、阿根廷）}
+\cmprow{流通的货币}{金币与可以兑现的银行券（\secref{sec:gold-1844}）}{印度流通卢比，不能兑现，一金镑合 15 卢比\cite{keynes1913}}
+\cmprow{储备放在哪里}{英格兰银行的地窖}{伦敦，印度的金本位储备；日本 1912 年在欧美约 3,700 万英镑\cite{keynes1913}}
+\cmprow{汇率的界限}{黄金输送点，由私人套利维持}{上限靠套利，下限靠政府卖汇票，$15\tfrac{29}{32}$ 到 $16\tfrac18$ 便士\cite{keynes1913}}
+\cmprow{黄金流失时}{提高贴现率，把黄金吸回来（\secref{sec:gold-bagehot}）}{动用放在国外的储备\cite{keynes1913}}
+\cmprow{在凯恩斯的序列里}{短期借贷市场上的债权国\cite{keynes1913}}{自己不是国际银行家的国家\cite{keynes1913}}
+\cmprow{危机时}{1890 年英格兰银行联合法兰西银行与俄国的中央银行，组成救助基金\cite{mitchener2007}}{对债务缠身的阿根廷，英格兰银行帮助很少\cite{mitchener2007}}
+\cmpsum{中心的金本位靠利率把黄金吸回来，边缘的金本位靠放在中心的储备。储备放在伦敦，汇率稳住了，边缘国家的储备也就成了对中心的债权。}
+\end{compare}
+
+\subsubsection{瑙罗吉的账}
+印度人自己怎样看这笔账？瑙罗吉（Dadabhai Naoroji，1825—1917）在 1892—1895 年当选英国下院议员，代表芬斯伯里中区\cite{hansardpeople24}。他的《印度的贫困与非英国式的统治》1901 年出版，收了他 1876 年在东印度协会孟买分会宣读的文章\cite{naoroji1901}。文章的初稿 1873 年就交给了下院的印度财政特别委员会\cite{naoroji1901}。书的导言说，外国统治通过各种隐蔽的方式，每年从印度“放血”般地抽走近 3,000 万英镑或更多\cite{naoroji1901}。照眼下的情形，外流更接近 4,000 万英镑\cite{naoroji1901}。
+% 据: hp_naoroji, hp_naoroji_mp, nr_1876, nr_1873, nr_bleeding, nr_forty
+
+他的方法是拿正常的国家作比较。他说，正常的国家，出口总能换回等于出口加上利润的进口\cite{naoroji1901}。1858—1870 年，英国的进口比出口多 25\% 以上\cite{naoroji1901}。他把一般的商业利润定为 15\%，说这“肯定是往低里算的”\cite{naoroji1901}。按这个标准，印度 1835—1872 年的出口加上利润，再加上借来的钱，应当换回 14.3 亿英镑的进口\cite{naoroji1901}。实际的进口只有约 9.4 亿英镑\cite{naoroji1901}。他说，余下的约 5 亿英镑被英国留下了，这还不算任何利息\cite{naoroji1901}。其中中国通过鸦片税贡献了约 1.4 亿英镑\cite{naoroji1901}。
+% 据: nr_normal, nr_uk, nr_uk25, nr_mark, nr_exports, nr_loans, nr_imports, nr_500, nr_interest, nr_opium
+
+他的账可以写成一个式子。设 $X$ 为出口，$M$ 为进口，$\Delta L$ 为同期新借的外债，$\pi$ 为正常的利润率。按式~\eqref{eq:external-bop}，一国不积累对外资产时，出口与借款多出进口的部分 $H$，就是付给外国的利息、利润与各种费用。瑙罗吉认为，正常的进口还应当多出利润 $\pi X$，所以他算的外流 $D_{\text N}$ 比 $H$ 多一项：
+\begin{keyeq}
+H=X-M+\Delta L,\qquad D_{\text N}=(1+\pi)X+\Delta L-M=H+\pi X.\label{eq:periph-drain}
+\end{keyeq}
+$H$ 在国际收支表上看得见，$\pi X$ 是他按正常的国家推算出来的。
+
+\begin{example}{瑙罗吉的算术}\label{ex:periph-naoroji}
+瑙罗吉的数字是 1835—1872 年的，单位是百万英镑，$X=1{,}120$，$\pi=15\%$，$\Delta L=50+100$，$M=943$\cite{naoroji1901}。（1）用式~\eqref{eq:periph-drain} 求 $D_{\text N}$。他说应有的进口是 1,430，对不对？（2）求 $H$ 与 $\pi X$。$\pi X$ 占 $D_{\text N}$ 的多少？（3）贸易差额 $X-M$ 平均每年多少？Maddison 表 3-3 的商品与金银贸易差额是，1835—1854 年每年 450 万英镑，1855—1874 年每年 730 万英镑\cite{maddison1971}。两者相比如何？（4）把铁路债的利息当作正常的生意，瑙罗吉算的外流只有约 453\cite{naoroji1901}。他按五年平均列出它的增长，1835—1839 年每年 534.7 万英镑，1870—1872 年每年 2,740 万英镑\cite{naoroji1901}。增长了几倍？
+\solution （1）$1.15\times1{,}120=1{,}288$，$1{,}288+150-943=495$，约 5 亿英镑，就是他说的“被英国留下”的那一笔。应当的进口是 $1{,}288+150=1{,}438$，他印作 1,430，差 8。（2）$H=1{,}120-943+150=327$，$\pi X=168$，占 $168/495\approx34\%$。三分之一以上的外流，是按 15\% 的利润推算出来的。（3）$X-M=177$，38 年平均每年约 470 万英镑，与 Maddison 的 450 万与 730 万是同一个数量级。Maddison 的是商品与金银的贸易差额，口径与瑙罗吉的外流不同。（4）$2{,}740/534.7\approx5.1$，增长到原来的 5 倍多。
+\end{example}
+
+外流有多大，争的是三个问题。第一，有没有外流？Maddison 说，这是印度民族主义史家与英国统治的辩护者之间的一大争论\cite{maddison1971}。他认为，大量的资金外流持续了 190 年，这一点无可否认，“唯一真正的争议是统计上的”\cite{maddison1971}。
+% 据: md_controversy, md_190, md_statistical
+
+第二，哪些钱该算作外流？有些钱在一个不是殖民地的经济里也会流出去，比如修铁路借款的利息\cite{maddison1971}。瑙罗吉自己也承认这一点。他说，年轻的、资源未开发的国家向别人借钱，因而增加了自己的财富，澳大利亚、加拿大与美国都是这样\cite{naoroji1901}。Maddison 只把非生产性债务的利息、退休金与休假的开支，以及三分之一的私人利润汇款，算作殖民统治的代价\cite{maddison1971}。
+% 据: md_noncolonial, nr_business, nr_young, md_legit, md_third
+
+第三，有多大？Maddison 估计，1921—1938 年的外流约占印度国民收入的 1.5\%，此前大概略高一些\cite{maddison1971}。这相当于把印度储蓄的四分之一左右转出了国\cite{maddison1971}。他推测，外流在 1880 年代前后最大\cite{maddison1971}。按他的表，商品与金银贸易的顺差从 1835—1854 年的每年 450 万英镑，增加到 1895—1913 年的 1,680 万英镑\cite{maddison1971}。他说，进口按到岸价、出口按离岸价记录，所以顺差被低估了\cite{maddison1971}。到岸价含运费与保险，离岸价不含。
+% 据: md_15, md_quarter, md_1880s, md_t33, md_units, md_t3554, md_t9513, md_cif
+
+两边的证据强弱不同。外流的存在与方向，双方都承认，分歧在口径。瑙罗吉的口径里最弱的一环是 15\% 的利润，它的基准取自英国。英国正是最大的债权国（\secref{sec:periph-world}），它的进口多于出口，有一部分是外国付给它的利息。Maddison 的口径更窄，他自己也说数字偏低，所以他的 1.5\% 不像是高估。
+
+瑙罗吉也反对关闭铸币厂。1898 年 5 月 29 日，他给《泰晤士报》写信，6 月 3 日登了出来\cite{naoroji1901}。他说，在真正的国际贸易里，汇率的涨落本身并不要紧\cite{naoroji1901}。关闭铸币厂、采用金本位，“不能为印度的纳税人省下一个法寻”\cite{naoroji1901}。法寻（farthing）是英国最小的铜币，合四分之一便士。设本国费用是 2,000 万英镑，纳税人就要送来足够买 2,000 万英镑的产品，一盎司也不能少\cite{naoroji1901}。
+% 据: nr_may29, nr_times, nr_exchange, nr_farthing, nr_20m, nr_produce
+
+他还说，把卢比从真实的 11 便士抬到虚假的 16 便士，是“变相多征 45\% 的税”\cite{naoroji1901}。一个农民要交 10 卢比的田赋，就得多卖 45\% 的产品，去换这个虚假的卢比\cite{naoroji1901}。$16/11\approx1.45$，正是他说的 45\%。凯恩斯也承认，1893 年的大变化一定使印度的物价趋于下跌\cite{keynes1913}。政府的账以卢比记，卢比贵了，同样的英镑汇款就省下了卢比。农民的账以产品记，卢比贵了，同样的田赋就要多卖粮食。
+% 据: nr_45, nr_rayat, nr_produce45, ky_prices, ky_finance
+
+\subsubsection{饥荒}
+这一时期印度有两次大饥荒，死亡的规模有官方的调查。1880 年的饥荒委员会报告说，1877 年与 1878 年的饥荒与干旱期间，英国直接管辖的各省共有 1.9 亿人\cite{famine1880}。死亡比正常年份多出约 525 万人\cite{famine1880}。同期出生减少了约 200 万，人口一共减少约 700 万\cite{famine1880}。
+% 据: f80_period, f80_british, f80_excess, f80_births, f80_seven, f80_signed, f80_date
+
+1901 年的委员会报告说，1900 年饥荒地区登记的死亡人数，比十年平均多一倍以上\cite{famine1901}。委员会说，饥荒在英国直接管辖的地区夺去了约 125 万人的生命\cite{famine1901}。死者中有很多是从土邦越界而来的饥民，土邦是由王公治理、受英国间接统治的地区\cite{famine1901}。委员会的印象是，英国臣民中多死了约 100 万人\cite{famine1901}。多出的死亡，至少五分之一是霍乱造成的\cite{famine1901}。Maddison 也说，1876—1878 年与 1899—1900 年的饥荒夺去了数以百万计的生命\cite{maddison1971}。
+% 据: f01_title, f01_signed, f01_double, f01_quarter, f01_immigrants, f01_one, f01_cholera, md_famine
+
+\section{中国与日本：白银、鸦片与赔款}\label{sec:periph-china}
+
+中国的白银不是铸币，是按重量计算的银两。19 世纪 50 年代中期以后，白银又大量流回中国，道光年间的比价动荡也平息了（\secref{sec:toku-debate}）\cite{atwell2008,irigoin2013}。上海新开的银行用墨西哥银元作白银准备\cite{irigoin2013}。到 1892 年，汇丰银行的杰克逊还说，中国北方用两，南方用墨西哥银元\cite{herschell1893}。
+% 据: at_back, ir_returned, ir_mexican, hr_mexican
+
+鸦片也在这时合法了。咸丰八年（1858），清朝与法国定约。《清史稿》记：“向来洋药不准通商，现稍宽其禁，听商贸易。每百斤纳税银三十两”\cite{qingshigao}。洋药就是进口的鸦片。斤是重量单位，一担合一百斤。两是称银子的重量单位（\secref{sec:toku-qing}）。按 Irigoin 引的数字，鸦片进口在道光年间几乎每十年翻一番，到 19 世纪 50 年代达到 7 万担\cite{irigoin2013}。60 年代降到平均约 6.3 万担，70 年代以后稳定在 7 万担左右，到 1892 年才开始急剧下降\cite{irigoin2013}。
+% 据: qs_opium58, ir_70000, ir_63000, ir_1892
+
+国内也种起了鸦片。土产鸦片从 1847 年的 9,000 担，增加到 1866 年的 16,500 担与 1876 年的 27,500 担\cite{irigoin2013}。后来达到 3 万担\cite{irigoin2013}。鸦片是使人成瘾的毒品。光绪九年（1883）的上谕说：“洋药流毒多年，自应设法禁止。”\cite{qingshigao}上谕还说，英国现在有戒烟会，颇以鸦片害人为耻\cite{qingshigao}。
+% 据: ir_home, qs_poison, qs_society
+
+鸦片税也牵动着印度的财政。瑙罗吉算过，1835—1872 年，中国通过鸦片税为印度的外流贡献了约 1.4 亿英镑\cite{naoroji1901}。光绪九年，清廷派出使大臣曾纪泽与英国交涉，洋药的税与釐金要合并征收，每百斤一百一十两，在进口时缴纳\cite{qingshigao}。釐金是清朝在国内关卡征收的商税。交涉了三年才定下来\cite{qingshigao}。据曾纪泽光绪十一年（1885）的奏疏，英国的印度部尚书坚决不同意逐年递减鸦片进口的条款\cite{qingshigao}。
+% 据: nr_opium, qs_combined, qs_zengjize, qs_110, qs_three, qs_reduce
+
+奏疏还说，印度部的一位侍郎私下告诉中国使馆的参赞，照这个专条，印度每年已少收七十多万英镑\cite{qingshigao}。他说，中国要减少鸦片进口，只能以后陆续加税，不能与英国预先定下递减的办法\cite{qingshigao}。光绪三十二年（1906），朝廷下令十年之内把鸦片一律革除\cite{qingshigao}。
+% 据: qs_india70, qs_raise, qs_1906
+
+1893 年以后，卢比的升值又压缩了印度鸦片的生意。坎贝尔与缪尔说，上海的鸦片价格从 1893 年平均每担约 397 两，涨到 1897 年的 556 两\cite{fowler1899}。印度的价格却从每箱约 1,202 卢比跌到约 1,114 卢比\cite{fowler1899}。印度的出口从 1892—1893 年度的 75,381 箱，减少到 1897—1898 年度的 56,069 箱\cite{fowler1899}。他们说，毫无疑问，这主要是卢比升值的结果\cite{fowler1899}。以两计的价格涨了，以卢比计的价格跌了，差额就是卢比对白银的升值。
+% 据: fw_opium_tael, fw_opium_rs, fw_opium_chests, fw_opium_rupee
+
+白银国家买外国的机器，账要用金镑算。光绪二十年（1894），湖广总督张之洞奏报汉阳铁厂的开支\cite{qingshigao}。他说超支的原因之一是“外洋金镑值价日昂，比初定机器时，价高过半”\cite{qingshigao}。按 Lindert 的银价，1890—1894 年，一英镑能换的白银多了 64\%\cite{lindert2006}。他还说，正当海防紧急，军械却缺乏，会贻误军机\cite{qingshigao}。
+% 据: qs_zhang_who, qs_zhang, qs_zhang_war
+
+甲午战争以后，赔款把白银与黄金直接连在了一起。1895 年 4 月 17 日在下关签订的和约规定，中国付给日本 2 亿库平两的赔款，分八次付清\cite{shimonoseki1895}。库平两是清朝国库用的银两标准。未付的部分按年息 5\% 计息\cite{shimonoseki1895}。条约写的是银两，日本的大藏大臣松方正义（Matsukata Masayoshi，1835—1924）却要求中国在伦敦用英镑支付\cite{mitchener2009,wikisource24}。英镑使日本能够取得黄金储备，从而转到金本位\cite{mitchener2009}。
+% 据: sh_signed, sh_200, sh_eight, sh_5pct, ms_sterling, ms_sterling2, ms_reserves, ws_matsukata
+
+\begin{case}{日本 · 1871—1897 · 从银到金}
+日本在 1871 年采用了全国统一的货币日元\cite{mitchener2009}。日元是日本的货币单位。1872 年，日本引进了美国式的国民银行制度，1876 年准许这些银行以政府债券为担保发行纸币\cite{mitchener2009}。这些早期的货币制度，造成了 19 世纪 70 年代末与 80 年代初难以为继的高通胀\cite{mitchener2009}。1882 年，日本银行成立\cite{mitchener2009}。1885 年 5 月，日本采用银本位，到 1886 年 1 月，政府发行的日元纸币都可以兑换白银\cite{mitchener2009}。它在银本位上停留了 11 年\cite{mitchener2009}。
+% 据: ms_yen, ms_1872, ms_inflation, ms_boj, ms_silver, ms_eleven
+
+1893 年，政府开始准备加入金本位\cite{mitchener2009}。货币制度调查会在 1895 年 7 月 3 日，把最终报告交给重新上任的大藏大臣松方\cite{mitchener2009}。主委员会的 15 人里，7 人主张保留白银，6 人主张将来改用黄金，2 人主张复本位\cite{mitchener2009}。
+% 据: ms_1893, ms_report, ms_votes
+
+反对的一方以实业家涩泽荣一（Shibusawa Eiichi，1840—1931）为代表\cite{mitchener2009}。他 1873 年离开政府以后，创办或主持过第一国立银行等许多大公司\cite{mitchener2009}。他说，1878—1893 年，日本对金本位国家的出口增加了 260\% 以上，进口只增加了 70\%\cite{mitchener2009}。他的解释是：“出口的价格跌了，进口的价格涨了。”\cite{mitchener2009}他担心，采用金本位，物价就会下跌，生意变坏，伤害经济与社会\cite{mitchener2009}。松方的看法相反，他认为金本位能减少价格的波动，使商业往来更方便，从而增加出口\cite{mitchener2009}。
+% 据: ms_business, ms_shib_dates, ms_shib_bio, ms_shib1, ms_shib_price, ms_shib2, ms_matsukata
+
+1897 年 3 月，松方领导的政府向帝国议会提出金本位的法案，他从 1896 年 9 月起兼任首相与大藏大臣\cite{mitchener2009}。法案在议会的委员会里以 14 票对 12 票勉强通过，3 月 29 日公布为法律\cite{mitchener2009}。新的货币法在 1897 年 10 月 1 日生效\cite{mitchener2009}。到 19 世纪 90 年代末，日本将近 60\% 的出口与贸易是与金本位国家进行的\cite{mitchener2009}。凯恩斯后来说，日本的制度在实践中与印度几乎一样，应当公正地归入金汇兑本位\cite{keynes1913}。
+% 据: ms_march, ms_pm, ms_14, ms_law, ms_oct1, ms_60, ky_japan_virtually, ky_japan_class
+\end{case}
+
+庚子事变以后的赔款更大。1901 年 9 月 7 日在北京签订的《辛丑条约》规定，中国付给各国 4.5 亿海关两\cite{boxer1901}。海关两是海关用的银两标准。条约说，这 4.5 亿是一笔“金债”，按海关两对各国金币的比价计算，一海关两合 3 先令\cite{boxer1901}。本金分 39 年还清，从 1902 年 1 月 1 日开始，到 1940 年底结束\cite{boxer1901}。本息可以用黄金支付，也可以按各期到期日的汇率支付\cite{boxer1901}。
+% 据: bx_signed, bx_450, bx_gold, bx_sterling, bx_39, bx_1940, bx_payable, qs_boxer450
+
+银价一跌，“金债”就要多付银子。《清史稿》记，和议成后，“各国赔款欲改银为金，以金价算”\cite{qingshigao}。中国的理由是，赔款照约按金价核算，就是 4.5 亿海关两，照约付这么多银子，也就与用金付给无异\cite{qingshigao}。《清史稿》说，美国随即同意照约还银\cite{qingshigao}。这是中国一方的记载。
+% 据: qs_gold, qs_argue, qs_us
+
+\begin{example}{一笔金债}\label{ex:periph-boxer}
+（1）按《辛丑条约》的比价，4.5 亿海关两合多少英镑？（2）伦敦的银价 1901 年是 27.19 便士，1902 年是 24.07 便士。银价跌了多少？一海关两所含的白银不变，要付 3 先令，以银计要多付多少？（3）按“金债”的写法与按中国的说法，银价下跌的风险各由谁承担？
+\solution （1）$4.5\text{ 亿}\times3=13.5$ 亿先令，除以 20，是 6,750 万英镑。（2）$24.07/27.19-1\approx-11.5\%$，$27.19/24.07-1\approx13.0\%$，以银计要多付 13\%。（3）按“金债”的写法，各国拿到的英镑不变，银价下跌的风险由中国承担。照中国的说法付银两，风险就转给了各国。
+\end{example}
+
+中国一直没有改用黄金。凯恩斯在 1913 年说，中国的货币改革还没有完成\cite{keynes1913}。在 Meissner 的表里，中国到 1913 年也没有采用金本位\cite{meissner2002}。
+% 据: ky_china, me_china
+
+\section{阿根廷与 1890 年的巴林危机}\label{sec:periph-baring}
+
+边缘国家借的钱，多半要用黄金或英镑偿还。Mitchener 与 Weidenmier（2007）说，巴林危机是 19 世纪最著名的主权债务危机\cite{mitchener2007}。阿根廷当时是世界第五大的主权借款国\cite{mitchener2007}。1884—1890 年，它吸收了伦敦新发行证券的约 11\%\cite{mitchener2007}。1889 年，伦敦对英国以外的放款，有 40\% 到 50\% 流向了阿根廷\cite{mitchener2007}。1884—1889 年，它的经常账户逆差平均占 GDP 的 20\%\cite{mitchener2007}。他们引 Taylor 的话说，19 世纪 80 年代流入这个新兴市场的资本，在历史上任何时候都是前所未有的\cite{mitchener2007}。
+% 据: mw_famous, mw_fifth, mw_11, mw_ca, mw_taylor
+
+阿根廷的问题是货币错配（\secref{sec:external-constraint}）。它在欧洲的资本市场上发行英镑或黄金计价的债券，国内却是纸币本位\cite{mitchener2007}。比索是阿根廷的货币单位。纸比索一贬值，用黄金还债的能力就受损\cite{mitchener2007}。1887 年的自由银行法规定，任何银行团体都可以发行银行券，只要它买进与银行券等额的黄金债券\cite{mitchener2007}。银行券却不能兑换黄金。黄金债券是新发行的，成了政府的新负债\cite{mitchener2007}。到 1890 年，各省的银行在外国资本市场上发行了超过 3,000 万英镑的债务\cite{mitchener2007}。
+% 据: mw_paper, mw_mismatch, mw_freebanking, mw_freebanking2, mw_notred, mw_30m
+
+1884—1890 年，基础货币每年平均增长 18\%，通胀平均 17\%，比索每年贬值 19\%\cite{mitchener2007}。到 80 年代末，多达 40\% 的外国借款用来付旧债\cite{mitchener2007}。金比索对纸比索的升水高达 94\%\cite{mitchener2007}。前财政部长特里（José Terry，生卒年未详）说：“到 1887 年底，病人还有救；到了 1888 年，已经没救了。”\cite{mitchener2007}1889 年，政府违背诺言，用纸币偿还了一部分以黄金计价的负债\cite{mitchener2007}。
+% 据: mw_macro, mw_debtservice, mw_94, mw_terry_who, mw_terry, mw_1889
+
+伦敦这一头，利率先低后高。英格兰银行的贴现率在 1888 年 3 月低到 2\%，1889 年底升到 6\%\cite{boe2017}。1890 年 4 月 17 日又降到 3\%\cite{boe2017}。巴林兄弟公司背着布宜诺斯艾利斯供水与排水工程的贷款，11 月初通知英格兰银行自己有了财务困难\cite{mitchener2007}。11 月 7 日，贴现率提到 6\%\cite{boe2017}。英格兰银行联合法兰西银行、俄国的中央银行与英国的金融机构，组成了一个救助基金\cite{mitchener2007}。可是 Mitchener 与 Weidenmier 说，英格兰银行对债务缠身的阿根廷“帮助很少”\cite{mitchener2007}。
+% 据: mw_water, mw_nov, mw_rescue, mw_little
+
+代价落在阿根廷身上。1890 年它违约的债务将近 4,800 万英镑，几乎占 19 世纪 90 年代全世界违约债务的 60\%\cite{mitchener2007}。罗斯柴尔德（Nathan Rothschild，生卒年未详）组织了一个由主要金融家组成的委员会，重组阿根廷的债务\cite{mitchener2007}。1891 年 1 月，阿根廷发生了严重的银行危机\cite{mitchener2007}。1890—1891 年，实际 GDP 下降了 11\%，直到世纪之交才完全恢复\cite{mitchener2007}。总统在 1890 年 8 月 6 日辞职\cite{mitchener2007}。
+% 据: mw_48, mw_rothschild, mw_1891, mw_gdp, mw_recover, mw_celman
+
+借钱的代价可以从收益率差看出来。收益率差就是一国英镑债券的当期收益率减去英国统一公债的收益率，也叫国家风险溢价\cite{mitchener2007}。基点是 0.01 个百分点。阿根廷的国家风险溢价从 1892 年最高的 1,400 个基点，降到 1896 年的约 800 个基点\cite{mitchener2007}。
+% 据: mw_spread, mw_1400
+
+危机主要是地区性的。Mitchener 与 Weidenmier 用《经济学人》上一万五千多个债券价格计算收益率差\cite{mitchener2007}。危机开始以后的一年、两年与四年里，拉丁美洲国家的平均收益率差分别上升了 844、759 与 1,608 个基点\cite{mitchener2007}。拉丁美洲以外的新兴市场与核心国家，收益率差大体持平\cite{mitchener2007}。欧洲的投资者卖掉或减持了拉丁美洲的债券，有证据表明英国的投资者把一部分钱转到了别的新兴市场\cite{mitchener2007}。Reinhart 与 Rogoff 说，中心的危机并不总是变成全面的全球金融危机，1890 年就是一例\cite{reinhart2008tid}。
+% 据: mw_15000, mw_844, mw_flat, mw_sold, mw_shift, rr_baring
+
+传染与各国的基本面关系不大。他们发现，债务负担、预算赤字与贸易逆差这些宏观指标，以及政治变量，大都不很重要\cite{mitchener2007}。危机期间，拉丁美洲国家的收益率差要高出 200 个基点以上\cite{mitchener2007}。与英国的贸易越多，危机期间的国家风险反而越高\cite{mitchener2007}。采用金本位的借款国，在 90 年代的危机里有了一个避风港\cite{mitchener2007}。
+% 据: mw_fund, mw_200, mw_ukrisk, mw_haven
+
+\begin{example}{金债与纸比索}\label{ex:periph-peso}
+（1）金比索对纸比索的升水是 94\%。100 金比索的利息，要用多少纸比索支付？（2）英国统一公债的收益率 1892 年是 2.67\%，1896 年是 2.30\%\cite{boe2017}。加上阿根廷的国家风险溢价，阿根廷借钱的收益率大约是多少？（3）危机后一年里，拉丁美洲国家的收益率差平均上升了 844 个基点。这是多少个百分点？与英格兰银行的贴现率 1890 年 4 月到 11 月的上升相比如何？
+\solution （1）$100\times1.94=194$ 纸比索。收入是纸比索，债务是金比索，比索每贬值一次，同样的利息就要用更多的收入去付。（2）1892 年约 $2.67+14=16.7\%$，1896 年约 $2.30+8=10.3\%$。（3）8.44 个百分点。贴现率从 3\% 升到 6\%，只上升了 3 个百分点。拉丁美洲借钱的代价上升，主要来自风险溢价，不是伦敦的利率本身。
+\end{example}
+
+\begin{compare}{看借款者与看贷款者}{看借款者}{看贷款者}
+\cmprow{起因}{借款国的财政与货币失控，加上货币错配\cite{mitchener2007}}{中心的钱多，资本涌向边缘，资本流动一骤减，违约就增加\cite{reinhart2008tid}}
+\cmprow{1888—1890 年}{基础货币每年增长 18\%，1889 年用纸币偿还金债\cite{mitchener2007}}{伦敦的贴现率从 1888 年的 2\% 升到 1890 年 11 月的 6\%\cite{boe2017}}
+\cmprow{最强的证据}{特里说病人到 1888 年已经没救\cite{mitchener2007}}{英国顺差与违约的高峰相关\cite{reinhart2008tid}，与英国贸易越多风险越高\cite{mitchener2007}}
+\cmprow{传染的方向}{财政差的国家应当受害最深}{收益率差的上升集中在拉丁美洲，基本面不很重要\cite{mitchener2007}}
+\cmprow{弱点}{解释不了基本面不同的邻国为什么一起受害}{图上的相关不是因果，危机也没有扩散到拉丁美洲以外}
+\cmprow{此前的先例}{19 世纪 20 年代的违约与独立战争（\secref{sec:say-1825}）}{同一时期伦敦的放款热（\secref{sec:say-1825}）}
+\cmpsum{借款者的错配说明谁最脆弱，贷款者的周期说明什么时候出事。1890 年的传染按地区而不按基本面，这一点更合贷款者一方的解释。}
+\end{compare}
+
+\section{数据检验与反例}\label{sec:periph-test}
+
+\subsubsection{金本位是不是认可的印章}
+加入金本位，借钱会不会便宜？据 Obstfeld 与 Taylor 的转述，Bordo 与 Rockoff（1996）最先发现，遵守金本位的规则，对主权债务起了“认可的印章”的作用\cite{obstfeld2002}。Obstfeld 与 Taylor 自己用 1870—1913 年 13 个国家的数据检验\cite{obstfeld2002}。他们估计，1914 年以前，采用金本位使一国对伦敦的收益率差降低约 57 个基点\cite{obstfeld2002}。一国的债务对 GDP 的比率上升 10\%，借款成本增加 7.2 个基点\cite{obstfeld2002}。当时英国统一公债的基准收益率约为 3\%\cite{obstfeld2002}。
+% 据: ot_seal, ot_t4, ot_13, ot_gs, ot_57, ot_debt, ot_consol
+
+别的研究得出的数大小不一（\tabref{tab:periph-seal}）。Obstfeld 与 Taylor 引的 Flandreau 等人的估计是 35 到 55 个基点\cite{obstfeld2002}。Mitchener、Shizume 与 Weidenmier 引 Obstfeld 与 Taylor 后来发表的版本，说约为 30 个基点\cite{mitchener2009}。Clemens 与 Williamson（2001）发现，金本位对英国资本流向各国的份额没有统计上显著的影响\cite{obstfeld2002}。Obstfeld 与 Taylor 认为，核心国家只要守住黄金，就足以取信于人，市场对边缘国家的看法更宽，也更怀疑\cite{obstfeld2002}。
+% 据: ot_flandreau, ms_30bp, ot_clemens, ot_clemens2, ot_skeptical
+
+\begin{table}[htbp]\centering\small
+\caption{金本位能省下多少借款成本}\label{tab:periph-seal}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.34\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}Y@{}}
+\toprule
+研究 & 样本 & 金本位的作用 \\\midrule
+Obstfeld 与 Taylor（2002）表 4 & 1870—1913 年，13 国 & 对伦敦的收益率差低 30 个基点（OLS）或 57 个基点（AR1） \\
+Flandreau 等，据 Obstfeld 与 Taylor & — & 低 35 到 55 个基点 \\
+Obstfeld 与 Taylor（2003），据 Mitchener 等 & — & 低约 30 个基点 \\
+Clemens 与 Williamson（2001） & 1870—1913 年英国的资本流向 & 对各国所得份额没有显著影响 \\
+Mitchener 与 Weidenmier（2007） & 巴林危机前后的借款国 & 危机中的避风港 \\
+Mitchener、Shizume 与 Weidenmier（2009） & 日本，1897 年前后 & 没有降低国家风险，利率半年里升了约 30 个基点 \\
+\bottomrule
+\end{tabularx}
+\datasource{Obstfeld 与 Taylor（2002）第 46、49、52—53、55 页与表 4（因变量是百分点，表中折成基点）；Mitchener 与 Weidenmier（2007）第 33 页；Mitchener、Shizume 与 Weidenmier（2009）第 1、17 页与摘要。见正文。}
+\end{table}
+
+日本的经历是一个反例。Mitchener、Shizume 与 Weidenmier 发现，几乎没有证据表明加入金本位降低了日本的国家风险\cite{mitchener2009}。采用以前，日本的利率大体持平，采用以后的六个月里反而上升了约 30 个基点\cite{mitchener2009}。1897 年，《经济学人》说日本人以为采用了金本位，他们 5\% 的债券就该卖个更高的价钱\cite{mitchener2009}。1899 年，日本政府在伦敦发行 1 亿日元的债券，按面值的 90\% 出售，当期收益率是 4.45\%\cite{mitchener2009}。当期收益率是一年的利息除以买价。
+% 据: ms_little, ms_rates30, ms_economist, ms_1899
+
+认购并不踊跃。首发的债券，在伦敦市场上买走的不到 10\%\cite{mitchener2009}。日本政府在日本银行的协助下，自己买下了将近 45\%，其余的由承销商吸收\cite{mitchener2009}。后来政府又按面值的 86\% 买回了大部分流通的债券，收益率是 4.65\%\cite{mitchener2009}。他们说，考虑到这些债券以英镑计价、汇率风险较小，它的收益率与在伦敦交易的日元公债差不多，约为 4.8\%\cite{mitchener2009}。
+% 据: ms_tepid, ms_45, ms_underwriters, ms_86, ms_48
+
+\begin{example}{日本的伦敦债券}\label{ex:periph-yen}
+（1）1899 年的债券按面值的 90\% 出售，当期收益率 4.45\%。票面利率是多少？（2）按面值的 86\% 买回时，收益率是多少？（3）这一年英国统一公债的收益率是 2.38\%\cite{boe2017}。日本的收益率差是多少个基点？与 Obstfeld 与 Taylor 估计的金本位能省下的 57 个基点相比如何？
+\solution （1）票面利率等于价格乘当期收益率，$0.90\times4.45\%\approx4.0\%$。（2）$4/86\approx4.65\%$，与报道的一致。（3）$4.45-2.38\approx2.07$ 个百分点，约 207 个基点，是 57 个基点的三倍多。加入金本位以后，日本仍然要付很高的风险溢价。
+\end{example}
+
+\begin{pitfall}[加入金本位就能借到便宜的钱]
+金本位的“认可的印章”是平均的效应，对核心与边缘也不一样。Obstfeld 与 Taylor 说，市场对边缘国家看得更宽，也更怀疑\cite{obstfeld2002}。日本 1897 年加入金本位以后，利率反而上升，1899 年的伦敦债券要靠政府自己买下将近一半\cite{mitchener2009}。在他们的估计里，债务的负担同样抬高借款成本\cite{obstfeld2002}。印度的金汇兑本位要在伦敦存着储备，才守得住汇率的下限（式~\eqref{eq:periph-band}）。
+% 据: ot_skeptical, ms_rates30, ms_45, ot_debt
+\end{pitfall}
+
+\subsubsection{补贴之争}
+关闭铸币厂以前，据说跌价的卢比等于给出口商发补贴\cite{keynes1913}。反对关闭的人说，关闭会严重损害茶叶、谷物与棉纺织品的出口\cite{keynes1913}。1892 年，大吉岭种植园主协会说，关闭铸币厂将造成“茶叶业彻底而无可挽回的毁灭”\cite{keynes1913}。杰克逊也对委员会说，印度的茶叶在与中国的竞争中会吃亏，“我相信会的”\cite{herschell1893}。理论家的看法相反。凯恩斯转述说，出口商的好处大都是以社会上其他人为代价的，对整个国家不会有利，而且只能是暂时的\cite{keynes1913}。
+% 据: ky_bounty, ky_injure, ky_darjeeling, ky_brunyate, ky_ruin, hr_tea, ky_theorists, ky_temporary
+
+结果怎样？凯恩斯说，关闭铸币厂的前一年，印度出口茶叶 1.15 亿磅，到 1909 年增加了一倍多\cite{keynes1913}。磅是英国的重量单位。棉纱的出口在关闭后的一年里从 1.9 亿磅跌到 1.3 亿磅，第二年就开始回升\cite{keynes1913}。1905—1906 年度，它创下了 3.0 亿磅的纪录\cite{keynes1913}。凯恩斯的结论是：“经验断然地支持了理论。”\cite{keynes1913}他说，中国的物价与工资对新条件的调整，开始得很快\cite{keynes1913}。
+% 据: ky_tea, ky_yarn92, ky_yarn05, ky_experience, ky_china_adjust
+
+反方也有证据。坎贝尔与缪尔说，铜钱是中国通常用来付工资的钱，大体决定了生产成本\cite{fowler1899}。据委员会收到的证词，铜钱在五六年里对白银只升值了约 15\%\cite{fowler1899}。他们说，这不到同期中国汇率跌幅的一半\cite{fowler1899}。凯恩斯也承认，1893—1894 年度的下跌，一部分是因为中国市场本来就供过于求\cite{keynes1913}。印度的棉纱一大部分销往中国。\chref{ch:divergence}讲过，印度的手工纺纱败给了英国的机器。到第一次全球化的时候，孟买的机器纱厂已经在向中国出口棉纱，纱厂主也是反对现行币制最力的一方\cite{keynes1913}。
+% 据: fw_cash_wage, fw_cash, fw_cash_half, ky_glut, ky_yarn08, ky_mill
+
+日本的证据更直接。Mitchener、Shizume 与 Weidenmier 估计，日本在银本位上、贸易伙伴在金本位上时，日本的出口增加了 860\%\cite{mitchener2009}。他们说，银本位的支持者强调日本的贸易因白银跌价而大大受益，“是对的”\cite{mitchener2009}。主张改用黄金的人也说对了，日本改用黄金以后，出口并没有失去竞争优势，不过这也许更多是运气，而不是远见\cite{mitchener2009}。
+% 据: ms_860, ms_correct, ms_also
+
+\begin{deeper}[史料说明]
+\textbf{日子与汇率表。}关闭铸币厂的法令与通告的日子，据 1898 年委员会的报告是 1893 年 6 月 26 日，与 Hansard 一致，凯恩斯只说是 1893 年\cite{fowler1899,hansard1893}。赫歇尔委员会的汇率表按财政年度排列，1873 年度就是 1873—1874 年度；扫描本把小数点读成了度数的符号，正文只用识别清楚的几行\cite{herschell1893}。卢比的白银价值是本章按凯恩斯给的含银量与 Lindert 的价格算的。
+
+\textbf{请愿、证词、异议书与转述。}卡拉奇商会的请愿书、杰克逊与吉芬的证词，是请愿者与证人的说法，不是委员会的结论。投机、鸦片与铜钱的数字出自坎贝尔与缪尔的异议书，是两位少数派委员的说法。特里的话，Mitchener 与 Weidenmier 转引自 Fishlow（1989）。Bordo 与 Rockoff（1996）、Flandreau 等人与 Clemens、Williamson（2001）的结论据 Obstfeld 与 Taylor 的转述，鸦片的担数据 Irigoin 的转述。涩泽荣一的报告，Mitchener 等人注作 1985 年，应是 1895 年之误。
+
+\textbf{饥荒。}1880 年委员会的 525 万是 1877—1878 年英国直接管辖各省的超额死亡。1901 年委员会的表，扫描本识别出的合计行是登记死亡 2,301,951 人、十年平均 1,069,096 人、超出 1,236,855 人，前两个数相减却是 1,232,855，所以正文只用委员会文字里的约 125 万；英国臣民中的 100 万是委员会的印象，不是统计。正文没有给 1896—1897 年那次饥荒的死亡人数，所据的两份报告都不是那次饥荒的统计。
+
+\textbf{只有一个来源的数字。}Meissner 表 1 的年份；谢尔曼法的收购量与 1890 年世界的白银产量，都出自赫歇尔委员会报告的附录；阿根廷的宏观数字与日本 1899 年债券的数字，各只有 Mitchener 等人的一个来源。巴林兄弟公司出事，正文用他们文中的 11 月初，他们表 1 的 11 月 19 日是《投资者月刊》登出消息的日子。
+
+\textbf{没有写进正文的。}这一时期还有大规模的移民。能读到的 Hatton 与 Williamson 的工作论文是没有文字层的扫描件，Taylor 与 Williamson 的那一篇注明是草稿、未经作者许可不得引用，所以正文不给移民的数字。
+% 据: fw_notif, fw_public, hc_ref, ky_herschell, ky_dates1893, hr_heading, hr_silver, f80_excess, f01_total, f01_quarter, f01_one, mw_t1, mw_nov
+\end{deeper}
+
+\section{今天还剩什么}\label{sec:periph-legacy}
+
+\textbf{货币错配。}阿根廷用纸比索的收入还黄金的债，比索一贬值，债务就变重\cite{mitchener2007}。日本 1899 年改用英镑发债，汇率的风险小了，收益率仍然很高\cite{mitchener2009}。借外币的债，收入却是本币，这个结构后来在 20 世纪 80 年代拉丁美洲的债务危机与 90 年代以后的新兴市场危机里一再出现（第~\ref{ch:latamdebt}、\ref{ch:emcrises}~章）。
+% 据: mw_mismatch, ms_48
+
+\textbf{放在国外的储备。}凯恩斯说，把一部分准备存在国际货币市场上，是一切自己不是国际银行家的国家的办法\cite{keynes1913}。印度存在伦敦，日本存在欧洲与美国，海峡殖民地与西非殖民地的制度由英国的殖民部引进\cite{keynes1913}。第二次世界大战以后，各国把美元当作储备，布雷顿森林体系就建立在这个安排上（\chref{ch:brettonwoods}）。今天的货币局与美元化，也是把货币交给别处决定，谁的货币能当别人的储备，见\chref{ch:hierarchy}。
+% 据: ky_bankers, ky_japan37, ky_westafrica
+
+\textbf{共同的债权人与传染。}1890 年，拉丁美洲各国一起受害，与它们各自的基本面关系不大，与它们共同的债权人与贸易伙伴英国关系很大\cite{mitchener2007}。1997 年的亚洲与 2008 年以后的新兴市场，也有这样按地区、按投资者传染的危机（\chref{ch:emcrises}）。
+% 据: mw_fund, mw_ukrisk
+
+\textbf{外流与储蓄。}Maddison 估计，殖民统治把印度四分之一左右的储蓄转出了国\cite{maddison1971}。穷国的储蓄与资本流向哪里，怎样影响它的发展，是\chref{ch:development}的问题。
+% 据: md_quarter
+
+\textbf{赔款与转移。}1895 年与 1901 年的赔款，日本拿去换成了金本位的储备，中国为银价的涨落与列强争执\cite{mitchener2009,qingshigao}。一国要向外国付一大笔钱，靠什么把本国的收入变成外币，是第一次世界大战以后德国赔款的问题（\chref{ch:weimar}）。
+% 据: ms_reserves, qs_gold
+
+\begin{takeaways}
+\begin{itemize}
+\item 1870—1914 年，世界的对外资产从世界 GDP 的 7\% 升到将近 20\%，英国占将近 80\%。英国每年都是经常账户顺差，1913 年对外净资产相当于 GDP 的 170\%。违约的高峰与资本流动的高峰连在一起。
+\item 1873 年以后银价从 60 便士左右跌到 90 年代的 30 便士以下。自由铸造时卢比值它的白银，$x\approx sP$，$e=240/x$（式~\eqref{eq:periph-silver}），卢比随银价跌，印度政府用英镑付的本国费用就变重。
+\item 1893 年印度关闭铸币厂，1898 年汇率稳定在 16 便士，1899 年金镑成为法偿货币。卢比不能兑现，汇率管在 $15\tfrac{29}{32}$ 到 $16\tfrac18$ 便士之间，上限靠套利，下限靠政府在伦敦的储备（式~\eqref{eq:periph-band}），这就是金汇兑本位。
+\item 瑙罗吉算出 1835—1872 年约 5 亿英镑的外流，三分之一以上来自按 15\% 推算的利润（式~\eqref{eq:periph-drain}）。Maddison 也说外流持续了 190 年，1921—1938 年约占国民收入的 1.5\%，争议在口径。1877—1878 年与 1900 年的饥荒，超额死亡分别约为 525 万与 125 万。
+\item 中国留在白银上。鸦片进口在 19 世纪 50 年代以后每年 6 万到 7 万担，1892 年以后才下降；以金镑计的机器与赔款，使银价下跌成了中国的负担。日本 1882 年设日本银行，1897 年用甲午赔款换来的英镑改用金本位，凯恩斯把它归入金汇兑本位。
+\item 阿根廷用纸比索的收入背黄金的债，1890 年巴林危机以后违约约 4,800 万英镑，实际 GDP 下降 11\%。危机按地区传染，与基本面关系不大。金本位平均能省下 30 到 57 个基点，对边缘国家却靠不住。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 1885 年伦敦的银价是 48.62 便士。用式~\eqref{eq:periph-silver} 求卢比的白银价值与 $e$。赫歇尔委员会表里 1885 年度的汇率是 18.25 便士，比银值高多少？
+\item 国务大臣按 $16\tfrac18$ 便士出售参事会汇票。一家银行买了在印度兑付 10 万卢比的汇票，在伦敦要付多少英镑？汇率要是跌到下限，同样的 10 万卢比汇回伦敦，能得多少英镑？
+\item 用式~\eqref{eq:periph-drain}，设一国出口 100，进口 90，新借外债 5，正常的利润率是 10\%。求 $H$ 与 $D_{\text N}$。哪一部分在国际收支表上看得见？
+\item 上海的鸦片价格从每担 397 两涨到 556 两，印度的价格从每箱 1,202 卢比跌到 1,114 卢比。设箱与担的换算不变，卢比对上海的两升值了多少？
+\item 瑙罗吉说，卢比从 11 便士抬到 16 便士，等于多征 45\% 的税。用 1898 年 26.93 便士的银价与式~\eqref{eq:periph-silver} 算，他说的 11 便士准不准？按算出的银值，多征的比例是多少？
+\item 1890 年，拉丁美洲以外的新兴市场，收益率差大体持平。看借款者与看贷款者的两种解释，各会怎样说明这一点？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $x\approx0.372\times48.62\approx18.1$ 便士，$e\approx240/18.1\approx13.3$ 卢比。$18.25/18.1-1\approx1\%$，汇率比银值高约 1\%。
+\item $100{,}000\times16.125/240\approx6{,}719$ 英镑。按下限 $15\tfrac{29}{32}$ 便士，$100{,}000\times15.90625/240\approx6{,}628$ 英镑，少 91 英镑，约 1.4\%，这是汇率带的全宽。
+\item $H=100-90+5=15$，$D_{\text N}=1.1\times100+5-90=25$。$H$ 是付给外国的利息、利润与费用，在国际收支表上看得见；多出的 $\pi X=10$ 是按正常利润率推算的。
+\item 以两计的价格涨到 $556/397\approx1.40$ 倍，以卢比计的价格变成 $1{,}114/1{,}202\approx0.93$ 倍，一两能换的卢比少了，卢比对两升值了 $1.40/0.93-1\approx51\%$。
+\item $0.372\times26.93\approx10.0$ 便士，比他说的 11 便士还低。按 10.0 便士算，$16/10.0-1=60\%$，比他说的 45\% 还多。
+\item 看借款者的一方会说，那些国家的财政与货币比阿根廷健全。可是 Mitchener 与 Weidenmier 发现，基本面大都不很重要，这个解释站不住。看贷款者的一方会说，欧洲的投资者卖掉拉丁美洲的债券，把一部分钱转到了别的新兴市场，那里的收益率差因此没有上升\cite{mitchener2007}。
+\end{answers}
+
+1893 年 6 月 26 日，戈申问格拉德斯通，是不是要让整个印度帝国都用代用币。二十年后，凯恩斯给了回答。他说，卢比是一种代用币，“实际上是印在银子上的钞票”\cite{keynes1913}。1898 年伦敦的银价是 26.9 便士，一枚卢比所含的白银只值 10 便士，卢比却稳定在 16 便士\cite{lindert2006,keynes1913}。在伦敦，英镑的黄金价格一直没有变，英国的物价却在 1873—1896 年跌了下去（\secref{sec:gold-state}）。统一公债的收益率也从 1873 年的 3.3\% 降到 1897 年的 2.3\%\cite{boe2017}。黄金没有变，物价跌了二十多年，利率也跟着往下走，银行把利率定在哪里，与物价的涨跌有什么关系？
+% 据: hc_token, ky_token, ky_1898

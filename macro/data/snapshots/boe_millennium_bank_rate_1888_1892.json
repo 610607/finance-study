@@ -1,0 +1,14 @@
+{
+  "title": "Bank Rate on the last day of 1887 and on each day it changed, 1888-1892",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'D1. Official Interest Rates' (Bank Rate 1833-1972 ...), daily",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "date (ISO 8601): 31 December 1887 and each day on which the rate differs from the previous row of the sheet; bank_rate: the rate, per cent a year",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    24
+  ],
+  "fetch": "data/fetch/boe_millennium_gb24.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-23). The rows agree with those of boe_millennium_bank_rate_1844_1914 (Chapter 23) for the same years.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet D1"
+}

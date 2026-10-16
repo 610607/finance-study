@@ -1,0 +1,176 @@
+{
+  "title": "Quotations for Chapter 24 (the periphery in the first globalization): India's closing of the mints in 1893 (Hansard, the Herschell and Fowler reports, Keynes 1913), the drain (Naoroji 1901, Maddison 1971), the famines (the Famine Commissions of 1880 and 1901), the spread of gold (Meissner 2002), capital flows and country risk (Obstfeld and Taylor 2002, Reinhart and Rogoff 2008), Japan's gold standard (Mitchener, Shizume and Weidenmier 2009), the Baring crisis (Mitchener and Weidenmier 2007), opium and silver in China (Irigoin 2013, Atwell 2008, the 清史稿) and the treaties of 1895 and 1901",
+  "source": "Hansard (Historic Hansard, UK Parliament); Report of the Indian Currency Committee (1893) and Report of the Indian Currency Committee (1899), archive.org; J. M. Keynes, Indian Currency and Finance (1913), Project Gutenberg; D. Naoroji, Poverty and Un-British Rule in India (1901), archive.org; A. Maddison (1971), ch. 3; Report of the Indian Famine Commission (1880, Part I; 1901), archive.org; NBER Working Papers 8846, 9233, 13403, 15195 and 13882; Atwell (2008); Irigoin (2013); the treaties of Shimonoseki (1895) and Peking (1901) on Wikisource; 赵尔巽等《清史稿》(daizhigev20)",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1893/jun/26/the-indian-currency",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated; fractions as a/b, mixed numbers as a+b/c), unit, numeral (unused: the 清史稿 rows' numerals are read in checks/check_ch24.py), file (key of 'sources', or qingshigao for the corpus), juan (location: column, paragraph, chapter, table or printed page; for the 清史稿, the 卷 and 志), quote (verbatim, as in the document's text, OCR misreadings included), note",
+  "retrieved": "2026-10-16",
+  "license": "Quotations for criticism and teaching, each with its source. Hansard: '© UK Parliament', reproduced under the Open Parliament Licence. The Indian Currency Committee reports (1893, 1899), the Indian Famine Commission reports (1880, 1901), the treaties of 1895 and 1901 and the Boxer Protocol's translation (publications of governments), Naoroji (1825-1917; 1901) and the 清史稿 (1928) are in the public domain; the archive.org texts are OCR of public-domain scans; the Wikisource pages are CC BY-SA (the transcribed texts themselves are in the public domain). Keynes (1883-1946), Indian Currency and Finance (1913): in the public domain in the United Kingdom and other countries where copyright lasts for the author's life plus 70 years (since 2017), and in the United States (published in 1913); the Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here); only short passages are quoted, as Chapter 23 did with Essays in Persuasion. Maddison (1971): © the author and the publisher (Allen & Unwin); only short passages are quoted, with full credit. NBER Working Papers, each with its own notice (rows ot_notice, me_notice, mw_notice, ms_notice, rr_notice): '© 2002 by Maurice Obstfeld and Alan M. Taylor', '© 2002 by Christopher M. Meissner', '© 2007 by Kris James Mitchener and Marc D. Weidenmier', '© 2009 by Kris James Mitchener, Masato Shizume, and Marc D. Weidenmier', '© 2008 by Carmen M. Reinhart and Kenneth S. Rogoff'; each: 'All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' Only short passages are quoted. Atwell (2008) and Irigoin (2013): short quotations with full credit, as in toku_facts. The chapter's Chinese renders the English; the translations are the book's.",
+  "used_in": [
+    24
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (every row citing a key of 'sources'); data/fetch/verify_quotes.py (rows citing qingshigao); checks/check_ch24.py (the readings and every quotation of the text)",
+  "notes": "Dates and figures that the sources give differently, and readings. The closing of the mints: the Act (No. VIII of 1893) and the notifications are dated 26 June 1893 in the Fowler report (rows fw_notif, fw_public); the same day Gladstone read the Viceroy's telegram in the House of Commons (rows hc_*); Keynes (row ky_herschell) dates it only to 1893. The Herschell report's table of exchange (rows hr_x*) gives the average rate on bills on India for official years (1873 = 1873-74, etc.); the OCR reads the decimal point as '°'; the rows quoted are those the OCR reads cleanly. Its price of silver in 1873 and 1879 (row hr_silver, OCR '594d.' and '514d.' for 59¼d and 51¼d) agrees with the GPIH series (snapshot gpih_silver_market_1850_1914: 59.256d and 51.24d). The rupee: ⅜ oz of silver of eleven-twelfths fineness (row ky_contains), i.e. 11/32 oz of fine silver, 0.3716 ounce of standard (0.925 fine) silver; the chapter computes its silver value from the GPIH price of standard silver. Naoroji: his figures for 1835-1872 are his own (the paper 'The Poverty of India', 1876, reprinted in the book of 1901); 1,288 + 150 = 1,438 million, which he rounds to 1,430 (row nr_imports); his yearly averages (rows nr_a1835, nr_a1870) leave out the railway interest (row nr_business). Maddison's Table 3-3 (rows md_t*) is the balance on merchandise and bullion, a different measure. The famines: the 1880 Commission's 5¼ million excess deaths (row f80_excess, OCR '5^') are for the provinces under British administration in 1877 and 1878; the 1901 Commission's table of the deaths recorded in 1900 in the famine districts of British India (row f01_total) reads, in the OCR, 2,301,951 deaths against a decennial average of 1,069,096 and an excess of 1,236,855, but the first two differ by 1,232,855, so the chapter uses the Commission's own words, 'about one million and a quarter lives' (row f01_quarter), which include immigrants from the Native States; the Commission's impression was one million excess deaths among British subjects (row f01_one). The chapter gives no figure for the famine of 1896-97. Naoroji on the closing of the mints: his letter to The Times, dated 29 May 1898 and printed on 3 June 1898, is reprinted in the book (pp. 528-530; rows nr_times, nr_may29, nr_farthing, nr_20m, nr_produce, nr_45, nr_rayat, nr_committee); the OCR reads 11d. as 'ud.' and 16d. as 'i6d.' (row nr_45); 16/11 = 1.45, his 45 per cent. The Herschell report's appendices and minutes of evidence: the petition of the Karachi Chamber of Commerce of 1 September 1892 (rows hr_karachi*; OCR 'lst' and '14°65'); the evidence of Thomas Jackson of the Hongkong and Shanghai Bank on 26 November 1892 (rows hr_day7, hr_jackson, hr_mexican, hr_paralyse, hr_tea) and of Robert Giffen on 3 December 1892 (rows hr_day8, hr_giffen); the appendix on the production of silver (rows hr_world1890, hr_world, hr_sherman; 'anual' as printed). These are the claims of petitioners and witnesses, not findings of the committee. The Fowler report of 1899 ends with a minute of dissent by two members, Robert Campbell and John Muir (rows fw_dissent, fw_signed, fw_five, fw_27, fw_barsilver, fw_believed, fw_monopoly, fw_1s3d, fw_appreciated, fw_opium_*, fw_cash, fw_cash_half; the Appendix (minute) rows fw_public, fw_purport and fw_bills are from the same minute); they wanted 1s. 3d. (Rs. 16 to the sovereign) instead of 1s. 4d.; their figures on the speculation of May-June 1893, on opium and on China's copper cash are their claims, not findings of the committee. Page numbers of the PDFs are the printed numbers of the papers (the NBER papers number from the first page of the text; Maddison 1971 from the first page of the chapter file); 'abstract' and 'title page' rows are on the unnumbered first pages. Meissner's Table 1 (rows me_*) dates the adoption of free convertibility exclusively into gold; Argentina and Chile have several dates; '---' is no adoption before 1913. Mitchener and Weidenmier's Table 1 (row mw_t1) lists events under the dates of the Investors' Monthly Manual, so 19 November 1890 is the date of that listing, not of the event. Mitchener, Shizume and Weidenmier cite Shibusawa's paper as 'Appendix to Final Report of 1985', a misprint for 1895 (row ms_shib1); the Bordo-Rockoff estimate of about 30 basis points is theirs via Obstfeld and Taylor (row ms_30bp); Obstfeld and Taylor's Table 4 (row ot_gs) gives the gold-standard coefficient in percentage points of spread. The 清史稿 rows: 卷一百二十五《食货志六》(征榷会计), 卷一百四十《兵志十一》(制造), 卷一百五十四《邦交志二》(英吉利) and 卷一百五十六《邦交志四》(美利坚); Zhang Zhidong's memorial (rows qs_zhang_who, qs_zhang, qs_zhang_war) follows the entry for 光绪二十年 (1894) and speaks of the war at sea; the Chinese argument over paying the Boxer indemnity in gold (rows qs_gold, qs_argue, qs_us) is told in the history of relations with the United States.",
+  "sources": {
+    "hansard1893": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1893/jun/26/the-indian-currency",
+      "format": "html",
+      "sha256": "1116fa8d4d25f7799db4f7dcd39df466659436a30b3392c970d21199d702e91e",
+      "version": "Hansard, House of Commons, 26 June 1893, 'The Indian Currency', HC Deb vol 14 cc59-61: Gladstone (First Lord of the Treasury) reads the Viceroy's telegram; questions by Goschen, Seymour King and MacFarlane; Historic Hansard ('© UK Parliament')",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_gladstone": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-we-gladstone/index.html",
+      "format": "html",
+      "sha256": "cee410ef1562a03b66fb21442fec9589d695bbf590ff41c6338992ae48c470bb",
+      "version": "Historic Hansard, people: 'Mr W.E. Gladstone' (years of life, constituencies and offices; 'prepared from the XML source files, together with information from the History of Parliament Trust, the work of Leigh Rayment and public sources'); the same file as goldstandard_facts",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_goschen": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-george-goschen/index.html",
+      "format": "html",
+      "sha256": "ad8aeb96c30743825f5be17fb6b973fc63c12af6a8afc2f131d5b3a962c71af2",
+      "version": "Historic Hansard, people: 'Mr George Goschen'; the same file as goldstandard_facts",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_naoroji": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-dadabhai-naoroji/index.html",
+      "format": "html",
+      "sha256": "fb3b2a7c8bd6890f5870886144fbcf552acf24b9eabb8b03645368ad5b911b14",
+      "version": "Historic Hansard, people: 'Mr Dadabhai Naoroji' (years of life; Finsbury Central 1892-1895)",
+      "retrieved": "2026-10-16"
+    },
+    "hansard_herschell": {
+      "url": "https://api.parliament.uk/historic-hansard/people/sir-farrer-herschell/index.html",
+      "format": "html",
+      "sha256": "7bd2515f649e652f32d323a548620bc9eaebc52029a084748790c20acebf8b94",
+      "version": "Historic Hansard, people: 'Sir Farrer Herschell' (years of life; Baron Herschell 1886-1899)",
+      "retrieved": "2026-10-16"
+    },
+    "ws_keynes": {
+      "url": "https://en.wikisource.org/wiki/Author:John_Maynard_Keynes",
+      "format": "html",
+      "sha256": "fc20ac13c30c91bac25053d8a1f07ce0159af4d288aea100b0413d383941fffc",
+      "version": "Wikisource, author page 'John Maynard Keynes' (gives his years); generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "ws_matsukata": {
+      "url": "https://en.wikisource.org/wiki/Author:Matsukata_Masayoshi",
+      "format": "html",
+      "sha256": "7a17e80f2a67c3ff3ecc8823379deb60dd72b9ecf941371c4627005fc742466f",
+      "version": "Wikisource, author page 'Matsukata Masayoshi' (gives his years); generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "herschell1893": {
+      "url": "https://archive.org/download/india.history.resource.108376/108376_djvu.txt",
+      "format": "txt",
+      "sha256": "7426a386378dfb035cff72fee3a3b6b6bd481196bd138e9f80d4d9c1b9582231",
+      "version": "Report of the Committee appointed to inquire into the Indian Currency [the Herschell Committee], with minutes of evidence and appendices (London: HMSO, 1893; C. 7060), copy of the Bombay Branch of the Royal Asiatic Society digitized for the Government of Maharashtra, archive.org item india.history.resource.108376; OCR text, which mixes the margin notes into the lines and reads decimal points as '°'; paras. 90, 155-156 and the table after para. 90",
+      "retrieved": "2026-10-16"
+    },
+    "fowler1899": {
+      "url": "https://archive.org/download/dli.csl.208/208_djvu.txt",
+      "format": "txt",
+      "sha256": "b658996c98696af2ed5b89193e2efd3cdcbc16e689057bbb3e7b3b012c361694",
+      "version": "Report of the Committee appointed to inquire into the Indian Currency [the Fowler Committee], dated India Office, 7 July 1899 (London: HMSO, 1899), Digital Library of India copy on archive.org (item dli.csl.208); OCR text; paras. 1, 13 and 21 and a minute printed with the report",
+      "retrieved": "2026-10-16"
+    },
+    "keynes1913": {
+      "url": "https://www.gutenberg.org/cache/epub/49166/pg49166.txt",
+      "format": "txt",
+      "sha256": "0871b598cbde40a0398d78341a67971dc36f900d41eab1a1cdd12b9d2f5aaf20",
+      "version": "J. M. Keynes, Indian Currency and Finance (London: Macmillan, 1913), Project Gutenberg eBook 49166 (released 7 June 2015), a transcription of the first edition; the file has CRLF line ends; chapters I, II, III and V and notes 1, 13 and 16",
+      "retrieved": "2026-10-16"
+    },
+    "naoroji1901": {
+      "url": "https://archive.org/download/povertyunbritish00naoruoft/povertyunbritish00naoruoft_djvu.txt",
+      "format": "txt",
+      "sha256": "2dd54e321cd105b0eb0f6ed5695f2cc47193a95751fb06f35f5fa5f4a429af6d",
+      "version": "Dadabhai Naoroji, Poverty and Un-British Rule in India (London: Swan Sonnenschein, 1901), University of Toronto copy on archive.org (item povertyunbritish00naoruoft); OCR text, which reads £ as ^\" or ^; the introduction (p. viii) and 'The Poverty of India' (pp. 33-34, the paper of 1876 reprinted in the book)",
+      "retrieved": "2026-10-16"
+    },
+    "maddison1971": {
+      "url": "https://web.archive.org/web/2015id_/http://www.ggdc.net/maddison/articles/moghul_3.pdf",
+      "format": "pdf",
+      "sha256": "f9d1fd8974404fb4c10e21fd4ab8f39220d5ca7729cbe2c4e0a3db8b27ca76e5",
+      "version": "A. Maddison, 'The Economic and Social Impact of Colonial Rule in India', chapter 3 of Class Structure and Economic Growth: India and Pakistan since the Moghuls (London: Allen & Unwin, 1971), the author's PDF once on www.ggdc.net (Groningen Growth and Development Centre), read in the Wayback Machine's copy of 2015 (the original host no longer serves it); pages are those printed in the PDF (pp. 13, 19-20)",
+      "retrieved": "2026-10-16"
+    },
+    "famine1880": {
+      "url": "https://archive.org/download/FamineCommission/Famine%20Commission_djvu.txt",
+      "format": "txt",
+      "sha256": "ef5e0b5bc1b1779fa7d5a602732de670d60a6c5ab745a890a32dda12176bf4b1",
+      "version": "Report of the Indian Famine Commission, Part I: Famine Relief (London: HMSO, 1880; signed by Richard Strachey and the other members, 7 July 1880), Gokhale Institute (Dhananjayarao Gadgil Library) copy on archive.org (item FamineCommission, marked public domain); OCR text with many misreadings ('5^' for 5¼, 'pf' for of), quoted as it reads; para. 81",
+      "retrieved": "2026-10-16"
+    },
+    "famine1901": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.116027/2015.116027.Report-Of-The-Indian-Famine-Commission_djvu.txt",
+      "format": "txt",
+      "sha256": "d1bd7997c0f1394167030e16c05e36addb30e1f0136e3076fc57786fead025a1",
+      "version": "Report of the Indian Famine Commission, 1901 (Calcutta: Office of the Superintendent of Government Printing, India, 1901; signed by A. P. MacDonnell, president), Digital Library of India copy on archive.org (item in.ernet.dli.2015.116027); OCR text ('rras' for was, 'eridence' for evidence), quoted as it reads; para. 203 and its table",
+      "retrieved": "2026-10-16"
+    },
+    "obstfeld2002": {
+      "url": "https://www.nber.org/system/files/working_papers/w8846/w8846.pdf",
+      "format": "pdf",
+      "sha256": "07b59ee88faaa246d31749b08e048895110f913e264e24d86ae7bfa53e03fc3c",
+      "version": "M. Obstfeld and A. M. Taylor, 'Globalization and Capital Markets', NBER Working Paper 8846, March 2002 (later in M. D. Bordo, A. M. Taylor and J. G. Williamson (eds.), Globalization in Historical Perspective, 2003); pages are the paper's own",
+      "retrieved": "2026-10-16"
+    },
+    "meissner2002": {
+      "url": "https://www.nber.org/system/files/working_papers/w9233/w9233.pdf",
+      "format": "pdf",
+      "sha256": "d5dc909fa049c4996189c0d6ed73618c93f8d369ad530f78692747855834b4d9",
+      "version": "C. M. Meissner, 'A New World Order: Explaining the Emergence of the Classical Gold Standard', NBER Working Paper 9233, October 2002; the body text of the PDF uses a font whose extracted text is unreadable, but the title page, the abstract and Table 1 (p. 9) extract cleanly",
+      "retrieved": "2026-10-16"
+    },
+    "mitchener2007": {
+      "url": "https://www.nber.org/system/files/working_papers/w13403/w13403.pdf",
+      "format": "pdf",
+      "sha256": "ff2b06a36c876a92db25dcec820ab4969afa7dee167b215ef05b1e8f6384b66e",
+      "version": "K. J. Mitchener and M. D. Weidenmier, 'The Baring Crisis and the Great Latin American Meltdown of the 1890s', NBER Working Paper 13403, September 2007; pages are the paper's own",
+      "retrieved": "2026-10-16"
+    },
+    "mitchener2009": {
+      "url": "https://www.nber.org/system/files/working_papers/w15195/w15195.pdf",
+      "format": "pdf",
+      "sha256": "98a1e358ee224b85a8af1b82260004352db3c2b83ea89b8de7b02b1640334821",
+      "version": "K. J. Mitchener, M. Shizume and M. D. Weidenmier, 'Why Did Countries Adopt the Gold Standard? Lessons from Japan', NBER Working Paper 15195, July 2009 (Shizume of the Institute for Monetary and Economic Studies, Bank of Japan); pages are the paper's own",
+      "retrieved": "2026-10-16"
+    },
+    "rr2008tid": {
+      "url": "https://www.nber.org/system/files/working_papers/w13882/w13882.pdf",
+      "format": "pdf",
+      "sha256": "b93082497b211cf0142816027dbb81a40966fd6ba0e1b67c556c283043a83e87",
+      "version": "C. M. Reinhart and K. S. Rogoff, 'This Time is Different: A Panoramic View of Eight Centuries of Financial Crises', NBER Working Paper 13882, March 2008; the same file as say_facts",
+      "retrieved": "2026-10-15"
+    },
+    "atwell2008": {
+      "url": "https://www.cuhk.edu.hk/ics/journal/articles/v48p575.pdf",
+      "format": "pdf",
+      "sha256": "b068d054217443a3005172f935c99b8d069c70718304e2d446c6027384fa1fbc",
+      "version": "W. S. Atwell, review of Man-houng Lin, China Upside Down (2006), Journal of Chinese Studies 48, 2008, pp. 575-580; the same file as toku_facts",
+      "retrieved": "2026-10-13"
+    },
+    "irigoin2013": {
+      "url": "https://www.lse.ac.uk/asset-library/information/wp173.pdf",
+      "format": "pdf",
+      "sha256": "f5a417615124d799e337597bc9638fc5dfde499280fb5f29ee1890efe8a6343b",
+      "version": "A. Irigoin, 'A Trojan horse in Daoguang China? Explaining the flows of silver in and out of China', LSE Economic History Working Papers 173/13, January 2013; the same file as toku_facts; pages are the paper's own",
+      "retrieved": "2026-10-13"
+    },
+    "shimonoseki1895": {
+      "url": "https://en.wikisource.org/wiki/Treaty_of_Shimonoseki",
+      "format": "html",
+      "sha256": "f661b76f82560c2464f70eea41780481113ff142b6ddd0f133ca338b38c2bfcc",
+      "version": "Treaty of Peace between Japan and China, signed at Shimonoseki, 17 April 1895, English text transcribed on Wikisource (an edict of government, in the public domain); Article 4; the page is generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "boxer1901": {
+      "url": "https://en.wikisource.org/wiki/United_States_Treaty_Series/Volume_1/Boxer_Protocol",
+      "format": "html",
+      "sha256": "22ef40c7a91c2d6123b1422e9edd65fbdadd459a49783041aa3565329c6c6cdf",
+      "version": "Final Protocol between China and the Powers (the Boxer Protocol), Peking, 7 September 1901, English translation as printed in C. I. Bevans (comp.), Treaties and Other International Agreements of the United States of America 1776-1949, vol. 1 (1968), transcribed on Wikisource (public domain); Article VI; the transcription has 'at 4per cent', which the quotations avoid; the page is generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    }
+  }
+}

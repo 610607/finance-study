@@ -1,0 +1,408 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+hc_ref,英国,1893,,26;1893;14,day; year; volume,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,HC Deb 26 June 1893 vol 14 cc59-61,
+hc_gladstone,英国,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"THE FIRST LORD OF THE TREASURY (Mr. W. E. GLADSTONE, Edinburgh, Midlothian)",
+hc_telegram,英国,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,the exact terms of a telegram received from the Viceroy of India to-day,
+hc_act,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"Council has passed an Act, which takes effect at once, to carry out the plan recommended by Lord Herschell's Committee.",
+hc_close,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,Act provides for close of Indian Mints to free coinage of silver from and after date of passing.,
+hc_16d,印度,1893,,16,pence per rupee,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,Arrangements will be made to issue rupees from the Mints in exchange for gold and sovereigns at the rate of 16d. per rupee,
+hc_intended,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"It is intended to introduce a gold standard into India, but gold will not be made a legal tender at present.",
+hc_onway,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"silver which was on the way to India, and which has, of course, been shipped in ignorance of this proceeding",
+hc_goschen,英国,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,I am sure the House will be grateful to the right hon. Gentleman for communicating this information at the earliest possible moment.,戈申的发言
+hc_100m,印度,1893,,100000000,pounds,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"the £100,000,000 of silver in the hands of natives would, as I gather, be excluded from any right to be presented for coinage",戈申
+hc_token,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,Will he practically not have a token coinage for the whole Indian Empire?,戈申
+hc_caution,英国,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"I must speak with caution and reserve, because I really have no positive information of any kind beyond what I have communicated to the House.",格拉德斯通
+hc_ornaments,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,the reserve of silver is almost entirely in the shape of ornaments worn by the women,MacFarlane（Argyll）的提问
+hc_dues,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,to receive sovereigns and half-sovereigns at Public Treasuries,电报：在各地国库按同一比价收金镑与半金镑，用于缴纳政府的款项
+hc_legal,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"gold is not to be legal tender though it is to be the standard, but that the rupee is to be legal tender?",戈申
+hc_inherent,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,the whole of the legal tender of the Indian Empire will practically be different from the inherent value of the silver in the coinage if there should be any further fall in silver?,戈申
+hc_noinfo,英国,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,was understood to say he had no information on this point.,格拉德斯通对 MacFarlane 的回答
+hc_admit,印度,1893,,,,,hansard1893,HC Deb 26 June 1893 vol 14 cc59-61,"it is open to them to admit it in any instance that they think fit, each case being considered upon its own merits.",国务大臣对已在途中的白银的指示：是否准予自由铸造，由印度政府逐案决定
+hp_gladstone,,,,1809;1898,years of life,,hansard_gladstone,people page,Mr W.E. Gladstone 1809 - 1898,
+hp_gladstone_pm,,,,15;1892;4;1894,day; year,,hansard_gladstone,people page,"Prime Minister August 15, 1892 - March 4, 1894",
+hp_gladstone_cx,英国,,,1859;1866,years,,hansard_gladstone,"people page, offices",Chancellor of the Exchequer 1859 - 1866,
+hp_goschen,,,,1831;7;1907,years of life,,hansard_goschen,people page,"Mr George Goschen 1831 - February 7, 1907",
+hp_goschen_ce,,,,1887;1892,years,,hansard_goschen,people page,Chancellor of the Exchequer 1887 - 1892,
+hp_naoroji,,,,1825;2;1917,years of life,,hansard_naoroji,people page,"Mr Dadabhai Naoroji 1825 - July 2, 1917",
+hp_naoroji_mp,,,,1;1892;16;1895,day; year,,hansard_naoroji,people page,"Finsbury Central July 1, 1892 - July 16, 1895",
+hp_herschell,,,,1837;1;1899,years of life,,hansard_herschell,people page,"Sir Farrer Herschell 1837 - March 1, 1899",
+hp_herschell_baron,,,,1886;1;1899,years,,hansard_herschell,people page,"Baron Herschell 1886 - March 1, 1899",
+ws_keynes,,,,1883;1946,years of life,,ws_keynes,author page,John Maynard Keynes (1883–1946),
+ws_matsukata,,,,1835;1924,years of life,,ws_matsukata,author page,Matsukata Masayoshi (1835–1924),
+fw_date,英国,1899,,7;1899,day; year,,fowler1899,"Report of the Indian Currency Committee, 1898, p. 1","India Office, 7th July, 1899.",
+fw_notif,印度,1893,,26;1893;16,day; year; pence per rupee,,fowler1899,"Report of the Indian Currency Committee, 1898, para. 13","By Notifications (Nos. 2662-4) of 26th June 1893, arrangements were made (i.) for the receipt of gold at the Indian Mints in exchange for rupees at a rate of 16d. per rupee",
+fw_public,印度,1893,,26,day (June 1893),,fowler1899,"Report of the Indian Currency Committee, 1898, Appendix (minute)","although the Report was not made public till the 26th June,",
+fw_purport,印度,1893,,7,day (June 1893),,fowler1899,"Report of the Indian Currency Committee, 1898, Appendix (minute)",its purport became known to a group of speculators almost as soon as it was signed (a correct summary was published in a continental newspaper on the 7th June),
+fw_bills,印度,1893,,31;6;3780000,day; day; Rx (tens of rupees),,fowler1899,"Report of the Indian Currency Committee, 1898, Appendix (minute)","Between the 31st May and the 6th June no less than Rx. 3,780,000 Council bills were taken",Rx 是印度账目用的“十卢比”单位，Rx. 1 = 10 卢比
+fw_bengal,印度,1898,,10;6;1898;24;12,percent; day; year; day; percent,,fowler1899,"Report of the Indian Currency Committee, 1898, para. 21","the minimum rate of the Bank of Bengal was 10 per cent, on 6th January 1898, rising on 24th February to 12 per cent,",
+fw_dissent,印度,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",We do not admit that the experience of the last six years justifies the adoption of a Is. 4 d. ratio.,委员 Robert Campbell 与 John Muir 的异议；OCR 把 1s. 读作 Is.
+fw_signed,印度,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",ROBT. CAMPBELL. JOHN MUiU,异议的署名；OCR 把 MUIR 读作 MUiU
+fw_five,印度,1893,1893-1898,5,years,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",For five years after the closing of the mints exchange never effectively reached that level in the sense of bringing gold to the currency,
+fw_27,印度,1893,,27,day (June 1893),,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","for a day on the 27th June, but it soon became apparent that the rise had been overdone",上文：汇率在 6 月 27 日碰到 1 先令 4 便士，只有一天
+fw_barsilver,印度,1893,,1180000,pounds,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","and in addition 1,180,000/. of bar silver was shipped.",1893 年 5 月 31 日至 6 月 6 日；OCR 把 £ 读作 /.
+fw_believed,印度,1893,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",It was then believed that the closing of the mints would establish a Is. 4 d. rate,OCR 把 1s. 读作 Is.
+fw_monopoly,印度,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",the monopoly rupee was bound in time to rise to whatever gold point the Indian Government chose to fix,
+fw_1s3d,印度,1899,,16;15,rupees per sovereign,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","recommend that the ratio should be altered from Is. 4d. to Is. 3d., or to Rs. 16 per sovereign, instead of Rs. 15.",即从 1 先令 4 便士改为 1 先令 3 便士；OCR 把 1s. 读作 Is.
+fw_appreciated,印度,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","the rupee at Is. 4 d. is, on the ontrary, immensely appreciated",OCR 的 ontrary 即 contrary
+fw_opium_tael,中国,1893,,397;1893;556;1897,taels per picul; year,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","There has been an advance in the tael price in Shanghai from an average (Patna, Benares, and Malwa together) of about 397 taels per picul in 1893 to 556 taels in 1897",
+fw_opium_rs,印度,1893,,1202;1114,rupees per chest,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","tho price in India has fallen from an average of about Rs, 1,202 per chest in tho former year to about Us. 1,114 in tho latter","OCR 把 the 读作 tho，把 Rs. 读作 Rs, 与 Us."
+fw_opium_chests,印度,1892,1892-93 to 1897-98,75381;1892;56069;1897,chests; year,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","while Indian exports have diminished from 75,381 chests in 1892-3 to 56,069 chests in 1897-98",
+fw_opium_rupee,印度,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",it is impossible to doubt that the falling off in the last six years is largely due to the enhanced rupee.,说的是鸦片出口
+fw_cash,中国,1899,,15,percent,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","it has appreciated in relation to silver about 15 per cent, in the last five or six years.",说的是中国的铜钱（copper cash），据委员会收到的证词
+fw_cash_wage,中国,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)","copper cash, which as the usual wage-paying medium in China must largely govern the cost of production",
+fw_cash_half,中国,1899,,,,,fowler1899,"Report of the Indian Currency Committee, 1898, minute of dissent (Campbell and Muir)",This represents less than half the fall in the China exchange,
+hr_155,印度,1893,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), para. 155",advise your Lordship to overrule the proposals for the closing of the mints and the adoption of a gold standard,委员会说，不能劝国务大臣否决印度政府的提议
+hr_156,印度,1893,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), para. 156","The closing of the mints against the free coinage of silver should be accompanied by an announcement that, though closed to the public, they will be used by Government.",
+hr_ratio,印度,1893,,16,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), para. 156","at a ratio to be then fixed, say 1s. 4d.",
+hr_heading,印度,,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",Exchange on Bills on India,表头；表的各列：年份、维也纳对伦敦的汇率（便士/弗洛林）、伦敦对印度汇票的平均汇率（便士/卢比，按财政年度 1873—74 等）、两者以第一年为 100 的指数；OCR 把小数点读作 °
+hr_x1873,印度,1873,1873-74,22.35,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1873 21°64 22°35 100 100,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1876,印度,1876,1876-77,20.51,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1876: 19°78 20°51 91°40 91°75,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1882,印度,1882,1882-83,19.52,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1882 20°07 19°52 92°74 87°36,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1885,印度,1885,1885-86,18.25,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1885 19°21 18°25 88°77 81°67,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1886,印度,1886,1886-87,17.44,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1886 19°05 17°44 88°03 78°03,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1887,印度,1887,1887-88,16.90,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1887 18°96 16°90 87°62 75°60,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1888,印度,1888,1888-89,16.38,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1888 19°32 16°38 89°28 73°28,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1890,印度,1890,1890-91,18.09,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1890 ~- 20°68 18°09 95°56 80°93,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_x1892,印度,1892,1892-93,14.98,pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), table after para. 90",1892 - 20°12 14°98 92°98 67°04,第三个数是印度汇率（便士/卢比）；OCR 的 ° 是小数点
+hr_silver,伦敦,1873,,59.25;1873;51.25,pence per ounce; year; pence per ounce,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), para. 90",price from 594d. per oz. in 1873 to 514d. per,OCR 把 59¼、51¼ 读作 594、514；后一个数是 1879 年的价格（下一行 oz. in 1879）；说的是标准银
+hr_karachi_title,印度,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (petitions)",The Petition of the Karachi Chamber of Commerce.,
+hr_karachi,印度,1892,,1;1892,day; year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (petitions)","Karachi, lst September 1892.",OCR 把 1st 读作 lst
+hr_karachi_germany,印度,1892,,1872,year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (petitions)","In 1872 Germany demonetised silver; France, to avoid an influx of the German silver, restricted the coinage of that metal.",卡拉奇商会请愿书第 2 段
+hr_karachi_fall,印度,1892,,60;38;39;35;24;14.65,pence per ounce; percent; pence per rupee,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (petitions)","The result has been a fall in the value of silver measured by gold from 60 pence per ounce to between 38 and 39 pence, a decline of over 35 per cent., and the exchange value of the rupee has consequently fallen from 24 pence to 14°65 pence.",OCR 把 14.65 的小数点读作 °
+hr_day7,英国,1892,,26;1892,day; year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence","SEVENTH DAY. Saturday, 26th November 1892.",
+hr_jackson,英国,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 1987","Mr. Tuomas Jackson, Manager of the Hong Kong and Shanghai Bank, called in and examined.",OCR 把 Thomas 读作 Tuomas；他说自己做对华贸易 28 年，当过 15 年香港总行的总经理，现任伦敦分行经理
+hr_mexican,中国,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2023","in the north of China taels and decimal fractional parts, and Mexican dollars in the South.",杰克逊的证词
+hr_paralyse,中国,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2025","Ultimately decidedly, but in the meantime it would paralyse it.",杰克逊：印度关闭铸币厂、银价下跌，最终会改善中国的贸易，眼下却会使它瘫痪
+hr_tea,印度,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2027","And, in the same way, you think the Indian tea trade would suffer in its competition with China ? -I am sure it would.",主席问，杰克逊答
+hr_day8,英国,1892,,3;1892,day; year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence","EIGHTH DAY. Saturday, 3rd December 1892.",
+hr_giffen,美国,1892,,1873;1874,year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2029","In 1873 and 1874, in view of the resumption of specie payments, the United States at that time decided to go over formally to the single gold standard.",Robert Giffen 的证词（OCR 把名字读作 Roser Girren）
+hr_giffen_who,英国,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2028","Mr. Giffen, with regard to the state of the currency in the United States",证人 Robert Giffen；OCR 把姓名一行读作 Roser Girren
+hr_world1890,世界,1890,,1890,year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)",The silver production of the world in 1890 was estimated at,
+hr_world,世界,1890,,148237091,troy ounces a year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)","this represents an anual production at that time of 148,237,091 ozs.",原文 anual
+hr_sherman,美国,1890,,1890;54000000,year; troy ounces a year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)","Under the Sherman Act of 1890 the purchases were raised to 54,000,000 ozs. annually.",
+ky_until,印度,,,1893,year,,keynes1913,"Indian Currency and Finance (1913), ch. I §1","until 1893 the currency of India was on the basis of silver freely minted, the gold value of the rupee fluctuating with the gold value of silver bullion.",
+ky_finance,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §1","Public Finance, by reason of the large payments which the Government must make in sterling, gravely disturbed",
+ky_closed,印度,1893,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §1","the Indian Mints were closed to the free mintage of silver, and the value of the rupee divorced from the value of the metal contained in it.",
+ky_1899,印度,1899,,1899;16,year; pence,,keynes1913,"Indian Currency and Finance (1913), ch. I §1",the Government had succeeded by 1899 in raising the gold value of the rupee to 1s. 4d.,
+ky_bounty,印度,1893,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §3","The depreciating rupee acted, it was said, as a bounty to exporters",
+ky_injure,印度,1893,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §3","would greatly injure the export trade in tea, corn, and manufactured cotton",
+ky_theorists,印度,1893,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §3",the advantage to exporters was largely at the expense of other members of the community and could not profit the country as a whole,
+ky_temporary,印度,1893,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §3",that it could only be temporary.,
+ky_experience,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §3","With regard to the temporary nature of the effect on exporters, experience has decisively supported theory.",
+ky_limits,印度,,,16+1/8;15+29/32,pence per rupee,,keynes1913,"Indian Currency and Finance (1913), ch. I §6",the extreme limits of variation of the sterling value of the rupee are 1s. 4⅛d. and 1s. 3–29/32d.,
+ky_fourth,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §6",The fourth of these provisions is the vital one for supporting the sterling value of the rupee,
+ky_calcutta,印度,,,15+29/32,pence per rupee,,keynes1913,"Indian Currency and Finance (1913), ch. I §6","the Government will sell in Calcutta, in return for rupees tendered there, bills payable in London in sterling at a rate not more unfavourable than 1s. 3–29/32d. per rupee.",
+ky_15,印度,,,15,rupees per pound,,keynes1913,"Indian Currency and Finance (1913), ch. I §6",The sovereign is unlimited legal tender at £1 to 15 rupees,
+ky_convertible,,,,15;1,rupees; pounds,,keynes1913,"Indian Currency and Finance (1913), ch. I §6",the Government can be required to give 15 rupees in exchange for £1.,
+ky_third,,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §6","the Government is, as a rule, willing to give sovereigns for rupees at this rate; but the practice is sometimes suspended",
+ky_inconvertible,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §6","The rupee is unlimited legal tender and, so far as the law provides, inconvertible.",
+ky_dates1893,印度,,,1893,year,,keynes1913,"Indian Currency and Finance (1913), ch. I §7",1893. Act closing the Indian mints to the coinage of silver on private account.,
+ky_dates1899,印度,,,1899;16,year; pence,,keynes1913,"Indian Currency and Finance (1913), ch. I §7",1899. Act declaring the British sovereign legal tender at 1s. 4d. to the rupee.,
+ky_dates1900,,,,1900,year,,keynes1913,"Indian Currency and Finance (1913), ch. I §7",1900. Gold Standard Reserve instituted out of profits of coinage.,
+ky_dates1904,印度,,,1904;16+1/8,year; pence,,keynes1913,"Indian Currency and Finance (1913), ch. I §7",1904. Secretary of State’s notification of his willingness to sell Council Bills on India at 1s. 4⅛d. the rupee without limit.,
+ky_dates1908,印度,,,1908;15+29/32,year; pence,,keynes1913,"Indian Currency and Finance (1913), ch. I §7","1908. Sterling drafts sold in Calcutta on London at 1s. 3–29/32d. the rupee, and cashed out of funds from the Gold Standard Reserve.",
+ky_herschell,印度,,,1893,year,,keynes1913,"Indian Currency and Finance (1913), ch. II §17","When in 1893, on the recommendation of the Herschell Committee, following upon the agitation of the Indian Currency Association, the Mints were closed to the free coinage of silver",
+ky_unfav,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §17","Exchange fell considerably below 1s. 4d., and the Secretary of State had to sell his bills for what he could get.",
+ky_1898,印度,,,1898;16,year; pence,,keynes1913,"Indian Currency and Finance (1913), ch. II §17",by January 1898 exchange was stable at 1s. 4d.,
+ky_rothschild,英国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §18",in fact a gold standard without a gold currency seemed to him an utter impossibility.,Alfred de Rothschild 对 1898 年委员会的证词，凯恩斯转述
+ky_alfred,英国,1898,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §18",Mr. Alfred de Rothschild went so far as to say that,在 1898 年的委员会上作证
+ky_lindsay,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §18",The Gold–Exchange Standard in the form in which it has been adopted in India is justly known as the Lindsay scheme.,
+ky_lindsay_who,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §18","by Mr. A. M. Lindsay, Deputy-Secretary of the Bank of Bengal",
+ky_lindsay1876,印度,,,1876;1878,year,,keynes1913,"Indian Currency and Finance (1913), ch. II §18",His first proposals were made in 1876 and 1878.,
+ky_home,印度,1913,,19000000;20000000,pounds a year,,keynes1913,"Indian Currency and Finance (1913), ch. V §2","for interest on debt, pensions, payments to the War Office, Government stores (not chargeable to capital), etc., amount to £19,000,000 or £20,000,000 annually.",
+ky_remit,印度,1913,,15000000;18000000,pounds a year,,keynes1913,"Indian Currency and Finance (1913), ch. V §2","the amount which it is necessary to remit to England annually is from £15,000,000 to £18,000,000.",
+ky_dealer,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. V §2","The Government is, therefore, one of the largest dealers in foreign exchange",
+ky_wednesday,英国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. V §3",The bills are offered in London for tender at the Bank of England every Wednesday morning,
+ky_ceiling,印度,,,16,pence,,keynes1913,"Indian Currency and Finance (1913), ch. V §7",it can never be worth while for the banks to buy Council Bills at a price which exceeds 1s. 4d. by more than the cost of sending gold to India.,
+ky_eighth,印度,,,1/8,pence,,keynes1913,"Indian Currency and Finance (1913), ch. V §7","This cost varies considerably from time to time, but it seldom exceeds ⅛d.",
+ky_back,印度,,,3/32,pence,,keynes1913,"Indian Currency and Finance (1913), ch. V §7","the cost of bringing it back again, say, 3/32d.",
+ky_1911,印度,1911,1911-12,5000000;11000000;2250000,pounds,,keynes1913,"Indian Currency and Finance (1913), ch. V §14","in that year about £5,000,000 was spent on pensions and leave allowances, £11,000,000 on debt services, and £2,250,000 on military services (excluding pensions).",
+ky_creditor,英国、法国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §12",At one end of the scale we have Great Britain and France—creditor nations in the short–loan market.,
+ky_russia,俄国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §12","Next come such countries as Russia and Austria–Hungary—rich and powerful, with immense reserves of gold, but debtor nations, dependent in the short–loan market on their neighbours.",
+ky_bankers,,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §10","This is not the expedient of second–rate or impoverished countries; it is the expedient of all those who have not attained a high degree of financial supremacy—of all those, in fact, who are not themselves international bankers.",
+ky_abroad,,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §11","The second is for the Government or Central Bank to hold resources available abroad, which can be used for maintaining the gold parity of the local currency, when there is the need for it.",
+ky_philippines,菲律宾,1903,,1903,year,,keynes1913,"Indian Currency and Finance (1913), ch. II §19",In 1903 the Government of the United States introduced a system avowedly based on it into the Philippines.,
+ky_westafrica,西非,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §19",Our own Colonial Office have introduced it in the Straits Settlements and are about to introduce it into the West African Colonies.,
+ky_china,中国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §19","In China, as is well known, currency reform has not yet been carried through.",
+ky_asia,,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II §19",the Gold–Exchange Standard has become the prevailing monetary system of Asia.,
+ky_japan37,日本,1912,,37000000,pounds,,keynes1913,"Indian Currency and Finance (1913), ch. II, note 13","the gold funds held by the Government and the Bank of Japan in Europe and the United States were about £37,000,000.",
+ky_japan_class,日本,1913,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II, note 13",it is as a Gold-Exchange Standard hers ought impartially to be classified.,
+ky_japan_virtually,日本,1913,,,,,keynes1913,"Indian Currency and Finance (1913), ch. II, note 13",The Japanese system is virtually the same in practice.,
+ky_token,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. III §2","the rupee, being a token coin, is virtually a note printed on silver.",
+ky_contains,印度,,,3/8;11/12,troy ounce; fineness,,keynes1913,"Indian Currency and Finance (1913), ch. III, note 16",The rupee contains ⅜ oz. of silver of eleven–twelfths fineness.,
+ky_brunyate,印度,1910,,25;1910,day; year,,keynes1913,"Indian Currency and Finance (1913), ch. I §3","Mr. J. B. Brunyate in the Legislative Council (February 25, 1910)",
+ky_mill,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §3",the Bombay mill–owning interests,
+ky_darjeeling,印度,1892,,1892,year,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",I am quoting the words actually used by the Darjeeling Planters’ Association in 1892.,布鲁尼亚特（Brunyate）1910 年的话
+ky_ruin,印度,1892,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",the entire and irretrievable ruin of the tea industry,
+ky_tea,印度,1892,,115000000;1909,pounds weight; year,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1","In the year before the closing of the Mints India exported 115 million pounds of tea to foreign countries, and by 1909 had a little more than doubled that amount.",
+ky_silver40,伦敦,1892,1892-93 to 1894-95,40;33+1/3;29,pence per ounce,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1","In 1892–93, the year before the Mints were closed, the average value of silver per ounce was nearly 40d. The next year it fell to 33⅓d.; the year after to about 29d.;",
+ky_bounty25,印度,,,2;25,percent,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",The so–called bounty in this case was not 2 per cent but 25 per cent.,
+ky_yarn91,印度,1891,1891-92,161000000,pounds weight,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",In 1891–92 the exports of yarn had been 161 million pounds.,
+ky_yarn92,印度,1892,1892-93 to 1894-95,189000000;134000000;159000000,pounds weight,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1","In 1892–93 the inflated year just preceding the closing of the Mints, they rose to 189 million pounds. In 1893–94 they fell (as I have said) to 134 millions, but went up again the following year to 159 millions.",
+ky_yarn05,印度,1905,1905-6,298000000,pounds weight,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",in 1905–6 they reached the record figure of 298 millions.,
+ky_china_adjust,中国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",it would appear that the adjustment of prices and wages in China to the extraordinary new conditions began very quickly,
+ky_yarn08,印度,1908,1908-9,235000000,pounds weight,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1","the amount exported in 1908-9 was as much as 235 millions, and in the exports to China in particular there was a marked improvement.",
+ky_stimulus,中国,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",Surely here were the conditions in which a disastrous stimulus to production in China might have been expected.,
+ky_glut,印度,1893,1893-94,,,,keynes1913,"Indian Currency and Finance (1913), ch. I, note 1",partly due to the dislocation arising from the changes in our currency system and partly to the existing glut of the Chinese market.,
+ky_prices,印度,,,1893,year,,keynes1913,"Indian Currency and Finance (1913), ch. I §3",it is plain that the great change of 1893 must have tended to make them fall,
+nr_bleeding,印度,1901,,30000000,pounds a year,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. viii","the evil of the "" bleeding "" and impoverishing drain by the foreign dominion nearly or above £30,000,000 a year in a variety of subtle ways and shapes",
+nr_forty,印度,1901,,40;30,million pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. viii",the present drain will be nearer forty than thirty millions,
+nr_shillings,印度,1901,,2,shillings per rupee,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. viii",speaking roughly on the old basis of the value of gold at two shillings per rupee,
+nr_exports,印度,1835,1835-1872,1835;1872;1120000000;15;168000000;1288000000,year; year; pounds; percent; pounds; pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","exports of India for the years 1835 to 1872 being about ^""1,120,000,000, the imports, with an addition of 15 per cent, to exports for profits (of about ^168,000,000), should be about ^""1,288,000,000.","OCR 把 £ 读作 ^"" 或 ^"
+nr_loans,印度,1835,1835-1872,50000000;100000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","India has incurred to foreign parts a debt of about ^""50,000,000 for the public debt, and about ^""100,000,000 for railways, during the same period.",
+nr_imports,印度,1835,1835-1872,1430000000;943000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","^""1,430,000,000, but) only about ^""943,000,000",瑙罗吉写的应有进口与实际进口
+nr_500,印度,1835,1835-1872,500000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","balance of about ^""500,000,000, which England has kept back",
+nr_interest,印度,,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33",This is without including any interest at all.,
+nr_opium,中国,1835,1835-1872,141000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","Towards this drain, the net opium revenue contributed by China amounts to about ^""141,000,000.",
+nr_business,印度,1835,1835-1872,453000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 34","Allowing for the railway interest as a mere matter of business, and analysing the deficit of imports, or drain to England, as only about ^""453,000,000, the following is the yearly average for every five years",
+nr_a1835,印度,1835,1835-1839,1835;1839;5347000,year; year; pounds a year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 34",1835 to 1839 5.347.ooo,"OCR 把 5,347,000 读作 5.347.ooo"
+nr_a1870,印度,1870,1870-1872,1872;27400000,year; pounds a year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 34","1872 27,400,000",表的最后一行；OCR 把年份的起点 1870 印在另一列
+nr_young,印度,,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 34","which, being young, or with undeveloped resources, and without much means of their own, borrow from others, and increase their own wealth thereby, as Australia, Canada, the United States",
+nr_1876,印度,1876,,1876,year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 1 (heading)",READ BEFORE THE BOMBAY BRANCH OF THE EAST INDIA ASSOCIATION OF LONDON IN 1876.,
+nr_1873,英国,1873,,1873,year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 1, note",These notes in their original draft were placed before the Select Committee on Indian Finance in 1873.,
+nr_uk,英国,1858,1858-1870,1858;1870,year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 32",The total imports and exports of the United Kingdom for the years 1858 to 1870 are,
+nr_uk25,英国,1858,1858-1870,25,percent,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 32","the imports are above 25 per cent, greater than the exports.",
+nr_mark,印度,,,15,percent,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","If I take general commercial profits as 15 per cent., I shall be quite under the mark.",
+nr_normal,,,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","the normal condition of the foreign commerce of any country is generally such that for its exports there is always a return in imports equal to the exports, plus profits.",
+nr_times,英国,1898,,3;1898,day; year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 528","The following letter was printed in the Times of June 3, 1898",
+nr_may29,英国,1898,,29;1898,day; year,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 530","May 29, 1898.",致《泰晤士报》的信的日期
+nr_exchange,印度,1898,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 528",Fall or rise in exchange does not in itself (other circumstances being the same) matter in true international trade,
+nr_farthing,印度,1898,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 529",Closing the mints or introducing a gold standard does not and cannot save a single farthing to the Indian taxpayers in their remittances for,下接 home charges
+nr_20m,印度,1898,,20000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 529","Suppose we take roundly £20,000,000 sterling in gold to be the amount of the",下接 home charges
+nr_produce,印度,1898,,20000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 529","The Indian taxpayers have to send as much produce to this country as is necessary to buy £20,000,000 sterling, not an ounce less",
+nr_45,印度,1898,,11;16;45,pence; pence; percent,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 529","Closing of the mints and thereby raising the true rupee worth, at present about ud. in gold, to a false rupee to be worth about i6d. in gold is a covert exaction of 45 per cent",OCR 把 11d. 读作 ud.，把 16d. 读作 i6d.（第 537 页同一说法印作 nd. 与 i6d.）
+nr_rayat,印度,1898,,10,rupees,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 529",Suppose a rayat has to pay Rs. 10 for land tax.,rayat 是种地的农民
+nr_produce45,印度,1898,,45,percent,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 529","to sell 45 per cent, more of his produce to get this false rupee",
+nr_committee,英国,1898,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 530","the constitution of the present Currency Committee is utterly unsatisfactory, as it does not contain any representative of the Indian taxpayers.",
+md_controversy,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 20",This 'drain' of funds from India to the UK has been a point of major controversy between Indian nationalist historians and defenders of the British raj.,
+md_statistical,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 20",the only real grounds for controversy are statistical.,
+md_190,印度,,,190,years,,maddison1971,"Maddison (1971), ch. 3, p. 20",There can be no denial that there was a substantial outflow which lasted for 190 years.,
+md_1856,印度,1856,,3500000;1856,pounds; year,,maddison1971,"Maddison (1971), ch. 3, p. 20","official transfers to the UK rose gradually until they reached about £3.5 million in 1856, the year before the mutiny.",
+md_noncolonial,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 20","Some of these flows would have occurred in a non-colonial economy, e.g. debt service on loans used to finance railway development, but a large part of the debt was incurred as a result of colonial wars.",
+md_legit,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 20","we can legitimately consider service charges on non-productive debt, pensions and furlough payments as a",
+md_third,印度,,,1/3,share,,maddison1971,"Maddison (1971), ch. 3, p. 21",About a third of the private profit remittances should therefore be treated as the profits of colonialism.,
+md_15,印度,1921,1921-1938,1.5;1921;1938,percent; year; year,,maddison1971,"Maddison (1971), ch. 3, p. 21",amounted to about 1.5 per cent of national income of undivided India from 1921 to 1938 and was probably a little larger before that,
+md_quarter,印度,,,1/4,share,,maddison1971,"Maddison (1971), ch. 3, p. 21",about a quarter of Indian savings were transferred out of the economy,
+md_positive,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 21",the Indian balance of trade and bullion was always positive,
+md_1880s,印度,,,1880,decade,,maddison1971,"Maddison (1971), ch. 3, p. 21",it would seem that it was biggest around the 1880s.,
+md_t3554,印度,1835,1835-1854,4.5,million pounds a year,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3",1835-54 4.5 n.a. n.a.,
+md_t5574,印度,1855,1855-1874,7.3;50.0;0.21,million pounds a year (current; 1948-9 prices); pounds per head,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3",1855-74 7.3 50.0 0.21,
+md_t7594,印度,1875,1875-1894,13.4;80.0;0.30,million pounds a year (current; 1948-9 prices); pounds per head,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3",1875-94 13.4 80.0 0.30,
+md_t9513,印度,1895,1895-1913,16.8;77.6;0.26,million pounds a year (current; 1948-9 prices); pounds per head,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3",1895-1913 16.8 77.6 0.26,
+md_cif,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3","The Indian surplus is understated, and deficit overstated because imports are recorded c.i.f. and exports f.o.b.",
+md_famine,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 12",In 1876-8 and 1899-1900 famine killed millions of people.,
+md_t33,印度,,,1835;1967,year,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3","Table 3-3 India's Balance on Merchandise and Bullion, 1835-1967",
+md_units,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 21, Table 3-3",(annual average) (£million),第一列（当年价格）的单位
+md_homecharges,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 20","official transfers of funds to the UK by the colonial government were called the ""Home Charges""",
+md_items,印度,,,,,,maddison1971,"Maddison (1971), ch. 3, p. 20","They mainly represented debt service, pensions, India Office expenses in the UK, purchases of military items and railway equipment.",
+f80_excess,印度,1877,1877-1878,190000000;5250000,people,,famine1880,"Report of the Indian Famine Commission, Part I (1880), para. 81","on a population of 190 millions, to 5^ millions in excess pf the deaths that would have",OCR 把 5¼ 读作 5^，把 of 读作 pf
+f80_period,印度,1877,,1877;1878,year,,famine1880,"Report of the Indian Famine Commission, Part I (1880), para. 81","period of famine and 'drought extending over the , years 1877 and 1878 amounted,",
+f80_british,印度,,,,,,famine1880,"Report of the Indian Famine Commission, Part I (1880), para. 81",the provinces under ^British Administration,
+f80_births,印度,1877,1877-1878,2000000,births,,famine1880,"Report of the Indian Famine Commission, Part I (1880), para. 81",number of births during the same pferiod has been lessened by two millions ;,
+f80_seven,印度,1877,1877-1878,7000000,people,,famine1880,"Report of the Indian Famine Commission, Part I (1880), para. 81",the total reduction of thp population would thus amount to about seven millions.,
+f80_40,印度,1877,,40,percent,,famine1880,"Report of the Indian Famine Commission, Part I (1880), para. 81",the abnormal mortality of the famine period may be regarded as having increased this total by about 40 per cent.,
+f80_signed,印度,1880,,,,,famine1880,"Report, Part I, signatures",RICHARD STRACHEY.,
+f80_date,印度,1880,,7;1880,day; year,,famine1880,"Report, Part I, signatures","July 7, 1880.",
+f01_title,印度,1901,,1901,year,,famine1901,title page,"INDIAN FAMINE COMMISSION, 1901 . CALCUTTA:",
+f01_double,印度,1900,,1900,year,,famine1901,"Report of the Indian Famine Commission, 1901, para. 203",the recorded deaths in 1900 were something more than double the decennial average of deaths,
+f01_total,印度,1900,,2301951;1069096;1236855,deaths,,famine1901,"Report of the Indian Famine Commission, 1901, para. 203","Total ... 2,301,951 1,069,096 1,236,855",表的合计行：1900 年记录的死亡、十年平均与超出的死亡
+f01_quarter,印度,1900,,1250000,lives,,famine1901,"Report of the Indian Famine Commission, 1901, para. 203",the toll taken by the famine in British districts rras about one million and a quarter lives.,OCR 把 was 读作 rras
+f01_immigrants,印度,1900,,,,,famine1901,"Report of the Indian Famine Commission, 1901, para. 203","Very many were immigrants from Native States, who, as we have already stated, came across the border in a deplorable condition.",
+f01_one,印度,1900,,1000000,deaths,,famine1901,"Report of the Indian Famine Commission, 1901, para. 203",the impression which the eridence as a whole leaves upon our minds is that one million excess deaths occurred among British subjects.,OCR 把 evidence 读作 eridence
+f01_cholera,印度,1900,,1/5,share,,famine1901,"Report of the Indian Famine Commission, 1901, para. 203",Of the total excess mortality we consider that at least one-fifth was due to cholera.,
+f01_signed,印度,1901,,,,,famine1901,"Report, signatures",A. P. MACDONNELL.,
+ot_notice,,,,,,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, title page","© 2002 by Maurice Obstfeld and Alan M. Taylor. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+ot_7,,,,1870;7;20;1900;1914,year; percent; percent; year; year,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 25","In 1870 we estimate that foreign assets were just 7 percent of World GDP; but this figure rose quickly, to just below 20 percent in the years 1900–14 at the zenith of the classical gold standard.",
+ot_80,英国,,,80,percent,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 21","at its peak, the British share of total global foreign investment was almost 80 percent.",
+ot_bankers,英国,,,,,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 21",the British were rightly termed the “bankers to the world”,
+ot_seal,,,,,,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 46",A first study by Bordo and Rockoff (1996) found that adherence to gold standard rules acted as a “seal of approval” for sovereign debt.,
+ot_t4,,,,1870;1913,year,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 53, Table 4","Table 4: Country Risk and the Gold Standard, 1870–1913",
+ot_gs,,,,-0.30;0.06;-0.57;0.08,"percentage points (OLS; AR1), standard errors in parentheses",,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 53, Table 4",GS -0.30 (0.06) -0.57 (0.08),因变量是对英国统一公债的收益率差，单位是百分点
+ot_13,,,,13,countries,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 53, Table 4","The 13 countries in the unbalanced panel are Argentina, Australia, Belgium, Canada, Denmark, France, Germany, Italy, Japan, Netherlands, Norway, Sweden, and United States.",
+ot_debt,,,,10;7.2,percent; basis points,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 52",a 10 percent rise in a peripheral country’s ratio of debt to GDP added 7.2 basis points to its borrowing cost.,
+ot_consol,英国,,,3,percent,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 52, note 63",at a time when the base yield on the U.K. consol was about 3 percent.,
+ot_skeptical,,,,,,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 55","adherence to gold by core countries was pretty much sufficient to confer credibility, whereas markets took a broader and more skeptical view of peripheral countries.",
+ot_flandreau,,,,35;55,basis points,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 49, note 58",They report benefits from gold standard adherence on the order of 35–55 basis points.,"Flandreau, Le Cacheux 与 Zumer（1998），据 Obstfeld 与 Taylor 的转述"
+ot_clemens,,,,,,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 46, note 56","Clemens and Williamson (2001), however, find no statistically significant gold standard effect",接下一页 ot_clemens2
+ot_clemens2,,,,1870;1913,year,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 46, note 56",on the shares of British capital flows to various foreign recipients during 1870–1913.,
+ot_57,,,,1914;57,year; basis points (lower),,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 52","Being on gold appears statistically significant before 1914, contributing about −57 basis points to the spread over London.",
+me_notice,,,,,,,meissner2002,"Meissner (2002), title page","© 2002 by Christopher M. Meissner. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+me_note,,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",This table uses the date of adoption of the free convertibility of a currency exclusively into gold.,
+me_dash,,,,1913,year,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1","The entry ""---"" means that the country did not adopt gold convertibility before 1913.",
+me_trade,,,,,,,meissner2002,"Meissner (2002), abstract",Countries adopted the gold standard sooner when they had a large share of trade with other gold countries relative to GDP.,
+me_debt,,,,,,,meissner2002,"Meissner (2002), abstract",A large public debt burden also led to a later transition.,
+me_australia,Australia,1852,,1852,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Australia 1852,
+me_canada,Canada,1853,,1853,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Canada 1853,
+me_portugal,Portugal,1854,,1854,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Portugal 1854,
+me_argentina,Argentina,1863,,1863;1883;1903,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1","Argentina 1863, 1883, 1903",
+me_uruguay,Uruguay,1863,,1863,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Uruguay 1863,
+me_colombia,Colombia,1871,,1871,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Colombia 1871,
+me_germany,Germany,1872,,1872,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Germany 1872,
+me_sweden,Sweden,1873,,1873,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Sweden 1873,
+me_denmark,Denmark,1873,,1873,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Denmark 1873,
+me_norway,Norway,1873,,1873,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Norway 1873,
+me_netherlands,Netherlands,1875,,1875,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Netherlands 1875,
+me_finland,Finland,1877,,1877,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Finland 1877,
+me_belgium,Belgium,1878,,1878,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Belgium 1878,
+me_france,France,1878,,1878,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",France 1878,
+me_switzerland,Switzerland,1878,,1878,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Switzerland 1878,
+me_unitedstates,United States,1879,,1879,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",United States 1879,
+me_turkey,Turkey,1880,,1880,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Turkey 1880,
+me_italy,Italy,1884,,1884,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Italy 1884,
+me_egypt,Egypt,1885,,1885,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Egypt 1885,
+me_chile,Chile,1887,,1887;1895,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Chile 1887 & 1895,
+me_romania,Romania,1890,,1890,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Romania 1890,
+me_salvador,Salvador,1892,,1892,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Salvador 1892,
+me_japan,Japan,1897,,1897,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Japan 1897,
+me_russia,Russia,1897,,1897,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Russia 1897,
+me_india,India,1899,,1899,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",India 1899,
+me_costarica,Costa Rica,1900,,1900,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Costa Rica 1900,
+me_ecuador,Ecuador,1900,,1900,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Ecuador 1900,
+me_philippines,Philippines,1903,,1903,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Philippines 1903,
+me_straitssettlements,Straits Settlements,1903,,1903,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Straits Settlements 1903,
+me_siam,Siam,1903,,1903,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Siam 1903,
+me_mexico,Mexico,1905,,1905,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Mexico 1905,
+me_brazil,Brazil,1906,,1906,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Brazil 1906,
+me_bolivia,Bolivia,1908,,1908,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Bolivia 1908,
+me_greece,Greece,1910,,1910,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Greece 1910,
+me_nicaragua,Nicaragua,1912,,1912,year of adoption,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Nicaragua 1912,
+me_austriahungary,Austria-Hungary,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Austria-Hungary ---,1913 年以前没有采用
+me_santodomingo,Santo Domingo,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Santo Domingo ---,1913 年以前没有采用
+me_haiti,Haiti,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Haiti ---,1913 年以前没有采用
+me_bulgaria,Bulgaria,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Bulgaria ---,1913 年以前没有采用
+me_china,China,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",China ---,1913 年以前没有采用
+me_guatemala,Guatemala,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Guatemala ---,1913 年以前没有采用
+me_honduras,Honduras,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Honduras ---,1913 年以前没有采用
+me_indonesia,Indonesia,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Indonesia ---,1913 年以前没有采用
+me_paraguay,Paraguay,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Paraguay ---,1913 年以前没有采用
+me_persia,Persia,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Persia ---,1913 年以前没有采用
+me_peru,Peru,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Peru ---,1913 年以前没有采用
+me_spain,Spain,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Spain ---,1913 年以前没有采用
+me_venezuela,Venezuela,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",Venezuela ---,1913 年以前没有采用
+mw_notice,,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, title page","© 2007 by Kris James Mitchener and Marc D. Weidenmier. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+mw_famous,,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, abstract",The Baring Crisis is the nineteenth century's most famous sovereign debt crisis.,
+mw_fifth,阿根廷,,,5,rank,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 3",It was the fifth largest sovereign borrower in the world.,
+mw_11,阿根廷,1884,,11;1884;1890;40;50;1889,percent; year; year; percent; percent; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 3",It absorbed roughly 11 percent of all new issues in the new London market between 1884 and 1890 and 40 to 50 percent of all lending that occurred outside the United Kingdom in 1889.,
+mw_taylor,阿根廷,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 4",the 1880s stand out as a period of totally unprecedented capital inflows into an emerging market at any time in history.,"Taylor (2003, p. 177)，据 Mitchener 与 Weidenmier 的引文"
+mw_ca,阿根廷,1884,1884-1889,20;1884;1889,percent; year; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 4","The current account deficit, as a percent of GDP, averaged 20 percent from 1884 to 1889.",
+mw_paper,阿根廷,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 4",Argentina issued bonds in sterling or gold on European capital markets while the country operated on a paper standard,
+mw_mismatch,阿根廷,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 4",The currency mismatch problem meant that a depreciation of the paper peso could impair the country’s ability to service its gold debts,
+mw_freebanking,阿根廷,1887,,1887,year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 4",National and Provincial Banking authorities ratified a Free Banking Law in 1887 which authorized any banking association to issue notes provided that it purchased gold bonds to the full,下接第 5 页 mw_freebanking2
+mw_freebanking2,阿根廷,1887,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5",amount of the notes issued.,
+mw_notred,阿根廷,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5","The bank notes, however, were not redeemable in gold, and since the gold bonds were new issues, they constituted a new liability on the government’s balance sheet.",
+mw_30m,阿根廷,1890,,1890;30000000,year; pounds,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5","By 1890, Argentine provincial banks had issued more than 30 million pounds of debt on foreign capital markets.",
+mw_macro,阿根廷,1884,1884-1890,18;17;19;1884;1890,percent a year; percent; percent; year; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5","The monetary base grew at an annual average rate of 18 percent (driven by the issuance of paper currency emissions), inflation averaged 17 percent, and the paper peso depreciated at an average rate of 19 percent between 1884 and 1890",della Paolera 与 Taylor（2001），据 Mitchener 与 Weidenmier
+mw_debtservice,阿根廷,,,40,percent,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5",with as much as 40 percent of foreign borrowing going towards debt service,
+mw_94,阿根廷,,,94,percent,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5",gold pesos were trading at a large premium (94 percent) relative to paper pesos,Fishlow (1989)，据 Mitchener 与 Weidenmier
+mw_terry,阿根廷,,,1887;1888,year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5","until the end of 1887, it was possible to save the patient: in 1888, it already was no longer possible.",前财政部长 José Terry 的话，据 Fishlow 的引文
+mw_terry_who,阿根廷,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 5",The former finance minister Jose Terry suggested that,"Mitchener 与 Weidenmier 转引 Fishlow (1989, p. 88)"
+mw_1889,阿根廷,1889,,1889,year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 6","In 1889, the government broke its promise and paid off some of its gold-denominated liabilities with paper currency.",
+mw_water,英国,1890,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 6",The investment bank was saddled with the Buenos Aires Water Supply and Drainage Loan,
+mw_nov,英国,1890,,1890,year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 6",the House of Baring notified the Bank of England of its financial problems in early November 1890.,
+mw_rescue,英国,1890,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 6","The central bank pooled resources from the Bank of France, Russia’s central bank, and British financial institutions to form a rescue fund",
+mw_little,阿根廷,1890,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 7",the central bank did little to help debt-ridden Argentina.,
+mw_48,阿根廷,1890,,48000000;1890;60,pounds; year; percent,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 7","Argentina defaulted on nearly ₤48 million of debt in 1890, which ended up constituting nearly 60 percent of the world’s defaulted debt in the 1890s.",
+mw_rothschild,阿根廷,1891,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 7",Nathan Rothschild formed a committee of leading financiers to restructure the country’s debt obligations.,
+mw_1891,阿根廷,1891,,1891,year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 7",Argentina subsequently experienced a severe banking crisis in January 1891,
+mw_gdp,阿根廷,1890,,11;1890;1891,percent; year; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 7",Argentina’s real GDP fell by 11 percent between 1890 and 1891.,
+mw_recover,阿根廷,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 7",did not fully recover from the crisis until the turn of the century,
+mw_celman,阿根廷,1890,,6;1890,day; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 10","President Miguel Juarez Celman then resigned on August 6, 1890",
+mw_1400,阿根廷,1892,,1400;1892;800;1896,basis points; year; basis points; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 10","The country risk premium fell from its high of 1,400 basis points in 1892 to approximately 800 basis points by 1896.",
+mw_844,拉丁美洲,1890,,844;759;1608,basis points,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 32","The average sovereign yield spread for Latin American countries in our sample increased by 844, 759, and 1,608 basis points in the one-year, two-year, and four-year periods after the onset of the financial crisis.",
+mw_15000,,,,15000,bond prices,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 32","Using a new database of more than 15,000 bond prices collected from the Economist",
+mw_spread,,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 9",which is defined as the current yield on a sterling bond for country or colony i minus the yield on the,收益率差（国家风险溢价）的定义；下文是“无风险”的英国统一公债
+mw_flat,,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 32",yield spreads in non-Latin emerging markets and core countries were generally flat during the same period.,
+mw_fund,,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 33","Macroeconomic indicators such as the debt burden, the budget deficit, and the trade deficit as well as the political variables were generally not very important for pricing sovereign debt during this turbulent period.",
+mw_haven,,,,1890,decade,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 33",being on the gold standard offered safe haven for borrowers that committed to this policy regime during the crisis of the 1890s,
+mw_ukrisk,,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 33",trading more with the UK increased country risk during the crisis.,
+mw_200,拉丁美洲,1890,,200,basis points,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 33",Yield spreads were more than 200 basis points higher for Latin American countries during the crisis.,
+mw_sold,拉丁美洲,,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 33",European investors sold off or reduced their holdings of Latin American bonds.,
+mw_shift,阿根廷,1890,,,,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, p. 32",provide some evidence that UK investors shifted some of their funds to non-Latin emerging markets during the early 1890s,
+mw_t1,英国,1890,,19;1890,day; year,,mitchener2007,"Mitchener and Weidenmier (2007), NBER WP 13403, Table 1","November 19, 1890 Fall of Barings announced simultaneously with “Guarantee” scheme of",表 1 按《投资者月刊》（Investors' Monthly Manual）列出的日期
+ms_notice,,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, title page","© 2009 by Kris James Mitchener, Masato Shizume, and Marc D. Weidenmier. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+ms_boj_affil,,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, title page",Institute for Monetary and Economic Studies Bank of Japan,
+ms_seal,,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 1",good housekeeping seal of approval,
+ms_30bp,,,,30,basis points,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 1","Investors rewarded countries that joined the gold standard by lowering their cost of capital in financial markets by approximately 30 basis points (Obstfeld and Taylor, 2003).",
+ms_yen,日本,1871,,1871,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4","It introduced a national currency, the yen, in 1871.",
+ms_boj,日本,1882,,1882,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4",The Bank of Japan was founded in 1882,
+ms_silver,日本,1885,,1885;1886,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4",Japan adopted the silver standard in May 1885 and had made all yen-denominated paper money issued by the government convertible to silver by January 1886.,
+ms_eleven,日本,,,11,years,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4",It stayed on the silver standard for eleven years.,
+ms_london1870,日本,1870,,1870,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4, note","Its first national debt, issued in London in 1870 financed railway construction.",
+ms_1872,日本,1872,,1872;1876,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4","It imported the U.S. model of a national banking system in 1872, and in 1876, allowed these national banks to issue paper notes backed by government bonds.",
+ms_inflation,日本,1878,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4",These early monetary institutions resulted in unsustainably high inflation rates in the late 1870s and early 1880s,
+ms_1893,日本,1893,,1893,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 4","Beginning in 1893, the government made preparations to join the gold standard.",
+ms_march,日本,1897,,1897;1896,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5","in March of 1897, the ruling government (led by Matsukata, who had been both Prime Minister and Finance Minister since September 1896) officially submitted legislation to the Imperial Diet authorizing a gold standard.",
+ms_report,日本,1895,,3;1895,day; year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5","the committee submitted its final report to the returning and reappointed finance minister Matsukata, on July 3, 1895.",
+ms_votes,日本,1895,,15;7;6;2,members,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5","Of the 15 members on the main committee (composed of government officials, business leaders, and academics), seven wanted to retain silver, six suggested moving to gold at some point in the future, and two desired a bimetallic standard.",
+ms_sterling,日本,1895,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5",Matsukata’s strategy was to request that China pay the indemnity in pound,下接 ms_sterling2；pound-sterling 在行末断开
+ms_sterling2,日本,1895,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5",in London even though the original treaty stated it would be paid in silver taels.,
+ms_reserves,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5",The pound sterling would then enable Japan to acquire gold reserves so that it could move onto the gold standard.,
+ms_pm,日本,1896,,1896,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 5","Matsukata, who had been both Prime Minister and Finance Minister since September 1896",
+ms_shib1,日本,1878,1878-1893,260;1878;1893;70,percent; year; year; percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 9",gold standard countries increased by more than 260 percent from 1878 to 1893 while the imports from these countries only increased by 70 percent over the same period.,涩泽荣一给 1895 年委员会的意见（MSW 写作 Final Report of 1985，是 1895 之误）
+ms_shib_price,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 9",This is because the price of exports has fallen while the price of imports has risen.,
+ms_shib2,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 9","If Japan introduces the gold standard, prices would fall, and business conditions would deteriorate, affecting the economy and society badly.",
+ms_shib_dates,日本,,,1840;1931,years of life,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 9, note 18",Eiichi Shibusawa (1840-1931),
+ms_shib_bio,日本,1873,,1873,year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 9, note 18","When he left the government in 1873 he established and/or run a number of Japan's leading companies, including First National Bank",
+ms_business,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 9",Business leaders such as Eiichi Shibusawa argued that staying on silver would be consistent with those goals.,
+ms_matsukata,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 8, note 17",Matsukata suggested that the way the gold standard would increase exports was by reducing price fluctuations and making commercial transactions more convenient,
+ms_14,日本,1897,,14;12,votes,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 12",the legislation narrowly passed 14 to 12.,
+ms_law,日本,1897,,29,day (March 1897),,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 12",proclaimed law on March 29th.,
+ms_oct1,日本,1897,,1;1897,day; year,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 12","The new currency act took effect on October 1, 1897.",
+ms_little,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, abstract",we find little evidence that joining the gold standard reduced Japan’s country risk or investors anticipated a dramatic decline in borrowing rates for the government.,
+ms_noinvest,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, abstract",we find no evidence of a domestic investment boom or that investors anticipated one and bid it into stock prices.,
+ms_exports,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, abstract","we find that membership in the gold standard increased Japan’s exports by lowering transactions costs and because the price of gold fell relative to silver, making exports to silver standard countries more competitive.",
+ms_60,日本,,,60,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, abstract",by the late 1890s nearly 60 percent of Japanese exports and total trade were with members of the gold club.,
+ms_rates30,日本,1897,,30;6,basis points; months,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 17",Japanese interest rates were more or less flat prior to adoption and increased by approximately 30 basis points in the six months after the country adopted the gold standard.,
+ms_economist,日本,1897,"June 19, 1897",5,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 17",the Japanese imagine that because they are adopting a gold standard currency their 5 per cent loans should command a higher price,《经济学人》1897 年 6 月 19 日，据 MSW 的引文
+ms_1899,日本,1899,,1899;100000000;90;4.45,year; yen; percent of par; percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",in 1899 the government floated a new ¥100 million bond issue in London. It sold at 90 percent of par with a current yield of 4.45 percent,
+ms_86,日本,1899,,86;4.65,percent of par; percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18","The Japanese government then purchased much of the outstanding issue at 86 percent of par, an even deeper discount with a yield of 4.65%",
+ms_tepid,日本,1899,,10,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",Less than 10 percent of the primary issue was purchased in the London market.,
+ms_45,日本,1899,,45,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",The Japanese government (with assistance from the Bank of Japan) responded by purchasing nearly 45 percent of the issue,
+ms_underwriters,日本,1899,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",with the underwriters having to absorb the remainder,
+ms_953,日本,,,953,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 22",bilateral trade flows increased by approximately 953 percent (relative to the baseline of PaperSilver).,
+ms_860,日本,,,860,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 23","and its trade partner was on gold, exports increased by 860 percent.",
+ms_correct,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 23",advocates of the silver standard were correct in emphasizing that Japan had received an enormous boost in its trade due to the depreciation of silver when it was on the silver standard.,
+ms_also,日本,,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 23","proponents of going to gold were also correct in that Japan's exports did not lose out on their competitive advantage with the switch from silver to gold, although perhaps more out of luck than out of perfect foresight.",
+ms_48,日本,1899,,4.8,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",then the new debt issue offered about the same yield (4.8%) as the yen-denominated consolidated bonds that traded in London.,
+rr_notice,,,,,,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, title page","© 2008 by Carmen M. Reinhart and Kenneth S. Rogoff. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+rr_cluster,,,,,,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, p. 23","notable global default episodes during the late 1860s up to the mid-1870s, and again starting in the mid-1880s through the early 1890s.",
+rr_sensitive,,,,,,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, p. 31","defaults are also quite sensitive to the global capital flow cycle. When flows drop precipitously, more countries slip into default.",
+rr_center,,,,,,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, p. 31",plotting the current account balance of the financial center (the United Kingdom and the United States) against the number of new defaults,
+rr_corr,,,,,,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, p. 31",There is a marked visual correlation between peaks in the capital flow cycle and new defaults on sovereign debt.,
+rr_baring,,,,1890,year,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, p. 35","crises in the center do not always lead to full-blown global financial crises, as illustrated by the Barings crisis of 1890",
+rr_since,,,,1800,year,,rr2008tid,"Reinhart and Rogoff (2008), NBER WP 13882, p. 53",Capital flow/default cycles have been around since at least 1800—if not before.,
+at_back,中国,1855,,1850,decade (the mid-1850s),,atwell2008,"Atwell (2008), p. 576",silver began to flow back into the country in substantial quantities after the mid-1850s,
+ir_returned,中国,,,,,,irigoin2013,"Irigoin (2013), LSE WP 173/13, p. 24",Slowly silver returned to China and the exchange rate turmoil of the Daoguang era receded,
+ir_mexican,中国,,,,,,irigoin2013,"Irigoin (2013), LSE WP 173/13, p. 24",Mexican pesos were used to form the silver reserves of the newly established banks in Shanghai,
+ir_70000,中国,1850,1850s,70000,piculs,,irigoin2013,"Irigoin (2013), LSE WP 173/13, p. 24","The volume of imports almost doubled every decade in the Daoguang period up to 70,000 piculs in the 1850s.",
+ir_63000,中国,1860,1860s,63000,piculs,,irigoin2013,"Irigoin (2013), LSE WP 173/13, p. 24","The trend stopped in the 1860s despite steady falling prices, and even diminished in the decade to about 63,000 piculs average.",
+ir_1892,中国,1870,,70000;1892,piculs; year,,irigoin2013,"Irigoin (2013), LSE WP 173/13, p. 24","During the 1870 stabilised around 70,000 piculs until 1892 that started falling sharply.",
+ir_home,中国,1847,,9000;1847;16500;1866;27500;1876;30000,piculs; year,,irigoin2013,"Irigoin (2013), LSE WP 173/13, p. 24","home grown opium went from 9,000 piculs in 1847 to 16,500 in 1866, and 27,500 in 1876 and further to 30,000 piculs.",林满红的数字，据 Irigoin 的转述
+sh_signed,中国、日本,1895,,17;1895,day; year,,shimonoseki1895,Wikisource header,"Signed at Shimonoseki, April 17, 1895.",
+sh_200,中国,1895,,200000000,Kuping taels,,shimonoseki1895,"Treaty of Shimonoseki (17 April 1895), Article 4","China agrees to pay to Japan as a war indemnity the sum of 200,000,000 Kuping Taels",
+sh_eight,中国,1895,,8,installments,,shimonoseki1895,"Treaty of Shimonoseki (17 April 1895), Article 4",the said sum to be paid in eight installments.,
+sh_5pct,中国,1895,,5,percent a year,,shimonoseki1895,"Treaty of Shimonoseki (17 April 1895), Article 4",Interest at the rate of 5 per centum per annum shall begin to run on all unpaid portions of the said indemnity,
+bx_450,中国,1901,,450000000,Haikwan taels,,boxer1901,"Boxer Protocol (7 September 1901), Article VI",His Majesty the Emperor of China agreed to pay the Powers an indemnity of four hundred and fifty million Haikwan Taels.,
+bx_signed,清,1901,,7;1901,day; year,,boxer1901,"Boxer Protocol, heading of the Bevans text","Final protocol signed at Peking September 7, 1901",
+bx_gold,中国,1901,,,,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)",These four hundred and fifty millions constitute a gold debt calculated at the rate of the Haikwan Tael to the gold currency of each country,
+bx_sterling,中国,1901,,3,shillings per Haikwan tael,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)",= Pound Sterling 0 3s. 0d.,
+bx_39,中国,1901,,39,years,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)",the capital shall be reimbursed by China in thirty-nine years,
+bx_payable,中国,1901,,,,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)",Capital and interest will be payable in gold or at the rates of exchange prevailing on the dates at which the different payments fall due.,
+bx_1940,中国,1901,,1902;1940,year,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)","The amortization will begin on the 1st of January, 1902, and will end at the close of the year 1940.",
+qs_opium58,清,1858,咸丰八年,30,两/百斤,,qingshigao,卷一百二十五 志一百 食货六（征榷会计）,八年，与法定约。向来洋药不准通商，现稍宽其禁，听商贸易。每百斤纳税银三十两,洋药即进口的鸦片；数字在 checks/check_ch24.py 里读
+qs_110,清,1883,光绪九年三月上谕,110,两,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,如李鸿章前议一百一十两之数，并在进口时输纳，即可就此定议。,洋药税釐并徵，每百斤一百一十两
+qs_combined,清,1883,光绪九年三月上谕,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,洋药税釐并徵，载在烟台条约,
+qs_india70,清,1885,光绪十一年，曾纪泽奏,700000,镑,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,照专条办法，印度每年已减收英金七十万馀镑,英国印度部侍郎对马格里说的话，曾纪泽转述
+qs_zengjize,清,1883,,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,著派出使大臣曾纪泽妥为商办,
+qs_three,清,1885,光绪十一年，曾纪泽奏,3,年,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,纪泽奉旨与英外部议，三年始定。,
+qs_poison,清,1883,光绪九年三月上谕,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,洋药流毒多年，自应设法禁止。,
+qs_society,清,1883,光绪九年三月上谕,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,英国现有戒烟会，颇以洋药害人为耻。,
+qs_reduce,清,1885,光绪十一年六月，曾纪泽奏,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,其首段限制约束等语，缘逐年递减之说，印度部尚书坚执不允。,
+qs_raise,清,1885,,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,中国欲陆续禁减洋药入口，惟有将来陆续议加税金，以减吸食之人，而不能与英廷豫定递减之法。,
+qs_zhang_who,清,1894,光绪二十年条下,,,,qingshigao,卷一百四十 志一百十五 兵十一（制造）,又疏言：“铁厂之设，实兼采铁、炼钢、采煤三大端为一事。,上文是“湖广总督张之洞疏言”，此为张之洞又一疏
+qs_zhang,清,1894,光绪二十年条下,,,,qingshigao,卷一百四十 志一百十五 兵十一（制造）,外洋金镑值价日昂，比初定机器时，价高过半。,
+qs_zhang_war,清,1894,,,,,qingshigao,卷一百四十 志一百十五 兵十一（制造）,当海防紧急之秋，而军械缺乏，贻误戎机，关系匪浅。,
+qs_boxer450,清,1901,光绪二十七年,450000000,两,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,明年，和议成，议偿款四百五十兆,
+qs_gold,清,1902,,,,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,既而各国赔款欲改银为金，以金价算。,
+qs_argue,清,1902,,450000000,海关两,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,是此项赔款，照约载金价核算，即四百五十兆海关银数，照约银数付还，亦即与用金付给无异。,
+qs_us,清,1902,,,,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,美旋允照约还银。,
+qs_1906,清,1906,光绪三十二年,10,年,,qingshigao,卷一百二十五 志一百 食货六（征榷会计）,三十二年，德宗锐意图强，命限十年将洋药一律革除净尽。,
