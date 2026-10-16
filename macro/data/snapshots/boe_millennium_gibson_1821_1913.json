@@ -1,0 +1,14 @@
+{
+  "title": "The yield on consols, Bank Rate and the price level in the United Kingdom, annual, 1821-1913 (Gibson's paradox)",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'A31. Interest rates & asset ps ' and 'A47. Wages and prices'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; consol_yield: 'Yield on perpetual annuities/consols', per cent, annual average (the sheet's documentation: '1756-2015 yield on Consols ... Annual average ... This series uses Klovland's (1994) rather than Harley's adjustment for the 1888-1903 period'); bank_rate_end and bank_rate_avg: Bank Rate, per cent, 'End year observation' and 'Annual average observation'; uk_wholesale_2010_100: 'Spliced Wholesale/producer price index', GB/UK, 2010 = 100 ('Post 1791 data, annual average of the index in the monthly wages and price sheet'); uk_cpi_2015_100: 'Consumer Price Index (CPI) - preferred measure', GB/UK, spliced index 2015 = 100 (1770-1882 Feinstein 1998, 1882-1914 Feinstein 1991, as the sheet's source line gives)",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (Klovland for the consol yield; Gayer, Rostow and Schwartz, Klovland and the Sauerbeck-Statist index for wholesale prices; Feinstein for consumer prices).",
+  "used_in": [
+    25
+  ],
+  "fetch": "data/fetch/boe_millennium_gb25.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-23). The wholesale index of sheet A47 is the annual average of the spliced monthly index of sheet M6; the ratio of the spliced column to its components is constant for Gayer, Rostow and Schwartz's index of domestic and imported commodities to December 1844, for the Sauerbeck-Statist index excluding duty (Klovland 1993) from January 1845 to 1884 and for the Sauerbeck-Statist index of all commodities from 1885 (the book's reading of the splices). The regressions and correlations of Chapter 25 are the book's own calculations; they differ somewhat from Barsky and Summers's (1985), who use Homer's consol yield and their own price series (wicksell_facts rows bs_homer, bs_prices).",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets A31 and A47 (and M6 for the composition of the wholesale index)"
+}

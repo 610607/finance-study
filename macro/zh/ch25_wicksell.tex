@@ -1,15 +1,359 @@
-% 第 25 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 25 章”，写法见 docs/STYLE.md。
+% 第 25 章。数字：checks/check_ch25.py；引文：data/snapshots/wicksell_facts.csv（逐字核对见
+% data/fetch/verify_web_quotes.py）；数据：boe_millennium_gibson_1821_1913（data/fetch/boe_millennium_gb25.py）、
+% riksbank_sweden_1870_1913 与 riksbank_sweden_monthly_1870_1913（data/fetch/riksbank_sweden25.py）；图：figsrc/fig_ch25.py。
+% 转述快照行的段落，段末注明“% 据: 行号”（STYLE.md §5）。
 \chapter{维克塞尔与费雪：自然利率与实际利率}\label{ch:wicksell}
 
 \begin{chapterguide}
 \guidequestion{银行把利率定错了会发生什么？名义利率与实际利率是什么关系？}
 \begin{guidegoals}
 \item 推导维克塞尔（1898）的累积过程：市场利率偏离自然利率时，物价怎样运动；
-\item 用费雪（1896）关系区分名义与实际利率，并理解费雪（1911）的数量论表述；
+\item 用费雪（1896）关系区分名义与实际利率，并理解费雪（1911）的数量论表述与过渡时期；
 \item 说明自然利率的概念怎样一路演变为今天的中性利率 $r^{*}$；
 \item 用金本位时期的数据讨论“吉布森悖论”。
 \end{guidegoals}
 \guideprereq{\chref{ch:bullion}\enspace\nameref{ch:bullion}；\chref{ch:prices}\enspace\nameref{ch:prices}}
 \end{chapterguide}
 
-\chapterstub
+1906 年 8 月 3 日是个星期五。这一年，英国科学促进会（British Association for the Advancement of Science）在约克开第 76 届年会。按年会的报告，这天经济科学与统计组的第一篇论文，是瑞典经济学家维克塞尔（Knut Wicksell，1851—1926）的《利率对物价的影响》\cite{baas1907,wikisource2026}。他开头就提出一个命题。如果其他条件不变，世界上主要的银行把利率降到通常的水平以下，比如说 1 个百分点，并且保持几年，“那么一切商品的价格都会涨、涨、再涨，没有任何限度”\cite{wicksell1907}。反过来，把利率提高 1 个百分点，物价就会“跌、跌、再跌，除了零以外没有限度”\cite{wicksell1907}。
+% 据: ba_meeting, ba_seventysixth, ba_section, ba_friday, ba_title, ws_wicksell, ws_wicksell_who, ej_read, ej_lower, ej_raise
+
+他也承认，这个命题没法直接用经验证明，因为它假设的事情从来没有发生过\cite{wicksell1907}。他还请听众翻开索尔贝克（Sauerbeck，生卒年未详）在《统计学会会刊》上那些有名的物价表。他说，“一般会发现，物价高并不对应着利率低，反过来也一样，倒是正好相反，利率与物价常常一起涨、一起跌”\cite{wicksell1907}。索尔贝克的表是一种批发物价指数，衡量物价的总水平（\secref{sec:prices-index}）。1873—1896 年，英镑的金价一直没有变，英国的批发物价与统一公债的收益率却一起跌了二十多年（\chref{ch:periphery}）\cite{boe2017}。
+% 据: ej_noproof, ej_sauerbeck
+
+在维克塞尔看来，这个事实驳不倒他的命题，反而“成了对我们理论的有力支持”\cite{wicksell1907}。他的理由是，“利率本身从来无所谓高低，只有同人们拿手里的钱能赚到的利润相比，才说得上高或低，而利润当然是会变的”\cite{wicksell1907}。
+% 据: ej_support, ej_relative
+
+维克塞尔说利率低会让物价上涨，统计却说利率高的时候物价也高。五年后，美国的费雪（Irving Fisher，1867—1947）给了另一种解释。物价上涨的时候，利率也会上升，“但是升得不够”\cite{fisher1911}。写在合同上的利率，与扣掉物价变化以后借款人真正付出的代价，并不是一回事（\secref{sec:prices-fisher}）。银行把利率定错了会发生什么，名义利率与实际利率又是什么关系？
+% 据: f12_step2
+
+\section{当时的世界}\label{sec:wicksell-world}
+
+利率与物价一起涨落，维克塞尔不是第一个注意到的人。按 Ohlin 为《利息与价格》英译本写的导言，图克（Thomas Tooke，1774—1858）早就指出，物价下跌的时期利率大体偏低，物价上涨的时期大体偏高\cite{wicksell1936}。李嘉图（David Ricardo，1772—1823）一派的学说，似乎意味着相反的结果\cite{wicksell1936}。这一派强调贴现政策影响货币的数量，进而影响物价。银行压低贴现率，多放出货币，物价就该上涨（\chref{ch:bullion}）\cite{wicksell1936}。
+% 据: oh_tooke, oh_ricardian, oh_discount
+
+图克有自己的解释。维克塞尔转述说，图克认为低利率使生产的一项要素变便宜了，所以会压低物价，李嘉图早年的著作似乎也这样看\cite{wicksell1907}。维克塞尔不接受这个解释。Ohlin 说，他细心研读并推崇英国的古典学派，尤其是李嘉图，很早就把“物价为什么涨、为什么跌”当作货币理论的主要问题\cite{wicksell1936}。他也一直坚持，自己的推理不过是对古老的数量论的发挥\cite{wicksell1936}。
+% 据: ej_tooke, oh_admirer, oh_mainproblem, oh_main, oh_quantity
+
+维克塞尔面对的是一个银行的世界。他在约克说，银行把几乎所有的支付都集中到自己手里，所需要的货币就由它们自己创造出来\cite{wicksell1907}。他让听众设想一个极端，“在一个纯粹的信用制度里，一切支付都靠银行账簿上的转账完成，银行可以随时按任何利率，哪怕是再低的利率，放出任何数量的贷款”\cite{wicksell1907}。交易方程 $MV\equiv PT$ 照样成立，可是货币的数量 $M$ 不再是给定的，它随银行的放款而变（式~\eqref{eq:bullion-exchange}）。银行直接定下的，是借钱的价格。
+% 据: ej_create, ej_pure
+
+答案来自利息理论。Ohlin 说，维克塞尔是通过研究并发挥庞巴维克（Eugen von Böhm-Bawerk，1851—1914）的利息理论，解开图克的难题的\cite{wicksell1936}。Ohlin 的概括是，有一个“自然”利率，由资本的边际生产率决定，也就是不用货币时那些迂回的生产方法的边际生产率\cite{wicksell1936}。迂回的生产，是先花时间造出工具与机器，再用它们去生产。边际生产率，是多投入一点资本能多得的产出。这个自然利率与资本市场上实际挂出的利率，总该有某种联系\cite{wicksell1936}。联系是什么？
+% 据: oh_bohm, oh_roundabout, oh_natural, oh_connection
+
+这条思路先写成了 1897 年的一篇文章，题目是《作为商品价格调节器的银行利率》，登在德国的《国民经济学年鉴》上\cite{fisher1911}。第二年，维克塞尔把它发展成《利息与价格》（\emph{Geldzins und Güterpreise}），在耶拿出版，序言写于 1898 年 1 月的乌普萨拉\cite{wicksell1907,wicksell1936}。英译本要到 1936 年才出版，译者是 Kahn\cite{wicksell1936}。1906 年在约克，维克塞尔是把这套理论讲给英国的听众。他从一张汇票讲起。
+% 据: f12_wicksell, f26_bankzins, ej_jena, ka_preface, ka_title
+
+\section{累积过程}\label{sec:wicksell-cumulative}
+
+利率怎样进入物价？一个商人卖出 100 英镑的货，收到一张三个月后付款的汇票或期票\cite{wicksell1907}。英镑是英国的货币单位，按金本位可以按固定的价格兑换黄金。汇票是要付款人在约定的日子付一笔钱的书面命令，期票是付款人自己写下的付款承诺。到期以前把票据卖给银行，按年率扣掉利息，叫作\textbf{贴现}，这个年率叫贴现率。贴现率是 4\% 时，三个月扣掉 1 英镑，商人拿到 99 英镑，这就是他的货卖得的现金价格\cite{wicksell1907}。银行把贴现率降到 3\%，同一批货的现金价格就自动涨了，只是涨得很少，$\tfrac14\%$\cite{wicksell1907}。
+% 据: ej_bill100, ej_bill4, ej_bill99, ej_bill3
+
+大的变化在投资上。利率从 5\% 降到 4\%，建筑公司与铁路公司就能借到更便宜的钱\cite{wicksell1907}。同样每年 5 英镑的收益，按 5\% 算值 100 英镑。按 4\% 算，它值 125 英镑。所以它们为同样的东西，最多可以比从前多付 25\%\cite{wicksell1907}。它们多借钱，多买材料，多雇工人，物价就开始上涨。维克塞尔说，不论起初涨得多还是少，只要利率一直低于它的正常水平，物价的上升就“永远不会停止”\cite{wicksell1907}。正常的水平，就是与当时实际资本的边际生产率相一致的利率\cite{wicksell1907}。
+% 据: ej_rail, ej_125, ej_never, ej_normal
+
+\begin{intuition}[借 4\% 的钱，赚 5\% 的利润]
+设想人人都能按 4\% 借到钱，手里的生意却能赚 5\%。多借一英镑就多赚一点，于是人人多借，多买材料，多雇工人。东西就那么多，买的人多了，价格就涨。价格涨了，生意的货币收入也跟着涨，5\% 的利润率还在，4\% 的利率也还在。只要这个差还在，就没有人有理由停下来。让它停下来的，只能是利率追上利润率。
+\end{intuition}
+
+在《利息与价格》的序言里，维克塞尔把这个正常的利率叫作\textbf{自然利率}（natural rate of interest）。按他的定义，它是实际资本不经过货币、直接以实物出借时，由供求决定的利率\cite{wicksell1936}。他说，这个自然利率大体就是实际经营里的实际利息\cite{wicksell1936}。银行在市场上收取的利率，他叫作货币利率，本章叫作\textbf{市场利率}。书的第 8 章又说，有一个贷款的利率对商品价格是中性的，它就是自然利率当时的值\cite{wicksell1936}。
+% 据: ka_kind, ka_business, ka_neutral, ka_current
+
+两种利率的来历不同。自然利率取决于生产的效率、现有的固定资本与流动资本，以及劳动与土地的供给\cite{wicksell1936}。这些东西一直在变，自然利率也跟着连续地变。市场利率由大的金融机构调节，一次跳半个或一个百分点\cite{wicksell1936}。维克塞尔说，二者之间没有任何联系，唯一的联系恰恰是二者之差对物价的影响\cite{wicksell1907}。
+% 据: ka_depends, ka_jumps, ej_nolink
+
+\begin{compare}{自然利率与市场利率}{自然利率}{市场利率}
+\cmprow{是什么}{实际资本以实物出借时由供求决定的利率\cite{wicksell1936}}{银行贷款与贴现的利率，写在合同上}
+\cmprow{由什么决定}{生产的效率，资本的多少，劳动与土地的供给\cite{wicksell1936}}{大的金融机构，看自己的准备金}
+\cmprow{怎样变}{连续地变，看不见}{一次跳半个或一个百分点\cite{wicksell1936}}
+\cmprow{两者相等时}{对商品价格是中性的，物价不动\cite{wicksell1936}}{同左}
+\cmprow{市场利率低于自然利率时}{借钱投资有利可图}{物价累积地上涨，直到准备金流失逼银行提高利率\cite{wicksell1907}}
+\cmpsum{自然利率是资本本身的报酬，市场利率是借钱的价格。两者之间唯一的联系，是它们的差对物价的影响。}
+\end{compare}
+
+物价涨起来以后，会停在新的水平上。维克塞尔说，“一个新的物价水平已经形成，它又会成为将来一切计算与一切合同的基础”\cite{wicksell1907}。银行这时把利率提回正常的高度，物价也不会回落，“只会停在原地”\cite{wicksell1907}。他打了两个比方。只要两极之间还有电压，电流就不会停\cite{wicksell1907}。相对价格像一个摆，偏离了平衡，就有力量把它拉回原位\cite{wicksell1936}。货币价格却像平面上的一个圆柱，处在所谓的中性平衡\cite{wicksell1936}。提高或降低利率，就是推动它的力\cite{wicksell1936}。力一直在，它就一直往一个方向滚；停下来以后，它没有回到原位的倾向\cite{wicksell1936}。
+% 据: ej_newlevel, ej_remain, ej_current, ka_pendulum, ka_cylinder, ka_force, ka_rest
+
+现实里有东西推着圆柱往回走。物价涨了，人们手里要用的现钱跟着增多。维克塞尔说，这时“银行的准备金会融化掉，它们的负债却很可能还增加了，这会逼着它们提高利率”\cite{wicksell1907}。只要以贵金属作为货币的基础，这样的反作用力就不会完全没有\cite{wicksell1936}。在一个纯粹的信用制度里，银行不需要准备金，物价就真的会涨、涨、再涨。
+% 据: ej_melt, ka_metal, ej_pure
+
+\subsubsection{一个教学模型}
+Humphrey（1986）把这套理论写成了几个式子\cite{humphrey1986}。贷款利率低于自然利率时，投资超过储蓄；多出来的需求抬高物价，物价的变化与超额需求成正比\cite{humphrey1986}。银行则按物价的上涨提高贷款利率。理由是公众有一部分支付用铸币，物价上涨，需要的铸币就增多，银行要保住自己的黄金准备\cite{humphrey1986}。下面按年写出它的离散形式。记自然利率为 $r^{n}_t$，市场利率为 $i_t$，都按百分比计。记 $p_t=100\ln P_t$，$P_t$ 是物价水平，于是 $\pi_t=p_{t+1}-p_t$ 近似是第 $t$ 年的通胀率（\%）。这几个记号只在本章使用。模型是
+% 据: hu_first, hu_bidsup, hu_eq5, hu_eq7, hu_drains, hu_coin
+\begin{keyeq}
+\pi_t=\kappa\,\bigl(r^{n}_t-i_t\bigr),\qquad i_{t+1}=i_t+\beta\,\pi_t .\label{eq:wicksell-process}
+\end{keyeq}
+第一个式子说，市场利率每比自然利率低 1 个百分点，物价每年就涨 $\kappa$\%。第二个式子说，物价每涨 1\%，银行就把利率提高 $\beta$ 个百分点。$\beta=0$ 是纯粹的信用制度，银行不必提高利率，利差一直在，物价每年涨 $\kappa(r^{n}-i_0)$，没有尽头。$\beta>0$ 时，利差 $g_t=r^{n}-i_t$ 每年缩小一个固定的比例，$g_{t+1}=(1-\beta\kappa)\,g_t$。把各年的通胀加起来，物价一共涨 $g_0/\beta$。
+
+第二个式子还有一层意思。把它逐年加起来，得到 $i_t-i_0=\beta\,(p_t-p_0)$。利率的变化正比于物价\emph{水平}的变化，而不是通胀率。银行跟着物价提高利率，物价高的时候利率也就高。索尔贝克表上的样子，模型里就有。\exref{ex:wicksell-model} 用维克塞尔自己的 4\% 与 5\%，把这几步算一遍。
+
+\begin{example}{利率低了一个百分点}\label{ex:wicksell-model}
+按式~\eqref{eq:wicksell-process}，设自然利率 $r^{n}=5\%$ 不变，银行把利率定在 $i_0=4\%$，这是维克塞尔自己举的数\cite{wicksell1907}；再设 $\kappa=2$，$\beta=0.1$，这两个是教学用的假设。（1）银行不动利率（$\beta=0$），物价每年涨多少？20 年后物价是原来的几倍？（2）$\beta=0.1$ 时，求头三年的通胀率与利率。利差每年缩小多少？大约几年缩小一半？（3）物价一共涨多少？利率回到 5\% 以后，物价会不会跌回去？（4）验证 $i_t-i_0=\beta\,(p_t-p_0)$。
+\solution （1）$\pi=2\times(5-4)=2$，物价每年涨约 2\%。20 年后 $p$ 高出 40，物价是原来的 $e^{0.4}\approx1.49$ 倍，而且还在涨。（2）第一年 $\pi_0=2$，$i_1=4+0.1\times2=4.2$；第二年 $\pi_1=2\times0.8=1.6$，$i_2=4.36$；第三年 $\pi_2=1.28$，$i_3=4.488$。利差每年乘以 $1-\beta\kappa=0.8$，缩小 20\%；$0.8^{3}=0.512$，约 3 年缩小一半。（3）$\sum_t\pi_t=\kappa\sum_t g_t=\kappa g_0/(\beta\kappa)=g_0/\beta=10$，物价一共涨 $e^{0.1}-1\approx10.5\%$。利率回到 5\% 时利差为零，$\pi=0$，物价停在高出一成的水平上，不会跌回去，这就是维克塞尔的圆柱。（4）利率从 4 回到 5，升了 1 个百分点；$p$ 升了 10，$\beta\times10=1$，两者相符。
+\end{example}
+
+\fig{wicksell_model}{教学模型里的累积过程，式~\eqref{eq:wicksell-process}，$\kappa=2$，$\beta=0.1$。(a) 看银行不动利率时物价怎样一路涨，银行跟着物价提高利率时物价又怎样停在新的水平：自然利率 5\%，市场利率从 4\% 起，物价水平以第 0 年 $=100$。(b) 看自然利率起伏时，市场利率与物价怎样一起涨落：自然利率在 5\% 与 6\% 之间以 40 年为周期起伏（浅色点线），市场利率（实线）从 5\% 起跟在后面，物价水平（虚线）以第 0 年 $=100$，用右边的纵轴。教学输入，不是估计。}{fig:wicksell_model}
+
+利率与物价为什么会一起涨落？维克塞尔在约克的回答是，自然利率先动，利率“可以说是被物价的变动以及随之而来的银行准备金状况的变化，拖在利润率的后面走”\cite{wicksell1907}。他在《利息与价格》里举过一个时期。1851—1873 年虽然不像拿破仑时代那样连年打仗，也打了克里米亚战争、耗费极大的美国内战和德国的几场战争\cite{wicksell1936}。西欧铁路网的完成，又冻结了大量的流动资本\cite{wicksell1936}。他说，由于这两个原因，自然利率在那些年反常地高，这是公认的\cite{wicksell1936}。货币利率平均也比前后的时期高，却很可能没有涨得像自然利率那么多\cite{wicksell1936}。
+% 据: ej_dragged, ka_1851, ka_wars, ka_freezing, ka_railway, ka_reasons, ka_high, ka_asmuch
+
+Humphrey 的概括是，自然利率在动，贷款利率落在后面，物价与贷款利率就会一起变动\cite{humphrey1986}。\figref{fig:wicksell_model} 的 (b) 就是这个情形。在 120 年里，模型的利率与物价水平同进同退，与通胀率的相关系数却只有 $-0.1$ 左右。
+% 据: hu_together, hu_active
+
+\subsubsection{谁先想到的}
+累积过程不全是维克塞尔的发明。Humphrey 说，“最先提出这个理论的不是维克塞尔，而是远在他以前、在 19 世纪的头三分之一里写作的两位英国经济学家”\cite{humphrey1986}。按他的说法，维克塞尔在《利息与价格》里提出这个模型时，它已经有 70 多年的历史\cite{humphrey1986}。桑顿（Henry Thornton，1760—1815）在 1802 年与 1811 年写出过它的某种版本\cite{humphrey1986}。约普林（Thomas Joplin，约 1790—1847）在 1823、1828 与 1832 年也写出过\cite{humphrey1986,watt1892}。两种利率、储蓄与投资、可贷资金的框架，在 Humphrey 看来同样是他们的发明\cite{humphrey1986}。桑顿比较的正是英格兰银行的贷款利率与商业利润率，高利贷法把前者卡在 5\%（\secref{sec:bullion-report}）。
+% 据: hu_notwicksell, hu_70, hu_tj, dnb_joplin, hu_invention, hu_usury, hu_ch10
+
+Humphrey 也承认，他们缺一样东西。缺的是一个自动稳定的机制，让贷款利率向自然利率靠拢，使累积过程停下来\cite{humphrey1986}。这个机制是维克塞尔给出的，就是物价的变化反过来影响贷款利率，即式~\eqref{eq:wicksell-process} 的第二个式子\cite{humphrey1986}。Leijonhufvud 关于“维克塞尔联系”的文章，似乎认为这个模型完全出自维克塞尔，Humphrey 说这“当然不对”\cite{humphrey1986}。两边争的是功劳的分配。Leijonhufvud 的说法，这里只能据 Humphrey 的转述。
+% 据: hu_lacked, hu_provided, hu_leij
+
+\subsubsection{萨伊定律}
+累积过程也意味着放弃萨伊定律。维克塞尔说，名副其实的货币理论，必须能说明在给定的条件下，对商品的货币需求为什么、又是怎样超过或者不足商品的供给\cite{lange1942}。这与萨伊定律不容易调和。Lange 说，维克塞尔最后安下心来的说法是，总需求与总供给只是“最终”相等，“起初”却可以不等\cite{lange1942}。在 Lange 看来，维克塞尔以及与他一起的所有货币理论家，就这样用一个只在均衡时成立的方程，代替了萨伊的恒等式（式~\eqref{eq:say-identity}，\secref{sec:say-walras}）\cite{lange1942}。累积过程，就是离开萨伊均衡的那一段路。
+% 据: lg_worthy, lg_wicksell, lg_conscience, lg_ultimately, lg_equation
+
+\section{稳定物价的规则}\label{sec:wicksell-rule}
+
+利率定错了，物价就一路走下去。银行怎样才能定对？自然利率看不见，银行没法直接盯住它。维克塞尔的办法是看物价。《利息与价格》第 12 章说，只要物价不变，银行的利率就不变；物价上涨，就提高利率，物价下跌，就降低利率\cite{wicksell1936}。在他看来，物价不稳的主要原因，就在于银行不能或者没有遵守这条规则\cite{wicksell1936}。按 Berg 与 Jonung（1998）的说法，1898 年维克塞尔第一次在瑞典提出，稳定物价水平应当是中央银行政策的指南\cite{berg1998}。
+% 据: ka_rule, ka_failure, bj_1898, bj_rule
+
+在约克，他说得更直白。把货币价格的平均水平保持不变，“显然应当看作货币科学的根本问题”\cite{wicksell1907}。解决它不必靠全世界设一家中央发行银行那样多少有点空想的方案\cite{wicksell1907}。他说，办法“只在于适当地操纵一般的银行利率，物价走低时就降低它，物价走高时就提高它”\cite{wicksell1907}。这也不是人为的办法，因为利率围着摆动的那一点，正是由实际资本的边际生产率决定的正常水平。边际生产率的变化，我们控制不了，只能顺从\cite{wicksell1907}。
+% 据: ej_fundamental, ej_fantastic, ej_rule, ej_comply
+
+金本位给这条规则划了边界。维克塞尔说，一家银行不能单独把利率定得比市场高得多或低得多，否则“前一种情况下它会失去一切有利的生意，后一种情况下，很快资不抵债就是必然的结果”\cite{wicksell1907}。一国的银行联合起来，长期也做不到。利率太高或太低会影响贸易差额，引起黄金流进流出\cite{wicksell1907}。只要黄金还是价值的标准，它的供给最终总要起主导作用\cite{wicksell1907}。自由铸造，就是谁都可以把金块按法定的价格铸成金币。只要黄金还能自由铸造，黄金过多以及它引起的物价上涨，就没有办法有效地对付\cite{wicksell1907}。所以，他把停止黄金的自由铸造，看作走向合理的货币制度最要紧的一步\cite{wicksell1907}。
+% 据: ej_single, ej_country, ej_goldlead, ej_plethora, ej_rational
+
+在约克，论文宣读的时候，帕尔格雷夫（Robert Harry Inglis Palgrave，1827—1919）的反对正打在这里\cite{wicksell1907,wikisource2026}。他编过《经济学人》，这天排在第二的就是他自己的论文《联合王国的金银准备》\cite{baas1907}。他认为，银行担不起调节物价的责任，因为它们首先要保护自己的准备金\cite{wicksell1907}。维克塞尔在附记里承认他说得对。银行既不能让准备金因为贸易逆差降得太低，也不能让它因为黄金流入涨到无利可图的高度\cite{wicksell1907}。
+% 据: ej_palgrave, ej_reserves, ws_palgrave, ws_palgrave_who, ba_specie, ej_both
+
+可是他提醒，各国银行的利率政策“仿佛有两个自由度”\cite{wicksell1907}。黄金外流，可以由流出国提高贴现率来挡，也可以由流入国降低贴现率来挡\cite{wicksell1907}。各国银行可以一边调整彼此的利率，安排黄金的分配，一边共同行动，让世界的物价水平保持不变\cite{wicksell1907}。只是在当时，这只能在黄金的总供给允许的范围内做到\cite{wicksell1907}。
+% 据: ej_twodeg, ej_lowering, ej_common, ej_goldlimit
+
+《经济学杂志》的主编埃奇沃思（Francis Ysidro Edgeworth，1845—1926）在讨论中提出的是另一条路。他说，只要停止黄金的自由铸造，各国政府自己就能调节物价\cite{wicksell1907,wikisource2026}。维克塞尔也承认这话是对的，至少在黄金像当时那样大量生产的时候是这样\cite{wicksell1907}。黄金即使变得稀少，各国政府也可以审慎地发行纸币来补足通货\cite{wicksell1907}。可是单独一个政府只有两条路可走\cite{wicksell1907}。“它可以设法让本国货币对商品的价值保持稳定，但那样就必然牺牲汇率的平价”\cite{wicksell1907}。平价是两国金币的含金量之比决定的汇率。“它也可以设法让汇率严格保持平价，但那样它自己就管不了物价水平”\cite{wicksell1907}。两个目标要同时达到，就需要某种国际协议，约定各国铸造多少黄金，或者约定各国银行共同的利率政策\cite{wicksell1907}。
+% 据: ej_edgeworth, ej_editor, ws_edgeworth, ws_edgeworth_who, ej_production, ej_paper, ej_choice, ej_steady, ej_par, ej_agreement
+
+这是一个后来反复出现的两难。\chref{ch:external}的不可能三角说的是同一类约束，固定汇率、资本自由流动与独立的货币政策，三者不能兼得。瑞典在 1931 年做了选择（\secref{sec:wicksell-test}）。维克塞尔的规则看的是物价的涨跌。物价涨的时候，利率在合同上也许已经升了，借款人付出的却未必更多。从这个角度看问题的是费雪。
+
+\section{费雪：名义利率与实际利率}\label{sec:wicksell-fisher}
+
+费雪 1930 年说，经济学里没有哪个问题，比物价水平与利率之间的种种关系争得更激烈\cite{fisher1930}。他自己的回答从 1896 年的《升值与利息》开始。那本书区分了以货币计的利率与以商品计的利率，又用美国的纸币债券与印度的卢比债券做了检验。卢比是印度以白银计价的货币。他发现利率确实随预期调整，但调整得不完全、不及时（\secref{sec:prices-fisher}、\secref{sec:prices-test}）。今天的写法是式~\eqref{eq:prices-fisher}。1911 年的《货币的购买力》，把这个发现放进了一个货币数量的框架。
+% 据: f30_debated
+
+费雪先把交易方程扩大了。银行存款也能用来支付，开一张支票就能转账。他用 $M'$ 表示可以用支票转账的存款总额，$V'$ 是它的流通速度\cite{fisher1911}。于是交易方程写成
+\begin{keyeq}
+MV+M'V'=PT .\label{eq:wicksell-exchange}
+\end{keyeq}
+$M$ 是流通中的现金，$V$ 是它的流通速度，$P$ 与 $T$ 照旧是物价与交易量\cite{fisher1911}。它仍是一个恒等式，是式~\eqref{eq:bullion-exchange} 加上了存款。费雪的理论在式子外面。存款平常与流通中的现金、与银行的准备金保持一个确定的比例\cite{fisher1911}。货币的数量突然翻一番，最终的结果是物价翻一番\cite{fisher1911}。
+% 据: f12_mprime, f12_equation, f12_ratio, f12_double
+
+最终以前是\textbf{过渡时期}。在这些时期，现金与存款的关系绝不是固定的，物价也会上下摆动\cite{fisher1911}。所以费雪说，数量论在过渡时期并不严格成立\cite{fisher1911}。他用了一个地形的比方。物价上涨标志着从低的物价水平到高的物价水平的过渡，“就像一座山坡，标志着从平坦的低地到平坦的高地的过渡”\cite{fisher1911}。
+% 据: f12_transition, f12_rigid, f12_oscillate, f12_qt, f12_hill
+
+山坡上，利率跟不上。设物价每年涨 3\%。借出 100 美元的人要得到 5\% 的实际利息\cite{fisher1911}。美元是美国的货币单位。他年底要收回 103 美元，再加上这笔钱的 5\%，所以名义利率应当是 8\% 出头\cite{fisher1911}。实际的利率却也许仍是 5\%，或者升到 6\%，后来再升到 7\%\cite{fisher1911}。费雪说，“而且，法律与习俗武断地倾向于压低利率，助长了这种调整的不充分与迟缓”\cite{fisher1911}。物价下跌时也一样。利率本该降到不到 2\%，却在相当长的时间里远在 2\% 以上\cite{fisher1911}。
+% 据: f12_3pct, f12_815, f12_67, f12_law, f12_97, f12_185, f12_far
+
+\begin{example}{费雪的两笔账}\label{ex:wicksell-fisher}
+（1）物价每年上涨 3\%。借出 100 美元的人要得到 5\% 的实际利息，年底要收回多少美元？名义利率应是多少？用式~\eqref{eq:prices-fisher} 验算。（2）物价下跌，年底的 97 美元能买到年初 100 美元的东西。要得到同样的 5\%，名义利率应是多少？（3）费雪说，物价每年涨 3\% 时，利率实际上也许只升到 6\%，后来 7\%\cite{fisher1911}。这两个利率下，事后的实际利率各是多少？（4）\tabref{tab:wicksell-fisher14} 是费雪 1930 年的表 14。算出每个城市的实际利率的标准差是市场利率的几倍。
+\solution （1）年底要收回 $103\times1.05=108.15$ 美元，名义利率 8.15\%；按式~\eqref{eq:prices-fisher}，$1.05\times1.03=1.0815$，相同\cite{fisher1911}。（2）$97\times1.05=101.85$，名义利率 1.85\%，不到 2\%，而不是原来的 5\%；$1.05\times0.97=1.0185$\cite{fisher1911}。（3）$1.06/1.03-1=2.9\%$，$1.07/1.03-1=3.9\%$。利率升到 8.15\% 以前，放款人得到的实际利息都不到 5\%，差额落到了借款人手里。（4）伦敦 $6.1/0.62=9.8$，纽约 7.9，柏林 6.8，加尔各答 13.2，东京 10.1。费雪的说法是“七到十三倍”\cite{fisher1930}。
+\end{example}
+
+\begin{table}[htbp]\centering\small
+\caption{费雪的表 14：市场利率与实际利率的标准差（百分点）}\label{tab:wicksell-fisher14}
+\begin{tabularx}{\linewidth}{@{}YYYY@{}}
+\toprule
+城市 & 时期数 & 市场利率 & 算出的实际利率 \\\midrule
+伦敦 & 11 & 0.62 & 6.1 \\
+纽约 & 8 & 1.07 & 8.5 \\
+柏林 & 7 & 0.73 & 5.0 \\
+加尔各答 & 11 & 0.57 & 7.5 \\
+东京 & 5 & 0.69 & 7.0 \\
+\bottomrule
+\end{tabularx}
+\datasource{Fisher（1930）第十九章表 14。每个时期是物价一直上涨或一直下跌的一段，实际利率是市场利率按同期的物价变化折算的。}
+\end{table}
+
+利率跟不上，物价就继续涨。费雪的说明从企业的账开始。物价上涨，企业的利润也按货币计上涨，可是成本里的利息起初不涨，所以利润涨得比物价还快\cite{fisher1911}。企业多借钱，存款通货跟着增加，又把物价进一步抬高\cite{fisher1911}。放款人也一样，“被较高的名义利率迷惑，以为已经得到了相当高的利息，他们就扩大放款”\cite{fisher1911}。他把这一串事写成五步：
+% 据: f12_lagging, f12_profits, f26_mprime, f12_beguiled
+\begin{enumerate}
+\item 物价上涨，不论最初的原因是什么；
+\item 利率上升，但是升得不够；
+\item 企业家受大量利润的鼓舞，扩大借款；
+\item 存款通货 $M'$ 相对于现金 $M$ 扩张；
+\item 物价继续上涨，第 1 步重演\cite{fisher1911}。
+\end{enumerate}
+费雪的结论是，“物价的上涨引起物价的上涨，只要利率落在它的正常水平后面，就一直如此”\cite{fisher1911}。他在脚注里引了维克塞尔 1897 年的文章，说它指出了银行贷款的利率与物价水平变化之间的联系，物价的变化来自贷款随之而来的扩张与收缩\cite{fisher1911}。
+% 据: f12_step1, f12_step2, f12_step3, f12_step4, f12_step5, f26_generates, f12_normal, f12_wicksell, f26_points
+
+\begin{compare}{累积过程与过渡时期}{维克塞尔的累积过程（1898）}{费雪的过渡时期（1911）}
+\cmprow{从哪里开始}{银行的利率低于自然利率\cite{wicksell1907}}{物价先涨，比如黄金增加了\cite{fisher1911}}
+\cmprow{利率为什么落后}{自然利率看不见，银行有准备金就不急着动\cite{wicksell1907}}{借贷双方没有料到物价的变化，法律与习俗又压低利率\cite{fisher1911}}
+\cmprow{怎样传开}{投资超过储蓄，银行放款创造货币\cite{humphrey1986}}{利润涨得比物价快，企业多借，存款通货扩张\cite{fisher1911}}
+\cmprow{什么时候停}{准备金流失，逼银行提高利率；纯粹的信用制度里永不停止\cite{wicksell1907}}{利率追上它的正常水平\cite{fisher1911}}
+\cmprow{停下以后}{物价停在新的水平上，不回来\cite{wicksell1907}}{物价与货币的数量成比例\cite{fisher1911}}
+\cmprow{利率与物价}{利率跟着物价的水平走（式~\eqref{eq:wicksell-process}）}{利率跟着物价的变化走，但跟不足}
+\cmpsum{两人讲的都是利率落在它该在的位置后面。维克塞尔的利率落后于资本的报酬，费雪的利率落后于物价的变化。}
+\end{compare}
+
+将近二十年后，费雪在《利息理论》里把落后的原因归到人们对货币的看法。他说，多数人都有一种可以叫作“货币幻觉”的东西，本能地把货币看作不变的，不会升值，也不会贬值\cite{fisher1930}。在他们看来，“一元钱就是一元钱”\cite{fisher1930}。结果是实际利率极不稳定。\tabref{tab:wicksell-fisher14} 里，五个城市以商品计的实际利率，比以货币计的市场利率多变七到十三倍\cite{fisher1930}。物价涨得最快的时候，德国的实际利率接近负 100\%\cite{fisher1930}。
+% 据: f30_illusion, f30_dollar, f30_variable, f30_table14, f30_germany
+
+利率究竟怎样跟着物价走？费雪的答案是，“至少在长时期里，利率跟着物价的变动走”，只是落后得很久\cite{fisher1930}。他用过去各年物价变化的加权平均去解释利率。英国 1898—1924 年，相关系数最高可达 0.98，这时物价变化的影响要摊到 28 年里，加权的平均落后 9.3 年\cite{fisher1930}。物价持续地涨了很多年，利率就高，物价的水平这时多半也高。所以在他看来，物价水平高时利率也高，只是另外三种关系的“偶然结果”\cite{fisher1930}。他也承认，英国 1820—1864 年的数据，相关系数是他研究过的数据里最低的\cite{fisher1930}。
+% 据: f30_follow, f30_r980, f30_high, f30_accidental, f30_1820
+
+\begin{pitfall}[利率高，就说明钱紧]
+维克塞尔在约克说，货币的利息实际上常常在看上去高的时候低，在看上去低的时候高\cite{wicksell1907}。费雪举了一个例子。1852—1857 年的伦敦，物价涨得很快，主要是因为大量的黄金被开采出来\cite{fisher1930}。市场利率平均 4.7\%，比此前此后任何一个时期都高。可是在这段利率看上去最高的时期，放款人得到的实际利息比零还少\cite{fisher1930}。利率的高低，要同自然利率比，或者同预期的通胀比，不能只看它自己。
+% 据: ej_seems, f30_1852, f30_47
+\end{pitfall}
+
+\section{数据检验：吉布森悖论}\label{sec:wicksell-test}
+
+索尔贝克表上那个规律，后来有了名字。1923 年与 1926 年，英国的吉布森（A. H. Gibson，生卒年未详）在《银行家杂志》上发表文章，强调一百多年里统一公债的收益率与批发物价指数相关得异常紧密\cite{keynes1930,fisher1930}。统一公债是英国政府的永续公债，没有到期日，每年付固定的利息。它的收益率是利息除以市价，市价越低，收益率越高。凯恩斯（John Maynard Keynes，1883—1946）1930 年在《货币论》里把它叫作吉布森悖论。他说，这是“整个数量经济学领域里确立得最完全的经验事实之一，虽然理论经济学家大多不理会它”\cite{keynes1930}。
+% 据: ke_corr, ke_bm, f30_gibson, ke_call, ke_fact
+
+叫它悖论，是因为它与两种直接的推论都不合。按维克塞尔命题的字面意思，利率低才会有高物价。按费雪的关系，利率该跟着物价的涨幅走，而不是跟着物价的水平走。凯恩斯引了 Coates（W. H. Coates，生卒年未详）给国债与税收委员会算的结果。1825—1924 年，《统计学家》的物价指数与统一公债的毛收益率，同年的相关系数是 0.89\cite{keynes1930}。相关系数在 $-1$ 与 1 之间，越接近 1，两条线越同步。凯恩斯还说，1873—1896 年两者一起下跌，1896—1900 年一起回升\cite{keynes1930}。
+% 据: ke_coates, ke_coates_who, ke_893, ke_colwyn, ke_1873
+
+英格兰银行整理的序列可以重算这个相关（\figref{fig:wicksell_gibson}）。1821—1913 年，批发物价的对数与统一公债收益率的相关系数是 0.77，算到 1825 年起是 0.80\cite{boe2017}。同年的通胀率与收益率的相关系数却只有 $-0.07$\cite{boe2017}。Barsky 与 Summers（1985）用 1730—1930 年的数据得到同样的图景，收益率与批发物价指数紧密地一起变动，与通胀率的相关几乎为零\cite{barsky1985}。Peake（生卒年未详）发现长期利率的相关比短期利率高，凯恩斯引了他的结果\cite{keynes1930}。重算也是这样，英格兰银行贴现率的年平均值与物价对数的相关只有 0.51\cite{boe2017}。
+% 据: bs_1730, ke_peake
+
+\fig{wicksell_gibson}{吉布森悖论，1821—1913 年。(a) 看两条线怎样一起起落：英国统一公债的收益率（实线，左边的纵轴）与批发物价指数（虚线，右边的纵轴，1913 年 $=100$，对数）。(b) 看点为什么散成一团：每个点是一年，横轴是批发物价当年的涨幅，纵轴是同年的公债收益率。数据：英格兰银行《千年宏观数据》表 A31（统一公债的收益率，年平均）与 A47（批发物价指数，Gayer、Rostow 与 Schwartz 的指数接上索尔贝克—《统计学家》指数）。}{fig:wicksell_gibson}
+
+\subsubsection{相关是不是假的}
+第一个问题是，这条相关是不是假的。Benjamin 与 Kochin（1984）指出，物价与利率都接近随机游走，出现伪相关的风险很高\cite{barsky1985}。他们还说，吉布森悖论即使存在，也主要是战时的现象\cite{barsky1985}。随机游走的意思是，每年的变化像掷硬币，与过去无关，序列就四处漂移。两条这样的序列即使彼此无关，放在一起回归，水平上也常常显得高度相关。这时最小二乘的前提可能不成立，标准误也可能被低估五倍或更多\cite{barsky1985}。一个警号是 Durbin–Watson 统计量远低于 2。它衡量回归的残差是否一个接一个地同向偏离，接近 2 说明没有这种偏离。
+% 据: bs_bk, bs_bkrw, bs_regularity, bs_factor5
+
+Barsky 与 Summers 先改用一阶差分，也就是每年的变化，来做回归，这是 Granger 与 Newbold 明确推荐的检查\cite{barsky1985}。1821—1913 年以及其中的各个子时期，水平与一阶差分都有吉布森相关\cite{barsky1985}。他们也提醒，差分有自己的毛病，回归量的测量误差在差分回归里造成的错误，比在水平回归里严重得多\cite{barsky1985}。
+% 据: bs_diff, bs_both, bs_measurement
+
+所以水平回归仍然要看，只是门槛要提高。按 Granger 与 Newbold 的模拟，有 50 个观测值时，普通的 $t$ 统计量要大于 10 左右，才能拒绝两条随机游走彼此无关的假设\cite{barsky1985}。这时拒绝的置信水平是 90\%—95\%\cite{barsky1985}。这相当于把标准误放大五倍或者再多一点\cite{barsky1985}。他们的样本止于 1913 年，大战以前的最后一年；大战伴随着多数国家无限期地停止兑付硬币\cite{barsky1985}。他们的结论是，Benjamin 与 Kochin 的说法站不住\cite{barsky1985}。
+% 据: bs_granger, bs_fivefold, bs_ww1, bs_unwarranted
+
+\tabref{tab:wicksell-gibson} 把重算的回归与他们的表 2 放在一起。全时期的水平回归，系数是 0.34，标准误放大五倍以后，$t$ 仍有 2.3\cite{boe2017}。系数的意思是，收益率高 1 个百分点，物价水平的对数高 0.34，物价约高四成。差分回归的系数小一些，仍然显著。证据的分量却集中在后半段。1872—1913 年，两种回归都很强；1821—1871 年，重算的水平回归几乎没有相关。Barsky 与 Summers 的前半段也弱得多，费雪也说英国 1820—1864 年的相关最低\cite{barsky1985,fisher1930}。两份估计的口径不同，看到的却一样。按这两份估计，相关不像是伪相关，但它的分量主要在 1870 年代以后。
+% 据: bs_t2_lev, bs_t2_lev1, bs_t2_lev2, bs_t2_dif, bs_t2_dif1, bs_t2_dif2, f30_1820
+
+\begin{table}[htbp]\centering\small
+\caption{吉布森回归：批发物价的对数对统一公债收益率}\label{tab:wicksell-gibson}
+\begin{tabularx}{\linewidth}{@{}llYYYYYY@{}}
+\toprule
+ & & \multicolumn{3}{c}{本书重算} & \multicolumn{3}{c}{Barsky 与 Summers（1985）} \\
+\cmidrule(lr){3-5}\cmidrule(l){6-8}
+样本 & 形式 & 系数 & $\bar R^{2}$ & D-W & 系数 & $\bar R^{2}$ & D-W \\\midrule
+1821—1913 & 水平 & 0.34（0.03） & 0.59 & 0.43 & 0.38（0.03） & 0.65 & 0.44 \\
+ & 差分 & 0.11（0.05） & 0.05 & 1.77 & 0.16（0.05） & 0.10 & 1.71 \\
+1821—1871 & 水平 & 0.08（0.07） & 0.01 & 0.48 & 0.16（0.06） & 0.11 & 0.52 \\
+ & 差分 & 0.08（0.06） & 0.02 & 1.86 & 0.14（0.06） & 0.08 & 1.77 \\
+1872—1913 & 水平 & 0.42（0.04） & 0.72 & 0.32 & 0.41（0.05） & 0.67 & 0.28 \\
+ & 差分 & 0.24（0.08） & 0.18 & 1.68 & 0.24（0.09） & 0.14 & 1.50 \\
+\bottomrule
+\end{tabularx}
+\datasource{本书重算：英格兰银行《千年宏观数据》表 A31 与 A47，普通最小二乘（statsmodels），因变量是批发物价指数的自然对数，自变量是统一公债收益率（\%），都含常数项；括号里是标准误；$\bar R^{2}$ 是调整后的 $R^{2}$，D-W 是 Durbin–Watson 统计量。Barsky 与 Summers（1985）表 2 的英国一栏，据工作论文第 8a 页的图像读出；他们的公债收益率取自 Homer（1977），物价接 Schumpeter、Gayer—Rostow—Schwartz 与 1846 年以后的索尔贝克—《统计学家》指数。}
+\end{table}
+
+\subsubsection{为什么会一起动}
+第二个问题是，为什么。第一种解释来自维克塞尔与凯恩斯。凯恩斯给的是一个试探性的解释。他认为，以长期证券的收益率衡量的市场利率，相对于自然利率非常“黏”\cite{keynes1930}。他的自然利率是使储蓄与投资恰好相等的利率\cite{keynes1930}。自然利率下降或上升时，银行界不能很快察觉，也不能很快反应\cite{keynes1930}。资本每年的增量相对于资本总量很小，自然利率的变动是延续几十年的长期变动\cite{keynes1930}。他的结论是，“如果市场利率与自然利率同向变动，却总是落在它后面，那么物价水平的变动即使在相当长的时期里，也会倾向于与利率的变动同向”\cite{keynes1930}。
+% 据: ke_tentative, ke_sticky, ke_natural, ke_detect, ke_decades, ke_lag
+
+凯恩斯用它讲了 19 世纪。1820—1900 年，利率降得不够快，投资跟不上储蓄，只有 1855—1875 年的投资热潮是例外\cite{keynes1930}。19 世纪前期，高利贷法也许起了作用\cite{keynes1930}。他说这是一种轻微的、长时期往一个方向的拖拽\cite{keynes1930}。吉布森自己的解释是，生活费用越低，可用于投资的余额必定越大；凯恩斯说，这个解释“恐怕必须毫无保留地否定”\cite{keynes1930}。他也不认为这是费雪的定理的例子，“恰恰相反”\cite{keynes1930}。\exref{ex:wicksell-keynes} 算的就是他的理由。
+% 据: ke_1820, ke_usury, ke_drag, ke_gibsonown, ke_rejected, ke_fisher, ke_contrary
+
+\begin{example}{费雪的补偿与凯恩斯的反驳}\label{ex:wicksell-keynes}
+凯恩斯这样说明费雪的定理。实际利息每年 5\%，货币的价值每年下降 2\%，借出 100，放款人就要求一年后以货币计收回 107\cite{keynes1930}。（1）用式~\eqref{eq:prices-fisher} 算出精确的名义利率。107 是哪一种近似？（2）凯恩斯说，吉布森看到的却是另一回事。物价每年上涨 2\% 时，长期证券的资本价值往往每年下跌 2\%，买进长期证券的人一年后要差 4\%\cite{keynes1930}。这 4\% 是怎样来的？（3）统一公债的价格等于每年的利息除以收益率。设收益率是 3\%，这是教学用的假设。收益率要升到多少，价格才跌 2\%？
+\solution （1）$1.05\times1.02=1.071$，名义利率 7.1\%。107 用的是近似式 $i\approx r+\pi$，丢掉了乘积项 $0.05\times0.02$。（2）手里的证券以货币计少了 2\%，货币本身又贬值了 2\%，$(1-0.02)\times(1-0.02)=0.9604$，约差 4\%。凯恩斯说，这一年里利息的变化太小，改变不了结果\cite{keynes1930}。两个因素不是互相抵消，而是互相加重。（3）价格跌到原来的 0.98，收益率要升到 $3\%/0.98=3.06\%$。收益率只要升 0.06 个百分点，资本价值就跌 2\%，所以一年里物价涨 2\%、收益率略升，就是吉布森看到的样子。
+\end{example}
+
+第一种解释的弱点，Barsky 与 Summers 指了出来。它靠的是银行体系的运作，可是 1914 年以前美国货币存量的变动，大体反映的是货币黄金存量的变动\cite{barsky1985}。货币的增减如果是黄金的增减，而不是银行的放款，银行利率落后的机制就未必是主角。维克塞尔自己也说过，黄金多半不是作为放款的资本来的，是作为产金国进口的货款来的\cite{wicksell1907}。在他看来，黄金增多的最终结果是利率上升，因为大规模的采金与无金国收购黄金，耗掉了大量的实际资本，推高了利润率\cite{wicksell1907}。这也许能解释物价上涨时利率很少偏低的现象\cite{wicksell1907}。
+% 据: bs_kw, ej_imports, ej_goldrate, ej_destroyed, ej_seldom
+
+第二种解释是费雪的。利率跟着过去多年的通胀走，过去的通胀持续了很久，物价水平自然也高。它的弱点在通胀本身。Barsky 与 Summers 说，费雪的解释与一个经验事实不合，吉布森时期的物价非常接近随机游走\cite{barsky1985}。今年涨了，明年涨还是跌，机会差不多。重算的数据也是这样，英国批发物价的年涨幅与上一年涨幅的相关系数只有 0.10\cite{boe2017}。Sargent（1973）据此认为，费雪的解释似乎与理性不合\cite{barsky1985}。金本位的年代里，每年都预测通胀为零，比费雪的办法预测得还好\cite{barsky1985}。
+% 据: bs_randomwalk, bs_sargent, bs_zero
+
+第三种解释是 Barsky 与 Summers 自己的。他们的出发点是，“在金本位下，物价水平是黄金实际价格的倒数”\cite{barsky1985}。当局把黄金的名义价格钉死了，黄金以商品计的价格一涨，物价水平就跌\cite{barsky1985}。黄金是一种耐久的资产。像维克塞尔与凯恩斯说的那样，资本的生产率变了，实际利率跟着变，黄金的相对价格也会系统地变化\cite{barsky1985}。实际利率高，持有黄金的代价就高。金币可以熔化做成器物，非货币的黄金也可以铸成金币，或者送到银行换成存款\cite{barsky1985}。所以黄金的相对价格与实际利率在均衡里反向变动，物价水平就与利率同向变动\cite{barsky1985}。他们还指出，到了法定货币的年代，这条相关就不见了\cite{barsky1985}。在他们之前，Friedman 与 Schwartz（1976）的结论是，“吉布森悖论仍然是一个没有理论解释的经验现象”\cite{barsky1985}。
+% 据: bs_peg, bs_recip, bs_durable, bs_wk, bs_melted, bs_negative, bs_fiat, bs_fs, bs_fsquote
+
+三种解释各有站得住的地方。三家都把相关当作真的，主要的证据都在金本位的年代。维克塞尔与凯恩斯的机制，教学模型里能产生同样的图形，却要银行的放款驱动货币。费雪的机制要求人们按过去的通胀预测未来，而金本位下的通胀几乎没有惯性。Barsky 与 Summers 的机制解释了相关为什么随金本位消失，可是它依赖一个关于黄金需求的模型，证据主要是间接的。
+
+\begin{case}{瑞典 · 1874—1913 · 一家银行定一个贴现率}
+维克塞尔的瑞典也在金本位上。1873 年，瑞典采用金本位，新的铸币单位叫\textbf{克朗}，1 克朗合 0.403225 克黄金\cite{riksbank2026b}。克朗因此对其他采用这个制度的货币有了固定的汇率\cite{riksbank2026b}。
+% 据: rk_title, rk_krona, rk_gram, rk_fixed
+
+瑞典的利率比英国更接近维克塞尔的设想。从 1856 年 11 月起，贴现率由中央银行，即瑞典国家银行（Riksbank），来定\cite{waldenstrom2014}。银行法规定，商业银行定自己的存贷款利率时必须跟着它\cite{waldenstrom2014}。按月度数据，1874—1913 年贴现率在 3.5\% 与 7\% 之间变动了 70 次\cite{waldenstrom2014}。长期利率取自 1872、1880、1887 与 1914 年的几种国债，价格来自斯德哥尔摩的两家证券经纪商登在报上的行情\cite{waldenstrom2014}。物价用 Edvinsson 与 Söderberg（2010）的消费物价指数，1732—1914 年的部分以 Jörberg（1972）与 Myrdal（1933）的数据为基础\cite{edvinsson2010b}。
+% 据: wa_1856, wa_law, wa_bonds, wa_brokers, es_basis, es_weights, es_base
+
+物价先跌后涨。消费物价从 1874 年到 1887 年跌了约 26\%，1887 年见底，此后到 1913 年涨了约 48\%\cite{edvinsson2010b}。长期利率却要晚九年才见底，月度的最低点是 1896 年 8 月的 3.52\%\cite{waldenstrom2014}。所以 1874—1913 年整个时期，物价对数与长期利率年平均值的相关系数只有 0.51。分成两段就不同了，1874—1896 年是 0.81，1897—1913 年是 0.93。贴现率与物价对数的相关系数是 0.62。这几个相关系数是用上面两份序列算出来的（\figref{fig:wicksell_sweden}）。
+% 据: es_1887, es_1913
+
+维克塞尔的规则后来在瑞典试过。1931 年秋天瑞典离开金本位，政府在经济学界的影响下，提出了稳定国内物价水平的货币计划\cite{berg1998}。按 Berg 与 Jonung 的说法，瑞典成了第一个把稳定国内物价水平定为货币政策正式目标的国家\cite{berg1998}。到他们写作的 1998 年，瑞典也是唯一一个采用过这种明确的物价水平目标的国家\cite{berg1998}。这次试验是\chref{ch:depressionworld}的故事。按维克塞尔在约克的说法，单独一个政府要稳住物价，就要牺牲汇率的平价；瑞典选的正是这一条。
+% 据: bj_left, bj_1931, bj_only, bj_date, ej_steady
+\end{case}
+
+\fig{wicksell_sweden}{瑞典的金本位，1874—1913 年。(a) 看物价怎样先跌后涨、1887 年见底：消费物价指数，1914 年 $=100$，对数。(b) 看长期利率怎样晚九年才见底：长期国债的收益率（实线）与瑞典国家银行的贴现率（虚线），都是月度数。数据：Edvinsson 与 Söderberg（2010）表 I.A8.1；Waldenström（2014）表 II.A6.9 与 II.A6.10，据 Sveriges riksbank 网站，2026 年 10 月 16 日。}{fig:wicksell_sweden}
+
+\begin{deeper}[史料说明]
+\textbf{维克塞尔在约克。}英国科学促进会的报告只印了论文的四条摘要，《经济学杂志》1907 年 6 月号刊出全文，并附了维克塞尔对讨论的附记\cite{baas1907,wicksell1907}。开场与\secref{sec:wicksell-rule}引的是全文。日期据报告的目录，那天的第一篇是维克塞尔，第二篇是帕尔格雷夫。埃奇沃思的《分配理论》在前一天宣读\cite{baas1907}。《利息与价格》的德文原本没有读到，正文据 Kahn 1936 年的英译本；这个译本还在版权期内，所以只转述，不引长句。
+
+\textbf{费雪与凯恩斯的版本。}《货币的购买力》据 1911 年初版 1912 年 2 月的重印本，有几处识别文本有误的句子，据 1926 年修订版的同一段核对\cite{fisher1911}。凯恩斯说吉布森相关是“确立得最完全的经验事实之一”，原文是“within the whole field”；Barsky 与 Summers 引作“in the whole field”\cite{keynes1930,barsky1985}。Coates 的 0.89，两份扫描本的识别文本都把小数点印成了横线，读作 0.893，“概率误差”是 0.014\cite{keynes1930}。吉布森的文章没有读到，出处据凯恩斯与费雪的脚注。
+
+\textbf{重算的口径。}Barsky 与 Summers 的表 2 据 1985 年的工作论文；1988 年发表在 \emph{Journal of Political Economy} 上的版本没有读到，数字可能有出入\cite{barsky1985}。表里的数是从页面图像读出的，文字层漏了一些小数点。英格兰银行的统一公债收益率在 1888—1903 年用的是 Klovland 的调整，批发物价接的是 Gayer、Rostow 与 Schwartz 的指数和索尔贝克—《统计学家》指数\cite{boe2017}。两份估计的口径不同，前半段的差别最大。
+
+\textbf{只有一个来源的。}Leijonhufvud 的文章与 Benjamin、Kochin（1984）的论点，分别据 Humphrey 与 Barsky、Summers 的转述。索尔贝克、吉布森、Coates 与 Peake 的生卒年，所据的文献都没有给出。约普林的生年，《国民传记辞典》也只说大约在 1790 年\cite{watt1892}。瑞典的两种利率据 Waldenström 的表，物价据 Edvinsson 与 Söderberg 的表；1887 年与 1913 年的物价，印出的表与 Excel 文件相同\cite{edvinsson2010b}。
+% 据: ba_relative, ba_followed, ba_goldlead, ba_constant, ba_title, ba_specie, ba_edgeworth, ba_thursday, f12_printing, ke_fact, bs_misquote, ke2_893, bs_date, bs_wp, bs_homer, bs_prices, hu_leij, bs_bk, dnb_joplin, es_1887, es_1913
+\end{deeper}
+
+\section{今天还剩什么}\label{sec:wicksell-legacy}
+
+\textbf{自然利率成了中性利率。}维克塞尔说，有一个贷款的利率对商品价格是中性的\cite{wicksell1936}。今天的中央银行讲的\textbf{中性利率} $r^{*}$，是同一个想法的后代。它是既不刺激也不抑制经济的实际利率，同样看不见，只能估计。怎样估计它，它近几十年怎样变化，是\chref{ch:stagnation}的问题，那里用的是 Laubach 与 Williams 的方法。泰勒规则把 $r^{*}$ 直接写进了政策利率的公式（\chref{ch:consensus}）。\chref{ch:naturalrate}的自然失业率，用的是同一个形容词，说的却是劳动市场的另一件事。
+% 据: ka_neutral
+
+\begin{compare}{维克塞尔的自然利率与今天的中性利率}{维克塞尔的自然利率（1898）}{今天的中性利率 $r^{*}$}
+\cmprow{说的是什么}{实际资本以实物出借时的利率，对物价是中性的\cite{wicksell1936}}{使经济既不过热、也不过冷的实际利率}
+\cmprow{由什么决定}{生产的效率，资本的多少，劳动与土地的供给\cite{wicksell1936}}{储蓄与投资的意愿，以及背后的生产率与人口（\chref{ch:stagnation}）}
+\cmprow{跟它比的利率}{银行的贷款利率与贴现率，名义的}{政策利率减去预期的通胀，实际的}
+\cmprow{能不能看到}{看不见，银行看物价\cite{wicksell1936}}{看不见，用模型估计}
+\cmprow{规则}{物价涨就提高利率，物价跌就降低利率\cite{wicksell1936}}{泰勒规则：按通胀与产出缺口调整（\chref{ch:consensus}）}
+\cmprow{货币制度}{金本位，受黄金供给的限制\cite{wicksell1907}}{法定货币，中央银行有通胀目标}
+\cmpsum{两者都是利率该在的位置，都看不见。维克塞尔的办法是只看物价，今天的办法是先估计它，再看通胀与产出。}
+\end{compare}
+
+\textbf{盯住物价，而不是盯住看不见的利率。}维克塞尔的规则不要求银行知道自然利率，只要求它看物价的涨跌\cite{wicksell1936}。瑞典 1931 年的物价水平目标，是第一次把它写成政策（\chref{ch:depressionworld}）\cite{berg1998}。今天的通胀目标盯的是物价的变化，不是物价的水平。两者有什么不同，什么时候不同变得要紧，见\chref{ch:consensus}与\chref{ch:zlb}。
+% 据: ka_rule, bj_1931
+
+\textbf{名义与实际。}费雪的表 14 说，在不稳定的货币下，实际利率比名义利率多变得多\cite{fisher1930}。合同写成名义金额，财富就在借贷双方之间来回转移。今天可以用通胀挂钩国债读出市场对实际利率的看法，见\secref{sec:prices-breakeven}。
+% 据: f30_variable
+
+\textbf{吉布森悖论随金本位走了。}Barsky 与 Summers 说，“近几十年通行法定货币本位，吉布森相关就蒸发了”\cite{barsky1985}。物价不再有黄金这个锚，名义利率跟着通胀走，正是费雪关系说的（\secref{sec:prices-fisher}）。货币完全没有锚的时候会怎样，是\chref{ch:weimar}与\chref{ch:hyperinflation}的题目。
+% 据: bs_fiat
+
+\textbf{凯恩斯的预言。}1930 年，凯恩斯说，未来二十年的前景在他看来是自然利率有很强的下降趋势，危险在于市场利率迟迟跟不上\cite{keynes1930}。自然利率会不会长期偏低，市场利率能不能跟下去，\chref{ch:stagnation}还会回到这个问题。
+% 据: ke_prospect, ke_fall
+
+\begin{takeaways}
+\begin{itemize}
+\item 维克塞尔区分了自然利率与市场利率。自然利率是实际资本以实物出借时的利率，市场利率是银行贷款的利率。市场利率低于自然利率，物价就累积地上涨，在纯粹的信用制度里没有尽头；涨上去的物价停在新的水平上，不会自己回来。
+\item 教学模型 $\pi_t=\kappa(r^{n}_t-i_t)$，$i_{t+1}=i_t+\beta\pi_t$（式~\eqref{eq:wicksell-process}）里，利差每年乘以 $1-\beta\kappa$，物价一共涨 $g_0/\beta$。银行按物价提高利率，利率就跟着物价的水平走，$i_t-i_0=\beta(p_t-p_0)$。
+\item 维克塞尔的规则是物价涨就提高利率，物价跌就降低利率。金本位下，一家银行、一国的银行都做不到；单独一个政府只能在稳定物价与保持汇率平价之间选一个。
+\item 费雪把交易方程扩大成 $MV+M'V'=PT$（式~\eqref{eq:wicksell-exchange}）。在过渡时期，利率上升但升得不够，物价的上涨引起物价的上涨；按他 1930 年的表 14，实际利率比市场利率多变七到十三倍。
+\item 吉布森悖论是利率与物价水平、而不是与通胀率一起变动。英国 1821—1913 年的相关系数是 0.77，主要来自 1872 年以后。维克塞尔与凯恩斯、费雪、Barsky 与 Summers 给出三种解释，各有证据，也各有弱点。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 按式~\eqref{eq:wicksell-process}，$r^{n}=5\%$，$i_0=4.5\%$，$\kappa=2$，$\beta=0.1$。第一年的通胀率是多少？第二年的利率是多少？物价一共涨多少？
+\item 一张 100 英镑、三个月后付款的票据，贴现率是 5\% 时，商人拿到多少？贴现率降到 4\% 呢？现金价格涨了百分之几？
+\item 利率从 5\% 降到 4.5\%，一项每年收益 5 英镑的投资，按利率折算最多值多少英镑？比从前多付百分之几？
+\item 物价每年上涨 2\%，放款人要 5\% 的实际利息。名义利率应是多少？如果合同上的利率仍是 5\%，事后的实际利率是多少？
+\item 按 Barsky 与 Summers 的建议把标准误放大五倍。\tabref{tab:wicksell-gibson} 里本书重算的三个水平回归，哪几个的 $t$ 统计量仍大于 2？
+\item 1931 年，瑞典离开金本位，宣布稳定国内的物价水平。按维克塞尔给埃奇沃思的回答，瑞典选了哪一条路，放弃了什么？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $\pi_0=2\times0.5=1$，物价涨约 1\%；$i_1=4.5+0.1\times1=4.6\%$。物价一共涨 $g_0/\beta=0.5/0.1=5$，约 5.1\%。
+\item 5\% 时扣掉 $100\times5\%\times3/12=1.25$ 英镑，拿到 98.75 英镑；4\% 时拿到 99 英镑。现金价格涨了 $99/98.75-1\approx0.25\%$，与维克塞尔说的 $\tfrac14\%$ 一样。
+\item $5/0.045\approx111.1$ 英镑，多付约 11\%。
+\item $1.05\times1.02-1=7.1\%$；$1.05/1.02-1=2.9\%$。
+\item 1821—1913 年：$0.34/(5\times0.03)\approx2.3$；1821—1871 年：$0.08/(5\times0.07)\approx0.2$；1872—1913 年：$0.42/(5\times0.04)\approx2.1$。全时期与后半段仍大于 2，前半段远远不够。
+\item 瑞典选了稳定本国货币对商品的价值，放弃的是克朗对黄金、也就是对其他金本位货币的固定汇率。维克塞尔说，单独一个政府这样做，就必然牺牲汇率的平价。
+\end{answers}
+
+1906 年 8 月 3 日，埃奇沃思在约克说，停止黄金的自由铸造，政府自己就能调节物价\cite{wicksell1907}。维克塞尔补了一句，黄金即使变得稀少，政府也可以审慎地发行纸币\cite{wicksell1907}。八年以后，大战来了，多数国家无限期地停止了硬币的兑付\cite{barsky1985}。纸币发得审慎不审慎，再没有黄金替人把关。费雪后来算出，在通胀最快的那段时间，德国的实际利率接近负 100\%，借出去的钱收回来时几乎一文不值\cite{fisher1930}。一个国家为什么会印钞印到物价每天翻倍？恶性通胀又是怎样一夜止住的？
+% 据: ej_edgeworth, ej_paper, bs_ww1, f30_germany
