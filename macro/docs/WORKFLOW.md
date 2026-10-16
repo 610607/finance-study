@@ -100,4 +100,5 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   18, 19, …, 25, started 2026-10-15; Chapters 18, 19, 20 and 21 written and reviewed 2026-10-15; paused after Chapter 21 at the
   author's request. Resumed 2026-10-16 with the narrative plan (NARRATIVE.md, write_template rule 9, batch_brief's NARRATIVE AND
   LANGUAGE): Chapters 22 (`ch:marx`), 23 (`ch:goldstandard`) and 24 (`ch:periphery`) written and reviewed 2026-10-16; Chapter 25 (`ch:wicksell`) written in parallel in its own worktree at the author's request and reviewed (2026-10-16);
-  figures redrawn and the book rebuilt; paused for the author's review of Part 4.
+  figures redrawn and the book rebuilt; the author's decisions on Part 4 recorded and the branch merged into main
+  (2026-10-16); paused before Part 5 at the author's request.
