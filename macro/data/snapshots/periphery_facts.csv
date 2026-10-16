@@ -77,7 +77,7 @@ hr_day8,英国,1892,,3;1892,day; year,,herschell1893,"Report of the Committee ap
 hr_giffen,美国,1892,,1873;1874,year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2029","In 1873 and 1874, in view of the resumption of specie payments, the United States at that time decided to go over formally to the single gold standard.",Robert Giffen 的证词（OCR 把名字读作 Roser Girren）
 hr_giffen_who,英国,1892,,,,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Minutes of Evidence, Q. 2028","Mr. Giffen, with regard to the state of the currency in the United States",证人 Robert Giffen；OCR 把姓名一行读作 Roser Girren
 hr_world1890,世界,1890,,1890,year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)",The silver production of the world in 1890 was estimated at,
-hr_world,世界,1890,,148237091,troy ounces a year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)","this represents an anual production at that time of 148,237,091 ozs.",原文 anual
+hr_world,世界,1890,,148237091,troy ounces a year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)","this represents an anual production at that time of 148,237,091 ozs.","原文 anual. The OCR reads 148,237,091; the printed page (Appendix, p. 278) shows 143,237,091, and the report's own figure in kilograms gives 133,237,091. The text uses no figure, only the share bought under the Sherman Act (more than a third on every reading)"
 hr_sherman,美国,1890,,1890;54000000,year; troy ounces a year,,herschell1893,"Report of the Committee appointed to inquire into the Indian Currency (1893), Appendix (silver production)","Under the Sherman Act of 1890 the purchases were raised to 54,000,000 ozs. annually.",
 ky_until,印度,,,1893,year,,keynes1913,"Indian Currency and Finance (1913), ch. I §1","until 1893 the currency of India was on the basis of silver freely minted, the gold value of the rupee fluctuating with the gold value of silver bullion.",
 ky_finance,印度,,,,,,keynes1913,"Indian Currency and Finance (1913), ch. I §1","Public Finance, by reason of the large payments which the Government must make in sterling, gravely disturbed",
@@ -146,6 +146,7 @@ ky_glut,印度,1893,1893-94,,,,keynes1913,"Indian Currency and Finance (1913), c
 ky_prices,印度,,,1893,year,,keynes1913,"Indian Currency and Finance (1913), ch. I §3",it is plain that the great change of 1893 must have tended to make them fall,
 nr_bleeding,印度,1901,,30000000,pounds a year,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. viii","the evil of the "" bleeding "" and impoverishing drain by the foreign dominion nearly or above £30,000,000 a year in a variety of subtle ways and shapes",
 nr_forty,印度,1901,,40;30,million pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. viii",the present drain will be nearer forty than thirty millions,
+nr_famines,印度,1901,,,,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. x","The utter exhaustion and destruction from all these causes is terrific, and cannot but produce the present famines, plagues, etc.",
 nr_shillings,印度,1901,,2,shillings per rupee,,naoroji1901,"Poverty and Un-British Rule in India (1901), Introduction, p. viii",speaking roughly on the old basis of the value of gold at two shillings per rupee,
 nr_exports,印度,1835,1835-1872,1835;1872;1120000000;15;168000000;1288000000,year; year; pounds; percent; pounds; pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","exports of India for the years 1835 to 1872 being about ^""1,120,000,000, the imports, with an addition of 15 per cent, to exports for profits (of about ^168,000,000), should be about ^""1,288,000,000.","OCR 把 £ 读作 ^"" 或 ^"
 nr_loans,印度,1835,1835-1872,50000000;100000000,pounds,,naoroji1901,"Poverty and Un-British Rule in India (1901), p. 33","India has incurred to foreign parts a debt of about ^""50,000,000 for the public debt, and about ^""100,000,000 for railways, during the same period.",
@@ -354,7 +355,7 @@ ms_60,日本,,,60,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (200
 ms_rates30,日本,1897,,30;6,basis points; months,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 17",Japanese interest rates were more or less flat prior to adoption and increased by approximately 30 basis points in the six months after the country adopted the gold standard.,
 ms_economist,日本,1897,"June 19, 1897",5,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 17",the Japanese imagine that because they are adopting a gold standard currency their 5 per cent loans should command a higher price,《经济学人》1897 年 6 月 19 日，据 MSW 的引文
 ms_1899,日本,1899,,1899;100000000;90;4.45,year; yen; percent of par; percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",in 1899 the government floated a new ¥100 million bond issue in London. It sold at 90 percent of par with a current yield of 4.45 percent,
-ms_86,日本,1899,,86;4.65,percent of par; percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18","The Japanese government then purchased much of the outstanding issue at 86 percent of par, an even deeper discount with a yield of 4.65%",
+ms_86,日本,1899,,86;4.65,percent of par; percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18","The Japanese government then purchased much of the outstanding issue at 86 percent of par, an even deeper discount with a yield of 4.65% (Suzuki, 1994).","MSW cite Suzuki (1994) for the buyback"
 ms_tepid,日本,1899,,10,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",Less than 10 percent of the primary issue was purchased in the London market.,
 ms_45,日本,1899,,45,percent,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",The Japanese government (with assistance from the Bank of Japan) responded by purchasing nearly 45 percent of the issue,
 ms_underwriters,日本,1899,,,,,mitchener2009,"Mitchener, Shizume and Weidenmier (2009), NBER WP 15195, p. 18",with the underwriters having to absorb the remainder,
@@ -388,6 +389,12 @@ bx_sterling,中国,1901,,3,shillings per Haikwan tael,,boxer1901,"Boxer Protocol
 bx_39,中国,1901,,39,years,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)",the capital shall be reimbursed by China in thirty-nine years,
 bx_payable,中国,1901,,,,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)",Capital and interest will be payable in gold or at the rates of exchange prevailing on the dates at which the different payments fall due.,
 bx_1940,中国,1901,,1902;1940,year,,boxer1901,"Boxer Protocol (7 September 1901), Article VI (a)","The amortization will begin on the 1st of January, 1902, and will end at the close of the year 1940.",
+qs_jiangning,清,1842,道光二十二年秋七月,80,艘,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,秋七月，犯江宁。英火轮兵船八十馀艘溯江上,
+qs_redflag,清,1842,道光二十二年秋七月,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,英突张红旗，扬言今日如不定议，诘朝攻城，遂即夜覆书，一如所言。,诘朝 = the next morning
+qs_baimen,清,1842,道光二十二年,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,是为白门条约。自此烟禁遂大开矣。,白门条约 = the treaty signed at Jiangning (Nanjing)
+qs_dagu,清,1858,咸丰八年夏四月,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,八年夏四月，联兵犯大沽，连陷前路砲台。,
+qs_budeyi,清,1858,咸丰八年,56,款,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,时廷臣交章请罢抚议，以疆事棘，不得已，始命桂良等与定和约五十六款。,the treaty of Tianjin with Britain
+qs_tariff,清,1858,咸丰八年冬十月,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,冬十月，定通商税则。,
 qs_opium58,清,1858,咸丰八年,30,两/百斤,,qingshigao,卷一百二十五 志一百 食货六（征榷会计）,八年，与法定约。向来洋药不准通商，现稍宽其禁，听商贸易。每百斤纳税银三十两,洋药即进口的鸦片；数字在 checks/check_ch24.py 里读
 qs_110,清,1883,光绪九年三月上谕,110,两,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,如李鸿章前议一百一十两之数，并在进口时输纳，即可就此定议。,洋药税釐并徵，每百斤一百一十两
 qs_combined,清,1883,光绪九年三月上谕,,,,qingshigao,卷一百五十四 志一百二十九 邦交二（英吉利）,洋药税釐并徵，载在烟台条约,
@@ -403,6 +410,6 @@ qs_zhang,清,1894,光绪二十年条下,,,,qingshigao,卷一百四十 志一百�
 qs_zhang_war,清,1894,,,,,qingshigao,卷一百四十 志一百十五 兵十一（制造）,当海防紧急之秋，而军械缺乏，贻误戎机，关系匪浅。,
 qs_boxer450,清,1901,光绪二十七年,450000000,两,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,明年，和议成，议偿款四百五十兆,
 qs_gold,清,1902,,,,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,既而各国赔款欲改银为金，以金价算。,
-qs_argue,清,1902,,450000000,海关两,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,是此项赔款，照约载金价核算，即四百五十兆海关银数，照约银数付还，亦即与用金付给无异。,
+qs_argue,清,1902,,450000000,海关两,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,美为商劝各国，并谓众议合索四百五十兆两，由各国自行均派，中国不管其易作何项金钱，是此项赔款，照约载金价核算，即四百五十兆海关银数，照约银数付还，亦即与用金付给无异。,"the United States speaks for China; 四百五十兆 is read at its first occurrence"
 qs_us,清,1902,,,,,qingshigao,卷一百五十六 志一百三十一 邦交四（美利坚）,美旋允照约还银。,
 qs_1906,清,1906,光绪三十二年,10,年,,qingshigao,卷一百二十五 志一百 食货六（征榷会计）,三十二年，德宗锐意图强，命限十年将洋药一律革除净尽。,

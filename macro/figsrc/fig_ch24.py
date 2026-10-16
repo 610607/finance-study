@@ -147,7 +147,7 @@ def periph_council():
     label(ax, xi + bw / 2, top - 0.1, T("银行领卢比", "banks get rupees"), size=7.4, color=INK)
     # the floor: sterling drafts sold in Calcutta, paid out of the Gold Standard Reserve
     arrow(ax, (g1, low + 0.3), (g0, low + 0.3), color=MONEY, lw=1.4)
-    label(ax, gm, low + 0.58, T("加尔各答出售的\n英镑汇票", "sterling drafts\nsold in Calcutta"), size=7.0,
+    label(ax, gm, low - 0.02, T("加尔各答出售的\n英镑汇票", "sterling drafts\nsold in Calcutta"), size=7.0,  # below its arrow
           color=MONEY)
     label(ax, xl + bw / 2, low + 0.3, T("用金本位储备兑付", "paid from the Reserve"), size=7.4, color=INK)
     label(ax, xi + bw / 2, low + 0.3, T("政府收进卢比", "Government takes rupees"), size=7.4, color=INK)

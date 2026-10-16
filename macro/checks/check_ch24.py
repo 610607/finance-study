@@ -372,6 +372,9 @@ READINGS = {
     "bx_sterling": [("3", NUM)],                                        # '0 3s. 0d.'
     "bx_39": [("thirty-nine", EN)],
     "bx_1940": [("1902", NUM), ("1940", NUM)],                          # 'the 1st of January'
+    "ms_86": [("86", NUM), ("4.65", NUM)],                               # then "(Suzuki, 1994)"
+    "qs_jiangning": [("八十", ZH)],                                      # 八十馀艘
+    "qs_budeyi": [("五十六", ZH)],
     "qs_opium58": [("三十", ZH)],                                        # 每百斤纳税银三十两
     "qs_110": [("一百一十", ZH)],
     "qs_india70": [("七十万", ZH)],
@@ -412,7 +415,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(texts["quote"])]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation (or its note)", n, 245)
+    quoted("rows with values, each read from its quotation (or its note)", n, 247)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -440,6 +443,9 @@ TRANSLATIONS = {
     "不能为印度的纳税人省下一个法寻": "nr_farthing",
     "变相多征 45\\% 的税": "nr_45",
     # sec:periph-china
+    "烟禁遂大开": "qs_baimen",
+    "不能不造成眼前的饥荒与瘟疫": "nr_famines",
+    "不得已": "qs_budeyi",
     "向来洋药不准通商，现稍宽其禁，听商贸易。每百斤纳税银三十两": "qs_opium58",
     "洋药流毒多年，自应设法禁止。": "qs_poison",
     "外洋金镑值价日昂，比初定机器时，价高过半": "qs_zhang",
@@ -460,6 +466,7 @@ TRANSLATIONS = {
 }
 # the renderings that are kept literally close to the source: words of the source that must be there
 KEYWORDS = {
+    "nr_famines": ["cannot but produce the present famines, plagues"],
     "hc_intended": ["intended to introduce a gold standard", "not be made a legal tender at present"],
     "hc_token": ["practically", "token coinage for the whole Indian Empire"],
     "ot_bankers": ["bankers to the world"],
@@ -485,7 +492,7 @@ KEYWORDS = {
     "ms_correct": ["were correct"],
     "ky_token": ["virtually a note printed on silver"],
 }
-CHINESE = {"qs_opium58", "qs_poison", "qs_zhang", "qs_gold"}   # the rendering is the source's own words
+CHINESE = {"qs_opium58", "qs_poison", "qs_zhang", "qs_gold", "qs_baimen", "qs_budeyi"}   # the rendering is the source's own words
 
 
 def tex_text() -> str:
@@ -632,8 +639,13 @@ def silver_sec(F, Y, Q, P, E):
     chk("    'nearly four tenths' not from silver", 1 - 10.0 / PAR, 0.375)
     # the United States
     chk("Sherman Act 1890: oz a year (万)", [F["hr_sherman"][0], F["hr_sherman"][1] / WAN], [1890, 5400])
-    pct("world production 1890 (亿 oz)", F["hr_world"][0] / YI, 1.48, 2)
+    # World production in 1890: the OCR reads 148,237,091 oz; the page image (Appendix, p. 278) prints 143,237,091;
+    # the appendix's own 4,144,233 kg x 32.15 oz/kg is 133,237,091 (and its "more than 25 per cent" for the extra
+    # 33,375,000 oz fits 133 m). The text gives no figure, only the share: the OCR's reading is the largest of the
+    # three, so the share computed from it is a lower bound.
+    assert 1.3 * YI < F["hr_world"][0] < 1.5 * YI
     assert F["hr_sherman"][1] / F["hr_world"][0] > 1 / 3                                    # 三分之一以上
+    assert "委员会的附录也估计了 1890 年世界的白银产量" in tex_text() and "1.48 亿" not in tex_text()
     pct("silver 1889 (pence)", P[1889], 42.7)
     pct("    1890", P[1890], 47.4)
     pct("exchange 1888 (pence)", H[1888], 16.4)
@@ -664,7 +676,9 @@ def india(F, Y, Q, P, E, D):
     chk("    bar silver (万英镑)", F["fw_barsilver"][0] / WAN, 118)
     assert "Rx. 1 = 10 卢比" in column("note")["fw_bills"]
     chk("touched 16d. for a day: 27 June", F["fw_27"], [27])
-    # Keynes on 1892-1895
+    # Brunyate (1910), quoted by Keynes in note 1 of ch. I, on 1892-1895; Keynes's own words from ch. II §17
+    assert column("juan")["ky_silver40"].endswith("ch. I, note 1")                       # Brunyate's figures
+    chk("Brunyate in the Legislative Council, 25 February 1910", F["ky_brunyate"], [25, 1910])
     chk("silver 1892-93 nearly 40; 33 1/3; about 29", F["ky_silver40"], [40, 100 / 3, 29])
     assert "what he could get" in Q["ky_unfav"]
     chk("five years", F["fw_five"], [5])
@@ -842,6 +856,7 @@ def china(F, Y, Q, P, E):
     chk("    1902 to 1940 inclusive", 1940 - 1902 + 1, 39)
     assert "1st of January" in Q["bx_1940"] and "payable in gold" in Q["bx_payable"]
     assert "美旋允" in Q["qs_us"] and "与用金付给无异" in Q["qs_argue"]
+    assert Q["qs_argue"].startswith("美为商劝各国")                    # 出面替中国劝说各国的是美国
     # ex:periph-boxer
     chk("(1) 4.5 亿 x 3s / 20 (万英镑)", F["bx_450"][0] * F["bx_sterling"][0] / 20 / WAN, 6750)
     pct("(2) silver 1901, 1902 (pence)", P[1901], 27.19, 2)
@@ -916,6 +931,7 @@ def test(F, Y, Q, P, E):
     chk("    Table 4: OLS -0.30, AR1 -0.57 (points)", [F["ot_gs"][0], F["ot_gs"][2]], [-0.30, -0.57])
     chk("    in basis points", [-100 * F["ot_gs"][0], -100 * F["ot_gs"][2]], [30, 57], tol=1e-6)
     chk("    debt/GDP +10% -> +7.2 bp", F["ot_debt"], [10, 7.2])
+    assert "peripheral country" in Q["ot_debt"] and "一个边缘国家的债务对 GDP 的比率上升" in tex_text()
     chk("    the consol about 3%", F["ot_consol"], [3])
     chk("Flandreau et al.: 35-55 bp", F["ot_flandreau"], [35, 55])
     chk("Mitchener et al. (citing Obstfeld and Taylor 2003): about 30 bp", F["ms_30bp"], [30])
@@ -955,7 +971,12 @@ def test(F, Y, Q, P, E):
     chk("copper cash +15% in five or six years", F["fw_cash"], [15])
     assert "five or six years" in Q["fw_cash"] and "less than half" in Q["fw_cash_half"]
     assert "glut of the Chinese market" in Q["ky_glut"] and "Bombay mill" in Q["ky_mill"]
+    assert "dislocation" in Q["ky_glut"]                                                  # 币制变动造成的混乱
+    chk("Brunyate: the so-called bounty not 2 but 25 per cent", F["ky_bounty25"], [2, 25])
+    assert "所谓的补贴有 25\\%" in tex_text()
     chk("MSW: silver Japan, gold partner +860%", F["ms_860"], [860])
+    assert "PaperSilver" in Q["ms_953"]                                                   # the baseline
+    assert "以日本用纸币、贸易伙伴用银为基准" in tex_text()
     assert "luck" in Q["ms_also"]
 
 
@@ -1057,7 +1078,8 @@ def book(F, Q):
     assert "unitedkingdom" not in adoptions().index and "表里没有英国" in t
     # the people with no dates: written 生卒年未详
     for name in ("Robert Giffen", "Thomas Jackson", "Robert Campbell", "John Muir",
-                 "Alfred de Rothschild", "A. M. Lindsay", "José Terry", "Nathan Rothschild"):
+                 "Alfred de Rothschild", "A. M. Lindsay", "José Terry", "Nathan Rothschild",
+                 "J. B. Brunyate"):
         assert f"{name}，生卒年未详" in t, name
 
 
