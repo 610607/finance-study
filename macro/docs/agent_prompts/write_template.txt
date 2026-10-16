@@ -6,7 +6,7 @@ YOUR CHAPTER: zh/chNN_<slug>.tex already contains the \chapter line, the label a
 
 RULES:
 1. Structure as in STYLE.md §2: 当时的世界 → 理论的回答 (intuition → derivation) → examples → data check and counterexamples → 今天还剩什么 → takeaways, self-check, answers. 2–4 compare boxes; at least one case box from outside the US/UK.
-2. Every number in the text comes from a data snapshot (data/README.md; add the snapshot and its metadata) or from stated teaching inputs, and is asserted in checks/check_chNN.py (start from checks/_template.py). No invented statistics, parameters or empirical rules.
+2. Every number in the text comes from a data snapshot (data/README.md; add the snapshot and its metadata) or from stated teaching inputs, and is asserted in checks/check_chNN.py (start from checks/_template.py). No invented statistics, parameters or empirical rules. A paragraph that paraphrases snapshot rows instead of quoting them ends with a comment line % 据: row_id, row_id, checked by common.anchors() (STYLE.md §5).
 3. Methods: use open-source libraries (STYLE.md §6). Do not write your own solver or invent a method; if you change a library's default, say why in a comment.
 4. Sources: cite only entries in references_zh.tex. You may add entries you have verified (authors, year, title, publisher/journal, pages, DOI or stable link). Candidate works in PLAN.md are starting points, not verified references. If you cannot verify something you need, leave it out and list it in your report.
 5. Contested questions: present each side's strongest argument and evidence; do not decide for the reader. Sensitive subjects (Nazi Germany, collectivization and famines, the Great Leap Forward): analyse the economics and state the human cost and political character plainly.
@@ -27,7 +27,7 @@ CHECKS (all clean before you report):
 - python3 checks/check_chNN.py
 - python3 tools/check_chapter.py zh/chNN_<slug>.tex — no errors, overfull boxes, undefined references or citations, missing glyphs, ink in the margins; look at build/check_chNN_<slug>/sheet_*.png
 - python3 validate_source.py
-- readability: cd /tmp && python3 -I /home/user/finance-study/macro/docs/agent_prompts/polish_fidelity.py FILE FILE (the same file twice) and compare the metrics with NARRATIVE.md §10.3; go through the checklist of NARRATIVE.md §10.2.
+- readability: the last section of the check_chapter.py report (or python3 tools/readability.py zh/chNN_<slug>.tex --all) gives the metrics of NARRATIVE.md §10.3 and lists the paragraphs, sentences and first uses of units that miss them; deal with each or say why it stays. Then go through the checklist of NARRATIVE.md §10.2.
 
 FINAL REPORT (concise, in English): what you wrote (sections, boxes, figures, snapshots), every source you added with how you verified it, anything you could not verify or decided to leave out, the readability metrics row with any value over its NARRATIVE.md §10.3 target and the reason, the question your ending hands to the next chapter, and open questions for the author.
 

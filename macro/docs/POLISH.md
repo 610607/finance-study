@@ -26,7 +26,7 @@
    - 列出删去或新增的数字、引文、引用键、标签、交叉引用、图、行内公式与环境；
    - 给出两份文件的可读性指标（§2）。
 
-   用法：`cd /tmp && python3 -I <仓库>/macro/docs/agent_prompts/polish_fidelity.py 旧.tex 新.tex`。只想量一章新写的稿子，就把同一个文件给两次。
+   用法：`cd /tmp && python3 -I <仓库>/macro/docs/agent_prompts/polish_fidelity.py 旧.tex 新.tex`。指标的计算 2026-10-16 起移进 `tools/readability.py`，口径不变；只量一章新写的稿子，用 `python3 tools/readability.py zh/chNN_<slug>.tex --all`，它还会逐条列出超标的段与句。
 3. **顺序。** 先拿第 21 章试改，复核以后修订说明书，再从第 20 章倒着做到第 1 章。倒着做，是因为每章的结尾要交给下一章一个问题，而下一章已经改好，两头对得上。
 4. **一次一章。** 每章由一个子任务按说明书改，编辑复核：
    - 重跑 `checks/check_chNN.py`、`validate_source.py`、`tools/check_chapter.py` 和对照工具；
@@ -308,6 +308,7 @@
 ## 7. 写后面各章时
 
 - 动笔前读 `NARRATIVE.md` §10.1 的四个问题，以及本文件 §3。
-- 写完以后量一遍：`cd /tmp && python3 -I <仓库>/macro/docs/agent_prompts/polish_fidelity.py 新稿 新稿`，指标对照 `NARRATIVE.md` §10.3。
+- 写完以后量一遍：`python3 tools/readability.py zh/chNN_<slug>.tex --all`（`tools/check_chapter.py` 的报告末尾也有），指标对照 `NARRATIVE.md` §10.3。
+- 转述快照里的话时，段末另起一行写 `% 据: row_id, row_id`，检查脚本用 `checks/common.anchors()` 核对（`STYLE.md` §5）。
 - 结尾写之前，先读下一章已有的导引框和开场；下一章还没写，就把要交的问题记进 `FORWARD_REFS.md`。
 - 交给子任务写或审时，用 `write_template.txt` 与 `review_template.txt`。作者 2026-10-16 同意把 `NARRATIVE.md` §10.2 的清单加进去：写作模板的第 9 条、审稿模板的第 7 条就是，其中也收了 `polish_template.txt` 里适用于新写章节的几条“不做”（路线图、翻译声明、关于本书的句子、自拟的格言、授权声明照抄）。

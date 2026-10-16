@@ -71,6 +71,7 @@
 ## 5. 数字与数据
 
 - 正文里的每个数字，要么来自 `data/snapshots/` 中带元数据的快照（`data/README.md`），要么由 `checks/check_chNN.py` 从写明的教学输入算出；两种情况都要在脚本里断言（`checks/common.quoted`）。
+- **转述锚点。** 用自己的话转述快照里的一句或几句时，在这一段的末尾另起一行写注释 `% 据: row_id, row_id`，标出转述依据的快照行；注释后面照常空行分段。检查脚本调用 `checks/common.anchors()`，核对这些行都存在，并列出既没有被脚本用到、也没有被锚定的快照行。这样转述与引文一样可以核对，不必为了“可核对”而引原话（`NARRATIVE.md` §7.1）。从第 22 章起使用，已写的 21 章不补。
 - 不编造统计、参数或经验规则。教学输入在文中声明一次即可。
 - 前现代与计划经济的数据多为重建估计：写出估计者与方法，给出不确定性的范围；有不同估计时并列。
 - 计划经济与威权政权的官方统计，与外部重建估计并列，并说明差异来源（第 81 章）。
@@ -121,7 +122,7 @@
 ## 10. 检查一章
 
 - `python3 checks/check_chNN.py`：本章所有数字的断言都通过。
-- `python3 tools/check_chapter.py zh/chNN_slug.tex`：没有 LaTeX 错误、溢出的行、未定义的引用或文献、缺字，页边没有墨迹；再看它生成的缩略图 `build/check_chNN_slug/sheet_*.png`。
+- `python3 tools/check_chapter.py zh/chNN_slug.tex`：没有 LaTeX 错误、溢出的行、未定义的引用或文献、缺字，页边没有墨迹；再看它生成的缩略图 `build/check_chNN_slug/sheet_*.png`。报告最后是可读性一节（`tools/readability.py`，也可以单独运行）：`NARRATIVE.md` §10.3 的指标、超标的段与句，以及钱与单位第一次出现的位置。可读性一节只是提示，不算错误；超标的地方先看有没有理由。
 - `python3 validate_source.py`：结构、标签、引用、文献、插图、数据快照与检查脚本一致。
 - 最后 `python3 build.py` 编译全卷，或 `python3 build.py --book N` 只编所在分册。
 

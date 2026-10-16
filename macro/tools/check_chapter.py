@@ -6,7 +6,8 @@ Labels of the rest of the volume come from the last whole-volume build (build/ma
 without it, from structure.py (chapters, parts, appendices) and the PLAN.md label registry.
 Writes build/check_<stem>/check.pdf and contact sheets sheet_*.png (6 pages each), and prints
 LaTeX errors, overfull boxes, undefined references and citations, missing glyphs and pages
-with ink in the side margins.  Needs pdftoppm (poppler) and Pillow for the contact sheets.
+with ink in the side margins, then the advisory readability report of tools/readability.py.
+Needs pdftoppm (poppler) and Pillow for the contact sheets.
 """
 from __future__ import annotations
 
@@ -22,6 +23,13 @@ from build import external_labels, labels_in  # noqa: E402
 
 
 def main(argv: list[str]) -> None:
+    latex(argv)
+    import readability
+    for a in argv:
+        readability.report(ROOT / a)
+
+
+def latex(argv: list[str]) -> None:
     files = [Path(a) for a in argv]
     if not files:
         raise SystemExit(__doc__)
