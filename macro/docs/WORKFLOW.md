@@ -12,6 +12,14 @@ everything, and the author reviews the part as a whole. There are two ways to ru
   (§1–§3 below). Faster, but the writers cannot see each other's chapters, so the part's notes file
   must divide the ground between them.
 
+**Language (from 2026-10-15).** Chapters 1–21 were polished to `docs/NARRATIVE.md` (language only;
+record in `docs/POLISH.md`). New chapters are written to the same rules from the start: read
+`NARRATIVE.md` §3–§8 and `POLISH.md` §3–§4 before writing, and measure the draft against
+`NARRATIVE.md` §10.3 with
+`cd /tmp && python3 -I <repo>/macro/docs/agent_prompts/polish_fidelity.py CH.tex CH.tex` (the same
+file twice gives its metrics). Whether the write and review prompt templates should quote these rules
+is the author's decision (`NARRATIVE.md` §11 item 2).
+
 ## 0. Prepare the session
 
 ```bash

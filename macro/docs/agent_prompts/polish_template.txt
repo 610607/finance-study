@@ -1,6 +1,6 @@
 You are polishing the language of one written chapter of a Chinese LaTeX textbook, 《宏观经济学：从古代货币到当下争论》 (Finance Study Series, Volume 1). Run all commands from macro/. The author's request (2026-10-15): polish the written chapters to the existing conventions; do not go back to the sources for new material; do not re-verify the numbers; this round changes the language of the written chapters and serves as a reference for the chapters still to be written.
 
-READ FIRST: docs/NARRATIVE.md in full (§3–§8 are the rules, §9 the worked rewrites, §10 the checklist and targets); docs/STYLE.md §1, §2 and §11 (conventions you must keep: names, years, bold terms, structure); your chapter; its check script checks/check_chNN.py (look for TRANSLATIONS and ALLOW). zh/ch12_songming.tex is the sample chapter for tone.
+READ FIRST: docs/POLISH.md §3 and §4 (the rules most used in the first round, and the overreach the editor had to undo); docs/NARRATIVE.md in full (§3–§8 are the rules, §9 the worked rewrites, §10 the checklist and targets); docs/STYLE.md §1, §2 and §11 (conventions you must keep: names, years, bold terms, structure); your chapter; its check script checks/check_chNN.py (look for TRANSLATIONS and ALLOW). zh/ch12_songming.tex is the sample chapter for tone.
 
 THIS IS POLISHING, NOT REWRITING. Keep the sections, their order and their titles (retitle only a title that is a formula), the boxes and figures where they are, and the passages that already work (NARRATIVE §1.3). Change how things are said, not what is said.
 
@@ -21,12 +21,12 @@ DO, in this order of priority:
 5. PARAGRAPHS (NARRATIVE §5). The first sentence states the point; one idea per paragraph; split every paragraph over 400 characters; keep one subject through a paragraph.
 6. SENTENCES (NARRATIVE §6.1–§6.5). Sentence median 40 characters or fewer; split sentences over 80; at most three numbers per sentence. Use a colon only before a quotation or a list; use at most one semicolon per sentence; allow one Chinese aside in brackets per sentence, longer asides become their own sentence (names, original terms and years in brackets per STYLE.md are not asides). Remove 的-chains, nominalizations, needless passives and 进行＋verb. No meta phrases (下面我们来看、如前所述、值得注意的是、需要指出的是). No sentences about the book itself in the main text (本书没有找到、没能取得): state what is known (“生卒年未详”“这一点没有定论”); the search history goes into the 史料说明. No “不是 X，而是 Y” used only for emphasis; keep it where it corrects a real misreading. No summary one-liners at paragraph ends, and do not add aphorisms or morals of your own (Chapter 18's polish added “同一副翅膀，用得谨慎就能飞，飞得太高就会坠落。” and the editor deleted it). In the ending, do not state your own reading more strongly than the chapter supports. Do not over-correct: vary sentence length; do not turn connected prose into bullet points.
 7. ENDING (NARRATIVE §3). The last paragraph of the main text returns to the opening scene or person and hands the reader one question for the next chapter, not a list of pointers. By the book's convention this hand-off paragraph sits after \end{answers}.
-9. WORKED MODEL: zh/ch21_divergence.tex has been polished under this brief and reviewed (see its opening, the section openings, the spinners' dispute and the ending). Read it before you start.
 8. BOXES, CAPTIONS AND TAKEAWAYS: the same language rules with a light touch. A caption must still describe the same figure and keep its “看……” guidance and credits.
+9. WORKED MODEL: zh/ch21_divergence.tex has been polished under this brief and reviewed (see its opening, the section openings, the spinners' dispute and the ending). Read it before you start.
 
 PROCESS:
-- The pre-polish copy is OLD (path below). Compare as you go:
-    cd /tmp && python3 -I FIDELITY OLD /home/user/finance-study/macro/zh/chNN_<slug>.tex
+- The pre-polish copy is OLD (path below). FIDELITY is docs/agent_prompts/polish_fidelity.py. Compare as you go:
+    cd /tmp && python3 -I /home/user/finance-study/macro/docs/agent_prompts/polish_fidelity.py OLD /home/user/finance-study/macro/zh/chNN_<slug>.tex
   The report lists what was removed or added (numbers, quotations, cite keys, labels, refs, figures, inline math, environments) and readability metrics before and after. At the end it must show no removed or added numbers, cite keys, labels, figures or inline math. Every removed or added quotation must be intended (paraphrased or re-translated). Only the refs of the deleted roadmap may disappear.
 - Checks, all clean before you report:
     python3 checks/check_chNN.py
