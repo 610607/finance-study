@@ -28,6 +28,7 @@ hp_herschell,,,,1837;1;1899,years of life,,hansard_herschell,people page,"Sir Fa
 hp_herschell_baron,,,,1886;1;1899,years,,hansard_herschell,people page,"Baron Herschell 1886 - March 1, 1899",
 ws_keynes,,,,1883;1946,years of life,,ws_keynes,author page,John Maynard Keynes (1883–1946),
 ws_matsukata,,,,1835;1924,years of life,,ws_matsukata,author page,Matsukata Masayoshi (1835–1924),
+ws_giffen,,,,1837;1910,years of life,,ws_giffen,author page,Robert Giffen (1837–1910),
 fw_date,英国,1899,,7;1899,day; year,,fowler1899,"Report of the Indian Currency Committee, 1898, p. 1","India Office, 7th July, 1899.",
 fw_notif,印度,1893,,26;1893;16,day; year; pence per rupee,,fowler1899,"Report of the Indian Currency Committee, 1898, para. 13","By Notifications (Nos. 2662-4) of 26th June 1893, arrangements were made (i.) for the receipt of gold at the Indian Mints in exchange for rupees at a rate of 16d. per rupee",
 fw_public,印度,1893,,26,day (June 1893),,fowler1899,"Report of the Indian Currency Committee, 1898, Appendix (minute)","although the Report was not made public till the 26th June,",
@@ -226,6 +227,13 @@ ot_flandreau,,,,35;55,basis points,,obstfeld2002,"Obstfeld and Taylor (2002), NB
 ot_clemens,,,,,,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 46, note 56","Clemens and Williamson (2001), however, find no statistically significant gold standard effect",接下一页 ot_clemens2
 ot_clemens2,,,,1870;1913,year,,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 46, note 56",on the shares of British capital flows to various foreign recipients during 1870–1913.,
 ot_57,,,,1914;57,year; basis points (lower),,obstfeld2002,"Obstfeld and Taylor (2002), NBER WP 8846, p. 52","Being on gold appears statistically significant before 1914, contributing about −57 basis points to the spread over London.",
+hw_notice,,,,,,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, title page","© 2002 by Timothy J. Hatton and Jeffrey G. Williamson. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+hw_50m,欧洲,,,50;1820;1913,million; year; year,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, p. 9",More than 50 million migrants departed Europe for the New World between 1820 and 1913.,
+hw_three,欧洲,,,3/5,share,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, p. 9","About three fifths went to the United States and the remainder to Canada, South America, Australasia, and southern Africa.",
+hw_flow,欧洲,,,1846;300000,year; per annum,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, p. 9","In the first three decades after 1846 the figure averaged around 300,000 per annum, doubling in the following two decades, and exceeding a million by the turn of the century.",
+hw_asia,中国;印度,,,50;1914;50,million; year; million,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, p. 25","when those 50 million Europeans left home before 1914, there were at the same time far more than 50 million who left China and India for jobs elsewhere in the periphery.",no source is given for the figure
+hw_new,,,,,,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, p. 25",South-South migration is not new. It is just ignored by economists.,
+hw_lewis,,,,1978,year,,hatton2002,"Hatton and Williamson (2002), NBER WP 9159, p. 25, n. 13",W Arthur Lewis (1978) had plenty to say about South-South migration,the footnote to row hw_asia
 me_notice,,,,,,,meissner2002,"Meissner (2002), title page","© 2002 by Christopher M. Meissner. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
 me_note,,,,,,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1",This table uses the date of adoption of the free convertibility of a currency exclusively into gold.,
 me_dash,,,,1913,year,,meissner2002,"Meissner (2002), NBER WP 9233, Table 1","The entry ""---"" means that the country did not adopt gold convertibility before 1913.",

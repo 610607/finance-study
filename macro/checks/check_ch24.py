@@ -7,9 +7,10 @@ Inputs:
                                        Indian Currency Committees of 1893 (Herschell) and 1898 (Fowler, with the
                                        minute of dissent of Campbell and Muir), Keynes (1913), Naoroji (1901),
                                        Maddison (1971), the Indian Famine Commissions (1880, 1901), the NBER working
-                                       papers of Obstfeld and Taylor (2002), Meissner (2002), Mitchener and
-                                       Weidenmier (2007), Mitchener, Shizume and Weidenmier (2009), Reinhart and
-                                       Rogoff (2008), Atwell (2008), Irigoin (2013), the treaties of Shimonoseki
+                                       papers of Obstfeld and Taylor (2002), Hatton and Williamson (2002),
+                                       Meissner (2002), Mitchener and Weidenmier (2007), Mitchener, Shizume and
+                                       Weidenmier (2009), Reinhart and Rogoff (2008), Atwell (2008), Irigoin
+                                       (2013), the treaties of Shimonoseki
                                        (1895) and the Boxer Protocol (1901), Wikisource's author pages (checked by
                                        data/fetch/verify_web_quotes.py) and the 清史稿 (data/fetch/verify_quotes.py)
   gpih_silver_market_1850_1914         Lindert (GPIH, after Jastram 1981): the London market price of standard silver
@@ -209,7 +210,7 @@ SMALL = {"a": 1, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
          "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50,
          "sixty": 60, "seventy": 70, "eighty": 80, "ninety": 90}
 SCALE = {"thousand": 1e3, "million": 1e6, "millions": 1e6}
-ORDINAL = {"half": 2, "third": 3, "thirds": 3, "quarter": 4, "fourth": 4, "fifth": 5, "twelfths": 12}
+ORDINAL = {"half": 2, "third": 3, "thirds": 3, "quarter": 4, "fourth": 4, "fifth": 5, "fifths": 5, "twelfths": 12}
 ORDINAL_WORD = {"fifth": 5}
 VULGAR = {"⅛": Fraction(1, 8), "⅜": Fraction(3, 8), "⅓": Fraction(1, 3), "¼": Fraction(1, 4)}
 
@@ -353,6 +354,8 @@ READINGS = {
     "f01_cholera": [("one-fifth", "frac")],
     "ot_7": [("1870", NUM), ("7", NUM), ("20", NUM), ("1900–14", "range")],
     "ot_t4": [("1870", NUM), ("1913", NUM)],                            # 'Table 4'
+    "hw_three": [("three fifths", "frac")],
+    "hw_flow": [("1846", NUM), ("300,000", NUM)],                       # then 'doubling', 'exceeding a million'
     "ot_gs": [("-0.30", NUM), ("0.06", NUM), ("-0.57", NUM), ("0.08", NUM)],
     "mw_fifth": [("fifth", "ordword")],
     "mw_30m": [("1890", NUM), ("30 million", "mil")],
@@ -415,7 +418,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(texts["quote"])]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation (or its note)", n, 247)
+    quoted("rows with values, each read from its quotation (or its note)", n, 253)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -568,6 +571,21 @@ def world(F, Y, Q, P, E):
     assert "just below 20 percent" in Q["ot_7"]
     chk("the British share almost (%)", F["ot_80"], [80])
     assert "almost 80 percent" in Q["ot_80"]
+    # migration (Hatton and Williamson 2002)
+    chk("migrants from Europe: more than 50 million, 1820-1913", F["hw_50m"], [50, 1820, 1913])
+    quoted("    50 million (万)", 50 * MILL / WAN, 5000)
+    assert "More than 50 million" in Q["hw_50m"] and "New World" in Q["hw_50m"]
+    chk("    about three fifths to the United States", F["hw_three"], [3 / 5])
+    assert "Canada, South America, Australasia, and southern Africa" in Q["hw_three"]
+    chk("    after 1846: around 300,000 a year", F["hw_flow"], [1846, 300000])
+    quoted("        300,000 (万)", 300000 / WAN, 30)
+    assert "first three decades" in Q["hw_flow"] and "doubling in the following two decades" in Q["hw_flow"]
+    assert "exceeding a million by the turn of the century" in Q["hw_flow"]
+    quoted("        a million (万)", MILL / WAN, 100)
+    chk("    before 1914: far more than 50 million from China and India", F["hw_asia"], [50, 1914, 50])
+    assert "far more than 50 million" in Q["hw_asia"] and "elsewhere in the periphery" in Q["hw_asia"]
+    assert "not new" in Q["hw_new"] and "ignored by economists" in Q["hw_new"]
+    chk("    the footnote: Lewis (1978)", F["hw_lewis"], [1978])
     ca = E.ca_gdp.loc[1850:1913]
     assert (E.ca_surplus.loc[1850:1913] > 0).all() and len(ca) == 64                       # 每年都是顺差
     for y, x in [(1872, 8.1), (1877, 0.7), (1890, 7.1), (1902, 0.8), (1913, 9.7)]:
@@ -586,6 +604,7 @@ def world(F, Y, Q, P, E):
     assert "France" in Q["hr_karachi_germany"] and "restricted the coinage" in Q["hr_karachi_germany"]
     chk("Giffen: 3 December 1892", F["hr_day8"], [3, 1892])
     chk("    the United States 1873 and 1874", F["hr_giffen"], [1873, 1874])
+    chk("    Giffen 1837-1910", F["ws_giffen"], [1837, 1910])
     assert "Giffen" in Q["hr_giffen_who"] and "Robert Giffen" in column("note")["hr_giffen_who"]
     pre = P.loc[1850:1872]
     assert pre.min() >= 60 and pre.max() < 62.5, (pre.min(), pre.max())                    # 一直值 60 到 62 便士
@@ -1077,7 +1096,8 @@ def book(F, Q):
     # fig:periph_world: Meissner Table 1 has no UK
     assert "unitedkingdom" not in adoptions().index and "表里没有英国" in t
     # the people with no dates: written 生卒年未详
-    for name in ("Robert Giffen", "Thomas Jackson", "Robert Campbell", "John Muir",
+    assert "Robert Giffen，1837—1910" in t
+    for name in ("Thomas Jackson", "Robert Campbell", "John Muir",
                  "Alfred de Rothschild", "A. M. Lindsay", "José Terry", "Nathan Rothschild",
                  "J. B. Brunyate"):
         assert f"{name}，生卒年未详" in t, name
@@ -1090,7 +1110,7 @@ def witnesses(F, Q):
     nxt = bib.find("% ---- 第", start + 1)                   # the next chapter's block, if any
     block = bib[start:nxt if nxt > 0 else bib.index("\\end{thebibliography}")]
     items = {m.group(1): m.group(2) for m in re.finditer(r"\\bibitem\{([^}]+)\}(.*)", block)}
-    for key, row in (("obstfeld2002", "ot_notice"), ("meissner2002", "me_notice"),
+    for key, row in (("obstfeld2002", "ot_notice"), ("hatton2002", "hw_notice"), ("meissner2002", "me_notice"),
                      ("mitchener2007", "mw_notice"), ("mitchener2009", "ms_notice")):
         notice = Q[row]
         assert notice.startswith("©") and "All rights reserved" in notice, row
