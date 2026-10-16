@@ -1,0 +1,186 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+dnb_evans,英国,1889,,1819;1874,,,dnb1889_evans,vol. 18,"DAVID MORIER (1819–1874), financial journalist","the Dictionary of National Biography (1889) on the author of evans1859; the same entry: assistant city correspondent on the Times, then in charge of the money articles of the Morning Herald and the Standard"
+ev_ohio,美国,1857,,400000;1200000,,,evans1859,p. 34,"The suspension of the Ohio Life and Trust Company, an old, respectable company, with a paid-up capital of £400,000 sterling, and deposits to the amount of £1,200,000, gave the first signal for a general alarm",
+ev_150banks,美国,1857,,25;29;150,,,evans1859,p. 34,"between the 25th and 29th of September, no less than 150 banks in Pennsylvania, Maryland, Virginia, and Rhode Island suspended specie payments",
+ev_failures,美国,1857,,5123;291801000,,,evans1859,p. 34,"The number of failures that took place in the United States and Canada during the crisis is estimated at 5123, and the aggregate amount of liability at 291,801,000 dollars.",
+ev_liverpool,英国,1857,,27,,,evans1859,p. 35,"On the 27th of October, the Liverpool Borough Bank failed",
+ev_western,英国,1857,,98;1500000;5000000,,,evans1859,p. 35,"the failure of the Western Bank of Scotland with ninety-eight branches, a paid-up capital of £1,500,000 and £5,000,000 of deposits",
+ev_western_date,英国,1857,,9,,,evans1859,p. 35,"This failure, which occurred on the 9th of November",
+ev_rate10,英国,1857,,11;10,,,evans1859,p. 35,"On the 11th of November, the rate of discount advanced to 10 per cent",the speech in the Commons of row ev_rates_commons dates the rise to 10 per cent 9 November; the Bank of England's table D1 dates it 12 November (snapshot boe_millennium_bank_rate_1856_1858)
+ev_treasury,英国,1857,,12,,,evans1859,p. 33,"On the 12th of November, the day on which the Treasury Letter, authorizing an extension of issues, was sent from Downing Street",
+ev_reserve,英国,1857,,1463000;3706036;4;581000;6524000,,,evans1859,p. 33,"reserved fund, which on the preceding day had stood at £1,463,000 (having been £3,706,036 on the 4th), had declined to £581,000, and the bullion in the vaults did not exceed £6,524,000",
+ev_wolverhampton,英国,1857,,17,,,evans1859,p. 36,"With the failure of the Wolverhampton and Staffordshire, on the 17th of November, commenced the extension of the panic into the iron districts.",
+ev_30000,英国,1857,,30000,,,evans1859,p. 36,"works were stopped that had given employment to 30,000 hands",
+ev_rates_commons,英国,1857,,8;6;12;7;19;8;5;9;9;10,,,evans1859,p. 196,"on the 8ch of October it was raised to 6 per cent., on the 12th of October to 7 per cent., on the 19ili of October to 8 per cent., on the 5th of November to 9 per cent., and on the 9th of November to 10 per cent.","a speech in the House of Commons on the Bank Indemnity Bill (December 1857), reprinted by Evans; OCR '8ch' = 8th, '19ili' = 19th; the Bank's table D1 gives 8, 15 and 19 October, 5 and 12 November"
+ev_hamburg_credit,汉堡,1857,,,,,evans1859,p. 38,"a house in Hamburg would accept bills for their correspondents in Sweden, Denmark, and Norway, who thus effected their purchases by means of Hamburg credit",
+ev_hamburg_blow,汉堡,1857,,,,,evans1859,p. 39,Hamburg felt the blow most severely.,
+ev_hard_silver,汉堡,1857,,,,,evans1859,p. 39,a payment in hard silver was regarded as alone legitimate,
+ev_vienna,汉堡,1857,,10000000,,,evans1859,p. 39,"The first 10,000,000 marks banco were advanced by Vienna",
+ev_metallic,汉堡,1858,report of 1858,,,,evans1859,"p. 82, report §55","as in Hamburg, the currency is exclusively metallic",
+ev_nov23,汉堡,1857,,23,,,evans1859,"p. 82, report §56","In Hamburg, on the 23d of jSTovember, commercial confidence is stated to have been entirely at an end ; so that only the bills of three or four of the first houses were negotiable at the highest rate of discount.",OCR 'jSTovember' = November
+ev_consul,汉堡,1857,,3,,,evans1859,"p. 82, report §56","and on the 3rd, "" There is no deficiency of silver in the Hamburg Bank ; indeed the amount in the cellars of the bank is now much larger than it has been at any former period, but a total want of confidence prevents its holders from parting with it.""","the British consul at Hamburg, 3 December 1857, quoted by the committee ('our Consul writes'); the report does not name the consul"
+ev_loan,汉堡,1857,,,,,evans1859,"pp. 82-83, report §56","A loan was ultimately obtained from Vienna ; but even the arrival of the amount in specie failed to produce the desired effect, until the Senate reluctantly proposed",
+ev_secret,汉堡,1857,,,,,evans1859,"p. 83, report §56","that it should be intrusted to a secret committee, to be by them lent out on good security.",
+ev_dec12,汉堡,1857,,12,,,evans1859,"p. 83, report §56","On December 12, as soon as it was known that by the aid of the Government the leading houses would fulfil their engagements, the panic ceased.",
+ev_fortnight,汉堡,1857,,2;3,,,evans1859,"p. 83, report §56",in about a fortnight the rate of discount for the best bills fell to two and three per cent,
+ev_origin,世界,1858,report of 1858,,,,evans1859,"p. 83, report §57",the real origin of it was the undue expansion of commercial credit,
+ev_nosystem,世界,1858,report of 1858,,,,evans1859,"p. 83, report §57",no system of currency can secure a commercial community against the consequences of its own improvidence,
+ev_limit,英国,1858,report of 1858,,,,evans1859,"p. 83, report §58","without the interposition of the Executive Government, the Directors of the Bank of England have no power whatever to exceed in their issues the limit imposed by law",
+wi_silverbars,汉堡,1858,,,,,wirth1858,p. 434,Hamburger Bancogeld (von einzelnen Belehnungen abgesehen) allein auf Silberbarren gegründet,the bank money of the Hamburg Bank rests on silver bars alone (apart from some loans on pledge)
+wi_zwang,汉堡,1857,,40,,,wirth1858,p. 441,40 Mil. Mark Banco Zwangspapiergeld,among the measures demanded in Hamburg: a moratorium and an issue of 40 million marks banco of forced paper money (inconvertible notes)
+wi_verein,汉堡,1857,,23;14,,,wirth1858,p. 441,Am 23. November war die Gründung des Garantie-Dis— conto-Vereins beichloffen worden. Am Abend waren bereits faft 14 Mill. Mark Banco gezeichnet,"OCR: 'beichloffen' = beschlossen, 'faft' = fast; the Garantie-Disconto-Verein, an association of merchants that guaranteed bills for discount"
+wi_verein_end,汉堡,1857,,12;28,,,wirth1858,p. 441,"Nachdem für circa 12 Millionen Mark Banco Wechfel durch die Hände der Direction gegangen waren, ftellte die Gefellihaft ihre Thätigkeit Ihon am 28. November wieder ein","OCR: 'Wechfel' = Wechsel, 'ftellte' = stellte, 'Gefellihaft' = Gesellschaft, 'Ihon' = schon"
+wi_heine_offer,汉堡,1857,,28;20000,,,wirth1858,p. 441,"Herr Carl Heine, der Sohn ded in Hamburg unvergeklihen Salomon Heine, erbot fi nämlih an der Börfe am 28. November, jedem der Maler bis zum Belauf von 20,000 Mark Banco zu Ddiscontiren.","Carl Heine offered at the exchange on 28 November to discount for each broker up to 20,000 marks banco; OCR: 'ded' = des, 'unvergeklihen' = unvergesslichen, 'fi' = sich, 'nämlih' = nämlich, 'Börfe' = Börse, 'Maler' = Makler (brokers), 'Ddiscontiren' = discontiren"
+wi_hoch,汉堡,1857,,,,,wirth1858,p. 441,dem Haufe Heine — ein unerhörtes Schaufpiel — ein dreimaliges Hoch in verfammelter Börſe brachten,"the brokers gave the house of Heine three cheers in the assembled exchange; OCR 'Haufe' = Hause, 'Schaufpiel' = Schauspiel, 'verfammelter' = versammelter"
+wi_nextday,汉堡,1857,,,,,wirth1858,p. 441,ſchon am folgenden Tage erneuerten fi) die Banfrotte Schlag auf Schlag.,"OCR: 'fi)' = sich, 'Banfrotte' = Bankrotte"
+wi_heine_hour,汉堡,1857,,1,,,wirth1858,p. 441,Nach kaum einer Stunde hatte er für 1 Million Mark Banco Disconts in Händen,
+wi_135,汉堡,1857,,135;10,,,wirth1858,p. 442,"Bon 135 Häufern, welche bis zum 10. December ihre Zahlungen eingeftellt hatten","OCR: 'Bon' = Von, 'Häufern' = Häusern, 'eingeftellt' = eingestellt"
+wi_silver100,汉堡,1857,,100,,,wirth1858,p. 442,obgleich während dieſes Höhepunkte der Krifis der Silbervorrath der Banf fih auf 100 Millionen Mark Banco erhoben haben fol,"the silver stock of the Bank is said ('soll') to have risen to 100 million marks banco at the height of the crisis; OCR: 'Krifis' = Krisis, 'Banf' = Bank, 'fih' = sich, 'fol' = soll"
+wi_65,汉堡,1857,,65,,,wirth1858,p. 442,waren 65 an diefem Tage bereit? unter Aominiftration genommen,"of the 135 houses of row wi_135, 65 were under administration (by their creditors) on 10 December; OCR: 'diefem' = diesem, 'bereit?' = bereits, 'Aominiftration' = Administration"
+wi_dec6,汉堡,1857,,6;15,,,wirth1858,p. 443,AB vierte Maßregel murde am 6. December durd Rath und Bürgerbeſchluß die Errichtung einer Discontokaſſe mit einem ‚Capital auf 15 Millionen Mark Banco bewilligt,"the fourth measure: a discount office of the state with a capital of 15 million marks banco, of which 10 million were to be borrowed in silver; OCR: 'AB' = Als, 'murde' = wurde, 'durd' = durch"
+wi_borrow,汉堡,1857,,10,,,wirth1858,p. 443,Die übrigen 10 Millionen Mark Banco follten zu demjelben Zweck vom Staate baar angeliehen werden.,"the other 10 million (of the 15 million of row wi_dec6; five million were placed at once against pledges of railway shares and state paper) were to be borrowed in cash by the state; OCR: 'follten' = sollten, 'demjelben' = demselben"
+wi_berlin,汉堡,1857,,,,,wirth1858,p. 443,"als die preußische Regierung sich außer Stand erklärte, die verlangte Anleihe zu bewilligen",
+wi_nationalbank,汉堡,1857,,10,,,wirth1858,p. 443,die Nationalbank zu einem Darlehen von 10 Millionen Mark Banco,the Austrian government authorized the National Bank to lend Hamburg 10 million marks banco
+wi_train,汉堡,1857,,,,,wirth1858,p. 443,fofort in Silber mit einem Ertrazug nah Hamburg gefandt,"OCR: 'fofort' = sofort, 'Ertrazug' = Extrazug (a special train), 'nah' = nach, 'gefandt' = gesandt"
+wi_6pct,汉堡,1857,,6;1858,,,wirth1858,p. 443,Diele zu 6 pCt. ver: zingliche und bis Ende 1858 rüdzahlbare Summe,"the Austrian loan bore 6 per cent and was repayable by the end of 1858; OCR: 'Diele' = Diese, 'ver: zingliche' = verzinsliche, 'rüdzahlbare' = rückzahlbare"
+wi_schaeffle,汉堡,1858,,,,,wirth1858,p. 443,Die Gründe für die beiderfeitige Handlungsweiſe bat Scäffle in der deutſchen Bierteljahrsfchrift fehr richtig mit folgenden Worten auseinander gefeßt,"Wirth quotes Schäffle (surname only) in the Deutsche Vierteljahrsschrift on the reasons of Austria and of Prussia; OCR: 'bat' = hat, 'Scäffle' = Schäffle, 'Bierteljahrsfchrift' = Vierteljahrsschrift"
+wi_dead,汉堡,1858,,,,,wirth1858,p. 444,"ohne eigenen Aufwand, ohne Gefahr, ja mit Gewinn von Zinſen für den auf die Dauer der Anleihe volllommen todten Silberfchat der Bant","Schäffle, quoted by Wirth: Austria could help without cost or risk, earning interest on the silver hoard of its Bank, which was 'dead' for the term of the loan; OCR: 'volllommen' = vollkommen, 'Silberfchat' = Silberschatz, 'Bant' = Bank"
+wi_1859,汉堡,1858,,1;1859,,,wirth1858,p. 444,da erft mit 1. Januar 1859 die öſterreichiſche Nationalbank,"Schäffle, quoted by Wirth: the Austrian National Bank was to resume payments in silver only on 1 January 1859; OCR 'erft' = erst"
+wi_risk,汉堡,1858,,,,,wirth1858,p. 444,der Handelaftand möge wie feine Chancen fo fein Riſiko felbft tragen,"Schäffle, quoted by Wirth, on Prussia's principle: the merchants should bear their risk as they bear their chances; OCR: 'Handelaftand' = Handelsstand, 'feine' = seine, 'fo' = so, 'felbft' = selbst"
+wi_vorsicht,汉堡,1858,,,,,wirth1858,p. 444,"durch Lockerung der Selbftverantwortlichfeit werde der Hauptpfeiler einer gefunden Gefchäftsentwidelung, die Vorſicht, untergraben.","Schäffle, quoted by Wirth: loosening self-responsibility would undermine prudence, the main pillar of sound business; OCR: 'gefunden' = gesunden, 'Gefchäftsentwidelung' = Geschäftsentwickelung"
+wi_repaid,汉堡,1858,,1858,,,wirth1858,"p. 443, note",Die Rüdzahlung erfolgte bereits um Johanni 1858.,"OCR 'Rüdzahlung' = Rückzahlung; Johanni, St John's Day (24 June)"
+zk_1850,英国,1850,,1850,,,marx1859,"Vorwort, p. VI",im Jahr 1850 in London,
+zk_tribune,英国,1859,,,,,marx1859,"Vorwort, p. VI","Meine nun achtjährige Mitarbeit an der ersten Englisch⸗Amerikanischen Zei⸗ tung, der „New-York Tribune""",the OCR keeps the double hyphen (⸗) of the line ends
+zk_articles,英国,1859,,,,,marx1859,"Vorwort, p. VII",Artikel über auffallende ökonomische Ereignisse in England und auf dem Kontinent,
+zk_date,英国,1859,,1859,,,marx1859,"Vorwort, p. VII","London, im Januar 1859.",
+k1_value,世界,1867,,,,,marx1867de,Kap. 1,"gesellschaftlich nothwendige Arbeitszeit, welche seine Werth grosse bestimmt",OCR 'Werth grosse' = Werthgrösse
+k1_const,世界,1867,,,,,marx1867de,"Kap. III, p. 176","Ich nenne ihn daher konstanten Kapitaltheil, oder kürzer : konstantes Kapital.",
+k1_var,世界,1867,,,,,marx1867de,"Kap. III, p. 176","Ich nenne ihn daher variablen Kapitaltheil, oder kürzer: variables Kapital.",
+k1_rate,世界,1867,,,,,marx1867de,"Kap. III, p. 185",Die Rate des Mehrwerths ist daher der exakte Ausdruck für den Exploitationsgrad der Arbeitskraft durch das Kapital oder des Arbeiters durch den Kapitalisten.,
+k1_moses,世界,1867,,,,,marx1867de,"Kap. VI, p. 580","Accumulirt , accumulirt ! Das ist Moses und die Propheten !",
+k1_formula,世界,1867,,,,,marx1867de,"Kap. VI, p. 580","Accumulation um der Accumulation , Produktion um der Produktion willen",
+k1_organic,世界,1887,,,,,marx1887,"ch. XXV, p. 625","I call the value-composition of capital, in so far as it is determined by its technical composition and mirrors the changes of the latter, the organic composition of capital.",
+k1_cycle,世界,1887,,,,,marx1887,"ch. XXV, p. 646","a decennial cycle (interrupted by smaller oscillations), of periods of average activity, production at high pressure, crisis and stagnation",
+k1_symptom,世界,1887,,,,,marx1887,"ch. XXV, p. 647","it looks upon the expansion and contraction of credit, which is a mere symptom of the periodic changes of the industrial cycle, as their cause",
+k1_reserve,世界,1887,,,,,marx1887,"ch. XXV, p. 653","The industrial reserve army, during the periods of stagnation and average prosperity, weighs down the active labour-army ; during the periods of over-production and paroxysm, it holds its pretensions in check.",
+k1_law,世界,1887,,,,,marx1887,"ch. XXV, p. 659",This is the absolute general law of capitalist accumulation. Like all other laws it is modified in its working by many circumstances,
+k1_lot,世界,1887,,,,,marx1887,"ch. XXV, p. 661","in proportion as capital accumulates, the lot of the labourer, be his payment high or low, must grow worse",
+k1_poles,世界,1887,,,,,marx1887,"ch. XXV, p. 661","Accumulation of wealth at one polo is, therefore, at the same time accumulation of misery, agony of toil, slavery, ignorance, brutality, mental degradation, at the opposite pole",OCR 'polo' = pole
+k1_1857,英国,1887,,1857,,,marx1887,"ch. XXV, p. 685",It will be remembered that the year 1857 brought one of the great crises with which the industrial cycle periodically ends.,
+k1_1866,英国,1887,,1866,,,marx1887,"ch. XXV, p. 686",The next termination of the cycle was due in 1866.,
+k2_finish,世界,1885,,,,,marx1885de,"Vorwort, p. III","Das zweite Buch des „Kapital"" druckfertig herzustellen",
+k2_literal,世界,1885,,,,,marx1885de,"Vorwort, p. IV","Sätze, deren Deutung nur im Entferntesten Zweifel zuliess, sind lieber ganz wörtlich abgedruckt worden.",
+k2_date,世界,1885,,5;1885,,,marx1885de,"Vorwort, end","London, an Marx' Geburtstag, 5. Mai 1885.",
+k2_quesnay,世界,1885,,,,,marx1885de,"Kap. 19, I, first sentence","Quesnay's Tableau &conomique zeigt in wenigen grolsen Zügen wie ein dem Werthe nach bestimmtes Jahresergebniss der nationalen Produktion sich so durch die Cirkulation vertheilt, dass, unter sonst gleichbleibenden Umständen, dessen einfache Reproduktion vorgehn kann","OCR '&conomique' = économique, 'grolsen' = grossen"
+k2_tautology,世界,1885,,,,,marx1885de,"Kap. 20, p. 406","Es ist eine reine Tautologie zu sagen, dass die Krisen aus Mangel an zahlungsfähiger Konsumtion oder an zahlungsfähigen Konsumenten hervorgehn.",
+k2_depts,世界,1909,,,,,marx1909k2,"ch. XX, p. 457","I. Means of Production, commodities having a form in which they must, or at least may, pass over into productive consumption. II. Means of Consumption, commodities having a form in which they pass into the individual consumption of the capitalist and working classes.",
+k2_simple_I,世界,1909,,4000;1000;1000;6000,,,marx1909k2,"ch. XX, p. 459",I. 4000 c+1000 v+1000 s=6000 means of production.,
+k2_simple_II,世界,1909,,2000;500;500;3000,,,marx1909k2,"ch. XX, p. 459",II. 2000 c+ 500 v+ 500 s=3000 articles of consumption.,
+k2_wages,世界,1909,,,,,marx1909k2,"ch. XX, p. 476",crises are precisely always preceded by a period in which wages rise generally and the working class actually get a larger share of the annual product intended for consumption,
+k2_crash,世界,1909,,,,,marx1909k2,"ch. XXI, p. 608","This would mean an overproduction in II and could not be compensated in any other way than by a great crash, in consequence of which some capital of II would be transferred to I.","if, after several periods of accumulation, II c became equal to or greater than I (v + s)"
+k2_cannot,世界,1909,,,,,marx1909k2,"ch. XXI, p. 609","under capitalist production I (v + s) cannot be equal to II c, in other words, the two cannot balance.",
+k2_B0,世界,1909,,4000;1000;1000;6000;1500;750;750;3000,,,marx1909k2,"ch. XXI, p. 596",I. 4000 c + 1000 v + 1000 s = 6000 > ~ . . ftAAA II. 1500 c + 750 v + 750 s = 3000,"the scheme at the start; OCR noise between the two lines (the total, 9000, printed with a brace)"
+k2_400,世界,1909,,400;500;100,,,marx1909k2,"ch. XXI, p. 596","Let us now assume that 400 of the 500 I s are to be converted into constant capital, and 100 into variable capital.",
+k2_B1,世界,1909,,4400;1100;1100;6600;1600;800;800;3200,,,marx1909k2,"ch. XXI, p. 597","I. 4400 c + 1100 v + 1100 s = 6600 ) -, . . OQnA II. 1600 c + 800 v + 800 s = 3200",the end of the first year
+k2_B2,世界,1909,,4840;1210;1210;7260;1760;880;880;3520,,,marx1909k2,"ch. XXI, p. 599",I. 4840 c + 1210 v + 1210 s = 7260 ) Tftt_i 1n 7H0 II. 1760 c + 880 v + 880 s = 3520,"the end of the second year; OCR noise for the total (10,780)"
+k2_B3,世界,1909,,5324;1331;1331;7986;1936;968;968;3872;11858,,,marx1909k2,"ch. XXI, p. 600","I. 5324 c + 1331 v + 1331 s = 7986 > m /. II. 1936 c + 968 v + 968 s = 3872 j Total> 11,858.",
+k2_B4,世界,1909,,5856;1464;1464;8784;2129;1065;1065;4249;13033,,,marx1909k2,"ch. XXI, p. 600","Repeating the same calculation and rounding off the fractions, we get at the end of the following year the product: 1. 5856 c + 1464 v + 1464 s = 8784 \ nQQ II. 2129 c + 1065 v + 1065 s = 4249 ] lotal> 13,033.","OCR '1.' = I. (read by the check script without it); the computed values are I 5856.4 + 1464.1 + 1464.1 = 8784.6 and II 2129.6 + 1064.8 + 1064.8 = 4259.2: Marx's 4249 is a slip (13,043 with 4259)"
+k2_B5,世界,1909,,6442;1610;1610;9662;2342;1172;1172;4686,,,marx1909k2,"ch. XXI, p. 600","I. 6442 c + 1610 v + 1610 s = 9662 ) _, 4 . II. 2342 c + 1172 v + 1172 s = 4686","the next year (total printed 'J-4,348' = 14,348); OCR noise '_, 4 .' (skipped by the check script)"
+k2_7150,世界,1909,,5400;1750;7150;8784;2782;11566;100;160,,,marx1909k2,"ch. XXI, p. 600","the aggregate capital of I and II has risen from 5400 c + 1750 v = 7150 to 8784 c + 2782 v = 11,566, in other words at the rate of 100: 160.","the scheme starts with 4000 + 1500 = 5500 c and 7250 in all; 5400 and 7150 are slips (11,566 / 7250 = 1.595, which rounds to Marx's 100 : 160; 11,566 / 7150 = 1.618)"
+k3_date,世界,1894,,4;1894,,,marx1894de_a,"Vorwort, p. XXV","London, 4. Oktober 1894. F. Engels.",
+k3_100,世界,1894,,100;100;1,,,marx1894de_a,"Kap. 13, p. 190","Z.B. 100 £ sei der Arbeitslohn für 100 Arbeiter, sage für 1 Woche.",
+k3_tendency,世界,1894,,,,,marx1894de_a,"Kap. 13, p. 192",Die im Eingang hypothetisch aufgestellte Reihe drückt also die wirkliche Tendenz der kapitalistischen Produktion aus.,
+k3_productivity,世界,1894,,,,,marx1894de_a,"Kap. 13, p. 192",Es ist ebenso nur ein andrer Ausdruck für die fortschreitende Entwicklung der gesellschaftlichen Produktivkraft der Arbeit,
+k3_why,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 213",zu erklären warum dieser Fall nicht grösser oder rascher ist?,
+k3_tendenz,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 213",und ihm nur den Charakter einer Tendenz geben,
+k3_c1,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 213",I. Erhöhung des Exploitationsgrads der Arbeit.,
+k3_c2,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 216",II. Herunterdrücken des Arbeitslohns unter seinen,
+k3_c3,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 216",II. Verwohlfeilerung der Elemente des konstanten Kapitals.,the heading of section III; the OCR reads the numeral as 'II.'
+k3_c4,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 216",IV. Die relative Ueberbevölkerung.,
+k3_c5,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 218",V. Der auswärtige Handel.,
+k3_c6,世界,1894,,,,,marx1894de_a,"Kap. 14, p. 221",VI. Die Zunahme des Aktienkapitals.,
+k3_schranke,世界,1894,,,,,marx1894de_a,"Kap. 15, p. 231",Die wahre Schranke der kapitalistischen Produktion ist das Kapital selbst,
+k3_imagine,世界,1894,,,,,marx1894de_b,Kap. 30,Denken wir uns die ganze Gesellschaft bloss aus industriellen Kapitalisten und Lohnarbeitern zusammengesetzt.,
+k3_credit,世界,1894,,,,,marx1894de_b,Kap. 30,"Sehn wir ab ebenfalls von den Scheingeschäften und spekulativen Umsätzen, die das Kreditwesen fördert.",
+k3_disprop,世界,1894,,,,,marx1894de_b,Kap. 30,"Dann wäre eine Krise nur erklärlich aus Missverhältniss der Produktion in verschiednen Zweigen, und aus einem Missverhältniss, worin der Konsum der - Kapitalisten selbst zu ihrer Akkumulation stände.",OCR: a stray '-' at the line end between 'der' and 'Kapitalisten'
+k3_employ,世界,1894,,,,,marx1894de_b,Kap. 30,"während die Konsumtionsfähigkeit der Arbeiter theils durch die Gesetze des Arbeitslohns, theils dadurch beschränkt ist, dass sie nur solange angewandt werden, als sie mit Profit für die Kapitalistenklasse angewandt werden können.",
+k3_letzter,世界,1894,,,,,marx1894de_b,Kap. 30,"Der letzte Grund aller wirklichen Krisen bleibt immer die Armuth und Konsumtionsbeschränkung der Massen gegenüber dem Trieb der kapitalistischen Produktion, die Produktivkräfte so zu entwickeln, als ob nur die absolute Konsumtionsfähigkeit der Gesellschaft ihre Grenze bilde.",
+k3_tab_50,世界,1894,,50;100;66+1/3,,,marx1894de_p191,"Kap. 13, p. 191 (page image)","c = 50, v = 100, p' = 66⅓%",read on the page image; the line for c = 50 prints 66⅓% where m/(c+v) = 100/150 = 66⅔%
+k3_tab_100,世界,1894,,100;100;50,,,marx1894de_p191,"Kap. 13, p. 191 (page image)","c = 100, v = 100, p' = 50%",read on the page image
+k3_tab_200,世界,1894,,200;100;33+1/3,,,marx1894de_p191,"Kap. 13, p. 191 (page image)","c = 200, v = 100, p' = 33⅓%",read on the page image
+k3_tab_300,世界,1894,,300;100;25,,,marx1894de_p191,"Kap. 13, p. 191 (page image)","c = 300, v = 100, p' = 25%",read on the page image
+k3_tab_400,世界,1894,,400;100;20,,,marx1894de_p191,"Kap. 13, p. 191 (page image)","c = 400, v = 100, p' = 20%",read on the page image
+k3en_tab_50,世界,1909,,50;100;66+1/3,,,marx1909k3_p247,"ch. XIII, p. 247 (page image)","c = 50, v = 100, p' = 66⅓%",Kerr's translation prints the same 66⅓% (page image)
+tu_not_mehrwert,世界,1901,,,,,tugan1901,"p. 17, note 1",da ich nicht auf dem Boden der Mehrwerttheorie von Marx stehe,
+tu_arbitrary,世界,1901,,,,,tugan1901,p. 17,Die absoluten Zahlen sind ganz willkürlich genommen,
+tu_half,世界,1901,,,,,tugan1901,p. 21,dass die Hälfte des Profites beständig kapitalisiert wird,
+tu_ratio,世界,1901,,,,,tugan1901,p. 23,Ebenso ist im Schema No. II dasselbe Verhältnis des Wertes der Produktionsmittel zu dem der Arbeitslöhne und zum Profit angenommen wie im Schema No. I.,
+tu_360,世界,1901,,360,,,tugan1901,p. 23,"Aber der Konsumtionsmittel der Kapitalisten sind nur 360 produziert worden, also im Vergleich mit dem Schema N0. I zweimal weniger.",
+tu_240,世界,1901,,240;120,,,tugan1901,p. 23,die Produktionsmittel um 240 und die Konsumtionsmittel um 120 mehr,
+tu_absatz,世界,1901,,,,,tugan1901,p. 24,In dieser Weise haben alle Produkte des ersten Jahres im zweiten Jahre einen Absatz gefunden.,
+tu_market,世界,1901,,,,,tugan1901,p. 25,"den Grundsatz, dass die kapitalistische Produktion für sich selbst einen Markt schafft",
+tu_restrict,世界,1901,,,,,tugan1901,p. 25,Die Akkumulation von gesellschaftlichem Kapital führt zu einer Einschränkung der gesellschaftlichen Nachfrage nach Konsumtionsmitteln und zugleich zu einer Erhöhung der gesamten gesellschaftlichen Nachfrage nach Waren.,
+tu_1440,世界,1901,,1440;720;720;2880,,,tugan1901,p. 25,"So hatte die gesellschaftliche Nachfrage nach Konsumtionsmitteln, bei Reproduktion des Kapitals auf gleichbleibender Stufenleiter, im Schema No. I 1440 (720 die Konsumtion der Arbeiter und 720 die Konsumtion der Kapitalisten) und die Nachfrage nach allen Waren 2880 betragen.",
+tu_1400,世界,1901,,1400;980;420;3360,,,tugan1901,p. 25,Bei der Akkumulation des Kapitals (Schema N0. II) sind im zweiten Jahre Konsumtionsmittel im Werte von 1400 hergestellt worden (Konsumtionsmittel der Arbeiter im Werte von 980 und die der Kapitalisten im Werte von 420); der Wert der gesamten produzierten Warenmasse erreicht aber 3360.,
+tu_purpose,世界,1901,,,,,tugan1901,p. 26,"Deshalb kann man in gewissem Sinne sagen, dass der Zweck der kapitalistischen Produktion nicht in der Konsumtion, sondern im Wachstum des Kapitals selbst besteht.",the page header is missing in the OCR
+tu_synthesis,世界,1901,,,,,tugan1901,"p. 27, note 1",Die Lehre Say-James und John Mill-Ricardo über die notwendige Uebereinstimmung des Gesamtumfanges der Produktion mit dem Gesamtumfange der Nachfrage,the page header is missing in the OCR
+tu_kernel,世界,1901,,,,,tugan1901,"p. 27, note 1","nämlich, dass bei einer proportioneilen Einteilung der gesellschaftlichen Produktion das Warengebot mit der Nachtrage übereinstimmen muss - nicht nur für richtig, sondern sogar für anbestreitbar.","OCR: 'proportioneilen' = proportionellen, 'Nachtrage' = Nachfrage, 'anbestreitbar' = unbestreitbar"
+tu_hard,世界,1901,,,,,tugan1901,p. 29,Jedoch schliesst die Erreichung einer vollkommener Proportionalität unüberwindliche Schwierigkeiten in sich.,
+tu_planned,世界,1901,,,,,tugan1901,p. 33,"Wenn die gesellschaftliche Produktion planmässig organisiert wäre, wenn die Leiter der Produktion eine vollkommene Kenntnis der Nachfrage und die Macht hätten, die Arbeit und das Kapital frei aus einem Produktionszweig in einen anderen überzuführen, so könnte, wie niedrig die gesellschaftliche Konsumtion auch sein möchte, das Angebot der Waren die Nachfrage nicht überschreiten.",
+tu_anarchy,世界,1901,,,,,tugan1901,p. 33,"Aber die Akkumulation des Kapitals bei einer völligen Planlosigkeit der gesellschaftlichen Produktion, bei der Anarchie, welche auf dem Warenmarkt herrscht, führt unausbleiblich zu Krisen.",
+tu_sismondi,世界,1901,,,,,tugan1901,p. 191,"Darin hat Sismondi vollkommen recht. Aber seine Erklärung dieses Phänomens ist falsch. Nicht der Mangel an effektiver Nachfrage, sondern der Mangel an Proportionalität in der Verteilung der gesellschaftlichen Produktion ist die alleinige Ursache der Bildung des überschüssigen Produktes.",
+tu_say,世界,1901,,,,,tugan1901,p. 175,"Als ein Ergebnis dieser Analyse erwies sich der Grundsatz, dass bei einer proportioneilen Einteilung der gesellschaftlichen Produktion die Nachfrage nach Produkten mit deren Angebot übereinstimmen muss.","OCR 'proportioneilen'; the next sentence names Turgot, J. B. Say's Traité (1803) and James Mill"
+lu_who,世界,1913,,,,,luxemburg1913,"Kap. 8, p. 111",wer realisiert den akkumulierten Mehrwert?,
+lu_sismondi,世界,1913,,,,,luxemburg1913,"Kap. 11, p. 166","Was wird aus dem kapitalistischen Mehr⸗ wert, wer kauft die Waren, in denen er steckt? So fragte Sis⸗ mondi.",the OCR keeps the double hyphen (⸗) of the line ends
+lu_say,世界,1913,,,,,luxemburg1913,"Kap. 24, p. 295","Seine Theorie der Krisen aus „Disproportionalität"" ist im Grunde genommen nichts als eine Paraphrase der alten platten Abgeschmacktheit Says",
+lu_need,世界,1913,,,,,luxemburg1913,"Kap. 27, p. 340",Der Kapitalismus bedarf zu seiner Existenz und Fortentwicke⸗ lung nichtkapitalistischer Produktionsformen als seiner Umgebung.,"the page header (340) is missing in the OCR, between those of pp. 339 and 341"
+lu_imperialism,世界,1913,,,,,luxemburg1913,"Kap. 31, p. 424",Der Imperialismus ist ebensosehr eine geschichtliche Methode der Existenzverlängerung des Kapitals,
+bb_denies,世界,1896,,,,,bohm1896,p. 111,Der dritte Band Marx verleugnet den ersten.,
+bb_avg,世界,1896,,,,,bohm1896,p. 111,Die Theorie der Durchschnittsprofitrate und der Produktionspreise verträgt sich nicht mit der Theorie vom Werte.,
+ka_profits,世界,1954,,,,,kalecki1954,"ch. 3, p. 45",Gross profits = Gross investment + capitalists* consumption,OCR '*' = apostrophe
+ka_save,世界,1954,,,,,kalecki1954,"ch. 3, p. 45","If we make the additional assumption that workers do not save, then workers' consumption is equal to their income.",
+ka_determine,世界,1954,,,,,kalecki1954,"ch. 3, p. 46","It is, therefore, their investment and consumption decisions which determine profits, and not vice versa.",
+ka_closed,世界,1954,,,,,kalecki1954,"ch. 3, p. 48",We may now pass from our simplified model to the real situation where the economy is not a closed system and where government expenditure and taxation are not negligible.,the page numbers of this OCR are at the foot of the page
+ka_decide,世界,1954,,,,,kalecki1954,"ch. 3, p. 46",they cannot decide to earn more,
+ka_1935,世界,1954,,1935,,,kalecki1954,"ch. 3, p. 45, note 1",The theory of profits given here was developed back in 1935,
+ka_three,世界,1954,,,,,kalecki1954,"ch. 3, p. 47",we subdivide all the economy into three departments,
+ka_schemes,世界,1954,,,,,kalecki1954,"ch. 3, p. 47",following the Marxian 'schemes of reproduction',
+ka_depts,世界,1954,,,,,kalecki1954,"ch. 3, p. 47",total profits will be equal to the value of production of these two departments,
+al_46_12,英国,2009,,46;1780;1840;12,,,allen2009pause,p. 2,"output per worker rose by 46% between 1780 and 1840. Over the same period, Feinstein's real wage index rose by only 12%.",
+al_90_123,英国,2009,,1840;1900;90;123,,,allen2009pause,p. 2,"Between 1840 and 1900, output per worker increased by 90% and the real wage by 123%.",
+al_labour60,英国,2009,,18;60;19,,,allen2009pause,p. 3,"In the late 18th century, labour's share was about 60%. It declined steadily until the middle of the 19th century to around one half.",
+al_capital40,英国,2009,,18;20;40;19,,,allen2009pause,p. 3,"Capital's share moved inversely, more than doubling from a late 18th century value of 20% to over 40% in the middle of the 19th century.",
+al_return,英国,2009,,10;18;15;19;20,,,allen2009pause,p. 4,The rate of return to capital rose from near 10% in the late 18th century to 15% in the early 19th and surpassed 20% in the middle of the century.,
+al_bias,世界,2009,,,,,allen2009pause,"p. 1, abstract","Marx, on the other hand, believed that technological progress had a labour saving bias",
+al_result,英国,2009,,,,,allen2009pause,p. 12,"The result, however, was not continually increasing immiseration, for the capitalists invested a portion of their extra income and the increase in the capital stock eventually allowed rising productivity to be manifest as rising real wages.",
+al_t1_1760a,英国,2009,,1760;1800;0.26;0.11,,,allen2009pause,"p. 3, Table 1",1760–1800 0.26% 0.11,growth per year of Y/L; contribution of K/L
+al_t1_1760b,英国,2009,,0.19;0.39,,,allen2009pause,"p. 3, Table 1",+0.19 0.39%,line 1760–1800: growth per year of A (TFP); growth of the real wage
+al_t1_1800a,英国,2009,,1800;1830;0.63;0.13,,,allen2009pause,"p. 3, Table 1",1800–1830 0.63% 0.13,growth per year of Y/L; contribution of K/L
+al_t1_1800b,英国,2009,,0.69;0.00,,,allen2009pause,"p. 3, Table 1",+0.69 0.00%,line 1800–1830: growth per year of A (TFP); growth of the real wage
+al_t1_1830a,英国,2009,,1830;1860;1.12;0.37,,,allen2009pause,"p. 3, Table 1",1830–1860 1.12% 0.37,growth per year of Y/L; contribution of K/L
+al_t1_1830b,英国,2009,,0.94;0.86,,,allen2009pause,"p. 3, Table 1",+0.94 0.86%,line 1830–1860: growth per year of A (TFP); growth of the real wage
+al_t1_1860a,英国,2009,,1860;1900;1.03;0.30,,,allen2009pause,"p. 3, Table 1",1860–1900 1.03% 0.30,growth per year of Y/L; contribution of K/L
+al_t1_1860b,英国,2009,,0.89;1.61,,,allen2009pause,"p. 3, Table 1",+0.89 1.61%,line 1860–1900: growth per year of A (TFP); growth of the real wage
+al_t1_shares,英国,2009,,0.35;0.15,,,allen2009pause,"p. 3, note to Table 1",multiplied by the factor shares of capital (0.35) and land (0.15),
+al_heart,英国,2009,,,,,allen2009pause,p. 2,This was the heart of Engel’s Pause,Allen's spelling 'Engel’s'
+al_condition,英国,2009,,,,,allen2009pause,p. 2,"This was the period, and the circumstances, described by Engel's in The Condition of the Working Class.",Allen's spelling 'Engel's'
+al_14,英国,2009,,14,,,allen2009pause,p. 3,"I have increased Feinstein's real earnings index by 14%, so that it equals the average earnings of all labour including the self-employed and those receiving salaries.",
+al_gdp,英国,2009,,,,,allen2009pause,p. 2,who also thinks that GDP grew less rapidly than Crafts and Harley calculated,"Clark, as Allen describes him"
+al_clark2001,英国,2009,,2001;6,,,allen2009pause,p. 2,"'manual worker's real incomes in the industrial revolution period rose much more than did real output per capita' (Clark, 2001, p. 6)",Allen quoting Clark (2001)
+al_winners,英国,2009,,,,,allen2009pause,p. 2,"Workers, rather than capitalists, were the winners in the industrial revolution, according to Clark.",
+al_revisionism,英国,2009,,,,,allen2009pause,p. 2,"This is exciting revisionism, but neither Clark's real wage series nor his GDP series are convincing improvements on the existing literature",
+al_inequality,英国,2009,,19,,,allen2009pause,"p. 13, conclusion","First, inequality rose substantially in the first four decades of the 19th century.",
+al_doubled,英国,2009,,,,,allen2009pause,"p. 13, conclusion","The average real wage stagnated, while the rate of profit doubled.",
+al_necessary,英国,2009,,,,,allen2009pause,p. 13,Population growth and technical progress were both necessary for an increase in inequality,
+al_enough,世界,2009,,,,,allen2009pause,p. 13,Malthus and Marx are not enough.,
+al_clark,英国,2009,,2001;2005;2007,,,allen2009pause,p. 2,"Clark (2001, 2005, 2007a,b), who believes that the average real wage grew faster than Feinstein contended",
+nh_theorem,世界,1997,,,,,nakatani1997,p. 39,"a cost-reducing technological change necessarily raises the rate of profit, under constant real wages, when innovation occurs in a basic sector",
+nh_wage,世界,1997,,,,,nakatani1997,p. 41,"If the rate of profit falls in the long run, this must be because of a rise in the real wage rate.",
+nh_shaikh,世界,1997,,1978;1979,,,nakatani1997,p. 42,Shaikh (1978) and Alberro and Persky (1979) have argued that the theorem does not necessarily hold in competitive dynamic situations.,
+nh_okishio,世界,1961,,1961;7;85;99,,,nakatani1997,"p. 51, references","Okishio, N. (1961), ""Technical change and the rate of profit"", Kobe University Economic Review, no.7, pp.85-99",
+nb_citation,世界,1973,,,,,nobel1973,press release,for the development of the input-output method and for its application to important economic problems,
+nb_planning,世界,1973,,,,,nobel1973,press release,it is used in forecasting and planning in quite different types of economic systems – decentralized market economies with mainly private enterprise as well as centrally-planned economies,
+nb_1941,世界,1973,,1919;1929,,,nobel1973,press release,"The Structure of American Economy, 1919-1929",
+nb_born,世界,1906,,5;1906,,,nobel1973bio,autobiography,"I was born August 5, 1906",
+nb_1905,世界,1905,,1905,,,nobel1973bio,"autobiography, footnote","Recent information sets his year of birth to 1905, in Munich.",
+nb_died,世界,1999,,5;1999,,,nobel1973bio,"autobiography, addendum","Wassily Leontief died on February 5, 1999.",

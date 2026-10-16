@@ -1,0 +1,155 @@
+{
+  "title": "Quotations for Chapter 22 (Marx: accumulation, crisis and the schemes of reproduction): Capital, vols. 1-3 (1867, 1885, 1894; the English of 1887 and 1909), the preface of Zur Kritik (1859); D. M. Evans on the crisis of 1857 and the report of the Select Committee on the Bank Acts (1858); M. Wirth on Hamburg in 1857 (1858); Tugan-Baranowsky (1901), Böhm-Bawerk (1896), Luxemburg (1913), Kalecki (1954); Allen's 'Engels' pause' (2009); Nakatani and Hagiwara on the Okishio theorem (1997); the Nobel press release of 1973 and Leontief's autobiography; the Dictionary of National Biography on Evans (1889)",
+  "source": "K. Marx, Das Kapital I (Hamburg 1867), II (1885), III (1894), Zur Kritik der politischen Oekonomie (Berlin 1859); Capital, vol. II of the English edition of 1887 (Moore and Aveling); Capital, vols. II and III, tr. E. Untermann (Chicago: Kerr, 1909); D. M. Evans, The History of the Commercial Crisis, 1857-58 (London 1859); M. Wirth, Geschichte der Handelskrisen (Frankfurt 1858); M. v. Tugan-Baranowsky, Studien zur Theorie und Geschichte der Handelskrisen in England (Jena 1901); E. v. Böhm-Bawerk, Zum Abschluss des Marxschen Systems (Berlin 1896); R. Luxemburg, Die Akkumulation des Kapitals (Berlin 1913); M. Kalecki, Theory of Economic Dynamics (London 1954); R. C. Allen, Explorations in Economic History 46 (2009), article in press; T. Nakatani and T. Hagiwara, Kobe University Economic Review 43 (1997); nobelprize.org (1973; press release and autobiography); A. R. V[ian], 'Evans, David Morier', Dictionary of National Biography 18 (1889)",
+  "url": "https://archive.org/download/daskapitalkritik67marx",
+  "series": "id, dynasty (place), year, year_note, value (numbers in the quotation, ';'-separated; 'a+b/c' for a mixed fraction), unit, numeral (unused), file (key of 'sources'), juan (location: chapter, printed page), quote (verbatim, as in the document's text, OCR misreadings included; for a scheme, the printed line), note",
+  "retrieved": "2026-10-16",
+  "license": "Quotations for criticism and teaching, each with its source. Marx (1859, 1867, 1885, 1894), the English translation of 1887, Evans (1859), Wirth (1858), Tugan-Baranowsky (1901), Böhm-Bawerk (1896), Luxemburg (1913) and the Dictionary of National Biography (1889; transcribed on Wikisource) are in the public domain; the archive.org texts are OCR of public-domain scans (Wirth: a Google Books scan, whose usage guidelines ask that the files be used for non-commercial purposes). Untermann's translation of Capital, vols. II and III (Kerr, 1909), is in the public domain in the United States, where it was published; it is quoted only for the printed lines of the schemes and a few short sentences. Kalecki (1954): 'This book is copyright under the Berne Convention'; only short phrases (a formula and parts of three sentences) are quoted. Allen (2009): '© 2009 Elsevier Inc. All rights reserved.'; short passages (a sentence or part of one) with full credit. Nakatani and Hagiwara (1997), Kobe University Repository: Kernel: short passages with full credit. The nobelprize.org pages ('Copyright © Nobel Prize Outreach 2026'; the autobiography: 'Copyright © The Nobel Foundation 1973') are quoted, not copied. The chapter's Chinese renders the German and English; the translations are the book's.",
+  "used_in": [
+    22
+  ],
+  "fetch": "data/fetch/verify_web_quotes.py (every row whose file is a key of 'sources', except the two page images marx1894de_p191 and marx1909k3_p247, which were read by eye); checks/check_ch22.py (the readings and every quotation of the text)",
+  "notes": "The schemes of reproduction are quoted from Untermann's English (Kerr), because the OCR of the German first edition loses the subscripts and fractions of the scheme lines; the German is quoted for Marx's words. Marx's printed numbers contain slips, kept as printed: in the expanded scheme the aggregate capital at the start is printed '5400 c + 1750 v = 7150' for 5500 c + 1750 v = 7250 (row k2_7150), and the product of department II in the fourth year '4249' where the rule of the scheme gives 4259.2 and the three terms he prints, 2129 + 1065 + 1065, add up to 4259 (row k2_B4); the table of vol. III, chapter 13 prints a profit rate of '66⅓%' for c = 50, v = 100, m = 100, where 100/150 = 66⅔% (rows k3_tab_50, k3en_tab_50; the German first edition and Kerr's translation print the same). Evans gives two dates for the rise of Bank Rate to 10 per cent in November 1857 (11 November in his narrative, row ev_rate10; 9 November in the speech of row ev_rates_commons); the Bank of England's table D1 gives 12 November (snapshot boe_millennium_bank_rate_1856_1858). Evans's 'Select Committee' paragraphs are from the report of the Select Committee on the Bank Acts of 1858, which Evans reprints; the committee quotes 'our Consul' at Hamburg without naming him. Wirth's OCR (Fraktur, Google scan) misreads many letters: the rows keep the OCR, and the note gives the reading. The Fraktur OCR of Luxemburg keeps the double hyphen (⸗) at line ends, which verify_web_quotes.py does not join, so the rows keep it. Luxemburg's p. 340 has no page header in the OCR (between pp. 339 and 341). The Tugan page headers 26 and 27 are missing in the OCR; rows tu_purpose (p. 26) and tu_synthesis, tu_kernel (note 1 on p. 27) are placed by the headers on either side. The PDF texts are searched in pdftotext's normal and -layout output.",
+  "sources": {
+    "marx1867de": {
+      "url": "https://archive.org/download/daskapitalkritik67marx/daskapitalkritik67marx_djvu.txt",
+      "format": "txt",
+      "sha256": "5cb735f648e750e9d7c545c146a545cbb732aa12391f9d26867f64ca6159f6b5",
+      "version": "K. Marx, Das Kapital. Kritik der politischen Oekonomie, Erster Band, Buch I: Der Produktionsprocess des Kapitals (Hamburg: Otto Meissner, 1867), the first edition, archive.org item daskapitalkritik67marx; OCR text; chapters numbered as in 1867 (Kap. 1, 3, 6); pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "marx1887": {
+      "url": "https://archive.org/download/cu31924074488333/cu31924074488333_djvu.txt",
+      "format": "txt",
+      "sha256": "76abf7deb26791c2f36a21e61a5b113cd233a6805a27ae299e794959a7f4052f",
+      "version": "K. Marx, Capital: A Critical Analysis of Capitalist Production, translated from the third German edition by Samuel Moore and Edward Aveling and edited by Frederick Engels, vol. II (London: Swan Sonnenschein, Lowrey, & Co., 1887), the second of the two volumes of the first English edition (chapters XV-XXXIII), Cornell University Library copy, item cu31924074488333; OCR text; chapter XXV 'The general law of capitalist accumulation'; pages as printed (continuous through both volumes)",
+      "retrieved": "2026-10-16"
+    },
+    "marx1885de": {
+      "url": "https://archive.org/download/ldpd_13046079_002/ldpd_13046079_002_djvu.txt",
+      "format": "txt",
+      "sha256": "277f7ac757bf8a7c7280da1718771f85982d79a3e26b029bfec311831bb1c192",
+      "version": "K. Marx, Das Kapital, Zweiter Band, Buch II: Der Cirkulationsprocess des Kapitals, herausgegeben von Friedrich Engels (Hamburg: Otto Meissner, 1885), the first edition, Columbia University Libraries copy, item ldpd_13046079_002; OCR text; Engels's preface (Vorwort) and chapters 19-20; pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "marx1909k2": {
+      "url": "https://archive.org/download/capitalcritiqueo02marxiala/capitalcritiqueo02marxiala_djvu.txt",
+      "format": "txt",
+      "sha256": "5f6daa9a7ab09280e5bf0a8c334c08949c7487d291da770ced083ed81a96375a",
+      "version": "K. Marx, Capital: A Critique of Political Economy, vol. II: The Process of Circulation of Capital, edited by Frederick Engels, translated from the second German edition by Ernest Untermann (Chicago: Charles H. Kerr & Company; copyright 1909; this copy printed 1933), item capitalcritiqueo02marxiala; OCR text; chapters XX-XXI (the schemes of reproduction); pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "marx1894de_a": {
+      "url": "https://archive.org/download/ldpd_13046079_003/ldpd_13046079_003_djvu.txt",
+      "format": "txt",
+      "sha256": "dace2c88f79df99d217d4233a1f021f96ca2a110c252051dad0511caa6138504",
+      "version": "K. Marx, Das Kapital, Dritter Band, erster Theil, Buch III: Der Gesammtprocess der kapitalistischen Produktion, Kapitel I bis XXVIII, herausgegeben von Friedrich Engels (Hamburg: Otto Meissner, 1894), Columbia University Libraries copy, item ldpd_13046079_003; OCR text; Engels's preface and chapters 13-15; pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "marx1894de_b": {
+      "url": "https://archive.org/download/ldpd_13046079_004/ldpd_13046079_004_djvu.txt",
+      "format": "txt",
+      "sha256": "964ef690fec4931ceb8bd680d49905a765c3a2b15d43b2a36925d16ac1cba43c",
+      "version": "K. Marx, Das Kapital, Dritter Band, zweiter Theil, Kapitel XXIX bis LII (Hamburg: Otto Meissner, 1894), Columbia University Libraries copy, item ldpd_13046079_004; OCR text; chapter 30 (the page headers of this part of the OCR are garbled, so no page is given)",
+      "retrieved": "2026-10-16"
+    },
+    "marx1894de_p191": {
+      "url": "https://archive.org/download/ldpd_13046079_003/page/n218.jpg",
+      "format": "image",
+      "sha256": "435b6984129bab212e14cc6cd64aca150ba24b4956df46c1290b38ba864b002a",
+      "version": "page image of p. 191 of the item above (leaf n218): the table of chapter 13, read by eye; the OCR loses its fractions",
+      "retrieved": "2026-10-16"
+    },
+    "marx1909k3_p247": {
+      "url": "https://archive.org/download/capitalcritiqueo0003karl/page/n250.jpg",
+      "format": "image",
+      "sha256": "d4cd746ca1280dfddaa0ac04378535acca8492789b042504429014e0fcd00581",
+      "version": "page image of p. 247 (leaf n250) of K. Marx, Capital, vol. III: The Process of Capitalist Production as a Whole, edited by Frederick Engels, translated by Ernest Untermann (Chicago: Charles H. Kerr & Company, copyright 1909), item capitalcritiqueo0003karl: the same table in English, read by eye",
+      "retrieved": "2026-10-16"
+    },
+    "marx1859": {
+      "url": "https://archive.org/download/zur-kritik-der-politischen-okonomie/Zur_Kritik_der_politischen_%C3%96konomie_djvu.txt",
+      "format": "txt",
+      "sha256": "a7d1db7d9b37ad6eddf8e99b0bedc92adc7715617d6cc18c821ae7fb690d4318",
+      "version": "K. Marx, Zur Kritik der politischen Oekonomie, Erstes Heft (Berlin: Franz Duncker, 1859), archive.org item zur-kritik-der-politischen-okonomie; OCR text; the preface (Vorwort, pp. III-VIII, dated London, January 1859)",
+      "retrieved": "2026-10-16"
+    },
+    "evans1859": {
+      "url": "https://archive.org/download/cu31924013914431/cu31924013914431_djvu.txt",
+      "format": "txt",
+      "sha256": "0cc277e94616d781cf69143499dc5832076d214da9dd18f9607ded07c422e4d0",
+      "version": "D. Morier Evans, The History of the Commercial Crisis, 1857-58, and the Stock Exchange Panic of 1859 (London: Groombridge and Sons, 1859), Cornell University Library copy, item cu31924013914431; OCR text; pp. 33-40 (the course of the crisis), pp. 82-83 (the report of the Select Committee on the Bank Acts of 1858, paragraphs 55-58, reprinted) and p. 196 (a speech in the House of Commons on the Bank Indemnity Bill, December 1857); pages as printed",
+      "retrieved": "2026-10-16"
+    },
+    "dnb1889_evans": {
+      "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Evans,_David_Morier",
+      "format": "html",
+      "sha256": "9c429bca82b9ef4b4622e708104faab1ac9c104f11d75db0aa284d91238c6b71",
+      "version": "A. R. V[ian], 'Evans, David Morier', Dictionary of National Biography, vol. 18 (1889), the Wikisource transcription (oldid 10731432); the text of 1889 is in the public domain. The page is generated by the wiki, so the SHA-256 of a later download may differ",
+      "retrieved": "2026-10-16"
+    },
+    "wirth1858": {
+      "url": "https://archive.org/download/geschichtederha01wirtgoog/geschichtederha01wirtgoog_djvu.txt",
+      "format": "txt",
+      "sha256": "8ea4b99c6da847f61aee75d0545ae5e14c51dc42018dd3d68a397ce9a560969e",
+      "version": "M. Wirth, Geschichte der Handelskrisen (Frankfurt am Main: J. D. Sauerländer's Verlag, 1858; preface dated Johanni 1858), a Google Books scan deposited at the Internet Archive, item geschichtederha01wirtgoog; OCR of a Fraktur text, with many misreadings, which the rows keep as they are (the note gives the reading); the chapter on Hamburg in 1857, pp. 432-443",
+      "retrieved": "2026-10-16"
+    },
+    "luxemburg1913": {
+      "url": "https://archive.org/download/rosa-luxemburg-die-akkumulation-des-kapitals_202503/Rosa%20Luxemburg%2C%20Die%20Akkumulation%20des%20Kapitals_djvu.txt",
+      "format": "txt",
+      "sha256": "fbe2e886e43f82837f20d07ab2f17b111e0531e6c98b45b835d575245ac00d35",
+      "version": "R. Luxemburg, Die Akkumulation des Kapitals. Ein Beitrag zur ökonomischen Erklärung des Imperialismus (Berlin: Buchhandlung Vorwärts Paul Singer, 1913), the first edition, archive.org item rosa-luxemburg-die-akkumulation-des-kapitals_202503; OCR text of a Fraktur printing (long s and double hyphens kept); pages from the page headers ('— 295 —')",
+      "retrieved": "2026-10-16"
+    },
+    "tugan1901": {
+      "url": "https://archive.org/download/studienzurtheori00tuga/studienzurtheori00tuga_djvu.txt",
+      "format": "txt",
+      "sha256": "c2bd893a6d55de75f098c8c97273a16742bc3e10a96a498585331761c4cd97b6",
+      "version": "M. v. Tugan-Baranowsky, Studien zur Theorie und Geschichte der Handelskrisen in England (Jena: Gustav Fischer, 1901), the German edition, archive.org item studienzurtheori00tuga; OCR text; Part I, chapter 1 (the schemes, pp. 17-33) and Part II (pp. 175, 191); pages from the page headers, some of which the OCR misreads ('IQ' = 19, 'igi' = 191) or loses (26, 27)",
+      "retrieved": "2026-10-16"
+    },
+    "bohm1896": {
+      "url": "https://archive.org/download/bohm-bawerk-zum-abschluss-des-marxschen-systems-1896/B%C3%B6hm-Bawerk%2C%20Zum%20Abschluss%20des%20Marxschen%20Systems%201896_djvu.txt",
+      "format": "txt",
+      "sha256": "b1e78bb4e7afa6e85683e56f96678499e7660127855e75f6e67aba20108ad40d",
+      "version": "E. v. Böhm-Bawerk, 'Zum Abschluss des Marxschen Systems', in O. von Boenigk (ed.), Staatswissenschaftliche Arbeiten. Festgaben für Karl Knies zur fünfundsiebzigsten Wiederkehr seines Geburtstages (Berlin: O. Häring, 1896), pp. 85-205; archive.org item bohm-bawerk-zum-abschluss-des-marxschen-systems-1896; OCR text; p. 111",
+      "retrieved": "2026-10-16"
+    },
+    "kalecki1954": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.122597/2015.122597.Theory-Of-Economic-Dynamics_djvu.txt",
+      "format": "txt",
+      "sha256": "99ae2cf5b0d56cbfc02e42106020c742eebba1677437d409cee026b81d31a816",
+      "version": "M. Kalecki, Theory of Economic Dynamics: An Essay on Cyclical and Long-Run Changes in Capitalist Economy (London: George Allen & Unwin, 1954; this copy is the third impression, 1956), Digital Library of India copy on archive.org, item in.ernet.dli.2015.122597; OCR text; chapter 3 'The determinants of profits', pp. 45-47. 'This book is copyright under the Berne Convention'; short phrases only",
+      "retrieved": "2026-10-16"
+    },
+    "allen2009pause": {
+      "url": "https://www.nuffield.ox.ac.uk/Users/Allen/engelspause.pdf",
+      "format": "pdf",
+      "sha256": "97f2c976cb36005521cc8109acebcda860fce46150bd2e0fce939139eb64a4dd",
+      "version": "R. C. Allen, 'Engels' pause: technical change, capital accumulation, and inequality in the British industrial revolution', Explorations in Economic History, the 'article in press' version (pages 1-13) on the author's page at Nuffield College, Oxford; doi:10.1016/j.eeh.2009.04.004; published in vol. 46(4), 2009, pp. 418-435, whose page numbers this version does not have. '© 2009 Elsevier Inc. All rights reserved.'",
+      "retrieved": "2026-10-16"
+    },
+    "nakatani1997": {
+      "url": "https://da.lib.kobe-u.ac.jp/da/kernel/81000911/81000911.pdf",
+      "format": "pdf",
+      "sha256": "5c8d25c5fb6e9d59971553b9a878c708b0cafd40dc4f9ad0a60ce94db6b84dac",
+      "version": "T. Nakatani and T. Hagiwara, 'Product innovation and the rate of profit', Kobe University Economic Review 43 (1997), pp. 39-51, version of record from the Kobe University Repository: Kernel; doi:10.24546/81000911; https://hdl.handle.net/20.500.14094/81000911. The repository adds a cover page with the date of download ('PDF issue: 2026-10-16'), so the SHA-256 of a later download will differ",
+      "retrieved": "2026-10-16"
+    },
+    "nobel1973": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1973/press-release/",
+      "format": "html",
+      "sha256": "a480249c56eef19f199564e51f25da4f326c512d59527a20d6fc121eeb2b18fb",
+      "version": "Royal Swedish Academy of Sciences, press release of 18 October 1973 (the prize in economic sciences to Wassily Leontief), on nobelprize.org ('Copyright © Nobel Prize Outreach 2026')",
+      "retrieved": "2026-10-16"
+    },
+    "nobel1973bio": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1973/leontief/biographical/",
+      "format": "html",
+      "sha256": "dbfbf84ba02aaac9ae3d81e419e80779e9afd2488c7c8f9bbfea0c3fb34c337c",
+      "version": "Wassily Leontief, Biographical (autobiography written for Les Prix Nobel 1973, with a later footnote and addendum), on nobelprize.org ('Copyright © The Nobel Foundation 1973')",
+      "retrieved": "2026-10-16"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Great Britain 1855-1859, monthly: Bank Rate, the rate of discount on three-month prime bills, the unemployment rate of the ironfounders' union and raw cotton consumption",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'M9. Monthly short-term interest rates, 1694-2016' (Bank Rate, end month, from sheet D1 Official rates; the rate of discount for three month prime or first class bills 1824-1939, Overend Gurney quoted in the 1857 Select Committee on Bank Acts, from June 1857 three-month bankers' bills from the Economist, monthly average of weekly data) and sheet 'M2. Monthly activity indicators and unemployment 1846-2016' (Klovland 1998: the unemployment rate, ironfounders July 1854-December 1886; raw cotton consumption, average number of cotton bales consumed per week)",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year, month (1-12); bank_rate: Bank Rate, per cent a year, end of month; prime_bills_rate: rate of discount on three-month prime (from June 1857 bankers') bills, per cent a year, monthly average of weekly data; unemp_ironfounders: unemployment rate of the ironfounders' union, per cent; cotton_bales_week: raw cotton consumption, average number of bales consumed a week (the sheet states no unit; the values are about 20-56)",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    22
+  ],
+  "fetch": "data/fetch/boe_millennium_gb22.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for boe_millennium_gb_1790_1830 and boe_millennium_gb_1822_1827_monthly). The script checks the headings of each column it reads and fails if one has moved. The prime bills rate changes source in June 1857 (Overend Gurney before, the Economist's bankers' bills after), as the sheet's heading says. Because the sheet gives no unit for cotton consumption, the chapter uses that series only relative to its own level in the months before the crisis. The ironfounders' rate covers the members of one union, not the whole labour force.",
+  "citation": "Klovland, J. T. (1998), 'A reassessment of the United Kingdom business cycle chronology', in T. Dick (ed.), Business Cycles since 1820, Edward Elgar; Report from the Select Committee on the Bank Acts (1857), evidence of Overend, Gurney and Co.; The Economist; data via Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017)"
+}

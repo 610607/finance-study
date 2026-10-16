@@ -1,0 +1,14 @@
+{
+  "title": "Bank Rate on 1 January 1856 and on each day it changed, 1856-1858",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'D1. Official Interest Rates' (Bank Rate 1833-1972 ...), daily",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "date (ISO 8601): 1 January 1856 and each day on which the rate differs from the previous row of the sheet; bank_rate: the new rate, per cent a year",
+  "retrieved": "2026-10-16",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series.",
+  "used_in": [
+    22
+  ],
+  "fetch": "data/fetch/boe_millennium_gb22.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for boe_millennium_gb_1790_1830 and boe_millennium_gb_1822_1827_monthly). The script checks the heading of the date column and of the Bank Rate column. The sheet dates the rise to 10 per cent 12 November 1857; D. M. Evans (1859) says the rate was raised to 10 per cent on 11 November (marx_facts row ev_rate10). The chapter follows the Bank's table and records the difference in its notes on sources.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet D1"
+}

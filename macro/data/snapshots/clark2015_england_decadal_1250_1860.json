@@ -6,7 +6,8 @@
   "retrieved": "2026-10-15",
   "license": "No licence is stated on the data page; the author publishes the series for research use. A subset (62 decades) is stored here for teaching, with attribution.",
   "used_in": [
-    21
+    21,
+    22
   ],
   "fetch": "data/fetch/clark_england.py --long",
   "notes": "Workbook SHA-256s as in clark2015_england_decadal.json (Wages 2014.xlsx 8959af72be11af1d574ebf69c9c31784bf385dd7a925f22aaa323e7d72a37781; England NNI - Clark - 2015.xlsx 214ae3b58c2da845b408cb18587ba1f02304a65c4fc609b0b2f6f9aa4320b090). The chapter's land share is land rents / (land rents + wage income), the share of land in the income of the two factors of the Malthusian model (the capital income of the workbook is left out, as in Chapter 11's adjustment of Clark's shares). Clark's real NNI per head and the Broadberry et al. real GDP per head (boe_millennium_england_1270_1913) disagree before 1700: the chapter shows both.",
