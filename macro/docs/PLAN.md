@@ -1403,5 +1403,6 @@ sec:bullion-world sec:bullion-hume sec:bullion-equation sec:bullion-restriction 
 sec:say-world sec:say-law sec:say-glut sec:say-debate sec:say-walras sec:say-1825 sec:say-test sec:say-legacy eq:say-identity eq:say-walras eq:say-yield tab:say-loans ex:say-hats ex:say-walras ex:say-yield ex:say-leverage ex:say-decomp
 sec:divergence-world sec:divergence-malthus sec:divergence-takeoff sec:divergence-when sec:divergence-why sec:divergence-test sec:divergence-legacy eq:divergence-escape eq:divergence-ulc tab:divergence-why ex:divergence-plateau ex:divergence-welfare ex:divergence-spinners ex:divergence-ulc ex:divergence-tfp
 sec:marx-world sec:marx-accumulation sec:marx-schemes sec:marx-profit sec:marx-crisis sec:marx-test sec:marx-legacy eq:marx-rates eq:marx-schemes eq:marx-kalecki tab:marx-path tab:marx-readings ex:marx-rates ex:marx-reserve ex:marx-expanded ex:marx-io ex:marx-profit ex:marx-tugan ex:marx-okishio
+sec:gold-world sec:gold-1844 sec:gold-bagehot sec:gold-rules sec:gold-state sec:gold-test sec:gold-legacy eq:gold-issue eq:gold-goschen tab:gold-week1866 tab:gold-three tab:gold-limits ex:gold-week1866 ex:gold-goschen ex:gold-rules ex:gold-debt
 nav:contents nav:compare
 ```
