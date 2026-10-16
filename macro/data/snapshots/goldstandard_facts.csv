@@ -159,6 +159,9 @@ mo_vocabulary,,1930,,,,,dutton1984,p. 195 (comment by D. E. Moggridge),"The phra
 mo_twoweeks,英国,1930,,,,,dutton1984,p. 195 (comment by D. E. Moggridge),"found its way into his ""private evidence"" to the committee two weeks later",Keynes; the committee is the Committee on Finance and Industry (the Macmillan Committee)
 mo_keynes,英国,1930,,,,,dutton1984,p. 195 (comment by D. E. Moggridge),The phrase attracted Keynes's attention,
 mo_meaning,英国,1930,,,,,dutton1984,"p. 195 (comment by D. E. Moggridge, quoting Keynes 1981, p. 42)",you so conduct your affairs that you tend neither to gain nor to lose large quantities of gold,
+ke_1925,英国,1925,,1925,year,,keynes1931,table of contents,The Economic Consequences of Mr. Churchill (1925),"the essay begins on p. 244"
+ke_prewar,英国,1925,,,,,keynes1931,p. 244,The policy of improving the foreign-exchange value of sterling up to its pre-war value in gold,
+ke_game,英国,1925,,,,,keynes1931,p. 259,The Bank of England is compelled to curtail credit by all the rules of the gold standard game.,"five years before Kindersley's evidence of February 1930 (row mo_kindersley), which Moggridge gives as the first use he could find"
 mg_opposite,德国,,,,,,mcgouldrick1984,p. 311,the German Reichsbank consistently expanded its portfolio when losing gold and contracted its portfolio when gaining gold.,
 mg_target,德国,,,,,,mcgouldrick1984,p. 312,"The true rule and the only one (apart from ""structural"" rules such as acting as a lender-of-Iast-resort) was to target on the exchange rate with London",the OCR reads 'lender-of-Iast-resort'
 mg_founded,德国,1875,,1875;1876,years,,mcgouldrick1984,p. 313,The Reichsbank was established by the German parliament (Reichstag) in 1875 and began operations in 1876.,
@@ -189,8 +192,8 @@ rb_1891,德国,1895,,4,excess issues,,reichsbank1910,p. 82,only four took place 
 rb_1896,德国,1900,,71,excess issues,,reichsbank1910,p. 82,There were 71 in the five years,
 rb_1899,德国,1899,,30;1899;371200000,day; year; marks,,reichsbank1910,p. 82,"the highest figures were reached on September 30, 1899, with 371,200,000 marks.",
 sp_knick,美国,1907,,62000000,$,,sprague1910,p. 251,"The Knickerbocker Trust Company was the third largest trust company in New York, having deposits of $62,000,000.",
-sp_oct21,美国,1907,,21,day (October),,sprague1910,p. 251,"On Monday, October 21, the National Bank of Commerce announced that it would discontinue clearing for the Knickerbocker",
-sp_run3h,美国,1907,,3;8000000,hours; $,,sprague1910,p. 252,"after a run of three hours, during which $8,000,000 were paid out, the company was forced to suspend.",
+sp_oct21,美国,1907,,21,day (October),,sprague1910,p. 251,"On Monday, October 21, the National Bank of Commerce announced that it would discontinue clearing for the Knickerbocker on the following day.",
+sp_run3h,美国,1907,,3;8000000,hours; $,,sprague1910,p. 252,"On Tuesday, after a run of three hours, during which $8,000,000 were paid out, the company was forced to suspend.",
 sp_bricks,美国,1907,,,,,sprague1910,p. 252,"A group of banking institutions is very similar to a row of bricks, the fall of one endangering the stability of the rest.",
 sp_tca,美国,1907,,23;64000000,day (October); $,,sprague1910,p. 252,"On Wednesday, October 23, a run began on the Trust Company of America, the second of the trust companies in size, having deposits of $64,000,000.",
 sp_34m,美国,1907,,34000000,$,,sprague1910,p. 253,"The company withstood a run which continued for two weeks, during which it paid out some $34,000,000",
@@ -198,7 +201,7 @@ sp_assisted,美国,1907,,,,,sprague1910,p. 253,"were assisted, since their asset
 sp_endangered,美国,1907,,,,,sprague1910,p. 253,but still more because it was clear that the foundation of the entire credit structure was endangered.,
 sp_lcdef,美国,1873,,,,,sprague1910,p. 46,The loan certificates could be used solely in settling balances between the banks,
 sp_lc1907,美国,1907,,26,day (October),,sprague1910,p. 271,On October 26 clearing-house loan certificates were at length authorized,
-sp_110m,美国,1907,,110000000,$,,sprague1910,p. 271,"a total of over $110,000,000 for three weeks.",
+sp_110m,美国,1907,,10800000;60700000;38900000;110000000,$,,sprague1910,p. 271,"the bank statement showed a loan increase of only $10,800,000, but during the next week it was $60,700,000, and for the week ending November 9 $38,900,000, a total of over $110,000,000 for three weeks.",
 sp_premium,美国,1907,,31;31,day (October; December),,sprague1910,p. 278,"the currency premium, which lasted from October 31 to December 31, inclusive.",
 sp_ratio,美国,1907,,20;12.8;18;1873,per cent; day; year,,sprague1910,p. 279,"the reserve ratio was at no time below 20 per cent, contrasted with 12.8 per cent on October 18, 1873.",
 sp_minimum,美国,1907,,,,,sprague1910,pp. 277-278,"The national banking law required a certain minimum of reserve from banks entering the system, the percentage varying with the location of the bank.",
@@ -258,3 +261,5 @@ rk_structure,英国,1873,,,,,rockoff2009,"p. 36, note 21",based on the then curr
 rk_notice,,2009,,2009;2,year; paragraphs,,rockoff2009,cover page (PDF page 1),"© 2009 by Hugh Rockoff. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
 ta_loan,罗马,33,,100000,great sesterces,,tacitus_gordon,Annals 6.17,lending a hundred thousand great sesterces,"Gordon's footnote: 'About £830,000.'"
 ta_terms,罗马,33,,3;2,years; times the loan,,tacitus_gordon,Annals 6.17,"for three years, without interest; provided each borrower pawned to the people double the value in inheritance.",
+ta_small,罗马,,,1000;8;6;8,small sesterces; £; s.; d.,,tacitus_gordon,Annals 1.8,"to every common soldier of the Praetorian Guards, a thousand small sesterces,","Gordon's footnote: '£8, 6s. 8d.' (Augustus's legacies)"
+ta_great,罗马,,,1000;8333,great sesterces; £,,tacitus_gordon,Annals 2.48,"he bestowed a thousand great sesterces;","Gordon's footnote: '£8333.' (Tiberius to Propertius Celer)"

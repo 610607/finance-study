@@ -29,7 +29,8 @@ What is checked here:
 
 Models (the chapter's key equations):
     the two departments   N = F + G,  R_n = N - C = F + G - C                                    (eq:gold-issue)
-    Goschen's arithmetic  (i_L - i_F) tau/12 >= c,  i.e.  i_L - i_F >= 12 c / tau              (eq:gold-goschen)
+    Goschen's arithmetic  (i - i^f) tau/12 >= c,  i.e.  i - i^f >= 12 c / tau                  (eq:gold-goschen)
+                          (i London's rate, i^f the foreign rate, as in Appendix B and Chapter 5)
     the rules of the game Bloomfield (1959): a year complies when the central bank's international and domestic
                           assets change in the same direction. International = gold and silver of the Issue
                           Department + coin of the Banking Department; domestic = government securities and
@@ -317,6 +318,7 @@ READINGS = {
     "rb_1886": [("ten", EN), ("six", EN), ("1890", NUM)],
     "rb_1891": [("four", EN)],
     "sp_run3h": [("three", EN), ("8,000,000", NUM)],
+    "sp_110m": [("10,800,000", NUM), ("60,700,000", NUM), ("38,900,000", NUM), ("110,000,000", NUM)],
     "fr_reserve": [("thirty-five", EN), ("forty", EN)],
     "fr_tax": [("one", EN), ("thirty-two and one-half", "mixed")],
     "fr_suspend": [("thirty", EN)],
@@ -326,6 +328,8 @@ READINGS = {
     "rk_notice": [("2009", NUM), ("two", EN)],
     "ta_loan": [("a hundred thousand", EN)],
     "ta_terms": [("three", EN), ("double", "double")],
+    "ta_small": [("a thousand", EN), ("8", NUM, NOTE), ("6", NUM, NOTE), ("8", NUM, NOTE)],
+    "ta_great": [("a thousand", EN), ("8333", NUM, NOTE)],
 }
 
 
@@ -350,7 +354,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(texts["quote"])]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation (or its note)", n, 99)
+    quoted("rows with values, each read from its quotation (or its note)", n, 102)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -391,9 +395,12 @@ TRANSLATIONS = {
     "第二，按这个利率，凡是好的银行抵押品都要接受，公众要借多少就借多少。": ("bg_second", "b74_second"),
     "新的借款人没有别的放款人。": "bg_nolender",
     "几乎总是": "bg_steps1860",
+    "降到了零": "bg_13m",
     "奥弗伦家 1866 年弄垮了英格兰银行，是因为它倒了；1857 年弄垮了英格兰银行，是因为没有让它倒。": "bg_letgo",
     # sec:gold-rules
+    "金本位游戏的规则": "du_phrase",                          # in the deeper box
     "你这样处理自己的事务，使你既不会大量得到黄金，也不会大量失去黄金": "mo_meaning",
+    "英格兰银行按金本位游戏的一切规则，不得不紧缩信用": "ke_game",
     "一个被管理的、而不是近乎自动的体系": "bo_managed",
     "轻声的否定": "du_softno",
     "令人困惑的是商品流动之快，几乎是同时的。黄金流动与物价变化这个本该有的中间阶段很难看出来，即使有，也极其短暂。":
@@ -443,8 +450,11 @@ KEYWORDS = {
     "b74_second": ["all good banking securities", "as largely as the public ask for them"],
     "bg_nolender": ["no other lender to new borrowers"],
     "bg_steps1860": ["almost always"],
+    "bg_13m": ["went down to nothing"],
+    "du_phrase": ["rules of the gold standard game"],
     "bg_letgo": ["because it went", "because it was not let go"],
     "mo_meaning": ["neither to gain nor to lose large quantities of gold"],
+    "ke_game": ["compelled to curtail credit", "rules of the gold standard game"],
     "bo_managed": ["managed and not a quasi-automatic"],
     "du_softno": ["soft-spoken no"],
     "bo_taussig": ["rapidity, almost simultaneity", "extremely short"],
@@ -529,6 +539,7 @@ def opening(F, Y, Q, W):
 
 def world(F, Y, Q, W, D):
     assert "freely coined" in Q["bo_freely"] and "import or export of gold" in Q["bo_freely"]
+    assert "Cunliffe report" in column("juan")["bo_freely"]                       # 坎利夫委员会的报告
     chk("Germany: 4 December 1871; 9 July 1873", F["rb_1871"] + F["rb_1873"], [4, 1871, 9, 1873])
     chk("the US: March 1900", F["rb_us1900"], [1900])
     assert Y["rb_1871"] > 1866 and F["rb_us1900"][0] > 1866                    # 1866 年，德国与美国都还没有
@@ -637,6 +648,13 @@ def bagehot(F, Y, Q, W, D):
     # Tiberius
     chk("AD 33", [Y["ta_loan"]], [33])
     chk("a hundred thousand great sesterces (十万)", F["ta_loan"], [100000])
+    # 一个大塞斯特斯（sestertium）合一千塞斯特斯: Gordon's footnotes price a thousand small sesterces at £8 6s 8d
+    # and a thousand great sesterces at £8333, so one great sesterce is a thousand small ones
+    small = F["ta_small"][1] + F["ta_small"][2] / 20 + F["ta_small"][3] / 240
+    chk("    Gordon: great / small sesterce", (F["ta_great"][1] / F["ta_great"][0]) / (small / F["ta_small"][0]),
+        1000, tol=0.5)
+    assert "small sesterces" in Q["ta_small"] and "great sesterces" in Q["ta_great"]
+    chk("    = 一亿 sesterces", F["ta_loan"][0] * 1000 / YI, 1)
     chk("three years; double", F["ta_terms"], [3, 2])
     assert "without interest" in Q["ta_terms"]
     chk("Overends 1857", [Y["bg_1857brokers"]], [1857])
@@ -647,9 +665,14 @@ def bagehot(F, Y, Q, W, D):
 
 def rules(F, Y, Q, W, D):
     chk("Kindersley, February 1930", F["mo_kindersley"], [1930])
+    assert "before World War I" in Q["du_phrase"] and "after the war" in Q["du_phrase"]   # 第一次世界大战以后才有
     assert "February 1930" in Q["mo_kindersley"] and "Committee on Finance and Industry" in Q["mo_committee"]
     assert "two weeks later" in Q["mo_twoweeks"] and "So far as I can ascertain" in Q["mo_ascertain"]
     assert "Bank of England" in Q["mo_kindersley"]
+    # Keynes used the phrase in 1925, five years before the first use Moggridge could find; both after the war
+    chk("Keynes, The Economic Consequences of Mr. Churchill", F["ke_1925"], [1925])
+    chk("    five years before Kindersley", F["mo_kindersley"][0] - F["ke_1925"][0], 5)
+    assert "pre-war value in gold" in Q["ke_prewar"] and "So far as I can ascertain" in Q["mo_ascertain"]
     chk("Bloomfield's annual data", F["du_annual"], [1880, 1914])
     chk("    all central banks: comply, violate (%)", F["du_34_60"], [34, 60])
     chk("    the Bank of England (%)", F["du_boe"], [47, 50])
@@ -757,6 +780,7 @@ def test(F, Y, Q, W, D):
         [1300, 581.2])
     pct("the return of 9 May: the reserve (万英镑)", W.loc["1866-05-09"].bd_reserve * 100, 581.2, 1)
     pct("30 May: the reserve (万英镑)", W.loc["1866-05-30"].bd_reserve * 100, 86, 0)
+    assert "went down to nothing" in Q["bg_13m"] and W.bd_reserve.loc["1866-05":"1866-06"].min() > 0.5  # 并没有真的到零
     pct("    the loans (万英镑)", W.loc["1866-05-30"].bd_other_securities * 100, 3344.7, 1)
     # tab:gold-three
     peaks, lows = {}, {}
@@ -796,14 +820,21 @@ def test(F, Y, Q, W, D):
     assert "third largest trust company" in Q["sp_knick"]
     chk("Monday 21 October 1907", [F["sp_oct21"][0], date(1907, 10, 21).weekday()], [21, 0])
     chk("a run of three hours; paid out (万美元)", [F["sp_run3h"][0], F["sp_run3h"][1] / WAN], [3, 800])
+    chk("    on Tuesday 22 October (Sprague: 'On Tuesday'; the clearing was stopped 'on the following day')",
+        date(1907, 10, 22).weekday(), 1)
+    assert Q["sp_run3h"].startswith("On Tuesday") and "on the following day" in Q["sp_oct21"]
     chk("Wednesday 23 October; deposits (万美元)", [F["sp_tca"][0], date(1907, 10, 23).weekday(),
                                                      F["sp_tca"][1] / WAN], [23, 2, 6400])
     assert "second of the trust companies in size" in Q["sp_tca"]
     chk("    paid out in two weeks (万美元)", F["sp_34m"][0] / WAN, 3400)
     assert "two weeks" in Q["sp_34m"]
     chk("loan certificates from 26 October", F["sp_lc1907"], [26])
-    chk("    over (亿美元) in three weeks", F["sp_110m"][0] / YI, 1.1)
-    assert "three weeks" in Q["sp_110m"] and "solely in settling balances between the banks" in Q["sp_lcdef"]
+    # the $110m is the increase of the New York banks' loans in the weeks ending 26 October, 2 and 9 November
+    # (10.8 + 60.7 + 38.9, Sprague p. 271), not the amount of loan certificates issued
+    chk("    loans up by over (亿美元) in three weeks", F["sp_110m"][3] / YI, 1.1)
+    chk("    the three weekly loan increases add up to over the $110m (亿美元)", sum(F["sp_110m"][:3]) / YI, 1.104)
+    assert "loan increase" in Q["sp_110m"] and "three weeks" in Q["sp_110m"]
+    assert "solely in settling balances between the banks" in Q["sp_lcdef"]
     chk("the currency premium: 31 October to 31 December", F["sp_premium"], [31, 31])
     chk("the reserve ratio never below; 1873 (%)", F["sp_ratio"], [20, 12.8, 18, 1873])
     assert "varying with the location of the bank" in Q["sp_minimum"]
@@ -816,6 +847,8 @@ def test(F, Y, Q, W, D):
     assert "actual commercial transactions" in Q["fr_commercial"]
     chk("suspension up to (days)", F["fr_suspend"], [30])
     chk("the tax: at most 1% a year until 32.5%", F["fr_tax"], [1, 32.5])
+    chk("    on the deficiency below the 40% gold reserve against the notes", F["fr_reserve"][1], 40)
+    assert "such deficiency" in Q["fr_tax"]
     # tab:gold-limits
     chk("tab:gold-limits: 1,400 万英镑; 3.85 亿, 2.5 亿马克", [F["ac_14m"][0] / WAN] +
         [x / YI for x in F["rb_contingent"]], [1400, 3.85, 2.5])
@@ -876,7 +909,8 @@ LIVES = {"Walter Bagehot，1826—1877": "ch18_smith", "Thomas Tooke，1774—18
 # the years of the cross-references: (words of this chapter, chapter where the event is told, words there)
 EVENTS = [("1772 年艾尔银行", "ch18_smith", "1772 年 6 月"), ("1819 年恢复兑付的法案", "ch19_bullion", "1819 年"),
           ("里的 1720 年", "ch16_mercantilism", "1720"), ("1672 年的阿姆斯特丹银行", "ch15_finrevolution", "1672 年"),
-          ("2008 年，各国中央银行", "ch64_gfc", "2008 年金融危机"),
+          ("美联储在不到四个月里把资产负债表扩大了一倍半", "ch04_money", "美联储在不到四个月里把资产负债表扩大了一倍半"),
+          ("扩大的主要是各种流动性便利", "ch04_money", "2008 年秋天主要是各种流动性便利"),
           ("被高利贷法卡在 5\\% 的上限上", "ch20_say", "贴现率提到 5\\%，即高利贷法允许的上限")]
 
 

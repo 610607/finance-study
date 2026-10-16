@@ -22,6 +22,7 @@ from style import (AMBER, FIG_W, INK, LIGHT, MONEY, MUTED, PRICE, SHADE, T, clea
                    tint)
 
 PALE = tint(MONEY, 0.5)
+PALE_TEXT = tint(MONEY, 0.75)    # labels of the pale 1847 series: the hue of the line, dark enough to read
 # the three panics: (colour, line style, marker) - 1866 solid, 1857 dashed (AMBER), 1847 pale and dotted
 STYLE = {1866: dict(color=MONEY, lw=1.9, marker="o", ms=3.2, mec="white", mew=0.4),
          1857: dict(color=AMBER, lw=1.5, marker="s", ms=3.0, mec="white", mew=0.4, dashes=(4, 2)),
@@ -63,9 +64,11 @@ def gold_panics():
     for year, day in C.LETTERS.items():
         s = C.aligned(W, "bd_reserve", day)
         _line(a1, s.index, s.values, year)
-        col = STYLE[year]["color"] if year != 1847 else MUTED
+        col = STYLE[year]["color"] if year != 1847 else PALE_TEXT
         y0, dy = s.iloc[0], {1866: 0.95, 1857: 0.55, 1847: -0.6}[year]
-        a1.text(s.index[0], y0 + dy, T(f"{year} 年", f"{year}"), fontsize=7.8, color=col, ha="left", va="center")
+        lab = a1.text(s.index[0], y0 + dy, T(f"{year} 年", f"{year}"), fontsize=7.8, color=col, ha="left",
+                      va="center")
+        halo(lab, 2.0)
         t, v = C.window_min(W, "bd_reserve", day)
         x = (t - pd.Timestamp(day)).days / 7
         xt, yt, ha = {1847: (-3.2, 0.95, "right"), 1857: (-3.2, 0.3, "right"), 1866: (4.2, 0.45, "left")}[year]
@@ -89,7 +92,7 @@ def gold_panics():
         x0 = r[r == top].index[0]
         xt, yt, ha = {1847: (0.45, 8.12, "left"), 1857: (-0.4, 10.45, "right"), 1866: (1.2, 10.45, "left")}[year]
         txt = a2.text(xt, yt, T(f"{year} 年 {top:g}%", f"{year}: {top:g}%"), fontsize=7.6,
-                      color=STYLE[year]["color"] if year != 1847 else MUTED, ha=ha, va="bottom")
+                      color=STYLE[year]["color"] if year != 1847 else PALE_TEXT, ha=ha, va="bottom")
         halo(txt, 2.0)
     a2.axvline(0, color=MUTED, lw=0.6, ls=(0, (1, 2)), zorder=2)
     a2.set_xlim(-10.5, 10.5)
@@ -139,7 +142,7 @@ def gold_rules():
     comply, violate = F["du_boe"]
     rows = [(T("Bloomfield\n（1959）", "Bloomfield\n(1959)"), comply, violate, 100 - comply - violate),
             (T("年末数", "year-end"), 100 * se["comply"] / se["n"], 100 * se["violate"] / se["n"], 0.0),
-            (T("全年平均", "annual means"), 100 * sm["comply"] / sm["n"], 100 * sm["violate"] / sm["n"], 0.0)]
+            (T("全年平均", "annual\nmeans"), 100 * sm["comply"] / sm["n"], 100 * sm["violate"] / sm["n"], 0.0)]
     k = np.arange(len(rows))[::-1]
     h = 0.56
     for y, (_, c, v, n) in zip(k, rows):
@@ -165,7 +168,7 @@ def gold_rules():
     a2.tick_params(axis="y", length=0)
     _grid(a2, axis="x")
     a2.spines["left"].set_visible(False)
-    _title(a2, T("(b) 三种数法都是一半对一半", "(b) Three counts, all about half and half"))
+    _title(a2, T("(b) 三种数法都是一半对一半", "(b) Three counts: about half and half"))
     return fig
 
 
@@ -183,7 +186,8 @@ def gold_prices():
     ax.plot(w.index, w.values, color=PRICE, lw=1.9, zorder=4)
     line, = ax.plot(c.index, c.values, color=AMBER, lw=1.5, zorder=3)
     line.set_dashes((4, 2))
-    ax.plot(u.index, u.values, color=tint(PRICE, 0.55), lw=1.5, zorder=3)
+    line, = ax.plot(u.index, u.values, color=tint(PRICE, 0.55), lw=1.6, zorder=3)
+    line.set_dashes((1, 1.3))                    # dotted: the three lines differ in style, not only in shade
     end = P.index[-1]
     for s, col, lab in ((w, PRICE, T("英国批发物价", "UK wholesale")), (c, AMBER, T("英国消费物价", "UK consumer")),
                         (u, tint(PRICE, 0.7), T("美国消费物价", "US consumer"))):
