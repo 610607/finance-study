@@ -670,7 +670,8 @@ def opening(F, Y, Q):
     said("一美元要 11.7 万亿纸马克", cologne * B9)
     chk("    Cologne / Berlin on 20 November", cd, d)
     r = cologne / usd
-    assert 2.5 < r < 3, r                                                              # 差不多是柏林的三倍
+    assert r < 3, r                                                                    # 差不多（稍少于）三倍
+    pct("    almost three times Berlin (差不多是柏林的三倍)", r, zh("三"), 0)
     say("差不多是柏林的三倍")
     said("11 月 13 日一美元合 8,400 亿纸马克，14 日是 1.26 万亿，15 日是 2.52 万亿", 11, F["bt_berlin13"][0],
          F["bt_berlin13"][2] * B9, F["bt_berlin14"][0], F["bt_berlin14"][2] * B9, F["bt_berlin15"][0],
@@ -765,9 +766,14 @@ def transfer(F, Y, Q):
     said("按上面的比价算，100 亿美元约合 420 亿金马克", usd, gm)
     assert gm / (F["london_total"][0] * B9) < 1 / zh("三")                                # 不到伦敦总额的三分之一
     say("不到伦敦总额的三分之一")
+    said("比 A、B 两类债券合计的 500 亿也少", (a + b) * B9)
+    assert gm < (a + b) * B9                                                            # 比 A、B 两类合计的也少
     # Keynes 1929
     chk("the Economic Journal, 1929", Y["k29_two"], 1929)
-    said("1929 年，凯恩斯在《经济学杂志》上把赔款分成两道关", Y["k29_two"])
+    said("1929 年，凯恩斯在《经济学杂志》上撰文，沿用道威斯委员会的划分，把付赔款分成两道关", Y["k29_two"])
+    assert Q["k29_two"].startswith("THE Dawes Committee divided the problem")          # 划分出自道威斯委员会
+    said("讨论的是 1924 年道威斯计划重新安排的赔款", F["ndb_luther_gold"][2])
+    assert "Dawes-Plans" in Q["ndb_luther_gold"] and "Dawes plan" in Q["s_dawes"]
     chk("    two parts (两道关)", F["k29_two"], [zh("两")])
     chk("    'two or three years' (两三年)", F["k29_borrow"], [zh("两"), zh("三")])
     p, v, v2, v3 = F["k29_demand"]
@@ -972,8 +978,8 @@ def test(F, Y, Q):
     said("银行券的实际余额 7 月只剩 1922 年 1 月的约 19\\%，8 月约 22\\%", 7, y0, 1, 100 * n1 / p1, 8, 100 * n2 / p2)
     for r in (n1 / p1, n2 / p2):
         pct("    about one-fifth (五分之一左右)", r, zh("五分之一"), 1)
-    assert 100 <= n1 < 1000                                                           # 张数多了几百倍
-    say("钞票的张数多了几百倍，能买的东西却只剩五分之一左右")
+    assert 100 <= n1 < 1000 <= n2 < 10000                                             # 几百倍到几千倍
+    say("银行券按面值多了几百倍到几千倍，能买的东西却只剩五分之一左右")
     y, gm = F["bt_150"]
     said("1923 年 10 月底，德国发行的全部纸马克只值不到 1.5 亿金马克", y, 10, gm * M8)
     pre = F["tr_prewar"][0]
@@ -981,6 +987,7 @@ def test(F, Y, Q):
     chk("    one-fortieth (四十分之一)", gm * M8 / (pre * B9), zh("四十分之一"))
     say("前者只是后者的四十分之一")
     y, p, d = F["s_99"]
+    say("新钞也几乎淹没了旧钞。按面值算，10 月底流通的帝国银行券")
     said("10 月底流通的帝国银行券，99\\% 以上是此前 30 天里才发出来的", 10, p, d)
     # tab:weimar-doubling and its paragraph
     s = index_all()
@@ -1044,7 +1051,8 @@ def stabilization(F, Y, Q):
     chk("    the decree signed 15 October 1923 by Stresemann and Luther", F["law_signed"], [a[3], a[5]])
     assert "Stresemann" in Q["law_signed"] and "Luther" in Q["law_signed"]
     cap = F["law_capital"][0]
-    said("它的资本是 32 亿地租马克", cap * M8)
+    said("它的资本与基本准备金合计 32 亿地租马克", cap * M8)
+    assert Q["law_capital"].startswith("Das Kapital und die Grundrücklage")             # 资本与基本准备金合计
     said("总共抵押了 32 亿金马克", F["ndb_luther_backing"][0] * B9)
     chk("    Sargent: 3.2 billion and 1.2 billion", F["s_limits"], [cap / 1000, F["law_credit"][0] / 1000])
     rm, gm = F["law_convert"]
@@ -1071,7 +1079,7 @@ def stabilization(F, Y, Q):
     a = F["ndb_schacht_life"]
     said("11 月 12 日，沙赫特（Hjalmar Schacht，1877—1970）被任命为帝国货币专员", mm, dd, a[2], a[5])
     chk("    three days later (三天以后): the issue", F["arch_issue"][0] - dd, zh("三"))
-    say("三天以后，地租马克开始发行，柏林的发行点前排起了长队")
+    say("三天以后，地租马克开始发行，柏林的发行点前排起了队")
     assert "Berlin, Nov. 1923" in Q["arch_queue"]
     d, y, usd, gm = F["bt_stablelevel"]
     said("11 月 20 日，纸马克的价值稳定在一美元 4.2 万亿纸马克", 11, d, usd * B9)
@@ -1110,7 +1118,7 @@ def stabilization(F, Y, Q):
     said("11 月 20 日 & 美元官价定在 4.2 万亿纸马克 & 科隆的自由市场是 11.7 万亿", 11, d, usd * B9,
          F["bt_cologne20"][0] * B9)
     dec_def = B.revenue_million_goldmark["1923-12"] - B.expenditure_million_goldmark["1923-12"]
-    said("12 月 & 地租银行拒绝政府追加借款；19 日起税制改用金马克 & 联邦普通预算仍有 3.3 亿金马克赤字", 12,
+    said("12 月 & 地租银行拒绝政府追加借款；19 日起税制改用金马克 & 帝国普通预算仍有 3.3 亿金马克赤字", 12,
          F["bt_finaltax"][0], -dec_def * M8)
     said("12 月 22 日 & 沙赫特任帝国银行行长", 12, F["ndb_schacht_1923"][3])
     said("1924 年 1 月 & 收支自开战以来第一次平衡 & 当月借款只有 190 万金马克", F["bt_balanced"][0], 1, jan * M8)
@@ -1131,7 +1139,7 @@ def stabilization(F, Y, Q):
     said("开始发行与停止贴现的日期，不同文本有 15 日与 16 日之别", F["arch_issue"][0], F["bt_stop16"][0])
     # the budget
     rev, exp = B.revenue_million_goldmark["1923-12"], B.expenditure_million_goldmark["1923-12"]
-    said("联邦普通预算 1923 年 12 月收入约 3.3 亿，支出约 6.7 亿，赤字仍有 3.3 亿", 1923, 12, rev * M8, exp * M8,
+    said("帝国普通预算 1923 年 12 月收入约 3.3 亿，支出约 6.7 亿，赤字仍有 3.3 亿", 1923, 12, rev * M8, exp * M8,
          (exp - rev) * M8)
     assert B.revenue_million_goldmark["1924-01"] > B.expenditure_million_goldmark["1924-01"]
     said("1924 年 1 月，收支自战争爆发以来第一次平衡", F["bt_balanced"][0], 1)
@@ -1200,7 +1208,8 @@ def stabilization(F, Y, Q):
     chk("    a thousand milliard = a trillion (一万亿), and Bresciani-Turroni's '1 billion' (British)",
         [F["bt_reichsmark24"][2] * B9, one * T12], [zh("一") * T12, zh("一") * T12])
     chk("    and the NDB: einer Billion Mark gegen eine Rentenmark", F["ndb_luther_rate"], [1, 1])
-    said("含金量与 1875 年银行法定下的旧马克相同", F["bt_finegold"][1])
+    say("一帝国马克合一万亿纸马克，含金量与战前的旧马克相同")
+    assert "fine gold content of the reichsmark was the same" in Q["bt_finegold"]
     assert "dollar exchange standard" in Q["bt_dollarstandard"]
     dd, y = F["bt_legaltender"]
     said("旧纸马克到 1925 年 6 月 5 日才不再是法偿货币", y, 6, dd)
@@ -1274,7 +1283,7 @@ def case(F, Y, Q):
     said("1922 年 8 月下旬，国际联盟理事会答应认真谈判", F["s_ausaug"][0], 8)
     assert "late August 1922" in Q["s_ausaug"] and "League of Nations" in Q["s_ausaug"]
     chk("    three protocols (三份)", F["s_ausaug"][1], zh("三"))
-    said("10 月 2 日签了三份议定书，安排了一笔 6.5 亿金克朗的国际贷款", 10, F["s_ausaug"][2], F["s_ausloan"][0] * M8)
+    said("10 月初签了三份议定书，安排了一笔 6.5 亿金克朗的国际贷款", 10, F["s_ausloan"][0] * M8)
     assert "2 October 1922" in Q["s_ausaug"]
     assert "August 1922" in Q["s_ausabrupt"] and "abruptly" in Q["s_ausabrupt"]
     said("克朗的汇率在 8 月就突然稳住了", 8)
@@ -1332,7 +1341,7 @@ def deeper(F, Y, Q):
     assert "November 16th, 1923" in N["bt_oldcirculation"]
     said("表 G1 没有说指数取的是月中哪一天", 1)
     said("序列取到 1924 年 6 月，7 月起表中改用新单位", 1924, int(prices().index[-1][-2:]), 7)
-    said("表 G5 只是联邦普通账户，其中的税收一栏与 Bresciani-Turroni 第 356 页的税收数字相同", 5,
+    said("表 G5 只是帝国普通账户（萨金特的表题称作联邦政府），其中的税收一栏与 Bresciani-Turroni 第 356 页的税收数字相同", 5,
          int(J["bt_receipts2"].split()[-1]))
     said("帝国马克的含金量据 Bresciani-Turroni 第 24、354 页、萨金特表 G4 的注与地租银行法令第 6 条的金马克定义，1924 年货币法",
          int(J["bt_reichsmark24"].split()[-1]), int(J["bt_finegold"].split()[-1]), 4, int(J["law_goldmark"][1]), 1924)
@@ -1372,7 +1381,7 @@ def frames(F, Y):
     said("数据：萨金特（1982）第 82 页；Bresciani-Turroni（1937）第 337 页", 1982, int(column("juan")["s_ratio1"][3:5]),
          1937, int(column("juan")["bt_oldcirculation"][3:]))
     (y0, m0), (y1, m1) = (map(int, d.split("-")) for d in budget().date.iloc[[0, -1]])
-    said("单位为百万金马克，1923 年 12 月至 1924 年 6 月。只含联邦普通账户；11 月的支出空缺，不画。数据：萨金特（1982）表 G5，转引 Young（1925）",
+    said("单位为百万金马克，1923 年 12 月至 1924 年 6 月。只含帝国普通账户；11 月的支出空缺，不画。数据：萨金特（1982）表 G5，转引 Young（1925）",
          y0, m0, y1, m1, 11, 1982, 5, 1925)
     said("物价翻一番的时间在 1923 年越来越短", 1923)
     said("\\caption{1923 年的月度批发物价与折合的翻番天数}", 1923)
@@ -1428,7 +1437,7 @@ def selfcheck(F):
     pct("    with the index itself", doubling(sep), 6.4, 1)
     B = budget().set_index("date")
     dec = B.expenditure_million_goldmark["1923-12"] - B.revenue_million_goldmark["1923-12"]
-    said("1923 年 12 月，联邦普通预算仍有约 3.3 亿金马克的赤字", 1923, 12, dec * M8)
+    said("1923 年 12 月，帝国普通预算仍有约 3.3 亿金马克的赤字", 1923, 12, dec * M8)
     said("1 月起预算已经平衡，3 月以后月月盈余", 1, 3)
 
 
@@ -1436,8 +1445,8 @@ def ending(F, Y, Q):
     d, y, usd, _ = F["bt_stablelevel"]
     said("1923 年 11 月 20 日，哈芬施坦死在柏林的时候，美元刚刚停在 4.2 万亿纸马克", y, 11, d, usd * B9)
     assert F["ndb_havenstein_life"][3:] == [d, 11, y]
-    assert F["bt_law1924"][3] - y == 1                                                 # 一年以后（1924 年 10 月）
-    say("一年以后，德国的帝国马克回到了他上任时那个马克的含金量，只是隔着 12 个零")
+    assert F["bt_law1924"][3] - y == 1 and (10, F["bt_law1924"][2]) < (11, d)          # 不到一年（1924 年 10 月 11 日）
+    say("不到一年，德国的帝国马克就回到了他上任时那个马克的含金量，只是隔着 12 个零")
     assert F["ndb_havenstein_office"][0] > F["bt_finegold"][1]                         # 1908 年上任时，马克仍是 1875 年的含金量
     chk("    twelve zeros", math.log10(F["bt_reichsmark24"][2] * B9), 12)
     chk("Britain, 1925", Y["k25_prewar"], 1925)
