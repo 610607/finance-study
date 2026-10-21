@@ -32,7 +32,7 @@ What is checked here:
   5. anchors    the paraphrase anchors `% 据: ...` name rows of weimar_facts
 
 Models (the chapter's key equations):
-    the transfer (eq:weimar-transfer): R* = (P_X* X - P_I* Q) + K*
+    the transfer (eq:weimar-transfer): R^f = (P_X^f X - P_I^f Q) + K^f (superscript f: in foreign money, Appendix B)
     seigniorage (eq:weimar-budget): Delta H / P = Delta h + pi / (1 + pi) h_{t-1}, with h = H / P
     money demand (eq:weimar-demand): M / P = k Y, V = 1 / k
     Fisher's relation (Chapter 3, eq:prices-fisher): 1 + r = (1 + i) / (1 + pi)
@@ -274,7 +274,7 @@ MULT = {"hundred": 100, "thousand": 1000, "millions": 10 ** 6}
 ORDINAL = {"half": 2, "eighth": 8}
 NTH = {"ninth": 9, "third": 3}
 GERMAN = {"einer": 1, "eine": 1}
-OCR = {"r,2oo": 1200, "nth": 11, "1485,014": 1485014}       # misprints of the OCR, each named in the note
+OCR = {"r,2oo": 1200, "nth": 11, "1485,014": 1485014, "12 1": 12.5}       # misprints of the OCR, each named in the note
 
 
 def cardinal(s: str) -> float:
@@ -363,6 +363,8 @@ READINGS = {
     "bt_receipts2": [("14*5", "star"), ("1923", NUM), ("63*2", "star"), ("312*3", "star"), ("1923", NUM),
                      ("503*5", "star"), ("1924", NUM)],
     "bt_borrow1560": [("1923", NUM), ("1,560", NUM), ("1924", NUM), ("1*9", "star")],
+    "bt_lottery": [("thirty", EN), ("1926", NUM), ("five", EN), ("12 1", "ocr")],
+    "bt_rentenwithdraw": [("30", NUM), ("1924", NUM), ("ten", EN), ("2,070", NUM)],
     "bt_reichsmark24": [("30", NUM), ("1924", NUM), ("a thousand", EN)],
     "bt_law1924": [("30", NUM), ("1924", NUM), ("nth", "ocr"), ("1924", NUM), ("1", NUM)],
     "bt_unemployed": [("1", NUM), ("1923", NUM), ("249,192", NUM), ("15", NUM), ("696,922", NUM), ("15", NUM),
@@ -412,11 +414,12 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(q)]
         assert [round(g, 9) for g in got] == [round(v, 9) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 174)
+    quoted("rows with values, each read from its quotation", n, 184)
     N = column("note")
     for rid, word in [("bt_limit24", "r,2oo"), ("bt_law1924", "nth"), ("bt_unemployed", "1485,014"),
                       ("bt_goldmark", "41 1"), ("bt_tenfold15", "1 5th"), ("bt_debtannul", "58-5"),
-                      ("bt_1920counter", "176*6"), ("bt_receipts", "14*5"), ("bt_borrow1560", "1*9")]:
+                      ("bt_1920counter", "176*6"), ("bt_receipts", "14*5"), ("bt_borrow1560", "1*9"),
+                      ("bt_lottery", "12 1")]:
         assert word in N[rid], (rid, word)                 # every misprint is named in the note
 
 
@@ -536,7 +539,7 @@ KEYWORDS = {
                  "to limit government borrowing to within the amount decreed"],
     "bt_limitation": ["of primary and fundamental importance"],
     "bt_miracle": ["“The miracle of the rentenmark” became a common expression."],
-    "ndb_schacht_myth": ["„Retter der Mark“"],
+    "ndb_schacht_myth": ["seinen eigenen Mythos", "„Retter der Mark“"],
     "s_cosmetic": ["only a cosmetic measure"],
     "s_three": ["Simultaneously and abruptly three things happened",
                 "additional government borrowing from the central bank stopped",
@@ -671,8 +674,9 @@ def opening(F, Y, Q):
     chk("    Cologne / Berlin on 20 November", cd, d)
     r = cologne / usd
     assert r < 3, r                                                                    # 差不多（稍少于）三倍
-    pct("    almost three times Berlin (差不多是柏林的三倍)", r, zh("三"), 0)
-    say("差不多是柏林的三倍")
+    phrase = "差不多是柏林的三倍"
+    say(phrase)
+    pct("    almost three times Berlin (the numeral read from the phrase)", r, zh(phrase[-2]), 0)
     said("11 月 13 日一美元合 8,400 亿纸马克，14 日是 1.26 万亿，15 日是 2.52 万亿", 11, F["bt_berlin13"][0],
          F["bt_berlin13"][2] * B9, F["bt_berlin14"][0], F["bt_berlin14"][2] * B9, F["bt_berlin15"][0],
          F["bt_berlin15"][2] * B9)
@@ -882,7 +886,8 @@ def fiscal(F, Y, Q):
     said("这个循环在 1922 年夏天就转起来了", y)
     assert "after July 1922" in Q["bt_fiscalfeedback"]
     said("7 月以后，马克的贬值又把财政打乱了", 7)
-    said("帝国的收入 9 月已不到 1 亿金马克，11 月只剩 6,000 多万", 9, sep * M8, 11, nov * M8)
+    said("帝国的收入那年 9 月已不到 1 亿金马克，11 月只剩 6,000 多万", 9, sep * M8, 11, nov * M8)
+    assert "In September of that year" in Q["bt_fiscalfeedback"]                     # 那年: 1922
     assert "less than 100 millions" in Q["bt_fiscalfeedback"]
     assert "little more than 60 millions" in Q["bt_fiscalfeedback"]
 
@@ -964,6 +969,8 @@ def demand(F, Y, Q):
     s = index_all()
     said("到 6 月，物价已是 4 月的 3.7 倍", 6, 4, s["1923-06"] / s["1923-04"])
     said("那时赔款并没有解决", )
+    assert "gar keine andere Lösung möglich" in Q["ndb_havenstein_fear"]               # 大概认定别无出路
+    say("不过他大概一心认定，当时的处境下别无出路")
     said("黑尔弗里希自己在 1923 年 9 月提出了新币方案", Y["ndb_helfferich_rye"], 9)
     assert "September 1923" in Q["ndb_helfferich_rye"]
     said("1923 年 11 月停止贴现国库券以后，汇率与物价随即稳住，赔款要到 1924 年才重新安排", 1923, 11, Y["s_dawes"])
@@ -1135,7 +1142,7 @@ def stabilization(F, Y, Q):
     said("Bresciani-Turroni（1937）第 24、73、335—356 页", 1937, 24, 73, 335, 356)
     spages = {int(J[r].split(",")[0].removeprefix("p. ")) for r in ("s_g4stop", "s_tested", "s_personnel")}
     assert spages == {82, 83, 84}, spages
-    said("萨金特（1982）第 82—84 页", 1982, 82, 84)
+    said("Sargent（1982）第 82—84 页", 1982, 82, 84)
     said("开始发行与停止贴现的日期，不同文本有 15 日与 16 日之别", F["arch_issue"][0], F["bt_stop16"][0])
     # the budget
     rev, exp = B.revenue_million_goldmark["1923-12"], B.expenditure_million_goldmark["1923-12"]
@@ -1213,12 +1220,21 @@ def stabilization(F, Y, Q):
     assert "dollar exchange standard" in Q["bt_dollarstandard"]
     dd, y = F["bt_legaltender"]
     said("旧纸马克到 1925 年 6 月 5 日才不再是法偿货币", y, 6, dd)
+    say("德国以帝国马克为新的本位货币，回到了金本位")
+    dd, y, ten, out = F["bt_rentenwithdraw"]
+    chk("    the liquidation law of the same day (同一天), 30 August 1924", [dd, y], F["bt_reichsmark24"][:2])
+    assert "August 30th" in Q["bt_rentenwithdraw"] and "liquidation of the Rentenbank" in Q["bt_rentenwithdraw"]
+    chk("    within ten years (十年)", ten, zh("十"))
+    said("按同一天的清理地租银行的法律，最迟十年内收回，当时流通的约有 20.7 亿", out * M8)
 
 
 def cost(F, Y, Q):
     u = F["bt_unemployed"]
     said("1923 年 9 月 1 日约有 25 万人，10 月 15 日约 70 万", u[1], 9, u[0], u[2], 10, u[3], u[4])
     said("11 月 15 日增加到约 127 万，12 月 15 日约 149 万", 11, u[5], u[6], 12, u[7], u[8])
+    said("从 9 月 1 日到 11 月 15 日增加了约 100 万", 9, u[0], 11, u[5], u[6] - u[2], slack=5)
+    assert 95e4 < u[6] - u[2] < 105e4                                                  # 约 100 万
+    say("通胀的最后几个月，失业猛增")
     said("被占领地区的失业工人，估计还有 200 万", F["bt_occupied"][0])
     said("1924 年对德国企业不算好年景，却比 1923 年好得多", *F["s_outputcomparison"])
     gain = u[8] - u[6]
@@ -1242,9 +1258,30 @@ def cost(F, Y, Q):
     said("1924 年的预算里，公债的利息与还本只有约 1.6 亿金马克，占普通支出约 49.4 亿的 3\\% 多一点", y, ds * M8, tot * M8,
          None)
     assert p < 100 * ds / tot < p + 1                                                  # 3% 多一点
+    # the revaluation (重估), Bresciani-Turroni pp. 322-325 and 335
     chk("    the third decree (第三道)", NTH["third"], zh("三"))
     assert "third extraordinary fiscal decree" in Q["bt_debtrevaluation"]
-    say("按第三道紧急税收命令得到了部分重估")
+    assert "Dritte" in Q["bt_reval1924"] and "Steuernotverordnung" in column("note")["bt_reval1924"]
+    dd, y = F["bt_reval1924"]
+    said("1924 年 2 月 14 日的第三道紧急税收命令", y, 2, dd)
+    assert "February 14th" in Q["bt_reval1924"]
+    said("把工业债券和抵押贷款大约按原来金价值的 15\\% 重估", F["bt_reval15"][0])
+    assert "industrial debentures and mortgages" in Q["bt_reval15"]
+    dd, y, r25 = F["bt_reval25"]
+    said("1925 年 7 月 16 日的法律把抵押贷款的通常重估率提高到 25\\%", y, 7, dd, r25)
+    assert "July 16th" in Q["bt_reval25"] and "normal rate of revaluation of mortgages" in Q["bt_reval25"]
+    said("本金却要到 1932 年以后才能要求偿付", F["bt_reval1932"][1])
+    _, _, dd2, y2, new, old = F["bt_publoan"]
+    chk("    the same day (同一天): the law on public loans of 16 July 1925", [dd2, y2], [dd, y])
+    assert Q["bt_publoan"].count("July 16th") == 1 and "public loans" in Q["bt_publoan"]
+    said("把每 1,000 马克的旧公债换成 25 马克的新债券", old, new)
+    dd, y = F["bt_oldholders"]
+    said("1920 年 7 月 1 日以前就买进公债的老持有人，另得一份抽签权", y, 7, dd)
+    assert "July 1st" in Q["bt_oldholders"] and "lottery right" in Q["bt_oldholders"]
+    years30, _, times, share = F["bt_lottery"]
+    said("抽签在 30 年里分批进行，中签的债券按新面值的五倍偿还，也就是旧面值的 12.5\\%", years30, share)
+    chk("    five times (五倍)", times, zh("五"))
+    pct("    5 x 25 / 1,000 (%)", 100 * times * new / old, share, 1)
     # the real rate
     r7, y, r8 = F["bt_discount"]
     said("1922 年 7 月底是 6\\%，8 月底才提到 7\\%", y, 7, r7, 8, r8)
@@ -1253,6 +1290,8 @@ def cost(F, Y, Q):
     repay = g7 * (1 + r7 / 100 / 12)
     assert repay / g8 < 0.5                                                            # 不到借钱时的一半
     say("还钱时的购买力不到借钱时的一半")
+    said("1923 年，帝国银行又大量贴现商业票据", F["s_commercial"][0])
+    assert "commercial bills" in Q["s_commercial"] and "transfer payments" in Q["s_commercial"]
     # ex:weimar-realrate
     said("1922 年 7 月底，帝国银行的贴现率是年息 6\\%，一金马克值 160 纸马克", y, 7, r7, g7)
     said("8 月底，一金马克值 411 纸马克", 8, g8)
@@ -1312,7 +1351,7 @@ def deeper(F, Y, Q):
     said("Young（1925）与德国统计局 1925 年的《德国货币贬值数字》", 1925, 1925)
     assert "Young" in N["s_99"] and "Young" in N["s_personnel"]
     said("联邦档案馆把地租马克的发行记在 11 月 15 日", 11, F["arch_issue"][0])
-    said("萨金特表 G4 的注把停止贴现国库券的法令记在 15 日", 4, F["s_g4stop"][0])
+    said("Sargent 表 G4 的注把停止贴现国库券的法令记在 15 日", 4, F["s_g4stop"][0])
     assert J["s_g4stop"].startswith("p. 82, Table G4")
     said("Bresciani-Turroni 第 23 页也说 15 日停止贴现、通胀结束", int(J["bt_nov15end"].split()[-1]), 15)
     assert "November 15th, 1923" in N["bt_nov15end"]
@@ -1333,7 +1372,7 @@ def deeper(F, Y, Q):
     U = column("unit")
     assert "milliard = 10^9" in U["bt_nov1"] and "British billion = 10^12" in U["bt_memo"]
     assert "British trillion = 10^18" in U["bt_oldcirculation"]
-    said("萨金特表 G2 的注把一地租马克写成 1 billion 纸马克，同一章的正文与表 G4 的注却都写$10^{12}$", 2, 1, 4, 10, 12)
+    said("Sargent 表 G2 的注把一地租马克写成 1 billion 纸马克，同一章的正文与表 G4 的注却都写$10^{12}$", 2, 1, 4, 10, 12)
     assert "1 billion former paper marks" in Q["s_uniterror"] and "10^12" in N["s_g4unit"]
     said("11 月 16 日流通的旧钞是 93 个英制 trillion，即$9.3\\times10^{19}$纸马克，折合 9,300 万地租马克", 11, 16,
          F["bt_oldcirculation"][0], F["bt_oldcirculation"][0] * 10 ** 18 / 10 ** 19, 10, 19,
@@ -1341,16 +1380,36 @@ def deeper(F, Y, Q):
     assert "November 16th, 1923" in N["bt_oldcirculation"]
     said("表 G1 没有说指数取的是月中哪一天", 1)
     said("序列取到 1924 年 6 月，7 月起表中改用新单位", 1924, int(prices().index[-1][-2:]), 7)
-    said("表 G5 只是帝国普通账户（萨金特的表题称作联邦政府），其中的税收一栏与 Bresciani-Turroni 第 356 页的税收数字相同", 5,
+    said("表 G5 只是帝国普通账户（Sargent 的表题称作联邦政府），其中的税收一栏与 Bresciani-Turroni 第 356 页的税收数字相同", 5,
          int(J["bt_receipts2"].split()[-1]))
-    said("帝国马克的含金量据 Bresciani-Turroni 第 24、354 页、萨金特表 G4 的注与地租银行法令第 6 条的金马克定义，1924 年货币法",
+    said("帝国马克的含金量据 Bresciani-Turroni 第 24、354 页、Sargent 表 G4 的注与地租银行法令第 6 条的金马克定义，1924 年货币法",
          int(J["bt_reichsmark24"].split()[-1]), int(J["bt_finegold"].split()[-1]), 4, int(J["law_goldmark"][1]), 1924)
     said("11 月 2 日商店的一幕、印钞厂与 10 月 25 日的声明", 11, F["bt_nov2morning"][0], 10, F["bt_memo"][0])
+    dd, mm, y = F["bt_finegold"][0], 3, F["bt_finegold"][1]
+    assert "March 14th, 1875" in Q["bt_finegold"]
+    said("Bresciani-Turroni 第 354 页说这个含金量是 1875 年 3 月 14 日的银行法给旧马克定的",
+         int(J["bt_finegold"].split()[-1]), y, mm, dd)
+    say("正文只说与战前的旧马克相同")
+    a = F["s_ausaug"]
+    assert "2 October 1922" in Q["s_ausaug"]
+    said("奥地利三份议定书的签字日，Sargent 记作 1922 年 10 月 2 日", a[3], 10, a[2])
+    chk("    three protocols (三份)", a[1], zh("三"))
+    said("通常的记载是 10 月 4 日", 10, 4)
+    assert "4 October 1922" in column("note")["s_ausaug"]
+    say("正文只写 10 月初")
+    y, sep, _, _ = F["bt_borrow1560"]
+    said("1923 年 9 月靠贴现国库券借到的 15.6 亿金马克据同书第 356 页", y, 9, sep * M8,
+         int(J["bt_borrow1560"].split()[-1]))
+    aug, y, sep2, oct_ = F["bt_float1506"]
+    said("第 336 页说这个月流动债务增加了 15.06 亿", int(J["bt_float1506"].split()[-1]), sep2 * M8)
+    assert sorted(str(int(sep))) == sorted(str(int(sep2))) and sep != sep2     # 两位数字颠倒
+    say("也许是同一个数的两位数字颠倒了，正文用第 356 页的数")
 
 
 def models() -> None:
     """The key equations as the text writes them, and the identity of eq:weimar-budget checked with numbers."""
-    say("R^{*}=\\underbrace{P_X^{*}X-P_I^{*}Q}_{\\text{贸易顺差}}+K^{*}.\\label{eq:weimar-transfer}",
+    say("R^{f}=\\underbrace{P_X^{f}X-P_I^{f}Q}_{\\text{贸易顺差}}+K^{f}.\\label{eq:weimar-transfer}",
+        "上标$f$表示都用同一种外币计价，与\\chref{ch:external}相同",
         "$\\pi_t=P_t/P_{t-1}-1$为通胀率",
         "\\frac{\\Delta H_t}{P_t}=h_t-\\frac{h_{t-1}}{1+\\pi_t}\n"
         "=\\Delta h_t+\\frac{\\pi_t}{1+\\pi_t}h_{t-1}.\\label{eq:weimar-budget}",
@@ -1367,26 +1426,26 @@ def frames(F, Y):
     """The numbers outside the sentences of the story: the lines of evidence, the captions of the figures and tables,
     the headers of the boxes and the questions of the examples."""
     said("多出自 Bresciani-Turroni（1937）对这场通胀的研究", F["bt_edition"][0])
-    said("经 Young（1925）汇编，由萨金特（1982）转录", 1925, F["s_copyright"][0])
+    said("经 Young（1925）汇编，由 Sargent（1982）转录", 1925, F["s_copyright"][0])
     P = prices().wpi_1913_100
     said("(a) 1920—1922 年的月度批发物价，先有一段平台，再加速上升。(b) 1923 年的陡升与 1924 年的平台，虚线标出 1923 年 11 月",
          int(P.index[0][:4]), 1922, 1923, int(P.index[-1][:4]), 1923, 11)
-    said("纵轴为对数，单位始终是旧纸马克，指数以 1913 年$=100$。数据：萨金特（1982）表 G1，转录自 Young（1925）汇编的官方统计", 1913,
+    said("纵轴为对数，单位始终是旧纸马克，指数以 1913 年$=100$。数据：Sargent（1982）表 G1，转录自 Young（1925）汇编的官方统计", 1913,
          100, F["s_copyright"][0], 1, 1925)
     y0, y1, _, _ = F["s_ratio1"]
     said("(a) 以 1922 年 1 月$=1$，1923 年 7 月与 8 月的批发物价与帝国银行券的倍数", y0, 1, 1, y1, 7, 8)
     N = notes()
     chk("    (b) three month ends (三个月末)", len(N), zh("三"))
     said("旧纸马克除以$10^{12}$，与地租马克相加，单位为百万地租马克", 10, 12)
-    said("数据：萨金特（1982）第 82 页；Bresciani-Turroni（1937）第 337 页", 1982, int(column("juan")["s_ratio1"][3:5]),
+    said("数据：Sargent（1982）第 82 页；Bresciani-Turroni（1937）第 337 页", 1982, int(column("juan")["s_ratio1"][3:5]),
          1937, int(column("juan")["bt_oldcirculation"][3:]))
     (y0, m0), (y1, m1) = (map(int, d.split("-")) for d in budget().date.iloc[[0, -1]])
-    said("单位为百万金马克，1923 年 12 月至 1924 年 6 月。只含帝国普通账户；11 月的支出空缺，不画。数据：萨金特（1982）表 G5，转引 Young（1925）",
+    said("单位为百万金马克，1923 年 12 月至 1924 年 6 月。只含帝国普通账户；11 月的支出空缺，不画。数据：Sargent（1982）表 G5，转引 Young（1925）",
          y0, m0, y1, m1, 11, 1982, 5, 1925)
     said("物价翻一番的时间在 1923 年越来越短", 1923)
     said("\\caption{1923 年的月度批发物价与折合的翻番天数}", 1923)
     said("月份 & 批发物价指数（1913 年$=100$）", 1913, 100)
-    said("\\datasource{萨金特（1982）表 G1 的月度指数", 1982, 1)
+    said("\\datasource{Sargent（1982）表 G1 的月度指数", 1982, 1)
     said("翻番天数按一个月 30 天、月内匀速上涨换算，$d=30\\ln2/\\ln(\\text{倍数})$", MONTH, MONTH, 2)
     said("\\datasource{地租银行法令（1923）", 1923)
     said("把 1923 年以前就存在的难处讲清楚了", 1923)
