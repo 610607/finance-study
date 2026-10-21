@@ -501,7 +501,7 @@
 #### 第 26 章 `ch:weimar` 一战、赔款与魏玛恶性通胀 — `zh/ch26_weimar.tex`
 *War, reparations and the Weimar hyperinflation*
 
-- **核心问题**：一个国家为什么会印钞印到物价每天翻倍？恶性通胀又是怎样一夜止住的？
+- **核心问题**：纸币为什么会贬值得几天就失去一半购买力？1923 年的稳定又怎样从承诺变成现实？
 - **学完本章应能**：
   - 追踪一战的战争融资怎样留下巨额债务与货币存量
   - 概括凯恩斯（1919）对赔款的批评，以及凯恩斯—俄林关于转移问题的争论（1929）
@@ -511,6 +511,8 @@
 - **案例**：魏玛德国；国际联盟主持的奥地利与匈牙利稳定计划
 - **对照框候选**：高通胀 vs 恶性通胀；货币改革 vs 财政改革
 - **前置**：第 23 章（金本位、挤兑与最后贷款人），第 19 章（数量论、价格–铸币流动与金块论战）
+
+- **已写成并独立审阅（2026-10-20）**：以路德“从屋顶盖房子”的比喻与 1923 年 11 月新币发行开场。八节依次处理战争融资、财政筹措与转移问题、赤字和铸币税、货币需求与汇率反馈、月度数据检验、稳定步骤、分配代价、制度遗产。3 个关键公式（简化外币支付账、合并政府融资与铸币税分解、可变货币需求），4 个对照框、4 个例题、奥地利与匈牙利国联案例、1 个误区框、史料说明及 6 组自测答案。图 `weimar_prices`、`weimar_balances`、`weimar_budget` 均有中英文版；快照 `weimar_facts`、`weimar_prices_1920_1924`、`weimar_budget_1923_1924`、`weimar_notes_1923_1924`。史料核 Keynes（1919、1929）、Ohlin（1929）与 Keynes 同期答复的原刊，Bresciani-Turroni（1937）英译修订版、Sargent（1982）原章、地租银行法令（1923）和伦敦付款表（1921），另核档案与人物生卒年。物价与预算为 Sargent 转引 Young 的官方数，未直接取得 Young；路德与黑尔弗里希的声音经 Bresciani 转引。区别 11 月 15/16 日发行记载、20 日官价固定、12 月仍有普通赤字；区别法令 32 亿发行上限与两类共 24 亿贷款额度；以三十天匀速换算得 1923 年 9—10 月约 3.7 天翻倍，不把原导引“每天翻倍、一夜止住”当史实。结尾以恢复哪个黄金平价交第 27 章；Cagan 动态与 Sargent 四国总论留第 52 章。
 
 #### 第 27 章 `ch:interwar` 两次大战之间的金本位 — `zh/ch27_interwar.tex`
 *The interwar gold standard*
@@ -1378,6 +1380,10 @@ Figure labels are always `fig:<figure file name>`; any `fig:<name>` of an existi
 Add a label here when another chapter needs to refer to it.
 
 ```
+sec:weimar-world sec:weimar-transfer sec:weimar-fiscal sec:weimar-demand sec:weimar-test sec:weimar-stabilization sec:weimar-cost sec:weimar-legacy
+eq:weimar-transfer eq:weimar-budget eq:weimar-demand fig:weimar_prices fig:weimar_balances fig:weimar_budget tab:weimar-stages
+ex:weimar-transfer ex:weimar-seigniorage ex:weimar-taxlag ex:weimar-double
+
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous
 ch:labor ch:japanbubble ch:transition ch:euro ch:emcrises ch:moderation ch:minsky ch:gfc ch:frictions ch:zlb ch:abenomics ch:multipliers ch:eurocrisis ch:stagnation ch:heterogeneity ch:chinacredit ch:pandemic ch:inflation21 ch:fiscaldominance ch:hierarchy ch:digitalmoney ch:fragmentation ch:demography ch:evidence ch:datareliability ch:assetprices ch:longarcs ch:outlook

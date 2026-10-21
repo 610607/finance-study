@@ -1,0 +1,127 @@
+{
+  "title": "Evidence for Chapter 26: war finance, reparations, money demand and the 1923 stabilization",
+  "source": "Keynes (1919, 1929); Ohlin (1929) and Keynes reply; Bresciani-Turroni (1937); Sargent (1982); Reichsgesetzblatt (1923); institutional biographies and archives",
+  "url": "https://archive.org/download/in.ernet.dli.2015.173688/2015.173688.The-Economics-Of-Inflation-A-Study-Of-Currency-Depreciation-In-Post-war-Germanay_djvu.txt",
+  "series": "Evidence snippets: id, place, year, values (; separated), unit, bibliography key, print page/section, exact source text, note",
+  "retrieved": "2026-10-20",
+  "license": "Public-domain original documents (1919/1923/1929); short evidentiary extracts from Bresciani-Turroni (1937, ALL RIGHTS RESERVED) and Sargent (1982), for criticism, scholarship and teaching; no full original is redistributed. Data transcriptions are factual subsets. Wikisource transcription CC BY-SA; archival and museum statements are cited facts. Translations in the chapter are the authors’.",
+  "used_in": [
+    26
+  ],
+  "notes": "Primary articles are checked in original journal issues. Helfferich and Luther voices and Young data via Bresciani/Sargent are identified as indirect testimony. See source text for OCR errors; values are separately read and checked. No general-equilibrium or causal estimate is inferred from monetary ratios.",
+  "sources": {
+    "bresciani1937": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.173688/2015.173688.The-Economics-Of-Inflation-A-Study-Of-Currency-Depreciation-In-Post-war-Germanay_djvu.txt",
+      "format": "txt",
+      "sha256": "a98d51602da0dd085eb8665139a7ec3d89b1d835f2f8bb5495846f9cd9643e75",
+      "version": "The Economics of Inflation, translated by Millicent E. Sayers, London: George Allen & Unwin, 1937; revised English edition. OCR of scan, print pages as specified. British billion=10^12, trillion=10^18.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "keynes1919": {
+      "url": "https://www.gutenberg.org/cache/epub/15776/pg15776.txt",
+      "format": "txt",
+      "sha256": "47c9ba595e2ea6c1fe2ead0c34ad5c145cb73bc5d9521338a7af4a5e4aff2a81",
+      "version": "The Economic Consequences of the Peace, 1919, Project Gutenberg ebook 15776.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "keynes1929": {
+      "url": "https://archive.org/download/sim_economic-journal_1929-03_39_153/sim_economic-journal_1929-03_39_153_djvu.txt",
+      "format": "txt",
+      "sha256": "31dd0b35023642d73d7eb59f6c99e92b8fc9f0daf503dc0ef5045bf2493aaa60",
+      "version": "The Economic Journal 39(153), March 1929, Keynes pp. 1–7. Whole issue OCR.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "ohlin1929": {
+      "url": "https://archive.org/download/sim_economic-journal_1929-06_39_154/sim_economic-journal_1929-06_39_154_djvu.txt",
+      "format": "txt",
+      "sha256": "c34fbb29bb10a769503360347e30b03cd7800caea0acd7307475db50b7825ffc",
+      "version": "The Economic Journal 39(154), June 1929, Ohlin pp. 172–178 and Keynes reply pp. 179–182. Whole issue OCR.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "sargent1982": {
+      "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
+      "format": "pdf",
+      "sha256": "376b915ac5dd997c00faabf1f55fc882b3c93e24b1d7cc2b3360141dc2ed26a0",
+      "version": "The Ends of Four Big Inflations, in R. Hall (ed.), Inflation: Causes and Effects, Chicago UP/NBER, 1982, pp. 41–97 (PDF catalog says 41–98).",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "renten1923": {
+      "url": "https://de.wikisource.org/wiki/Verordnung_%C3%BCber_die_Errichtung_der_Deutschen_Rentenbank",
+      "format": "html",
+      "sha256": "d949f818d24bf0a8a441a83c5e54af747289b0c19f2a834840b22d79c2008cc4",
+      "version": "Verordnung über die Errichtung der Deutschen Rentenbank, 15 October 1923, RGBl. I pp. 963–966, transcribed on Wikisource, oldid=3802395.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "bundesarchiv1923": {
+      "url": "https://weimar.bundesarchiv.de/WEIMAR/DE/Content/Dokumente-zur-Zeitgeschichte/1923-11-15_waehrungsreform.html",
+      "format": "html",
+      "sha256": "6e2ab44773012420148adab2b306d60eb1a47b75341fe1b2919ff84da5b8f3f6",
+      "version": "Bundesarchiv, Einführung der Rentenmark, dated event 15 November 1923.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "london1921": {
+      "url": "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch34subch4",
+      "format": "html",
+      "sha256": "dd492e6e5898108c50823698cbf5d6204ff724cb68c982736ba9b7da53485614",
+      "version": "Schedule of Payments, 5 May 1921, reproduced in US FRUS Paris Peace Conference vol.XIII pp.862–866.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "nobelohlin": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1977/ohlin/facts/",
+      "format": "html",
+      "sha256": "e4ba2a6f90de0e5a9cc11a18b883acfe3d109460ab375fe3a5a3ff9a1b7372bb",
+      "version": "Bertil Ohlin, Facts, Nobel Prize official website.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "lutherlife": {
+      "url": "https://www.deutsche-biographie.de/sfz55235.html",
+      "format": "html",
+      "sha256": "900b6589fcf2ea596b774f7911647766663a6af34fffe7e1d7dd7c5488f26210",
+      "version": "Hans Luther, Neue Deutsche Biographie 15 (1987), pp. 533–535; life dates on Deutsche Biographie.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "stresemannlife": {
+      "url": "https://www.nobelprize.org/prizes/peace/1926/stresemann/facts/",
+      "format": "html",
+      "sha256": "35ee057b5fba245ed954c6bf6bb769f0fadb3bc9c75ed116c8d35ae4e9536cc7",
+      "version": "Gustav Stresemann, Facts, Nobel Prize official website.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "chronarchive": {
+      "url": "https://weimar.bundesarchiv.de/WEIMAR/DE/Content/Dokumente-zur-Zeitgeschichte/1923-01-11_ruhrbesetzung.html",
+      "format": "html",
+      "sha256": "178ec6cec22d293189068f830cb1fb5354287d35dbce03fc30a92d04befe5e15",
+      "version": "Bundesarchiv, Beginn der Besetzung des Ruhrgebietes, event page.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "helfferichlife": {
+      "url": "https://www.deutsche-biographie.de/sfz29487.html",
+      "format": "html",
+      "sha256": "8fe752f205ea832900628094e28b49fb5945e99e8acc95c620c6dd67ad81c6c7",
+      "version": "K. E. Born, Helfferich, Karl Theodor, Neue Deutsche Biographie 8 (1969), pp.470–472.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    },
+    "keyneslife": {
+      "url": "https://en.wikisource.org/wiki/Author:John_Maynard_Keynes",
+      "format": "html",
+      "sha256": "bf75b2ff6594ee68f7cd29117a81865b3ef581b6897d3bbd93a24a7922d3b097",
+      "version": "Wikisource Author:John Maynard Keynes, life dates; CC BY-SA.",
+      "retrieved": "2026-10-20",
+      "user_agent": "Mozilla/5.0"
+    }
+  },
+  "fetch": "data/fetch/verify_web_quotes.py data/snapshots/weimar_facts.csv"
+}

@@ -907,7 +907,11 @@ def witnesses(F, Q):
     chk("Barsky and Summers: NBER WP 1680, August 1985", F["bs_wp"] + F["bs_date"], [1680, 1985])
     chk("Edvinsson and Soederberg: 1290-2008", F["es_title"], [1290, 2008])
     bib = (ROOT / "references_zh.tex").read_text(encoding="utf-8")
-    block = bib[bib.index("% ---- 第 25 章"):bib.index("\\end{thebibliography}")]
+    start = bib.index("% ---- 第 25 章")
+    # Later chapters append their own blocks before the bibliography ends.
+    following = re.search(r"^% ---- 第 \d+ 章", bib[start + 1:], re.M)
+    end = start + 1 + following.start() if following else bib.index("\\end{thebibliography}")
+    block = bib[start:end]
     items = {m.group(1): m.group(2) for m in re.finditer(r"\\bibitem\{([^}]+)\}(.*)", block)}
     assert "版权" in items["wicksell1936"] and "只引短语" in items["wicksell1936"]
     assert "没有版权声明" in items["barsky1985"]
