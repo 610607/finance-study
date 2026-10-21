@@ -2,14 +2,14 @@
   "title": "German federal ordinary budget, December 1923–June 1924",
   "source": "Statistisches Reichsamt, reproduced by Young (1925) and Sargent (1982)",
   "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
-  "series": "ordinary revenue/expenditure, million gold marks",
+  "series": "ordinary revenue, of which taxes, and ordinary expenditure, million gold marks",
   "retrieved": "2026-10-20",
-  "license": "Public-domain original documents (1919/1923/1929); short evidentiary extracts from Bresciani-Turroni (1937, ALL RIGHTS RESERVED) and Sargent (1982), for criticism, scholarship and teaching; no full original is redistributed. Data transcriptions are factual subsets. Wikisource transcription CC BY-SA; archival and museum statements are cited facts. Translations in the chapter are the authors’.",
+  "license": "Sargent (1982), in R. E. Hall (ed.), Inflation: Causes and Effects (NBER, 1982): '© 1982 by The National Bureau of Economic Research. All rights reserved.' The series is a factual transcription of official German statistics (Statistisches Reichsamt, through Young 1925), with full credit to Sargent, the volume and the NBER.",
   "used_in": [
     26
   ],
-  "notes": "Sargent Table G5, p.83, citing Young vol.1 p.422 and Wirtschaft und Statistik. Ordinary federal accounts only; excludes an inference about the complete consolidated public-sector balance. November expenditure cell is blank and omitted. December deficit and February deficit are preserved, against an over-literal reading of the surrounding narrative.",
-  "sources": {
+  "notes": "Sargent Table G5, p.83, citing Young vol.1 p.422 and Wirtschaft und Statistik. Ordinary federal accounts only; excludes an inference about the complete consolidated public-sector balance. November expenditure cell is blank and omitted. December deficit and February deficit are preserved, against an over-literal reading of the surrounding narrative. The column taxes_million_goldmark (added 2026-10-21) is G5's 'Of Which Taxes Yielded'; its December and January values equal Bresciani-Turroni's (p. 356, row bt_receipts2 of weimar_facts). The copy read is listed under documents (with its SHA-256); the rows hold no quotations, so data/fetch/verify_web_quotes.py does not read this snapshot.",
+  "documents": {
     "sargent1982": {
       "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
       "format": "pdf",

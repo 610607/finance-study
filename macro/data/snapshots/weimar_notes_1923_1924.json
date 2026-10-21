@@ -4,12 +4,12 @@
   "url": "https://archive.org/download/in.ernet.dli.2015.173688/2015.173688.The-Economics-Of-Inflation-A-Study-Of-Currency-Depreciation-In-Post-war-Germanay_djvu.txt",
   "series": "million rentenmark-equivalent, old paper marks divided by 10^12; end-month stocks",
   "retrieved": "2026-10-20",
-  "license": "Public-domain original documents (1919/1923/1929); short evidentiary extracts from Bresciani-Turroni (1937, ALL RIGHTS RESERVED) and Sargent (1982), for criticism, scholarship and teaching; no full original is redistributed. Data transcriptions are factual subsets. Wikisource transcription CC BY-SA; archival and museum statements are cited facts. Translations in the chapter are the authors’.",
+  "license": "Bresciani-Turroni (1937, 'ALL RIGHTS RESERVED'): a factual transcription of three month-end stocks, with credit to the author; no text is reproduced.",
   "used_in": [
     26
   ],
-  "notes": "The original English edition uses British trillion=10^18, not modern American trillion=10^12. 496 British trillion paper marks /10^12 =496 million rentenmark-equivalent. Notes only, excludes deposits, private emergency currency and foreign money. Two issuing banks must be added; no reading of this as the whole money stock.",
-  "sources": {
+  "notes": "The original English edition uses British trillion=10^18, not modern American trillion=10^12. 496 British trillion paper marks /10^12 =496 million rentenmark-equivalent. Notes only, excludes deposits, private emergency currency and foreign money. Two issuing banks must be added; no reading of this as the whole money stock. The copy read is listed under documents (with its SHA-256); the rows hold no quotations, so data/fetch/verify_web_quotes.py does not read this snapshot.",
+  "documents": {
     "bresciani1937": {
       "url": "https://archive.org/download/in.ernet.dli.2015.173688/2015.173688.The-Economics-Of-Inflation-A-Study-Of-Currency-Depreciation-In-Post-war-Germanay_djvu.txt",
       "format": "txt",

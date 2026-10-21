@@ -4,12 +4,12 @@
   "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
   "series": "wpi_1913_100; 1913=100; paper-mark unit throughout",
   "retrieved": "2026-10-20",
-  "license": "Public-domain original documents (1919/1923/1929); short evidentiary extracts from Bresciani-Turroni (1937, ALL RIGHTS RESERVED) and Sargent (1982), for criticism, scholarship and teaching; no full original is redistributed. Data transcriptions are factual subsets. Wikisource transcription CC BY-SA; archival and museum statements are cited facts. Translations in the chapter are the authors’.",
+  "license": "Sargent (1982), in R. E. Hall (ed.), Inflation: Causes and Effects (NBER, 1982): '© 1982 by The National Bureau of Economic Research. All rights reserved.' The series is a factual transcription of official German statistics (Statistisches Reichsamt, through Young 1925), with full credit to Sargent, the volume and the NBER.",
   "used_in": [
     26
   ],
-  "notes": "Sargent Table G1 pp.74–75. Stop at June 1924 to avoid the unadjusted unit break in July. Original official statistical series, obtained here through Sargent/Young, not an independent second series. The table does not specify observation day; no daily peak inflation inferred. Adjacent monthly-index ratios and uniform 30-day equivalent doubling times are calculations, not day-level observations.",
-  "sources": {
+  "notes": "Sargent Table G1 pp.74–75. Stop at June 1924 to avoid the unadjusted unit break in July. Original official statistical series, obtained here through Sargent/Young, not an independent second series. The table does not specify observation day; no daily peak inflation inferred. Adjacent monthly-index ratios and uniform 30-day equivalent doubling times are calculations, not day-level observations. The copy read is listed under documents (with its SHA-256); the rows hold no quotations, so data/fetch/verify_web_quotes.py does not read this snapshot.",
+  "documents": {
     "sargent1982": {
       "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
       "format": "pdf",

@@ -1,0 +1,23 @@
+{
+  "title": "German wholesale price index, monthly observations 1914–1919",
+  "source": "Statistisches Reichsamt, reproduced by Young (1925) and Sargent (1982)",
+  "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
+  "series": "wpi_1913_100; 1913=100; marks",
+  "retrieved": "2026-10-21",
+  "license": "Sargent (1982), in R. E. Hall (ed.), Inflation: Causes and Effects (NBER, 1982): '© 1982 by The National Bureau of Economic Research. All rights reserved.' The series is a factual transcription of official German statistics (Statistisches Reichsamt, through Young 1925), with full credit to Sargent, the volume and the NBER.",
+  "used_in": [
+    26
+  ],
+  "notes": "Sargent Table G1, pp. 74–75 (from Young 1925, vol. 1, p. 530), January 1914 to December 1919; the same table as weimar_prices_1920_1924, parsed from the NBER PDF and checked month by month by checks/check_ch26.py. The table does not state the day of the month. The copy read is listed under documents (with its SHA-256); the rows hold no quotations, so data/fetch/verify_web_quotes.py does not read this snapshot.",
+  "documents": {
+    "sargent1982": {
+      "url": "https://www.nber.org/system/files/chapters/c11452/c11452.pdf",
+      "format": "pdf",
+      "sha256": "376b915ac5dd997c00faabf1f55fc882b3c93e24b1d7cc2b3360141dc2ed26a0",
+      "version": "The Ends of Four Big Inflations, in R. Hall (ed.), Inflation: Causes and Effects, Chicago UP/NBER, 1982, pp. 41–97 (PDF catalog says 41–98).",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    }
+  },
+  "fetch": "data/fetch/weimar26.py"
+}

@@ -1,14 +1,14 @@
 {
-  "title": "Evidence for Chapter 26: war finance, reparations, money demand and the 1923 stabilization",
-  "source": "Keynes (1919, 1929); Ohlin (1929) and Keynes reply; Bresciani-Turroni (1937); Sargent (1982); Reichsgesetzblatt (1923); institutional biographies and archives",
+  "title": "Evidence for Chapter 26: war finance, reparations, the hyperinflation and the stabilization of 1923-1924",
+  "source": "Keynes (1919, 1923, 1925, 1929) and the rejoinder; Ohlin (1929); Bresciani-Turroni (1937); Sargent (1982); Fischer, Sahay and Végh (2002); Koech (2011); Fisher (1930); the Rentenbank decree (1923); the London Schedule (1921); the Bundesarchiv; the Neue Deutsche Biographie; NobelPrize.org; Wikisource",
   "url": "https://archive.org/download/in.ernet.dli.2015.173688/2015.173688.The-Economics-Of-Inflation-A-Study-Of-Currency-Depreciation-In-Post-war-Germanay_djvu.txt",
-  "series": "Evidence snippets: id, place, year, values (; separated), unit, bibliography key, print page/section, exact source text, note",
-  "retrieved": "2026-10-20",
-  "license": "Public-domain original documents (1919/1923/1929); short evidentiary extracts from Bresciani-Turroni (1937, ALL RIGHTS RESERVED) and Sargent (1982), for criticism, scholarship and teaching; no full original is redistributed. Data transcriptions are factual subsets. Wikisource transcription CC BY-SA; archival and museum statements are cited facts. Translations in the chapter are the authors’.",
+  "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or section, the source text verbatim, note",
+  "retrieved": "2026-10-21",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Keynes (1883-1946): the works of 1919, 1923, 1925 and 1929 are in the public domain in the United Kingdom (life plus 70 years); the Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here). Bresciani-Turroni (1937, 'ALL RIGHTS RESERVED'), Ohlin (1929; Ohlin died in 1979) and the Neue Deutsche Biographie (1969-2005) are in copyright: short phrases only, the rest paraphrased. Sargent (1982), in the NBER volume: '© 1982 by The National Bureau of Economic Research. All rights reserved.' (row s_copyright); short passages only, with full credit to the author, the volume and the NBER. Fischer, Sahay and Végh (2002): '© 2002 by Stanley Fischer, Ratna Sahay and Carlos A. Végh. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row fsv_notice). Koech (2011), Federal Reserve Bank of Dallas: 'Articles may be reprinted on the condition that the source is credited and a copy is provided to the Globalization and Monetary Policy Institute' (row ko_terms). Fisher (1930), Econlib edition: 'The text of this edition is in the public domain'. The Rentenbank decree and the London Schedule are official documents in the public domain; the Wikisource transcription is CC BY-SA. The Bundesarchiv pages and NobelPrize.org are cited for facts. Data transcriptions are factual subsets. The chapter's Chinese renders the quotations; the translations are the book's.",
   "used_in": [
     26
   ],
-  "notes": "Primary articles are checked in original journal issues. Helfferich and Luther voices and Young data via Bresciani/Sargent are identified as indirect testimony. See source text for OCR errors; values are separately read and checked. No general-equilibrium or causal estimate is inferred from monetary ratios.",
+  "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch26.py. The words of Helfferich, Havenstein and Luther are indirect testimony (through Bresciani-Turroni's English edition); the Cologne rates come from Schacht (1926) through Bresciani-Turroni; Cagan's definition and dates come through Fischer, Sahay and Végh; the price, budget and dismissal figures come through Sargent from Young (1925), which was not obtained, nor was the Statistisches Reichsamt's Zahlen zur Geldentwertung (1925). British number words in Bresciani-Turroni: milliard = 10^9, billion = 10^12, trillion = 10^18. OCR errors are kept in the quotations and read in the notes.",
   "sources": {
     "bresciani1937": {
       "url": "https://archive.org/download/in.ernet.dli.2015.173688/2015.173688.The-Economics-Of-Inflation-A-Study-Of-Currency-Depreciation-In-Post-war-Germanay_djvu.txt",
@@ -53,9 +53,9 @@
     "renten1923": {
       "url": "https://de.wikisource.org/wiki/Verordnung_%C3%BCber_die_Errichtung_der_Deutschen_Rentenbank",
       "format": "html",
-      "sha256": "d949f818d24bf0a8a441a83c5e54af747289b0c19f2a834840b22d79c2008cc4",
-      "version": "Verordnung über die Errichtung der Deutschen Rentenbank, 15 October 1923, RGBl. I pp. 963–966, transcribed on Wikisource, oldid=3802395.",
-      "retrieved": "2026-10-20",
+      "sha256": "4e8b65f9a1bd4304839f943a1fef362dc71e9c2653a42a34bbd3248a8d3ff0ed",
+      "version": "Verordnung über die Errichtung der Deutschen Rentenbank, 15 October 1923, RGBl. I Nr. 100, pp. 963-966; Wikisource transcription (oldid 3802395), §§2, 6, 12, 14-17, 19",
+      "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
     },
     "bundesarchiv1923": {
@@ -77,25 +77,25 @@
     "nobelohlin": {
       "url": "https://www.nobelprize.org/prizes/economic-sciences/1977/ohlin/facts/",
       "format": "html",
-      "sha256": "e4ba2a6f90de0e5a9cc11a18b883acfe3d109460ab375fe3a5a3ff9a1b7372bb",
+      "sha256": "edd53c27075b49917b500f3c6c06c94a04f18a1eb6b7a631e045f371175d805c",
       "version": "Bertil Ohlin, Facts, Nobel Prize official website.",
-      "retrieved": "2026-10-20",
+      "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
     },
     "lutherlife": {
       "url": "https://www.deutsche-biographie.de/sfz55235.html",
       "format": "html",
-      "sha256": "900b6589fcf2ea596b774f7911647766663a6af34fffe7e1d7dd7c5488f26210",
-      "version": "Hans Luther, Neue Deutsche Biographie 15 (1987), pp. 533–535; life dates on Deutsche Biographie.",
-      "retrieved": "2026-10-20",
+      "sha256": "fd3ac7707f0bd39b2698a7c2771914741cf12bab3dfff263ed1216e8e7303619",
+      "version": "K. E. Born, 'Luther, Hans', Neue Deutsche Biographie 15 (1987), pp. 544-547, online edition of the Deutsche Biographie (life dates and article)",
+      "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
     },
     "stresemannlife": {
       "url": "https://www.nobelprize.org/prizes/peace/1926/stresemann/facts/",
       "format": "html",
-      "sha256": "35ee057b5fba245ed954c6bf6bb769f0fadb3bc9c75ed116c8d35ae4e9536cc7",
+      "sha256": "0e74fdeabd58da3cee4ddd0b9079466b688d6f44bdaa5948d5bb84fb4e497691",
       "version": "Gustav Stresemann, Facts, Nobel Prize official website.",
-      "retrieved": "2026-10-20",
+      "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
     },
     "chronarchive": {
@@ -109,19 +109,87 @@
     "helfferichlife": {
       "url": "https://www.deutsche-biographie.de/sfz29487.html",
       "format": "html",
-      "sha256": "8fe752f205ea832900628094e28b49fb5945e99e8acc95c620c6dd67ad81c6c7",
-      "version": "K. E. Born, Helfferich, Karl Theodor, Neue Deutsche Biographie 8 (1969), pp.470–472.",
-      "retrieved": "2026-10-20",
+      "sha256": "577ea04af20544efe5a23da15a4160cbcba92cf36c60c5f9be1ee171c770d1fd",
+      "version": "K. E. Born, 'Helfferich, Karl Theodor', Neue Deutsche Biographie 8 (1969), pp. 470-472, online edition of the Deutsche Biographie (life dates and article)",
+      "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
     },
     "keyneslife": {
       "url": "https://en.wikisource.org/wiki/Author:John_Maynard_Keynes",
       "format": "html",
-      "sha256": "bf75b2ff6594ee68f7cd29117a81865b3ef581b6897d3bbd93a24a7922d3b097",
+      "sha256": "ca609ef37b7d414d6a5ca4e7026f7d130baf446723a86dac9c570c276df1bf1e",
       "version": "Wikisource Author:John Maynard Keynes, life dates; CC BY-SA.",
-      "retrieved": "2026-10-20",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    },
+    "keynes1923": {
+      "url": "https://archive.org/download/tractonmonetaryr0000keyn/tractonmonetaryr0000keyn_djvu.txt",
+      "format": "txt",
+      "sha256": "3fa3ef83ff57093a962ed39571b9875e041e0f873807f5d7a9ae880954fbcdbe",
+      "version": "J. M. Keynes, A Tract on Monetary Reform (London: Macmillan, 1923; reprinted 1924, 1929), OCR text of the reprint of 1929 on archive.org (item tractonmonetaryr0000keyn); ch. 2, pp. 41-47, 53; pages from the running heads",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    },
+    "hall1982": {
+      "url": "https://www.nber.org/system/files/chapters/c11449/c11449.pdf",
+      "format": "pdf",
+      "sha256": "6c130698cd82ddc7e6579bccc8eec462e8cd6d4f3429c6e2e1341e0eee3bae0a",
+      "version": "R. E. Hall (ed.), Inflation: Causes and Effects (University of Chicago Press, for the NBER, 1982), front matter (NBER chapter PDF c11449): the copyright page of the volume that contains Sargent's chapter",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    },
+    "fsv2002": {
+      "url": "https://www.nber.org/system/files/working_papers/w8930/w8930.pdf",
+      "format": "pdf",
+      "sha256": "2bfa5049f7ddda4e2d48b7f3e4dba5323ab3ac34337736602c5b525b63c0d011",
+      "version": "S. Fischer, R. Sahay and C. A. Végh, 'Modern Hyper- and High Inflations', NBER Working Paper 8930 (May 2002); cover page and pp. 1-6",
+      "retrieved": "2026-10-14"
+    },
+    "koech2011": {
+      "url": "https://fraser.stlouisfed.org/files/docs/publications/frbdal_gmpi/frbdal_gmpiAR11.pdf",
+      "format": "pdf",
+      "sha256": "42d9741b8630ed0bc57724eaa72db09f4a4625a90fa1a70e14c094775a14b7c9",
+      "version": "J. Koech, 'Hyperinflation in Zimbabwe', Federal Reserve Bank of Dallas, Globalization and Monetary Policy Institute 2011 Annual Report (published February 2012), pp. 2-12; PDF of the whole report on FRASER (Chapter 1 cites the same rows)",
+      "retrieved": "2026-10-14"
+    },
+    "fisher1930": {
+      "url": "https://www.econlib.org/library/YPDBooks/Fisher/fshToI.html?chapter_num=23",
+      "format": "html",
+      "sha256": "66188e5949e0dcf9ec516f432f7891971d5355f3dd1b1c722e7b2d14840e0781",
+      "version": "I. Fisher, The Theory of Interest (New York: Macmillan, 1930), Part IV, ch. XIX 'The Relation of Interest to Money and Prices', Library of Economics and Liberty (Econlib) edition (Chapter 25 quotes the same sentence)",
+      "retrieved": "2026-10-16"
+    },
+    "keynes1931": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.89977/2015.89977.Essays-In-Persuasion_djvu.txt",
+      "format": "txt",
+      "sha256": "b9009e0c62d60ba431aee7acb472682651e29326834f4c7171a35f0830864f6a",
+      "version": "J. M. Keynes, Essays in Persuasion (London: Macmillan, first edition 1931; popular edition 1933), the copy of the Digital Library of India on archive.org (item in.ernet.dli.2015.89977), OCR text of the popular edition of 1933; 'The Economic Consequences of Mr. Churchill (1925)', p. 244 (Chapter 23 quotes the same line)",
+      "retrieved": "2026-10-16"
+    },
+    "havensteinlife": {
+      "url": "https://www.deutsche-biographie.de/sfz28402.html",
+      "format": "html",
+      "sha256": "cfc2b1225db33ec5074b9829a3371b5db6b5ef80dee88965786830cd9d6896d6",
+      "version": "E. Achterberg, 'Havenstein, Rudolf Emil Albert', Neue Deutsche Biographie 8 (1969), p. 137, online edition of the Deutsche Biographie",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    },
+    "schachtlife": {
+      "url": "https://www.deutsche-biographie.de/sfz110486.html",
+      "format": "html",
+      "sha256": "d8c45e7559877179add7c7c42664fa6357e21eb0098efaa8b157b52ea0e3710b",
+      "version": "A. Fischer, 'Schacht, Horace Greeley Hjalmar', Neue Deutsche Biographie 22 (2005), pp. 489-491, online edition of the Deutsche Biographie",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    },
+    "rathenaulife": {
+      "url": "https://www.deutsche-biographie.de/sfz52310.html",
+      "format": "html",
+      "sha256": "1fb0a34254c8231de4c36415948b71515e0a9e5047e8683ce1b52889b90f7435",
+      "version": "M. Sabrow, 'Rathenau, Walther', Neue Deutsche Biographie 21 (2003), pp. 174-176, online edition of the Deutsche Biographie",
+      "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
     }
   },
-  "fetch": "data/fetch/verify_web_quotes.py data/snapshots/weimar_facts.csv"
+  "fetch": "data/fetch/weimar26.py"
 }

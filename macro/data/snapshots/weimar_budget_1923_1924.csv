@@ -1,8 +1,8 @@
-date,revenue_million_goldmark,expenditure_million_goldmark,source,location
-1923-12,333.9,668.7,sargent1982,Table G5 p.83
-1924-01,520.6,396.5,sargent1982,Table G5 p.83
-1924-02,445,462.8,sargent1982,Table G5 p.83
-1924-03,632.4,498.6,sargent1982,Table G5 p.83
-1924-04,579.5,523.5,sargent1982,Table G5 p.83
-1924-05,566.7,459.1,sargent1982,Table G5 p.83
-1924-06,529.7,504.5,sargent1982,Table G5 p.83
+date,revenue_million_goldmark,taxes_million_goldmark,expenditure_million_goldmark,source,location
+1923-12,333.9,312.3,668.7,sargent1982,Table G5 p.83
+1924-01,520.6,503.5,396.5,sargent1982,Table G5 p.83
+1924-02,445,418.0,462.8,sargent1982,Table G5 p.83
+1924-03,632.4,595.3,498.6,sargent1982,Table G5 p.83
+1924-04,579.5,523.8,523.5,sargent1982,Table G5 p.83
+1924-05,566.7,518.7,459.1,sargent1982,Table G5 p.83
+1924-06,529.7,472.3,504.5,sargent1982,Table G5 p.83
