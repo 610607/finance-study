@@ -443,3 +443,110 @@ back to the old parity without striking off any zeros.
   "金本位怎样把萧条传到全世界？" (its guide box asks it with China; hand over the first half).
 - Labels: sections `sec:depressionus-…` (report them); `eq:depressionus-…`, `fig:depressionus_…`,
   `tab:depressionus-…`, `ex:depressionus-…`. Ch 29, 30 and 32 cite `\nameref{ch:depressionus}` only.
+
+## 第 29 章 `ch:depressionworld` 大萧条：世界与“金色枷锁” (`zh/ch29_depressionworld.tex`)
+
+- Neighbours:
+  - Ch 27 owns the gold-exchange standard (`eq:interwar-pyramid`), the rules of the game, Nurkse's
+    counts, France's undervalued franc and the maldistribution of gold to 1929. Refer back; the
+    asymmetry is the starting point here (FORWARD_REFS row from Ch 27: keep it).
+  - Ch 28 owns the American Depression: output, prices, bank failures, Fisher, Friedman–Schwartz,
+    Bernanke, the Fed's rise of October 1931, the bank holiday, the dollar's devaluation of 1933–34
+    (\$20.67 to \$35) and the American recovery, and its case box on Canada (no bank failures, a
+    depression as deep; Friedman–Schwartz's reading and Bernanke's reply with his 26-country sample, both
+    through Bernanke 2002). Use them with `\chref{ch:depressionus}`; America here only as the country
+    whose deflation and gold policy the others faced; do not retell Canada, use Bernanke–James's own
+    tables for the cross-country evidence.
+  - Ch 30 owns Germany from 1933 (MEFO bills, exchange control as Schacht's system), Japan's exit in
+    December 1931 and Takahashi, and Sweden's price-level programme of 1931–37 (the FORWARD_REFS row
+    from Ch 25 now points there). Here Sweden and Japan appear only as dates in the table of exits and
+    points in the figure.
+  - Ch 24 owns the periphery before 1914 (the silver standard in China and India, the fall of silver
+    after 1873); Ch 13 and Ch 17 the silver of earlier centuries; Ch 34 owns Bretton Woods (one clause
+    in the legacy section). Ch 5 owns PPP and the real exchange rate (`eq:external-ppp`,
+    `eq:external-real`).
+- Owns:
+  - the transmission under fixed parities: a deflating centre, fixed $e$, prices of traded goods tied
+    by `eq:external-ppp`, gold and exchange reserves draining, central banks raising rates to defend
+    the parity in a slump; the run from exchange reserves into gold (`eq:interwar-pyramid`);
+  - 1931: the Creditanstalt (May 1931), the Hoover moratorium (20 June 1931), the German banking crisis
+    and exchange control (July 1931), Britain's suspension of gold payments on 21 September 1931 (the
+    Gold Standard (Amendment) Act 1931, Hansard of that day; the Macmillan Report of July 1931 and the
+    May Report only through what can be read);
+  - the exits and their timing: the sterling area, the countries that followed Britain, the gold bloc
+    (France, Belgium, the Netherlands, Switzerland, Italy, Poland) to 1935–36, the Tripartite Agreement
+    of 1936; Eichengreen and Sachs (1985): the earlier a country left gold, the sooner it recovered;
+  - golden fetters as a theory of the Depression (Eichengreen 1992 in short phrases or through verified
+    reviews; Bernanke and James 1991; Bernanke 1995), and the case against it or for its limits;
+  - China and silver (the case box): a silver-standard country in a gold world; the fall of silver
+    1929–31 that cushioned China, the rise after Britain and Japan left gold and after the US Silver
+    Purchase Act (19 June 1934), the outflow of silver, deflation and the banking trouble of 1934–35,
+    the 法币 reform of 3–4 November 1935 (the decree's text from a reachable copy; it is a Chinese
+    government document of 1935); Friedman (1992) against Brandt and Sargent (1989) as the contested
+    question (did American silver policy cause China's depression?), each through what can be read;
+  - Latin America and the primary-product exporters: the fall of export prices and the terms of trade,
+    default, exchange control and early exits (Argentina from December 1929 and its central bank of
+    1935; Brazil's coffee purchases), with Maddison's output data; only what is verified.
+- Promises (FORWARD_REFS rows pointing to 29; read them in full and mark them done): Ch 27's asymmetry
+  of 1931 and the run from exchange into gold. Ch 28's rows to 29 (added by its writer).
+- When it begins: Chapter 28 ends by handing over "金本位怎样把萧条传到全世界？"; keep it and take up the
+  second half of the guide question (China) in the case box.
+- Opening (suggested, verify every detail): Monday 21 September 1931, the House of Commons passes the
+  Gold Standard (Amendment) Bill in one day (Hansard, reachable; the Act on legislation.gov.uk,
+  `ukpga/Geo5/21-22/46`); or Keynes's "The End of the Gold Standard" (*Sunday Express*, 27 September
+  1931, reprinted in *Essays in Persuasion*: archive.org `in.ernet.dli.2015.89977`, the 1933 printing),
+  the source of the phrase "gold fetters" (quote it exactly, if the text has it). Six years after
+  Chapter 27's opening, the same Commons.
+- People (only where sourced): Philip Snowden (Chancellor, 1931); Ramsay MacDonald; Montagu Norman
+  (ill and at sea in September 1931, if sourced); Keynes; Heinrich Brüning and Hans Luther (Germany,
+  1931); Herbert Hoover (the moratorium); in China 孔祥熙 (H. H. Kung) and 宋子文 (T. V. Soong), Frederick
+  Leith-Ross; Henry Morgenthau and Key Pittman (the silver policy); Raúl Prebisch (Argentina).
+- Data and sources (probe first; on 2026-10-22 the shell reached Hansard, legislation.gov.uk, NBER,
+  FRASER `/files/`, archive.org, the Bank of England, the GGDC, the Riksbank, the Bank of Japan,
+  BCRA; Northwestern's League of Nations collection redirects to dc.library.northwestern.edu, check
+  its terms; zh.wikisource answered 429; FRED is not to be used):
+  - Eichengreen and Sachs, NBER WP 1498 (1984; published *JEH* 45(4), 1985; say which version);
+    Bernanke and James, NBER chapter c11482 (1991; WP 3488's text layer is unreadable OCR, use the
+    chapter); Bernanke, NBER WP 4814 (1994; *JMCB* 1995); © notices as printed;
+  - Hansard 21 September 1931; the Gold Standard (Amendment) Act 1931 (OGL notice);
+  - *Banking and Monetary Statistics 1914–1941* (FRASER, public domain): foreign exchange rates,
+    central banks' gold reserves by country, the price of silver in New York; the *Federal Reserve
+    Bulletin* (FRASER): the chronology of 1931, China's monetary reform of 1935 if the Bulletin
+    reported it;
+  - the Bank of England's millennium workbook (`boe2017`; `~/.cache/finance-study/boe/`): Bank Rate and
+    \$–£ in 1931;
+  - Maddison 2023 (`data/fetch/maddison2023.py`; CC BY 4.0 with its citation policy): GDP per head
+    1925–1938 for the countries of the table of exits;
+  - the Silver Purchase Act of 1934 (48 Stat. 1178) from the Statutes at Large; the 法币 decree of
+    1935 from a reachable copy (Chinese government documents of 1935); Friedman (1992, *JPE*) and
+    Brandt and Sargent (1989, *JME*) only through what can be read (working-paper versions, verified
+    summaries); state indirect testimony once.
+- Teaching:
+  - the fetters in one equation: with $e$ fixed, $P\approx eP^{f}$ for traded goods (`eq:external-ppp`)
+    and the money stock bounded by reserves and the cover ratio; deflation abroad pulls $P$ down
+    unless $e$ moves; leaving gold lets $e$ rise and $P$ stop falling; a worked example with teaching
+    inputs, then the British numbers of 1931–32;
+  - Eichengreen and Sachs's cross-section: changes in the exchange rate against changes in industrial
+    production 1929–1935 for their countries, from their table; a least-squares line with
+    statsmodels or numpy, its slope read for the reader, and what a cross-section cannot show;
+  - silver in China: the yuan's gold value moves with the price of silver; a fall of silver
+    depreciates the currency and cushions deflation, a rise appreciates it and drains silver; the
+    numbers of 1929–1935 from the Bulletin or BMS.
+- Compare boxes (2–4): 早脱离 vs 留在金本位 (Britain 1931 vs France and the gold bloc to 1936); 银本位的中国
+  vs 金本位国家; optionally 1925 年回到黄金 vs 1931 年离开黄金 (the same Commons, Ch 27's opening), or
+  货币贬值 vs 外汇管制 (Britain vs Germany in 1931).
+- Contested questions (§8): did the gold standard cause or only transmit the Depression (Eichengreen,
+  Bernanke–James, Bernanke 1995 against the reverse-causation and policy-choice readings: countries
+  that suffered less could afford to stay, or stayed for reasons of their own; Wolf 2008 if a copy can
+  be read); did American silver policy cause China's depression (Friedman 1992 vs Brandt and Sargent
+  1989). Do not decide for the reader.
+- Figures (2–4, at least two from snapshot data): the year each country left gold against its output
+  recovery (Maddison, 1929 = 100); the exchange-rate change against the industrial-production change
+  (Eichengreen–Sachs's table); the price of silver and China's exchange rate 1929–1936; \$–£ and Bank
+  Rate in 1931.
+- Legacy: the trilemma (`ch:external`, `\chref{ch:mundell}` for the theory), Bretton Woods's
+  adjustable peg (`\chref{ch:brettonwoods}`), the euro's fixed parities (`\chref{ch:euro}`).
+- Ending: after `\end{answers}`, return to the opening and hand over Ch 30's question
+  "纳粹德国、高桥财政下的日本和瑞典都较早走出了萧条，各自靠的是什么？代价记在了哪里？" (or its first half).
+- Labels: sections `sec:depressionworld-…`; `eq:depressionworld-…`, `fig:depressionworld_…`,
+  `tab:depressionworld-…`, `ex:depressionworld-…`.
