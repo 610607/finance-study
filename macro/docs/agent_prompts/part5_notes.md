@@ -694,3 +694,89 @@ back to the old parity without striking off any zeros.
   "没有市场价格，经济能不能算清楚该生产什么？".
 - Labels: sections `sec:alternatives-…`; `eq:alternatives-…`, `fig:alternatives_…`,
   `tab:alternatives-…`, `ex:alternatives-…`.
+
+## 第 31 章 `ch:soviet` 苏联工业化与社会主义核算论战 (`zh/ch31_soviet.tex`)
+
+- Neighbours:
+  - Ch 22 owns Marx: accumulation, crises, the reproduction schemes (`eq:marx-…`), and the line from
+    the schemes to the input–output table and the planners' material balances (its legacy names this
+    chapter and Ch 43). Refer back; do not retell Marx.
+  - Ch 26 owns war finance and hyperinflation in Germany; the Soviet hyperinflation of 1918–1924 and the
+    chervonets appear here only as the background of War Communism and NEP (one paragraph; Ch 52 owns
+    the cross-country comparison of stabilizations).
+  - Ch 29 owns the Depression abroad; Ch 30 compares the five-year plans with Germany, Japan and Sweden
+    in one clause; Ch 34 owns the Soviet war economy (1941–45); Ch 43 owns China's planned economy and
+    the Great Leap Forward famine; Ch 81 owns the reliability of Soviet statistics as a general
+    question (one clause with `\chref{ch:datareliability}`, but state here what uncertainty the
+    growth figures carry).
+- Owns:
+  - War Communism (1918–1921), NEP (1921–1928: the tax in kind, the scissors crisis of 1923, the
+    chervonets), the industrialization debate (Preobrazhensky's primitive socialist accumulation vs
+    Bukharin, in short phrases or verified summaries), the grain procurement crisis of 1927–28;
+  - the first five-year plan (from October 1928; approved in 1929; declared fulfilled in four years and
+    a quarter at the end of 1932), forced collectivization from 1929–30, the deportation of the
+    "kulaks", the famine of 1932–1933 (Ukraine, Kazakhstan, the Volga and elsewhere), the second plan;
+  - planning in practice: material balances (supply = output + stocks + imports against uses), why
+    they need iteration, the planners' priorities; the price system that remained (wages, retail
+    prices, the turnover tax);
+  - the calculation debate: Mises (1920), Lange (1936–37) and the trial-and-error "market socialism",
+    Hayek (1945, "The Use of Knowledge in Society"); later readings in one clause (the incentive
+    problem, the soft budget constraint of Ch 43, if promised);
+  - Soviet growth and its uncertainty: official indices against Western recalculations (Bergson;
+    Khanin as reported by Harrison), the index-number problem (the Gerschenkron effect), Allen's (2003)
+    counterfactual reading against those who see the growth as bought by famine and coercion.
+- The human cost and the political character stated plainly (write_template rule 5): collectivization
+  by force, deportations, the famine's deaths (give the range of estimates from verified demographic
+  sources and say where they differ), the Gulag's labour as part of the plan's economy if sourced.
+- Promises: FORWARD_REFS rows from Ch 22 (material balances; read them in full, mark them done).
+- When it begins: Ch 30 ends by handing over "没有市场价格，经济能不能算清楚该生产什么？"; keep it.
+- Neighbour in Part 5: Ch 30 compares the five-year plans with Germany's Four-Year Plan in one clause
+  at most; read Ch 30's text when it is committed and do not retell what it says.
+- Opening (suggested, verify every detail): a dated moment of the plan, e.g. the Sixteenth Party
+  Conference's approval of the first five-year plan (April 1929) or the declaration of January 1933
+  that it was fulfilled in four years and three months; or Mises's article of 1920 and the year's
+  War Communism; a person, a date and the question within the first page.
+- People (only where sourced): Lenin (NEP), Stalin, Preobrazhensky, Bukharin, Gosplan's chairmen
+  (Krzhizhanovsky, Kuibyshev), Ludwig von Mises (1881—1973), Oskar Lange (1904—1965), Friedrich Hayek
+  (1899—1992), Abram Bergson, Robert Allen as author.
+- Case box: the chapter itself is outside the US and Britain; a dated case box such as 哈萨克斯坦 ·
+  1930—1933 · 游牧的终结 (if verified sources allow) or 马格尼托哥尔斯克 · 1929—1932 · 一座计划中的钢城.
+- Data and sources (probe first; on 2026-10-22 the shell reached Econlib (Hayek 1945,
+  `library/Essays/hykKnw.html`; check its reprint terms), Mark Harrison's Warwick pages, marxists.org
+  (translations; check each text's licence), prlib.ru, archive.org, NBER, the GGDC (Maddison 2023) and
+  econstor; the Mises Institute's CDN answered 403 on the second probe (the first answered), mises.org's
+  pages and Princeton UP answered 403, cpsjournal.ca did not answer, Russian statistical sites did not
+  answer). Chapter 29's `maddison2023_interwar` already holds GDP per head 1925–1938 for many
+  economies; extend it or add a series for the USSR 1913–1940 with Maddison's own caveat:
+  - Mises (1920; d. 1973, in copyright): short phrases from the English translation of 1935 (in Hayek
+    ed., *Collectivist Economic Planning*); Lange (1936–37, *Review of Economic Studies*; d. 1965, in
+    copyright): short phrases, through a readable copy; Hayek (1945, *AER*; d. 1992): short phrases;
+  - the five-year plan's figures from the plan document (Gosplan 1929; English editions of 1929–30 on
+    archive.org, check the copyright page) and the official results of 1933, both as the planners'
+    claims;
+  - Western recalculations and Allen (2003): through Harrison's open papers and verified summaries;
+  - the famine: demographic estimates from open-access publications (e.g. *Canadian Studies in
+    Population*) and the range in Davies and Wheatcroft through verified summaries;
+  - Maddison 2023 (CC BY 4.0) for the USSR's GDP per head, with its own caveat on Soviet data.
+- Teaching:
+  - a material balance for one good (steel) and a two-sector consistency check with a small
+    input–output matrix (numpy), teaching inputs; what changes when one target is raised;
+  - Lange's trial and error: a planner adjusts a price by excess demand, $p_{t+1}=p_t+\lambda(D-S)$,
+    with teaching inputs; when it converges and what information it needs, against Hayek's point;
+  - the index-number problem: growth measured at early-year prices vs late-year prices for two goods
+    whose relative price falls as output soars (teaching inputs, then the direction of the Soviet
+    case).
+- Compare boxes (2–4): 物资平衡 vs 价格机制; 兰格的市场社会主义 vs 哈耶克的知识论证; optionally 苏联的五年计划
+  vs 纳粹德国的四年计划 (both 1936-era plans, with `\chref{ch:alternatives}`), or 官方增长 vs 西方重估.
+- Contested questions (§8): could a socialist economy calculate (Mises/Hayek vs Lange), and what the
+  Soviet record shows about it; how fast the Soviet economy grew and whether the coercion bought the
+  growth (Allen vs the critics). Do not decide for the reader.
+- Figures (2–4, at least two from snapshot data): GDP per head 1913–1940 for the USSR against others
+  (Maddison); plan targets against reported output for a few goods; grain procurement and harvest
+  around 1928–1934 from a verified table.
+- Legacy: shadow prices and linear programming (Kantorovich, one clause; `\chref{ch:planned}`), the
+  soft budget constraint (`\chref{ch:planned}` or `\chref{ch:transition}` if it exists), the reliability
+  of planned-economy statistics (`\chref{ch:datareliability}`).
+- Ending: after `\end{answers}`, return to the opening and hand over Ch 32's question
+  "如果人人都想多储蓄，总储蓄为什么可能反而减少？".
+- Labels: sections `sec:soviet-…`; `eq:soviet-…`, `fig:soviet_…`, `tab:soviet-…`, `ex:soviet-…`.
