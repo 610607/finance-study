@@ -1385,6 +1385,9 @@ Add a label here when another chapter needs to refer to it.
 sec:weimar-world sec:weimar-transfer sec:weimar-fiscal sec:weimar-demand sec:weimar-test sec:weimar-stabilization sec:weimar-cost sec:weimar-legacy
 eq:weimar-transfer eq:weimar-budget eq:weimar-demand fig:weimar_prices fig:weimar_balances fig:weimar_budget tab:weimar-stages
 ex:weimar-transfer ex:weimar-seigniorage ex:weimar-taxlag ex:weimar-double
+sec:interwar-world sec:interwar-parity sec:interwar-keynes sec:interwar-cost sec:interwar-exchange sec:interwar-gold sec:interwar-boom sec:interwar-legacy
+eq:interwar-parity eq:interwar-pyramid eq:interwar-sterilize fig:interwar_sterling fig:interwar_labour fig:interwar_gold tab:interwar-returns
+ex:interwar-parity ex:interwar-index ex:interwar-pyramid ex:interwar-margin
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous
