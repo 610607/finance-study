@@ -331,6 +331,7 @@ READINGS = {
     "k_quarter": [("a quarter", "frac"), ("25", NUM), ("10", NUM)],
     "frb_bankrate": [("21", NUM), ("4}£", "ocr"), ("to |6", NUM)],
     "spa_fourth": [("one fourth", "frac")],
+    "spa_purchase": [("one-fourth", "frac")],
     "fr34_three": [("three", EN)],
     "bj_seven": [("1932", NUM), ("1935", NUM), ("seven", EN)],
     "b95_copyright": [("1994", NUM), ("two", EN)],
@@ -347,7 +348,7 @@ READINGS = {
 MISPRINTS = [("hc_third", "Amendmont"), ("gsa_date", "Septeml)er"), ("k_200m", ",^"), ("k_tariff", "2 5"),
              ("k_southamerica", "Anierica"), ("k_southamerica", "eflFort"), ("frb_bankrate", "4}£"),
              ("es_eq", "IPl935"), ("es_59", "141 percent"), ("es_timing", "preceeded"), ("b95_identity", "Ml"),
-             ("b95_poland", "Ml")]
+             ("b95_poland", "Ml"), ("b95_falling", "Mi")]
 IMAGE_NOTE = "read on the page image"
 
 
@@ -378,7 +379,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 136)
+    quoted("rows with values, each read from its quotation", n, 139)
     quoted("rows read on a page image (no quotation)", img, 5)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
@@ -428,17 +429,16 @@ TRANSLATIONS = {
     "141 percent": "es_59",
     "内生变量": "es_endog",
     "吸进而不是流失黄金": "es_absorbing",
-    "以邻为壑": "es_btn",
+    "以邻为壑": "es_beggar",
     # sec:depressionworld-debate
     "宏观经济学的圣杯": "b95_grail",
     "严重的缺陷": "bj_flawed",
-    "一个主要来源": "bj_flawed",
     "为什么有些国家比别的国家更愿意解开黄金的枷锁？": "wolf_fetters",
     # sec:depressionworld-silver
     "行不通": "hc_impracticable",
     "经济上不大、政治上很有力量的白银集团": "fr92_bloc",
     "最终的目标是，货币储备的价值有四分之一是白银，并保持下去": "spa_fourth",
-    "1931 年以来，银价以外币计不断上涨，给中国带来了严重的通缩与经济损失。": "fr34_deflation",
+    "1931 年以来，以外币计的银价上涨，给中国带来了严重的通缩与经济损失": "fr34_deflation",
     "银价再大涨，会给中国造成非常严重的伤害，可能引起严重的恐慌。": "fr34_panics",
     "不应当独自维持银本位": "fr34_alone",
     "政府之间拿出来商量交换一定数量的货币，不完全是正常的程序。": "fr34_hull",
@@ -451,12 +451,13 @@ TRANSLATIONS = {
     "并不特别萧条": "bs_notdepressed",
     # sec:depressionworld-latam
     "外国的货币医生": "da_doctors",
-    "全国性的货币政策": "bcra_national",
+    "本国的货币政策": "bcra_national",
     # the 史料说明
     "不到 3\\%": "bs_farm",
     "2 5": "k_tariff",
     "Anierica": "k_southamerica",
     "Ml": "b95_identity",
+    "Mi": "b95_falling",
     # the ending
     "翻开新的一章": "k_chapter",
 }
@@ -501,7 +502,7 @@ KEYWORDS = {
     "es_59": ["a 141 percent depreciation"],
     "es_endog": ["endogenous variables"],
     "es_absorbing": ["were absorbing, not losing, gold"],
-    "es_btn": ["beggar-thy-neighbor"],
+    "es_beggar": ["beggar—thy—neighbor effects"],
     "b95_grail": ["the Holy Grail of macroeconomics"],
     "bj_flawed": ["were badly flawed", "a major source of the fall in real output"],
     "wolf_fetters": ["why were some more inclined than others to release their gold fetters?"],
@@ -529,6 +530,7 @@ KEYWORDS = {
     "bs_farm": ["output in the rest of the economy fell less than 3 percent"],
     "k_southamerica": ["South Anierica"],
     "b95_identity": ["Ml = (Ml/BASE)"],
+    "b95_falling": ["Mi money supplies"],
     "k_chapter": ["may open a new chapter in the world's monetary history"],
 }
 
@@ -689,10 +691,16 @@ def opening(F, Y, Q):
     assert Q["hc_four"].startswith("4.0 p.m.") and "four o'clock" in column("note")["hc_four"]
     chk("    four in the afternoon (下午四点)", four, told("下午四点，财政大臣", "下午", "点"))
     said("这是一项“暂时修改 1925 年金本位法的议案”", act)
+    assert Q["hc_leave"].startswith("I beg to move, That leave be given to bring in a Bill")    # 动议准许提出议案
+    assert F["hc_leave"][1] == act
+    say("他动议准许政府提出一项议案")
     said("按 1925 年的法律，英格兰银行要按固定的价格卖出金块", act)
     pounds, shillings, pence, half = F["hc_price"]
-    said("每盎司 3 英镑 17 先令 10 便士半", pounds, shillings, pence)
+    said("每盎司标准金 3 英镑 17 先令 10 便士半", pounds, shillings, pence)
     chk("    halfpenny (便士半)", half, 0.5)
+    assert "per ounce troy of gold of the standard of fineness prescribed for gold coin" in Q["hc_price"]
+    chk("    standard gold, eleven twelfths fine (十二分之十一; the 12/11 of gbp_per_fine_oz)", 11 / 12,
+        told("含纯金十二分之十一", "含纯金"))
     say("一英镑合 20 先令，一先令合 12 便士，盎司是称金银的重量单位")
     said("一英镑合 20 先令，一先令合 12 便士", 20, 12)
     said("每根约含 400 盎司纯金", F["hc_bars"][0])
@@ -715,7 +723,9 @@ def opening(F, Y, Q):
     said("政府在纽约借的 2 亿美元、在巴黎谈妥的 50 亿法郎", usd2, frf2)
     assert "a drain of gold for Holland" in Q["hc_holland"]
     assert "at Eight o'Clock" in Q["hc_eight"]
-    chk("    eight in the evening (晚上八点)", 8, told("当天晚上八点", "晚上", "点"))
+    assert Q["hc_first"] == "presented accordingly, and read the First time"
+    say("动议通过以后，议案提出，一读通过")
+    chk("    eight in the evening (晚上八点)", 8, told("晚上八点，二读的辩论才开始", "晚上", "点"))
     ayes, noes = F["hc_closure"]
     assert "9.40 p.m." in column("note")["hc_closure"]
     chk("    9.40 p.m. (九点四十分)", [told("九点四十分", "", "点四十分"), told("九点四十分", "九点", "分")], [9, 40])
@@ -764,8 +774,9 @@ def world(F, Y, Q):
     chk("    a log change of -0.10 is about -10% (exp(-0.10) - 1 = -9.5%)", 100 * (math.exp(-0.10) - 1), -10, tol=0.6)
     n24, n4 = F["bj_24"]
     assert len(G) == n24
-    said("在他们的 24 个国家里，守着金本位的国家 1930 年与 1931 年的通缩相当一致，每年约 13\\%", n24, *F["bj_13"][1:],
-         F["bj_13"][0])
+    assert "Among countries on the gold standard as of 1931" in column("note")["bj_13"]
+    said("在他们的 24 个国家里，1931 年还守着金本位的国家，1930 年与 1931 年的通缩相当一致，每年约 13\\%", n24, 1931,
+         *F["bj_13"][1:], F["bj_13"][0])
     gold36 = A.loc["average gold 1936"]
     assert abs(abs(gold36.wpi_1930) - 0.13) <= 0.011 and abs(abs(gold36.wpi_1931) - 0.13) <= 0.011
     dh, yh, rel = F["hv_date"]
@@ -783,6 +794,13 @@ def fetters(F, Y, Q):
     said("1931 年，倒金字塔的另一个弱点也露了出来", F["bj_enmasse"][0] + 1)
     said("Bernanke（1995）的分解把几层收缩放在一起", B95)
     assert Q["b95_identity"].startswith("(1.1) Ml = (Ml/BASE) x (BASE/RES) x (RES/GOLD) x PGOLD x QGOLD")
+    factors = Q["b95_identity"].split("=")[1].split(" x ")
+    chk("    five factors on the right (这五项)", len(factors), told("这五项里只要一项下降", "这", "项里"))
+    N = column("note")
+    assert "beneficiary of large gold inflows early in the Depression" in Q["b95_belgium"]
+    assert all(k in N["b95_belgium2"] for k in ("M1/BASE", "RES/GOLD", "BASE/RES"))
+    chk("    three ratios (三个比率): Belgium", 3, told("三个比率却一齐下降", "", "个比率"))
+    say("比利时在萧条初期得到大量流入的黄金，三个比率却一齐下降，货币存量还是急剧收缩")
     said("本币贬值，$\\Delta\\ln e>0$", 0)
     pct, times = F["bj_25"]
     said("准备比率是 40\\% 时，黄金外流对货币的影响是外流额的 2.5 倍", pct, times)
@@ -814,9 +832,19 @@ def ex_fetters(F, Y, Q):
     said("（4）$e$是一美元值多少英镑，从$1/4.858$升到$1/3.374$，$\\Delta\\ln e=\\ln(4.858/3.374)\\approx0.365$，英国物价应当"
          "上涨约 44\\%", 4, 1, a, 1, d, a, d, dln, 100 * (math.exp(dln) - 1))
     s = B.sauerbeck_1867_77_100
-    said("索尔贝克的批发物价指数从 79.1 只升到 85.4，1932 年 6 月又降到 77.0", s[(1931, 8)], s[(1931, 12)], 1932, 6,
-         s[(1932, 6)])
+    assert "1867-77 = 100" in boe_meta()["series"]
+    said("索尔贝克的批发物价指数（1867—1877 年$=100$）从 79.1 只升到 85.4，1932 年 6 月又降到 77.0", 1867, 1877, 100,
+         s[(1931, 8)], s[(1931, 12)], 1932, 6, s[(1932, 6)])
     assert s[(1931, 12)] == s.loc[1931].loc[9:12].max()
+    assert s[(1932, 6)] < s[(1931, 8)]                                           # 比贬值以前还低
+    say("1932 年 6 月又降到 77.0，比贬值以前还低")
+    G = goldexits()
+    uk, us = G.loc["United Kingdom"], G.loc["United States"]
+    assert us.wpi_1932 < 0                                                        # 美国的物价还在跌
+    said("英国批发物价的对数变化 1931—1933 年依次是$-0.18$、$-0.04$与$0.01$", 1931, 1933, -uk.wpi_1931, -uk.wpi_1932,
+         uk.wpi_1933)
+    assert uk.wpi_1931 < uk.wpi_1932 < 0 <= uk.wpi_1933                          # 放慢了，到 1933 年才停下来
+    said("通缩放慢了，到 1933 年才停下来，远没有按贬值的幅度上涨", 1933)
 
 
 def ex_keynes(F, Y, Q):
@@ -825,7 +853,7 @@ def ex_keynes(F, Y, Q):
     chk("    less than a quarter (不到四分之一)", q, told("进口的“不到四分之一”", "不到", "”"))
     said("（1）设进口品的英镑价格与贬值同幅度上涨", 1)
     said("英镑贬值 25\\%，生活费用最多涨多少？（2）要让生活费用涨 10\\%", dep, 2, col)
-    said("按（1）的算法，生活费用最多该涨多少？", 1)
+    said("一美元的英镑价格涨了多少？按（1）的算法，生活费用最多该涨多少？", 1)
     B = boe()
     L = B.cost_of_living_jul1914_100
     assert "July 1914 = 100" in boe_meta()["series"]
@@ -834,10 +862,16 @@ def ex_keynes(F, Y, Q):
     a, d = B.usd_per_gbp[(1931, 8)], B.usd_per_gbp[(1931, 12)]
     said("（1）$0.25\\times25\\%=6.25\\%$，比 10\\% 少。（2）$10\\%/0.25=40\\%$，比 25\\% 多得多", 1, q, dep, q * dep, col, 2, col,
          q, col / q, dep)
-    drop = fall(a, d)
-    said("（3）英镑从 4.858 美元跌到 3.374 美元，价值跌了约 30.5\\%。按（1）的算法，生活费用最多涨约$0.25\\times30.5\\%\\approx7.6\\%$，"
-         "实际只涨了$148/145-1\\approx2.1\\%$", 3, a, d, drop, 1, q, drop, q * drop, L[(1931, 12)], L[(1931, 8)], 1,
-         rise(L[(1931, 8)], L[(1931, 12)]))
+    drop, up = fall(a, d), rise(1 / a, 1 / d)
+    said("（3）英镑从 4.858 美元跌到 3.374 美元，价值跌了约 30.5\\%；一美元的英镑价格从$1/4.858$升到$1/3.374$英镑，涨了约 44\\%",
+         3, a, d, drop, 1, a, 1, d, up)
+    assert "a tariff of that amount" in Q["k_tariff"]           # Keynes's 25 per cent acts on the sterling price of imports
+    said("进口品的美元价格不变时，它们的英镑价格涨的是 44\\%；凯恩斯把贬值 25\\% 比作 25\\% 的关税", up, F["k_tariff"][0],
+         F["k_tariff"][0])
+    said("按（1）的算法，生活费用最多涨约$0.25\\times44\\%\\approx11\\%$，实际只涨了$148/145-1\\approx2.1\\%$", 1, q, up,
+         q * up, L[(1931, 12)], L[(1931, 8)], 1, rise(L[(1931, 8)], L[(1931, 12)]))
+    assert rise(L[(1931, 8)], L[(1931, 12)]) < q * up and q * up > col             # Keynes's bound held, by a wide margin
+    said("原因与\\exref{ex:depressionworld-fetters}的（4）相同，进口品的英镑价格远没有涨 44\\%", 4, up)
 
 
 def crisis1931(F, Y, Q):
@@ -861,7 +895,10 @@ def crisis1931(F, Y, Q):
     tot, g = F["frb_billion"]
     N = column("note")
     assert "from the middle of July to September 19" in N["frb_billion"]
-    said("从 7 月中旬到 9 月 19 日，外国人几乎不停地从伦敦提走资金，共约 10 亿美元，其中约 1.6 亿美元是黄金", 7, 9, 19, tot, g)
+    assert "a loss of gold during the latter part of July" in N["frb_billion"]
+    assert "the rest the loss of foreign exchange" in N["frb_billion"]
+    said("从 7 月中旬到 9 月 19 日，资金几乎不停地从伦敦市场提走，共约 10 亿美元，其中约 1.6 亿美元是 7 月下旬流失的黄金，其余是外汇", 7,
+         9, 19, tot, g, 7)
     usd, d4 = F["frb_125"]
     said("8 月 1 日，联邦储备银行给了英格兰银行 1.25 亿美元的信用", 8, d4, usd)
     r = bank_rate()
@@ -884,10 +921,12 @@ def crisis1931(F, Y, Q):
     said("1932 年春天，贴现率一路降下来，6 月 30 日降到 2\\%", 1932, 6, 30, r[low])
     assert all(r[k] < r[date(1932, 2, 18)] or k == date(1932, 2, 18) for k in r.index if k > date(1932, 2, 18))
     said("1931 年放弃完整金本位的国家有 14 个", *F["bj_fourteen"])
-    said("德国虽然算在 14 国里", F["bj_fourteen"][1])
     G = goldexits()
     de = G.loc["Germany"]
-    assert de.group == 2 and not isinstance(de.devaluation, str) and de.exchange_control == "1931-07"
+    assert de.group == 2 and de.exchange_control == "1931-07"
+    assert not isinstance(de.suspension, str) and not isinstance(de.devaluation, str)      # no date in Table 2.1
+    said("德国也算在里面，凭的是 1931 年 7 月的外汇管制", *ym(de.exchange_control))
+    say("他们的表上，德国没有暂停金本位的日子，也没有贬值的日子")
 
 
 def compare1931(F, Y, Q):
@@ -904,9 +943,13 @@ def compare1931(F, Y, Q):
     drop = fall(B.usd_per_gbp[(1931, 8)], B.usd_per_gbp[(1931, 12)])
     chk("    about three tenths (约三成)", drop / 100, told("英镑对美元跌了约三成", "约"), tol=0.02)
     said("{到 1931 年 12 月，英镑对美元跌了约三成}", 1931, 12)
-    said("\\cmprow{1932 年的批发物价}{对数变化$-0.04$}{对数变化$-0.14$}", 1932, -uk.wpi_1932, -de.wpi_1932)
-    assert uk.wpi_1932 < 0 and de.wpi_1932 < 0 and uk.ip_1932 <= 0 and de.ip_1932 < 0
-    said("\\cmprow{1932 年的工业生产}{对数变化$-0.00$，几乎没变}{对数变化$-0.24$}", 1932, -uk.ip_1932, -de.ip_1932)
+    said("\\cmprow{1932 年的批发物价}{对数变化$-0.04$}{对数变化$-0.14$\\cite{bernanke1991}}", 1932, -uk.wpi_1932,
+         -de.wpi_1932)
+    assert uk.wpi_1932 < 0 and de.wpi_1932 < 0 and de.ip_1932 < 0
+    assert abs(uk.ip_1932) < 0.005 and "A '-.00' or '-0.00' is printed as in the table" in load_snapshot(
+        "depressionworld_goldexits")[1]["notes"]                                 # 约为 0: the table's -.00
+    said("\\cmprow{工业生产的对数变化}{1932 年约为 0，几乎没变；1933 年$0.05$}{1932 年$-0.24$；1933 年$0.13$\\cite{bernanke1991}}",
+         1932, uk.ip_1932, 1933, uk.ip_1933, 1932, -de.ip_1932, 1933, de.ip_1933)
     assert uk.ip_1933 > 0 and de.ip_1933 > 0                                     # 都在 1933 年回升
     said("两国的工业生产都在 1933 年回升", 1933)
 
@@ -997,9 +1040,13 @@ def exits(F, Y, Q):
     said("1932—1935 年，不在金本位上的国家，工业生产每年的增长平均比守着金本位的国家高约 7 个百分点", y0, y1, seven)
     early, late = exit_groups()
     R = ratio1935()
-    said("1931 年底以前离开的 14 个经济体，1935 年的人均 GDP 平均是 1929 年的 100.0\\%", 1931, len(early), 1935, 1929,
-         R[early].mean())
-    said("1932 年以后才离开的 8 个，平均只有 89.6\\%", 1932, len(late), R[late].mean())
+    say("离开的月份取暂停金本位、外汇管制与贬值三者中最早的一个，这是本书的取法")
+    said("这样分，1931 年底以前离开的有 14 个经济体", 1931, len(early))
+    said("它们 1935 年的人均 GDP 简单平均是 1929 年的 100.0\\%", 1935, 1929, R[early].mean())
+    assert min(exit_dates()[k] for k in late) >= (1932, 1)                       # 1932 年或更晚
+    said("1932 年或更晚才离开的 8 个，平均只有 89.6\\%", 1932, len(late), R[late].mean())
+    G2 = [ISO[c] for c in G[G.group == 2].index if c not in NO_MADDISON]
+    assert set(G2) < set(early) and set(early) - set(G2) == {"AUS", "NZL", "ARG"}  # not Bernanke and James's 14
 
 
 def goldbloc(F, Y, Q):
@@ -1036,7 +1083,7 @@ def goldbloc(F, Y, Q):
 
 
 def compare_france(F, Y, Q):
-    G, A = goldexits(), averages()
+    G = goldexits()
     R = ratio1935()
     said("\\cmprow{1920 年代}{1925 年按战前的旧平价回到黄金", 1920, ym(G.loc["United Kingdom"]["return"])[0])
     fr = G.loc["France"]["return"].split("/")
@@ -1046,12 +1093,12 @@ def compare_france(F, Y, Q):
     said("{照 Bernanke（1995）的看法，法国人把守住金本位与民族自豪感连在一起}", B95)
     said("\\cmprow{离开的方式}{9 月 21 日暂停按固定价格卖出黄金}{1936 年 10 月立法，把法郎的含金量降到原来的 65.6\\%—74.8\\%}", 9,
          F["gsa_date"][0], *ym(G.loc["France"].devaluation), *F["frb_franc3"])
-    gold, non = A.loc["grand average gold"], A.loc["grand average non-gold"]
     yrs = [1932, 1933, 1934, 1935]
-    said("\\cmprow{1932—1935 年的物价}{不在金本位上的国家，批发物价每年的对数变化平均在$-0.01$到$0.04$之间}", 1932, 1935,
-         -min(non[f"wpi_{y}"] for y in yrs), max(non[f"wpi_{y}"] for y in yrs))
-    said("{守着金本位的国家，平均在$-0.13$到$-0.04$之间}", -min(gold[f"wpi_{y}"] for y in yrs),
-         -max(gold[f"wpi_{y}"] for y in yrs))
+    uk_w = [G.loc["United Kingdom"][f"wpi_{y}"] for y in yrs]
+    fr_w = [G.loc["France"][f"wpi_{y}"] for y in yrs]
+    said("\\cmprow{1932—1935 年的批发物价}{每年的对数变化在$-0.04$到$0.04$之间}", 1932, 1935, -min(uk_w), max(uk_w))
+    assert all(x < 0 for x in fr_w)                                              # 每年都在跌
+    said("{每年都在跌，对数变化在$-0.16$到$-0.06$之间\\cite{bernanke1991}}", -min(fr_w), -max(fr_w))
     said("\\cmprow{1935 年的人均 GDP}{1929 年的 105.4\\%}{1929 年的 86.7\\%}", 1935, 1929, R["GBR"], 1929, R["FRA"])
     said("为恢复战前平价出力最多的国家，到 1930 年代贬值时“最不犹豫”", 1930)
     assert "in the early 'twenties showed the least hesitation to devalue in the early 'thirties" in Q["es_ironically"]
@@ -1072,14 +1119,15 @@ def es_section(F, Y, Q):
     a, b, _, ta, tb = F["es_eq"]
     crit95, crit99, p95, p99 = F["es_critical"]
     assert abs(ta) > crit99 and abs(tb) > crit99                                  # both significant at 99%
-    said("他们估计的$a$是 153.9，$b$是$-0.69$，两个系数在 99\\% 的置信水平上都显著", a, b, p99)
+    said("估计出的$a$是 153.9，$b$是$-0.69$，两个系数在 99\\% 的置信水平上都显著", a, b, p99)
     r2 = F["es_r2"][0]
     said("校正以后的$R^{2}$是 0.56，10 个国家工业生产的差别，直线解释了一半多", 2, r2, len(S))
     assert r2 > 0.5
     said("斜率的意思是，一国货币的黄金价值每低 10 个点，1935 年的工业生产大约高 7 个点", 10, 1935, b * 10)
     fit = es_fit()
     c0, c1 = fit.params
-    said("用图上读出的 10 个点重新回归，截距是 153.9，斜率是$-0.70$", len(S), c0, -c1)
+    assert abs(c0 - a) < 0.05 and abs(-c1 - b) < 0.01                          # the refit (the 史料说明, the caption)
+    say("图上有两个点离直线最远")
     resid = pd.Series(fit.resid, index=S.index)
     assert set(resid.abs().sort_values().index[-2:]) == {"Germany", "Belgium"}   # 两个点离直线最远
     assert resid["Germany"] > 0 > resid["Belgium"]
@@ -1118,13 +1166,17 @@ def ex_es(F, Y, Q):
     said("（3）斜率的$t$统计量 3.51 大于 99\\% 的临界值 3.36", 3, tb, p99, crit99)
     assert tb > crit99
     said("（4）低了$100-59.9=40.1\\%$", 4, 100, uk.er1935, 100 - uk.er1935)
-    said("Eichengreen 与 Sachs 的正文把 59 说成贬值“141 percent”，按定义应是 41\\%", F["es_59"][1], F["es_59"][2],
-         100 - F["es_59"][1])
+    said("反过来算，黄金的英镑价格涨了$100/59.9-1\\approx67\\%$", 100, uk.er1935, 1, 100 * (100 / uk.er1935 - 1))
+    said("两种算法的差别，与\\exref{ex:depressionworld-keynes}的 30.5\\% 与 44\\% 一样", fall(boe().usd_per_gbp[(1931, 8)],
+         boe().usd_per_gbp[(1931, 12)]), rise(1 / boe().usd_per_gbp[(1931, 8)], 1 / boe().usd_per_gbp[(1931, 12)]))
 
 
 def es_limits(F, Y, Q):
-    said("第三，1930 年代的汇率取决于各国对本位的态度，这种态度在 1930 年代初的事件以前就已形成", *F["es_predetermined"])
-    assert "devaluation preceeded the beginning of recovery" in Q["es_timing"]
+    assert "not just on economic pressures but on national attitudes" in Q["es_predetermined"]
+    said("第三，1930 年代的汇率不只取决于经济上的压力，也取决于各国对本位的态度，这种态度在 1930 年代初的事件以前就已形成",
+         *F["es_predetermined"])
+    assert "devaluation preceeded the beginning of recovery, judged on the basis of annual data" in Q["es_timing"]
+    say("第一，按年度数据判断，在他们的例子里，贬值都在复苏开始以前")
     said("10 个点也说明不了一国贬值对邻国的影响", len(es()))
     b = es_fit().params[1]
     said("\\figref{fig:depressionworld_es}的斜率是$-0.70$，并不等于说任何一国把汇率压低 10 个点，工业生产就会多 7 个点", -b,
@@ -1136,10 +1188,16 @@ def es_limits(F, Y, Q):
 def debate(F, Y, Q):
     said("Bernanke（1995）的第一句话是", B95)
     _, _, yb = F["b95_eich92"]
-    said("出自 Eichengreen（1992）的书名", yb)
-    said("按 Bernanke（1995）的说法，1929 年与 1930 年，1931 年离开黄金的国家与留下的国家", B95, *F["b95_similar"])
+    assert Q["b95_eich92"].startswith("Golden Fetters: The Gold Standard and the Great Depression")
+    say("这本书题为《金色枷锁》（\\emph{Golden Fetters}），本章的章名借用了它")
+    assert "“金色枷锁”" in TEX.read_text(encoding="utf-8").split("\n")[2]      # the chapter title
+    said("照 Bernanke（1995）的说法，去留的决定实际上在一定程度上是内生的", B95)
+    said("可是 1929 年与 1930 年，1931 年离开黄金的国家与留下的国家", *F["b95_similar"])
+    assert "endogenous to a degree" in Q["b95_endogenous"] and "should tend to strengthen" in Q["b95_strengthen"]
+    say("校正以后，经济扩张与离开黄金的关联只会更强")
     yw, p23 = F["wolf_fetters"]
     said("Wolf（2007）的论文从 Eichengreen（1992）的一个问题出发", Y["wolf_dp"], yw)
+    assert yb == yw                                                              # the same book
     assert "the very month when a country will exit gold" in Q["wolf_predict"]
 
 
@@ -1148,6 +1206,17 @@ def silver_section(F, Y, Q):
     fine = F["bs_7553"][1]
     said("1933 年 3 月定下的标准银元，含纯银约 0.76 盎司", Y["bs_7553"], 3, fine)
     assert "the standard yuan of March 1933" in column("note")["bs_7553"]
+    assert Q["bs_1914"].startswith("Bank notes were denominated in 'yuan'. Before 1933, bank notes were issued on the "
+                                   "basis of the silver yuan coin")
+    say("中国的钞票以元为单位，按银元兑现")
+    y33, y14, grams, fine14 = F["bs_1914"]
+    said("1933 年以前通用的银元按 1914 年的条例铸造，重 27 克，成色 88\\%", y33, y14, grams, fine14)
+    TROY = 31.1035                                                               # grams in a troy ounce
+    old_oz = grams * fine14 / 100 / TROY
+    chk("    the yuan of 1914: 27 g x 0.88 / 31.1035 g (about 0.764 oz, the note)", old_oz, 0.764, tol=0.0005)
+    assert "about 0.764 fine ounces" in column("note")["bs_1914"]
+    assert fine < old_oz                                                         # 比旧银元略少
+    said("含纯银约 0.76 盎司，比旧银元略少", fine)
     S, C = silver(), china()
     said("前一半发生在 1929—1931 年。纽约的银价从 1929 年每盎司 53.0 美分降到 1931 年的 28.7 美分", 1929, 1931, 1929,
          S.ny_silver_cents_per_oz[1929], 1931, S.ny_silver_cents_per_oz[1931])
@@ -1165,12 +1234,16 @@ def silver_section(F, Y, Q):
     said("银价在 1933 年以后回升，1935 年平均每盎司 64.3 美分", 1933, 1935, S.ny_silver_cents_per_oz[1935])
     said("在 1933 年底发起", F["fr92_bloc"][0])
     assert "in late 1933" in Q["fr92_bloc"]
-    said("1934 年 6 月 19 日批准的白银收购法规定", F["spa_june"][1], 6, F["spa_june"][0])
+    said("1934 年 6 月 19 日批准的白银收购法宣布，美国的政策是提高货币储备里白银对黄金的比例", F["spa_june"][1], 6,
+         F["spa_june"][0])
+    assert "proportion of silver to gold in the monetary stocks" in column("note")["spa_policy"]
+    chk("    less than one-fourth (不到四分之一)", F["spa_purchase"][0], told("白银不到四分之一的时候", "不到", "的时候"))
+    assert "authorized and directed to purchase silver, at home or abroad" in Q["spa_purchase"]
     chk("    one fourth (四分之一)", F["spa_fourth"][0], told("有四分之一是白银", "有", "是白银"))
     d, y = F["fr34_date"]
     said("9 月 24 日，中国驻美公使施肇基", 9, d)
     assert y == F["spa_june"][1]
-    said("“1931 年以来，银价以外币计不断上涨", F["fr34_deflation"][0])
+    said("“1931 年以来，以外币计的银价上涨", F["fr34_deflation"][0])
     chk("    over three times (三倍多)", F["fr34_three"][0], told("已是以往任何一个整年的三倍多", "整年的", "倍多"))
     d2, y2 = F["fr34_hulldate"]
     said("10 月 2 日，施肇基应约来见", 10, d2)
@@ -1216,7 +1289,12 @@ def casebox(F, Y, Q):
     said("1934 年 10 月，它动用三家大银行的资源", F["bs_oct1934"][0], 10)
     assert "three major banks" in Q["bs_oct1934"]
     chk("    three banks (三家)", 3, told("它动用三家大银行的资源", "动用", "家"))
-    said("政府同时对出口白银课征 10\\% 的税", F["frb_duty"][0])
+    said("为了制止白银出口，政府同时对出口白银课征 10\\% 的税", F["frb_duty"][0])
+    N = column("note")
+    assert "in order to check the export of silver" in N["frb_equalization"]
+    assert "difference between the exchange rate in London and the theoretical parity of the yuan as determined by the " \
+           "value of its silver content in the London market" in N["frb_equalization"]
+    say("平衡费等于伦敦的汇价与银元的理论平价之差，理论平价按银元的含银量在伦敦市场的价值算")
     assert "on November 2 of this year" in column("note")["frb_38"]
     said("1935 年 11 月 2 日，折价约有 38\\%", 1935, 11, 2, F["frb_38"][0])
     t35, y34, ex = F["bs_july1934"]
@@ -1230,8 +1308,8 @@ def casebox(F, Y, Q):
     d, yd = F["bs_decree"]
     said("1935 年 11 月 3 日，中国政府发布紧急法令", yd, 11, d)
     said("新制度 11 月 4 日生效", 11, F["frb_nov4"][0])
-    assert "Central Bank of China, and by the Government-owned Bank of China and Bank of Communications" in column(
-        "note")["frb_legaltender"]
+    assert "Central Bank of China, and by the partially Government-owned Bank of China and Bank of Communications" in \
+        column("note")["frb_legaltender"]
     G = goldexits()
     years_after = yd - ym(G.loc["United Kingdom"].suspension)[0]
     chk("    four years and more (四年多): September 1931 to November 1935", years_after,
@@ -1247,6 +1325,9 @@ def casebox(F, Y, Q):
 
 def china_debate(F, Y, Q):
     said("照 Friedman（1992）摘要的说法，这项计划给中国", 1992)
+    assert "wartime inflation and postwar hyperinflation" in Q["fr92_inflation"]
+    assert "thereby contributed" in Q["fr92_modestly"]                          # the inflation is the link
+    say("纸币本位又让后来战时的通胀与战后的恶性通胀来得更早、更猛")
     said("照 Friedman（1992）摘要的说法，美国的白银收购计划", 1992)
     y63, p490 = F["bs_fs490"]
     said("照 Friedman 与 Schwartz（1963）的说法", y63)
@@ -1277,6 +1358,9 @@ def compare_china(F, Y, Q):
 def latam(F, Y, Q):
     said("1920 年代，拉丁美洲也回到了黄金", 1920)
     said("照 Díaz Alejandro（1983）的描述", F["da_volume"][0])
+    assert "sharp declines in the Latin American terms of trade and a milder fall of their export quantum" in Q[
+        "da_terms"]
+    say("萧条一来，拉丁美洲的贸易条件急剧恶化，出口量也跌了，只是跌得轻一些")
     arg, bra = F["da_t11"][:2]
     said("以 1928—1929 年与 1932—1933 年比较，出口的购买力，阿根廷降了 41.2\\%，巴西降了 42.3\\%", *F["da_quarter"], -arg,
          -bra)
@@ -1289,6 +1373,10 @@ def latam(F, Y, Q):
     said("1930 年代工业扩张强劲的拉丁美洲国家，最晚到 1932 年都已放弃了兑换与金本位的其他规则", y30, y32)
     d, y = F["frb_argentina"]
     said("1929 年 12 月 16 日，它关闭了兑换局", y, 12, d)
+    assert "closed its conversion office" in column("note")["frb_argentina"]
+    assert exit_dates()["ARG"] == (y, 12)                                        # the date Bernanke (1995) uses
+    assert "within the framework of an exchange control scheme" in Q["bcra_counter"]
+    say("中央银行在外汇管制的框架下推行逆周期的政策")
     said("1935 年的货币与银行改革设立了阿根廷中央银行", F["bcra_mixed"][0])
     said("1935—1943 年，普雷维什（Raúl Prebisch，1901—1986）任总经理", *F["bcra_prebisch"], *F["bnf_prebisch"])
     said("约 35\\% 看来实际上是靠创造货币", F["da_coffee"][0])
@@ -1326,14 +1414,14 @@ def check_section(F, Y, Q):
          R["AUT"])
     assert sorted(R[list(E)].sort_values().index[:3]) == ["AUT", "CAN", "POL"]     # the lowest three
     said("德国没有贬值，1935 年却已回到 101.7\\%", 1935, R["DEU"])
+    assert "strong correspondence between gold standard membership and falling Mi money supplies" in Q["b95_falling"]
+    say("守着金本位的国家，$M_1$几乎都在下降")
     said("照 Bernanke（1995）的说法，波兰是一个小小的例外，1932—1936 年", B95, *F["b95_poland"])
 
 
 def deeper(F, Y, Q):
-    said("美国与法国手里的黄金，斯诺登 1931 年 9 月说是世界全部黄金的四分之三", 1931, 9)
-    chk("    three quarters (四分之三)", F["hc_threequarters"][0], told("世界全部黄金的四分之三", "黄金的"))
-    pct, y0, y1 = F["bj_60"]
-    said("Bernanke 与 James 说 1928—1929 年两国合计持有世界货币黄金的近 60\\%", y0, 1900 + y1, pct)
+    assert F["hc_threequarters"][0] != F["bj_60"][0] / 100                       # 给的比例不同
+    say("美国与法国手里的黄金，斯诺登与 Bernanke 和 James 给的比例不同，日子与口径也不同，正文两说并存")
     dh, _, rel = F["hv_date"]
     said("胡佛的声明，美国总统项目的说明写明 6 月 20 日记者会后发出，到 21 日才准发表", 6, dh, rel)
     said("孔祥熙的生年，美国国会图书馆规范档的标目作 1880 年，同一记录的异名作 1881 年", F["loc_kung"][0],
@@ -1347,7 +1435,22 @@ def deeper(F, Y, Q):
     S = es()
     said("Eichengreen 与 Sachs 的工作论文没有列出图 1 的数字，10 个点据图 1 的扫描页读出，读数误差约 0.5", 1, len(S), 1, err)
     said("正文说英国是 59，读出的是 59.9", F["es_59"][1], S.er1935["United Kingdom"])
-    said("他们说 59 意味着贬值“141 percent”，按定义应是 41\\%", F["es_59"][1], F["es_59"][2], 100 - F["es_59"][1])
+    v59, m141 = F["es_59"][1], F["es_59"][2]
+    said("正文又说 59 意味着贬值“141 percent”。按论文的定义，59 是低了 41\\%；按黄金的英镑价格算，是涨了约 69\\%，都不是 141", v59,
+         m141, v59, 100 - v59, 100 * (100 / v59 - 1), m141)
+    assert m141 not in (round(100 - v59), round(100 * (100 / v59 - 1)))
+    early = exit_groups()[0]
+    G = goldexits()
+    G2 = [ISO[c] for c in G[G.group == 2].index if c not in NO_MADDISON]
+    say("Bernanke 与 James 只按年分组，\\figref{fig:depressionworld_exits}的离开月份是本书按他们的定义取的")
+    said("阿根廷与瑞士用 Bernanke（1995）的正式贬值月份", B95)
+    said("这样算，1931 年底以前离开的 14 个经济体包括澳大利亚、新西兰与阿根廷", 1931, len(early))
+    assert sorted(set(early) - set(G2)) == ["ARG", "AUS", "NZL"]
+    assert sorted(c for c in G[G.group == 2].index if c in NO_MADDISON) == ["Czechoslovakia", "Estonia", "Latvia"]
+    assert "Czechoslovakia, Estonia and Latvia (in Bernanke and James's table of exits) have none for these years" in \
+        maddison_meta()["notes"]
+    assert "ESP" not in exit_dates() and not any(isinstance(G.loc["Spain"][k], str) for k in ("suspension", "devaluation"))
+    say("第二组里的捷克斯洛伐克、爱沙尼亚与拉脱维亚没有 Maddison 的数，西班牙不在金本位上，都没有画出")
     fit = es_fit()
     a, b, _, ta, tb = F["es_eq"]
     said("用读出的点重新回归，截距 153.89，斜率$-0.699$，两个$t$统计量 10.02 与 3.51，校正以后的$R^{2}$是 0.557，与注 12 的 153.9、"
@@ -1358,12 +1461,12 @@ def deeper(F, Y, Q):
     g = C.gdp_bn_1933yuan
     yy0, yy1 = F["bs_yeh"]
     growth = 100 * ((g[yy1] / g[yy0]) ** (1 / (yy1 - yy0)) - 1)
-    said("K. C. Yeh 估计的实际 GDP 1931—1936 年平均每年增长 1.5\\%，按他们表 5 的数算是 1.6\\%", yy0, yy1, F["bs_15"][0], 5,
+    said("据 Brandt 与 Sargent 转引的 K. C. Yeh 估计，实际 GDP 1931—1936 年平均每年增长 1.5\\%；按该文表 5 的数算是 1.6\\%", yy0, yy1, F["bs_15"][0], 5,
          growth)
     ag = C.agriculture_bn_1933yuan
     said("非农业部门 1934 年降了 3.0\\%，与“不到 3\\%”大致相合", 1934, fall(g[1933] - ag[1933], g[1934] - ag[1934]),
          F["bs_farm"][1])
-    said("他们的表 2 并列了 Rawski 的货币存量估计与他们修订的估计，1935 年分别是 88.3 亿元与 77.7 亿元", 2, 1935,
+    said("该文表 2 并列了 Rawski 的货币存量估计与修订的估计，1935 年分别是 88.3 亿元与 77.7 亿元", 2, 1935,
          C.money_5a_myuan[1935] * M6, C.money_6a_myuan[1935] * M6)
     said("Eichengreen（1992）的书没有取得，正文的问题据 Wolf（2007）的引文，书名据 Bernanke（1995）的参考文献", F["b95_eich92"][2],
          Y["wolf_dp"], B95)
@@ -1442,8 +1545,8 @@ def ending(F, Y, Q):
     G = goldexits()
     de, jp, se = G.loc["Germany"], G.loc["Japan"], G.loc["Sweden"]
     assert ym(jp.suspension) == ym(jp.devaluation) == (1931, 12)
-    said("德国 1931 年 7 月实行外汇管制，日本 12 月暂停兑换，瑞典 9 月就离开了金本位", *ym(de.exchange_control),
-         ym(jp.suspension)[1], ym(se.suspension)[1])
+    said("德国 1931 年 7 月实行外汇管制，瑞典 9 月、日本 12 月相继离开了金本位", *ym(de.exchange_control),
+         ym(se.suspension)[1], ym(jp.suspension)[1])
     assert ym(de.exchange_control)[0] == ym(jp.suspension)[0] == ym(se.suspension)[0]
     t = tex_text().rstrip()
     assert t.endswith(NEXT), "the last words are not Chapter 30's question"
@@ -1467,9 +1570,11 @@ def frames(F, Y, Q):
     said("数据：英格兰银行，A Millennium of Macroeconomic Data for the UK（3.1 版），表 M15 与 D1", float(ver), m15, d1)
     early, late = exit_groups()
     said("离开黄金越早，1935 年的人均 GDP 越高，但例外不少", 1935)
-    said("纵轴是 1935 年的人均 GDP，以 1929 年$=100$。22 个经济体，橙色的 14 个在 1931 年底以前离开", 1935, 1929, 100,
-         len(early) + len(late), len(early), 1931)
-    said("阿根廷与瑞士的日子据 Bernanke（1995），其余据 Bernanke 与 James（1991）表 2.1", B95, F["bj_volume"][0], 2.1)
+    said("横轴是离开金本位的月份，按本书的取法，取 Bernanke 与 James（1991）表 2.1 里暂停金本位、外汇管制与贬值三者中最早的一个，"
+         "阿根廷与瑞士取 Bernanke（1995）用的正式贬值月份", F["bj_volume"][0], 2.1, B95)
+    assert "official devaluation dates" in Q["b95_argch"]
+    said("纵轴是 1935 年的人均 GDP，以 1929 年$=100$。22 个经济体，橙色的 14 个在 1931 年底以前离开，与 Bernanke 和 James 第二组的 14 国"
+         "不全相同", 1935, 1929, 100, len(early) + len(late), len(early), 1931, F["bj_fourteen"][1])
     mm = maddison_meta()
     said("数据：Maddison 项目数据库 2023 年版（Bolt 与 van Zanden 2024）", int(re.search(r"version (\d{4})", mm["source"]).group(1)),
          int(re.search(r"\((\d{4})\)", mm["citation"]).group(1)))
