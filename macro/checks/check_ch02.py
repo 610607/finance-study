@@ -263,7 +263,7 @@ def depression(B):
     quoted("  additive approximation (%)", round(100 * real, 1) + round(100 * defl, 1), -52.1, tol=1e-9)
     quoted("  its error (points)", (round(100 * real, 1) + round(100 * defl, 1)) - 100 * nom, -6.8, tol=0.05)
     quoted("  quantity's share of the nominal fall, in logs (%)", 100 * np.log(1 + real) / np.log(1 + nom), 50.6, tol=0.05)
-    quoted("real GDP 1929 ($bn of 2017)", r[1929] / 1000, 1191, tol=0.5)
+    quoted("real GDP 1929 (100 million dollars of 2017)", r[1929] / 100, 11911, tol=0.5)
     ri, pi_ = 100 * r / r[1929], 100 * p / p[1929]
     assert ri.loc[1930:1935].max() < 100 <= ri[1936], "real GDP first back at its 1929 level in 1936"
     quoted("real GDP 1936 (1929 = 100)", ri[1936], 100.3, tol=0.05)
