@@ -341,7 +341,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 163)
+    quoted("rows with values, each read from its quotation", n, 169)
     quoted("rows read on a page image (no quotation)", img, 6)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
@@ -357,30 +357,36 @@ TRANSLATIONS = {
     "银行并不把钱放进保险库": "fdr_vault",
     "只是全部银行存款的一小部分": "fdr_fraction",
     "明天，星期一": "fdr_tomorrow",
+    "没有一家健全的银行，比它上星期一关门时少了一块钱": "fdr_lastmonday",
     "把钱存在重新开门的银行里，比放在床垫底下安全": "fdr_mattress",
     # sec:depressionus-world, sec:depressionus-panics
     "自由黄金": "frh_freegold",
     "短期内最急的一次加息": "bern_sharpest",
-    "负责": "frh_responsibility",
+    "不再负这个责任": "frh_responsibility",
     "远低于真实价值": "fdr_panicprices",
     # sec:depressionus-fisher
     "债务病": "fis_diseases",
     "美元病": "fis_diseases",
-    "膨胀": "fis_link3",
+    "胀大": "fis_link3",
     "债务人还得越多，欠得越多。": "fis_paradox",
-    "只有债务病，没有美元病": "fis_strong2",
+    "不必要的、残酷的破产、失业与饥饿": "fis_needless",
+    "只有债务病，没有美元病，只是重感冒，不是肺炎": "fis_strong2",
     "愚蠢而不道德的": "fis_silly",
+    # sec:depressionus-money
+    "悲剧性地证明了货币力量的重要": "bern_tragic",
     # sec:depressionus-fed
     "清算派": "frh_liquidationist",
+    "维持相当数量的会员银行超额准备": "frb_policy",
     "也许可以避免": "frh_meltzer",
     # sec:depressionus-credit
     "信贷紧缩": "bern83_squeeze",
+    "对少数安全的借款人是松的，对其他所有人都很难借": "bern83_easy",
     "添了一笔": "bern_embellish",
     # sec:depressionus-recovery
     "严重的紧急状态已经存在": "eba_emergency",
     "利润": "wh_fund",
     "59.06\\% 多一点": "wh_5906",
-    "不是因为它不起作用，而是因为没有真正试过": "rom92_brown",
+    "不是因为它不起作用，而是因为没有试过": "rom92_brown",
     # the 史料说明
     "3 月 3d": "fdr_march3d",
     "上个星期": "frh_lastweek",
@@ -388,8 +394,12 @@ TRANSLATIONS = {
     "清算论": "bern_mellon",
     "(11.1)": "bern83_half_output",
     # the legacy and the takeaways
+    "稍稍滥用一下": "bern_abusing",
     "关于大萧条，你们是对的，是我们造成的。我们非常抱歉。但是多亏了你们，我们不会再犯了。": "bern_sorry",
     "债务人还得越多，欠得越多": "fis_paradox",
+    # the ending
+    "比通货更重要，比黄金更重要，那就是人民的信心": "fdr_confidence",
+    "我们齐心，就不会失败。": "fdr_together",
 }
 # the words of the source that each rendering renders
 KEYWORDS = {
@@ -399,12 +409,17 @@ KEYWORDS = {
     "fdr_mattress": ["it is safer to keep your money in a reopened bank than under the mattress"],
     "frh_freegold": ['Bankers called the excess "free gold."'],
     "bern_sharpest": ["the sharpest rise within so brief a period in the whole history of the System"],
-    "frh_responsibility": ['"no longer take responsibility"'],
+    "frh_responsibility": ['"no longer take responsibility"', '"with deficient reserves"'],
     "fdr_panicprices": ["at panic prices far below their real value"],
     "fis_diseases": ["the debt disease", "(or dollar disease)"],
     "fis_link3": ["a swelling of the dollar"],
     "fis_paradox": ["The more the debtors pay, the more they owe."],
-    "fis_strong2": ["We would have had the debt disease, but not the dollar disease"],
+    "fis_strong2": ["We would have had the debt disease, but not the dollar disease", "the bad cold but not the pneumonia"],
+    "fis_needless": ["the so-called \u2018\u2018natural\u2019\u2019 way out of a depression",
+                     "via needless and cruel bankruptcy, unemployment, and starvation"],
+    "bern_tragic": ["a tragic testimonial to the importance of monetary forces"],
+    "frb_policy": ["of maintaining a substantial amount of excess member bank reserves"],
+    "bern83_easy": ["money was easy for a few safe borrowers but difficult for everyone else"],
     "fis_silly": ["as silly and immoral"],
     "frh_liquidationist": ['labeled "liquidationist."'],
     "frh_meltzer": ["might have been avoided"],
@@ -416,9 +431,12 @@ KEYWORDS = {
     "rom92_brown": ["not because it did not work, but because it was not tried"],
     "fdr_march3d": ['"March 3d"'],
     "frh_lastweek": ["when it closed its doors last week"],
-    "fdr_lastmonday": ["when it closed its doors last Monday"],
+    "fdr_lastmonday": ["No sound bank is a dollar worse off than it was when it closed its doors last Monday."],
     "bern_mellon": ["Andrew Mellon's infamous 'liquidationist' thesis"],
     "bern83_half_output": ["equations (11.1) and (11.2)"],
+    "bern_abusing": ["abusing slightly my status as an official representative of the Federal Reserve"],
+    "fdr_confidence": ["more important than currency, more important than gold, and that is the confidence of the people"],
+    "fdr_together": ["Together we cannot fail."],
     "bern_sorry": ["Regarding the Great Depression. You're right, we did it. We're very sorry. But thanks to you, "
                    "we won't do it again."],
 }
@@ -585,16 +603,19 @@ def opening(F, Y, Q):
     chk("    eight days in office (就任总统才八天)", d - d4, told("就任总统才八天", "才", "天"))
     say("这是他的第一次炉边谈话")
     assert "last few days of February and the first few days of March" in Q["fdr_febmar"]
-    said("2 月底与 3 月初，公众失去了信心，争着把存款换成通货或黄金", 2, 3)
+    said("他从 2 月底与 3 月初讲起", 2, 3)
     assert "By the afternoon of March 3d" in Q["fdr_march3"]
     said("到 3 月 3 日下午，全国几乎没有一家银行还在营业", 3, F["fdr_march3"][0])
+    assert "issued by the Governors in almost all the States" in Q["fdr_governors"]
+    say("几乎每个州的州长都已发布公告，让银行全部或部分暂时关门")
     d6, h = F["app_2039_done"]
     a, b, y39 = F["app_2039_dates"]
     h1, m1, d1, _ = F["frh_1am"]
     assert d6 == a == d1 and h == h1 and m1 == 0 and y39 == y and "March-1 A.M." in Q["app_2039_done"]
     said("3 月 6 日凌晨 1 点，罗斯福宣布，从 6 日到 9 日全国的银行一律休假", 3, d6, h, a, b)
     assert date(int(y), 3, int(d) + 1).weekday() == 0                                       # 明天，星期一
-    said("“明天，星期一”，12 个联邦储备银行所在城市的银行先开门", F["fdr_tomorrow"][0])
+    assert "on first examination by the Treasury have already been found to be all right" in Q["fdr_firstexam"]
+    said("“明天，星期一”，12 个联邦储备银行所在城市里经财政部初查合格的银行先开门", F["fdr_tomorrow"][0])
     assert "on Tuesday" in Q["fdr_250"]
     said("星期二轮到有票据交换所的城市，约 250 个", F["fdr_250"][0])
     crash = F["bern_1928"][1]
@@ -658,10 +679,13 @@ def world(F, Y, Q):
     # the Federal Reserve System
     assert "When the crises began" in Q["frh_8000"] and Y["frh_8000"] == 1930
     said("1930 年秋天，加入联邦储备体系的商业银行有 8,000 多家，没有加入的近 16,000 家", Y["frh_8000"], *F["frh_8000"])
-    said("管这些银行的联邦储备体系有 12 家联邦储备银行", F["frh_mar4"][1])
+    said("联邦储备体系本身有 12 家联邦储备银行", F["frh_mar4"][1])
     y13, cover, price = F["frh_40pct"]
     said("法律还要求联邦储备银行为发出的钞票保有 40\\% 的黄金，并按每盎司纯金 20.67 美元兑换黄金", cover, price)
-    said("这两条都写在 1913 年的联邦储备法里", y13)
+    said("其中 40\\% 的黄金准备写在 1913 年的联邦储备法里", cover, y13)
+    _, y00, p00 = F["frh_1900"]
+    assert "the value set by the Gold Act of 1900, which equaled $20.67 per ounce" in Q["frh_1900"] and p00 == price
+    said("20.67 美元的金价则来自 1900 年金本位法规定的金元含金量", p00, y00)
 
 
 def panics(F, Y, Q):
@@ -676,7 +700,8 @@ def panics(F, Y, Q):
     assert "On November 7" in Q["frh_caldwell"] and "largest financial holding company in the South" in Q[
         "frh_caldwell_south"]
     said("11 月，南方最大的金融控股公司 Caldwell 出了事", 11)
-    said("它的主要子公司田纳西银行 11 月 7 日关门", 11, d7)
+    assert "one of Caldwell's principal subsidiaries" in Q["frh_caldwell"]
+    said("它的一家主要子公司田纳西银行 11 月 7 日关门", 11, d7)
     chk("    about one-third reopened (约三分之一)", F["frh_cascade"][0], told("其中约三分之一几个月后重开", "其中约", "几个月"))
     d, nth = F["frh_bus"]
     assert "December 11" in Q["frh_bus"]
@@ -706,6 +731,9 @@ def panics(F, Y, Q):
     a, b, c = F["frh_weekly"]                                     # million, million, billion
     said("3 月每周买进近 2,500 万美元的政府证券，4 月每周近 1 亿美元，到 6 月已经买了 10 亿美元以上", 3, a * M6, 4, b * M6, 6,
          c * B9)
+    assert "occurred in April 1932, when the Congress began to exert considerable pressure" in Q["bern_april1932"]
+    assert F["bern_april1932"][0] == Y["frh_weekly"]
+    said("4 月起，国会也向美联储施加很大的压力，要它大量买进证券", 4)
     d0, y0, d1, y1 = F["frb_period"]
     said("从 1932 年 2 月 3 日到 1933 年 2 月 1 日", y0, 2, d0, y1, 2, d1)
     bought, repaid, reserves = F["frb_1015"]
@@ -901,7 +929,11 @@ def fed(F, Y, Q):
     say(*views)
     chk("    four views (四种说法)", len(views), told("四种说法并不互相排斥", "", "种说法"))
     said("斯特朗 1928 年去世", 1928)                                     # Strong 1872—1928 (LIVES, Chapter 27)
-    said("费雪 1933 年也说过同样的话", F["fis_copyright"][0])
+    said("费雪 1933 年也认为，斯特朗在世，萧条几乎可以避免", F["fis_copyright"][0])
+    assert "power became diffused" in Q["bern_diffused"] and "well-established chain of command" in Q["bern_vacuum"]
+    assert "Larger, stronger banks would then take the lead" in Q["bern_clearing"]
+    assert "was no longer their responsibility" in Q["bern_bigbanks"]
+    say("美联储成立以前，恐慌通常由银行自己对付", "有了美联储，大银行觉得保护小同行已经不是自己的责任")
     assert "Federal Reserve Board" in Q["frh_mellon"]
     assert column("juan")["frb_88m"] == "Feb. 1933" and F["frb_policy"] == [4, 25]
     said("1933 年 1 月，它把持有的政府证券减少了 8,800 万美元", Y["frb_88m"], 1, F["frb_88m"][0])
@@ -924,7 +956,7 @@ def fed(F, Y, Q):
     said("按法律，联邦储备券要有 40\\% 的黄金", F["frh_40pct"][1])
     assert "February 1933, as it had during the fall of 1931" in Q["frh_feb1933"]
     said("1931 年 10 月的加息是为了保卫黄金，1933 年 2 月又加了一次", F["bern_oct1931"][1], 10, F["frh_feb1933"][0], 2)
-    said("1932 年的格拉斯—斯蒂格尔法放松了这条约束", Y["stat_feb27"])
+    said("1932 年的格拉斯—斯蒂格尔法允许拿政府债券充当钞票的抵押", Y["stat_feb27"])
     said("可是到 1933 年 3 月，纽约联储的黄金准备还是跌破了下限", F["frh_mar1"][1], 3)
     ch23 = (ROOT / "zh" / "ch23_goldstandard.tex").read_text(encoding="utf-8")
     days = int(re.search(r"一次不超过 (\d+) 天", ch23).group(1))
@@ -977,7 +1009,13 @@ def credit(F, Y, Q):
          -t3[12] * 1e4, 10, 4, -t3[13], -t3[16] * 1e3, 10, 3, -t3[18] * 1e3, 10, 3, -t3[17], -t3[19], t3[20])
     assert all(v < 0 for v in t3[12:20])                                                  # 符号都是负的
     assert t3[20] < t1[12]                                                                 # 回归标准误降到
-    assert abs(t3[4] - t1[4]) < 0.1                                                        # 系数变化不大
+    said("加上它们以后，当期货币冲击的系数从 0.407 降到 0.332（$t=2.92$），仍然显著", t1[4], t3[4], t3[5])
+    assert t3[4] < t1[4] and t3[5] > 1.96                                                  # 降到, 仍然显著
+    assert s1[1] != s3[1]                                                                  # 两式的样本起点不同
+    say("两式的样本起点不同，这个比较只是大致的")
+    assert "had never previous to this time been a necessary result of declines in output" in Q["bern83_never"]
+    assert "important sources of bank runs" in Q["bern83_events"] and "Kreditanstalt in Austria" in Q["bern83_kredit"]
+    assert "scandal at the Bank of the United States" in Q["bern83_scandal"]
     y33, seven = F["bern83_march"]
     said("1933 年 3 月倒闭银行的存款，是第二多那个月的七倍", y33, 3)
     chk("    seven times (七倍)", seven, told("是第二多那个月的七倍", "月的", "倍"))
@@ -995,7 +1033,10 @@ def credit(F, Y, Q):
     y, v = F["cyb_netvalue"]
     p = F["cyb_47pct"]
     assert p[5] == 1929
-    said("1932 年全部生产的净值只有 21.05 亿加元，比 1929 年少了 47\\%", y, v, p[5], p[4])
+    assert "by the Dominion Bureau of Statistics" in Q["cyb_netvalue"]
+    assert "the net production of commodities" in Q["cyb_commodities"]
+    said("按自治领统计局的估计，1932 年商品生产的净值只有 21.05 亿加元，比 1929 年少了 47\\%", y, v, p[5], p[4])
+    assert "did not decline to anything like the same extent" in Q["cyb_volume"]
     p32, y32, p29, y29 = F["cyb_6670"]
     said("按官方的批发物价指数，1932 年的 66.70 加元在商品上的购买力，相当于 1929 年的 95.60 加元", y32, p32, y29, p29)
     real = (1 - p[4] / 100) * p29 / p32
@@ -1003,6 +1044,14 @@ def credit(F, Y, Q):
         told("用它折算，生产的实际价值约少了四分之一", "约少了"), tol=0.02)
     B = bea()
     said("美国的实际 GDP 1929—1932 年少了 25.4\\%", 1929, 1932, fall(B.gdp_real_2017[1929], B.gdp_real_2017[1932]))
+    _, y31b, _ = F["frh_britain"]
+    d19, y19 = F["cyb_apr19"]
+    assert "depreciated also and fluctuated broadly with sterling" in Q["cyb_sterling"]
+    assert "departed from the gold standard on April 19, 1933" in Q["cyb_apr19"]
+    said("1931 年 9 月以后，加元也跟着贬值，大体随英镑起落，直到 1933 年 4 月美元离开金本位", y31b, 9, y19, 4)
+    assert "premium on United States dollars at Montreal" in Q["cyb_premium"]
+    said("此后美元在蒙特利尔的升水才从约 20\\% 逐渐缩小", F["cyb_premium"][0])
+    assert "like Canada, that went only part way with Britain" in Q["bern_partway"]
     said("未必能代表 1930 年代的各国", F["bern_canada_reply"][0])
     said("他用 26 个国家的样本", F["bern_26"][0])
     said("照 Kryzanowski 与 Roberts（1993）的看法", F["brr_forbearance"][0])
@@ -1014,8 +1063,17 @@ def credit(F, Y, Q):
         assert words in Q["rom90_ip"], words
     said("季节调整后的工业生产，1929 年 8 月到 10 月降了 1.8\\%，10 月到 12 月降了 9.8\\%", v[1], 8, 10, v[0], 10, 12, v[3])
     said("1929 年 12 月到 1930 年 12 月，它又降了 23.9\\%", v[7], 12, v[8], 12, v[6])
+    assert "On November 7" in Q["frh_caldwell"] and Y["frh_caldwell"] == 1930              # the first panic
+    said("1930 年的大部分时间，第一次银行恐慌还没有来", Y["frh_caldwell"])
+    said("大萧条最主要的谜，是产出为什么在 1929 年底与整个 1930 年跌得这么厉害", *F["rom90_mystery"])
+    assert "in late 1929 and all of 1930" in Q["rom90_mystery"]
     said("照 Temin（1976）的看法", F["rom90_temin"][0])
-    said("这一解释也承认，1931 年以后的下降另有银行恐慌的原因", F["rom90_later"][2])
+    assert "could not be the main explanation for the real decline in this period" in Q["rom90_temin"]
+    said("按 Romer（1990）的论点", Y["rom90_abstract"])
+    h87, y29h = F["rom90_hamilton"]
+    assert "in the late summer of 1929" in Q["rom90_hamilton"]
+    said("这一解释也承认，1929 年夏末产量最初的下降，货币紧缩是一个重要原因，这是 Hamilton（1987）的结论", y29h, h87)
+    said("1931 年以后的下降，另有银行恐慌的原因", F["rom90_later"][2])
 
 
 def recovery(F, Y, Q):
@@ -1041,6 +1099,8 @@ def recovery(F, Y, Q):
     v = F["frb_june30"]
     said("到 6 月 30 日，没有执照的国民银行、州立会员银行与非会员银行，分别还有 985 家、114 家与 1,983 家", 6, v[0], v[2], v[4],
          v[6])
+    assert "to be rehabilitated and reopened or to be placed in liquidation or receivership" in Q["frb_june30"]
+    say("它们或者整顿后重开，或者清理")
     # gold
     src = meta()["sources"]
     eo = int(re.search(r"Executive Order (\d+)", src["app6102"]["version"]).group(1))
@@ -1050,6 +1110,8 @@ def recovery(F, Y, Q):
     assert "April 5, 1933" in Q["eo_date"] and "on or before May 1, 1933" in Q["eo_deliver"]
     said("4 月 5 日的第 6102 号行政命令要求，每个人在 5 月 1 日以前把金币、金块与金券交给联邦储备银行或会员银行", 4, d5, eo, 5,
          d1)
+    assert "an equivalent amount of any other form of coin or currency" in Q["eo_equivalent"]
+    say("换回等额的其他铸币或通货")
     said("每人只可以留 100 美元以内的金币与金券", F["eo_100"][0])
     said("4 月 20 日的公告正式中止了金本位", 4, F["frh_apr20"][0])
     said("6 月 5 日，国会的决议废除了一切合同里的黄金条款", 6, F["frh_june5"][0])
@@ -1058,8 +1120,8 @@ def recovery(F, Y, Q):
     mo, y34 = F["ba_operative"]
     said("法律规定的临时存款保险基金从 1934 年 1 月 1 日起运作，每个存款人最多赔付 2,500 美元", y34, 1, mo, F["ba_2500"][0])
     _, _, y7, cap = F["frh_5000"]
-    assert "permanent in July 1934" in Q["frh_5000"]
-    said("1934 年 7 月，基金改为永久，上限提高到 5,000 美元", y7, 7, cap)
+    assert "the limit was raised to $5,000" in Q["frh_5000"]
+    said("1934 年 7 月，上限提高到 5,000 美元", y7, 7, cap)
     said("1934 年停业的银行只有 57 家", 1934, A.susp_banks[1934])
     # the Gold Reserve Act and Proclamation 2072
     y, d30 = F["wh_tuesday"]
@@ -1122,7 +1184,9 @@ def recovery(F, Y, Q):
          F["rom92_abstract"][0])
     p25, y37 = F["rom92_25pct"][:2]
     said("货币如果按历史上的平均速度增长，1937 年的实际 GNP 会低约 25\\%", y37, p25)
-    said("1933—1941 年，美联储几乎没有主动改变高能货币", *F["rom92_fed"])
+    assert "Friedman and Schwartz (1963, p. 511) as quoted by Romer" in column("note")["rom92_fed"]
+    assert "high-powered money" in Q["rom92_fed"]
+    said("照弗里德曼与施瓦茨的说法，1933—1941 年，美联储几乎没有主动改变基础货币", *F["rom92_fed"])
     d, y = F["frb_goldinflow"]
     assert "July 15, 1936" in Q["frb_goldinflow"]
     said("联邦储备委员会 1936 年 7 月也说", y, 7)
@@ -1130,7 +1194,10 @@ def recovery(F, Y, Q):
     assert "from 8.86 in January 1933 to 6.67 in December 1942" in Q["rom92_dr"]
     said("存款与准备金之比从 1933 年 1 月的约 8.9 降到 1942 年 12 月的约 6.7", y0, 1, a, y1, 12, b)
     said("Romer（1992）的模拟里，财政政策的作用很小", Y["rom92_fiscal"])
-    said("1930 年代财政政策作为复苏的办法不成功", F["rom92_abstract"][1])
+    assert "His often-cited conclusion" in Q["rom92_brown"] and "unsuccessful recovery device in the 'thirties" in Q[
+        "rom92_brown"]
+    brown = int(re.search(r"Brown \((\d{4})\) as quoted by Romer", column("note")["rom92_brown"]).group(1))
+    said("用 Brown（1956）常被引用的话说，1930 年代的财政政策看来没能带来复苏", brown, F["rom92_abstract"][1])
     said("1937—1938 年复苏又一次中断，失业率回升到 19.0\\%", 1937, 1938, A.unemployment_pct[1938])
 
 
@@ -1151,11 +1218,22 @@ def deeper(F, Y, Q):
     said("回忆 1932 年的法律时", Y["frh_hoover"])
     said("也只见于同一网站对他 1952 年回忆录的转引", F["frh_hoover1952"][0])
     brown = int(re.search(r"Brown \((\d{4})\) as quoted by Romer", N["rom92_brown"]).group(1))
-    said("Meltzer（2003）、Chandler（1971）、Wicker（1996）、Temin（1976）、Clark（1933）与 Brown（1956）都是转引",
-         F["frh_meltzer"][1], F["frh_freegoldworry"][2], F["frh_mar3"][1], F["rom90_temin"][0], F["bern_clark"][0], brown)
+    said("Meltzer（2003）、Chandler（1971）、Wicker（1996）、Temin（1976）、Hamilton（1987）、Clark（1933）与 Brown（1956）都是转引",
+         F["frh_meltzer"][1], F["frh_freegoldworry"][2], F["frh_mar3"][1], F["rom90_temin"][0], F["rom90_hamilton"][0],
+         F["bern_clark"][0], brown)
+    assert "Hamilton (1987) as summarized by Romer" in N["rom90_hamilton"]
     said("Kryzanowski 与 Roberts（1993）对加拿大银行的看法，据 Bordo、Redish 与 Rockoff（2011）的转述", F["brr_forbearance"][0],
          F["brr_copyright"][0])
     said("他们的论证据伯南克 2002 年的讲话", F["bern_title"][1])
+    for rid in ("bern_tragic", "bern_partway"):
+        assert "as quoted by Bernanke" in N[rid], rid
+    said("美联储 1933—1941 年几乎没有主动改变基础货币，是 Romer（1992）转引他们的话", *F["rom92_fed"], Y["rom92_fed"])
+    d19, y19 = F["cyb_apr19"]
+    said("美国离开金本位的日子，加拿大年鉴作 1933 年 4 月 19 日，联邦储备历史网站说罗斯福 4 月 20 日的公告正式中止了金本位", y19,
+         4, d19, 4, F["frh_apr20"][0])
+    y7 = F["frh_5000"][2]
+    assert "became permanent in July 1934" in Q["frh_5000"] and "the FDIC's own history" in N["frh_5000"]
+    said("联邦储备历史网站还说，存款保险基金在 1934 年 7 月改为永久", y7, 7)
     wheelock = int(re.search(r"Wheelock \((\d{4})\) could not be downloaded", m["notes"]).group(1))
     said("Wheelock（1992）对美联储信条的研究没有取得", wheelock)
     am = annual_meta()
@@ -1163,6 +1241,13 @@ def deeper(F, Y, Q):
     said("转引自《美国历史统计》系列 X 410—417", x0, x1)
     assert "Banking and Monetary Statistics 1914-1941 (FRASER) could not be downloaded" in am["notes"]
     said("准备金余额取自《联邦储备公报》，1930 与 1931 年缺年平均", 1930, 1931)
+    g, g0, g1 = F["rom92_m1"]
+    m1 = A.m1_bn
+    growth = 100 * ((m1[g1] / m1[g0]) ** (1 / (g1 - g0)) - 1)
+    said("M1 的增长，照 Romer（1992）的说法，1933—1937 年每年平均近 10\\%", 1, Y["rom92_m1"], g0, g1, g)
+    said("按《美国历史统计》系列 X 414 的年平均算，M1 从 199 亿美元增加到 309 亿美元，每年约增长 11.6\\%，比这还高",
+         series_no("X", "currency plus demand deposits"), 1, m1[g0] * B9, m1[g1] * B9, growth)
+    assert growth > g
     bul = A.money_in_circulation_m + A.member_reserves_m
     said("按公报自己的口径，流通中的货币加准备金余额，1929—1933 年也增加了 15.9\\%，与\\tabref{tab:depressionus-money}的 "
          "14.0\\% 方向一致", 1929, 1933, rise(bul[1929], bul[1933]), rise(T.H[1929], T.H[1933]))
@@ -1238,6 +1323,8 @@ def legacy(F, Y, Q):
     d, y, ninety = F["bern_title"]
     assert "November 8, 2002" in Q["bern_title"]
     said("2002 年 11 月 8 日，弗里德曼九十岁生日的会上", y, 11, d)
+    assert "Let me end my talk by abusing slightly" in Q["bern_abusing"]
+    say("时任联邦储备理事的伯南克在讲话的最后说")
     chk("    the ninetieth birthday (九十岁)", [ninety, y - F["bnf_friedman"][0]], [told("弗里德曼九十岁生日的会上", "弗里德曼", "岁")] * 2)
     S = A.susp_banks
     assert S.loc[1934:1936].max() < S.loc[1921:1929].min()                                 # 一下子少了
@@ -1307,7 +1394,13 @@ def ending(F, Y, Q):
     d15, pts, close, gain = F["frh_dow"]
     chk("    8.26 points to 62.10 is a gain of 15.34%", 100 * pts / (close - pts), gain, tol=0.005)
     said("3 月 15 日股市重新开盘，道琼斯指数一天涨了 15.34\\%", 3, d15, gain)
+    assert "On April 20" in Q["frh_apr20"]
+    said("可是美国要到这一年 4 月才离开黄金", 4)
     said("英国早在 1931 年 9 月就离开了", F["frh_britain"][1], 9)
+    assert "remained on the gold standard as long as possible" in Q["bern_goldbloc"]
+    say("法国与所谓金集团的其他国家还要尽可能久地守着它")
+    assert Q["fdr_together"] == "Together we cannot fail."
+    say("他的最后一句是：“我们齐心，就不会失败。”")
     q29 = re.search(r"\\guidequestion\{([^}]*)\}", (ROOT / "zh" / "ch29_depressionworld.tex").read_text(encoding="utf-8"))
     assert q29 and q29.group(1).startswith(NEXT), "Chapter 29's guide question does not begin with NEXT"
     t = tex_text().rstrip()
@@ -1330,8 +1423,8 @@ UNKNOWN = ["George Harrison，生卒年未详"]
 EVENTS = [("美国的实际 GDP 从 1929 年到 1933 年降了 26.3\\%，GDP 平减指数降了 25.8\\%（\\exref{ex:accounts-depression}）",
            "ch02_accounts", "到 1933 年下降 26.3\\%；平减指数同期下降 25.8\\%"),
           ("三年半以前，1929 年 10 月，纽约股市崩盘（\\chref{ch:interwar}）", "ch27_interwar", "1929 年 10 月 28 日"),
-          ("这两条都写在 1913 年的联邦储备法里（\\chref{ch:goldstandard}）", "ch23_goldstandard",
-           "联邦储备券的黄金准备低于 40\\% 时"),
+          ("其中 40\\% 的黄金准备写在 1913 年的联邦储备法里（\\chref{ch:goldstandard}）", "ch23_goldstandard",
+           "对流通中的联邦储备券至少要有 40\\% 的黄金准备"),
           ("亚特兰大联储认为，最后贷款人的责任及于整个银行体系（\\chref{ch:goldstandard}）", "ch23_goldstandard",
            "\\textbf{最后贷款人}"),
           ("挤兑的力量，可以在\\chref{ch:money}的资产负债表上看清", "ch04_money", "资产负债表"),
@@ -1350,7 +1443,10 @@ EVENTS = [("美国的实际 GDP 从 1929 年到 1933 年降了 26.3\\%，GDP 平
           ("\\chref{ch:goldstandard}问过，发行的限额有了弹性以后，纪律靠什么", "ch23_goldstandard", "弹性有了，纪律靠什么"),
           ("一次不超过 30 天，不足的部分缴累进的税（\\chref{ch:goldstandard}）", "ch23_goldstandard", "一次不超过 30 天"),
           ("1900 年的金本位法规定，金元含 25.8 格令、成色十分之九的黄金（\\chref{ch:goldstandard}）", "ch23_goldstandard",
-           "1900 年美国以法律确立金本位")]
+           "1900 年美国以法律确立金本位"),
+          ("格令是比盎司小得多的重量单位（\\chref{ch:goldstandard}）", "ch23_goldstandard", "格令是比盎司小得多的重量单位"),
+          ("大银行带头，先查明受挤兑的银行其实健全，再借现金给它们（\\chref{ch:goldstandard}）", "ch23_goldstandard",
+           "这一次，挑选救谁的不是中央银行，是银行家们自己")]
 
 
 def book(F, Q):
@@ -1424,6 +1520,9 @@ def witnesses(F, Q):
     chk("the stabilization fund: the White House = Federal Reserve History ($2 billion)", F["wh_fund"][0],
         F["frh_fund"][1] * B9)
     chk("the gold cover: 40% (Federal Reserve History, two essays)", F["frh_40pct"][1], F["frh_40reserve"][0])
+    chk("the old price of gold: $20.67 (Federal Reserve History, two essays)", F["frh_40pct"][2], F["frh_1900"][2])
+    chk("the day the United States left gold: 19 April (Canada Year Book) and the proclamation of 20 April (Federal "
+        "Reserve History)", F["frh_apr20"][0] - F["cyb_apr19"][0], 1)
     chk("the new dollar at 59 per cent of the old (Federal Reserve History) and 59.06 plus (the White House)",
         F["frh_1900"][0], F["wh_5906"][0], tol=0.5)
     chk("the old gold content: Proclamation 2072 = the White House (25.8 grains)", F["p2072_old"], F["wh_5906"][1:])
@@ -1497,7 +1596,7 @@ def counts() -> None:
     assert n <= 12, n
     verbs = "认为|写道|说|指出|记述|估计|承认|报道|记载|提到|列出|给出|发现|统计|算出"
     names = ("Romer|Temin|Meltzer|Clark|Kryzanowski|Roberts|Bordo|Redish|Rockoff|Wheelock|Chandler|Wicker|Brown|Darby|"
-             "Eccles|联邦储备历史网站")
+             "Eccles|Hamilton|联邦储备历史网站")
     subj = re.findall(r"(?:^|[。；：，\n])\s*(?:" + names + r")(?:（\d{4}）)?(?:" + verbs + ")", main)
     assert not subj, subj
     assert "这一节回答" not in t and "不能据此断言" not in t
