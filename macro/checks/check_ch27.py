@@ -705,7 +705,12 @@ def opening(F, Y, Q):
     m = meta()
     asked = [k for k in ("hansard1925a", "hansard1925b", "hansard1925c", "hansard1925d")
              if "private notice question of Mr. Pethick-Lawrence" in m["sources"][k]["version"]]
-    chk("    the two questions of the morning (两个质询)", len(asked), told("上午的两个质询，问的正是这个平价", "上午的", "个质询"))
+    chk("    the two private notice questions before the Budget (两个质询)", len(asked),
+        told("预算演说之前的两个质询，问的正是这个平价", "演说之前的", "个质询"))
+    # both questions were asked by Private Notice, and both came before the Financial Statement (c. 7, c. 32 < c. 34)
+    assert all("(by Private Notice)" in Q[r] for r in ("hc_wpiask", "hc_ppp"))
+    assert max(int(column("juan")[r][1:]) for r in ("hc_wpiask", "hc_ppp")) < int(column("juan")["hc_budget"][1:])
+    say("先用紧急质询问了贸易部一个问题", "他又提了一个紧急质询", "质询之后，财政大臣丘吉尔")
     par = mint_par()
     common = math.floor(par * 100) / 100                                               # 4.8665 is written 4.86
     said("一英镑合 4.86 美元，与大战以前一样", common)
@@ -713,7 +718,7 @@ def opening(F, Y, Q):
          F["k25_toohigh"][0])                                                         # life dates: book()
     assert Y["k25_toohigh"] == hansard_day("hansard1925a")[0]                           # 同一年
     a, b, _, _ = F["k25_gap"]
-    q = "财政部的专家却以为只差两三个百分点"
+    q = "照他的推测，财政部以为只差两三个百分点"
     chk("    two or three points (两三个百分点)", [a, b], [told(q, "只差", "三个"), told(q, "只差两", "个百分点")])
 
 
@@ -723,7 +728,8 @@ def world(F, Y, Q):
     assert "In March 1919" in Q["br_unpegged"]
     war = M.usd_per_gbp.loc["1916-01":"1918-12"]
     chk("    the war peg, 1916-1918: 36 months between 4.75 and 4.78", [war.min() > 4.75, war.max() < 4.78], [1, 1])
-    said("它一直钉在比战前平价低 2\\% 左右的地方", 100 * (1 - war.mean() / par))
+    assert M.usd_per_gbp["1915-12"] < 4.75 < M.usd_per_gbp["1916-01"]                     # the peg from early 1916
+    said("从 1916 年初起，它一直钉在比战前平价低 2\\% 左右的地方", 1916, 100 * (1 - war.mean() / par))
     said("后来靠 1920 年的金银出口管制法", F["hc_since1919"][1])
     rate, y = F["br_318"]
     said("英镑随即下跌，1920 年 2 月跌到 3.18 美元", y, 2, rate)
@@ -871,7 +877,8 @@ def parity(F, Y, Q):
     said("Dulles（1929）第 297 页", F["du_copyright"][0], page("du_onefifth"))
     # Bradbury and Hunsdon
     born, died, baron = F["hh_bradbury"]
-    said("布拉德伯里勋爵（John Bradbury，1872—1950）。他那年 1 月刚封男爵", born, died, 1)
+    said("成员里有布拉德伯里勋爵（John Bradbury，1872—1950）", born, died)               # his first appearance
+    said("布拉德伯里勋爵。他那年 1 月刚封男爵", 1)
     assert "Baron Bradbury January 28, 1925" in Q["hh_bradbury"] and baron == hansard_day("hansard1925a")[0]
     said("可是政府若宣布英镑不值 4.8 美元、大概只值 4.6 美元", *F["hl_460"])
     said("亨斯登勋爵（Herbert Gibbs，1854—1935）也签过坎利夫委员会的报告", *F["hh_hunsdon"][:2])
@@ -894,7 +901,7 @@ def keynes(F, Y, Q):
     said("每英镑$4.8665\\times(P^{f}_1/P^{f}_0)/(P_1/P_0)$美元", par)
     uk, us = F["hc_wpi71"][2], F["hc_wpi62"][2]
     over_w = (1 + uk / 100) / (1 + us / 100) - 1
-    said("用当天上午贸易部给的批发物价，英国涨了 71\\%，美国涨了 62\\%，英镑约高估 5.6\\%", uk, us, 100 * over_w)
+    said("用当天贸易部在质询里给的批发物价，英国涨了 71\\%，美国涨了 62\\%，英镑约高估 5.6\\%", uk, us, 100 * over_w)
     A = annual()
     cuk = A.uk_cpi_2015_100[1925] / A.uk_cpi_2015_100[1913]
     cus = A.us_cpi_1982_84_100[1925] / A.us_cpi_1982_84_100[1913]
@@ -1032,7 +1039,7 @@ def exchange(F, Y, Q):
     dd, yy = F["br_aug23"]
     said("帝国银行按每美元 4.2 帝国马克的价格买卖外汇，一直钉到 1926 年 8 月 23 日", F["br_420"][1], yy, 8, dd)
     chk("    4.20 on p. 469 and p. 486", F["br_420end"], [F["br_420"][1]])
-    said("\\cmprow{国内流通的钱}{金币与可兑换的银行券（\\chref{ch:goldstandard}）}{钞票；英国 1925 年以后只卖 400 盎司的金块}",
+    said("\\cmprow{国内流通的钱}{金币与可兑换的银行券（\\chref{ch:goldstandard}）}{钞票；连英国 1925 年以后也只卖 400 盎司的金块}",
          F["act_title"][1], F["act_bars"][0])
     said("\\cmprow{1913 年与 1928 年的欧洲}{外汇约占储备的 12\\%}{外汇占 42\\%}", y0, y2, s0, s2)
     r33 = F["nu_ratio33"][0]
@@ -1118,7 +1125,8 @@ def gold(F, Y, Q):
     c4, p122 = F["br_4cents"]
     said("每法郎不超过 4 美分；买进英镑，每英镑不少于 122 法郎", c4, p122)
     said("事实上的汇率是一英镑合 125 法郎", F["br_125"][0])
-    said("1928 年 5 月的大选以后", int(re.search(r"elections of 1 May (\d{4})", column("note")["br_honor"]).group(1)), 5)
+    # Brown dates the elections 1 May 1928 (they were held in April); the text says only 春天
+    said("1928 年春天的议会选举以后", int(re.search(r"elections of 1 May (\d{4})", column("note")["br_honor"]).group(1)))
     said("法兰西银行有两位董事反对按 125 法郎立法稳定", F["br_125"][0])
     assert "The latter two were opposed" in Q["br_125"]
     d, y, mg, fine, _ = F["br_655"]
@@ -1420,7 +1428,7 @@ def selfcheck(F, Y):
     p = SHILLINGS * PENCE
     said("每盎司纯金合$934.5\\times12/11=1019.45$便士，一英镑 240 便士可买$240/1019.45$盎司纯金", standard, 12, 11, fine, p, p,
          fine)
-    said("值$20.67\\times240/1019.45\\approx4.87$美元，即通常说的 4.86 美元平价", usd, p, fine, usd * p / fine,
+    said("值$20.67\\times240/1019.45\\approx4.866$美元，即通常说的 4.86 美元平价", usd, p, fine, usd * p / fine,
          math.floor(mint_par() * 100) / 100)
     uk, us = 1 + SC2["uk"] / 100, 1 + SC2["us"] / 100
     said("$q_1/q_0=1.5/1.8\\approx0.83$，实际汇率下降约 17\\%，英国货相对贵了", us, uk, us / uk, 100 * (1 - us / uk))
@@ -1487,6 +1495,9 @@ EVENTS = [("购买力平价是让两国物价折成同一种货币以后相等�
           ("遵守的比例是 34\\%，违反的是 60\\%（\\chref{ch:goldstandard}）", "ch23_goldstandard",
            "Bloomfield 用 1880—1914 年的年度数据检验，各国央行遵守的比例是 34\\%，违反的是 60\\%"),
           ("\\chref{ch:goldstandard}问过，发行的限额有了弹性以后，纪律靠什么", "ch23_goldstandard", "弹性有了，纪律靠什么"),
+          ("信用发行以外的每一张钞票，都要有黄金对应（\\chref{ch:goldstandard}）", "ch23_goldstandard",
+           "这部分叫作\\textbf{信用发行}"),
+          ("其中许多人信奉真实票据论（\\chref{ch:smith}）", "ch18_smith", "真实票据"),
           ("这里的$R$是中央银行对外的储备，不是\\chref{ch:money}里商业银行的准备金", "ch04_money",
            "公众手中的通货与银行的准备金，合起来叫\\textbf{基础货币}"),
           ("\\chref{ch:money}从负债一边写基础货币$H$", "ch04_money", "合起来叫\\textbf{基础货币}"),
