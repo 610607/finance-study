@@ -566,6 +566,18 @@ back to the old parity without striking off any zeros.
 - Labels: sections `sec:depressionworld-…`; `eq:depressionworld-…`, `fig:depressionworld_…`,
   `tab:depressionworld-…`, `ex:depressionworld-…`.
 
+### Carried over from the editor's round on Chapter 29
+
+- Worked examples must use the same definition throughout: when an example sets "the sterling price of
+  imports rises with the depreciation", every later part measures depreciation the same way (the price
+  of foreign currency, not the home currency's foreign value). Check each example's arithmetic against
+  its own stated assumptions and its own data before claiming a result ("通缩停了下来").
+- An arithmetic correspondence is not an author's method: do not write "凯恩斯用的也是这种算法" unless the
+  source says so.
+- A classification built from a source's table (the earliest of three dates) is the book's own
+  construction: say so in the text, the caption and the 史料说明.
+- Compare-box cells carry their own citation when the numbers come from a table.
+
 ## 第 30 章 `ch:alternatives` 1930 年代的另类出路：纳粹德国、高桥财政与瑞典 (`zh/ch30_alternatives.tex`)
 
 - Neighbours:
