@@ -695,6 +695,22 @@ back to the old parity without striking off any zeros.
 - Labels: sections `sec:alternatives-…`; `eq:alternatives-…`, `fig:alternatives_…`,
   `tab:alternatives-…`, `ex:alternatives-…`.
 
+### Carried over from the editor's round on Chapter 30
+
+- Read who did what in a source before writing it: who proposed a measure (the Bank of Japan's history
+  says Takahashi proposed the underwriting), which institution bought (the Bank and the Deposit Bureau,
+  one issue excepted), which year a verdict is about (the "greatest failure" is the consent of 1932, not
+  the sales of 1936), and which way a rate moved. The reviewer of Chapter 30 found most of its
+  high-severity errors here.
+- Legal terms keep their legal sense: "no liability for drawer and co-endorser", "discountable at any
+  bank at any time", "by decree of"; do not shorten them into a looser everyday phrase.
+- A scholarly debate the chapter cannot read in full may still use an abstract the book can read
+  (IDEAS/RePEc, a journal's landing page): cite the article, say in the text "只读到了它的摘要", keep the
+  abstract's concessions as well as its claims, and say so in the 史料说明. Record the abstract page as a
+  source with its sha256 and quote it verbatim.
+- After adding to a paragraph, re-run `tools/readability.py`: split a paragraph that passes 400
+  characters or carries more than two quotations, each part with its own `% 据:` line.
+
 ## 第 31 章 `ch:soviet` 苏联工业化与社会主义核算论战 (`zh/ch31_soviet.tex`)
 
 - Neighbours:

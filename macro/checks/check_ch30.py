@@ -388,7 +388,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 163)
+    quoted("rows with values, each read from its quotation", n, 166)
     quoted("rows read on a page image (no quotation)", img, 26)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
@@ -484,6 +484,7 @@ TRANSLATIONS = {
     "性质不同": "bj_newdeal",
     # sec:alternatives-debate
     "在许多方面很特殊": "es_special",
+    "太小": "ritschl_small",
     "社会倾销、通货膨胀与经济的军事化": "bj_two",
     "所谓凯恩斯式政策取得成功的例子": "bj_two",
     "凯恩斯经济学的成功先驱": "sz_keynesian",
@@ -593,6 +594,7 @@ KEYWORDS = {
     "nlra_7": ["to form, join, or assist labor organizations"],
     "bj_newdeal": ["その性格を異にするものであった"],
     "es_special": ["is in many ways special"],
+    "ritschl_small": ["too small"],
     "bj_two": ["ソーシャル・ダンピングとインフレーションと経済の軍事化", "いわゆるケインズ的政策が成功を収めた例"],
     "sz_keynesian": ["a successful pioneer of Keynesian economics"],
     "sz_smethurst": ["Japan’s Keynes"],
@@ -1271,6 +1273,14 @@ def debate(F, Y, Q):
     assert "ermöglichte" in Q["ndb_geld"]                                       # enabled, not drove
     said("沙赫特 1933 年回到帝国银行，就让创造就业与重整军备同时起步", F["ndb_17"][2])
     said("为加速的再军备筹钱的需要，到 1935 年初才出现", F["puhl_1935"][0])
+    assert "borrowed from another version" in Q["ritschl_borrowed"]          # 只读了摘要
+    assert "Although deficits were substantial" in Q["ritschl_substantial"]
+    assert "deliberately crowded out private demand" in Q["ritschl_crowd"]
+    assert "may have prevented" in Q["ritschl_after"]                          # 也许，不是肯定
+    said("Ritschl（2002）的研究要回答的正是这个问题", F["ritschl_year"][0])
+    said("军费在 1934 年已经压过了民用的创造就业", F["ritschl_1934"][0])
+    said("修高速公路的投资到 1936 年接近充分就业时才多起来", F["ritschl_autobahn"][0])
+    said("摘要也承认，1936 年以后财政与货币的继续扩张", F["ritschl_autobahn"][0])
     R = ratios()
     said("1932—1934 年，德国的人均 GDP 已从 1929 年的 83.0\\% 回到 95.2\\%", 1932, 1934, 1929, R.loc["DEU", 1932],
          R.loc["DEU", 1934])
@@ -1371,7 +1381,10 @@ def deeper(F, Y, Q):
     said("物价冻结的法令（1936 年 11 月）与 1933 年 6 月莱因哈特的创造就业法", int(law.group(5)), MONTHS[law.group(4)],
          int(law.group(3)), MONTHS[law.group(2)])
     yrs = {k: int(v) for k, v in re.findall(r"(Ritschl|Woitek|Tooze) \((\d{4})\)", notes)}
-    said("Ritschl（2002）与 Straumann 和 Woitek（2009）的论文、Tooze（2006）", yrs["Ritschl"], yrs["Woitek"], yrs["Tooze"])
+    assert "only the IDEAS/RePEc abstract was read" in notes
+    assert yrs["Ritschl"] == F["ritschl_year"][0]
+    said("Ritschl（2002）的论文只读了 IDEAS 上的摘要", yrs["Ritschl"])
+    said("Straumann 和 Woitek（2009）的论文、Tooze（2006）", yrs["Woitek"], yrs["Tooze"])
     j79, j81 = [int(x) for x in re.search(r"Jonung \((\d{4}), (\d{4})\)", notes).groups()]
     said("Cha（2003）的原文、Smethurst（2007）的高桥传记、Jonung（1979，1981）也没有取得", F["sz_cha"][0],
          F["sz_smethurst"][0], j79, j81)

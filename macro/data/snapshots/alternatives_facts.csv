@@ -300,3 +300,11 @@ loc_puhl,世界,,,1889;1962,,,loc_puhl30,authority record,"Puhl, Emil, 1889-1962
 loc_ohlin,世界,,,1899;1979,,,loc_ohlin30,authority record,"Ohlin, Bertil, 1899-1979",
 loc_rooth,世界,,,1888,,,loc_rooth30,authority record,"Rooth, Ivar, 1888-",no year of death in the record
 loc_sauckel,世界,,,1894;1946,,,loc_sauckel30,authority record,"Sauckel, Fritz, 1894-1946",
+ritschl_year,德国,2002,,2002,,,ideas_ritschl2002,IDEAS/RePEc record,"Ritschl, Albrecht, 2002.",
+ritschl_borrowed,德国,2002,,,,,ideas_ritschl2002,IDEAS/RePEc abstract,(This abstract was borrowed from another version of this item.),"the abstract is that of the working-paper version, IEW Working Paper 068 (University of Zurich, undated); the article itself was not obtained, and ZORA, which holds the working paper, refused the shell (a bot check)"
+ritschl_small,德国,2002,,,,,ideas_ritschl2002,IDEAS/RePEc abstract,archival data on public deficits suggest that their fiscal impulse was too small to account for the speed of recovery,
+ritschl_1934,德国,1934,,1934,,,ideas_ritschl2002,IDEAS/RePEc abstract,Military spending dominated civilian work-creation already in 1934.,
+ritschl_autobahn,德国,1936,,1936,,,ideas_ritschl2002,IDEAS/RePEc abstract,Investment in autobahn construction was minimal during the recovery and gained momentum only in 1936 when full employment was approaching.,
+ritschl_crowd,德国,2002,,,,,ideas_ritschl2002,IDEAS/RePEc abstract,Nazi policies deliberately crowded out private demand to ensure high rates of rearmament.,
+ritschl_substantial,德国,2002,,,,,ideas_ritschl2002,IDEAS/RePEc abstract,Although deficits were substantial and full employment was reached within four years,
+ritschl_after,德国,2002,,,,,ideas_ritschl2002,IDEAS/RePEc abstract,Continued fiscal and monetary expansion after that date may have prevented the economy from sliding back into recession.,
