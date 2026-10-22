@@ -1,0 +1,288 @@
+{
+ "title": "Evidence for Chapter 28: the Great Depression in the United States, 1929-1936",
+ "source": "Franklin D. Roosevelt's fireside chat of 12 March 1933, Proclamations 2039, 2040 and 2072, Executive Order 6102 and the White House statement of 31 January 1934 (the American Presidency Project); the Statutes at Large (47 Stat. 56, 48 Stat. 1, 48 Stat. 162, 48 Stat. 337; govinfo); the Federal Reserve Bulletin (February 1933, February 1937, September 1937); Fisher (1933, Econometrica); Bernanke (1983, NBER Working Paper 1054); Romer (NBER Working Papers 2639 and 3829); Bordo, Redish and Rockoff (NBER Working Paper 17312); Bernanke's remarks of 8 November 2002; Federal Reserve History's essays; the Canada Year Book 1934-35; the authority records of the Bibliothèque nationale de France and the Library of Congress",
+ "url": "https://www.presidency.ucsb.edu/documents/fireside-chat-banking",
+ "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or document, the source text verbatim (empty for a value read on a page image), note",
+ "retrieved": "2026-10-22",
+ "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Works of the United States government are in the public domain: the presidential speech, proclamations, executive order and White House statement, the Statutes at Large, the Federal Reserve Bulletin, and the remarks of Governor Bernanke (Board of Governors). The American Presidency Project asks for the credit 'Online by Gerhard Peters and John T. Woolley, The American Presidency Project' (row fdr_credit). Federal Reserve History's essays are quoted in short phrases with their source. Fisher (1933): 'Copyright 1933 by the Econometric Society.' (row fis_copyright); short phrases only. NBER Working Papers 1054 (Bernanke 1983), 2639 (Romer 1988) and 3829 (Romer 1991) print no copyright line; they are quoted in short phrases with their source. NBER Working Paper 17312: '© 2011 by Michael D. Bordo, Angela Redish, and Hugh Rockoff. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row brr_copyright). The Canada Year Book 1934-35 (Dominion Bureau of Statistics, 1935) is out of Crown copyright. The authority records of the Bibliothèque nationale de France (data.bnf.fr) are metadata reused under the Licence Ouverte (Open License); the Library of Congress name authorities (id.loc.gov) are public data. The chapter's Chinese renders the quotations; the translations are the book's.",
+ "used_in": [
+  28
+ ],
+ "fetch": "data/fetch/depressionus28.py",
+ "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch28.py; rows with an empty quotation are values read on a page image (sources nberw1054img and frb1937sepimg), named as such in their notes. OCR misprints are kept in the quotations and named in the notes (Bernanke 1983: '(11.1)', '(11.2)' and '(p.1)' for equations (4.1), (4.2); the Bulletin of September 1937: 14,948 for 14,943 and a number broken at a line end; Romer 1991: 'Ml', 'CUP', '[1933-1941)'; Fisher: 'Irvine FIsHEer', 'réle'). Indirect testimony: Harrison's message of 1 March 1933 (through George S. Eccles 1982, as reported by Federal Reserve History), Hoover's memoirs (1952), Meltzer (2003), Chandler (1971), Wicker (1996), Temin (1976), Clark (1933), Brown (1956), Kryzanowski and Roberts (1993) and Friedman and Schwartz (1963), whose book was not obtained: their argument is given through Bernanke (2002) and Federal Reserve History. Wheelock (1992) could not be downloaded (the St. Louis Fed's servers failed on 2026-10-22). The annual figures are in depressionus_annual; real GDP and the GDP deflator are Chapter 2's bea_nipa_annual.",
+ "sources": {
+  "fdr1933chat": {
+   "url": "https://www.presidency.ucsb.edu/documents/fireside-chat-banking",
+   "format": "html",
+   "sha256": "6975c1f7cd7288272f4776be7707e7ebb330b0b6425484e87e114774ad7414b3",
+   "version": "Franklin D. Roosevelt, Fireside Chat on Banking, 12 March 1933, the text of the American Presidency Project (Gerhard Peters and John T. Woolley, UC Santa Barbara), with its editorial note on 'March 3d'. A presidential address: public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "app2039": {
+   "url": "https://www.presidency.ucsb.edu/documents/proclamation-2039-bank-holiday-march-6-9-1933-inclusive",
+   "format": "html",
+   "sha256": "3f0b9c08ef4581bf76396173190e3b7cd8c6fc6b2dadb4add591401dd90b2285",
+   "version": "Proclamation 2039, Bank Holiday, March 6-9, 1933, Inclusive; the American Presidency Project. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "app2040": {
+   "url": "https://www.presidency.ucsb.edu/documents/proclamation-2040-continuing-force-the-bank-holiday-proclamation-march-6-1933",
+   "format": "html",
+   "sha256": "d3ca4957909cd20e7a15286373206a955a367ce4391ce912fe07d85d56928249",
+   "version": "Proclamation 2040, Continuing in Force the Bank Holiday Proclamation of March 6, 1933 (9 March 1933); the American Presidency Project. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "app6102": {
+   "url": "https://www.presidency.ucsb.edu/documents/executive-order-6102-forbidding-the-hoarding-gold-coin-gold-bullion-and-gold-certificates",
+   "format": "html",
+   "sha256": "35b4240ae52778957d311c968f88be87160a458eaa32aa50d12efb1d254b1ac6",
+   "version": "Executive Order 6102, Forbidding the Hoarding of Gold Coin, Gold Bullion and Gold Certificates (5 April 1933); the American Presidency Project. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "app2072": {
+   "url": "https://www.presidency.ucsb.edu/documents/proclamation-2072-fixing-the-weight-the-gold-dollar",
+   "format": "html",
+   "sha256": "f26a67de3a5b7c34529dff746734a437e2297d133a8964cfc7002b9c5af0fb69",
+   "version": "Proclamation 2072, Fixing the Weight of the Gold Dollar (31 January 1934); the American Presidency Project. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "appwh2072": {
+   "url": "https://www.presidency.ucsb.edu/documents/white-house-statement-proclamation-2072",
+   "format": "html",
+   "sha256": "ba420e28a0edcb59df225720ea7fefb8e630c91e5b92015fed67005aab4c0b92",
+   "version": "White House Statement on Proclamation 2072 (31 January 1934); the American Presidency Project. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "stat47p56": {
+   "url": "https://www.govinfo.gov/content/pkg/STATUTE-47/pdf/STATUTE-47-Pg56.pdf",
+   "format": "pdf",
+   "sha256": "0e427147999764001943014867f7659f2ea7766d5dbd16834ccec3ddb495ffd4",
+   "version": "47 Stat. 56-57, Public Law 72-44 (H.R. 9203), 'An Act to improve the facilities of the Federal reserve system for the service of commerce, industry, and agriculture...', approved 27 February 1932 (the Glass-Steagall Act of 1932); United States Statutes at Large, GPO scan on govinfo (text layer with the margin notes interleaved). Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "stat48p1": {
+   "url": "https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg1.pdf",
+   "format": "pdf",
+   "sha256": "2be96cc32f9d1317a45b86b643ddf1171c2484b6a60d81165987d0a7ca727b94",
+   "version": "48 Stat. 1, Public Law 73-1, the Emergency Banking Relief Act of 9 March 1933; United States Statutes at Large, GPO scan on govinfo. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "stat48p162": {
+   "url": "https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg162-2.pdf",
+   "format": "pdf",
+   "sha256": "5bf3f9347835dfcebf239b2697aa461e605cd668301721ac82b433261f79c62e",
+   "version": "48 Stat. 162, Public Law 73-66, the Banking Act of 1933 (16 June 1933), section 8 (section 12B of the Federal Reserve Act: the Federal Deposit Insurance Corporation and the temporary fund); United States Statutes at Large, GPO scan on govinfo. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "stat48p337": {
+   "url": "https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg337.pdf",
+   "format": "pdf",
+   "sha256": "78dee0946acdf2b82d979655808a7b72376a7bb4e9d183af9dd420f3aec190a5",
+   "version": "48 Stat. 337, Public Law 73-87, the Gold Reserve Act of 1934 (30 January 1934); United States Statutes at Large, GPO scan on govinfo. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "frhgd28": {
+   "url": "https://www.federalreservehistory.org/essays/great-depression",
+   "format": "html",
+   "sha256": "99da2ca3682449a644677530d47002a6155a875013cc6db40a9031747abe3dec",
+   "version": "Gary Richardson, 'The Great Depression', Federal Reserve History (the Federal Reserve System), essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhpanic3031": {
+   "url": "https://www.federalreservehistory.org/essays/banking-panics-1930-31",
+   "format": "html",
+   "sha256": "b9a8de13a2ce45e458ac217e3298ffb6e91c174969deee3bb5825f8d8f2f08f9",
+   "version": "Gary Richardson, 'Banking Panics of 1930-31', Federal Reserve History, essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhpanic3133": {
+   "url": "https://www.federalreservehistory.org/essays/banking-panics-1931-33",
+   "format": "html",
+   "sha256": "c3f1db681160d89b94a10c1ede300ba5b826ac57b1695c0d6fe41d68d0356a77",
+   "version": "Kristie M. Engemann, 'Banking Panics of 1931-33', Federal Reserve History, essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhba1932": {
+   "url": "https://www.federalreservehistory.org/essays/banking-act-of-1932",
+   "format": "html",
+   "sha256": "af3748dc6f5fedb14df2dff5116830415a600880ff79ec7c5f04db1941a4b09b",
+   "version": "Gary Richardson, Alejandro Komai and Daniel Park, 'Banking Act of 1932' (the Glass-Steagall Act of February 1932), Federal Reserve History, essay written as of November 22, 2013 and revised as of January 2022. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhholiday1933": {
+   "url": "https://www.federalreservehistory.org/essays/bank-holiday-of-1933",
+   "format": "html",
+   "sha256": "842a6fb4255e2fcf5ff603540f947d4162125bb28635c856fca2fc6ee3eafe80",
+   "version": "Robert Jabaily, 'Bank Holiday of 1933', Federal Reserve History, essay written as of November 22, 2013, with its list of people. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frheba1933": {
+   "url": "https://www.federalreservehistory.org/essays/emergency-banking-act-of-1933",
+   "format": "html",
+   "sha256": "9fdd913942e88e7e4df551365173574130545697ebdd1b27c82bc28f95f295f2",
+   "version": "Stephen Greene, 'Emergency Banking Act of 1933', Federal Reserve History, essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhgs1933": {
+   "url": "https://www.federalreservehistory.org/essays/glass-steagall-act",
+   "format": "html",
+   "sha256": "6ad446c92e6f6272573c6ff1fd7fc8a35d5d7ef451717585630b424094cf1ab4",
+   "version": "Julia Maues, 'Banking Act of 1933 (Glass-Steagall)', Federal Reserve History, essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhgra1934": {
+   "url": "https://www.federalreservehistory.org/essays/gold-reserve-act",
+   "format": "html",
+   "sha256": "094ffd51794f43394d8d76637bd0214d93250dfd1ce55657119c8b95cee3c517",
+   "version": "Gary Richardson, Alejandro Komai and Michael Gou, 'Gold Reserve Act of 1934', Federal Reserve History, essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "frhgold1933": {
+   "url": "https://www.federalreservehistory.org/essays/roosevelts-gold-program",
+   "format": "html",
+   "sha256": "bc4028afa5f661fe51d177ca09bc49673cefa09f93723cc00a07792b0b2dde3d",
+   "version": "Gary Richardson, Alejandro Komai and Michael Gou, 'Roosevelt's Gold Program', Federal Reserve History, essay written as of November 22, 2013. Quoted in short phrases.",
+   "retrieved": "2026-10-22"
+  },
+  "nberw1054": {
+   "url": "https://www.nber.org/system/files/working_papers/w1054/w1054.pdf",
+   "format": "pdf",
+   "sha256": "8483970277d1c6fce1249386431446dd6751de6ca0bba5db1272571028db0152",
+   "version": "Ben S. Bernanke, 'Non-Monetary Effects of the Financial Crisis in the Propagation of the Great Depression', NBER Working Paper 1054, January 1983 (published in the American Economic Review 73(3), June 1983, 257-276; the working paper is quoted). The scan prints no copyright line; short phrases only. Page numbers are those of the PDF.",
+   "retrieved": "2026-10-22"
+  },
+  "nberw2639": {
+   "url": "https://www.nber.org/system/files/working_papers/w2639/w2639.pdf",
+   "format": "pdf",
+   "sha256": "089973fd399e1c4161cd092ee4ba635b7c17ed0aa92c00e72611f64da1bc60f8",
+   "version": "Christina D. Romer, 'The Great Crash and the Onset of the Great Depression', NBER Working Paper 2639, June 1988 (published in the Quarterly Journal of Economics 105(3), August 1990, 597-624, per the NBER page; the working paper is quoted). No copyright line is printed; short phrases only.",
+   "retrieved": "2026-10-22"
+  },
+  "nberw3829": {
+   "url": "https://www.nber.org/system/files/working_papers/w3829/w3829.pdf",
+   "format": "pdf",
+   "sha256": "3fd90e910a910594f5a253aed36e8e81408ba43012fefa3011384a57050ea019",
+   "version": "Christina D. Romer, 'What Ended the Great Depression?', NBER Working Paper 3829, September 1991 (published in the Journal of Economic History 52(4), December 1992, per the NBER page; the working paper is quoted). No copyright line is printed; short phrases only.",
+   "retrieved": "2026-10-22"
+  },
+  "nberw17312": {
+   "url": "https://www.nber.org/system/files/working_papers/w17312/w17312.pdf",
+   "format": "pdf",
+   "sha256": "aff563a2cf7967f9a8dc78898bd623371c2653e0dd3192163f1d5f3e6b0e02a3",
+   "version": "Michael D. Bordo, Angela Redish and Hugh Rockoff, 'Why Didn't Canada Have a Banking Crisis in 2008 (or in 1930, or 1907, or ...)?', NBER Working Paper 17312, August 2011, revised December 2011 (published in the Economic History Review 68(1), 2015, 218-243). Quoted with its notice (row brr_copyright).",
+   "retrieved": "2026-10-22"
+  },
+  "econometrica1933": {
+   "url": "https://archive.org/download/sim_econometrica_1933_1/sim_econometrica_1933_1_djvu.txt",
+   "format": "txt",
+   "sha256": "74300378201c9ab717ca436f3aefab75733e8061cb0d196457d3dd849b4dc6cb",
+   "version": "Irving Fisher, 'The Debt-Deflation Theory of Great Depressions', Econometrica 1(4), October 1933, 337-357; the OCR text of the bound volume 1 (1933) on the Internet Archive (sim_econometrica_1933_1). 'Copyright 1933 by the Econometric Society.' Short phrases only.",
+   "retrieved": "2026-10-22"
+  },
+  "frb1933feb": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1933-02_19_2/sim_federal-reserve-bulletin_1933-02_19_2_djvu.txt",
+   "format": "txt",
+   "sha256": "6a319976bd0afdf6468ff501423cc22bfb8c63a080df6c45beba43b28f9ed354",
+   "version": "Federal Reserve Bulletin, February 1933 (vol. 19, no. 2), Board of Governors; the OCR text on the Internet Archive (sim_federal-reserve-bulletin_1933-02_19_2). Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "frb1937feb": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1937-02_23_2/sim_federal-reserve-bulletin_1937-02_23_2_djvu.txt",
+   "format": "txt",
+   "sha256": "1039030f30dd99fab9c9a314fd1afb97a8f658aaed7d9e3ba3ef1a5a38e1d5c2",
+   "version": "Federal Reserve Bulletin, February 1937 (vol. 23, no. 2); the OCR text on the Internet Archive. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "frb1937sep": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1937-09_23_9/sim_federal-reserve-bulletin_1937-09_23_9_djvu.txt",
+   "format": "txt",
+   "sha256": "364724612ef4059d39ad8c8428257e5f9e4ecca9be804893721b672c66ca61b2",
+   "version": "Federal Reserve Bulletin, September 1937 (vol. 23, no. 9): 'Bank Suspensions, 1921-1936', pp. 866-910; the OCR text on the Internet Archive. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "cyb1935": {
+   "url": "https://archive.org/download/canada-statistics-canada-canada-year-book_1934-1935/canada-statistics-canada-canada-year-book_1934-1935_djvu.txt",
+   "format": "txt",
+   "sha256": "d00b1e5202856bdc1756636cf524443927c0b68e83c8760ee23325d41f1c3608",
+   "version": "Dominion Bureau of Statistics, The Canada Year Book 1934-35 (Ottawa, 1935); the OCR text on the Internet Archive. Canadian Crown copyright of 1935, expired. The OCR prints decimal points as hyphens in many tables; the quotations here are from the running text.",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_roosevelt28": {
+   "url": "https://data.bnf.fr/ark:/12148/cb119835923",
+   "format": "html",
+   "sha256": "74c42af3e61f120042fbdc9b65894f9fbdff5d85cb0c70f662d52af157b932b2",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Franklin Delano Roosevelt (dates of life); metadata reused under the Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_hoover28": {
+   "url": "https://data.bnf.fr/ark:/12148/cb11944763g",
+   "format": "html",
+   "sha256": "6e5e66ed557889ebad4aba065bc8d063e1ea11eca33780641910c1efa21eaec1",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Herbert Hoover (dates of life); Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_mellon28": {
+   "url": "https://data.bnf.fr/ark:/12148/cb15537493z",
+   "format": "html",
+   "sha256": "74f67689e99afb95a375f9e80fdf605913efef306cc36a87d644b657b0987ccd",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Andrew William Mellon (dates of life); Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_friedman28": {
+   "url": "https://data.bnf.fr/ark:/12148/cb11903625k",
+   "format": "html",
+   "sha256": "220e5f1be61caae395f5ead3ec4c57678015ec040fab2d4bcc1c584c0f1cff5a",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Milton Friedman (dates of life); Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_schwartz28": {
+   "url": "https://data.bnf.fr/ark:/12148/cb122789208",
+   "format": "html",
+   "sha256": "c8d8507b8ac260f736f36c712e873e97ccb8fae2400cbeee328fdb40b0e9258b",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Anna Jacobson Schwartz (dates of life); Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "loc_bernanke28": {
+   "url": "https://id.loc.gov/authorities/names/n86116791.madsrdf.json",
+   "format": "json",
+   "sha256": "e5372b580b4d7ce7015b1d17428bf3e2d9d10dbaec3da077aeb7391d586f4bd3",
+   "version": "Library of Congress Name Authority File, n86116791 (Bernanke, Ben), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_harrison28": {
+   "url": "https://id.loc.gov/authorities/names/n2005031441.madsrdf.json",
+   "format": "json",
+   "sha256": "baf696e9f6de24f748c2993e5fdcb00ee6b8a171e3f62f3136ee70ea6b2e0871",
+   "version": "Library of Congress Name Authority File, n2005031441 (Harrison, George Leslie, 1887-1958), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_meyer28": {
+   "url": "https://id.loc.gov/authorities/names/n86025876.madsrdf.json",
+   "format": "json",
+   "sha256": "4c978725a52abde7263ed4d1e9e665752c13ff5583adb4771b3971887509fbc6",
+   "version": "Library of Congress Name Authority File, n86025876 (Meyer, Eugene, 1875-1959), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "fedspeech20021108": {
+   "url": "https://www.federalreserve.gov/boarddocs/speeches/2002/20021108/",
+   "format": "html",
+   "sha256": "43faaf74f7c05fcca1895f570a26165e28ff17bdf84ce80ac405b65518620955",
+   "version": "Ben S. Bernanke, remarks at the Conference to Honor Milton Friedman, University of Chicago, 8 November 2002 ('On Milton Friedman's Ninetieth Birthday'), Board of Governors of the Federal Reserve System. A speech of a federal official: public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "nberw1054img": {
+   "url": "https://www.nber.org/system/files/working_papers/w1054/w1054.pdf",
+   "format": "image",
+   "sha256": "8483970277d1c6fce1249386431446dd6751de6ca0bba5db1272571028db0152",
+   "version": "the same PDF (NBER Working Paper 1054), pages read on images rendered with pdftoppm: PDF page 42 (printed p. 40, Key to Table 2) and PDF page 43 (printed p. 41, Table 2).",
+   "retrieved": "2026-10-22"
+  },
+  "frb1937sepimg": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1937-09_23_9/sim_federal-reserve-bulletin_1937-09_23_9.pdf",
+   "format": "image",
+   "sha256": "110d1d9b144c3c31769879b6726d18dcab9dc873f7a36781a9becd485db4b51f",
+   "version": "the PDF scan of the same issue (sim_federal-reserve-bulletin_1937-09_23_9.pdf), pages read on images rendered with pdftoppm: p. 868 (Table 1) and p. 907 (Table 12, PDF page 91, at 300 dpi).",
+   "retrieved": "2026-10-22"
+  }
+ }
+}
