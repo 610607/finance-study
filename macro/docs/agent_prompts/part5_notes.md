@@ -296,3 +296,150 @@ back to the old parity without striking off any zeros.
   the opening) and hand over Ch 28's question "一次股市崩盘为什么会变成持续数年、产出与物价同时坍塌的萧条？".
 - Labels: sections `sec:interwar-…` (report them); `eq:interwar-…`, `fig:interwar_…`, `tab:interwar-…`,
   `ex:interwar-…`. Ch 28's stub cites `\nameref{ch:interwar}` only.
+
+### Carried over from the editor's round on Chapter 27
+
+- When two sources disagree on a number (Chapter 27's margins: Federal Reserve History's "typically 10
+  percent" against Rappoport and White's 20–25% rising to 40–50%), give both in the text and say in the
+  史料说明 which one an example uses and why; a teaching input says it is one.
+- Life dates: look in the BnF authority records (data.bnf.fr; the SPARQL endpoint answers from the
+  shell, Licence Ouverte, key `bnf27` shows the form) or the Library of Congress name authorities before
+  writing 生卒年未详; record the record's URL in the snapshot.
+- A participant's statement quoted by a later author is indirect testimony; say so once in the 史料说明
+  and name the document that was not obtained.
+- Quote a law or speech from its official or archival text (Statutes at Large, the American Presidency
+  Project, the Federal Register), not a later summary.
+
+## 第 28 章 `ch:depressionus` 大萧条：美国 (`zh/ch28_depressionus.tex`)
+
+- Neighbours:
+  - Ch 27 owns the 1920s boom, the Fed's easing of 1927 and tightening of 1928–29, brokers' loans and
+    margins, Strong's death in October 1928 (Strong 1872—1928) and the crash of 28–29 October 1929
+    (Federal Reserve History's figures, `frh2013`). Begin after the crash; refer back with
+    `\chref{ch:interwar}` or `\secref{sec:interwar-boom}`, do not retell.
+  - Ch 23 owns the National Banking System, the panic of 1907 with its restriction of payments
+    (`sprague1910`), the lender of last resort (Bagehot) and the Federal Reserve Act of 1913
+    (`fra1913`). Ch 4 owns the central bank's balance sheet and the money multiplier
+    `eq:money-mult` with Cagan's ratios $C/M$ and $R/D$ (`cagan1965`); Ch 3 the Fisher relation
+    `eq:prices-fisher`; Ch 25 Fisher's real rate, money illusion and his table 14. Use them with
+    `\eqref`/`\chref`; do not re-derive.
+  - Ch 29 owns the international side: the Creditanstalt and the German crisis of 1931, Britain leaving
+    gold on 21 September 1931, the gold bloc, Eichengreen's golden fetters as a theory of the
+    Depression, the Silver Purchase Act of 1934 and China. This chapter may say in one clause, with
+    `\chref{ch:depressionworld}`, that Britain left gold in September 1931, because the Fed's rise of
+    its discount rate in October 1931 is an American decision this chapter owns.
+  - Ch 30 uses the New Deal only as a comparison; this chapter owns the American recovery of
+    1933–1936. Ch 32 owns the *General Theory*, the multiplier and the Treasury view; Ch 33 owns the
+    recession of 1937–38 (one clause with `\chref{ch:islm}` at most); Ch 45 owns monetarism as a
+    programme (Friedman–Schwartz here only as a history of the Depression); Ch 64–65 own 2008 and the
+    financial accelerator (Bernanke–Gertler–Gilchrist), Ch 66 the zero lower bound; one clause each in
+    the legacy section.
+- Owns:
+  - the data of 1929–1933 and after: output (BEA's real GDP from 1929, industrial production), prices
+    (consumer and wholesale), unemployment, bank suspensions and their deposits, the money stock and
+    its two ratios, nominal and real interest rates; the trough of March 1933;
+  - the course of the contraction: the Fed after the crash, the banking panics of late 1930 (the Bank
+    of United States, 11 December 1930), spring and autumn 1931, the Fed's rise of its discount rate in
+    October 1931, the open-market purchases of 1932 and their end, the panic of February–March 1933 and
+    the national bank holiday;
+  - three explanations, each from its own text: Fisher's debt deflation (1933: over-indebtedness and
+    deflation feeding each other; the more the debtors pay, the more they owe, if the article says so),
+    Friedman and Schwartz's great contraction (1963: the money stock fell by about a third because the
+    currency ratio and the reserve ratio rose while the Fed let it happen; the leadership vacuum after
+    Strong), Bernanke's credit channel (1983: bank failures destroyed the information capital of
+    intermediation and raised the cost of credit, beyond their effect on money); and, as a fourth view
+    the reader should meet, the spending side (Romer 1990 on the uncertainty after the crash; Temin 1976
+    only through a verified summary);
+  - why the Fed did not act, as a contested question: Friedman and Schwartz's account against
+    Wheelock's (1992, St. Louis Fed *Review*: the Fed's own doctrine, low nominal rates and member-bank
+    borrowing read as easy money; real bills, Ch 18) and Meltzer's (short phrases or through verified
+    reviews only);
+  - the recovery: the bank holiday and the Emergency Banking Act (March 1933), the gold embargo and
+    Executive Order 6102 (5 April 1933), the dollar's devaluation and the Gold Reserve Act (30 January
+    1934, \$35 an ounce against \$20.67), deposit insurance under the Banking Act of 1933, the gold
+    inflows of 1934–36 and Romer's (1992) case that money, not fiscal policy, drove the recovery; NIRA
+    and the debate on it only if verified sources for both sides can be read.
+- Promises (FORWARD_REFS rows from Ch 4, Ch 17 and Ch 23; read them in full):
+  - Ch 4: how $C/M$ and $R/D$ of `eq:money-mult` moved in the 1930s (Cagan's decomposition; Friedman and
+    Schwartz). Compute them from a public-domain table (*Banking and Monetary Statistics 1914–1941*), say
+    which definition of money and of reserves you use, and show $H$ rising while $M$ fell;
+  - Ch 17: Fisher's debt deflation as the redistribution of nominal debts in inflation and deflation
+    (the Genbun recoinage and dear silver are Ch 17's; one clause back to them);
+  - Ch 23 (限额从墙变成了门): the 1913 Act made the reserve limit elastic; what then disciplined the Fed in
+    the Depression (the gold cover and the free-gold question of 1931–32, if sourced; the Glass–Steagall
+    Act of February 1932 that let government securities back Federal Reserve notes). Keep them and mark
+    the rows done.
+- When it begins: Chapter 27 ends on 28–29 October 1929 and hands over the PLAN's 核心问题
+  "一次股市崩盘为什么会变成持续数年、产出与物价同时坍塌的萧条？". Keep it exactly.
+- Opening (suggested, verify every detail): Sunday 12 March 1933, Franklin D. Roosevelt's first fireside
+  chat, explaining on the radio why the banks were shut and how a bank works (the text of the American
+  Presidency Project, `www.presidency.ucsb.edu/documents/fireside-chat-banking`, reachable; a US
+  government work, public domain), after his proclamation of the national bank holiday of 6 March. Or
+  11 December 1930, the closing of the Bank of United States in New York. A person, a date and the
+  question within the first page; go back to the crash of 1929 in the next paragraph.
+- People (one sentence each at first appearance, only where sourced): Herbert Hoover; Franklin D.
+  Roosevelt; Andrew Mellon (his "liquidate" advice only as Hoover's later recollection, flagged as such);
+  George L. Harrison of the New York Fed (Ch 27 wrote 生卒年未详: look again in the LC or BnF authorities
+  and, if found, fix Ch 27 in your report rather than in its file); Eugene Meyer; Adolph Miller; Irving
+  Fisher (Ch 25's Fisher; his losses in 1929 only if sourced); Milton Friedman and Anna Schwartz; Ben
+  Bernanke; Christina Romer; Marriner Eccles only if he enters through a source.
+- Case (outside the US and Britain): Canada 1929–1933, a depression of similar depth with almost no bank
+  failures (verify both halves and the number of chartered banks). It tests the bank-failure
+  explanations: Bordo, Redish and Rockoff (NBER WP 17312, reachable), Friedman and Schwartz's own
+  comparison if a verified text has it, Historical Statistics of Canada (Statistics Canada 11-516-X,
+  Statistics Canada Open Licence; cite as it asks). Say what the case does and does not show.
+- Data and sources (probe first; on 2026-10-22 the shell reached FRASER's `/files/` PDFs, the Census
+  Bureau, BEA, federalreserve.gov, the American Presidency Project, Statistics Canada, NBER, FDIC,
+  govinfo and loc.gov; BLS answered 403; FRED's terms forbid extraction, do not use it):
+  - *Banking and Monetary Statistics 1914–1941* (Board of Governors 1943, public domain;
+    `fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf`): currency,
+    deposits, member-bank reserves, the gold stock, discount rates, bank suspensions; the *Federal
+    Reserve Bulletin* (e.g. September 1937, bank suspensions 1921–36);
+  - *Historical Statistics of the United States, Colonial Times to 1970* (Census Bureau 1975, public
+    domain; `www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/`):
+    unemployment (Lebergott), prices, debt;
+  - BEA's NIPA tables from 1929 (public domain; the flat files under `apps.bea.gov/national/Release/TXT/`
+    with their series register) and the Board's industrial production (G.17, from 1919);
+  - Fisher (1933), "The Debt-Deflation Theory of Great Depressions", *Econometrica* 1(4) (FRASER copy
+    `fraser.stlouisfed.org/files/docs/meltzer/fisdeb33.pdf`; in copyright in the US: short phrases);
+  - Bernanke (1983) as NBER WP 1054 (published *AER* 73(3); say which version you quote); Romer (1990)
+    as NBER WP 2639; Romer (1992) as NBER WP 3829; Bernanke's speech of 8 November 2002 on Friedman's
+    ninetieth birthday (federalreserve.gov, public domain), which summarizes Friedman and Schwartz's
+    case; Wheelock (1992); Federal Reserve History's essays on the Great Depression, the bank holiday,
+    the Banking Act of 1933 and the Gold Reserve Act (short phrases, as `frh2013`);
+  - Friedman and Schwartz (1963) are in copyright (Princeton/NBER): short phrases only, from a copy you
+    can read; otherwise state their argument through Bernanke 2002 and Wheelock and say so;
+  - laws and orders from the Statutes at Large (govinfo, loc.gov), the Federal Register or the American
+    Presidency Project.
+- Teaching:
+  - debt deflation on a borrower's account: a nominal debt $D$, prices falling by a stated share, the
+    real burden $D/P$ and the real rate from `eq:prices-fisher` with a nominal rate of a few per cent;
+    teaching inputs, then the actual price fall of 1929–33;
+  - the money stock decomposed with `eq:money-mult`: $H$, $C/M$, $R/D$ in 1929 and 1933 from the table
+    you use; how much of the fall in $M$ each ratio accounts for (a stated, simple decomposition);
+  - a bank run on a balance sheet (Ch 4 notation): deposits withdrawn, reserves gone, assets sold at a
+    discount, a solvent bank made insolvent; why one failure raises $C/M$ and $R/D$ elsewhere;
+  - Bernanke's regression in the deeper box: what he regressed on what, and what the coefficients on the
+    deposits of failing banks and the liabilities of failing businesses add to the money surprises (his
+    table, read as he reports it);
+  - the devaluation of 1933–34: \$20.67 to \$35 an ounce, the Treasury's gold profit, gold inflows
+    adding to $H$ (Romer 1992's figures, if verified).
+- Compare boxes (2–4): 债务—通缩 vs 货币紧缩 (Fisher vs Friedman–Schwartz); 货币渠道 vs 信贷渠道
+  (Friedman–Schwartz vs Bernanke); optionally 1907 年的限制付现 vs 1930—1933 年的银行倒闭 (Ch 23's
+  restriction of payments against the Fed era, from Friedman and Schwartz's argument if verified), or
+  美国 vs 加拿大 inside the case box.
+- Contested questions (§8, each side's strongest case, concessions and the strength of the evidence):
+  what turned the recession of 1929–30 into the Great Depression (money, credit, debt, spending); why
+  the Fed did not stop the fall; what ended it (gold and money against fiscal policy and the New Deal).
+  Do not decide for the reader.
+- Figures (2–4, at least two from snapshot data): output, prices and unemployment 1929–1941; the money
+  stock, $H$ and the two ratios 1929–1936; bank suspensions and their deposits by year or month,
+  1921–1936; Canada against the US.
+- Legacy (今天还剩什么): Bernanke's 2002 sentence to Friedman and Schwartz (a dated document, quote it
+  exactly), deposit insurance, the lender of last resort to the banking system as a whole, the zero
+  lower bound and 2008 (one clause each with `\chref{ch:gfc}`, `\chref{ch:frictions}`,
+  `\chref{ch:zlb}`).
+- Ending: after `\end{answers}`, return to the opening scene and hand over Ch 29's question
+  "金本位怎样把萧条传到全世界？" (its guide box asks it with China; hand over the first half).
+- Labels: sections `sec:depressionus-…` (report them); `eq:depressionus-…`, `fig:depressionus_…`,
+  `tab:depressionus-…`, `ex:depressionus-…`. Ch 29, 30 and 32 cite `\nameref{ch:depressionus}` only.
