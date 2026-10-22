@@ -1,0 +1,276 @@
+{
+  "title": "Evidence for Chapter 30: Nazi Germany, Takahashi's Japan, Sweden and the New Deal, 1931-1939",
+  "source": "The Bank of Japan (Shizume 2009, Bank of Japan Review 2009-E-2; Ide 2003, IMES Discussion Paper 2003-E-10; Nihon Ginko hyakunenshi vol. 4, 1984; the Bank's chronology); the National Diet Library (portraits and the chronology of Modern Japan in archives); Nazi Conspiracy and Aggression, vols. II and VII, and its Opinion and Judgment (Law Library of Congress); the BIS's Seventh Annual Report (1937); the Neue Deutsche Biographie (Schacht); Eichengreen and Sachs (1984); Bernanke and James (1991); the United States Statutes at Large (48 Stat. 31, 48 Stat. 195, 49 Stat. 115, 49 Stat. 449); Historical Statistics of the United States (1975), series Y 339-341; Berg and Jonung (1998); the Riksbank's history pages; the authority records of the Library of Congress",
+  "url": "https://www.boj.or.jp/en/research/wps_rev/rev_2009/data/rev09e02.pdf",
+  "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or document, the source text verbatim (empty for a value read on a page image), note",
+  "retrieved": "2026-10-22",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Bank of Japan (Shizume 2009; the Bank's chronology; Nihon Ginko hyakunenshi, 1984): the Bank's terms (https://www.boj.or.jp/en/copyright.htm): 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row bjcr); the exceptions are commercial use, material marked as needing permission, and graphics and other image data: the snapshot keeps short transcriptions and the figures of the tables, credited to the Bank of Japan. The writings of Takahashi Korekiyo (d. 1936) and Fukai Eigo (d. 1945) quoted in the Bank's history are in the public domain in Japan. Ide (2003), IMES Discussion Paper: 'Do not reprint or reproduce without permission.' (row ide_reprint); figures and short phrases only. National Diet Library, Portraits of Modern Japanese Historical Figures: 'この電子展示会に掲載されたデジタル画像及び解説の転載・ご利用にあたっては、国立国会図書館へのお申込みは必要ありません。商用でご利用いただく場合も同様です。' (row ndl_terms). The NDL's chronology (Modern Japan in archives) asks for permission before its contents are reproduced (row ndlc_terms): the book takes only dates from it. The Law Library of Congress, Military Legal Resources (Nazi Conspiracy and Aggression, vols. II and VII, and the Opinion and Judgment): 'The Library of Congress is not aware of any copyright restrictions in the Military Legal Resources collection. Absent such restrictions, these materials are free to use and reuse.' Credit line: Law Library of Congress, Military Legal Resources. They are publications of the United States government. The United States Statutes at Large (govinfo) and Historical Statistics of the United States (1975) are works of the United States government in the public domain. Bank for International Settlements (Seventh Annual Report, 1937): the BIS's terms allow a limited extract 'in other publications or products free of charge, provided the BIS is cited as the source.' and require for translations 'a statement that the translation is not an official BIS translation, and that the BIS does not guarantee its accuracy or completeness.' (rows bis_reuse, bis_translation; the chapter's Chinese renderings carry that statement in the bibliography). Sveriges Riksbank's history pages: Sveriges riksbank's terms for its open data: 'The Riksbank's open data is freely available and may be further used without any special consent or agreement being required. Enter source, Sveriges riksbank and date. If you have processed statistics taken from the Riksbank's website, you may not state Sveriges Riksbank as the source.' Source: Sveriges riksbank, 2026-10-22. Berg and Jonung (1998), SSE/EFI working paper: no copyright notice found; short sentences only, with credit. NBER Working Paper 1498 and the NBER chapter c11482 print no copyright line; they are quoted in short phrases with their source. The Neue Deutsche Biographie (2005) is in copyright: short phrases only, the rest paraphrased. The authority records of the Library of Congress (id.loc.gov) are public data. The chapter's Chinese renders the quotations; the translations are the book's.",
+  "used_in": [
+    30
+  ],
+  "fetch": "data/fetch/alternatives30.py",
+  "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch30.py; rows with an empty quotation are values or words read on a page image (sources boj1984a30, boj1984b30, census_y30), named as such in their notes, which give a transcription between « and » where the chapter renders the words. The OCR of the Nuremberg volumes spaces some letters ('a n', 'o f', 'i t', 'a t') and misreads others ('nioney', 'mas', 'Schaclit', 'consistellt', 'tlie', 'worlrers'): the quotations keep the OCR as printed and the notes name each misreading; the translation of EC-369 itself prints 'Millarden' and drops 'Million' after '8,223'. Indirect testimony: Fukai Eigo's books of 1938 and 1941, Takahashi's words of April 1934 and Hijikata's of 1932 through the Bank of Japan (1984) and Ide (2003); Schacht's memorandum of 3 May 1935 and his admission (3728-PS) through the prosecution's brief (Nazi Conspiracy and Aggression II); Sauckel's statement through the judgment; Cassel's autobiography (1941) and Ohlin (1933) through Berg and Jonung (1998); Cha (2003), Nanto and Takagi (1985) and Umeda (2006) through Shizume (2009); Jonung (1981) through Eichengreen and Sachs. Two witnesses disagree on dates: Schacht's dismissal from the Reichsbank (the judgment gives 20 January and, two paragraphs later, 19 January 1939; the NDB 20 January), his appointment as minister of economics (the judgment: August 1934; the NDB: 30 June 1934) and his resignation (the judgment: 16 November 1937; the NDB: 26 November 1937). Not obtained: the Reichsgesetzblatt texts of 1933-1936 (the law of 1 June 1933 on unemployment, the price-stop decree of November 1936: de.wikisource answered 429 or 404), Ritschl (2002) and Straumann and Woitek (2009) (their repositories answered with a bot wall), Tooze (2006), Cha (2003), Jonung (1979, 1981). The table snapshots of the chapter are alternatives_reichsbank, alternatives_boj_sales, alternatives_yen_monthly, alternatives_fx_annual, riksbank_sweden_1925_1939 and riksbank_sweden_monthly_1929_1939.",
+  "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+  "sources": {
+    "shizume30": {
+      "url": "https://www.boj.or.jp/en/research/wps_rev/rev_2009/data/rev09e02.pdf",
+      "format": "pdf",
+      "sha256": "694dedbe099035b748f44ed88d3b2abe4313c3b56e2f2d3251c92049279f87e4",
+      "version": "Masato Shizume, 'The Japanese Economy during the Interwar Period: Instability in the Financial System and the Impact of the World Depression', Bank of Japan Review 2009-E-2, May 2009 (translation of 2009-J-1, April 2009). Pages cited as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "ide30": {
+      "url": "https://www.imes.boj.or.jp/research/papers/english/03-E-10.pdf",
+      "format": "pdf",
+      "sha256": "a2a2eaf28c567c9d3dcff91264e181bb7303cbdc3cdaabbc21a2a9d1484ad1bc",
+      "version": "Eisaku Ide, 'Policy Debates on Public Finance between the Ministry of Finance and the Bank of Japan from 1930 to 1936', IMES Discussion Paper 2003-E-10, Bank of Japan, August 2003 ('Do not reprint or reproduce without permission': short phrases and figures only). Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "boj1984a30": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku4_1_1_1.pdf",
+      "format": "image",
+      "sha256": "dcffcc92291632362ae9cbbfa4a2ea13d18a02463948b523eed43bdea6cc9877",
+      "version": "Nihon Ginko (Bank of Japan), Nihon Ginko hyakunenshi, vol. 4 (1984), ch. 1, section 1, part 1 (book pp. 3-29), a scan without a text layer; pages read on images rendered with pdftoppm: PDF pages 22-24 = book pp. 24-26 (Table 1-7 on p. 25).",
+      "retrieved": "2026-10-22"
+    },
+    "boj1984b30": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku4_1_1_2.pdf",
+      "format": "image",
+      "sha256": "69112de86a5907c3d79ba6b5730ca7ca9a456a58b0fa10d2d8ece3d6f26fdbf9",
+      "version": "Nihon Ginko hyakunenshi, vol. 4 (1984), ch. 1, section 1, part 2 (book pp. 29-63), a scan without a text layer; pages read on images: PDF pages 16-17 = book pp. 44-45 (Table 1-17), PDF pages 24-27 = book pp. 52-55.",
+      "retrieved": "2026-10-22"
+    },
+    "bojhist30": {
+      "url": "https://www.boj.or.jp/about/outline/history/his_1900.htm",
+      "format": "html",
+      "sha256": "28e88e6777b69dde58ccb39d7b17c44c4c7a239b15c602346d1cd1ba1c1d1ecd",
+      "version": "Bank of Japan, 'Nihon Ginko no rekishi: nenpyo' (chronology), 1900-1999 page.",
+      "retrieved": "2026-10-22"
+    },
+    "bojcr30": {
+      "url": "https://www.boj.or.jp/en/copyright.htm",
+      "format": "html",
+      "sha256": "2e6f9c30181f0fab5b33ec78561fea8e9c0c471fc2494166707e6f4de2c40dec",
+      "version": "Bank of Japan, Copyright page.",
+      "retrieved": "2026-10-22"
+    },
+    "ndltk30": {
+      "url": "https://www.ndl.go.jp/portrait/datas/122",
+      "format": "html",
+      "sha256": "a724d7073687621f34e375e607a69a9a06159f82d9dc7cfac9c74179dd36f0b8",
+      "version": "National Diet Library, Portraits of Modern Japanese Historical Figures: Takahashi Korekiyo.",
+      "retrieved": "2026-10-22"
+    },
+    "ndlin30": {
+      "url": "https://www.ndl.go.jp/portrait/datas/235",
+      "format": "html",
+      "sha256": "db46e500a4a9993bb05c0ddbc76bc6a174786d53ea81af31a023af10d6aac999",
+      "version": "National Diet Library, Portraits of Modern Japanese Historical Figures: Inoue Junnosuke.",
+      "retrieved": "2026-10-22"
+    },
+    "ndlik30": {
+      "url": "https://www.ndl.go.jp/portrait/datas/17",
+      "format": "html",
+      "sha256": "999af538da17d3eee8e555dcfeccf641178e6979def4e967beb0323af1e15a87",
+      "version": "National Diet Library, Portraits of Modern Japanese Historical Figures: Inukai Tsuyoshi.",
+      "retrieved": "2026-10-22"
+    },
+    "ndlabout30": {
+      "url": "https://www.ndl.go.jp/portrait/about/",
+      "format": "html",
+      "sha256": "c1406f654ccdef328a90a57cb76328c207c24d12a971b3397bb779f32c447642",
+      "version": "National Diet Library, Portraits of Modern Japanese Historical Figures: About (terms of use).",
+      "retrieved": "2026-10-22"
+    },
+    "ndlchron30": {
+      "url": "https://www.ndl.go.jp/modern/utility/chronology.html",
+      "format": "html",
+      "sha256": "e8cb15f43714f30507789072c483efe079a8f650b2e9e776e324f567214487ff",
+      "version": "National Diet Library, Modern Japan in archives (Shiryo ni miru Nihon no kindai): chronology.",
+      "retrieved": "2026-10-22"
+    },
+    "ndlmabout30": {
+      "url": "https://www.ndl.go.jp/modern/utility/about.html",
+      "format": "html",
+      "sha256": "8e40da7d0e7b856e697b0087156985e2bbf3ae25473c95496d1bcbb2ebc967ca",
+      "version": "National Diet Library, Modern Japan in archives: About (terms of use).",
+      "retrieved": "2026-10-22"
+    },
+    "imtj30": {
+      "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/2011525363_NT_Nazi-opinion-judgment/2011525363_NT_Nazi-opinion-judgment.pdf",
+      "format": "pdf",
+      "sha256": "d2d0f0a622080582168f4427f219c4210e56cbb1ce476e895d0b792c5d666641",
+      "version": "Office of United States Chief of Counsel for Prosecution of Axis Criminality, Nazi Conspiracy and Aggression: Opinion and Judgment (Washington: US Government Printing Office, 1947), Law Library of Congress, Military Legal Resources; OCR text of the scan. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "nca2_30": {
+      "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/2011525363_NT_Nazi_Vol-II/2011525363_NT_Nazi_Vol-II.pdf",
+      "format": "pdf",
+      "sha256": "2e55760346a33592613baaf7b79772338383e2a3f05509cde43c8210ade71607",
+      "version": "Nazi Conspiracy and Aggression, vol. II (Washington: US Government Printing Office, 1946), chapter XVI (the prosecution's brief on Schacht), Law Library of Congress, Military Legal Resources; OCR text.",
+      "retrieved": "2026-10-22"
+    },
+    "nca7_30": {
+      "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/2011525363_NT_Nazi_Vol-VII/2011525363_NT_Nazi_Vol-VII.pdf",
+      "format": "pdf",
+      "sha256": "753c74ca7dd79460841bb34df23833a4a3695b80854395f02f61cfdb59aa2732",
+      "version": "Nazi Conspiracy and Aggression, vol. VII (1946): documents EC-369 (the Reichsbank directorate to Hitler, 7 January 1939, and Schacht's telegram of 11 January 1939, in translation) and EC-436 (Emil Puhl's deposition of 2 November 1945); OCR text.",
+      "retrieved": "2026-10-22"
+    },
+    "bis1937_30": {
+      "url": "https://www.bis.org/publications/annual-report-1937.pdf",
+      "format": "pdf",
+      "sha256": "3b7e85efc9a80286e404400301adf2d6155dbfed4185d4ed9806075decbb67b0",
+      "version": "Bank for International Settlements, Seventh Annual Report, 1st April 1936 - 31st March 1937 (Basle, 3 May 1937). Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "bisterms30": {
+      "url": "https://www.bis.org/about/terms-conditions",
+      "format": "html",
+      "sha256": "6409625485be1b91e830f230dcd289ffd2af571da7f781d4939ba2bd99e243d4",
+      "version": "Bank for International Settlements, Terms and conditions (the copyright of BIS material).",
+      "retrieved": "2026-10-22"
+    },
+    "nira30": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg195.pdf",
+      "format": "pdf",
+      "sha256": "c9fcb1910615c2d9b677700a8fa96edc8da2cfdca204ed04f51e5f8dde99ebe7",
+      "version": "National Industrial Recovery Act, 16 June 1933, Public No. 67, 48 Stat. 195-211 (United States Statutes at Large, govinfo).",
+      "retrieved": "2026-10-22"
+    },
+    "nlra30": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-49/pdf/STATUTE-49-Pg449.pdf",
+      "format": "pdf",
+      "sha256": "a55e1e4f4d8d5f4c129a1bfe81a0905f50c60f862b66265bd4f203df18e92303",
+      "version": "National Labor Relations Act, 5 July 1935, Public No. 198, 49 Stat. 449-457 (govinfo).",
+      "retrieved": "2026-10-22"
+    },
+    "aaa30": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-48/pdf/STATUTE-48-Pg31.pdf",
+      "format": "pdf",
+      "sha256": "a82fdaf902dbf55edc60a734fbfb6b5e0d2dbb71d66ef8a52ac60831a4755d75",
+      "version": "Act of 12 May 1933, Public No. 10, 48 Stat. 31-54 (title I: the Agricultural Adjustment Act) (govinfo).",
+      "retrieved": "2026-10-22"
+    },
+    "era30": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-49/pdf/STATUTE-49-Pg115.pdf",
+      "format": "pdf",
+      "sha256": "63dc80996f5cc90e8c0c6a238f907e8e1c731a72c2012784ed5e1af9ab8fa5dd",
+      "version": "Emergency Relief Appropriation Act of 1935, joint resolution of 8 April 1935, Pub. Res. No. 11, 49 Stat. 115-119 (govinfo).",
+      "retrieved": "2026-10-22"
+    },
+    "census_y30": {
+      "url": "https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p2-chY.pdf",
+      "format": "image",
+      "sha256": "b24886badeabd00af3d8e8831701730618a1edb170a7966ec5549f5bc5daf1f7",
+      "version": "US Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970 (1975), chapter Y, a scan without a text layer: series Y 339-342 read on the image of PDF page 39 (p. 1105).",
+      "retrieved": "2026-10-22"
+    },
+    "rbtarget30": {
+      "url": "https://www.riksbank.se/en-gb/about-the-riksbank/history/historical-timeline/1900-1999/first-in-the-world-with-price-stability-target/",
+      "format": "html",
+      "sha256": "325749834e900b8817fe2d75a8ff4eea3aa3f6fc8419c1f55567d5155746e2b2",
+      "version": "Sveriges Riksbank, Historical timeline, '1931 - First in the world with price stability target'.",
+      "retrieved": "2026-10-22"
+    },
+    "rbhamm30": {
+      "url": "https://www.riksbank.se/en-gb/about-the-riksbank/history/historical-timeline/1900-1999/important-role-for-hammarskjold/",
+      "format": "html",
+      "sha256": "8c6345121bfc1c5e95a2389a7bacda2ba1ec7836719ef69d9522e61d3dcf4ffb",
+      "version": "Sveriges Riksbank, Historical timeline, '1941 - Important role for Hammarskjöld'.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_fukai30": {
+      "url": "https://id.loc.gov/authorities/names/n85268475.madsrdf.json",
+      "format": "json",
+      "sha256": "9c3d7ab565b34e30181e003ec56b0e108393c7cc154e1f424f23b0e8ef2ff1ec",
+      "version": "Library of Congress Name Authority File, n85268475 (Fukai, Eigo, 1871-1945), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_hitler30": {
+      "url": "https://id.loc.gov/authorities/names/n79046200.madsrdf.json",
+      "format": "json",
+      "sha256": "00dc70fcdfe65056c4cb66df8c335c1ae64cbd58d9eaeb506d92954f90ddeed8",
+      "version": "Library of Congress Name Authority File, n79046200 (Hitler, Adolf, 1889-1945), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_goring30": {
+      "url": "https://id.loc.gov/authorities/names/n80061235.madsrdf.json",
+      "format": "json",
+      "sha256": "2ffcfb8bfdd8b3b429ec99c2d7ed1c545e52efa19da7bd5bc3345f94643b1a41",
+      "version": "Library of Congress Name Authority File, n80061235 (Göring, Hermann, 1893-1946), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_cassel30": {
+      "url": "https://id.loc.gov/authorities/names/n50039190.madsrdf.json",
+      "format": "json",
+      "sha256": "c86b7ae2f6034b93b2a0b17427048909acd4f00c9c549ae64e6225c7bdbe13ef",
+      "version": "Library of Congress Name Authority File, n50039190 (Cassel, Gustav, 1866-1945), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_wigforss30": {
+      "url": "https://id.loc.gov/authorities/names/n84177215.madsrdf.json",
+      "format": "json",
+      "sha256": "cf8b673e83f27f6e89ad578627d4f683644348fdfc39cd47671420607b6c54e8",
+      "version": "Library of Congress Name Authority File, n84177215 (Wigforss, Ernst, 1881-1977), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_hamrin30": {
+      "url": "https://id.loc.gov/authorities/names/no2010161821.madsrdf.json",
+      "format": "json",
+      "sha256": "ee4432d9331ca95d7a00ddf7a2f49b9af4a8119641929d91ce1e2eb6b66c87dc",
+      "version": "Library of Congress Name Authority File, no2010161821 (Hamrin, Felix, 1875-1937), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_puhl30": {
+      "url": "https://id.loc.gov/authorities/names/no2017109976.madsrdf.json",
+      "format": "json",
+      "sha256": "16772997fd129cee484a3bbd28b7b706b95b57c634bb649fc170a1d4f910d965",
+      "version": "Library of Congress Name Authority File, no2017109976 (Puhl, Emil, 1889-1962), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_ohlin30": {
+      "url": "https://id.loc.gov/authorities/names/n79106758.madsrdf.json",
+      "format": "json",
+      "sha256": "d42f2c226aa31bdc9cf13a031201a7bfe83e5e5454ebd64334fc8720fcd8ccc5",
+      "version": "Library of Congress Name Authority File, n79106758 (Ohlin, Bertil, 1899-1979), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_rooth30": {
+      "url": "https://id.loc.gov/authorities/names/n94044428.madsrdf.json",
+      "format": "json",
+      "sha256": "cfb7841ff1e78dfc226f25039b0105f7a0c7bcc3d1c8a771f1a231b407c1faf7",
+      "version": "Library of Congress Name Authority File, n94044428 (Rooth, Ivar, 1888-), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "berg1998": {
+      "url": "https://swopec.hhs.se/hastef/papers/hastef0290.pdf",
+      "format": "pdf",
+      "sha256": "1f1f35d30774da33d8d41265386634cf0856fcd2800c2b5557155103a1939635",
+      "version": "C. Berg and L. Jonung, 'Pioneering Price Level Targeting: The Swedish Experience 1931-1937', SSE/EFI Working Paper Series in Economics and Finance No 290, December 1998",
+      "retrieved": "2026-10-16"
+    },
+    "nberw1498": {
+      "url": "https://www.nber.org/system/files/working_papers/w1498/w1498.pdf",
+      "format": "pdf",
+      "sha256": "3cafc7124fb4d9c05fb902d4410d293ea95e8a683fe7653d71dd9edf7414c03f",
+      "version": "Barry Eichengreen and Jeffrey Sachs, 'Exchange Rates and Economic Recovery in the 1930s', NBER Working Paper 1498, November 1984 (published in the Journal of Economic History 45(4), December 1985, 925-946; that version was not obtained). No copyright line is printed; short phrases only. Pages cited as PDF pages.",
+      "retrieved": "2026-10-22"
+    },
+    "nberc11482": {
+      "url": "https://www.nber.org/system/files/chapters/c11482/c11482.pdf",
+      "format": "pdf",
+      "sha256": "cfda9a44face13b37122bf4ae2c7b99c500efd9ba0e595459ec50a0d5791dfc1",
+      "version": "Ben Bernanke and Harold James, 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison', in R. Glenn Hubbard (ed.), Financial Markets and Financial Crises (University of Chicago Press, January 1991), pp. 33-68; NBER chapter c11482 ('a selection from an out-of-print volume'; no copyright line printed). Pages cited as printed (PDF page + 31). Short phrases only.",
+      "retrieved": "2026-10-22"
+    },
+    "schachtlife": {
+      "url": "https://www.deutsche-biographie.de/sfz110486.html",
+      "format": "html",
+      "sha256": "d8c45e7559877179add7c7c42664fa6357e21eb0098efaa8b157b52ea0e3710b",
+      "version": "A. Fischer, 'Schacht, Horace Greeley Hjalmar', Neue Deutsche Biographie 22 (2005), pp. 489-491, online edition of the Deutsche Biographie",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    }
+  }
+}

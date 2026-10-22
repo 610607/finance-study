@@ -1,0 +1,14 @@
+{
+  "title": "Japan: the yen in US cents, monthly averages of daily rates, January 1929 - December 1938 (Banking and Monetary Statistics, Table 173)",
+  "source": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 173, 'Foreign exchange rates, by countries, monthly', Japan (p. 673): averages of daily rates, cents per yen; FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF page 671",
+  "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+  "series": "year; month; cents_per_yen: US cents per yen, the monthly average of daily rates; nominal: 1 where the table marks the month '* Nominal for at least five days during month' (January and February 1937)",
+  "retrieved": "2026-10-22",
+  "license": "Public domain (a publication of the Board of Governors of the Federal Reserve System, 1943).",
+  "used_in": [
+    30
+  ],
+  "fetch": "data/fetch/alternatives30.py (read on page images; see notes)",
+  "notes": "Read from the text layer (pdftotext -layout) and checked on an image of the page rendered with pdftoppm at 300 dpi; the text layer agrees with the image for 1929-1938. The yen's gold parity was 49.845 cents (Shizume 2009, note 21; row sz_parity of alternatives_facts). From April 1933 the dollar was off gold (Chapter 28) and from 31 January 1934 it was fixed at $35 an ounce, so a cent after March 1933 is no longer the cent of the gold dollar of $20.67 an ounce.",
+  "citation": "Board of Governors of the Federal Reserve System (1943), Banking and Monetary Statistics 1914-1941, Table 173"
+}

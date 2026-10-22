@@ -1,0 +1,14 @@
+{
+  "title": "The Swedish krona, the pound sterling and the yen in US cents, annual averages of daily rates, 1929-1939 (Banking and Monetary Statistics, Table 173)",
+  "source": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 173, 'Foreign exchange rates, by countries, monthly': Sweden (p. 679), United Kingdom (p. 681) and Japan (p. 673), the rows 'Year'; FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF pages 677, 679 and 671",
+  "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+  "series": "year; cents_per_krona, cents_per_pound, cents_per_yen: US cents per unit, the annual average of daily rates as printed in the rows 'Year'",
+  "retrieved": "2026-10-22",
+  "license": "Public domain (a publication of the Board of Governors of the Federal Reserve System, 1943).",
+  "used_in": [
+    30
+  ],
+  "fetch": "data/fetch/alternatives30.py (read on page images; see notes)",
+  "notes": "Read from the text layer and checked on images of the pages rendered with pdftoppm (the text layer drops the first digit of the pound's 1929 average, 485.6879, and prints a comma in 1931, 453.4990). For 1939 the pound's table also gives an official and a free rate from September; the column used is the one headed 1939. Kronor per pound and pence per yen are the book's own calculations from these averages (cross rates through the dollar).",
+  "citation": "Board of Governors of the Federal Reserve System (1943), Banking and Monetary Statistics 1914-1941, Table 173"
+}

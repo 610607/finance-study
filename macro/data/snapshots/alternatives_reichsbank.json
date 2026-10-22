@@ -1,0 +1,14 @@
+{
+  "title": "The Reichsbank at the end of each year 1929-1938 and on 28 February 1938: reserves of gold and foreign exchange, bills (and checks) including Treasury bills, and note circulation, million reichsmarks (Banking and Monetary Statistics, Table 167)",
+  "source": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 167, 'Reichsbank - principal assets and liabilities, monthly, 1924-1941' (pp. 645-647); FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF pages 644-645 (printed pages 646-647)",
+  "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+  "series": "date (the statement date the table prints for December, and 28 February 1938); reserves_mrm: 'Reserves of gold and foreign exchange, Total reserves'; bills_mrm: 'Bills (and checks), including Treasury bills'; notes_mrm: 'Note circulation'; million reichsmarks",
+  "retrieved": "2026-10-22",
+  "license": "Public domain (a publication of the Board of Governors of the Federal Reserve System, 1943).",
+  "used_in": [
+    30
+  ],
+  "fetch": "data/fetch/alternatives30.py (read on page images; see notes)",
+  "notes": "Read from the text layer (pdftotext -layout) and checked on images of the two pages rendered with pdftoppm. The introductory text (p. 565) says that the reported gold and foreign exchange include only the amounts held as part of the legal reserves and that 'The bulk of its holdings of foreign bills are grouped with domestic paper in its statements'. The table does not name the MEFO bills: that the bills the Reichsbank discounted are in the column 'Bills' rests on the Reichsbank directors' memorandum of 7 January 1939 (document EC-369: about RM 6 milliards of MEFO acceptances in the Reichsbank's portfolio, and its assets 'almost in total' government securities, mainly MEFO bills) and on Puhl's deposition (EC-436); both are rows of alternatives_facts. The memorandum's currency in circulation on 1 January 1933 (3,560 million) and 1 March 1938 (5,278 million) equal the table's note circulation of 31 December 1932 and 28 February 1938, and its 8,223 of 31 December 1938 the table's figure of that day. A note to Table 160 of the same book says that by decree of 17 March 1938 the Austrian National Bank was absorbed by the Reichsbank: from that date the Reichsbank's figures include the Austrian bank's.",
+  "citation": "Board of Governors of the Federal Reserve System (1943), Banking and Monetary Statistics 1914-1941, Table 167"
+}

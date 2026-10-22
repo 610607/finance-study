@@ -1,0 +1,14 @@
+{
+  "title": "The Riksbank's discount rate, monthly, 1929-1939",
+  "source": "Sveriges riksbank, Historical Monetary and Financial Statistics for Sweden: Volume I, ch. 8 (R. Edvinsson and J. Soederberg, 'The evolution of Swedish consumer prices, 1290-2008', 2010), Table I.A8.1 'A Consumer Price Index for Sweden 1290-' (file volym1/volumeich8consumerpriceindex.xls, version 2.1); Volume II, ch. 6 (D. Waldenstroem, 'Swedish stock and bond returns, 1856-2012', 2014), Table II.A6.9 (file volym2/volumeiich6stocksandbonds.xls, version 2.0)",
+  "url": "https://www.riksbank.se/globalassets/media/forskning/monetar-statistik/volym2/volumeiich6stocksandbonds.xls",
+  "series": "month (YYYY-MM); discount_rate: Table II.A6.9 'Short-term interest rate, 1856-', per cent (the Riksbank's discount rate, diskonto, which Waldenstroem uses as the short-term rate until 1983)",
+  "retrieved": "2026-10-22",
+  "license": "Sveriges riksbank's terms for its open data: 'The Riksbank's open data is freely available and may be further used without any special consent or agreement being required. Enter source, Sveriges riksbank and date. If you have processed statistics taken from the Riksbank's website, you may not state Sveriges Riksbank as the source.' The snapshot stores the values as published (source: Sveriges riksbank, 2026-10-22). The index on the base 1931 = 100 and the changes the chapter computes from them are the book's own calculations and are attributed to the book and to Edvinsson and Soederberg (2010) and Waldenstroem (2014), not to the Riksbank.",
+  "used_in": [
+    30
+  ],
+  "fetch": "data/fetch/riksbank_sweden30.py (volym1/volumeich8consumerpriceindex.xls, SHA-256 e4ef149df8001ac824013efd21bc352c4d4e3fcfcdd56aac5d9bfa9257483b3d; volym2/volumeiich6stocksandbonds.xls, SHA-256 6004da8cb630edec38cf3bd1d5a214af84ab0c60a84604329936b25aaf447830)",
+  "notes": "One value a month: a change and its reversal within a month are not seen. The series has 4.0 per cent in August 1931 and 8.0 in September; Berg and Jonung (1998, p. 7) say the Riksbank raised the rate 'from six to eight per cent' when the link with gold was severed (row bj98_rate). It reaches 2.5 per cent in December 1933 and stays there to November 1939; Berg and Jonung write that it reached 2.5 per cent 'in 1934' (row bj98_25).",
+  "citation": "Edvinsson, R. and J. Soederberg (2010), 'The evolution of Swedish consumer prices, 1290-2008', and Waldenstroem, D. (2014), 'Swedish stock and bond returns, 1856-2012', in R. Edvinsson, T. Jacobson and D. Waldenstroem (eds.), Historical Monetary and Financial Statistics for Sweden, Volumes I and II, Stockholm: Ekerlids forlag and Sveriges Riksbank"
+}

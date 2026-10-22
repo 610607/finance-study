@@ -1,0 +1,14 @@
+{
+  "title": "Japan: long-term government bonds underwritten by the Bank of Japan and sold by it to the market, November 1932 - December 1936, by half-year, thousand yen (Bank of Japan 1984, Table 1-17)",
+  "source": "Bank of Japan, Nihon Ginko hyakunenshi (日本銀行百年史), vol. 4 (1984), ch. 1, section 1, Table 1-17 '長期国債の本行引受けと対市中売却の関係' (p. 45); file hyaku4_1_1_2.pdf on the Bank of Japan's site (SHA-256 69112de86a5907c3d79ba6b5730ca7ca9a456a58b0fa10d2d8ece3d6f26fdbf9), PDF page 17",
+  "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku4_1_1_2.pdf",
+  "series": "first, last: the months of each period (Showa 7 = 1932 ... Showa 11 = 1936); underwritten_kyen: '本行引受額 (A)'; sold_kyen: '対市中売却額 (B)'; sold_pct: 'B/A (%)'; the last row is the printed total '8年～10年計' (1933-1935); thousand yen at face value ('額面ベース')",
+  "retrieved": "2026-10-22",
+  "license": "The Bank of Japan's terms for its site: 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (https://www.boj.or.jp/en/copyright.htm, row bjcr of alternatives_facts). Source: Bank of Japan.",
+  "used_in": [
+    30
+  ],
+  "fetch": "data/fetch/alternatives30.py (read on page images; see notes)",
+  "notes": "The file is a scanned book without a text layer; the table was read on the page image rendered with pdftoppm. Sources printed under the table: A from the Bank's own records (日本銀行保有資料), B from 『財政金融資料要録』, April 1937. The yearly sums of column A equal the column '日本銀行引受' of Table 1-7 (p. 25 of the first file: 1933 1,115, 1934 701, 1935 751, 1936 1,581 million yen; row bj_t17 of alternatives_facts), and the half-year figures of column B equal the 'GB Sale by BOJ' of Ide (2003), Table 1 (rows ide_t1_1933 to ide_t1_1935). B can exceed A in a half-year because bonds underwritten earlier were sold later. Sales net of underwriting are not the change of the Bank's holdings: the Bank's own bonds were also redeemed (note to Table 1-19).",
+  "citation": "Bank of Japan (1984), Nihon Ginko hyakunenshi, vol. 4, Table 1-17"
+}
