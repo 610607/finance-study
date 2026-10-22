@@ -388,8 +388,8 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 161)
-    quoted("rows read on a page image (no quotation)", img, 24)
+    quoted("rows with values, each read from its quotation", n, 163)
+    quoted("rows read on a page image (no quotation)", img, 26)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
         assert word in N[rid], (rid, word)                  # every misreading is named in the note
@@ -408,6 +408,7 @@ TRANSLATIONS = {
     "被军国主义者暗杀": "sz_four",
     # sec:alternatives-world
     "大概是所有大国里最严重的": "bjm_unemp",
+    "满洲事变": "ndlc_mukden",
     "扩大创造就业的政策，并立即着手重整军备": "ndb_expansive",
     "协调行动": "imt_unions",
     "从殴打直到谋杀": "imt_murder",
@@ -424,7 +425,7 @@ TRANSLATIONS = {
     "不利于日本": "bis_terms",
     "会特别危险": "bis_rising",
     "一举三得的妙手": "bj_sanchou",
-    "一时的便法": "bj_benpou",
+    "一时的权宜之计": ("bj_benpou", "bj_oshikira"),
     "意味相当不同": "bj_omo",
     "即使承购的国债全部卖掉，中间这段时间也是放松银根的原因。卖不掉的那部分，相应的资金就留在市场上。": "bj_middle",
     "追认经济扩张的事后措施": "bj_tsuinin",
@@ -512,6 +513,7 @@ KEYWORDS = {
     "sz_uk": ["Japan would also be forced to follow suit soon"],
     "sz_four": ["assassinated by militarists"],
     "bjm_unemp": ["probably the worst unemployment problem of any major country"],
+    "ndlc_mukden": ["満洲事変"],
     "ndb_expansive": ["eine Ausweitung der Arbeitsbeschaffungspolitik sowie die sofortige Inangriffnahme der "
                       "Aufrüstung"],
     "imt_unions": ['"coordination action"', "Ley issued a n NSDAP directive"],
@@ -532,6 +534,7 @@ KEYWORDS = {
     "bis_rising": ["would render a further devaluation of the yen particularly dangerous"],
     "bj_sanchou": ["一石三鳥の妙手"],
     "bj_benpou": ["一時の便法"],
+    "bj_oshikira": ["一時の便法"],
     "bj_omo": ["かなり異なったニュアンスを持っていた"],
     "bj_middle": ["引受国債の全部が売れても中間に於ては金融緩和の原因となる。", "売れない部分に相当する資金は市場に残る。"],
     "bj_tsuinin": ["経済拡大を追認した事後的措置"],
@@ -922,7 +925,14 @@ def casebox(F, Y, Q):
     assert "四分半利" in transcription("bj_nov1932")
     said("四分半利，就是 4.5\\% 的年利率", rate)
     yb = citation_year(_table("alternatives_boj_sales")[1]["citation"])
-    said("按日本银行 1984 年的行史，此后新发的国债", yb)
+    _, s12, m8 = F["bj_nov1932"]
+    assert "昭和12年8月の1回分" in transcription("bj_nov1932") and "本行・預金部等の引受け" in transcription("bj_nov1932")
+    assert "圧倒的な大きさ" in transcription("bj_nov1932")                     # 占了压倒性的比重
+    said("按日本银行 1984 年的行史，此后新发的国债，除了 1937 年 8 月的一次", yb, 1925 + s12, m8)
+    assert "高橋蔵相のイニシアチブ" in transcription("bj_initiative") and "思われる" in transcription("bj_oshikira")
+    say("承购是高桥主动提出的", "行史推测，日本银行最后是被高桥的强力要求压倒")
+    assert "persuaded" in Q["ide_expedient"] and "willingly accepted" in Q["ide_influence"]
+    say("照 Ide 的研究，这种通行的说法站不住")
     assert "governor from 1935" in N["bj_sanchou"] and "then vice-governor" in N["bj_fukai_sell"]
     said("当时是副总裁，1935 年起任总裁", 1935)
     u, s = T.underwritten_kyen * 1000, T.sold_kyen * 1000
@@ -935,6 +945,8 @@ def casebox(F, Y, Q):
     u36, s36 = year_sum(H, 1936, "underwritten_kyen") * 1000, year_sum(H, 1936, "sold_kyen") * 1000
     said("1936 年卖不动了", 1936)
     said("这一年日本银行承购约 15.8 亿日元，只卖出约 6.9 亿，卖出的占 43.4\\%", u36, s36, 100 * s36 / u36)
+    assert "昭和7年秋に本行が国債の本行引受け方式の実施に同意したこと" in transcription("bj_failure")
+    said("1932 年秋天同意承购，是日本银行失去中央银行职能的第一步", 1925 + F["bj_failure"][0])
 
 
 def ex_underwrite(F, Y, Q):
@@ -1017,8 +1029,8 @@ def ex_mefo(F, Y, Q):
     said("（2）$\\Delta W^{o}=-3$，$\\Delta H=+3$，赤字是 0，基础货币仍增加了 3", 2, c2, c2, 0, c2)
     x = out * B9 / (nfeb * M6)
     assert x > 1                                                                 # 增加一倍多
-    said("（3）最多增加约 60 亿，是原有银行券的$60/52.8\\approx1.1$倍，银行券就会增加一倍多", 3, out * B9, out * 10,
-         nfeb / 100, x)
+    said("（3）基础货币最多增加约 60 亿，是原有银行券的$60/52.8\\approx1.1$倍", 3, out * B9, out * 10, nfeb / 100, x)
+    say("这些钱若都以银行券的形式流出来，银行券就会增加一倍多")
 
 
 def ec369(F, Y, Q):
@@ -1050,11 +1062,12 @@ def ec369(F, Y, Q):
     said("1938 年的增加里，还没有算上吞并奥地利与苏台德地区所需的 20 亿帝国马克", 1938, F["ec369_austria"][0] * B9)
     d31, y32, d30, y38, a, b2 = F["nca2_funded"]
     assert "31 December 1932 to 30 June 1938" in Q["nca2_funded"]
-    said("1932 年 12 月 31 日到 1938 年 6 月 30 日，国家的长期债务从 104 亿马克增加到 190 亿马克", y32, 12, d31, y38, 6, d30,
-         a * B9, b2 * B9)
+    said("1932 年 12 月 31 日到 1938 年 6 月 30 日，帝国的长期债务从 104 亿帝国马克增加到 190 亿帝国马克", y32, 12, d31, y38,
+         6, d30, a * B9, b2 * B9)
     assert "dated 3 May 1935" in Q["nca2_memodate"]
     said("1935 年 5 月的备忘录说", F["nca2_memodate"][1], 5)
-    said("1934 年，沙赫特设计了一整套管制", F["nca2_newplan"][0])
+    assert F["imt_schacht"][2] == F["ndb_minister"][2] == F["nca2_newplan"][0]       # 兼任经济部长 (1934)
+    said("1934 年，兼任经济部长的沙赫特设计了一整套管制", F["nca2_newplan"][0])
     chk("    three features (三个要点)", F["nca2_three"][0], told("它有三个要点", "有", "个要点"))
     said("沙赫特的影响从 1936 年起变小。这一年 4 月", F["imt_april1936"][0], mon("imt_april1936", "April"))
     d16, y36, f1, f2 = F["imt_oct1936"]
@@ -1087,7 +1100,11 @@ def aggression(F, Y, Q):
     said("1944 年 3 月 1 日说，到达德国的 500 万外国工人里，“自愿来的连 20 万都不到”", y, mon("imt_sauckel", "March"), d, n,
          v)
     said("到 1938 年秋天", F["imt_autumn1938"][0])
-    said("犹太人被课以 10 亿马克的集体罚款", F["imt_fine"][0] * B9)
+    said("犹太人被课以 10 亿帝国马克的集体罚款", F["imt_fine"][0] * B9)
+    assert "extermination of the Jews" in Q["imt_extermination"]
+    say("纳粹推行灭绝犹太人的政策")
+    assert "Plenipotentiary-General for the Utilization of Labor" in Q["imt_sauckel_role"]
+    say("绍克尔（Fritz Sauckel，1894—1946）是主管劳动力调配的全权总代表")
     said("约 600 万犹太人被杀害", F["imt_6m"][0] * M6)
 
 
@@ -1144,7 +1161,8 @@ def sweden(F, Y, Q):
     said("1931 年 11 月，它试过按旧的黄金平价把克朗钉住英镑，只维持了三天", y, mon("bj98_nov1931", "November"))
     chk("    three days (三天)", three, told("只维持了三天", "维持了", "天"))
     par, y = F["bj98_parity"]
-    said("1931 年秋天，克朗一度跌破每英镑 18.15 克朗的黄金平价", y, par)
+    assert "'The pound rate" in column("note")["bj98_parity"]                   # kronor per pound fell below par
+    said("1931 年秋天，一英镑一度换不到 18.15 克朗，低于两国黄金平价所定的比价", y, par)
     said("1933 年 7 月，国家银行把克朗钉住英镑", F["bj98_peg"][0], mon("bj98_peg", "July"))
     K = kronor_per_pound()
     k = K.loc[1934:1938]
@@ -1204,7 +1222,7 @@ def level(F, Y, Q):
     said("（2）通胀目标仍是 2，$p_2=-1+2=1$，比原来的路径低 3。这 3 就是基数漂移", 2, pi, -p1, pi, p1 + pi,
          p2 - (p1 + pi), shock)
     said("（3）低$0.1\\times3=0.3$个百分点", 3, beta, shock, beta * shock)
-    said("所以维克塞尔的规则是$\\pi^{*}=0$的物价水平目标", 0)
+    said("就像$\\pi^{*}=0$的物价水平目标", 0)
     said("{瑞典 1931—1937 年：物价水平目标}", F["bj98_free"][0], 1900 + F["bj98_cassel37"][1])
     y, x = F["rb_1993"]
     said("{瑞典国家银行 1993 年定为每年 2\\%", y, x)
@@ -1247,9 +1265,12 @@ def newdeal(F, Y, Q):
 
 
 def debate(F, Y, Q):
-    said("120 亿帝国马克的 MEFO 票据也是为军备发的", F["nca2_12bn"][2] * B9)
-    said("1933 年起，沙赫特同时推动扩大创造就业与重整军备", F["ndb_17"][2])
-    said("加速的再军备要到 1935 年初才需要大笔的钱", F["puhl_1935"][0])
+    assert "used exclusively for financing rearmament" in Q["puhl_exclusive"]
+    said("MEFO 票据全部用于再军备，1938 年停用时在外的有 120 亿帝国马克", F["puhl_12"][0], F["puhl_12"][1] * B9)
+    said("1935 年 5 月的备忘录也说", F["nca2_memodate"][1], mon("nca2_memodate", "May"))
+    assert "ermöglichte" in Q["ndb_geld"]                                       # enabled, not drove
+    said("沙赫特 1933 年回到帝国银行，就让创造就业与重整军备同时起步", F["ndb_17"][2])
+    said("为加速的再军备筹钱的需要，到 1935 年初才出现", F["puhl_1935"][0])
     R = ratios()
     said("1932—1934 年，德国的人均 GDP 已从 1929 年的 83.0\\% 回到 95.2\\%", 1932, 1934, 1929, R.loc["DEU", 1932],
          R.loc["DEU", 1934])
@@ -1491,7 +1512,8 @@ ROW_LIVES = {"犬养毅（1855—1932）": ("ndl_ik_life", 0, 3),
              "Ernst Wigforss，1881—1977": ("loc_wigforss", 0, 1),
              "Gustav Cassel，1866—1945": ("loc_cassel", 0, 1),
              "Dag Hammarskjöld，1905—1961": ("rb_hamm", 0, 1),
-             "Bertil Ohlin，1899—1979": ("loc_ohlin", 0, 1)}
+             "Bertil Ohlin，1899—1979": ("loc_ohlin", 0, 1),
+             "Fritz Sauckel，1894—1946": ("loc_sauckel", 0, 1)}
 # what other chapters tell: (words of this chapter, chapter where it is told, words there)
 EVENTS = [("他第一次当行长是在 1923 年 12 月，马克刚刚稳定下来（\\chref{ch:weimar}）", "ch26_weimar",
            "12 月 22 日，沙赫特接替去世的哈芬施坦，出任帝国银行行长"),
@@ -1540,7 +1562,6 @@ def book(F, Q):
         COVERED.append(words)
     assert F["sz_life"] == [F["ndl_tk_life"][0], F["ndl_tk_life"][3]]           # Shizume's note 1 agrees
     assert Q["loc_rooth"] == "Rooth, Ivar, 1888-" and "Rooth" not in t          # no death year: not named
-    say("绍克尔（Fritz Sauckel，生卒年未详）")
     for here, ch, there in EVENTS:
         assert here in t, here
         assert there in (ROOT / "zh" / f"{ch}.tex").read_text(encoding="utf-8"), (ch, there)

@@ -243,6 +243,13 @@
       "version": "Library of Congress Name Authority File, n94044428 (Rooth, Ivar, 1888-), MADS/RDF JSON from id.loc.gov.",
       "retrieved": "2026-10-22"
     },
+    "loc_sauckel30": {
+      "url": "https://id.loc.gov/authorities/names/n87890983.madsrdf.json",
+      "format": "json",
+      "sha256": "d98ac4b7e3f1d041211acc213fde6bfe24d2417b6d878b6a7de884224998f2f9",
+      "version": "Library of Congress Name Authority File, n87890983 (Sauckel, Fritz, 1894-1946), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
     "berg1998": {
       "url": "https://swopec.hhs.se/hastef/papers/hastef0290.pdf",
       "format": "pdf",

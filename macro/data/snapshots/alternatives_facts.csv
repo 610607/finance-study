@@ -30,6 +30,8 @@ sz_gnp,日本,1936,,1932;36;6.1;1.5,,,shizume30,"p. 1, Chart 1",1932-36 6.1 1.5 
 sz_gnp37,日本,1940,,1937;40;5;11.9,,,shizume30,"p. 1, Chart 1",1937-40 5 11.9 Wartime command economy,"Chart 1, the row after the Takahashi years"
 sz_keynesian,日本,2009,,,,,shizume30,p. 6,praise Takahashi's achievements as a successful pioneer of Keynesian economics,
 sz_expect,日本,2009,,,,,shizume30,p. 7,"market expectations were influenced significantly only by the departure from the gold standard, and not by the BOJ's underwriting of government bonds.",
+sz_deficits,日本,2009,,1930,,,shizume30,p. 8,Japan recorded much larger fiscal deficits than the other countries throughout Takahashi’s term as Finance Minister in the 1930s.,"'1930s' read as 1930; Chart 7 compares Japan with gold standard, exchange control, sterling area and other depreciating countries"
+sz_currency,日本,2009,,,,,shizume30,p. 8,"currency in circulation (a measure of the quantity of money supply) rose moderately in Japan, as in sterling area countries, throughout Takahashi’s term",
 sz_nanto,日本,1985,,1985,,,shizume30,p. 7,Nanto and Takagi [1985] emphasize the effects of the yen depreciation.,
 sz_umeda,日本,2006,,,,,shizume30,p. 7,Japanese prices were more strongly influenced by foreign prices and exchange rates than by domestic monetary and fiscal variables.,
 sz_umeda_year,日本,2006,,2006,,,shizume30,"p. 7, note 27",Umeda [2006] employs a vector-auto-regression (VAR) analysis,
@@ -63,20 +65,22 @@ ide_hidden,日本,1936,,2.26,,,ide30,PDF p. 20,"Despite a gradual decrease in go
 ide_coup,日本,1936,,2.26;1936,,,ide30,"PDF p. 20, note 58",The 2.26 incident was an attempted military coup d’etat in 1936 where Finance Minister Korekiyo Takahashi was killed.,
 ide_after,日本,1936,,,,,ide30,"PDF p. 20, note 58","After this, military expenditures increased rapidly and Japanese fiscal management shifted to wartime finance.",
 ide_ownreasons,日本,2003,,,,,ide30,PDF p. 20,"Rather, the BOJ had its own reasons for underwriting bonds.",
+ide_influence,日本,2003,,,,,ide30,PDF p. 3,"the BOJ willingly accepted the underwriting, expecting it to reinforce its influence over financial institutions",
 ide_expedient,日本,2003,,,,,ide30,PDF p. 20,refute the conventional argument that the BOJ was persuaded to underwrite government bonds by Finance Minister Takahashi's persuasive request and accepted it as a temporary expedient.,
 ide_t1_1933,日本,1933,,788600,,,ide30,"PDF p. 17, Table 1","Total 691,000 _ 1,320,600 2,011,600 788,600 1,171,300 1,959,900 51,700","Table 1 (thousand yen), the row 'Total' of 1933; the fifth figure, 788,600, is 'GB Sale by BOJ' (the -layout text)"
 ide_t1_1934,日本,1934,,900400,,,ide30,"PDF p. 17, Table 1","Total 489,400 97,500 824,000 1,410,900 900,400 521,100 1,421,500 -10,600","Table 1, the row 'Total' of 1934; the fifth figure, 900,400, is 'GB Sale by BOJ'"
 ide_t1_1935,日本,1935,,654800,,,ide30,"PDF p. 17, Table 1","Total 471,000 189,400 755,600 1,416,000 654,800 671,400 1,326,200 89,800","Table 1, the row 'Total' of 1935; the fifth figure, 654,800, is 'GB Sale by BOJ'"
 ide_t1_head,日本,2003,,1,,,ide30,"PDF p. 17, Table 1",Table 1 Flow of Funds into/out of Private Sector (in thousands of yen),"the half-year rows are labelled fiscal years (April to March, note 47); their 'GB Sale by BOJ' figures equal the calendar half-years of the Bank of Japan's Table 1-17"
 ide_reprint,日本,2003,,,,,ide30,PDF p. 1,Do not reprint or reproduce without permission.,
+bj_initiative,日本,1984,,,,,boj1984a30,p. 24,,the underwriting began on Takahashi's initiative; read on the page image; transcription: «本行引受けによる国債発行方式は高橋蔵相のイニシアチブによって始められたものである»
 bj_sanchou,日本,1941,,,,,boj1984a30,p. 24,,"Fukai Eigo (governor from 1935) in his memoir 'Kaiko shichijunen' (1941), quoted by the Bank of Japan (1984); indirect testimony; read on the page image; transcription: «さうして、通貨補充の外に、満洲事件の為めに必要とする国債の発行を容易ならしむると、金利水準を低下するとに効があつた。即ち一石三鳥の妙手であつた。»"
-bj_sell,日本,1941,,,,,boj1984a30,p. 24,,"Fukai, the same passage: the Bank agreed on condition that it would sell the bonds once its aims were met; read on the page image; transcription: «引受国債を売出して通貨の回収を図るべきことを主張した»"
+bj_sell,日本,1941,,,,,boj1984a30,p. 24,,"Fukai, the same passage: the Bank agreed, and insisted that once currency supply and monetary easing were substantially achieved the underwritten bonds should be sold to recover currency; read on the page image; transcription: «日本銀行は大蔵省側から協議を受けて之に同意したが、同時に通貨補充、金融緩和の目的を相当に達した上は、引受国債を売出して通貨の回収を図るべきことを主張した»"
 bj_middle,日本,1938,,,,,boj1984a30,p. 25,,"Fukai, 'Kinhon'isei ridatsugo no tsuka seisaku', quoted by the Bank of Japan (1984); indirect testimony; read on the page image; transcription: «引受国債の全部が売れても中間に於ては金融緩和の原因となる。売れない部分に相当する資金は市場に残る。»"
 bj_t17,日本,1936,,200;1115;701;751;1581,,,boj1984a30,"p. 25, Table 1-7",,"Table 1-7, long-term government bonds issued, million yen, column 'underwritten by the Bank of Japan': November-December 1932, 1933, 1934, 1935, 1936; read on the page image; transcription: «表1-7 発行方式からみた長期国債発行額（単位：百万円）»"
 bj_t17_total,日本,1936,,200;1215;916;1048;3060,,,boj1984a30,"p. 25, Table 1-7",,"Table 1-7, column 'total': November-December 1932, 1933, 1934, 1935, 1936 (1936 includes 1,359 of public issues, for refunding only, note 3); read on the page image"
 bj_t17_public,日本,1936,,1359;14,,,boj1984a30,"p. 25, Table 1-7",,"Table 1-7: public issues ('市中公募') of 1936; the Bank's 14 million of January-October 1932 (part of the Manchurian incident loan of July 1932, note 2); read on the page image"
-bj_nov1932,日本,1932,,11,,,boj1984a30,p. 26,,"the first underwritten issue of November 1932 (4.5% bonds for the Manchurian incident, railways and Korea); after it new issues were all underwritten and public issues disappeared; read on the page image; transcription: «同年11月の四分半利国庫債券発行（満州事件費・鉄道事業費・朝鮮事業費）以後の新規の国債発行は»"
-bj_omo,日本,1984,,,,,boj1984b30,p. 44,,"the Bank sold at a price it set, to banks it chose after hearing their funding position; read on the page image; transcription: «アメリカやイギリスで発展した本来の意味での公開市場操作（open market operations）とはかなり異なったニュアンスを持っていた»"
+bj_nov1932,日本,1932,,11;12;8,,,boj1984a30,p. 26,,"the first underwritten issue of November 1932 (4.5% bonds for the Manchurian incident, railways and Korea); every later new issue except one of August 1937 (Showa 12; 100 million yen) was underwritten by the Bank of Japan, the Deposit Bureau and others, public issues disappeared, and the Bank's share was overwhelming (Table 1-7); read on the page image; transcription: «同年11月の四分半利国庫債券発行（満州事件費・鉄道事業費・朝鮮事業費）以後の新規の国債発行は後述の昭和12年8月の1回分（1億円）を除き、すべて本行・預金部等の引受け（特別発行方式と呼ばれる）によって行われ、市中公募は姿を消すことになった。そしてそのなかで、本行引受けの占める割合は圧倒的な大きさを示した»"
+bj_omo,日本,1984,,,,,boj1984b30,p. 44,,"the Bank presented a selling price in advance (the latest market price, or the issue price where there was none) and decided whether to meet each buyer's request after hearing its funding position; read on the page image; transcription: «あらかじめ本行が売却価格を提示し…相場の立っているものについては最近時点の市場相場をとり、相場の立っていないものについては発行価格をとった…その資金事情等を聴取のうえ、その買受け希望に応ずるか否かを決定する…アメリカやイギリスで発展した本来の意味での公開市場操作（open market operations）とはかなり異なったニュアンスを持っていた»"
 bj_absorb,日本,1984,,,,,boj1984b30,p. 44,,the sales as the means of absorbing the funds; read on the page image; transcription: «本行の国債引受けに伴って生じる余剰資金の吸収策としては、大きな役割を発揮した»
 bj_fukai_sell,日本,1941,,,,,boj1984b30,p. 44,,"Fukai, then vice-governor, quoted by the Bank of Japan (1984); indirect testimony; read on the page image; transcription: «日本銀行は国債の売却を成るべく自然の成行に任せた。…原則としては買手の都合の好い時に売ることとした。»"
 bj_90,日本,1935,,8;10;3;9,,,boj1984b30,pp. 44-45,,Showa 8-10 = 1933-1935; read on the page image; transcription: «その売却実績は、昭和8年～10年の3年間でみると、同期間中に本行が引き受けた額の9割を上回っていたにもかかわらず、金融情勢は引き続き緩和の状態を維持していた»
@@ -87,9 +91,10 @@ bj_houman,日本,1984,,,,,boj1984b30,p. 52,,the criticism of loose finance; read
 bj_tk1934,日本,1934,,9;1934;4,,,boj1984b30,p. 53,,"Takahashi in April 1934, quoted by the Bank of Japan (1984) from its note 5; indirect testimony; read on the page image; transcription: «赤字公債が年々殖えると云ふことは良くない。／公債発行の限度といふのは、国民が公債を咀嚼する力である。»"
 bj_1935,日本,1935,,10;11;2;26,,,boj1984b30,p. 53,,the conflict of 1935 and the end of Takahashi finance; read on the page image; transcription: «昭和10年には、同蔵相は軍備拡充を強引に要求する軍部と鋭く対立し、懸命の抵抗を重ねたが、昭和11年の2・26事件の勃発によって「高橋財政」は悲劇的幕切れを迎えたのである。»
 bj_benpou,日本,1934,,,,,boj1984b30,p. 53,,Takahashi's own word for the underwriting; read on the page image; transcription: «一時の便法»
+bj_oshikira,日本,1984,,,,,boj1984b30,p. 54,,"the Bank's history supposes ('思われる') that the Bank, overborne by Takahashi's strong request, accepted the underwriting as a temporary expedient; read on the page image; transcription: «結局高橋蔵相の強力な要請に押し切られ、「一時の便法」としてこれを容認したものと思われる»"
 bj_tsuinin,日本,1984,,,,,boj1984b30,p. 55,,the sales only followed the expansion; read on the page image; transcription: «本行の売りオペレーションによる過剰流動性の吸収努力も、経済拡大を追認した事後的措置にすぎず»
 bj_rate,日本,1984,,,,,boj1984b30,p. 55,,the Bank could not raise rates while it kept the bond yields low; read on the page image; transcription: «金利水準を引き上げるような措置をとることは不可能であった»
-bj_failure,日本,1984,,,,,boj1984b30,p. 55,,the Bank's verdict on its consent of autumn 1932; read on the page image; transcription: «財政インフレーションの大規模な進展を阻止することはできなかった／これは本行百年の歴史における最大の失敗であり»
+bj_failure,日本,1984,,7,,,boj1984b30,p. 55,,"the Bank's verdict on its consent of autumn 1932 (Showa 7 = 1932), the first step of the process that took central banking from it; read on the page image; transcription: «財政インフレーションの大規模な進展を阻止することはできなかった／昭和7年秋に本行が国債の本行引受け方式の実施に同意したことは、やがて本行からセントラル・バンキングの機能を奪い去るプロセスの第一歩となった…これは本行百年の歴史における最大の失敗であり»"
 bh_1931,日本,1931,,1931;6;12,,,bojhist30,1900s,1931（昭和6）年12月 ［金輸出再禁止］,
 bh_1932,日本,1932,,1932;7;1,,,bojhist30,1900s,1932（昭和7）年1月 「金貨兌換停止に関する緊急勅令」の施行により事実上管理通貨制に移行,
 bh_nov,日本,1932,,11;12,,,bojhist30,1900s,11月 歳入補填国債の日本銀行引受発行開始 12月 日本銀行引受国債の対市中売却開始,November and December 1932
@@ -140,14 +145,17 @@ imt_nurnberg,德国,1935,,1935,,,imtj30,PDF p. 17,"1935, tlie so-called Nurnberg
 imt_autumn1938,德国,1938,,1938,,,imtj30,PDF p. 85,"By the autumn of 1938, the Nazi policy towards the Jews had reached the stage where i t was directed towards the complete exclusion of Jews from German life.",the OCR spaces 'i t'
 imt_pogroms,德国,1938,,,,,imtj30,PDF p. 85,"Pogroms were organized, which included the burning and demolishing of synagogues, the looting of Jewish businesses, and the arrest of prominent Jewish businessmen.",
 imt_fine,德国,1938,,1,,,imtj30,PDF p. 85,"A collective fine of 1 billion marks was imposed on the Jews, the seizure of Jewish assets was authorized",
+imt_sauckel_role,德国,1942,,,,,imtj30,PDF p. 81,the defendant Sauckel was appointed Plenipotentiary-General for the Utilization of Labor,"on 21 March 1942, as the same sentence of the judgment says"
 imt_sauckel,德国,1944,,1;1944;5000000;200000,,,imtj30,PDF p. 154,"Sauckel's statement on March 1,1944, that ""out of 5,000,000 foreign workers who arrived in Germany not even 200,000 came voluntarily.""","Sauckel's own statement at a meeting, quoted by the Tribunal"
 imt_accurate,德国,1946,,,,,imtj30,PDF p. 154,leave no doubt that it was substantially accurate.,
+imt_extermination,德国,1946,,,,,imtj30,PDF p. 127,"the ""final solution"" of the Jewish question by the extermination of the Jews",
 imt_6m,德国,1946,,6,,,imtj30,PDF p. 127,approximately 6 million Jews were murdered,
 nca2_memodate,德国,1935,,3;1935,,,nca2_30,"PDF p. 747, ch. XVI",a memorandum to Hitler dated 3 May 1935 concerning the financing of armament,
 nca2_memo,德国,1935,,,,,nca2_30,"PDF p. 747, ch. XVI","the accomplishment of the armament program in regard to speed and extent, is the task of German policy, and that therefore everything else must be subordinated to this aim",Schacht's memorandum of 3 May 1935 (document 1168-PS) in the prosecution's translation; the judgment's version reads 'with speecl and in quantity is the problem of German politics'
 nca2_drawn,德国,1935,,,,,nca2_30,"PDF p. 748, ch. XVI","were drawn by armament contractors and accepted by a limited liability company called the Metallurgische Forschungsgesellschaft, m.b.H.(MEFO).",
 nca2_capital,德国,1935,,1,,,nca2_30,"PDF p. 748, ch. XVI",This company was merely a dummy organization; it had a nominal capital of only one million Reichsmarks.,
 nca2_six,德国,1935,,6;3,,,nca2_30,"PDF p. 748, ch. XVI","""Mefo"" bills ran for six months, but provision was made for extensions running consecutively for three months each.",
+nca2_anybank,德国,1935,,,,,nca2_30,"PDF p. 748, ch. XVI","The drawer could present his ""mefo"" bills to any German bank for discount a t any time",the OCR spaces 'a t'
 nca2_rediscount,德国,1935,,3,,,nca2_30,"PDF p. 748, ch. XVI",could rediscount the bills a t the Reichsbank a t any time within the last three months of their earliest maturity.,the OCR spaces 'a t'
 nca2_secret,德国,1935,,,,,nca2_30,"PDF p. 748, ch. XVI","The amount of ""mefo"" bills outstanding was a guarded state secret",
 nca2_12bn,德国,1938,,1;1938;12,,,nca2_30,"PDF p. 748, ch. XVI","The ""mefo"" bill system continued to be used until 1 April 1938, when 12 billion Reichsmarks of ""mefo"" bills were outstanding",
@@ -170,6 +178,8 @@ puhl_1935,德国,1935,,1935,,,nca7_30,"PDF p. 499, EC-436",In the early part of 
 puhl_secrecy,德国,1935,,,,,nca7_30,"PDF p. 499, EC-436",had a s one of its primary advantages the fact that secrecy would be possible during the first years of the rearmament program,the OCR spaces 'a s'
 puhl_life,德国,1938,,6;3;4,,,nca7_30,"PDF p. 499, EC-436",These bills ran for six months with extensions running for three months each consecutively. The total life of these bills varied and in some instances exceeded four years.,
 puhl_discount,德国,1938,,3,,,nca7_30,"PDF p. 499, EC-436",The Reichsbank could discount the original bill any time within its last three months.,
+puhl_liability,德国,1938,,,,,nca7_30,"PDF p. 499, EC-436",The co-endorser and drawer did not have to accept any liability.,the sentence that puhl_guarantee explains
+puhl_exclusive,德国,1938,,,,,nca7_30,"PDF p. 500, EC-436","These ""mefo"" bills were used exclusively for financing rearmament",
 puhl_guarantee,德国,1938,,,,,nca7_30,"PDF p. 499, EC-436",(This provision results from a guarantee of the bill by the Reich.),
 puhl_12,德国,1938,,1938;12,,,nca7_30,"PDF p. 500, EC-436","when in March 1938, a new finance program discontinuing the use of ""mefo"" bills was announced by Dr. Schacht, there was a total volume outstanding of twelve billion marks",
 ec369_date,德国,1939,,7;1939,,,nca7_30,"PDF p. 432, EC-369",7 Jan.1939 The President of the Reichsbank Directory,
@@ -184,6 +194,7 @@ ec369_lagged,德国,1939,,,,,nca7_30,"PDF p. 433, EC-369","the relative producti
 ec369_apart,德国,1939,,,,,nca7_30,"PDF p. 434, EC-369",wage- and price structure totally fell apart.,
 ec369_clothes,德国,1939,,,,,nca7_30,"PDF p. 434, EC-369","Children clothes, workers clothes etc., which formerly lasted for years last now only months, but cost the same or even more than the former good merchandise.",
 ec369_nobank,德国,1939,,,,,nca7_30,"PDF p. 434, EC-369",N o note-issuing bank i s capable o f maintaining the currency standard against a n inflationary policy o f expenditures b y t h e government.,the OCR spaces the letters of the translation's emphasis
+ec369_should,德国,1939,,,,,nca7_30,"PDF p. 435, EC-369","Should i t be necessary for the Minister of Finance because of excessive expenditures, to draw funds from the institutions with which MEFO acceptance-Bills have been placed",the OCR spaces 'i t'; the condition of ec369_present
 ec369_present,德国,1939,,,,,nca7_30,"PDF p. 435, EC-369",then these acceptances will be presented to the Notenbank and will cause an inflationary increase of money in circulation.,
 ec369_5years,德国,1939,,5,,,nca7_30,"PDF p. 435, EC-369","provisions had been made, to redeem the MEFO acceptance-Bills 5 years from date of issuance.",
 ec369_3bn,德国,1939,,3;1939,,,nca7_30,"PDF p. 435, EC-369","approximately R M 3 Milliarden of such acceptances, cannot now be paid, though they will be due in 1939.",
@@ -204,6 +215,7 @@ bis_jan1937,日本,1937,,1937;1;2,,,bis1937_30,PDF p. 24,In January 1937 the rat
 bis_reuse,世界,2026,,,,,bisterms30,terms and conditions,"in other publications or products free of charge, provided the BIS is cited as the source.",
 bis_translation,世界,2026,,,,,bisterms30,terms and conditions,"With respect to translations, Users must include a statement that the translation is not an official BIS translation, and that the BIS does not guarantee its accuracy or completeness.",
 ndb_17,德国,1933,,17;3;1933,,,schachtlife,"NDB 22 (2005), pp. 489-491",Am 17.3.1933 konnte S. in die Führungsetage der Reichsbank zurückkehren,
+ndb_geld,德国,1933,,,,,schachtlife,"NDB 22 (2005), pp. 489-491",Er ging zu einer expansiven Geldpolitik über und ermöglichte dem NS -Regime,the page's markup leaves a space in 'NS -Regime'
 ndb_expansive,德国,1933,,,,,schachtlife,"NDB 22 (2005), pp. 489-491",eine Ausweitung der Arbeitsbeschaffungspolitik sowie die sofortige Inangriffnahme der Aufrüstung,
 ndb_minister,德国,1934,,30;6;1934,,,schachtlife,"NDB 22 (2005), pp. 489-491",Als er am 30.6.1934 zusätzlich das Amt des Reichswirtschaftsministers übernahm,
 ndb_jews,德国,1936,,,,,schachtlife,"NDB 22 (2005), pp. 489-491","Seine sporadische Kritik an einzelnen Maßnahmen des Regimes, wie der zunehmenden Judenverfolgung, blieb nunmehr völlig wirkungslos.",
@@ -245,7 +257,7 @@ bj98_rule,瑞典,1932,,,,,berg1998,p. 6,"""a formal and simple rule"" for moneta
 bj98_june1933,瑞典,1933,,1933,,,berg1998,p. 6,In June 1933 the Riksdag approved a revised version of the monetary program.,
 bj98_first,瑞典,1932,,,,,berg1998,p. 6,"By this program, Sweden became thus the first country to make the stabilization of the level of domestic prices the official goal of its monetary policy",
 bj98_band,瑞典,1936,,3;100;1931;1931;36;1937;5,,,berg1998,p. 7,within a band of less than 3 percentage points around the base level of 100 for September 1931 during the period 1931-36. In 1937 consumer prices rose by almost 5 per cent,
-bj98_parity,瑞典,1931,,18.15;1931,,,berg1998,p. 7,fell below the gold parity rate of 18.15 kronor during the fall of 1931.,
+bj98_parity,瑞典,1931,,18.15;1931,,,berg1998,p. 7,fell below the gold parity rate of 18.15 kronor during the fall of 1931.,"the subject of the sentence is 'The pound rate, as shown in Figure 2,' (kronor per pound): the pound fell below the old parity; it rose sharply above it at the news of Kreuger's death in March 1932"
 bj98_peg,瑞典,1933,,1933,,,berg1998,p. 7,the Riksbank pegged the krona to the pound in July 1933. The peg was maintained until the outbreak of World War II,
 bj98_rate,瑞典,1931,,6;8,,,berg1998,p. 7,raised its discount rate from six to eight per cent out of fear of inflation.,
 bj98_25,瑞典,1934,,2.5;1934,,,berg1998,p. 8,"reaching 2,5 per cent in 1934 where it remained until the outbreak of World War II.","'2,5': a decimal comma"
@@ -287,3 +299,4 @@ loc_hamrin,世界,,,1875;1937,,,loc_hamrin30,authority record,"Hamrin, Felix, 18
 loc_puhl,世界,,,1889;1962,,,loc_puhl30,authority record,"Puhl, Emil, 1889-1962",
 loc_ohlin,世界,,,1899;1979,,,loc_ohlin30,authority record,"Ohlin, Bertil, 1899-1979",
 loc_rooth,世界,,,1888,,,loc_rooth30,authority record,"Rooth, Ivar, 1888-",no year of death in the record
+loc_sauckel,世界,,,1894;1946,,,loc_sauckel30,authority record,"Sauckel, Fritz, 1894-1946",
