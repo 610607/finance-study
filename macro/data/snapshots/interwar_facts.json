@@ -1,0 +1,226 @@
+{
+  "title": "Evidence for Chapter 27: the gold standard between the wars, 1919-1929",
+  "source": "Hansard (Commons, 28 April 1925; Lords, 11 May 1925); the Gold Standard Act 1925; Keynes (1923, 1925); the Macmillan Committee's Minutes of Evidence (1930); Brown (1940); Nurkse (1944); Dulles (1929); De Long and Shleifer (1990); McGrattan and Prescott (2003); Federal Reserve History (2013); Sveriges Riksbank; Wikisource",
+  "url": "https://api.parliament.uk/historic-hansard/commons/1925/apr/28/return-to-gold-standard",
+  "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or column, the source text verbatim, note",
+  "retrieved": "2026-10-22",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Hansard (the Commons debates of 28 April 1925, the Lords debate of 11 May 1925 and the people pages): 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.' The Gold Standard Act 1925 (legislation.gov.uk): 'Contains public sector information licensed under the Open Government Licence v3.0.' The Macmillan Committee's Minutes of Evidence (HMSO, 1931) and Nurkse's International Currency Experience (League of Nations, 1944) are official publications; the Crown publication is older than fifty years and out of Crown copyright, and the League of Nations volume is quoted briefly with its source. Keynes (1883-1946): A Tract on Monetary Reform (1923) and The Economic Consequences of Mr. Churchill (1925) are in the public domain in the United Kingdom. Brown (1940), NBER: 'Copyright, 1940, by National Bureau of Economic Research, Inc. ... All Rights Reserved' (row br_copyright); short quotations only, with full credit. De Long and Shleifer (1990), NBER Working Paper 3523 (no copyright line is printed on the PDF), and McGrattan and Prescott (2003), Federal Reserve Bank of Minneapolis Staff Report 294: in copyright; short phrases only, the rest paraphrased. Dulles (1929, 'All rights reserved', published March 1929): short quotations. Federal Reserve History (2013) and the Riksbank's timeline: cited for facts in short quotations; for the Riksbank page: 'Enter source, Sveriges riksbank and date.' Wikisource (fr): CC BY-SA, cited for dates. The chapter's Chinese renders the quotations; the translations are the book's.",
+  "used_in": [
+    27
+  ],
+  "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch27.py. Norman's answers to the Macmillan Committee (Q. 3353-63, in a volume not obtained) are indirect testimony, through Brown (1940); the report of the Committee on the Currency and Bank of England Note Issues (Chamberlain-Bradbury, 1925, Cmd. 2393) is known here only through the Earl of Clarendon's reading of its paragraph 15 in the Lords, and the Cunliffe Committee's report (1918) only through Churchill, Clarendon, Lord Hunsdon (who signed it) and Nurkse. Moreau's account of his talks with Norman (Revue des Deux Mondes) is cited by Brown and not quoted here. OCR misprints are kept in the quotations and named in the notes; Hansard's column numbers come from the page's column anchors.",
+  "sources": {
+    "hansard1925a": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1925/apr/28/return-to-gold-standard",
+      "format": "html",
+      "sha256": "bb55625688bc7940ba478e22070bb6c767a0ba6f54fc427641c9f2a7b7459c71",
+      "version": "Hansard, House of Commons Debates, 28 April 1925, vol. 183, cc. 52-58: Financial Statement, 'Return to Gold Standard' (the Chancellor of the Exchequer, Winston Churchill). Historic Hansard (UK Parliament), digitised text; column numbers from the page's column anchors.",
+      "retrieved": "2026-10-22"
+    },
+    "hansard1925b": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1925/apr/28/gold-standard",
+      "format": "html",
+      "sha256": "0e75521e4745df2d938c7c5730b6f7202c8205f37ce01d046d1bde02977183be",
+      "version": "Hansard, House of Commons Debates, 28 April 1925, vol. 183, c. 32: Oral Answers, 'Gold Standard' (private notice question of Mr. Pethick-Lawrence, answered by Mr. Guinness).",
+      "retrieved": "2026-10-22"
+    },
+    "hansard1925c": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1925/apr/28/wholesale-prices-indexnumber",
+      "format": "html",
+      "sha256": "200285e401d9d22bc5e56a67689567c264ad5e5a231e48f2d1312a324f267876",
+      "version": "Hansard, House of Commons Debates, 28 April 1925, vol. 183, cc. 6-8: Oral Answers, 'Wholesale Prices (Index-Number)' (private notice question of Mr. Pethick-Lawrence, answered by Sir P. Cunliffe-Lister, c. 7).",
+      "retrieved": "2026-10-22"
+    },
+    "hansard1925d": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1925/apr/28/financial-statement",
+      "format": "html",
+      "sha256": "8a36af3e7f300333cb933ac1145b1a3a92ab1560dc6c4c368e12a8c928b909a3",
+      "version": "Hansard, House of Commons Debates, 28 April 1925, vol. 183, cc. 34-110: Orders of the Day, 'Financial Statement' (the opening of the Budget speech, c. 34).",
+      "retrieved": "2026-10-22"
+    },
+    "hansard1925e": {
+      "url": "https://api.parliament.uk/historic-hansard/lords/1925/may/11/gold-standard-bill",
+      "format": "html",
+      "sha256": "5729c919b51c27d0ad8604f5ae93270163a1276bc14c32d5fc9ad954994b993b",
+      "version": "Hansard, House of Lords Debates, 11 May 1925, vol. 61, cc. 125-160: 'Gold Standard Bill', second reading (the Earl of Clarendon, cc. 126-129; Lord Bradbury, cc. 146-153; Lord Hunsdon, cc. 154-156).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_churchill": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-winston-churchill",
+      "format": "html",
+      "sha256": "6ab9fd06f5ad157111146ee8e511925bad8921e10ed5e02fd2cf12dd7f454524",
+      "version": "Historic Hansard, people page: Mr Winston Churchill (dates of life).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_pethick": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-frederick-pethick-lawrence",
+      "format": "html",
+      "sha256": "61379af6e3fe48ed398dbb39752a95d58f6a43f00402019f1ae0ac556aef165b",
+      "version": "Historic Hansard, people page: Mr Frederick Pethick-Lawrence (dates of life, constituency).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_norman": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-montagu-norman",
+      "format": "html",
+      "sha256": "85fac296f846b5d6bfa60e595aa54333d794d697bf67de33bae25603a711c5d5",
+      "version": "Historic Hansard, people page: Mr Montagu Norman (dates of life; Baron Norman from 1944).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_bradbury": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-john-bradbury-2",
+      "format": "html",
+      "sha256": "9dd75ec76d941e85e4a07dd6de9cb20a50999930e8507a79c01c4a6d36a54c7a",
+      "version": "Historic Hansard, people page: Mr John Bradbury (dates of life; Baron Bradbury from 28 January 1925).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_hunsdon": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-herbert-gibbs",
+      "format": "html",
+      "sha256": "2df38f1e4cbcc559e481e4c7c9a8913d52ba64209fce9062b4ebb8a7e894132a",
+      "version": "Historic Hansard, people page: Mr Herbert Gibbs (dates of life; Baron Hunsdon of Hunsdon from 24 July 1923).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_chamberlain": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-austen-chamberlain",
+      "format": "html",
+      "sha256": "da9722a22daf822cf94c1a8a89e785ec894bf8260707fde87e4c67a4355bd42c",
+      "version": "Historic Hansard, people page: Mr Austen Chamberlain (dates of life).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_snowden": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-philip-snowden",
+      "format": "html",
+      "sha256": "3bfb41a0855b15d5cec8f11d2b5164a5123899113ab7b5cb1446e0c3f60a519a",
+      "version": "Historic Hansard, people page: Mr Philip Snowden (dates of life; Chancellor of the Exchequer 1924 and 1929-1931).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_clarendon": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-george-villiers-2",
+      "format": "html",
+      "sha256": "c4e9ee791901b4650c4c36198b58362bb090b81b22cdc25af267246c777ebb25",
+      "version": "Historic Hansard, people page: Mr George Villiers (dates of life; Earl of Clarendon from 1914).",
+      "retrieved": "2026-10-22"
+    },
+    "hh_cunliffe": {
+      "url": "https://api.parliament.uk/historic-hansard/people/mr-walter-cunliffe",
+      "format": "html",
+      "sha256": "affebc0ad306464f4e14b58f41d78796aad0624eebfd08d16b6bdb9164b16165",
+      "version": "Historic Hansard, people page: Mr Walter Cunliffe (date of death; Baron Cunliffe from 1914; no year of birth).",
+      "retrieved": "2026-10-22"
+    },
+    "gsa1925": {
+      "url": "https://www.legislation.gov.uk/ukpga/Geo5/15-16/29/pdfs/ukpga_19250029_en.pdf",
+      "format": "pdf",
+      "sha256": "449dd8bbe1c20f919a2b17dd9b7eca0286663611936f9bb40b75f9bfa4a2b4b6",
+      "version": "Gold Standard Act 1925 (15 & 16 Geo. 5 c. 29), the enacted text as printed (scan with a text layer), legislation.gov.uk (The National Archives); ss. 1-2.",
+      "retrieved": "2026-10-22"
+    },
+    "brown1940fm": {
+      "url": "https://www.nber.org/system/files/chapters/c5935/c5935.pdf",
+      "format": "pdf",
+      "sha256": "a8c0614b0bea8378c857ae57873d5055a00ec109b06e26f2724d35a62c1f54c9",
+      "version": "W. A. Brown Jr., The International Gold Standard Reinterpreted, 1914-1934 (New York: NBER, 1940; ISBN 0-87014-036-1), front matter (copyright page). NBER chapter PDF.",
+      "retrieved": "2026-10-22"
+    },
+    "brown1940a": {
+      "url": "https://www.nber.org/system/files/chapters/c5941/c5941.pdf",
+      "format": "pdf",
+      "sha256": "fa2612043b29600bbb9dcc5b84cdb9a36c927ea1f2e85760234307b56d4b9838",
+      "version": "Brown (1940), Book Two, Restoration, 1919-1925; Part I, The Post-War Stabilization Problem, pp. 176-225 (NBER chapter c5941); p. 184.",
+      "retrieved": "2026-10-22"
+    },
+    "brown1940b": {
+      "url": "https://www.nber.org/system/files/chapters/c5942/c5942.pdf",
+      "format": "pdf",
+      "sha256": "a4b2b49d2ded0ee5ed90ea4ca30ed0238e69c20fdb845c12ab870d8e44861fb9",
+      "version": "Brown (1940), Book Two, Part II, The British Campaign for Parity with Gold in Its World-wide Setting, 1920-1925, pp. 226-383 (NBER chapter c5942); p. 323.",
+      "retrieved": "2026-10-22"
+    },
+    "brown1940c": {
+      "url": "https://www.nber.org/system/files/chapters/c5944/c5944.pdf",
+      "format": "pdf",
+      "sha256": "121f209a2662b00aa9c74f4ee482de65aa17cc3467e8c73658917f31056d1f9a",
+      "version": "Brown (1940), Book Three, Experimentation, 1925-1931; Part II, Completing the International Gold Standard Facade, 1925-1928, pp. 392-490 (NBER chapter c5944); pp. 399-400, 429, 442-460, 469, 486.",
+      "retrieved": "2026-10-22"
+    },
+    "brown1940d": {
+      "url": "https://www.nber.org/system/files/chapters/c5945/c5945.pdf",
+      "format": "pdf",
+      "sha256": "32158f77ae6959ac9ed3428b85a2496f7250a00f97497156b9ab5ab716f55e3b",
+      "version": "Brown (1940), Book Three, Part III, What Was Restored - A Decentralized International Financial System, pp. 492-771 (NBER chapter c5945); pp. 564-572, 603, 611, 615, 619, 708, 725-728.",
+      "retrieved": "2026-10-22"
+    },
+    "nurkse1944": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.224456/2015.224456.International-Currency_djvu.txt",
+      "format": "txt",
+      "sha256": "2864a622cc3ea2fe75031b9ab4cd1aa32b4687a56261150090df91c020796f51",
+      "version": "[R. Nurkse], International Currency Experience: Lessons of the Inter-War Period (League of Nations, Economic, Financial and Transit Department, 1944; Series of League of Nations Publications 1944.II.A.4; reprinted by the United Nations, 1947). OCR text of the copy of the Digital Library of India on archive.org (item in.ernet.dli.2015.224456); pp. 7, 10-11, 27-29, 33-36, 66-68, 89 and Appendix IV, Table 2 (p. 240), whose figures were read against the page image of the same scan (PDF page 242 of 2015.224456.International-Currency_text.pdf, SHA-256 c94057b6b2d5a5dc9e713310d1da525d8c92a462b683ee541830a83297baab3d).",
+      "retrieved": "2026-10-22"
+    },
+    "macmillan1930": {
+      "url": "https://archive.org/download/minutesofevidenc01grea_0/minutesofevidenc01grea_0_djvu.txt",
+      "format": "txt",
+      "sha256": "13083cef49f174abd51228403e9e67bea5b1ecd22c13d84dcc00403875546a22",
+      "version": "Committee on Finance and Industry (Macmillan Committee), Minutes of Evidence, vol. I (London: HMSO, 1931). OCR text on archive.org (item minutesofevidenc01grea_0): Sir Robert Kindersley, 6 February 1930, pp. 101-102 (Q. 1594-1596); the statement of evidence of the Federation of British Industries, 20 March 1930, pp. 186-187.",
+      "retrieved": "2026-10-22"
+    },
+    "delong1990": {
+      "url": "https://www.nber.org/system/files/working_papers/w3523/w3523.pdf",
+      "format": "pdf",
+      "sha256": "52d306407471276807b71cc95291594fe4318ad3ccb8726d641610de5ba56cfb",
+      "version": "J. B. De Long and A. Shleifer, The Bubble of 1929: Evidence from Closed-End Funds, NBER Working Paper 3523, November 1990 (published in the Journal of Economic History, 1991); abstract, pp. 1, 3.",
+      "retrieved": "2026-10-22"
+    },
+    "mcgrattan2003": {
+      "url": "https://www.minneapolisfed.org/research/sr/sr294.pdf",
+      "format": "pdf",
+      "sha256": "3708f745e0ae585d52afd46ea33a2f267d8ca9daa1a5e065ac7cb15c16d9afc1",
+      "version": "E. R. McGrattan and E. C. Prescott, The 1929 Stock Market: Irving Fisher Was Right, Federal Reserve Bank of Minneapolis Research Department Staff Report 294, revised December 2003; abstract, pp. 1-2, 12.",
+      "retrieved": "2026-10-22"
+    },
+    "frh1929": {
+      "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929",
+      "format": "html",
+      "sha256": "222eb2503747fb3fcedb0ee889dd1b33eaec975608c0954fff7a1e8e014cfb54",
+      "version": "G. Richardson, A. Komai, M. Gou and D. Park, Stock Market Crash of 1929, Federal Reserve History (essay written as of 22 November 2013), with its notes 1 and 4.",
+      "retrieved": "2026-10-22"
+    },
+    "riksbank1920": {
+      "url": "https://www.riksbank.se/en-gb/about-the-riksbank/history/historical-timeline/1900-1999/strong-deflation-after-the-war/",
+      "format": "html",
+      "sha256": "b181a32542a61a8ba6d33c41c526c72e1b4d3f58afa80b2a7f52a123004dea13",
+      "version": "Sveriges Riksbank, Historical timeline, '1920 - Strong deflation after the war'.",
+      "retrieved": "2026-10-22"
+    },
+    "dulles1929": {
+      "url": "https://archive.org/download/frenchfranc191410000phdd/frenchfranc191410000phdd_djvu.txt",
+      "format": "txt",
+      "sha256": "bdd34cb18e91e0bebf08048b39e5dfa204e25ac7a9439d19688bd289b19b08aa",
+      "version": "E. L. Dulles, The French Franc, 1914-1928: The Facts and Their Interpretation (New York: Macmillan, 1929; Bureau of International Research of Harvard University and Radcliffe College). OCR text on archive.org (item frenchfranc191410000phdd); pp. 297, 437, 439.",
+      "retrieved": "2026-10-22"
+    },
+    "ws_poincare": {
+      "url": "https://fr.wikisource.org/wiki/Auteur:Raymond_Poincar%C3%A9",
+      "format": "html",
+      "sha256": "6283714a67acabe426b6007ddd31e7eb5430214216373aeb5af9c710f77617d6",
+      "version": "Wikisource (fr), Auteur:Raymond Poincaré (dates of life).",
+      "retrieved": "2026-10-22"
+    },
+    "keynes1931": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.89977/2015.89977.Essays-In-Persuasion_djvu.txt",
+      "format": "txt",
+      "sha256": "b9009e0c62d60ba431aee7acb472682651e29326834f4c7171a35f0830864f6a",
+      "version": "J. M. Keynes, Essays in Persuasion (London: Macmillan, first edition 1931; popular edition 1933), the copy of the Digital Library of India on archive.org (item in.ernet.dli.2015.89977), OCR text of the popular edition of 1933; 'The Economic Consequences of Mr. Churchill (1925)', pp. 244-261; pages from the running heads of the OCR",
+      "retrieved": "2026-10-16"
+    },
+    "keynes1923": {
+      "url": "https://archive.org/download/tractonmonetaryr0000keyn/tractonmonetaryr0000keyn_djvu.txt",
+      "format": "txt",
+      "sha256": "3fa3ef83ff57093a962ed39571b9875e041e0f873807f5d7a9ae880954fbcdbe",
+      "version": "J. M. Keynes, A Tract on Monetary Reform (London: Macmillan, 1923; reprinted 1924, 1929), OCR text of the reprint of 1929 on archive.org (item tractonmonetaryr0000keyn); pp. 40, 142-143, 155, 172; pages from the running heads",
+      "retrieved": "2026-10-21",
+      "user_agent": "Mozilla/5.0"
+    }
+  },
+  "fetch": "data/fetch/interwar27.py"
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Britain between the wars: the $/£ rate, wholesale prices, the cost of living, wages and unemployment, monthly, July 1914 - December 1931",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'M15. Mthly $-£ 1791-2015', 'M6. Mthly prices and wages' and 'M5. Administrative unemp 1881+'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; month (1-12); usd_per_gbp: the $/£ exchange rate, dollars per pound, monthly ('Craighead (2010), Federal Reserve Board and ONS'); sauerbeck_1867_77_100: 'Sauerbeck Statist index, all commodities 1885-1951', 1867-77 = 100, nsa; cost_of_living_jul1914_100: 'Monthly cost of living index 1914-1947', ONS, July 1914 = 100, nsa; wages_jan1939_100: 'Index of 11 Weekly Wage Rates 1919-1925; Average Weekly Wages 1925-1939', Capie and Collins (1983) Tables 4.1 and 4.2, January 1939 = 100, nsa (empty before 1919); unemp_admin: administrative unemployment rate, per cent (Denman and Macdonald 1996, Tables 1 and 2; empty where the sheet gives none); unemp_sa: the sheet's 'seasonally-adjusted and interpolated' series, per cent",
+  "retrieved": "2026-10-22",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (Craighead 2010, the Federal Reserve Board and the ONS for the exchange rate; the Sauerbeck-Statist index; the ONS cost of living index; Capie and Collins 1983 for wages; Denman and Macdonald 1996 for unemployment).",
+  "used_in": [
+    27
+  ],
+  "fetch": "data/fetch/boe_millennium_gb27.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-25). The text and figures of Chapter 27 use unemp_admin, which the sheet leaves empty from December 1918 to October 1919 and in October 1920; unemp_sa is kept for reference and is not used. The index ratios, rebasings and averages in the chapter are the book's own calculations.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets M15, M6 and M5"
+}
