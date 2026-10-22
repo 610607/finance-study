@@ -1390,6 +1390,9 @@ ex:weimar-transfer ex:weimar-seigniorage ex:weimar-taxlag ex:weimar-double
 sec:interwar-world sec:interwar-parity sec:interwar-keynes sec:interwar-cost sec:interwar-exchange sec:interwar-gold sec:interwar-boom sec:interwar-legacy
 eq:interwar-parity eq:interwar-pyramid eq:interwar-sterilize fig:interwar_sterling fig:interwar_labour fig:interwar_gold tab:interwar-returns
 ex:interwar-parity ex:interwar-index ex:interwar-pyramid ex:interwar-margin
+sec:depressionus-world sec:depressionus-panics sec:depressionus-fisher sec:depressionus-money sec:depressionus-fed sec:depressionus-credit sec:depressionus-recovery sec:depressionus-legacy
+eq:depressionus-firesale eq:depressionus-debt fig:depressionus_output fig:depressionus_banks tab:depressionus-money
+ex:depressionus-run ex:depressionus-debt ex:depressionus-mult ex:depressionus-gold
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous
@@ -1398,7 +1401,7 @@ part:language part:ancient part:earlymodern part:classical part:keynes part:gold
 app:math app:symbols app:index app:timeline
 front:howto front:structure front:colours front:boxes front:traceability front:books
 sec:intro-world sec:intro-afford sec:intro-layers sec:intro-cases sec:intro-test sec:intro-map sec:intro-legacy eq:intro-budget tab:intro-layers tab:intro-cases ex:intro-peg ex:intro-ratio
-sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows ex:accounts-thrift
+sec:accounts-world sec:accounts-gdp sec:accounts-real sec:accounts-sectors sec:accounts-gni sec:accounts-test sec:accounts-limits sec:accounts-legacy eq:accounts-three eq:accounts-deflator eq:accounts-capital eq:accounts-balances eq:accounts-gni tab:accounts-flows ex:accounts-thrift ex:accounts-depression
 sec:prices-world sec:prices-index sec:prices-real sec:prices-fisher sec:prices-bonds sec:prices-curve sec:prices-breakeven sec:prices-test sec:prices-legacy eq:prices-index eq:prices-fisher eq:prices-bond eq:prices-curve eq:prices-breakeven tab:prices-boskin
 sec:money-world sec:money-sheets sec:money-creation sec:money-rate sec:money-functions sec:money-test sec:money-legacy eq:money-base eq:money-reserves eq:money-mult eq:money-corridor tab:money-fed tab:money-steps ex:money-smith
 sec:external-world sec:external-bop sec:external-position sec:external-rates sec:external-constraint sec:external-test sec:external-legacy eq:external-bop eq:external-sectors eq:external-iip eq:external-real eq:external-ppp eq:external-cip eq:external-uip tab:external-srilanka ex:external-sin
