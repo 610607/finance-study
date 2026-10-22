@@ -283,6 +283,13 @@
    "sha256": "110d1d9b144c3c31769879b6726d18dcab9dc873f7a36781a9becd485db4b51f",
    "version": "the PDF scan of the same issue (sim_federal-reserve-bulletin_1937-09_23_9.pdf), pages read on images rendered with pdftoppm: p. 868 (Table 1) and p. 907 (Table 12, PDF page 91, at 300 dpi).",
    "retrieved": "2026-10-22"
+  },
+  "fdic1998": {
+   "url": "https://www.fdic.gov/resources/publications/brief-history-of-deposit-insurance/book/brief-history-deposit-insurance.pdf",
+   "format": "pdf",
+   "sha256": "e58645837ed0c95f768517d110a01b1f575b2e87f103fa996b0cfea717f38f22",
+   "version": "Federal Deposit Insurance Corporation, Division of Research and Statistics, 'A Brief History of Deposit Insurance in the United States', prepared for the International Conference on Deposit Insurance, Washington, DC, September 1998 (76 pp.); pages cited as printed. A US federal publication: public domain.",
+   "retrieved": "2026-10-22"
   }
  }
 }

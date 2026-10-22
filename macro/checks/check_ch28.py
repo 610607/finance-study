@@ -341,7 +341,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 169)
+    quoted("rows with values, each read from its quotation", n, 173)
     quoted("rows read on a page image (no quotation)", img, 6)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
@@ -876,8 +876,8 @@ def money(F, Y, Q):
     said("1930 与 1931 年缺准备金余额的年平均", 1930, 1931)
     # ex:depressionus-mult
     said("（1）验证 1929 与 1933 年的货币乘数。（2）设两个比率都停在 1929 年的水平，只有$H$变到 1933 年的数，$M$是多少？"
-         "（3）只让$C/M$变到 1933 年的水平呢？只让$R/D$变呢？（4）三个因素各起了什么作用？", 1, 1929, 1933, 2, 1929, 1933, 3,
-         1933, 4)
+         "（3）$H$停在 1929 年，只让$C/M$变到 1933 年的水平呢？只让$R/D$变呢？（4）三个因素各起了什么作用？", 1, 1929, 1933, 2,
+         1929, 1933, 3, 1929, 1933, 4)
     c29, r29, c33, r33, m29 = T.c[1929], T.r[1929], T.c[1933], T.r[1933], T.m[1929]
     said("（1）1929 年，$m=1/(0.0837+0.0763-0.0837\\times0.0763)\\approx6.51$，$6.51\\times71.6\\approx466$亿美元", 1, 1929, 1,
          c29, r29, c29, r29, mult(c29, r29), m29, 10 * T.H[1929], 10 * T.M[1929])
@@ -1056,7 +1056,7 @@ def credit(F, Y, Q):
     said("他用 26 个国家的样本", F["bern_26"][0])
     said("照 Kryzanowski 与 Roberts（1993）的看法", F["brr_forbearance"][0])
     # the spending side
-    said("另一种解释从支出入手，见 Romer（1990）", Y["rom90_abstract"])
+    say("另一种解释从支出入手\\cite{romer1990}")
     v = F["rom90_ip"]
     for words in ("between August 1929 and October 1929", "between October 1929 and December 1929",
                   "between December 1929 and December 1930"):
@@ -1122,7 +1122,18 @@ def recovery(F, Y, Q):
     _, _, y7, cap = F["frh_5000"]
     assert "the limit was raised to $5,000" in Q["frh_5000"]
     said("1934 年 7 月，上限提高到 5,000 美元", y7, 7, cap)
+    d16, y16, d1, y35 = F["fdic_postponed"]
+    assert "the permanent plan was postponed one year" in Q["fdic_postponed"]
+    assert F["fdic_5000"] == [1, y7, 2500, cap]                       # the FDIC's history agrees on the limit and the month
+    said("同年 6 月，国会延长了临时基金，永久的方案推迟一年，到 1935 年 7 月才生效", 6, y35, 7)
+    assert y16 == y7 and d1 == 1 and y35 == y16 + 1
     said("1934 年停业的银行只有 57 家", 1934, A.susp_banks[1934])
+    assert "to factors other than deposit insurance" in Q["fdic_1934report"]
+    said("它在 1934 年的年报里，把领到执照的银行倒闭得少归于存款保险以外的原因", F["fdic_1934report"][0])
+    assert "RFC" in Q["fdic_reasons"] and "weeded out many weak banks" in Q["fdic_reasons"]
+    said("1933 年的风波已经淘汰了不少弱银行，经济也好转了", F["fdic_reasons"][0])
+    assert "remove penalties for bad management" in Q["fdic_penalties"]
+    say("反对的人当时就说，有了保险，经营不善就不再受罚")
     # the Gold Reserve Act and Proclamation 2072
     y, d30 = F["wh_tuesday"]
     assert "Tuesday, January 30th" in Q["wh_tuesday"] and date(int(y), 1, int(d30)).weekday() == 1
@@ -1234,6 +1245,8 @@ def deeper(F, Y, Q):
     y7 = F["frh_5000"][2]
     assert "became permanent in July 1934" in Q["frh_5000"] and "the FDIC's own history" in N["frh_5000"]
     said("联邦储备历史网站还说，存款保险基金在 1934 年 7 月改为永久", y7, 7)
+    y98 = int(re.search(r"September (\d{4})", m["sources"]["fdic1998"]["version"]).group(1))
+    said("这与联邦存款保险公司 1998 年的《存款保险简史》不合，正文据后者", y98)
     wheelock = int(re.search(r"Wheelock \((\d{4})\) could not be downloaded", m["notes"]).group(1))
     said("Wheelock（1992）对美联储信条的研究没有取得", wheelock)
     am = annual_meta()
@@ -1579,6 +1592,7 @@ def witnesses(F, Q):
         assert "公有领域" in items[key], key
     assert "王室版权已过期" in items["cyb1935"]
     assert "Licence Ouverte" in items["bnf28"] and "id.loc.gov" in items["loc28"]
+    assert "公有领域" in items["fdic1998"] and m["sources"]["fdic1998"]["format"] == "pdf"
     keys = set(re.findall(r"\\bibitem\{([^}]+)\}", bib))
     cited = {k.strip() for c in re.findall(r"\\cite\{([^}]+)\}", tex_text()) for k in c.split(",")}
     assert cited <= keys, sorted(cited - keys)
