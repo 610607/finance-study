@@ -2,7 +2,7 @@
 
 Parts 1–4 are written and reviewed, so Part 5 is written against them. Chapters 26–34 are written one
 at a time in that order (docs/WORKFLOW.md, sequential mode), each reviewed by one independent reviewer
-before the next. Give the writer `batch_brief.txt` plus its section below. Sections for Chapters 27–34
+before the next. Give the writer `batch_brief.txt` plus its section below. Sections for Chapters 28–34
 are added when each is started; until then the neighbours named below divide the ground.
 
 Part 5 moves from theory as it was written to policy under pressure: war finance, hyperinflation, the
@@ -153,3 +153,146 @@ case, and the hand-off to Chapter 27 (which parity, and who pays). The Reichsmar
 pre-war gold content, so Germany did return to the old parity — in a unit twelve zeros away from the
 old one; if verified (the Münzgesetz of 30 August 1924), this makes the hand-off sharper: Britain went
 back to the old parity without striking off any zeros.
+
+## Rules carried over from the rewrite of Chapter 26 (every Part 5 chapter)
+
+- **The check script ties the text to the snapshots.** Model it on `checks/check_ch26.py`: `said()`
+  reads every number of a phrase with its unit (万, 亿, 万亿) and compares it with the snapshot value;
+  READINGS give, for every row, how its quote states the number (num, en, frac, gap, ocr …), and a
+  misprint in the source is named in the row's note; TRANSLATIONS for every “…” quotation; `anchors()`
+  at the end. Before reporting, run a mutation test: change at least ten numbers of the text in a
+  scratch copy and show that the script fails on each.
+- At most about a dozen "不能"; limits in one clause, the pitfall box or the 史料说明.
+- Name a line of evidence once; people and institutions are the subjects of sentences. Authors of cited
+  works appear under their original names (STYLE §11: Eichengreen, Moggridge, Nurkse); historical
+  actors under the usual Chinese renderings (凯恩斯, 丘吉尔).
+- Foreign variables take a superscript $f$ (Appendix B, `eq:external-real`); the star is the neutral
+  rate's.
+- Snapshot CSVs keep their line endings (several use CRLF); edit them as bytes or check `git diff`.
+- Licence lines: Hansard "Contains Parliamentary information licensed under the Open Parliament
+  Licence v3.0"; legislation.gov.uk and other Crown material "Contains public sector information
+  licensed under the Open Government Licence v3.0" (both already used in `references_zh.tex`; copy the
+  existing wording). Crown reports older than 50 years (Cunliffe 1918, the Chamberlain–Bradbury
+  Committee 1925, the Macmillan Committee 1931) are out of Crown copyright. US federal documents
+  (*Federal Reserve Bulletin*, *Banking and Monetary Statistics*, Senate hearings) are public domain.
+  NBER working papers and books: short quotations with the © notice, as for `reinhart2008`.
+
+## 第 27 章 `ch:interwar` 两次大战之间的金本位 (`zh/ch27_interwar.tex`)
+
+- Neighbours:
+  - Ch 23 owns the pre-war gold standard (the 1844 Act, Bank Rate, Goschen's condition
+    `eq:gold-goschen`, the rules of the game before 1914 and Bloomfield's counts). Refer back; do not
+    retell.
+  - Ch 26 owns Germany to 1924 (the Rentenmark, the Dawes Plan, the Reichsmark at the old gold
+    content). Use the Reichsmark only as one member of the gold-exchange standard, with `\chref`.
+  - Ch 28 owns the American Depression from 1929 (output, prices, bank failures; Fisher's debt
+    deflation, Friedman–Schwartz, Bernanke; the recovery). This chapter ends with the crash of
+    October 1929 and hands over Ch 28's question.
+  - Ch 29 owns 1931 (the Creditanstalt, the German crisis, Britain leaving gold on 21 September 1931),
+    the gold bloc, Eichengreen–Sachs and the "golden fetters" argument as a theory of the Depression.
+    This chapter shows the fragility of the system and stops before it breaks.
+  - Ch 30 owns Japan's exit and Takahashi (Japan's return to gold in January 1930 may appear in one
+    line of a table of returns); Ch 32 owns the *General Theory* and the "Treasury view"; Ch 34 owns
+    Bretton Woods (one clause with `\chref` in the legacy section).
+  - Ch 5 owns the real exchange rate and PPP (`eq:external-real`, `eq:external-ppp`); Ch 4 the central
+    bank's balance sheet; use them, do not re-derive.
+- Owns:
+  - Britain from the war to 1925: convertibility in practice suspended and the exchange pegged during
+    the war, the Cunliffe Committee (1918) and its programme, the slump and deflation of 1920–1921,
+    the pound's climb back to \$4.86, the Chamberlain–Bradbury Committee, Churchill's decision, the
+    Gold Standard Act of 1925 (a gold bullion standard: bars, not coins);
+  - Keynes's critique: *A Tract on Monetary Reform* (1923, price stability against exchange stability)
+    and *The Economic Consequences of Mr. Churchill* (1925): the overvaluation, the cut in money wages
+    it requires, deflation working through unemployment, the coal industry; the other side's case in
+    its strongest form (credibility, London's position, creditors, the Cunliffe programme);
+  - the gold-exchange standard: the Genoa resolutions (1922), reserves held as sterling and dollar
+    balances, the economy of gold and the fragility it brings (a run from exchange into gold shrinks
+    the world's reserves); the rules of the game between the wars (the phrase is postwar: Keynes
+    1925, Kindersley to the Macmillan Committee 1930) and sterilization, with Nurkse's counts against
+    Bloomfield's pre-war ones (if the counts can be verified);
+  - France 1926–1928 (the case box): the franc's fall in July 1926, Poincaré's government, the budget
+    and the sinking fund, de facto stabilization in December 1926 and the law of 25 June 1928 at about
+    one fifth of the pre-war gold value; the undervalued franc and the Banque de France's gold; Moreau
+    and Norman;
+  - the maldistribution of gold: the shares of the United States and France in the world's monetary
+    gold, and their sterilization;
+  - the United States in the 1920s: the Fed's easing of 1927 (the Long Island meeting of Strong,
+    Norman, Schacht and Rist, if sourced), credit expansion (instalment credit, real estate, brokers'
+    loans and call money), the Fed's tightening of 1928–1929, and the crash of October 1929.
+- Promises (FORWARD_REFS rows from Ch 19, Ch 23 and Ch 26; read them in full): Britain and Sweden (1924)
+  returned at the pre-war parity, who bears the cost of the parity chosen, Hume's conditions mostly no
+  longer held; why the interwar standard lacked the pre-war room for manoeuvre, the phrase "rules of
+  the game" is postwar (Keynes 1925; Kindersley 1930) while Bloomfield's prewar counts show the Bank of
+  England broke the rule in about half the years; the gold-exchange standard (Ch 26 calls the Reichsmark
+  of 1924 "实际上是美元汇兑本位"); Britain's return in 1925 and who bears the adjustment. Keep them all and
+  mark the rows done.
+- When it begins: Chapter 26 ends "英国走了另一条路，1925 年把英镑提回到战前的黄金价值，一个零也没有去掉"
+  and hands over the PLAN's 核心问题 "英国 1925 年按战前平价回到黄金，代价是什么？1920 年代的繁荣建立在什么之上？".
+  Keep it exactly. The chapter answers both halves: the cost (the overvaluation, deflation and
+  unemployment, the burden on export industries and on wage earners) and the base of the prosperity
+  (credit, American lending abroad, a system that economized gold and so depended on confidence).
+- Opening (suggested, verify every detail): 28 April 1925, Winston Churchill, Chancellor of the
+  Exchequer, opens his Budget in the House of Commons and announces the return to gold at the pre-war
+  parity (Hansard, `api.parliament.uk/historic-hansard/sittings/1925/apr/28`, reachable from the
+  shell). The Gold Standard Act followed (legislation.gov.uk has the enacted text,
+  `ukpga/Geo5/15-16/29`). A better-sourced scene is welcome; a person, a date and the question within
+  the first page.
+- People (one sentence each at first appearance; only where sourced): Churchill; Montagu Norman
+  (Governor of the Bank of England 1920–1944); Keynes; Lord Cunliffe; Benjamin Strong (Federal Reserve
+  Bank of New York); Raymond Poincaré; Émile Moreau (Banque de France); Irving Fisher in October 1929
+  (Ch 25's Fisher; his "permanently high plateau" only from a verified contemporary report); Reginald
+  McKenna and the Treasury's Otto Niemeyer and John Bradbury only if a primary or verified source
+  records their part.
+- Case (outside Britain and the US): France 1926–1928. Sweden (an early return at the old parity in
+  1924; verify the date, e.g. on the Riksbank's krona page used in Ch 25) and Italy's "quota novanta" (1927) may appear
+  in a table of returns.
+- Data and sources (probe first; on 2026-10-22 archive.org, NBER, the Bank of England, Hansard,
+  legislation.gov.uk, the Riksbank and FRASER's `/files/` PDFs answered; Gallica, Légifrance and the
+  Banque de France answered 403):
+  - Keynes 1923 and 1925 (`keynes1923`, `keynes1925` already in `references_zh.tex`, with copies in the
+    web cache; Keynes is public domain in the UK, quote briefly);
+  - Hansard 28 April 1925; the Gold Standard Act 1925; the Cunliffe Committee's First Interim Report
+    (1918, Cd. 9182), the Chamberlain–Bradbury Committee's report (1925, Cmd. 2393) and the Macmillan
+    Committee's evidence (archive.org has minutes of evidence; Kindersley's "rules of the game" if found
+    there; otherwise keep `dutton1984`'s Moggridge as the witness, as Ch 23 does);
+  - the Bank of England's *Millennium of Macroeconomic Data* (`boe2017`; workbook in
+    `~/.cache/finance-study/boe/`): M15 monthly \$–£ 1791–2015, M5 unemployment, M6 monthly prices and
+    wages, D1 Bank Rate, Q5 quarterly effective exchange rates 1920–38;
+  - the Federal Reserve's *Banking and Monetary Statistics 1914–1941* (1943, FRASER) and the *Federal
+    Reserve Bulletin*: gold reserves of central banks by country, discount rates, brokers' loans, call
+    money, stock prices;
+  - W. A. Brown Jr. (1940), *The International Gold Standard Reinterpreted, 1914–1934* (NBER, free on
+    nber.org; check its copyright page): the dates and parities of the returns, the gold-exchange
+    standard;
+  - France: E. L. Dulles (1929), *The French Franc, 1914–1928* (archive.org), R. M. Haig (1929), *The
+    Public Finances of Post-War France*; the 1928 monetary law's text from a reachable copy;
+  - the 1929 boom: De Long and Shleifer (1991, NBER WP 3523, closed-end fund premia), White (1990,
+    *JEP*), McGrattan and Prescott (2004, Minneapolis Fed); Eichengreen (1992) and Moggridge (1969)
+    only in short phrases or through verified reviews, if no copy can be read.
+  - Avoid FRED (its terms forbid extraction); take US series from FRASER's PDFs or another source whose
+    terms allow it.
+- Teaching:
+  - the overvaluation from the real exchange rate (`eq:external-real`): at a fixed $e$, the domestic
+    price level that restores the pre-war $q$, and the cut it requires; a worked example from the
+    indices Keynes used (if his essay gives them) or from the Bank of England and US series, with the
+    choice of index stated, since it changes the answer;
+  - the gold-exchange standard as a pyramid: reserves $R=G+F$, money bounded by the cover ratio; a
+    conversion of $F$ into gold leaves the gold where it was and destroys the exchange reserves; one
+    example with teaching inputs;
+  - sterilization on the central bank's balance sheet (Ch 4): base money = domestic assets + reserves;
+    the rule of the game against offsetting, and how Nurkse (or Bloomfield in Ch 23) counted it;
+  - optionally margin buying: with a margin of $m$, a fall of $m$ in the price wipes out the buyer's
+    equity (teaching inputs; the margins of 1929 only if sourced).
+- Compare boxes (2–4): 金本位 vs 金汇兑本位; 按战前平价回归 vs 贬值后回归 (Britain 1925 vs France 1928);
+  optionally 战前的英格兰银行 vs 战后的英格兰银行 (the room for manoeuvre), or 凯恩斯 vs 财政部 on the
+  return, by question with each side's concessions.
+- Contested questions (§8, each side's strongest case and its evidence): was \$4.86 a mistake, and by
+  how much was sterling overvalued (the estimate depends on the index); what drove the boom of
+  1927–1929 (the easing of 1927, credit, fundamentals, or a bubble). Do not decide for the reader.
+- Figures (2–4, at least two from snapshot data): the \$–£ rate 1919–1931 against the parity of 4.86,
+  with a price ratio; the shares of the world's monetary gold; American credit and stock prices
+  1925–1930; or the UK's unemployment and wages through the return.
+- Ending: after `\end{answers}`, return to the opening (Churchill, the parity of 1925, or a person of
+  the opening) and hand over Ch 28's question "一次股市崩盘为什么会变成持续数年、产出与物价同时坍塌的萧条？".
+- Labels: sections `sec:interwar-…` (report them); `eq:interwar-…`, `fig:interwar_…`, `tab:interwar-…`,
+  `ex:interwar-…`. Ch 28's stub cites `\nameref{ch:interwar}` only.
