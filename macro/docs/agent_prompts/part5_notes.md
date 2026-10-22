@@ -728,7 +728,9 @@ back to the old parity without striking off any zeros.
 - The human cost and the political character stated plainly (write_template rule 5): collectivization
   by force, deportations, the famine's deaths (give the range of estimates from verified demographic
   sources and say where they differ), the Gulag's labour as part of the plan's economy if sourced.
-- Promises: FORWARD_REFS rows from Ch 22 (material balances; read them in full, mark them done).
+- Promises: FORWARD_REFS rows from Ch 22 (material balances) and Ch 30 (the Soviet Union replaced
+  market prices with the plan; Ch 30 ends with this chapter's question); read them in full, mark them
+  done.
 - When it begins: Ch 30 ends by handing over "没有市场价格，经济能不能算清楚该生产什么？"; keep it.
 - Neighbour in Part 5: Ch 30 compares the five-year plans with Germany's Four-Year Plan in one clause
   at most; read Ch 30's text when it is committed and do not retell what it says.
@@ -780,3 +782,68 @@ back to the old parity without striking off any zeros.
 - Ending: after `\end{answers}`, return to the opening and hand over Ch 32's question
   "如果人人都想多储蓄，总储蓄为什么可能反而减少？".
 - Labels: sections `sec:soviet-…`; `eq:soviet-…`, `fig:soviet_…`, `tab:soviet-…`, `ex:soviet-…`.
+
+## 第 32 章 `ch:generaltheory` 凯恩斯《通论》 (`zh/ch32_generaltheory.tex`)
+
+- Neighbours:
+  - Ch 2 owns the identity $S=I$, `ex:accounts-thrift` and its pitfall box; Ch 20 owns Say's law, the
+    general glut, the identity vs the equilibrium version, Malthus's "中间点" and the first statement of
+    the paradox of thrift (`sec:say-legacy`); Ch 22 owns Kalecki's profit equation `eq:marx-kalecki`;
+    Ch 25 owns Wicksell's natural rate and the cumulative process, Fisher's real rate; Ch 27 owns
+    Keynes's *Tract* (1923) and *Economic Consequences of Mr. Churchill* (1925); Ch 28 owns the
+    American Depression and its data. Refer back; do not retell.
+  - Ch 33 owns IS–LM (Hicks 1937), the liquidity trap as a curve, Hansen and secular stagnation, the
+    recession of 1937–38. Ch 34 owns *How to Pay for the War* (1940), Lerner's functional finance and
+    Kalecki (1943). Ch 44 and later own the Phillips curve and the neoclassical synthesis's breakdown;
+    one clause each.
+- Owns:
+  - the world of 1936: Britain's unemployment through the 1920s and 1930s (BoE millennium M5), the
+    Treasury view (the 1929 White Paper and Keynes and Henderson's *Can Lloyd George Do It?*, 1929),
+    the Macmillan Committee (1930–31) as the place Keynes argued it, Kahn's multiplier (1931);
+  - the *General Theory* (February 1936): effective demand (aggregate demand and supply, the point of
+    effective demand), the consumption function and the propensity to consume, the multiplier,
+    the marginal efficiency of capital and expectations ("animal spirits", chapter 12), liquidity
+    preference and the rate of interest as the reward for parting with liquidity (chapters 13–15),
+    money wages and the critique of wage cuts as the cure (chapter 19), the critique of Say's law
+    (chapter 2) and of the classical theory of interest (chapter 14);
+  - Keynes's own argument against the textbook versions (Hicks's IS–LM is Ch 33's; here the
+    distinction in one compare box or the legacy section);
+  - the parallel discoveries: the Stockholm school (Myrdal's budget appendix of 1933, Ohlin's account
+    of 1937) as the case box; Kalecki (1933/1935) in one paragraph with `eq:marx-kalecki`.
+- Promises (FORWARD_REFS rows from Ch 1, 2, 16, 18, 20, 22; read them in full, mark them done):
+  the paradox of thrift with the consumption function and the multiplier giving $S=I$ a causal
+  direction; Keynes's critique aimed at Say's equilibrium version and "supply creates its own demand"
+  (Baumol: not quite right); liquidity preference as Mill's "宁愿持有货币"; whether more money raises
+  output when there is unemployment (Law, Velde); Kalecki's parallel route; the Depression's verdict
+  on Say's law (Ch 1 §1.6 main line and Ch 20).
+  Also the row from Ch 30: the policies of Germany, Japan and Sweden came before the *General Theory*
+  (Berg and Jonung's "pre-Keynesian world"; Takahashi as "Japan's Keynes" through Shizume); say in
+  one or two sentences how the theory later organised what they had done, with `\chref{ch:alternatives}`.
+- When it begins: Ch 31 ends by handing over "如果人人都想多储蓄，总储蓄为什么可能反而减少？"; keep it.
+- Opening (suggested, verify): 4 February 1936 (the book's publication; Macmillan), or Keynes's letter
+  to Bernard Shaw of 1 January 1935 ("a book on economic theory which will largely revolutionise …")
+  if a public-domain printing of the letter can be read; or a Commons debate on unemployment.
+- Data and sources: Keynes (1936; d. 1946, public domain in the UK; in the US the 1936 edition may be
+  in copyright: quote briefly and record the copy used: the Digital Library of India copy on
+  archive.org, `in.ernet.dli.2015.115101` (Macmillan 1936; a djvu text of 0.8 MB and the page images),
+  answered on 2026-10-22; `generaltheoryofe0000unse` is a lending copy with an encrypted PDF: do not
+  use it); Kahn (1931, *EJ*;
+  in copyright: short phrases); the 1929 White Paper (Cmd. 3331, out of Crown copyright) and *Can Lloyd
+  George Do It?* (Keynes and Henderson 1929; public domain in the UK); Hansard on unemployment; the
+  BoE millennium workbook (unemployment, output, Bank Rate 1919–1938); Ohlin (1937, *EJ*) and Myrdal
+  (1933) only in short phrases or verified summaries; Kalecki (1935) only through verified texts.
+- Teaching: the Keynesian cross with $C=a+cY$, $Y=C+I$; the multiplier $1/(1-c)$ and Kahn's version
+  with leakages; the paradox of thrift as a fall in $a$ with $I$ fixed and with $I$ depending on $Y$
+  (Ch 2's `ex:accounts-thrift` as the starting point); liquidity preference $M/P=L(i,Y)$ in Keynes's
+  own form (his $M=L_1(Y)+L_2(r)$); a worked example with teaching inputs and one with Keynes's or
+  Kuznets's figures as the *General Theory* quotes them (chapter 8 or 10).
+- Compare boxes (2–4): 古典的储蓄—投资 vs 凯恩斯的储蓄—投资; 可贷资金 vs 流动性偏好; optionally 凯恩斯本人 vs
+  教科书的凯恩斯 (Ch 33 has 凯恩斯本人 vs IS–LM: divide them: here money wages and expectations, there the
+  curves), or 凯恩斯 vs 斯德哥尔摩学派.
+- Contested questions (§8): was the *General Theory* a general theory or the economics of rigid wages
+  (the classical reply, Pigou, and Keynes's chapter 19); was the Treasury view wrong in 1929 (its case:
+  crowding out, confidence; Keynes and Henderson's case). Do not decide for the reader.
+- Figures (2–4, at least two from snapshot data): British unemployment 1920–1938; the Keynesian cross
+  and the multiplier as a canvas() diagram; the paradox of thrift; liquidity preference.
+- Ending: hand over Ch 33's question "一张图装下了多少凯恩斯，又丢掉了什么？".
+- Labels: `sec:generaltheory-…`, `eq:generaltheory-…`, `fig:generaltheory_…`, `tab:…`, `ex:…`.
