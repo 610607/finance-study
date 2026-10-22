@@ -1,15 +1,386 @@
-% 第 29 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 29 章”，写法见 docs/STYLE.md。
+% 第 29 章。数字与教学模型：checks/check_ch29.py；图：figsrc/fig_ch29.py。
+% 史料：depressionworld_facts；各国离开黄金的日子与 Bernanke—James 的物价、生产存 depressionworld_goldexits，Eichengreen—Sachs 的图 1 存 depressionworld_es，白银与银元存 depressionworld_silver 与 depressionworld_yuan_monthly，Brandt—Sargent 的表存 depressionworld_china；英国的月度数据与贴现率据 boe_millennium_gb_1929_1936_monthly 与 boe_millennium_bank_rate_1929_1936，人均 GDP 据 maddison2023_interwar。
 \chapter{大萧条：世界与“金色枷锁”}\label{ch:depressionworld}
 
 \begin{chapterguide}
 \guidequestion{金本位怎样把萧条传到全世界？银本位的中国为什么被美国的白银政策拖累？}
 \begin{guidegoals}
-\item 用“金色枷锁”框架（Eichengreen 1992）解释萧条的国际传导；
-\item 比较各国脱离金本位的时间与复苏速度；
-\item 分析美国《白银收购法》（1934）对中国的冲击与 1935 年法币改革；
-\item 描述拉美与初级产品出口国的经历。
+\item 用固定汇率下的购买力平价与发行准备的限额，说明通缩怎样从一国传到另一国；
+\item 叙述 1931 年从维也纳到伦敦的危机，比较英国的贬值与德国的外汇管制；
+\item 用 1929—1936 年的数据检验离开黄金越早、复苏越早的说法，读懂一条横截面回归的斜率与它的局限；
+\item 说明银价怎样决定银本位中国的汇率与物价，比较两种对美国白银政策的评价。
 \end{guidegoals}
-\guideprereq{\chref{ch:depressionus}\enspace\nameref{ch:depressionus}；\chref{ch:periphery}\enspace\nameref{ch:periphery}}
+\guideprereq{\chref{ch:external}\enspace\nameref{ch:external}；\chref{ch:interwar}\enspace\nameref{ch:interwar}；\chref{ch:depressionus}\enspace\nameref{ch:depressionus}；\chref{ch:periphery}\enspace\nameref{ch:periphery}}
 \end{chapterguide}
 
-\chapterstub
+1931 年 9 月 21 日是星期一。下午四点，财政大臣斯诺登（Philip Snowden，1864—1937）在下院起身\cite{hansard1931,hansardpeople27}。他说，这是一项“暂时修改 1925 年金本位法的议案”\cite{hansard1931}。按 1925 年的法律，英格兰银行要按固定的价格卖出金块，每盎司 3 英镑 17 先令 10 便士半\cite{hansard1931}。一英镑合 20 先令，一先令合 12 便士，盎司是称金银的重量单位。金块只按金条出售，每根约含 400 盎司纯金\cite{hansard1931}。六年以前，丘吉尔（Winston Churchill，1874—1965）就在这个下院宣布了回到黄金的决定（\chref{ch:interwar}）。
+% 据: hc_four, hh_snowden, hc_price, hc_bars
+
+他从夏天讲起。8 月初，英格兰银行从美国与法国的中央银行借到 5,000 万英镑\cite{hansard1931}。政府又在纽约与巴黎借到 8,000 万英镑\cite{hansard1931}。钱还是不断地流走。上星期三流出 500 万英镑，星期四 1,000 万，星期五将近 1,800 万\cite{hansard1931}。星期六只开半天，也流出了 1,000 多万\cite{hansard1931}。两个月里，英国损失的黄金与外汇超过 2 亿英镑\cite{hansard1931}。
+% 据: hc_50m, hc_80m, hc_drain, hc_saturday, hc_200m
+
+星期六，英格兰银行写信给政府\cite{hansard1931}。信里说，它在纽约与巴黎安排的 1.25 亿美元与 31 亿法郎贷款已经用完\cite{hansard1931}。政府在纽约借的 2 亿美元、在巴黎谈妥的 50 亿法郎，也差不多用完了\cite{hansard1931}。黄金还在流向荷兰\cite{hansard1931}。斯诺登说，危机“来得骇人地突然”，政府“别无选择，只能暂停通货兑换黄金”\cite{hansard1931}。
+% 据: hc_letter, hc_19th, hc_letter2, hc_holland, hc_sudden
+
+当天晚上八点，二读的辩论才开始\cite{hansard1931}。九点四十分，下院以 271 票对 148 票结束辩论\cite{hansard1931}。十分钟以后，下院以 275 票对 112 票否决了一项修正动议，议案二读通过\cite{hansard1931}。全院委员会逐条审议以后，议案三读通过，送往上院\cite{hansard1931}。上院当晚一读、二读、三读一次走完\cite{hansardlords1931}。同一天，下院议长报告，议案已经得到国王的御准\cite{hansard1931}。
+% 据: hc_eight, hc_closure, hc_second, hc_secondtime, hc_third, hl_passed, hc_assent
+
+这部《1931 年金本位（修正）法》只有两节\cite{gsa1931}。第一节说，在国王以公告另作指示以前，1925 年法律第一节第二款停止生效，英格兰银行不再按固定的价格卖出黄金\cite{gsa1931}。英格兰银行 9 月 18 日以后违反这一款的作为，一概免责\cite{gsa1931}。财政部可以下令，就外汇采取它认为必要的措施，这项权力以六个月为限\cite{gsa1931}。
+% 据: gsa_long, gsa_date, gsa_short, gsa_proclamation, gsa_indemnity, gsa_treasury, gsa_six
+
+9 月 27 日，凯恩斯（John Maynard Keynes，1883—1946）发表了《金本位的终结》\cite{keynes1931,keyneslife2026}。开头一句是：“很少有英国人不为挣断了我们的黄金枷锁而高兴。”\cite{keynes1931}照他的算法，“英格兰银行付出了 2 亿英镑的黄金或等价物，约是外国人对伦敦全部债权的一半”\cite{keynes1931}。澳大利亚与整个南美早已放弃维持汇率平价，加拿大、意大利与斯堪的纳维亚这几天也在朝英国的方向走\cite{keynes1931}。
+% 据: k_title, k_footnote, keynes_life, k_fetters, k_200m, k_southamerica, k_followed
+
+剩下守着金本位的，主要是法国与美国\cite{keynes1931}。凯恩斯说，它们会受到“弥达斯的诅咒”\cite{keynes1931}。弥达斯是希腊传说里点物成金的国王，连食物也变成了金子。斯诺登讲过，英国的危机始于 5 月奥地利一家主要银行的倒闭，以及随后德国的危机\cite{hansard1931}。危机从维也纳传到柏林，再传到伦敦。金本位怎样把萧条传到全世界？
+% 据: k_midas, k_franceus, hc_austria
+
+\section{当时的世界}\label{sec:depressionworld-world}
+
+斯诺登那天也讲了危机的来历。一般物价下跌，削弱了全世界初级产品生产者偿还债务的能力\cite{hansard1931}。他说，“恶性循环形成了，银行与投资者越来越不愿把资本借给可能的借款人”\cite{hansard1931}。接着是“投资市场上一场世界性的恐慌”\cite{hansard1931}。
+% 据: hc_primary, hc_vicious, hc_panic
+
+他把矛头指向黄金的分布。“美国与法国合起来，现在已经拿到世界全部黄金的四分之三，把它们埋在自己的金库里。”\cite{hansard1931}这些黄金大多被冻结起来，对促进国际贸易毫无用处\cite{hansard1931}。按 Bernanke 与 James（1991）的估计，1928—1929 年两国合计持有世界货币黄金的近 60\%\cite{bernanke1991}。两个数的日子与口径都不同，方向是一致的。
+% 据: hc_threequarters, bj_60
+
+黄金集中在两个正在通缩的国家。按 Bernanke 与 James 的说法，两国正是在 1928—1929 年走上了通缩的路\cite{bernanke1991}。美国的萧条，\chref{ch:depressionus}已经讲过。1930—1932 年，美国批发物价每年的对数变化依次是$-0.10$、$-0.17$与$-0.12$\cite{bernanke1991}。对数变化乘以 100，大约就是变动的百分数。在他们的 24 个国家里，守着金本位的国家 1930 年与 1931 年的通缩相当一致，每年约 13\%\cite{bernanke1991}。
+% 据: bj_60, bj_24, bj_13
+
+1931 年 6 月 20 日，美国总统胡佛（Herbert Hoover，1874—1964）发表声明，白宫把公布的时间定在第二天\cite{hoover1931,bnf28}。声明说：“美国政府提议，一切政府间债务、赔款与救济借款的支付，本金与利息，一律推迟一年。”\cite{hoover1931}理由之一，是“有一股不正常的黄金流动正流进美国，降低了许多外国的信用稳定”\cite{hoover1931}。黄金从债务国流向债权国，债务国的货币就得收缩。
+% 据: hv_date, bnf_hoover, hv_postpone, hv_gold
+
+\section{一个式子里的枷锁}\label{sec:depressionworld-fetters}
+
+凯恩斯在同一篇文章里说，守着金本位，意味着“国际商品的价格必须到处都差不多”\cite{keynes1931}。一国的物价比别国跌得慢，它的货在国外就不好卖，黄金就会流出。黄金流出，发行的货币就得收缩，物价只好跟着跌。照凯恩斯的说法，结果是“一场竞相通缩的运动，我们每个国家都想比别国更快地压低自己的物价”\cite{keynes1931}。
+% 据: k_same, k_campaign
+
+这两层意思可以写成一个式子。\chref{ch:external}的相对购买力平价说，汇率的对数变化等于两国通胀之差（式~\eqref{eq:external-ppp}）。那里的$e$是一单位外币值多少本币，外国的变量加上标 f。\chref{ch:interwar}的倒金字塔说，货币$M$受黄金$G$与外汇$F$之和的约束，$c$是发行准备比率（式~\eqref{eq:interwar-pyramid}）。合起来，
+\begin{keyeq}
+\pi\approx\Delta\ln e+\pi^{f},\qquad M\le\frac{G+F}{c}.\label{eq:depressionworld-fetters}
+\end{keyeq}
+左边一式只对能贸易的商品大致成立。守着金本位，各国货币的含金量都不变，$e$也就固定了，$\Delta\ln e=0$，于是$\pi\approx\pi^{f}$。外国在通缩，本国也只好通缩。右边一式说，储备每流失一个单位，货币的上限就要收缩$1/c$个单位。照 Bernanke 与 James 的例子，准备比率是 40\% 时，黄金外流对货币的影响是外流额的 2.5 倍\cite{bernanke1991}。
+% 据: bj_25
+
+这副枷锁只锁一边。按 Bernanke 与 James 的说法，“没有什么制裁”能阻止顺差国冲销流入的黄金，无限地积累储备\cite{bernanke1991}。照 Bernanke（1995）的说法，基础货币与储备之比通常没有法定的下限，这是“一个重要的不对称”\cite{bernanke1995}。顺差国冲销流入的黄金，拉低了这个比率的平均值\cite{bernanke1995}。逆差国却得独自收缩，这一点\chref{ch:interwar}已经讲过。
+% 据: bj_sanction, b95_nominimum, b95_sterilize
+
+1931 年，倒金字塔的另一个弱点也露了出来。汇率危机让人担心贬值，各国中央银行纷纷抛掉外汇，换成黄金\cite{bernanke1991,bernanke1995}。按式~\eqref{eq:depressionworld-fetters}，$G$没有增加，$F$却消失了，世界的储备随之缩小（\exref{ex:interwar-pyramid}）。危机过后，各国又想多存黄金、提高准备比率，以防货币再受攻击，这就是所谓“抢购黄金”\cite{bernanke1995}。这一层收缩有多大，证据并不清楚。照 Eichengreen（1987）的看法，中央银行卖掉外汇以后，可能只是降低了准备比率，没有改持黄金\cite{bernanke1991}。
+% 据: b95_flight, bj_enmasse, b95_scramble, bj_eich87
+
+Bernanke（1995）的分解把几层收缩放在一起。一国的货币存量$M_1$，等于$M_1$与基础货币之比、基础货币与储备之比、储备与黄金之比，再乘以黄金的价格与数量\cite{bernanke1995}。银行恐慌压低第一个比率，这是\chref{ch:depressionus}的货币乘数。冲销与抢购黄金压低第二个比率，抛售外汇压低第三个\cite{bernanke1995}。四项里只要一项下降，又没有别的项抵消，货币就收缩。
+% 据: b95_identity, b95_flight, b95_scramble, b95_sterilize
+
+离开黄金，就是让$e$动起来。本币贬值，$\Delta\ln e>0$，本国物价就不必跟着外国跌。货币也不再受储备限额的约束。凯恩斯还看到贬值的另一面，英镑贬值“比如说 25\%，对限制进口的作用与同样税率的关税一样大”\cite{keynes1931}。代价是汇率不再固定，借了外币债的人负担加重，邻国也可能觉得自己的生意被抢了。
+% 据: k_tariff
+
+\begin{example}{固定汇率下的通缩}\label{ex:depressionworld-fetters}
+一国的发行准备比率$c=0.4$，储备 100，全是黄金，货币按上限发行。外国物价一年里跌了 10\%。这些都是教学设想。（1）守着金本位，本国物价大约怎样变？（2）为保卫平价，黄金流出 10，货币的上限变成多少？（3）若本国让汇率$e$上升 25\%，物价大约怎样变？（4）1931 年 8 月，一英镑平均合 4.858 美元，12 月只合 3.374 美元。设以美元计的外国物价不变，按式~\eqref{eq:depressionworld-fetters}，英国物价应当怎样变？实际又怎样？
+\solution （1）$\Delta\ln e=0$，$\pi\approx\pi^{f}=\ln0.9\approx-0.105$，本国物价也跌约 10\%。（2）上限从$100/0.4=250$降到$90/0.4=225$，少了 25，是流出额的 2.5 倍。（3）$\Delta\ln e=\ln1.25\approx0.223$，$\pi\approx0.223-0.105=0.118$，物价不再下跌，反而上涨约 12.5\%。（4）$e$是一美元值多少英镑，从$1/4.858$升到$1/3.374$，$\Delta\ln e=\ln(4.858/3.374)\approx0.365$，英国物价应当上涨约 44\%。实际上，索尔贝克的批发物价指数从 79.1 只升到 85.4，1932 年 6 月又降到 77.0\cite{boe2017}。这个式子只对能贸易的商品大致成立，许多国家又跟着英镑一起贬值，英镑对它们的汇率没有怎么变。贬值让英国的通缩停了下来，物价并没有按贬值的幅度上涨。
+\end{example}
+% 据: bj_25
+
+\begin{example}{贬值会让生活费用涨多少}\label{ex:depressionworld-keynes}
+凯恩斯说，英国全部消费里，进口的“不到四分之一”。照他的估计，英镑要贬值得比 25\% 多得多，生活费用才会上涨 10\%\cite{keynes1931}。（1）设进口品的英镑价格与贬值同幅度上涨，国内的东西价格不变。英镑贬值 25\%，生活费用最多涨多少？（2）要让生活费用涨 10\%，英镑要贬值多少？（3）生活费用指数以 1914 年 7 月为 100，1931 年 8 月是 145，12 月是 148\cite{boe2017}。同一时期，英镑对美元的价值跌了多少？按（1）的算法，生活费用最多该涨多少？
+\solution （1）$0.25\times25\%=6.25\%$，比 10\% 少。（2）$10\%/0.25=40\%$，比 25\% 多得多。（3）英镑从 4.858 美元跌到 3.374 美元，价值跌了约 30.5\%。按（1）的算法，生活费用最多涨约$0.25\times30.5\%\approx7.6\%$，实际只涨了$148/145-1\approx2.1\%$。世界市场上以黄金计的商品价格还在下跌，抵消了一部分贬值。
+\end{example}
+% 据: k_quarter, k_tariff
+
+\section{1931 年}\label{sec:depressionworld-1931}
+
+危机从维也纳开始。1931 年 5 月，奥地利信贷银行（Creditanstalt）的一位董事拒绝在一份“乐观的”财务报表上签字，这家银行资不抵债的真相才暴露出来\cite{bernanke1991}。照 Bernanke 与 James 的说法，这引发了欧洲危机最激烈的阶段\cite{bernanke1991}。中欧几次银行危机的了结，都靠“冻结协定”，外国债权人的提款被挡住，等以后再谈\cite{bernanke1991}。
+% 据: bj_optimistic, bj_central, bj_standstill
+
+德国的储备很快流失。从 5 月 31 日到 6 月 23 日，德国的帝国银行失去了 2.3 亿美元的黄金与 2,000 万美元的外汇\cite{frb1931}。胡佛的声明正在这时发表（\secref{sec:depressionworld-world}）。7 月 16 日，帝国银行把贴现率从 7\% 提到 10\%，8 月 1 日又提到 15\%\cite{frb1931}。到 8 月 12 日，它才降回 10\%\cite{frb1931}。7 月里，德国、匈牙利与智利对外汇交易实行了管制\cite{frb1931}。伦敦会议以后，英国同意把 7,000 万英镑的资产冻结在德国\cite{hansard1931}。
+% 据: frb_reichsbank, frb_reichsbank2, frb_jul16, frb_aug1, frb_aug12, frb_control, hc_200m
+
+压力转到伦敦。从 7 月中旬到 9 月 19 日，外国人几乎不停地从伦敦提走资金，共约 10 亿美元，其中约 1.6 亿美元是黄金\cite{frb1931}。8 月 1 日，联邦储备银行给了英格兰银行 1.25 亿美元的信用\cite{frb1931}。英格兰银行的贴现率 7 月 23 日从 2.5\% 提到 3.5\%，一个星期以后又提到 4.5\%\cite{boe2017}。斯诺登说：“我们是被外汇危机逼着这样做的，并不是因为我们自己的国内财政出了什么乱子。”\cite{hansard1931}
+% 据: frb_billion, frb_125, hc_exchange
+
+9 月 20 日星期日，英国政府宣布，已经决定暂停金本位\cite{frb1931}。第二天，英格兰银行把贴现率从 4.5\% 提到 6\%\cite{frb1931,boe2017}。英镑对美元的汇价，8 月平均是 4.86 美元，12 月只有 3.37 美元\cite{boe2017}。1932 年春天，贴现率一路降下来，6 月 30 日降到 2\%，此后几年一直没变\cite{boe2017}。
+% 据: frb_sunday, frb_bankrate
+
+\fig{depressionworld_sterling}{英镑离开黄金以后。(a) 一英镑合多少美元，月平均，1929—1936 年；虚线是旧平价，约 4.87 美元。1933 年 4 月以后美元自己也离开了黄金，汇价不再是英镑的黄金价值。(b) 英格兰银行的贴现率，1929—1936 年，按调整的日子画成阶梯。数据：英格兰银行，A Millennium of Macroeconomic Data for the UK（3.1 版），表 M15 与 D1。}{fig:depressionworld_sterling}
+
+别的国家接着离开。丹麦、挪威、瑞典与芬兰很快也采取了正式的行动\cite{frb1931}。照凯恩斯的说法，“印度与直辖殖民地，包括海峡殖民地，自动地跟着英镑走了”\cite{keynes1931}。按 Bernanke 与 James 的分组，1931 年放弃完整金本位的国家有 14 个\cite{bernanke1991}。凯恩斯说，“德国如果迟迟不学我们的样子，我会感到吃惊”\cite{keynes1931}。德国虽然算在 14 国里，却始终没有贬值，只实行了外汇管制。
+% 据: frb_nordic, k_followed, bj_fourteen, k_germany1, k_germany2
+
+\begin{compare}{1931 年的两条路}{英国：让英镑贬值}{德国：管制外汇，守住平价}
+\cmprow{做了什么}{9 月 21 日不再按固定价格卖出黄金，英镑随市场浮动}{7 月实行外汇管制，与外国债权人签冻结协定；帝国马克是德国的货币，它的平价不变}
+\cmprow{利率}{贴现率先提到 6\%，1932 年 6 月降到 2\%}{帝国银行的贴现率 8 月 1 日提到 15\%，8 月 12 日降回 10\%}
+\cmprow{汇率}{到 1931 年 12 月，英镑对美元跌了约三成}{官方的金平价一直没有改}
+\cmprow{1932 年的批发物价}{对数变化$-0.04$}{对数变化$-0.14$}
+\cmprow{1932 年的工业生产}{对数变化$-0.00$，几乎没变}{对数变化$-0.24$}
+\cmprow{后来的评价}{在 Eichengreen 与 Sachs 的图里，早贬值的英国复苏得快}{照他们的解释，德国的资本管制起了类似贬值的作用}
+\cmpsum{英国放弃了平价，换回了降低利率的自由。德国保住了平价，代价是管制与冻结，它此后的路在\chref{ch:alternatives}。两国的工业生产都在 1933 年回升。}
+\end{compare}
+% 据: frb_sunday, gsa_proclamation, frb_control, bj_standstill, frb_bankrate, frb_aug1, frb_aug12, es_germany, es_contrast
+
+\section{谁先离开，谁先复苏}\label{sec:depressionworld-exits}
+
+按 Bernanke 与 James（1991）的分法，24 个国家依离开金本位的时间分成四组\cite{bernanke1991}。第一组是西班牙，它根本不在金本位上，还有 1931 年以前就离开的澳大利亚与新西兰。第二组在 1931 年离开，有 14 个国家。第三组在 1932—1935 年离开，依次是罗马尼亚、美国、意大利与比利时。第四组到 1936 年还守着完整的金本位，只剩法国、荷兰与波兰\cite{bernanke1991}。这里的“放弃金本位”，包括实行外汇管制或贬值，不只是暂停兑换\cite{bernanke1991}。
+% 据: bj_24, bj_groups, bj_abandon
+
+\begin{table}[!tb]\centering\footnotesize
+\caption{各国回到与离开金本位的日子}\label{tab:depressionworld-exits}
+\begin{tabularx}{\linewidth}{@{}p{0.16\linewidth}YYYY@{}}
+\toprule
+国家 & 回到金本位 & 暂停兑换 & 外汇管制 & 贬值 \\\midrule
+\multicolumn{5}{@{}l}{第一组：不在金本位上，或 1931 年以前离开} \\
+西班牙 & — & — & 1931 年 5 月 & — \\
+澳大利亚 & 1925 年 4 月 & 1929 年 12 月 & — & 1930 年 3 月 \\
+新西兰 & 1925 年 4 月 & 1931 年 9 月 & — & 1930 年 4 月 \\
+\midrule
+\multicolumn{5}{@{}l}{第二组：1931 年离开} \\
+奥地利 & 1925 年 4 月 & 1933 年 4 月 & 1931 年 10 月 & 1931 年 9 月 \\
+加拿大 & 1926 年 7 月 & 1931 年 10 月 & — & 1931 年 9 月 \\
+捷克斯洛伐克 & 1926 年 4 月 & — & 1931 年 9 月 & 1934 年 2 月 \\
+丹麦 & 1927 年 1 月 & 1931 年 9 月 & 1931 年 11 月 & 1931 年 9 月 \\
+爱沙尼亚 & 1928 年 1 月 & 1933 年 6 月 & 1931 年 11 月 & 1933 年 6 月 \\
+芬兰 & 1926 年 1 月 & 1931 年 10 月 & — & 1931 年 10 月 \\
+德国 & 1924 年 9 月 & — & 1931 年 7 月 & — \\
+希腊 & 1928 年 5 月 & 1932 年 4 月 & 1931 年 9 月 & 1932 年 4 月 \\
+匈牙利 & 1925 年 4 月 & — & 1931 年 7 月 & — \\
+日本 & 1930 年 12 月 & 1931 年 12 月 & 1932 年 7 月 & 1931 年 12 月 \\
+拉脱维亚 & 1922 年 8 月 & — & 1931 年 10 月 & — \\
+挪威 & 1928 年 5 月 & 1931 年 9 月 & — & 1931 年 9 月 \\
+瑞典 & 1924 年 4 月 & 1931 年 9 月 & — & 1931 年 9 月 \\
+英国 & 1925 年 5 月 & 1931 年 9 月 & — & 1931 年 9 月 \\
+\midrule
+\multicolumn{5}{@{}l}{第三组：1932—1935 年离开} \\
+罗马尼亚 & 1927 年 3 月／1929 年 2 月 & — & 1932 年 5 月 & — \\
+美国 & 1919 年 6 月 & 1933 年 3 月 & 1933 年 3 月 & 1933 年 4 月 \\
+意大利 & 1927 年 12 月 & — & 1934 年 5 月 & 1936 年 10 月 \\
+比利时 & 1926 年 10 月 & — & — & 1935 年 3 月 \\
+\midrule
+\multicolumn{5}{@{}l}{第四组：1936 年仍在金本位上} \\
+法国 & 1926 年 8 月／1928 年 6 月 & — & — & 1936 年 10 月 \\
+荷兰 & 1925 年 4 月 & — & — & 1936 年 10 月 \\
+波兰 & 1927 年 10 月 & — & 1936 年 4 月 & 1936 年 10 月 \\
+\bottomrule
+\end{tabularx}
+\datasource{Bernanke 与 James（1991）表 2.1（第 37 页），据扫描页核对；他们的来源是国际联盟的统计年鉴与其他补充资料。法国与罗马尼亚分两步回到黄金。短横表示表上没有这一项。}
+\end{table}
+% 据: bj_source, bj_groups
+
+分组以后，物价的分别一目了然。1932—1935 年，守着金本位的国家，批发物价每年的对数变化平均是$-0.13$、$-0.07$、$-0.04$与$-0.05$\cite{bernanke1991}。离开的国家是$-0.01$、$0.00$、$0.03$与$0.04$\cite{bernanke1991}。照 Bernanke 与 James 的说法，离开金本位的国家，物价到 1933 年已经稳住\cite{bernanke1991}。西班牙不在金本位上，躲过了普遍的通缩，这一点 Choudhri 与 Kochin（1980）早已指出\cite{bernanke1991}。澳大利亚与新西兰离开得早，大概因为仍与英镑相连，物价还是跌了一些\cite{bernanke1991}。
+% 据: bj_stabilized, bj_spain, bj_sterlinglinks
+
+产量也分开了。1932—1935 年，不在金本位上的国家，工业生产每年的增长平均比守着金本位的国家高约 7 个百分点\cite{bernanke1991}。照 Bernanke 与 James 的说法，离开金本位以后，几乎没有哪个国家再发生严重的银行恐慌\cite{bernanke1991}。用人均 GDP 看，结论相同。按 Maddison 项目数据库，1931 年底以前离开的 14 个经济体，1935 年的人均 GDP 平均是 1929 年的 100.0\%。1932 年以后才离开的 8 个，平均只有 89.6\%\cite{mpd2023,boltvanzanden2024}。数据库里各国的序列来自不同的研究\cite{mpd29src}。\figref{fig:depressionworld_exits}把每个经济体画成一个点。
+% 据: bj_seven, bj_panics, b95_argch
+
+\fig{depressionworld_exits}{离开黄金越早，1935 年的人均 GDP 越高，但例外不少。横轴是离开金本位的时间，取暂停兑换、外汇管制与贬值三者中最早的月份；纵轴是 1935 年的人均 GDP，以 1929 年$=100$。22 个经济体，橙色的 14 个在 1931 年底以前离开。阿根廷与瑞士的日子据 Bernanke（1995），其余据 Bernanke 与 James（1991）表 2.1。数据：Maddison 项目数据库 2023 年版（Bolt 与 van Zanden 2024），各经济体的原始来源随参考文献列出。}{fig:depressionworld_exits}
+
+最后守着黄金的，是所谓的金集团。美国 1933 年离开（\chref{ch:depressionus}），意大利 1934 年 5 月实行外汇管制，比利时 1935 年 3 月贬值\cite{bernanke1991}。按 Wolf（2007）的说法，波兰 1933 年 7 月加入金集团，1936 年 4 月才离开，经历了最严重的萧条之一\cite{wolf2007}。法国的压力越来越大。从 1935 年 3 月起，法兰西银行流失的黄金超过 21 亿美元\cite{frb1936}。
+% 据: bj_groups, frb_goldbloc, wolf_july1933, wolf_poland, frb_2100
+
+1936 年 9 月 25 日，美国财政部发表一份声明，英国与法国政府同时发表了相似的声明\cite{frb1936}。联邦储备公报称之为《关于货币的国际声明》\cite{frb1936}。三国政府希望，没有哪个国家会谋求“不合理的竞争性汇率优势”\cite{frb1936}。第二天，比利时宣布赞同。9 月 27 日，荷兰禁止黄金出口；瑞士的法令 9 月 28 日生效，瑞士国家银行不再用黄金兑现钞票\cite{frb1936}。
+% 据: frb_sep25, frb_declaration, frb_nocountry, frb_advantage, frb_belgium, frb_netherlands, frb_swiss, frb_swiss28
+
+法国在 10 月 1 日立法。1928 年的法律规定，一法郎含 65.5 毫克成色九成的黄金\cite{frb1936}。新法律让政府把它定在 43 毫克到 49 毫克之间\cite{frb1936}。按公报的计算，这约是旧平价的 65.6\% 到 74.8\%\cite{frb1936}。法国守了五年多，最后还是贬值了。
+% 据: frb_franc1, frb_franc2, frb_franc3
+
+\begin{compare}{离开与留下}{英国：1931 年离开}{法国：守到 1936 年}
+\cmprow{1920 年代}{1925 年按战前的旧平价回到黄金（\chref{ch:interwar}）}{1926 年事实上稳定、1928 年立法，新平价约是战前金价值的五分之一（\chref{ch:interwar}）；照 Bernanke（1995）的说法，1928 年的法律促使法兰西银行把外汇换成黄金\cite{bernanke1995}}
+\cmprow{离开的方式}{9 月 21 日暂停按固定价格卖出黄金}{1936 年 10 月立法，把法郎的含金量降到原来的 65.6\%—74.8\%}
+\cmprow{1932—1935 年的物价}{不在金本位上的国家，批发物价每年的对数变化平均在$-0.01$到$0.04$之间}{守着金本位的国家，平均在$-0.13$到$-0.04$之间}
+\cmprow{1935 年的人均 GDP}{1929 年的 105.4\%}{1929 年的 86.7\%}
+\cmprow{为什么这样选}{照 Eichengreen 与 Sachs 的看法，为恢复战前平价出力最多的国家，到 1930 年代贬值时“最不犹豫”}{照 Bernanke（1995）的看法，法国人把守住金本位与民族自豪感连在一起}
+\cmpsum{两国的选择，各有自己 1920 年代的来历。英国经历过通缩，法国经历过通胀。}
+\end{compare}
+% 据: es_ironically, es_contrast, b95_pride, frb_franc3, b95_france1928
+
+\section{汇率与复苏：一个横截面}\label{sec:depressionworld-es}
+
+上面的规律，可以概括在 Eichengreen 与 Sachs（1984）的一张图里\cite{eichengreen1984}。图上是欧洲的 10 个国家，横轴是 1935 年的汇率，纵轴是 1935 年的工业生产，都以 1929 年为 100\cite{eichengreen1984}。这里的汇率是一单位本币值多少黄金，与\chref{ch:external}的$e$方向相反\cite{eichengreen1984}。法国的值是 100，汇率没有变；英国是 59，即英镑的黄金价值只剩 1929 年的 59\%\cite{eichengreen1984}。终点选 1935 年，是为了让汇率的变化有尽可能长的时间起作用\cite{eichengreen1984}。Bernanke 与 James 的分组沿用了同样的思路，只是用了更多国家的数据\cite{bernanke1991}。
+% 据: es_wp, es_data, es_units, es_59, es_terminal, bj_spirit
+
+把图上的点记作$(\mathit{ER}_i,\mathit{IP}_i)$，用最小二乘法拟合一条直线：
+\begin{keyeq}
+\mathit{IP}_i=a+b\,\mathit{ER}_i+u_i.\label{eq:depressionworld-es}
+\end{keyeq}
+$u_i$是直线解释不了的部分。照他们的说法，贬值的幅度与 1929—1935 年的增长之间看来有正的关系\cite{eichengreen1984}。他们估计的$a$是 153.9，$b$是$-0.69$，两个系数在 99\% 的置信水平上都显著\cite{eichengreen1984}。校正以后的$R^{2}$是 0.56，10 个国家工业生产的差别，直线解释了一半多\cite{eichengreen1984}。斜率的意思是，一国货币的黄金价值每低 10 个点，1935 年的工业生产大约高 7 个点。
+% 据: es_positive, es_eq, es_r2, es_critical
+
+\fig{depressionworld_es}{汇率越低，1935 年的工业生产越高。横轴是 1935 年一单位本币的黄金价值，以 1929 年的平价$=100$；纵轴是 1935 年的工业生产，1929 年$=100$。10 个欧洲国家，琥珀色虚线是最小二乘拟合，截距 153.9，斜率$-0.70$。点的坐标据 Eichengreen 与 Sachs（1984）图 1 的扫描页读出，读数误差约 0.5。数据：Eichengreen 与 Sachs（1984），他们的来源是国际联盟（1938）、Mitchell（1975）与 Methorst（1938）。}{fig:depressionworld_es}
+
+用图上读出的 10 个点重新回归，截距是 153.9，斜率是$-0.70$，与他们的结果相合\cite{eichengreen1984}。图上有两个点离直线最远。德国的工业生产高于直线所给的值，比利时低于它，在他们的论文里，两国是“离群值”\cite{eichengreen1984}。按他们的解释，比利时到快结束时才贬值，留给汇率起作用的时间很短；德国的资本管制起了类似贬值的作用\cite{eichengreen1984}。
+% 据: es_eq, es_outliers, es_belgiumlate, es_germany
+
+\begin{example}{读一条横截面回归}\label{ex:depressionworld-es}
+用\figref{fig:depressionworld_es}的点与拟合的直线，截距 153.9，斜率$-0.699$。Eichengreen 与 Sachs 给出的$t$统计量是 10.06 与 3.51，95\% 与 99\% 置信水平上的临界值是 2.31 与 3.36\cite{eichengreen1984}。英国的汇率是 59.9，工业生产 112.4；法国是 99.9 与 71.2；德国是 100.3 与 99.7。（1）按式~\eqref{eq:depressionworld-es}，三国的拟合值各是多少？残差$u_i$呢？（2）英国与法国的工业生产相差 41.2 个点，直线能解释多少？（3）斜率显著吗？（4）英镑的黄金价值是 59.9，比 1929 年低了百分之几？
+\solution （1）英国$153.9-0.699\times59.9\approx112.0$，残差约$+0.4$。法国$153.9-0.699\times99.9\approx84.1$，残差约$-12.9$。德国$153.9-0.699\times100.3\approx83.8$，残差约$+15.9$。（2）$0.699\times(99.9-59.9)\approx28.0$个点，约是差距的三分之二。（3）斜率的$t$统计量 3.51 大于 99\% 的临界值 3.36，在这个水平上显著。（4）低了$100-59.9=40.1\%$。Eichengreen 与 Sachs 的正文把 59 说成贬值“141 percent”，按定义应是 41\%，这是原文的笔误。
+\end{example}
+% 据: es_59, es_eq
+
+横截面回归说明不了因果。汇率与工业生产都是“内生变量”，这个反驳在 Eichengreen 与 Sachs 的论文里已经提到\cite{eichengreen1984}。他们的回答有三条。第一，在他们的例子里，贬值都在复苏开始以前\cite{eichengreen1984}。第二，增长快的国家在“吸进而不是流失黄金”，很难说是增长逼它们贬值\cite{eichengreen1984}。第三，1930 年代的汇率取决于各国对本位的态度，这种态度在 1930 年代初的事件以前就已形成\cite{eichengreen1984}。
+% 据: es_endog, es_timing, es_absorbing, es_predetermined
+
+样本也有它的边界。美国被有意排除在外，理由是萧条在很大程度上从那里开始\cite{eichengreen1984}。10 个点也说明不了一国贬值对邻国的影响。照 Eichengreen 与 Sachs 的说法，单个国家的贬值确实损害了别国，这是“以邻为壑”的一面\cite{eichengreen1984}。可是类似的政策如果推行得更广、各国协调一致，复苏会来得更快\cite{eichengreen1984}。照 Bernanke 与 James 的看法，协调一致的贬值，大概比实际发生的那一连串各自为政的贬值要好\cite{bernanke1991}。
+% 据: es_us, es_beggar, es_btn, bj_es, es_coordinated, bj_coordinated
+
+\begin{pitfall}[斜率就是贬值的效果]
+\figref{fig:depressionworld_es}的斜率是$-0.70$，并不等于说任何一国把汇率压低 10 个点，工业生产就会多 7 个点。横截面只比较了各国 1935 年的位置。贬值的国家也许本来就有别的长处，萧条更深的国家也许更早被迫离开。这两种情形会把斜率往不同的方向推。况且一国贬值，别国的汇率就相对升了，人人都贬值时，谁也得不到 7 个点。斜率回答的是哪些国家复苏得快，不直接回答一国该不该贬值。
+\end{pitfall}
+
+\section{枷锁是原因，还是渠道}\label{sec:depressionworld-debate}
+
+Bernanke（1995）的第一句话是，理解大萧条是“宏观经济学的圣杯”\cite{bernanke1995}。章名里的“金色枷锁”，出自 Eichengreen（1992）的书名\cite{bernanke1995}。
+% 据: b95_grail, b95_eich92
+
+Bernanke 与 James 的结论是，两次大战之间的货币与金融安排有“严重的缺陷”，是实际产出下降的“一个主要来源”\cite{bernanke1991}。照这种看法，萧条从美国开始，金本位把它传到各国，又不让各国自救。
+% 据: bj_flawed, es_us
+
+最大的疑问是因果的方向。照常理推测，经济更弱、萧条更深的国家，会最先贬值或离开黄金\cite{bernanke1995}。果真如此，离开黄金与萧条深重就该一起出现。按 Bernanke（1995）的说法，1929 年与 1930 年，1931 年离开黄金的国家与留下的国家，经济状况平均来说相当接近\cite{bernanke1995}。照他的说法，内生性带来的偏误，方向看来是错的\cite{bernanke1995}。大多数国家去留的决定，深受国内外政治与当时的经济信条影响\cite{bernanke1995}。
+% 据: b95_weaker, b95_similar, b95_wrong, b95_political
+
+问题于是变成，哪些国家更愿意离开。Wolf（2007）的论文从 Eichengreen（1992）的一个问题出发：“为什么有些国家比别的国家更愿意解开黄金的枷锁？”\cite{wolf2007}按 Wolf 的估计，各国离开的时间可以用几个因素解释\cite{wolf2007}。它们是物价下跌的冲击、储备多少所显示的平价可信程度、货币的近期历史与中央银行的独立程度、政府是否民主，以及贸易的格局\cite{wolf2007}。照他的说法，这些因素相当准确地预测了一国离开黄金的月份\cite{wolf2007}。
+% 据: wolf_fetters, wolf_predict, wolf_factors
+
+模型预测得最差的是波兰\cite{wolf2007}。照 Wolf 的解释，推迟离开的，是政权的非民主性质，以及与法国出人意料地紧密的贸易联系\cite{wolf2007}。在他看来，波兰的货币政策取决于政权抵御外国、尤其是德国侵略的打算\cite{wolf2007}。如果离开的时间由政治决定，离开就更像外来的冲击，这支持金本位是原因的说法。如果它由物价与储备决定，因果就可能有一部分是反过来的。
+% 据: wolf_worst, wolf_later, wolf_regime, wolf_trade, wolf_defend
+
+\section{银本位的中国}\label{sec:depressionworld-silver}
+
+斯诺登提出议案的那一天，下院还有人问首相，能不能用银本位的通货恢复与中国等东方国家的贸易\cite{hansard1931}。首相麦克唐纳（Ramsay MacDonald，1866—1937）的回答只有一句，这个建议“行不通”\cite{hansard1931,loc29}。中国用白银作货币，白银在国外却是一种商品，以黄金计的银价随市场涨落（\chref{ch:periphery}）。
+% 据: hc_china, hc_impracticable, loc_macdonald
+
+记纽约每盎司纯银的美元价格为$p_s$。1933 年 3 月定下的标准银元，含纯银约 0.76 盎司\cite{brandt1989}。一元的美元价值$s$与中国的汇率$e$，以及中国的物价，于是满足
+\begin{keyeq}
+s=0.7553\,p_{s},\qquad e=\frac{1}{s},\qquad \pi\approx\pi^{f}-\Delta\ln p_{s}.\label{eq:depressionworld-silver}
+\end{keyeq}
+第三式由式~\eqref{eq:depressionworld-fetters}而来，$\pi^{f}$是以美元计的外国物价的变化。银价下跌，银元在国外贬值，中国的物价就少跌，甚至上涨。银价上涨，银元升值，中国的物价就得跌，白银还会流到国外去。
+% 据: bs_7553
+
+前一半发生在 1929—1931 年。纽约的银价从 1929 年每盎司 53.0 美分降到 1931 年的 28.7 美分\cite{census1975m}。一元的价值从 41.9 美分降到 22.4 美分\cite{bms1943}。上海的批发物价以 1926 年为 100，1929 年是 104.5，1931 年升到 126.7\cite{brandt1989}。别国在通缩，中国的物价却在涨。
+% 据: bs_ppp
+
+后一半来得很快。照 Brandt 与 Sargent 的说法，物价从 1931 年年中开始下跌，到 1935 年秋天见底，比四年以前低了三分之一以上\cite{brandt1989}。按年平均，上海的批发物价从 1931 年的 126.7 降到 1935 年的 96.4\cite{brandt1989}。银价在 1933 年以后回升，1935 年平均每盎司 64.3 美分\cite{census1975m}。
+% 据: bs_third
+
+银价的上涨与美国的政策有关。照 Friedman（1992）摘要的说法，美国的白银收购计划由罗斯福（Franklin D. Roosevelt，1882—1945）在 1933 年底发起\cite{friedman1992,bnf28}。计划回应的是“经济上不大、政治上很有力量的白银集团”\cite{friedman1992}。1934 年 6 月 19 日批准的白银收购法规定，“最终的目标是，货币储备的价值有四分之一是白银，并保持下去”\cite{stat1934}。
+% 据: fr92_bloc, spa_june, spa_public, spa_fourth
+
+9 月 24 日，中国驻美公使施肇基（Sao-ke Alfred Sze，1877—1958）把一封电报交给美国国务卿赫尔（Cordell Hull，1871—1955）\cite{frus1934,loc29}。电报来自财政部长孔祥熙（H. H. Kung，1880—1967）\cite{frus1934,loc29}。电报说：“1931 年以来，银价以外币计不断上涨，给中国带来了严重的通缩与经济损失。”\cite{frus1934}这一年到当时为止，白银出口已是以往任何一个整年的三倍多\cite{frus1934}。“银价再大涨，会给中国造成非常严重的伤害，可能引起严重的恐慌。”\cite{frus1934}
+% 据: fr34_date, fr34_sze, fr34_kung, loc_sze, loc_kung, loc_hull, fr34_deflation, fr34_three, fr34_panics
+
+电报还说，中国“不应当独自维持银本位”，正考虑逐步改用以黄金为基础的通货\cite{frus1934}。它想知道，美国是否愿意用黄金换中国的白银\cite{frus1934}。10 月 2 日，施肇基应约来见，赫尔当面回答：“政府之间拿出来商量交换一定数量的货币，不完全是正常的程序。”\cite{frus1934}
+% 据: fr34_alone, fr34_goldbasis, fr34_exchange, fr34_called, fr34_hull, fr34_hulldate
+
+1935 年 1 月 26 日，美国国务院交给中国公使馆一份照会\cite{frus1935}。照会说，美国“还没有从中国政府得到数据，详细而确切地说明不利影响的性质与程度”\cite{frus1935}。
+% 据: fr35_dept, fr35_date, fr35_data
+
+\fig{depressionworld_silver}{白银的价格与银元的汇率。(a) 纽约的银价，每盎司纯银的美分，与一元的美分价值，年平均，1929—1936 年；虚线是按标准银元的含银量 0.7553 盎司算出的一元的白银价值。1933 年 4 月美元离开黄金，此后的美分不再是旧金元的美分。(b) 一元合多少美分，月平均，1929—1936 年。数据：《美国历史统计》（1975）系列 M 270；联邦储备委员会《银行与货币统计 1914—1941》表 173。}{fig:depressionworld_silver}
+
+\begin{example}{银价与银元}\label{ex:depressionworld-silver}
+标准银元含纯银 0.7553 盎司。纽约的银价，1929 年平均每盎司 52.99 美分，1931 年 28.70 美分，1935 年 64.27 美分\cite{census1975m}。同年一元的实际汇价是 41.9、22.4 与 36.6 美分\cite{bms1943}。（1）按式~\eqref{eq:depressionworld-silver}，三年里一元各值多少美分？（2）Brandt 与 Sargent 的表 4 按相对购买力平价预测上海的物价。1929—1930 年，美国的批发物价变了$-9.3\%$，一元的美元价格变了$-28.1\%$，预测上海物价变多少？实际是$+9.9\%$。（3）1933—1934 年，这两个数是$+13.7\%$与$+28.1\%$，预测是多少？实际是$-8.6\%$。（4）为什么 1935 年的实际汇价比（1）的值低得多？
+\solution （1）$0.7553\times52.99\approx40.0$，$0.7553\times28.70\approx21.7$，$0.7553\times64.27\approx48.5$。前两年与实际相差不到两个美分。（2）$-9.3-(-28.1)=+18.8\%$，实际只涨了 9.9\%，方向相同。（3）$13.7-28.1=-14.4\%$，实际是$-8.6\%$，方向也相同\cite{brandt1989}。（4）1934 年 10 月，中国政府对出口白银课税，汇价从此不再跟着银价走。
+\end{example}
+% 据: bs_7553, bs_fit, frb_oct1934, frb_duty
+
+\begin{case}{中国 · 白银 · 1934—1935}
+中国政府自己动手了。1934 年 10 月，它动用三家大银行的资源，想把一元钉住外国的纸币，挡住它的升值\cite{brandt1989}。银行仍然可以用一元兑换白银\cite{brandt1989}。照 Brandt 与 Sargent 的说法，这个办法看来违反了“一价定律”，一元换外币不如换白银值钱，就有人套利\cite{brandt1989}。为了堵住套利，政府同时对出口白银课征 10\% 的税，外加一项可变的平衡费\cite{frb1935}。
+% 据: bs_oct1934, bs_peg, bs_convertible, bs_lawofone, frb_oct1934, frb_duty
+
+此后银元的汇价落到它的白银价值以下，1935 年 11 月 2 日，折价约有 38\%\cite{frb1935}。可白银还在流走。据后来的法令，1934 年 7 月起的三个半月里，出口的白银超过 2 亿元\cite{brandt1989}。1934 年下半年，上海各银行的存银从 5.63 亿元降到 3.50 亿元\cite{brandt1989}。净出口的白银，1934 年估计是 2.8 亿元，1935 年是 2.92 亿元\cite{brandt1989}。
+% 据: frb_38, bs_july1934, bs_shanghai, bs_exports34, bs_exports35
+
+1935 年 11 月 3 日，中国政府发布紧急法令，把货币白银收归国有，改行纸币\cite{brandt1989}。法令说，通货受到严重影响，造成“国内严重的通缩，失业增加，破产遍地”\cite{brandt1989}。新制度 11 月 4 日生效，中央银行、中国银行与交通银行的钞票是完全的法偿货币\cite{frb1935}。政府银行无限制地买卖外汇，把一元的对外价值稳定在当时的水平附近\cite{frb1935}。中国就这样离开了银本位，比英国离开金本位晚了四年多。
+% 据: bs_decree, bs_decreetext, bs_yearbook, frb_nov4, frb_paper, frb_legaltender, frb_unlimited, frb_existing
+
+改革以后，一元稳在 30 美分左右。1936 年的 12 个月里，月平均的汇价最低 29.3 美分，最高 30.0 美分\cite{bms1943}。上海的批发物价 1936 年回升到 108.5\cite{brandt1989}。按 Brandt 与 Sargent 修订的估计，货币存量增加到 90.1 亿元，一年里多了 16\%\cite{brandt1989}。离开银本位，中国的物价也像离开黄金的国家一样止跌回升了。
+\end{case}
+
+美国的白银政策该负多大的责任，看法并不一致。照 Friedman（1992）摘要的说法，这项计划给中国这个唯一还在银本位上的大国带来了严重的通缩，迫使它离开银本位、改行纸币\cite{friedman1992}。它因此助长了共产党最后的胜利，虽然“也许只是不大的”一份\cite{friedman1992}。这种判断由来已久。照 Friedman 与 Schwartz（1963）的说法，白银若只是一种商品，收购计划对持有白银的人几乎是“纯粹的好处”\cite{brandt1989}。可白银是中国的货币基础，这份好处被严重的通缩抵消还有余\cite{brandt1989}。
+% 据: fr92_deflation, fr92_modestly, bs_boon, bs_fs490, bs_commodity, bs_fsoffset
+
+在 Brandt 与 Sargent（1989）看来，事情要复杂一些。照他们的说法，美国的白银收购计划“确实帮着造成了中国物价的下跌”\cite{brandt1989}。但在他们看来，它并没有引出一连串坏事，最后逼中国离开银本位。逼中国离开的是自己的政府，政府想把白银升值的好处收归己有\cite{brandt1989}。按他们修订的估计，货币存量从 1931 年的 63.6 亿元增加到 1935 年的 77.7 亿元\cite{brandt1989}。按 K. C. Yeh 的估计，这几年的实际 GDP“并不特别萧条”\cite{brandt1989}。在他们看来，中国经济相当好地经受住了 1930 年代的外来冲击\cite{brandt1989}。
+% 据: bs_undoubtedly, bs_notchain, bs_owngov, bs_yeh, bs_notdepressed, bs_weathered
+
+两家的分歧在于银价上涨以后发生了什么。1934 年，实际 GDP 比上一年降了约 8.7\%，农业产出降了近 12\%\cite{brandt1989}。照 Brandt 与 Sargent 的说法，农业的下降是华北大歉收造成的，其他部门降得不到 3\%\cite{brandt1989}。在 Friedman 的叙述里，中国是一个被迫离开银本位的国家；在 Brandt 与 Sargent 的叙述里，中国政府借机把白银收归国有。
+% 据: bs_farm
+
+\begin{compare}{银本位的中国与金本位国家}{中国：银本位}{金本位国家}
+\cmprow{本位的价格}{白银在国外是商品，银价以黄金计，随市场涨落}{一国货币的含金量由法律规定}
+\cmprow{1929—1931 年}{银价跌了近一半，银元贬值，上海物价反而上涨}{守着平价的国家每年约通缩 13\%}
+\cmprow{1932—1935 年}{银价回升，银元升值，物价下跌，白银外流}{离开黄金的国家物价稳住，留下的国家继续通缩}
+\cmprow{离开的方式}{1934 年 10 月课出口税，1935 年 11 月改行纸币}{暂停兑换、外汇管制或贬值}
+\cmprow{各自的争论}{白银政策是不是中国萧条的原因：Friedman 对 Brandt 与 Sargent}{金本位是萧条的原因，还是传导的渠道}
+\cmpsum{两种本位都把一国的物价拴在一种金属上，金属的价格由外面决定。分别只在于，黄金的价格由各国的法律钉住，白银的价格由市场决定。}
+\end{compare}
+% 据: bs_ppp, bj_13, bj_stabilized, frb_oct1934, bs_decree
+
+\section{拉丁美洲与初级产品出口国}\label{sec:depressionworld-latam}
+
+1920 年代，拉丁美洲也回到了黄金。照 Díaz Alejandro（1983）的描述，那时“外国的货币医生”在拉丁美洲巡游，开的药方是固定汇率与被动的金汇兑本位规则\cite{diaz1983}。萧条一来，初级产品的价格与出口量一起下跌。以 1928—1929 年与 1932—1933 年比较，出口的购买力，阿根廷降了 41.2\%，巴西降了 42.3\%\cite{diaz1983}。智利的贸易条件与出口量双双崩溃，出口购买力的下降是拉丁美洲最严重的\cite{diaz1983}。
+% 据: da_volume, da_doctors, da_t11, da_chile
+
+债务也更重了。同一时期，以美元计的物价出乎意料地下跌了约四分之一，还本付息的实际负担大大加重\cite{diaz1983}。到 1934 年，除阿根廷、海地与多米尼加共和国以外，拉丁美洲各国都已停止正常偿付外债\cite{diaz1983}。英镑 1931 年 9 月贬值以后，许多国家实行了外汇管制\cite{diaz1983}。照 Díaz Alejandro 的说法，1930 年代工业扩张强劲的拉丁美洲国家，最晚到 1932 年都已放弃了兑换与金本位的其他规则\cite{diaz1983}。
+% 据: da_quarter, da_default, da_controls, da_1932
+
+阿根廷走得最早。1929 年 12 月 16 日，它关闭了兑换局\cite{frb1931}。1935 年的货币与银行改革设立了阿根廷中央银行，它是一家公私合营的机构\cite{bcra2025}。1935—1943 年，普雷维什（Raúl Prebisch，1901—1986）任总经理\cite{bcra2025,bnf29}。用他的话说，这是“全国性的货币政策”\cite{bcra2025}。
+% 据: frb_argentina, bcra_mixed, bcra_prebisch, bnf_prebisch, bcra_national, bcra_controls
+
+巴西用的是另一种办法。咖啡价格下跌时，政府大量收购咖啡。这些收购大部分靠外债或新税，约 35\% 看来实际上是靠创造货币\cite{diaz1983}。按 Maddison 项目数据库，智利 1932 年的人均 GDP 只有 1929 年的 51.9\%\cite{mpd2023}。到 1935 年，巴西回到 1929 年的 101.2\%，哥伦比亚到 111.4\%，阿根廷是 90.4\%\cite{mpd2023}。按 Díaz Alejandro 的表 1.2，1929—1933 年，阿根廷与墨西哥的实际总产出降了 9.7\% 与 10.3\%\cite{diaz1983}。巴西与哥伦比亚反而增加了 7.6\% 与 9.9\%，美国降了 28.9\%\cite{diaz1983}。
+% 据: da_coffee, da_t12a
+
+\section{数据核对与反例}\label{sec:depressionworld-check}
+
+几个数字各有第二个来源。英格兰银行 8 月初借的 5,000 万英镑，按旧平价约合 2.4 亿美元\cite{hansard1931}。公报说，联邦储备银行 8 月 1 日给的信用约占一半\cite{frb1931}。斯诺登说两个月里流失了 2 亿多英镑，凯恩斯也说付出了 2 亿英镑\cite{hansard1931,keynes1931}。按旧平价，2 亿英镑约合 9.7 亿美元，公报说从 7 月中旬起提走了约 10 亿美元\cite{frb1931}。Brandt 与 Sargent 的汇率据 Hsiao（1974）\cite{brandt1989}。1929—1931 年，它的年变化与《银行与货币统计》的年平均相差约一个百分点\cite{bms1943}。
+% 据: hc_50m, frb_125, hc_200m, frb_billion, k_200m, bs_hsiao, bs_fit
+
+规律之外有不少反例。加拿大与奥地利 1931 年就离开了，1935 年的人均 GDP 仍只有 1929 年的 78.0\% 与 78.6\%\cite{mpd2023}。德国没有贬值，1935 年却已回到 101.7\%\cite{mpd2023}。照 Bernanke（1995）的说法，波兰是一个小小的例外，1932—1936 年它的名义$M_1$还略有增长\cite{bernanke1995}。比利时离开金本位以前，曾经得到大量流入的黄金，货币存量却急剧收缩\cite{bernanke1995}。中国守着银本位，物价下跌，实际 GDP 却没有大的萎缩\cite{brandt1989}。
+% 据: b95_poland, b95_belgium, bs_notdepressed
+
+\begin{deeper}[史料说明]
+\textbf{两个证人不合。}美国与法国手里的黄金，斯诺登 1931 年 9 月说是世界全部黄金的四分之三，Bernanke 与 James 说 1928—1929 年两国合计持有世界货币黄金的近 60\%。两者的日子与口径都不同，正文两说并存。胡佛的声明，美国总统项目的说明写明 6 月 20 日记者会后发出，到 21 日才准发表，这里只有这一个来源。孔祥熙的生年，美国国会图书馆规范档的标目作 1880 年，同一记录的异名作 1881 年，正文从标目。Wolf（2007）的摘要说模型预测波兰离开的时间比 1936 年 4 月还晚，结论一节却说预测在 1935 年年中，两处不合，正文只说预测得最差。
+
+\textbf{数字的核对。}Eichengreen 与 Sachs 的工作论文没有列出图 1 的数字，10 个点据图 1 的扫描页读出，读数误差约 0.5。正文说英国是 59，读出的是 59.9。他们说 59 意味着贬值“141 percent”，按定义应是 41\%，这是原文的笔误。用读出的点重新回归，截距 153.89，斜率$-0.699$，两个$t$统计量 10.02 与 3.51，校正以后的$R^{2}$是 0.557，与注 12 的 153.9、$-0.69$、10.06、3.51 与 0.56 相合。Brandt 与 Sargent 说，K. C. Yeh 估计的实际 GDP 1931—1936 年平均每年增长 1.5\%，按他们表 5 的数算是 1.6\%。按同一张表，非农业部门 1934 年降了 3.0\%，与“不到 3\%”大致相合。他们的表 2 并列了 Rawski 的货币存量估计与他们修订的估计，1935 年分别是 88.3 亿元与 77.7 亿元，正文用修订的估计。
+
+\textbf{转述与间接的证词。}Eichengreen（1992）的书没有取得，正文的问题据 Wolf（2007）的引文，书名据 Bernanke（1995）的参考文献。Eichengreen（1987）与 Choudhri 和 Kochin（1980）据 Bernanke 与 James 的转述。Friedman 与 Schwartz（1963）的“纯粹的好处”、1935 年法令的英文译文（据《中国年鉴》1936—1937 年版第 810 页）、标准银元的含银量（据 Tamagna 1942）与 K. C. Yeh 的估计，都据 Brandt 与 Sargent 的转引。巴西咖啡收购的 35\%，据 Díaz Alejandro 转引 Silber（1977）。
+
+\textbf{没有取得的。}Eichengreen 与 Sachs 发表在《经济史杂志》1985 年第 45 卷第 4 期的正式版本没有取得，正文据 1984 年的工作论文。Friedman（1992）的正文没有取得，只读了 IDEAS 上的摘要。1935 年法令的中文原文没有取得。麦克米伦委员会与梅委员会 1931 年的报告也没有读到。
+
+\textbf{识别错误与单一见证。}Bernanke 与 James 表 2.2 的文字层认错了希腊 1931 年的物价，又丢了金本位国家 1933 年平均值的负号，表里的数字据扫描页读出。凯恩斯文中的英镑符号、“2 5”与“Anierica”，Bernanke（1995）的“Ml”，都是识别错误，快照的注里一一写明。帝国银行的储备与贴现率只据联邦储备公报，孔祥熙的电报只据《美国对外关系文件》，白银的出口数字只据 Brandt 与 Sargent。斯诺登、麦克唐纳、孔祥熙、施肇基与赫尔的生卒年，据英国议会的人物页与美国国会图书馆的规范档，胡佛与普雷维什的据法国国家图书馆的规范档。
+% 据: hc_threequarters, bj_60, hv_date, loc_kung, loc_kung1881, wolf_later, wolf_mid1935, es_59, es_eq, es_r2, es_critical, bs_15, bs_farm, wolf_fetters, b95_eich92, bj_eich87, bj_spain, bs_boon, bs_decreetext, bs_yearbook, bs_7553, bs_yeh, da_coffee, es_wp, fr92_journal, fr92_copyright, bj_t22_gold1933, k_200m, k_tariff, k_southamerica, b95_identity, frb_reichsbank, frb_jul16, fr34_date, bs_exports34, hh_snowden, loc_macdonald, loc_sze, loc_hull, bnf_hoover, bnf_prebisch
+\end{deeper}
+
+\section{今天还剩什么}\label{sec:depressionworld-legacy}
+
+\textbf{不可能三角。}金本位要求固定的汇率与资本的自由流动，守着它的国家就没有独立的货币政策。1931 年，英国放弃了固定汇率，德国放弃了资本的自由流动，法国两样都守住，付出的是通缩。三者不能兼得，\chref{ch:external}把它叫作不可能三角，它的理论在\chref{ch:mundell}。
+
+\textbf{可调整的钉住。}1936 年的声明希望没有哪个国家谋求不合理的汇率优势\cite{frb1936}。战后的布雷顿森林体系仍然钉住汇率，却留下了调整平价的余地（\chref{ch:warfinance}，\chref{ch:brettonwoods}）。
+
+\textbf{不能贬值的货币联盟。}欧元区的成员连调整平价的余地也没有了。各国的物价与工资要怎样适应共同的货币，与金本位下的国家面对的是同一类问题（\chref{ch:euro}）。
+% 据: frb_advantage, frb_nocountry
+
+\begin{takeaways}
+\begin{itemize}
+\item 在金本位下，汇率固定，能贸易的商品价格各国相连，货币又受储备的限额约束（式~\eqref{eq:depressionworld-fetters}）。美国与法国在通缩，又吸进黄金，别国只好跟着收缩。
+\item 1931 年的危机从奥地利信贷银行开始，经过德国的外汇管制，9 月 21 日英国暂停按固定价格卖出黄金。英国选择了贬值，德国选择了管制。
+\item 离开黄金越早，复苏大体越早。1932—1935 年，不在金本位上的国家工业生产每年平均多增长约 7 个百分点；1935 年的人均 GDP，早离开的 14 个经济体平均回到 1929 年的水平。
+\item Eichengreen 与 Sachs 的横截面斜率约$-0.70$，汇率越低，工业生产越高。它说明不了因果，也说明不了一国贬值对邻国的影响。
+\item 银本位的中国，汇率随银价起落（式~\eqref{eq:depressionworld-silver}）。银价先跌后涨，中国先躲过通缩，后来又陷入通缩，1935 年 11 月改行纸币。美国的白银政策要负多大责任，Friedman 的评价与 Brandt 和 Sargent 的相反。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 外国物价一年里跌了 5\%，本国守着金本位。按式~\eqref{eq:depressionworld-fetters}，本国物价大约怎样变？若本国让$e$上升 10\%，又怎样变？数字为教学输入。
+\item 一国的发行准备比率是 25\%，储备流失 8，货币的上限要收缩多少？
+\item 1935 年，丹麦货币的黄金价值是 1929 年平价的 48.5\%。按 Eichengreen 与 Sachs 的直线，它的工业生产应是多少？实际是 124.1。
+\item 为什么说横截面回归说明不了贬值的因果效果？举一个可能把斜率推大的理由。
+\item 纽约的银价从每盎司 52.99 美分跌到 28.70 美分。按式~\eqref{eq:depressionworld-silver}，标准银元的美元价值跌了多少？这对中国的物价意味着什么？
+\item 金集团的国家为什么守着黄金那么久？举出两种解释。
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $\pi\approx\pi^{f}\approx-5\%$，物价也跌约 5\%。让$e$上升 10\%，$\pi\approx10\%-5\%=5\%$，物价上涨约 5\%。
+\item 上限收缩$8/0.25=32$，是流失额的 4 倍。
+\item $153.9-0.699\times48.5\approx120.0$，实际 124.1，比直线高约 4 个点。
+\item 汇率与工业生产都是内生的。比如萧条较轻、黄金充足的国家可以从容地选择，萧条最深的国家却可能最先被迫离开；各国还会互相影响，一国的贬值就是别国的升值。
+\item 一元的价值与银价成正比，从约 40.0 美分降到约 21.7 美分，降了约 46\%。按式~\eqref{eq:depressionworld-silver}，以美元计的外国物价不变时，中国的物价要上涨；外国在通缩，中国的物价也可以不跌。
+\item 一种看政治与信条：照 Bernanke（1995）的看法，法国人把金本位与民族自豪感连在一起；照 Eichengreen 与 Sachs 的看法，1920 年代经历过通胀的国家最努力地守住新定的平价。另一种看经济：照 Wolf（2007）的估计，物价、储备、政治制度与贸易格局一起决定了离开的时间。
+\end{answers}
+
+1931 年 9 月 27 日，凯恩斯在文章的最后说，上一周的大事也许会为世界的货币史“翻开新的一章”\cite{keynes1931}。离开黄金以后，各国走的路各不相同。德国 1931 年 7 月实行外汇管制，日本 12 月暂停兑换，瑞典 9 月就离开了金本位\cite{bernanke1991}。纳粹德国、高桥财政下的日本和瑞典都较早走出了萧条，各自靠的是什么？代价记在了哪里？
+% 据: k_chapter, bj_groups

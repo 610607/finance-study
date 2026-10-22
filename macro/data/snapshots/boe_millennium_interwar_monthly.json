@@ -6,7 +6,8 @@
   "retrieved": "2026-10-22",
   "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (Craighead 2010, the Federal Reserve Board and the ONS for the exchange rate; the Sauerbeck-Statist index; the ONS cost of living index; Capie and Collins 1983 for wages; Denman and Macdonald 1996 for unemployment).",
   "used_in": [
-    27
+    27,
+    29
   ],
   "fetch": "data/fetch/boe_millennium_gb27.py",
   "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-25). The text and figures of Chapter 27 use unemp_admin, which the sheet leaves empty from December 1918 to October 1919 and in October 1920; unemp_sa is kept for reference and is not used. The index ratios, rebasings and averages in the chapter are the book's own calculations.",

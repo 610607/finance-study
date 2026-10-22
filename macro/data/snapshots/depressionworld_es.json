@@ -1,0 +1,14 @@
+{
+  "title": "The exchange rate and industrial production in 1935 (1929 = 100), ten European countries (Eichengreen and Sachs 1984, Figure 1)",
+  "source": "Barry Eichengreen and Jeffrey Sachs, 'Exchange Rates and Economic Recovery in the 1930s', NBER Working Paper 1498 (November 1984), Figure 1 (PDF page 10); their sources (Appendix B): industrial production from Mitchell (1975) and Methorst (1938); the gold value of currencies as a percentage of the 1929 gold parity from the League of Nations (1938)",
+  "url": "https://www.nber.org/system/files/working_papers/w1498/w1498.pdf",
+  "series": "country; er1935: the gold value of the currency in 1935, per cent of its 1929 parity; ip1935: industrial production in 1935, 1929 = 100",
+  "retrieved": "2026-10-22",
+  "license": "Coordinates read from a published figure (NBER Working Paper; no copyright line printed), for teaching with the source.",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/depressionworld29.py",
+  "notes": "The working paper prints no table of these values: the ten points were digitized from Figure 1, rendered with pdftoppm at 300 dpi from the PDF (SHA-256 3cafc7124fb4d9c05fb902d4410d293ea95e8a683fe7653d71dd9edf7414c03f), by locating the centre of each marker against the axis ticks (40-120 on the horizontal axis, 70-130 on the vertical); reading error about +-0.5 on either axis. The text gives two of the values, France 100 and the United Kingdom 59 (read here 99.9 and 59.9). A least-squares line through the ten points reproduces the paper's note 12 (IP1935 = 153.9 - 0.69 ER1935, t-statistics 10.06 and 3.51, adjusted R-squared .56): 153.89, -0.699, t 10.02 and 3.51, adjusted R-squared 0.557 (checks/check_ch29.py). The published version (Journal of Economic History 45(4), December 1985) was not obtained.",
+  "citation": "Eichengreen, B. and J. Sachs (1984), NBER Working Paper 1498, Figure 1"
+}

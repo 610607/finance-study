@@ -1,0 +1,14 @@
+{
+  "title": "Bank Rate on 1 January 1929 and on every day it changed, 1929-1936",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'D1. Official Interest Rates'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "date (ISO); bank_rate: Bank Rate, per cent, the new rate from that day ('Bank Rate 1833-1972, ...')",
+  "retrieved": "2026-10-22",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England.",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/boe_millennium_gb29.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb. The sheet gives the rate for every day; the snapshot keeps the first day of 1929 and each day on which the rate differs from the day before. The rate of 2 per cent from 30 June 1932 is unchanged to the end of 1936.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet D1"
+}

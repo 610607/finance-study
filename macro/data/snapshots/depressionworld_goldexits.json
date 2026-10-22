@@ -1,0 +1,14 @@
+{
+  "title": "Dates of changes in gold standard policies and log-differences of wholesale prices and industrial production, 24 countries, 1930-1936 (Bernanke and James 1991, Tables 2.1, 2.2 and 2.4)",
+  "source": "Ben Bernanke and Harold James, 'The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison', in R. G. Hubbard (ed.), Financial Markets and Financial Crises (University of Chicago Press, 1991), Tables 2.1 (p. 37), 2.2 (p. 43) and 2.4 (p. 45); their sources: League of Nations, Yearbook and Monthly Bulletin of Statistics, and supplementary sources",
+  "url": "https://www.nber.org/system/files/chapters/c11482/c11482.pdf",
+  "series": "country; group (1: not on gold or leaving before 1931; 2: abandoning the full gold standard in 1931; 3: between 1932 and 1935; 4: still on gold in 1936; empty for the averages); return, suspension, exchange_control, devaluation: year-month of the change (Table 2.1; empty for '—'; France and Rumania returned in two steps, written 'from/to'); wpi_YYYY: log-difference of the wholesale price index (Table 2.2); ip_YYYY: log-difference of the industrial production index (Table 2.4); the rows 'average 1931', 'average gold 1936', 'grand average gold' and 'grand average non-gold' are the tables' own averages (the grand averages for 1932-1935 only); NA where the table prints NA",
+  "retrieved": "2026-10-22",
+  "license": "Numbers from a published table (NBER chapter, 'a selection from an out-of-print volume'; no copyright line printed), reproduced for teaching with the source.",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/depressionworld29.py",
+  "notes": "Read from the PDF https://www.nber.org/system/files/chapters/c11482/c11482.pdf (SHA-256 cfda9a44face13b37122bf4ae2c7b99c500efd9ba0e595459ec50a0d5791dfc1): the text layer was compared, cell by cell, with page images rendered with pdftoppm (PDF pages 6, 12 and 14 = printed pp. 37, 43, 45). The text layer garbles Greece's 1931 wholesale prices ('jj'; the image shows -.11) and drops the minus sign of the gold countries' grand average for 1933 (the image shows -.07). A '-.00' or '-0.00' is printed as in the table. 'Abandonment' in Tables 2.2 and 2.4 includes the imposition of exchange control or devaluation as well as suspension (the note to Table 2.2).",
+  "citation": "Bernanke, B. and H. James (1991), in R. G. Hubbard (ed.), Financial Markets and Financial Crises, Chicago: University of Chicago Press, 33-68"
+}

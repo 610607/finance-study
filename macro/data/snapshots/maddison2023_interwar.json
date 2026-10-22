@@ -1,0 +1,106 @@
+{
+  "title": "GDP per head of 28 economies, 1929-1938 (Maddison Project Database 2023)",
+  "source": "Maddison Project Database, version 2023 (J. Bolt and J. L. van Zanden), workbook 'mpd2023_web.xlsx', sheet 'Full data', DataverseNL, doi:10.34894/INZBF2",
+  "url": "https://dataverse.nl/api/access/datafile/421302",
+  "series": "country (ISO code), year, gdppc_2011usd ('gdppc': real GDP per head in 2011 international dollars)",
+  "retrieved": "2026-10-15",
+  "license": "CC BY 4.0 (DataverseNL). The workbook's 'Notes' sheet sets a citation policy: 'CONDITIONS UNDER WHICH ALL ORIGINAL PAPERS MUST BE CITED: a) If the data is shown in any graphical form b) If subsets of the full dataset that include less than a dozen (12) countries are used for statistical analysis or any other purposes'. The chapter shows the data in a figure and cites the original sources listed in 'sources_by_country' (copied from the sheets 'Sources' and 'Maddison original sources', the rows whose period covers any of 1929-1938).",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/maddison2023_interwar29.py",
+  "notes": "Workbook SHA-256 ecc5916ca12789b983fc4be437f8a354bbf4291323605324ac3e0aea4c57cbb6 (the copy of Chapter 21). Poland has no figure for 1928, so the table begins in 1929; Czechoslovakia, Estonia and Latvia (in Bernanke and James's table of exits) have none for these years. China is left out: the database's listed source for China ends in 1933.",
+  "citation": "Bolt, J. and J. L. van Zanden (2024), 'Maddison style estimates of the evolution of the world economy: A new 2023 update', Journal of Economic Surveys, doi:10.1111/joes.12618",
+  "sources_by_country": {
+    "AUS": [
+      "Maddison original sources, 1861-1938/9: N.G. Butlin, Australian Domestic Product, Investment and Foreign Borrowing 1861-1938/9, Cambridge, 1962,pp.460-1; amdended as indicated in N.G. Butlin, Investment in Australian Economic Development 1861-19000, Cambridge, 1964, p. 453 and with revised deflator shown in M.W. Butlin, A Preliminary Annual Databae 1900/1901 to 1973/1974, Discussion Paper 7701, Reserve Bank of Australia, 1977, p. 41",
+      "Maddison original sources, 1938/9-1950: from expenditure aggregates in 1966/7 prices in M.W. Butlin, RS/FLW/, p.85."
+    ],
+    "AUT": [
+      "Maddison original sources, 1913-50: A. Kausel, N. Nemeth, and H. Seidel, \"Oster-reichs Volkseinkommen, 1913-63\", Monatsberichte des Osterreichischen Institutes für Wirtschaftsforschung, 14th Sonderheft, Vienna, August 1965, p. 38 and 42;"
+    ],
+    "BEL": [
+      "Maddison original sources, 1913-1950: C. Carbonnelle, \"Recherches sur levolution de la production en Belgique de 1900à 1957\", Cahiers Economiques de Bruxelles, no. 3, April 1959, p. 358."
+    ],
+    "CAN": [
+      "Maddison original sources, 1926-1950: Statistics Canada, National Income and Expenditure Accounts, vol. 1, The Annual Estimates 1926-1974, Ottawa, 1975, p. 323. 1960 onwards from OECD, National Accounts."
+    ],
+    "DNK": [
+      "Maddison original sources, 1820-1947: S.A. Hansen, Okonomisk vaekst i Danmark, vol. II, Institute of Economic History, Copenhagen, 1974, pp. 229-32"
+    ],
+    "FIN": [
+      "Maddison original sources, 1860-1960: R. Hjerppe, The Finnish Economy 1860-1985: Growth and Structural Change, Bank of Finland, Helsinki, 1989, pp. 198-200."
+    ],
+    "FRA": [
+      "Maddison original sources, 1920-1950: Toutain, Le Produit interieur de la France de 1789 a 1982, Presses Universitaires de Grenoble, 1987"
+    ],
+    "DEU": [
+      "Maddison original sources, 1850-1950: Hoffmann, Grumbach and Hesse, op. cit., pp. 454-5."
+    ],
+    "GRC": [
+      "Maddison original sources, 1913-1929: C. Clark, Conditions of Economic Progress, 3rd edition, Macmillan, London, 1957; 1929-38 GNP at factor cost from Ekonomikos Tachydromos, 22 May 1954; 1938-50 from OEEC, Europe and the World Economy, Paris 1960, p.116.",
+      "Maddison original sources, 1929-1950: Maddison, A. Monitoring the World Economy, 1995"
+    ],
+    "HUN": [
+      "Maddison original sources, 1900-42: A. Eckstein, \"National Income and Capital Formation in Hungary, 1900-50\", in S. Kuznets, ed., Income and Wealth, series V GNP index, Bowes and Bowes, London, 1955, p. 175",
+      "Maddison original sources, 1938-50: from L. Czirjak, \"Hungarian GNP by Sectors of Origin of Product and End Uses, 1938 and 1946-67\", Occasional Paper 43, Research Project on East Central Europe, New York, 1973."
+    ],
+    "ITA": [
+      "Sources, 1871-1990: Baffigi, A. (2011).”Italian National Accounts, 1861-2011”, Banca d’Italia Economic History Working Papers 18."
+    ],
+    "JPN": [
+      "Sources, 1874-1940: Fukao, K., Bassino, J.-P., Makino, T., Paprzycki, R., Settsu, T., Takashima, M., and Tokui, J. (2015) Regional Inequality and Industrial Structure in Japan: 1874-2008, Tokyo: Maruzen Publishing."
+    ],
+    "NLD": [
+      "Maddison original sources, 1913-1950: C.A. van Bochove and T.A. Huitker, \"Main National Accounting Series, 1900-1986\", CBS Occasional Paper, No. 17, The Hague, 1987."
+    ],
+    "NOR": [
+      "Sources, 1820–1930: Grytten, O.H. (2015). Norwegian gross domestic product by industry 1830 - 1930, Norges Bank Working paper 19/2015. Population from Maddison (2006)",
+      "Maddison original sources, 1930-1950: Central Bureau of Statistics Norway, 1970 and Maddison, A. Monintoring the World Economy, 1995"
+    ],
+    "NZL": [
+      "Maddison original sources, 1870-1939: K. Rankin, \"New Zealand's Gross National Product: 1859-1939, Review of Income and Wealth, March 1992, pp. 60-1., 1870 amended to include indigenous population (taken to be $400 per capita) GNP in 1910/11 prices"
+    ],
+    "POL": [
+      "Maddison original sources, 1913-1929: Maddison, A. Monitoring the World Economy, 1995",
+      "Maddison original sources, 1929-1938: K. Laski, Akumulacja i spozycie w procesie uprzemyslowienia Polski Ludowej, Ksiazka i Wiedza, Warsaw, 1956, pp. 86-90",
+      "Maddison original sources, 1937-1950: T.P. Alton (1970), p. 46,"
+    ],
+    "ROU": [
+      "Sources, 1862–1995: Axenciuc, V. (2012). Produsul intern brut al Romaniei, Vol. 1, Institutl de Economie Nationala, Bucarest"
+    ],
+    "SWE": [
+      "Sources, 1560–1950: Schön, L., and O. Krantz (2015) “New Swedish Historical National Accounts since the 16th Century in Constant and Current Prices” Lund Papers in Economic History no. 140"
+    ],
+    "ESP": [
+      "Sources, 1850–2011: Prados de la Escosura, L. (2017), Spanish Economic Growth, 1850-2015 (London: Palgrave Macmillan)"
+    ],
+    "GBR": [
+      "Maddison original sources, 1870-1950: C.H. Feinstein, National Income Expenditure and Output of the United Kingdom 1855-1965, Cambridge, 1972"
+    ],
+    "USA": [
+      "Maddison original sources, 1820-1950: GDP movement from Maddison (1995a), amended for 1820–70 to include income of the indigenous population (taken to be $400 per capita in 1820 and 1870)."
+    ],
+    "ARG": [
+      "Maddison original sources, 1913-1950: IEERAL, \"Estadísticas de la evolución económica de Argentina, 1913-84\", Estudios, Buenos Aires, July-September, 1986."
+    ],
+    "CHE": [
+      "Sources, 1850-2011: Stohr, Christian (2016), Trading Gains: new estimates of Swiss GDP, 1851-2008. Economic History Working Papers, 245/2016. London School of Economics and Political Science, Economic History Department, London, UK"
+    ],
+    "BRA": [
+      "Maddison original sources, 1900-1950: A. Maddison and Associates, The Political Economy of Poverty, Equity and Growth: Brazil and Mexico, Oxford University Press, New York 1992;"
+    ],
+    "CHL": [
+      "Sources, 1810–2004: Díaz, J.B. Lüders, R. and Wagner, G. (2007) Economia Chilena 1810 - 2000, Producto total y sectorial una nueva mirada, Pontificia universidad Catolica de Chile, Insituto de Economia, Documeno de Trabajo no. 315"
+    ],
+    "COL": [
+      "Maddison original sources, 1929 - 1950: CEPAL, Series Historicas del Crecimiento de America Latina, Santiago, 1978"
+    ],
+    "MEX": [
+      "Sources, 1895–2003: Barro, R.J. and J.F. Ursua, (2008). “Macroeconomic Crises since 1870” Brookings Papers on Economic Activity, Economic Studies Program, The Brookings Institution, vol. 39(1 (Spring), pages 255-350"
+    ],
+    "URY": [
+      "Sources, 1870–2014: Bèrtola, L. (2016). El PIB per Capita de Uruguay 1870 - 2016: una reconstruccion. PHES working paper No 48"
+    ]
+  }
+}

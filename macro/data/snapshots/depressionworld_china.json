@@ -1,0 +1,14 @@
+{
+  "title": "China 1929-1936: Shanghai wholesale prices, the money supply, purchasing-power parity and real output (Brandt and Sargent 1989, Tables 1, 2, 4 and 5)",
+  "source": "Loren Brandt and Thomas J. Sargent, 'Interpreting New Evidence about China and U.S. Silver Purchases', Journal of Monetary Economics 23 (1989) 31-51: Table 1 (wholesale prices, Shanghai, 1926 = 100; from T'ung-chi yue-pao, June 1937), Table 2 (money supply, year-end, million yuan; Rawski's estimates and the authors' revision), Table 4 (predicted and actual changes in wholesale prices) and Table 5 (sectoral output, billion 1933 yuan; K. C. Yeh)",
+  "url": "https://brandt.economics.utoronto.ca/wp-content/uploads/2020/07/1989-JME_19891.pdf",
+  "series": "year; shanghai_wpi_1926_100 (Table 1); silver_1a_myuan: monetary silver, column 1A; money_5a_myuan: Rawski's money supply, column 5A; money_6a_myuan: the revised money supply, column 6A (Table 2); gdp_bn_1933yuan and agriculture_bn_1933yuan (Table 5, 1931-1936); us_wpi_pct, usd_per_yuan_pct, predicted_shanghai_pct, actual_shanghai_pct: Table 4, columns 1-4, for the pair of years ending in 'year' (1930 = 1929/30): the percentage change of US wholesale prices, of the dollar price of the yuan, the predicted (1 - 2) and the actual change of Shanghai wholesale prices",
+  "retrieved": "2026-10-22",
+  "license": "'©1989, Elsevier Science Publishers B.V. (North-Holland)'. Numbers from published tables, reproduced for teaching with the source; no text of the article is reproduced here.",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/depressionworld29.py",
+  "notes": "Read on images of PDF pages 9 (Tables 1 and 2), 14 (Table 4) and 16 (Table 5) of the authors' copy (SHA-256 31f82d98b58ff3d698ace987a4f651c9521af4c137c33adc4c02adbc6e9e161a), rendered with pdftoppm. Table 5 includes Manchuria (their note 20). Column 3 of Table 4 is column 1 minus column 2.",
+  "citation": "Brandt, L. and T. J. Sargent (1989), Journal of Monetary Economics 23, 31-51"
+}

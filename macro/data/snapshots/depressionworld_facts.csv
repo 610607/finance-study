@@ -1,0 +1,243 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+hc_title,英国,1931,,21;1931;256;1289;357,,,hansard1931gsab,HC Deb vol 256 cc1289-357,HC Deb 21 September 1931 vol 256 cc1289-357,the column reference of the debate on the Bill's first reading
+hc_four,英国,1931,,4.0;1925,,,hansard1931gsab,c1291,"4.0 p.m. § Mr. P. SNOWDEN This is a Bill for the temporary Amendment of the Gold Standard Act, 1925",the time is printed as '4.0 p.m.' (four o'clock)
+hc_price,英国,1931,,3;17;10;0.5,,,hansard1931gsab,c1291,gold bullion at the price of three pounds seventeen shillings and ten pence halfpenny per ounce troy,Snowden reading section 1(2) of the Gold Standard Act 1925: £3 17s 10½d an ounce troy
+hc_bars,英国,1931,,400,,,hansard1931gsab,c1291,only in the form of bars containing approximately four hundred ounces troy of fine gold,
+hc_primary,英国,1931,,,,,hansard1931gsab,c1292,the fall in the general price level affected the capacity of the primary producers of the whole world to meet their obligations,
+hc_vicious,英国,1931,,,,,hansard1931gsab,c1292,"A vicious circle was set up, banks and investors becoming more and more reluctant to lend their capital to potential borrowers",
+hc_austria,英国,1931,,,,,hansard1931gsab,c1293,started with the collapse of the chief bank in Austria last May and with the crisis which followed in Germany,"the 'chief bank in Austria' is the Creditanstalt (Bernanke and James, row bj_optimistic)"
+hc_50m,英国,1931,,50000000,,,hansard1931gsab,c1293,"the Bank of England about the beginning of August raised a very large credit, no less than £50,000,000, from the American and French central banks",
+hc_80m,英国,1931,,80000000,,,hansard1931gsab,c1293,"The Government raised further credits to a total of £80,000,000 in New York and Paris",
+hc_drain,英国,1931,,5000000;10000000;18000000,,,hansard1931gsab,c1293,"On Wednesday, it was £5,000,000; on Thursday, £10,000,000; on Friday, nearly £18,000,000.",Wednesday 16 to Friday 18 September 1931
+hc_saturday,英国,1931,,10000000,,,hansard1931gsab,c1294,"and on Saturday, a half day, over £10,000,000.",Saturday 19 September 1931 (the sentence continues in c1294)
+hc_200m,英国,1931,,200000000;70000000,,,hansard1931gsab,c1294,"we have lost in gold and foreign exchanges a sum of more than £200,000,000, apart from agreeing as a result of the London Conference, to lock up £70,000,000 of our assets in Germany",'during the last two months'
+hc_letter,英国,1931,,125000000;3100000000,,,hansard1931gsab,c1294,"the credits for $125,000,000 and francs 3,100,000,000, arranged by the Bank of England in New York and Paris respectively, are exhausted","the Bank of England's letter of 19 September 1931, read by Snowden"
+hc_letter2,英国,1931,,200000000;5000000000,,,hansard1931gsab,c1294,"the credit for $200,000,000 arranged in New York by His Majesty's Government, together with credits for a total of francs 5 milliards negotiated in Paris, are practically exhausted also","5 milliards = 5,000,000,000 francs"
+hc_holland,英国,1931,,,,,hansard1931gsab,c1294,the Bank are being subjected to a drain of gold for Holland,
+hc_19th,英国,1931,,19,,,hansard1931gsab,c1294,your letter of the 19th instant,"the Government's reply to the Bank, dated by the Bank's letter of Saturday 19 September"
+hc_sudden,英国,1931,,,,,hansard1931gsab,c1295,"Thus, with appalling suddenness, the crisis which we had striven to avert broke on our heads, and we had no alternative but to suspend the gold convertibility of the currency.",
+hc_threequarters,英国,1931,,0.75,,,hansard1931gsab,c1297,"America and France taken together have now acquired three-quarters of the entire gold in the world and have buried it in their vaults, where it is largely sterilised and useless for the purpose of promoting international trade.",Bernanke and James give 'close to 60%' for 1928-29 (row bj_60)
+hc_panic,英国,1931,,,,,hansard1931gsab,c1298,a world-wide panic on the part of the investment markets,
+hc_exchange,英国,1931,,,,,hansard1931gsab,c1298,we are forced to do this by reason of an exchange crisis and not because of any disorder in our own internal finances,
+hc_closure,英国,1931,,271;148,,,hansard1931gsab1,"c1387 (Division No. 481, 9.40 p.m.)","The House divided: Ayes, 271; Noes, 148.","the closure of the debate on the second reading, at 9.40 p.m."
+hc_second,英国,1931,,275;112,,,hansard1931gsab1,"c1391 (Division No. 482, 9.50 p.m.)","The House divided: Ayes, 275; Noes, 112.",the division on a reasoned amendment to the second reading; the Bill was then read a second time (row hc_secondtime)
+hc_secondtime,英国,1931,,,,,hansard1931gsab1,c1391,Mr. Kinley and Mr. Stephen. Bill read a Second time.,
+hc_eight,英国,1931,,,,,hansard1931gsab1,c1386,when the Debate only started at Eight o'Clock,the second-reading debate began at eight in the evening
+hc_third,英国,1931,,,,,hansard1931clause2,c1409,"Bill reported, without Amendmont: read the Third time, and passed.",OCR misprint 'Amendmont' (Amendment)
+hl_passed,英国,1931,,1;2;3,,,hansard1931lords,HL Deb vol 82 c133,"Bill brought from the Commons; read 1a. § Then (Standing Orders LIV and XXXIX having been suspended), Bill read 2a: Committee negatived: Bill read 3a, and passed.","1a, 2a, 3a: first, second and third reading"
+hc_assent,英国,1931,,1931,,,hansard1931assent,c1412,"Mr. SPEAKER reported the Royal Assent to the § Gold Standard (Amendment) Act, 1931",
+hc_china,英国,1931,,,,,hansard1931china,c1280,to what extent it would be possible to restore trade with China and other Eastern countries by establishing a silver basis for currency,a question by Mr. Mills to the Prime Minister
+hc_impracticable,英国,1931,,,,,hansard1931china,c1280,§ The PRIME MINISTER The suggestion seems to me impracticable.,Ramsay MacDonald's answer
+gsa_long,英国,1931,,2;1925,,,gsa1931,long title,"An Act to suspend the operation of subsection (2) of section one of the Gold Standard Act, 1925, and for purposes connected therewith.",
+gsa_date,英国,1931,,21;1931,,,gsa1931,date of Royal Assent,[21st Septeml)er 1931.],OCR misprint 'Septeml)er' (September)
+gsa_proclamation,英国,1931,,,,,gsa1931,s. 1(1),Unless and until His Majesty by Proclama,the line continues 'tion otherwise directs'
+gsa_indemnity,英国,1931,,18;1931,,,gsa1931,s. 1(2),"the eighteenth day of September, nineteen hundred and thirty-one",the indemnity runs from 18 September 1931
+gsa_six,英国,1931,,6,,,gsa1931,s. 1(3),for a period of six months from the passing of this Act,the Treasury's power over the exchanges
+k_title,英国,1931,,27;1931,,,keynes1931,p. 288,"The End of the Gold Standard (Sept. 27, 1931)",
+k_footnote,英国,1931,,21;1931,,,keynes1931,p. 288,"[On Sept. 21, 1931, the Gold Standard in Great Britain was suspended.]",the editor's footnote
+k_fetters,英国,1931,,,,,keynes1931,p. 288,There are few Englishmen who do not rejoice at the breaking of our gold fetters.,
+k_200m,英国,1931,,200000000;0.5,,,keynes1931,p. 289,"the Bank of England paid out ,^200,000,000 in gold or its equivalent, which was about half the total claims of foreigners on London","OCR misprint ',^' for the pound sign (£200,000,000)"
+k_tariff,英国,1931,,25,,,keynes1931,p. 289,"if the sterling exchange is depreciated by, say, 2 5 per cent, this does as much to restrict our imports as a tariff of that amount",OCR misprint '2 5' (25)
+k_quarter,英国,1931,,0.25;25;10,,,keynes1931,p. 290,For less than a quarter of our total consumption is represented by imports; so that sterling would have to depreciate by much more than 25 per cent before I should expect the cost of living to rise by as much as 10 per cent.,
+k_followed,英国,1931,,,,,keynes1931,p. 291,"In the last few days Canada, Italy, Scandinavia have moved in our direction. India and the Crown Colonies, including the Straits Settlements, have automatically followed sterling.",
+k_southamerica,英国,1931,,,,,keynes1931,p. 291,Australia and the whole of South Anierica had already abandoned the eflFort to maintain exchange parity.,OCR misprints 'Anierica' (America) and 'eflFort' (effort)
+k_germany1,英国,1931,,,,,keynes1931,p. 291,I shall be astonished if Germany,the sentence ends on p. 292 (row k_germany2)
+k_germany2,英国,1931,,,,,keynes1931,p. 292,delays long before following our example.,after the running head of p. 292
+k_midas,英国,1931,,,,,keynes1931,p. 292,On these will fall the curse of Midas.,'these': the few countries which remain on the gold standard
+k_franceus,英国,1931,,,,,keynes1931,p. 292,This means in the main France and the United States.,
+k_same,英国,1931,,,,,keynes1931,p. 293,which means that the prices of international commodities must be much the same everywhere,'So long as the gold standard is preserved - which means ...'
+k_campaign,英国,1931,,,,,keynes1931,p. 293,"a competitive campaign of deflation, each of us trying to get our prices down faster than the others",
+k_chapter,英国,1931,,,,,keynes1931,p. 294,I believe that the great events of the last week may open a new chapter in the world's monetary history.,
+hv_date,美国,1931,,20;1931;21,,,app1931moratorium,note,"The White House issued the President's statement following the news conference on June 20, 1931, and embargoed its release until June 21.",issued on 20 June and released on 21 June (the note of the American Presidency Project)
+hv_postpone,美国,1931,,1,,,app1931moratorium,document,"The American Government proposes the postponement during 1 year of all payments on intergovernmental debts, reparations, and relief debts, both principal and interest",
+hv_gold,美国,1931,,,,,app1931moratorium,document,there is an abnormal movement of gold into the United States which is lowering the credit stability of many foreign countries,
+frb_reichsbank,德国,1931,,31;23;230000000,,,frb1931jul,"July 1931, PDF p. 5","31 to June 23 the Reichsbank lost $230,000,000","the sentence reads 'During the period from May 31 to June 23 the Reichsbank lost $230,000,000 in gold and $20,000,000 in foreign exchange, with the consequence that its reserves were reduced close to the minimum required by law'; the OCR interleaves two columns, so the parts are quoted where they are contiguous"
+frb_reichsbank2,德国,1931,,20000000,,,frb1931jul,"July 1931, PDF p. 5","in gold and $20,000,000 in foreign exchange",continuation of row frb_reichsbank
+frb_jul16,德国,1931,,16;7;10,,,frb1931aug,"August 1931, PDF p. 8","German Reichsbank-July 16, from 7 to 10 per cent;",the list continues in the next column (row frb_aug1)
+frb_aug1,德国,1931,,1;10;15,,,frb1931aug,"August 1931, PDF p. 8","August 1, from 10 to 15 per cent.",the German Reichsbank (continuation of row frb_jul16)
+frb_aug12,德国,1931,,12;15;10,,,frb1931sep,"September 1931, PDF p. 8","German Reichsbank-August 12, from 15 to 10 per cent.",
+frb_control,德国,1931,,,,,frb1931oct,"October 1931, PDF p. 8","under control in Germany, Hungary, and Chile.","the sentence reads 'During July, 1931, exchange transactions were placed under control in Germany, Hungary, and Chile.' (columns interleaved by the OCR)"
+frb_sunday,英国,1931,,20,,,frb1931oct,"October 1931, PDF p. 25","Government on Sunday, September 20","'Announcement was made by the British Government on Sunday, September 20, that a decision had been reached to suspend the gold standard'"
+frb_billion,英国,1931,,1000000000;160000000,,,frb1931oct,"October 1931, PDF p. 8","$1,000,000,000, of which about $160,000,000","withdrawals from London 'almost continuous from the middle of July to September 19', of which about $160,000,000 a loss of gold"
+frb_125,英国,1931,,125000000;1,,,frb1931oct,"October 1931, PDF p. 8","$125,000,000 extended on August 1 to the Bank",the credit of the Federal reserve banks to the Bank of England
+frb_bankrate,英国,1931,,21;4.5;6,,,frb1931oct,"October 1931, PDF p. 11","Bank of England-September 21, from 4}£ to 6 per cent.",OCR misprint '4}£' (4½)
+frb_nordic,北欧,1931,,,,,frb1931oct,"October 1931, PDF p. 8","Norway, Sweden, and Finland","'Denmark, Norway, Sweden, and Finland took formal action in this direction' (columns interleaved by the OCR)"
+frb_argentina,阿根廷,1929,,16;1929,,,frb1931oct,"October 1931, PDF p. 8","as early as December 16, 1929","'Thus Argentina closed its conversion office as early as December 16, 1929' (columns interleaved by the OCR)"
+frb_oct1934,中国,1934,,1934,,,frb1935dec,"December 1935, PDF p. 7",As early as October 1934,
+frb_duty,中国,1934,,10,,,frb1935dec,"December 1935, PDF p. 7",a duty of 10 percent and a variable equaliza-,'imposed on exports of silver a duty of 10 percent and a variable equalization charge'
+frb_38,中国,1935,,38,,,frb1935dec,"December 1935, PDF p. 7",about 38 percent,'on November 2 of this year the discount against dollar parity amounted to about 38 percent'
+frb_nov4,中国,1935,,4,,,frb1935dec,"December 1935, PDF p. 7",Effective November 4 the Chinese Govern-,
+frb_paper,中国,1935,,,,,frb1935dec,"December 1935, PDF p. 7",ment of the silver standard and its replacement by an inconvertible paper,'definitive abandonment of the silver standard and its replacement by an inconvertible paper currency'
+frb_unlimited,中国,1935,,,,,frb1935dec,"December 1935, PDF p. 7",in unlimited,'through the purchase and sale of foreign currencies in unlimited quantities'
+frb_sep25,法国,1936,,25,,,frb1936oct,"October 1936, PDF p. 3",On September 25 an announcement of,
+frb_advantage,法国,1936,,,,,frb1936oct,"October 1936, PDF p. 4",to obtain an unreasonable competitive exchange advantage and thereby hamper the,'It trusts that no country will attempt to obtain an unreasonable competitive exchange advantage'
+frb_nocountry,法国,1936,,,,,frb1936oct,"October 1936, PDF p. 4",no country will attempt,
+frb_belgium,比利时,1936,,26,,,frb1936oct,"October 1936, PDF p. 3",on September 26 the Belgian Government,'declared its adherence to the broad policies underlying the statement'
+frb_netherlands,荷兰,1936,,27,,,frb1936oct,"October 1936, PDF p. 4",On September 27 the Netherlands imposed,'an embargo on gold exports'
+frb_swiss,瑞士,1936,,,,,frb1936oct,"October 1936, PDF p. 4",Switzerland a decree of the Federal Council,'effective September 28'
+frb_2100,法国,1936,,1935;2100000000,,,frb1936oct,"October 1936, PDF p. 4","March 1935 to more than $2,100,000,000",the Bank of France's loss of gold since March 1935
+spa_fourth,美国,1934,,0.25,,,stat48p1178,"48 Stat. 1178, s. 2(a)","with the ultimate objective of having and maintaining, one fourth of the monetary value of such stocks in silver",
+fr34_date,中国,1934,,24;1934,,,frus1934d336,"FRUS 1934 III, document 336","Washington , September 24, 1934",
+fr34_kung,中国,1934,,,,,frus1934d336,document 336,"Dr. H. H. Kung, Minister of Finance at Nanking",
+fr34_deflation,中国,1934,,1931,,,frus1934d336,document 336,Since 1931 the rising of silver value in terms of foreign currency has involved severe deflation and economic losses to China,
+fr34_three,中国,1934,,3,,,frus1934d336,document 336,Silver exports of this year to date are over three times greater than any previous full year.,
+fr34_panics,中国,1934,,,,,frus1934d336,document 336,"Further material silver price increase would cause very serious injury to China, possibly severe panics.",
+fr34_alone,中国,1934,,,,,frus1934d336,document 336,considers that China should not alone maintain the silver standard,
+fr34_sze,中国,1934,,,,,frus1934d336,document 336,Sao-ke Alfred Sze,the Minister's signature
+fr34_hull,美国,1934,,,,,frus1934d338,document 338,not exactly a normal procedure for governments to take up the question of specific exchanges of given amounts of money,memorandum of the Secretary of State (Cordell Hull)
+fr34_hulldate,美国,1934,,2;1934,,,frus1934d338,document 338,"October 2, 1934",
+fr35_data,美国,1935,,,,,frus1935d503,"FRUS 1935 III, document 503",has not received from the Chinese Government data indicating in any detail and with any particular exactness the character and the extent of the adverse effects,
+fr35_date,美国,1935,,26;1935,,,frus1935d503,document 503,"Washington , January 26, 1935",
+frb_franc1,法国,1936,,65.5,,,frb1936oct,"October 1936, PDF p. 4",65.5 milligrams,the franc of the law of 25 June 1928: 65.5 milligrams of gold .900 fine
+frb_franc2,法国,1936,,43;49,,,frb1936oct,"October 1936, PDF p. 4",43 nor more than 49 milligrams,the law of 1 October 1936: the new gold content 'not less than 43 nor more than 49 milligrams .900 fine'
+spa_june,美国,1934,,19;1934,,,stat48p1178,48 Stat. 1178,"June 19, 1934",the date of approval
+spa_public,美国,1934,,438,,,stat48p1178,48 Stat. 1178,"[Public, No. 438.]",
+bj_volume,世界,1991,,1991,,,nberc11482,p. 32,Publication Date: January 1991,"R. Glenn Hubbard (ed.), Financial Markets and Financial Crises, University of Chicago Press; 'This PDF is a selection from an out-of-print volume'; no copyright line is printed; short phrases only"
+bj_60,世界,1929,,60;1928;29,,,nberc11482,p. 39,"France and the United States, who at the time together held close to 60% of the world's monetary gold-took deflationary paths in 1928-29",'1928-29': 1928 and 1929
+bj_sanction,世界,1931,,,,,nberc11482,p. 37,no sanction prevented surplus countries from sterilizing gold inflows and accumulating reserves indefinitely,
+bj_25,世界,1931,,40;2.5,,,nberc11482,p. 38,"with a 40% reserve requirement, for example, the impact on the money supply of a gold outflow was 2.5 times the external loss",
+bj_optimistic,奥地利,1931,,1931,,,nberc11482,p. 56,"The insolvency of the Creditanstalt, finally revealed when a director refused to sign an ""optimistic"" financial statement in May 1931, sparked the most intense phase of the European crisis.",
+bj_standstill,世界,1931,,,,,nberc11482,p. 55,"required ""standstill agreements,"" under which withdrawals by foreign creditors were blocked pending future negotiation",
+bj_13,世界,1931,,13;1930;1931,,,nberc11482,p. 42,there is a rather uniform experience of about a 13% deflation in both 1930 and 1931,
+bj_seven,世界,1935,,1932;1935;7,,,nberc11482,p. 42,"Between 1932 and 1935, growth of industrial production in countries not on gold averaged about seven percentage points a year better than countries remaining on gold",
+bj_fourteen,世界,1931,,1931;14,,,nberc11482,p. 41,countries abandoning the full gold standard in 1931 (14 countries),
+bj_abandon,世界,1931,,,,,nberc11482,p. 43,"with ""abandonment"" defined to include the imposition of foreign exchange controls or devaluation as well as suspension",the note to Tables 2.2 and 2.4
+bj_source,世界,1931,,,,,nberc11482,"p. 37, Table 2.1","League of Nations, Yearbook, various dates; and miscellaneous supplementary sources",the source line of Table 2.1
+bj_es,世界,1985,,,,,nberc11482,p. 41,"Eichengreen and Sachs argued that depreciation, in this context, should not necessarily be thought of as a ""beggar thy neighbor"" policy",
+bj_panics,世界,1936,,,,,nberc11482,p. 53,there were virtually no serious banking panics in any country after,"the sentence ends 'after abandoning gold' on p. 54, after Table 2.8"
+bj_flawed,世界,1991,,,,,nberc11482,p. 63,Monetary and financial arrangements in the interwar period were badly flawed and were a major source of the fall in real output.,
+bj_t22_gold1933,世界,1933,,-0.07,,,nberc11482img,"p. 43, Table 2.2",,"the grand average of the gold-standard countries for 1933, read on the page image (the text layer prints '.07' without its minus sign)"
+b95_wp,世界,1994,,4814;1994,,,nberw4814,"title page, PDF p. 2",NBER Working Paper #4814 August 1994,
+b95_copyright,世界,1994,,1994;2,,,nberw4814,"title page, PDF p. 1","© 1994 by Ben S. Bernanke. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",
+b95_grail,世界,1994,,,,,nberw4814,PDF p. 3,To understand the Great Depression is the Holy Grail of macroeconomics.,
+b95_political,世界,1994,,,,,nberw4814,PDF p. 18,for most countries the decision to remain on or leave the gold standard was strongly influenced by internal and external political factors and by prevailing economic and philosophical beliefs,the first of Bernanke's two reasons; he cites Eichengreen (1992)
+b95_pride,法国,1994,,,,,nberw4814,PDF p. 19,a strong association of national pride with maintenance of the gold standard,on France
+b95_similar,世界,1994,,1929;1930;1931,,,nberw4814,PDF p. 19,economic conditions in 1929 and 1930 were on average quite similar in those countries that were to leave gold in 1931 and those that would not,Bernanke citing Bernanke and James (1991)
+b95_wrong,世界,1994,,,,,nberw4814,PDF p. 19,any bias created by endogeneity of the decision to leave gold would appear to go the wrong way,
+b95_weaker,世界,1994,,,,,nberw4814,PDF p. 19,"The presumption is that economically weaker countries, or those suffering the deepest depressions, would be the first to devalue or abandon gold.",
+b95_argch,世界,1994,,1929;1936,,,nberw4814,PDF p. 20,"we take Argentina and Switzerland as leaving gold on their official devaluation dates (December 1929 and October 1936, respectively)",
+es_wp,世界,1984,,1498;1984,,,nberw1498,"title page, PDF p. 2",NBER Working Paper #1498 November 1984,"published in the Journal of Economic History 45(4), December 1985, which was not obtained; no copyright line is printed; short phrases only"
+es_terminal,世界,1984,,1935,,,nberw1498,PDF p. 9,We choose 1935 as the terminal date in order to permit exchange-rate changes as much time as possible to work their effects,
+es_59,英国,1984,,100;59;141,,,nberw1498,PDF p. 9,"a value of 100 for France indicates no change in the rate, while a value of 59 for the United Kingdom indicates a 141 percent depreciation",'141 percent' is a misprint: a gold value of 59 per cent of the 1929 parity is a fall of 41 per cent
+es_eq,世界,1984,,153.9;0.69;1935;10.06;3.51,,,nberw1498,"PDF p. 34, note 12",IPl935 = 153.9 - 0.69 ER1935 (10.06) (3.51),OCR misprint 'IPl935' (IP1935); the t-statistics in parentheses
+es_critical,世界,1984,,2.31;3.36;95;99,,,nberw1498,"PDF p. 34, note 12","The critical values are 2.31 and 3.36 at the 95 and 99 percent confidence levels, respectively.",
+es_r2,世界,1984,,0.56,,,nberw1498img,"PDF p. 34, note 12",,"the adjusted R-squared printed under the equation, read on the page image (the text layer prints '-'2 B = .56')"
+es_us,美国,1984,,,,,nberw1498,"PDF p. 34, note 11",We purposely excluded the United States on the grounds that the Depression to a large extent originated there,
+es_outliers,世界,1984,,,,,nberw1498,PDF p. 11,Germany and Belgium are outliers in terms of this relationship,
+es_btn,世界,1984,,,,,nberw1498,"abstract, PDF p. 2",blamed for transmitting harmful beggar-thy-neighbor impulses to the rest of the world,the received view that the paper argues against: depreciation 'is credited with providing little if any stimulus for economic recovery in the depreciating countries and blamed for transmitting ...'
+es_beggar,世界,1984,,,,,nberw1498,PDF p. 6,Although we do find evidence that the foreign repercussions of individual devaluations were negative,
+es_data,世界,1984,,1975;1938;1929;1938,,,nberw1498,"Appendix B, PDF p. 32","Industrial production: National indices of industrial production, from Mitchell (1975) and Methorst (1938). 2. Exchange rate: Gold value of currencies as a percentage of 1929 gold parity, from League of Nations (1938)","Appendix B, items 1 and 2 (the '2.' numbers the item)"
+bs_copyright,中国,1989,,1989,,,bs1989,p. 31,"©1989, Elsevier Science Publishers B.V. (North-Holland)","Journal of Monetary Economics 23 (1989) 31-51, the authors' copy on Loren Brandt's site; short phrases only"
+bs_notchain,中国,1989,,,,,bs1989,"p. 31, abstract",the U.S. silver purchase program did not set off a chain of bad economic events which eventually forced China off silver and onto a fiat standard,
+bs_owngov,中国,1989,,,,,bs1989,"p. 31, abstract","Rather, China was forced off silver by its own government, which wanted to make itself the beneficiary of the capital gain associated with the appreciation of silver",
+bs_boon,中国,1963,,,,,bs1989,p. 32,the U.S. purchase program would have been a largely unalloyed boon,"Friedman and Schwartz (1963, p. 490) as quoted by Brandt and Sargent"
+bs_decree,中国,1935,,3;1935,,,bs1989,p. 32,"The Emergency Decree of November 3, 1935, in which the Chinese government nationalized the monetary silver stock and instituted a fiat currency",
+bs_decreetext,中国,1935,,,,,bs1989,p. 32,"our currency has become seriously affected, resulting in severe internal deflation, with growing unemployment, widespread bankruptcies, flight of capital abroad, fall in government revenues, and an adverse balance of payments","the decree's English text as Brandt and Sargent quote it from the Chinese Yearbook 1936-37, p. 810 (row bs_yearbook); the Chinese text was not obtained"
+bs_yearbook,中国,1936,,1936;1937;810,,,bs1989,p. 32,"[Chinese Yearbook (1936-1937, p. 810)]",
+bs_july1934,中国,1934,,3.5;1934;200,,,bs1989,p. 32,"For the three and a half months commencing July, 1934, exports of silver amounted to more than 200 million dollars",the decree as quoted by Brandt and Sargent; 'dollars' are Chinese silver dollars (yuan)
+bs_third,中国,1935,,1931;1935;0.3333333333;4,,,bs1989,p. 38,Prices began to fall in mid-year 1931 and bottomed out in the fall of 1935 at a level more than a third lower than they had been just four years earlier.,
+bs_7553,中国,1933,,0.8166;0.7553,,,bs1989,"p. 35, note 5",This made one yuan convertible into 0.8166 standard ounces of silver or 0.7553 fine ounces.,"the standard yuan of March 1933 (Tamagna 1942, as cited by Brandt and Sargent)"
+bs_farm,中国,1934,,12;3,,,bs1989,p. 45,"farm output fell by almost 12 percent because of a major crop failure in North China, while output in the rest of the economy fell less than 3 percent",
+bs_15,中国,1936,,1.5,,,bs1989,p. 45,cumulative growth in real G D P averaging 1.5 percent per annum,Yeh's estimates for 1931-1936
+bs_oct1934,中国,1934,,1934,,,bs1989,p. 48,In October 1934 the government of China enlisted the resources of three major banks,
+bs_shanghai,中国,1934,,6;1934;562.6;350.2,,,bs1989,"p. 48, note 23",In the last six months of 1934 silver stocks in Shanghai banks declined from 562.6 million yuan to 350.2 million,
+bs_exports34,中国,1934,,1934;280,,,bs1989,"p. 48, note 23",Estimated total net silver exports in 1934 were 280 million yuan,
+bs_exports35,中国,1935,,1935;292,,,bs1989,"p. 48, note 23",in 1935 estimated total net silver exports were 292 million yuan,
+bs_undoubtedly,中国,1989,,,,,bs1989,p. 49,The U.S. silver purchase program undoubtedly did help cause the fall in the Chinese price level,
+fr92_journal,中国,1992,,100;1;62;83,,,ideas_friedman1992,IDEAS/RePEc,"Journal of Political Economy , University of Chicago Press, vol. 100(1), pages 62-83",
+fr92_bloc,美国,1933,,1933,,,ideas_friedman1992,abstract,initiated by Franklin Roosevelt in late 1933 in response to the economically small but politically potent silver bloc,
+fr92_deflation,中国,1992,,,,,ideas_friedman1992,abstract,"it imposed severe deflation on China, the only major country still on a silver standard, and forced it off the silver standard and on to a fiat standard",
+fr92_modestly,中国,1992,,,,,ideas_friedman1992,abstract,"The silver purchase program thereby contributed, though perhaps only modestly, to the ultimate triumph of the Communists.",
+fr92_copyright,中国,1992,,1992,,,ideas_friedman1992,abstract,Copyright 1992 by University of Chicago Press.,the abstract's own notice; the article was not obtained
+da_volume,拉丁美洲,1983,,1983;5;40,,,nberc11185,p. 4,Publication Date: 1983 Chapter Title: Stories of the 1930s for the 1980s Chapter Author: Carlos F. Díaz Alejandro Chapter URL: http://www.nber.org/chapters/c11185 Chapter pages in book: (p. 5 - 40),"an out-of-print volume (Aspe Armella, Dornbusch and Obstfeld, eds.); no copyright line; short phrases only"
+da_doctors,拉丁美洲,1983,,,,,nberc11185,p. 5,foreign money doctors roamed Latin America prescribing fixed exchange rates,
+da_quarter,拉丁美洲,1983,,1928;1929;1932;1933,,,nberc11185,p. 7,With the dollar price level falling unexpectedly by around one-quarter between 1928-1929 and 1932-1933,'around one-quarter' (not a figure)
+da_default,拉丁美洲,1934,,1934,,,nberc11185,p. 7,"By 1934 all countries except Argentina, Haiti, and the Dominican Republic had suspended normal servicing of the external national debt",
+da_chile,智利,1983,,,,,nberc11185,p. 6,"For Chile both the terms of trade and the export quantum collapsed, leading to the steepest decline in the purchasing power of exports registered in Latin America.",
+da_1932,拉丁美洲,1932,,1930;1932,,,nberc11185,p. 11,"All Latin American countries which experienced vigorous industrial expansion during the 1930s had, by 1932 at the latest, abandoned convertibility and other gold standard rules of the game.",
+da_controls,拉丁美洲,1931,,1931,,,nberc11185,p. 11,Exchange controls were adopted in many countries following the devaluation of the pound sterling in September 1931.,
+da_coffee,巴西,1983,,35;1977;192,,,nberc11185,p. 23,"about 35 percent appear to have been financed essentially by money creation (Silber 1977, p. 192)",Brazil's coffee purchases of the early 1930s; Silber (1977) as cited by Díaz Alejandro
+da_t11,拉丁美洲,1933,,-41.2;-42.3;-36.0;-56.1;-61.9,,,nberc11185img,"p. 7, Table 1.1A",,"purchasing power of exports, percentage change 1928/29-1932/33: Argentina, Brazil, Colombia, Cuba, Mexico; read on the page image"
+da_t12a,拉丁美洲,1933,,-9.7;7.6;9.9;-10.3;-28.9,,,nberc11185img,"p. 8, Table 1.2",,"aggregate real output, percentage change 1929-33: Argentina, Brazil, Colombia, Mexico, United States; read on the page image"
+da_t12b,拉丁美洲,1937,,23.2;31.7;16.4;28.0;47.0,,,nberc11185img,"p. 8, Table 1.2",,"aggregate real output, percentage change 1933-37: Argentina, Brazil, Colombia, Mexico, United States; read on the page image"
+bcra_controls,阿根廷,1935,,,,,bcra_history,History,"As a result of the crisis, the authorities were forced to resort to exchange controls",
+bcra_mixed,阿根廷,1935,,1935,,,bcra_history,History,The BCRA was created as a mixed private-public institution as a consequence of the monetary and banking reform of 1935.,
+bcra_prebisch,阿根廷,1935,,1935;1943,,,bcra_history,History,"During the period 1935-1943, when Raúl Prebisch held office as General Manager",
+bcra_national,阿根廷,1935,,,,,bcra_history,History,national monetary policy,"'(in the words of Prebisch, the ""national monetary policy"")'"
+bcra_copyright,阿根廷,2025,,2006;2025,,,bcra_history,page footer,Copyright © 2006-2025,
+wolf_dp,世界,2007,,834;2007,,,wolf2007,"title page, PDF p. 1",CEP Discussion Paper No 834 November 2007,"published in Explorations in Economic History 45(4), 2008, 383-401 (not obtained)"
+wolf_copyright,世界,2007,,2007,,,wolf2007,"title page, PDF p. 2","© N. Wolf, submitted 2007",all rights reserved; short phrases only
+wolf_factors,世界,2007,,,,,wolf2007,"conclusion, PDF p. 23","economic shocks (price deflation), the changing credibility of currency pegs visible from varying stock of gold and exchange reserves, the recent history of the currency in relation to the degree of central bank independence, the democratic character of the government, and the pattern of trade",
+wolf_fetters,世界,1992,,1992;23,,,wolf2007,PDF p. 3,"""why were some more inclined than others to release their gold fetters?"" (Eichengreen 1992, p. 23)",Eichengreen (1992) as quoted by Wolf; the book was not obtained
+wolf_poland,波兰,1936,,1936,,,wolf2007,"abstract, PDF p. 2",Poland did not leave gold until April 1936 and suffered through one of the worst examples of a depression,
+wolf_regime,波兰,2007,,,,,wolf2007,"abstract, PDF p. 2",the non-democratic character of the regime,
+hh_snowden,英国,,,1864;1937,,,hh_snowden,people page,"Mr Philip Snowden 1864 - May 15, 1937",the same page as Chapter 27's row
+loc_macdonald,英国,,,1866;1937,,,loc_macdonald29,authority record,"MacDonald, James Ramsay, 1866-1937",
+keynes_life,英国,,,1883;1946,,,keyneslife,author header,1883-1946,the same page as Chapter 26's row
+bnf_hoover,美国,,,1874;1964,,,bnf_hoover28,authority record,Herbert Hoover (1874-1964),the same record as Chapter 28's row
+loc_kung,中国,,,1880;1967,,,loc_kung29,authority record,"Kung, H. H. (Hsiang-hsi), 1880-1967","the record's variant 'Kʻung, Hsiang-hsi, 1881-1967' and its source note (Britannica 1977) give 1881 (row loc_kung1881)"
+loc_kung1881,中国,,,1881;1967,,,loc_kung29,authority record,"Kʻung, Hsiang-hsi, 1881-1967",
+loc_sze,中国,,,1877;1958,,,loc_sze29,authority record,"Sze, Sao-Ke Alfred, 1877-1958",
+loc_hull,美国,,,1871;1955,,,loc_hull29,authority record,Cordell Hull; 1871-1955,
+bnf_prebisch,阿根廷,,,1901;1986,,,bnf_prebisch29,authority record,Raúl Prebisch (1901-1986),
+bj_enmasse,世界,1931,,1930,,,nberc11482,p. 39,"Central banks did abandon foreign exchange reserves en masse in the early 1930s, when the threat of devaluation made foreign exchange assets quite risky.",'1930s'
+bj_eich87,世界,1987,,1987,,,nberc11482,p. 39,"According to Eichengreen (1987), however, the statistical evidence is not very clear on whether central banks after selling their foreign exchange simply lowered their cover ratios",Eichengreen (1987) as cited by Bernanke and James
+b95_identity,世界,1994,,1.1,,,nberw4814,PDF p. 9,(1.1) Ml = (Ml/BASE) x (BASE/RES) x (RES/GOLD) x PGOLD x QGOLD,equation (1.1); OCR misprint 'Ml' (M1)
+b95_nominimum,世界,1994,,,,,nberw4814,PDF p. 10,"there was typically no statutory minimum for BASE/RES, an important asymmetry",
+b95_sterilize,世界,1994,,,,,nberw4814,PDF p. 10,sterilization of gold inflows by surplus countries reduced average values of BASE/RES,
+b95_flight,世界,1994,,,,,nberw4814,PDF p. 12,"exchange-rate crises and the associated fears of devaluation led central banks to substitute gold for foreign exchange reserves; this flight from foreign exchange reserves reduced the ratio of total reserves to gold, RES/GOLD",
+b95_scramble,世界,1994,,,,,nberw4814,PDF p. 12,"central banks attempted to increase gold reserves and coverage ratios as security against future attacks on their currencies; in many countries, the resulting ""scramble for gold"" induced continuing declines in the ratio BASE/RES",
+b95_france1928,法国,1928,,1928,,,nberw4814,PDF p. 12,The gold flow into France was exacerbated by a 1928 law that induced a systematic conversion of foreign exchange reserves into gold by the Bank of France,"Bernanke's footnote 5, citing Nurkse (1944)"
+b95_poland,波兰,1936,,1932;1936,,,nberw4814,PDF p. 15,"a minor exception is Poland, which managed a small growth in nominal Ml between 1932 and 1936",on his Table 1; OCR misprint 'Ml' (M1)
+b95_belgium,比利时,1994,,1,,,nberw4814,PDF p. 15,A striking case shown in Table 1 is that of Belgium: Although that country was the beneficiary of large gold inflows early in the Depression,
+es_units,世界,1984,,,,,nberw1498,"PDF p. 10, Figure 1",Note: The exchange rate is in units of gold per unit of domestic currency.,the note under Figure 1
+es_positive,世界,1984,,1929;1935,,,nberw1498,PDF p. 11,there appears to be a positive relationship between the magnitude of depreciation and the rate of growth between 1929 and 1935,
+es_belgiumlate,比利时,1984,,,,,nberw1498,PDF p. 11,Belgium presumably because she devalued only at the end of the period,
+es_germany,德国,1984,,,,,nberw1498,PDF p. 11,Germany presumably because of the influence of capital controls whose effects were analogous to an explicit depreciation,
+es_endog,世界,1984,,,,,nberw1498,PDF p. 11,It can be objected that both the exchange rate and industrial production are endogenous variables,
+es_timing,世界,1984,,,,,nberw1498,PDF p. 11,"In all cases, devaluation preceeded the beginning of recovery, judged on the basis of annual data.",misprint 'preceeded' (preceded) in the paper
+es_absorbing,世界,1984,,,,,nberw1498,PDF p. 11,"the faster growing countries were absorbing, not losing, gold",
+es_predetermined,世界,1984,,1930;1930,,,nberw1498,PDF p. 11,"exchange rates in the 1930s depended not just on economic pressures but on national attitudes toward the monetary standard, where the latter are predetermined relative to the events of the early 1930s",'1930s' twice
+es_ironically,世界,1984,,,,,nberw1498,PDF p. 12,those nations which made the most concerted efforts to restore prewar gold standard parities in the early 'twenties showed the least hesitation to devalue in the early 'thirties,
+es_contrast,世界,1984,,,,,nberw1498,PDF p. 12,The obvious contrast is between Britain and France,
+es_coordinated,世界,1984,,,,,nberw1498,PDF p. 6,"had they been adopted even more widely and coordinated internationally, would have hastened economic recovery from the Great Depression","'similar policies, had they been adopted ...'"
+wolf_predict,世界,2007,,1930,,,wolf2007,"abstract, PDF p. 2",makes it possible to predict with reasonable accuracy the very month when a country will exit gold in the 1930s,'1930s'
+wolf_later,波兰,2007,,1936,,,wolf2007,"abstract, PDF p. 2",predicts an exit even later than April 1936,the abstract; the conclusion says 'mid-1935' (row wolf_mid1935)
+wolf_mid1935,波兰,2007,,1935,,,wolf2007,"conclusion, PDF p. 23",but predicted an exit in mid-1935,the conclusion: 'the model fared worse to predict Poland's late exit in April 1936 but predicted an exit in mid-1935'
+wolf_trade,波兰,2007,,,,,wolf2007,"abstract, PDF p. 2",a surprisingly high degree of trade integration with France,
+wolf_defend,波兰,2007,,,,,wolf2007,"abstract, PDF p. 2",Poland's monetary policy was determined by attempts of the Piłsudski regime to defend Poland against foreign (esp. German) aggression,
+wolf_july1933,波兰,1933,,1933,,,wolf2007,PDF p. 4,"Poland joining the ""gold bloc"" in July 1933",
+bs_ppp,中国,1989,,1934;1935,,,bs1989,p. 45,"until the government interventions in monetary affairs in 1934 and 1935, general price changes in China were the product of changes in the world price level and changes in the world price of silver",
+bs_fit,中国,1989,,3;4,,,bs1989,p. 45,The fit between columns 3 and 4 is not too bad.,columns 3 (the PPP prediction) and 4 (the actual change) of Table 4
+bs_yeh,中国,1989,,1931;1936,,,bs1989,p. 45,Recent estimates of gross domestic product by K.C. Yeh for the period between 1931 and 1936,
+bs_notdepressed,中国,1989,,,,,bs1989,p. 45,these years were not especially depressed,
+frb_declaration,世界,1936,,,,,frb1936oct,"October 1936, PDF p. 2",International declaration on currency,the heading in the table of contents of the Review of the Month
+frb_goldbloc,世界,1936,,,,,frb1936oct,"October 1936, PDF p. 2",Readjustment of gold-bloc currencies,the heading in the table of contents of the Review of the Month
+frb_franc3,法国,1936,,65.6;74.8,,,frb1936oct,"October 1936, PDF p. 4",between approximately 65.6 and 74.8,'i.e. between approximately 65.6 and 74.8 percent of the previous parity' (columns interleaved by the OCR)
+frb_swiss28,瑞士,1936,,28,,,frb1936oct,"October 1936, PDF p. 4",effective September 28 made notes of the,the decree of the Swiss Federal Council made the notes of the Swiss National Bank legal tender and relieved the bank of redemption in gold
+frb_legaltender,中国,1935,,,,,frb1935dec,"December 1935, PDF p. 7","of Communications, will be full legal tender","'notes issued by the Central Bank of China, and by the Government-owned Bank of China and Bank of Communications, will be full legal tender' (columns interleaved by the OCR)"
+frb_existing,中国,1935,,,,,frb1935dec,"December 1935, PDF p. 7",currencies at about the then existing levels,'an inconvertible paper currency to be managed with the object of maintaining a stable value in terms of foreign currencies at about the then existing levels'
+bj_24,世界,1991,,24;4,,,nberc11482,p. 41,we divided our sample of twenty-four countries into four categories,
+bj_groups,世界,1991,,1;1931;2;1931;14;3;1932;1935;1932;1933;1934;1935;4;1936,,,nberc11482,p. 41,"1) countries not on the gold standard at all (Spain) or leaving prior to 1931 (Australia and New Zealand); 2) countries abandoning the full gold standard in 1931 (14 countries); 3) countries abandoning the gold standard between 1932 and 1935 (Rumania in 1932, the United States in 1933, Italy in 1934, and Belgium in 1935); and 4) countries still on the full gold standard as of 1936 (France, Netherlands, Poland)",
+bj_spirit,世界,1991,,,,,nberc11482,p. 41,much in the spirit of Eichengreen and Sachs but using data from a larger set of countries,
+bj_coordinated,世界,1991,,,,,nberc11482,p. 41,a coordinated depreciation presumably would have been better than the uncoordinated sequence of depreciations that in fact took place,
+bj_spain,西班牙,1991,,1980,,,nberc11482,p. 42,"As noted by Choudhri and Kochin (1980), Spain's abstention from the gold standard insulated that country from the general deflation",Choudhri and Kochin (1980) as cited by Bernanke and James
+bj_sterlinglinks,澳大利亚,1991,,,,,nberc11482,p. 42,"New Zealand and Australia, presumably because they retained links to sterling despite early abandonment of the strict gold standard, did however experience some deflation",
+bj_stabilized,世界,1933,,1933,,,nberc11482,p. 42,Price levels in countries off the gold standard have stabilized by 1933,
+bj_central,世界,1931,,,,,nberc11482,p. 55,The resolution of a number of the central European banking crises required,the sentence continues in row bj_standstill
+b95_eich92,世界,1992,,1919;1939;1992,,,nberw4814,PDF p. 42,"Golden Fetters: The Gold Standard and the Great Depression, 1919-1939. New York: Oxford University Press, 1992.",the entry for Eichengreen (1992) in Bernanke's references; the book itself was not obtained
+gsa_treasury,英国,1931,,,,,gsa1931,s. 1(3),"It shall be lawful for the Treasury to make, and from time to time vary, orders authorising the taking of such measures in relation to the exchanges",
+gsa_short,英国,1931,,2;1931,,,gsa1931,s. 2,"2. This Act may be cited as the Gold Standard (Amendment) Act, 1931.",the Act's second and last section
+wolf_worst,波兰,2007,,,,,wolf2007,"abstract, PDF p. 2",The estimated model fares worst for Poland,
+fr34_goldbasis,中国,1934,,,,,frus1934d336,document 336,is considering the gradual introduction of a gold basis currency which will necessitate the acquiring of gold,
+fr34_exchange,中国,1934,,,,,frus1934d336,document 336,whether the American Government is willing to exchange with the Chinese Government gold for silver,
+fr34_called,美国,1934,,,,,frus1934d338,document 338,The Chinese Minister called at my request,
+fr35_dept,美国,1935,,,,,frus1935d503,document 503,The Department of State to the Chinese Legation,
+bs_hsiao,中国,1974,,1864;1949;1974;190;192,,,bs1989,"p. 44, Table 4","exchange rate data are from Liang-lin Hsiao, China's Foreign Trade Statistics, 1864-1949 (Cambridge, 1974, pp. 190-192)",the source note of Table 4
+bs_commodity,中国,1963,,,,,bs1989,p. 32,"Had silver been simply a commodity, the U.S. purchase program would have been a largely unalloyed boon","Friedman and Schwartz (1963, p. 490) as quoted by Brandt and Sargent"
+bs_fsoffset,中国,1963,,,,,bs1989,p. 32,the boon was more than offset by the economic effects of the drastic deflationary pressure imposed on China,"Friedman and Schwartz (1963, p. 490) as quoted by Brandt and Sargent"
+bs_fs490,中国,1963,,1963;490,,,bs1989,p. 32,"[Friedman and Schwartz (1963, p. 490)]",
+bs_peg,中国,1934,,,,,bs1989,p. 48,in an attempt to arrest the appreciation of the yuan by pegging the value of the Chinese yuan in terms of foreign paper currencies,October 1934; 'enlisted the resources of three major banks' (row bs_oct1934)
+bs_convertible,中国,1934,,,,,bs1989,p. 48,Simultaneously banks were permitted to keep the yuan convertible into silver.,
+bs_lawofone,中国,1934,,,,,bs1989,p. 48,seemed to violate the 'law of one price',
+bs_weathered,中国,1989,,1930,,,bs1989,p. 47,the Chinese economy weathered the external shocks of the 1930's remarkably well,'1930's'

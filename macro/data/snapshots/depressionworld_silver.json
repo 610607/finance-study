@@ -1,0 +1,14 @@
+{
+  "title": "The New York price of silver, 1926-1937, and the yuan's annual average, 1929-1936",
+  "source": "U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970 (1975), series M 270, 'Silver, New York average price', cents per fine ounce (p. 606; chapter M, https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p1-chM.pdf, SHA-256 2065693c506753db5bde7d71d8ebf414675374b6c73ccf56c0cf1fedf06c7a19, PDF page 43); its source for 1884-1956 is the American Bureau of Metal Statistics' Yearbook; and Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 173, 'Foreign exchange rates, by countries, monthly', China (p. 667): averages of daily rates, cents per unit of Chinese currency; FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF page 665 (the 'Year' rows)",
+  "url": "https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p1-chM.pdf",
+  "series": "year; ny_silver_cents_per_oz: cents per fine ounce (M 270); yuan_cents_year: the yuan's annual average in US cents (Table 173; empty before 1929 and after 1936)",
+  "retrieved": "2026-10-22",
+  "license": "Public domain (US government publications). Historical Statistics notes that its source for M 270 in 1884-1956, the American Bureau of Metal Statistics' Yearbook, is copyright; the annual averages are reproduced here as facts with both sources named.",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/depressionworld29.py",
+  "notes": "M 270 was read on an image of the page rendered with pdftoppm (the text layer of the scan is unreliable); the row of 1936 is printed with the year misread as '1986' in the OCR. In 1934 the official value of gold was changed from $20.67 to $35 an ounce (the note to M 268), so the cents of 1934-1937 are cents of the devalued dollar.",
+  "citation": "U.S. Bureau of the Census (1975), series M 270; Board of Governors (1943), Table 173"
+}

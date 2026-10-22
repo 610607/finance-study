@@ -1,0 +1,14 @@
+{
+  "title": "Britain, January 1929 - December 1936: the dollar-sterling rate, the Sauerbeck-Statist index and the cost of living, monthly",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'M15. Mthly $-£ 1791-2015' and 'M6. Mthly prices and wages'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year, month; usd_per_gbp: dollars per pound (Craighead 2010, Federal Reserve Board and ONS); sauerbeck_1867_77_100: Sauerbeck-Statist index of all commodities, 1867-77 = 100, not seasonally adjusted; cost_of_living_jul1914_100: the ONS monthly cost of living index, July 1914 = 100",
+  "retrieved": "2026-10-22",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England.",
+  "used_in": [
+    29
+  ],
+  "fetch": "data/fetch/boe_millennium_gb29.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb. The same columns as Chapter 27's boe_millennium_interwar_monthly, which ends in December 1931. From April 1933 the dollar itself was off gold, so the rate after that month is no longer sterling's gold value.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets M15 and M6"
+}
