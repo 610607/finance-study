@@ -866,8 +866,9 @@ def ex_keynes(F, Y, Q):
     said("（3）英镑从 4.858 美元跌到 3.374 美元，价值跌了约 30.5\\%；一美元的英镑价格从$1/4.858$升到$1/3.374$英镑，涨了约 44\\%",
          3, a, d, drop, 1, a, 1, d, up)
     assert "a tariff of that amount" in Q["k_tariff"]           # Keynes's 25 per cent acts on the sterling price of imports
-    said("进口品的美元价格不变时，它们的英镑价格涨的是 44\\%；凯恩斯把贬值 25\\% 比作 25\\% 的关税", up, F["k_tariff"][0],
+    said("进口品的美元价格不变时，它们的英镑价格涨的是 44\\%；25\\% 的关税让进口品的价格涨 25\\%", up, F["k_tariff"][0],
          F["k_tariff"][0])
+    say("要与它相当，贬值也得按这种算法量")
     said("按（1）的算法，生活费用最多涨约$0.25\\times44\\%\\approx11\\%$，实际只涨了$148/145-1\\approx2.1\\%$", 1, q, up,
          q * up, L[(1931, 12)], L[(1931, 8)], 1, rise(L[(1931, 8)], L[(1931, 12)]))
     assert rise(L[(1931, 8)], L[(1931, 12)]) < q * up and q * up > col             # Keynes's bound held, by a wide margin

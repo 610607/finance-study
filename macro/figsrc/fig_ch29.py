@@ -156,7 +156,7 @@ def depressionworld_exits():
     ax.axhline(100, color=MUTED, lw=0.6, ls=(0, (1, 2)), zorder=2)
     ax.axvline(1932, color=MUTED, lw=0.6, ls=(0, (1, 2)), zorder=2)
     me, ml = R[early].mean(), R[late].mean()
-    lab = ax.text(1932.08, 117.5, T(f"1932 年以后离开的 {len(late)} 个：平均 {ml:.1f}",
+    lab = ax.text(1932.08, 117.5, T(f"1932 年或更晚离开的 {len(late)} 个：平均 {ml:.1f}",
                                     f"{len(late)} leaving after 1931: mean {ml:.1f}"), color=INSTIT, fontsize=7.8,
                   ha="left", va="center")
     halo(lab, 2.0)
