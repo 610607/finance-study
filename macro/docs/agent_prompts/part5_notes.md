@@ -444,6 +444,21 @@ back to the old parity without striking off any zeros.
 - Labels: sections `sec:depressionus-…` (report them); `eq:depressionus-…`, `fig:depressionus_…`,
   `tab:depressionus-…`, `ex:depressionus-…`. Ch 29, 30 and 32 cite `\nameref{ch:depressionus}` only.
 
+### Carried over from the editor's round on Chapter 28
+
+- When an institution's own history and a later essay disagree on a date or a limit (Chapter 28:
+  Federal Reserve History's "became permanent in July 1934" against the FDIC's own history of 1998),
+  follow the institution's document, say so in the 史料说明, and check every statutory date against the
+  statute or the agency's own account.
+- An interpretation belongs to its author: write "另一种解释从支出入手\cite{…}" or name the author once
+  in a clause, never state a contested reading as the chapter's own; concessions and caveats in the
+  source's own terms, not stronger or weaker.
+- No pointer phrases ("见 X（年份）", "详见"): say what the source shows, then cite it.
+- Name the actors in the main text (Chapter 28 left Hoover to the 史料说明); explain old units (格令)
+  where they first appear.
+- Quotations below 8% are acceptable only when most sources are in copyright; public-domain texts
+  (Hansard, statutes, government decrees, Keynes in the UK) can carry a few more exact sentences.
+
 ## 第 29 章 `ch:depressionworld` 大萧条：世界与“金色枷锁” (`zh/ch29_depressionworld.tex`)
 
 - Neighbours:
