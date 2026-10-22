@@ -296,6 +296,7 @@ READINGS = {
     "k25_rentiers": [("10", NUM), (",^1,000,000,000", "ocr"), (",^750,000,000", "ocr")],
     "k25_billrate": [("i", "ocr")],
     "mc_kinderdate": [("6", NUM), ("1930", NUM)],
+    "rap_mid": [("pay |20", NUM), ("to |25", NUM)],
     "fbi_coal": [("1925", NUM), ("11.7", NUM), ("1924", NUM)],
     "fbi_subsidy": [("nine", EN)],
     "fbi_wpi": [("165.0", NUM), ("third", "nth"), ("1924", NUM), ("first", "nth"), ("1925", NUM), ("13", NUM),
@@ -371,7 +372,7 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 142)
+    quoted("rows with values, each read from its quotation", n, 149)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
         assert word in N[rid], (rid, word)                  # every misprint is named in the note
@@ -1022,6 +1023,13 @@ def cost(F, Y, Q):
          F["hl_475"][1])
     said("\\cmprow{后来的证据}{失业率五年里没有低于 8\\%；批发物价降了 13\\%，生活费用只降两点}{诺曼说，1926 年的煤矿停工另有原因",
          math.floor(five.min()), w[5], F["br_norman_ruhr"][0])
+    # Keynes's concession (Tract, p. 155): stable exchanges are a convenience for foreign trade, and the right choice
+    # depends on the weight of foreign trade in the country's economy
+    say("\\cmprow{各自让了什么}{承认汇率稳定对做外贸的人是一种便利，怎样选也要看外贸在一国经济里有多重要}")
+    Qk = quotes()
+    assert "a convenience" in Qk["k23_convenience"] and "engaged in foreign trade" in Qk["k23_convenience"]
+    assert "relative importance of foreign trade" in Qk["k23_rightchoice"]
+    assert page("k23_convenience") == page("k23_rightchoice") == page("k23_plumped")
 
 
 def exchange(F, Y, Q):
@@ -1076,8 +1084,12 @@ def exchange(F, Y, Q):
     # the rules of the game
     said("1925 年，凯恩斯写道，按照“金本位游戏的全部规则”", Y["k25_game"])
     d, y = F["mc_kinderdate"]
-    said("1930 年 2 月 6 日，英格兰银行的董事金德斯利", y, 2, d)
+    said("1930 年 2 月 6 日，金德斯利（Robert Kindersley，1871—1954）在金融与工业委员会作证", y, 2, d, *F["bnf_kindersley"])
     assert "6 February, 1930" in Q["mc_kinderdate"]
+    # his two firms: the Macmillan Committee's chairman on the first day of his evidence; Moggridge (Chapter 23)
+    say("他是伦敦拉扎德兄弟公司的董事，也是英格兰银行的董事")
+    assert "Director of Lazard Brothers" in Q["mc_lazard"] and page("mc_lazard") < page("mc_kinderdate")
+    assert "a director of the Bank of England" in Q["dt_kindersley"] and F["dt_kindersley"] == [y]
     n, y0, y1 = F["nu_26"]
     said("按年度数据，1922—1938 年 26 个国家共有 382 个观察值", y0, y1, n, F["nu_382"][0])
     obs, plus, pp, minus, pm = F["nu_382"]
@@ -1085,6 +1097,12 @@ def exchange(F, Y, Q):
     pct("    121 / 382 (per cent)", 100 * plus / obs, pp, 0)
     said("反向变动的有 232 个，占 60\\%", minus, pm)
     assert 60 < 100 * minus / obs < 61                                                    # Nurkse prints 60%
+    # Nurkse's own caution: yearly data may hide a lagged adjustment; an expansion of credit shows as offsetting
+    say("这是年度数据。国内资产也许要过一年多才跟着储备调整，逐年的数字可能掩盖了按老办法进行的调整",
+        "国内信用先扩张、储备随后流失，看上去也是反向变动")
+    assert "yearly intervals" in Q["nu_yearly"] and "a lag of more than a year" in Q["nu_lag"]
+    assert "on the traditional lines" in Q["nu_lag"] and "international reserve is likely to fall" in Q["nu_expansion"]
+    assert {page(r) for r in ("nu_yearly", "nu_lag", "nu_expansion")} == {page("nu_382")}
     said("按 Bloomfield 对 1880—1914 年的统计，遵守的比例是 34\\%，违反的是 60\\%", 1880, 1914, 34, 60)  # Chapter 23
 
 
@@ -1102,7 +1120,7 @@ def gold(F, Y, Q):
     said("到了 1920 年代，三条都打了折扣", DECADE)
     pct("    the European reserves, four-tenths foreign exchange in 1928 (四成)", F["nu_12_42"][7] / 100,
         told("欧洲各国的储备四成是外汇", "储备", "是外汇"), 1)
-    said("英国只卖 400 盎司的金块，欧洲各国的储备四成是外汇", F["act_bars"][0])
+    say("欧洲各国的储备四成是外汇，收支出了缺口，可以先动用外汇，不必运出黄金")
     # the case box
     fr, cents, d = F["br_243"]
     said("1926 年 7 月，法郎还在往下掉。7 月 21 日，一英镑要 243 法郎，一法郎只值 2.05 美分", Y["br_243"], 7, 7, d, fr, cents)
@@ -1126,7 +1144,7 @@ def gold(F, Y, Q):
     said("每法郎不超过 4 美分；买进英镑，每英镑不少于 122 法郎", c4, p122)
     said("事实上的汇率是一英镑合 125 法郎", F["br_125"][0])
     # Brown dates the elections 1 May 1928 (they were held in April); the text says only 春天
-    said("1928 年春天的议会选举以后", int(re.search(r"elections of 1 May (\d{4})", column("note")["br_honor"]).group(1)))
+    said("1928 年春天的议会选举以后", int(re.search(r"the elections 'May 1, (\d{4})'", column("note")["br_honor"]).group(1)))
     said("法兰西银行有两位董事反对按 125 法郎立法稳定", F["br_125"][0])
     assert "The latter two were opposed" in Q["br_125"]
     d, y, mg, fine, _ = F["br_655"]
@@ -1180,8 +1198,23 @@ def boom(F, Y, Q):
     d, r = F["br_may18"]
     said("5 月 18 日纽约提到 4.5\\%，7 月再提到 5\\%", 5, d, r, 7, F["br_july5"][0])
     d, bn = F["br_brokers"]
-    said("到 1928 年 6 月 8 日，经纪人贷款的总额比一年前多了 10 亿美元", Y["br_brokers"], 6, d, bn * B9)
+    say("股票经纪人借的钱也多了，他们再把钱转借给客户买股票。这种经纪人贷款")
+    said("到 1928 年 6 月 8 日比一年前多了 10 亿美元", Y["br_brokers"], 6, d, bn * B9)
     said("“付价款的一部分，通常是 10\\%，其余借来”", F["frh_margin"][0])
+    # margins: set by each brokerage; about 20-25% in the mid-1920s, raised to 40 or 50% in the boom (the 史料说明
+    # sets the two accounts side by side)
+    say("自己先付的这一部分叫保证金，比例由各家经纪行看客户与抵押品自己定")
+    assert "set by the individual brokerages" in Q["rap_brokerages"] and "depending on the customer and the collateral" in Q["rap_brokerages"]
+    lo, hi = F["rap_mid"]
+    said("1920 年代中期，大约要先付 20\\%—25\\%", DECADE, lo, hi)
+    assert Q["rap_mid"].startswith("In the mid-1920s")
+    start, r1, r2 = F["rap_rose"]
+    said("繁荣期间，这个比例提高到 40\\% 或 50\\%", r1, r2)
+    assert start == hi and "during the period of the boom" in Q["rap_rose"]
+    said("保证金的比例，联邦储备历史网站的文章说通常是 10\\%，Rappoport 与 White 据 Smiley 与 Keehn 的研究说起初约 25\\%，"
+         "繁荣期间升到 40\\%—50\\%，正文两说并列，例题的 10\\% 只是教学设想", F["frh_margin"][0], start, r1, r2,
+         F["frh_margin"][0])
+    assert "Smiley and Keehn" in column("note")["rap_rose"]
     six, lo, y0, hi, y1 = F["frh_dow"]
     said("道琼斯工业平均指数从 1921 年 8 月的 63 点涨到 1929 年 9 月的 381 点，涨到原来的六倍", y0, 8, lo, y1, 9, hi)
     assert "in August 1921 to 381 in September 1929" in Q["frh_dow"]
@@ -1463,7 +1496,7 @@ def ending(F, Y, Q):
 
 # the life dates the chapter gives without a row of its own: the same words in an earlier chapter
 LIVES = {"John Maynard Keynes，1883—1946": "ch20_say", "Hjalmar Schacht，1877—1970": "ch26_weimar",
-         "Irving Fisher，1867—1947": "ch25_wicksell", "Robert Kindersley，生卒年未详": "ch23_goldstandard"}
+         "Irving Fisher，1867—1947": "ch25_wicksell"}
 # the life dates from rows of the snapshot: words -> (row, index of the birth year, index of the death year)
 ROW_LIVES = {"Frederick Pethick-Lawrence，1871—1961": ("hh_pethick", 0, 1),
              "Winston Churchill，1874—1965": ("hh_churchill", 0, 1),
@@ -1473,9 +1506,13 @@ ROW_LIVES = {"Frederick Pethick-Lawrence，1871—1961": ("hh_pethick", 0, 1),
              "John Bradbury，1872—1950": ("hh_bradbury", 0, 1),
              "Herbert Gibbs，1854—1935": ("hh_hunsdon", 0, 1),
              "Montagu Norman，1871—1950": ("hh_norman", 0, 1),
-             "Raymond Poincaré，1860—1934": ("ws_poincare", 0, 1)}
+             "Raymond Poincaré，1860—1934": ("ws_poincare", 0, 1),
+             "Émile Moreau，1868—1950": ("bnf_moreau", 0, 1),
+             "Charles Rist，1874—1955": ("bnf_rist", 0, 1),
+             "Benjamin Strong，1872—1928": ("bnf_strong", 0, 1),
+             "Robert Kindersley，1871—1954": ("bnf_kindersley", 0, 1)}
 # people whose dates were not found (the 史料说明 says so)
-UNKNOWN = ["Émile Moreau，生卒年未详", "Charles Rist，生卒年未详", "Benjamin Strong，生卒年未详", "George Harrison，生卒年未详"]
+UNKNOWN = ["George Harrison，生卒年未详"]
 # what other chapters tell: (words of this chapter, chapter where it is told, words there)
 EVENTS = [("购买力平价是让两国物价折成同一种货币以后相等的汇率（\\chref{ch:external}）", "ch05_external",
            "\\subsubsection{购买力平价}"),

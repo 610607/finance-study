@@ -1,10 +1,10 @@
 {
   "title": "Evidence for Chapter 27: the gold standard between the wars, 1919-1929",
-  "source": "Hansard (Commons, 28 April 1925; Lords, 11 May 1925); the Gold Standard Act 1925; Keynes (1923, 1925); the Macmillan Committee's Minutes of Evidence (1930); Brown (1940); Nurkse (1944); Dulles (1929); De Long and Shleifer (1990); McGrattan and Prescott (2003); Federal Reserve History (2013); Sveriges Riksbank; Wikisource",
+  "source": "Hansard (Commons, 28 April 1925; Lords, 11 May 1925); the Gold Standard Act 1925; Keynes (1923, 1925); the Macmillan Committee's Minutes of Evidence (1930); Brown (1940); Nurkse (1944); Dulles (1929); De Long and Shleifer (1990); McGrattan and Prescott (2003); Federal Reserve History (2013); Rappoport and White (1991); Dutton (1984, with the comment by Moggridge); Sveriges Riksbank; Wikisource; the authority records of the Bibliothèque nationale de France",
   "url": "https://api.parliament.uk/historic-hansard/commons/1925/apr/28/return-to-gold-standard",
   "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or column, the source text verbatim, note",
   "retrieved": "2026-10-22",
-  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Hansard (the Commons debates of 28 April 1925, the Lords debate of 11 May 1925 and the people pages): 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.' The Gold Standard Act 1925 (legislation.gov.uk): 'Contains public sector information licensed under the Open Government Licence v3.0.' The Macmillan Committee's Minutes of Evidence (HMSO, 1931) and Nurkse's International Currency Experience (League of Nations, 1944) are official publications; the Crown publication is older than fifty years and out of Crown copyright, and the League of Nations volume is quoted briefly with its source. Keynes (1883-1946): A Tract on Monetary Reform (1923) and The Economic Consequences of Mr. Churchill (1925) are in the public domain in the United Kingdom. Brown (1940), NBER: 'Copyright, 1940, by National Bureau of Economic Research, Inc. ... All Rights Reserved' (row br_copyright); short quotations only, with full credit. De Long and Shleifer (1990), NBER Working Paper 3523 (no copyright line is printed on the PDF), and McGrattan and Prescott (2003), Federal Reserve Bank of Minneapolis Staff Report 294: in copyright; short phrases only, the rest paraphrased. Dulles (1929, 'All rights reserved', published March 1929): short quotations. Federal Reserve History (2013) and the Riksbank's timeline: cited for facts in short quotations; for the Riksbank page: 'Enter source, Sveriges riksbank and date.' Wikisource (fr): CC BY-SA, cited for dates. The chapter's Chinese renders the quotations; the translations are the book's.",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Hansard (the Commons debates of 28 April 1925, the Lords debate of 11 May 1925 and the people pages): 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.' The Gold Standard Act 1925 (legislation.gov.uk): 'Contains public sector information licensed under the Open Government Licence v3.0.' The Macmillan Committee's Minutes of Evidence (HMSO, 1931) and Nurkse's International Currency Experience (League of Nations, 1944) are official publications; the Crown publication is older than fifty years and out of Crown copyright, and the League of Nations volume is quoted briefly with its source. Keynes (1883-1946): A Tract on Monetary Reform (1923) and The Economic Consequences of Mr. Churchill (1925) are in the public domain in the United Kingdom. Brown (1940), NBER: 'Copyright, 1940, by National Bureau of Economic Research, Inc. ... All Rights Reserved' (row br_copyright); short quotations only, with full credit. De Long and Shleifer (1990), NBER Working Paper 3523 (no copyright line is printed on the PDF), and McGrattan and Prescott (2003), Federal Reserve Bank of Minneapolis Staff Report 294: in copyright; short phrases only, the rest paraphrased. Dulles (1929, 'All rights reserved', published March 1929): short quotations. Federal Reserve History (2013) and the Riksbank's timeline: cited for facts in short quotations; for the Riksbank page: 'Enter source, Sveriges riksbank and date.' Wikisource (fr): CC BY-SA, cited for dates. The chapter's Chinese renders the quotations; the translations are the book's. The authority records of the Bibliothèque nationale de France (data.bnf.fr) are metadata reused under the Licence Ouverte (Open License). NBER working papers (De Long and Shleifer 1990; Rappoport and White 1991) are quoted in short phrases with their source.",
   "used_in": [
     27
   ],
@@ -220,6 +220,48 @@
       "version": "J. M. Keynes, A Tract on Monetary Reform (London: Macmillan, 1923; reprinted 1924, 1929), OCR text of the reprint of 1929 on archive.org (item tractonmonetaryr0000keyn); pp. 40, 142-143, 155, 172; pages from the running heads",
       "retrieved": "2026-10-21",
       "user_agent": "Mozilla/5.0"
+    },
+    "bnf_moreau": {
+      "url": "https://data.bnf.fr/ark:/12148/cb13486227z",
+      "format": "html",
+      "sha256": "701fb40a8c79c8aa2753ad2f6af14d484216ae544ffff492c9940a5da2ecf3af",
+      "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Émile Moreau (dates of life and description); metadata reused under the Licence Ouverte (Open License).",
+      "retrieved": "2026-10-22"
+    },
+    "bnf_rist": {
+      "url": "https://data.bnf.fr/ark:/12148/cb12280238p",
+      "format": "html",
+      "sha256": "e773f0f40df5799e212368cd700bcf2f8eca6f028842eab351194793f2214f2f",
+      "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Charles Rist (dates of life and description); metadata reused under the Licence Ouverte (Open License).",
+      "retrieved": "2026-10-22"
+    },
+    "bnf_strong": {
+      "url": "https://data.bnf.fr/ark:/12148/cb12424763b",
+      "format": "html",
+      "sha256": "9a7cb66c47ffe0e1c023d75dbc9f3b411c0c9722a9c56c62fea9717ab2d93769",
+      "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Benjamin Strong (dates of life and description); metadata reused under the Licence Ouverte (Open License).",
+      "retrieved": "2026-10-22"
+    },
+    "bnf_kindersley": {
+      "url": "https://data.bnf.fr/ark:/12148/cb16765725x",
+      "format": "html",
+      "sha256": "90bb0e80ce8efaac38a835527da5a8b11265b3c96678a38574d281b2819926f5",
+      "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Robert Molesworth Kindersley (dates of life and description); metadata reused under the Licence Ouverte (Open License).",
+      "retrieved": "2026-10-22"
+    },
+    "rappoport1991": {
+      "url": "https://www.nber.org/system/files/working_papers/w3612/w3612.pdf",
+      "format": "pdf",
+      "sha256": "5e674b52b8b383111f45503fc6a9752ca9a35c125f28bedd1a5b4f273dd33bf1",
+      "version": "P. Rappoport and E. N. White, 'Was There a Bubble in the 1929 Stock Market?', NBER Working Paper 3612, February 1991; pp. 8 and 11 (margin requirements).",
+      "retrieved": "2026-10-22"
+    },
+    "dutton1984": {
+      "url": "https://www.nber.org/system/files/chapters/c11128/c11128.pdf",
+      "format": "pdf",
+      "sha256": "2ae9d2d720b6f7fae63c24f8a64d019d67d43f734a73689a24cdbba9e0b35721",
+      "version": "J. Dutton, 'The Bank of England and the Rules of the Game under the International Gold Standard: New Evidence', in Bordo and Schwartz (eds.), 1984, pp. 173-202, with the comment by D. E. Moggridge (pp. 195-199); NBER chapter PDF c11128; pages as printed",
+      "retrieved": "2026-10-16"
     }
   },
   "fetch": "data/fetch/interwar27.py"

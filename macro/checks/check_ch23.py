@@ -905,7 +905,8 @@ LIVES = {"Walter Bagehot，1826—1877": "ch18_smith", "Thomas Tooke，1774—18
          "Robert Peel，1788—1850": "ch19_bullion", "Henry Thornton，1760—1815": "ch19_bullion",
          "David Hume，1711—1776": "ch19_bullion", "John Maynard Keynes，1883—1946": "ch20_say",
          "Carl Menger，1840—1921": "ch14_africa", "Georg Friedrich Knapp，1842—1926": "ch04_money",
-         "Irving Fisher，1867—1947": "ch03_prices"}
+         "Irving Fisher，1867—1947": "ch03_prices",
+         "Robert Kindersley，1871—1954": "ch27_interwar"}             # the BnF authority record, row bnf_kindersley there
 # the years of the cross-references: (words of this chapter, chapter where the event is told, words there)
 EVENTS = [("1772 年艾尔银行", "ch18_smith", "1772 年 6 月"), ("1819 年恢复兑付的法案", "ch19_bullion", "1819 年"),
           ("里的 1720 年", "ch16_mercantilism", "1720"), ("1672 年的阿姆斯特丹银行", "ch15_finrevolution", "1672 年"),

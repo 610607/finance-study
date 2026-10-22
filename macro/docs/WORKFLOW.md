@@ -108,4 +108,4 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   (branch `codex/ch26-weimar`); the editor reviewed it, merged the branch to keep its verified sources and
   data, and had the chapter rewritten to the notes and reviewed by one independent reviewer (2026-10-21). The
   author decided on 2026-10-21 that the remaining chapters are written in this workflow. Merged into main on
-  2026-10-22 at the author's request; Chapter 27 (`ch:interwar`) started 2026-10-22.
+  2026-10-22 at the author's request; Chapter 27 (`ch:interwar`) written and reviewed 2026-10-22.
