@@ -1395,6 +1395,9 @@ ex:interwar-parity ex:interwar-index ex:interwar-pyramid ex:interwar-margin
 sec:depressionus-world sec:depressionus-panics sec:depressionus-fisher sec:depressionus-money sec:depressionus-fed sec:depressionus-credit sec:depressionus-recovery sec:depressionus-legacy
 eq:depressionus-firesale eq:depressionus-debt fig:depressionus_output fig:depressionus_banks tab:depressionus-money
 ex:depressionus-run ex:depressionus-debt ex:depressionus-mult ex:depressionus-gold
+sec:depressionworld-world sec:depressionworld-fetters sec:depressionworld-1931 sec:depressionworld-exits sec:depressionworld-es sec:depressionworld-debate sec:depressionworld-silver sec:depressionworld-latam sec:depressionworld-check sec:depressionworld-legacy
+eq:depressionworld-fetters eq:depressionworld-es eq:depressionworld-silver tab:depressionworld-exits fig:depressionworld_sterling fig:depressionworld_exits fig:depressionworld_es fig:depressionworld_silver
+ex:depressionworld-fetters ex:depressionworld-keynes ex:depressionworld-es ex:depressionworld-silver
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous

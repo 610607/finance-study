@@ -565,3 +565,120 @@ back to the old parity without striking off any zeros.
   "纳粹德国、高桥财政下的日本和瑞典都较早走出了萧条，各自靠的是什么？代价记在了哪里？" (or its first half).
 - Labels: sections `sec:depressionworld-…`; `eq:depressionworld-…`, `fig:depressionworld_…`,
   `tab:depressionworld-…`, `ex:depressionworld-…`.
+
+## 第 30 章 `ch:alternatives` 1930 年代的另类出路：纳粹德国、高桥财政与瑞典 (`zh/ch30_alternatives.tex`)
+
+- Neighbours:
+  - Ch 26 owns Germany to 1924 and Schacht's first term (Rentenmark, Reichsbank president from
+    December 1923; Schacht 1877—1970 is introduced there). Ch 27 has Schacht at the 1927 meeting. Ch 29
+    owns 1931: the German banking crisis and exchange control of July 1931, the exits from gold and the
+    gold bloc, Japan and Sweden as dates in its table of exits. Begin here in 1932–33.
+  - Ch 28 owns the American banking holiday, deposit insurance, the devaluation of 1933–34, gold
+    inflows as base money and Romer's (1992) reading of the recovery; its recovery section says
+    "新政的其他措施与别国的出路，在\chref{ch:alternatives}里比较" (FORWARD_REFS row from Ch 28 to 30:
+    keep it). So this chapter owns the New Deal's other measures as a comparison: the National
+    Industrial Recovery Act (16 June 1933: codes of fair competition, the Public Works Administration),
+    the Agricultural Adjustment Act (12 May 1933), the relief and works programmes (the CWA, the WPA
+    of 1935), and the size of the federal deficit (Brown's "not tried", already quoted in Ch 28 through
+    Romer: do not repeat it); from the Statutes at Large and the American Presidency Project (public
+    domain), Historical Statistics 1975 for the deficit. One compare box or one section, not a retelling
+    of Ch 28; the 1937–38 recession stays in Ch 33. Ch 31 owns the Soviet five-year plans (one
+    clause for the comparison of "practice before theory"). Ch 32 owns the *General Theory* and the
+    Stockholm school as a parallel discovery (its case box): here Sweden's monetary programme and its
+    practice, not the theory of the Stockholm school. Ch 34 owns war finance (Germany's war economy
+    from 1939, Britain's and America's); this chapter stops in 1938–39.
+  - Ch 25 owns Wicksell's price-level rule and Berg and Jonung's statement that Sweden was the first
+    country to make the price level the official goal (`berg1998`); keep the FORWARD_REFS row (re-pointed
+    to 30) and tell how the programme of 1931–1937 worked. Ch 1 has one line on Takahashi
+    (1854—1936) with `\chref{ch:alternatives}`; keep the dates consistent.
+- Owns:
+  - Nazi Germany 1933–1938: the work-creation programmes (the Reinhardt programme of June 1933), MEFO
+    bills (Metallurgische Forschungsgesellschaft) as off-budget finance for rearmament discounted at
+    the Reichsbank, Schacht's New Plan of 1934 and exchange control, bilateral clearing, the price
+    freeze of 26 November 1936 (Preisstopverordnung) and repressed inflation, the Four-Year Plan of
+    1936, Schacht's dismissal from the Reichsbank in January 1939; how much of the recovery came from
+    rearmament (Ritschl against the older view of a civilian work-creation boom, if the texts can be
+    read). The character of the regime and the human cost stated plainly: the destruction of trade
+    unions in May 1933, the persecution and expropriation of Jews ("Aryanization"), forced labour, and
+    that rearmament served a war of aggression and plunder (write_template rule 5);
+  - Japan 1931–1936: Takahashi Korekiyo's return as finance minister in December 1931, the embargo on
+    gold exports of 13 December 1931, the yen's depreciation, the Bank of Japan's underwriting of
+    government bonds from November 1932, the deficits, the recovery, Takahashi's attempt to cut
+    military spending in 1935–36 and his assassination in the incident of 26 February 1936; what came
+    after (the Bank of Japan's underwriting as a route to wartime inflation, in one clause with
+    `\chref{ch:warfinance}`);
+  - Sweden 1931–1937: the suspension of gold convertibility on 27 September 1931, the Riksbank's and
+    the government's declaration of the price-level goal, the index the Riksbank built for it, the
+    advice of the economists (Cassel, the Stockholm school's members only as advisers), how the krona
+    was managed and later pegged to sterling (1933), and how well the price level held;
+  - the comparison: expansion under controls vs expansion in a market economy; open vs repressed
+    inflation; "practice before theory" (the three acted before the *General Theory* of 1936).
+- Promises (FORWARD_REFS rows pointing to 30; read them in full and mark them done): from Ch 25
+  (Sweden's price-level programme of 1931–37 as Wicksell's rule), from Ch 28 (the New Deal's other
+  measures and the other countries' ways out, compared), from Ch 29 (Germany kept its parity behind
+  exchange control and standstill agreements in July 1931; Japan suspended convertibility in December
+  1931 and introduced exchange control in July 1932; Sweden left gold in September 1931; Ch 29's
+  ending question). Ch 29's table of exits (`tab:depressionworld-exits`, Bernanke–James Table 2.1)
+  gives the dates: use them and refer back, do not re-tabulate.
+- Opening (suggested, verify every detail): 13 December 1931 in Tokyo, the day Takahashi became finance
+  minister and Japan banned gold exports; or 27 September 1931 in Stockholm (the Riksbank's decision,
+  the Riksbank's own history pages); or 1 June 1933 in Berlin (the Reinhardt programme's law in the
+  Reichsgesetzblatt). Ch 29 ends by handing over "纳粹德国、高桥财政下的日本和瑞典都较早走出了萧条，各自靠的
+  是什么？代价记在了哪里？"; keep it.
+- People (only where sourced): Takahashi Korekiyo (1854—1936); Inoue Junnosuke (his predecessor, the
+  return to gold of January 1930, assassinated February 1932, if sourced); Hjalmar Schacht (Reichsbank
+  president again from March 1933, economics minister 1934–37); Hermann Göring (the Four-Year Plan);
+  Fritz Reinhardt; in Sweden Ernst Wigforss (finance minister from 1932), Gustav Cassel, the Riksbank's
+  governor; Berg and Jonung as authors of the account.
+- Case box: all three are outside the US and Britain; the case box takes one of them as a dated case
+  (e.g. 日本 · 1932—1936 · 日本银行承购国债), the other two as sections.
+- Data and sources (probe first; on 2026-10-22 the shell reached the Riksbank's history pages, the Bank
+  of Japan's site (history, the Bank of Japan Review), NDL Digital and NDL authorities (id.ndl.go.jp),
+  JACAR, J-STAGE, e-Stat, the Deutsche Digitale Bibliothek, DigiZeitschriften (check its terms),
+  the Bundesarchiv's site, econstor, NBER, FRASER (Banking and Monetary Statistics 1914–1941 answered)
+  and Maddison; de.wikisource answered 429 at times (wait and retry once); ALEX (ÖNB, the
+  Reichsgesetzblatt scans), documentArchiv.de and GHDI did not answer; the IMES English papers page
+  answered 404/403):
+  - Germany: Reichsgesetzblatt texts on de.wikisource (public domain as official works); the
+    *Statistisches Jahrbuch für das Deutsche Reich* (if an open scan can be read); the Reichsbank's
+    annual reports; Tooze (2006) in copyright: short phrases or verified reviews only; Ritschl (2002,
+    *Journal of the Japanese and International Economies*, working-paper version if open); Overy and
+    Buchheim only through what can be read; Maddison 2023 for output;
+  - Japan: the Bank of Japan's publications (credit "Bank of Japan"): Shizume's papers in the *Bank of
+    Japan Review* or IMES discussion papers if reachable; Takahashi's dates from a verified source (NDL
+    authority records); the *Hundred-Year Statistics of the Japanese Economy* if open; Cha (2003, *JEH*)
+    and Shibamoto–Shizume (2014) only through open versions;
+  - Sweden: Berg and Jonung (`berg1998`, with the version already cited); the Riksbank's open data (its
+    licence sentence verbatim); Jonung's other papers if open;
+  - FRASER: the *Federal Reserve Bulletin*'s reports on Germany's exchange control and Japan's
+    measures, as public-domain contemporary records.
+- Teaching:
+  - financing a deficit off the budget: MEFO bills on the Reichsbank's balance sheet (Ch 4 notation),
+    the consolidated budget constraint of Ch 1 (`eq:intro-budget`) showing that the bills are
+    government debt and base money in waiting; a worked example with teaching inputs, then the stock
+    of MEFO bills from a verified source;
+  - repressed inflation: a price ceiling with excess demand; what rations instead (queues, quality,
+    allocation); why the measured price index understates;
+  - bond underwriting by the central bank (Japan): primary purchases, then sales to banks to absorb
+    the money ("sterilization" in the Bank of Japan's sense, if the source says so); compare with Ch 26's
+    discounting of Treasury bills;
+  - price-level targeting (Sweden) against inflation targeting: a shock to the price level is reversed
+    under the first and not under the second; a two-period example, using Wicksell's rule of Ch 25.
+- Compare boxes (2–4): 统制下的扩张 vs 市场经济中的扩张 (Germany vs Sweden or the New Deal: this box can
+  carry the FORWARD_REFS row from Ch 28); 公开通胀 vs 被压抑的通胀;
+  optionally 物价水平目标 vs 通胀目标 (Sweden 1931 vs today, with `\chref{ch:consensus}`).
+- Contested questions (§8): what drove the German recovery (rearmament vs civilian work creation and the
+  cycle); did Takahashi's policy rescue Japan (the exchange rate vs the deficits; the role of the
+  military budget); how far Sweden's programme was followed in practice (Berg and Jonung's reading).
+  Do not decide for the reader; state the political character and the human cost plainly.
+- Figures (2–4, at least two from snapshot data): GDP per head 1929–1938, 1929 = 100, for Germany,
+  Japan, Sweden, the US, Britain and France (Maddison); Germany's public spending or MEFO bills; Japan's
+  government bonds held by the Bank of Japan; Sweden's price index against the goal.
+- Legacy: central-bank finance of deficits and fiscal dominance (`\chref{ch:fiscaldominance}`), price
+  freezes and repressed inflation in planned economies (`\chref{ch:planned}`), price-level targeting
+  in the debate on the zero lower bound (`\chref{ch:zlb}`), the Bank of Japan's yield-curve control
+  (`\chref{ch:abenomics}`).
+- Ending: after `\end{answers}`, return to the opening and hand over Ch 31's question
+  "没有市场价格，经济能不能算清楚该生产什么？".
+- Labels: sections `sec:alternatives-…`; `eq:alternatives-…`, `fig:alternatives_…`,
+  `tab:alternatives-…`, `ex:alternatives-…`.
