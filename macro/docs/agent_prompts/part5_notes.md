@@ -931,6 +931,23 @@ back to the old parity without striking off any zeros.
 - Ending: hand over Ch 34's question "战争证明政府“付得起”，和平时期也一样吗？" (first half).
 - Labels: `sec:islm-…`, `eq:islm-…`, `fig:islm_…`, `tab:islm-…`, `ex:islm-…`.
 
+### Carried over from the editor's round on Chapter 33
+
+- A contested question needs each side's strongest case and its own concessions, both from the
+  sources: the reviewer of Chapter 33 found the wage and expectations explanations of 1937–38 without
+  their best evidence, and one finding of Velde's stated the wrong way round (his VAR says money and
+  fiscal shocks alone would have put the peak earlier, not that money cannot explain the timing). Read
+  the conclusion section of each paper you cite and state its direction exactly.
+- Keep an author's own hedges and conditions: "only suggestive", "not possible to make even an
+  approximate estimate", "unless it can be shown …". A punchline quoted without its condition (Pigou's
+  "right in what he denies but wrong in what he affirms") changes the argument.
+- When an author restates someone else's argument ("paraphrase the proof"), say so; do not present it
+  as the author's own addition.
+- Define institutional terms as they stood at the time (in the 1930s a member bank's legal reserves
+  were its deposits at the Reserve Banks; vault cash counted only later), preferably in the
+  institution's own words.
+- Indirect testimony is named at the point of use in the text ("据 Velde 的转述"), not only in the 史料说明.
+
 ## 第 34 章 `ch:warfinance` 战争财政、功能财政与布雷顿森林的设计 (`zh/ch34_warfinance.tex`)
 
 - Neighbours: Ch 26 owns war finance in 1914–18 and Germany's hyperinflation; Ch 30 owns Germany and
