@@ -1,0 +1,14 @@
+{
+  "title": "USSR: grain production and state procurement, 1927-1939, million tons (Markevich, Naumenko and Qian 2021, Appendix Table A.2, panel II)",
+  "source": "A. Markevich, N. Naumenko and N. Qian, 'The Causes of Ukrainian Famine Mortality, 1932-33', NBER Working Paper 29089, July 2021, revised May 2023, Appendix Table A.2 'Caloric Accounting', panel II (USSR), rows (6)-(10); file w29089.pdf (SHA-256 814659b42a83ff851fb4233110c150574c9251794826f16406665aa7adf6924f), PDF page 51 (appendix p. 4)",
+  "url": "https://www.nber.org/system/files/working_papers/w29089/w29089.pdf",
+  "series": "year; revised_mt: '(6) Production (mln tons)', revised by the authors from archival data; official_mt: '(7) Official', the official production figures; dw_min_mt, dw_max_mt: '(8) DW Min' and '(9) DW Max', production as revised by Davies and Wheatcroft (the note prints 'Davis and Wheatcroft (2004) (see their Table 1)'); procurement_mt: '(10) Procurement (mln tons)'; million tons; empty where the table prints '.'",
+  "retrieved": "2026-10-22",
+  "license": "The working paper's notice: '© 2021 by Andrei Markevich, Natalya Naumenko, and Nancy Qian. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' The snapshot keeps the figures of one table, credited to the authors with the notice.",
+  "used_in": [
+    31
+  ],
+  "fetch": "data/fetch/soviet31.py (read on the page image; see notes)",
+  "notes": "The table is an image inside the PDF (pdftotext gives only its title); it was read on the page rendered with pdftoppm. The table's notes: 'Data for population, production and procurement are official statistics. Rows (1) and (6) report production revised by the authors using archival data (see text). Row (7) reports official production figures. Rows (8)-(9) report production revised by Davis and Wheatcroft (2004) (see their Table 1).' 'Davis' is a misprint for Davies (R. W. Davies and S. G. Wheatcroft, The Years of Hunger, 2004). The years are harvest years as printed (1927, 1928, ..., 1933, 1937, 1939). The ratios of procurement to production in the chapter are the book's calculation.",
+  "citation": "Markevich, Naumenko and Qian (2021), NBER Working Paper 29089, Appendix Table A.2"
+}

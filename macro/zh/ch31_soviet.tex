@@ -1,4 +1,5 @@
-% 第 31 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 31 章”，写法见 docs/STYLE.md。
+% 第 31 章。数字与教学模型：checks/check_ch31.py；图：figsrc/fig_ch31.py。
+% 史料：soviet_facts；苏联的粮食产量与征购存 soviet_grain（Markevich、Naumenko 与 Qian 的附表 A.2），人均 GDP 据 maddison2023_ussr。
 \chapter{苏联工业化与社会主义核算论战}\label{ch:soviet}
 
 \begin{chapterguide}
@@ -12,4 +13,347 @@
 \guideprereq{\chref{ch:marx}\enspace\nameref{ch:marx}；\chref{ch:depressionworld}\enspace\nameref{ch:depressionworld}}
 \end{chapterguide}
 
-\chapterstub
+1933 年 1 月 7 日，斯大林（Joseph Stalin，1878—1953）在联共（布）中央委员会与中央监察委员会的联席全会上作报告，总结第一个五年计划\cite{stalin1933,loc31}。他说，党决定不用五年，而用四年完成这个计划，“严格地说，如果加上特别季度，是四年零三个月”\cite{stalin1933}。特别季度是 1930 年的最后一个季度\cite{gosplan1933}。为五年制订的工业总产值计划完成了 93.7\%，重工业的计划完成了 108\%\cite{stalin1933}。他说：“我们没有钢铁工业，这是国家工业化的基础。现在有了。我们没有拖拉机工业。现在有了。我们没有汽车工业。现在有了。”\cite{stalin1933}
+% 据: st_date, st_plenum, loc_stalin, st_fouryears, gp33_special, st_937, st_108, st_iron
+
+同一个冬天，乌克兰的农村在挨饿。1933 年 1 月 22 日，斯大林发出一封秘密电报，封锁乌克兰与库班的村庄，不让饥饿的农民逃出去\cite{werth2016}。照 Werth（2016）的说法，在饥荒最重的 1933 年 1 月到 7 月，那里每天有 1.5 万到 2 万人死去，“在沉默与彻底的被遗弃中”\cite{werth2016}。与 1921 年的饥荒不同，外界对这一次知道得很少，官方也没有承认\cite{harrison2017}。
+% 据: we_telegram, we_daily, h17_famine
+
+计划与饥荒，都发生在一个市场已经退到边上的经济里。照 Harrison（2017）的概括，国家所有与集中分配，把私有与买卖“挤到了背后，挤进了地下”\cite{harrison2017}。这样的经济能不能算账，经济学家早就争论过。1920 年 4 月，米塞斯（Ludwig von Mises，1881—1973）发表文章，讨论社会主义共同体里的经济计算\cite{mises1935,loc31}。照他的说法，没有自由市场，就没有价格机制；没有价格机制，就没有经济计算\cite{mises1935}。每一项经济上的改变，成败事先估不出来，事后也算不清，“只有在黑暗中摸索”\cite{mises1935}。没有市场价格，经济能不能算清楚该生产什么？
+% 据: h17_squeezed, mi_note, loc_mises, mi_nomarket, mi_appraised, mi_groping
+
+\section{当时的世界}\label{sec:soviet-world}
+
+1917 年，布尔什维克掌握了政权，“废除了所有主要的资本主义制度”\cite{cggt2013}。经济随即跌进了深渊。照 Harrison（2017）的估计，俄国的国民产出在三年的世界大战里下降了五分之一，1918 年一年又下降了五分之二\cite{harrison2017}。按 Cheremukhin 等人（2013）转述的估计，1918 年的 GDP 比 1913 年低了一半\cite{cggt2013}。内战期间的“战时共产主义”，要征收农业产出的 70\%\cite{cggt2013}。农民被迫低于成本出售，又没有合法的渠道换到东西，于是进一步缩减了播种面积\cite{harrison2017}。照 Harrison 的判断，造成这场灾难的是指令经济本身，不是它据说要应付的战争\cite{harrison2017}。
+% 据: cg_1917, h17_cliff, cg_1918, cg_requisition, h17_sell, h17_disaster
+
+照 Harrison 与 Markevich（2018）的估计，到经济开始恢复的时候，已有 1,300 万人过早地死去，将近战前人口的十分之一\cite{harrison2018}。纸币也垮了。卢布是俄国与苏联的货币单位。按他们的表，1917 年 11 月的物价是 1913 年的 10.2 倍\cite{harrison2018}。到 1921 年 7 月是 8.07 万倍，到 1924 年 2 月是 163 亿倍\cite{harrison2018}。1921 年，南部与东部的收成失败，超过 500 万人死去\cite{harrison2017}。照 Harrison 与 Markevich 的说法，这场饥荒是“多种力量的产物”，有多年的战争、布尔什维克的动员政策，也有坏运气\cite{harrison2018}。
+% 据: hm_13m, hm_head, hm_prices, h17_1921, hm_forces
+
+1921 年 3 月，在第十次党代表大会上，列宁（Vladimir Lenin，1870—1924）宣布要有一个“喘息的时机”\cite{harrison2017,loc31}。向农民征收余粮的办法停止了，改为按收成累进征税\cite{harrison2017}。这就是新经济政策，它“为农业与小规模制造业重新引入了市场经济”\cite{mnq2021}。宣布新经济政策的两个月前，列宁批准设立国家计划委员会，简称国家计委\cite{harrison2017}。按 Gregory 与 Harrison（2005）的说法，国家计委 1921 年 2 月成立，到 1925 年还只有 50 名专家\cite{gregory2005}。
+% 据: h17_breathing, loc_lenin, h17_tax, mnq_nep, h17_gosplan, gr_feb1921, gr_fifty
+
+新的钱也是这时出现的。1921 年 11 月，国家银行成立。一年以后，它获准发行自己的银行券，叫切尔文（chervonets），“等于十个金卢布”，“以黄金与稳定的外币作准备”\cite{suib1929}。
+% 据: su_bank
+
+此后两年，人们看到一种奇特的现象，“一种稳定的货币，与一种严重膨胀、灾难性地贬值的货币并行流通”\cite{suib1929}。1924 年 3 月，币制改革的法令通过，旧卢布按 5 万个 1923 年版换一个新卢布收回\cite{suib1929}。5 万个 1923 年版的卢布，等于 1922 年以前发行的 500 亿卢布\cite{suib1929}。德国的恶性通胀在 1923 年 11 月止住（\chref{ch:weimar}）。各国的恶性通胀怎样止住，是\chref{ch:hyperinflation}的题目。
+% 据: su_two, su_reform, su_rate
+
+到 1928 年，经济大体恢复了。照 Markevich 与 Harrison（2011）的估计，1928 年的实际总产出比 1913 年多将近 10\%\cite{markevich2011}。同样的疆界内，人口多了约 14\%，人均国民收入仍比战前低约 3\%\cite{markevich2011}。按 Maddison 项目数据库，1928 年苏联的人均 GDP 是 1913 年的 96.9\%\cite{mpd2023}。照 Markevich 与 Harrison 的计算，人均 GDP 若沿着 1913 年以前每年 1.74\% 的趋势增长，1920 年代末的实际水平还比这条趋势低约四分之一\cite{markevich2011}。
+% 据: mh_1928, mh_trend
+
+恢复之中，城乡之间的交换一直不顺。1922—1923 年有过一次“剪刀差”危机，工业品贵，农产品贱，两条价格线像剪刀一样张开\cite{harrison1980}。到 1920 年代后期，工业品长期供不应求，叫作“商品荒”\cite{harrison1980}。农民卖了粮，攒下的钱买不到工业品，就从两个市场都退了出来\cite{harrison1980}。1926/27 年度，国家又压低了粮食的收购价格\cite{harrison1980}。
+% 据: h80_scissors, h80_goods, h80_withdrew, h80_lowered
+
+工业化的钱从哪里来，党内有过争论。普列奥布拉任斯基（Evgenii Preobrazhensky，1886—1937）不赞成新经济政策，想在它里面找回旋的余地\cite{harrison1980,loc31}。照 Harrison（1980）的转述，他主张国家利用政治与经济上的垄断，“把小商品生产部门的剩余产品转给社会化的工业”\cite{harrison1980}。办法是直接税加间接税，迫使农民按不利的比价出售产品\cite{harrison1980}。布哈林（Nikolai Bukharin，1888—1938）支持新经济政策，主张更多地利用市场机制\cite{cggt2013,loc31}。
+% 据: h80_preo, loc_preobrazhensky, h80_redistribute, h80_method, cg_bukharin, loc_bukharin
+
+争论是用权力了结的。1927 年，斯大林把托洛茨基（Leon Trotsky，1879—1940）开除出政治局，又开除出党\cite{cggt2013,loc31}。1928 年 1 月，斯大林等人恢复了按固定价格强制征购粮食的办法，就是臭名昭著的“乌拉尔—西伯利亚方法”\cite{werth2016}。1928 年 12 月 6 日，联共（布）中央政治局批准了地方上实行的第一批配给证\cite{werth2016}。照 Cheremukhin 等人的说法，斯大林在 1928 年用“大转变”结束了新经济政策\cite{cggt2013}。
+% 据: cg_expelled, loc_trotsky, we_ural, we_ration, cg_greatturn
+
+\section{第一个五年计划}\label{sec:soviet-plan}
+
+第一个五年计划由国家计委编制，1929 年 4 月在党的代表会议上获得批准\cite{harrison2017}。计划的期限从 1928/29 年度到 1932/33 年度\cite{gosplan1929}。照 Markevich 与 Harrison（2011）的说法，批准的是“最优”方案，那时的平均收入还低于战前\cite{markevich2011}。斯大林后来说，党决定用四年完成它，由此有了著名的口号“五年计划四年完成”\cite{stalin1933}。
+% 据: h17_april, gp29_period, mh_april, st_slogan
+
+同一年在纽约出版的英译本说，原来的计划有两个方案，所谓“基本”方案与“最高”方案，代表每个部门的下限与上限\cite{gosplan1929}。苏联政府把最高方案定为五年的目标，英译本只收了这个方案\cite{gosplan1929}。两个方案差得不少。最低方案的五年投资是 574 亿卢布，通过的方案是 646 亿卢布\cite{gosplan1929}。工业生产的增长，最低方案是 108\%，最高方案是 136\%\cite{gosplan1929}。农业生产的增长，两个方案分别是 44\% 与 55\%\cite{gosplan1929}。
+% 据: gp29_title, gp29_variants, gp29_omit, gp29_invest, gp29_growth
+
+照 Harrison（2017）的概括，计划要让国民收入翻一番，投资品的产量增加到三倍，人均消费提高三分之二\cite{harrison2017}。
+% 据: h17_envisaged
+
+具体的指标也定得很高。千瓦时是电能的单位，即通常说的一度电。1927/28 年度的发电量是 51 亿千瓦时，计划到期末每年发电 220 亿千瓦时\cite{gosplan1929}。煤要产 7,500 万吨，生铁要产 1,000 万吨\cite{gosplan1929}。生铁的指标将近 1927/28 年度产量的三倍\cite{gosplan1929}。石油要从 1,160 万吨增加到 2,170 万吨\cite{gosplan1929}。计划自己说：“这些是要靠强攻夺取的堡垒。”\cite{gosplan1929}它也说：“实现这些目标的巨大困难，必须坦率地正视。”\cite{gosplan1929}
+% 据: gp29_power, gp29_targets, gp29_pig, gp29_metal, gp29_oil, gp29_assault, gp29_faced
+
+价格与货币也写进了计划。照计划的说法，它定下的物价政策，是要让“一般物价水平有步骤地降低”\cite{gosplan1929}。货币发行的五年方案，要“保证切尔文的购买力提高 20\%”\cite{gosplan1929}。
+% 据: gp29_prices, gp29_chervonets
+
+计划也没有回避失业。它要让小手工业增加 90 万工人，以减少失业\cite{gosplan1929}。它也说，在这五年里，“失业仍将是苏联生活中不利的一面”\cite{gosplan1929}。
+% 据: gp29_unemp
+
+指标后来还在往上加。照 Gregory 与 Harrison（2005）的说法，1929 年，斯大林表明他不在乎那些限制他行动自由的平衡与限额\cite{gregory2005}。同一年，一位计划官员说，他宁可“为高速度站着”，也不愿为低速度坐牢\cite{gregory2005}。1931 年，斯大林号召党痛打那些“谈论现实的计划之类”的所谓聪明人\cite{harrison2017}。照 Harrison（2017）的判断，五年计划算不上一张技术蓝图，它是动员群众对付敌人的工具\cite{harrison2017}。
+% 据: gr_1929, gr_courage, h17_thrash, h17_blueprint
+
+外国的报纸也在议论。斯大林在报告里引了它们的话。按他引的译文，1932 年 11 月底，《纽约时报》说，一个不顾比例、不惜代价冲向目标的五年工业计划，“其实不是计划，是一场赌博”\cite{stalin1933}。同一个月，伦敦的《每日电讯报》说，作为对计划经济的实际检验，这个方案显然失败了\cite{stalin1933}。斯大林的回答是：“这就是一部分资产阶级报刊的意见。那些发表这些意见的人，几乎不值得批评。”\cite{stalin1933}
+% 据: st_gamble, st_telegraph, st_section
+
+1933 年，国家计委在莫斯科出版了计划完成情况的总结\cite{gosplan1933}。按 1926/27 年度的价格计算，工业总产值从 1928 年的 157 亿卢布增加到 1932 年的 343 亿卢布\cite{gosplan1933}。1932 年是 1928 年的 218.5\%\cite{gosplan1933}。计划给 1932/33 年度定的是 366 亿卢布，所以计划在四年零一个季度里完成了 93.7\%\cite{gosplan1933}。甲类工业的计划完成了 103.4\%，重工业人民委员部管辖的工业完成了 109.6\%\cite{gosplan1933}。生产资料的生产，1932 年是 1928 年的 2.6 倍\cite{gosplan1933}。乙类工业只完成了计划的 84.9\%，轻工业没有完成，食品工业超额完成\cite{gosplan1933}。
+% 据: gp33_title, gp33_gross, gp33_937, gp33_groupa, gp33_means, gp33_groupb, gp33_light
+
+\fig{soviet_plan}{第一个五年计划的指标与完成。各项在 1927/28 年度与 1932 年的产量，以 1932/33 年度的计划指标为 100\%。工业总产值按 1926/27 年度的价格计算，1927/28 年度一栏用 1928 年的数。生铁与钢的 1932 年数和煤与石油的数取自总结里的表，1927/28 年度的生铁与钢取自正文，两者的年度口径不完全相同。数据：国家计委（1929，1933）。}{fig:soviet_plan}
+
+实物的指标差得更远（\figref{fig:soviet_plan}）。1927/28 年度，生铁的产量是 328.3 万吨，1913 年是 420 万吨\cite{gosplan1933}。计划要它增加到三倍，在 1932/33 年度达到 1,000 万吨；钢要达到 1,030 万吨\cite{gosplan1933}。1932 年，生铁只产了 620 万吨，钢产了 590 万吨\cite{gosplan1933}。国家计委自己也说，钢铁工业“落在了五年计划给它定的数字后面”，钢与轧材尤其如此\cite{gosplan1933}。煤产了 6,437 万吨，计划是 7,500 万吨\cite{gosplan1933}。石油与天然气超额完成，1932 年产 2,220 万吨，计划是 2,170 万吨\cite{gosplan1933}。
+% 据: gp33_pig28, gp33_task, gp33i_world, gp33_lagged, gp33i_coal, gp33_oil
+
+\begin{pitfall}[工业总产值是 1928 年的 218.5\%，工业生产就翻了一番多]
+这个数按的是“1926/27 年度不变价格”。照 Harrison（1993）的说明，所谓不变价格，随着新产品的加入，在 1930 年代逐年上涨，这样的官方指数本来就会显示高得多的增长\cite{harrison1993}。实物的数字低得多，1932 年的生铁只有计划的 62\%\cite{gosplan1933}。西方的重估在\secref{sec:soviet-growth}。
+\end{pitfall}
+% 据: h93_unchanged, gp33i_world, gp33_task
+
+第二个五年计划从 1933 年开始\cite{stalin1933}。斯大林在报告里说：“在第一个五年计划期间，工业产值平均每年增长 22\%。”\cite{stalin1933}他接着说：“我想，在第二个五年计划里，我们必须采取工业产值平均每年至少增长 13\%—14\% 的速度。”\cite{stalin1933}
+% 据: st_second, st_22
+
+\section{物资平衡：计划怎样记账}\label{sec:soviet-balances}
+
+计划的账，是一种物资一种物资地记的。照 Harrison（2017）的说法，国家计委由此发展出著名的“物资平衡”方法，在纸面上让每种物资的供给与需求相等\cite{harrison2017}。下面用本书的写法表示一种物资$i$的平衡表。左边是来源，右边是用途：
+\begin{keyeq}
+x_i+m_i+s_{i,0}=\sum_j a_{ij}\,x_j+c_i+e_i+s_{i,1}.\label{eq:soviet-balance}
+\end{keyeq}
+$x_i$是产量，$m_i$是进口，$s_{i,0}$与$s_{i,1}$是期初与期末的库存，$c_i$是最终使用，$e_i$是出口。$a_{ij}$是生产一单位物资$j$要消耗的物资$i$，叫作消耗系数。把进口、出口与库存的变化并进最终使用，记作$f_i$，所有物资的平衡表合在一起，就是$x=Ax+f$。这正是\chref{ch:marx}里里昂惕夫的方程（\exref{ex:marx-io}）。它的解可以一轮一轮地展开，$x=f+Af+A^{2}f+\cdots$。要交出最终使用$f$，先要投入$Af$；生产这些投入，又要投入$A^{2}f$。一个指标改了，平衡表就要再算一轮。
+% 据: h17_balances
+
+\begin{example}{钢与煤的平衡}\label{ex:soviet-balance}
+一个只有钢与煤的经济，数字为教学输入，单位是百万吨。每产 1 吨钢要用 2 吨煤，每产 1 吨煤要用 0.1 吨钢，作矿井的设备与铁轨。两种物资都不用自己作投入，也没有进口、出口与库存的变化。（1）计划要钢 8、煤 20 供最终使用，钢与煤各要产多少？（2）钢的最终使用提高到 10，两种物资各要多产多少？（3）计划人员只算了一轮：钢多产 2，煤多产 4。钢的平衡差多少？
+\solution （1）$A=\begin{pmatrix}0&0.1\\2&0\end{pmatrix}$，$f=(8,\,20)'$。解$(I-A)x=f$（\texttt{numpy.linalg.solve}）：$x=(12.5,\,45)'$。检验：钢$12.5=0.1\times45+8$，煤$45=2\times12.5+20$。（2）$(I-A)^{-1}=\begin{pmatrix}1.25&0.125\\2.5&1.25\end{pmatrix}$。钢的最终使用多 2，钢要多产$1.25\times2=2.5$，煤要多产$2.5\times2=5$。一轮一轮地算：多 2 吨钢要 4 吨煤，4 吨煤要 0.4 吨钢，0.4 吨钢又要 0.8 吨煤。钢合计$2+0.4+0.08+\cdots=2.5$，煤合计$4+0.8+0.16+\cdots=5$。（3）钢产$12.5+2=14.5$，煤产$45+4=49$。钢的用途是$0.1\times49+10=14.9$，比产量多 0.4。这 0.4 吨钢又要 0.8 吨煤，平衡表还要再改一轮。
+\end{example}
+
+实际的平衡表远没有这么周全。照 Gregory 与 Harrison（2005）的说法，1930 年代初，国家计委的方法还很原始\cite{gregory2005}。它最全面的集中平衡，只包括 30 种原材料、8 种能源和 4 类机器，在大工业、小工业、食品加工与出口之间分配\cite{gregory2005}。照他们对档案的研究，国家计委并不是一个支配资源的全能机构，权力属于独裁者\cite{gregory2005}。
+% 据: gr_primitive, gr_balances, gr_dictator
+
+平衡表也常常绷得很紧。照 Harrison（1980）转述的 Hunter 的说法，“紧绷”的计划把增长目标定得极高，很可能达不到\cite{harrison1980}。这样能把资源动员起来，把储备挖出来；做过了头，不平衡就会累积，增长反而大降\cite{harrison1980}。\exref{ex:soviet-balance}里只算一轮的计划，就是一张缺钢的平衡表。
+% 据: h80_hunter, h80_taut, h80_mobilized, h80_toofar, h80_cumulating
+
+价格也没有消失。照 Gregory 与 Harrison 的说法，短缺虽然普遍，钱仍然是“一种珍贵的商品”\cite{gregory2005}。各处都有市场或类似市场的安排，只是运转不灵，范围受限，主要靠关系来维持\cite{gregory2005}。按 1936 年出版的统计汇编，国家预算的头号收入是周转税，它主要来自工业的周转，就是按商品的销售额征收的税\cite{sc1936}。1928/29 年度，预算收入是 66.5 亿卢布，周转税是 31.5 亿\cite{sc1936}。周转税占了 47.3\%。1934 年，预算收入是 507.6 亿卢布，周转税是 302.4 亿，占 59.6\%\cite{sc1936}。比例是本书的计算。
+% 据: gr_money, gr_markets, sc_budget
+
+食物的价格离得最远。照 Cheremukhin 等人的说法，政府对食物征收销售税，“在工人为食物付的价格与农民得到的价格之间打进了一个楔子”\cite{cggt2013}。粮食的黑市价格，1929 年已是国家收购价格的两倍多，1930 年是 4.5 倍，1931 年是 7 倍\cite{cggt2013}。1932 年是 28 倍\cite{cggt2013}。同一年，国家把集体农庄市场合法化了\cite{cggt2013}。按 Gregory 与 Harrison 对 Bergson（1964）等早期研究的概括，苏联的价格不反映物资的稀缺程度\cite{gregory2005}。
+% 据: cg_salestax, cg_black, cg_markets, gr_scarcity
+
+\begin{compare}{物资平衡与价格机制}{物资平衡（苏联的计划）}{价格机制（市场）}
+\cmprow{谁定产量}{计划机关定指标，按平衡表分配物资}{企业看价格与成本，自己决定}
+\cmprow{信息怎样走}{企业向上报数，指标向下发}{价格的涨落传到每一个用户}
+\cmprow{对不上的时候}{再改一轮平衡表，或者短缺、排队}{价格涨落，直到供求相等}
+\cmprow{1930 年代初的苏联}{集中平衡只有 30 种原材料、8 种能源与 4 类机器\cite{gregory2005}}{1932 年黑市的粮价是收购价的 28 倍\cite{cggt2013}}
+\cmpsum{两者都要让每种物资的来源等于用途。平衡表靠计划人员一轮一轮地算，价格机制靠千万人各自对价格作出反应。}
+\end{compare}
+
+\section{集体化与饥荒}\label{sec:soviet-famine}
+
+强制集体化从 1929 年底开始\cite{mnq2021}。照 Markevich、Naumenko 与 Qian（2021）的说法，集体化是“一揽子政策”，包括“取消私有财产，把农民组织进政府能直接控制的大型集体农庄”\cite{mnq2021}。照 Harrison（2017）的说法，1930 年初集体化已经覆盖了一半的农户，之后一度后退，到 1936 年覆盖了 90\%\cite{harrison2017}。
+% 据: mnq_collect, mnq_bundle, h17_half90
+
+按 Markevich、Naumenko 与 Qian 引用的数字，到 1932 年夏，住在集体农庄里的农户在全苏联超过 60\%，在乌克兰将近 70\%\cite{mnq2021}。斯大林在 1933 年的报告里说的也是 60\% 以上\cite{stalin1933}。他问，党加速推行集体化对不对，答案是：“是的，完全正确，尽管在这个过程中有过一些过火的行为。”\cite{stalin1933}
+% 据: mnq_collect, st_collective, st_tempo
+
+农民反抗了。照 Cheremukhin 等人的说法，仅 1930 年 3 月就发生了 6,500 多起骚乱，参加的农民有 140 万\cite{cggt2013}。按 1930 年 2 月的一项法令，最终有 200 万人被迁走或关押\cite{harrison2017}。这些人被叫作“富农”，大多流放到西伯利亚和其他边远地区\cite{mnq2021}。照 Harrison 的说法，饥饿的农民吃掉了饲料，又吃掉了喂不活的牲畜\cite{harrison2017}。1929—1932 年，马减少了 42\%，牛减少了 40\%\cite{mnq2021}。
+% 据: cg_riots, h17_feb1930, mnq_kulaks, h17_animals, mnq_livestock
+
+\fig{soviet_grain}{收成在下降，征购在增加。苏联的粮食产量与国家征购，1927—1933 年与 1937、1939 年，百万吨：官方公布的产量，Markevich、Naumenko 与 Qian 用档案修正的产量，Davies 与 Wheatcroft 修正的范围（阴影，1930—1933 年），国家的征购。数据：Markevich、Naumenko 与 Qian（2021）附表 A.2，据扫描页读取。}{fig:soviet_grain}
+
+征购却越来越多（\figref{fig:soviet_grain}）。按 Markevich、Naumenko 与 Qian 的表，1928 年的粮食产量是 7,340 万吨，国家征购了 1,080 万吨，约占 14.7\%\cite{mnq2021}。1932 年的产量降到 5,710 万吨，征购还有 1,900 万吨，约占三分之一\cite{mnq2021}。这里的产量是他们用档案修正的数。官方公布的 1932 年产量是 6,990 万吨，Davies 与 Wheatcroft 的修正在 5,500 万到 6,000 万吨之间\cite{mnq2021}。比例是本书的计算。
+% 据: mnq_table
+
+完不成征购的地方要受罚。照 Werth 的叙述，挨户搜查“藏起来的粮食”的指令，为没收一切食物开了路\cite{werth2016}。名义上是罚款，对象是没有完成粮食与肉类征购计划的农民、集体农庄、村庄，乃至整个地区\cite{werth2016}。照 Markevich、Naumenko 与 Qian 的说法，惩罚还有禁止往村里运进食物、逮捕当地的党员和成批地流放农民\cite{mnq2021}。1932 年 8 月 11 日，斯大林在给副手的信里提到，乌克兰约 50 个区的党委反对征购指标，苏维埃政府“可能失去乌克兰”\cite{mnq2021}。
+% 据: we_search, mnq_penalties, mnq_lose
+
+饥荒的消息并非没有传出去。斯大林在报告里引了《纽约时报》1932 年 11 月的话：“集体化运动当然是一场可怕的失败。它已经把俄国带到了饥荒的边缘。”\cite{stalin1933}这也在他列举的资产阶级报刊的意见里\cite{stalin1933}。
+% 据: st_nyt, st_section
+
+在他的报告里，捣乱的是“垂死阶级的最后残余”\cite{stalin1933}。照他的说法，私商、旧贵族、富农等人混进了工厂、机关与运输企业，主要是混进了集体农庄与国营农场：“他们放火烧仓库，破坏机器。他们组织怠工。”\cite{stalin1933}照 Harrison 的说法，布尔什维克把上涨的物价看成破坏，不看成短缺，于是加紧了征收粮食\cite{harrison2017}。
+% 据: st_remnants, st_places, st_wreck, h17_sabotage
+
+1933 年 1 月，莫斯科下令封闭乌克兰与北高加索的边界，“阻止农民从这些地区大批外流”\cite{mnq2021}。照 Rudnytskyi 等人（2015）的说法，那是 1 月 22 日中央的第 65 号指令，题为“关于防止饥饿的农民大批外逃”\cite{rudnytskyi2015}。照 Werth 的说法，第一个五年计划期间，有 1,200 万到 1,300 万农民逃进了城市\cite{werth2016}。为了堵住这股人流，政府在 1933 年上半年实行了国内护照与居住登记制度\cite{werth2016}。城里也不好过。按官方的工人家计调查，1927—1933 年，肉、奶、黄油、蛋与油脂的消费下降了 75\%—90\%\cite{werth2016}。
+% 据: mnq_border, ru_directive, we_fled, we_passport, we_meat
+
+死了多少人，估计不一。照 Harrison（2017）的说法，1932 年开始的饥荒死了约 600 万人\cite{harrison2017}。照 Werth 的估计，1930 年代初的几场饥荒，死者有 650 万到 700 万\cite{werth2016}。其中乌克兰与库班约 420 万，哈萨克斯坦 130 万到 150 万\cite{werth2016}。苏联其他地方还有 100 多万\cite{werth2016}。照 Davies（2004）的估计，1930—1933 年的全部超额死亡，算上更早的哈萨克饥荒，大概是 550 万到 600 万，这个数字“已经够骇人了”\cite{davies2004}。Markevich、Naumenko 与 Qian 汇总的估计，从 500 万到 1,080 万不等\cite{mnq2021}。
+% 据: h17_famine, we_early, we_total, dv_10m, mnq_range
+
+乌克兰一地的估计也不同。照 Rudnytskyi 等人（2015）的估计，乌克兰的超额死亡是 390 万，加上少出生的 60 万，总损失是 450 万\cite{rudnytskyi2015}。乡村与城市的超额死亡，分别相当于 1933 年人口的 16.5\% 与 4.0\%\cite{rudnytskyi2015}。Meslé 与 Vallin 重建的超额死亡是 260 万\cite{rudnytskyi2015}。照 Rudnytskyi 等人的说法，“1933 年死亡人数的巨大差别，与那一年净迁移的估计很不相同有关”\cite{rudnytskyi2015}。按 Rudnytskyi 等人的估计，那一年净迁出 5.2 万人；按 Meslé 与 Vallin 的估计，是 140 万人\cite{rudnytskyi2015}。照他们的说法，“迁出的人越多，重建出来的死亡就越少”\cite{rudnytskyi2015}。
+% 据: ru_total, ru_mesle, ru_related, ru_migration, ru_larger
+
+照 Rudnytskyi 等人的说法，高达 1,000 万的直接损失“以传闻为根据，值得怀疑”\cite{rudnytskyi2015}。从人口数据推出的估计，在 260 万到 500 万之间\cite{rudnytskyi2015}。照 Werth 转述的 Kondrashin 的估计，伏尔加河流域与中部黑土区饿死的有多达 70 万人\cite{werth2016}。全国的死亡率到 1934 年才回到趋势\cite{mnq2021}。
+% 据: ru_anecdotal, we_volga, mnq_1934
+
+饥荒为什么发生，研究者的看法不同。照 Harrison（2017）的说法，是 1932 年的坏天气触发了饥荒\cite{harrison2017}。照 Markevich、Naumenko 与 Qian 的结论，1932 年，“乌克兰（苏联）生产的粮食足以避免乌克兰（苏联）的饥荒”\cite{mnq2021}。照他们的估计，苏联政策里对乌克兰的偏见，最多能解释乌克兰饥荒死亡的 92\%，在乌克兰、俄罗斯与白俄罗斯三地合计是 77\%\cite{mnq2021}。这个作用约有一半来自中央计划的粮食征购政策\cite{mnq2021}。他们也发现，“对迁移的限制加重了死亡”\cite{mnq2021}。
+% 据: h17_famine, mnq_enough, mnq_bias, mnq_half, mnq_restrict
+
+镇压也在进行。照 Werth 的说法，针对“乌克兰民族主义”的运动，在 1932—1933 年逮捕了约 20 万人，对象是乌克兰的知识、宗教与政治精英\cite{werth2016}。劳改营成了经济的一部分。古拉格，即劳改营管理总局，1930 年成立\cite{harrison2017}。营里的人主要在采矿与建筑工地干活，人数从 1930 年的不到 20 万，增加到 1941 年的 190 万\cite{harrison2017}。照 Harrison 的说法，抓多少人由一波又一波的政治动员决定，抓来以后，才给犯人找经济上的用处\cite{harrison2017}。
+% 据: we_arrests, h17_gulag1930, h17_gulag, h17_mobilization
+
+\begin{case}{哈萨克斯坦 · 1930—1933 · 游牧的终结}
+哈萨克人是这个共和国最大的民族，占人口的 57.1\%\cite{cameron2016}。当局在这里推行“在定居基础上的全盘集体化”，要让游牧民同时定居、同时加入集体农庄\cite{cameron2016}。饥荒在 1930 年冬天开始，比苏联其他地方早一年\cite{cameron2016}。共和国约九成的牲畜死掉了\cite{cameron2016}。1932 年 10 月的一份秘密警察报告算出，牲畜的数目比 1929 年减少了 90.8\%\cite{cameron2016}。
+% 据: ca_571, ca_sedent, ca_1930, ca_ninety, ca_908
+
+1931—1933 年，110 多万人离开了共和国，大多是哈萨克人\cite{cameron2016}。他们逃到邻近的苏联共和国，也逃到国外，到了中国的新疆\cite{cameron2016}。1932 年 9 月 17 日，共和国已经熬过了将近三年的苦难，党中央才批准有限的让步，允许游牧民私人拥有牲畜，并运来救济粮\cite{cameron2016}。饥荒一直持续到 1934 年\cite{cameron2016}。
+% 据: ca_fled, ca_xinjiang, ca_concession, ca_1934
+
+照 Cameron（2016）的估计，150 多万人死去，约占共和国当时人口的四分之一\cite{cameron2016}。其中约 130 万是哈萨克人，全体哈萨克人有三分之一以上死于这场饥荒\cite{cameron2016}。别的估计低一些，Werth 是 130 万到 150 万，Markevich、Naumenko 与 Qian 是 100 万到 150 万\cite{werth2016,mnq2021}。
+% 据: ca_15, ca_kazakhs, we_total, mnq_kazakh
+\end{case}
+
+\section{核算论战：米塞斯、兰格与哈耶克}\label{sec:soviet-calculation}
+
+米塞斯 1920 年的文章发表在德国的《社会科学与社会政策文库》上，1935 年译成英文，收进了哈耶克编的文集《集体主义的经济计划》\cite{mises1935}。照米塞斯的说法，社会主义是“理性经济的废除”\cite{mises1935}。他说，在列宁与托洛茨基统治下发生的，只是破坏与毁灭\cite{mises1935}。照哈耶克 1945 年的回忆，米塞斯二十五年前提出这个论点时，招来的是一片嘲笑\cite{hayek1945}。后来连托洛茨基也说，“没有市场关系，经济核算是不可想象的”\cite{hayek1945}。
+% 据: mi_note, mi_abolition, mi_lenin, hy_derision, hy_trotsky
+
+兰格（Oskar Lange，1904—1965）的回答，发表在 1936 年 10 月与 1937 年 2 月的《经济研究评论》上\cite{lange1938,loc31}。他先向米塞斯致谢，称他是社会主义事业的“魔鬼代言人”\cite{lange1938}。照他的说法，正是米塞斯有力的挑战，迫使社会主义者认识到一套合适的经济核算体系的重要\cite{lange1938}。社会化部或中央计划局的大厅里，应当给米塞斯立一座雕像\cite{lange1938}。
+% 据: la_reprint, loc_lange, la_devil, la_challenge, la_statue
+
+兰格的办法是试错。照他的说法，让中央计划局从“随意选定的一套价格”开始\cite{lange1938}。企业的经理与消费者按这些价格作决定，每种商品的需求与供给就定了下来\cite{lange1938}。需求大于供给，价格就提高；反过来，价格就降低\cite{lange1938}。计划局定出一套新价格，再看新的需求与供给，这样一次次地试下去，直到均衡\cite{lange1938}。照他的说法，计划局找到均衡价格所需的试错次数，可能比竞争市场实际所需的少得多\cite{lange1938}。用式子写，
+\begin{keyeq}
+p_{t+1}=p_t+\lambda\,\bigl[D(p_t)-S(p_t)\bigr],\qquad \lambda>0.\label{eq:soviet-lange}
+\end{keyeq}
+$D$与$S$是需求与供给，$\lambda$是计划局每一轮调价的力度。需求大于供给，下一轮的价格就高一些。
+% 据: la_random, la_decisions, la_raise, la_newset, la_shorter
+
+\begin{example}{兰格的试错}\label{ex:soviet-lange}
+一种商品的需求是$D=100-2p$，供给是$S=10+p$，数字为教学输入。（1）均衡价格是多少？（2）计划局从$p_0=10$开始，按式~\eqref{eq:soviet-lange}调价，$\lambda=0.2$。前两轮的价格是多少？离均衡价格的差距每轮变成原来的几倍？（3）$\lambda$大到多少，试错就收敛不了？$\lambda=0.8$时会怎样？
+\solution （1）$100-2p=10+p$，$p^{*}=30$，数量是 40。（2）$p_1=10+0.2\times(80-20)=22$，$p_2=22+0.2\times(56-32)=26.8$。$p_{t+1}-p^{*}=\bigl[1-\lambda(2+1)\bigr](p_t-p^{*})$，差距每轮乘以$1-0.6=0.4$：20、8、3.2。（3）收敛要求$\lvert1-3\lambda\rvert<1$，也就是$0<\lambda<2/3$。$\lambda=0.8$时，每轮乘以$1-2.4=-1.4$，价格越调越远。$p_1=10+0.8\times60=58$，已经比均衡高了 28。计划局要知道的，只是每种商品在当前价格上的需求与供给之差；可是要试多少轮、每轮调多大，取决于它不知道的需求与供给的斜率。
+\end{example}
+
+兰格并不讳言社会主义的毛病。照他的说法，社会主义真正的危险是经济生活的官僚化，不是无法解决资源配置的问题\cite{lange1938}。他在一条注里说，苏联大量使用配给，部分是为了掩盖官僚拿走的那一份国民收入，主要是因为没有正确理解和利用价格机制\cite{lange1938}。照兰格的说法，哈耶克等人已经退到了“第二道防线”，承认问题在原则上可以解决，只怀疑实际上能不能解决\cite{lange1938}。
+% 据: la_bureau, la_rationing, la_second
+
+哈耶克（Friedrich Hayek，1899—1992）的回答，是 1945 年 9 月发表在《美国经济评论》上的《知识在社会中的运用》\cite{hayek1945,loc31}。照他的说法，经济要用的知识从来不集中在一处，只是以零散、不完整、常常互相矛盾的片段，分散在各个人手里\cite{hayek1945}。最要紧的是“关于特定时间与地点的具体情况的知识”，有关的决定只能留给“现场的人”\cite{hayek1945}。
+% 据: hy_notice, loc_hayek, hy_dispersed, hy_time, hy_spot
+
+价格把这些知识传了出去。哈耶克举了锡的例子。某处锡变得稀缺了，用锡的人不必知道原因，只要知道原来用的锡有一部分在别处更赚钱，就得节约用锡\cite{hayek1945}。照他的说法，妙就妙在没有一道命令，知道原因的人也不过几个，成千上万的人却都少用了这种材料\cite{hayek1945}。他把价格体系比作一套电讯系统，每个生产者只需看着“几根指针的移动”\cite{hayek1945}。价格越僵硬，这个作用就发挥得越差\cite{hayek1945}。
+% 据: hy_tin, hy_marvel, hy_telecom, hy_rigid
+
+\begin{compare}{兰格与哈耶克}{兰格（1936—1937）}{哈耶克（1945）}
+\cmprow{价格从哪里来}{中央计划局定，按需求与供给之差一轮轮地改\cite{lange1938}}{千万人的交易，随时在变}
+\cmprow{要用的知识}{每种商品的需求与供给，计划局可以汇总}{特定时间与地点的知识，分散在个人手里\cite{hayek1945}}
+\cmprow{试错要多久}{可能比竞争市场还短\cite{lange1938}}{价格越僵硬，传递得越差\cite{hayek1945}}
+\cmprow{对苏联的看法}{配给主要是因为不懂得利用价格机制\cite{lange1938}}{连托洛茨基也承认没有市场关系就无法核算\cite{hayek1945}}
+\cmpsum{两人都承认价格是核算的工具。分歧在于，价格能不能由一个机关来定，而又像市场里一样，及时带上分散在各处的知识。}
+\end{compare}
+
+\section{增长有多快}\label{sec:soviet-growth}
+
+官方的数字说，苏联增长得飞快。按中央统计局的数，1928—1940 年苏联的国民收入每年增长 13.9\%\cite{harrison1993}。美国中央情报局采用的 Moorsteen 与 Powell 的估计，国民生产总值每年增长 6.1\%\cite{harrison1993}。苏联的经济学家哈宁（Girsh Khanin，1937 年生）的估计，只有每年 3.2\%\cite{harrison1993}。\tabref{tab:soviet-growth}列出了三种估计。
+% 据: h93_t1_2840, h93_khanin
+
+\begin{table}[!tb]\centering\footnotesize
+\caption{苏联经济增长的三种估计（每年 \%）}\label{tab:soviet-growth}
+\begin{tabularx}{\linewidth}{@{}p{0.2\linewidth}YYY@{}}
+\toprule
+时期 & 中央统计局（官方） & 美国中央情报局（Moorsteen 与 Powell） & 哈宁 \\\midrule
+1928—1940 年 & 13.9 & 6.1 & 3.2（1928—1941 年） \\
+1940—1950 年 & 4.8 & 2.0 & 1.6（1941—1950 年） \\
+1928—1950 年 & 10.1 & 4.2 & 2.5 \\
+1950—1987 年 & 6.6 & 3.8 & 3.8 \\
+1928—1987 年 & 7.9 & 3.9 & 3.3 \\
+\bottomrule
+\end{tabularx}
+\datasource{Harrison（1993）表 1（第 146 页），据扫描页读取。中央统计局与哈宁的数是物质生产部门的净产值，中央情报局的数是国民生产总值。}
+\end{table}
+
+哈宁 1987 年发表文章《狡猾的数字》，引起了轰动\cite{harrison1993}。照 Harrison（1993）的转述，哈宁的结论是，到 1985 年苏联的国民收入只是 1928 年的 6.6 倍，官方的统计却是 84.4 倍\cite{harrison1993}。按 Moorsteen 与 Powell 的估计，战前的几个五年计划让国民生产总值翻了一番；按哈宁的估计，只增加到 1.5 倍\cite{harrison1993}。照哈宁的估计，第一个五年计划期间产出下降了 20\%，战前的增长全部集中在第二个五年计划的 1933—1937 年\cite{harrison1993}。
+% 据: h93_khanin, h93_sensation, h93_doubled, h93_first
+
+差别有一部分出在价格的权数上。\chref{ch:prices}讲过，用哪一年的价格给产品加权，增长率可以差很多。照 Harrison（1993）的说明，长得最快的产品，相对价格往往下降\cite{harrison1993}。按早年的价格计算，这些产品的权数大，产出就显得长得更快，这就是“Gerschenkron 效应”\cite{harrison1993}。设两种产品在第 0 年与第 1 年的价格是$p_{j,0}$与$p_{j,1}$，产量是$q_{j,0}$与$q_{j,1}$，两种价格权数下的产量指数是
+\begin{keyeq}
+Q^{(0)}=\frac{\sum_j p_{j,0}\,q_{j,1}}{\sum_j p_{j,0}\,q_{j,0}},\qquad
+Q^{(1)}=\frac{\sum_j p_{j,1}\,q_{j,1}}{\sum_j p_{j,1}\,q_{j,0}}.\label{eq:soviet-index}
+\end{keyeq}
+$Q^{(0)}$用早年的价格加权，$Q^{(1)}$用晚年的价格加权。产量长得快的产品若变得相对便宜，$Q^{(0)}$就大于$Q^{(1)}$。
+% 据: h93_gersch
+
+\begin{example}{机器与粮食}\label{ex:soviet-index}
+一个只生产机器与粮食的经济，数字为教学输入。第 0 年，机器 2 台，每台 10；粮食 80 吨，每吨 1。第 1 年，机器 10 台，每台 4；粮食仍是 80 吨，每吨 1.2。（1）按式~\eqref{eq:soviet-index}，用第 0 年与第 1 年的价格，产量各增长多少？（2）两者的几何平均是多少？（3）这和苏联的哪一组数字方向相同？
+\solution （1）按第 0 年的价格：$\sum p_0q_0=2\times10+80\times1=100$，$\sum p_0q_1=10\times10+80\times1=180$，增长 80\%。按第 1 年的价格：$\sum p_1q_0=2\times4+80\times1.2=104$，$\sum p_1q_1=10\times4+80\times1.2=136$，增长$136/104-1\approx30.8\%$。（2）$\sqrt{1.8\times1.308}\approx1.534$，增长 53.4\%，这是费雪指数。（3）机器从 2 台增加到 10 台，价格从 10 降到 4。按早年的价格，机器的权数大，增长就高。Nutter 与 Bergson 的数字方向相同：按 1928 年的价格算，苏联的增长高得多。
+\end{example}
+
+苏联的数字正是这样。按 Nutter 的估计，1928—1940 年苏联的工业生产按 1928 年的价格每年增长 19.3\%，按 1955 年的价格只有 8.7\%\cite{harrison1993}。按 Bergson 的估计，1928—1937 年的国民生产总值按 1928 年的价格每年增长 11.9\%，按 1937 年的价格只有 5.5\%\cite{harrison1993}。官方的指数用所谓“1926/27 年度不变价格”，实际上这些价格随着新产品的加入逐年上涨\cite{harrison1993}。
+% 据: h93_nutter, h93_unchanged
+
+\fig{soviet_gdp}{苏联的人均 GDP 在 1921 年跌到谷底，1930 年代中期跃升。人均 GDP，2011 年国际元（一种为跨国比较设计的记账单位），对数坐标，1913—1940 年：苏联（粗线），阿根廷与印度（虚线），美国、英国、德国与日本（细线）。1928 年以后的苏联数字是 Moorsteen 与 Powell 的重估，不是官方指数。数据：Maddison 项目数据库 2023 年版（Bolt 与 van Zanden 2024）。}{fig:soviet_gdp}
+
+按 Maddison 项目数据库，苏联的人均 GDP 在 1921 年跌到谷底，只有 1913 年的 37.2\%\cite{mpd2023,boltvanzanden2024}。1928 年回到 1913 年的 96.9\%，1940 年是 1913 年的 151.6\%（\figref{fig:soviet_gdp}）\cite{mpd2023}。这与 Harrison（2017）说的 1940 年人均产出比 1913 年高 50\% 相合\cite{harrison2017}。1928—1940 年，人均 GDP 平均每年增长 3.8\%\cite{mpd2023}。数据库 1928 年以后的苏联数字来自 Moorsteen 与 Powell（1966）的重估，1913—1928 年来自 Markevich 与 Harrison（2011）\cite{mpd31src}。
+% 据: h17_1940
+
+增长集中在几年里。按 Maddison 的数，1928—1940 年人均 GDP 的增加，85.7\% 出现在 1934—1937 年这四年里\cite{mpd2023}。照 Markevich 与 Harrison 的计算，1904—1939 年收入增加了约 75\%，其中四分之三是在 1933—1937 年这五年里取得的\cite{markevich2011}。照 Harrison（2017）的计算，国民收入的增加有五分之四来自 1934—1937 年的四年\cite{harrison2017}。照 Harrison 的说法，1930 年代中期收成恢复，食物不那么短缺了，斯大林在 1935 年说“生活变得更好了”\cite{harrison2017}。
+% 据: mh_75, mh_threequarters, h17_fourfifths, h17_better
+
+\begin{compare}{官方增长与西方重估}{官方的指数}{西方的重估}
+\cmprow{用的价格}{所谓 1926/27 年度不变价格，实际随新产品逐年上涨\cite{harrison1993}}{固定的某一年价格，例如 1928、1937 或 1955 年\cite{harrison1993}}
+\cmprow{1928—1940 年每年}{国民收入 13.9\%\cite{harrison1993}}{国民生产总值 6.1\%（Moorsteen 与 Powell）\cite{harrison1993}}
+\cmprow{价格权数的影响}{——}{Bergson：1928—1937 年按 1928 年价格 11.9\%，按 1937 年价格 5.5\%\cite{harrison1993}}
+\cmpsum{两边量的都是同一个经济。用哪一年的价格加权，增长率就可以差一倍多。}
+\end{compare}
+
+\section{两场争论}\label{sec:soviet-debate}
+
+\textbf{社会主义能不能核算。}米塞斯与哈耶克说不能，兰格说能，只要计划局像市场一样试错。照 Gregory 与 Harrison（2005）的说法，这场论战设想有一个技术官僚的中央计划局，以福利最大为目标，直接与企业打交道\cite{gregory2005}。论战因此集中在核算与激励上，把社会主义在政治上怎样组织搁在了一边\cite{gregory2005}。照他们对档案的研究，斯大林的政权“对核算并不在意”，一心惩罚与威慑它的敌人，靠威胁与许诺驱使一层层的代理人\cite{gregory2005}。各级的决策者分配资源，靠的是直觉、历史先例与常识，边做边定\cite{gregory2005}。
+% 据: gr_technocratic, gr_controversy, gr_indifferent, gr_madeup
+
+\textbf{强制换来了增长吗。}Allen（2003）的回答比较正面。他的论证，下面据 Davies（2004）的书评与 Markevich 与 Harrison（2011）的转述\cite{davies2004,markevich2011}。照 Davies 的转述，在 Allen 看来，没有革命与五年计划，俄国的命运会在印度与阿根廷之间\cite{davies2004}。按 Maddison 的数，1940 年苏联的人均 GDP 是 3,417 国际元，阿根廷是 6,633，印度是 1,093\cite{mpd2023}。照 Davies 的转述，按 Allen 的估计，1928—1937 年人均消费增加了多达 30\%\cite{davies2004}。Bergson 与 Chapman 的经典研究得出的结论相反，城乡的人均消费都下降了\cite{davies2004}。照 Davies 自己的看法，1927/28 年粮食危机以前短暂存在的那种经济，是“资本主义与斯大林主义之外真正的另一种选择”\cite{davies2004}。
+% 据: dv_fate, dv_cons, dv_bergson, dv_alternative
+
+照 Markevich 与 Harrison 的转述，Allen 主张，1930 年代最好的发展道路，是对工业企业实行软预算约束，同时不搞农业集体化\cite{markevich2011}。照 Davies 的说法，按 Allen 自己的估计，农产品价格提高 10\%，上市量才增加 7\%\cite{davies2004}。1930 年代末的城市人口比 1928 年多一倍以上，上市的农产品至少也要翻一番\cite{davies2004}。照 Davies 的说法，问题在于，这能不能不用强制，与农民的市场结合起来\cite{davies2004}。照 Markevich 与 Harrison 的说法，Allen 的评价“难以接受”，从 1925 年起投资动员加紧，农业与小工业却停滞了\cite{markevich2011}。
+% 据: mh_allen, dv_elastic, dv_double, dv_compulsion, mh_swallow
+
+照 Cheremukhin 等人（2013）的模型，1928—1940 年斯大林的政策造成的福利损失，相当于消费的 24\%，1941 年以后有相当于消费 16\% 的福利收益\cite{cggt2013}。1928 年出生的一个代表性消费者，福利损失相当于消费的 1\%，这还没有计入政治镇压的代价\cite{cggt2013}。他们把这看作“斯大林政策下福利损失的下限”，也说“没有找到支持大推进理论的证据”\cite{cggt2013}。在他们的模型里，新经济政策若延续下去，保守的情形与斯大林的道路相当；按日本的生产率增长算，会有 20\% 的福利收益\cite{cggt2013}。两种看法都依赖对没有发生的道路的设想，本书不替读者下结论。
+% 据: cg_welfare, cg_lower, cg_bigpush, cg_nep, cg_nep20
+
+\section{数据核对与反例}\label{sec:soviet-check}
+
+几个数字各有第二个来源。93.7\% 这个数，斯大林的报告与国家计委的总结相同\cite{stalin1933,gosplan1933}。斯大林说 1932 年的工业产值是 1928 年的 219\%，国家计委的数是 218.5\%\cite{stalin1933,gosplan1933}。219\% 的四年，平均每年增长约 21.6\%，与他说的 22\% 相合。这是本书的计算。生铁在 1932 年是 620 万吨，总结的正文与表相同\cite{gosplan1933}。1928 年的人均 GDP，Maddison 的数比 1913 年低 3.1\%，Markevich 与 Harrison 的是低约 3\%\cite{mpd2023,markevich2011}。
+% 据: st_937, gp33_937, st_219, gp33_gross, st_22, gp33_newworks, gp33i_world, mh_1928
+
+饥荒前后的几件事，也各有两个证人。1933 年 1 月 22 日封锁边界的命令，Werth 与 Rudnytskyi 等人都提到了\cite{werth2016,rudnytskyi2015}。约 200 万“富农”被流放，Harrison 与 Markevich、Naumenko 和 Qian 的数相同\cite{harrison2017,mnq2021}。1921 年的饥荒死了约 500 万人，Harrison 与 Markevich、Naumenko 和 Qian 的说法也相合\cite{harrison2017,mnq2021}。
+% 据: we_telegram, ru_directive, h17_feb1930, mnq_kulaks, h17_1921, mnq_1921
+
+计划自己的话，也有反例。计划要让物价有步骤地降低，切尔文的购买力提高 20\%\cite{gosplan1929}。到 1932 年，粮食的黑市价格是国家收购价格的 28 倍\cite{cggt2013}。计划要让农业生产增长 55\%\cite{gosplan1929}。按 Markevich、Naumenko 与 Qian 修正的数，1932 年的粮食产量比 1928 年少了 22.2\%\cite{mnq2021}。计划要让人均消费提高三分之二\cite{harrison2017}。城里工人的肉、奶与油脂，1927—1933 年却少了 75\%—90\%\cite{werth2016}。斯大林说失业已经消灭，计划在四年前却预计失业仍会存在\cite{stalin1933,gosplan1929}。
+% 据: gp29_prices, gp29_chervonets, cg_black, gp29_growth, mnq_table, h17_envisaged, we_meat, st_unemp, gp29_unemp
+
+\begin{deeper}[史料说明]
+\textbf{转述与间接的证词。}Allen（2003）的书没有取得，普林斯顿大学出版社的网页拒绝了访问。他的估计都据 Davies 的书评与 Markevich 与 Harrison 的转述。哈宁的文章、Moorsteen 与 Powell（1966）、Nutter 与 Bergson 的估计，都据 Harrison（1993）的转述。Conquest（1986）、Davies 与 Wheatcroft、Kondrashin 与 Polyakov 等人的死亡估计，据 Markevich、Naumenko 与 Qian 和 Werth 的转述；Meslé 与 Vallin 的估计据 Rudnytskyi 等人的转述。《纽约时报》与《每日电讯报》1932 年 11 月的话，据斯大林报告的英译本，经过了两次翻译，不是报纸的原文。斯大林给副手的信据 Markevich、Naumenko 与 Qian，1933 年 1 月 22 日的电报据 Werth，1928 年 12 月 6 日政治局的决定也据 Werth。普列奥布拉任斯基的主张据 Harrison（1980），Hunter 的“紧绷”的计划也据 Harrison（1980）。托洛茨基的话据哈耶克（1945）的转述，原文没有读到。
+
+\textbf{几个证人不合。}新经济政策宣布的日子，Harrison（2017）、Markevich 与 Harrison、Harrison 与 Markevich 都作 1921 年 3 月，苏联情报局 1929 年的手册作“1921 年 4 月”，正文从前者。卢布的稳定，Harrison（2017）说“直到 1923 年才实现”，手册把币制改革记在 1924 年 3 月，正文写的是改革的日子。“乌拉尔—西伯利亚方法”，Werth 作 1928 年 1 月，Davies 说是 1928 年而不是 1927 年的收成以后；正文用 Werth 的月份，在这里记下 Davies 的不同说法。重工业的完成率，斯大林说 108\%，国家计委的总结分成甲类 103.4\% 与重工业人民委员部 109.6\%。1932 年的石油与天然气，总结的正文是 2,220 万吨，表是 2,229 万吨；计划的指标在计划书里一处作 2,170 万吨，一处作 2,200 万吨。1932 年的煤，总结的表是 6,437 万吨，按地区分的表只算重工业人民委员部的托拉斯，是 6,298.3 万吨。计划的方案，1929 年的英译本叫“基本”与“最高”，Markevich 与 Harrison 叫“最优”。
+
+\textbf{饥荒的死亡。}各家的范围不同，也因为算的东西不同。Harrison 的约 600 万，说的是 1932 年开始的饥荒；Werth 的 650 万到 700 万，说的是 1930 年代初的几场饥荒，包括哈萨克斯坦；Davies 的 550 万到 600 万，算的是 1930—1933 年的全部超额死亡，也包括更早的哈萨克饥荒，他认为 Allen 书里的 1,000 万夸大了，Allen 自己在另一页改成了 730 万。乌克兰的 390 万是 Rudnytskyi 等人的超额死亡，不含少出生的 60 万。哈萨克斯坦的估计在 100 万到 150 万以上之间。正文给出各家的数，不取平均。
+
+\textbf{口径。}\figref{fig:soviet_plan}的 1927/28 年度一栏，工业总产值用的是 1928 年的数，钢与生铁用的是经济年度，1932 年用的是日历年。征购占产量的比例，按 Maddison 的数算出的比值、每年的增长率与 85.7\%，都是本书的计算。Maddison 的工作表没有说明各年的疆界。苏联的统计年度在 1930 年以前按经济年度计，正文写作 1928/29 年度。
+
+\textbf{识别错误与单一见证。}扫描本的识别文本有错，快照的注里一一写明：国家计委的总结把“increased”印成“incr@ised”，把“the”印成“thé”；1929 年的计划书把 11.6 印成“11,6”，把出版者 Liveright 印成“Livericut”，把生铁印成“pig tron”；米塞斯文章的出处印成“Sozialzvissenschaften”。Markevich、Naumenko 与 Qian 的附表把 Davies 印成“Davis”。只有一个来源的数有：战时共产主义征收农业产出的 70\%（Cheremukhin 等人），1930 年 3 月的骚乱，黑市粮价的倍数，周转税的份额，国家计委的 50 名专家，古拉格的人数，哈萨克斯坦逃出的人数，乌克兰每天的死亡人数与 1932—1933 年的逮捕人数（Werth）。生卒年据美国国会图书馆的规范档，哈宁的生年据 Harrison（1993）。
+% 据: dv_sbc, h93_khanin, st_gamble, st_telegraph, mnq_conquest, mnq_dw, mnq_kondrashin, ru_mesle, mnq_lose, we_telegram, we_ration, h80_preo, h80_taut, hy_trotsky, h17_breathing, mh_nep, hm_nep, su_april, h17_stab, su_reform, we_ural, dv_ural, st_108, gp33_groupa, gp33_oil, gp33i_oil, gp29_oil, gp29_pig, gp33i_coal, gp33i_trusts, gp29_variants, mh_april, h17_famine, we_total, dv_10m, ru_total, ca_15, mnq_kazakh, gp33_gross, gp29_copyright, mi_note, mnq_table, cg_requisition, cg_riots, cg_black, sc_budget, gr_fifty, h17_gulag, ca_fled
+\end{deeper}
+
+\section{今天还剩什么}\label{sec:soviet-legacy}
+
+\textbf{影子价格与线性规划。}康托罗维奇（Leonid Kantorovich，1912—1986）是苏联数学学派的代表\cite{nobel1975,loc31}。早在 1939 年，他就写了一篇论文，讨论单个企业怎样有效地使用资源\cite{nobel1975}。1975 年的诺贝尔经济学奖，奖励的是对“资源最优配置理论”的贡献\cite{nobel1975}。照颁奖公告的说法，他用线性规划说明本国的计划可以怎样改进，还说明了计划经济要分散决策，就得有一套合理的价格体系\cite{nobel1975}。成熟的计划经济怎样用这些办法，是\chref{ch:planned}的题目。
+% 据: nb75_school, loc_kantorovich, nb75_1939, nb75_prize, nb75_lp, nb75_prices
+
+\textbf{投入产出表。}物资平衡表是计划人员版本的投入产出表。1973 年的颁奖公告说，里昂惕夫的投入产出方法既用于分散的市场经济，也用于中央计划经济的预测与计划\cite{nobel1973}。今天的国民核算里还有它的骨架（\chref{ch:accounts}）。
+% 据: nb73_planning
+
+\textbf{软预算约束。}照 Gregory 与 Harrison 的说法，档案显示，软预算约束起源于斯大林的工业化，斯大林又做不到坚持财政纪律，它就一直延续了下来\cite{gregory2005}。软预算约束是说，亏损的企业总能得到救助。它后来怎样拖累计划经济与转轨，留给\chref{ch:planned}与\chref{ch:transition}。
+% 据: gr_soft
+
+\textbf{统计能信多少。}官方的增长率是西方重估的两倍多，哈宁的估计又只有西方重估的一半左右\cite{harrison1993}。计划经济的统计还有哪些问题，是\chref{ch:datareliability}的题目。苏联在战争中怎样动员经济，留给\chref{ch:warfinance}。
+% 据: h93_t1_2840
+
+\begin{takeaways}
+\begin{itemize}
+\item 内战时期的战时共产主义征收农民的粮食，纸卢布急剧贬值。1921 年 3 月起的新经济政策恢复了农业与小工业的市场，1924 年 3 月的币制改革收回了旧卢布。
+\item 第一个五年计划 1929 年 4 月获得批准。按 1926/27 年度的价格，工业总产值的计划完成了 93.7\%；生铁只到了指标的 62\%。
+\item 物资平衡要让每种物资的来源等于用途，按式~\eqref{eq:soviet-balance}，一个指标改了，平衡表就要再算一轮。苏联 1930 年代初的集中平衡只有几十种物资。
+\item 强制集体化、200 万人被迁走或关押、1932—1933 年的饥荒，是这场工业化的代价。饥荒的死亡，各家的估计多在 550 万到 700 万之间，汇总的范围是 500 万到 1,080 万；乌克兰与哈萨克斯坦死得最多。
+\item 米塞斯说没有市场价格就不能核算，兰格说计划局可以按式~\eqref{eq:soviet-lange}试错，哈耶克说价格传递的是分散在个人手里的知识。
+\item 官方说 1928—1940 年每年增长 13.9\%，西方的重估是 6.1\%，哈宁是 3.2\%。按式~\eqref{eq:soviet-index}，用早年的价格加权会夸大增长。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 在\exref{ex:soviet-balance}里，煤的最终使用从 20 提高到 25，钢的最终使用不变。钢与煤各要多产多少？
+\item 只有两种物资时，若$a_{12}a_{21}\geq1$，\exref{ex:soviet-balance}的方程还有正的解吗？这对平衡表意味着什么？
+\item 在\exref{ex:soviet-lange}里，供给改成$S=10+3p$，需求不变。均衡价格是多少？$\lambda=0.2$时收敛吗？
+\item 1928 年征购 1,080 万吨，产量 7,340 万吨；1932 年征购 1,900 万吨，产量 5,710 万吨。留给农村的粮食各是多少？少了百分之几？
+\item 为什么用早年的价格加权，会让一个迅速工业化的经济显得增长更快？举出\exref{ex:soviet-index}里的数字。
+\item 官方说每年增长 13.9\%，哈宁说 3.2\%。按这两个速度，12 年后的产出各是开始时的几倍？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item 钢要多产$0.125\times5=0.625$，煤要多产$1.25\times5=6.25$。
+\item $\det(I-A)=1-a_{12}a_{21}\leq0$，没有正的解。生产一轮所用的投入不少于产出，什么最终使用也交不出来；平衡表无论怎样改都对不上。
+\item $100-2p=10+3p$，$p^{*}=18$。$1-0.2\times(2+3)=0$，一轮就到均衡。
+\item 1928 年留下$73.4-10.8=62.6$百万吨，1932 年留下$57.1-19.0=38.1$百万吨，少了约 39\%。
+\item 长得快的产品，相对价格往往下降。按早年的价格，它们的权数大。例题里机器从 2 台增加到 10 台，按第 0 年的价格增长 80\%，按第 1 年的价格只有 30.8\%。
+\item $1.139^{12}\approx4.77$，$1.032^{12}\approx1.46$。
+\end{answers}
+
+1933 年 1 月 7 日，斯大林在报告里拿苏联与资本主义国家比较。照他的说法，到 1932 年底，苏联的工业产值是 1928 年的 219\%，美国跌到了 56\%，英国是 80\%，德国是 55\%\cite{stalin1933}。他说：“我们消灭了失业，使苏联的工人摆脱了失业的恐怖。”\cite{stalin1933}这些数字的背后，是被征走的粮食与饿死的人。资本主义国家的工厂停着，工人失了业。失业为什么会长久地持续，凯恩斯的《通论》要回答这个问题（\chref{ch:generaltheory}）。如果人人都想多储蓄，总储蓄为什么可能反而减少？
+% 据: st_date, st_219, st_unemp

@@ -1,0 +1,40 @@
+{
+  "title": "GDP per head of the USSR, the United States, the United Kingdom, Germany, Japan, Argentina and India, 1913-1940 (Maddison Project Database 2023)",
+  "source": "Maddison Project Database, version 2023 (J. Bolt and J. L. van Zanden), workbook 'mpd2023_web.xlsx', sheet 'Full data', DataverseNL, doi:10.34894/INZBF2",
+  "url": "https://dataverse.nl/api/access/datafile/421302",
+  "series": "country (ISO code; SUN = former USSR), year, gdppc_2011usd ('gdppc': real GDP per head in 2011 international dollars), pop_thousands ('pop': mid-year population, thousands; empty where the database has none)",
+  "retrieved": "2026-10-22",
+  "license": "CC BY 4.0 (DataverseNL). The workbook's 'Notes' sheet sets a citation policy: 'CONDITIONS UNDER WHICH ALL ORIGINAL PAPERS MUST BE CITED: a) If the data is shown in any graphical form b) If subsets of the full dataset that include less than a dozen (12) countries are used for statistical analysis or any other purposes'. The chapter shows the data in a figure and cites the original sources listed in 'sources_by_country' (copied from the sheets 'Sources' and 'Maddison original sources', the rows whose period covers any of 1913-1940).",
+  "used_in": [
+    31
+  ],
+  "fetch": "data/fetch/maddison2023_ussr31.py",
+  "notes": "Workbook SHA-256 ecc5916ca12789b983fc4be437f8a354bbf4291323605324ac3e0aea4c57cbb6 (the copy of Chapter 21). The workbook's 'Notes' sheet gives no caveat of its own for the USSR; its source lists are the caveat the chapter states: for 1913-1928 the database follows Markevich and Harrison (2011), table 6, and for 1928-1940 Moorsteen and Powell (1966), a Western recalculation, not the official Soviet index. The population of the USSR is missing for 1914-1919. The territory behind each figure is not stated in the workbook. Argentina and India are kept because Allen's counterfactual, as Davies's review quotes it, places Russia's fate without the revolution and the plans 'somewhere between India's and Argentine's'.",
+  "citation": "Bolt, J. and J. L. van Zanden (2024), 'Maddison style estimates of the evolution of the world economy: A new 2023 update', Journal of Economic Surveys, doi:10.1111/joes.12618",
+  "sources_by_country": {
+    "SUN": [
+      "Sources, 1885-1913: Gregory, P. R. (1982). Russian National Income, 1885–1913, Cambridge: Cambridge University Press",
+      "Sources, 1913-1928: Markevich, A. and M. Harrison (2011). “Great War, Civil War, and Recovery: Russia's National Income, 1913 to 1928”, The Journal of Economic History, Volume 71 (3): 672 – 703, table 6.",
+      "Maddison original sources, 1928-40: R. Moorsteen and R.P. Powell, The Soviet Capital Stock 1928-1962, Irwin, Illinois, 1966, p. 361"
+    ],
+    "USA": [
+      "Maddison original sources, 1820-1950: GDP movement from Maddison (1995a), amended for 1820–70 to include income of the indigenous population (taken to be $400 per capita in 1820 and 1870)."
+    ],
+    "GBR": [
+      "Maddison original sources, 1870-1950: C.H. Feinstein, National Income Expenditure and Output of the United Kingdom 1855-1965, Cambridge, 1972"
+    ],
+    "DEU": [
+      "Maddison original sources, 1850-1950: Hoffmann, Grumbach and Hesse, op. cit., pp. 454-5."
+    ],
+    "JPN": [
+      "Sources, 1874-1940: Fukao, K., Bassino, J.-P., Makino, T., Paprzycki, R., Settsu, T., Takashima, M., and Tokui, J. (2015) Regional Inequality and Industrial Structure in Japan: 1874-2008, Tokyo: Maruzen Publishing."
+    ],
+    "ARG": [
+      "Maddison original sources, 1900-1913: Unpublished annual estimates supplied by ECLA/CONADE. and quinquennial averages published in El Desarrollo Económico de la Argentina, ECLA, Mexico, 1959, p. 15;",
+      "Maddison original sources, 1913-1950: IEERAL, \"Estadísticas de la evolución económica de Argentina, 1913-84\", Estudios, Buenos Aires, July-September, 1986."
+    ],
+    "IND": [
+      "Maddison original sources, 1900-46: A. Maddison, \"Alternative Estimates of the Real Product of India, 1900-46\", Indian Economic and Social History Review, 22, 2, 1985."
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "title": "Evidence for Chapter 31: Soviet industrialization, the famine of 1930-1934 and the socialist calculation debate, 1917-1945",
+  "source": "Stalin's report of 7 January 1933 (Works, vol. 13); the State Planning Commission's The Soviet Union Looks Ahead (1929) and Summary of the Fulfilment of the First Five-Year Plan (1933); Socialist Construction in the U.S.S.R. (1936); the Soviet Union Information Bureau (1929); Mises (1920, in Hayek ed. 1935); Lange (1938); Hayek (1945); Markevich, Naumenko and Qian (NBER WP 29089); Rudnytskyi et al. (2015); Cameron (2016); Werth (2016); Davies (2004); Cheremukhin, Golosov, Guriev and Tsyvinski (NBER WP 19425); Gregory and Harrison (2005); Harrison (1980, 1993, 2017); Markevich and Harrison (2011); Harrison and Markevich (2018); the Nobel press releases of 1973 and 1975; the authority records of the Library of Congress",
+  "url": "https://www.marxists.org/reference/archive/stalin/works/1933/01/07.htm",
+  "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or document, the source text verbatim (empty for a value read on a page image), note",
+  "retrieved": "2026-10-22",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Stalin's report of 7 January 1933 (Marxists Internet Archive): 'Public Domain: Marxists Internet Archive (2008). You may freely copy, distribute, display and perform this work; as well as make derivative and commercial works. Please credit \"Marxists Internet Archive\" as your source.' (row st_pd). The Soviet Union Information Bureau (1929) on the Soviet History Archive: 'Copyleft: Soviet History Archive (marxists.org) 2002-2004. Permission is granted to copy and/or distribute this document under the terms of the GNU Free Documentation License' (row su_copyleft). The Soviet Union Looks Ahead (1929): 'CopyRIGHT, 1929, BY Horace Livericut, Inc.' as the OCR prints it (row gp29_copyright), published in New York in 1929 (row gp29_title), so that its United States term of 95 years ended with 2024; quoted in short sentences only. The Summary of the Fulfilment of the First Five-Year Plan (Moscow, 1933) and Socialist Construction in the U.S.S.R. (Moscow, 1936) print no copyright line: short phrases and figures only. Mises (1920; in Hayek, ed., 1935), Lange (1938: 'COPYRIGHT 1938 BY THE UNIVERSITY OF MINNESOTA All rights reserved . No part of this hoo\\ may be reproduced in any form without the written permission of the publishers. Permission is hereby granted to reviewers to quote brief passages', row la_copyright) and Hayek (1945: 'The text of this edition is copyright ©: 1945, American Economic Review, XXXV, No. 4; September, 1945, pp. 519-30. Reprinted with permission.', row hy_notice) are in copyright: short phrases only, the rest paraphrased. NBER Working Paper 29089: '© 2021 by Andrei Markevich, Natalya Naumenko, and Nancy Qian. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row mnq_copyright). NBER Working Paper 19425: '© 2013 by Anton Cheremukhin, Mikhail Golosov, Sergei Guriev, and Aleh Tsyvinski. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row cg_copyright). Rudnytskyi et al. (2015), Canadian Studies in Population: 'This work is licensed under a Creative Commons Attribution 4.0 International License' (row csp_licence). Cameron (2016) and Werth (2016), East/West: Journal of Ukrainian Studies: '© 2016 East/West: Journal of Ukrainian Studies (ewjus.com) ISSN 2292-7956' (row ca_copyright) and, on the article pages, 'Copyright (c) 2017 East/West: Journal of Ukrainian Studies This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License' (rows ewjus_licence220, ewjus_licence217): quoted and translated in short phrases, not adapted. Davies (2004) on EH.Net: '© ECONOMIC HISTORY ASSOCIATION 2026' (row dv_eha): short phrases only. Gregory and Harrison (2005), Harrison (1980, 1993, 2017), Markevich and Harrison (2011) and Harrison and Markevich (2018) are in copyright (authors' copies on Mark Harrison's Warwick pages): short phrases and figures only, the rest paraphrased. The Nobel press releases of 1973 and 1975: '© Nobel Prize Outreach 2026' (row nb75_copyright): short phrases only. The authority records of the Library of Congress (id.loc.gov) are public data. The chapter's Chinese renders the quotations; the translations are the book's.",
+  "used_in": [
+    31
+  ],
+  "fetch": "data/fetch/soviet31.py",
+  "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch31.py; rows with an empty quotation are values or words read on a page image (sources gosplan1933img, sc1936, mnq2021img, harrison1993), named as such in their notes, which give a transcription between « and »; the whole panel II of the image table of Markevich, Naumenko and Qian is the table snapshot soviet_grain. The OCR texts keep their misreadings as printed and the notes name them: 'incr@ised', 'thé', '34.3.' (gosplan1933), '11,6' with a decimal comma and 'Livericut' (gosplan1929), 'Sozialzvissenschaften' (mises1935), 'hoo\\' and 'Nos. i and 2' (lange1938); the transcription of Table A.2 keeps the table's own 'Davis'. Indirect testimony: Conquest (1986), Davies and Wheatcroft (2009), Kondrashin (2008), Polyakov and Zhiromskaya (2000), Meslé et al. (2013) and Viola (1996) through Markevich, Naumenko and Qian; Stalin's letter to Kaganovich of 11 August 1932 through the same; Stalin's telegram of 22 January 1933, Kondrashin's estimate for the Volga and the Politburo's decision of 6 December 1928 through Werth (2016); The New York Times and The Daily Telegraph of November 1932 through Stalin's report of 7 January 1933 (rows st_gamble, st_telegraph, st_nyt: the English of the report's translators, not the newspapers' own wording); Preobrazhensky and Holland Hunter through Harrison (1980); Allen (2003), Bergson, Chapman and Wheatcroft through Davies (2004) and Markevich and Harrison (2011); Khanin (1987, 1991), Moorsteen and Powell (1966), Nutter (1962) and Bergson (1961) through Harrison (1993); Rostowski and Shapiro (1991) through Harrison and Markevich (2018); Gisser and Jonas (1974) through Harrison (1980); Bergson (1964) through Gregory and Harrison (2005); Trotsky and Lange through Hayek (1945). Witnesses that disagree: the New Economic Policy announced in March 1921 (Harrison 2017; Markevich and Harrison 2011; Harrison and Markevich 2018) or 'April, 1921' (Soviet Union Information Bureau 1929); stabilization 'only in 1923' (Harrison 2017) or with the currency reform of March 1924 (the Bureau); the 'Ural-Siberian method' of January 1928 (Werth) or after the 1928 harvest (Davies); heavy industry 108 per cent of the plan (Stalin) or 103.4 per cent for group A and 109.6 per cent for the Commissariat of Heavy Industry (Gosplan 1933); oil and gas in 1932 22.2 million tons (Gosplan's text) or 22.29 (its table); the plan's variants 'basic' and 'maximum' (the English edition of 1929) or 'optimal' (Markevich and Harrison); the death toll of the famine (see the chapter's note on sources). Not obtained: Allen (2003) itself (Princeton UP answered 403), Davies and Wheatcroft (2004, 2009), Conquest (1986), Khanin's own articles, Moorsteen and Powell (1966), the Russian originals of the plan documents (Russian statistical sites unreachable), the Mises Institute's edition of Mises (1920) (403).",
+  "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+  "sources": {
+    "stalin1933": {
+      "url": "https://www.marxists.org/reference/archive/stalin/works/1933/01/07.htm",
+      "format": "html",
+      "sha256": "429eba3c6703f4a975acafcd8289e9440c8afcd62e8c83b8b50d90d24d5c4521",
+      "version": "J. V. Stalin, 'The Results of the First Five-Year Plan', report delivered on 7 January 1933 to the joint plenum of the Central Committee and the Central Control Commission; Works, vol. 13 (Moscow: Foreign Languages Publishing House, 1954), pp. 161-217; transcription by Salil Sen for the Marxists Internet Archive (2008). Cited by section.",
+      "retrieved": "2026-10-22"
+    },
+    "gosplan1929": {
+      "url": "https://archive.org/download/micro_IA40244302_0257/micro_IA40244302_0257_djvu.txt",
+      "format": "txt",
+      "sha256": "94f5b03467e943885ec8a0966da43f876fb139bed4fd47ae5c9461bbeb36a83c",
+      "version": "State Planning Commission of the U.S.S.R., The Soviet Union Looks Ahead: The Five-Year Plan for Economic Construction (New York: Horace Liveright, 1929), the authorized English translation of the plan approved in 1929; OCR text (djvu.txt) of the archive.org scan. Pages as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "gosplan1933": {
+      "url": "https://archive.org/download/micro_IA40244302_0202/micro_IA40244302_0202_djvu.txt",
+      "format": "txt",
+      "sha256": "842fad690d6662feb594e6ec6004b8fb12a2281e6418f784feb31fdb0432542d",
+      "version": "State Planning Commission of the U.S.S.R., Summary of the Fulfilment of the First Five-Year Plan for the Development of the National Economy of the U.S.S.R. (Moscow: Cooperative Publishing Society of Foreign Workers in the U.S.S.R., 1933); OCR text (djvu.txt) of the archive.org scan. Pages as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "gosplan1933img": {
+      "url": "https://archive.org/download/micro_IA40244302_0202/micro_IA40244302_0202.pdf",
+      "format": "image",
+      "sha256": "8c9b592772ae2ee747332a7198eedf76d9fd5c093d6bf5d6d781ae65c0dc429e",
+      "version": "The scan of the same book (Summary of the Fulfilment of the First Five-Year Plan, 1933), whose OCR breaks the tables apart; tables read on images rendered with pdftoppm: PDF pages 117, 119 and 130 = book pp. 99, 101 and 112.",
+      "retrieved": "2026-10-22"
+    },
+    "sc1936": {
+      "url": "https://archive.org/download/dli.ernet.237583/237583-Socialist%20Construction%20In%20The%20U.s.s.r..pdf",
+      "format": "image",
+      "sha256": "a7483f26a43b4cba3271106943303d70621624bed0790339453e686cf535a468",
+      "version": "Central Administration of Economic and Social Statistics of the State Planning Commission of the U.S.S.R., Socialist Construction in the U.S.S.R.: Statistical Abstract (Moscow: Soyuzorgouchet, 1936), Digital Library of India scan on archive.org; Table 1 of the section on state finance (book p. 482) read on the image of PDF page 495 rendered with pdftoppm.",
+      "retrieved": "2026-10-22"
+    },
+    "suib1929": {
+      "url": "https://www.marxists.org/history/ussr/government/1928/sufds/ch11.htm",
+      "format": "html",
+      "sha256": "a670848266a163d2c1436c1d5d0d483f1b6a8225b530e0c41da451ceaf02756a",
+      "version": "Soviet Union Information Bureau, The Soviet Union: Facts, Descriptions, Statistics (Washington, 1929), chapter XI (Money and Banking), Soviet History Archive at marxists.org.",
+      "retrieved": "2026-10-22"
+    },
+    "suib1929idx": {
+      "url": "https://www.marxists.org/history/ussr/government/1928/sufds/index.htm",
+      "format": "html",
+      "sha256": "8ebd3aa107023163760a4ca8ae78d0c159bb3e5d99c4d5c34ab19a99afce34ff",
+      "version": "The index page of the same edition, with its date of publication and its licence.",
+      "retrieved": "2026-10-22"
+    },
+    "mises1935": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.217796/2015.217796.Collectivist-Economic_djvu.txt",
+      "format": "txt",
+      "sha256": "59969802c92974e5a78f5f0084622563a4b6a31b9048b46ee4dda1fa0bcbe0d9",
+      "version": "Ludwig von Mises, 'Economic Calculation in the Socialist Commonwealth' (1920), translated by S. Adler, in F. A. Hayek (ed.), Collectivist Economic Planning (London: George Routledge & Sons, 1935), pp. 87-130; OCR text of the Digital Library of India scan on archive.org. In copyright: short phrases only.",
+      "retrieved": "2026-10-22"
+    },
+    "lange1938": {
+      "url": "https://archive.org/download/in.ernet.dli.2015.263328/2015.263328.On-The_djvu.txt",
+      "format": "txt",
+      "sha256": "d573692571a87d4fe76f96546797b14a15f7bcd700368bf7dd519b6ad049396a",
+      "version": "Oskar Lange, 'On the Economic Theory of Socialism', in B. E. Lippincott (ed.), On the Economic Theory of Socialism (Minneapolis: University of Minnesota Press, 1938), pp. 55-143, reprinted from the Review of Economic Studies 4 (1936-1937); OCR text of the Digital Library of India scan on archive.org. In copyright: short phrases only.",
+      "retrieved": "2026-10-22"
+    },
+    "hayek1945": {
+      "url": "https://www.econlib.org/library/Essays/hykKnw.html",
+      "format": "html",
+      "sha256": "8711bf2675a676bc300141cf32cd6ba0150feb801e1f0c8e653690f5d1907f81",
+      "version": "Friedrich A. Hayek, 'The Use of Knowledge in Society', American Economic Review 35 (4), September 1945, pp. 519-530, on Econlib (the Library of Economics and Liberty), reprinted with the AER's permission. In copyright: short phrases only. Cited by paragraph.",
+      "retrieved": "2026-10-22"
+    },
+    "mnq2021": {
+      "url": "https://www.nber.org/system/files/working_papers/w29089/w29089.pdf",
+      "format": "pdf",
+      "sha256": "814659b42a83ff851fb4233110c150574c9251794826f16406665aa7adf6924f",
+      "version": "Andrei Markevich, Natalya Naumenko and Nancy Qian, 'The Causes of Ukrainian Famine Mortality, 1932-33', NBER Working Paper 29089, July 2021, revised May 2023. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "mnq2021img": {
+      "url": "https://www.nber.org/system/files/working_papers/w29089/w29089.pdf",
+      "format": "image",
+      "sha256": "814659b42a83ff851fb4233110c150574c9251794826f16406665aa7adf6924f",
+      "version": "The same file; Appendix Table A.2 has no text layer and was read on the image of PDF page 51 rendered with pdftoppm.",
+      "retrieved": "2026-10-22"
+    },
+    "rudnytskyi2015": {
+      "url": "https://journals.library.ualberta.ca/csp/index.php/csp/article/download/21772/18080",
+      "format": "pdf",
+      "sha256": "023b6a1f6653a0eeb78bb7585e8905f03e5eed092bb026683061de602bde53e9",
+      "version": "Omelian Rudnytskyi, Nataliia Levchuk, Oleh Wolowyna, Pavlo Shevchuk and Alla Kovbasiuk, 'Demography of a man-made human catastrophe: The case of massive famine in Ukraine 1932-1933', Canadian Studies in Population 42 (1-2), 2015, pp. 53-80. Pages as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "csp21772": {
+      "url": "https://journals.library.ualberta.ca/csp/index.php/csp/article/view/21772",
+      "format": "html",
+      "sha256": "7ae66e09018455e4f1153aa06c347b1746caab8b831fbfc5aba84fdf084f4fab",
+      "version": "The article's page in Canadian Studies in Population, with its licence.",
+      "retrieved": "2026-10-22"
+    },
+    "cameron2016": {
+      "url": "https://ewjus.com/index.php/ewjus/article/download/220/88",
+      "format": "pdf",
+      "sha256": "cb6c42014fae5738c784d6801e91e52fbe1bbfc2b95891e81a6b75ea8202f7cf",
+      "version": "Sarah Cameron, 'The Kazakh Famine of 1930-33: Current Research and New Directions', East/West: Journal of Ukrainian Studies 3 (2), 2016, pp. 117-132. Pages as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "ewjus220": {
+      "url": "https://ewjus.com/index.php/ewjus/article/view/220",
+      "format": "html",
+      "sha256": "fb82cd229cec378cbefbea5c23d9e2d34a39dfd3c2e7775c8b8e30582d6e23ea",
+      "version": "The article page of Cameron (2016), with its licence.",
+      "retrieved": "2026-10-22"
+    },
+    "werth2016": {
+      "url": "https://ewjus.com/index.php/ewjus/article/download/217/85",
+      "format": "pdf",
+      "sha256": "7c532ee01b71df5d4440a254f5d806f10d5aec58b98f82feac97ff563eacad5e",
+      "version": "Nicolas Werth, 'Food Shortages, Hunger, and Famines in the USSR, 1928-33', East/West: Journal of Ukrainian Studies 3 (2), 2016, pp. 35-50. Pages as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "ewjus217": {
+      "url": "https://ewjus.com/index.php/ewjus/article/view/217",
+      "format": "html",
+      "sha256": "a0939cb98cc90e569dd62a765b4528e9263855abc52aa59db7874c697bd83aac",
+      "version": "The article page of Werth (2016), with its licence.",
+      "retrieved": "2026-10-22"
+    },
+    "davies2004": {
+      "url": "https://eh.net/book_reviews/farm-to-factory-a-reinterpretation-of-the-soviet-industrial-revolution/",
+      "format": "html",
+      "sha256": "319411aa39ef0f4ecccc373283985bd2d09c9be32db8b06f20317efc4b68af8a",
+      "version": "R. W. Davies, review of Robert C. Allen, Farm to Factory: A Reinterpretation of the Soviet Industrial Revolution (Princeton, 2003), EH.Net, June 2004. Allen's book itself was not obtained (Princeton UP answered 403): its findings are taken from this review and from Markevich and Harrison (2011).",
+      "retrieved": "2026-10-22"
+    },
+    "cggt2013": {
+      "url": "https://www.nber.org/system/files/working_papers/w19425/w19425.pdf",
+      "format": "pdf",
+      "sha256": "36f3ed40d720cf796c285ba13d3abab9240672b7766eb2a0aa65fe6535ed7785",
+      "version": "Anton Cheremukhin, Mikhail Golosov, Sergei Guriev and Aleh Tsyvinski, 'Was Stalin Necessary for Russia's Economic Development?', NBER Working Paper 19425, September 2013. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "gregory2005": {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/jel05.pdf",
+      "format": "pdf",
+      "sha256": "3f9342cdc0d93860e4916fc7a28d432e5e535ee1dcf6867e08f845b67cabbe47",
+      "version": "Paul Gregory and Mark Harrison, 'Allocation under Dictatorship: Research in Stalin's Archives', Journal of Economic Literature 43 (3), September 2005, pp. 721-761; the copy on Mark Harrison's Warwick pages. Pages as printed.",
+      "retrieved": "2026-10-22"
+    },
+    "harrison2017": {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/cambridge_communism_postprint.pdf",
+      "format": "pdf",
+      "sha256": "95029a82480ac4fb12d44fa50de52bacd4f5ee91c83d5a0e66408fbc09cd6afa",
+      "version": "Mark Harrison, 'Foundations of the Soviet Command Economy, 1917 to 1941', in Silvio Pons and Stephen A. Smith (eds), The Cambridge History of Communism, vol. 1 (Cambridge, 2017), the author's postprint on his Warwick pages. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "markevich2011": {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/jeh2011_postprint.pdf",
+      "format": "pdf",
+      "sha256": "548c90f9959cc653010df19e561964a3a7e6c18feb960de2780f33fc45a6d20e",
+      "version": "Andrei Markevich and Mark Harrison, 'Great War, Civil War, and Recovery: Russia's National Income, 1913 to 1928', Journal of Economic History 71 (3), 2011, pp. 672-703, the authors' postprint. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "harrison2018": {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/rgwr_postprint.pdf",
+      "format": "pdf",
+      "sha256": "467c501f33fbcfaf56bb274bf50d209bca8a4e8c1dd22d947ce1a44201bb2283",
+      "version": "Mark Harrison and Andrei Markevich, 'Russia's Home Front, 1914-1922: The Economy', in Russia's Home Front in War and Revolution, 1914-22, book 3 (Bloomington: Slavica, 2018), the authors' postprint. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "harrison1980": {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ep80postprint.pdf",
+      "format": "pdf",
+      "sha256": "3ac23e96cbc83215883922635d51428216a1430cae9b0b9347a82d352a5ad539",
+      "version": "Mark Harrison, 'Why Did NEP Fail?', Economics of Planning 16 (2), 1980, pp. 57-67, the author's postprint. Pages cited as pages of the PDF file.",
+      "retrieved": "2026-10-22"
+    },
+    "harrison1993": {
+      "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/eas93.pdf",
+      "format": "image",
+      "sha256": "722ad6d1ccef98af09452b535b8ee6c737e442c4e4b89564942d889c6feeb50a",
+      "version": "Mark Harrison, 'Soviet Economic Growth Since 1928: The Alternative Statistics of G. I. Khanin', Europe-Asia Studies 45 (1), 1993, pp. 141-167; a scan without a text layer on the author's Warwick pages, read on images rendered with pdftoppm (book pp. 141, 145, 146, 155, 156).",
+      "retrieved": "2026-10-22"
+    },
+    "nobel1973": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1973/press-release/",
+      "format": "html",
+      "sha256": "a480249c56eef19f199564e51f25da4f326c512d59527a20d6fc121eeb2b18fb",
+      "version": "Royal Swedish Academy of Sciences, press release of 18 October 1973 (the prize in economic sciences to Wassily Leontief), on nobelprize.org ('Copyright © Nobel Prize Outreach 2026')",
+      "retrieved": "2026-10-16"
+    },
+    "nobel1975": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1975/press-release/",
+      "format": "html",
+      "sha256": "b260abfd069ac110850018554a7a1afcb5e611af712e787f53cba8c88fecb18c",
+      "version": "Royal Swedish Academy of Sciences, press release of 14 October 1975 (the prize in economic sciences to Leonid Kantorovich and Tjalling C. Koopmans), on nobelprize.org.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_stalin31": {
+      "url": "https://id.loc.gov/authorities/names/n80044789.madsrdf.json",
+      "format": "json",
+      "sha256": "827ab587f36ce3244669ae259d6e1f76c9675b47abf13962774d73b2526d78f9",
+      "version": "Library of Congress Name Authority File, n80044789 (Stalin, Joseph, 1878-1953), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_lenin31": {
+      "url": "https://id.loc.gov/authorities/names/n80067085.madsrdf.json",
+      "format": "json",
+      "sha256": "60fd80cafaae3819497e90b387241aeb9186111cc0b99f86f82a701b08dcd7ca",
+      "version": "Library of Congress Name Authority File, n80067085 (Lenin, Vladimir Ilʹich, 1870-1924), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_mises31": {
+      "url": "https://id.loc.gov/authorities/names/n79097308.madsrdf.json",
+      "format": "json",
+      "sha256": "cfae755d17bae802cf0947b9e5ed88bb12fe4441af6e0598329a164fcd720c84",
+      "version": "Library of Congress Name Authority File, n79097308 (Von Mises, Ludwig, 1881-1973), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_lange31": {
+      "url": "https://id.loc.gov/authorities/names/n50039995.madsrdf.json",
+      "format": "json",
+      "sha256": "74d56408bdfc053909f37fe1b0fa8409f7a83a39c86a5028f31dee75db3766b9",
+      "version": "Library of Congress Name Authority File, n50039995 (Lange, Oskar, 1904-1965), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_hayek31": {
+      "url": "https://id.loc.gov/authorities/names/n80126331.madsrdf.json",
+      "format": "json",
+      "sha256": "36315001f3a52e4068be01983974b4c5a27a82f4c4b9301c58f43383429e6d4c",
+      "version": "Library of Congress Name Authority File, n80126331 (Hayek, Friedrich A. von (Friedrich August), 1899-1992), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_preobrazhensky31": {
+      "url": "https://id.loc.gov/authorities/names/n79145580.madsrdf.json",
+      "format": "json",
+      "sha256": "71116ee0d25c4074be59e3567603ee9fa5071deb4c5dbf4564b93f253cd401e4",
+      "version": "Library of Congress Name Authority File, n79145580 (Preobrazhenskiĭ, E. A. (Evgeniĭ Alekseevich), 1886-1937), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_bukharin31": {
+      "url": "https://id.loc.gov/authorities/names/n79125702.madsrdf.json",
+      "format": "json",
+      "sha256": "e269774c7b0c0838fd436881ce5dae0adc016383df92e41aee7c8a9ef6890931",
+      "version": "Library of Congress Name Authority File, n79125702 (Bukharin, Nikolaĭ, 1888-1938), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_kantorovich31": {
+      "url": "https://id.loc.gov/authorities/names/n50046231.madsrdf.json",
+      "format": "json",
+      "sha256": "7e843e496e19f892a8266488dc24af70b8293c682fc1bc743d2cf7cb288cb364",
+      "version": "Library of Congress Name Authority File, n50046231 (Kantorovich, L. V. (Leonid Vitalʹevich), 1912-1986), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    },
+    "loc_trotsky31": {
+      "url": "https://id.loc.gov/authorities/names/n79054261.madsrdf.json",
+      "format": "json",
+      "sha256": "996c52ba9a5a361c4d6f0b7acac3903774572cab428cb41a94039903fe9f11a5",
+      "version": "Library of Congress Name Authority File, n79054261 (Trotsky, Leon, 1879-1940), MADS/RDF JSON from id.loc.gov.",
+      "retrieved": "2026-10-22"
+    }
+  }
+}
