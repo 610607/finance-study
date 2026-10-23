@@ -65,7 +65,6 @@ M1 = {"a": 26, "c": 0.6, "I": 10, "I2": 14, "a2": 16, "i0": 1, "i1": 0.1}
 SC1 = {"c": 0.75}                                     # self-check 1
 KAHN_MEN = 100                                        # ex:generaltheory-kahn: 100 men on the roads
 SHILLINGS, PENCE = 20, 12                             # a pound = 20 shillings, a shilling = 12 pence
-WHITE_PAPER = 3331                                    # Cmd. 3331, named in docs/agent_prompts/part5_notes.md, not obtained
 MONTHS = {m: i for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august",
                                       "september", "october", "november", "december"], 1)}
 
@@ -1079,9 +1078,7 @@ def deeper(F, Y, Q):
     _, _, _, c53, c6 = F["hc29_ref"]
     said("丘吉尔的名字只出现在演说的第一页（第 27 栏），引文在第 53—56 栏", c27, c53, 50 + c6)
     assert "no speaker is named" in column("note")["hc29_ref"]
-    notes = (ROOT / "docs" / "agent_prompts" / "part5_notes.md").read_text(encoding="utf-8")
-    assert f"Cmd. {WHITE_PAPER}" in notes
-    said("1929 年的白皮书（Cmd. 3331）没有取得", Y["hc29_ref"], WHITE_PAPER)
+    said("财政部一方 1929 年回应这些提案的白皮书没有取得", Y["hc29_ref"])
     said("美国国家经济研究局第 52 号公报没有取得", F["gt_bulletin"][0])
     assert "insured persons counted by the Ministry of Labour" in Q["pe_million"]
     said("凯恩斯与亨德森说的不少于 100 万", F["pe_million"][0])

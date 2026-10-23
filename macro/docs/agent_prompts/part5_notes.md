@@ -880,6 +880,16 @@ back to the old parity without striking off any zeros.
 - Ending: hand over Ch 33's question "一张图装下了多少凯恩斯，又丢掉了什么？".
 - Labels: `sec:generaltheory-…`, `eq:generaltheory-…`, `fig:generaltheory_…`, `tab:…`, `ex:…`.
 
+### Carried over from the editor's round on Chapter 32
+
+- In a parliamentary record, read who asked whom: each question names the member and the minister,
+  and the answer that follows belongs to that pair (the Jarrow questions of 4 November 1936).
+- When the text gives an author's conclusion, give the mechanism and the conditions the author states
+  with it ("assuming no reduction of investment in other directions"); a conclusion without its
+  reasons reads as a slogan.
+- Nothing in the text may rest on the editor's notes alone: a document number, a date or a title
+  suggested in these notes is a lead to verify, not a source. If it cannot be verified, leave it out.
+
 ## 第 33 章 `ch:islm` IS–LM：把凯恩斯写成方程 (`zh/ch33_islm.tex`)
 
 - Neighbours: Ch 32 owns the *General Theory*; Ch 28 owns the American Depression to 1936 and its data
