@@ -1416,6 +1416,9 @@ ex:generaltheory-cross ex:generaltheory-kahn ex:generaltheory-kuznets ex:general
 sec:islm-world sec:islm-hicks sec:islm-is sec:islm-lm sec:islm-policy sec:islm-trap sec:islm-1937 sec:islm-debate sec:islm-hansen sec:islm-legacy
 eq:islm-is eq:islm-lm eq:islm-solution tab:islm-1937 tab:islm-reserves tab:islm-budget fig:islm_curves fig:islm_trap fig:islm_1937
 ex:islm-is ex:islm-equilibrium ex:islm-policy ex:islm-1937
+sec:warfinance-world sec:warfinance-gap sec:warfinance-budget sec:warfinance-us sec:warfinance-compare sec:warfinance-lerner sec:warfinance-debate sec:warfinance-plans sec:warfinance-bw sec:warfinance-legacy
+eq:warfinance-gap eq:warfinance-laws eq:warfinance-domar tab:warfinance-mobilization tab:warfinance-us fig:warfinance_budgets fig:warfinance_debt fig:warfinance_gap fig:warfinance_plans
+ex:warfinance-cross ex:warfinance-keynes ex:warfinance-domar ex:warfinance-bancor
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous
