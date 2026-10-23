@@ -346,7 +346,8 @@ MISPRINTS = [("ss_listener", "Listener^"), ("ss_12m", "in¬ dustrial"), ("ss_wro
              ("pe_three", "re¬ duction"), ("pe_inflation", "In¬ flation"), ("pe_slack", "In¬ flation"),
              ("pe_bank", "deflation¬ ary"), ("pe_title", "4-"), ("mc_date", "Jostan"), ("ka_sign", "Kaun"),
              ("pg_title", "Picou"), ("k37_sign", "Kreynzs"), ("kc_toc", "Katecki"), ("kc_toc", "Macrodynemic"),
-             ("gt_pairs", "2-5"), ("gt_liqfalls", "liquiditypreferences"), ("gt_reduce", "investmentdemand")]
+             ("gt_pairs", "2-5"), ("gt_liqfalls", "liquiditypreferences"), ("gt_reduce", "investmentdemand"),
+             ("gt_confidence", "liquictity")]
 IMAGE_NOTE = "read on the page image"
 
 
@@ -465,6 +466,7 @@ TRANSLATIONS = {
     # sec:generaltheory-debate
     "大量的通缩性闲置": "pe_slack",
     "只能是愚蠢的人": "gt_foolish",
+    "信心": "gt_confidence",
     "必然降低实际工资、增加就业": "pg_must",
     "向月亮射箭": "pg_arrows",
     # sec:generaltheory-check
@@ -537,6 +539,7 @@ KEYWORDS = {
     "bj_prekeynes": ["a pre-Keynesian world"],
     "pe_slack": ["A large amount of deflationary slack"],
     "gt_foolish": ["it can only be a foolish person"],
+    "gt_confidence": ["through its effect on “confidence”"],
     "pg_must": ["must lower real wage rates and increase employment."],
     "pg_arrows": ["an artist firing arrows at the moon"],
     "hc36_15": ["a period of industrial depression without parallel in the town's history"],
@@ -745,7 +748,8 @@ def world(F, Y, Q):
     assert "General Election, May 1929" in Q["pe_title"] and F["hh_lloydgeorge_pm"][3] < 1929   # 前首相
     said("凯恩斯 1931 年编《劝说集》时", F["ep_copyright"][0])
     y24, tenth, eight = F["pe_tenth"]
-    said("除了 1924 年回到金本位以前短暂的恢复", y24)
+    said("除了回到金本位以前、1924 年那一次短暂的恢复", y24)
+    assert "brief recovery in 1924 before the return to the gold standard" in Q["pe_tenth"]
     chk("    one tenth (十分之一)", tenth, told("这个国家有十分之一或更多", "有", "或更多"))
     chk("    eight years (八年)", eight, told("已经失业了八年", "失业了", "年"))
     said("自 1923 年开始统计以来从没有少于 100 万", F["pe_million"][1], F["pe_million"][0])
@@ -804,8 +808,9 @@ def multiplier(F, Y, Q):
     ex_kahn(F)
     said("若假定实际的比例是 3/4", *fr(F["ka_threequarters"][0]))
     m9 = F["gt_ninetenths"][0]
-    said("若边际消费倾向是 0.9，乘数就是 10，公共工程带来的总就业会是初级就业的 10 倍", m9, 1 / (1 - m9),
-         F["gt_tentimes"][0])
+    said("若边际消费倾向是 0.9，乘数就是 10，假定别处的投资没有因此减少，公共工程带来的总就业就是初级就业的 10 倍", m9,
+         1 / (1 - m9), F["gt_tentimes"][0])
+    assert "assuming no reduction of investment in other directions" in Q["gt_noreduction"]
     chk("    the multiplier of nine-tenths = ten times", 1 / (1 - m9), F["gt_tentimes"][0])
 
 
@@ -814,7 +819,10 @@ def ex_cross(F) -> None:
     M, K = model(), cloth()
     said("沿用\\exref{ex:accounts-thrift}的棉布经济，收入 90，家庭买布 80，投资 10", K["Y"], K["C"], K["I"])
     said("设消费函数是$C=26+0.6Y$", a, c)
-    said("边际消费倾向取 0.6，落在凯恩斯估计的范围之内", c)
+    lo, hi = F["gt_pairs"][2:4]
+    said("边际消费倾向取 0.6，落在凯恩斯从美国的数字推出的 60\\%—70\\% 的下端", c, lo, hi)
+    chk("    0.6 is the lower end of 60 to 70 per cent", 100 * c, lo)
+    assert "improbably low for the slump" in quotes()["gt_boom"]
     chk("    0.6 = 1 - 1/2.5, the MPC of Keynes's multiplier", 1 - 1 / F["gt_pairs"][1], c)
     said("（1）均衡收入是多少？（2）乘数是多少？（3）投资从 10 增加到 14", 1, 2, 3, I, I2)
     said("（1）$Y^{*}=(26+10)/(1-0.6)=90$，消费$26+0.6\\times90=80$", 1, a, I, 1, c, M["Y"], a, c, M["Y"], M["C"])
@@ -987,7 +995,9 @@ def debate(F, Y, Q):
     assert "round about 1845" in Q["hc29_railway"]
     chk("    three answers (三层)", 3, told("回答有三层", "有", "层"))
     assert all(w in Q["pe_three"] for w in ("The first source", "The second source", "The third source"))
-    chk("    three sources (三个来源)", 3, told("有三个来源", "有", "个来源"))
+    chk("    three sources (三个来源)", 3, told("开发支出所需的资金有三个来源", "有", "个来源"))
+    assert "unless the monetary authority takes steps to the contrary" in Q["gt_offset_rate"]
+    assert "unless measures are taken to offset it" in Q["gt_confidence"]
     said("卡恩 1931 年的估计", Y["ka_june"])
     said("庇古的回答在 1936 年 5 月的《经济学刊》上", Y["pg_title"], mon("pg_may", "MAY"))
     said("像英国 1925—1929 年那样失业严重的时候", *F["pg_case"])
@@ -1038,7 +1048,12 @@ def check_section(F, Y, Q):
     assert "temporary scheme" in Q["hc36_8000"]
     d28, a, b = F["hc36b_1185"]
     said("9 月 28 日贾罗有 1,185 名失业的造船工人，另有 818 名普通劳工失业", mon("hc36b_1185", "September"), d28, a, b)
-    said("他又转述首相 10 月 29 日的答复", mon("hc36b_member", "October"), F["hc36b_member"][0])
+    pnq = [r for r in ("hc36b_pm", "hc36b_magnay") if "private notice question" in column("note")[r]]
+    chk("    two private notice questions (两个紧急质询)", len(pnq), told("下院还就贾罗提出了两个紧急质询", "提出了", "个紧急质询"))
+    assert Q["hc36b_pm"].startswith("asked the Prime Minister") and "Miss Wilkinson" in column("note")["hc36b_pm"]
+    assert "asked the President of the Board of Trade" in Q["hc36b_magnay"] and "shipyard workers in Jarrow" in Q["hc36b_magnay"]
+    assert column("juan")["hc36b_magnay"] == column("juan")["hc36b_1185"] == "c. 76"
+    said("他又转述首相 10 月 29 日给威尔金森的答复", mon("hc36b_member", "October"), F["hc36b_member"][0])
     b0, b1 = F["hh_runciman_bt"]
     assert b0 <= y36 <= b1 and "The PRESIDENT of the BOARD of TRADE (Mr. Runciman)" == Q["hc36b_runciman"]
     assert admin_span(1921, 1938).min() >= 8.7 and 11 <= 1938 - 1921 + 1 <= 19   # 十几年居高不下
@@ -1068,6 +1083,16 @@ def deeper(F, Y, Q):
     assert f"Cmd. {WHITE_PAPER}" in notes
     said("1929 年的白皮书（Cmd. 3331）没有取得", Y["hc29_ref"], WHITE_PAPER)
     said("美国国家经济研究局第 52 号公报没有取得", F["gt_bulletin"][0])
+    assert "insured persons counted by the Ministry of Labour" in Q["pe_million"]
+    said("凯恩斯与亨德森说的不少于 100 万", F["pe_million"][0])
+    y29, today = F["pe_today"]
+    assert "insured" not in transcription("pe_today")                         # 原文没有说明口径
+    said("1929 年 4 月的 114 万", y29, mon("pe_today", "April"), today)
+    A = annual()
+    said("1929 年的失业人数约 150 万", 1929, A.loc[1929, "unemployed_000"] * 1000)
+    dm = int(re.search(r"Denman and Macdonald (\d{4})", table_meta("boe_millennium_unemp_1919_1938_monthly")["series"]).group(1))
+    said("表 M5 的月度行政失业率", 5)
+    said("Denman 与 Macdonald（1996）的原文本书没有取得", dm)
     n = kuznets().net
     y29, y32, p95, y25, y29b = F["gt_95"]
     said("凯恩斯说 1932 年的净资本形成比 1925—1929 年的平均数低“不少于 95\\%”，按表算是 94.9\\%", y32, y25, y29b, p95,
@@ -1117,8 +1142,9 @@ def selfcheck(F, Y, Q):
          pf.denominator, mw * 120, 120, np_ * 120, 120, t["k"].numerator, t["k"].denominator, 1, t["ratio"].numerator,
          t["ratio"].denominator, t["printed"])
     said("又少花其中的 0.6。合计是$10\\times2.5=25$", c, M1["a"] - M1["a2"], M["k"], M["Y"] - M["Y3"])
-    chk("    two grounds (两条)", 2, told("庇古概括的常见理由有两条", "有", "条"))
-    assert "on the familiar grounds" in Q["pg_strong"]
+    chk("    two grounds (两条)", 2, told("他概括的常见理由有两条", "有", "条"))
+    assert "on the familiar grounds" in Q["pg_strong"] and "mentioned by Mr. Keynes on pp. 267-9" in Q["pg_strong"]
+    assert all(page(r) in (267, 268) for r in ("gt_uniform", "gt_struggles", "gt_openmarket", "gt_debt", "gt_foolish"))
 
 
 def ending(F, Y, Q):
