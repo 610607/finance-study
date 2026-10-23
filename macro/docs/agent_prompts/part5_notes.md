@@ -799,6 +799,22 @@ back to the old parity without striking off any zeros.
   "如果人人都想多储蓄，总储蓄为什么可能反而减少？".
 - Labels: sections `sec:soviet-…`; `eq:soviet-…`, `fig:soviet_…`, `tab:soviet-…`, `ex:soviet-…`.
 
+### Carried over from the editor's round on Chapter 31
+
+- Reported speech: when a source quotes someone describing others ("specialists who are already
+  admitting in the corridors that they prefer…"), the words belong to those others; do not give them to
+  the quoted speaker.
+- A pitfall box states the source's mechanism, not a plausible one: if the source names two effects
+  (early-year weights; prices that were not really constant), give both and keep them apart.
+- A second witness counts only if it is independent: an official report repeating another official
+  report, or a database that copied a study, shows consistency, not confirmation. Say which it is.
+- When a secondary source runs two events together (Trotsky out of the Politburo in 1926, out of the
+  party in 1927), keep only what a source dates precisely.
+- A contested question of intent or responsibility (the famine of 1932–1933 in Ukraine) is presented
+  through a source that summarizes both positions, with each side's strongest evidence and what has not
+  been found; the book does not decide, and does not leave the debate out.
+- Write CSV snapshots with `csv.writer(f, lineterminator="\n")`: the other snapshots have LF line ends.
+
 ## 第 32 章 `ch:generaltheory` 凯恩斯《通论》 (`zh/ch32_generaltheory.tex`)
 
 - Neighbours:

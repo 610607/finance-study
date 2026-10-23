@@ -441,6 +441,8 @@ TRANSLATIONS = {
     "以传闻为根据，值得怀疑": "ru_anecdotal",
     "乌克兰（苏联）生产的粮食足以避免乌克兰（苏联）的饥荒": "mnq_enough",
     "对迁移的限制加重了死亡": "mnq_restrict",
+    "恐怖": "mnq_terror",
+    "下令": "mnq_noorder",
     "乌克兰民族主义": "we_arrests",
     "在定居基础上的全盘集体化": "ca_sedent",
     # sec:soviet-calculation
@@ -546,6 +548,8 @@ KEYWORDS = {
     "mnq_enough": ["Ukraine (the Soviet Union) produced enough food in 1932 to avoid famine in Ukraine (the Soviet "
                    "Union)"],
     "mnq_restrict": ["migration restrictions exacerbated mortality"],
+    "mnq_terror": ["terror"],
+    "mnq_noorder": ["ordered"],
     "we_arrests": ['"Ukrainian nationalism,"'],
     "ca_sedent": ['"full collectivization on the basis of sedentarization,"'],
     "mi_abolition": ["Socialism is the abolition of rational economy."],
@@ -1083,6 +1087,12 @@ def famine(F, Y, Q):
     said("照 Markevich、Naumenko 与 Qian 的结论，1932 年", F["mnq_enough"][0])
     said("最多能解释乌克兰饥荒死亡的 92\\%，在乌克兰、俄罗斯与白俄罗斯三地合计是 77\\%", *F["mnq_bias"])
     chk("    about half (约有一半)", F["mnq_half"][0], told("这个作用约有一半", "约有"))
+    assert "Holodomor" in Q["mnq_holodomor"] and "to die by starvation" in Q["mnq_holodomor"] and "intense debate" in Q["mnq_debate"]
+    assert "intentionally waged by the Soviet government against Ukraine (e.g., Conquest, 1986)" in Q["mnq_terror"]
+    said("Conquest（1986）就是这样看的", int(re.search(r"Conquest, (\d{4})", Q["mnq_terror"]).group(1)))
+    assert "unintended consequence" in Q["mnq_unintended"] and "no inherent anti-Ukrainian bias" in Q["mnq_unintended"]
+    assert "outside of Ukraine" in Q["mnq_outside"] and "all ethnicities to be equal" in Q["mnq_outside"]
+    assert Q["mnq_noorder"].startswith("No direct documentary evidence")
     n, y0, y1 = F["we_arrests"]
     said("在 1932—1933 年逮捕了约 20 万人", y0, 1900 + y1, n)
     said("1930 年成立", F["h17_gulag1930"][0])
@@ -1564,7 +1574,7 @@ EVENTS = [("德国的恶性通胀在 1923 年 11 月止住（\\chref{ch:weimar}�
            "1923 年 11 月 20 日，柏林交易所把美元的官价定在 4.2 万亿纸马克"),
           ("就是$x=Ax+f$。这正是\\chref{ch:marx}里里昂惕夫的方程（\\exref{ex:marx-io}）", "ch22_marx",
            "解 $(I-A)x=f$（\\texttt{numpy.linalg.solve}）"),
-          ("\\chref{ch:prices}讲过，用哪一年的价格给产品加权，增长率可以差很多", "ch03_prices",
+          ("\\chref{ch:prices}讲过，用哪一年的价格给产品加权，增长率可以差很多（\\exref{ex:prices-chain}）", "ch03_prices",
            "用旧价格给它更大的权数，增长率就更高"),
           ("里昂惕夫的投入产出方法既用于分散的市场经济，也用于中央计划经济的预测与计划", "ch22_marx",
            "公告说，这个方法在分散的市场经济与中央计划经济里，都用于预测与计划"),
