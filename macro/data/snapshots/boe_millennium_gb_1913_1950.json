@@ -1,0 +1,14 @@
+{
+  "title": "British war finance, annual, 1913-1950: central government expenditure and receipts, the national debt and consumer prices",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'A27. Central govt borrowing ', 'A29. The National Debt' and 'A47. Wages and prices'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year: calendar year y; fy: the financial year that begins in April of y and ends on 31 March of y+1; fy_expenditure_gbp_mn and fy_receipts_gbp_mn: total expenditure and total receipts of central government in that financial year, GBP million (A27, 'Financial Year Totals'; Mitchell 1988, pp. 575-593, to 1945, the ONS from 1946; before 1946 the financial surplus or deficit of the Exchequer); cy_expenditure_pct_gdp and cy_receipts_pct_gdp: central government expenditure and income in calendar year y as a per cent of nominal GDP (A27, 'Calendar Year Totals', columns 46 and 49); debt_gbp_mn: the spliced measure of consolidated UK debt including terminable annuities, approximate end-of-calendar-year estimate, GBP million (A29, column 40); debt_pct_gdp: the same as a per cent of nominal GDP at market prices (A29, column 41; GDP of Great Britain and all of Ireland up to 1920, Great Britain and Northern Ireland from 1921); cpi_2015_100: the preferred consumer price index of the UK, 2015 = 100 (A47, column 3)",
+  "retrieved": "2026-10-23",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (Mitchell 1988 and the ONS for central government finance; the sources named in sheets A29 and A47 for the national debt and consumer prices).",
+  "used_in": [
+    34
+  ],
+  "fetch": "data/fetch/boe_millennium_gb34.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-32). In sheet A27 the calendar year (column 43) sits one row below the financial year that ends in it: the row of 1913/14 carries the calendar year 1914; the script reads each block by its own year column. The calendar-year totals of A27 are the sheet's own weighting of the financial years. Chapter 34 uses the financial-year totals for the share of expenditure met by receipts in the two world wars (1914/15-1918/19 and 1939/40-1945/46, the book's own calculation), the calendar-year shares of GDP and the debt ratio in its figure and text, and the consumer price index for the rise of prices in the two wars.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets A27, A29 and A47"
+}

@@ -1,0 +1,338 @@
+{
+ "title": "Evidence for Chapter 34: Keynes's How to Pay for the War (1940), the British budget of 1941, war economies compared, Lerner (1943), Kalecki (1943) and Domar (1944), the Keynes and White plans (1943), the Bretton Woods conference (1944) and the American hearings of 1945",
+ "source": "Keynes, How to Pay for the War (London: Macmillan, 1940), the Digital Library of India's copy on the Internet Archive and its metadata; House of Commons Hansard, 7 April 1941 (Sir Kingsley Wood's Budget speech); House of Lords Hansard, 23 May 1944 (International Monetary Fund); Lerner, 'Functional Finance and the Federal Debt' (Social Research, February 1943); Kalecki, 'Political Aspects of Full Employment' (The Political Quarterly, October-December 1943); Domar, 'The \"Burden of the Debt\" and the National Income' (American Economic Review, December 1944); the Federal Reserve Bulletin of June 1943 (the texts of the White and Keynes plans) and September 1944 (Goldenweiser and Bourneuf, 'Bretton Woods Agreements'); the Final Act of the United Nations Monetary and Financial Conference (Cmd. 6546, 1944); the hearings of the Senate Committee on Banking and Currency on the Bretton Woods Agreements Act (June 1945); the Annual Report of the Board of Governors of the Federal Reserve System for 1942; Historical Statistics of the United States (1975), series Y 339-342; Harrison's chapters on the economics of World War II and the Soviet Union (1998) and his entry 'War finance' (1992); the Famine Inquiry Commission's Report on Bengal (1945); the judgment of the International Military Tribunal and Nazi Conspiracy and Aggression vol. II, Shizume (2009), Ide (2003) and the Bank of Japan's chronology (cached copies of Chapter 30's sources); the authority records of the Library of Congress, the Bibliothèque nationale de France and the Deutsche Nationalbibliothek",
+ "url": "https://archive.org/download/in.ernet.dli.2015.499597/2015.499597.HOW-TO_djvu.txt",
+ "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or column, the source text verbatim, note",
+ "retrieved": "2026-10-23",
+ "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Keynes (1883-1946): How to Pay for the War (London: Macmillan, 1940) is in the public domain in the United Kingdom but may still be in copyright in the United States, so the chapter quotes it a sentence or less at a time; the copy used is the Digital Library of India's scan, whose record reads 'dc.rights: Copyright permitted' (row km_rights). Hansard: 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.' Lerner (1903-1982), Social Research 10(1), 1943: 'Copyright, 1943, and published quarterly by the New School for Social Research, 66 West Twelfth Street, New York, N. Y. All rights reserved. Contributions to SOCIAL RESEARCH may not be reprinted without the permission of the editors.' (row ln_copyright): short phrases only, the rest paraphrased. Kalecki (1899-1970), The Political Quarterly 14(4), 1943, and Domar (1914-1997), American Economic Review 34(4), 1944: the OCR texts of the issues print no copyright line; both are in copyright, so the chapter quotes short phrases only and paraphrases the rest. Harrison (1992, 1998): the author's preprints print no copyright notice; the published chapters are in copyright (Macmillan, 1992; Cambridge University Press, 1998): short phrases only, the rest paraphrased. The Federal Reserve Bulletin, the Annual Report of the Board of Governors, the Senate hearings of 1945 and Historical Statistics of the United States (1975) are works of the United States government and in the public domain. The Final Act of Bretton Woods as presented to Parliament (Cmd. 6546, HMSO 1944) is a Crown publication of 1944, out of Crown copyright; the Articles of Agreement are also a United States government document. The Famine Inquiry Commission's Report on Bengal (Government of India, 1945) is a government publication of 1945 whose term of protection has run out; quoted briefly. The Law Library of Congress, Military Legal Resources (Nazi Conspiracy and Aggression, vol. II, and the Opinion and Judgment): 'The Library of Congress is not aware of any copyright restrictions in the Military Legal Resources collection. Absent such restrictions, these materials are free to use and reuse.' Credit line: Law Library of Congress, Military Legal Resources. Bank of Japan (Shizume 2009; the Bank's chronology): 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row bjcr). Ide (2003), IMES Discussion Paper: 'Do not reprint or reproduce without permission.' (row ide_reprint); figures and short phrases only. The authority records of the Library of Congress (id.loc.gov) are public data; those of the Bibliothèque nationale de France (data.bnf.fr) are metadata reused under the Licence Ouverte (Open License); the record of the Deutsche Nationalbibliothek (GND, through lobid.org) carries the licence http://creativecommons.org/publicdomain/zero/1.0/ (row gnd_licence). The chapter's Chinese renders the quotations; the translations are the book's.",
+ "used_in": [
+  34
+ ],
+ "fetch": "data/fetch/warfinance34.py",
+ "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+ "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch34.py; rows with an empty quotation are values or words read on a page image (sources keynes1940img, domar1944img, finalact1944, arfr1942img, famine1945img, census_y34), named as such in their notes, which give a transcription between « and ». The OCR texts keep their misreadings as printed and the notes name them: in Keynes (1940) the figures of pp. 15, 16, 23 and 28 ('16' for 15, '£160' for £150, '£226' for £225, '£1,360' for £1,350, '£600' for £500, '£^0' for £450) and 'Sa.' for 5s. on p. 32, which is why those pages are read on the images, and the running head of p. 5 ('PROBLEM 6'); in Hansard 'inedaquacy' (h41_gapdef), 'practicaly' (h41_halftax), '45s. a. week' (h41_45s) and '1⅛per' (h41_short), as printed on the Historic Hansard site; in Lerner 'goo' for 900 (ln_guess), a doubled quotation mark (ln_rejects) and stray margin characters (ln_size2, and 'r' in ln_nations); in Kalecki the byline 'Kaveckt' (kl_byline), 'toa' (kl_lecture) and a space before a closing quotation mark (kl_confidence) or after an opening one (kl_cycle); in the Federal Reserve Bulletin '137 |' for 137 1/7 (fw_unitas), 'ha/f' for 'half' (fk_ultimate) and 'unti]' (fs_65); in the Famine Inquiry Commission's report '3*5' for 3·5 (fm_35), 'he' for 'be' (fm_unsound) and '15' for 1·5 (read on the image, fm_15); in the judgment of the Tribunal 'account7'' (imt_clearing), 'rnthlessness' (imt_poland), 'Genera1' (imt_food), 'mas' for 'was' (imt_east), 'thein' for 'them' (imt_quotas) and the spacing 't o', 'a t' (imt_plunder). Domar's Table III prints 5.71 as the limit of the tax rate for r = 2 per cent, while its row for year 300 prints 5.66 and his formula i/(r/a + i) gives 5.66; his text rounds to 5.7 (rows dm_table3, dm_3and2). Indirect testimony: Flynn (Harper's Magazine, July 1942) through Lerner (ln_argued, ln_flynn); The Economist of 20 January 1940 and Sayers (1956) through Harrison (1992) (hf_three, hf_short); the estimates of Soviet war deaths (Goskomstat; Ellman and Maksudov) through Harrison (1998) (hu_goskomstat, hu_266, hu_emigration, hu_239); Göring's assurance and the plan for the occupied Soviet territories through the judgment of the Tribunal (imt_famine, imt_starved); Sauckel's statement through the judgment (imt_sauckel, copied from alternatives_facts); K. P. Chattopadhyaya's estimate of the Bengal deaths through the Famine Inquiry Commission (fm_35). Not obtained: the White Paper on the Clearing Union (Cmd. 6437, April 1943) and the statement of principles (Cmd. 6519, April 1944) themselves (the plans are quoted from the texts the Federal Reserve Bulletin printed in June 1943; Cmd. 6519 is named only in the motion of 23 May 1944); the Proceedings and Documents of the Bretton Woods conference (Department of State, 1948); Flynn's article of July 1942; Sayers (1956); The Economist of 20 January 1940; Steil, The Battle of Bretton Woods (2013), and Skidelsky's biography of Keynes.",
+ "sources": {
+  "keynes1940": {
+   "url": "https://archive.org/download/in.ernet.dli.2015.499597/2015.499597.HOW-TO_djvu.txt",
+   "format": "txt",
+   "sha256": "9673c5d75487e0df96c0511b0024aef828ce4f013f3e86c2620128c2b79b415b",
+   "version": "J. M. Keynes, How to Pay for the War: A radical plan for the Chancellor of the Exchequer (London: Macmillan, 1940), the OCR text of the Digital Library of India's scan on the Internet Archive (item in.ernet.dli.2015.499597, scanned at Banasthali University; some pages, such as p. 59, are missing from the scan); pages from the running heads, checked on the page images",
+   "retrieved": "2026-10-23"
+  },
+  "keynes1940img": {
+   "url": "https://archive.org/download/in.ernet.dli.2015.499597/2015.499597.HOW-TO.pdf",
+   "format": "image",
+   "sha256": "dae12e55cd446ae6170c14988f2154c074103acf17d3663af42d20fc07f439eb",
+   "version": "The PDF scan of the same copy (no text layer), read on images rendered with pdftoppm where the OCR misreads the figures: pp. vi, 15, 16, 23, 28 and 32 (PDF page = printed page + 9; p. vi = PDF p. 7)",
+   "retrieved": "2026-10-23"
+  },
+  "keynes1940meta": {
+   "url": "https://archive.org/metadata/in.ernet.dli.2015.499597",
+   "format": "json",
+   "sha256": "4bea40e2a4953bc64373677c168bc37244b6c148a749c8d7faeaf4fd0381333e",
+   "version": "The Internet Archive's metadata of the item in.ernet.dli.2015.499597 (the Digital Library of India's record: publisher, date and rights statement)",
+   "retrieved": "2026-10-23"
+  },
+  "hc1941fs": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1941/apr/07/financial-statement",
+   "format": "html",
+   "sha256": "b62a9e6a8dfda23f4c7e8047602e31a6bc3a576c6e27603e6242bdbd55dbc0ae",
+   "version": "House of Commons, Hansard, 7 April 1941, vol. 370, cc1297-300: the Budget speech of the Chancellor of the Exchequer, Sir Kingsley Wood (Committee of Ways and Means), section 'financial-statement', on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "hc1941wp": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1941/apr/07/the-new-financial-white-paper",
+   "format": "html",
+   "sha256": "79820ad857fdc5c4171efddbb8734e533a8557611a8b76ccffe25e8e3cdf7b8c",
+   "version": "House of Commons, Hansard, 7 April 1941, vol. 370, cc1304-8: the Budget speech of the Chancellor of the Exchequer, Sir Kingsley Wood (Committee of Ways and Means), section 'the-new-financial-white-paper', on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "hc1941gap": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1941/apr/07/excess-profits-tax",
+   "format": "html",
+   "sha256": "075402d861fdc997ecee8612c4bfc88ed2f7f898d5f20e366f847faed69ef537",
+   "version": "House of Commons, Hansard, 7 April 1941, vol. 370, cc1315-20: the Budget speech of the Chancellor of the Exchequer, Sir Kingsley Wood (Committee of Ways and Means), section 'excess-profits-tax', on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "hc1941sav": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1941/apr/07/savings-and-taxation-in-1941-42",
+   "format": "html",
+   "sha256": "e652b8ab02c8128987f7eed3d8a5c01a93278695c967c07bc66f0f71ca29d1ad",
+   "version": "House of Commons, Hansard, 7 April 1941, vol. 370, cc1322-5: the Budget speech of the Chancellor of the Exchequer, Sir Kingsley Wood (Committee of Ways and Means), section 'savings-and-taxation-in-1941-42', on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "hc1941tax": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1941/apr/07/income-tax-changes",
+   "format": "html",
+   "sha256": "3143b7ee1c3c6b0872cb699c521a213ff555964c45659127979ecbc5727dff68",
+   "version": "House of Commons, Hansard, 7 April 1941, vol. 370, cc1327-31: the Budget speech of the Chancellor of the Exchequer, Sir Kingsley Wood (Committee of Ways and Means), section 'income-tax-changes', on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "hc1941end": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1941/apr/07/conclusion",
+   "format": "html",
+   "sha256": "763a4f49ad5db357739af642107119bb4493251b1fedeee3296fbe081ec69305",
+   "version": "House of Commons, Hansard, 7 April 1941, vol. 370, cc1331-2: the Budget speech of the Chancellor of the Exchequer, Sir Kingsley Wood (Committee of Ways and Means), section 'conclusion', on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "hl1944": {
+   "url": "https://api.parliament.uk/historic-hansard/lords/1944/may/23/international-monetary-fund",
+   "format": "html",
+   "sha256": "f2c171f5be282bf331f1575ffb83b5268b8bd456eac22bd5e26c1352ed17097d",
+   "version": "House of Lords, Hansard, 23 May 1944, vol. 131, cc834-83, 'International Monetary Fund' (Lord Addison's motion on the statement of principles, Cmd. 6519; Lord Keynes's speech, cc838-848), on UK Parliament's historic Hansard site",
+   "retrieved": "2026-10-23"
+  },
+  "lerner1943": {
+   "url": "https://archive.org/download/sim_social-research_1943-02_10_1/sim_social-research_1943-02_10_1_djvu.txt",
+   "format": "txt",
+   "sha256": "e2acedc713365fbaec3db3520e064d51249c8f817a3c2784ddc52422796d1fe0",
+   "version": "Abba P. Lerner, 'Functional Finance and the Federal Debt', Social Research 10(1), February 1943, pp. 38-51, the OCR text of the Internet Archive's scan of the issue; pages from the running heads",
+   "retrieved": "2026-10-23"
+  },
+  "kalecki1943": {
+   "url": "https://archive.org/download/sim_political-quarterly_october-december-1943_14_4/sim_political-quarterly_october-december-1943_14_4_djvu.txt",
+   "format": "txt",
+   "sha256": "1065e44ad9cf2cff3bb4266a67a80777bb207f6490cec1af57aa19daae273120",
+   "version": "M. Kalecki, 'Political Aspects of Full Employment', The Political Quarterly 14(4), October-December 1943, pp. 322-331, the OCR text of the Internet Archive's scan of the issue (the byline reads 'By M. Kaveckt'); pages from the page numbers printed at the foot of each page",
+   "retrieved": "2026-10-23"
+  },
+  "domar1944": {
+   "url": "https://archive.org/download/sim_american-economic-review_1944-12_34_4/sim_american-economic-review_1944-12_34_4_djvu.txt",
+   "format": "txt",
+   "sha256": "92dc66190d3fe2645bdc36ed1912df4e845cb43d320a970876d043a535d276e1",
+   "version": "Evsey D. Domar, 'The \"Burden of the Debt\" and the National Income', American Economic Review 34(4), December 1944, pp. 798-827, the OCR text of the Internet Archive's scan of the issue; pages from the running heads",
+   "retrieved": "2026-10-23"
+  },
+  "domar1944img": {
+   "url": "https://archive.org/download/sim_american-economic-review_1944-12_34_4/sim_american-economic-review_1944-12_34_4.pdf",
+   "format": "image",
+   "sha256": "83710aa14a607857665f19ccf65e7b0e9fb683cad9cc269c8909a5729893ca22",
+   "version": "The PDF scan of the same issue (the OCR loses the right margin of the pages), read on images rendered with pdftoppm: pp. 799, 803, 810 and 811 (PDF page = printed page - 700)",
+   "retrieved": "2026-10-23"
+  },
+  "frb1943jun": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1943-06_29_6/sim_federal-reserve-bulletin_1943-06_29_6_djvu.txt",
+   "format": "txt",
+   "sha256": "b4dea15f903d96a8ee46f911da1341586bf131a1e30aca700268f46abd768c10",
+   "version": "Federal Reserve Bulletin, June 1943 (vol. 29, no. 6), 'Postwar International Monetary Stabilization', pp. 501-514: the texts of the American experts' preliminary draft of a United and Associated Nations Stabilization Fund (the White plan) and of the British experts' proposals for an International Clearing Union (the Keynes plan), the OCR text of the Internet Archive's scan of the issue; pages from the PDF scan of the same issue (printed page = PDF page + 482). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "frb1944sep": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1944-09_30_9/sim_federal-reserve-bulletin_1944-09_30_9_djvu.txt",
+   "format": "txt",
+   "sha256": "c975b741ea7390f485b8f93dae91f4b8004b3112b73d20b93775ae91989912fb",
+   "version": "Federal Reserve Bulletin, September 1944 (vol. 30, no. 9): E. A. Goldenweiser and Alice Bourneuf, 'Bretton Woods Agreements', pp. 850-870, the OCR text of the Internet Archive's scan of the issue; pages from the PDF scan of the same issue (printed page = PDF page + 836). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "finalact1944": {
+   "url": "https://archive.org/download/tdl.60721-united-nations-monetary-and-financial-conference-final-act-bretton-woo/ACL-CPL_00178_United_Nations_monetary_and_financial_conference.pdf",
+   "format": "image",
+   "sha256": "c614692bb23fde0e4fac2e621a98c93bdea1c78838389c599040b089c5f938a3",
+   "version": "United Nations Monetary and Financial Conference, Bretton Woods, New Hampshire, July 1 to July 22, 1944, Final Act, Cmd. 6546 (London: HMSO, August 1944, reprinted 1945), the Internet Archive's scan (its OCR text is garbled), read on images rendered with pdftoppm: the title page, Articles of Agreement of the International Monetary Fund, Art. IV, sections 1 and 5 (pp. 18-19), Art. VI, section 3 (p. 23), and Schedule A (p. 40); printed page = PDF page - 1",
+   "retrieved": "2026-10-23"
+  },
+  "senate1945": {
+   "url": "https://archive.org/download/1945BrettonWoodsAgreementsAct/1945_Bretton%20Woods%20Agreements%20Act_djvu.txt",
+   "format": "txt",
+   "sha256": "47fee80bed9a5e2d86abada57d846f82453531a3acf0661d6ceddcd62e638dc2",
+   "version": "Bretton Woods Agreements Act: Hearings before the Committee on Banking and Currency, United States Senate, Seventy-Ninth Congress, First Session, on H. R. 3314, June 12-28, 1945 (Washington: GPO, 1945), the OCR text of the Internet Archive's copy; pages from the page numbers of the text. Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "arfr1942": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/arfr/1940s/arfr_1942.pdf",
+   "format": "pdf",
+   "sha256": "1b6ce791ee2100a6f51f527c0721450942ce15473c9ee28c58fd1debdbeacf76",
+   "version": "Board of Governors of the Federal Reserve System, Twenty-Ninth Annual Report covering operations for the year 1942 (Washington, 1943), the FRASER scan with its text layer (printed page = PDF page - 5). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "arfr1942img": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/arfr/1940s/arfr_1942.pdf",
+   "format": "image",
+   "sha256": "1b6ce791ee2100a6f51f527c0721450942ce15473c9ee28c58fd1debdbeacf76",
+   "version": "The same scan, read on the image of PDF page 19 = p. 14 rendered with pdftoppm, where the text layer misreads the fraction (⅜ as 'Vs')",
+   "retrieved": "2026-10-23"
+  },
+  "harrison1998a": {
+   "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ww2overview1998.pdf",
+   "format": "pdf",
+   "sha256": "12888419934b8ff97cf6b3d8828a379d50930dd8780e0d34d06c5778bb433a8d",
+   "version": "Mark Harrison, 'The economics of World War II: an overview', in M. Harrison (ed.), The Economics of World War II: Six Great Powers in International Comparison (Cambridge: Cambridge University Press, 1998), pp. 1-42; the author's preprint on his University of Warwick pages (its own page numbers)",
+   "retrieved": "2026-10-23"
+  },
+  "harrison1998b": {
+   "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/ww2ussr1998.pdf",
+   "format": "pdf",
+   "sha256": "8862871641549efecdc379e56d899642dcabcbb8ecfca1ddbb13ab3aa92ca105",
+   "version": "Mark Harrison, 'The Soviet Union: the defeated victor', in M. Harrison (ed.), The Economics of World War II (Cambridge University Press, 1998), pp. 268-301; the author's preprint on his University of Warwick pages (its own page numbers)",
+   "retrieved": "2026-10-23"
+  },
+  "harrison1992": {
+   "url": "https://warwick.ac.uk/fac/soc/economics/staff/mharrison/public/warfinance1992.pdf",
+   "format": "pdf",
+   "sha256": "931ac1232094a73479589cffddfb682756df1f5b6e307010dde0a9f34fdee9a2",
+   "version": "Mark Harrison, 'War finance', in J. Eatwell, M. Milgate and P. Newman (eds), The New Palgrave Dictionary of Money and Finance, vol. 3 (London: Macmillan, 1992), pp. 783-785; the author's preprint on his University of Warwick pages (its own page numbers)",
+   "retrieved": "2026-10-23"
+  },
+  "famine1945": {
+   "url": "https://archive.org/download/dli.ernet.26318/26318-Famine%20Inquiry%20Commission%20Report%20On%20Bengal_djvu.txt",
+   "format": "txt",
+   "sha256": "bba00da6cdc01b5a5fdb444bc71413977d49957e877266ea0fded7656aa85e67",
+   "version": "Famine Inquiry Commission, Report on Bengal (New Delhi: Government of India Press, 1945), the OCR text of the Digital Library of India's scan on the Internet Archive (item dli.ernet.26318); pages from the page numbers of the text",
+   "retrieved": "2026-10-23"
+  },
+  "famine1945img": {
+   "url": "https://archive.org/download/dli.ernet.26318/26318-Famine%20Inquiry%20Commission%20Report%20On%20Bengal_text.pdf",
+   "format": "image",
+   "sha256": "e2de6f5555c1acde7cd8fa4f4254471a2d303c82c0e05c6cacacac6f873ab728",
+   "version": "The PDF of the same scan, read on the image of p. 110 (PDF page 123) rendered with pdftoppm, where the OCR reads 1·5 as '15'",
+   "retrieved": "2026-10-23"
+  },
+  "famine1945meta": {
+   "url": "https://archive.org/metadata/dli.ernet.26318",
+   "format": "json",
+   "sha256": "5fe04e3b1f5c249fcfc7a76c87f9e50fa3dcc1b8549eefebc5d8d4207294b5e6",
+   "version": "The Internet Archive's metadata of the item dli.ernet.26318 (title, date and publisher)",
+   "retrieved": "2026-10-23"
+  },
+  "census_y34": {
+   "url": "https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p2-chY.pdf",
+   "format": "image",
+   "sha256": "b24886badeabd00af3d8e8831701730618a1edb170a7966ec5549f5bc5daf1f7",
+   "version": "U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970 (1975), chapter Y, a scan without a text layer: series Y 339-342 read on the image of PDF page 39 = p. 1105 rendered with pdftoppm (the same file as census_y30 of alternatives_facts)",
+   "retrieved": "2026-10-23"
+  },
+  "imtj30": {
+   "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/2011525363_NT_Nazi-opinion-judgment/2011525363_NT_Nazi-opinion-judgment.pdf",
+   "format": "pdf",
+   "sha256": "d2d0f0a622080582168f4427f219c4210e56cbb1ce476e895d0b792c5d666641",
+   "version": "Office of United States Chief of Counsel for Prosecution of Axis Criminality, Nazi Conspiracy and Aggression: Opinion and Judgment (Washington: US Government Printing Office, 1947), Law Library of Congress, Military Legal Resources; OCR text of the scan. Pages cited as pages of the PDF file.",
+   "retrieved": "2026-10-22"
+  },
+  "nca2_30": {
+   "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/2011525363_NT_Nazi_Vol-II/2011525363_NT_Nazi_Vol-II.pdf",
+   "format": "pdf",
+   "sha256": "2e55760346a33592613baaf7b79772338383e2a3f05509cde43c8210ade71607",
+   "version": "Nazi Conspiracy and Aggression, vol. II (Washington: US Government Printing Office, 1946), chapter XVI (the prosecution's brief on Schacht), Law Library of Congress, Military Legal Resources; OCR text.",
+   "retrieved": "2026-10-22"
+  },
+  "shizume30": {
+   "url": "https://www.boj.or.jp/en/research/wps_rev/rev_2009/data/rev09e02.pdf",
+   "format": "pdf",
+   "sha256": "694dedbe099035b748f44ed88d3b2abe4313c3b56e2f2d3251c92049279f87e4",
+   "version": "Masato Shizume, 'The Japanese Economy during the Interwar Period: Instability in the Financial System and the Impact of the World Depression', Bank of Japan Review 2009-E-2, May 2009 (translation of 2009-J-1, April 2009). Pages cited as printed.",
+   "retrieved": "2026-10-22"
+  },
+  "ide30": {
+   "url": "https://www.imes.boj.or.jp/research/papers/english/03-E-10.pdf",
+   "format": "pdf",
+   "sha256": "a2a2eaf28c567c9d3dcff91264e181bb7303cbdc3cdaabbc21a2a9d1484ad1bc",
+   "version": "Eisaku Ide, 'Policy Debates on Public Finance between the Ministry of Finance and the Bank of Japan from 1930 to 1936', IMES Discussion Paper 2003-E-10, Bank of Japan, August 2003 ('Do not reprint or reproduce without permission': short phrases and figures only). Pages cited as pages of the PDF file.",
+   "retrieved": "2026-10-22"
+  },
+  "bojhist30": {
+   "url": "https://www.boj.or.jp/about/outline/history/his_1900.htm",
+   "format": "html",
+   "sha256": "28e88e6777b69dde58ccb39d7b17c44c4c7a239b15c602346d1cd1ba1c1d1ecd",
+   "version": "Bank of Japan, 'Nihon Ginko no rekishi: nenpyo' (chronology), 1900-1999 page.",
+   "retrieved": "2026-10-22"
+  },
+  "bojcr30": {
+   "url": "https://www.boj.or.jp/en/copyright.htm",
+   "format": "html",
+   "sha256": "2e6f9c30181f0fab5b33ec78561fea8e9c0c471fc2494166707e6f4de2c40dec",
+   "version": "Bank of Japan, Copyright page.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_goring30": {
+   "url": "https://id.loc.gov/authorities/names/n80061235.madsrdf.json",
+   "format": "json",
+   "sha256": "2ffcfb8bfdd8b3b429ec99c2d7ed1c545e52efa19da7bd5bc3345f94643b1a41",
+   "version": "Library of Congress Name Authority File, n80061235 (Göring, Hermann, 1893-1946), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_sauckel30": {
+   "url": "https://id.loc.gov/authorities/names/n87890983.madsrdf.json",
+   "format": "json",
+   "sha256": "d98ac4b7e3f1d041211acc213fde6bfe24d2417b6d878b6a7de884224998f2f9",
+   "version": "Library of Congress Name Authority File, n87890983 (Sauckel, Fritz, 1894-1946), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_keynes32": {
+   "url": "https://id.loc.gov/authorities/names/n79004113.madsrdf.json",
+   "format": "json",
+   "sha256": "298a7d2be7ec0959a7c930cdaaea410dff5ca56c17b2c4f9e84e9d8267c72f0e",
+   "version": "Library of Congress Name Authority File, n79004113 (Keynes, John Maynard, 1883-1946), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_kalecki32": {
+   "url": "https://data.bnf.fr/ark:/12148/cb120313693",
+   "format": "html",
+   "sha256": "c517a0bb140b6da065d8fc04a345195ca556f46354c8abc8db64f2770d55dd55",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Michał Kalecki (dates of life); metadata reused under the Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "loc_hansen33": {
+   "url": "https://id.loc.gov/authorities/names/n79118940.madsrdf.json",
+   "format": "json",
+   "sha256": "876df5b4865f683f865acb5352d939fcaee131af2f4952a5977c0cab8b45cb8a",
+   "version": "Library of Congress, Name Authority File, record n79118940 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_lerner34": {
+   "url": "https://id.loc.gov/authorities/names/n79104246.madsrdf.json",
+   "format": "json",
+   "sha256": "066290ee6ffa6f30228664f71ad673fac7c862c1ccc7775e6ad66eb41060d369",
+   "version": "Library of Congress, Name Authority File, record n79104246 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_wood34": {
+   "url": "https://id.loc.gov/authorities/names/no2006113753.madsrdf.json",
+   "format": "json",
+   "sha256": "c3497fb54bc506c98325320c3ca857959950d8f63c5ccc3e48f24a22b03d80c5",
+   "version": "Library of Congress, Name Authority File, record no2006113753 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_white34": {
+   "url": "https://id.loc.gov/authorities/names/nr94034702.madsrdf.json",
+   "format": "json",
+   "sha256": "4db75df09632f3f17a4a7c8c053711c4333cf2c0a56e2bb6f623a52feefbda52",
+   "version": "Library of Congress, Name Authority File, record nr94034702 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_taft34": {
+   "url": "https://id.loc.gov/authorities/names/n83125299.madsrdf.json",
+   "format": "json",
+   "sha256": "a3899f3a8590cf0b65668aa04ae4cb4a1e84c5c9c1a7f2013193683382f3f2b8",
+   "version": "Library of Congress, Name Authority File, record n83125299 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_acheson34": {
+   "url": "https://id.loc.gov/authorities/names/n79043447.madsrdf.json",
+   "format": "json",
+   "sha256": "e2b7e9a03e89c35f91779333604e8e362e6774a85dea650a0041ff3fe10bb64f",
+   "version": "Library of Congress, Name Authority File, record n79043447 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_simon34": {
+   "url": "https://id.loc.gov/authorities/names/n86812239.madsrdf.json",
+   "format": "json",
+   "sha256": "e192e535c43f20a2465c2e17fc10fd9c2b2295bab7c8ede1232f15de08d37744",
+   "version": "Library of Congress, Name Authority File, record n86812239 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_flynn34": {
+   "url": "https://id.loc.gov/authorities/names/n50003601.madsrdf.json",
+   "format": "json",
+   "sha256": "901d831c3309428178fa4def8481f059ed908f5480e1c1e1c3e2b458e631ca1e",
+   "version": "Library of Congress, Name Authority File, record n50003601 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "gnd_domar34": {
+   "url": "https://lobid.org/gnd/118672215.json",
+   "format": "json",
+   "sha256": "af46f90069bd27b31fe14f34e3307a682b9df48868e8f9dad24673e2daa8eeb1",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118672215 (Domar, Evsey D.), as JSON from lobid.org (the record's licence: CC0 1.0)",
+   "retrieved": "2026-10-23"
+  }
+ }
+}
