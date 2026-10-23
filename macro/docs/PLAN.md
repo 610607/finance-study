@@ -1404,6 +1404,9 @@ ex:depressionworld-fetters ex:depressionworld-keynes ex:depressionworld-es ex:de
 sec:alternatives-world sec:alternatives-japan sec:alternatives-germany sec:alternatives-repressed sec:alternatives-sweden sec:alternatives-newdeal sec:alternatives-debate sec:alternatives-check sec:alternatives-legacy
 eq:alternatives-mefo eq:alternatives-level fig:alternatives_gdp fig:alternatives_japan fig:alternatives_reichsbank fig:alternatives_sweden
 ex:alternatives-underwrite ex:alternatives-mefo ex:alternatives-ceiling ex:alternatives-target
+sec:soviet-world sec:soviet-plan sec:soviet-balances sec:soviet-famine sec:soviet-calculation sec:soviet-growth sec:soviet-debate sec:soviet-check sec:soviet-legacy
+eq:soviet-balance eq:soviet-lange eq:soviet-index tab:soviet-growth fig:soviet_plan fig:soviet_grain fig:soviet_gdp
+ex:soviet-balance ex:soviet-lange ex:soviet-index
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous
