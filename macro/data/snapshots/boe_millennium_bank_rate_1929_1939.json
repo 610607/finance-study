@@ -1,0 +1,14 @@
+{
+  "title": "Bank Rate, 1929-1939: 1 January 1929 and every day on which it changed",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'D1. Official Interest Rates'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "date (ISO); bank_rate: Bank Rate, per cent, from that day ('Bank Rate 1833-1972, Minimum Lending Rate 1972-1981, Minimum Band 1 Dealing Rate 1981-1997, Repo Rate 1997-2006, Bank Rate, 2006-2016')",
+  "retrieved": "2026-10-23",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (the Bank of England for Bank Rate).",
+  "used_in": [
+    32
+  ],
+  "fetch": "data/fetch/boe_millennium_gb32.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-31). The first row is the rate in force on 1 January 1929; every later row is a day on which the rate changed.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet D1"
+}

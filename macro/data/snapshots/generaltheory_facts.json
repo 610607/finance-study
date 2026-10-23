@@ -1,0 +1,324 @@
+{
+ "title": "Evidence for Chapter 32: Keynes's General Theory, 1929-1937",
+ "source": "Keynes, The General Theory of Employment, Interest and Money (1936); Keynes, Essays in Persuasion (1931: 'Saving and Spending', broadcast January 1931; 'A Programme of Expansion', May 1929, with H. D. Henderson); Hansard (Commons, 15 April 1929 and 4 November 1936); the Macmillan Committee's Minutes of Evidence (1930); Kahn (1931); Pigou (1936); Ohlin (1937); Keynes (1937); Kalecki (1935); Mill (1844); Berg and Jonung (1998); Shizume (2009); Baumol (1999); Velde (2003); the authority records of the Library of Congress and the Bibliothèque nationale de France and the people pages of Historic Hansard",
+ "url": "https://archive.org/details/in.ernet.dli.2015.115101",
+ "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or column, the source text verbatim, note",
+ "retrieved": "2026-10-23",
+ "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Keynes (1883-1946): The General Theory (London: Macmillan, 1936; 'COPYRIGHT', row gt_copyright), Essays in Persuasion (1931; row ep_copyright) and 'Alternative Theories of the Rate of Interest' (1937) are in the public domain in the United Kingdom; the General Theory of 1936 may still be in copyright in the United States, so the chapter quotes it a sentence or less at a time and names the copy used. Kahn (1931), Pigou (1936), Ohlin (1937) and Kalecki (1935; Econometrica: 'Copyright 1935 by the Econometric Society.', row kc_copyright) are in copyright: the chapter quotes short phrases only and paraphrases the rest; the snapshot keeps the sentences needed to check those phrases and the figures of Kahn's table. Hansard (the Commons debates of 15 April 1929 and 4 November 1936 and the people pages): 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.' The people pages: '© UK Parliament'. The Macmillan Committee's Minutes of Evidence (HMSO, 1931) is a Crown publication older than fifty years and out of Crown copyright. Bank of Japan (Shizume 2009): the Bank's terms (https://www.boj.or.jp/en/copyright.htm): 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' Berg and Jonung (1998), SSE/EFI working paper: no copyright notice found; short sentences only, with credit. Baumol (1999): one phrase of the abstract on the American Economic Association's article page. Velde (2003), Federal Reserve Bank of Chicago working paper: one sentence, paraphrased in the chapter. Mill (1844) is in the public domain; the Project Gutenberg text is used under the Project Gutenberg licence (no Project Gutenberg trademark is used here). The authority records of the Library of Congress (id.loc.gov) are public data; those of the Bibliothèque nationale de France (data.bnf.fr) are metadata reused under the Licence Ouverte (Open License). The chapter's Chinese renders the quotations; the translations are the book's.",
+ "used_in": [
+  32
+ ],
+ "fetch": "data/fetch/generaltheory32.py",
+ "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+ "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch32.py; rows with an empty quotation are values or words read on a page image (sources keynes1936img, keynes1929cimg, kahn1931img), named as such in their notes, which give a transcription between « and ». The OCR texts keep their misreadings as printed and the notes name them: the line-end hyphen printed as '¬' in Essays in Persuasion ('un¬ luckily', 'sur¬ plus', 'adver¬ tised', 'per¬ spective', 're¬ duction', 'In¬ flation', 'deflation¬ ary', 'in¬ dustrial'), 'Listener^', '4-' (keynes1931b, keynes1929c); 'Jostan' (macmillan1930); 'Kaun' and the printed 'cf' (kahn1931); 'Picou' (pigou1936); 'Kreynzs' (keynes1937); 'Katecki' and 'Macrodynemic' (kalecki1935); '2-5' for 2·5 (keynes1936). The normalisation of verify_web_quotes.py joins a word broken by a hyphen at a line end, so two quotations of the General Theory read 'liquiditypreferences' and 'investmentdemand'. Indirect testimony: Churchill's Budget speech as Keynes and Henderson quote it ('dogma', row pe_dogma; Hansard prints 'doctrine', row hc29_doctrine); Cunningham's history through the Budget speech (row hc29_crisis); Kuznets's estimates through the General Theory (rows gt_kuz_*; NBER Bulletin 52 was not obtained); the Swedish Unemployment Committee's reports through Ohlin (1937); Myrdal's report for the budget of 1933 through Berg and Jonung (row bj_myrdal); the praise of Takahashi as a pioneer of Keynesian economics through Shizume (row sz_pioneer); Pigou's reading of Keynes's long-period conclusion (row pg_longperiod); the Prime Minister's reply of 29 October 1936 through Runciman (row hc36b_improved); the words of the Jarrow petition are the petitioners', presented by Ellen Wilkinson.",
+ "sources": {
+  "keynes1936": {
+   "url": "https://archive.org/download/in.ernet.dli.2015.115101/2015.115101.The-General-Theory-Of-Employment-Interest-And-Money_djvu.txt",
+   "format": "txt",
+   "sha256": "335c76562dc3a67e74a458d7bb1e8b23f2968f490987692d737ade41dd3b23d8",
+   "version": "J. M. Keynes, The General Theory of Employment, Interest and Money (London: Macmillan, 1936), the copy of the Digital Library of India on archive.org (item in.ernet.dli.2015.115101), OCR text; pages from the running heads",
+   "retrieved": "2026-10-22"
+  },
+  "keynes1936img": {
+   "url": "https://archive.org/download/in.ernet.dli.2015.115101/2015.115101.The-General-Theory-Of-Employment-Interest-And-Money.pdf",
+   "format": "image",
+   "sha256": "9008b27286a21e9b5e21de98e2c51d856db5fba70258546b2cd63aff7324cff8",
+   "version": "The scan of the same copy, whose OCR garbles some pages; read on images rendered with pdftoppm: PDF pages 42, 43, 118, 180, 214 and 311 = book pp. 25, 26, 103, 167, 199 and 296",
+   "retrieved": "2026-10-22"
+  },
+  "keynes1931b": {
+   "url": "https://archive.org/download/dli.ernet.30390/30390-Essays%20In%20Persuasion%20%281931%29_djvu.txt",
+   "format": "txt",
+   "sha256": "8378333997621fa5ac5632d040006dd5c008ce8d9d77f030423e819744279e71",
+   "version": "J. M. Keynes, Essays in Persuasion (London: Macmillan, 1931), the copy of the Digital Library of India on archive.org (item dli.ernet.30390), OCR text of the first edition: 'Saving and Spending' (broadcast, January 1931), pp. 148-155; contents and list of sources, pp. xii and 375",
+   "retrieved": "2026-10-22"
+  },
+  "keynes1929c": {
+   "url": "https://archive.org/download/dli.ernet.30390/30390-Essays%20In%20Persuasion%20%281931%29_djvu.txt",
+   "format": "txt",
+   "sha256": "8378333997621fa5ac5632d040006dd5c008ce8d9d77f030423e819744279e71",
+   "version": "The same file: 'A Programme of Expansion (General Election, May 1929)', pp. 118-134, the essay taken from the pamphlet Can Lloyd George Do It? written with H. D. Henderson (May 1929)",
+   "retrieved": "2026-10-22"
+  },
+  "keynes1929cimg": {
+   "url": "https://archive.org/download/dli.ernet.30390/30390-Essays%20In%20Persuasion%20%281931%29.pdf",
+   "format": "image",
+   "sha256": "a4c6a222661b055dab45e34ce8619a780167cfd5beac1f05e14c7fccac10b6b0",
+   "version": "The scan of the same copy, whose OCR loses the pound signs and some figures; read on images rendered with pdftoppm: PDF pages 135-137 = book pp. 118-120",
+   "retrieved": "2026-10-22"
+  },
+  "kahn1931": {
+   "url": "https://archive.org/download/sim_economic-journal_1931-06_41_162/sim_economic-journal_1931-06_41_162_djvu.txt",
+   "format": "txt",
+   "sha256": "83dd69474005ca71f2d0c32feadc10713b3ff4e3c55fbdd8b72f2d3744e4837e",
+   "version": "R. F. Kahn, 'The Relation of Home Investment to Unemployment', Economic Journal 41(162), June 1931, pp. 173-198; OCR text of the issue on archive.org (item sim_economic-journal_1931-06_41_162); pages from the running heads",
+   "retrieved": "2026-10-22"
+  },
+  "kahn1931img": {
+   "url": "https://archive.org/download/sim_economic-journal_1931-06_41_162/sim_economic-journal_1931-06_41_162.pdf",
+   "format": "image",
+   "sha256": "c3a9cdbbba008e7621a51dd7b32bd14130b2e43bef03ecf3f9e0c59dffd4511e",
+   "version": "The scan of the same issue; equations (1) and (2) and the table of the ratio of secondary to primary employment read on images rendered with pdftoppm: PDF pages 11, 13 and 14 = journal pp. 183, 185 and 186",
+   "retrieved": "2026-10-22"
+  },
+  "pigou1936": {
+   "url": "https://archive.org/download/economica_1936_3_9-12/economica_1936_3_9-12_djvu.txt",
+   "format": "txt",
+   "sha256": "8503ff18b263d6dd0ec8a362168c4dd61b0a865e9d7abcae7e9b8ca834b84262",
+   "version": "A. C. Pigou, 'Mr. J. M. Keynes' General Theory of Employment, Interest and Money', Economica, New Series, 3, May 1936, pp. 115-132; OCR text of the volume (the reprint of 1965) on archive.org (item economica_1936_3_9-12)",
+   "retrieved": "2026-10-22"
+  },
+  "ohlin1937": {
+   "url": "https://archive.org/download/sim_economic-journal_1937-03_47_185/sim_economic-journal_1937-03_47_185_djvu.txt",
+   "format": "txt",
+   "sha256": "84db15be247c5701b002eba53866ade8263e1a76b780f3587fb03d7950b590eb",
+   "version": "B. Ohlin, 'Some Notes on the Stockholm Theory of Savings and Investment I', Economic Journal 47(185), March 1937, pp. 53-57 used; OCR text of the issue on archive.org (item sim_economic-journal_1937-03_47_185)",
+   "retrieved": "2026-10-22"
+  },
+  "ohlin1937b": {
+   "url": "https://archive.org/download/sim_economic-journal_1937-06_47_186/sim_economic-journal_1937-06_47_186_djvu.txt",
+   "format": "txt",
+   "sha256": "f03b9130a888c8480ae4e6db143267051eb57d9ba8a64fd5a94fe45e8c7ec742",
+   "version": "B. Ohlin, 'Some Notes on the Stockholm Theory of Savings and Investment II', Economic Journal 47(186), June 1937, pp. 221-240; OCR text of the issue on archive.org (item sim_economic-journal_1937-06_47_186)",
+   "retrieved": "2026-10-23"
+  },
+  "keynes1937": {
+   "url": "https://archive.org/download/sim_economic-journal_1937-06_47_186/sim_economic-journal_1937-06_47_186_djvu.txt",
+   "format": "txt",
+   "sha256": "f03b9130a888c8480ae4e6db143267051eb57d9ba8a64fd5a94fe45e8c7ec742",
+   "version": "J. M. Keynes, 'Alternative Theories of the Rate of Interest', Economic Journal 47(186), June 1937, pp. 241-252; the same file",
+   "retrieved": "2026-10-23"
+  },
+  "kalecki1935": {
+   "url": "https://archive.org/download/sim_econometrica_1935_3/sim_econometrica_1935_3_djvu.txt",
+   "format": "txt",
+   "sha256": "4b9b3058487cb742dabebe9b4502ffee569a41a43ee0a583d1d3e12bb0b50abc",
+   "version": "M. Kalecki, 'A Macrodynamic Theory of Business Cycles', Econometrica 3, 1935, pp. 327-344; OCR text of the volume on archive.org (item sim_econometrica_1935_3)",
+   "retrieved": "2026-10-22"
+  },
+  "hansard1929": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1929/apr/15/disposal-of-surplus",
+   "format": "html",
+   "sha256": "29cd9544dd315eff568a02b484743d757399a81a2195cd55ef046bcc18667df1",
+   "version": "Hansard, House of Commons Debates, 15 April 1929, vol. 227, cc. 53-56: Orders of the Day, 'Disposal of Surplus' (the Budget speech of the Chancellor of the Exchequer, Winston Churchill, continued). Historic Hansard (UK Parliament), digitised text; column numbers from the page's column anchors.",
+   "retrieved": "2026-10-22"
+  },
+  "hansard1929a": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1929/apr/15/financial-statement",
+   "format": "html",
+   "sha256": "5e3b95208c58adc70e8515b3072c1ce93fa2f92eff9f2eefa919e86215b0fb1e",
+   "version": "Hansard, House of Commons Debates, 15 April 1929, vol. 227, c. 27: Orders of the Day, 'Financial Statement' (the opening of the Budget speech, the Chancellor of the Exchequer, Mr. Churchill).",
+   "retrieved": "2026-10-22"
+  },
+  "hansard1936": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1936/nov/04/petitions-jarrow",
+   "format": "html",
+   "sha256": "a5078fda889235b8c9cb5f55304f7eb0150baa6e0a889f7c5db61aff40df95f6",
+   "version": "Hansard, House of Commons Debates, 4 November 1936, vol. 317, c. 75: 'Petitions (Jarrow)' (Miss Wilkinson presents the petition of the people of Jarrow).",
+   "retrieved": "2026-10-22"
+  },
+  "hansard1936b": {
+   "url": "https://api.parliament.uk/historic-hansard/commons/1936/nov/04/jarrow",
+   "format": "html",
+   "sha256": "67be0da56d30e51ed918c79732262821478bc777443da9584c9c44431216dcc5",
+   "version": "Hansard, House of Commons Debates, 4 November 1936, vol. 317, cc. 75-77: Oral Answers, 'Jarrow' (private notice question of Miss Wilkinson, answered by the President of the Board of Trade, Mr. Runciman).",
+   "retrieved": "2026-10-22"
+  },
+  "macmillan1930": {
+   "url": "https://archive.org/download/minutesofevidenc01grea_0/minutesofevidenc01grea_0_djvu.txt",
+   "format": "txt",
+   "sha256": "13083cef49f174abd51228403e9e67bea5b1ecd22c13d84dcc00403875546a22",
+   "version": "Committee on Finance and Industry (Macmillan Committee), Minutes of Evidence, vol. I (London: HMSO, 1931). OCR text on archive.org (item minutesofevidenc01grea_0): the first day, 28 November 1929, p. 1 (the members present); Sir Josiah Stamp, 4 April 1930, p. 262 (Q. 4002-4003).",
+   "retrieved": "2026-10-22"
+  },
+  "berg1998": {
+   "url": "https://swopec.hhs.se/hastef/papers/hastef0290.pdf",
+   "format": "pdf",
+   "sha256": "1f1f35d30774da33d8d41265386634cf0856fcd2800c2b5557155103a1939635",
+   "version": "C. Berg and L. Jonung, 'Pioneering Price Level Targeting: The Swedish Experience 1931-1937', SSE/EFI Working Paper Series in Economics and Finance No 290, December 1998",
+   "retrieved": "2026-10-16"
+  },
+  "shizume30": {
+   "url": "https://www.boj.or.jp/en/research/wps_rev/rev_2009/data/rev09e02.pdf",
+   "format": "pdf",
+   "sha256": "694dedbe099035b748f44ed88d3b2abe4313c3b56e2f2d3251c92049279f87e4",
+   "version": "Masato Shizume, 'The Japanese Economy during the Interwar Period: Instability in the Financial System and the Impact of the World Depression', Bank of Japan Review 2009-E-2, May 2009 (translation of 2009-J-1, April 2009). Pages cited as printed.",
+   "retrieved": "2026-10-22"
+  },
+  "baumol1999": {
+   "url": "https://www.aeaweb.org/articles?id=10.1257/jep.13.1.195",
+   "format": "html",
+   "sha256": "61940b769deab71809792f18b1d6d3685a3b07daf211d6fc2a33002d38359dfb",
+   "version": "W. J. Baumol, 'Retrospectives: Say's Law', Journal of Economic Perspectives 13(1), 1999, pp. 195-204: the abstract on the American Economic Association's article page (the PDF could not be downloaded from this environment)",
+   "retrieved": "2026-10-15"
+  },
+  "jsmill1844": {
+   "url": "https://www.gutenberg.org/cache/epub/12004/pg12004.txt",
+   "format": "txt",
+   "sha256": "bcd9627e2847cf035945dc4fc4a137bdfc9dbe367adb8aadcf092474071c823b",
+   "version": "J. S. Mill, Essays on Some Unsettled Questions of Political Economy (London, 1844), Project Gutenberg eBook 12004; the preface ('written in 1829 and 1830') and Essay II, 'Of the Influence of Consumption on Production'",
+   "retrieved": "2026-10-15"
+  },
+  "velde2003": {
+   "url": "https://www.chicagofed.org/-/media/publications/working-papers/2003/wp2003-31-pdf.pdf",
+   "format": "pdf",
+   "sha256": "909db10084f2f066683347571431cf3cbc01edba8ab4409d9f903ee77d56cd34",
+   "version": "F. R. Velde, 'Government Equity and Money: John Law's System in 1720 France', Federal Reserve Bank of Chicago Working Paper 2003-31 (November 30, 2003); pages are those printed on the paper (PDF page minus 3); Tables 3, 4, 6 and 10 are quoted as their rows read in the text layer (columns separated by spaces)",
+   "retrieved": "2026-10-13"
+  },
+  "hh_lloydgeorge32": {
+   "url": "https://api.parliament.uk/historic-hansard/people/mr-david-lloyd-george/index.html",
+   "format": "html",
+   "sha256": "c2e0ace0001e31d4e8f7aa9770a0bb968e2461ce86c2a651fc438177bc244598",
+   "version": "Historic Hansard, people page: Mr David Lloyd George (dates of life; Caernarvon District of Boroughs; Prime Minister 1916-1922).",
+   "retrieved": "2026-10-22"
+  },
+  "hh_churchill32": {
+   "url": "https://api.parliament.uk/historic-hansard/people/mr-winston-churchill/index.html",
+   "format": "html",
+   "sha256": "b99fb51cbec76afde3f15960c19ae5a167e7cba58062f3be03abdbaf2e9f0bbd",
+   "version": "Historic Hansard, people page: Mr Winston Churchill (dates of life).",
+   "retrieved": "2026-10-22"
+  },
+  "hh_wilkinson32": {
+   "url": "https://api.parliament.uk/historic-hansard/people/miss-ellen-wilkinson/index.html",
+   "format": "html",
+   "sha256": "54053ffbf0ecab29d765122a343752a49389e7a77b3272791fb7887ac0c0dcb5",
+   "version": "Historic Hansard, people page: Miss Ellen Wilkinson (dates of life; Jarrow from 14 November 1935).",
+   "retrieved": "2026-10-22"
+  },
+  "hh_runciman32": {
+   "url": "https://api.parliament.uk/historic-hansard/people/mr-walter-runciman/index.html",
+   "format": "html",
+   "sha256": "348c77ba4bf97fee521bafd4c348ebb1e17172bb4356a567dc935fe5446ad4e6",
+   "version": "Historic Hansard, people page: Mr Walter Runciman (dates of life; President of the Board of Trade 1931-1937).",
+   "retrieved": "2026-10-22"
+  },
+  "loc_keynes32": {
+   "url": "https://id.loc.gov/authorities/names/n79004113.madsrdf.json",
+   "format": "json",
+   "sha256": "298a7d2be7ec0959a7c930cdaaea410dff5ca56c17b2c4f9e84e9d8267c72f0e",
+   "version": "Library of Congress Name Authority File, n79004113 (Keynes, John Maynard, 1883-1946), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_henderson32": {
+   "url": "https://id.loc.gov/authorities/names/no97018307.madsrdf.json",
+   "format": "json",
+   "sha256": "081076b76629d4a8efabb91aaba03aeaf9dffb7d662474520a03b1f77a3ee68f",
+   "version": "Library of Congress Name Authority File, no97018307 (Henderson, Hubert Douglas, Sir, 1890-1952), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_stamp32": {
+   "url": "https://id.loc.gov/authorities/names/n50082617.madsrdf.json",
+   "format": "json",
+   "sha256": "90a3b41f07ac4f313d2639e323ce4b4561eaa754e64074e780a150cf93e3fd2b",
+   "version": "Library of Congress Name Authority File, n50082617 (Stamp, Josiah, Sir, 1880-1941), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_pigou32": {
+   "url": "https://id.loc.gov/authorities/names/n79054454.madsrdf.json",
+   "format": "json",
+   "sha256": "e46c1ef25a9a44a7770ce3c354dfa01251066e0e4bc375ff8357ebdd13156646",
+   "version": "Library of Congress Name Authority File, n79054454 (Pigou, A. C. (Arthur Cecil), 1877-1959), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_ricardo32": {
+   "url": "https://id.loc.gov/authorities/names/n78095325.madsrdf.json",
+   "format": "json",
+   "sha256": "7191919099f973c1c34594fca2eb26cb5233176ddba286762357b07a942ce23e",
+   "version": "Library of Congress Name Authority File, n78095325 (Ricardo, David, 1772-1823), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_mill32": {
+   "url": "https://id.loc.gov/authorities/names/n79007044.madsrdf.json",
+   "format": "json",
+   "sha256": "93d3530fa23c710bccb6350bacb55e2f40e90b79800002040b01500b89bb7a88",
+   "version": "Library of Congress Name Authority File, n79007044 (Mill, John Stuart, 1806-1873), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_say32": {
+   "url": "https://id.loc.gov/authorities/names/n50016910.madsrdf.json",
+   "format": "json",
+   "sha256": "0017cb262efc5f64fb6464d456a84889766fce0083b55fc4746516189a47c8e7",
+   "version": "Library of Congress Name Authority File, n50016910 (Say, Jean Baptiste, 1767-1832), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_malthus32": {
+   "url": "https://id.loc.gov/authorities/names/n79021716.madsrdf.json",
+   "format": "json",
+   "sha256": "9ace81fa1d6dbfdea75057f8ec0338c551c0f9928a301f5aa485ac573cc51196",
+   "version": "Library of Congress Name Authority File, n79021716 (Malthus, T. R. (Thomas Robert), 1766-1834), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_smith32": {
+   "url": "https://id.loc.gov/authorities/names/n80032761.madsrdf.json",
+   "format": "json",
+   "sha256": "2960bc0a164ccfe639a67c2a86fe3146fd59e84f0713e5219c1709f07f91ebed",
+   "version": "Library of Congress Name Authority File, n80032761 (Smith, Adam, 1723-1790), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_kuznets32": {
+   "url": "https://id.loc.gov/authorities/names/n79099294.madsrdf.json",
+   "format": "json",
+   "sha256": "e7dbc662d332a5307bd0a54a9929b0ebaadc963401afc1990f4f48475aaaf947",
+   "version": "Library of Congress Name Authority File, n79099294 (Kuznets, Simon, 1901-1985), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_law32": {
+   "url": "https://id.loc.gov/authorities/names/n81080996.madsrdf.json",
+   "format": "json",
+   "sha256": "58e34a21bf96fa5f02fa556b666f545c27a49ce7ce49329c5ff3c2895b33687d",
+   "version": "Library of Congress Name Authority File, n81080996 (Law, John, 1671-1729), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_wicksell32": {
+   "url": "https://id.loc.gov/authorities/names/n50017056.madsrdf.json",
+   "format": "json",
+   "sha256": "bf2e410d898b40b27fc2c1d44cf1be14d6028e47a95c9ccc646b50e5f765626e",
+   "version": "Library of Congress Name Authority File, n50017056 (Wicksell, Knut, 1851-1926), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_ohlin32": {
+   "url": "https://id.loc.gov/authorities/names/n79106758.madsrdf.json",
+   "format": "json",
+   "sha256": "d42f2c226aa31bdc9cf13a031201a7bfe83e5e5454ebd64334fc8720fcd8ccc5",
+   "version": "Library of Congress Name Authority File, n79106758 (Ohlin, Bertil, 1899-1979), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_myrdal32": {
+   "url": "https://id.loc.gov/authorities/names/n80044766.madsrdf.json",
+   "format": "json",
+   "sha256": "9edb1038e1fdf0387533b093b57ad0dcb3b3eceba11aefb51223d7359d57fd6f",
+   "version": "Library of Congress Name Authority File, n80044766 (Myrdal, Gunnar, 1898-1987), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_wigforss32": {
+   "url": "https://id.loc.gov/authorities/names/n84177215.madsrdf.json",
+   "format": "json",
+   "sha256": "cf8b673e83f27f6e89ad578627d4f683644348fdfc39cd47671420607b6c54e8",
+   "version": "Library of Congress Name Authority File, n84177215 (Wigforss, Ernst, 1881-1977), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "loc_takahashi32": {
+   "url": "https://id.loc.gov/authorities/names/n86127385.madsrdf.json",
+   "format": "json",
+   "sha256": "290ed73399d5d0e46cb740c0ebf97314a705082a186c3e05b859948f11f046a4",
+   "version": "Library of Congress Name Authority File, n86127385 (Takahashi, Korekiyo, 1854-1936), MADS/RDF JSON from id.loc.gov.",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_kahn32": {
+   "url": "https://data.bnf.fr/ark:/12148/cb122778155",
+   "format": "html",
+   "sha256": "e69d644dc4295d27110ce34e18452e968b51600ab99bb334c121877c8da66eef",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Richard Ferdinand Kahn (dates of life); metadata reused under the Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  },
+  "bnf_kalecki32": {
+   "url": "https://data.bnf.fr/ark:/12148/cb120313693",
+   "format": "html",
+   "sha256": "c517a0bb140b6da065d8fc04a345195ca556f46354c8abc8db64f2770d55dd55",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Michał Kalecki (dates of life); metadata reused under the Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  }
+ }
+}

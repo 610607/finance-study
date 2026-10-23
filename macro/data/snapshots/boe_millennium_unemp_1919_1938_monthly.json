@@ -1,0 +1,14 @@
+{
+  "title": "Britain's administrative unemployment rate, monthly, January 1919 - December 1938",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheet 'M5. Administrative unemp 1881+'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; month (1-12); unemp_admin: administrative unemployment rate, per cent (Denman and Macdonald 1996, Tables 1 and 2; empty where the sheet gives none); unemp_sa: the sheet's 'seasonally-adjusted and interpolated' series, per cent",
+  "retrieved": "2026-10-23",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (Denman and Macdonald 1996 for unemployment).",
+  "used_in": [
+    32
+  ],
+  "fetch": "data/fetch/boe_millennium_gb32.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-31). The text and figure of Chapter 32 use unemp_admin, which the sheet leaves empty from January to October 1919 and in October 1920; unemp_sa is kept for reference and is not used. The columns are those of boe_millennium_interwar_monthly (Chapter 27), whose table ends in December 1931.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheet M5"
+}

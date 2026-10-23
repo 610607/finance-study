@@ -1,0 +1,14 @@
+{
+  "title": "Britain's output, consumption, investment, trade and unemployment, annual, 1919-1938",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'A1. Headline series' and 'A50. Employment & unemployment'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "year; real_gdp_gbp_mn_2013: real UK GDP at market prices, geographically-consistent estimate based on post-1922 borders (A1, from A8), GBP million, chained volume measure, 2013 prices; real_consumption_gbp_mn_2013 and real_investment_gbp_mn_2013: real consumption and real investment (A1, from A12, composite measure), same units; exports_gbp_mn_2013 and imports_gbp_mn_2013: export and import volumes (A1, from A35), same units; unemployed_000: unemployed, thousands (A50, Feinstein 1972); unemp_rate_civilian: unemployment rate, per cent of the civilian working population (A50, Feinstein 1972); unemp_rate_employees: per cent of the civilian working population minus the self-employed (A50, Feinstein 1972 Table 58 / Boyer and Hatton 2002); the A50 series are for the UK excluding southern Ireland and start in 1920",
+  "retrieved": "2026-10-23",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series (Feinstein 1972 and Boyer and Hatton 2002 for unemployment; the sources named in sheets A8, A12 and A35 for output, expenditure and trade).",
+  "used_in": [
+    32
+  ],
+  "fetch": "data/fetch/boe_millennium_gb32.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-31). Chapter 32 uses real GDP, consumption, investment and export volumes (indices 1929 = 100 and changes 1929-1932 and 1932-1937, the book's own calculations) and Feinstein's unemployed and civilian unemployment rate.",
+  "citation": "Bank of England, A Millennium of Macroeconomic Data for the UK, v3.1 (R. Thomas and N. Dimsdale, 2017), sheets A1 and A50"
+}
