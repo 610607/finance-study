@@ -799,7 +799,7 @@ def multiplier(F, Y, Q):
     said("合计是$1+c+c^{2}+\\cdots=1/(1-c)$", 1, 1, 1)
     said("$45^{\\circ}$线上产出等于支出", 45)
     ex_cross(F)
-    say("k=\\frac{mW+nP}{W+P+R},\\qquad m=m'\\Bigl(1-\\frac{U}{W}\\Bigr),\\qquad \\frac{\\text{次级就业}}{\\text{初级就业}}"
+    say("k=\\frac{mW+nP}{W+P+R},\\qquad m=m'\\left(1-\\frac{U}{W}\\right),\\qquad \\frac{\\text{次级就业}}{\\text{初级就业}}"
         "=k+k^{2}+\\cdots=\\frac{k}{1-k}.\\label{eq:generaltheory-kahn}")
     assert Q["ka_m"] == "Then m'(W - U) = mW"                                   # m = m'(1 - U/W)
     assert "k + k^2 + k^3 + . . . = k/(1 - k)" in transcription("ka_eq")

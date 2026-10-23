@@ -101,7 +101,7 @@ def gold_panics():
     a2.set_xlabel(T("距写信的周数", "weeks from the letter"))
     a2.set_ylabel(T("贴现率（%）", "Bank Rate (%)"))
     _grid(a2)
-    _title(a2, T("(b) 贴现率在信的那一周升到顶", "(b) Bank Rate peaks in the week of the letter"))
+    _title(a2, T("(b) 贴现率在信的那一周升到顶", "(b) Bank Rate peaks at the letter"))
     return fig
 
 
@@ -114,7 +114,7 @@ def gold_rules():
     e, m = C.changes(W, "end"), C.changes(W, "mean")
     cls = C.classify(e)
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.85), gridspec_kw=dict(width_ratios=[1.0, 1.05]))
-    fig.subplots_adjust(left=0.075, right=0.98, top=0.86, bottom=0.17, wspace=0.32)
+    fig.subplots_adjust(left=0.09, right=0.98, top=0.86, bottom=0.17, wspace=0.32)
 
     lim_x, lim_y = (-12, 12), (-12, 21)
     a1.fill_between([0, lim_x[1]], 0, lim_y[1], color=tint(MONEY, 0.1), lw=0, zorder=0)
@@ -125,7 +125,7 @@ def gold_rules():
     a1.plot(e.intl[ok], e.dom[ok], ls="none", marker="o", ms=4.4, mfc=MONEY, mec="white", mew=0.5, zorder=4)
     a1.plot(e.intl[~ok], e.dom[~ok], ls="none", marker="s", ms=4.0, mfc=AMBER, mec="white", mew=0.5, zorder=4)
     for y, (dx, dy, ha) in {1894: (0.6, -1.4, "left"), 1895: (-0.5, 1.4, "right"), 1896: (0.5, 1.6, "left")}.items():
-        t = a1.text(e.intl[y] + dx, e.dom[y] + dy, str(y), fontsize=7.4, color=INK, ha=ha, va="center")
+        t = a1.text(e.intl[y] + dx, e.dom[y] + dy, str(y), fontsize=7.8, color=INK, ha=ha, va="center")
         halo(t, 2.0)
     a1.text(11.5, 20.2, T(f"同向 {int(ok.sum())} 年", f"same sign: {int(ok.sum())}"), fontsize=7.8, color=MONEY,
             ha="right", va="top")
@@ -157,7 +157,7 @@ def gold_rules():
     a2.text(2, k[0] + 0.52, T("遵守", "comply"), fontsize=7.8, color=MONEY, ha="left", va="bottom")
     a2.text(52, k[0] + 0.52, T("违反", "violate"), fontsize=7.8, color=AMBER, ha="left", va="bottom")
     a2.annotate(T("没有变化 3", "no change: 3"), (98.5, k[0] + h / 2), xytext=(99.5, k[0] + 0.52),
-                fontsize=7.4, color=MUTED, ha="right", va="bottom",
+                fontsize=7.8, color=MUTED, ha="right", va="bottom",
                 arrowprops=dict(arrowstyle="-", lw=0.5, color=MUTED))
     a2.set_yticks(k)
     a2.set_yticklabels([r[0] for r in rows], fontsize=7.8)

@@ -37,7 +37,7 @@ def periph_world():
     E = C.external().loc[1850:1913]
     A = C.adoptions()
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.7))
-    fig.subplots_adjust(left=0.07, right=0.98, top=0.86, bottom=0.15, wspace=0.3)
+    fig.subplots_adjust(left=0.08, right=0.98, top=0.86, bottom=0.15, wspace=0.3)
 
     for a, b in C.RR_CLUSTERS:
         a1.axvspan(a, b, color=SHADE, lw=0, zorder=0)
@@ -83,7 +83,7 @@ def periph_silver():
     P = C.silver()
     H = C.herschell()
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.7))
-    fig.subplots_adjust(left=0.075, right=0.98, top=0.86, bottom=0.15, wspace=0.3)
+    fig.subplots_adjust(left=0.085, right=0.98, top=0.86, bottom=0.15, wspace=0.3)
 
     a1.plot(P.index, P.values, color=MONEY, lw=1.8, zorder=3)
     for y in (1873, 1893):
@@ -134,23 +134,23 @@ def periph_council():
                          (xi, T("印度", "India"), T("卢比（不能兑现）", "rupees (inconvertible)"))):
         rbox(ax, x, 0.3, bw, 3.45, fc=tint(MUTED, 0.06), ec=tint(MUTED, 0.35), lw=0.8, r=0.12, z=1)
         label(ax, x + bw / 2, 3.5, name, size=9.0, weight="bold", color=INK)
-        label(ax, x + bw / 2, 3.18, sub, size=7.2, color=MUTED)
+        label(ax, x + bw / 2, 3.18, sub, size=7.6, color=MUTED)
     g0, g1 = xl + bw + 0.08, xi - 0.08                # the gap between the boxes
     gm = (g0 + g1) / 2
     # the ceiling: Council Bills sold in London, or gold sent to India at 16d.
     arrow(ax, (g0, top + 0.12), (g1, top + 0.12), color=EXTERNAL, lw=1.4)
-    label(ax, gm, top + 0.36, T("参事会汇票", "Council Bills"), size=7.4, color=EXTERNAL)
+    label(ax, gm, top + 0.36, T("参事会汇票", "Council Bills"), size=7.8, color=EXTERNAL)
     arrow(ax, (g0, top - 0.3), (g1, top - 0.3), color=EXTERNAL, lw=1.2, ls=(0, (4, 2)))
-    label(ax, gm, top - 0.68, T("或运金镑，\n按 16 便士换卢比", "or ship sovereigns,\nrupees at 16d."), size=7.0,
+    label(ax, gm, top - 0.68, T("或运金镑，\n按 16 便士换卢比", "or ship sovereigns,\nrupees at 16d."), size=7.6,
           color=EXTERNAL)
-    label(ax, xl + bw / 2, top - 0.1, T("银行付英镑", "banks pay sterling"), size=7.4, color=INK)
-    label(ax, xi + bw / 2, top - 0.1, T("银行领卢比", "banks get rupees"), size=7.4, color=INK)
+    label(ax, xl + bw / 2, top - 0.1, T("银行付英镑", "banks pay sterling"), size=7.8, color=INK)
+    label(ax, xi + bw / 2, top - 0.1, T("银行领卢比", "banks get rupees"), size=7.8, color=INK)
     # the floor: sterling drafts sold in Calcutta, paid out of the Gold Standard Reserve
     arrow(ax, (g1, low + 0.3), (g0, low + 0.3), color=MONEY, lw=1.4)
-    label(ax, gm, low - 0.02, T("加尔各答出售的\n英镑汇票", "sterling drafts\nsold in Calcutta"), size=7.0,  # below its arrow
+    label(ax, gm, low - 0.02, T("加尔各答出售的\n英镑汇票", "sterling drafts\nsold in Calcutta"), size=7.6,  # below its arrow
           color=MONEY)
-    label(ax, xl + bw / 2, low + 0.3, T("用金本位储备兑付", "paid from the Reserve"), size=7.4, color=INK)
-    label(ax, xi + bw / 2, low + 0.3, T("政府收进卢比", "Government takes rupees"), size=7.4, color=INK)
+    label(ax, xl + bw / 2, low + 0.3, T("用金本位储备兑付", "paid from the Reserve"), size=7.8, color=INK)
+    label(ax, xi + bw / 2, low + 0.3, T("政府收进卢比", "Government takes rupees"), size=7.8, color=INK)
     # the band, as a scale
     xs, y0, y1 = 7.95, 0.75, 3.35
     lo, hi = C.PAR - 3 / 32, C.PAR + 1 / 8
@@ -162,6 +162,6 @@ def periph_council():
     for v, txt, col in ((hi, T("16⅛ 便士：上限", "16⅛d.: ceiling"), EXTERNAL), (C.PAR, T("16 便士", "16d."), INK),
                         (lo, T("15 29/32 便士：下限", "15 29/32d.: floor"), MONEY)):
         ax.plot([xs - 0.12, xs + 0.12], [yy(v), yy(v)], color=col, lw=1.4, zorder=4)
-        label(ax, xs + 0.2, yy(v), txt, size=7.2, color=col, ha="left")
-    label(ax, xs + 0.9, 0.42, T("汇率带", "the band"), size=7.4, color=MUTED)
+        label(ax, xs + 0.2, yy(v), txt, size=7.6, color=col, ha="left")
+    label(ax, xs + 0.9, 0.42, T("汇率带", "the band"), size=7.8, color=MUTED)
     return fig

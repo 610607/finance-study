@@ -71,7 +71,7 @@ def wicksell_model():
     m = C.MODEL
     years = 40
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.8))
-    fig.subplots_adjust(left=0.085, right=0.915, top=0.86, bottom=0.16, wspace=0.42)
+    fig.subplots_adjust(left=0.10, right=0.915, top=0.86, bottom=0.16, wspace=0.42)
 
     t = np.arange(years + 1)
     _, p0, _ = C.cumulative(np.full(years, m["rn"]), m["i0"], m["kappa"], 0.0)
@@ -137,7 +137,7 @@ def wicksell_gibson():
     axis); (b) the yield against the inflation of the same year."""
     G = C.gibson()
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(FIG_W, 2.8), gridspec_kw=dict(width_ratios=[1.35, 1.0]))
-    fig.subplots_adjust(left=0.075, right=0.985, top=0.86, bottom=0.16, wspace=0.5)
+    fig.subplots_adjust(left=0.095, right=0.985, top=0.86, bottom=0.16, wspace=0.5)
 
     y = G.consol_yield
     a1.plot(G.index, y, color=MONEY, lw=1.8, zorder=4)
