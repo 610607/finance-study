@@ -1412,6 +1412,9 @@ ex:soviet-balance ex:soviet-lange ex:soviet-index
 sec:generaltheory-world sec:generaltheory-demand sec:generaltheory-multiplier sec:generaltheory-expectations sec:generaltheory-thrift sec:generaltheory-liquidity sec:generaltheory-parallel sec:generaltheory-debate sec:generaltheory-check sec:generaltheory-legacy
 eq:generaltheory-cross eq:generaltheory-kahn eq:generaltheory-liquidity tab:generaltheory-kahn tab:generaltheory-kuznets fig:generaltheory_unemp fig:generaltheory_cross fig:generaltheory_uk
 ex:generaltheory-cross ex:generaltheory-kahn ex:generaltheory-kuznets ex:generaltheory-thrift
+sec:islm-world sec:islm-hicks sec:islm-is sec:islm-lm sec:islm-policy sec:islm-trap sec:islm-1937 sec:islm-debate sec:islm-hansen sec:islm-legacy
+eq:islm-is eq:islm-lm eq:islm-solution tab:islm-1937 tab:islm-reserves tab:islm-budget fig:islm_curves fig:islm_trap fig:islm_1937
+ex:islm-is ex:islm-equilibrium ex:islm-policy ex:islm-1937
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous

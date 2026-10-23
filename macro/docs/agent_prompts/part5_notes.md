@@ -930,3 +930,59 @@ back to the old parity without striking off any zeros.
   industrial production 1935–1939 from snapshot data; the trap.
 - Ending: hand over Ch 34's question "战争证明政府“付得起”，和平时期也一样吗？" (first half).
 - Labels: `sec:islm-…`, `eq:islm-…`, `fig:islm_…`, `tab:islm-…`, `ex:islm-…`.
+
+## 第 34 章 `ch:warfinance` 战争财政、功能财政与布雷顿森林的设计 (`zh/ch34_warfinance.tex`)
+
+- Neighbours: Ch 26 owns war finance in 1914–18 and Germany's hyperinflation; Ch 30 owns Germany and
+  Japan to 1938 (MEFO bills, the Bank of Japan's underwriting); Ch 31 owns the Soviet plans; Ch 33 owns
+  IS–LM; Ch 35 owns postwar reconstruction (Marshall Plan, Germany's currency reform of 1948, the Dodge
+  line); Ch 36 owns the working of Bretton Woods (1946–1971); Ch 50 the government budget constraint
+  and unpleasant arithmetic; Ch 63 owns MMT (Lerner as its ancestor in one clause there). Refer back
+  or forward in one clause each.
+- Owns: Keynes's *How to Pay for the War* (1940; the inflationary gap, deferred pay, family allowances;
+  public domain in the UK, quote briefly; archive.org `in.ernet.dli.2015.499597`); British and American
+  war finance (taxes, borrowing, the share of the war paid by taxes; the Fed's pegging of Treasury
+  yields from 1942, with `\chref` to the 1951 Accord in Ch 36 if owned there); the comparison of war
+  economies (the US and Britain, the USSR, Nazi Germany: mobilization shares, rationing, price
+  controls, forced labour and plunder in occupied Europe, stated plainly); Lerner (1943, *Social
+  Research*; short phrases) on functional finance and its two laws; Kalecki (1943, *Political
+  Quarterly*; short phrases) on the political aspects of full employment; the design of Bretton Woods:
+  Keynes's Clearing Union (the 1943 White Paper, Cmd. 6437, out of Crown copyright) against White's
+  Stabilization Fund (US Treasury 1943, public domain), the conference of July 1944 and the Articles of
+  Agreement (quotas, par values, the scarce-currency clause, capital controls), with Steil (2013) in
+  short phrases or verified reviews only.
+- Promises: FORWARD_REFS rows from Ch 1 (Lerner and functional finance; the mainstream criticisms and
+  the replies), Ch 27 (the dollar as reserves beside gold: how Bretton Woods answered or repeated the
+  interwar dependence on confidence), Ch 29 (the adjustable peg, with the Tripartite statement of
+  1936 as its forerunner; the row also points to Ch 36, which owns the working of the system), Ch 30
+  (after Takahashi's death the Bank of Japan's underwriting became the channel of wartime inflation;
+  Germany's MEFO bills and controls led into war finance: one paragraph each, with `\chref{ch:alternatives}`)
+  and Ch 31 (how the Soviet Union mobilized its economy in 1941–45). Mark them done (Ch 29's row: done
+  for Ch 34's part, open for Ch 36).
+- Case (outside US/UK): the Soviet war economy (1941–45) or Nazi Germany's occupation finance; one box.
+- Data and sources: the BoE millennium workbook (UK public debt, taxes, prices 1938–1946); US Treasury
+  and *Banking and Monetary Statistics* (public domain); the Bretton Woods *Proceedings and Documents*
+  (US State Department 1948, public domain; FRASER /files/ if reachable); Harrison's open papers for the
+  comparison of war economies; Keynes 1940 and the 1943 White Paper. Probed on 2026-10-22 (archive.org
+  metadata answered): `in.ernet.dli.2015.499597` (Keynes, *How to Pay for the War*, 1940);
+  `1945BrettonWoodsAgreementsAct` (House Committee on Banking and Currency, GPO 1945, a US public
+  document); `CAT31064525` (US Extension Service 1945, "The Bretton Woods monetary and financial
+  conference"; the National Agricultural Library "believes that this item is not in copyright");
+  `economicsofcontr00lern` (Lerner, *The Economics of Control*, 1944; in copyright: short phrases);
+  `in.ernet.dli.2015.138123` (a 1944 "Bretton Woods" item: check what it is). imf.org answered 403;
+  FRASER title pages did not answer.
+- Teaching: the inflationary gap (Keynes 1940's own arithmetic: national income, the war's claim,
+  taxes and voluntary saving, the gap; his numbers if verified); Lerner's two laws with the budget
+  constraint of Ch 1 (`eq:intro-budget`); the Clearing Union's bancor accounts with a charge on both
+  debtors and creditors vs the Fund's quotas (a worked example with teaching inputs).
+- Compare boxes: 功能财政 vs 健全财政; 凯恩斯方案 vs 怀特方案; optionally 一战的战争财政 vs 二战的战争财政
+  (with `\chref{ch:weimar}`).
+- Contested questions: is functional finance a sound guide in peace (Lerner vs the critics; Kalecki's
+  political objection); did Bretton Woods' design get the adjustment burden right (Keynes's symmetric
+  charge vs White's creditor-friendly fund). Do not decide.
+- Figures: war spending and its finance (taxes vs borrowing) for the US and the UK; public debt to GDP
+  1913–1950 for the UK (BoE) and the US; the design of the two plans as a diagram.
+- Ending: this is the last chapter of Part 5 and of Book 2: return to the opening and hand over the
+  question of Ch 35 (read its stub's guide box).
+- Labels: `sec:warfinance-…`, `eq:warfinance-…`, `fig:warfinance_…`, `tab:warfinance-…`,
+  `ex:warfinance-…`.
