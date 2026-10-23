@@ -333,6 +333,13 @@
    "sha256": "af46f90069bd27b31fe14f34e3307a682b9df48868e8f9dad24673e2daa8eeb1",
    "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118672215 (Domar, Evsey D.), as JSON from lobid.org (the record's licence: CC0 1.0)",
    "retrieved": "2026-10-23"
+  },
+  "loc_chatto34": {
+   "url": "https://id.loc.gov/authorities/names/n81126227.madsrdf.json",
+   "format": "json",
+   "sha256": "d1b6389aee03566a945145b5578ffad23f926ca1ee7360c4b88be1ee0b39a4b6",
+   "version": "Library of Congress, Name Authority File, record n81126227 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
   }
  }
 }

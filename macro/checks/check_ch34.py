@@ -478,7 +478,7 @@ def check_readings(df: pd.DataFrame) -> None:
         got = read_rule(r.id, q) if r.id in READINGS else [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 128)
+    quoted("rows with values, each read from its quotation", n, 129)
     quoted("rows read on a page image (no quotation)", img, 37)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
@@ -1228,7 +1228,7 @@ def soviet(F, Y, Q):
     chk("    ten times (十倍)", ten, told("涨到战前的十倍", "战前的", "倍"))
     y43c, _, p40, tenfold = F["hu_weapons"]
     said("到 1943 年，武器价格跌了 40\\%", y43c, p40)
-    chk("    tenfold (十倍)", tenfold, told("集体农庄市场的价格却涨了十倍", "涨了", "倍"))
+    assert tenfold == ten                                    # the same tenfold rise as row hu_kolkhoz
     y45, half = F["hu_wage"]
     said("直到 1945 年，公共部门的实际工资大约只有战前的一半", y45)
     chk("    roughly half (一半)", half, told("大约只有战前的一半", "战前的", ""))
@@ -1315,7 +1315,7 @@ def germany_japan_bengal(F, Y, Q):
     said("饥荒与随后的流行病直接造成约 150 万人死亡", F["fm_15"][0] * 1e6)
     assert lo <= F["fm_15"][0] * 1e6 <= hi
     y43, m35 = F["fm_35"]
-    said("加尔各答大学一位教授估计 1943 年死了 350 万人", y43, m35 * 1e6)
+    said("估计 1943 年死了 350 万人", y43, m35 * 1e6)
     assert "Calcutta University" in column("note")["fm_35"]
     p10, two3 = F["fm_method"]
     said("那里的死亡率是 10\\%", p10)
@@ -1851,12 +1851,14 @@ ROW_LIVES = {"John Maynard Keynes，1883—1946": ("loc_keynes", 0, 1),
              "John T. Flynn，1882—1964": ("loc_flynn", 0, 1),
              "Harry Dexter White，1892—1948": ("loc_white", 0, 1),
              "Robert A. Taft，1889—1953": ("loc_taft", 0, 1),
-             "Dean Acheson，1893—1971": ("loc_acheson", 0, 1)}
+             "Dean Acheson，1893—1971": ("loc_acheson", 0, 1),
+             "K. P. Chattopadhyay，1897—1963": ("loc_chatto", 0, 1)}
 # the beginning of each record's heading
 HEADS = {"loc_keynes": "Keynes, John Maynard", "loc_wood": "Wood, Kingsley", "bnf_kalecki": "Michał Kalecki",
          "loc_simon": "Simon, John Allsebrook Simon", "loc_goring": "Göring, Hermann", "loc_sauckel": "Sauckel, Fritz",
          "loc_lerner": "Lerner, Abba P.", "loc_hansen": "Hansen, Alvin H.", "loc_flynn": "Flynn, John T.",
-         "loc_white": "White, Harry Dexter", "loc_taft": "Taft, Robert A.", "loc_acheson": "Acheson, Dean"}
+         "loc_white": "White, Harry Dexter", "loc_taft": "Taft, Robert A.", "loc_acheson": "Acheson, Dean",
+         "loc_chatto": "Chattopadhyay, K. P."}
 # what other chapters tell: (words of this chapter, chapter where it is told, words there)
 EVENTS = [("\\chref{ch:islm}讲过汉森（Alvin H. Hansen，1887—1975）1938 年的警告，公共支出是最容易的办法，危险也在这里",
            "ch33_islm", "公共支出是所有复苏办法里最容易的一种，“危险也就在这里”"),

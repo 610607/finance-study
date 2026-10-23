@@ -1003,3 +1003,16 @@ back to the old parity without striking off any zeros.
   question of Ch 35 (read its stub's guide box).
 - Labels: `sec:warfinance-…`, `eq:warfinance-…`, `fig:warfinance_…`, `tab:warfinance-…`,
   `ex:warfinance-…`.
+
+### Carried over from the editor's round on Chapter 34 (for Part 6)
+- STYLE §3 again: a person is named, never "一位教授". When a report gives only a name and an
+  institution, look the person up in an authority file (LoC, DNB) and say in the 史料说明 that the
+  match is by name and period.
+- A number that a case box already gives is not repeated in the next paragraph (the tenfold rise of
+  collective-farm market prices appeared twice).
+- Count a source's items before naming their number: Lerner states two "laws"; the third part of his
+  programme is a summary, not a law. FORWARD_REFS rows and PLAN entries are corrected with the text.
+- A bibitem used by several chapters (`boe2017`) names the tables each chapter uses and its fetch
+  script; `used_in` in every shared series names the new chapter.
+- Concessions in a "who adjusts" debate come from the documents themselves (the plan's own "not
+  absolutely necessary"), not from the writer's guess at what each side would concede.
