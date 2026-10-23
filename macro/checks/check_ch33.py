@@ -391,8 +391,8 @@ def check_readings(df: pd.DataFrame) -> None:
         got = read_rule(r.id, q) if r.id in READINGS else [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 90)
-    quoted("rows read on a page image (no quotation)", img, 21)
+    quoted("rows with values, each read from its quotation", n, 104)
+    quoted("rows read on a page image (no quotation)", img, 23)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
         assert word in N[rid], (rid, word)                  # every misreading is named in the note
@@ -413,6 +413,7 @@ TRANSLATIONS = {
     # sec:islm-world
     "趁这些多余的准备还没有用，先冻结其中一部分，要比让人在上面建起一座信用的大厦、再抽掉大厦的地基好得多。":
         "fa_sterilize",
+    "存在联邦储备银行、超过法律要求数额的资金": "fa_excessdef",
     "几乎全部来自国外流入的黄金": "fa_gold",
     "这一宽松的货币政策不变，并将继续下去": "fa_easy",
     "确信这一行动不会影响眼下宽松的货币状况": "fa_19bn",
@@ -443,6 +444,8 @@ TRANSLATIONS = {
     "将由向公众卖出等额的美国政府债券、并把买进的黄金放进财政部一个不活动的账户来抵消": "fj_inactive",
     "黄金就被挡在国家的信用基础之外": "fj_inactive",
     "联邦储备体系收紧了银行信用，财政部开始‘冻结’黄金，作为对人们所担心的可能失控的通胀的又一道刹车": "ap38_brake",
+    "生产又一次超过了购买力": "ap38_overran",
+    "买的人不再买、建的人不再建": "ap38_prices",
     "可是，单靠货币措施，不足以让我们开始持续的上升。": "ap38_insufficient",
     # sec:islm-debate
     "同样重要": "vd_fs544",
@@ -451,6 +454,8 @@ TRANSLATIONS = {
     "钢桥与大型永久建筑这类用到某些原料的东西，那些原料的价格一涨再涨": "ap37_slow",
     "现在或将来的一切需要都是多余的": "fa_superfluous",
     "推绳子": "vd_string",
+    "可能是一个重要的促成因素": "vd_cole2001",
+    "缺的是一种扩张的力量": "vd_missing",
     "多余": "fa_superfluous",
     "合理可行、符合公众利益、出于坚定的信念，又由一个不大可能被撤换的当局推行": "gt_successful",
     # sec:islm-hansen
@@ -458,6 +463,7 @@ TRANSLATIONS = {
     "停止": "hn_cessation",
     "病态的复苏": "hn_sick",
     "危险也就在这里": "hn_easiest",
+    "越来越有爆炸性": "hn_explosive",
     "1928 年的国民收入是 800 亿美元，1932 年已经降到不足 400 亿美元": "ap38_income",
     "我们公民的收入总额已经升到 680 亿美元": "ap38_income37",
     "否认的对，肯定的错": "pg_right",
@@ -471,6 +477,8 @@ TRANSLATIONS = {
     "粗糙": "hk_rough",
     "但它既不是动态经济学的开端，也不是它的终结": "hk_end",
     "骨架": "hk_skeleton",
+    # the ending
+    "拿事实去检验": "ox_frisch",
 }
 # the words of the source that each rendering translates
 KEYWORDS = {
@@ -541,6 +549,13 @@ KEYWORDS = {
     "hk_rough": ["a terribly rough and ready sort of affair"],
     "hk_end": ["but it is neither the beginning nor the end of Dynamic Economics."],
     "hk_skeleton": ["our skeleton apparatus"],
+    "fa_excessdef": ["on deposit with the Federal Reserve banks in excess of the amounts required by law"],
+    "hn_explosive": ["increasingly explosive"],
+    "ap38_overran": ["Again production outran the ability to buy."],
+    "ap38_prices": ["buyers and builders ceased to buy or to build"],
+    "vd_cole2001": ["may have been an important contributing factor"],
+    "vd_missing": ["the factor that is missing is an expansionary one"],
+    "ox_frisch": ["to test different systems against the facts"],
 }
 
 
@@ -716,7 +731,7 @@ def opening(F, Y, Q):
     chk("    the sixth European meeting (第六次)", 6, told("计量经济学会的第六次欧洲会议", "第", "次"))
     said("会期从 25 日到 29 日", d25, d29)
     assert "The first session" in Q["ox_first"]
-    chk("    the first session (第一场)", 1, told("这天上午的第一场讨论会", "第", "场"))
+    chk("    the first session (第一场)", 1, told("会议的第一场讨论会就在这天上午", "第", "场"))
     assert Q["ox_meade"].startswith("Mr. J. E. Meade") and "A Simplified Model of Mr. Keynes' System." in Q["ox_meade"]
     assert "only two industries, one making consumption goods and the other capital goods" in Q["ox_closed"]
     chk("    two industries (两个产业)", 2, told("只有两个产业", "只有", "个产业"))
@@ -748,6 +763,9 @@ def world(F, Y, Q):
          mon("fa_decided", "July"), d14, p50, mon("fa_raise", "August"), d15)
     assert "after the close of business" in Q["fa_raise"]
     said("当时的超额准备约有 30 亿美元", F["fa_3bn"][0])
+    say("这里的准备金，指会员银行，也就是加入联邦储备体系的商业银行，存在联邦储备银行的存款")
+    assert "on deposit with the Federal Reserve banks" in Q["fa_excessdef"] and "required by law" in Q["fa_excessdef"]
+    assert "which will be absorbed by the Board's action" in Q["fa_tenfold"]           # 这次要吸收的那部分超额准备
     assert "almost entirely from the inflow of gold from abroad" in Q["fa_gold"]
     assert "the System’s policy of encouraging full recovery" in Q["fa_gold"]                  # 用宽松的货币状况鼓励全面的复苏
     chk("    tenfold (十倍)", F["fa_tenfold"][0], told("十倍甚至更大的信用扩张", "", "倍"))
@@ -873,6 +891,10 @@ def trap(F, Y, Q):
     M = model()
     said("货币乘数$b/[h(1-c)+bk]$趋于 0，财政乘数$h/[h(1-c)+bk]$趋于$1/(1-c)$", 1, 0, 1, 1, 1)
     assert "the horizontal parts of the curve are almost the same" in Q["hk_dotted"]
+    # Hicks restates Keynes's proof; the floor comes from the risk of a capital loss (the "more important risk")
+    assert "of central importance" in Q["hk_central"] and "paraphrase the proof" in Q["hk_paraphrase"]
+    assert "the more important risk" in Q["hk_capitalloss"] and "capital loss" in Q["hk_capitalloss"]
+    say("更要紧的是另一种风险", "凯恩斯的投机动机就来自这个风险")
     # fig:islm_trap (b)
     assert M["m37"]["i"] > M["base"]["i"] > M["g37"]["i"]
     said("(b) 1937 年的两种冲击在教学模型里的方向：货币减少 2，LM 左移，利率上升；政府支出减少 2，IS 左移，利率下降", 1937,
@@ -998,6 +1020,9 @@ def recession(F, Y, Q):
     said("照 Velde（2009）的分析，收入增加最主要的原因是 1936 年 6 月的税法大幅提高了所得税率，所得税收入 1936—1937 年增加了 66\\%",
          Y["vd_conclusion"], y3, mon("vd_income", "June"), y1, y2, p66)
     assert "The most important one is the increase in income tax revenue" in Q["vd_income"]
+    k50, top = F["vd_brackets"]
+    said("税率只在 5 万美元以上的收入档提高，最高一档到 75\\%", k50, top)
+    assert "remained unchanged for income brackets below" in Q["vd_brackets"]
     two, _, y37, p105, _ = F["vd_ss"]
     said("其次是 1937 年 1 月开始征收的社会保障税，它占当年联邦税收的 10.5\\%", y37, mon("vd_ss", "January"), p105)
     assert "The second factor" in Q["vd_ss"]
@@ -1015,6 +1040,12 @@ def recession(F, Y, Q):
     # Roosevelt, 14 April 1938
     d14, y38 = F["ap38_title"]
     said("1938 年春天，政策转了向。4 月 14 日，罗斯福", y38, mon("ap38_title", "April"), d14)
+    y37p, y37w = F["ap38_practices"][0], F["ap38_warnings"][0]
+    said("他把衰退的很大一部分归于 1937 年初出现的一些很不可取的做法", y37p)
+    assert "early in 1937 certain highly undesirable practices, which were in large part responsible" in Q["ap38_practices"]
+    assert "buyers and builders ceased to buy or to build" in Q["ap38_prices"]
+    said("政府 1937 年 4 月曾对生产过度与价格过高提出警告", y37w, mon("ap38_warnings", "April"))
+    assert "practices of overproduction and high prices" in Q["ap38_warnings"]
     gold, rr = F["ap38_desterilize"]
     said("新的计划包括解冻约 14 亿美元的黄金，由联邦储备委员会把准备金要求降低约 7.5 亿美元", gold, rr)
     spend, loans = F["ap38_spend"], F["ap38_loans"]
@@ -1031,7 +1062,7 @@ def table_1937(F, Y, Q):
     assert "second quarter of 1936" in Q["vd_spike"] and "Congress decided to accelerate" in Q["vd_bonus"]
     said("1936 年第二季度 & 联邦政府 & 支付国会决定提前发放的一战退伍军人补偿金", sp)
     chk("    the second quarter (第二季度)", 2, told("1936 年第二季度 & 联邦政府", "第", "季度"))
-    said("1936 年 6 月 & 国会 & 通过税法，大幅提高所得税率", F["vd_income"][3], mon("vd_income", "June"))
+    said("1936 年 6 月 & 国会 & 通过税法，提高高收入者的所得税率", F["vd_income"][3], mon("vd_income", "June"))
     assert "Revenue Act passed in June 1936" in Q["vd_income"]
     up1 = R.iloc[1].start
     said("1936 年 7 月 14 日 & 联邦储备委员会 & 法定准备金率提高 50\\%，8 月 16 日起执行", Y["fa_decided"],
@@ -1148,6 +1179,7 @@ def debate(F, Y, Q):
          mon("rom92_steps", "May"))
     chk("    three steps (三步)", three, told("分三步把法定准备金率提高一倍", "分", "步"))
     assert "the doubling of reserve requirements" in Q["rom92_steps"]
+    assert "because banks wanted to hold excess reserves" in Q["rom92_mechanism"] and "decreased lending" in Q["rom92_mechanism"]
     chk("    doubled (提高一倍)", 1, told("分三步把法定准备金率提高一倍", "提高", "倍"))
     said("照 Velde（2009）的转述，他们认为准备金率的提高", Y["vd_conclusion"])
     assert "intensified the severity of the decline and also probably caused it to occur earlier" in Q["vd_fs544"]
@@ -1157,26 +1189,61 @@ def debate(F, Y, Q):
          A.loc[1938, "m1_bn"] * 1e9)
     assert "do not explain the timing of the downturn" in Q["vd_conclusion"]
     assert Q["vd_currie"] == "such as Currie (1980), Calomiris and Wheelock (1998)," and "did not cause" in Q["vd_cause"]
+    pk, m12, y99, _ = F["vd_cole_timing"]
+    said("在 Cole 与 Ohanian（1999）看来，准备金率提高以后产出应当很快下降，工业生产却到 1937 年 8 月才到顶，离第一次提高已有 12 个月",
+         y99, pk, mon("vd_cole_timing", "August"), m12)
+    first = requirements().iloc[1].start                                       # 16 Aug. 1936
+    chk("    12 months: August 1936 to August 1937", 12 * (int(pk) - first.year) + mon("vd_cole_timing", "August") - first.month,
+        m12)
+    s1, s2, s3 = F["vd_staggered"]
+    said("准备金率从 1936 年 8 月到 1937 年 5 月分几次提高，黄金冻结从 1936 年 12 月开始", s1,
+         mon("vd_staggered", "August"), s2, mon("vd_staggered", "May"), s3, mon("vd_staggered", "December"))
+    P = ip_peak()
+    said("按联邦储备委员会的指数，工业生产在 1937 年 5 月就到了顶，只晚了几个月", F["vd_fewmonths"][0],
+         mon("vd_fewmonths", "May"))
+    assert P["peak"] == mon("vd_fewmonths", "May") and "only a few months later" in Q["vd_fewmonths"]
     y38h = F["rom92_hansen"][0]
     said("照 Romer 的转述，汉森（1938）与后来的一些研究", y38h)
     said("1936 年第二季度，联邦支出出现一个很大的尖峰", F["vd_spike"][0])
     chk("    the second quarter (第二季度)", 2, told("1936 年第二季度，联邦支出", "第", "季度"))
     q3, y36b = F["vd_bonus"]
-    said("按 Velde 的估计，它让 1936 年后三个季度的需求高出不少", y36b)
+    said("照 Velde 的判断，它大概让 1936 年后三个季度的需求高出不少", y36b)
+    assert "This probably boosted demand" in Q["vd_bonus"]
     chk("    the last three quarters (后三个季度)", q3, told("1936 年后三个季度的需求", "后", "个季度"))
     assert "in the last three quarters of 1936" in Q["vd_bonus"] and "on its own" in Q["vd_bonus"]
     said("1937 年初财政收紧，靠增税短暂地回到了预算平衡", F["vd_tighter"][0])
     assert "fiscal policy became tighter in early 1937" in Q["vd_tighter"]
+    said("1936 年的税法还新设了未分配利润税", F["vd_undistributed"][1])
+    assert "Revenue Act of 1936" in Q["vd_undistributed"] and "not distributed as dividends" in Q["vd_undistributed"]
+    assert "psychological role in increasing uncertainty" in Q["vd_psych"]
     said("1936 年下半年投资大增，各类投资要到 1937 年末才一齐下降", *F["vd_surge"])
     assert "unionization" in Q["rom92_wages"]
+    said("1935 年 7 月通过的《瓦格纳法》", F["vd_wagner_act"][0], mon("vd_wagner_act", "July"))
+    assert "to increase the bargaining power of unions" in Q["vd_wagner_act"] and "linked to the Wagner Act" in Q["vd_wagner"]
+    sep, w37, _, peak, p17, w36 = F["vd_wage17"]
+    assert "average hourly earnings" in Q["vd_ahe"] and "in November of that year" in Q["vd_wage17"]
+    said("劳工统计局的平均小时工资 1937 年 11 月比 1936 年 9 月高 17\\%", w37, mon("vd_wage17", "November"), w36,
+         mon("vd_wage17", "September"), p17)
+    chk("    $0.667 against $0.569: the rise of 17 per cent", rise(sep, peak), p17, tol=0.5)
+    assert "may have been an important contributing factor" in Q["vd_cole2001"]
     y1, y2, p94 = F["rom92_wpi"]
     said("1937—1938 年批发物价却跌了 9.4\\%", y1, y2, p94)
     assert "Wages explain little of the downturn and none of the recovery." in Q["vd_conclusion"]
+    said("若只有货币与财政的冲击，经济本该在 1936 年末到顶；把扩张撑到 1937 年年中的是别的力量", F["vd_late1936"][0],
+         F["vd_expansion"][1])
+    assert "peaked in late 1936" in Q["vd_late1936"] and "from late 1936 to mid1937" in Q["vd_expansion"]
+    assert "not a contractionary one like wages" in Q["vd_missing"] and "do not disprove the importance of wages" in Q["vd_notdisprove"]
+    assert "temporary shock" in Q["vd_steadystate"] and "not designed to capture" in Q["vd_novar"]
+    assert "since the wage increases were not reversed" in Q["vd_onset"]
     said("按 Eggertsson 与 Pugsley（2006）的分析", Y["ep_abstract"])
     assert "sticky prices and rational expectations" in Q["ep_abstract"]
     assert "much larger at low interest rates" in Q["ep_larger"]
     d2, y37c = F["ep_fdr"]
     said("罗斯福 1937 年 4 月 2 日在记者会上说", y37c, mon("ep_fdr", "April"), d2)
+    said("当天股市跌了 6\\%", F["ep_6pct"][0])
+    assert "On the day of this announcement" in Q["ep_6pct"] and "recovery measures" in Q["ep_wsj"]
+    assert "rather than a genuine change in his thinking" in Q["ep_signals"] and F["ep_signals"][0] == y37c
+    assert "some combination of the two" in Q["ep_combination"]
     assert "over the price rise in certain materials." in Q["ep_fdr"] and (y37c, d2) == (F["ap37_title"][1], F["ap37_title"][0])
     assert "consumers of consumer goods rather than consumers of durable goods" in Q["ap37_bottom"]
     # the trap
@@ -1215,17 +1282,25 @@ def hansen(F, Y, Q):
     said("1920 年代美国人口增加了 1,600 万", 1920, pop)
     chk("    half (只增加一半)", half, told("眼下这个十年只增加一半", "只增加", ""))
     chk("    a third (降到三分之一)", third, told("下一个十年预计降到三分之一", "降到", ""))
-    chk("    nineteenth century (十九世纪)", 19, told("他估计，十九世纪新资本形成", "他估计，", "世纪"))
+    chk("    nineteenth century (十九世纪)", 19, told("结论：十九世纪新资本形成", "结论：", "世纪"))
     assert "in the nineteenth" in Q["hn_half"] and "possibly somewhere near one-half" in Q["hn_half"]
     chk("    near one-half (接近一半)", F["hn_half"][0], told("可能接近一半", "接近", ""))
     assert "rapidly being closed" in Q["hn_closed"]
+    assert "not possible, I think, to make even an approximate estimate" in Q["hn_noestimate"] and "only suggestive" in Q["hn_suggestive"]
+    assert "seventies, eighties and nineties" in Q["hn_railroad"] and "giant new industries" in Q["hn_giant"]
+    chk("    the last thirty years of the century (最后三十年): the 1870s to the 1890s", 30,
+        told("新铁路在十九世纪最后三十年照旧修建", "最后", "年"))
     y29, bn80 = F["hn_1929"]
     a80, a40 = F["hn_80bn"]
     said("汉森说，1929 年的国民收入约 800 亿美元，大萧条的谷底降到 400 亿美元", y29, bn80, a40)
     assert a80 == bn80
     f65, f60 = F["hn_floor"]
-    said("他建议不要让国民收入明显低于 650 亿美元，或者说最低 600 亿美元；收入接近 700 亿美元时", f65, f60,
-         F["hn_taper"][0])
+    said("他建议不要让国民收入明显低于 650 亿美元，或者说最低 600 亿美元", f65, f60)
+    said("收入接近 700 亿美元时", F["hn_taper"][0])
+    assert "the figures are only a rough approximation" in transcription("hn_floor")
+    assert "Bottle-necks begin to appear. Costs rise." in transcription("hn_explosive")
+    assert "this income level" in transcription("hn_explosive")                  # $70,000,000,000
+    assert "we fail to achieve the otherwise available flow of private investment" in transcription("hn_neglect")
     assert "tapered off" in transcription("hn_taper") and "as a minimum" in transcription("hn_floor")
     assert "by an indirect route and a slower process" in Q["hn_regimented"]
     y, m4 = F["ap38_title"][1], mon("ap38_title", "April")
@@ -1241,13 +1316,18 @@ def hansen(F, Y, Q):
     no, y43 = F["pg_masthead"]
     said("庇古在 1943 年 12 月的《经济学杂志》上", y43, mon("pg_masthead", "DECEMBER"))
     assert "In his Fiscal Policy and Business Cycles Professor Hansen writes" in Q["pg_title"]
+    assert "Prof. Hansen is so far right" in Q["pg_soright"] and "less-than-full-employment stationary state cannot be right" in Q["pg_retort"]
+    assert Q["pg_right"].startswith("Unless, therefore, cause can be shown for rejecting equation (III)")
+    chk("    two steps (两步)", 2, told("推理分两步", "推理分", "步"))
+    assert "can be held at trifling cost" in Q["pg_trifling"] and "cannot be negative in terms of any commodity" in Q["pg_negative"]
+    assert "by reducing it far enough, are able to secure employment for as many people as desire it" in Q["pg_assertion"]
     # Modigliani
     v12, n1, y44 = F["nb_first"]
     said("1944 年 1 月在《计量经济学》上发表", y44, mon("nb_first", "January"))
     assert F["es_modigliani"][:3] == [y44, v12, n1] and "Liquidity Preference and the Theory of Interest and Money" in Q["es_modigliani"]
     said("照他自己 1985 年的回顾", F["nb_copyright"][0])
     assert "My first published article in English" in Q["nb_first"] and "substantially, my doctoral dissertation" in Q["nb_first"]
-    chk("    his first article in English (第一篇)", 1, told("这是他的第一篇英文论文", "第", "篇"))
+    chk("    his first article in English (第一篇)", 1, told("这是他发表的第一篇英文论文", "第", "篇"))
 
 
 def deeper(F, Y, Q):
@@ -1302,6 +1382,12 @@ def deeper(F, Y, Q):
          F["rom92_severe"][0], 1992, Y["vd_conclusion"], p678, p544)
     assert F["vd_fs544"][0] == F["rom92_severe"][0]
     said("汉森 1938 年对衰退的解释据 Romer 的转述", F["rom92_hansen"][0])
+    d2, y37 = F["ep_fdr"]
+    said("1937 年 4 月 2 日股市的跌幅与次日《华尔街日报》的报道", y37, mon("ep_fdr", "April"), d2)
+    said("所得税收入增加 66\\%、社会保障税占 10.5\\% 与工资上涨 17\\% 只据 Velde（2009）", F["vd_income"][0], F["vd_ss"][3],
+         F["vd_wage17"][4], Y["vd_conclusion"])
+    said("批发物价下跌 9.4\\% 只据 Romer（1992）", F["rom92_wpi"][2], 1992)
+    said("股市下跌 6\\% 只据 Eggertsson 与 Pugsley（2006）", F["ep_6pct"][0], Y["ep_abstract"])
     said("Velde 转引自 Meltzer（2003）", F["vd_string"][0])
     said("莫迪利亚尼 1944 年的论文本身没有取得", F["es_modigliani"][0])
     said("以及凯恩斯 1937 年在《经济学季刊》上的文章", 1937)
@@ -1581,7 +1667,7 @@ def witnesses(F, Q):
     print(f"ok {len(cited)} works cited, {len(items)} of them in the bibliography block of Chapter 33")
 
 
-NAMES = ("Velde|Romer|Eggertsson|Pugsley|Currie|Calomiris|Wheelock|Telser|Meltzer|Smithies|Gordon|弗里德曼|施瓦茨")
+NAMES = ("Velde|Romer|Eggertsson|Pugsley|Currie|Calomiris|Wheelock|Telser|Meltzer|Smithies|Gordon|Cole|Ohanian|弗里德曼|施瓦茨")
 
 
 def counts() -> None:
