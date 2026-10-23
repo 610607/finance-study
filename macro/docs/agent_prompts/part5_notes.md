@@ -879,3 +879,44 @@ back to the old parity without striking off any zeros.
   and the multiplier as a canvas() diagram; the paradox of thrift; liquidity preference.
 - Ending: hand over Ch 33's question "一张图装下了多少凯恩斯，又丢掉了什么？".
 - Labels: `sec:generaltheory-…`, `eq:generaltheory-…`, `fig:generaltheory_…`, `tab:…`, `ex:…`.
+
+## 第 33 章 `ch:islm` IS–LM：把凯恩斯写成方程 (`zh/ch33_islm.tex`)
+
+- Neighbours: Ch 32 owns the *General Theory*; Ch 28 owns the American Depression to 1936 and its data
+  snapshots (reuse them); Ch 34 owns war finance; Ch 37 (`ch:mundell`) owns IS–LM–BP/Mundell–Fleming;
+  Ch 44 the Phillips curve; Ch 66 the zero lower bound in New Keynesian form (one clause each).
+- Owns: Hicks (1937) "Mr. Keynes and the 'Classics'" (Econometrica; Hicks d. 1989, in copyright: short
+  phrases) and the Oxford meeting of the Econometric Society (September 1936) where it was read, if
+  sourced; the IS curve from the multiplier and investment, the LM curve from liquidity preference;
+  fiscal and monetary policy in the diagram; the liquidity trap; Hansen (1939, *AER*) and secular
+  stagnation; Modigliani (1944) and the role of rigid wages; what IS–LM leaves out (uncertainty and
+  expectations, stocks and the time dimension, money wages and prices) and which later theories
+  brought each back (Ch 44, 48, 63, 66, one clause each); Keynes's own letter to Hicks (1937), if a
+  public-domain printing exists.
+- Promises: the FORWARD_REFS row from Ch 28 (`sec:depressionus-recovery`: the recession of 1937–38,
+  unemployment back to 19.0% in 1938, and its causes); Ch 28's text says "原因留到\chref{ch:islm}再谈".
+  Mark it done.
+- Case (outside US/UK required): the US recession of 1937–38 is the PLAN's case but it is American; add a
+  case box from elsewhere, e.g. 日本 · 1990 年代 · 流动性陷阱的回声 (one box, `\chref{ch:abenomics}`), or
+  瑞典/法国 1936—1938 (Blum's devaluation of 1936), whichever verified sources allow.
+- The 1937–38 recession: the doubling of reserve requirements (August 1936 – May 1937), the Treasury's
+  gold sterilization (December 1936 – 1938), the fiscal swing of 1937 (the veterans' bonus of 1936 and
+  the first social security taxes), the fall of output; readings: Friedman and Schwartz (money, through
+  verified summaries), Romer (1992), Velde (2009, Chicago Fed *Economic Perspectives*: the page
+  `/publications/economic-perspectives/2009/4qtr2009-part2-velde` answered 200 on 2026-10-22, PDF at
+  `/-/media/publications/economic-perspectives/2009/ep-4qtr2009-part2-velde-pdf.pdf`; check its reprint
+  terms), Eggertsson and Pugsley (2006) if open; data from *Banking and Monetary Statistics 1914–1941*
+  and the Federal Reserve Bulletin (public domain; FRASER /files/ URLs), BEA, industrial production.
+  Reuse Ch 28's snapshots (`depressionus_*`) where they cover 1935–1939.
+- Teaching: derive IS ($Y=C(Y-T)+I(i)+G$) and LM ($M/P=L(i,Y)$) with linear forms; solve the 2×2
+  system (numpy.linalg.solve); fiscal and monetary multipliers; the trap as $L_i\to\infty$; 1937 in the
+  diagram (higher reserve requirements = lower $M$; the fiscal swing = lower $G-T$), with the data.
+- Compare boxes: 凯恩斯本人 vs IS–LM (the curves; Ch 32 has the rest); 财政政策 vs 货币政策 in the trap;
+  optionally 1937 年的美国 vs 2010 年代的退出 (one clause to `\chref{ch:zlb}`).
+- Contested questions: what caused the recession of 1937–38 (reserve requirements and gold
+  sterilization vs the fiscal swing vs the expected return of tight policy); is the liquidity trap a
+  real constraint (Keynes's own doubt that it had been seen, Hicks, later Japan). Do not decide.
+- Figures: IS–LM diagram (canvas style); the 1937–38 episode: reserve requirements, excess reserves and
+  industrial production 1935–1939 from snapshot data; the trap.
+- Ending: hand over Ch 34's question "战争证明政府“付得起”，和平时期也一样吗？" (first half).
+- Labels: `sec:islm-…`, `eq:islm-…`, `fig:islm_…`, `tab:islm-…`, `ex:islm-…`.

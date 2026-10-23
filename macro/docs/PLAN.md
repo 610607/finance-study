@@ -1408,6 +1408,9 @@ ex:alternatives-underwrite ex:alternatives-mefo ex:alternatives-ceiling ex:alter
 sec:soviet-world sec:soviet-plan sec:soviet-balances sec:soviet-famine sec:soviet-calculation sec:soviet-growth sec:soviet-debate sec:soviet-check sec:soviet-legacy
 eq:soviet-balance eq:soviet-lange eq:soviet-index tab:soviet-growth fig:soviet_plan fig:soviet_grain fig:soviet_gdp
 ex:soviet-balance ex:soviet-lange ex:soviet-index
+sec:generaltheory-world sec:generaltheory-demand sec:generaltheory-multiplier sec:generaltheory-expectations sec:generaltheory-thrift sec:generaltheory-liquidity sec:generaltheory-parallel sec:generaltheory-debate sec:generaltheory-check sec:generaltheory-legacy
+eq:generaltheory-cross eq:generaltheory-kahn eq:generaltheory-liquidity tab:generaltheory-kahn tab:generaltheory-kuznets fig:generaltheory_unemp fig:generaltheory_cross fig:generaltheory_uk
+ex:generaltheory-cross ex:generaltheory-kahn ex:generaltheory-kuznets ex:generaltheory-thrift
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous
