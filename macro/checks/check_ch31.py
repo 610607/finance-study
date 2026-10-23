@@ -332,7 +332,7 @@ READINGS = {
     "loc_trotsky": [("1879", NUM), ("-|1940", NUM)],
 }
 # the misreadings of the OCR, each named in the note of its row and printed in the quotation
-MISPRINTS = [("gp33_gross", "incr@ised"), ("gp33_oil", "thé"), ("gp33_oil", "tons_"), ("gp33_937", "34.3."),
+MISPRINTS = [("gp33_gross", "incr@ised"), ("gp33_216", "inicreased"), ("gp33_oil", "thé"), ("gp33_oil", "tons_"), ("gp33_937", "34.3."),
              ("gp29_oil", "11,6"), ("gp29_copyright", "Livericut"), ("gp29_pig", "pig tron"),
              ("mi_note", "Sozialzvissenschaften"), ("la_copyright", "hoo\\"), ("la_reprint", "Nos. i and 2")]
 IMAGE_NOTE = "read on the page image"
@@ -365,8 +365,8 @@ def check_readings(df: pd.DataFrame) -> None:
             got = [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 154)
-    quoted("rows read on a page image (no quotation)", img, 18)
+    quoted("rows with values, each read from its quotation", n, 162)
+    quoted("rows read on a page image (no quotation)", img, 19)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
         assert word in N[rid], (rid, word)                  # every misreading is named in the note
@@ -413,6 +413,7 @@ TRANSLATIONS = {
     "其实不是计划，是一场赌博": "st_gamble",
     "这就是一部分资产阶级报刊的意见。那些发表这些意见的人，几乎不值得批评。": "st_section",
     "落在了五年计划给它定的数字后面": "gp33_lagged",
+    "在五年计划期间，我们的工业整体平均每年增长 21.6\\%": "gp33_216",
     "1926/27 年度不变价格": "h93_unchanged",
     "在第一个五年计划期间，工业产值平均每年增长 22\\%。": "st_22",
     "我想，在第二个五年计划里，我们必须采取工业产值平均每年至少增长 13\\%—14\\% 的速度。": "st_22",
@@ -426,6 +427,7 @@ TRANSLATIONS = {
     "取消私有财产，把农民组织进政府能直接控制的大型集体农庄": "mnq_bundle",
     "是的，完全正确，尽管在这个过程中有过一些过火的行为。": "st_tempo",
     "富农": ("mnq_kulaks", "st_remnants"),
+    "饥饿的消息传到了莫斯科，但政府没有降低征购": "mnq_1931",
     "藏起来的粮食": "we_search",
     "可能失去乌克兰": "mnq_lose",
     "集体化运动当然是一场可怕的失败。它已经把俄国带到了饥荒的边缘。": "st_nyt",
@@ -456,6 +458,7 @@ TRANSLATIONS = {
     # sec:soviet-debate
     "对核算并不在意": "gr_indifferent",
     "资本主义与斯大林主义之外真正的另一种选择": "dv_alternative",
+    "想必抬高了幸存者的平均消费": "mh_survivors",
     "难以接受": "mh_swallow",
     "斯大林政策下福利损失的下限": "cg_lower",
     "没有找到支持大推进理论的证据": "cg_bigpush",
@@ -511,6 +514,8 @@ KEYWORDS = {
     "st_section": ["Such are the opinions of one section of the bourgeois press. It is hardly worth while to "
                    "criticise those who gave utterance to these opinions."],
     "gp33_lagged": ["lagged behind the figures set for it by the Five-Year Plan"],
+    "gp33_216": ["During the Five-Year Plan period, our industry as a whole - inicreased on the average 21.6 per cent per "
+                 "annum"],
     "h93_unchanged": ["'unchanged prices of 1926/27'"],
     "st_22": ["In the period of the First Five-Year Plan the average annual increase in industrial output was 22 per "
               "cent.", "I think that in the Second Five-Year Plan we will have to adopt a 13-14 per cent average annual "
@@ -525,6 +530,7 @@ KEYWORDS = {
     "st_tempo": ["Yes, it was absolutely right, even though certain excesses were committed in the process."],
     "mnq_kulaks": ["(kulaks)"],
     "st_remnants": ["the kulaks and kulak agents"],
+    "mnq_1931": ["News of starvation traveled to Moscow, but the government did not lower procurement."],
     "we_search": ['"hidden grain"'],
     "mnq_lose": ['"could lose Ukraine"'],
     "st_nyt": ["The collectivisation campaign is of course a ghastly failure. It has brought Russia to the verge of "
@@ -554,6 +560,7 @@ KEYWORDS = {
     "h17_better": ["'Life has become better, comrades,'"],
     "gr_indifferent": ["This regime was indifferent to calculation"],
     "dv_alternative": ["offered a genuine alternative to both capitalism and Stalinism"],
+    "mh_survivors": ["Presumably, their absence helped to lift the average consumption of the survivors."],
     "mh_swallow": ["This assessment is hard for us to swallow."],
     "cg_lower": ["a lower bound on welfare losses under Stalin's policies"],
     "cg_bigpush": ["we find no evidence supporting theories of the Big Push"],
@@ -811,9 +818,18 @@ def world(F, Y, Q):
     said("到 1920 年代后期，工业品长期供不应求", F["h80_goods"][0])
     assert "By the latter 1920s" in Q["h80_goods"]
     said("1926/27 年度，国家又压低了粮食的收购价格", *F["h80_lowered"])
+    said("这里的年度是苏联当时的经济年度，从当年 10 月到次年 9 月", mon("mh_econyear", "October"),
+         mon("mh_econyear", "September"))
+    assert "the economic year (October to September)" in Q["mh_econyear"]
+    said("照 Harrison（1980）的概括，后来的研究认为，1928 年与 1929 年的粮食收购危机至少有一部分是计划者自己引起的", Y["h80_crises"],
+         *F["h80_crises"])
+    assert "provoked by the planners themselves" in Q["h80_crises"] and "three main revisions" in column("note")["h80_crises"]
     said("照 Harrison（1980）的转述", Y["h80_redistribute"])
     said("1927 年，斯大林把托洛茨基", F["cg_expelled"][0])
     said("1928 年 1 月，斯大林等人恢复了", F["we_ural"][0], mon("we_ural", "January"))
+    y28, y29 = F["h17_urals"]
+    assert y28 == F["we_ural"][0] and "outside the law in the Urals and Siberia" in Q["h17_urals"]
+    said("照 Harrison（2017）的说法，这个办法先在乌拉尔与西伯利亚法外施行，1929 年才以法律推行到全国", Y["h17_urals"], y29)
     d6, y28 = F["we_ration"]
     said("1928 年 12 月 6 日，联共（布）中央政治局批准了", y28, mon("we_ration", "December"), d6)
     said("斯大林在 1928 年用“大转变”结束了新经济政策", F["cg_greatturn"][0])
@@ -829,9 +845,10 @@ def plan(F, Y, Q):
     chk("    in four years (用四年完成)", 4, told("党决定用四年完成它", "用", "年"))
     assert "NEW YORK" in Q["gp29_title"] and Y["gp29_title"] == 1929
     i0, i1 = F["gp29_invest"]
-    said("最低方案的五年投资是 574 亿卢布，通过的方案是 646 亿卢布", i0 * B9, i1 * B9)
+    said("基本方案（英译本在这里叫最低方案）的五年投资是 574 亿卢布，通过的方案是 646 亿卢布", i0 * B9, i1 * B9)
+    assert Q["gp29_invest"].startswith("In the minimum plan") and "for the minimum plan" in Q["gp29_growth"]
     g0, g1, a0, a1 = F["gp29_growth"]
-    said("工业生产的增长，最低方案是 108\\%，最高方案是 136\\%", g0, g1)
+    said("工业生产的增长，基本方案是 108\\%，最高方案是 136\\%", g0, g1)
     said("农业生产的增长，两个方案分别是 44\\% 与 55\\%", a0, a1)
     chk("    consumption per head up two thirds (提高三分之二)", F["h17_envisaged"][0], told("人均消费提高三分之二", "提高"))
     assert "doubling national income and trebling the output of investment goods" in Q["h17_envisaged"]
@@ -851,6 +868,9 @@ def plan(F, Y, Q):
     said("它要让小手工业增加 90 万工人", F["gp29_unemp"][0])
     said("照 Gregory 与 Harrison（2005）的说法，1929 年，斯大林表明", Y["gr_1929"], F["gr_1929"][0])
     assert F["gr_courage"] == F["gr_1929"]                                     # 同一年
+    assert Q["gr_courage"].startswith("The purge of Gosplan that followed") and "admitting in the corridors" in \
+        Q["gr_courage"]                                                       # the official speaks of other specialists
+    say("随后国家计委遭到清洗。同一年，一位计划官员说，有些专家已经在走廊里承认")
     said("1931 年，斯大林号召党痛打", F["h17_thrash"][0])
     said("照 Harrison（2017）的判断", Y["h17_blueprint"])
     assert "At the end of November 1932" in Q["st_gamble"] and "at the end of November 1932" in Q["st_telegraph"]
@@ -867,6 +887,8 @@ def plan(F, Y, Q):
     said("计划给 1932/33 年度定的是 366 亿卢布，所以计划在四年零一个季度里完成了 93.7\\%", 1932, 33, plan_ * B9, p937)
     chk("    93.7 per cent = 34.3 / 36.6", 100 * out / plan_, p937, tol=0.05)
     chk("    four and a quarter years (四年零一个季度)", four + quarter, told("在四年零一个季度里", "在", "年零") + 0.25)
+    say("总结把工业分成两类，甲类生产生产资料，乙类生产消费品")
+    assert "means of production" in Q["gp33_defa"] and "articles of consumption" in Q["gp33_defb"]
     said("甲类工业的计划完成了 103.4\\%，重工业人民委员部管辖的工业完成了 109.6\\%", *F["gp33_groupa"])
     y28, x26, _ = F["gp33_means"]
     said("生产资料的生产，1932 年是 1928 年的 2.6 倍", 1932, y28, x26)
@@ -894,8 +916,11 @@ def plan(F, Y, Q):
     # the pitfall
     said("[工业总产值是 1928 年的 218.5\\%，工业生产就翻了一番多]", 1928, pct)
     said("这个数按的是“1926/27 年度不变价格”", *F["h93_unchanged"])
-    said("照 Harrison（1993）的说明，所谓不变价格，随着新产品的加入，在 1930 年代逐年上涨", Y["h93_unchanged"], 1930)
-    assert "through the 1930s" in column("note")["h93_unchanged"]
+    said("照 Harrison（1993）的说明，用早年的价格加权，即使没有隐蔽的通胀", Y["h93_unchanged"])
+    said("何况所谓不变的价格，在 1930 年代随着机械工业新产品的加入逐年上涨", 1930)
+    for words in ("than indices using weighting schemes based on later years, even without any element of hidden "
+                  "inflation", "through the 1930s", "the nomenklatura of the engineering industry"):
+        assert words in transcription("h93_unchanged"), words
     said("1932 年的生铁只有计划的 62\\%", 1932, 100 * p32 / tp)
     # the second plan
     said("第二个五年计划从 1933 年开始", F["st_second"][0])
@@ -939,7 +964,10 @@ def balances(F, Y, Q):
     say("x=Ax+f", "x=f+Af+A^{2}f+\\cdots")
     said("照 Gregory 与 Harrison（2005）的说法，1930 年代初，国家计委的方法还很原始", Y["gr_primitive"], F["gr_primitive"][0])
     assert "in the early 1930s" in Q["gr_primitive"]
-    said("照 Harrison（2017）的说法，国家计委由此发展出著名的“物资平衡”方法", Y["h17_balances"])
+    say("国家计委早期的工作，大多是把各工业部门之间的供应一项一项地对上")
+    assert "detailed matching problems of inter-industry supply" in Q["h17_matching"]
+    said("照 Harrison（2017）的说法，著名的“物资平衡”方法就是这样来的", Y["h17_balances"])
+    say("只要投入一轮比一轮少，即$A^{k}$随$k$增大趋于零")
     said("只包括 30 种原材料、8 种能源和 4 类机器", *F["gr_balances"])
     said("照 Harrison（1980）转述的 Hunter 的说法", Y["h80_hunter"])
     ex_balance()
@@ -986,6 +1014,15 @@ def famine(F, Y, Q):
     said("苏联的粮食产量与国家征购，1927—1933 年与 1937、1939 年", G.index[0], G.index[6], G.index[7], G.index[8])
     assert list(G.index[:7]) == list(range(1927, 1934))
     said("（阴影，1930—1933 年）", dw[0], dw[-1])
+    said("1930—1932 年，收成连年减少，征购仍比 1928 年多得多", 1930, 1932, 1928)
+    R = G.loc[1930:1932, "revised_mt"]
+    assert R.is_monotonic_decreasing and R.is_unique
+    assert G.loc[1930:1932, "procurement_mt"].min() > 1.7 * G.loc[1928, "procurement_mt"]
+    say("收成在减少，征购却没有跟着减少")
+    said("1931 年的收成比前几年低，“饥饿的消息传到了莫斯科，但政府没有降低征购”", F["mnq_1931"][0])
+    assert "the government did not lower procurement" in Q["mnq_1931"]
+    said("1932 年收成不及预期，斯大林一面削减了最初的指标，一面强调要尽量多征购", F["mnq_curtailed"][0])
+    assert "curtailed the initial targets and emphasized the need to maximize procurement" in Q["mnq_curtailed"]
     said("数据：Markevich、Naumenko 与 Qian（2021）附表 A.2", Y["mnq_table"], 2)
     assert "Appendix Table A.2" in column("juan")["mnq_table"]
     r28, p28 = G.loc[1928, "revised_mt"], G.loc[1928, "procurement_mt"]
@@ -1015,7 +1052,8 @@ def famine(F, Y, Q):
     said("照 Harrison（2017）的说法，1932 年开始的饥荒死了约 600 万人", Y["h17_famine"], y, six * M6)
     w = F["we_total"]
     assert "the early 1930s" in Q["we_early"]
-    said("照 Werth 的估计，1930 年代初的几场饥荒，死者有 650 万到 700 万", 1930, w[0] * M6, w[1] * M6)
+    said("照 Werth 对已有研究的概括，1930 年代初的几场饥荒，死者有 650 万到 700 万", 1930, w[0] * M6, w[1] * M6)
+    assert "historians have been able to reconstruct" in Q["we_reconstruct"]
     said("其中乌克兰与库班约 420 万，哈萨克斯坦 130 万到 150 万", w[2] * M6, w[3] * M6, w[4] * M6)
     said("苏联其他地方还有 100 多万", w[5] * M6)
     d = F["dv_10m"]
@@ -1039,6 +1077,9 @@ def famine(F, Y, Q):
     said("多达 70 万人", F["we_volga"][0])
     said("全国的死亡率到 1934 年才回到趋势", F["mnq_1934"][0])
     said("照 Harrison（2017）的说法，是 1932 年的坏天气触发了饥荒", Y["h17_famine"], F["h17_famine"][0])
+    said("照 Werth 的说法，1932 年秋天以后，斯大林的领导层为了明确的政治目的，有意加剧了乌克兰与库班的普遍短缺与局部饥荒",
+         F["we_trajectory"][0])
+    assert "after the autumn of 1932" in Q["we_trajectory"] and "purposefully aggravated" in Q["we_trajectory"]
     said("照 Markevich、Naumenko 与 Qian 的结论，1932 年", F["mnq_enough"][0])
     said("最多能解释乌克兰饥荒死亡的 92\\%，在乌克兰、俄罗斯与白俄罗斯三地合计是 77\\%", *F["mnq_bias"])
     chk("    about half (约有一半)", F["mnq_half"][0], told("这个作用约有一半", "约有"))
@@ -1139,7 +1180,9 @@ def growth(F, Y, Q):
     said("1928—1987 年 & 7.9 & 3.9 & 3.3", 1928, 1987, *T["1928-1987"])
     page = int(re.search(r"p\. (\d+), Table (\d)", column("juan")["h93_t1_2840"]).group(1))
     said("Harrison（1993）表 1（第 146 页）", Y["h93_t1_2840"], 1, page)
-    said("哈宁 1987 年发表文章《狡猾的数字》", F["h93_khanin"][0])
+    said("1987 年，哈宁与改革派记者 Vasilii Selyunin（生卒年未详）在《新世界》杂志上合写发表文章《狡猾的数字》", F["h93_khanin"][0])
+    assert "written jointly with the reforming journalist Vasilii Selyunin, in Novyi mir" in transcription("h93_khanin")
+    assert "nr91022528" in column("note")["h93_khanin"]
     y85, off, y28, kh66 = F["h93_sensation"]
     said("照 Harrison（1993）的转述，哈宁的结论是，到 1985 年苏联的国民收入只是 1928 年的 6.6 倍，官方的统计却是 84.4 倍",
          Y["h93_sensation"], y85, y28, kh66, off)
@@ -1148,6 +1191,11 @@ def growth(F, Y, Q):
     first = F["h93_first"]
     said("第一个五年计划期间产出下降了 20\\%，战前的增长全部集中在第二个五年计划的 1933—1937 年", first[2], first[5],
          1900 + first[6])
+    say("哈宁对战前几个五年计划的估计，比 Bergson、Moorsteen 与 Powell 的低得多，他的工业数字却与 Moorsteen 和 Powell 的相近",
+        "照 Harrison 的推测，原因在哈宁合并各部门指数时用的权数，农业的权数被放大了")
+    for words in ("so far below those of Bergson, Moorsteen and Powell", "close to Moorsteen & Powell's",
+                  "agriculture, in particular, must attract an enlarged weight"):
+        assert words in transcription("h93_doubt"), words
     said("照 Harrison（1993）的说明，长得最快的产品", Y["h93_gersch"])
     say("\\chref{ch:prices}讲过，用哪一年的价格给产品加权，增长率可以差很多")
     said("设两种产品在第 0 年与第 1 年的价格是", 0, 1)
@@ -1225,15 +1273,27 @@ def ex_index() -> None:
 
 def debate(F, Y, Q):
     said("照 Gregory 与 Harrison（2005）的说法，这场论战设想", Y["gr_technocratic"])
-    said("Allen（2003）的回答比较正面", allen_year())
+    say("苏联意外解体以后，西方与俄国的历史学家重新评价苏联的过去，评价变低了")
+    assert "reassessed the Soviet past less favorably" in Q["dv_reassess"]
+    said("Allen（2003）的结论却正面得多", allen_year())
+    assert Q["dv_positive"] == "Allen's conclusions are much more positive."
     said("下面据 Davies（2004）的书评与 Markevich 与 Harrison（2011）的转述", Y["dv_fate"], Y["mh_allen"])
     M = maddison()
     said("1940 年苏联的人均 GDP 是 3,417 国际元，阿根廷是 6,633，印度是 1,093", 1940, M.loc["SUN", 1940], M.loc["ARG", 1940],
          M.loc["IND", 1940])
     assert "between India's and Argentine's" in Q["dv_fate"]
+    assert M.loc["IND", 1940] < M.loc["SUN", 1940] < M.loc["ARG", 1940]
+    say("实际的苏联也落在两者之间")
+    assert "perversely accelerate industrialization by driving people off the land" in Q["dv_perverse"]
+    assert "relatively uncontroversial" in Q["dv_perverse"]
     p30, y0, y1, _ = F["dv_cons"]
     said("1928—1937 年人均消费增加了多达 30\\%", y0, y1, p30)
     said("1927/28 年粮食危机以前", *F["dv_alternative"])
+    assert "with some justice" in Q["mh_justice"]
+    said("可是 Allen 对 1937 年农民收入的估计，在他们看来大概太高了", F["mh_toohigh"][0])
+    assert F["mh_survivors"] == F["mh_toohigh"] and "millions of citizens" in Q["mh_survivors"]
+    say("软预算约束是说，亏损的企业总能得到救助")
+    assert "soft-budget constraint" in Q["dv_sbc"] and "soft budget constraint" in Q["mh_allen"]
     said("Allen 主张，1930 年代最好的发展道路", F["mh_allen"][0])
     said("农产品价格提高 10\\%，上市量才增加 7\\%", *F["dv_elastic"])
     said("1930 年代末的城市人口比 1928 年多一倍以上", *F["dv_double"])
@@ -1243,6 +1303,9 @@ def debate(F, Y, Q):
          "16\\% 的福利收益", Y["cg_welfare"], w[1], w[2], w[0], w[4], w[3])
     said("1928 年出生的一个代表性消费者，福利损失相当于消费的 1\\%", w[5], w[6])
     said("会有 20\\% 的福利收益", F["cg_nep20"][0])
+    assert "reallocation from rural to urban sector did contribute to growth" in Q["cg_realloc"]
+    say("分歧最后落在上面那个问题上：不靠强制，农民的市场能不能交出多一倍的农产品")
+    assert "without the use of compulsion" in Q["dv_compulsion"]
 
 
 def check_section(F, Y, Q):
@@ -1252,11 +1315,16 @@ def check_section(F, Y, Q):
     said("斯大林说 1932 年的工业产值是 1928 年的 219\\%，国家计委的数是 218.5\\%", y32, y28, s219, F["gp33_gross"][6])
     said("219\\% 的四年，平均每年增长约 21.6\\%，与他说的 22\\% 相合", s219, cagr(100, s219, 4), F["st_22"][0])
     chk("    four years (四年)", y32 - y28, told("219\\% 的四年", "的", "年"))
+    said("总结自己也说，“在五年计划期间，我们的工业整体平均每年增长 21.6\\%”", F["gp33_216"][0])
+    say("这些都是计划机关自己的数，相合只说明官方的说法前后一致")
     p, y, _ = F["gp33_newworks"]
     assert p == F["gp33i_world"][1]
     said("生铁在 1932 年是 620 万吨", y, p * M6)
     said("1928 年的人均 GDP，Maddison 的数比 1913 年低 3.1\\%，Markevich 与 Harrison 的是低约 3\\%", 1928, 1913,
          100 - ratio(1928), F["mh_1928"][5])
+    sun = " ".join(maddison_meta()["sources_by_country"]["SUN"])
+    a, b = re.search(r"(\d{4})-(\d{4}): Markevich, A\. and M\. Harrison", sun).groups()
+    said("数据库 1913—1928 年的苏联数字本来就取自 Markevich 与 Harrison", int(a), int(b))   # not a second witness
     d22, y33 = F["we_telegram"]
     assert F["ru_directive"][1:] == [d22, y33]
     said("1933 年 1 月 22 日封锁边界的命令", y33, 1, d22)
@@ -1296,6 +1364,12 @@ def deeper(F, Y, Q):
     y28, y27 = F["dv_ural"][:2]
     said("Werth 作 1928 年 1 月，Davies 说是 1928 年而不是 1927 年的收成以后", F["we_ural"][0], mon("we_ural", "January"), y28,
          y27)
+    said("Harrison（2017）只说 1928 年先在乌拉尔与西伯利亚法外施行，1929 年推行到全国", Y["h17_urals"], *F["h17_urals"])
+    P = hm_prices()
+    assert ("November", 1917) in P and ("February", 1924) in P
+    rs = int(re.search(r"Rostowski and Shapiro \((\d{4})\)", column("note")["hm_prices"]).group(1))
+    said("1917—1924 年的物价倍数据 Harrison 与 Markevich 的表，表中的数取自 Rostowski 与 Shapiro（1991）", 1917, 1924, rs)
+    say("Selyunin 的生卒年，国会图书馆的规范档没有记载，法国国家图书馆的数据里也没有找到")
     said("斯大林说 108\\%，国家计委的总结分成甲类 103.4\\% 与重工业人民委员部 109.6\\%", F["st_108"][0], *F["gp33_groupa"])
     _, _, _, o_tab = F["gp33i_oil"]
     said("1932 年的石油与天然气，总结的正文是 2,220 万吨，表是 2,229 万吨；计划的指标在计划书里一处作 2,170 万吨，一处作 2,200 万吨",
@@ -1552,6 +1626,8 @@ def witnesses(F, Q):
     chk("1932 = 219 (Stalin) and 218.5 (Gosplan) per cent of 1928", F["st_219"][1], F["gp33_gross"][6], tol=0.5)
     chk("22 per cent a year (Stalin) against 219 per cent in four years", cagr(100, F["st_219"][1], 4), F["st_22"][0],
         tol=0.5)
+    chk("21.6 per cent a year (Gosplan) against 218.5 per cent in four years", cagr(100, F["gp33_gross"][6], 4),
+        F["gp33_216"][0], tol=0.05)
     chk("pig iron 1932: Gosplan's text (p. 60) = its table (p. 112)", F["gp33_newworks"][0], F["gp33i_world"][1])
     chk("the telegram of 22 January 1933: Werth = Rudnytskyi et al.", F["we_telegram"], F["ru_directive"][1:])
     chk("two million kulaks: Harrison = Markevich, Naumenko and Qian", F["h17_feb1930"][1], F["mnq_kulaks"][0])
