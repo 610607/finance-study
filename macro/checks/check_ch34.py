@@ -304,7 +304,7 @@ MULT = {"thousand": 10 ** 3, "million": 10 ** 6, "billion": 10 ** 9}
 WORDS = {"twice": 2, "double": 2, "trebled": 3, "tenfold": 10, "one-half": 0.5, "half": 0.5, "a third": 1 / 3,
          "one third": 1 / 3, "one quarter": 0.25, "three quarters": 0.75, "two-fifths": 0.4, "four-fifths": 0.8,
          "one-fourth": 0.25, "three-fourths": 0.75, "half a million": 5e5, "three quarters of a million": 7.5e5,
-         "goo": 900, "a quarter": 0.25}
+         "goo": 900, "a quarter": 0.25, "two-thirds": 2 / 3}
 
 
 def cardinal(s: str) -> float:
@@ -383,6 +383,7 @@ READINGS = {
     "fm_between": [("one", "million"), ("two million", EN)],
     "fm_prices": [("five", EN), ("six", EN), ("1942", NUM)],
     "fm_35": [("1943", NUM), ("3*|5", "ocr35")],
+    "fm_method": [("10", NUM), ("two-thirds", WD)],
     "sn_taft": [("2,750,000,000", NUM), ("half", WD), ("30", NUM)],
     # rows whose value the snapshot's script gave by hand: read here as the words of the source say them
     "fw_rates": [("four-fifths", WD)],
@@ -408,10 +409,11 @@ MISPRINTS = [("h41_gapdef", "inedaquacy"), ("h41_halftax", "practicaly"), ("h41_
              ("kl_cycle", "“ political"), ("fw_unitas", "137 |"), ("fk_ultimate", "ha/f"), ("fs_65", "unti]"),
              ("fm_35", "3*5"), ("fm_unsound", "cannot he"), ("imt_clearing", "account7'"),
              ("imt_poland", "rnthlessness"), ("imt_food", "Genera1"), ("imt_east", "mas not"),
-             ("imt_quotas", "thein"), ("imt_plunder", "t o enlarge")]
+             ("imt_quotas", "thein"), ("imt_plunder", "t o enlarge"), ("fs_byline", "Diwision"),
+             ("fs_byline", "GotpENWEISER"), ("ln_even", "have . a"), ("ln_even", "government t spending")]
 NAMED = {"ln_rejects": "doubles the opening quotation mark", "kl_confidence": "space before the closing",
          "kl_cycle": "space after the opening", "fm_unsound": "'he'", "imt_east": "'mas'", "imt_plunder": "'t o'",
-         "ln_nations": "'r'"}
+         "ln_nations": "'r'", "ln_even": "stray characters"}
 IMAGE_NOTE = "read on the page image"
 
 
@@ -476,7 +478,7 @@ def check_readings(df: pd.DataFrame) -> None:
         got = read_rule(r.id, q) if r.id in READINGS else [figure(x.rstrip(",")) for x in FIGURES.findall(q)]
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += 1
-    quoted("rows with values, each read from its quotation", n, 123)
+    quoted("rows with values, each read from its quotation", n, 128)
     quoted("rows read on a page image (no quotation)", img, 37)
     N, Q = column("note"), quotes()
     for rid, word in MISPRINTS:
@@ -542,7 +544,7 @@ TRANSLATIONS = {
     "什么特别的好坏": "ln_neither",
     "征税决不应该只因为政府需要付钱": "ln_tax",
     "健全财政": "ln_rejects",
-    "合理的": "ln_hansen",
+    "合理的": "ln_ratio",
     "完全荒唐的夸张": "ln_exaggeration",
     "不管谁来拉操纵杆": "ln_levers",
     # sec:warfinance-debate
@@ -645,7 +647,7 @@ KEYWORDS = {
     "ln_neither": ["anything especially good or bad"],
     "ln_tax": ["taxing is never to be undertaken merely because the government needs to make money payments."],
     "ln_rejects": ["sound finance"],
-    "ln_hansen": ["as long as there is a reasonable"],
+    "ln_ratio": ["the debt must be kept in a “reasonable” or “manageable” ratio to income"],
     "ln_exaggeration": ["A completely fantastic exaggeration"],
     "ln_levers": ["no matter who pulls the levers"],
     "ln_appeasement": ["This unnecessary “appeasement”"],
@@ -953,7 +955,7 @@ def world(F, Y, Q):
 def gap_section(F, Y, Q):
     lo, hi, mid, out, dep, inv, both, abroad = F["k_output"]
     said("他估计，组织得当的话，产出可以增加 15\\% 到 20\\%", lo, hi)
-    said("取一个略低于中间的数 17½\\%，按战前价格约合 8.25 亿英镑", mid, out * 1e6)
+    said("取一个居中、略低于 17½\\% 的数，按战前价格约合 8.25 亿英镑", mid, out * 1e6)
     assert "17½" in tex_text() and mid == 17.5 and "just under" in transcription("k_output")
     said("折旧基金可以腾出 1.5 亿英镑，正常的新投资可以腾出 3 亿英镑，两项共 4.5 亿英镑", dep * 1e6, inv * 1e6, both * 1e6)
     chk("    150 + 300 = 450", dep + inv, both)
@@ -1035,7 +1037,8 @@ def keynes_account(F, Y, Q):
     res = out + both + abroad
     said("（1）$825+450+350=1625$。$1850-1625=225$，消费要比战前少 225", out, both, abroad, res, g, res, g - res, cut)
     chk("    the OCR text of p. 16: £1,625 (£825+£450+£350)", F["k_1625"], [res, out, both, abroad])
-    said("1850 是 1939 年秋天约 1500 的支出水平，再加上第二年的 350", g, y39, rate, more)
+    said("1939 年秋天，政府支出已比战前每年多约 1500，第二年再多 350，合计 1850", y39, rate, more, g)
+    assert "already reached represented an increase of" in transcription("k_spending")
     chk("    1500 + 350 = 1850", rate + more, g)
     said("（2）$1850-150-350=1350$，$1350-400=950$", g, dep, ab, rest, rest, vol, priv)
     said("（3）税收合计$400+100=500$，约为 950 的一半，$950-500=450$", simon, other, tax, priv, priv, tax, gap_)
@@ -1047,6 +1050,11 @@ def keynes_account(F, Y, Q):
 
 def budget41(F, Y, Q):
     assert "inflationary gap" in Q["h41_gapdef"] and "sterling balances" in Q["h41_sterling"]
+    assert "by the sale of capital assets" in Q["h41_abroad"]
+    assert Q["h41_excluded"].startswith("It must be excluded from the debit side")
+    assert "the private savings of individuals" in Q["h41_sources"]
+    assert "new savings by both large and small investors" in Q["h41_newsav"]
+    assert "reduction in the personal allowances and earned income allowance" in Q["h41_credit"]
     said("\\section{1941 年的英国预算}", url_date("hc1941fs")[0])
     m18, spent, taxed, overseas, left = F["h41_18m"]
     said("他先回顾了开战后的 18 个月", m18)
@@ -1056,7 +1064,8 @@ def budget41(F, Y, Q):
     dom, rev = F["h41_3700"]
     said("对 1941—1942 财政年度，他估计国内支出约 37 亿英镑，按现有税制，收入是 16.36 亿英镑", 1941, 1942, dom, rev)
     sav, half = F["h41_1600"]
-    said("财政部从储蓄与借款里最多只能指望 16 亿英镑", sav)
+    said("财政部从这些来源最多只能指望 16 亿英镑", sav)
+    assert "from these sources as a whole" in Q["h41_1600"]
     chk("    rather less than one-half (不到一半)", half, told("会占不到一半", "不到", ""))
     said("三项相减，还差约 4.6 亿英镑", dom - rev - sav)
     assert "of the order of £500,000,000" in Q["h41_500"]
@@ -1104,7 +1113,8 @@ def budget41(F, Y, Q):
     assert "no more than doubled" in Q["hf_cash"]
     y40, t1, q1 = F["hf_imports"]
     said("1940—1941 年，预算赤字最多有三分之一靠净进口来弥补，后来稳定在四分之一", y40, 1941)
-    assert "in 1940-1" in Q["hf_imports"]
+    assert "in 1940-1" in Q["hf_imports"] and "domestic finance alone was insufficient" in Q["hf_imports"]
+    assert "overseas assets and Allied credits" in Q["hf_overseas"]
     chk("    up to one third (三分之一)", t1, told("预算赤字最多有三分之一靠净进口", "最多有", "靠净进口"))
     chk("    one quarter (四分之一)", q1, told("后来稳定在四分之一", "稳定在", ""))
     compare_box(F, Y, Q)
@@ -1149,7 +1159,8 @@ def us(F, Y, Q):
     said("这相当于从 GDP 的 52\\% 升到 119\\%", R[1939], R[1946])
     table_us(F, Y, Q)
     lo, hi = F["k_output"][:2]
-    said("凯恩斯估计英国的产出只能增加 15\\% 到 20\\%", lo, hi)
+    said("凯恩斯估计英国的产出能增加 15\\% 到 20\\%", lo, hi)
+    assert "should be practicable" in transcription("k_output")
     A = annual()
     said("1941 年的失业率仍有 9.9\\%", 1941, A.loc[1941, "unemployment_pct"])
     N = nipa()
@@ -1224,8 +1235,16 @@ def soviet(F, Y, Q):
     m, frac_ = F["hu_leningrad"]
     said("饥饿与饥饿引起的疾病夺去了 100 万人的生命", m)
     chk("    two-fifths (五分之二)", frac_, told("占全城战前人口的五分之二", "人口的", ""))
+    assert "either worked in NKVD establishments engaged in construction or mineral extraction, or were leased to " \
+           "other ministries" in Q["hu_nkvd_two"]
+    y0, last = F["hu_table78"]                                                # "1940-5": the columns 1940-1945
+    cols = list(range(int(y0), int(y0) // 10 * 10 + int(last) + 1))
+    est = dict(zip(cols, F["hu_nkvd_est"]))
+    assert cols == list(range(1940, 1946)) and len(est) == len(F["hu_nkvd_est"])
+    said("内务人民委员部企业里的劳动力 1940 年有 160 万人，1943 年有 110 万人", 1940, est[1940] * 1e6, 1943,
+         est[1943] * 1e6)
     k75, y1, k50, y2 = F["hu_nkvd"]
-    said("他们 1940—1941 年约有 75 万人，1943—1945 年约有 50 万人", y1, 1941, k75, y2, 1945, k50)
+    said("1940—1941 年约有 75 万人，1943—1945 年约有 50 万人", y1, 1941, k75, y2, 1945, k50)
     assert "in 1940-1, falling to half a million in 1943-5" in Q["hu_nkvd"]
     assert "maintenance costs incurred by the labour camps" in Q["hu_forced"]
     lo, hi = F["hu_goskomstat"]
@@ -1252,13 +1271,17 @@ def germany_japan_bengal(F, Y, Q):
     assert "excessive occupation costs or by forced loans" in Q["imt_clearing"] and "merely in name" in Q["imt_clearing"]
     assert "Government-Genera1 to Germany" in Q["imt_food"] and "widespread starvation" in Q["imt_poland"]
     assert "defendant Goering" in column("note")["imt_famine"]
+    assert Q["imt_oldenburg"].startswith("Before the attack on the U. S. S. R., an economic staff")
+    assert "exploitation of Soviet territories" in Q["imt_oldenburg"]
+    assert "purchasing agency" in Q["imt_agency"] and "black market" in Q["imt_agency"] \
+        and "assurance made by the defendant Goering" in Q["imt_agency"]
     assert "slave labor upon defense works, armament production" in Q["imt_deported"]
     d, y44, five, two = F["imt_sauckel"]
     said("他 1944 年 3 月 1 日说，来到德国的 500 万外国工人里，“自愿来的连 20 万都不到”", y44, mon("imt_sauckel", "March"),
          d, five, two)
     assert "substantially accurate" in Q["imt_accurate"]
     said("约 600 万犹太人被杀害", F["imt_6m"][0] * 1e6)
-    assert "Jews were murdered" in Q["imt_6m"]
+    assert "Jews were murdered" in Q["imt_6m"] and "by the extermination of the Jews" in Q["imt_final"]
     # Japan
     said("1936 年以后日本的军费迅速增加", Y["ide_after"])
     assert "shifted to wartime finance" in Q["ide_after"]
@@ -1294,6 +1317,11 @@ def germany_japan_bengal(F, Y, Q):
     y43, m35 = F["fm_35"]
     said("加尔各答大学一位教授估计 1943 年死了 350 万人", y43, m35 * 1e6)
     assert "Calcutta University" in column("note")["fm_35"]
+    p10, two3 = F["fm_method"]
+    said("那里的死亡率是 10\\%", p10)
+    chk("    two-thirds (三分之二)", two3, told("再假定全省三分之二的人口受灾一样重", "全省", "的人口"))
+    assert "surveys of sample groups in the worst famine areas" in Q["fm_method"]
+    assert "by the Government of India of a system of planned movement" in Q["fm_delay"]
 
 
 def lerner(F, Y, Q):
@@ -1303,11 +1331,15 @@ def lerner(F, Y, Q):
     chk("    the first law (第一条)", 1, told("第一条规律关于总支出", "第", "条"))
     chk("    the second law (第二条)", 2, told("第二条规律关于借款", "第", "条"))
     assert Q["ln_second"].startswith("The second law of Functional Finance")
-    chk("    the third (第三条)", 3, told("第三条是，为执行前两条", "第", "条是"))
-    chk("    the first two (前两条)", 2, told("第三条是，为执行前两条", "前", "条"))
+    assert "law" not in Q["ln_third"]                                         # the third part is no law
+    chk("    three parts (三项)", 3, told("勒纳把方案概括成三项", "成", "项"))
+    chk("    the first two parts are the two laws (前两项、两条)", [2, 2],
+        [told("前两项就是这两条规律", "前", "项就是"), told("前两项就是这两条规律", "这", "条规律")])
+    chk("    the third part (第三项)", 3, told("第三项是按需要印钱", "第", "项是"))
+    chk("    the first two (前两项)", 2, told("以执行前两项", "前", "项"))
     assert "third, the printing, hoarding or destruction of money" in Q["ln_third"]
     assert "over a solar year or any other arbitrary period" in Q["ln_rejects"]
-    chk("    three laws (三条规律)", 3, told("可以把三条规律写在一起", "把", "条规律"))
+    chk("    the three parts (这三项)", 3, told("可以把这三项写在一起", "这", "项写"))
     said("{功能财政（勒纳 1943）}", Y["ln_masthead"])
     assert "does not" in Q["ln_size1"] and "matter at all" in Q["ln_size2"]
     # the pitfall
@@ -1330,7 +1362,13 @@ def debate(F, Y, Q):
     chk("    four major errors (四个大错)", F["ln_four"][0], told("这个论证有四个大错", "有", "个大错"))
     p6, d600 = F["ln_investor"]
     d240, p6b, d4000 = F["ln_240"]
-    said("一位投资者 6\\% 的收益本来是 600 美元，交了所得税只剩 240 美元", p6, d600, d240)
+    cap = F["ln_capital"][0]
+    c60, d240c = F["ln_rate60"]
+    said("一位投资者有 1 万美元可投，6\\% 的收益本来是 600 美元。按每美元 60 美分交了所得税，只剩 240 美元", cap, p6,
+         d600, c60, d240c)
+    chk("    10,000 x 6% = 600", cap * p6 / 100, d600)
+    chk("    600 x (1 - 0.60) = 240", d600 * (1 - c60 / 100), d240)
+    chk("    10,000 x (1 - 0.60) = 4,000", cap * (1 - c60 / 100), d4000)
     said("扣除抵税以后的净损失也只有 4000 美元，240 美元正好是它的 6\\%", d4000, d240, p6b)
     chk("    240 is 6 per cent of 4000", 100 * d240 / d4000, p6b)
     chk("    one hundred per cent (百分之百)", F["ln_strictly"][0] / 100, told("这只在亏损能百分之百从应税收入里扣除时", "亏损能",
@@ -1339,6 +1377,13 @@ def debate(F, Y, Q):
         assert Q[k].startswith(ch), k
     lo, hi = F["ln_guess"]
     said("他猜在 1000 亿到 9000 亿美元之间", lo * 1e9, hi * 1e9)
+    assert "the greater is the quantity of private wealth" in Q["ln_wealth"]
+    assert "less necessary for the government to undertake deficit financing" in Q["ln_spending"]
+    assert "equilibrium level of debt" in Q["ln_eqlevel"]
+    assert "tendency to grow comes completely to an end" in Q["ln_eqend"]
+    assert "increase the national income by several times" in Q["ln_even"]
+    assert "come out strongly against “deficit spending.”" in Q["ln_against"]
+    assert "“reasonable” or “manageable” ratio to income" in Q["ln_ratio"]
     # Domar
     said("1944 年 12 月，他在《美国经济评论》上发表", Y["dm_title"], src_mon("domar1944", "December"))
     assert "Mr. Domar is with the Board of Governors of the Federal Reserve System" in Q["dm_fed"]
@@ -1449,7 +1494,8 @@ def plans(F, Y, Q):
     # White
     said("各国份额的总和至少相当于 50 亿美元", F["fw_5bn"][0] * 1e9)
     assert "at least 5 billion dollars" in Q["fw_5bn"]
-    said("成员国要向基金缴纳份额的 50\\%", F["fw_50"][0])
+    said("基金开业以前，成员国要先缴纳份额的 50\\%", F["fw_50"][0])
+    assert "on which the Fund's operations are to begin" in Q["fw_50"]
     chk("    four-fifths (五分之四)", F["fw_rates"][0], told("而且要五分之四的票数批准", "要", "的票数"))
     p150, p200 = F["fw_200"]
     said("头两年不超过份额的 150\\%，以后不超过 200\\%", p150, p200)
@@ -1468,7 +1514,7 @@ def plans(F, Y, Q):
     chk("    one-fourth of the votes (四分之一)", F["fw_fourth"][0],
         told("任何国家都无权投出超过总票数四分之一的票", "总票数", "的票"))
     # the compare box
-    said("{稳定基金，成员国缴纳份额的 50\\%", F["fw_50"][0])
+    said("{稳定基金，成员国在开业前缴纳份额的 50\\%", F["fw_50"][0])
     said("{比如说，战前三年平均进出口之和的 75\\%", p75)
     said("{总和至少 50 亿美元，按储备、收支波动与国民收入定", F["fw_5bn"][0] * 1e9)
     said("{尤尼塔斯，含纯金 137 又七分之一格令，合 10 美元", int(grains), usd)
@@ -1495,6 +1541,11 @@ def bw(F, Y, Q):
     y, m, d = url_date("hl1944")
     said("1944 年 5 月 23 日，上院辩论 Cmd. 6519 号文件里的原则声明", y, m, d, F["hl44_motion"][0])
     assert "almost exactly a year since the proposals for a Clearing Union" in Q["hl44_year"]
+    assert Q["hl44_lord"] == "LORD KEYNES"
+    assert Q["hl44_smaller"].startswith("The quotas are not so large as under the Clearing Union")
+    assert "square the account" in Q["hl44_square"] and "squeezing gold out of the rest of us" in Q["hl44_square"]
+    assert "Research and Statistics" in Q["fs_byline"]
+    assert "may limit the freedom of exchange transactions in that currency" in Q["fs_limit"]
     chk("    a year (一年)", 1, told("差不多正好是一年以前", "正好是", "年以前"))
     assert "new-fangled international monetary unit" in Q["hl44_unit"]
     assert Q["hl44_names"] == "bancor, unitas, dolphin, bezant, daric"
@@ -1585,8 +1636,12 @@ def bw(F, Y, Q):
     assert "agrees that it will put no such restrictions" in Q["sn_norestrict"]
     assert "better than the same currency in anybody else’s hands" in Q["sn_better"]
     assert column("note")["sn_white"] == "Harry D. White" and column("note")["sn_string"] == "Senator Taft"
+    assert Q["sn_acheson_title"] == "Acheson, Dean, Assistant Secretary of State"
+    assert Q["sn_white_title"] == "White, Hon. Harry D., Assistant Secretary of the Treasury"
+    assert "waste paper" in Q["sn_paper"] and column("note")["sn_paper"] == "Senator Taft"
     # who adjusts
     assert "the main cause of deflation during the inter-war years" in Q["hl44_formula"]
+    assert "not absolutely essential" in Q["fk_notessential"] and "remit the charges on credit" in Q["fk_remit"]
     assert "release other countries from any obligation to take its exports" in Q["hl44_clause"]
     assert "temporary deficit" in Q["fs_purpose"]
 
@@ -1650,6 +1705,7 @@ def deeper(F, Y, Q):
 def legacy(F, Y, Q):
     said("凯恩斯 1940 年的账，用计划的支出与产能之差来判断通胀的压力", Y["km_date"])
     say("苏联增加到三倍的货币")
+    chk("    two laws (两条规律)", 2, told("勒纳的两条规律", "勒纳的", "条规律"))
     chk("    trebled (三倍)", F["hu_money"][0], told("苏联增加到三倍的货币", "增加到", "倍"))
 
 
@@ -1754,7 +1810,7 @@ def models() -> None:
     # Domar's own words for the limits (p. 810, read on the page image)
     assert "a/r" in transcription("dm_limit") and "i/(r/a + i)" in transcription("dm_limit")
     # eq:warfinance-laws is Chapter 1's eq:intro-budget without the foreign-currency debt, with its three terms marked
-    # as the three laws
+    # as Lerner's two laws and the third part of his programme
     laws = eqs["eq:warfinance-laws"]
     intro = (ROOT / "zh" / "ch01_intro.tex").read_text(encoding="utf-8")
     end = intro.index("\\label{eq:intro-budget}")
@@ -1762,7 +1818,7 @@ def models() -> None:
     for term in ("G_t-T_t", "i_{t-1}B_{t-1}", "\\Delta B_t", "\\Delta H_t"):
         assert term in laws and term in intro, term
     assert "B^{f}" in intro and "B^{f}" not in laws
-    for law in ("第一条", "第二条", "第三条"):
+    for law in ("第一条", "第二条", "第三项"):
         assert f"\\text{{{law}}}" in laws, law
 
 

@@ -41,22 +41,26 @@ h41_torrent,英国,1941,,,,,hc1941fs,c1300,"If it were all to be used to purchas
 h41_dam,英国,1941,,,,,hc1941fs,c1300,"To avert that menace, it is vital for us to possess a stout and well-constructed dam. That is the object of our system of food and industrial controls, of our systems of price control, rationing and the like.",
 h41_gapdef,英国,1941,,,,,hc1941wp,c1304,"What is of the first importance is the avoidance of any inflationary gap, by which I mean any inedaquacy in our financial measures below what is required to enable us to avoid serious and continuing inflation.",'inedaquacy' as printed
 h41_sterling,英国,1941,,,,,hc1941wp,c1306,"by the accumulation of sterling balances, held in London by the Dominions and India and mainly available to be lent back to the Exchequer.",
+h41_abroad,英国,1941,,,,,hc1941wp,c1306,"Expenditure abroad has been financed hitherto, in the last resort, either by the sale of capital assets in one form or another",
+h41_excluded,英国,1941,,,,,hc1941wp,c1306,It must be excluded from the debit side of the national accounts when one is assessing the size of the inflationary gap.,
 h41_notmeasured,英国,1941,,,,,hc1941wp,c1306,The inflationary gap is not to be measured by the difference between the total even of domestic expenditure and the produce of taxation.,
 h41_borrowing,英国,1941,,,,,hc1941wp,c1306,Borrowing as such is neither necessarily nor normally inflationary.,
 h41_18m,英国,1941,,18;4650000000;2000000000;1000000000;1650000000,,,hc1941wp,c1306,"In the first 18 months of war Government expenditure was roughly £4,650,000,000. Taxation met roughly £2,000,000,000, and overseas resources met roughly £1,000,000,000. This left a balance of roughly £1,650,000,000.",
 h41_3700,英国,1941,,3700000000;1636000000,,,hc1941gap,c1319,"we must concentrate upon what I have called domestic expenditure, and the estimate which I have given for that is a figure of about £3,700,000,000. Against this formidable total I expect that revenue, on the existing basis of taxation, will amount to £1,636,000,000.",
+h41_sources,英国,1941,,,,,hc1941gap,c1319,"extra-Budgetary funds, the investment of business depreciation, renewal and sinking funds, the other savings of companies and institutions, and the private savings of individuals",
 h41_1600,英国,1941,,1600000000;0.5,,,hc1941gap,c1319,"I think it would be unwise to assume that the Exchequer will receive from these sources as a whole more than £1,600,000,000, towards which private savings of individuals, if continued at their present rate, would contribute rather less than one-half.",
 h41_500,英国,1941,,500000000,,,hc1941gap,c1320,"Accordingly, I draw the general conclusion that the potentially dangerous gap, to the closing of which we must bend all our energies, is of the order of £500,000,000.",
 h41_notserious,英国,1941,,,,,hc1941gap,c1320,"I do not, of course, mean that a failure to cover the whole of that gap exactly would necessarily have serious consequences of an inflationary character",
 h41_double,英国,1941,,2,,,hc1941sav,c1323,I judge that private savings are now accumulating at a rate nearly double the rate in the first year of the war,
 h41_limit,英国,1941,,,,,hc1941sav,c1324,The effect of the various schemes which are now being put into force to limit the quantity of supplies of various kinds available for purchase should in itself be favourable to genuine increased saving by every recipient of income.,
+h41_newsav,英国,1941,,,,,hc1941sav,c1324,the figures of new savings by both large and small investors will continue to grow.,
 h41_200_300,英国,1941,,200000000;300000000,,,hc1941sav,c1325,"it is possible to raise in the year a further sum of between £200,000,000 and £300,000,000.",
 h41_gapremains,英国,1941,,200000000;300000000,,,hc1941sav,c1325,"it cannot wisely be put at less than a sum of between £200,000,000 and £300,000,000.",
 h41_250,英国,1941,,200000000;250000000,,,hc1941sav,c1325,"I must raise new taxation, which, when it is in full operation, will amount to not less than £200,000,000. To allow some margin of safety, I regard it as essential to raise by new taxation something in the neighbourhood of £250,000,000 in a full year.",
 h41_10s,英国,1941,,1;6;10,,,hc1941tax,c1327,"I propose to do so by 1s. 6d., making the new standard rate 10s. in the £.",
 h41_2m,英国,1941,,2000000,,,hc1941tax,c1328,"The reduction in the allowances and in the exemption limit will increase by over 2,000,000 the number of persons liable to pay Income Tax.",
 h41_purpose,英国,1941,,,,,hc1941tax,c1328,"the primary object of these proposals is not to obtain taxation for taxation sake, nor to raise Revenue for the sake of Revenue, but to make a considerable cut in purchasing power during the war",
-h41_credit,英国,1941,,,,,hc1941tax,c1329,will be offset after the war by a credit which will then be given in his favour in the Post Office Savings Bank.,
+h41_credit,英国,1941,,,,,hc1941tax,c1329,the extra tax which any individual will pay by reason of the reduction in the personal allowances and earned income allowance will be offset after the war by a credit which will then be given in his favour in the Post Office Savings Bank.,
 h41_45s,英国,1941,,45;2,,,hc1941tax,c1329,"A single man with 45s. a. week paid no Income Tax last year. Under the present proposals he will pay 2s. a week, the whole of which will be treated as a post-war credit.",'45s. a. week' as printed
 h41_half,英国,1941,,250000000;0.5,,,hc1941tax,c1330,"The total effect of the Income Tax changes which I have just mentioned will thus be an addition of £250,000,000 in a full year, of which one-half will fall to be treated as a credit.",
 h41_noclaim,英国,1941,,,,,hc1941tax,c1330,the taxpayer cannot claim or use his credit while the war continues.,
@@ -64,6 +68,7 @@ h41_1860,英国,1941,,1860000000;500000000;1000000000,,,hc1941end,c1331,"I shall
 h41_halftax,英国,1941,,0.5,,,hc1941end,c1331,"Moreover, of the net expenditure to be financed from domestic loans and taxation, I shall be raising this year practicaly half by taxation.",'practicaly' as printed
 hl44_motion,英国,1944,,6519,,,hl1944,c834,That this House considers that the statement of principles contained in Cmd. 6519 provides a suitable foundation for further international consultation with a view to improved monetary co-operation after the war.,
 hl44_year,英国,1944,,,,,hl1944,c838,"My Lords, it is almost exactly a year since the proposals for a Clearing Union were discussed in your Lordships' House.",
+hl44_lord,英国,1944,,,,,hl1944,c838,LORD KEYNES,the heading of Keynes's speech
 hl44_elegance,英国,1944,,,,,hl1944,c838,"There were, it is true, certain features of elegance, clarity and logic in the Clearing Union plan which have disappeared.",
 hl44_unit,英国,1944,,,,,hl1944,c838,there is no longer any need for a new-fangled international monetary unit,
 hl44_names,英国,1944,,,,,hl1944,c838,"bancor, unitas, dolphin, bezant, daric",
@@ -72,12 +77,14 @@ hl44_stagger,英国,1944,,,,,hl1944,c839,we—and we alone of the United Nations
 hl44_aggregate,英国,1944,,2500000000,,,hl1944,c841,"The aggregate for the world is put provisionally at £2,500,000,000.",
 hl44_325,英国,1944,,325000000,,,hl1944,c841,"is £325,000,000",
 hl44_colonies,英国,1944,,,,,hl1944,c841,for ourselves and the Crown Colonies,
+hl44_smaller,英国,1944,,,,,hl1944,c841,"The quotas are not so large as under the Clearing Union, and Lord Addison drew attention to that.",
 hl44_daily,英国,1944,,,,,hl1944,c841,They are not intended as daily food for us or any other country to live upon during the reconstruction or afterwards.,
 hl44_iron,英国,1944,,,,,hl1944,c842,The quotas for drawing on the Fund's resources are an iron ration to tide over temporary emergencies of one kind or another.,
 hl44_creditor,英国,1944,,,,,hl1944,c842,A proper share of responsibility for maintaining equilibrium in the balance of international payments is squarely placed on the creditor countries.,
 hl44_formula,英国,1944,,,,,hl1944,c842,offered us a far-reaching formula of protection against a recurrence of the main cause of deflation during the inter-war years,
 hl44_clause,英国,1944,,,,,hl1944,c842,"to release other countries from any obligation to take its exports, or, if taken, to pay for them.",
 hl44_sanction,英国,1944,,,,,hl1944,c842,I cannot imagine that this sanction would ever be allowed to come into effect.,
+hl44_square,英国,1944,,,,,hl1944,c842,"If by no other means, than by lending, the creditor country will always have to find a way to square the account on imperative grounds of its own self-interest. For it will no longer be entitled to square the account by squeezing gold out of the rest of us.",
 hl44_voting,英国,1944,,,,,hl1944,c843,The voting power of the British Commonwealth and that of the United States are expected to be approximately equal.,
 hl44_sterling,英国,1944,,,,,hl1944,c844,"We are determined that, in future, the external value of sterling shall conform to its internal value as set by our own domestic policies, and not the other way round.",
 hl44_interest,英国,1944,,,,,hl1944,c844,"we intend to retain control of our domestic rate of interest, so that we can keep it as low as suits our own purposes, without interference from the ebb and flow of international capital movements or flights of hot money.",
@@ -105,7 +112,10 @@ ln_interest,美国,1943,,,,,lerner1943,p. 42,The interest can be paid by borrowi
 ln_proponents,美国,1943,,,,,lerner1943,p. 38,the proponents of the new principles have either not seen their full logical implications or shown an over-solicitousness which caused them to try to save the public from the necessary mental exercise.,
 ln_nations,美国,1943,,,,,lerner1943,p. 43,when it is not r owed to other nations,"'r' is a stray character of the margin, as the OCR prints it"
 ln_hansen,美国,1943,,,,,lerner1943,p. 43,"for example by Alvin Hansen, that as long as there is a reasonable",
+ln_ratio,美国,1943,,,,,lerner1943,p. 48,the idea that the debt must be kept in a “reasonable” or “manageable” ratio to income,
 ln_appeasement,美国,1943,,,,,lerner1943,p. 43,This unnecessary “appeasement” opened the way to an extremely effective opposition to Functional Finance.,
+ln_even,美国,1943,,,,,lerner1943,p. 43,Even men who have . a clear understanding of the mechanism whereby government t spending in times of depression can increase the national income by several times the amount laid out by the government,"'.' and 't' are stray characters of the margin, as the OCR prints them"
+ln_against,美国,1943,,,,,lerner1943,p. 43,have come out strongly against “deficit spending.”,
 ln_burden,美国,1943,,,,,lerner1943,p. 43,is not a burden on the nation in the same way as an individual’s debt to other individuals is a burden on the individual,
 ln_argued,美国,1943,,,,,lerner1943,p. 43,It has been argued that “it would be impossible to devise a program,"Flynn's words in Harper's Magazine, July 1942, quoted by Lerner (indirect testimony)"
 ln_flynn,美国,1942,,1942,,,lerner1943,"p. 43, footnote",An excellent example of this is the persuasive article by John T. Flynn in Harper’s Magazine for July 1942.,
@@ -113,6 +123,8 @@ ln_collapse,美国,1943,,,,,lerner1943,p. 44,"until the burden of taxation is so
 ln_penny,美国,1943,,,,,lerner1943,p. 44,were promised when the first income tax law of one penny in the pound was proposed.,
 ln_four,美国,1943,,4,,,lerner1943,p. 44,"There are four major errors in the argument against deficit spending, four reasons why its apparent conclusiveness is only illusory.",
 ln_investor,美国,1943,,6;600,,,lerner1943,p. 45,At 6 percent this would yield $600,
+ln_capital,美国,1943,,10000,,,lerner1943,p. 45,"who has accumulated $10,000 to invest",
+ln_rate60,美国,1943,,60;240,,,lerner1943,p. 45,after paying income tax on this addition to his income at 60 cents in the dollar he would have only $240 left,
 ln_240,美国,1943,,240;6;4000,,,lerner1943,p. 45,"$240 is 6 percent of $4,000.",
 ln_strictly,美国,1943,,100,,,lerner1943,p. 45,"Of course, this correction of the argument is strictly true only where 100 percent of the loss is deductible from taxable income",
 ln_size1,美国,1943,,,,,lerner1943,p. 47,This means that the absolute size of the national debt does not,
@@ -128,6 +140,10 @@ ln_communist,美国,1943,,,,,lerner1943,p. 50,It is applicable to a communist so
 ln_err2,美国,1943,,,,,lerner1943,p. 46,"In the second place, this argument against deficit spending in time of depression would be indefensible even if the harm done by debt were as great as has been suggested.",
 ln_err3,美国,1943,,,,,lerner1943,p. 46,"In the third place, there is no good reason for supposing that the government would have to raise all the interest on the national debt by current taxes.",
 ln_err4,美国,1943,,,,,lerner1943,p. 48,"Finally, there is no reason for assuming that, as a result of the continued application of Functional Finance to maintain full employment, the government must always be borrowing more money and increasing the national debt.",
+ln_eqend,美国,1943,,,,,lerner1943,p. 49,finally reaching an equilibrium level where its tendency to grow comes completely to an end,
+ln_wealth,美国,1943,,,,,lerner1943,p. 49,The greater the national debt the greater is the quantity of private wealth.,
+ln_spending,美国,1943,,,,,lerner1943,p. 49,This increase in private spending makes it less necessary for the government to undertake deficit financing to keep total spending at the level which provides full employment.,
+ln_eqlevel,美国,1943,,,,,lerner1943,p. 49,The size of this equilibrium level of debt depends on many things.,
 ln_levers,美国,1943,,,,,lerner1943,p. 51,Functional Finance will work no matter who pulls the levers.,
 kl_masthead,国际,1943,,4;1943,,,kalecki1943,masthead,"VOL. XIV. No. 4 OCTOBER-DECEMBER, 1943",
 kl_title,国际,1943,,,,,kalecki1943,p. 322,POLITICAL ASPECTS OF FULL EMPLOYMENT,
@@ -180,7 +196,7 @@ fj_names,国际,1943,,,,,frb1943jun,p. 501,(currently referred to as the White p
 fj_committed,国际,1943,,,,,frb1943jun,p. 501,neither Government is committed to the proposals put forward by its experts.,
 fw_5bn,国际,1943,,5,,,frb1943jun,p. 502,The aggregate of quotas of the member countries shall be the equivalent of at least 5 billion dollars.,
 fw_formula,国际,1943,,,,,frb1943jun,p. 502,"a country’s holdings of gold and foreign exchange, the magnitude of the fluctuations in its balance of international payments, and its national income.",
-fw_50,国际,1943,,50,,,frb1943jun,p. 502,Each member country shall provide the Fund with 50 per cent of its quota,
+fw_50,国际,1943,,50,,,frb1943jun,p. 502,Each member country shall provide the Fund with 50 per cent of its quota on or before the date set by the Board of Directors of the Fund on which the Fund's operations are to begin.,
 fw_rates,国际,1943,,0.8,,,frb1943jun,p. 503,Changes in these rates shall be considered only when essential to correction of a fundamental disequilibrium and be permitted only with the approval of four-fifths of member votes.,
 fw_200,国际,1943,,150;200,,,frb1943jun,p. 503,"The Fund's holdings of the currency of any member country shall not exceed during the first year of the operation of the Fund, the quota of that country; it shall not exceed during the first two years 150 per cent of such quota; and thereafter it shall not exceed 200 per cent of such quota;",
 fw_charge,国际,1943,,1,,,frb1943jun,p. 504,"A charge at the rate of 1 per cent per annum, payable in gold, shall be levied against any member country on the amount of its currency held by the Fund in excess of the quota of that country.",
@@ -203,6 +219,7 @@ fk_twoyears,国际,1943,,,,,frb1943jun,p. 511,If its debit balance has exceeded 
 fk_5pct,国际,1943,,5,,,frb1943jun,p. 511,it shall be entitled to reduce the value of its currency in terms of bancor provided that the reduction shall not exceed 5 per cent without the consent of the Governing Board,
 fk_ultimate,国际,1943,,,,,frb1943jun,p. 512,whose credit balance has exceeded ha/f of its quota on the average of at least a year shall discuss with the Governing Board (but shall retain the ultimate decision in its own hands) what measures would be appropriate to restore the equilibrium of its international balances,'ha/f' is the OCR's reading of 'half'
 fs_44,国际,1944,,44,,,frb1944sep,p. 850,At this meeting there were representatives of forty-four United and Associated Nations.,
+fs_byline,国际,1944,,,,,frb1944sep,p. 850,by E. A. GotpENWEISER and Auice BourNEUF Diwision of Research and Statistics,"'GotpENWEISER', 'Auice BourNEUF' and 'Diwision' as the OCR prints the byline: E. A. Goldenweiser and Alice Bourneuf, Division of Research and Statistics"
 fs_denmark,国际,1944,,,,,frb1944sep,p. 850,the Danish Minister to the United States was present in his personal capacity.,
 fs_1pct,国际,1944,,1,,,frb1944sep,p. 852,This range in the case of spot exchange transactions is one per cent above and below par.,
 fs_10pct,国际,1944,,10;10;72,,,frb1944sep,p. 851,"For any proposed changes beyond 10 per cent the Fund has a right to concur or object, but on changes which do not exceed a further 10 per cent the Fund must either concur or object within 72 hours if the member so requests.",
@@ -217,6 +234,7 @@ fs_deterrent,国际,1944,,,,,frb1944sep,p. 859,intended to act as serious deterr
 fs_purpose,国际,1944,,,,,frb1944sep,p. 859,one of the major purposes of the Fund which is to be in a position at all times to help any member to meet a temporary deficit in its balances of payments and give it time to correct maladjustments.,
 fs_notobliged,国际,1944,,,,,frb1944sep,p. 859,"no country is obliged to lend its currency to the Fund, since the total commitment of each country is limited to its original subscription to the Fund.",
 fs_scarce,国际,1944,,,,,frb1944sep,p. 859,declare the currency to be scarce and apportion its supply among member countries.,
+fs_limit,国际,1944,,,,,frb1944sep,p. 859,"Once a currency has formally been declared scarce, any member may limit the freedom of exchange transactions in that currency to the extent necessary to reduce the demand for that currency to the level of its supply.",
 fs_end,国际,1944,,,,,frb1944sep,p. 860,"But, in the end, such a scarcity can be eliminated only by the re-establishment of balance between the country’s exports and its imports.",
 fs_65,国际,1944,,65,,,frb1944sep,p. 860,unti] governments having 65 per cent of the total assigned quotas,'unti]' is the OCR's reading of 'until'
 fs_votes,国际,1944,,250;1;100000,,,frb1944sep,p. 862,"determined by giving each member country 250 votes plus one additional vote for each $100,000 of its quota.",
@@ -232,11 +250,14 @@ fa_capital,国际,1944,,,,,finalact1944,"p. 23 (PDF p. 24), Art. VI, sec. 3",,"r
 fa_quotas,国际,1944,,200;225;10;150;300;50;550;50;5;50;125;5;5;45;2.5;6;450;40;5;5;2.5;1;400;25;8;0.5;10;90;275;50;2;50;0.5;2;25;15;125;100;1200;1300;2750;15;15;60,百万美元,,finalact1944,"p. 40 (PDF p. 41), Schedule A",,the 45 members in the order printed; Denmark's quota is '*' (see fa_denmark); read on the page image; transcription: «SCHEDULE A Quotas (In millions of United States dollars) Australia 200 | Belgium 225 | Bolivia 10 | Brazil 150 | Canada 300 | Chile 50 | China 550 | Colombia 50 | Costa Rica 5 | Cuba 50 | Czechoslovakia 125 | Denmark * | Dominican Republic 5 | Ecuador 5 | Egypt 45 | El Salvador 2.5 | Ethiopia 6 | France 450 | Greece 40 | Guatemala 5 | Haiti 5 | Honduras 2.5 | Iceland 1 | India 400 | Iran 25 | Iraq 8 | Liberia .5 | Luxembourg 10 | Mexico 90 | Netherlands 275 | New Zealand 50 | Nicaragua 2 | Norway 50 | Panama .5 | Paraguay 2 | Peru 25 | Philippine Commonwealth 15 | Poland 125 | Union of South Africa 100 | Union of Soviet Socialist Republics 1200 | United Kingdom 1300 | United States 2750 | Uruguay 15 | Venezuela 15 | Yugoslavia 60»
 fa_denmark,国际,1944,,,,,finalact1944,"p. 40 (PDF p. 41), Schedule A, footnote",,read on the page image; transcription: «*The quota of Denmark shall be determined by the Fund after the Danish Government has declared its readiness to sign this Agreement but before signature takes place.»
 sn_taft,美国,1945,,2750000000;0.5;30,,,senate1945,p. 36,"We are putting up $2,750,000,000, more than half of the real money in the fund, and as far as I can see, with 30 percent voting power.",Senator Taft to Dean Acheson
+sn_paper,美国,1945,,,,,senate1945,p. 36,"it is not exactly waste paper, it is an obligation on the part of nations to pay who are unable to pay.",Senator Taft
 sn_acheson,美国,1945,,,,,senate1945,p. 36,We have voting power which is directly proportioned to the money which we put up.,Acheson's answer
 sn_wrong,美国,1945,,,,,senate1945,p. 36,"Your whole attitude seems to me to be wrong, both from an economic point of view and a political point of view.",Acheson to Taft
 sn_bank,美国,1945,,,,,senate1945,p. 54,"The bank is better safeguarded. The bank, we have a veto on the loans and dollars.",Senator Taft
 sn_string,美国,1945,,2750000000,,,senate1945,p. 54,"But in this case we hand over $2,750,000,000 without a string of any kind.",Senator Taft
 sn_white,美国,1945,,,,,senate1945,p. 73,the currency that is in the fund has no strings attached to it.,Harry D. White
+sn_acheson_title,美国,1945,,,,,senate1945,p. III,"Acheson, Dean, Assistant Secretary of State",the list of witnesses (Contents)
+sn_white_title,美国,1945,,,,,senate1945,p. III,"White, Hon. Harry D., Assistant Secretary of the Treasury",the list of witnesses (Contents)
 sn_better,美国,1945,,,,,senate1945,p. 73,It is better than the same currency in anybody else’s hands.,Harry D. White
 sn_norestrict,美国,1945,,,,,senate1945,p. 73,"in undertaking membership in this fund and depositing its money, agrees that it will put no such restrictions on that currency.",Harry D. White
 ar_aim,美国,1942,,,,,arfr1942,p. 9 (PDF p. 14),"funds from current income and from savings, and to depend as little as possible on the creation of additional bank credit.",
@@ -279,12 +300,16 @@ hu_military,苏联,1998,,8.7,,,harrison1998b,p. 18,Wartime deaths among military
 hu_normal,苏联,1998,,,,,harrison1998b,p. 18,but the latter figures includes normal mortality of several hundred thousand.,
 hu_planning,苏联,1998,,,,,harrison1998b,p. 4,"In World War II, the systems of planning, procurement, and rationing worked effectively.",
 hu_leningrad,苏联,1998,,1000000;0.4,,,harrison1998b,p. 18,"the siege of Leningrad where hunger and hunger-related causes carried off one million people, two-fifths of the city's prewar population.",
+hu_nkvd_two,苏联,1998,,,,,harrison1998b,p. 14,"Forced labourers in camps, colonies, and labour settlements under the NKVD either worked in NKVD establishments engaged in construction or mineral extraction, or were leased to other ministries.",
+hu_table78,苏联,1940,1940-1945,1940;5,,,harrison1998b,"p. 32, Table 7-8","The Soviet working population, 1940-5 (millions)",the heading of Table 7-8; its columns are the years 1940 to 1945
+hu_nkvd_est,苏联,1940,1940-1945,1.6;1.8;1.4;1.1;1.1;1.3,,,harrison1998b,"p. 32, Table 7-8 (B)",NKVD establishments 1.6 1.8 1.4 1.1 1.1 1.3,"the row of part (B), By type of establishment, of Table 7-8: the working population of NKVD establishments, millions, 1940 to 1945 (row hu_table78)"
 hf_postwar,英国,1992,,,,,harrison1992,p. 3,"some objections to heavier taxation would be overcome by introducing postwar credits (i.e. deferred pay), as a",
 hf_halfway,英国,1992,,,,,harrison1992,p. 4,halfway house between pure taxation and voluntary lending to government.,the sentence continues from p. 3 (hf_postwar)
 hf_three,英国,1940,,3,,,harrison1992,p. 4,this was a “three per cent war.”,"The Economist, 20 January 1940, as Harrison quotes it (indirect testimony)"
 hf_70,英国,1992,,70;0.5,,,harrison1992,p. 4,"During World War II, government spending averaged 70% of GDP, and half of it was financed out of general taxation.",
 hf_short,英国,1992,,0.333333;5;1956;223,,,harrison1992,p. 4,"Of the cumulative deficit, only one third was financed by short-term borrowing, and high-powered money accounted for little more than 5% of overall deficit finance (Sayers 1956: 223).",Sayers (1956) as Harrison reports it
-hf_imports,英国,1992,,1940;0.333333;0.25,,,harrison1992,p. 4,in 1940-1 up to one third of the budget deficit was financed by net imports (in later years the proportion stabilized at one quarter).,
+hf_imports,英国,1992,,1940;0.333333;0.25,,,harrison1992,p. 4,"domestic finance alone was insufficient, and in 1940-1 up to one third of the budget deficit was financed by net imports (in later years the proportion stabilized at one quarter).",
+hf_overseas,英国,1992,,,,,harrison1992,p. 4,the story would have been very different without Britain’s ability to draw upon overseas assets and Allied credits.,
 hf_germany,德国,1992,,80,,,harrison1992,p. 4,"While precise comparisons have not been attempted, it appears that Germany, where wartime government spending averaged more than 80% of national income, relied more on deficit finance to cover wartime expenditures, and more on short-term borrowing at higher interest rates, and on monetary emission, for finance of the deficit",
 hf_cash,英国,1992,,,,,harrison1992,p. 4,The cash stock no more than doubled,
 hf_foreign,德国,1992,,,,,harrison1992,p. 5,"Germany too relied heavily on foreign transfers (in this case, from the occupied territories).",
@@ -296,8 +321,10 @@ fm_rice,印度,1943,,1943,,,famine1945,p. 103,Shortage in the supply of rice in 
 fm_burma,印度,1942,,1942,,,famine1945,p. 103,"After the fall of Burma early in 1942, imports from that country ceased",
 fm_war,印度,1942,,1942;1943,,,famine1945,p. 103,"owing to its proximity to the fighting zone and its position as a base for military operations in Burma, the material and psychological repercussions of the war on the life of the people were more pronounced in 1942, and also in 1943, than elsewhere in India.",
 fm_prices,印度,1943,,5;6;1942,,,famine1945,p. 104,The Bengal Government failed to- secure control over supply and distribution and widespread famine followed a rise of prices to abnormal levels—to five to six times the prices prevailing in the early months of 1942.,'to-' as the OCR prints it
+fm_delay,印度,1943,,,,,famine1945,p. 104,There was delay in the establishment by the Government of India of a system of planned movement of supplies.,
 fm_prevented,印度,1945,,,,,famine1945,p. 104,"Famine, in the form in which it occurred, could have been prevented by resolute action at the right time to ensure the equitable distribution of available supplies.",
 fm_35,印度,1943,,1943;3.5,,,famine1945,p. 108,made an estimate of the total mortality in 1943—3*5 million deaths—-which has received wide publicity.,'3*5' is the OCR's reading of 3·5; the estimate of Professor K. P. Chattopadhyaya of Calcutta University
+fm_method,印度,1943,,10;0.666667,,,famine1945,p. 108,"This was based on surveys of sample groups in the worst famine areas, in which the mortality rate was 10 per cent, and it was assumed that two-thirds of the population of the province were equally affected",the method of the estimate of row fm_35
 fm_unsound,印度,1945,,,,,famine1945,p. 108,The method of investigation followed cannot he accepted as statisti¬ cally sound;,'he' as the OCR prints 'be'
 fm_15,印度,1943,,1.5,,,famine1945img,p. 110 (PDF p. 123),,the OCR reads 1·5 as '15'; read on the page image; transcription: «On this basis we must conclude that about 1·5 million deaths occurred as a direct result of the famine and the epidemics which followed in its train.»
 cy_head,美国,1975,,,,,census_y34,p. 1105 (PDF p. 39),,"read on the page image; transcription: «Series Y 339-342. Summary of Federal Government Finances: 1929 to 1970 [In billions of dollars. For years ending June 30. Data for 1929-1953 are consolidated cash statement figures; for 1954-1970, unified budget figures] Year | Receipts 339 | Outlays 340 | Surplus or deficit (-) 341 | Total gross Federal debt 342»"
@@ -331,10 +358,13 @@ imt_east,德国,1946,,,,,imtj30,PDF p. 77,most of the occupied countries of the 
 imt_quotas,德国,1946,,,,,imtj30,PDF p. 154,obtained and sent to Germany the laborers which were necessary to fill the quotas given thein by Sauckel.,'thein' as the OCR prints 'them'
 imt_poland,德国,1946,,,,,imtj30,PDF p. 77,The evidence of the widespread starvation among the Polish people in the Government-General indicates the rnthlessness and the severity with which the policy of exploitation was carried out.,'rnthlessness' as the OCR prints it
 imt_starved,德国,1941,,,,,imtj30,PDF p. 77,"The German armies were to be fed out of Soviet territory, even if ""many millions of people will be starved to death.""","the plan for the occupied territories of the USSR, as the Tribunal quotes it"
+imt_oldenburg,德国,1941,,,,,imtj30,PDF p. 77,"Before the attack on the U. S. S. R., an economic staff-Oldenburg-was organized to ensure the most efficient exploitation of Soviet territories.",the OCR prints the dashes around 'Oldenburg' as hyphens
+imt_agency,德国,1946,,,,,imtj30,PDF p. 77,"When attempts at suppression failed, a German purchasing agency was organized to make purchases for Germany on the black market, thus carrying out the assurance made by the defendant Goering",
 imt_deported,德国,1946,,,,,imtj30,PDF p. 64,"Whole populations were deported to Germany for the purposes of slave labor upon defense works, armament production and similar tasks connected with the war effort.",
 imt_plunder,德国,1946,,,,,imtj30,PDF p. 64,Public and private property was systematically plundered and pillaged in order t o enlarge the resources of Germany a t the expense of the rest of Europe.,the OCR spaces 't o' and 'a t'
 imt_sauckel,德国,1944,,1;1944;5000000;200000,,,imtj30,PDF p. 154,"Sauckel's statement on March 1,1944, that ""out of 5,000,000 foreign workers who arrived in Germany not even 200,000 came voluntarily.""","Sauckel's own statement at a meeting, quoted by the Tribunal"
 imt_accurate,德国,1946,,,,,imtj30,PDF p. 154,leave no doubt that it was substantially accurate.,
+imt_final,德国,1946,,,,,imtj30,PDF p. 127,"The RSHA played a leading part in the ""final solution"" of the Jewish question by the extermination of the Jews.",
 imt_6m,德国,1946,,6,,,imtj30,PDF p. 127,approximately 6 million Jews were murdered,
 nca2_12bn,德国,1938,,1;1938;12,,,nca2_30,"PDF p. 748, ch. XVI","The ""mefo"" bill system continued to be used until 1 April 1938, when 12 billion Reichsmarks of ""mefo"" bills were outstanding",
 loc_lerner,美国,,,1903;1982,,,loc_lerner34,authority record,"Lerner, Abba P. (Abba Ptachya), 1903-1982",
