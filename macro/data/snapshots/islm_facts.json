@@ -1,0 +1,296 @@
+{
+ "title": "Evidence for Chapter 33: Hicks's IS-LL (1937), the Oxford meeting of 1936, the American recession of 1937-38, Hansen (1939) and Pigou (1943), and the Bank of Japan in 1999-2001",
+ "source": "Econometrica vol. 5 (1937): the report of the Oxford meeting of the Econometric Society (September 1936), the list of those who attended, and Hicks, 'Mr. Keynes and the \"Classics\"' (April 1937); Keynes, The General Theory (1936); the Federal Reserve Bulletin (August 1936, January and February 1937, March and May 1938); Banking and Monetary Statistics 1914-1941 (1943); Historical Statistics of the United States (1975), series Y 339-341; Velde (2009); Romer (NBER Working Paper 3829, 1991); Roosevelt's press conference of 2 April 1937 and message to Congress of 14 April 1938 (The American Presidency Project); Eggertsson and Pugsley (2006); the Bank of Japan's statements of 12 February 1999, 21 September 1999 and 19 March 2001; Hansen (American Economic Review, March 1939); Pigou (Economic Journal, December 1943); Modigliani's Nobel biography (1985) and the Econometric Society's page of his article of 1944; the U.S. Treasury's page on Henry Morgenthau Jr.; the authority records of the Library of Congress and the Bibliothèque nationale de France; the terms of the sites of the Federal Reserve Board, the Federal Reserve Bank of Chicago and the Bank of Japan",
+ "url": "https://archive.org/download/sim_econometrica_1937_5/sim_econometrica_1937_5_djvu.txt",
+ "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or column, the source text verbatim, note",
+ "retrieved": "2026-10-23",
+ "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Econometrica vol. 5 (the report of the Oxford meeting, the list of those who attended, and Hicks's article): 'Copyright 1937 by the Econometric Society' (row hk_copyright); Hicks (1904-1989) is in copyright, so the chapter quotes short phrases only and paraphrases the rest; the snapshot keeps the sentences needed to check those phrases and the equations read on page images. Keynes (1883-1946): The General Theory (London: Macmillan, 1936) is in the public domain in the United Kingdom but may still be in copyright in the United States, so the chapter quotes it a sentence or less at a time. The Federal Reserve Bulletin, Banking and Monetary Statistics 1914-1941 (1943), Historical Statistics of the United States (1975), the pages of the U.S. Treasury and Roosevelt's press conference and message are works of the United States government and in the public domain. The Federal Reserve Board's site: 'Unless otherwise indicated, information on Board's website is in the public domain and may be copied and distributed without permission. Please cite to the Board as the source of the information.' (row fed_terms). The American Presidency Project: 'Online by Gerhard Peters and John T. Woolley, The American Presidency Project' (rows ap37_credit, ap38_credit). Velde (2009), Economic Perspectives of the Federal Reserve Bank of Chicago: the paper prints no reprint notice; the site's legal notice reads 'Copyright © 2026. All rights reserved.' (row vd_copyright) and 'Users may not reproduce, modify, publish, transmit, participate in the transfer or sale of, create derivative works from or in any way exploit any of the content, in whole or in part, of any copyrighted, trademarked or proprietary information owned by Federal Reserve Bank of Chicago, except as expressly authorized by the Federal Reserve Bank of Chicago.' (row vd_terms): short phrases only. NBER Working Paper 3829 (Romer 1991) prints no copyright line; short phrases only. Eggertsson and Pugsley (2006): the abstract page reads 'Copyright © 2006 Bank of Japan All Rights Reserved.' (row ep_copyright) and the paper 'DO NOT REPRINT OR REPRODUCE WITHOUT PERMISSION.' (row ep_reprint); the Bank of Japan's terms do not cover the site of its Institute for Monetary and Economic Studies (row bj_imes): short phrases only. The Bank of Japan's statements: 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row bj_terms). Hansen (1887-1975; American Economic Review, March 1939) and Pigou (1877-1959; Economic Journal, December 1943): the OCR texts of the issues print no copyright line; both are in copyright, so the chapter quotes short phrases only. Modigliani's biography on NobelPrize.org: 'Copyright © The Nobel Foundation 1985' (row nb_copyright): short phrases only; the Econometric Society's page gives only the title, issue and pages. The Library of Congress name authorities (id.loc.gov) are public data; the authority records of the Bibliothèque nationale de France (data.bnf.fr) are metadata reused under the Licence Ouverte (Open License).",
+ "used_in": [
+  33
+ ],
+ "fetch": "data/fetch/islm33.py",
+ "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+ "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch33.py; rows with an empty quotation are values or words read on a page image (sources hicks1937img, hansen1939img, census_y33), named as such in their notes, which give a transcription between « and ». The figures of Banking and Monetary Statistics (Tables 105, 107, 122 and 128) were read on page images and are kept in the snapshots bms_member_reserves_1935_1939, bms_reserve_requirements_1917_1941 and bms_rates_1936_1940; the rows bms_* here quote the titles and headnotes from the text layer of the same scan. The OCR texts keep their misreadings as printed and the notes name them: in Econometrica, 'JS' for IS (hk_is, hk_monetary), 'J' for I (hk_directly), 'C(z)' for C(i) (hk_invest), '2', 'pz', 'Py' and '7' for x, px, py and i in Meade's list of variables (ox_dependent), 'zbid.' for ibid. (ox_refs) and the misread names of the list of those who attended (ox_attend); in the Federal Reserve Bulletin, '331,' for 33⅓ (fb_331), 'diminsh' as printed (fa_deposits), ''and' and 'approxiimately' (fm_apr16), and a running head inside a sentence (fm_14bn); in Romer's working paper, the mixed brackets and 'Cordon' (rom92_hansen); in Hansen, '+' and '|' (hn_regimented); in Pigou, a running head inside a sentence (pg_vanish) and stray quotation marks (pg_unduly). Indirect testimony: Friedman and Schwartz (1963) through Romer (rows rom92_fs678, rom92_severe, rom92_steps: p. 678 and pp. 543-545) and through Velde (row vd_fs544: p. 544); Hansen (1938), Smithies and Gordon through Romer (rom92_hansen); Eccles's phrase 'pushing on a string' through Velde, who cites Meltzer (2003, p. 478) (vd_string); Currie, Calomiris and Wheelock, and Telser through Velde (vd_currie, vd_cause); Roosevelt's remark of 2 April 1937 through Eggertsson and Pugsley (ep_fdr) and in the transcript of the press conference (ap37_concerned). Modigliani's article of 1944 was not obtained (JSTOR answered with a bot check; archive.org has only the index of the volume); it is known here from his Nobel biography and from the Econometric Society's page. The Treasury's announcement of its gold policy is dated 21 December 1936 by the Bulletin of January 1937 (fj_dec21) and 22 December 1936 by the Treasury's press statement printed in the Bulletin of March 1938 (fr_dec22); the Bulletin of February 1937 dates the start of the programme 24 December 1936 (fb_dec24). Velde dates the peak of industrial production in May 1937 (vd_peakmay) and also measures the fall 'From its peak in July 1937' (vd_julypeak). The Bulletin of May 1938 puts excess reserves in August 1937 at $700,000,000 (fm_700m); Table 105 gives a monthly average of $750 million.",
+ "sources": {
+  "oxford1937": {
+   "url": "https://archive.org/download/sim_econometrica_1937_5/sim_econometrica_1937_5_djvu.txt",
+   "format": "txt",
+   "sha256": "7057e4f4454c8e83e8356496b5814829b110577575a8a62bf1f416a16bf516ce",
+   "version": "Econometrica, vol. 5 (1937), the OCR text of the Internet Archive's scan of the volume (item sim_econometrica_1937_5): 'Report of the Oxford Meeting, September 25-29, 1936' (no. 4, October 1937, pp. 361-383) and 'Attendance at the Oxford Meeting, September 25-29, 1936' (no. 2, April 1937, p. 197); pages from the running heads",
+   "retrieved": "2026-10-23"
+  },
+  "hicks1937": {
+   "url": "https://archive.org/download/sim_econometrica_1937_5/sim_econometrica_1937_5_djvu.txt",
+   "format": "txt",
+   "sha256": "7057e4f4454c8e83e8356496b5814829b110577575a8a62bf1f416a16bf516ce",
+   "version": "J. R. Hicks, 'Mr. Keynes and the \"Classics\"; A Suggested Interpretation', Econometrica 5(2), April 1937, pp. 147-159, in the same OCR text of the volume (sim_econometrica_1937_5); pages from the running heads",
+   "retrieved": "2026-10-23"
+  },
+  "hicks1937img": {
+   "url": "https://archive.org/download/sim_econometrica_1937_5/sim_econometrica_1937_5.pdf",
+   "format": "image",
+   "sha256": "4f1c9ceda694857f701a56f322dab1d4470389d1f82963cff37d962fb4c3a39f",
+   "version": "The PDF scan of the same volume, whose OCR garbles Hicks's equations: read on images rendered with pdftoppm, PDF pages 152, 153, 156 and 157 = pp. 148, 149, 152 and 153",
+   "retrieved": "2026-10-23"
+  },
+  "keynes1936": {
+   "url": "https://archive.org/download/in.ernet.dli.2015.115101/2015.115101.The-General-Theory-Of-Employment-Interest-And-Money_djvu.txt",
+   "format": "txt",
+   "sha256": "335c76562dc3a67e74a458d7bb1e8b23f2968f490987692d737ade41dd3b23d8",
+   "version": "J. M. Keynes, The General Theory of Employment, Interest and Money (London: Macmillan, 1936), the copy of the Digital Library of India on archive.org (item in.ernet.dli.2015.115101), OCR text; pages from the running heads",
+   "retrieved": "2026-10-22"
+  },
+  "frb1936aug": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1936-08_22_8/sim_federal-reserve-bulletin_1936-08_22_8_djvu.txt",
+   "format": "txt",
+   "sha256": "06a4d113e2c36ce0b55d49a967c6160b69b09dd5f5ffe9227d71e2b9130a24bd",
+   "version": "Federal Reserve Bulletin, August 1936 (vol. 22, no. 8): Review of the Month, pp. 613-617, with the Board's statement for the press of July 14, 1936; the OCR text on the Internet Archive (sim_federal-reserve-bulletin_1936-08_22_8). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "frb1937jan": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1937-01_23_1/sim_federal-reserve-bulletin_1937-01_23_1_djvu.txt",
+   "format": "txt",
+   "sha256": "37ddf20dd9697d579274d09caa4f152fe5b12a417ae618f9acf7fc6ca7a9940d",
+   "version": "Federal Reserve Bulletin, January 1937 (vol. 23, no. 1): Review of the Month, p. 1; the OCR text on the Internet Archive (sim_federal-reserve-bulletin_1937-01_23_1). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "frb1937feb": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1937-02_23_2/sim_federal-reserve-bulletin_1937-02_23_2_djvu.txt",
+   "format": "txt",
+   "sha256": "1039030f30dd99fab9c9a314fd1afb97a8f658aaed7d9e3ba3ef1a5a38e1d5c2",
+   "version": "Federal Reserve Bulletin, February 1937 (vol. 23, no. 2); the OCR text on the Internet Archive. Public domain.",
+   "retrieved": "2026-10-22"
+  },
+  "frb1938mar": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1938-03_24_3/sim_federal-reserve-bulletin_1938-03_24_3_djvu.txt",
+   "format": "txt",
+   "sha256": "37088ecdd4fa2e3b2e203a26cffb79ba58ae4efa23045e3c2577734c1dea4799",
+   "version": "Federal Reserve Bulletin, March 1938 (vol. 24, no. 3): Review of the Month, p. 181; the OCR text on the Internet Archive (sim_federal-reserve-bulletin_1938-03_24_3). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "frb1938may": {
+   "url": "https://archive.org/download/sim_federal-reserve-bulletin_1938-05_24_5/sim_federal-reserve-bulletin_1938-05_24_5_djvu.txt",
+   "format": "txt",
+   "sha256": "cc0c03c7978247b8fa2e00016982491f90487d7608d48276da7b03d74c71b7e4",
+   "version": "Federal Reserve Bulletin, May 1938 (vol. 24, no. 5): Review of the Month, pp. 343-344; the OCR text on the Internet Archive (sim_federal-reserve-bulletin_1938-05_24_5). Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "bms1943b": {
+   "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+   "format": "pdf",
+   "sha256": "ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e",
+   "version": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), the FRASER scan with its text layer: the titles and headnotes of Tables 105, 107, 122 and 128 (pp. 396, 400, 460 and 471) and the description of the bond yields (p. 429). The figures of the tables are read on page images (PDF pages 397, 401, 460 and 471) and kept in the snapshots bms_member_reserves_1935_1939, bms_reserve_requirements_1917_1941 and bms_rates_1936_1940. Public domain.",
+   "retrieved": "2026-10-23"
+  },
+  "census_y33": {
+   "url": "https://www2.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970/hist_stats_colonial-1970p2-chY.pdf",
+   "format": "image",
+   "sha256": "b24886badeabd00af3d8e8831701730618a1edb170a7966ec5549f5bc5daf1f7",
+   "version": "U.S. Bureau of the Census, Historical Statistics of the United States, Colonial Times to 1970 (1975), chapter Y, a scan without a text layer: series Y 339-342 read on the image of PDF page 39 = p. 1105 rendered with pdftoppm (the same file as census_y30 of alternatives_facts)",
+   "retrieved": "2026-10-23"
+  },
+  "velde2009": {
+   "url": "https://www.chicagofed.org/-/media/publications/economic-perspectives/2009/ep-4qtr2009-part2-velde-pdf.pdf",
+   "format": "pdf",
+   "sha256": "a27bbc2b69ca1cec37ba78c8a15c5c390e1027eb81205a3aaf8e7e2af4758be5",
+   "version": "Francois R. Velde, 'The recession of 1937-A cautionary tale', Federal Reserve Bank of Chicago, Economic Perspectives, 4th quarter 2009, pp. 16-37 (the PDF on the Chicago Fed's site; printed page = PDF page + 15)",
+   "retrieved": "2026-10-23"
+  },
+  "chicagofedlegal": {
+   "url": "https://www.chicagofed.org/utilities/legal-notices",
+   "format": "html",
+   "sha256": "3c1068769408383174735e6f8970e0481667b5e20613d23867cc110fa4d67a2b",
+   "version": "Federal Reserve Bank of Chicago, Legal notices (the terms of the site)",
+   "retrieved": "2026-10-23"
+  },
+  "nberw3829": {
+   "url": "https://www.nber.org/system/files/working_papers/w3829/w3829.pdf",
+   "format": "pdf",
+   "sha256": "3fd90e910a910594f5a253aed36e8e81408ba43012fefa3011384a57050ea019",
+   "version": "Christina D. Romer, 'What Ended the Great Depression?', NBER Working Paper 3829, September 1991 (published in the Journal of Economic History 52(4), December 1992, per the NBER page; the working paper is quoted). No copyright line is printed; short phrases only.",
+   "retrieved": "2026-10-22"
+  },
+  "app1937": {
+   "url": "https://www.presidency.ucsb.edu/documents/excerpts-from-the-press-conference-110",
+   "format": "html",
+   "sha256": "743a3ce511be0c78bdff0dbfcbfa383c4d73ebfd0c78fc40d937eb3dfdbacbaf",
+   "version": "Franklin D. Roosevelt, Excerpts from the Press Conference, April 2, 1937; The American Presidency Project (Gerhard Peters and John T. Woolley)",
+   "retrieved": "2026-10-23"
+  },
+  "app1938": {
+   "url": "https://www.presidency.ucsb.edu/documents/message-congress-stimulating-recovery",
+   "format": "html",
+   "sha256": "0499a6048cf550a3c42039f43c10ca2885e60b20a51a8fc56a6d5be4f865b2b3",
+   "version": "Franklin D. Roosevelt, Message to Congress on Stimulating Recovery, April 14, 1938; The American Presidency Project (Gerhard Peters and John T. Woolley)",
+   "retrieved": "2026-10-23"
+  },
+  "eggertsson2006": {
+   "url": "https://www.imes.boj.or.jp/research/abstracts/english/me24-s1-8.html",
+   "format": "html",
+   "sha256": "864079677c85751de8899558197bc6711e8363339d175353d86a04ad11374b5c",
+   "version": "Gauti B. Eggertsson and Benjamin Pugsley, 'The Mistake of 1937: A General Equilibrium Analysis', Monetary and Economic Studies 24(S-1), December 2006: the abstract page of the Bank of Japan's Institute for Monetary and Economic Studies",
+   "retrieved": "2026-10-23"
+  },
+  "eggertsson2006pdf": {
+   "url": "https://www.imes.boj.or.jp/research/papers/english/me24-s1-8.pdf",
+   "format": "pdf",
+   "sha256": "bad2722cd58b2c81c929706817670470439d149e576cc754a3412b0f75980cc5",
+   "version": "The paper itself (Monetary and Economic Studies 24(S-1), December 2006, pp. 151-190; printed page = PDF page + 150)",
+   "retrieved": "2026-10-23"
+  },
+  "boj1999a": {
+   "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_1999/k990212c.htm",
+   "format": "html",
+   "sha256": "1392f032aaefbaf0f49b2bf5852e7699b6542b0e3b5d06871192b5fa9e120ab5",
+   "version": "Bank of Japan, 'Change of the Guideline for Money Market Operations', February 12, 1999",
+   "retrieved": "2026-10-23"
+  },
+  "boj1999b": {
+   "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_1999/k990921a.htm",
+   "format": "html",
+   "sha256": "b51bbf0e8fe29584fadcb8622c6a379b67a75879382e7a5643939a91881958ca",
+   "version": "Bank of Japan, 'On the Current Monetary Policy', September 21, 1999",
+   "retrieved": "2026-10-23"
+  },
+  "boj2001": {
+   "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2001/k010319a.htm",
+   "format": "html",
+   "sha256": "dbbf535353e472fcdd5c65698d0dff298505c55bc39427575b60b98268878d5a",
+   "version": "Bank of Japan, 'New Procedures for Money Market Operations and Monetary Easing', March 19, 2001",
+   "retrieved": "2026-10-23"
+  },
+  "bojterms": {
+   "url": "https://www.boj.or.jp/en/copyright.htm",
+   "format": "html",
+   "sha256": "2e6f9c30181f0fab5b33ec78561fea8e9c0c471fc2494166707e6f4de2c40dec",
+   "version": "Bank of Japan, 'Copyright, Disclaimer, and Other Related Matters' (the terms of the site)",
+   "retrieved": "2026-10-23"
+  },
+  "hansen1939": {
+   "url": "https://archive.org/download/sim_american-economic-review_1939-03_29_1/sim_american-economic-review_1939-03_29_1_djvu.txt",
+   "format": "txt",
+   "sha256": "9205d02fa9363f07d4722d0535d8fed45b4c4bed61fbe0aac1438b57e4641a16",
+   "version": "Alvin H. Hansen, 'Economic Progress and Declining Population Growth', American Economic Review 29(1), March 1939, pp. 1-15 (presidential address of 28 December 1938), the OCR text of the Internet Archive's scan of the issue; pages from the running heads",
+   "retrieved": "2026-10-23"
+  },
+  "hansen1939img": {
+   "url": "https://archive.org/download/sim_american-economic-review_1939-03_29_1/sim_american-economic-review_1939-03_29_1.pdf",
+   "format": "image",
+   "sha256": "c17aee3ffef23ea48f4437e89fec4a44b610d7cbd35d3ec2479cd6f42f7ca572",
+   "version": "The PDF scan of the same issue, read on images rendered with pdftoppm where the OCR is garbled: pp. 2, 4 and 14",
+   "retrieved": "2026-10-23"
+  },
+  "pigou1943": {
+   "url": "https://archive.org/download/sim_economic-journal_1943-12_53_212/sim_economic-journal_1943-12_53_212_djvu.txt",
+   "format": "txt",
+   "sha256": "ff9bb7f23bc652afbd3f4e90277ce7d6ad4a8263c588b1d993aeda1335527504",
+   "version": "A. C. Pigou, 'The Classical Stationary State', Economic Journal 53(212), December 1943, pp. 343-351, the OCR text of the Internet Archive's scan of the issue; pages from the running heads",
+   "retrieved": "2026-10-23"
+  },
+  "nobel1985": {
+   "url": "https://www.nobelprize.org/prizes/economic-sciences/1985/modigliani/biographical/",
+   "format": "html",
+   "sha256": "9df04042ee156e5bab67652c49a00b8348c234fc2a1542e7a246d04eeded3f7e",
+   "version": "Franco Modigliani, Biographical (Les Prix Nobel 1985), NobelPrize.org. The page prints the day it is served ('Fri. 23 Oct 2026'), so its hash changes from day to day; the quotations are searched all the same",
+   "retrieved": "2026-10-23"
+  },
+  "es1944": {
+   "url": "https://www.econometricsociety.org/publications/econometrica/1944/01/01/liquidity-preference-and-theory-interest-and-money",
+   "format": "html",
+   "sha256": "6a5a065d7eb8742e8be695673ec755575b762d0f4f8420346e2394645dc00a30",
+   "version": "The Econometric Society's page of Modigliani's article (Econometrica 12(1), January 1944, pp. 45-88)",
+   "retrieved": "2026-10-23"
+  },
+  "fedterms": {
+   "url": "https://www.federalreserve.gov/disclaimer.htm",
+   "format": "html",
+   "sha256": "53cf29a3d547f12bbcf595092bd10fdf68c803d519d90e282c77148af861ad2d",
+   "version": "Board of Governors of the Federal Reserve System, Website Policies (the terms of the site)",
+   "retrieved": "2026-10-23"
+  },
+  "treasury_morgenthau": {
+   "url": "https://home.treasury.gov/about/history/prior-secretaries/henry-morgenthau-jr-1934-1945",
+   "format": "html",
+   "sha256": "1c5fd11933946025cc9203697aa59eb512c739a007cc301a94af756fa1c4be82",
+   "version": "U.S. Department of the Treasury, 'Henry Morgenthau Jr. (1934 - 1945)', prior secretaries",
+   "retrieved": "2026-10-23"
+  },
+  "loc_meade33": {
+   "url": "https://id.loc.gov/authorities/names/n80015713.madsrdf.json",
+   "format": "json",
+   "sha256": "6630250b84ebdba1f0967fd920dbe6c367d6a12a4f900a3cfdb33e209e745729",
+   "version": "Library of Congress, Name Authority File, record n80015713 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_harrod33": {
+   "url": "https://id.loc.gov/authorities/names/n79109072.madsrdf.json",
+   "format": "json",
+   "sha256": "db3acbbd82f3330ab15139f14ba678d4b7e73cb33cec2811343f8024689e6635",
+   "version": "Library of Congress, Name Authority File, record n79109072 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_hicks33": {
+   "url": "https://id.loc.gov/authorities/names/n80002287.madsrdf.json",
+   "format": "json",
+   "sha256": "927ebf5a05714bfd79b5c43bc4c2c32f0f3d6b973a0da3259ab407998a2cba87",
+   "version": "Library of Congress, Name Authority File, record n80002287 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_frisch33": {
+   "url": "https://id.loc.gov/authorities/names/n88065870.madsrdf.json",
+   "format": "json",
+   "sha256": "f6953ca94ab087b7e39bafe993c48843125fd659bb2be094edb1fe48eb039d03",
+   "version": "Library of Congress, Name Authority File, record n88065870 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_tinbergen33": {
+   "url": "https://id.loc.gov/authorities/names/n80036618.madsrdf.json",
+   "format": "json",
+   "sha256": "f00c4e6b9397d5b239c5ebdb56e5620721225cac63d767b0fd881ec6bcdab3a8",
+   "version": "Library of Congress, Name Authority File, record n80036618 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_hansen33": {
+   "url": "https://id.loc.gov/authorities/names/n79118940.madsrdf.json",
+   "format": "json",
+   "sha256": "876df5b4865f683f865acb5352d939fcaee131af2f4952a5977c0cab8b45cb8a",
+   "version": "Library of Congress, Name Authority File, record n79118940 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_modigliani33": {
+   "url": "https://id.loc.gov/authorities/names/n78090530.madsrdf.json",
+   "format": "json",
+   "sha256": "2cdbb6a85dd3e888f9267cbe19d19ba59d8d73a3026d5e7e253d33bf120a0721",
+   "version": "Library of Congress, Name Authority File, record n78090530 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_eccles33": {
+   "url": "https://id.loc.gov/authorities/names/n90679089.madsrdf.json",
+   "format": "json",
+   "sha256": "95ba45434b8f014759392ea993b1d941bb5466ecc18f04aa4aeefb19e09d75e9",
+   "version": "Library of Congress, Name Authority File, record n90679089 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_morgenthau33": {
+   "url": "https://id.loc.gov/authorities/names/n50006116.madsrdf.json",
+   "format": "json",
+   "sha256": "12c1f75f86a014c353cc9b3fab420e11cc95a30c984baaa0e56435db58e24c89",
+   "version": "Library of Congress, Name Authority File, record n50006116 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "loc_hayami33": {
+   "url": "https://id.loc.gov/authorities/names/n83072460.madsrdf.json",
+   "format": "json",
+   "sha256": "c24372c69419497dd0f305fff67f372b5a8b59c1a458d1ab3b5d1a958c57518c",
+   "version": "Library of Congress, Name Authority File, record n83072460 (MADS/RDF JSON from id.loc.gov). Public data.",
+   "retrieved": "2026-10-23"
+  },
+  "bnf_roosevelt28": {
+   "url": "https://data.bnf.fr/ark:/12148/cb119835923",
+   "format": "html",
+   "sha256": "74c42af3e61f120042fbdc9b65894f9fbdff5d85cb0c70f662d52af157b932b2",
+   "version": "Bibliothèque nationale de France, data.bnf.fr, authority record of Franklin Delano Roosevelt (dates of life); metadata reused under the Licence Ouverte (Open License).",
+   "retrieved": "2026-10-22"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "title": "Reserve balances of all member banks of the Federal Reserve System, total, required and excess, monthly 1935-1939 (Banking and Monetary Statistics, Table 105)",
+ "source": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 105, 'Member bank reserve balances, required reserves, excess reserves, and borrowings, by class of bank, monthly, 1929-1941' (p. 396), the columns of all member banks; FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF page 397",
+ "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+ "series": "year; month (1-12); total_m: reserve balances, total; required_m: required reserves; excess_m: excess reserves; all member banks, monthly averages of daily figures, millions of dollars",
+ "retrieved": "2026-10-23",
+ "license": "Public domain (a publication of the Board of Governors of the Federal Reserve System, 1943).",
+ "used_in": [
+  33
+ ],
+ "fetch": "data/fetch/islm33.py (read on page images; see notes)",
+ "notes": "Read by eye on images of PDF page 397 rendered with pdftoppm (crops at 300 and 600 dpi); the headnote reads '[Monthly averages of daily figures. In millions of dollars]' (row bms_t105u of islm_facts). The scan prints 6 and 9 much like 0, so every month was checked twice: total = required + excess within 1 (the parts are rounded separately; asserted by checks/check_ch33.py), and each cell against the number the text layer of the page prints at the same place (pdftotext -bbox), where the layer has one. The two disagree in three cells, and in each the identity decides: September 1938, total 8,196 (the identity and the layer; a first reading of the image gave 8,190); August 1935, required 2,596 (the layer reads 2,506); May 1938, required 5,062 (the layer reads 5,082). The annual mean of excess reserves in 1936 (2,512.7) agrees with the Federal Reserve Bulletin's annual average used by Chapter 28 (2,512, depressionus_annual); both come from the Board, so the agreement is consistency, not an independent witness."
+}

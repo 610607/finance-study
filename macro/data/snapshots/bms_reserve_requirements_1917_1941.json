@@ -1,0 +1,13 @@
+{
+ "title": "Reserve requirements of member banks of the Federal Reserve System, per cent of deposits, 21 June 1917 - 31 December 1941 (Banking and Monetary Statistics, Table 107)",
+ "source": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 107, 'Member bank reserve requirements, June 21, 1917-December 31, 1941' (p. 400); FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF page 401",
+ "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+ "series": "start, end: the period in force (inclusive); central_reserve_city, reserve_city, country: per cent of net demand deposits at member banks in central reserve cities, in reserve cities and elsewhere ('country' banks); time: per cent of time deposits, all member banks",
+ "retrieved": "2026-10-23",
+ "license": "Public domain (a publication of the Board of Governors of the Federal Reserve System, 1943).",
+ "used_in": [
+  33
+ ],
+ "fetch": "data/fetch/islm33.py (read on page images; see notes)",
+ "notes": "Read by eye on an image of PDF page 401 rendered with pdftoppm; the printed fractions (19½, 22¾, 17½, 10½, 12¼, 4½, 5¼) are written as decimals. The headnote reads '[Per cent of deposits' (row bms_t107u of islm_facts). The dates of the three increases (16 August 1936, 1 March and 1 May 1937) and of the reduction (16 April 1938) agree with the Federal Reserve Bulletin (rows fa_raise, fb_halves and fm_apr16 of islm_facts: 'after the close of business on August 15, 1936', 'as of the opening of business on March 1, 1937' and 'on May 1', 'effective April 16'), an account by the same Board: consistency, not an independent witness. The requirements in force from 1 May 1937 are twice those in force until 15 August 1936 in each of the four columns."
+}

@@ -1,0 +1,13 @@
+{
+ "title": "Yields of United States Treasury bills and long-term Government bonds, monthly 1936-1940 (Banking and Monetary Statistics, Tables 122 and 128)",
+ "source": "Board of Governors of the Federal Reserve System, Banking and Monetary Statistics 1914-1941 (Washington, 1943), Table 122, 'Yields on short-term United States Government securities, monthly, 1920-1941' (p. 460), column 'Treasury bills (average rate on new issues offered within period)', and Table 128, 'Bond yields, by type of security, monthly, 1919-1941' (p. 471), column 'U.S. Government'; the description of the series on p. 429; FRASER, https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf (SHA-256 ca7b8e3161d21ecf3bd804accd901eb3234397146f5cd091d6388e1027d2387e), PDF pages 460 and 471",
+ "url": "https://fraser.stlouisfed.org/files/docs/publications/bms/1914-1941/BMS14-41_complete.pdf",
+ "series": "year; month (1-12; empty for the yearly average that Table 122 prints); tbill_pct: average rate on new issues of Treasury bills offered within the month (or the year), per cent per annum, empty where the table prints footnote 3 'Negative yield.'; tbill_negative: 1 for those months; govt_bond_pct: yield of partially tax-exempt U.S. Government bonds due or callable after twelve years, unweighted average, per cent per annum (monthly rows only)",
+ "retrieved": "2026-10-23",
+ "license": "Public domain (a publication of the Board of Governors of the Federal Reserve System, 1943).",
+ "used_in": [
+  33
+ ],
+ "fetch": "data/fetch/islm33.py (read on page images; see notes)",
+ "notes": "Read by eye on images of PDF pages 460 and 471 rendered with pdftoppm. Table 122 prints the bill rates with three decimals ('.099') and the footnote mark 3, 'Negative yield.', in January, March, October and December 1940 (row bms_negative of islm_facts); its yearly averages for 1936-1939 equal the means of the twelve months within 0.0005 (asserted by checks/check_ch33.py). The government bond column of Table 128 agrees month by month with the numbers that the text layer of the same page prints, where the layer has the column (it drops it in a few months). The description on p. 429 (row bms_bonddef of islm_facts): the averages are 'of all such bonds due or callable after twelve years' from 15 October 1925. Chapter 28's depressionus_annual gives the Federal Reserve Bulletin's annual average yield of long-term Treasury bonds; this chapter uses Table 128."
+}

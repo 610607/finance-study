@@ -1,0 +1,14 @@
+{
+ "title": "Industrial production of the United States, total index, monthly 1929-1941 (2017 = 100, seasonally adjusted): the Federal Reserve Board's G.17 series B50001",
+ "source": "Board of Governors of the Federal Reserve System, G.17 Industrial Production and Capacity Utilization, data download file ip_sa.txt (seasonally adjusted indexes), series B50001 'Total index', the copy served on 23 October 2026",
+ "url": "https://www.federalreserve.gov/releases/g17/ipdisk/ip_sa.txt",
+ "sha256": "fb8545c19fc209938e97fb1315f554711efa619451a515fa136bbf12aef00741",
+ "series": "year; month (1-12); ip_2017_100: the total index of industrial production, seasonally adjusted, 2017 = 100, as the file prints it (four decimals)",
+ "retrieved": "2026-10-23",
+ "license": "Public domain: 'Unless otherwise indicated, information on Board's website is in the public domain and may be copied and distributed without permission. Please cite to the Board as the source of the information.' (https://www.federalreserve.gov/disclaimer.htm; row fed_terms of islm_facts).",
+ "used_in": [
+  33
+ ],
+ "fetch": "data/fetch/frb_g17_ip33.py",
+ "notes": "The file is replaced with each monthly release and the history is revised from time to time; data/fetch/frb_g17_ip33.py compares a newer copy with this snapshot month by month. The fixed-width rows of the file are: the series code in quotation marks, the year, twelve monthly values; the rows of B50001 begin in 1919. The mean of the twelve months of 2017 is 100 within 0.01 (asserted by the fetch script). In this copy the index of 1937 is highest in May (8.3745) and that of 1938 lowest in May (5.6548): a fall of 32.5 per cent; from July 1937 (8.3206) the fall is 32.0 per cent. Velde (2009, p. 16) dates the peak of the Board's index in May 1937 and gives a fall of 32 per cent 'From its peak in July 1937 to its trough in May 1938' (p. 17; rows vd_peakmay and vd_julypeak of islm_facts); the vintage he used is not named."
+}
