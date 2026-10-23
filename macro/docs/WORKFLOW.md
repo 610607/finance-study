@@ -110,5 +110,5 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   author decided on 2026-10-21 that the remaining chapters are written in this workflow. Merged into main on
   2026-10-22 at the author's request; Chapter 27 (`ch:interwar`) written and reviewed 2026-10-22 and merged into main; at the author's request
   work continues until Book 2 is complete; Chapter 28 (`ch:depressionus`), Chapter 29 (`ch:depressionworld`) and
-  Chapter 30 (`ch:alternatives`) written and reviewed 2026-10-22; Chapters 31 (`ch:soviet`), 32 (`ch:generaltheory`), 33 (`ch:islm`) and 34 (`ch:warfinance`) 2026-10-23. Part 5, and with it Book 2 (Parts 4 and 5), is complete (2026-10-23; not yet
-  merged into main).
+  Chapter 30 (`ch:alternatives`) written and reviewed 2026-10-22; Chapters 31 (`ch:soviet`), 32 (`ch:generaltheory`), 33 (`ch:islm`) and 34 (`ch:warfinance`) 2026-10-23. Part 5, and with it Book 2 (Parts 4 and 5), is complete (2026-10-23; merged into
+  main the same day at the author's request).
