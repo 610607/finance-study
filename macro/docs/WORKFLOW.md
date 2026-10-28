@@ -112,3 +112,5 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   work continues until Book 2 is complete; Chapter 28 (`ch:depressionus`), Chapter 29 (`ch:depressionworld`) and
   Chapter 30 (`ch:alternatives`) written and reviewed 2026-10-22; Chapters 31 (`ch:soviet`), 32 (`ch:generaltheory`), 33 (`ch:islm`) and 34 (`ch:warfinance`) 2026-10-23. Part 5, and with it Book 2 (Parts 4 and 5), is complete (2026-10-23; merged into
   main the same day at the author's request).
+
+- Part 6 (第 35—43 章): notes in `docs/agent_prompts/part6_notes.md`; written sequentially in the order 35, 36, …, 43, started 2026-10-28 at the author's request; Chapter 35 (`ch:reconstruction`) written and reviewed 2026-10-28; at the author's request work pauses after Chapter 36.
