@@ -292,3 +292,25 @@ to Part 6. Read them all before writing. In short:
 - Labels: `sec:brettonwoods-…`, `eq:brettonwoods-…`, `fig:brettonwoods_…`, `tab:brettonwoods-…`,
   `ex:brettonwoods-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 36
+- A secondary account's number is a claim to check against the primary record when one is in the
+  cache. Chapter 36's draft took Bordo's "$35.20 (the U.S. Treasury's buying price)" and his "G10"
+  agreement of October 1960; the BIS annual reports of 1961 and 1962 give the London quotations of
+  $35.20–35.25, the Treasury's selling price of $35.0875 and "the central banks which meet monthly
+  at the B.I.S." (the group of ten only came with the borrowing agreement of December 1961).
+- Read a source's sentence to its end before using its first half: Garber's point that US
+  residents' claims "could have been shifted abroad and quickly used to run the system" is the
+  opposite of a harmless aside about gold ownership being illegal.
+- A minister who reads out his earlier words is explaining them, not being caught by them
+  (Callaghan, 20 November 1967, c. 936): do not frame reported speech as irony.
+- A worked example's side remark must hold in every case the example covers, and agree with the
+  chapter's self-checks: converting dollars into gold raises the cover ratio when it is above 1
+  and lowers it when it is below 1.
+- Two figures for "the same" share may measure different things (the gold pool: 50% the United
+  States was to provide, 60% of the gold actually sold); check what each counts before calling it
+  a disagreement.
+- A compare box's cells must belong to the regimes they compare: Britain's 1925 return is the
+  interwar standard (Chapter 27), not the classical one; use the resumption of 1821 (Chapter 19).
+- An inference drawn from an institution's list of facts is the book's, not the institution's: put
+  the citation after the facts and mark the inference (本书的解读).

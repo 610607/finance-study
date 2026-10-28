@@ -1104,6 +1104,8 @@ def triffin_section(F, Y, Q):
     dec, new = F["b68_newgold"]
     has("b68_newgold", "During the same period")
     assert page("b68_newgold") == page("b68_5056")
+    said("国际清算银行 1968 年说，“黄金存量上升", bis_year("bis1968"))
+    assert Q["b68_indicator"].startswith("Changes in the gold reserves")
     said("1950—1956 年，美国的黄金平均每年减少约 4 亿美元", y50, 1956, dec * 1e6)
     said("新增的货币黄金平均每年 4.4 亿美元", new * 1e6)
     has("b68_newgold", "little more than half of the net demand", "This was not because of doubts")
@@ -1175,8 +1177,8 @@ def triffin_section(F, Y, Q):
     said("国际清算银行 1970 年年报", bis_year("bis1970"))
     # the compare box and the pitfall
     said("只有美元，每盎司 35 美元，只对外国的货币当局", F["bt_us"][1])
-    y25 = int(re.search(r"英国 (\d{4}) 年按战前平价回到黄金", chapter("ch27_interwar")).group(1))
-    said("英国 1925 年按战前的平价恢复", y25)
+    y21 = int(re.search(r"英国在 (\d{4}) 年按旧的平价回到了黄金", chapter("ch19_bullion")).group(1))
+    said("停兑以后按旧的平价恢复，英国 1821 年就是这样", y21)
     said("能按 35 美元换黄金的", F["bt_us"][1])
     y60b = F["bo_oct60b"][0]
     said("1960 年秋天金价上涨以后", y60b)
@@ -1521,7 +1523,7 @@ def deeper(F, Y, Q):
          fr[25], fr[26], mon("b70_fr_deval", "August"), F["b70_fr_deval"][0], de[22], de[23], mon("b70_de_reval", "October"),
          F["b70_de_reval"][0])
     has("ga_42", "reaching as high as $42.00 per ounce")
-    said("两级市场开张以后私人市场金价的高点，Garber 说最高到 42 美元，国际清算银行记下 1969 年 3 月将近 44 美元",
+    said("黄金分成两个市场以后，私人市场金价的高点，Garber 说最高到 42 美元，国际清算银行记下 1969 年 3 月将近 44 美元",
          F["ga_42"][0], F["b70_gold39"][1], mon("b70_gold39", "March"), F["b70_gold39"][3])
     o68, o72 = REVISED[("official", 1967)]
     assert F["sa68_official"][9] == o68 and F["sa72_official"][4] == o72
@@ -1747,7 +1749,7 @@ EVENTS = [("在\\secref{sec:warfinance-plans}", "ch34_warfinance", "\\label{sec:
           ("印度等地把储备存在伦敦（\\chref{ch:periphery}）", "ch24_periphery", "印度存在伦敦"),
           ("第二次世界大战以后，各国把美元当作储备，正是\\chref{ch:periphery}讲过的", "ch24_periphery",
            "第二次世界大战以后，各国把美元当作储备，布雷顿森林体系就建立在这个安排上"),
-          ("英国 1925 年按战前的平价恢复（\\chref{ch:interwar}）", "ch27_interwar", "英国 1925 年按战前平价回到黄金"),
+          ("英国 1821 年就是这样（\\secref{sec:bullion-resumption}）", "ch19_bullion", "英国在 1821 年按旧的平价回到了黄金"),
           ("式~\\eqref{eq:interwar-pyramid}里的$R=G+F$", "ch27_interwar", "记一国中央银行的黄金为$G$，外汇为$F$"),
           ("马歇尔计划与美国的其他援助（\\chref{ch:reconstruction}）", "ch35_reconstruction", "\\label{ch:reconstruction}"),
           ("德国马克与日元也有了对美元的固定汇率（\\chref{ch:reconstruction}）", "ch35_reconstruction",
