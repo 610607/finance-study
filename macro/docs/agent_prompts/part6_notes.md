@@ -193,3 +193,102 @@ to Part 6. Read them all before writing. In short:
   `tab:reconstruction-…`, `ex:reconstruction-…`.
 - Length: Chapters 30–33 have 7,400–7,900 characters of main text; Ch 34 has 10,700, which the reviewer
   found long. Aim for 8,000–9,000; cut retelling of neighbours first.
+
+### Carried over from the editor's round on Chapter 35
+- When two official histories disagree, read both in full before choosing: who decided something is
+  often only in the more detailed one (the 360-yen rate: the Ministry of Finance's history says GHQ
+  "floated" 300 or 400; the Bank of Japan's centenary history, pp. 254–256, shows Dodge and GHQ at
+  330 and Washington's National Advisory Council insisting on 360). Name the disagreement in the
+  史料说明.
+- A worked example's reading must be the source's own mechanism. Chapter 35's draft read a price
+  rise smaller than the money rise as $k$ rising; Buchheim says velocity was high and still rising.
+  Check the starting point of a series before reading a ratio (the end-June money stock left out
+  the free-account credits); when the start is uncertain, compute both extremes.
+- A conversion or write-off has two sides: what creditors lose, debtors gain. State both, and the
+  later law that took part of the gain back, if any.
+- "照 Buchheim 的叙述", "按财务省的政策史" and the like belong to judgments, interpretations and
+  disputed facts. A plain number or date carries its cite alone (the draft had 58 such frames; the
+  editor removed 18).
+- Two works that cite each other are one line of evidence (Ritschl 1985 and Buchheim 1988).
+- Life dates: when the Library of Congress, the GND and data.bnf.fr have no record, historic
+  Hansard's people pages (api.parliament.uk/historic-hansard/people/…) give MPs' dates of birth; a
+  Wikidata description is not an authority record. Write "生卒年未详" when the death year cannot be
+  verified.
+
+## 第 36 章 `ch:brettonwoods` 布雷顿森林体系的运行 (`zh/ch36_brettonwoods.tex`)
+
+- Neighbours:
+  - Ch 34 owns the design: the Clearing Union against White's Fund, the conference of July 1944 and
+    the Articles (quotas, par values, Article IV's fundamental disequilibrium, the scarce-currency
+    clause, capital controls as a member's right): refer back to `sec:warfinance-plans` and
+    `sec:warfinance-bw` in one clause each; do not retell.
+  - Ch 35 owns reconstruction: the Marshall Plan and counterpart funds, the Deutsche Mark of 1948
+    (its rate of 30 cents taken over from the Reichsmark) and the 360-yen rate of April 1949 (who
+    decided it: `sec:reconstruction-japan`). This chapter takes the dollar shortage, the EPU and the
+    1949 devaluations from there (Ch 35's FORWARD_REFS row). Do not retell the Marshall Plan.
+  - Ch 37 owns the theory: Mundell–Fleming, the trilemma and optimum currency areas, and Canada's
+    float of 1950–62 (its case). Here the trilemma is used as a description at most, with
+    `\chref{ch:mundell}`.
+  - Ch 46 owns the end: 15 August 1971, the Smithsonian agreement and the move to floating in 1973.
+    This chapter ends with the pressures of 1968–71 (the two-tier gold market of March 1968, the
+    franc and the mark in 1969) and hands over Ch 37's question.
+  - Ch 76 owns the currency hierarchy today and the "exorbitant privilege" as a present-day debate;
+    here the phrase and the French critique of the 1960s only.
+- Owns:
+  - how the system worked from 1946: the IMF's par values and drawings in practice, capital controls,
+    the dollar shortage and the Anglo-American loan of 1946, the sterling convertibility crisis of
+    July–August 1947, the devaluations of September 1949 (sterling from $4.03 to $2.80 and the
+    others that followed);
+  - the EPU (1950–58) as the road back to convertibility, and the return to current-account
+    convertibility at the end of December 1958 (Article VIII status for the main European currencies
+    in 1961), and what changed afterwards (capital flows through convertible current accounts, the
+    first speculative attacks, the mark's revaluation of March 1961);
+  - Triffin (1960) and the dilemma: the world's reserves grow only if the United States runs
+    deficits; the deficits erode confidence in the dollar's gold value. The US gold stock against
+    dollar liabilities to foreigners (official and total), with the year the lines cross;
+  - the defence of the dollar: the London gold pool (1961–68), the gold price of October 1960, swap
+    lines, Roosa bonds, the Interest Equalization Tax (1963) and the voluntary restraint programmes,
+    the two-tier market of March 1968, the SDR (1969), each in a sentence or two;
+  - the French critique (the case): Valéry Giscard d'Estaing's "privilège exorbitant" (verify who
+    said it, when and in what words) and de Gaulle's press conference of 4 February 1965 calling for
+    a return to gold, with Rueff's argument; France's conversion of dollars into gold;
+  - sterling's long decline to the devaluation of 18 November 1967 (in one paragraph).
+- Promises (FORWARD_REFS rows pointing to 36): from Ch 5 (fixed rates as the world's rule under
+  Bretton Woods); Ch 24 (reserves held in the centre's money market: dollars as reserves); Ch 29
+  (the adjustable peg in practice; done for Ch 34, open for Ch 36); Ch 34 (how the adjustable peg, the
+  quotas, the scarce-currency clause and the capital controls worked in practice; which side of the
+  creditor–debtor argument the record supported); Ch 35 (the EPU, the dollar shortage, the fixed
+  rates of the mark and the yen). Mark each done with the labels.
+- When it began: Ch 35 ends with “美元为什么既是体系的支柱，又是它的隐患？”. Answer it: the dollar was
+  the pillar because it was the one currency convertible into gold at a fixed price and the reserve
+  the others held; the more dollars the world held, the less gold stood behind each.
+- Teaching:
+  - the Triffin arithmetic (`eq:brettonwoods-triffin`): reserves $R=G+D$, with gold $G$ growing
+    slowly and dollar reserves $D$ growing with the US deficit; the cover ratio $G/D$ and the year it
+    falls below one (a worked example with teaching inputs, and one with the US data);
+  - a parity change under Article IV with the BoP identity of Ch 5 (sterling in 1949 or 1967:
+    what a devaluation of $x$% does to import prices and export receipts, teaching inputs);
+  - optionally the gold-pool arithmetic (who sold how much gold to hold $35).
+- Compare boxes: 布雷顿森林体系 vs 古典金本位 (PLAN's candidate; refer back to Ch 23); optionally 美元的
+  “过度特权” vs 世界银行家（Despres, Kindleberger and Salant 1966).
+- Contested questions (do not decide): did the system end because of a flaw in its design (Triffin)
+  or because of American policy (the inflation of the late 1960s; Bordo and Eichengreen eds. 1993);
+  was the dollar's role a privilege for the United States or a service to the world (the French
+  critique against the "world banker" view); did the record support Keynes's case for charging
+  creditors (Ch 34's question: the scarce-currency clause was never invoked; Germany's surpluses).
+- Data and sources: the IMF's own histories (Horsefield 1969, de Vries 1976; imf.org answered 403
+  on 2026-10-28: try archive.org copies and elibrary); the *Federal Reserve Bulletin* and *Banking
+  and Monetary Statistics 1941–1970* (FRASER did not answer; try archive.org); the Economic Report of
+  the President (govinfo, public domain, answered 200); the US Treasury Bulletin; Triffin's statement
+  to the Joint Economic Committee of October 1959 (a congressional hearing; check its status; short
+  quotations) and Triffin (1960) (in copyright: short phrases); de Gaulle's press conference of
+  4 February 1965 (CVCE answered 200; Élysée and INA answered 200; check the terms); BIS annual
+  reports (cite the BIS; translations marked not official); the BoE millennium workbook for sterling
+  rates and reserves; the NBER volume of Bordo and Eichengreen (1993, chapters on nber.org: © notice).
+- Figures: US gold stock against dollar liabilities to foreigners, 1950–1971; the London gold price
+  around October 1960 and 1968, if a reliable series can be had; sterling's reserves or parity.
+- Ending: return to the opening and hand over Ch 37's question “固定汇率、资本自由流动、独立的货币政
+  策，为什么只能三选二？哪些地区适合共用一种货币？” (read its stub's guide box).
+- Labels: `sec:brettonwoods-…`, `eq:brettonwoods-…`, `fig:brettonwoods_…`, `tab:brettonwoods-…`,
+  `ex:brettonwoods-…`.
+- Length: 8,000–9,000 characters of main text.

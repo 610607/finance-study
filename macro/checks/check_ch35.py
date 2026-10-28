@@ -963,6 +963,13 @@ def overhang_section(F, Y, Q):
          F["bu_freikonto"][0] * 1e9, 6)
     assert F["bu_freikonto"][0] > jun                                           # more than the whole of June
     said("拿 6 月末作起点，低估了改革本身发出的货币", 6)
+    start = jun + F["bu_freikonto"][0]                                         # the June money with all free-account credits
+    mg2 = dec / start
+    said("把 53 亿全算进起点", F["bu_freikonto"][0] * 1e9)
+    said("货币只增加到$120/97\\approx1.24$倍", dec * 10, start * 10, mg2)
+    said("价格水平应降到$1.24/1.55\\approx0.80$倍", mg2, yg, mg2 / yg)
+    said("实际涨了 14\\%—18\\%", ind, food)
+    assert mg2 / yg < 1 and mg2 / (yg * (1 + ind / 100)) < 1                     # k fell even at the lower price rise
     # the compare box
     said("存款与债务大体按 10 比 1 换算", *F["ug_s2"])
     said("1948 年秋天加快的回升几乎没有波及那里", F["ri_autumn"][0])
