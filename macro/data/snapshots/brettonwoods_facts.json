@@ -1,0 +1,261 @@
+{
+  "title": "Evidence for Chapter 36: the Bretton Woods system at work, 1946-1969: the dollar shortage, the devaluations of 1949, the return to convertibility, the Triffin dilemma, the defence of the dollar and of sterling, the gold pool and the two-tier market, the SDR, and the French case",
+  "source": "Bordo, 'The Bretton Woods International Monetary System: A Historical Overview' (with Table 1.2 read on the page images), Garber, 'The Collapse of the Bretton Woods Fixed Exchange Rate System' (with Table 9.1 read on the page image), and Eichengreen, 'Epilogue: Three Perspectives on the Bretton Woods System', in Bordo and Eichengreen (eds.), A Retrospective on the Bretton Woods System (University of Chicago Press for the NBER, 1993), the chapter PDFs of nber.org, and the volume's front matter (copyright page); the Annual Reports of the Bank for International Settlements of 1948, 1950, 1959, 1961, 1962, 1966, 1968 and 1970 (the scans of bis.org) and the BIS's terms and conditions; Foreign Relations of the United States 1964-1968, vol. VIII, documents 36, 135, 191 and 193 (editorial notes, Office of the Historian); House of Commons Hansard, 20 November 1967 (historic Hansard); the Statistical Abstract of the United States 1964, 1968 and 1972 (U.S. Bureau of the Census; Tables 1211, 1204 and 1271 read on the page images); Gourinchas, Rey and Govillot, IMES Discussion Paper 2010-E-20; Lelart, Revue Internationale des Economistes de Langue Francaise 3(1), 2018; the authority records of the Library of Congress and of the Deutsche Nationalbibliothek (through lobid.org)",
+  "url": "https://www.nber.org/system/files/chapters/c6867/c6867.pdf",
+  "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or section, the source text verbatim, note",
+  "retrieved": "2026-10-28",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Bordo, Garber and Eichengreen (1993), NBER: the copyright page of the volume reads '© 1993 by the National Bureau of Economic Research All rights reserved. Published 1993' (row nber_copyright; the text layer reads '0' for '©', row nber_ocr), and the chapter PDFs say 'This PDF is a selection from an out-of-print volume from the National Bureau of Economic Research' (row nber_cover); the authors' words are quoted in short phrases only and the rest is paraphrased, with '% 据:' anchors in the chapter. Bank for International Settlements, Annual Reports: the BIS's terms and conditions read 'Users may reproduce a limited extract of BIS Material (other than the statistics published in the BIS Data Portal ) in other publications or products free of charge, provided the BIS is cited as the source.', 'With respect to translations, Users must include a statement that the translation is not an official BIS translation, and that the BIS does not guarantee its accuracy or completeness.' and 'Users must also add a note that \"the original content can be found at [link to the BIS website]\".' (rows bis_reuse, bis_translation, bis_original); the bibliography item bis36 carries the statement and the links. Foreign Relations of the United States (Office of the Historian, Department of State) and the Statistical Abstract of the United States (Bureau of the Census) are works of the United States government and in the public domain; de Gaulle's words are quoted only through the editorial note's English summary, and the Treasury's statement of 4 February 1965 is a statement of the US government. Hansard: 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.'; the historic Hansard pages read '© UK Parliament' (row h_copyright). Gourinchas, Rey and Govillot (2010), IMES Discussion Paper: 'Do not reprint or reproduce without permission.' (row im_notice); only the two terms 'exorbitant privilege' and 'boomerang currency' are rendered, the rest is paraphrased. Lelart (2018): the PDF prints no copyright notice; paraphrase only, with full credit. Library of Congress authority records: public data; Deutsche Nationalbibliothek records through lobid.org: 'http://creativecommons.org/publicdomain/zero/1.0/' (row gnd_licence).",
+  "used_in": [
+    36
+  ],
+  "fetch": "data/fetch/brettonwoods36.py",
+  "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+  "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch36.py; rows with an empty quotation are words or figures read on a page image (sources bordo1993img, garber1993img, nber1993fmimg, census1964img, census1968img, census1972img), named as such in their notes, which give a transcription between « and ». The BIS reports are scans with a text layer that letter-spaces some words ('T h e', 'c u r r e n t - a c c o u n t', b59_conv, b61_limited) and reads 'ist' for '1st' (b68_jan1968, b68_programme, b68_closed), 'io' for '10' (b70_fr_measures) and 'i960' for '1960' (b61_cuts; also b61_1960); it prints 'anouncement' (b70_may9) and keeps the page number '- 36 -' inside a sentence (b68_mix). The text layer of Bordo's chapter reads 'World War 11' for 'World War II' (bo_twothirds), 'F'resident' for 'President' (bo_kennedy), 'Tiiffin' for 'Triffin' (bo_tr_rest), '194658' for '1946-58' (bo_preconv) and 'wellwhether' for 'well-whether' (bo_whywell); its footnote 40 prints 'scare' for 'scarce' (bo_scarce). The text layer of Garber's chapter reads 'e ~ p a n s i o n' for 'expansion' (ga_accelerate). Disagreements between the sources: the suspension of sterling convertibility, Bordo 20 August 1947, the BIS as from 21 August (bo_1947, b48_dates); the start of the European Payments Union, Bordo 19 September 1950, the BIS July 1950 (bo_epu, b59_epu); the countries that restored convertibility at the end of 1958, Bordo eight, Garber's table fourteen European countries, the BIS the members of the Union except Greece, Iceland and Turkey, with Finland (bo_eight, ga_t91, b59_conv); the London gold pool, Bordo's table November 1961, Garber's table October 1961, and the US share, Garber 50 per cent, Bordo 60 per cent in one place (bt_us, bo_pool_nov, ga_t91, ga_pool50, bo_pool60); the swaps, Bordo 1961, Garber's table February 1962 (bo_swaps, ga_t91); 'exorbitant privilege', Gourinchas et al. 1965, Lelart September 1964 at the IMF meeting in Tokyo (im_giscard, le_tokyo); the year official dollar liabilities exceeded the US gold stock, Bordo 1964, Garber the latter 1960s, the Statistical Abstract end-1967 (bo_1964, ga_wrong, sa64_official, sa68_official, sa72_official); the start of the French conversions, Garber the first quarter of 1962, Bordo 1965 (ga_france, bo_convert); the devaluation of the franc, Bordo's table 10 August 1969, the BIS 8 August (bt_fr, b70_fr_deval); the new parity of the mark, Bordo's table 26 October 1969, the BIS effective 27 October (bt_de, b70_de_reval); the high of the private gold price after March 1968, Garber $42.00, the BIS almost $44 in March 1969 (ga_42, b70_gold39); the Statistical Abstract revises its figures between editions: official liabilities in December 1967, 14,069 million dollars in the 1968 edition, 14,027 in the 1972 edition (sa68_official, sa72_official); the chapter and the figure use the later edition. Bordo, Garber and Eichengreen are three chapters of one volume and cite one another; the gold sold by the pool from December 1967 to March 1968 is cited by Bordo from Solomon (1976) and is one witness with Garber's figure (bo_pool_lost, ga_march); Bordo gives the US share of the pool as 60 per cent after Schwartz (1989) (bo_pool60). Indirect testimony: de Gaulle's press conference of 4 February 1965 and the Treasury's statement through the editorial note of FRUS (fr36_gold, fr36_treasury); Triffin (1957, 1960, 1966) through Bordo and Garber; Kennedy's statement of 31 October 1960 through Bordo's footnote 68; Giscard d'Estaing's and Rueff's terms through Gourinchas et al. and Lelart; Rueff (1967) and Despres, Kindleberger and Salant (1966) through Bordo. Not obtained: the IMF's own histories (Horsefield 1969, de Vries 1976; imf.org refused access), Triffin's testimony of 1959 and his book of 1960, the full text of de Gaulle's press conference (American Foreign Policy: Current Documents, 1965, pp. 219-221, fr36_text), Giscard d'Estaing's own words, Rueff's book of 1967, the article of Despres, Kindleberger and Salant, the Federal Reserve Bulletin and Banking and Monetary Statistics (fraser.stlouisfed.org did not answer); the editions of the Statistical Abstract read here give no figures for 1950-1954 and 1956-1958, so the figure begins in 1955 and has a gap in 1956-1958.",
+  "sources": {
+    "bordo1993": {
+      "url": "https://www.nber.org/system/files/chapters/c6867/c6867.pdf",
+      "format": "pdf",
+      "sha256": "369a2a7ec6e96da0498757c1276b3526f18106a23c9455628340a81a3e2808f5",
+      "version": "Michael D. Bordo, 'The Bretton Woods International Monetary System: A Historical Overview', in M. D. Bordo and B. Eichengreen (eds.), A Retrospective on the Bretton Woods System, University of Chicago Press for the NBER, 1993, pp. 3-108, the chapter PDF of nber.org (printed page = PDF page + 1)",
+      "retrieved": "2026-10-28"
+    },
+    "bordo1993img": {
+      "url": "https://www.nber.org/system/files/chapters/c6867/c6867.pdf",
+      "format": "image",
+      "sha256": "369a2a7ec6e96da0498757c1276b3526f18106a23c9455628340a81a3e2808f5",
+      "version": "The same PDF: Table 1.2, 'Exchange Rate and Gold Arrangements, the G10 Countries, 1946-1971' (pp. 23-25, PDF pp. 22-24), read on renderings with pdftoppm (the table's columns are not kept by the text layer)",
+      "retrieved": "2026-10-28"
+    },
+    "garber1993": {
+      "url": "https://www.nber.org/system/files/chapters/c6876/c6876.pdf",
+      "format": "pdf",
+      "sha256": "5eb951bb4dca0ff9c07f3477b815a0b21872e211b9c0260575363389dde9e779",
+      "version": "Peter M. Garber, 'The Collapse of the Bretton Woods Fixed Exchange Rate System', in Bordo and Eichengreen (eds.) 1993, pp. 461-494, the chapter PDF of nber.org (printed page = PDF page + 459)",
+      "retrieved": "2026-10-28"
+    },
+    "garber1993img": {
+      "url": "https://www.nber.org/system/files/chapters/c6876/c6876.pdf",
+      "format": "image",
+      "sha256": "5eb951bb4dca0ff9c07f3477b815a0b21872e211b9c0260575363389dde9e779",
+      "version": "The same PDF: Table 9.1, 'Timetable of Collapse' (p. 465, PDF p. 6), read on a rendering with pdftoppm (the text layer separates the dates from the events)",
+      "retrieved": "2026-10-28"
+    },
+    "eichengreen1993": {
+      "url": "https://www.nber.org/system/files/chapters/c6883/c6883.pdf",
+      "format": "pdf",
+      "sha256": "9c0248b0cf311f75cc67e691085584adc8d2d5f486bf2c438989c28b76162768",
+      "version": "Barry Eichengreen, 'Epilogue: Three Perspectives on the Bretton Woods System', in Bordo and Eichengreen (eds.) 1993, pp. 621-658, the chapter PDF of nber.org (printed page = PDF page + 619)",
+      "retrieved": "2026-10-28"
+    },
+    "nber1993fm": {
+      "url": "https://www.nber.org/system/files/chapters/c6865/c6865.pdf",
+      "format": "pdf",
+      "sha256": "db7e59c33106197feab706b05d547ff93a6a34011cab3029ea0931cee5309a73",
+      "version": "Front matter of Bordo and Eichengreen (eds.) 1993, the PDF of nber.org (the copyright page is PDF p. 7)",
+      "retrieved": "2026-10-28"
+    },
+    "nber1993fmimg": {
+      "url": "https://www.nber.org/system/files/chapters/c6865/c6865.pdf",
+      "format": "image",
+      "sha256": "db7e59c33106197feab706b05d547ff93a6a34011cab3029ea0931cee5309a73",
+      "version": "The same PDF: the copyright page (PDF p. 7), read on a rendering with pdftoppm (the text layer reads '0' for '©')",
+      "retrieved": "2026-10-28"
+    },
+    "bis1948": {
+      "url": "https://www.bis.org/publications/annual-report-1948.pdf",
+      "format": "pdf",
+      "sha256": "a43f37b8ca09f04a7b81f3c30b802832b1327a83f4381241cbdcfab4e282c82c",
+      "version": "Bank for International Settlements, Eighteenth Annual Report, 1st April 1947 - 31st March 1948, Basle, 14th June 1948 (scanned report with its text layer; pages are PDF pages)",
+      "retrieved": "2026-10-28"
+    },
+    "bis1950": {
+      "url": "https://www.bis.org/publications/annual-report-1950.pdf",
+      "format": "pdf",
+      "sha256": "f3bc13aef3bc3cb4c03d5146fffbf2cc7c009a35da3f40685ac1af01585678d6",
+      "version": "BIS, Twentieth Annual Report, 1st April 1949 - 31st March 1950, Basle, 12th June 1950",
+      "retrieved": "2026-10-28"
+    },
+    "bis1959": {
+      "url": "https://www.bis.org/publications/annual-report-1959.pdf",
+      "format": "pdf",
+      "sha256": "d53e8791f3bb7e33c9e498582fe3cda89846e9faa5518f371bcdde2ef50fcca9",
+      "version": "BIS, Twenty-ninth Annual Report, 1st April 1958 - 31st March 1959, Basle, 8th June 1959",
+      "retrieved": "2026-10-28"
+    },
+    "bis1961": {
+      "url": "https://www.bis.org/publications/annual-report-1961.pdf",
+      "format": "pdf",
+      "sha256": "9c1b3a54767be225063381ed3639c00b711401a884508ed4f2d4546d46c1e1bf",
+      "version": "BIS, Thirty-first Annual Report, 1st April 1960 - 31st March 1961, Basle, 12th June 1961",
+      "retrieved": "2026-10-28"
+    },
+    "bis1962": {
+      "url": "https://www.bis.org/publications/annual-report-1962.pdf",
+      "format": "pdf",
+      "sha256": "77bc688a58d5158f84f57cc11a44d21b187a56664dff6545ee3e3b9d3cf9d128",
+      "version": "BIS, Thirty-second Annual Report, 1st April 1961 - 31st March 1962, Basle, 4th June 1962",
+      "retrieved": "2026-10-28"
+    },
+    "bis1966": {
+      "url": "https://www.bis.org/publications/annual-report-1966.pdf",
+      "format": "pdf",
+      "sha256": "5277887963a6cb7525a18be59dff6d7d3db965b8c430752dc97b4625cd21c3c5",
+      "version": "BIS, Thirty-sixth Annual Report, 1st April 1965 - 31st March 1966, Basle, 13th June 1966",
+      "retrieved": "2026-10-28"
+    },
+    "bis1968": {
+      "url": "https://www.bis.org/publications/annual-report-1968.pdf",
+      "format": "pdf",
+      "sha256": "2d26c04e1ae610a81cabe8c579354e38f61c23c3f942e6845e6a8ce030d1aedc",
+      "version": "BIS, Thirty-eighth Annual Report, 1st April 1967 - 31st March 1968, Basle, 10th June 1968",
+      "retrieved": "2026-10-28"
+    },
+    "bis1970": {
+      "url": "https://www.bis.org/publications/annual-report-1970.pdf",
+      "format": "pdf",
+      "sha256": "044a4fd1939c8522e22216ccfdbd9dbdf733a0c0424b2e004f47e923bbaf99d7",
+      "version": "BIS, Fortieth Annual Report, 1st April 1969 - 31st March 1970, Basle, 8th June 1970",
+      "retrieved": "2026-10-28"
+    },
+    "bisterms36": {
+      "url": "https://www.bis.org/about/terms-conditions",
+      "format": "html",
+      "sha256": "991b4821e5e5833da10e8634600a3ff080092d8fd84af2ad4f8d8ff151891107",
+      "version": "The BIS website's terms and conditions (the page as served on 2026-10-28)",
+      "retrieved": "2026-10-28"
+    },
+    "frus1965_d36": {
+      "url": "https://history.state.gov/historicaldocuments/frus1964-68v08/d36",
+      "format": "html",
+      "sha256": "5ae8618d2ea86a4626ab46fdc8e7cf89d44117007292bcab02c8831f651b781a",
+      "version": "Foreign Relations of the United States, 1964-1968, vol. VIII, International Monetary and Trade Policy, document 36 (editorial note on 4 February 1965), Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1967_d135": {
+      "url": "https://history.state.gov/historicaldocuments/frus1964-68v08/d135",
+      "format": "html",
+      "sha256": "34603c8469c4b05167431fe648a0c92b8948bb82770e61fcf739278d2812738e",
+      "version": "FRUS 1964-1968, vol. VIII, document 135 (editorial note on the Interest Equalization Tax Extension Act of 1967)",
+      "retrieved": "2026-10-28"
+    },
+    "frus1968_d191": {
+      "url": "https://history.state.gov/historicaldocuments/frus1964-68v08/d191",
+      "format": "html",
+      "sha256": "b4100e12f3cb87f2c6d0dec497eccdf18a2ccf62bebcd91e9c797e518ce7ef52",
+      "version": "FRUS 1964-1968, vol. VIII, document 191 (editorial note on the meeting of the central bank governors of the gold pool, Washington, 16-17 March 1968)",
+      "retrieved": "2026-10-28"
+    },
+    "frus1968_d193": {
+      "url": "https://history.state.gov/historicaldocuments/frus1964-68v08/d193",
+      "format": "html",
+      "sha256": "c3f55eb789301a8a23ffd84e7663e6c639b168ab9d612556be03288b36741b6f",
+      "version": "FRUS 1964-1968, vol. VIII, document 193 (editorial note on the Stockholm meeting of the Group of Ten, 29-30 March 1968)",
+      "retrieved": "2026-10-28"
+    },
+    "hansard1967": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1967/nov/20/lbexchange-rate",
+      "format": "html",
+      "sha256": "d8e59c29b398ea456a0ba02b6a8a009056e82cecd15b5a4c116465939f90e311",
+      "version": "House of Commons, HC Deb 20 November 1967 vol 754 cc935-52, '£ (Exchange Rate)', UK Parliament's historic Hansard site (the page as served on 2026-10-28; a later download differs from this copy only in the token of the Cloudflare beacon script on its last line, so the hash is of the copy read)",
+      "retrieved": "2026-10-28"
+    },
+    "census1964img": {
+      "url": "https://www2.census.gov/library/publications/1964/compendia/statab/85ed/1964-13.pdf",
+      "format": "image",
+      "sha256": "109e4e41a429fc6d9718ae71bfeb1afa4e7d65c7ab8fad44ce255047c08ef95a",
+      "version": "U.S. Bureau of the Census, Statistical Abstract of the United States 1964 (85th edition), Table 1211, p. 855 (PDF p. 8 of the section file; a scan without a text layer, read on a rendering with pdftoppm)",
+      "retrieved": "2026-10-28"
+    },
+    "census1968img": {
+      "url": "https://www2.census.gov/library/publications/1968/compendia/statab/89ed/1968-12.pdf",
+      "format": "image",
+      "sha256": "a769d655eff7ead552f887e3380f03b549266e890ba2747eda62cff406d27372",
+      "version": "Statistical Abstract of the United States 1968 (89th edition), Table 1204, p. 793 (PDF p. 79; read on a rendering with pdftoppm)",
+      "retrieved": "2026-10-28"
+    },
+    "census1972img": {
+      "url": "https://www2.census.gov/library/publications/1972/compendia/statab/93ed/1972-11.pdf",
+      "format": "image",
+      "sha256": "3d7bd2b477a2975119e296f40e77f6f13615b58b991b0c4d05fb283cfb6f2c94",
+      "version": "Statistical Abstract of the United States 1972 (93rd edition), Table 1271, p. 766 (PDF p. 6; read on a rendering with pdftoppm)",
+      "retrieved": "2026-10-28"
+    },
+    "gourinchas2010": {
+      "url": "https://www.imes.boj.or.jp/research/papers/english/10-E-20.pdf",
+      "format": "pdf",
+      "sha256": "bebbb275a2cd84d71c44830509ffec4ae8bfeb6e3ddb2e5cc90564ace980dfc9",
+      "version": "Pierre-Olivier Gourinchas, Helene Rey and Nicolas Govillot, 'Exorbitant Privilege and Exorbitant Duty', IMES Discussion Paper No. 2010-E-20, Institute for Monetary and Economic Studies, Bank of Japan, August 2010",
+      "retrieved": "2026-10-28"
+    },
+    "lelart2018": {
+      "url": "https://journals.ue.poznan.pl/rielf/article/download/1370/803/2755",
+      "format": "pdf",
+      "sha256": "066ed60f3db904ae791b7c4e4dc2bbae9400d4831c1a3041545927cb2ac68515",
+      "version": "Michel Lelart, 'Derrière les crises financières internationales : une crise de la monnaie internationale', Revue Internationale des Economistes de Langue Française 3(1), 2018, pp. 57-69; the PDF of the journal (printed page = PDF page + 56)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_callaghan36": {
+      "url": "https://id.loc.gov/authorities/names/n50032175.madsrdf.json",
+      "format": "json",
+      "sha256": "b5412b655d58af52a3fbf971b11d2a3945e054b3fb2eace02aa18ee65452a065",
+      "version": "Library of Congress Name Authority File, record n50032175 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_keynes36": {
+      "url": "https://id.loc.gov/authorities/names/n79004113.madsrdf.json",
+      "format": "json",
+      "sha256": "3de9317d7744e4841b05b5b15630089ccd3d8ad52979cea130cb63e7ed05a9a7",
+      "version": "Library of Congress Name Authority File, record n79004113 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_degaulle36": {
+      "url": "https://id.loc.gov/authorities/names/n79041762.madsrdf.json",
+      "format": "json",
+      "sha256": "41300b633e82f80e0be36d8f4de679355e64a3567542f901ea68f0cf92b82898",
+      "version": "Library of Congress Name Authority File, record n79041762 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_kennedy36": {
+      "url": "https://id.loc.gov/authorities/names/n79055297.madsrdf.json",
+      "format": "json",
+      "sha256": "c0940906a52f104ab0d7919fdf10c878b1871644bc87f2f390ffe46742754cec",
+      "version": "Library of Congress Name Authority File, record n79055297 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_giscard36": {
+      "url": "https://id.loc.gov/authorities/names/n80045870.madsrdf.json",
+      "format": "json",
+      "sha256": "ec60880cd5dff401134b747bb32926b87cf80f7db6499656551ce00a6577e9d0",
+      "version": "Library of Congress Name Authority File, record n80045870 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_cripps36": {
+      "url": "https://id.loc.gov/authorities/names/n83179276.madsrdf.json",
+      "format": "json",
+      "sha256": "8e157150108871f0661a2be27a1104a42d536895d9bef0be581b568d4ed49f64",
+      "version": "Library of Congress Name Authority File, record n83179276 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_debre36": {
+      "url": "https://id.loc.gov/authorities/names/n50040436.madsrdf.json",
+      "format": "json",
+      "sha256": "61b04adec8dcfcba3337d105d9710a98e6ac6756023736af7c088ec22abdf725",
+      "version": "Library of Congress Name Authority File, record n50040436 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-28"
+    },
+    "gnd_triffin36": {
+      "url": "https://lobid.org/gnd/119026198.json",
+      "format": "json",
+      "sha256": "618973256224991750af5da7d71d90226ff9db94f6f46b8e76a4b80234f1517a",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 119026198 (JSON from lobid.org)",
+      "retrieved": "2026-10-28"
+    },
+    "gnd_rueff36": {
+      "url": "https://lobid.org/gnd/119475766.json",
+      "format": "json",
+      "sha256": "bde79977c8d052806b45fa328866d21ae1aa3b9d54fb204e6fc2a183fb028c9d",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 119475766 (JSON from lobid.org)",
+      "retrieved": "2026-10-28"
+    }
+  }
+}
