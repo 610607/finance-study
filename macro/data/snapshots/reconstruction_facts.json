@@ -1,0 +1,415 @@
+{
+  "title": "Evidence for Chapter 35: the West German currency reform of 1948, the Marshall Plan, Japan from the frozen deposits of 1946 to the Dodge Line, Britain's post-war credits, the Soviet reform of 1947 and the gold yuan",
+  "source": "Buchheim, 'Die Waehrungsreform 1948 in Westdeutschland' (Vierteljahrshefte fuer Zeitgeschichte 36, 1988), Ritschl, 'Die Waehrungsreform von 1948 und der Wiederaufstieg der westdeutschen Industrie' (VfZ 33, 1985, with Tab. I read on the page image) and Abelshauser, 'Wiederaufbau vor dem Marshall-Plan' (VfZ 29, 1981), the PDFs of the Institut fuer Zeitgeschichte; the Waehrungsgesetz, Umstellungsgesetz and Festkontogesetz of 1948 and the law establishing the Bank deutscher Laender (Military Government laws nos. 61, 63, 65 and 60), the texts of verfassungen.de; the Monatsberichte der Bank deutscher Laender of February 1950 (the Deutsche Bundesbank's archive; the labour-market table read on the page image) and the Bundesbank's terms of use; De Long and Eichengreen, NBER Working Paper 3899 (1991); Marshall's remarks at Harvard (Department of State Bulletin, 15 June 1947); the Economic Cooperation Act of 1948 (62 Stat. 137); Foreign Relations of the United States 1948 vol. VI (doc. 696), 1948 vol. VIII (docs. 333, 340, 343, 359, 364, 368, 372) and 1949 vol. VII part 2 (docs. 67, 161); the Ministry of Finance's Fiscal and Monetary Policies of Japan 1945-1971, Part 1, Chapters 1 and 2, and its terms of use; the Centennial History of the Bank of Japan, vol. 5 (1985), four sections read on the page images, the Bank's chronology and its copyright page; the decision of the USSR Council of Ministers and the Central Committee of 14 December 1947 in Zaria Vostoka no. 247 (page image) and in the excerpt of Vestnik Universiteta imeni O. E. Kutafina (2025); House of Commons Hansard, 15 April 1959, 18 January 1972 (written answers) and 9 March 1972; Wang Yunwu's statement of 19 August 1948 (Chinese Wikisource); the authority records of the Library of Congress and of the Deutsche Nationalbibliothek (through lobid.org)",
+  "url": "https://www.ifz-muenchen.de/heftarchiv/1988_2_1_buchheim.pdf",
+  "series": "Evidence rows: id, place, year, values (';' separated, in the order of the quotation), unit, source key, page or section, the source text verbatim, note",
+  "retrieved": "2026-10-28",
+  "license": "Quotations for criticism, scholarship and teaching, each with its source; no full original is redistributed. Buchheim (1988), Ritschl (1985) and Abelshauser (1981): each page of the Institut fuer Zeitgeschichte's PDFs reads '©Vierteljahrshefte für Zeitgeschichte' (rows bu_copyright, ri_copyright, ab_copyright); the authors' words are quoted in short phrases only and the rest is paraphrased, with '% 据:' anchors in the chapter. De Long and Eichengreen (1991), NBER Working Paper 3899: the PDF prints no copyright notice; short phrases only, with full credit to the authors and the NBER. The laws of the Military Governments of 1948 (nos. 60, 61, 63 and 65) are official works (amtliche Werke, section 5 of the German Urheberrechtsgesetz); the edition used is the text of verfassungen.de named in each source. Bank deutscher Laender, Monatsberichte, February 1950, from the Deutsche Bundesbank's archive: the Bundesbank's terms of use read 'Die etwaigen oben aufgeführten Verwertungshandlungen Weitergabe und Vervielfältigung der von der Deutschen Bundesbank erstellten Informationen haben unter der folgenden Angabe zu erfolgen: „Quelle: Deutsche Bundesbank\"' and 'Die Informationen dürfen nicht verändert oder verfälscht werden.' (rows bbk_terms, bbk_unaltered). Marshall's remarks as Secretary of State (Department of State Bulletin), the Economic Cooperation Act of 1948 (Statutes at Large) and Foreign Relations of the United States are works of the United States government and in the public domain; Dodge's statement is quoted only through the Bank of Japan's summary. Ministry of Finance, Japan: '掲載・発信している情報の著作権は、特記されていない限り財務省に帰属し、権利表記の記載がない限り「公共データ利用規約(第1.0版)」(PDL1.0)【デジタル庁ホームページ】が適用されています。' and 'Copyright © Ministry of Finance Japan. All Rights Reserved.' (rows mof_terms, mof_copyright); the source is credited as the Ministry of Finance. Bank of Japan (the Centennial History, the chronology): 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row bojcr_terms); credit: Bank of Japan. The Centennial History (Nihon Ginko hyakunenshi, 1982-86) is the Bank's copyright work: short quotations only. The decision of the USSR Council of Ministers and the Central Committee of 14 December 1947 is an official act of state, not protected by copyright; the editions used are Zaria Vostoka no. 247 of 15 December 1947 (the scan of the National Parliamentary Library of Georgia) and the excerpt in Vestnik Universiteta imeni O. E. Kutafina (2025). Wang Yunwu's statement of 1948 is a public document of the Republic of China's Ministry of Finance; Wikisource marks it public domain under article 9 of the Copyright Act of the Republic of China: '中華民國《著作權法》:第九條(著作權標的之限制)下列各款不得為著作權之標的:一、憲法、法律、命令或公文。' (row ww_pd); the edition used is Wikisource revision 2108829. Hansard: 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.' The pages read '© UK Parliament' (row h_copyright). The authority records of the Library of Congress (id.loc.gov) are public data; the records of the Deutsche Nationalbibliothek (GND, through lobid.org) are under 'http://creativecommons.org/publicdomain/zero/1.0/' (row gnd_licence). The chapter's Chinese renders the quotations; the translations are the book's.",
+  "used_in": [
+    35
+  ],
+  "fetch": "data/fetch/reconstruction35.py",
+  "citation": "See the 'source' field; each row names its source key in the 'sources' object.",
+  "notes": "Every quotation is checked word for word against the cached source text by data/fetch/verify_web_quotes.py, and every value is read from its quotation by checks/check_ch35.py; rows with an empty quotation are words or figures read on a page image (sources ritschl1985img, bdl1950img, boj1985a-d, ussr1947zv), named as such in their notes, which give a transcription between « and ». The pages of verfassungen.de are encoded in ISO-8859-1 and read as UTF-8, so their quotations are fragments without umlauts ('nfhundertvierzig' is the end of 'fünfhundertvierzig'). The OCR of the Monatsberichte reads '~st' for 'ist' (bdl_stall) and 'V er kehr' (bdl_kfw); the text layer of the Ministry of Finance's chapter runs 'June' and 'August' together (mof_rfbbuy) and keeps the page number '- 30 -' inside a sentence (mof_wagerules); Hansard reads 'w II' for 'will' (h59_newages). Disagreements between the sources: verfassungen.de dates the Umstellungsgesetz 20 June 1948, Buchheim 27 June (ug_title, bu_ug_date); the Ministry of Finance dates the outbreak of the Korean War July 1950, the Bank of Japan 25 June 1950 (mof_korea, bj_korea); the Ministry's text calls ¥135,751 million the free accounts of March 1946, while its Table 1-9 gives that figure as the total and ¥14,518 million as the free accounts (mof_frozen46, mof_table46). Indirect testimony: the annex of the Leitsaetzegesetz, the CDG plan (in Buchheim's German), Tenenbaum's words at Rothwesten and Röpke's article through Buchheim; the black-market prices of Hamburg in May 1948 through Buchheim, who draws on Mendershausen; Manz's and Abelshauser's estimates and Wallich's view through Ritschl; Milward through De Long and Eichengreen; Dodge's statement of 7 March 1949 through the Bank of Japan's summary of its points; Chiang Ching-kuo's speech through the North China Daily News as the consulate general at Shanghai reported it. Not obtained: Dodge's 'stilts' remark (the CIA reading room refused access), Wallich (1955), Milward (1984), Abelshauser (1975), Manz's thesis, the sources on the general strike of 12 November 1948 and on cigarette money, the exact dates of the Soviet zone's currency reform and of the Berlin blockade, and Jenkin's dates (in neither authority file). Erhard's role as the issuer of the price order of 25 June 1948 is inferred from the title of his speech (Abelshauser, note 74) and Buchheim's account. The record of the Deutsche Nationalbibliothek for Amory is taken to be the Chancellor's by his name and dates.",
+  "sources": {
+    "buchheim1988": {
+      "url": "https://www.ifz-muenchen.de/heftarchiv/1988_2_1_buchheim.pdf",
+      "format": "pdf",
+      "sha256": "97be28132a0a1d43272f1093a52cfaf2711adda42cc1288605316aa343151a79",
+      "version": "Christoph Buchheim, 'Die Waehrungsreform 1948 in Westdeutschland', Vierteljahrshefte fuer Zeitgeschichte 36 (1988), Heft 2, pp. 189-231, the PDF of the Institut fuer Zeitgeschichte's archive of the journal (printed page = PDF page + 188)",
+      "retrieved": "2026-10-28"
+    },
+    "ritschl1985": {
+      "url": "https://www.ifz-muenchen.de/heftarchiv/1985_1_4_ritschl.pdf",
+      "format": "pdf",
+      "sha256": "63faf39be261a080597768dd27e071f68195a5b8c5ec1a9a90450a9743acfdd4",
+      "version": "Albrecht Ritschl, 'Die Waehrungsreform von 1948 und der Wiederaufstieg der westdeutschen Industrie', Vierteljahrshefte fuer Zeitgeschichte 33 (1985), Heft 1, pp. 136-165, the PDF of the Institut fuer Zeitgeschichte (printed page = PDF page + 135)",
+      "retrieved": "2026-10-28"
+    },
+    "ritschl1985img": {
+      "url": "https://www.ifz-muenchen.de/heftarchiv/1985_1_4_ritschl.pdf",
+      "format": "image",
+      "sha256": "63faf39be261a080597768dd27e071f68195a5b8c5ec1a9a90450a9743acfdd4",
+      "version": "The same PDF: Tab. I on p. 164 (PDF p. 29) is an image without a text layer, read on a rendering with pdftoppm",
+      "retrieved": "2026-10-28"
+    },
+    "abelshauser1981": {
+      "url": "https://www.ifz-muenchen.de/heftarchiv/1981_4_2_abelshauser.pdf",
+      "format": "pdf",
+      "sha256": "ea153375fe4bffbaa190af8b0ee6033539c056d2890e29988269f034c01f08d8",
+      "version": "Werner Abelshauser, 'Wiederaufbau vor dem Marshall-Plan. Westeuropas Wachstumschancen und die Wirtschaftsordnungspolitik in der zweiten Haelfte der vierziger Jahre', Vierteljahrshefte fuer Zeitgeschichte 29 (1981), Heft 4, pp. 545-578, the PDF of the Institut fuer Zeitgeschichte (printed page = PDF page + 544)",
+      "retrieved": "2026-10-28"
+    },
+    "delong1991": {
+      "url": "https://www.nber.org/system/files/working_papers/w3899/w3899.pdf",
+      "format": "pdf",
+      "sha256": "f3fe0e07836f286a19154766bf44ba8ae15c51ccccee0d9ecf0815a35c4d75f6",
+      "version": "J. Bradford De Long and Barry Eichengreen, 'The Marshall Plan: History's Most Successful Structural Adjustment Program', NBER Working Paper 3899 (November 1991), the PDF from nber.org (printed page = PDF page - 2)",
+      "retrieved": "2026-10-28"
+    },
+    "waehrungsgesetz1948": {
+      "url": "https://www.verfassungen.de/de45-49/bizone-waehrungsgesetz48.htm",
+      "format": "html",
+      "sha256": "5948a7f442f4794e47ba117a3d63270a7820090892b32411aa26566e35df87a7",
+      "version": "Erstes Gesetz zur Neuordnung des Geldwesens (Waehrungsgesetz), Gesetz Nr. 61 der Militaerregierungen (amerikanische und britische Zone), 1948, the text of verfassungen.de (page encoded in ISO-8859-1; quoted in fragments without umlauts)",
+      "retrieved": "2026-10-28"
+    },
+    "umstellungsgesetz1948": {
+      "url": "https://www.verfassungen.de/de45-49/bizone-umstellungsgesetz48.htm",
+      "format": "html",
+      "sha256": "cca560d3c29b2aaa94765984c440a0b3f1080cb6a56204898f48ff61d6db1987",
+      "version": "Drittes Gesetz zur Neuordnung des Geldwesens (Umstellungsgesetz), Gesetz Nr. 63 der Militaerregierungen, 1948, the text of verfassungen.de (ISO-8859-1)",
+      "retrieved": "2026-10-28"
+    },
+    "festkontogesetz1948": {
+      "url": "https://www.verfassungen.de/de45-49/bizone-festgeldkontogesetz48.htm",
+      "format": "html",
+      "sha256": "93c5e2a1433cdf9b079ab55227c0ee867b68700aa8f09be019d88e25caf8cca2",
+      "version": "Viertes Gesetz zur Neuordnung des Geldwesens (Festkontogesetz), Gesetz Nr. 65 der Militaerregierungen, 4 October 1948, the text of verfassungen.de (ISO-8859-1)",
+      "retrieved": "2026-10-28"
+    },
+    "bdlgesetz1948": {
+      "url": "https://www.verfassungen.de/de45-49/bizone-gesetz48-1.htm",
+      "format": "html",
+      "sha256": "56f9bbb426c67d31769e1d4e2e2e8f40cf75d777562deb529e15eda740c7f7f8",
+      "version": "Gesetz Nr. 60 der Militaerregierungen: Errichtung der Bank deutscher Laender, 1948, the text of verfassungen.de (ISO-8859-1)",
+      "retrieved": "2026-10-28"
+    },
+    "bdl1950": {
+      "url": "https://www.bundesbank.de/resource/blob/690244/cdb26287ae8250b316c7ba197a9b0974/472B63F073F071307366337C94F8C870/1950-02-monatsbericht-data.pdf",
+      "format": "pdf",
+      "sha256": "547b79dac37e1cb17a881f9cee11c52bb270a5899a0fad1d70522ded52532815",
+      "version": "Monatsberichte der Bank deutscher Laender, Februar 1950, the scan with an OCR text layer in the Deutsche Bundesbank's archive of the monthly reports (printed page = PDF page; the OCR misreads some characters, quoted as it reads)",
+      "retrieved": "2026-10-28"
+    },
+    "bdl1950img": {
+      "url": "https://www.bundesbank.de/resource/blob/690244/cdb26287ae8250b316c7ba197a9b0974/472B63F073F071307366337C94F8C870/1950-02-monatsbericht-data.pdf",
+      "format": "image",
+      "sha256": "547b79dac37e1cb17a881f9cee11c52bb270a5899a0fad1d70522ded52532815",
+      "version": "The same scan, p. 57, the table 'Arbeitsmarkt (Bundesgebiet)', read on an image rendered with pdftoppm (the OCR layer scrambles the table)",
+      "retrieved": "2026-10-28"
+    },
+    "bbkterms35": {
+      "url": "https://www.bundesbank.de/de/startseite/benutzerhinweise/nutzungsbedingungen-fuer-den-allgemeinen-gebrauch-der-website-763554",
+      "format": "html",
+      "sha256": "f462ddbdfbc719873db060d03f722863d7320c7c0b11f48431746a65d27859f9",
+      "version": "Deutsche Bundesbank, Nutzungsbedingungen fuer den allgemeinen Gebrauch der Website",
+      "retrieved": "2026-10-28"
+    },
+    "marshall1947": {
+      "url": "https://archive.org/download/sim_department-of-state-bulletin_1947-06-15_16_415/sim_department-of-state-bulletin_1947-06-15_16_415_djvu.txt",
+      "format": "txt",
+      "sha256": "8bea77133bbb04bd33dd93ef44ef1855a9735c4b526c9f7b40b5a483b74cebdb",
+      "version": "'European Initiative Essential to Economic Recovery', remarks by the Secretary of State at Harvard University, 5 June 1947, Department of State Bulletin 16, no. 415 (15 June 1947), pp. 1159-1160, the OCR text of the Internet Archive's scan",
+      "retrieved": "2026-10-28"
+    },
+    "eca1948": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-62/pdf/STATUTE-62-Pg137.pdf",
+      "format": "pdf",
+      "sha256": "ea8388c0f3c263ca301489978835d11c194f1ea04049504567dbc758100bd5f6",
+      "version": "Foreign Assistance Act of 1948, Public Law 472, 80th Congress, 3 April 1948, Title I (Economic Cooperation Act of 1948), 62 Stat. 137, the PDF of the Statutes at Large on govinfo.gov (Statutes page = PDF page + 136)",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v06_d696": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v06/d696",
+      "format": "html",
+      "sha256": "4ddde43f6a4111bdc42013a3b325410ce1bc5fa6eacf3c772d9cba86cd51d017",
+      "version": "Foreign Relations of the United States, 1948, vol. VI, The Far East and Australasia, document 696: Statement of the United States Government, 'Economic Stabilization in Japan', Washington, 10 December 1948, with the editors' footnotes, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1949v07p2_d67": {
+      "url": "https://history.state.gov/historicaldocuments/frus1949v07p2/d67",
+      "format": "html",
+      "sha256": "86dc752ecafc3af3a4539e5caa710e99f6bc85680baea1ec32f03215a49df266",
+      "version": "Foreign Relations of the United States, 1949, vol. VII, part 2, document 67: memorandum of the Division of Northeast Asian Affairs, 2 May 1949, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1949v07p2_d161": {
+      "url": "https://history.state.gov/historicaldocuments/frus1949v07p2/d161",
+      "format": "html",
+      "sha256": "dea6569535e5112415de67892c50d7cad8728295ddfb44d6287eca82070ece83",
+      "version": "Foreign Relations of the United States, 1949, vol. VII, part 2, document 161: the Acting Political Adviser in Japan (Sebald) to the Secretary of State, 11 November 1949, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "mof2010ch1": {
+      "url": "https://www.mof.go.jp/english/pri/publication/policy_1945-1971/Part1-Chapter1.pdf",
+      "format": "pdf",
+      "sha256": "e436001aab415eb5dcecaa09c6e715c8df03eacf44b3376a015f34d2a4cb56e5",
+      "version": "Ministry of Finance, Policy Research Institute, Fiscal and Monetary Policies of Japan in Reconstruction and High-Growth, 1945 to 1971, Part 1, Chapter 1 (PDF of 2010), printed page = PDF page + 2",
+      "retrieved": "2026-10-28"
+    },
+    "mof2010ch2": {
+      "url": "https://www.mof.go.jp/english/pri/publication/policy_1945-1971/Part1-Chapter2.pdf",
+      "format": "pdf",
+      "sha256": "2f2d0700f6114df1e04f6b25802eca6344b422862592d1fb9e244d78e44a8adc",
+      "version": "The same work, Part 1, Chapter 2 (PDF of 2010), printed page = PDF page + 53",
+      "retrieved": "2026-10-28"
+    },
+    "mofterms35": {
+      "url": "https://www.mof.go.jp/about_mof/notice/index.html",
+      "format": "html",
+      "sha256": "48f6737a5e4a82a3645384149ec988fc463a5e108630494ed3e23911230585e0",
+      "version": "Ministry of Finance, Japan: 'Zaimusho webusaito no goriyo ni atatte' (terms of use)",
+      "retrieved": "2026-10-28"
+    },
+    "boj1985a": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku5_3_2_1.pdf",
+      "format": "image",
+      "sha256": "7d839c74f1b7cbc02a97b8ba01c93423251fa634873970aa83e77c71fbb929a0",
+      "version": "Nihon Ginko hyakunenshi (Centennial History of the Bank of Japan; six volumes and a volume of materials, published 1982-86, as the Bank's index page says), vol. 5, second part (kohen), chapter 3 (the Bank in the postwar reconstruction, 1945-1952), section 2 (pp. 54-89, the first of its PDFs), the Bank's PDF of the scanned pages (no text layer), read on images rendered with pdftoppm (printed page = PDF page + 53)",
+      "retrieved": "2026-10-28"
+    },
+    "boj1985b": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku5_3_3_2.pdf",
+      "format": "image",
+      "sha256": "c56e679d7a508b965559393ba7247892d033d0668c43cf8840fa56833db3f487",
+      "version": "The same volume, chapter 3, section 3 (the Dodge Line and the rate of 360 yen), the second of its PDFs, pp. 219-246 (printed page = PDF page + 218)",
+      "retrieved": "2026-10-28"
+    },
+    "boj1985c": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku5_3_5_1.pdf",
+      "format": "image",
+      "sha256": "ed0946b25cfbad1c71ccb3839622205abd1451a98b6ad5b056bc10d5cfed9736",
+      "version": "The same volume, chapter 3, section 5 (monetary policy under the Dodge Line), the first of its PDFs, pp. 324-353 (printed page = PDF page + 323)",
+      "retrieved": "2026-10-28"
+    },
+    "boj1985d": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku5_3_6_1.pdf",
+      "format": "image",
+      "sha256": "c0947f9928d54dac9be2cc8fae145d2a47175805f830769c76dd356afc879e74",
+      "version": "The same volume, chapter 3, section 6 (monetary policy in the Korean War), the first of its PDFs, pp. 380-413 (printed page = PDF page + 379)",
+      "retrieved": "2026-10-28"
+    },
+    "bojcr30": {
+      "url": "https://www.boj.or.jp/en/copyright.htm",
+      "format": "html",
+      "sha256": "2e6f9c30181f0fab5b33ec78561fea8e9c0c471fc2494166707e6f4de2c40dec",
+      "version": "Bank of Japan, Copyright page.",
+      "retrieved": "2026-10-22"
+    },
+    "bojchron35": {
+      "url": "https://www.boj.or.jp/about/outline/history/his_1900.htm",
+      "format": "html",
+      "sha256": "abe3060922e279923ae540cf0736e5d896832d4bae1be34c94ce7d5bb48b9aac",
+      "version": "Bank of Japan, 'Nihon Ginko no rekishi: nenpyo' (chronology), 1900-1999 page",
+      "retrieved": "2026-10-28"
+    },
+    "ussr1947zv": {
+      "url": "https://dspace.nplg.gov.ge/bitstream/1234/473865/1/Zaria_Vostoka_1947_N247.pdf",
+      "format": "image",
+      "sha256": "e5b6b450411a7e62b61725fdc674b41d5e5f58909322138ab285f788ed4fc613",
+      "version": "Zaria Vostoka (Tbilisi), no. 247, 15 December 1947, p. 1: the decision of the Council of Ministers of the USSR and the Central Committee of the VKP(b) of 14 December 1947, no. 4004, the scan in the National Parliamentary Library of Georgia's digital library, read on images rendered with pdftoppm",
+      "retrieved": "2026-10-28"
+    },
+    "ussr1947msal": {
+      "url": "https://vestnik.msal.ru/jour/article/download/2613/2637",
+      "format": "pdf",
+      "sha256": "c3549f02275557091abe4f674b040f9df667bea557f88f1495fbab1637cdc08f",
+      "version": "The decision of 14 December 1947 as excerpted in the section 'Legal documents' of Vestnik Universiteta imeni O. E. Kutafina (MGIuA), 2025 (article 2613): the preamble in part, part II and the signatures",
+      "retrieved": "2026-10-28"
+    },
+    "hansard1959": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1959/apr/15/income-tax-repayment-of-post-war-credits",
+      "format": "html",
+      "sha256": "df5e57e1815b1619f9393f4392c57bb4d0152515223d83c6f75cc9a749977fc0",
+      "version": "House of Commons, Hansard, 15 April 1959: Income Tax (Repayment of Post-War Credits) Bill, second reading, on UK Parliament's historic Hansard site",
+      "retrieved": "2026-10-28"
+    },
+    "hansard1972a": {
+      "url": "https://api.parliament.uk/historic-hansard/written-answers/1972/jan/18/post-war-credits",
+      "format": "html",
+      "sha256": "5453f16a4a2096a8fef5fff65f7198cdcb14289e894679d6bd848cf15d5f4883",
+      "version": "House of Commons, Hansard, written answers, 18 January 1972: Post-war Credits",
+      "retrieved": "2026-10-28"
+    },
+    "hansard1972b": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1972/mar/09/post-war-credits",
+      "format": "html",
+      "sha256": "1e219e2ec06cc2384f20481b5030ae5ef2e6ecae3667bb3211466aa68442e7bc",
+      "version": "House of Commons, Hansard, 9 March 1972: Post-war Credits (oral answers)",
+      "retrieved": "2026-10-28"
+    },
+    "wang1948": {
+      "url": "https://zh.wikisource.org/zh-hant/%E8%B2%A1%E6%94%BF%E9%83%A8%E9%95%B7%E7%8E%8B%E9%9B%B2%E4%BA%94%E7%99%BC%E8%A1%A8%E8%AB%87%E8%A9%B1%E9%97%9C%E6%96%BC%E5%B9%A3%E5%88%B6%E6%94%B9%E9%9D%A9%E4%B9%8B%E6%84%8F%E7%BE%A9",
+      "format": "html",
+      "sha256": "7f74a18d8295057db45eeb6994d618926b1ee2dd254336e43a9b4767f5849e3a",
+      "version": "Wang Yunwu's statement of 19 August 1948 on the meaning of the currency reform, the transcription on Chinese Wikisource (revision 2108829)",
+      "retrieved": "2026-10-28"
+    },
+    "gnd_erhard35": {
+      "url": "https://lobid.org/gnd/118530755.json",
+      "format": "json",
+      "sha256": "4c3de696cb81802f782b43c398ccdcaa45f40efa1ec0a215fc3bc999f0f5b596",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118530755 (Erhard, Ludwig), as JSON from lobid.org (the record's licence: CC0 1.0)",
+      "retrieved": "2026-10-28"
+    },
+    "gnd_amory35": {
+      "url": "https://lobid.org/gnd/1055642021.json",
+      "format": "json",
+      "sha256": "8e268751e2fba2d190f52bfd3d0593b8101b8ef7575cbee6ffec2ce46997222e",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 1055642021 (Amory, Derick Heathcoat), as JSON from lobid.org (the record's licence: CC0 1.0)",
+      "retrieved": "2026-10-28"
+    },
+    "loc_chiang35": {
+      "url": "https://id.loc.gov/authorities/names/n80135316.madsrdf.json",
+      "format": "json",
+      "sha256": "ccecf5d9480ba53a4210ae23deaacce01f1e8d6dd25dccff250618fd0c6f3358",
+      "version": "Library of Congress, Name Authority File, record n80135316 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_clay35": {
+      "url": "https://id.loc.gov/authorities/names/n82101316.madsrdf.json",
+      "format": "json",
+      "sha256": "9ba06c7dd94a4e3de1600e5f5f844caab73a96f8ddb10b64318ab8f221e872fa",
+      "version": "Library of Congress, Name Authority File, record n82101316 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_colm35": {
+      "url": "https://id.loc.gov/authorities/names/no93003801.madsrdf.json",
+      "format": "json",
+      "sha256": "fa205b07b4c8c39502b337e1db8986acf3172f73add17abed68b866af9a020a1",
+      "version": "Library of Congress, Name Authority File, record no93003801 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_dodge35": {
+      "url": "https://id.loc.gov/authorities/names/n92063859.madsrdf.json",
+      "format": "json",
+      "sha256": "57c8103ffa6e5a264dcf7098b2f1ea665d17af157d9b8f75340a757ee06de704",
+      "version": "Library of Congress, Name Authority File, record n92063859 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_goldsmith35": {
+      "url": "https://id.loc.gov/authorities/names/n50033890.madsrdf.json",
+      "format": "json",
+      "sha256": "ea0014bfd72f08b9bd9eaead2fb0b1ef6e7ec7fee19f7d77a7bc303f31852fa4",
+      "version": "Library of Congress, Name Authority File, record n50033890 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_ichimada35": {
+      "url": "https://id.loc.gov/authorities/names/n84194449.madsrdf.json",
+      "format": "json",
+      "sha256": "b854c6dbfb398a7b0b8ce6ea6939832424774d42b26d1fe6eab8cae9a2b0e063",
+      "version": "Library of Congress, Name Authority File, record n84194449 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_ishibashi35": {
+      "url": "https://id.loc.gov/authorities/names/n84188658.madsrdf.json",
+      "format": "json",
+      "sha256": "6bc6ad5141108a1bb2ae99a87844f7b489322ca1604ba7b276492433d54b40d1",
+      "version": "Library of Congress, Name Authority File, record n84188658 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_marshall35": {
+      "url": "https://id.loc.gov/authorities/names/n79109883.madsrdf.json",
+      "format": "json",
+      "sha256": "9321182b9ce3f0b7311de12ae35dc8de76c214418693e59d2935384d0419a882",
+      "version": "Library of Congress, Name Authority File, record n79109883 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_ropke35": {
+      "url": "https://id.loc.gov/authorities/names/n80115897.madsrdf.json",
+      "format": "json",
+      "sha256": "aee6195bc4fa4489b0924f9ed6fb0efb7bc0c4bd37aa31c6295c7aec7f39d437",
+      "version": "Library of Congress, Name Authority File, record n80115897 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_sebald35": {
+      "url": "https://id.loc.gov/authorities/names/n85239044.madsrdf.json",
+      "format": "json",
+      "sha256": "9e6a0d4a138d1ed70c523753b07f6267c4c97708d9eecf81f4f3c1e0028af0d5",
+      "version": "Library of Congress, Name Authority File, record n85239044 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_shoup35": {
+      "url": "https://id.loc.gov/authorities/names/n80004264.madsrdf.json",
+      "format": "json",
+      "sha256": "5243b7263bf4ca063f436376235be6bf467f8ef2daf9cd2195678717a0832454",
+      "version": "Library of Congress, Name Authority File, record n80004264 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_stalin35": {
+      "url": "https://id.loc.gov/authorities/names/n80044789.madsrdf.json",
+      "format": "json",
+      "sha256": "1743e443283b7e23fd6c31e5800a9b88d1d535376be0d5d3c0428a31b297557e",
+      "version": "Library of Congress, Name Authority File, record n80044789 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_tenenbaum35": {
+      "url": "https://id.loc.gov/authorities/names/n88227165.madsrdf.json",
+      "format": "json",
+      "sha256": "ce07e667a18ef3fa962f46a319fefa3d3d8227c8c58e1f304780e0675ee7bef4",
+      "version": "Library of Congress, Name Authority File, record n88227165 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_truman35": {
+      "url": "https://id.loc.gov/authorities/names/n79029742.madsrdf.json",
+      "format": "json",
+      "sha256": "d2a608fff9e1c580efea98471889826a8785cec5cda58cd5c12e4287c1884a04",
+      "version": "Library of Congress, Name Authority File, record n79029742 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_wang35": {
+      "url": "https://id.loc.gov/authorities/names/n81038945.madsrdf.json",
+      "format": "json",
+      "sha256": "df983454abab1156997e7646975e46dbd063952ae375aceac28c53328369742e",
+      "version": "Library of Congress, Name Authority File, record n81038945 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "loc_zhdanov35": {
+      "url": "https://id.loc.gov/authorities/names/n80131009.madsrdf.json",
+      "format": "json",
+      "sha256": "f26a1b4f535e01d8cddd6977a801d49387c32839c632949e4021621039707f89",
+      "version": "Library of Congress, Name Authority File, record n80131009 (MADS/RDF JSON from id.loc.gov). Public data.",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d333": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d333",
+      "format": "html",
+      "sha256": "bae73e854a4e844a526b5b7bd2c40c9a6af60693b5e4c77313e590fe1f78343e",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 333, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d340": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d340",
+      "format": "html",
+      "sha256": "a8bd9e5fd4d50912301e9d2f85ba61662625f6577e36ebfde4f44758757e3ebe",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 340, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d343": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d343",
+      "format": "html",
+      "sha256": "0c3a86fb48178a8f0efcca17feac646d8376a2384aec352fd8d571ae73ce9216",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 343, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d359": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d359",
+      "format": "html",
+      "sha256": "1fbbf215f829424ec0f34396253cbbb17e4b755eb6008eab6d16ccb0191450a6",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 359, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d364": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d364",
+      "format": "html",
+      "sha256": "903811de5bb31851232db7028a458f7f7fd43aee01b680fc67b8a0b891f8a604",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 364, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d368": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d368",
+      "format": "html",
+      "sha256": "092ba77a4df774a93f9c1599222846a720af4eda11808c868ae6de4aae6ac3fb",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 368, Office of the Historian",
+      "retrieved": "2026-10-28"
+    },
+    "frus1948v08_d372": {
+      "url": "https://history.state.gov/historicaldocuments/frus1948v08/d372",
+      "format": "html",
+      "sha256": "e5f6620449f7be66ac0cb02d4c534cdf091bb2b3a7fc043fa148846e0333a48e",
+      "version": "Foreign Relations of the United States, 1948, vol. VIII, The Far East: China, document 372, Office of the Historian",
+      "retrieved": "2026-10-28"
+    }
+  }
+}

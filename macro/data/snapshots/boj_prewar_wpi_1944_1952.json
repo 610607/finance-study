@@ -1,0 +1,14 @@
+{
+  "title": "Japan: Corporate Goods Price Index on the prewar base (formerly the Wholesale Price Index), all commodities, 1934-36 average = 1, monthly, January 1944 to December 1952",
+  "source": "Bank of Japan, Time-series data search, database PR01 (Corporate Goods Price Index), series PRCG_28Z0000000 '[Prewar Base Index] All commodities', retrieved through the Bank's statistics API",
+  "url": "https://www.stat-search.boj.or.jp/api/v1/getDataCode?format=csv&lang=en&db=PR01&startDate=194401&endDate=195212&code=PRCG_28Z0000000",
+  "series": "month (YYYY-MM), index (1934-36 average = 1)",
+  "retrieved": "2026-10-28",
+  "license": "Bank of Japan terms (https://www.boj.or.jp/en/copyright.htm): 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row bojcr_terms of reconstruction_facts)",
+  "citation": "Source: Bank of Japan, Corporate Goods Price Index (prewar base index), all commodities.",
+  "used_in": [
+    35
+  ],
+  "fetch": "data/fetch/boj_wpi35.py",
+  "notes": "The API answered at 2026-10-29T01:10:15.911+09:00 (Japan time), last update of the series 20261013; SHA-256 of the answer 019e0ab9578b75437d9b45bfbeb9547d79d2b1b2eaa06ae99525af97c0ac0d4d. The answer's header carries the time of the request, so a new download has a new hash with the same figures. The index is the Bank's continuation of its wholesale price index on the base 1934-36 = 1; Chapter 35 uses it for its figure of Japan's postwar inflation and compares the averages of 1944 and 1948 with the Ministry of Finance's '55.1 fold' (row mof_20fold of reconstruction_facts)."
+}

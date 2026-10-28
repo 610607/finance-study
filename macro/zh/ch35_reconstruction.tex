@@ -1,4 +1,5 @@
-% 第 35 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 35 章”，写法见 docs/STYLE.md。
+% 第 35 章。数字与教学模型：checks/check_ch35.py；图：figsrc/fig_ch35.py。
+% 史料：reconstruction_facts（取数脚本 data/fetch/reconstruction35.py）；日本的战前基期批发物价指数存 boj_prewar_wpi_1944_1952（取数脚本 data/fetch/boj_wpi35.py）。
 \chapter{战后重建：马歇尔计划、德国货币改革与道奇路线}\label{ch:reconstruction}
 
 \begin{chapterguide}
@@ -12,4 +13,350 @@
 \guideprereq{\chref{ch:warfinance}\enspace\nameref{ch:warfinance}；\chref{ch:weimar}\enspace\nameref{ch:weimar}}
 \end{chapterguide}
 
-\chapterstub
+1948 年 6 月 20 日是星期日。这一天，西方三国占领区的《货币法》生效\cite{buchheim1988}。法律由美、英、法三个占领区的军政长官颁布，第 1 条说，“自 1948 年 6 月 21 日起，实行德国马克货币制度”\cite{waehrungsgesetz1948}。德国马克是新的货币单位，一马克合 100 芬尼\cite{waehrungsgesetz1948}。被换掉的帝国马克，是 1924 年以来德国的货币单位（\chref{ch:weimar}）。每个居民可以用同样面额的旧钞换到至多 60 德国马克的现金，叫作人头额。其中至多 40 马克当场付给，其余在两个月内付清\cite{waehrungsgesetz1948}。
+% 据: bu_sunday, wg_title, wg_governors, wg_s1, wg_s6, wg_s6b
+
+两天前，美英两区合成的联合经济区，由经济委员会通过了一项法律，定下货币改革以后管制与价格政策的指导原则\cite{buchheim1988}。据 Buchheim 的引述，它的附件写道，“放开价格优先于官方定价”\cite{buchheim1988}。6 月 25 日，经济管理局局长凭这项法律的授权发布命令，放开了部分农产品与几乎全部工业制成品的价格\cite{buchheim1988}。经济局长是艾哈德（Ludwig Erhard，1897—1977），4 月 21 日他就以这个身份在经济委员会演说过\cite{abelshauser1981,gnd35}。6 月 30 日，大部分配给管制的规定自动失效\cite{buchheim1988}。
+% 据: bu_leitsatz, bu_annex, bu_june25, ab_erhard, gnd_erhard_born, gnd_erhard_died, bu_june30
+
+改革以前，钱多，东西少。1948 年 5 月，汉堡黑市上一公斤黑麦面包要 9.5 帝国马克，一个鸡蛋要 8 帝国马克\cite{buchheim1988}。一个熟练工人干 8 小时，工资只有 10 帝国马克\cite{buchheim1988}。照 Ritschl 的描述，改革以后，从第一天起，中间产品与最终产品的供应突然好转\cite{ritschl1985}。被压抑的通胀怎样一夜消失？
+% 据: bu_bread, bu_egg, bu_wage, ri_firstday
+
+\section{当时的世界}\label{sec:reconstruction-world}
+
+战争留下了一大笔花不出去的钱。它有多大，又怎样让经济停了下来？照 Buchheim 汇总的数字，整个战争期间，德国的税收与关税约 1850 亿帝国马克，只相当于新增债务 3350 亿帝国马克的 55\%\cite{buchheim1988}。帝国银行的钞票流通额，从 1939 年的不到 120 亿帝国马克增加到 1945 年 3 月 7 日的 560 多亿\cite{buchheim1988}。银行的存款从 1939 年末的 510 亿增加到 1944 年秋的 1600 亿\cite{buchheim1988}。价格管制与配给把这些钱关在了市场外面，这套机制\secref{sec:alternatives-repressed}讲过。
+% 据: bu_taxes, bu_notes, bu_deposits
+
+钱还在，东西却买不到。照 Buchheim 的叙述，按法定价格配给的东西很少，工资或存款总够买；黑市的价格又高得用正常的收入沾不上边\cite{buchheim1988}。许多企业于是把自己的产品按法定价格分给工人，或者用以货易货的办法，从别的企业换来合适的东西\cite{buchheim1988}。他引的估计说，改革以前西德多达一半甚至更多的交易是以货易货。他自己说这“也许夸大了”，但不靠以货易货，几乎没有哪家企业能够生产\cite{buchheim1988}。
+% 据: bu_rations, bu_blackmarket, bu_firms, bu_barter, bu_exaggerated
+
+钱买不到东西，人也就不肯多干活。照 Buchheim 的叙述，官方规定的仍是每周 48 小时，改革以前实际多半只干 40 小时或更少；多出的空闲用来下乡找吃的、做黑市买卖\cite{buchheim1988}。改革前三个月，联合经济区每工时的产量只有 1936 年的不到 60\%\cite{buchheim1988}。饮食太差是一个原因；照他的说法，按规定的工资多干活的动力也极小\cite{buchheim1988}。
+% 据: bu_hours, bu_hamster, bu_productivity, bu_incentive, bu_incentive2
+
+西欧别处也有同样的毛病。1947 年 6 月 5 日，美国国务卿马歇尔（George C. Marshall，1880—1959）在哈佛大学的毕业典礼上讲话\cite{marshall1947,loc35}。他说，在许多国家，“人们对本国货币的信心受到了严重的动摇”\cite{marshall1947}。城里的工业生产不出足够的货物，去和种粮食的农民交换\cite{marshall1947}。农民找不到想买的东西，“把农产品卖了换回用不上的钱，在他看来是一笔不合算的买卖”，就把许多田地改作了牧场\cite{marshall1947}。
+% 据: ms_occasion, ms_title, loc_marshall, ms_confidence, ms_town, ms_goods, ms_farmer, ms_grazing
+
+日本的情况更糟。按财务省的政策史，战败以后 761 万军人复员，军需工业的 400 万工人失去了工作，其中有 75 万妇女\cite{mof2010}。又有 150 万人从旧殖民地遣返\cite{mof2010}。日本面临就业人口的 17\% 突然失业的局面，政府安排的工作“只是杯水车薪，失业更严重了”\cite{mof2010}。
+% 据: mof_demob, mof_repat, mof_17, mof_drop
+
+钱却多了起来。照政策史的说法，发给复员军人的钱、预付给军需厂商的钱与战时停业的补偿，都让货币增加；当局没有采取足够有力的办法，战后的通胀就延续了下去\cite{mof2010}。1944—1948 年，日本银行券的平均发行额增加到 20 倍，批发物价涨到 55.1 倍\cite{mof2010}。日元是日本的货币单位。道奇计划以前的日子，当时有一句话概括，“政府是赤字，企业是赤字，家庭也是赤字”\cite{mof2010}。\figref{fig:reconstruction_japan}画出了日本银行以 1934—1936 年平均为 1 编的批发物价指数\cite{bojwpi}。
+% 据: mof_causes, mof_failed, mof_20fold, mof_red
+
+\fig{reconstruction_japan}{日本的批发物价，1944—1952 年（1934—1936 年平均为 1，对数刻度）。1949 年 4 月的道奇预算与 360 日元的单一汇率以后，涨势大大放慢；1950 年 6 月朝鲜战争爆发以后，又快涨了一阵。数据：日本银行，企业物价指数（战前基准指数）总平均。}{fig:reconstruction_japan}
+
+\section{过剩货币的两种消法}\label{sec:reconstruction-overhang}
+
+把问题写成式子，两种办法的分别就清楚了。设人们愿意持有的货币是名义收入的一个固定比例$k$，货币需求是$kPY$，$P$是价格水平，$Y$是实际产出；$k$相当于\chref{ch:bullion}交易方程里流通速度的倒数。价格被管制在$\bar P$时，人们手里的货币$M$多于愿意持有的$k\bar PY$，多出的部分就是\textbf{过剩货币}。放开价格而不动货币，价格会一直涨到人们愿意持有全部的$M$为止。货币改革则把$M$本身砍掉。
+\begin{keyeq}
+\text{过剩货币}=M-k\bar PY,\qquad \text{放开价格以后}\;P=\frac{M}{kY},\qquad \frac{P}{\bar P}=\frac{M}{k\bar PY}.\label{eq:reconstruction-overhang}
+\end{keyeq}
+最后一式说，价格放开以后涨的倍数，等于手里的货币与愿意持有的货币之比。两种办法都消掉了过剩，分别在于损失落在谁身上。放开价格，一切持有货币与货币债权的人按同一个比例受损，欠债的人得益。货币改革按自己的规则分配损失，可以让工资与租金不受影响（本书的解读）。产出若能增加，需要砍掉的货币就少一些。
+
+\begin{example}{过剩货币与两种办法}\label{ex:reconstruction-overhang}
+设实际产出$Y=100$，管制价格$\bar P=1$，$k=0.3$，人们手里的货币$M=90$，数字为教学输入。（1）过剩货币有多少？（2）不动货币，放开价格，价格水平是多少？（3）先按 3 比 1 换算货币，再放开价格呢？（4）若放开价格以后产出增加到 120，不改革货币，价格水平是多少？
+\solution
+（1）愿意持有的货币是$0.3\times1\times100=30$，过剩货币$90-30=60$。（2）$P=90/(0.3\times100)=3$，价格涨到 3 倍，每一单位货币只值原来的三分之一。（3）换算以后$M=30$，$P=30/30=1$，价格不变，砍掉的是 60 单位货币。（4）$P=90/(0.3\times120)=2.5$，产出的增加让价格少涨了一些，过剩却远没有消掉。
+\end{example}
+
+\begin{example}{德国的数字}\label{ex:reconstruction-germany}
+照 Buchheim 的数字，改革时非银行部门缴存与申报的旧货币共 1450 亿帝国马克；新创造的货币 6 月末是 44 亿德国马克，1948 年 12 月末约 120 亿德国马克\cite{buchheim1988}。按 Ritschl 引的官方工业生产指数，联合经济区 1948 年 6 月是 51，12 月是 79\cite{ritschl1985}。（1）12 月末的新货币相当于旧货币的百分之几？（2）用式~\eqref{eq:reconstruction-overhang}，设$k$不变，以工业生产代表产出，6 月到 12 月价格水平该涨多少？
+\solution
+（1）$120/1450\approx8.3\%$，不到旧货币的十二分之一；两种货币不是同一个单位，只能看量级。（2）货币增加到$120/44\approx2.73$倍，产出增加到$79/51\approx1.55$倍，$P$应增加到$2.73/1.55\approx1.76$倍，即涨 76\%。照 Buchheim 的数字，6—12 月工业品的生产者价格涨了 14\%，食品涨了 18\%，涨得少得多\cite{buchheim1988}。差额说明，人们愿意持有的德国马克比例$k$上升了，或者一部分价格仍受管制，两种解释都与这些数相容（本书的计算与解读）。
+\end{example}
+% 据: bu_145, bu_newmoney, ri_ipb_def, ri_ipb, bu_prices
+
+\begin{compare}{货币改革与价格放开}{货币改革}{价格放开}
+\cmprow{做什么}{砍掉货币$M$，存款与债务大体按 10 比 1 换算\cite{umstellungsgesetz1948}}{让价格$P$涨到人们愿意持有全部货币为止}
+\cmprow{单独做}{法国占领区换了货币，管制起初没有改，1948 年秋天加快的回升几乎没有波及那里\cite{ritschl1985}}{\exref{ex:reconstruction-overhang}里价格涨到 3 倍，货币的持有者损失三分之二}
+\cmprow{谁受损}{按换算的规则，储户与货币债权人损失最大，工资与租金按 1 比 1 不变\cite{umstellungsgesetz1948}}{一切持有货币与货币债权的人，按同一个比例}
+\cmprow{1948 年的西德}{6 月 20 日的《货币法》与一周以后公布的《换算法》\cite{buchheim1988}}{6 月 25 日的价格命令，6 月 30 日配给规定失效\cite{buchheim1988}}
+\cmpsum{西德把两件事放在同一个星期里做。据 Buchheim 的引述，勒普克（Wilhelm Röpke，1899—1966）1948 年 10 月在《新苏黎世报》上说，法国占领区的做法是一种“对照试验”\cite{buchheim1988,loc35}。}
+\end{compare}
+% 据: ug_s2, ri_french, ri_autumn, ug_s18, bu_week, bu_june25, bu_june30, bu_ropke, bu_ropke_nzz, loc_ropke
+
+\section{西德的货币改革}\label{sec:reconstruction-germany}
+
+方案两年前就有了雏形。谁定的规则，规则又是什么？1946 年 5 月，美国军政长官克莱（Lucius D. Clay，1897—1978）向陆军部报告，收到了一份货币改革的方案\cite{buchheim1988,loc35}。方案按三位主要作者的姓氏叫作 CDG 方案\cite{buchheim1988}。一位是克莱的财政顾问道奇（Joseph M. Dodge，1890—1964）\cite{buchheim1988,loc35}。另两位是出生在德国的经济学家科尔姆（Gerhard Colm，1897—1968）与戈德史密斯（Raymond W. Goldsmith，1904—1988）\cite{buchheim1988,loc35}。据 Buchheim 的引述，方案说德国眼前的危险“不在于防止通胀的管制崩溃，而在于它们变得毫无意义”\cite{buchheim1988}。它主张货币债权债务一律按 10 比 1 贬值，只有工资、租金与税收照旧\cite{buchheim1988}。
+% 据: bu_clay_cdg, bu_governors, loc_clay, bu_cdg, loc_colm, loc_goldsmith, loc_dodge, bu_cdg_quote, bu_cdg_terms
+
+四国没有谈成。照 Buchheim 的叙述，到 1948 年 3 月中，只在西德改革的路已经打通\cite{buchheim1988}。4 月末，盟国把要点告诉了在卡塞尔附近的罗特维斯滕闭门拟定技术细节的德国专家，这些要点已经“不能再改”\cite{buchheim1988}。旧存款的 70\% 勾销，20\% 冻结，10\% 换成新钱，帝国的债务作废，负担平衡的立法交给德国人自己\cite{buchheim1988}。美国军政府派去联络的是特南鲍姆（Edward A. Tenenbaum，1921—1975）\cite{buchheim1988,loc35}。据 Buchheim 的转述，他在会上说，信贷政策大概要很严\cite{buchheim1988}。
+% 据: bu_march, bu_conclave, bu_principles, bu_tenenbaum, loc_tenenbaum, bu_hart
+
+最后由军政府颁布了四项基本法律\cite{buchheim1988}。《货币法》的序言说，三国的军政长官商定颁布统一的法律，为的是“消除国家社会主义造成的货币崩坏的后果”\cite{waehrungsgesetz1948}。6 月 20 日先生效的是《发行法》与《货币法》，《发行法》规定德意志各邦银行发行钞票的办法\cite{buchheim1988}。这家中央银行是军政府 1948 年 3 月 1 日的法律设立的\cite{bdlgesetz1948}。一周以后公布的《换算法》规定存款与债务怎样换算，10 月 4 日的《冻结账户法》决定了冻结部分的去向\cite{buchheim1988,festkontogesetz1948}。\tabref{tab:reconstruction-conversion}按法律的条文列出这些规则。
+% 据: bu_four, wg_purpose, bu_sunday, bu_emission, bdl_title, bdl_number, bdl_date, bu_week, bu_ug_date, fk_title, fk_date
+
+\begin{table}[tbp]
+\centering\small
+\caption{西德货币改革的换算规则（1948 年）}\label{tab:reconstruction-conversion}
+\begin{tabularx}{\linewidth}{@{}l X l@{}}
+\toprule
+项目 & 规则 & 条文 \\
+\midrule
+人头额 & 每个居民以同样面额的旧钞换至多 60 德国马克，先付至多 40 & 货币法第 6 条 \\
+企业的周转额 & 每个雇员 60 德国马克 & 货币法第 17 条 \\
+存款 & 先为每个家庭成员扣除 540 帝国马克，抵消人头额；余下的每 10 帝国马克记 1 德国马克，一半记入自由账户，一半记入冻结账户 & 换算法第 2、4 条 \\
+冻结账户 & 每 10 德国马克勾销 7 马克，2 马克转入自由账户，余下的只能投资于中长期证券 & 冻结账户法第 1 条 \\
+私人债务 & 每 10 帝国马克还 1 德国马克 & 换算法第 16 条 \\
+工资、租金、养老金 & 6 月 20 日以后到期的，1 帝国马克付 1 德国马克 & 换算法第 18 条 \\
+帝国与纳粹党的债务 & 不适用换算的规定 & 换算法第 14 条 \\
+银行之间的债务 & 一律消灭；资产不够抵偿存款的银行，得到年息 3\% 的平衡债权 & 换算法第 11、18 条 \\
+\bottomrule
+\end{tabularx}
+\datasource{《货币法》（第 61 号法律）、《换算法》（第 63 号法律）与《冻结账户法》（第 65 号法律）的条文，据 verfassungen.de 的文本。}
+\end{table}
+% 据: wg_s6, wg_s6b, wg_s17, ug_s4, ug_s4b, ug_s2, ug_s2b, ug_s2c, fk_s1a, fk_s1b, fk_s1c, fk_s1c2, ug_s16, ug_s18, ug_s18w, ug_s18d, ug_s14, ug_s18c, ug_s11, ug_s11b, ug_s11c, wg_number, ug_number, fk_number
+
+换算砍得很狠。照 Buchheim 的计算，较大的帝国马克存款最终按 100 比 6.5 换成了德国马克\cite{buchheim1988}。帝国、帝国铁路、帝国邮政与纳粹党的债务不换算；照他的说法，这些债务没有消灭，债权人却暂时也用不了，到 1957 年才按面额的 10\% 换成新的债权\cite{buchheim1988}。德国专家原想让私人的长期债务按 1 比 1 换算，理由是债务人通常拥有实物资产\cite{buchheim1988}。特南鲍姆的看法是，储蓄存款既然砍掉了，别的货币债权也不能按面值换算\cite{buchheim1988}。
+% 据: bu_65, bu_reich, bu_reich2, bu_1957, bu_debtors, bu_tenenbaum_arg
+
+这和 1923 年的稳定不一样。\chref{ch:weimar}讲过，那时一万亿纸马克合一个战前的金马克，地租马克发行的同一天，帝国银行停止贴现国库券。钱的价值已经被公开的通胀耗尽，稳定靠的是不再印钞。1948 年的物价被管制压着，账面上的钱还在，改革要把它砍掉，并且规定损失落在谁身上（本书的比较）。
+
+\begin{example}{一个家庭的换算}\label{ex:reconstruction-household}
+设一个四口之家，父母与两个未满 18 岁的孩子，改革前手里有 240 帝国马克的现钞，银行里有 10000 帝国马克的存款，欠别人 500 帝国马克，父亲的月工资是 300 帝国马克，数字为教学输入。按\tabref{tab:reconstruction-conversion}的规则，（1）现钞换得多少？（2）存款到 6 月末记入两个账户的各是多少？（3）10 月以后呢？（4）债务与工资怎样换算？
+\solution
+（1）每人至多 60 马克，四人 240 马克，现钞按 1 比 1 全部换成德国马克。（2）存款先扣除$4\times540=2160$帝国马克，余下 7840 帝国马克，按 10 比 1 得 784 德国马克，自由账户与冻结账户各 392 马克。（3）冻结的 392 马克里，勾销 274.4 马克，78.4 马克转入自由账户，39.2 马克只能投资。家庭最后有$240+392+78.4+39.2=749.6$德国马克，原来的 10240 帝国马克只剩 7.3\%。（4）债务只需还 50 德国马克，6 月 20 日以后的工资按 300 德国马克照发。持有货币的家庭损失了九成以上，欠债的人与拿工资的人不受这一刀。
+\end{example}
+% 据: ug_family, ug_s4b
+
+\section{代价}\label{sec:reconstruction-cost}
+
+损失最重的是储户。改革砍掉的钱落在谁身上，失业又怎样增加？照 Buchheim 的数字，单是金融机构的储蓄存款就有 700 多亿帝国马克，到 1948 年末，记入自由账户的却只有 53 亿德国马克\cite{buchheim1988}。人头额要从存款里全额扣除，许多储户的存款不到人头额的 10 倍，换算时什么也没有得到\cite{buchheim1988}。照他的说法，人们中间弥漫着一种“被剥夺的感觉”，10 月的冻结账户决定又让人们对德国马克的信心一度大大减弱\cite{buchheim1988}。
+% 据: bu_savings, bu_freikonto, bu_empty, bu_enteignung, bu_confidence
+
+最苦的是战后逃来的被驱逐者。照 Buchheim 的叙述，他们失业的比例较高，他们办的企业格外容易破产，许多人因为没钱，连配给的口粮都买不全\cite{buchheim1988}。私人的、特别是教会的慈善机构没有了钱，只好减少救济，穷人普遍受到影响\cite{buchheim1988}。
+% 据: bu_expellees, bu_welfare
+
+拥有实物资产的人却过得很好\cite{buchheim1988}。照 Buchheim 的比较，股份公司从帝国马克的结账表到德国马克的开账表，自有资本总体上保住了 96\%\cite{buchheim1988}。《货币法》的序言把负担平衡交给德国的立法机关，作为一项“紧迫的、必须在 1948 年 12 月 31 日以前解决的任务”\cite{waehrungsgesetz1948}。头一项办法《紧急救助法》1949 年 8 月 8 日才生效，正式的《负担平衡法》1952 年 8 月才通过\cite{buchheim1988}。
+% 据: bu_sachwert, bu_equity, wg_lastenausgleich, bu_soforthilfe, bu_lag
+
+负担平衡的财产税原则上按 50\% 征收\cite{buchheim1988}。到 1979 年征收期结束，它一共只收了 420 亿德国马克；1948 年的财产单是可再生产的部分，就估计在 3000 亿德国马克以上\cite{buchheim1988}。1953 年的《老储户法》也只把一部分储蓄的换算率提高到 10 比 2，条件是 1940 年初就已持有\cite{buchheim1988}。照 Buchheim 的说法，实物资产所有者的得益，远远不是这些“分摊在许多年里、数额较小的付款”抵得上的\cite{buchheim1988}。
+% 据: bu_levy50, bu_levy42, bu_wealth300, bu_altsparer, bu_notoffset
+
+放开的价格涨了起来。照 Buchheim 的数字，1948 年 6 月到 12 月，工业原料的价格涨了 26\%，生活费用指数里的食品涨了 18\%，衣着涨了 35\%\cite{buchheim1988}。工资却大体还冻着，各地有“示威、骚乱与抵制的号召”\cite{buchheim1988}。1948 年 12 月的一次民意调查里，70\% 的受访者认为应当恢复价格管制\cite{buchheim1988}。艾哈德在经济委员会等机构里受到很大的压力，不得不一步步恢复一些管制\cite{buchheim1988}。
+% 据: bu_prices, bu_prices2, bu_wagestop, bu_protest, bu_poll, bu_pressure
+
+12 月，物价的趋势掉了头\cite{buchheim1988}。照 Buchheim 的说法，原因之一是德意志各邦银行限制信贷，公共预算从 1948 年第四季度起有了盈余，马歇尔计划的进口也让生产者不再囤货\cite{buchheim1988}。1949 年，基督教民主联盟拿“市场经济还是计划经济”作竞选的口号，赢得了第一届联邦议院的选举\cite{buchheim1988}。
+% 据: bu_turn, bu_surplus, bu_hoarding, bu_election
+
+失业却在增加。按德意志各邦银行 1950 年 2 月的月报，联邦地区的失业人数 1948 年 6 月是 45 万，1949 年 12 月是 156 万，1950 年 2 月到了 198 万\cite{bdl1950}。就业人数大体不变，1948 年 6 月是 1347 万，1949 年 12 月是 1356 万\cite{bdl1950}。\figref{fig:reconstruction_germany}画出了生产与失业。
+% 据: bdl_unemp, bdl_emp
+
+失业逼着政策转了向。同一期月报说，去年年底以来生产的回升又陷于停顿，“失业在最近几个月大大增加”，物价又有轻微下跌的趋势\cite{bdl1950}。中央银行系统已经答应，必要时为联邦政府对付失业的计划提供信贷\cite{bdl1950}。政府有一个 9.5 亿德国马克的特别计划，中央银行答应为其中的四项提供再融资\cite{bdl1950}。联邦铁路 2.5 亿，小额投资的工业信贷 0.5 亿\cite{bdl1950}。失业特别严重的州的投资与出口融资，各 3 亿\cite{bdl1950}。剩下邮政的 0.5 亿，由它自己筹措\cite{bdl1950}。住房建设计划在这一个建筑季里至少要投入 25 亿德国马克\cite{bdl1950}。
+% 据: bdl_report, bdl_stall, bdl_credit, bdl_950, bdl_parts, bdl_post, bdl_housing
+
+改革也分开了德国。照 Buchheim 的叙述，西德的改革起初不包括西柏林。几天以后，苏联占领区实行了自己的货币改革，柏林被全面封锁\cite{buchheim1988}。
+% 据: bu_westberlin, bu_soviet
+
+\fig{reconstruction_germany}{货币改革以后，生产加快回升，失业也在增加。(a) 官方的工业生产指数（1936 年为 100），联合经济区与法国占领区，竖线是 1948 年 6 月的货币改革；法国占领区 1947 年的数是 Manz 按产值平减的估计。(b) 联邦地区的失业人数（千人），1948 年 3 月到 1950 年 2 月。数据：Ritschl（1985）表 1；德意志各邦银行 1950 年 2 月月报第 57 页。}{fig:reconstruction_germany}
+
+\section{马歇尔计划}\label{sec:reconstruction-marshall}
+
+马歇尔在哈佛提出的，是一笔援助的办法。他算的账是，欧洲今后三四年需要从国外、主要是从美国买的粮食与必需品，远远超过它眼下的支付能力\cite{marshall1947}。他说，“补救的办法在于打破恶性循环，恢复欧洲人民对本国以及整个欧洲经济前途的信心”\cite{marshall1947}。美国的政策“不针对任何国家或主义，针对的是饥饿、贫困、绝望与混乱”\cite{marshall1947}。
+% 据: ms_ability, ms_remedy, ms_doctrine
+
+他说，政策的目的应当是“让世界的经济恢复运转，使自由制度得以存在的政治与社会条件能够出现”\cite{marshall1947}。他没有替欧洲开单子。照他的说法，美国单方面拟一个让欧洲在经济上站起来的方案，既不合适，也不会有效；“主动权，我想，必须来自欧洲”\cite{marshall1947}。援助有多大，又起了什么作用？
+% 据: ms_purpose, ms_unilateral, ms_initiative
+
+援助先要有法律。1948 年 4 月 3 日，《经济合作法》获得批准\cite{eca1948}。法律说，援助出自参加国的多边承诺，依据的是 1947 年 9 月 22 日在巴黎签署的欧洲经济合作委员会报告；它还以参加国建立一个“持续的组织”为条件\cite{eca1948}。法律为生效以后的一年授权至多 43 亿美元的拨款；拨款以前，复兴金融公司先垫付至多 10 亿美元\cite{eca1948}。它的目的之一，是“促进恢复或维持欧洲货币、预算与财政的健全”\cite{eca1948}。
+% 据: eca_approved, eca_pledges, eca_organization, eca_43, eca_rfc, eca_purpose
+
+每个受援国还要和美国签订双边协定\cite{eca1948}。协定要它采取必要的财政与货币措施，“稳定本国的货币，建立或维持有效的汇率，尽快平衡政府预算，总的来说恢复或维持人们对本国货币制度的信心”\cite{eca1948}。赠与的物资，受援国还要“按相当的数额，把本国货币存进一个特别账户”\cite{eca1948}。
+% 据: eca_bilateral, eca_budget, eca_confidence, eca_special
+
+照 De Long 与 Eichengreen 的统计，1948—1951 年美国为欧洲复兴提供了 132 亿美元，其中英国 32 亿美元，法国 27 亿美元\cite{delong1991}。\figref{fig:reconstruction_marshall}画出了各国的数目。这些援助不到受援国国民收入合计的 3\%，不到它们总投资的五分之一\cite{delong1991}。
+% 据: de_amounts, de_share
+
+援助买的多半不是机器。照两人的统计，只有 17\% 的援助美元花在“机器与车辆”和杂项上，其余买的是工业原料、半成品与农产品\cite{delong1991}。照他们引的 Eichengreen 与 Uzan 的估计，单靠增加投资这一条路，援助只让西欧 1951 年以后的国民收入高了约 2\%\cite{delong1991}。
+% 据: de_machinery, de_materials, de_two
+
+他们看重的是另一条路。照他们的说法，战后各方争夺产出的份额，要求的总和超过产出的部分，表现为政府的预算赤字\cite{delong1991}。这样的冲突很容易让总需求超过供给 7\% 到 8\%；要靠印钞来填，基础货币每年就得增加相当于国内生产总值的 8\%\cite{delong1991}。相当于国民产出 2.5\% 的援助，填上了这个缺口的一大块\cite{delong1991}。援助又要等稳定方案合格才给，照他们的说法，这给了各国政府整顿财政的“强大动力”，计划“很可能提早了财政稳定的日子”\cite{delong1991}。他们的比较是，二战以后各国国内的物价稳定用了四年；一战以后，德国的恶性通胀发生在第六年，法国的通胀持续了八年\cite{delong1991}。
+% 据: de_attrition, de_gap, de_hpm, de_aid25, de_incentive, de_four_years
+
+特别账户里的钱叫作对等基金。照 De Long 与 Eichengreen 的叙述，受援国每得到 1 美元援助，就要存进相当的本国货币，只能用于美国政府批准的用途\cite{delong1991}。英国把大部分对等基金拿去偿还公债\cite{delong1991}。照 Abelshauser 的说法，英国的对等基金“匿名地”流进了国家预算，主要用来买回短期国债\cite{abelshauser1981}。正在通胀的国家，要等计划的管理当局确信它“已经有了一个可行的稳定方案”，才能动用这笔钱\cite{delong1991}。
+% 据: de_counterpart, de_britain, ab_britain, de_inflation
+
+西德最初得到的不多。照 Abelshauser 的统计，到 1948 年末，运到联合经济区的物资总值不到 9900 万美元，其中工业品只有 2200 万美元，三分之二以上是棉花\cite{abelshauser1981}。到那时为止答应的援助，只有 27\% 真的到了\cite{abelshauser1981}。照他的说法，到这时为止，参加马歇尔计划在政治上的收获比实际的贡献更大\cite{abelshauser1981}。后来西德的对等基金，照德意志各邦银行 1950 年的月报，绝大部分经由复兴信贷银行投放出去\cite{bdl1950}。
+% 据: ab_99, ab_27, ab_political, bdl_kfw
+
+援助名义上也向东欧与苏联开放。照 De Long 与 Eichengreen 的解读，莫斯科的拒绝，部分是因为不愿让美国把它的卫星国引离计划经济的路\cite{delong1991}。1950 年，西欧各国谈成了欧洲支付同盟，用信贷促进彼此之间的多边贸易\cite{delong1991}。它怎样运转，欧洲为什么一直缺美元，是\chref{ch:brettonwoods}的题目。
+% 据: de_moscow, de_epu
+
+\fig{reconstruction_marshall}{马歇尔计划的援助，1948—1951 年（亿美元）。英、法、意与西方占领的德国四国合计 88 亿美元，其余受援国合计 44 亿美元，是总数 132 亿美元减去四国之和（本书的计算）。数据：De Long and Eichengreen（1991）第 14 页。}{fig:reconstruction_marshall}
+
+\section{日本：从冻结存款到道奇计划}\label{sec:reconstruction-japan}
+
+日本比西德早两年动手。1946 年 2 月 17 日，日本政府发布《金融紧急措施令》与《日本银行券存入令》，当即生效\cite{mof2010}。个人与企业的存款一律冻结，旧钞“除了存入银行以外”，到 3 月 2 日一律作废，另发新钞\cite{mof2010}。每月从冻结账户里能取的生活费，户主 300 日元，其他家庭成员每人 100 日元\cite{mof2010}。企业发工资，每个雇员每月至多取 500 日元\cite{mof2010}。这一次为什么没有成功？
+% 据: mof_ordinances, mof_frozen, mof_void, mof_withdraw, mof_wages, bjc_1946
+
+钞票先是缩了，随后又涨了回来。按日本银行的百年史，日本银行券的发行额在 2 月 16 日是 615 亿日元，3 月 12 日缩到 152 亿日元\cite{boj1985}。9 月 16 日，它回到 618 亿日元，超过了措施实施以前的水平；12 月末达到 934 亿日元\cite{boj1985}。
+% 据: bj_notes
+
+冻结的存款也一点点漏了出去。按财务省政策史的表，1946 年 3 月末，全国银行的第一类冻结账户余额是 944.5 亿日元，自由账户只有 145.2 亿日元，各类存款合计 1357.5 亿日元\cite{mof2010}。企业拿冻结存款结账，个人取出来过日子；从冻结账户发工资的限制先放宽，后来干脆取消\cite{mof2010}。到 1948 年 6 月，冻结账户只剩 298.4 亿日元，自由账户却有 2627 亿日元\cite{mof2010}。1948 年 2 月，第二类冻结存款被勾销了一部分，算作存款人的损失\cite{mof2010}。7 月 21 日，冻结存款的制度结束；照政策史的说法，“市场上的通胀倾向仍然是个问题”\cite{mof2010}。
+% 据: mof_table_head, mof_table46, mof_frozen46, mof_leak, mof_wagerules, mof_frozen48, mof_table48, mof_erased, mof_losses, mof_end, mof_bias
+
+政府欠企业的战时补偿则一笔勾销。1946 年 10 月 19 日通过的《战时补偿特别措施法》，对向政府的请求权征收税率 100\% 的特别税，实际上停付了这笔钱\cite{mof2010}。这和西德不换算帝国的债务，是同一类办法（本书的比较）。
+% 据: mof_indemnity_law, mof_tax100, mof_endpay
+
+毛病在预算与贷款。按百年史的数字，1946 年度一般会计的最终预算是 1191 亿日元，靠公债与借款筹来的 445 亿日元占了 37.4\%\cite{boj1985}。百年史说，占领军经费的负担与经济力的减弱都要考虑，但这一年的赤字很大程度上来自大藏大臣石桥湛山（1884—1973）主张的积极政策，为的是恢复与增加生产\cite{boj1985,loc35}。1946 年 12 月，内阁决定实行“倾斜生产”，把增产的煤用来增产钢铁，再用钢铁去增产煤\cite{mof2010}。
+% 据: bj_budget, bj_ishibashi, loc_ishibashi, mof_priority
+
+钱从复兴金融金库流出去。按财务省的政策史，这家政府金融机构 1947 年 1 月 24 日成立，政府出资 40 亿日元\cite{mof2010}。一般会计拿不出钱，它的贷款“主要靠日本银行承购的债券”\cite{mof2010}。到 1947 年度末，煤炭业占了它全部贷款的 33\%\cite{mof2010}。这样的贷款推高了物价，当时的通胀被叫作“复金通胀”\cite{mof2010}。
+% 据: mof_rfb, mof_bonds, mof_coal, mof_rfbinfl
+
+1948 年 12 月 10 日，美国政府发表声明，认为盟军最高司令官应当要求日本政府“立即实行一项国内经济稳定的计划”\cite{frus1948jp}。计划包括财政、货币、物价与工资的稳定，以及为出口而最大限度地增产\cite{frus1948jp}。声明列出九项措施，头一项是“实现综合预算的真正平衡”，其后是加紧征税、限制信贷与稳定工资\cite{frus1948jp}。
+
+声明还要“加强现有的物价管制计划，必要时扩大它的范围”，提高分配与配给制度的效率\cite{frus1948jp}。计划开始以后，至迟三个月内要定下单一汇率\cite{frus1948jp}。和西德不同，这份声明没有放开管制，反而要加强它（本书的比较）。
+% 据: f6_statement, f6_program, f6_aims, f6_budget, f6_measures, f6_prices, f6_ration, f6_rate
+
+执行的人来自美国。按日本银行的百年史，12 月 11 日，杜鲁门（Harry S. Truman，1884—1972）总统请底特律银行的总裁道奇，以盟军最高司令官财政顾问的身份去日本\cite{boj1985,loc35}。美国的外交文件也记着，12 月 14 日国务院致电道奇，敦促他接受总统的请求，答应对“一个健全的日本经济稳定计划”给予“全力支持”\cite{frus1948jp}。百年史说，盟国占领德国以后，道奇当过军政府的财政局长，参与过货币与银行改革的设计与实施\cite{boj1985}。包括他在内 7 个人的调查团，1949 年 2 月 1 日到了日本\cite{boj1985}。
+% 据: bj_truman, loc_truman, f6_lovett, bj_dodge_germany, bj_mission
+
+3 月 7 日，道奇发表声明。按百年史概括的要点，德国实行了激烈的货币削减，不等于日本也要照样制订削减货币的计划\cite{boj1985}。打开通胀塞子的是政府，“必须把塞子塞上的也是政府”\cite{boj1985}。政府的支出“必须只限于以能够征收的税为财源的部分”\cite{boj1985}。美国的援助出自美国公民与企业缴的税，不会一直持续下去\cite{boj1985}。
+% 据: bj_march7, bj_germany, bj_stopper, bj_taxes, bj_aid
+
+预算先翻了过来。1949 年度的预算 4 月 20 日通过，一般会计有 3 亿日元的盈余，整个财政的净计预算盈余 1567 亿日元\cite{boj1985}。到 1949 年 3 月末，复兴金融债券的余额是 1091 亿日元，这一年要全部偿还，复兴金融金库的新贷款也停了\cite{boj1985,mof2010}。财务省的政策史说，这种预算当时被叫作“超平衡”预算，1949 年度实行的这套政策叫作道奇计划\cite{mof2010}。
+% 据: bj_budget49, bj_surplus, bj_rfbbonds, bj_rfbstop, mof_rfbstop, mof_overbalanced, mof_dodgeplan
+
+汇率随后统一。1949 年 1 月，出口用的汇率从 1 美元兑 160 日元到 600 日元不等\cite{mof2010}。纺织品占出口的 60\%，它的汇率就有三种\cite{mof2010}。三种汇率是 420、350 与 330 日元\cite{mof2010}。盟军总部考虑过 300 日元或 400 日元，最后定为 360 日元\cite{mof2010}。汇率由 4 月 23 日的盟军总部备忘录确定，4 月 25 日生效\cite{mof2010,bojchron}。百年史说，生丝的价格随之大跌，制丝业者的损失估计约 14 亿日元\cite{boj1985}。
+% 据: mof_range, mof_textiles, mof_300, mof_360, mof_memo, bjc_360, bj_silk
+
+\begin{example}{单一汇率与出口商}\label{ex:reconstruction-yen}
+设一家棉纺织品出口商按 1 美元兑 420 日元结汇，一年卖出 1 万美元的货，数字为教学输入。（1）改按 360 日元以后，它的日元收入少了多少？（2）要保住原来的日元收入，美元售价要提高多少？（3）一家按 330 日元结汇的进口商呢？
+\solution
+（1）收入从 420 万日元降到 360 万日元，少了 60 万日元，即$60/420\approx14.3\%$。（2）售价要提高$420/360-1\approx16.7\%$。（3）进口 1 美元的货，要多付 30 日元，成本高了$30/330\approx9.1\%$。原来的多种汇率，等于给一部分出口商与进口商贴了钱，单一汇率把这笔隐含的补贴取消了（本书的解读）。
+\end{example}
+
+这些办法是占领当局定下、督着执行的。1949 年 5 月 2 日，国务院东北亚司的一份备忘录写道，道奇作为盟军总部的财政顾问，“在经济领域几乎被赋予了全部的权力”\cite{frus1949jp}。照备忘录的说法，盟军总部自己承认，去年 12 月的稳定指令把缩小总部作用的政策“完全扭转了”\cite{frus1949jp}。它对日本政府经济事务的干预，在各级都增加了\cite{frus1949jp}。新年度预算里的占领费用是 1250 亿日元，约为预计的美国援助的七分之五\cite{frus1949jp}。
+% 据: f9_memo, f9_authority, f9_reversed, f9_interference, f9_occupation
+
+紧缩也有代价。1949 年 5 月，夏普（Carl S. Shoup，1902—2000）带领的税制使节团来到日本\cite{mof2010,loc35}。同月 17 日，日本银行总裁一万田尚登（1893—1984）在全国银行大会上说，突然转入强度的通缩，造成价格急落、失业增加，“必须警惕”\cite{boj1985,loc35}。他主张把财政偿还的资金适当地再放出去\cite{boj1985}。按百年史的表，1950 年 1—6 月，东京的零售物价跌了 7.9\%\cite{boj1985}。
+% 据: mof_shoup, loc_shoup, bj_ichimada, loc_ichimada, bj_rerelease, bj_retail
+
+紧缩也被日本银行抵消了一部分。按财务省的政策史，1949 年 6 到 8 月，日本银行开始买进复兴金融债券，以后又不断买进国债\cite{mof2010}。到 1949 年末，为弥补道奇计划造成的资金短缺，它累计买进了 321 亿日元\cite{mof2010}。盟军总部同意这种放款，“作为缓解道奇计划通缩效果的一种办法”\cite{mof2010}。日本银行对商业银行的贷款，1948 年末是 493 亿日元，1949 年末 842 亿日元，1950 年末 2556 亿日元\cite{mof2010}。照政策史的说法，1950 年 3 月前后，道奇开始批评货币政策，认为停发公债的效果被银行信贷的过度增长抵消了\cite{mof2010}。
+% 据: mof_rfbbuy, mof_321, mof_relief, mof_bojlending, mof_dodge_critical
+
+裁员落在职员与工人身上。1949 年 10 月 27 日，苏联代表在远东委员会指责日本当局的大批解雇，说被赶走的“首先是工会的领袖与积极分子”\cite{frus1949jp}。11 月 11 日，美国驻日代理政治顾问西博尔德（William J. Sebald，1901—1980）在给国务卿的电报里拟了答复\cite{frus1949jp,loc35}。照他的说法，按国会 1949 年 5 月通过的第 126 号法律，政府职员总共削减约 20\%，夏天解雇了正式在册人员的约 10\%\cite{frus1949jp}。他说，被解雇的人里也许有工会的积极分子，“但那肯定不是解雇的标准”\cite{frus1949jp}。
+% 据: f9_soviet, f9_sebald, loc_sebald, f9_law126, f9_criterion
+
+1950 年 6 月 25 日，朝鲜战争爆发\cite{boj1985}。美军在日本大量采购，叫作特需\cite{mof2010}。到 1951 年 1 月 7 日的约半年里，特需的合同累计 1.91 亿美元\cite{boj1985}。1950 年下半年，矿工业生产指数升了 24.7\%，东京的批发物价涨了 23.5\%\cite{boj1985}。按财务省的政策史，特需给日本带来的美元收入，1951 年相当于出口的 25\%，1952 年相当于 35\%\cite{mof2010}。政策史说，它“创造了大量新的工作岗位，大大刺激了国内生产”\cite{mof2010}。日本此后的高速增长，在\chref{ch:eastasia}。
+% 据: bj_korea, bj_tokuju, bj_mining, bj_wpi, mof_tokuju, mof_jobs
+
+\begin{compare}{德国的稳定与日本的稳定}{西德（1948）}{日本（1949）}
+\cmprow{货币}{存款与债务按 10 比 1 换算，冻结账户十分之七勾销\cite{umstellungsgesetz1948,festkontogesetz1948}}{1946 年冻结存款，发新钞，钞票几个月后又涨了回来\cite{boj1985}}
+\cmprow{价格}{6 月 25 日放开大部分工业品的价格\cite{buchheim1988}}{九项措施要求加强物价管制\cite{frus1948jp}}
+\cmprow{预算}{公共预算从 1948 年第四季度起有盈余\cite{buchheim1988}}{1949 年度净计预算盈余 1567 亿日元\cite{boj1985}}
+\cmprow{中央银行}{德意志各邦银行限制信贷\cite{buchheim1988}}{复兴金融金库停止新贷款，债券全部偿还\cite{boj1985}}
+\cmprow{汇率}{德国马克起初沿用帝国马克的折算率，合 30 美分\cite{buchheim1988}}{1 美元兑 360 日元\cite{mof2010}}
+\cmprow{代价}{储户损失大半，失业增加到 1950 年初的近 200 万\cite{buchheim1988,bdl1950}}{政府职员削减约 20\%，零售物价下跌\cite{frus1949jp,boj1985}}
+\cmpsum{西德一次砍掉货币，又放开价格；日本靠预算的盈余与停止贷款收紧货币，管制则多留了一段时间。两国都以一个钉住美元的汇率收尾。}
+\end{compare}
+% 据: ug_s2, fk_s1a, bj_notes, bu_june25, f6_prices, bu_surplus, bj_surplus, bu_turn, bj_rfbstop, bu_30cents, mof_360, bu_empty, bdl_unemp, f9_law126, bj_retail
+
+\section{英国、苏联与中国}\label{sec:reconstruction-others}
+
+英国的办法是慢慢地还。\chref{ch:warfinance}讲过，战后抵免在战争期间动用不了。1959 年 4 月 15 日，财政大臣希思科特·埃默里（Derick Heathcoat Amory，1899—1981）在下院回顾了它的经过\cite{hansard1959,gnd35}。照他的说法，1941 年的财政法原定在敌对行动结束以后“尽早”偿还\cite{hansard1959}。按 1946 与 1947 年的财政法，男子到 65 岁、女子到 60 岁才能领\cite{hansard1959}。最初的抵免约 7.65 亿英镑，1946 年抵了 2500 万英镑的欠税，已经还了 3.1 亿英镑\cite{hansard1959}。还欠约 4.3 亿英镑，每年约还 1800 万英镑\cite{hansard1959}。
+% 据: h59_speaker, gnd_amory, gnd_amory_born, gnd_amory_died, h59_1941, h59_soon, h59_ages, h59_765, h59_430
+
+埃默里说，战争结束将近十四年，最初的抵免还有一半以上没有还，这种局面“我想，我们谁也不能安心”\cite{hansard1959}。照他的说法，历任财政大臣认为不能还得更快，理由简单说就是“通胀普遍”\cite{hansard1959}。他把领取的年龄降低两岁，男子 63 岁，女子 58 岁\cite{hansard1959}。法案授权政府用条例规定偿还的资格；他说，这项权力可以用来对付经济在繁荣与萧条两极之间的摇摆\cite{hansard1959}。
+% 据: h59_unease, h59_reason, h59_two, h59_newages, h59_weapon
+
+1972 年 1 月，财政部财务秘书詹金（Patrick Jenkin，生卒年未详）书面答复说，1971 年末还欠 1.37 亿英镑，按抵免发出时的购买力只值 4500 万英镑\cite{hansard1972a}。1946 年攒下 100 英镑抵免的人，到 1971 年 11 月要拿到 275 英镑才保得住购买力\cite{hansard1972a}。1959 年 10 月以来加的利息，每 100 英镑只合 38 英镑\cite{hansard1972a}。照詹金 3 月 9 日在下院的说法，财政大臣已在 1971 年 12 月 14 日宣布，从 4 月起把余下的抵免全部还清，“让全国都很高兴”\cite{hansard1972b}。
+% 据: h72w_speaker, h72_fs, h72w_137, h72w_45, h72w_275, h72w_38, h72_repay
+
+苏联的办法是一次换掉旧钱。卢布是苏联的货币单位。1947 年 12 月 14 日，苏联部长会议与联共（布）中央委员会作出决定，实行货币改革，取消配给卡\cite{ussr1947}。决定由斯大林（Joseph Stalin，1878—1953）与日丹诺夫（Andrei Zhdanov，1896—1948）签署\cite{ussr1947,loc35}。决定的序言说，巨大的军费“要求发行大量的货币”\cite{ussr1947}。现金按 10 个旧卢布换 1 个新卢布兑换\cite{ussr1947}。储蓄存款 3000 卢布以内的部分一卢布换一卢布，3000 到 1 万卢布的部分三换二\cite{ussr1947}。1 万卢布以上的部分二换一\cite{ussr1947}。1947 年以前发行的大部分公债，按 3 卢布换 1 卢布，换成 1948 年发行、年息 2\% 的转换公债\cite{ussr1947}。从 12 月 16 日起，配给制与商业高价一并取消，改行统一的、降低了的国营零售价格\cite{ussr1947}。
+% 据: su_title, su_signers, loc_stalin, loc_zhdanov, su_preamble, zv_cash, zv_dep_a, zv_dep_b, zv_dep_c, zv_bonds, su_ration
+
+序言也说明了损失由谁承担。工人与职员的工资、农民向国家交售农产品的收入与其他劳动收入，都“不受改革的影响”，按原来的数额用新钱支付\cite{ussr1947}。它承认改革需要一定的牺牲，大部分由国家承担，居民也要承担一部分，“何况这将是最后一次牺牲”\cite{ussr1947}。
+% 据: zv_wages, zv_sacrifice
+
+序言说，这种兑换办法“首先打击的，是积攒了大量的钱、把钱藏在储钱罐里的投机分子”\cite{ussr1947}。可现金按 10 比 1 兑换，手里有现钞的人同样损失了九成（本书的解读）。序言还说，资本主义国家的货币改革带来物价上涨与失业，“我们这里没有，也不会有失业”\cite{ussr1947}。
+% 据: zv_speculators, zv_cash, zv_capitalist, zv_nounemp
+
+\begin{case}{中国 · 1948 · 金圆券}
+1948 年 8 月 19 日，西德改革两个月以后，中国政府改行金圆券。金圆券的单位是圆。财政部长王云五（1888—1979）当天发表谈话\cite{wang1948,loc35}。照他的说法，金圆券按 4 圆合 1 美元发行 20 亿圆，以金银外汇 2 亿美元与可靠的资产 3 亿美元作十足准备\cite{wang1948}。旧的法币是 1935 年改革以后的纸币（\secref{sec:depressionworld-silver}），按上海的美国总领事馆的报告，300 万元法币换 1 圆金圆券\cite{frus1948cn}。人民手里的金银与外币要交给政府兑换，物价冻结在 8 月 19 日的水平，罢工被禁止\cite{wang1948,frus1948cn}。
+% 据: ww_title, loc_wang, ww_reserve, ww_limit, fc_usd, fc_cnc, ww_gold, fc_surrender, fc_freeze, fc_strikes
+
+王云五自己算过账。照他的估计，全年的支出若能压到 36 亿圆，收入约 24.6 亿圆\cite{wang1948}。短缺的 11.4 亿圆约当总支出的 30\% 弱，打算用美援与公债来补\cite{wang1948}。他说，“改革币制而不能平衡预算，纵可收效一时，断难维持永久”\cite{wang1948}。在上海督导执行的是蒋介石的儿子蒋经国（1910—1988）\cite{frus1948cn,loc35}。按上海的美国总领事馆 9 月 13 日转引的英文报道，他在演说里说，“我们用政治的力量压制投机，用经济的力量引导游资”\cite{frus1948cn}。有人说没收囤积的货物等于抢劫，他说，若是为了保护守法的商人，“我情愿做这样的强盗”\cite{frus1948cn}。
+% 据: ww_budget, ww_income, ww_gap, ww_warning, fc_chiang, loc_chiang, fc_speech, fc_force, fc_robber
+
+结局来得很快。南京的美国大使馆 10 月 15 日报告，钞票发行约 12.5 亿圆，约为 8 月 19 日流通额的 5 倍，物价已是“虚构”\cite{frus1948cn}。11 月 1 日，生活必需品的价格冻结取消\cite{frus1948cn}。11 月 11 日，金圆券贬到 20 圆兑 1 美元\cite{frus1948cn}。11 月 15 日，上海的总领事馆报告，新公布的生活费用指数比 8 月 19 日高出 810\%\cite{frus1948cn}。
+\end{case}
+% 据: fc_stuart, fc_issue, fc_fictions, fc_unfreeze, fc_devalue, fc_col
+
+\begin{pitfall}[冻结存款就能止住通胀]
+日本 1946 年的冻结，起初确实把日本银行券的发行额压下去了一大半，几个月后又涨了回来\cite{boj1985}。按两部行史自己的说法，原因有两个。一是预算，1946 年度一般会计有 37.4\% 靠公债与借款，日本银行把它归于扩大生产的积极政策\cite{boj1985}。二是复兴金融金库的贷款，钱来自日本银行承购的债券，财务省的政策史说这成了推高通胀的一个因素\cite{mof2010}。冻结只管住了旧的钱，新的钱照样从预算与贷款里出来。两年后的中国，王云五也说过，不平衡预算，改革币制只能收效一时\cite{wang1948}。
+\end{pitfall}
+% 据: bj_notes, bj_budget, bj_ishibashi, mof_bonds, mof_rfbinfl, ww_warning
+
+\section{三个争论}\label{sec:reconstruction-debate}
+
+第一个争论是，西德的回升是不是从 1948 年 6 月开始的。一方的看法是，改革以前的产量被低估了。照 Ritschl 的概括，按 Manz 的估计，法国占领区的实际产量比官方数字高 6\% 到 10\%\cite{ritschl1985}。按 Abelshauser 的估计，联合经济区的实际产量高 10\% 到 13\%\cite{ritschl1985}。低估之说，Wallich 1955 年就提出过\cite{ritschl1985}。照这种看法，改革以后涌现的商品，一部分来自以前囤起来、没有上报的东西，统计上的跳跃也有一部分是假的。
+% 据: ri_manz, ri_wallich
+
+另一方是 Ritschl 与 Buchheim。照 Ritschl 的分析，按工作日调整以后，改革以前的产量一直在缓慢上升，5 月最高；数据里也看不出黑市的生产与囤货在增加\cite{ritschl1985}。在他看来，计划经济下的企业要囤积大量的原料与产品，防备断供；改革以后原料可以拿钱买到，企业就大量减少库存，换成现金\cite{ritschl1985}。照 Buchheim 的说法，以货易货一般按法定价格记账，企业用不着把产量瞒到假定的程度\cite{buchheim1988}。两人也各有让步。Ritschl 的结论里留了一句，法国占领区的低估之说“似乎无法直接驳倒”\cite{ritschl1985}。照 Buchheim 的说法，把经济奇迹全归于改革的看法，Abelshauser 试图动摇它，只是论证“并不完全令人信服”\cite{buchheim1988}。
+% 据: ri_steady, ri_noblack, ri_stocks, ri_lagerabbau, bu_compensation, ri_french_concede, bu_abelshauser
+
+第二个争论是马歇尔计划有多重要。照 De Long 与 Eichengreen 的概括，Milward（1984）的论证是，援助不够大，不足以靠加快资本积累来明显推动西欧的增长\cite{delong1991}。在这一点上，两人承认 Milward 是对的，也认为计划开始时重建大体已经完成\cite{delong1991}。在他们看来，计划改变了制定经济政策的环境，那几年西欧迅速拆除了产品与要素市场的管制，恢复了价格与汇率的稳定\cite{delong1991}。他们把它叫作一次“大规模而非常成功的结构调整计划”，又认为 Milward 的修正说言过其实\cite{delong1991}。他们的让步写在同一篇文章里，计划“至多是推了一把”\cite{delong1991}。
+% 据: de_milward, de_complete, de_environment, de_structural, de_overstated, de_tipped
+
+第三个争论是道奇计划的紧缩是否过头。照财务省的政策史，道奇计划“大幅收紧了货币供给，产生了足以很快压住通胀、稳定经济的通缩效果”\cite{mof2010}。另一边的证据来自日本银行自己的记录，一万田尚登在 1949 年 5 月就警告过突然的强度通缩；1950 年上半年零售物价下跌，政府职员被裁减\cite{boj1985,frus1949jp}。1950 年 6 月以后的特需结束了这段紧缩。没有朝鲜战争的话，萧条会拖多久，这些史料回答不了。
+% 据: mof_tightening, bj_ichimada, bj_retail, f9_law126, bj_korea
+
+\begin{deeper}[史料说明]
+\textbf{版本。}《货币法》《换算法》《冻结账户法》与设立德意志各邦银行的法律，据 verfassungen.de 的文本。网站用 ISO-8859-1 编码，核对脚本按 UTF-8 读取，所以引文只取不含变音字母的片段。苏联的决定据格鲁吉亚国家议会图书馆的《东方曙光报》1947 年 12 月 15 日第 247 号第 1 版（页面图像），并以 2025 年《库塔芬大学学报》“法律文献”栏的节录本核对序言、第二部分与签署人。日本银行百年史第 5 卷没有文字层，全据页面图像读出。王云五的谈话据维基文库的录文。
+
+\textbf{四处不一致。}《换算法》的日期，verfassungen.de 印作 1948 年 6 月 20 日，Buchheim 写作 6 月 27 日，并说它在《货币法》一周以后公布；正文写一周以后公布。朝鲜战争的爆发，财务省的政策史写作 1950 年 7 月，日本银行百年史写作 6 月 25 日；正文用后者。1946 年 3 月末的存款，政策史的正文说自由账户是 1357.5 亿日元，同一页的表 1-9 却把这个数列为合计，自由账户只有 145.2 亿日元，自由、第一类冻结与特别存款三栏相加，与合计只差 1 百万日元；正文用表。王云五说短缺的 11.4 亿圆约当总支出的 30\% 弱，按他自己的 36 亿圆算是 32\%；正文照录他的话。
+
+\textbf{转述与间接的证词。}《指导原则法》附件的话、CDG 方案的话、特南鲍姆在罗特维斯滕的话与勒普克的文章，据 Buchheim 的引述，CDG 方案的话是他的德译。1948 年 5 月汉堡的黑市价格与工资，Buchheim 据 Mendershausen 等人的资料。Manz、Abelshauser 1975 年的估计与 Wallich 的看法据 Ritschl 的概括。道奇 3 月 7 日的声明据日本银行百年史概括的要点，声明原文本书没有找到。蒋经国 9 月的演说据上海的美国总领事馆转引的《字林西报》英文报道，正文的中文是从英文译回的，不是演说的原话。苏联决定序言里关于工资、牺牲与投机分子的话，《库塔芬大学学报》的节录本略去了，据《东方曙光报》的页面图像读出。艾哈德是 6 月 25 日命令的发布者，是本书据 Abelshauser 注 74 的演说标题与 Buchheim 的叙述合起来判断的。
+
+\textbf{只有一个来源的数。}西德的战时财政、货币存量、黑市价格、价格涨幅与民意调查，只据 Buchheim。工业生产指数只据 Ritschl 的表。日本 1946 年的钞票、预算与 1949 年度的预算只据日本银行百年史；日本银行券 1946 年 3 月末的数 23,322 百万日元，百年史的表与财务省的政策史一致，但后者多半出自日本银行的统计，只说明两者一致。金圆券的结局只据美国国务院的外交文件。日本的复员人数、冻结账户的余额、战时补偿特别税与日本银行 1949—1950 年的放款，只据财务省的政策史。西德对付失业的特别计划只据德意志各邦银行的月报。
+
+\textbf{没有取得的。}道奇“踩高跷”的说法（1949 年 3 月），中央情报局的阅览室拒绝访问，没有取得。Wallich（1955）、Milward（1984）、Abelshauser（1975）与 Manz（1968）的著作，关于总罢工与香烟货币的史料，金圆券崩溃以后中国物价的稳定，也没有取得，所以正文不写。苏联占领区货币改革与柏林封锁的确切日期，本书没有找到可以核对的史料，正文只据 Buchheim 写“几天以后”。欧洲经济合作组织的名称不见于本书读到的史料，正文只写法律要求的“持续的组织”。
+
+\textbf{生卒年。}马歇尔、克莱、科尔姆、戈德史密斯、道奇、特南鲍姆、勒普克、杜鲁门、夏普、西博尔德、斯大林、日丹诺夫、王云五、蒋经国、石桥湛山与一万田尚登据美国国会图书馆的规范档。艾哈德与埃默里据德国国家图书馆的规范档（经 lobid.org），埃默里是按姓名与时代判断的。詹金在两处规范档里都没有找到。
+\end{deeper}
+% 据: ug_title, wg_title, zv_title, su_title, su_section, bu_ug_date, mof_korea, bj_korea, mof_frozen46, mof_table_head, mof_table46, ab_erhard, ri_refs, ri_wallich, de_milward, bj_march7, bj_endmarch, mof_notes
+
+\section{今天还剩什么}\label{sec:reconstruction-legacy}
+
+\textbf{过剩货币的账。}价格放开以后涨多少，取决于手里的货币与愿意持有的货币之比，见式~\eqref{eq:reconstruction-overhang}。被压抑的通胀，要么让价格涨上去，要么把钱砍掉，要么像英国那样慢慢放，总有人承担损失。
+
+\textbf{一揽子的转轨。}西德在同一个星期里换了货币、放开了价格。东欧与前苏联地区后来的转轨，常被拿来与它比较，那是\chref{ch:transition}的题目。
+
+\textbf{财政与中央银行。}日本 1946 年的冻结没有管住预算与日本银行的贷款，1949 年的稳定从预算的盈余开始。政府的预算约束与中央银行为财政融资的界限，在\chref{ch:budget}。恶性通胀怎样结束，在\chref{ch:hyperinflation}。
+
+\textbf{钉住美元的汇率。}到 1949 年，德国马克与日元都有了对美元的固定汇率。这个体系怎样运转，欧洲为什么缺美元，在\chref{ch:brettonwoods}。计划经济在战后怎样运行，在\chref{ch:planned}。
+
+\begin{takeaways}
+\begin{itemize}
+\item 价格被管制时，手里的货币多于愿意持有的货币，多出的是过剩货币。放开价格让价格按两者之比上涨，货币改革则把货币砍掉，见式~\eqref{eq:reconstruction-overhang}。
+\item 1948 年 6 月，西德先换货币，人头额 60 德国马克，存款与债务大体按 10 比 1 换算；几天以后又放开了大部分价格。较大的存款最终按 100 比 6.5 换算，工资与租金按 1 比 1。
+\item 改革的代价落在储户、被驱逐者与失业者身上，拥有实物资产的人却得益，负担平衡来得晚、给得少。1948 年下半年物价上涨，抗议不断；1949 年底失业人数到了 156 万。苏联占领区另行改革，柏林被封锁。
+\item 马歇尔计划 1948—1951 年提供了 132 亿美元，不到受援国国民收入的 3\%。它的作用更多在政策的环境与对等基金的条件上，争论还在继续。
+\item 日本 1946 年的冻结没有成功，冻结的存款一点点放了出去，预算与复兴金融金库的贷款也没有管住。1949 年道奇计划带来预算的盈余与 360 日元的单一汇率，紧缩的代价是裁员与物价下跌，朝鲜战争的特需结束了它。
+\item 英国到 1972 年 4 月才开始把余下的战后抵免全部偿还，它的购买力已被通胀吃掉大半；苏联把现金按 10 比 1 换算；中国 1948 年的金圆券冻结物价而不平衡预算，几个月就崩溃了。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 在\exref{ex:reconstruction-overhang}里，若$k=0.45$，其余不变，过剩货币是多少？放开价格以后价格水平是多少？
+\item 一个单身的人改革前有 360 帝国马克的现钞与 3000 帝国马克的存款。按\tabref{tab:reconstruction-conversion}的规则，到 10 月以后他一共有多少德国马克？
+\item 为什么说许多小储户在换算时“什么也没有得到”？用\exref{ex:reconstruction-household}的规则说明，存款低于多少时会这样。
+\item 西德与日本都以稳定货币为目标，两国的做法有什么不同？
+\item 冻结存款为什么没有止住日本 1946 年的通胀？
+\item 王云五说不平衡预算的币制改革“纵可收效一时，断难维持永久”。用金圆券的结局说明这句话。
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item 愿意持有的货币是$0.45\times100=45$，过剩货币$90-45=45$；放开价格以后$P=90/45=2$。
+\item 现钞里的 60 马克换成 60 德国马克，余下的 300 帝国马克存入银行，存款共 3300 帝国马克。扣除 540 帝国马克，余下 2760 帝国马克，得 276 德国马克，自由与冻结账户各 138 马克。10 月以后冻结的 138 马克里，27.6 马克转入自由账户，13.8 马克只能投资。他一共有$60+138+27.6+13.8=239.4$德国马克。
+\item 每个家庭成员要先扣除 540 帝国马克。一个人的存款若不到 540 帝国马克，扣完就没有了；人头额已经按 1 比 1 换过，换算的存款却是零。
+\item 西德一次砍掉货币，同时放开价格；日本没有再砍货币，靠预算的盈余与停止复兴金融金库的贷款收紧，九项措施还要求加强物价管制。两国最后都有了钉住美元的汇率。
+\item 冻结只管住了已有的钱，冻结的存款还一点点放了出去，到 1948 年 6 月只剩 298.4 亿日元。1946 年度的预算有 37.4\% 靠公债与借款，复兴金融金库的贷款又靠日本银行承购的债券，新的钱不断出来，钞票几个月后就超过了冻结以前。
+\item 王云五自己算出全年收入只有支出的约七成。发行限额是 20 亿圆，到 10 月中已发行约 12.5 亿圆，为 8 月 19 日的 5 倍；11 月物价冻结取消，金圆券贬到 20 圆兑 1 美元。
+\end{answers}
+
+1948 年 6 月 20 日换到手的 40 德国马克，是一种新货币的开头。照 Buchheim 的说法，改革以前帝国马克的折算率已定为 30 美分，德国马克起初沿用了它\cite{buchheim1988}。一年以后，日元也定在了 1 美元兑 360 日元\cite{mof2010}。两种新货币都钉住了美元，而马歇尔说过，欧洲要从美国买的东西，“远远超过它眼下的支付能力”\cite{marshall1947}。美元为什么既是体系的支柱，又是它的隐患？
+% 据: wg_s6b, bu_30cents, mof_360, ms_ability
