@@ -216,6 +216,9 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     'bo_parvalues': [('twelve', 'en'), ('thirty-two', 'en'), ('December |1946', 'num')],
     'bo_oeec': [('of |1946', 'num'), ('a |1947', 'num'), ('$|9', 'num')],
     'bo_censure': [('IV, section |5', 'num')],
+    'bo_notice': [('twenty-four', 'en'), ('section |5', 'num'), ('than |10', 'num'), ('seventy-two', 'en')],
+    'bo_loan_year': [('within |one', 'en')],
+    'b62_gab': [('December |1961', 'num'), ('ten', 'en'), ('$|6', 'num')],
     'bo_cripps': [('Two', 'en'), ('On |18', 'num'), ('September |1949', 'num'), ('twenty-four', 'en'), ('by |30.5', 'num'), ('$|2.80', 'num'), ('twenty-three', 'en')],
     'b50_exports': [],
     'b50_unclear': [],
@@ -223,7 +226,6 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     'b50_setback': [('of |1949', 'num'), ('since |1947', 'num')],
     'b50_trade': [('From |1947', 'num'), ('of |1950', 'num'), ('one-half', 'word'), ('one-third', 'word')],
     'b68_5056': [('years |1950', 'num'), ('about $|1.2', 'num')],
-    'b68_noalarm': [],
     'b68_indicator': [],
     'b68_constructive': [],
     'b68_defence50s': [],
@@ -249,7 +251,6 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     'b61_three': [('three', 'en')],
     'b61_dm4': [('is |0.222168', 'num'), ('D M |4', 'num')],
     'b61_inner': [],
-    'b61_inner2': [],
     'b61_onceforall': [('four', 'en')],
     'b61_substitute': [],
     'b61_inflows': [('$|200', 'num'), ('$|250', 'num')],
@@ -401,7 +402,7 @@ def check_readings(df: pd.DataFrame) -> None:
         got = read_row(r.id, text)
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += bool(vals)
-    quoted("rows with values, each read from its quotation or transcription", n, 190)
+    quoted("rows with values, each read from its quotation or transcription", n, 196)
     quoted("rows read on a page image (no quotation)", img, 25)
     Q, notes = quotes(), meta()["notes"]
     for rid, word, named in MISPRINTS:
@@ -568,6 +569,7 @@ TRANSLATIONS = {
     "比利时的大部分工人至少要失去一部分加薪的好处": "b50_wages",
     "只要生活费用不超过一定的限度，就接受工资率不变": "b50_unions",
     "一次暂时的挫折": "b50_setback",
+    "美国行情的下跌，带动了世界市场的下行": "b50_slump",
     "回头看，1949 年外国货币的大批贬值，是美元的一个关键转折点": "b68_turn",
     # sec:brettonwoods-convertibility
     "双边主义的紧身衣": "b59_straitjacket",
@@ -576,6 +578,7 @@ TRANSLATIONS = {
     "世界主要外汇市场的统一": "b59_winding",
     "避免限制经常的对外支付，避免多重汇率与歧视性的货币做法": "b61_art8c",
     "全盛期": "ga_heyday",
+    "洞太大了": "b61_holes",
     "实际上承认了": "b61_admission",
     "步子并不大": "b61_admission",
     "越来越难": "b61_inner",
@@ -584,7 +587,6 @@ TRANSLATIONS = {
     "没有告诉我们": "bo_whywell",
     # sec:brettonwoods-triffin
     "大体上被看作建设性的，确实大大帮助了欧洲在迅速重建的同时积累储备": "b68_constructive",
-    "没有引起惊慌": "b68_noalarm",
     "暴风雨前的一阵阳光": "b68_1957",
     "不能指望": "bo_triffin",
     "黄金存量上升是实力的标志，下降至少应该引起疑问": "b68_indicator",
@@ -594,6 +596,7 @@ TRANSLATIONS = {
     "如果当选总统，我不会让美元从现在的汇率上贬值": "bo_kennedy",
     "可能威胁国际货币体系": "b62_threat",
     "能够轻易地控制市场": "b66_control",
+    "去帮助本集团里货币受到短期资本外逃威胁的成员": "b62_gab",
     "临时搭起来的": "ga_gab",
     "一条危险的路，可能让世界离开过去十五年左右达到的自由的贸易与支付做法": "b68_dangerous",
     "和平回来以后，管制就能拆掉吗？": "b68_peace",
@@ -601,7 +604,6 @@ TRANSLATIONS = {
     "扭转操作": "b68_twist",
     "本可以更早取得明显的效果": "b68_1966",
     "我们从国外买的东西要多花钱，我们卖到国外的东西对外国人会便宜": "h67_prices",
-    "得到持久而可观的改善，每年至少 5 亿英镑": "h67_500",
     "白白浪费": "h67_claims",
     "保护社会上最脆弱的人群免受困苦": "h67_vulnerable",
     "很大的、不可接受的": "h67_consumption",
@@ -622,6 +624,8 @@ TRANSLATIONS = {
     "政治上的困难似乎是一个障碍": "b68_mix",
     "政治层面": "ga_identification",
     "外国的资产被便宜地买走了": "ga_cheap",
+    "资产的重新包装，这是任何金融中介的生意": "ga_repackage",
+    "因为它对信心的影响": "bo_confidence",
     "替代": "b61_substitute",
     # the 史料说明: the misreadings of the text layers, as printed
     "T h e": "b66_sold",
@@ -655,6 +659,7 @@ KEYWORDS = {
     "b50_unions": ["the acceptance of unchanged wage rates as long as the cost of living did not rise beyond a certain "
                    "point"],
     "b50_setback": ["a temporary setback"],
+    "b50_slump": ["a decline in American quotations leading to a downward movement on the world markets"],
     "b59_straitjacket": ["the straitjacket of bilateralism",
                          "balances earned by one country in the currency of another could, as a rule, only be spent "
                          "in the country in whose currency they were expressed"],
@@ -663,6 +668,7 @@ KEYWORDS = {
     "b61_art8c": ["to avoid restrictions on current external payments, multiple exchange rates and discriminatory "
                   "currency practices"],
     "ga_heyday": ["The heyday of Bretton Woods"],
+    "b61_holes": ["the holes in the net were too large"],
     "b61_admission": ["an admission was in effect made", "was not a great step"],
     "b61_inner": ["was becoming more and more difficult"],
     "b61_onceforall": ["not surprisingly, reflected a rather different view of events"],
@@ -670,7 +676,6 @@ KEYWORDS = {
     "bo_whywell": ["they do not tell us why it did so well"],
     "b68_constructive": ["deficits on the whole were considered constructive and, indeed, they helped Europe "
                          "enormously to build up reserves while pursuing reconstruction rapidly"],
-    "b68_noalarm": ["caused no alarm"],
     "b68_1957": ["the burst of sunshine before the storm"],
     "bo_triffin": ["cannot be relied upon"],
     "b68_indicator": ["a rise in the gold stock is a sign of strength, while a fall should, at least, raise questions"],
@@ -680,6 +685,7 @@ KEYWORDS = {
     "bo_kennedy": ["If elected F'resident, I shall not devalue the dollar from the present rate.", "F'resident"],
     "b62_threat": ["could threaten the international monetary system"],
     "b66_control": ["can readily keep control over the market"],
+    "b62_gab": ["to aid a member of the group whose currency is threatened by a flight of short-term capital"],
     "ga_gab": ["jerry-built"],
     "b68_dangerous": ["a dangerous path, which could lead the world away from the liberal trade and payments practices "
                       "achieved over the past fifteen years or so"],
@@ -689,8 +695,6 @@ KEYWORDS = {
     "b68_1966": ["a significant result could have been achieved earlier"],
     "h67_prices": ["the things we buy from abroad will cost us more and things we sell abroad will become cheaper for "
                    "people overseas to buy"],
-    "h67_500": ["secure lasting and substantial improvement in its balance of payments-of at least £500 million a "
-                "year"],
     "h67_claims": ["frittered away"],
     "h67_vulnerable": ["to protect the most vulnerable sections of the community from hardship"],
     "h67_consumption": ["substantial-and unacceptable"],
@@ -710,6 +714,8 @@ KEYWORDS = {
     "b68_mix": ["political difficulties, it would seem, were an obstacle"],
     "ga_identification": ["political dimension"],
     "ga_cheap": ["foreign assets were being bought cheaply"],
+    "ga_repackage": ["the repackaging of assets that is the business of any financial intermediary"],
+    "bo_confidence": ["because of its effect on confidence"],
     "b61_substitute": ["a substitute for measures"],
     "b66_sold": ["T h e United States"],
     "b68_jan1968": ["ist January 1968"],
@@ -903,36 +909,51 @@ def world(F, Y, Q):
     has("bo_oeec", "1946-47")
     assert y47 == y46b + 1
     said("因 1946—1947 年冬天的严寒而加重，1947 年高达 90 亿美元", y46b, y46b + 1, y47, bn * 1e9)
-    said("美国提供 37.5 亿美元，加拿大另外提供 12.5 亿美元", F["bo_loan"][0] * 1e9, F["bo_loan"][1] * 1e9)
+    said("美国借给英国 37.5 亿美元，加拿大另借 12.5 亿美元", F["bo_loan"][0] * 1e9, F["bo_loan"][1] * 1e9)
+    has("bo_loan", "promised to restore current")
+    chk("    within one year (一年以内)", F["bo_loan_year"][0], told("并答应在一年以内恢复经常账户的可兑换", "在", "年以内"))
     d15, y47b, d6, y45, d21 = F["b48_dates"]
     said("1945 年 12 月 6 日签订的美英贷款协定，1946 年 7 月 15 日获得批准", y45, mon("b48_dates", "December"), d6,
          F["bo_loan_ratified"][1], mon("bo_loan_ratified", "July"), F["bo_loan_ratified"][0])
     d15b, y47c, bn1, d20, _ = F["bo_1947"]
-    said("1947 年 7 月 15 日，英镑恢复了经常账户交易的可兑换", y47c, mon("bo_1947", "July"), d15b)
+    said("1947 年 7 月 15 日，英镑按约定恢复了经常账户交易的可兑换", y47c, mon("bo_1947", "July"), d15b)
     assert (d15, y47b) == (d15b, y47c)                                          # the BIS: the same day
+    # 按约定: one year after the loan was ratified on 15 July 1946
+    assert (d15b, y47c) == (F["bo_loan_ratified"][0], F["bo_loan_ratified"][1] + F["bo_loan_year"][0])
     said("挤兑在一个月内耗掉英国 10 亿美元的储备，8 月 20 日可兑换就中止了", bn1 * 1e9, mon("bo_1947", "August"), d20)
-    said("国际清算银行 1948 年的年报这样解释失败", bis_year("bis1948"))
+    said("照国际清算银行 1948 年年报的解释，根本的原因在于", bis_year("bis1948"))
+    has("b48_structure", "the fundamental reason was that")
     said("英国自己 1947 年的国际收支逆差还有近 7 亿英镑", F["b48_deficit"][1], F["b48_deficit"][0] * 1e6)
     say("英镑是英国的货币单位")
+    say("成员国用本币向基金组织买外汇，叫提款")
     said("1952 年以前虽有少量提款", F["bo_drawings"][0])
     has("bt_fr_b", "Multiple exchange rates were in effect from January 1948")
     said("法国 1948 年起实行多重汇率，基本进口按每美元约 214 法郎的官价，旅游与金融交易用浮动汇率，硬通货的实际汇率约 260 法郎",
          F["bt_fr_b"][0], F["bo_france48"][0], F["bo_france48"][1])
-    has("bo_censure", "Article IV, section 5")
-    said("基金组织按协定第四条第 5 节谴责了法国，1952 年以前不许它动用基金的资源", F["bo_censure"][0], F["bo_denied"][0])
+    has("bo_censure", "Article IV, section 5", "broken cross rates between the dollar and the pound")
+    say("在巴黎套算出来的美元与英镑的比价偏离了两者的平价")
+    said("基金组织因此按协定第四条第 5 节谴责了法国，1952 年以前不许它动用基金的资源", F["bo_censure"][0], F["bo_denied"][0])
     # 1949
     r570, y49 = F["b50_reserves"]
     said("1949 年，危机又回到英镑", y49)
+    has("b50_slump", "raw materials and foodstuffs then fell sharply")
+    assert "In the spring of 1949" in column("note")["b50_slump"] and years()["b50_slump"] == y49   # 那年春天
+    say("那年春天，一些原料与食品的价格大跌")
     said("从 4 月初到 9 月中减少了约 5.7 亿美元", mon("b50_reserves", "April"), mon("b50_reserves", "September"), r570 * 1e6)
     two, d18, y49b, h24, pct, usd, n23 = F["bo_cripps"]
     chk("    two weeks (两个星期)", two, told("贬值以前两个星期", "以前", "个星期"))
-    said("9 月 18 日，在通知基金组织 24 小时以后，英镑贬值 30.5\\%，降到 2.80 美元", mon("bo_cripps", "September"), d18, h24,
-         pct, usd)
+    said("9 月 18 日，英镑贬值 30.5\\%，降到 2.80 美元", mon("bo_cripps", "September"), d18, pct, usd)
+    said("英国却只提前 24 小时通知了基金组织", h24)
     assert F["b50_devalued"] == [pct, d18] and y49b == y49
     old = 1 / F["bt_uk"][1]                                                     # £0.248 a dollar in 1946
     said("原来的平价约合 4.03 美元（本书据 Bordo 表 1.2 的换算）", old, float(table_no("bordo1993img")))
     chk("    2.80 / 4.03 - 1 (30.5%)", 100 * (1 - usd / old), pct, tol=0.1)
     said("随后降低平价的有 23 国", n23)
+    h24b, sec5, ten, h72 = F["bo_notice"]
+    assert h24b == h24 and sec5 == F["bo_censure"][0]                           # 24 hours; Article IV, section 5
+    has("bo_notice", "the Fund staff had earlier advised the British to devalue", "larger than suggested",
+        "Article IV, section 5")
+    said("按协定第四条第 5 节，贬值超过 10\\% 要先与基金组织商量，给它 72 小时以上表示同意或反对", sec5, ten, h72)
     # who paid
     b123, y49c = F["b50_belgium"]
     said("比利时法郎 1949 年 9 月只贬了 12.3\\%", y49c, mon("b50_belgium", "September"), b123)
@@ -953,6 +974,7 @@ def world(F, Y, Q):
     said("国际清算银行 1968 年的年报写道，“回头看，1949 年外国货币的大批贬值", bis_year("bis1968"), y49e)
     said("平均每年有 55 亿美元", aid * 1e9)
     has("bo_oneway", "they lose only the interest")
+    has("bo_delay", "delay adjustment until they were sure it was necessary", "speculators would also be sure")
     de, jp = F["bt_de"], F["bt_jp"]
     said("德国马克是西德 1948 年起的货币单位，1949 年 9 月 19 日贬到每美元 4.20 马克", de[0], de[4], de[5], de[6], de[7])
     said("日元是日本的货币单位，1949 年 4 月 25 日定为每美元 360 日元", jp[2], jp[3], jp[4], jp[5])
@@ -1012,6 +1034,10 @@ def convertibility(F, Y, Q):
     said("西德 1959 年取消了资本管制，1960 年又重新限制资本流入", *F["bo_controls_de"])
     said("1960 年，西德在提高短期利率，美国却在降低", i960("b61_1960"))
     has("b61_rates", "Germany was raising short-term interest rates while the United States was doing the opposite")
+    has("b61_shift", "to those in low interest rate centres abroad")
+    has("b61_influx", "in search of high yields", "acceleration of export receipts and retardation of import payments")
+    assert page("b61_shift") == page("b61_influx") == page("b61_holes")
+    say("西德的企业转到利率低的外国去借钱，外国资本为了高收益流进来，出口的货款提前收，进口的货款推迟付")
     y61b = F["b61_cuts"][0]
     assert i960("b61_cuts") == y61b - 1
     said("1960 年 11 月与 1961 年 1 月", i960("b61_cuts"), mon("b61_cuts", "November"), y61b, mon("b61_cuts", "January"))
@@ -1028,7 +1054,6 @@ def convertibility(F, Y, Q):
     has("b61_inflows", "In the second week of March", "by over $200 million", "by almost $250 million")
     has("bo_preconv", "194658")
     said("1946—1958 年可兑换以前的时期", int("194658"[:4]), 1900 + int("194658"[4:]))
-    said("这多半反映了 1958 年以前", F["bo_controls58"][0])
 
 
 def triffin_section(F, Y, Q):
@@ -1074,6 +1099,7 @@ def triffin_section(F, Y, Q):
          "$c_{10}\\approx0.99$，推迟到第 10 年", P["G0"], P["dG2"], tb - 1, b["R"][9], b["G"][9], b["D"][9], b["c"][9], tb,
          b["R"][10], b["G"][10], b["D"][10], b["c"][10], tb)
     assert ta == 6 and tb == 10
+    said("$c$大于 1 时，兑换反而让覆盖率上升；$c$小于 1 时，兑换让它跌得更快", 1, 1)       # models() checks the sign
     # the numbers of the 1950s
     dec, new = F["b68_newgold"]
     has("b68_newgold", "During the same period")
@@ -1130,7 +1156,9 @@ def triffin_section(F, Y, Q):
     assert abs(S.loc[1968, "gold"] / 1e3 - g107) < 0.5                            # end-1968: 108.92 亿美元
     has("sa64_fn4", "foreign central banks, foreign central governments and their agencies, Bank for International "
                     "Settlements, and European Fund")
-    has("ga_citizens", "gold ownership by U.S. citizens was illegal")
+    has("ga_citizens", "gold ownership by U.S. citizens was illegal",
+        "such claims could have been shifted abroad and quickly used to run the system",
+        "These claims were ignored in the discussions at the time")
     said("国际清算银行 1970 年指出", bis_year("bis1970"))
     has("b70_eurodollar", "held with banks in the United States")
     said("1969 年“存在美国以外银行的美元储备必定大大增加了”", F["b70_outside"][0])
@@ -1162,19 +1190,33 @@ def triffin_section(F, Y, Q):
 def defence(F, Y, Q):
     y60 = F["bo_oct60b"][0]
     p35, p40 = F["bo_oct60"]
-    said("1960 年 10 月，伦敦市场上黄金的自由价格，从美国财政部的买价 35.20 美元涨到了 40 美元", y60,
-         mon("bo_oct60b", "October"), p35, p40)
-    has("bo_oct60", "the U.S. Treasury's buying price")
+    said("1960 年秋天，伦敦的金价离开了美国的官价", y60)
+    said("美国财政部卖出黄金的价格约为每盎司 35.09 美元", F["b61_selling"][0])
+    has("b61_selling", "U.S. selling price of $35.0875")
+    d13, top, cents, y59p, lo, hi = F["b61_london"]
+    has("b61_london", "13th September", "mid-October", "ship it to London and resell it there")
+    said("9 月中到 10 月中，伦敦的报价却在 35.20 到 35.25 美元之间", mon("b61_london", "September"),
+         mon("b61_london", "October"), lo, hi)
+    say("比从纽约买进黄金、运到伦敦转卖的保本价还高几美分")
+    said("10 月，伦敦的自由价格涨到了 40 美元", mon("bo_oct60b", "October"), p40)
+    has("bo_oct60", "the U.S. Treasury's buying price")                          # Bordo's reading of $35.20 (史料说明)
+    assert p35 == lo
     fn, d31, y60k = F["bo_kennedy"]
     assert y60k == y60
     said("10 月 31 日，总统候选人肯尼迪", mon("bo_kennedy", "October"), d31)
     said("国际清算银行 1962 年说", bis_year("bis1962"))
+    has("b62_monthly", "the central banks which meet monthly at the B.I.S.")
+    has("b62_measures", "the group of central banks agreed informally not to purchase on the market when the latter was "
+                        "under pressure")
+    say("每月在国际清算银行开会的各国中央银行也非正式地约定，市场有压力时不去买黄金")
     assert F["bo_g10_3520"] == [10, p35]                                         # G10, $35.20
     y61, n7, p = F["bo_pool_nov"]
     said("伦敦黄金总库 1961 年 11 月正式成立。美国与另外 7 家中央银行约定买卖黄金，把价格钉在每盎司 35 美元", y61,
          mon("bo_pool_nov", "November"), n7, p)
-    said("按 Garber 的说法是 50\\%，按 Bordo 引的数字是 60\\%", F["ga_pool50"][0], F["bo_pool60"][1])
-    has("bo_pool60", "(Schwartz 1989, 342)")
+    said("按约定，美国提供 50\\% 的黄金", F["ga_pool50"][0])
+    has("ga_pool50", "The United States was to provide 50 percent of the gold")
+    said("按 Bordo 引的数字，实际卖出的黄金有 60\\% 来自美国", F["bo_pool60"][1])
+    has("bo_pool60", "(Schwartz 1989, 342)", "with the United States supplying 60% of the gold sold")
     said("另外 7 家虽然提供了稳定金价所需黄金的 40\\%", *F["bo_pool40"])
     assert F["bo_pool40"][1] == 100 - F["bo_pool60"][1]                          # 40% = 100% - 60%
     y61b, _ = F["b68_1961_65"]
@@ -1194,7 +1236,14 @@ def defence(F, Y, Q):
     t91 = transcription("ga_t91")
     y62 = F["ga_t91"][2]
     assert t91.index(f"{y62:.0f} Jan.") < t91.index("Oct. Beginning of the GAB") < t91.index("1965 Feb.")
-    said("1962 年 10 月，十国集团与基金组织的借款总安排开始运作", y62, mon("ga_t91", "Oct."))
+    y61g, ten, bn6 = F["b62_gab"]
+    said("1961 年 12 月，十个工业国议定，基金组织可以向它们借入 60 亿美元", y61g, mon("b62_gab", "December"), bn6 * 1e9)
+    chk("    ten industrial countries (十个工业国)", ten, told("十个工业国议定", "", "个工业国"))
+    has("b62_gab", "to borrow supplementary resources under Article VII")
+    assert "the General Arrangements to Borrow" in column("note")["b62_gab"]
+    say("这十国就是后来的十国集团")
+    said("安排 1962 年 10 月开始运作", y62, mon("ga_t91", "Oct."))
+    assert y62 == y61g + 1
     y68 = F["b68_jan1968"][0]
     has("b68_jan1968", "ist January 1968")
     said("1968 年 1 月 1 日美国又宣布了更广、更严的管制", y68, mon("b68_jan1968", "January"), 1)
@@ -1210,27 +1259,31 @@ def defence(F, Y, Q):
     said("10 月 26 日宣布对进口加征附加税", mon("bo_uk1964", "October"), d26)
     d25, bn4, _ = F["bo_rescue64"]
     said("11 月 25 日，十国集团与基金组织为英镑安排了 40 亿美元的救援", mon("bo_rescue64", "November"), d25, bn4 * 1e9)
-    said("1965 年 7 月，英国实行紧的预算", F["bo_uk1965"][0], mon("bo_uk1965", "July"))
     d20, y67b = F["bo_uk1966"]
-    said("1966 年 7 月 20 日又实行大规模的紧缩，1967 年初产出下降", F["bo_1966"][0], mon("bo_uk1966", "July"), d20, y67b)
+    said("1966 年 7 月 20 日，英国实行大规模的紧缩，1967 年初产出下降", F["bo_1966"][0], mon("bo_uk1966", "July"), d20, y67b)
     has("bo_uk1966", "in early 1967")
     said("10 月又有码头罢工，11 月英镑遭到投机冲击", mon("bo_shocks", "October"), mon("bo_shocks", "November"))
     bn3, d18, y67c, pct, usd = F["bo_1967"]
-    said("这一次，30 亿美元的救援没能挡住潮流，11 月 18 日英镑贬值 14.3\\%，降到 2.40 美元", bn3 * 1e9,
+    said("30 亿美元的救援没能挡住潮流，11 月 18 日英镑贬值 14.3\\%，降到 2.40 美元", bn3 * 1e9,
          mon("bo_1967", "November"), d18, pct, usd)
     chk("    2.40 / 2.80 - 1 (14.3%)", 100 * (1 - usd / F["bo_cripps"][5]), pct, tol=0.05)
     hy, hm, hd = url_date("hansard1967")
     assert hy == y67c and hm == 11
     said("11 月 20 日，财政大臣卡拉汉", hm, hd)
     has("h67_speaker", "Mr. James Callaghan")
+    has("h67_cabinet", "I recommended the Cabinet to devalue. It accepted my advice.")
+    say("贬值是他向内阁提议、内阁接受的")
     said("银行利率提高到 8\\%", F["h67_measures"][0])
-    said("每年至少 5 亿英镑", F["h67_500"][0] * 1e6)
+    said("让国际收支得到持久而可观的改善，每年至少 5 亿英镑", F["h67_500"][0] * 1e6)
+    has("h67_500", "lasting and substantial improvement in its balance of payments")
     said("不贬值的话，1968 年的个人消费会增加 3\\%", F["h67_1968"][0], F["h67_consumption"][0])
     said("公共支出的预期增长削减 4 亿英镑，明年预算里的防务削减 1 亿英镑", F["h67_cuts"][0] * 1e6, F["h67_defence"][0] * 1e6)
     has("h67_defence", "in the Budget planned for next year")
     d24, y67d, _, _ = F["h67_july"]
-    months = (datetime.date(hy, hm, hd) - datetime.date(int(y67d), mon("h67_july", "July"), int(d24))).days / 30.44
-    chk("    four months earlier (四个月以前)", round(months), told("四个月以前，他自己在下院说过", "", "个月"))
+    assert int(y67d) == hy and column("juan")["h67_meant"] == column("juan")["h67_july"]   # July 1967, read again
+    has("h67_meant", "This is what I meant in July when I said", "I will read again what I said")
+    said("他说这正是他 7 月的意思，并把当时在下院的话重念了一遍", mon("h67_meant", "July"))
+    assert mon("h67_july", "July") == mon("h67_meant", "July")
     y68b, y69 = F["b70_uk_tight"]
     said("1968 年 11 月与 1969 年 4 月，紧缩又两次收紧", y68b, mon("b70_uk_tight", "November"), y69,
          mon("b70_uk_tight", "April"))
@@ -1258,6 +1311,7 @@ def defence(F, Y, Q):
     # the gold rush
     said("英国若在 1964 年而不是 1967 年贬值，1968 年对黄金与美元的投机冲击", *F["bo_fn52"])
     has("bo_fn52", "According to Johnson (1968)")
+    said("照 Bordo 引的 Johnson（1968）的看法", int(re.search(r"Johnson \((\d{4})\)", Q["bo_fn52"]).group(1)))
     has("b68_tons", "three or four tons a day", "twice that size")
     has("b68_france_pool", "France had since June ceased to participate")
     said("人们这时才知道，法国从 6 月起已不再参加总库", mon("b68_france_pool", "June"))
@@ -1302,6 +1356,10 @@ def defence(F, Y, Q):
     said("1968 年 3 月 29 日与 30 日，十国集团在斯德哥尔摩开会", y68e, mon("fr193_date", "March"), d29b, d30)
     assert F["bo_sdr_def"] == [1, 1]
     say("一个特别提款权定义为等于一个黄金美元")
+    has("bo_sdr_quota", "in proportion to their quotas", "it was not backed by gold")
+    say("特别提款权由基金组织按份额记给各成员，没有黄金作后盾")
+    said("按每盎司 35 美元的金价，就是三十五分之一盎司黄金（本书的换算）", F["bt_us"][1])
+    chk("    one thirty-fifth of an ounce (三十五分之一)", 1 / F["bt_us"][1], told("就是三十五分之一盎司黄金", "就是", "盎司"))
     has("fr193_debre", "more of a reserve account than a supplementary credit")
     y69b = F["ga_t91"][8]
     assert "1969 July SDR amendments are in force" in t91
@@ -1332,6 +1390,10 @@ def defence(F, Y, Q):
                          "subsidies")
     assert page("b59_fr_prices") == page("b59_fr_food") and y58f == F["b59_fr_end58"][0]
     said("1958 年，食品价格因补贴减少而急剧上涨，法国的生活费用涨了 8.9\\%", y58f, fr89)
+    y57x, y58x = F["b59_fr_expected"]
+    has("b59_fr_expected", "price rises were naturally to be expected", "a more realistic price structure")
+    assert page("b59_fr_expected") == page("b59_fr_prices") and y58x == y58f
+    said("照年报的说法，1957 年与 1958 年为理顺价格结构采取的各项措施，本来就会推高物价", y57x, y58x)
     said("新的美元平价是 493.706 法郎，12 月 29 日正式向基金组织申报；在那以前，法国自 1948 年 1 月 26 日起",
          F["b59_fr_parity"][0], mon("b59_fr_imf", "December"), d29c, y48, mon("b59_fr_imf", "January"), d26b)
     fr = F["bt_fr"]
@@ -1348,6 +1410,8 @@ def defence(F, Y, Q):
     y65b, y34 = F["bo_convert"]
     said("1965 年起法国有计划地把美元负债换成黄金", y65b)
     said("1965 年创造了“过度特权”这个说法", F["im_giscard"][0])
+    has("im_rueff", "not matched by commensurate gold losses", "reinvested the dollar gained")
+    say("照 Gourinchas 等人的解释，美国的大笔逆差没有带来相应的黄金流失，因为债权国又把赚到的美元投回了美国")
     said("他 1964 年 9 月在东京的基金组织年会上就用过它", F["le_tokyo"][0], mon("le_tokyo", "septembre"))
     has("le_tokyo", "Tokyo")
     said("这正是 1934 年以来黄金实际价格下降的幅度", y34)
@@ -1365,7 +1429,14 @@ def debate(F, Y, Q):
     said("构成了 1960 年代货币争论的“政治层面”", F["ga_identification"][0])
     said("国际清算银行 1968 年也提到", bis_year("bis1968"))
     said("在 Despres、Kindleberger 与 Salant（1966）看来", F["bo_dks"][0])
-    said("银行的类比出自 Kindleberger（1965），反驳见特里芬（1966）", *F["ga_bank_fn"])
+    said("银行的类比出自 Kindleberger（1965），特里芬（1966）写文章反驳过", *F["ga_bank_fn"])
+    has("bo_dks2", "U.S. capital markets were deeper", "because of a higher return")
+    y59c, y70c = F["bo_current"]
+    said("除 1959 年以外，美国到 1970 年一直有经常账户的顺差", y59c, y70c)
+    has("bo_current", "capital outflows exceeded the current account surplus")
+    has("bo_fn58", "largely transferred to Europe by the interest paid on dollar holdings")
+    has("bo_believed", "that they believed")
+    say("以及他们认为美国得到的铸币税")
     has("ga_bank_fn", "Kindleberger (1965)", "Triffin (1966a)")
     de = F["bt_de"]
     said("西德的马克 1961 年升值 5\\%，1969 年升值 9.3\\%", F["b61_reval"][3], F["b61_reval"][0], de[21],
@@ -1376,7 +1447,8 @@ def debate(F, Y, Q):
          y57, y46, y47)
     y49, y67, _ = F["bo_few"]
     said("1949—1967 年，十国集团国家的平价很少变动", y49, y67)
-    said("国际清算银行 1961 年说", bis_year("bis1961"))
+    said("照国际清算银行 1961 年的说法，西德与荷兰的升值", bis_year("bis1961"))
+    has("b61_substitute", "In neither case were they primarily intended as, nor will they function as, a substitute")
     # fig:brettonwoods_parities
     P = parities()
     said("四种货币的美元价值，1949 年 10 月—1971 年 8 月（各自 1949 年 10 月的平价为 100）", START.year, START.month,
@@ -1421,8 +1493,19 @@ def deeper(F, Y, Q):
          mon("b59_conv", "December"), F["bo_eight"][0], fourteen)
     t91 = transcription("ga_t91")
     assert "1961 Oct. Establishment of the London Gold Pool" in t91
-    said("黄金总库，Bordo 的表写作 1961 年 11 月，Garber 的表写作 10 月；美国的份额，Garber 说 50\\%，Bordo 一处说 60\\%",
-         F["bt_us"][2], mon("bt_us", "Nov."), mon("ga_t91", "Oct."), F["ga_pool50"][0], F["bo_pool60"][1])
+    said("黄金总库，Bordo 的表写作 1961 年 11 月，Garber 的表写作 10 月", F["bt_us"][2], mon("bt_us", "Nov."),
+         mon("ga_t91", "Oct."))
+    said("美国的份额，Garber 的 50\\% 是约定的份额，Bordo 引 Schwartz（1989）的 60\\% 是实际卖出的份额", F["ga_pool50"][0],
+         F["bo_pool60"][2], F["bo_pool60"][1])
+    d13, _, _, _, lo, hi = F["b61_london"]
+    said("1960 年秋天的金价，Bordo 把 35.20 美元写作美国财政部的买价；国际清算银行记下的是伦敦 9 月中到 10 月中 35.20 至 35.25 美元的报价，"
+         "美国财政部的卖价则是 35.0875 美元", F["bo_oct60b"][0], F["bo_oct60"][0], mon("b61_london", "September"),
+         mon("b61_london", "October"), lo, hi, F["b61_selling"][0])
+    has("bo_g10_3520", "the monetary authorities of the G10")
+    said("十国的借款总安排 1961 年 12 月才议定", F["b62_gab"][0], mon("b62_gab", "December"))
+    assert F["b62_gab"][0] > F["bo_oct60b"][0]                                   # the G10 came after October 1960
+    said("美国的经常账户，Bordo 说除 1959 年以外到 1970 年都是顺差，Garber 说一直顺差到 1971 年", *F["bo_current"],
+         F["ga_repackage"][0])
     assert t91.index("1962 Jan.") < t91.index("Feb. Beginning of the swap") < t91.index("Oct. Beginning of the GAB")
     said("互换，Bordo 说 1961 年开始，Garber 的表说 1962 年 2 月", F["bo_swaps"][0], F["ga_t91"][2], mon("ga_t91", "Feb."))
     said("吉斯卡尔·德斯坦的说法，Gourinchas 等人系于 1965 年，Lelart 系于 1964 年 9 月", F["im_giscard"][0], F["le_tokyo"][0],
@@ -1445,6 +1528,8 @@ def deeper(F, Y, Q):
     said("1967 年 12 月对外国官方的负债，1968 年版是 140.69 亿美元，1972 年版是 140.27 亿美元", 1967, 12,
          edition("census1968img"), o68 * 1e6, edition("census1972img"), o72 * 1e6)
     for words in ("Disagreements between the sources", "(bo_1947, b48_dates)", "(bo_epu, b59_epu)",
+                  "(ga_pool50, bo_pool60), not a disagreement", "(bo_oct60, b61_london, b61_selling)",
+                  "(bo_g10_3520, b62_measures, b62_gab)", "(bo_current, ga_repackage)",
                   "(bo_eight, ga_t91, b59_conv)", "(im_giscard, le_tokyo)", "(ga_france, bo_convert)",
                   "(bt_fr, b70_fr_deval)", "(bt_de, b70_de_reval)", "(ga_42, b70_gold39)", "(sa68_official, sa72_official)"):
         assert words in notes, words
@@ -1453,9 +1538,13 @@ def deeper(F, Y, Q):
     fn, d31, y60 = F["bo_kennedy"]
     said("肯尼迪 1960 年 10 月 31 日的话，据 Bordo 的注 68", y60, mon("bo_kennedy", "October"), d31, fn)
     said("吕夫（1967）的方案与 Despres、Kindleberger 与 Salant（1966）的看法", F["bo_rueff"][0], F["bo_dks"][0])
+    fn52 = int(re.match(r"(\d+)\. According to Johnson", Q["bo_fn52"]).group(1))
+    said("英国早些贬值或可免去 1968 年的冲击，是 Johnson（1968）的看法，据 Bordo 的注 52", F["bo_fn52"][2],
+         int(re.search(r"Johnson \((\d{4})\)", Q["bo_fn52"]).group(1)), fn52)
     say("Bordo、Garber 与 Eichengreen 是同一本书的三章")
     for words in ("Indirect testimony", "through the editorial note of FRUS", "Kennedy's statement of 31 October 1960 "
-                  "through Bordo's footnote 68", "are three chapters of one volume and cite one another"):
+                  "through Bordo's footnote 68", "are three chapters of one volume and cite one another",
+                  "Johnson (1968) through Bordo's footnote 52 (bo_fn52)"):
         assert words in notes, words
     # single witnesses
     said("1946—1949 年欧洲的逆差", F["bo_oeec"][0], F["bo_denied"][2])
@@ -1584,6 +1673,10 @@ def models() -> None:
         dD = np.diff(m["D"])
         assert np.allclose(dD, g * m["R"][:-1] - dG, rtol=1e-12, atol=1e-9)
         assert np.allclose(m["c"] * m["D"], GUS)
+        # converting dollars into gold lowers G^US and D together: the cover rises when it is above 1, falls below 1
+        D, x = m["D"][-1], rng.uniform(0, 0.5) * min(m["D"][-1], GUS) if m["D"][-1] > 0 else 0.0
+        if D > 0 and x > 0 and abs(GUS - D) > 1e-9:
+            assert ((GUS - x) / (D - x) > GUS / D) == (GUS > D)
         # more growth, earlier crossing; more gold, later (when the cover falls below 1 at all)
         m2 = triffin(R0, G0, GUS, g * 1.5, dG, 400)
         m3 = triffin(R0, G0, GUS, g, dG * 0.5, 400)
@@ -1643,6 +1736,10 @@ HEADS = {"loc_degaulle": "Gaulle, Charles de", "loc_cripps": "Cripps, Richard St
 # what other chapters tell: (words of this chapter, chapter where it is told, words there)
 EVENTS = [("在\\secref{sec:warfinance-plans}", "ch34_warfinance", "\\label{sec:warfinance-plans}"),
           ("在\\secref{sec:warfinance-bw}", "ch34_warfinance", "\\label{sec:warfinance-bw}"),
+          ("协定允许各国管制（\\secref{sec:warfinance-bw}）", "ch34_warfinance", "资本管制写进了第六条第三节"),
+          ("叫提款（\\secref{sec:warfinance-bw}）", "ch34_warfinance", "成员国用本币向基金买外汇"),
+          ("叫可调整的钉住（\\chref{ch:depressionworld}）", "ch29_depressionworld",
+           "战后的布雷顿森林体系仍然钉住汇率，却留下了调整平价的余地"),
           ("盎司是称量黄金的重量单位（\\chref{ch:goldstandard}）", "ch23_goldstandard", "盎司是称金银的重量单位"),
           ("英镑当时可以按固定的价格兑换黄金（\\chref{ch:goldstandard}）", "ch23_goldstandard",
            "英镑当时可以按固定的价格兑换黄金"),
@@ -1698,8 +1795,10 @@ def witnesses(F, Q):
     # the gold pool: the seven other central banks; the losses of 1967-68 (Bordo after Solomon, Garber)
     assert F["bo_pool_nov"][1] == F["bo_pool40"][0] == F["ga_pool50"][1] == F["fr191_meeting"][2] == 7
     assert F["bo_pool_lost"][2:4] == [F["ga_march"][0], F["ga_march"][3]]
-    # the gold price: $35.20 the Treasury's buying price, $35 the pool's peg and the official price of 1968
-    assert F["bo_g10_3520"][1] == F["bo_oct60"][0] and F["fr191_35"][1] == F["fr191_two"][1] == F["bt_us"][1]
+    # the gold price: Bordo's $35.20 ('the U.S. Treasury's buying price') is the low end of the London quotations of the
+    # BIS (b61_london), above the Treasury's selling price; $35 the pool's peg and the official price of 1968
+    assert F["bo_g10_3520"][1] == F["bo_oct60"][0] == F["b61_london"][4] > F["b61_selling"][0] > F["bt_us"][1]
+    assert F["fr191_35"][1] == F["fr191_two"][1] == F["bt_us"][1]
     # the franc: Table 1.2 against the BIS (493.7, 26 January 1948); Garber's gold content of the franc of 1969
     assert round(F["b59_fr_parity"][0], 1) == F["bt_fr"][16]
     chk("    0.16/0.18 - 1 against 493.7/555 - 1 (the franc of 1969)", F["ga_t91"][10] / F["ga_t91"][9] - 1,
