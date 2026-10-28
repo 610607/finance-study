@@ -2,6 +2,11 @@ id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
 ab_political,西德,1948,,,,,abelshauser1981,p. 567,In der Tat war der politische Gewinn aus der Teilnahme der Bizone am Marshall-Plan bis dahin bedeutender als der praktische Beitrag des Hilfsprogramms für den Wiederaufbau in Westdeutschland.,
 ab_99,西德,1948,,99;22;0.666667,,,abelshauser1981,p. 567,"Von den Waren im Gesamtwert von knapp 99 Mio. Dollar, die schließlich bis zum Jahresende geliefert waren, fielen nur 22 Mio. Dollar auf Industriegüter, über 2 Drittel davon auf Baumwolle.",
 ab_27,西德,1948,,27,,,abelshauser1981,p. 567,Damit waren lediglich 27 vH der bis dahin zugesagten Hilfe auch in der Bizone angelangt,
+ab_priority,西德,1947,,1947,,,abelshauser1981,p. 564,Seit Anfang 1947 wurden alle Ressourcen der Bizone auf die neuralgischen Punkte der westdeutschen Wirtschaft konzentriert.,
+ab_transport,西德,1947,,,,,abelshauser1981,p. 564,absolute Priorität für die Instandsetzung der Infrastruktur im Verkehrsbereich und die Ausarbeitung und Durchsetzung eines Systems von Förderungsanreizen im Kohlenbergbau,
+ab_autumn47,西德,1947,,1947,,,abelshauser1981,p. 566,"Der Übergang zu anhaltendem und schnellem Wachstum, das ab Herbst 1947 einsetzte, gelang im wesentlichen ohne Hilfe von außen.",
+ab_norole,西德,1948,,,,,abelshauser1981,p. 566,spielte der Marshall-Plan für den westdeutschen Wiederaufbau zunächst keine große Rolle,
+ab_erp48,西德,1948,,1948,,,abelshauser1981,p. 566,"Erste ERP-Warenlieferungen kamen ein Jahr später, im Herbst 1948, nach Deutschland.",
 ab_britain,西德,1948,,,,,abelshauser1981,p. 555,"Sie flossen „anonym"" in den Staatshaushalt und wurden vor allem zum Rückkauf kurzfristiger Staatsanleihen verwendet",
 ab_counterpart_name,西德,1948,,,,,abelshauser1981,p. 555,"Typisch dafür die Verwendung der „Gegenwertmittel"".",
 ab_erhard,西德,1948,,74;21;1948,,,abelshauser1981,p. 564,"74 L. Erhard, Deutsche Wirtschaftspolitik, Rede des Direktors für Wirtschaft vor dem Wirtschaftsrat am 21. April 1948",
@@ -30,9 +35,19 @@ bj_germany,日本,1949,,,,,boj1985b,p. 234 (PDF p. 16),,read on the page image: 
 bj_stopper,日本,1949,,,,,boj1985b,p. 234 (PDF p. 16),,read on the page image: «インフレーションの「せん」を開くのも政府であるが、その「せん」を閉めねばならぬのもまた政府である。»
 bj_taxes,日本,1949,,,,,boj1985b,p. 234 (PDF p. 16),,read on the page image: «政府の支出は徴収可能な税金を財源とするものだけに限定されなければならない。»
 bj_aid,日本,1949,,,,,boj1985b,p. 235 (PDF p. 17),,read on the page image: «日本がアメリカから受けている援助は、アメリカの市民や企業に課せられた税金から出たものであり、いつまでも続くものではない。»
+bj_stability,日本,1949,,,,,boj1985b,p. 235 (PDF p. 17),,from the Bank's summary of the points of Dodge's statement of 7 March 1949; read on the page image: «健全な経済力の回復は、安定なくしては期待しえない。»
+bj_delay,日本,1949,,,,,boj1985b,p. 235 (PDF p. 17),,from the same summary; read on the page image: «インフレーション対策を遅延することは重大な結果を招き、悪い事態が長く続くことになるであろう。»
 bj_budget49,日本,1949,,4;20;24,,,boj1985b,p. 237 (PDF p. 19),,read on the page image: «4月20日、政府原案どおり昭和24年度予算が成立した。»
 bj_surplus,日本,1949,,24;3;1567,,,boj1985b,p. 237 (PDF p. 19),,read on the page image: «昭和24年度予算は、表3-3のように、一般会計において3億円の黒字を計上していただけでなく、特別会計・政府関係機関予算をも含む財政全体の純計予算においても1567億円の黒字となっており»
 bj_rfbbonds,日本,1949,,24;3;1091,,,boj1985b,p. 238 (PDF p. 20),,read on the page image: «24年3月末には発行残高が1091億円に達していた復興金融債券は、年度中に全額償還されることになったのである。»
+bj_330plan,日本,1949,,24;3;7;1;330,,,boj1985b,p. 254 (PDF p. 36),,'24年' is 1949 (Showa 24); 'NAC' is printed in full-width letters on these pages; read on the page image: «ドッジ財政顧問は、24年3月7日の記者会見で、輸入を不当に圧迫することなく、輸出を促進しうるような為替相場を設定することを考慮していると述べていたが、同月下旬の初めまでには、1ドル・330円の単一為替相場を採用する方針を固めたようである。»
+bj_nacname,日本,1949,,,,,boj1985b,p. 254 (PDF p. 36),,read on the page image: «「国際金融問題に対する国家諮問委員会」（以下、単にNACと呼ぶ）»
+bj_nac,日本,1949,,3;29,,,boj1985b,p. 255 (PDF p. 37),,the footnote mark (16) at the end is left out; read on the page image: «3月29日に開かれたNACは、スタッフ・コミティの提案をほぼそのまま認め、次のことを国務省および陸軍省に勧告することを決定した。»
+bj_nac360,日本,1949,,1;330;1;360,,,boj1985b,p. 255 (PDF p. 37),,"item ロ of the NAC's decision of 29 March 1949, the Bank's rendering; read on the page image: «為替相場を1ドル・330円に決定すべきであるという連合軍最高司令官の勧告を受け入れる用意はあるものの、NACとしては、それよりも1ドル・360円の水準に決定するよう考慮されることを強く勧告する。»"
+bj_persuaded,日本,1949,,1;360,,,boj1985b,p. 255 (PDF p. 37),,read on the page image: «単一為替相場の水準を1ドル・360円に決定するよう説得されたドッジ財政顧問と連合国最高司令部は»
+bj_washington,日本,1949,,1;330;1;360,,,boj1985b,p. 255 (PDF p. 37),,the reasons as Dodge and SCAP understood them; read on the page image: «ワシントン側が1ドル・330円ではなく1ドル・360円とするよう強く求めた»
+bj_dodge360,日本,1949,,1;360;24;330,,,boj1985b,p. 256 (PDF p. 38),,read on the page image: «上記のような考察の結果、ドッジ財政顧問は1ドル・360円の単一為替相場を採用することにしたが、24年度予算案は330円レートに基づいて積算されていた関係から計算のやり直しが必要であるので、予算案が国会を通過するまで、単一為替相場設定の公表を延期することが望ましい、とワシントンに進言した。»
+bj_memo,日本,1949,,24;2;24;4;23,,,boj1985b,p. 256 (PDF p. 38),,read on the page image: «24年度予算の成立後、中2日置いた24年4月23日、連合国最高司令部は「日本円に対する公式為替レートの樹立」と題する覚書を日本政府に発した。»
 bj_ichimada,日本,1949,,5;17;3,,,boj1985c,pp. 324-325 (PDF pp. 1-2),,'同年' is 1949 (Showa 24); '…' marks the words left out between the two parts; read on the page image: «一万田本行総裁は、同年5月17日に開かれた第3回全国銀行大会において行った講演のなかで … 然し俄に強度のデフレーションに転じ、価格水準の急落失業の増大等経済的社会的混乱を醸成するが如きは警戒を要するものと云わねばならない。»
 bj_rerelease,日本,1949,,,,,boj1985c,p. 325 (PDF p. 2),,from the same speech of 17 May 1949; read on the page image: «直接間接日本銀行に還流する財政償還金を適当に再放出することによつて、我経済界の真に必要とする資金を弾力的に供給することに努力する所存である»
 bj_rfbstop,日本,1949,,,,,boj1985c,p. 326 (PDF p. 3),,read on the page image: «ドッジ・ラインの実施とともに、これまで長期設備資金の供給に当たってきた復興金融金庫が新規融資業務を停止したためであった。»
@@ -55,6 +70,7 @@ bu_week,西德,1948,,,,,buchheim1988,p. 228,die eine Woche nach dem Erlaß des W
 bu_leitsatz,西德,1948,,18;1948,,,buchheim1988,p. 220,"Im Vereinigten Wirtschaftsgebiet wurde am 18. Juni 1948, also unmittelbar vor der Währungsreform, das Gesetz über Leitsätze für die Bewirtschaftung und Preispolitik nach der Geldreform vom Wirtschaftsrat verabschiedet",
 bu_annex,西德,1948,,,,,buchheim1988,p. 220,"„Der Freigabe der Preise ist vor der behördlichen Festsetzung der Vorzug zu geben.""",
 bu_june25,西德,1948,,25,,,buchheim1988,p. 221,"Schon vorher, am 25. Juni, hatte der Direktor der Verwaltung für Wirtschaft aufgrund der im Leitsätzegesetz enthaltenen Ermächtigung die Anordnung über Preisbildung und Preisüberwachung nach der Währungsreform erlassen, wodurch die Preise einiger landwirtschaftlicher Produkte sowie fast aller gewerblich hergestellten Fertigwaren freigegeben wurden",
+bu_bipartite,西德,1948,,30,,,buchheim1988,p. 221,Dementsprechend genehmigte das Bipartite Board am 30. Juni das Leitsätzegesetz denn auch,
 bu_june30,西德,1948,,30,,,buchheim1988,p. 221,der größte Teil der Bewirtschaftungsvorschriften am 30. Juni automatisch außer Kraft,
 bu_rations,西德,1948,,,,,buchheim1988,p. 193,"Lohn oder die Ersparnisse allemal ausreichten, um die knappen Rationen zu erstehen",
 bu_blackmarket,西德,1948,,,,,buchheim1988,p. 193,"Auf dem Schwarzmarkt dagegen waren die Preise so hoch gestiegen, daß man mit dem normalen Verdienst dort nicht zum Zuge kam.",
@@ -76,12 +92,14 @@ bu_governors,西德,1948,,,,,buchheim1988,p. 211,Zu diesem Zeitpunkt wurden die 
 bu_march,西德,1948,,1948,,,buchheim1988,p. 211,Damit war Mitte März 1948 der Weg zu einer auf Westdeutschland beschränkten Währungsreform frei.,
 bu_conclave,西德,1948,,,,,buchheim1988,p. 212,"Ende April waren die Verhandlungen um eine Währungsreform unter den drei westlichen Besatzungsmächten schließlich so weit gediehen, daß den im Konklave von Rothwesten bei Kassel zur Ausarbeitung der technischen Einzelheiten der Reform von den Alliierten versammelten deutschen Sachverständigen folgende, nicht mehr veränderbaren Grundzüge des Währungsplanes mitgeteilt werden konnten",
 bu_principles,西德,1948,,70;20;10,,,buchheim1988,p. 212,"Streichung von 70% der Altguthaben; Blockierung von 20%, über die deutsche Stellen durch Gesetz entscheiden sollten; Umwandlung von 10% in neues Geld; - Annullierung der Reichsschuld",
+bu_principles2,西德,1948,,,,,buchheim1988,p. 212,Ausstattung der Finanzinstitute mit neuen Schuldverschreibungen der Länder,
 bu_lastenausgleich_hands,西德,1948,,,,,buchheim1988,p. 212,Übertragung der Zuständigkeit für Gesetze über den Lastenausgleich einschließlich der Kapitalabgabe und die Besteuerung in deutsche Hände,
 bu_tenenbaum,西德,1948,,,,,buchheim1988,p. 214,"Tenenbaums, des Kontaktmannes zur amerikanischen Militärregierung",
 bu_tenenbaum_arg,西德,1948,,,,,buchheim1988,p. 214,"angesichts der Zusammenstreichung der Spareinlagen, die den größten Teil der freiwilligen privaten Geldkapitalbildung darstellten, könne man sonstige Geldforderungen nicht zum Nennbetrag umstellen",
 bu_hart,西德,1948,,,,,buchheim1988,p. 215,"Wie Tenenbaum schon im Konklave erklärt hatte, müsse man in der Kreditpolitik voraussichtlich hart sein",
 bu_debtors,西德,1948,,,,,buchheim1988,p. 214,daß der Schuldner im Normalfall Sachwertbesitzer sei,
 bu_debtors11,西德,1948,,1;1,,,buchheim1988,p. 214,in dem man an einer Umwandlung 1:1 festhielt,
+bu_debtors2,西德,1948,,,,,buchheim1988,p. 214,eine generelle Reduzierung der Schulden die ohnehin schwer erträgliche Besserstellung der Sachwert- gegenüber den Geldvermögensbesitzern noch krasser werden ließe,
 bu_clay_cdg,西德,1946,,,,,buchheim1988,p. 202,in dem Clay den Eingang des Colm-Dodge-Goldsmith,
 bu_clay_date,西德,1946,,23;5;46,,,buchheim1988,p. 202,Clay to AGWAR.23.5.46,
 bu_cdg,西德,1946,,,,,buchheim1988,p. 203,"Es war dies der Colm-Dodge-Goldsmith (CDG)-Plan, benannt nach seinen Hauptautoren, den deutschstämmigen Ökonomen Gerhard Colm und Raymond Goldsmith sowie Clays Finanzberater Joseph Dodge.",
@@ -92,11 +110,15 @@ bu_reich,西德,1948,,,,,buchheim1988,p. 218,"Nicht umgestellt wurden die Verbin
 bu_reich2,西德,1948,,,,,buchheim1988,p. 218,"nicht erloschen, jedoch konnten sie von den Gläubigern vorläufig auch nicht mehr verwertet werden",
 bu_1957,西德,1957,,1957,,,buchheim1988,p. 218,Erst 1957 bestimmte das Allgemeine Kriegsfolgengesetz,
 bu_1957b,西德,1957,,10,,,buchheim1988,p. 218,zu 10% ihres Nennbetrags in Schuldbuchforderungen umzuwandeln,
+bu_1957_bonds,西德,1957,,,,,buchheim1988,p. 218,"daß Schuldverschreibungen und Schatzanweisungen des Reichs, Preußens, der Bahn und der Post",
+bu_1957_banks,西德,1957,,,,,buchheim1988,p. 218,"Allerdings galt dies nicht, soweit Banken, Versicherungen und Bausparkassen deren Inhaber waren",
+bu_ausgleich,西德,1948,,,,,buchheim1988,p. 218,"neugeschaffenen Schuldtiteln der Öffentlichen Hand, sogenannten Ausgleichsforderungen, die zum Ausgleich der Passiva ihrer Bilanzen bestimmt waren",
 bu_145,西德,1948,,145,,,buchheim1988,p. 227,anläßlich der Währungsreform eingezahlten und angemeldeten RM-Altgeldbestände beliefen sich auf insgesamt 145 Mrd. RM,
 bu_newmoney,西德,1948,,4.4;1948;12,,,buchheim1988,p. 228,"die Ende Juni aus Erstausstattungen an die Öffentliche Hand sowie Kopf- und Geschäftsbeträgen 4,4 Mrd. DM betrug und bis Ende Dezember 1948 auf rund 12 Mrd. DM angewachsen war",
 bu_freikonto,西德,1948,,5.3,,,buchheim1988,p. 228,"Davon waren 5,3 Mrd. DM Gutschriften auf Freikonto.",
 bu_savings,西德,1948,,70,,,buchheim1988,p. 228,denn allein die Spareinlagen bei den Kreditinstituten stellten sich auf über 70 Mrd. RM,
 bu_empty,西德,1948,,,,,buchheim1988,p. 228,"daß ein sehr großer Teil aller Sparer bei der Umstellung ganz leer ausging, weil die Kopfbeträge schon höher waren als ein Zehntel ihrer RM-Bestände",
+bu_better,西德,1948,,10;1,,,buchheim1988,p. 228,"Daß in diesem Fall das Umstellungsverhältnis besser als 10:1 war, konnte dennoch nichts an dem Unmut der Menschen ändern",
 bu_enteignung,西德,1948,,,,,buchheim1988,p. 228,unter denen sich ein Gefühl der Enteignung breitmachte,
 bu_confidence,西德,1948,,1948,,,buchheim1988,p. 228,Verstärkt wurde dieses Gefühl dann noch einmal durch die Festkontoentscheidung vom Oktober 1948,
 bu_confidence2,西德,1948,,,,,buchheim1988,p. 228,einer beträchtlichen Schwächung des Vertrauens in die D-Mark führte,
@@ -113,6 +135,8 @@ bu_levy42,西德,1979,,1979;42,,,buchheim1988,p. 220,Tatsächlich belief sich de
 bu_wealth300,西德,1948,,50;1948;300,,,buchheim1988,p. 220,"weit unter 50% des 1948 vorhandenen Vermögens, dessen reproduzierbarer Teil allein auf über 300 Mrd. DM geschätzt wurde",
 bu_altsparer,西德,1953,,14;7;1953,,,buchheim1988,p. 219,Das Altsparergesetz vom 14.7. 1953,
 bu_altsparer2,西德,1953,,10;2;1;1;1940,,,buchheim1988,p. 219,"eine Verbesserung des Umstellungsverhältnisses auf 10:2 zu, soweit die Berechtigten schon am 1.1. 1940 Inhaber der entsprechenden Forderungen waren",
+bu_hypo,西德,1948,,1948,,,buchheim1988,p. 219,Schon im September 1948 war darüber hinaus das Hypothekensicherungsgesetz,the quotation stops before the footnote number 155
+bu_hypo2,西德,1948,,0.1,,,buchheim1988,p. 219,"Trotz der Umstellung der Hypotheken auf ein Zehntel, soweit es den Hypothekengläubiger betraf, hatte der Schuldner also weiterhin die vollen Zins- und Tilgungsleistungen zu erbringen, die zum größten Teil aber nun dem Lastenausgleich dienten",
 bu_prices,西德,1948,,1948;26;14,,,buchheim1988,p. 229,"Die Preise industrieller Grundstoffe erhöhten sich zwischen Juni und Dezember 1948 um 26, die Erzeugerpreise gewerblicher Produkte um 14%",
 bu_prices2,西德,1948,,18;35,,,buchheim1988,p. 229,"Die Preise für Ernährung im Rahmen des Lebenshaltungskostenindex nahmen um 18% zu, die für Bekleidung gar um 35%",
 bu_wagestop,西德,1948,,,,,buchheim1988,p. 230,da der weitgehende Lohnstopp zunächst noch Geltung besaß,
@@ -120,13 +144,21 @@ bu_protest,西德,1948,,,,,buchheim1988,p. 230,"führte verbreitet zu sozialem P
 bu_poll,西德,1948,,1948;70,,,buchheim1988,p. 230,"äußerten doch im Dezember 1948 70% der bei einer Meinungsumfrage hierzu Befragten die Ansicht, daß wieder Preiskontrollen eingeführt werden sollten",
 bu_pressure,西德,1948,,,,,buchheim1988,p. 230,"Erhard geriet im Wirtschafts-, Länder- und Verwaltungsrat unter starken Druck, seine Wirtschaftspolitik zu revidieren, dem er je länger, desto mehr durch Wiedereinführung von Elementen staatlicher Bewirtschaftung und Preiskontrolle nachzugeben gezwungen war",
 bu_turn,西德,1948,,1948,,,buchheim1988,p. 230,Da kehrte sich im Dezember 1948 der Preistrend um.,
+bu_auslaufen,西德,1948,,,,,buchheim1988,p. 230,Verantwortlich hierfür waren u.a. das Auslaufen der hoheitlichen Geldschöpfung,
+bu_velocity,西德,1948,,,,,buchheim1988,p. 230,Und die Geldumlaufgeschwindigkeit war sehr groß,of the second half of 1948; the quotation stops before the footnote number 220
+bu_velocity2,西德,1948,,,,,buchheim1988,p. 230,vergrößerte sie sich weiter und drohte eine Inflationsspirale auszulösen,'sie' is the velocity of money (bu_velocity)
 bu_surplus,西德,1948,,4;1948,,,buchheim1988,p. 230,"die von der Bank deutscher Länder ergriffenen M a ß nahmen zur Kreditrestriktion, die allmählich zu wirken begannen, sowie die Tatsache, daß ab dem 4. Quartal 1948 die öffentlichen Haushalte Überschüsse erwirtschafteten",
 bu_hoarding,西德,1948,,,,,buchheim1988,p. 230,"Aber auch die in Gang kommenden Marshallplan-Einfuhren spielten eine wichtige Rolle insofern, als sie die Erwartungen der Produzenten in Richtung einer Auflockerung der Märkte beeinflußten, auf diese Weise sich die Tendenz zur Hortung verminderte",
 bu_election,西德,1949,,1949,,,buchheim1988,p. 230,"daß die Frage der richtigen Wirtschaftspolitik 1949 von der Union zum Hauptthema des ersten Bundestagswahlkampfes gemacht wurde und sie unter der Parole „Markt- oder Planwirtschaft"" die Wahl gewann",
 bu_abelshauser,西德,1948,,,,,buchheim1988,p. 230,"Diese Vorstellung hat Werner Abelshauser in seinen Arbeiten zu erschüttern versucht. Allerdings erscheint seine Argumentation, wie gezeigt, nicht voll",the sentence goes on 'nicht voll überzeu-' and ends 'gend' after the footnotes and the page break; the quotation stops at 'voll'
 bu_miracle,西德,1948,,,,,buchheim1988,p. 230,und das Wirtschaftswunder ausschließlich hierauf zurückgeführt wurde,
+bu_verklaert,西德,1948,,,,,buchheim1988,p. 230,sich im Rückblick geradezu verklärte,the subject is the currency reform together with the introduction of the social market economy
+bu_potential,西德,1948,,,,,buchheim1988,p. 231,ohne sie wäre das zweifellos vorhandene Wachstumspotential weiterhin dauerhaft an seiner Entfaltung gehindert worden,'sie' is the currency and decontrol reform
 bu_compensation,西德,1948,,,,,buchheim1988,p. 225,Kompensationsgeschäfte im allgemeinen zu den legalen Preisen abgerechnet und verbucht,
 bu_hiding,西德,1948,,,,,buchheim1988,p. 225,war in dem angenommenen Umfang keineswegs notwendig,
+bu_19,西德,1948,,19;7,,,buchheim1988,p. 225,Erhöhte sich die Produktion nach Abelshauser doch in dem halben Jahr nach der Reform um 19 Prozentpunkte gegenüber lediglich 7 Prozentpunkten in den sechs Monaten vor der Reform,"Buchheim's note 193 cites Abelshauser, Wirtschaft in Westdeutschland (1975), p. 57"
+bu_ritschl,西德,1948,,,,,buchheim1988,p. 225,"Albrecht Ritschi hat aber in seiner Analyse gezeigt, daß die grundlegende Annahme, auf der Abelshausers Neuschätzung der industriellen Produktion mithilfe des Stromverbrauchs beruht, nämlich die Konstanz der Stromproduktivität, nicht zutraf","'Ritschi' is the OCR's reading of 'Ritschl'; Buchheim's note 194 cites Ritschl's article, pp. 140 ff."
+bu_collapse,西德,1948,,,,,buchheim1988,p. 225,Damit fällt jedoch Abelshausers Schätzung in sich zusammen,
 bu_30cents,西德,1948,,30,,,buchheim1988,p. 212,"Weiterhin wurde der Umrechnungskurs der Reichsmark mit 30 Dollarcents festgesetzt, der, für die D-Mark zunächst beibehalten",
 bu_westberlin,西德,1948,,20,,,buchheim1988,p. 217,"zunächst unter Ausschluß Westberlins, am 20. Juni statt",
 bu_soviet,西德,1948,,,,,buchheim1988,p. 217,"Einige wenige Tage später wurde eine separate Währungsreform auch in der sowjetischen Zone durchgeführt, und die totale Berlin-Blockade begann",
@@ -154,7 +186,10 @@ de_moscow,西欧,1947,,,,,delong1991,p. 50 (PDF p. 52),Moscow's rejection can be
 de_offered,西欧,1947,,,,,delong1991,p. 50 (PDF p. 52),"Marshall aid was ostensibly offered to Eastern Europe, and even to the U.S.S.R.",
 de_epu,西欧,1950,,1950,,,delong1991,p. 50 (PDF p. 52),"In 1950, discussions culminated in the European Payments Union, a system of credits to promote multilateral trade among European countries.",
 de_tipped,西欧,1951,,,,,delong1991,p. 50 (PDF p. 52),The Marshall Plan at most tipped the balance.,
+de_price,西欧,1951,,,,,delong1991,p. 50 (PDF p. 52),the price charged for the aid was a price Western Europe might have paid for its own sake in any event,
+de_support,西欧,1951,,,,,delong1991,p. 50 (PDF p. 52),"Support for the market was widespread, although just how widespread was uncertain.",
 de_milward,西欧,1951,,1984,,,delong1991,p. 3 (PDF p. 5),Milward (1984) is correct in arguing that Marshall Plan aid was simply not large enough to significantly stimulate Western European growth by accelerating the replacement and expansion of its capital stock.,
+de_milward_pace,西欧,1951,,,,,delong1991,"p. 10 (PDF p. 12), note 7",his conclusion that the pace of European recovery would not have been very different in its absence,'his' is Milward's (1984)
 de_complete,西欧,1951,,,,,delong1991,p. 3 (PDF p. 5),reconstruction was largely complete before the program came on stream,
 de_environment,西欧,1951,,,,,delong1991,p. 4 (PDF p. 6),the Marshall Plan significantly sped Western European growth by altering the environment in which economic policy was made,
 de_dismantling,西欧,1951,,,,,delong1991,p. 4 (PDF p. 6),Yet in fact the Marshall Plan era saw a rapid dismantling of controls over product and factor markets in Western Europe. It saw the restoration of price and exchange rate stability.,
@@ -244,6 +279,7 @@ ug_s11b,西德,1948,,,,,umstellungsgesetz1948,§ 11 (1),"Den Geldinstituten wird
 ug_s11c,西德,1948,,,,,umstellungsgesetz1948,§ 11 (1),hrlich verzinsliche Ausgleichsforderung gegen die,'eine mit drei vom Hundert jährlich verzinsliche Ausgleichsforderung gegen die öffentliche Hand': the page is in ISO-8859-1: quoted in a fragment without umlauts
 ug_s14,西德,1948,,,,,umstellungsgesetz1948,§ 14,"folgende Reichsmarkverbindlichkeiten keine Anwendung: 1. Verbindlichkeiten des Reichs, 2. Verbindlichkeiten der NSDAP",
 ug_s16,西德,1948,,10;1,,,umstellungsgesetz1948,§ 16 (1),zehn Reichsmark eine Deutsche Mark zu zahlen hat,
+ug_s16c,西德,1948,,,,,umstellungsgesetz1948,§ 16 (3),Heranziehung der Schuldnergewinne zum Lastenausgleich obliegt der deutschen Gesetzgebung,'Die Heranziehung der Schuldnergewinne zum Lastenausgleich ...'
 ug_s18,西德,1948,,1;1,,,umstellungsgesetz1948,§ 18 (1),r jede Reichsmark eine Deutsche Mark zu zahlen hat,'für jede Reichsmark': the page is in ISO-8859-1: quoted in a fragment without umlauts
 ug_s18w,西德,1948,,,,,umstellungsgesetz1948,§ 18 (1) 1.,"lter, Miet- und Pachtzinsen, Altenteile, Renten, Pensionen","'Löhne und Gehälter, Miet- ...': the page is in ISO-8859-1: quoted in a fragment without umlauts"
 ug_s18d,西德,1948,,20;1948,,,umstellungsgesetz1948,§ 18 (1) 1.,die nach dem 20. Juni 1948 f,the page is in ISO-8859-1: quoted in a fragment without umlauts
@@ -299,6 +335,9 @@ mof_jobs,日本,1951,,,,,mof2010ch2,p. 54,Special procurement demand from the wa
 mof_overbalanced,日本,1949,,,,,mof2010ch2,p. 56,"Known at the time as ""over balanced"" budgets, the goal was to eradicate deficits.",
 mof_range,日本,1949,,1949;160;600,,,mof2010ch2,p. 66,"In January 1949, the export foreign exchange market ranged from ¥ 160 to ¥ 600 to the dollar.",
 mof_textiles,日本,1949,,60;420;350;330,,,mof2010ch2,p. 66,"There were three rates in place for textiles, which accounted for 60 percent of exports: ¥ 420, ¥ 350 and ¥ 330 to the dollar.",
+mof_pricing,日本,1949,,,,,mof2010ch2,p. 66,"the price of export items was set in dollars based on foreign market prices, while imports were sold at controlled Japanese prices",
+mof_multiple,日本,1949,,,,,mof2010ch2,p. 66,"The foreign exchange market was thus for all intents and purposes a multiple rate market, with rates determined after the fact on a product-by-product basis",
+mof_import330,日本,1949,,330,,,mof2010ch2,p. 66,In April the import rate was changed from an after-the-fact multiple rate to a set rate of ¥ 330 to the dollar,
 mof_300,日本,1949,,300;400,,,mof2010ch2,p. 67,"SCAP floated several ideas, ¥ 300 or ¥ 400, among others.",
 mof_360,日本,1949,,360;10;1949,,,mof2010ch2,p. 67,It decided on ¥ 360 with a fluctuation range of 10 percent on either side in March 1949.,
 mof_memo,日本,1949,,23;1949;25,,,mof2010ch2,p. 67,"the rate was formalized with a SCAP memorandum dated April 23, 1949. It took effect on April 25.",
@@ -319,6 +358,7 @@ ms_goods,美国,1947,,,,,marshall1947,p. 1159,The farmer or the peasant cannot f
 ms_farmer,美国,1947,,,,,marshall1947,p. 1159,So the sale of his farm produce for money which he cannot use seems to him an unprofitable transaction.,
 ms_grazing,美国,1947,,,,,marshall1947,p. 1159,"He, therefore, has withdrawn many fields from crop cultivation and is using them for grazing.",
 ms_ability,美国,1947,,,,,marshall1947,p. 1159,Europe's requirements for the next three or four years of foreign food and other essential products-principally from America-are so much greater than her present ability to pay,
+ms_help,美国,1947,,,,,marshall1947,p. 1159,"she must have substantial additional help or face economic, social, and political deterioration of a very grave character",
 ms_remedy,美国,1947,,,,,marshall1947,p. 1159,The remedy lies in breaking the vicious circle and restoring the confidence of the European people in the economic future of their own countries and of Europe as a whole.,
 ms_doctrine,美国,1947,,,,,marshall1947,p. 1160,"Our policy is directed not against any country or doctrine but against hunger, poverty, desperation, and chaos.",
 ms_purpose,美国,1947,,,,,marshall1947,p. 1160,Its purpose should be the revival of a working economy in the world so as to permit the emergence of political and social conditions in which free institutions can exist.,
@@ -403,6 +443,8 @@ ri_noblack,西德,1948,,,,,ritschl1985,p. 161,Für eine wachsende schwarze Produ
 ri_stocks,西德,1948,,,,,ritschl1985,p. 160,"In einer Planwirtschaft sind die Betriebe gezwungen, regelmäßig hohe Lagerbestände an Vor- und Endprodukten zu halten, um sich gegen mögliche Versorgungsstockungen abzusichern",
 ri_lagerabbau,西德,1948,,,,,ritschl1985,p. 160,"Darum steht zu erwarten, daß die Betriebe auf eine Währungs- und Bewirtschaftungsreform mit einem kräftigen Lagerabbau reagieren, um rasch in den Besitz liquider Mittel zu gelangen",
 ri_french_concede,西德,1948,,,,,ritschl1985,p. 161,Hier scheint die Unterschätzungsthese nicht direkt widerlegbar zu sein.,
+ri_strom,西德,1948,,,,,ritschl1985,p. 144,eher scheint die Stromproduktivität SPRA trendbehaftet zu steigen,SPRA: the productivity of electricity computed from the official index and the consumption of electricity
+ri_fn60,西德,1985,,60,,,ritschl1985,"p. 159, note 60",60 Wesentliche Hinweise zur folgenden Argumentation verdanke ich Dr. C. Buchheim,"the note to the comparison of the French zone with the Bizone in section VI, which goes on to the firms' stocks"
 ri_ipf_def,西德,1948,,1948;1947,,,ritschl1985,p. 152,"IPF besteht eigentlich aus zwei unterschiedlichen Schätzungen, der offiziellen ab Januar 1948 und den deflationierten Wertreihen nach M a n z für 1947",
 ri_ipb_span,西德,1948,,1946;1949,,,ritschl1985,p. 152,IPB ist ab 1946 bis Mitte 1949,
 ri_ipb_def,西德,1948,,1936;25.35;1936;100,,,ritschl1985img,"p. 164 (PDF p. 29), Tab. I",,"read on the page image: «Tab. I | Zeit | ATM (Ø 1936 = 25,35) | IPB | IPBAT | IPF | IPFAT | IPBBZ | IPUSZ | IPTAT | (Index 1936 = 100)»"

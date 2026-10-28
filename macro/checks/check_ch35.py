@@ -217,6 +217,7 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     "ug_family": [("21", DE), ("1948", DE), ("achtzehnte", WD)],
     "ug_s2": [("zehn", WD), ("eine", WD)],
     "ug_s4": [("nfhundertvierzig", WD)],
+    "bu_hypo2": [("ein Zehntel", WD)],
     "ug_s11": [("drei", WD)],
     "ug_s14": [],
     "ug_s16": [("zehn", WD), ("eine", WD)],
@@ -308,7 +309,7 @@ TABLES = ("ri_ipb", "ri_ipf", "bdl_unemp", "bdl_emp")
 # (row, the misreading as printed in the quotation, the words of the snapshot's notes that name it)
 MISPRINTS = [("bdl_stall", "~st", "'~st' for 'ist'"), ("bdl_kfw", "V er kehr", "'V er kehr'"),
              ("mof_rfbbuy", "JuneAugust", "runs 'June' and 'August' together"),
-             ("mof_wagerules", "- 30 -", "the page number '- 30 -'")]
+             ("mof_wagerules", "- 30 -", "the page number '- 30 -'"), ("bu_ritschl", "Ritschi", "'Ritschi' for 'Ritschl'")]
 
 
 def ri_table(rid: str) -> dict[str, float]:
@@ -365,8 +366,8 @@ def check_readings(df: pd.DataFrame) -> None:
         got = list(table(r.id).values()) if r.id in TABLES else read_row(r.id, text, r.file)
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += bool(vals)
-    quoted("rows with values, each read from its quotation or transcription", n, 227)
-    quoted("rows read on a page image (no quotation)", img, 41)
+    quoted("rows with values, each read from its quotation or transcription", n, 244)
+    quoted("rows read on a page image (no quotation)", img, 51)
     N, Q = column("note"), quotes()
     notes = meta()["notes"]
     for rid, word, named in MISPRINTS:
@@ -530,6 +531,7 @@ TRANSLATIONS = {
     "市场经济还是计划经济": "bu_election",
     "失业在最近几个月大大增加": "bdl_stall",
     # sec:reconstruction-marshall
+    "性质非常严重的经济、社会与政治的恶化": "ms_help",
     "补救的办法在于打破恶性循环，恢复欧洲人民对本国以及整个欧洲经济前途的信心": "ms_remedy",
     "不针对任何国家或主义，针对的是饥饿、贫困、绝望与混乱": "ms_doctrine",
     "让世界的经济恢复运转，使自由制度得以存在的政治与社会条件能够出现": "ms_purpose",
@@ -559,6 +561,7 @@ TRANSLATIONS = {
     "超平衡": "mof_overbalanced",
     "在经济领域几乎被赋予了全部的权力": "f9_authority",
     "完全扭转了": "f9_reversed",
+    "强烈建议": "bj_nac360",
     "必须警惕": "bj_ichimada",
     "作为缓解道奇计划通缩效果的一种办法": "mof_relief",
     "首先是工会的领袖与积极分子": "f9_soviet_quote",
@@ -570,6 +573,7 @@ TRANSLATIONS = {
     "通胀普遍": "h59_reason",
     "让全国都很高兴": "h72_repay",
     "要求发行大量的货币": "su_preamble",
+    "统一的、降低了的国营零售价格": "su_ration",
     "不受改革的影响": "zv_wages",
     "何况这将是最后一次牺牲": "zv_sacrifice",
     "首先打击的，是积攒了大量的钱、把钱藏在储钱罐里的投机分子": "zv_speculators",
@@ -578,7 +582,9 @@ TRANSLATIONS = {
     "我们用政治的力量压制投机，用经济的力量引导游资": "fc_force",
     "我情愿做这样的强盗": "fc_robber",
     "虚构": "fc_fictions",
+    "主要商品与日用必需品的价格解冻": "fc_unfreeze",
     # sec:reconstruction-debate
+    "基本上没有靠外来的援助": "ab_autumn47",
     "似乎无法直接驳倒": "ri_french_concede",
     "并不完全令人信服": "bu_abelshauser",
     "大规模而非常成功的结构调整计划": "de_structural",
@@ -615,6 +621,7 @@ KEYWORDS = {
     "bu_protest": ["in Form von Demonstrationen, Tumulten und Boykottaufrufen"],
     "bu_election": ["Markt- oder Planwirtschaft"],
     "bdl_stall": ["die Arbeitslosigkeit in den letzten Monaten stark zugenommen hat"],
+    "ms_help": ["political deterioration of a very grave character"],
     "ms_remedy": ["The remedy lies in breaking the vicious circle and restoring the confidence of the European people "
                   "in the economic future of their own countries and of Europe as a whole."],
     "ms_doctrine": ["Our policy is directed not against any country or doctrine but against hunger, poverty, "
@@ -649,6 +656,7 @@ KEYWORDS = {
     "mof_overbalanced": ['"over balanced"'],
     "f9_authority": ["almost complete authority in the economic field"],
     "f9_reversed": ['"completely reversed this policy"'],
+    "bj_nac360": ["強く勧告する"],
     "bj_ichimada": ["警戒を要する"],
     "mof_relief": ["as a means of providing relief from the deflationary effects of the Dodge Plan"],
     "f9_soviet_quote": ["first of all leaders and active members of trade unions"],
@@ -659,6 +667,7 @@ KEYWORDS = {
     "h59_reason": ["the prevalence of inflation"],
     "h72_repay": ["delighted the country"],
     "su_preamble": ["потребовали выпуска в обращение большого количества денег"],
+    "su_ration": ["ввести единые сниженные государственные розничные цены"],
     "zv_wages": ["не затрагиваются реформой"],
     "zv_sacrifice": ["тем более, что это будет последняя жертва"],
     "zv_speculators": ["ударит прежде всего по спекулятивным элементам, накопившим крупные запасы денег и держащим их "
@@ -669,6 +678,8 @@ KEYWORDS = {
                  "funds"],
     "fc_robber": ["then I would be willing to be such a robber"],
     "fc_fictions": ["prices are fictions"],
+    "fc_unfreeze": ["Prices essential commodities and daily necessities unfrozen."],
+    "ab_autumn47": ["im wesentlichen ohne Hilfe von außen"],
     "ri_french_concede": ["Hier scheint die Unterschätzungsthese nicht direkt widerlegbar zu sein."],
     "bu_abelshauser": ["seine Argumentation, wie gezeigt, nicht voll"],
     "de_structural": ["a large and highly successful structural adjustment program"],
@@ -843,7 +854,11 @@ def opening(F, Y, Q):
     has("ab_erhard", "Rede des Direktors für Wirtschaft vor dem Wirtschaftsrat")
     said("4 月 21 日他就以这个身份在经济委员会演说过", mon("ab_erhard", "April"), F["ab_erhard"][1])
     assert F["ab_erhard"][2] == y48
-    said("6 月 30 日，大部分配给管制的规定自动失效", mon("bu_june30", "Juni"), F["bu_june30"][0])
+    said("英美两国军政府的双占区委员会到 6 月 30 日才批准这项法律", mon("bu_bipartite", "Juni"), F["bu_bipartite"][0])
+    has("bu_bipartite", "Bipartite Board", "das Leitsätzegesetz")
+    assert F["bu_june25"][0] < F["bu_bipartite"][0]                            # the order came before the approval
+    has("bu_june25", "Schon vorher")
+    said("6 月 30 日，大部分配给管制的规定也自动失效", mon("bu_june30", "Juni"), F["bu_june30"][0])
     # before the reform
     said("1948 年 5 月，汉堡黑市上一公斤黑麦面包要 9.5 帝国马克，一个鸡蛋要 8 帝国马克", F["bu_bread"][0],
          mon("bu_bread", "Mai"), F["bu_bread"][1], F["bu_egg"][0])
@@ -939,6 +954,15 @@ def overhang_section(F, Y, Q):
     has("bu_prices", "zwischen Juni und Dezember 1948", "die Erzeugerpreise gewerblicher Produkte um 14%")
     has("bu_prices2", "Ernährung im Rahmen des Lebenshaltungskostenindex")
     assert max(ind, food) < 100 * (mg / yg - 1) / 4                              # 涨得少得多
+    has("bu_velocity", "Geldumlaufgeschwindigkeit war sehr groß")             # velocity high and rising: k falling
+    has("bu_velocity2", "vergrößerte sie sich weiter")
+    say("那几个月货币的流通速度很大，还在加快，也就是$k$在下降")
+    has("bu_newmoney", "aus Erstausstattungen an die Öffentliche Hand sowie Kopf- und Geschäftsbeträgen")
+    said("6 月末的 44 亿只有人头额、企业的周转额与拨给公共部门的首批款项", 6, jun * 1e9)
+    said("12 月末的 120 亿里，有 53 亿是存款换算以后记入的自由账户，6 月末的数里还没有这一项", 12, dec * 1e9,
+         F["bu_freikonto"][0] * 1e9, 6)
+    assert F["bu_freikonto"][0] > jun                                           # more than the whole of June
+    said("拿 6 月末作起点，低估了改革本身发出的货币", 6)
     # the compare box
     said("存款与债务大体按 10 比 1 换算", *F["ug_s2"])
     said("1948 年秋天加快的回升几乎没有波及那里", F["ri_autumn"][0])
@@ -971,6 +995,7 @@ def germany(F, Y, Q):
     has("bu_conclave", "Ende April", "Konklave von Rothwesten bei Kassel")
     said("旧存款的 70\\% 勾销，20\\% 冻结，10\\% 换成新钱", *F["bu_principles"])
     has("bu_principles", "Annullierung der Reichsschuld")
+    has("bu_principles2", "Finanzinstitute", "Schuldverschreibungen der Länder")
     has("bu_lastenausgleich_hands", "in deutsche Hände")
     chk("    four laws (四项)", 4, told("最后由军政府颁布了四项基本法律", "颁布了", "项"))
     has("bu_four", "Vier grundlegende Gesetze")
@@ -981,10 +1006,16 @@ def germany(F, Y, Q):
     assert F["bu_fk_date"] == [F["fk_date"][0], 10, F["fk_date"][1]]           # Buchheim: 4. 10. 1948
     table_conversion(F, Y, Q)
     said("较大的帝国马克存款最终按 100 比 6.5 换成了德国马克", *F["bu_65"])
-    said("到 1957 年才按面额的 10\\% 换成新的债权", F["bu_1957"][0], F["bu_1957b"][0])
+    said("到 1957 年，帝国等发行的债券与国库券才按面额的 10\\% 换成新的债权", F["bu_1957"][0], F["bu_1957b"][0])
+    has("bu_1957_bonds", "Schuldverschreibungen und Schatzanweisungen des Reichs")
+    has("bu_1957_banks", "Banken, Versicherungen und Bausparkassen")
+    say("换出的德国马克一半记入可以自由支取的自由账户，一半记入暂时动用不了的冻结账户")
     has("bu_reich", "Reichsbahn und Reichspost, der NSDAP")
-    said("德国专家原想让私人的长期债务按 1 比 1 换算", *F["bu_debtors11"])
+    said("德国专家原想让私人之间的债务按 1 比 1 换算", *F["bu_debtors11"])
+    has("bu_debtors11", "festhielt")
     has("bu_debtors", "Sachwertbesitzer")
+    has("bu_debtors2", "Besserstellung der Sachwert- gegenüber den Geldvermögensbesitzern")
+    said("法律取了后者，私人债务按 10 比 1 换算", *F["ug_s16"])
     y23 = int(re.search(r"(\d{4}) 年 11 月 20 日，柏林交易所把美元的官价定在", chapter("ch26_weimar")).group(1))
     said("这和 1923 年的稳定不一样", y23)
     said("1948 年的物价被管制压着", F["wg_s1"][1])
@@ -1008,7 +1039,7 @@ def table_conversion(F, Y, Q):
         f"工资、租金、养老金 & {mon('ug_s18d', 'Juni')} 月 {F['ug_s18d'][0]:.0f} 日以后到期的，{F['ug_s18'][0]:.0f} 帝国马克付 "
         f"{F['ug_s18'][1]:.0f} 德国马克 & 换算法第 {sect('ug_s18')} 条 \\\\",
         f"帝国与纳粹党的债务 & 不适用换算的规定 & 换算法第 {sect('ug_s14')} 条 \\\\",
-        f"银行之间的债务 & 一律消灭；资产不够抵偿存款的银行，得到年息 {R['equal']:.0f}\\% 的平衡债权 & 换算法第 "
+        f"银行之间的债务 & 一律消灭；资产不够抵偿存款的银行，得到年息 {R['equal']:.0f}\\% 的、对公共部门的平衡债权 & 换算法第 "
         f"{sect('ug_s11')}、{sect('ug_s18c')} 条 \\\\"]
     for line in lines:
         assert line in t, line
@@ -1019,6 +1050,8 @@ def table_conversion(F, Y, Q):
     has("ug_s14", "Verbindlichkeiten des Reichs", "Verbindlichkeiten der NSDAP")
     has("ug_s18c", "ltnissen zwischen Geldinstituten")
     has("ug_s11c", "verzinsliche Ausgleichsforderung")
+    assert "gegen die öffentliche Hand" in column("note")["ug_s11c"]           # 对公共部门的: the note completes it
+    has("bu_ausgleich", "Schuldtiteln der Öffentlichen Hand", "Ausgleichsforderungen")
     assert "j" + Q["ug_s11c"][:5] not in Q["ug_s11"] and Q["ug_s11"] == "eine mit drei vom Hundert"
     said("\\caption{西德货币改革的换算规则（1948 年）", F["wg_s1"][1])
     said("\\datasource{《货币法》（第 61 号法律）、《换算法》（第 63 号法律）与《冻结账户法》（第 65 号法律）",
@@ -1035,7 +1068,7 @@ def household(F, Y, Q):
     has("ug_family", "das achtzehnte Lebensjahr nicht vollendet haben")
     said("改革前手里有 240 帝国马克的现钞，银行里有 10000 帝国马克的存款，欠别人 500 帝国马克，父亲的月工资是 300 帝国马克",
          H["cash"], H["deposit"], H["debt"], H["wage"])
-    said("（2）存款到 6 月末记入两个账户的各是多少", mon("wg_s1", "Juni"))
+    say("（2）存款换算以后记入两个账户的各是多少")
     said("（3）10 月以后呢", mon("fk_date", "Oktober"))
     R = rules()
     c = convert(H["cash"], H["deposit"], H["persons"])
@@ -1051,6 +1084,12 @@ def household(F, Y, Q):
          H["wage"] * R["wage"])
     chk("    more than nine tenths lost (九成以上)", 0.9, told("持有货币的家庭损失了九成以上", "损失了", "以上"))
     assert 1 - c["share"] > 0.9
+    # the debtor's gain: 500 RM owed, 50 DM repaid instead of 500 DM at 1 : 1
+    said("这 500 帝国马克的债若按 1 比 1 要还 500 德国马克，现在少还 450 马克", H["debt"], 1, 1, H["debt"],
+         H["debt"] * (1 - R["debt"]))
+    said("《换算法》第 16 条把向债务人的这笔得益征收负担平衡", sect("ug_s16c"))
+    assert sect("ug_s16c") == sect("ug_s16")
+    has("ug_s16c", "Schuldnergewinne zum Lastenausgleich", "deutschen Gesetzgebung")
     # self-check 2
     s = convert(S["cash"], S["deposit"], S["persons"])
     said("一个单身的人改革前有 360 帝国马克的现钞与 3000 帝国马克的存款", S["cash"], S["deposit"])
@@ -1074,6 +1113,8 @@ def cost(F, Y, Q):
     has("bu_freikonto", "Davon waren 5,3 Mrd. DM Gutschriften auf Freikonto")
     said("许多储户的存款不到人头额的 10 倍", 10)
     has("bu_empty", "als ein Zehntel ihrer RM-Bestände")
+    said("这些人的换算率其实好过 10 比 1", *F["bu_better"])
+    has("bu_better", "besser als 10:1", "Unmut der Menschen")
     said("10 月的冻结账户决定又让人们对德国马克的信心一度大大减弱", mon("bu_confidence", "Oktober"))
     has("bu_confidence2", "Schwächung des Vertrauens in die D-Mark")
     has("bu_expellees", "Vertriebenen", "arbeitslos", "bankrott", "Lebensmittelrationen")
@@ -1085,6 +1126,11 @@ def cost(F, Y, Q):
     d8, y49 = F["bu_soforthilfe2"]
     said("头一项办法《紧急救助法》1949 年 8 月 8 日才生效，正式的《负担平衡法》1952 年 8 月才通过", y49,
          mon("bu_soforthilfe2", "August"), d8, F["bu_lag"][0], mon("bu_lag", "August"))
+    said("1948 年 9 月的《抵押担保法》规定", F["bu_hypo"][0], mon("bu_hypo", "September"))
+    has("bu_hypo", "Hypothekensicherungsgesetz")
+    chk("    a tenth (十分之一)", F["bu_hypo2"][0], told("抵押债务对债权人按十分之一换算", "按", "换算"))
+    has("bu_hypo2", "soweit es den Hypothekengläubiger betraf", "die vollen Zins- und Tilgungsleistungen",
+        "zum größten Teil aber nun dem Lastenausgleich dienten")
     said("负担平衡的财产税原则上按 50\\% 征收", F["bu_levy50"][0])
     y79, levy = F["bu_levy42"]
     _, y48, wealth = F["bu_wealth300"]
@@ -1108,6 +1154,7 @@ def cost(F, Y, Q):
     said("公共预算从 1948 年第四季度起有了盈余", y)
     chk("    the fourth quarter (第四季度)", q4, told("公共预算从 1948 年第四季度起", "第", "季度"))
     has("bu_surplus", "Kreditrestriktion")
+    has("bu_auslaufen", "das Auslaufen der hoheitlichen Geldschöpfung")
     has("bu_hoarding", "Marshallplan-Einfuhren", "Hortung")
     said("1949 年，基督教民主联盟", F["bu_election"][0])
     has("bu_election", "ersten Bundestagswahlkampfes")
@@ -1125,13 +1172,11 @@ def cost(F, Y, Q):
     parts = F["bdl_parts"]
     said("政府有一个 9.5 亿德国马克的特别计划", F["bdl_950"][0] * 1e6)
     has("bdl_950", "Sonderprogramm")
-    chk("    four parts (四项)", len(parts), told("中央银行答应为其中的四项提供再融资", "其中的", "项"))
-    said("联邦铁路 2.5 亿，小额投资的工业信贷 0.5 亿", parts[0] * 1e6, parts[1] * 1e6)
-    said("失业特别严重的州的投资与出口融资，各 3 亿", parts[2] * 1e6)
-    assert parts[2] == parts[3]
+    chk("    four parts (四项)", len(parts), told("失业特别严重的州的投资与出口融资四项", "出口融资", "项"))
     has("bdl_parts", "Bundesbahn", "Kleininvestitionen", "besonders hoher Arbeitslosigkeit",
         "Exportfinanzierungsprogramm")
-    said("剩下邮政的 0.5 亿", F["bdl_post"][0] * 1e6)
+    said("除了邮政的 0.5 亿", F["bdl_post"][0] * 1e6)
+    has("bdl_post", "fehlt also nur das Investitionsprogramm der Post")
     chk("    250 + 50 + 300 + 300 + 50 = 950", sum(parts) + F["bdl_post"][0], F["bdl_950"][0])
     said("住房建设计划在这一个建筑季里至少要投入 25 亿德国马克", F["bdl_housing"][0] * 1e9)
     has("bdl_housing", "in der bevorstehenden Bausaison", "mindestens 2,5 Mrd. DM")
@@ -1267,9 +1312,14 @@ def japan(F, Y, Q):
     has("bj_truman", "デトロイト銀行のジョセフ・M・ドッジ（Joseph M. Dodge）頭取", "財政顧問（Financial Adviser）")
     said("12 月 14 日国务院致电道奇", 12, F["f6_lovett"][0])
     has("f6_lovett", "December 14 telegraphed Mr. Dodge")
-    has("bj_dodge_germany", "軍政部財政部長", "通貨改革・銀行改革")
+    has("bj_dodge_germany", "軍政部財政部長", "通貨改革・銀行改革", "立案と実施")
+    # what Buchheim shows of Dodge's part: the CDG plan of 1946; Tenenbaum at Rothwesten in 1948
+    said("他是 1946 年 CDG 方案的作者之一；1948 年在罗特维斯滕联络德国专家的，则是特南鲍姆", 1900 + F["bu_clay_date"][2],
+         F["wg_s1"][1])
+    has("bu_cdg", "Clays Finanzberater Joseph Dodge")
+    has("bu_tenenbaum", "Kontaktmannes zur amerikanischen Militärregierung")
     n7, sy, m2, d1 = F["bj_mission"]
-    said("包括他在内 7 个人的调查团，1949 年 2 月 1 日到了日本", n7, showa(sy), m2, d1)
+    said("包括道奇在内 7 个人的调查团，1949 年 2 月 1 日到了日本", n7, showa(sy), m2, d1)
     said("3 月 7 日，道奇发表声明", *F["bj_march7"])
     has("bj_germany", "ドラスティックな通貨の切捨て")
     has("bj_aid", "アメリカの市民や企業に課せられた税金", "いつまでも続くものではない")
@@ -1286,14 +1336,40 @@ def japan(F, Y, Q):
     # the single rate
     y49, lo, hi = F["mof_range"]
     said("1949 年 1 月，出口用的汇率从 1 美元兑 160 日元到 600 日元不等", y49, mon("mof_range", "January"), 1, lo, hi)
+    has("mof_pricing", "export items was set in dollars", "imports were sold at controlled Japanese prices")
+    has("mof_multiple", "a multiple rate market", "after the fact on a product-by-product basis")
     share, *rates = F["mof_textiles"]
     said("纺织品占出口的 60\\%", share)
-    chk("    three rates (三种)", len(rates), told("它的汇率就有三种", "就有", "种"))
     has("mof_textiles", "There were three rates in place for textiles")
-    said("三种汇率是 420、350 与 330 日元", *rates)
-    said("盟军总部考虑过 300 日元或 400 日元，最后定为 360 日元", *F["mof_300"], F["mof_360"][0])
-    d23, _, d25 = F["mof_memo"]
-    said("汇率由 4 月 23 日的盟军总部备忘录确定，4 月 25 日生效", mon("mof_memo", "April"), d23, 4, d25)
+    said("它的汇率就有 420、350 与 330 日元三种", *rates)
+    chk("    three rates (三种)", len(rates), told("与 330 日元三种", "日元", "种"))
+    said("4 月，进口改按 1 美元兑 330 日元的固定汇率结汇", mon("mof_import330", "April"), 1, F["mof_import330"][0])
+    has("mof_import330", "the import rate", "a set rate of")
+    # who set 360: the Bank of Japan's history (Dodge and SCAP: 330; the NAC in Washington: 360)
+    one, r330, _, r360 = F["bj_nac360"]
+    said("360 这个数，是华盛顿坚持的", r360)
+    has("bj_washington", "ワシントン側が", "強く求めた")
+    has("bj_persuaded", "説得されたドッジ財政顧問と連合国最高司令部")
+    sy, m3, d7, one_, p330 = F["bj_330plan"]
+    assert showa(sy) == F["mof_range"][0] and [m3, d7] == F["bj_march7"] and p330 == r330 and "同月下旬" in transcription("bj_330plan")
+    said("道奇到 3 月下旬已打算采用 1 美元兑 330 日元", m3, one_, p330)
+    m3b, d29 = F["bj_nac"]
+    assert m3b == m3
+    said("3 月 29 日，美国的国际金融问题国家咨询委员会决定向国务院与陆军部建议，可以接受 330 日元，但“强烈建议”考虑 360 日元",
+         m3b, d29, r330, r360)
+    has("bj_nacname", "国際金融問題に対する国家諮問委員会")
+    has("bj_nac", "国務省および陸軍省に勧告することを決定")
+    has("bj_nac360", "連合軍最高司令官の勧告を受け入れる用意はある")
+    _, d360, sy2, b330 = F["bj_dodge360"]
+    assert d360 == r360 == F["mof_360"][0] and b330 == r330 and sy2 == F["bj_budget49"][2]
+    said("道奇接受了 360 日元；预算是按 330 日元编的", d360, b330)
+    has("bj_dodge360", "予算案が国会を通過するまで", "公表を延期")
+    _, gap, _, m4m, d23 = F["bj_memo"]
+    d23b, _, d25 = F["mof_memo"]
+    assert d23 == d23b and m4m == mon("mof_memo", "April") == F["bj_budget49"][0]
+    assert d23 - gap - 1 == F["bj_budget49"][1]                              # 中2日置いた: 20 April, two days, 23 April
+    said("4 月 23 日，盟军总部向日本政府发出备忘录，汇率 4 月 25 日生效", m4m, d23, 4, d25)
+    has("bj_memo", "日本円に対する公式為替レートの樹立")
     assert F["bjc_360"][1] == F["mof_360"][0] and "April 1949" in column("note")["bjc_360"]
     m4, loss = F["bj_silk"]
     said("制丝业者的损失估计约 14 亿日元", loss * 1e8)
@@ -1355,7 +1431,7 @@ def japan(F, Y, Q):
     said("\\cmprow{货币}{存款与债务按 10 比 1 换算", *F["ug_s2"])
     chk("    seven tenths (十分之七)", F["fk_s1a"][0] / F["fk_s1a"][1], told("冻结账户十分之七勾销", "冻结账户", "勾销"))
     said("1946 年冻结存款，发新钞", y46)
-    said("6 月 25 日放开大部分工业品的价格", 6, F["bu_june25"][0])
+    said("6 月 25 日放开几乎全部工业制成品的价格", 6, F["bu_june25"][0])
     said("公共预算从 1948 年第四季度起有盈余", F["bu_surplus"][1])
     said("1949 年度净计预算盈余 1567 亿日元", showa(sy2), net * 1e8)
     said("合 30 美分", F["bu_30cents"][0])
@@ -1473,7 +1549,8 @@ def others(F, Y, Q):
     assert gy36 == usd9 * usd                                                  # 九亿美元之等值
     said("短缺的 11.4 亿圆约当总支出的 30\\% 弱", gap, 100 * thirty)
     chk("    36 - 24.6 = 11.4", gy36 - inc, gap, tol=1e3)
-    has("fc_chiang", "Son of Generalissimo Chiang Kai-shek", "Shanghai Economic Supervisory Office")
+    has("fc_chiang", "Son of Generalissimo Chiang Kai-shek", "Deputy Chief of the Shanghai Economic Supervisory Office")
+    say("上海经济督导处的副主管，是蒋介石的儿子蒋经国")
     d13, _ = F["fc_date343"]
     said("按上海的美国总领事馆 9 月 13 日转引的英文报道", mon("fc_date343", "September"), d13)
     has("fc_speech", "North China Daily News")
@@ -1482,7 +1559,7 @@ def others(F, Y, Q):
     gy, times, d19c = F["fc_issue"]
     said("南京的美国大使馆 10 月 15 日报告，钞票发行约 12.5 亿圆，约为 8 月 19 日流通额的 5 倍", mon("fc_stuart", "October"),
          d15, gy * 1e9, mon("fc_issue", "August"), d19c, times)
-    said("11 月 1 日，生活必需品的价格冻结取消", mon("fc_unfreeze_date", "November"), F["fc_unfreeze_date"][0])
+    said("11 月 1 日，“主要商品与日用必需品的价格解冻”", mon("fc_unfreeze_date", "November"), F["fc_unfreeze_date"][0])
     has("fc_unfreeze", "unfrozen")
     rate, per = F["fc_devalue"]
     has("fc_devalue", "Government yesterday announced")
@@ -1504,8 +1581,13 @@ def y46_of(F) -> float:
 def debate(F, Y, Q):
     said("西德的回升是不是从 1948 年 6 月开始的", F["wg_s1"][1], 6)
     a, b, c, d = F["ri_manz"]
-    said("法国占领区的实际产量比官方数字高 6\\% 到 10\\%", a, b)
-    said("联合经济区的实际产量高 10\\% 到 13\\%", c, d)
+    said("照他 1981 年的文章，联合经济区从 1947 年初起把资源集中在运输与煤炭这些瓶颈上，持续而快速的增长从 1947 年秋天就开始了",
+         src_year("abelshauser1981"), F["ab_priority"][0], F["ab_autumn47"][0])
+    has("ab_priority", "Seit Anfang 1947", "Ressourcen der Bizone")
+    has("ab_transport", "Infrastruktur im Verkehrsbereich", "Kohlenbergbau")
+    has("ab_autumn47", "ab Herbst 1947 einsetzte")
+    said("法国占领区改革以前的实际产量比官方数字高 6\\% 到 10\\%", a, b)
+    said("联合经济区高 10\\% 到 13\\%", c, d)
     has("ri_manz", "(Manz)", "(Abelshauser)")
     said("低估之说，Wallich 1955 年就提出过", F["ri_wallich"][0])
     said("改革以前的产量一直在缓慢上升，5 月最高", mon("ri_steady", "Mai"))
@@ -1516,11 +1598,28 @@ def debate(F, Y, Q):
     has("bu_compensation", "zu den legalen Preisen abgerechnet")
     has("bu_hiding", "keineswegs notwendig")
     has("bu_miracle", "Wirtschaftswunder ausschließlich")
+    said("改革以后的半年里工业生产也增加了 19 个百分点，改革以前的半年只增加了 7 个", *F["bu_19"])
+    has("bu_19", "nach Abelshauser", "in den sechs Monaten vor der Reform")
+    assert "Abelshauser, Wirtschaft in Westdeutschland (1975), p. 57" in column("note")["bu_19"]
+    has("bu_ritschl", "Neuschätzung der industriellen Produktion mithilfe des Stromverbrauchs",
+        "Konstanz der Stromproduktivität, nicht zutraf")
+    has("ri_strom", "trendbehaftet zu steigen")
+    has("bu_collapse", "Abelshausers Schätzung in sich zusammen")
+    has("bu_verklaert", "im Rückblick geradezu verklärte")
+    has("bu_potential", "zweifellos vorhandene Wachstumspotential", "Entfaltung gehindert")
     said("Milward（1984）的论证是", F["de_milward"][0])
     has("de_complete", "reconstruction was largely complete")
+    has("de_milward_pace", "the pace of European recovery would not have been very different in its absence")
+    has("ab_norole", "zunächst keine große Rolle")
+    said("第一批援助物资 1948 年秋天才运到", F["ab_erp48"][0])
+    has("ab_erp48", "Erste ERP-Warenlieferungen", "im Herbst 1948")
+    has("de_price", "a price Western Europe might have paid for its own sake in any event")
+    has("de_support", "Support for the market was widespread")
     has("de_environment", "altering the environment in which economic policy was made")
     has("de_dismantling", "dismantling of controls", "price and exchange rate stability")
     has("de_overstated", "Milward's revisionism is overstated")
+    has("bj_stability", "安定なくしては期待しえない")
+    has("bj_delay", "インフレーション対策を遅延することは重大な結果を招き", "長く続く")
     said("一万田尚登在 1949 年 5 月就警告过", showa(24), F["bj_ichimada"][0])
     said("1950 年上半年零售物价下跌", showa(25))
     said("1950 年 6 月以后的特需结束了这段紧缩", showa(25), F["bj_korea"][0])
@@ -1541,7 +1640,21 @@ def deeper(F, Y, Q):
     said("日本银行百年史第 5 卷没有文字层", 5)
     assert "published 1982-86" in src["boj1985a"]["version"] and "vol. 5, second part" in src["boj1985a"]["version"]
     assert "(no text layer)" in src["boj1985a"]["version"]
-    chk("    four disagreements (四处不一致)", 4, told("\\textbf{四处不一致。}", "{", "处"))
+    chk("    five disagreements (五处不一致)", 5, told("\\textbf{五处不一致。}", "{", "处"))
+    said("360 日元是谁定的", F["mof_360"][0])
+    said("财务省的政策史说盟军总部考虑过 300 日元或 400 日元，3 月定为 360 日元", *F["mof_300"], mon("mof_360", "March"),
+         F["mof_360"][0])
+    has("mof_360", "It decided on ¥ 360", "in March 1949")
+    said("日本银行百年史说道奇与盟军总部原拟 330 日元，是华盛顿的国家咨询委员会坚持 360 日元", F["bj_330plan"][4],
+         F["bj_nac360"][3])
+    for words in ("on the rate of 360 yen", "(mof_300, mof_360, bj_330plan, bj_nac360, bj_dodge360)",
+                  "recommendation of 29 March 1949 through the Bank of Japan's history", "not independent witnesses"):
+        assert words in notes, words
+    said("国家咨询委员会 3 月 29 日的建议也据百年史的转述", *F["bj_nac"])
+    said("Abelshauser 1975 年的估计里改革前后各半年的增幅", F["ri_refs"][-1])
+    said("Ritschl 在注 60 里说", F["ri_fn60"][0])
+    has("ri_fn60", "verdanke ich Dr. C. Buchheim")
+    assert page("ri_fn60") == page("ri_french") and "Ritschl's article, pp. 140 ff." in column("note")["bu_ritschl"]
     d20, y = F["ug_title"]
     d27, m6, _ = F["bu_ug_date"]
     said("《换算法》的日期，verfassungen.de 印作 1948 年 6 月 20 日，Buchheim 写作 6 月 27 日", y, mon("ug_title", "Juni"), d20,
@@ -1628,7 +1741,10 @@ def ending(F, Y, Q):
     said("1948 年 6 月 20 日换到手的 40 德国马克", F["wg_s1"][1], 6, F["bu_sunday"][0], F["wg_s6b"][0])
     said("改革以前帝国马克的折算率已定为 30 美分", F["bu_30cents"][0])
     has("bu_30cents", "für die D-Mark zunächst beibehalten")
-    chk("    a year later (一年以后)", F["mof_360"][2] - F["wg_s1"][1], told("一年以后，日元也定在了", "", "年以后"))
+    chk("    less than a year later (不到一年以后)", 1, told("不到一年以后，日元也定在了", "不到", "年以后"))
+    months = 12 * (F["mof_360"][2] - F["wg_s1"][1]) + mon("mof_memo", "April") - mon("wg_s1", "Juni")
+    assert 0 < months < 12, months                                            # June 1948 to April 1949
+    say("两种货币都钉住了美元")                                                 # the yen was not a new currency
     t = tex_text().rstrip()
     assert t.endswith(NEXT), "the last words are not Chapter 36's question"
     assert t.index("\\end{answers}") < t.index("1948 年 6 月 20 日换到手的 40 德国马克")
