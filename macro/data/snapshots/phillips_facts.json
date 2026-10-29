@@ -1,0 +1,331 @@
+{
+  "title": "Quotations for Chapter 38: Phillips's paper of 1958 and its data, Samuelson and Solow's menu of 1960, the Economic Report of the President of January 1962 and Okun's potential GNP, unemployment and prices in the United States and Canada, Klein's Model I of 1950, Friedman's Nobel lecture, Fisher's paper of 1926, and life dates",
+  "source": "Economica (Phillips 1958); The American Economic Review (Samuelson and Solow 1960); Economic Reports of the President 1962 and 1971; Cowles Foundation (Okun 1962; Klein 1950); NobelPrize.org (Friedman 1976; Klein 1980); International Labour Review (Fisher 1926); Science Museum Group; Statistics Canada (Historical Statistics of Canada, 1983); Library of Congress; Deutsche Nationalbibliothek; Bibliothèque nationale de France; Internet Archive",
+  "url": "https://elearning.unito.it/sme/pluginfile.php/192712/course/section/41483/Phillips_Econ58.pdf",
+  "series": "quotations (column quote) with their page (column juan) and the numbers read from them (column value, ';'-separated, by the READINGS of checks/check_ch38.py); a row read on a page image has no quotation and its transcription between « and » in the note",
+  "retrieved": "2026-10-29",
+  "license": "Phillips (1958, Economica) and Samuelson and Solow (1960, The American Economic Review): articles in copyright, read to verify in the JSTOR scans that two university course pages post (sources phillips1958 and samuelson1960: the address, the date and the SHA-256 of each copy are recorded there); the copies are not committed, the journals are cited, short phrases only, otherwise paraphrased with '% 据:' anchors. Okun (1962), Cowles Foundation Paper 190, and Klein (1950), Cowles Commission Monograph 11: the Cowles Foundation's pages, read on 2026-10-29, have no terms of use (their footer links only to a privacy statement) and print 'Copyright © 2026 Yale University. All Rights Reserved.' (row cw_copyright); the scan of Klein's book has no copyright page (row kl_nocopyright). Short phrases only, otherwise paraphrase. Economic Reports of the President, January 1962 and February 1971: works of the United States government, public domain (the copies of The American Presidency Project). NobelPrize.org: Friedman's lecture (row nl_copyright): 'Copyright © The Nobel Foundation 1976 From Nobel Lectures , Economics 1969-1980 , Editor Assar Lindbeck, World Scientific Publishing Co., Singapore, 1992'; the press release and the facts page of 1980 (row nb_copyright): 'Copyright © Nobel Prize Outreach 2026'; Klein's autobiography (rows nbb_copyright, nbb_copyright05): 'Copyright © The Nobel Foundation 1980' 'Copyright © The Nobel Foundation 2005'. Short phrases only, the pages cited. Fisher (1926), International Labour Review: the ILO's terms, read on 2026-10-29 at https://www.ilo.org/rights-and-permissions (rows il_copyright, il_prior, il_request): 'Copyright © International Labour Organization' 'ILO publications produced prior to 3 May 2023 do not automatically benefit from a Creative Commons licence. It is essential that users check the copyright page of each work for exact licence information.' 'For ILO publications produced before 3 May 2023, requests for permission to reproduce, translate or adapt must be obtained from the ILO'. The ILO's scan prints no other licence; the book quotes short phrases only, in Chinese translation, and paraphrases the rest. Science Museum Group Collection (row smg_rights): 'Data in the title, made, maker and details fields are released under Creative Commons Zero . Descriptions and all other text content are licensed under a Creative Commons Attribution 4.0 licence'. Short phrases of the descriptions, with attribution; no image. Statistics Canada: Historical Statistics of Canada (11-516-X), under the Statistics Canada Open Licence (https://www.statcan.gc.ca/en/terms-conditions/open-licence, date modified 2025-07-10; rows sl_a, sl_b): '(a) You shall include and maintain the following notice on all licensed rights of the Information: Source: Statistics Canada, name of product, reference date. Reproduced and distributed on an \"as is\" basis with the permission of Statistics Canada.' '(b) Where any Information is contained within a Value-added Product, you shall include on such Value-added Product the following notice: Adapted from Statistics Canada, name of product, reference date. This does not constitute an endorsement by Statistics Canada of this product.' The book's figure and case use the data in a value-added product, with the notice: 'Adapted from Statistics Canada, Historical Statistics of Canada, 11-516-X, Section D and Section K, Series D491-497 and K8-18, 1983. This does not constitute an endorsement by Statistics Canada of this product.' Library of Congress Name Authority File: public data. Gemeinsame Normdatei (row gnd_licence): 'http://creativecommons.org/publicdomain/zero/1.0/'. Bibliothèque nationale de France and the Internet Archive's metadata: facts only (a year of birth, a heading, the imprint of a book).",
+  "used_in": [
+    38
+  ],
+  "fetch": "data/fetch/phillips38.py",
+  "citation": "the works listed in the bibliography block of Chapter 38 (references_zh.tex)",
+  "notes": "Pages (column juan): Phillips (1958) prints page N on PDF page N-281 of the course page's copy, whose PDF page 1 is JSTOR's cover page; Samuelson and Solow (1960) page N on PDF page N-175 (PDF page 1 the cover page); the Economic Report of the President 1962 page N on PDF page N+8 (the letter of transmittal, p. iii, on PDF page 5); the Economic Report of the President 1971 page N on PDF page N+6; Friedman's lecture page N on PDF page N-266; Fisher (1926) page N on PDF page N-784; Klein (1950), chapter III, page N on PDF page N+12; Okun's scan prints no page numbers (PDF pages 1-3); the web pages, the CSV files and the authority records have no pages. Copies of journal articles read on third-party sites (not committed): phillips1958 https://elearning.unito.it/sme/pluginfile.php/192712/course/section/41483/Phillips_Econ58.pdf read on 2026-10-29, SHA-256 77e60603e7cd901c4e3f9b9f6a8a59675e589a04d57f62ce8bf10a8f0b856102; samuelson1960 https://elearning.uniroma1.it/pluginfile.php/390167/mod_resource/content/2/Samuelson%20and%20Solow.pdf read on 2026-10-29, SHA-256 56e72a63465a353dbf786c3bc9896d6b455f1c9c7e216d500366ee1b76409c83; okun1962 https://milescorak.files.wordpress.com/2016/01/okun-potential-gnp-its-measurement-and-significance-p0190.pdf (the link of the Cowles Foundation's page, cowles_okun38) read on 2026-10-29, SHA-256 02a6074544f3b34fd145ba8cbbfa18382ce4850571eb1ee7c20bf8e728d7429b. Rows read on page images (no quotation, the transcription between « and » in the note): the figures of Phillips's curve, his Table 1 and his conclusions (pp. 290, 298, 299), where the text layer misreads them; Okun (1962) and Klein (1950), whose scans have no text layer; the President's signature in the Economic Report of 1962. Misreadings of the text layers and misprints, each as printed in the quotation: 'accura ely' for 'accurately' (ph_predict); '2~' for 2½ (ph_stable_text); '51' for 5½ (ph_wages5_text); '9*638' and '1394' for 9·638 and 1·394 (ph_curve_text); 'Iate' for 'rate' (ph_example); 'decisionl' for 'decision' (ph_gold); 'tbp' for 'the' (ph_1948src); 'betwveen' for 'between' (ph_1922b); 'Tcchnology' for 'Technology' (ss_mit); 'miobility' for 'mobility' (ss_mobility); '2Y2' for 2½ (ss_phillips5); \"2'2\" for 2½ (ss_point1); '512' for 5½ (ss_pointA); '412' for 4½ (ss_pointB); '1958' for 1968 (e71_c45_1968); '1989' for 1969 (e71_c45_1969); 'B.C.' for 'D.C.' (erp_transmitted); 'Tinbergen 's' with a space (nbb_reviving). Decimal points the text layer of Phillips (1958) loses or reads as '*' or '-', read by the rule 'ocr' of checks/check_ch38.py (the page images agree): '12*5' (ph_1862), '2 8', '3 -6' and '2 -7' (ph_1912), '0 8' (ph_1912adj), '2 6', '17 0' and '22 2' (ph_1921), '12 8' (ph_1921b), '14*3' and '19*1' (ph_1922), '17 *5' (ph_1922b), '9 7' and '12- 5' (ph_1925), '10 94' and '- 0 *60' (ph_1925avg), '- 0*56' (ph_1925curve). Disagreements between the sources: Samuelson and Solow say that Phillips's money wages stabilize at 5 per cent unemployment and that 2-3 per cent productivity growth goes with about 2½ per cent unemployment (ss_phillips5); Phillips writes about 5½ per cent (ph_wages5) and 2 per cent productivity growth with a little under 2½ per cent (ph_stable). The press release of 1980 calls the prize one 'for the creation of economic models' (nb_citation), the facts page 'for the creation of econometric models' (nbf_motivation). The press release and the facts page call Klein's study of 1950 'a paper' (nb_paper1950, nbf_paper1950); it is the monograph of the Cowles Commission (kl_cfm, kl_title). Canada's unemployment rate of 1961: 7.1 per cent in Historical Statistics of Canada (hs_d491_1961), 7.2 per cent in Powell (Chapter 37, mundell_facts). The series of the book's recomputation (boe_millennium_uk_1860_1958) are Feinstein's average weekly earnings and, from 1920, his unemployment as a percentage of the civilian working population; Phillips used the hourly wage index of Phelps Brown and Hopkins (ph_pbh), the Ministry of Labour's indexes (ph_1921src, ph_1948wage) and the Ministry's unemployment percentages for Great Britain (ph_1948src). Single witnesses: Phillips's curve, crosses and Table 1 (ph_curve, ph_fit, ph_t1_1948 to ph_t1_1957); Samuelson and Solow's points A and B (ss_pointA, ss_pointB); Okun's coefficient (ok_weighted, ok_rule); the gap and the labour force of 1961 (erp_gap49, erp_gap50, erp_jobs); Klein's estimates (kl_est_c, kl_est_i, kl_est_w). Indirect testimony: Friedman quoting Keynes's 'one equation' (fr_gap); Samuelson and Solow on Hume (ss_hume) and on Phillips (ss_phillips5); Klein's career in his autobiography (nbb_samuelson, nbb_reviving, nbb_ottawa, nbb_goldberger) and in the press release (nb_tinbergen, nb_aim, nb_famous, nb_forecasts). Not obtained: Lipsey (1960) (only Phillips's thanks to R. G. Lipsey: ph_ack); Klein and Goldberger, An Econometric Model of the United States, 1929-1952 (the Internet Archive has only a lending copy, of a printing of 1964: ar_kg, ar_kg_lending); Keynes's review of Tinbergen (1939) and Tinbergen's reply; Haavelmo (1944); Modigliani (1944); Adelman and Adelman (1959); the reprint of Fisher (1926) in the Journal of Political Economy (1973); Forder (2014); the date on which Samuelson and Solow read their paper (the American Economic Association's pages did not open); the House of Commons debates (the Hansard website refused access). Life dates: Phillips, Samuelson, Klein, Tinbergen, Fisher, Hume, Kennedy, Friedman and Keynes from the Library of Congress; Phillips, Samuelson and Klein also from the GND, which agrees; Solow, Goldberger and Coyne from the GND (the LoC heading of Solow has no years, that of Goldberger no year of death: loc_solow, loc_goldberger); Okun: the GND and the BnF give 1928 and no year of death, the LoC heading no years (gnd_okun_born, bnf_okun, loc_okun): '生卒年未详'. Klein's dates also on the Nobel pages (nbf_born, nbb_died).",
+  "sources": {
+    "phillips1958": {
+      "url": "https://elearning.unito.it/sme/pluginfile.php/192712/course/section/41483/Phillips_Econ58.pdf",
+      "format": "pdf",
+      "sha256": "77e60603e7cd901c4e3f9b9f6a8a59675e589a04d57f62ce8bf10a8f0b856102",
+      "version": "A. W. Phillips, 'The Relation between Unemployment and the Rate of Change of Money Wage Rates in the United Kingdom, 1861-1957', Economica, New Series, 25 (100), November 1958, pp. 283-299: the JSTOR scan (stable URL http://www.jstor.org/stable/2550759, with JSTOR's cover page and the scan's text layer) posted on a course page of the University of Turin; read to verify, not committed (printed page = PDF page + 281)",
+      "retrieved": "2026-10-29"
+    },
+    "phillips1958img": {
+      "url": "https://elearning.unito.it/sme/pluginfile.php/192712/course/section/41483/Phillips_Econ58.pdf",
+      "format": "image",
+      "sha256": "77e60603e7cd901c4e3f9b9f6a8a59675e589a04d57f62ce8bf10a8f0b856102",
+      "version": "The same scan, read on images rendered with pdftoppm where the text layer misreads the figures: pp. 290, 298 and 299 (PDF pp. 9, 17 and 18)",
+      "retrieved": "2026-10-29"
+    },
+    "samuelson1960": {
+      "url": "https://elearning.uniroma1.it/pluginfile.php/390167/mod_resource/content/2/Samuelson%20and%20Solow.pdf",
+      "format": "pdf",
+      "sha256": "56e72a63465a353dbf786c3bc9896d6b455f1c9c7e216d500366ee1b76409c83",
+      "version": "Paul A. Samuelson and Robert M. Solow, 'Analytical Aspects of Anti-Inflation Policy', The American Economic Review 50 (2), Papers and Proceedings, May 1960, pp. 177-194: the JSTOR scan (stable URL http://www.jstor.org/stable/1815021, with JSTOR's cover page and the scan's text layer) posted on a course page of Sapienza University of Rome; read to verify, not committed (printed page = PDF page + 175)",
+      "retrieved": "2026-10-29"
+    },
+    "erp1962": {
+      "url": "https://presidency.ucsb.edu/sites/default/files/books/presidential-documents-archive-guidebook/the-economic-report-of-the-president-truman-1947-obama-2017/1962.pdf",
+      "format": "pdf",
+      "sha256": "461362331fe6c0a1b85dee406b147a2fd16d6ad6632483c34bb7c6aae7409adf",
+      "version": "Economic Report of the President, Transmitted to the Congress January 1962, together with the Annual Report of the Council of Economic Advisers (Washington: GPO, 1962), the PDF of The American Presidency Project, University of California, Santa Barbara (printed page = PDF page - 8; the letter of transmittal, p. iii = PDF p. 5)",
+      "retrieved": "2026-10-29"
+    },
+    "erp1962img": {
+      "url": "https://presidency.ucsb.edu/sites/default/files/books/presidential-documents-archive-guidebook/the-economic-report-of-the-president-truman-1947-obama-2017/1962.pdf",
+      "format": "image",
+      "sha256": "461362331fe6c0a1b85dee406b147a2fd16d6ad6632483c34bb7c6aae7409adf",
+      "version": "The same PDF, read on the images of PDF pages 5 (p. iii, the letter of transmittal) and 35 (p. 27, the end of the President's report), rendered with pdftoppm: the President's handwritten signature, which the text layer does not carry",
+      "retrieved": "2026-10-29"
+    },
+    "erp1971": {
+      "url": "https://presidency.ucsb.edu/sites/default/files/books/presidential-documents-archive-guidebook/the-economic-report-of-the-president-truman-1947-obama-2017/1971.pdf",
+      "format": "pdf",
+      "sha256": "a2dfadfd0438daaef566c415ea203ec061124f1647739eee1d7c8ee310741062",
+      "version": "Economic Report of the President, Transmitted to the Congress February 1971, together with the Annual Report of the Council of Economic Advisers, the PDF of The American Presidency Project (printed page = PDF page - 6): Table C-24 (p. 225) and Table C-45 (p. 249)",
+      "retrieved": "2026-10-29"
+    },
+    "friedman1976": {
+      "url": "https://www.nobelprize.org/uploads/2018/06/friedman-lecture-1.pdf",
+      "format": "pdf",
+      "sha256": "6ca6fe11decedff8aad1752de5d8d6a055bb765efca375bb6a5529a54bc80dbc",
+      "version": "Milton Friedman, 'Inflation and Unemployment', Nobel Memorial Lecture, 13 December 1976, the PDF of NobelPrize.org (Nobel Lectures, Economics 1969-1980, World Scientific, 1992; printed page = PDF page + 266)",
+      "retrieved": "2026-10-29"
+    },
+    "nobel1976lec": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1976/friedman/lecture/",
+      "format": "html",
+      "sha256": "e990bd9a8728feb986dcb1e5938d837f3e2fd98ffe6fea7e52559de3a460d7c0",
+      "version": "NobelPrize.org, Milton Friedman, Prize lecture (web page, with the copyright notice of the lecture)",
+      "retrieved": "2026-10-29"
+    },
+    "fisher1926ilr": {
+      "url": "https://webapps.ilo.org/public/libdoc/ilo/P/09602/09602(1926-13-6)785-792.pdf",
+      "format": "pdf",
+      "sha256": "3f647d7c5ecad29447e681e34c3ee79a4a1fef97f121111f4b456d36520169dd",
+      "version": "Irving Fisher, 'A Statistical Relation between Unemployment and Price Changes', International Labour Review 13 (6), June 1926, pp. 785-792, the scan with its text layer in the ILO's library (printed page = PDF page + 784)",
+      "retrieved": "2026-10-29"
+    },
+    "ilorights38": {
+      "url": "https://www.ilo.org/rights-and-permissions",
+      "format": "html",
+      "sha256": "92311e4cd029dbe97fb02b8b599ed938149baadb96fd81a194b09746752e383c",
+      "version": "International Labour Organization, Rights and permissions (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "okun1962": {
+      "url": "https://milescorak.files.wordpress.com/2016/01/okun-potential-gnp-its-measurement-and-significance-p0190.pdf",
+      "format": "image",
+      "sha256": "02a6074544f3b34fd145ba8cbbfa18382ce4850571eb1ee7c20bf8e728d7429b",
+      "version": "Arthur M. Okun, 'Potential GNP: Its Measurement and Significance', reprinted from the 1962 Proceedings of the Business and Economic Statistics Section of the American Statistical Association as Cowles Foundation Paper 190: the scan without a text layer to which the Cowles Foundation's page of the paper links (the address redirects to milescorak.com/wp-content/uploads/2016/01/...; the same file), read on images of PDF pages 1-3 rendered with pdftoppm (the scan prints no page numbers)",
+      "retrieved": "2026-10-29"
+    },
+    "cowles_okun38": {
+      "url": "https://cowles.yale.edu/node/142137",
+      "format": "html",
+      "sha256": "14af0cf8f775cf4c781726b1a6f337ad32b5c21093f35b5b1fb1ca474160e718",
+      "version": "Cowles Foundation for Research in Economics, Yale University, the page of Cowles Foundation Paper 190 (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "klein1950": {
+      "url": "https://cowles.yale.edu/sites/default/files/2022-09/m11-all.pdf",
+      "format": "image",
+      "sha256": "98095404ad0182824b8cf235d642f19d251222b104f11254d474e8eed76d9187",
+      "version": "Lawrence R. Klein, Economic Fluctuations in the United States, 1921-1941, Cowles Commission Monograph No. 11 (New York: John Wiley & Sons; London: Chapman & Hall, 1950), the scan of the whole book on the Cowles Foundation's website, without a text layer, read on images rendered with pdftoppm: the list of the Cowles Commission Monographs (PDF p. 3), the title page (PDF p. 5) and its blank verso (PDF p. 6), the preface (pp. vii-viii, PDF pp. 7-8) and chapter III, pp. 62-68 (PDF pp. 74-80; page = PDF page - 12)",
+      "retrieved": "2026-10-29"
+    },
+    "cowles_cfm11": {
+      "url": "https://cowles.yale.edu/research/cfm-11-economic-fluctuations-united-states-1921-1941",
+      "format": "html",
+      "sha256": "5b9684f267818b34efe7b91294423464082d3c80902eb72ba92364bf0ef2f310",
+      "version": "Cowles Foundation, the page of Cowles Foundation Monograph 11 (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "nobel1980pr": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1980/press-release/",
+      "format": "html",
+      "sha256": "37232f80b7d48d35b5c8a23ad4403a668f7e46bd38ce5bee80b1bd4132e45096",
+      "version": "NobelPrize.org, the press release of 15 October 1980 (The Royal Swedish Academy of Sciences)",
+      "retrieved": "2026-10-29"
+    },
+    "nobel1980facts": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1980/klein/facts/",
+      "format": "html",
+      "sha256": "37bbd9fe985fcb352c99670ffcb6a9af56160cd1d456dc0d62bbc0f408bddb14",
+      "version": "NobelPrize.org, Lawrence R. Klein, Facts (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "nobel1980bio": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1980/klein/biographical/",
+      "format": "html",
+      "sha256": "d418c54d36cadf0a26a4e724585db3b3956198c059a8948a69b746059e11c354",
+      "version": "NobelPrize.org, Lawrence R. Klein, Biographical (the autobiography from Les Prix Nobel 1980, with the addendum of May 2005 and a note of his death)",
+      "retrieved": "2026-10-29"
+    },
+    "smg_moniac38": {
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co64127/phillips-economic-computer",
+      "format": "html",
+      "sha256": "0e6c2af07bffc62f85abb96d0d2317d73623eeaac1abcbeeede345c0a2748b9b",
+      "version": "Science Museum Group Collection, object co64127, Phillips Economics Analog Computer (web page; it prints the date on which it is read, 'Accessed 29 October 2026', so a copy read on another day has another hash)",
+      "retrieved": "2026-10-29"
+    },
+    "smg_phillips38": {
+      "url": "https://collection.sciencemuseumgroup.org.uk/people/cp133687/bill-phillips",
+      "format": "html",
+      "sha256": "d7fc7cc13a33b236ce55109e7112da6bf9ecd9173158caacf8fde85f0fddf5c2",
+      "version": "Science Museum Group Collection, person cp133687, Bill Phillips (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "hsc_d491": {
+      "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectiond/D491_497-eng.csv",
+      "format": "txt",
+      "sha256": "f188c77f34154d3045190fb79f6bcd3958ac5d9a8679fc84a3f5102120eb1eeb",
+      "version": "Statistics Canada, Historical Statistics of Canada (11-516-X), second edition 1983 (archived), Section D, Series D491-497, Unemployment rates, by region, annual averages, 1946 to 1975 (CSV, Latin-1)",
+      "retrieved": "2026-10-29"
+    },
+    "hsc_k8": {
+      "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionk/K8_18-eng.csv",
+      "format": "txt",
+      "sha256": "d04e3746ea58d8029839e37f8e7e045e145b798460ce5b0b5877214e41241a70",
+      "version": "Statistics Canada, Historical Statistics of Canada (11-516-X), second edition 1983 (archived), Section K, Series K8-18, Consumer Price Index for Canada, classified by main components, 1913 to 1975 (CSV, Latin-1)",
+      "retrieved": "2026-10-29"
+    },
+    "hsc_sectiond38": {
+      "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectiond/4057750-eng.htm",
+      "format": "html",
+      "sha256": "371d99fcced0eae99e8ce9c52f2d0c0432822fd3da78400587b8539e0adf0510",
+      "version": "Statistics Canada, Historical Statistics of Canada, Section D: The Labour Force, the section's web page with the sources of the tables",
+      "retrieved": "2026-10-29"
+    },
+    "hsc_sectionk38": {
+      "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionk/4057753-eng.htm",
+      "format": "html",
+      "sha256": "8bbb9267d460137c91f9cdfe1ef7a39afbd21f5f308f001f0d86f573744fd310",
+      "version": "Statistics Canada, Historical Statistics of Canada, Section K: Prices and Price Indexes, the section's web page with the sources of the tables",
+      "retrieved": "2026-10-29"
+    },
+    "statcanlicence38": {
+      "url": "https://www.statcan.gc.ca/en/terms-conditions/open-licence",
+      "format": "html",
+      "sha256": "8a6c080e6d9458945815d558c15a1a787e27d01a33d8dd07a99daeaa9b4bacc2",
+      "version": "Statistics Canada Open Licence (web page, date modified 2025-07-10)",
+      "retrieved": "2026-10-29"
+    },
+    "archive_kg38": {
+      "url": "https://archive.org/metadata/econometricmodel0000klei",
+      "format": "json",
+      "sha256": "09bfb3579dc76d2e805a7d584c7d3037e23612834e08356e4387b1c2636e60a1",
+      "version": "Internet Archive, the metadata of the lending copy econometricmodel0000klei (Klein and Goldberger, An Econometric Model of the United States, 1929-1952, the printing of 1964)",
+      "retrieved": "2026-10-29"
+    },
+    "bnf_okun38": {
+      "url": "https://catalogue.bnf.fr/ark:/12148/cb12279584n",
+      "format": "html",
+      "sha256": "608870bfb949009b6d65511a368b6fb51d1ea9441f1a21feffea188ce0a82d91",
+      "version": "Bibliothèque nationale de France, catalogue général, authority record cb12279584n (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_phillips38": {
+      "url": "https://id.loc.gov/authorities/names/no97040178.madsrdf.json",
+      "format": "json",
+      "sha256": "67d9569d6860ea12131aecf7b15b0b9e5050832c072d6023980102b72337c4bf",
+      "version": "Library of Congress Name Authority File, record no97040178 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_samuelson38": {
+      "url": "https://id.loc.gov/authorities/names/n50019332.madsrdf.json",
+      "format": "json",
+      "sha256": "f473b717d75cb602cb0ca6459e0dd325b6ffda6f7434165ae6b1b963e4488784",
+      "version": "Library of Congress Name Authority File, record n50019332 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_solow38": {
+      "url": "https://id.loc.gov/authorities/names/n50013075.madsrdf.json",
+      "format": "json",
+      "sha256": "dd3c5e0e5a7c8f643f46fee2e46b825efac5c95616a221cb5f14fbd7c2506a80",
+      "version": "Library of Congress Name Authority File, record n50013075 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_okun38": {
+      "url": "https://id.loc.gov/authorities/names/n50025079.madsrdf.json",
+      "format": "json",
+      "sha256": "0fab28d5b5be55d7e0663c2ff57c3b3a3343fe9e7ba6e0510d167d4380ff5506",
+      "version": "Library of Congress Name Authority File, record n50025079 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_klein38": {
+      "url": "https://id.loc.gov/authorities/names/n79089349.madsrdf.json",
+      "format": "json",
+      "sha256": "49393263ad9f70c43d631196c5bb5d9a6c104a2e98d461a79b5621e9366523cb",
+      "version": "Library of Congress Name Authority File, record n79089349 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_goldberger38": {
+      "url": "https://id.loc.gov/authorities/names/n79017066.madsrdf.json",
+      "format": "json",
+      "sha256": "d83498051ca04423c8d2a3ce94fb239c9db64680a8eed1df6660d74b83187661",
+      "version": "Library of Congress Name Authority File, record n79017066 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_tinbergen38": {
+      "url": "https://id.loc.gov/authorities/names/n80036618.madsrdf.json",
+      "format": "json",
+      "sha256": "bbae00106a24aa370b8ad283223267d0392ee0b72d49f427707f6ce272ff0a47",
+      "version": "Library of Congress Name Authority File, record n80036618 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_fisher38": {
+      "url": "https://id.loc.gov/authorities/names/n50005294.madsrdf.json",
+      "format": "json",
+      "sha256": "be10dd7e18d478e81272dae97b6ef3f77d9dfe16fe27cd6abcf7f080f2fb065b",
+      "version": "Library of Congress Name Authority File, record n50005294 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_hume38": {
+      "url": "https://id.loc.gov/authorities/names/n79054039.madsrdf.json",
+      "format": "json",
+      "sha256": "00c23473c4109f1afc0d344f4c823f7d3e156ca98089b3ec62349fa41b139626",
+      "version": "Library of Congress Name Authority File, record n79054039 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_kennedy38": {
+      "url": "https://id.loc.gov/authorities/names/n79055297.madsrdf.json",
+      "format": "json",
+      "sha256": "c0940906a52f104ab0d7919fdf10c878b1871644bc87f2f390ffe46742754cec",
+      "version": "Library of Congress Name Authority File, record n79055297 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_friedman38": {
+      "url": "https://id.loc.gov/authorities/names/n79117948.madsrdf.json",
+      "format": "json",
+      "sha256": "1157d1076598fad29c980bca0c15dd1b825b897e85150438ac9b920c1e60c4c5",
+      "version": "Library of Congress Name Authority File, record n79117948 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_keynes38": {
+      "url": "https://id.loc.gov/authorities/names/n79004113.madsrdf.json",
+      "format": "json",
+      "sha256": "3de9317d7744e4841b05b5b15630089ccd3d8ad52979cea130cb63e7ed05a9a7",
+      "version": "Library of Congress Name Authority File, record n79004113 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_phillips38": {
+      "url": "https://lobid.org/gnd/118791958.json",
+      "format": "json",
+      "sha256": "bf2ded788bdb117053b06ec1a4caf75f7d8747446d4ad5c4b484685f9434953f",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118791958 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_samuelson38": {
+      "url": "https://lobid.org/gnd/118605321.json",
+      "format": "json",
+      "sha256": "cd530592475b340777e50754a75b8f1d66a22034481071d64733155d43af6953",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118605321 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_solow38": {
+      "url": "https://lobid.org/gnd/118994204.json",
+      "format": "json",
+      "sha256": "5351ad46043a3baf308c239e437b4239955ba798d855146bdddcafeef1d577fe",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118994204 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_klein38": {
+      "url": "https://lobid.org/gnd/119283271.json",
+      "format": "json",
+      "sha256": "b00a519b5c1d85a7ef93d6ba0a77759f3fcce6ea102a7f95cb9c775f49a68726",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 119283271 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_okun38": {
+      "url": "https://lobid.org/gnd/122147987.json",
+      "format": "json",
+      "sha256": "9b98317bdfcaab3c7b0e98bcfdfe5be210007552b8fe75c26b3b2475edde5cf5",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 122147987 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_goldberger38": {
+      "url": "https://lobid.org/gnd/170552608.json",
+      "format": "json",
+      "sha256": "5cf7cceda5ca32eb77ec04bc5c85b02b26166e142e9dbaf07764e70effb7b239",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 170552608 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_coyne38": {
+      "url": "https://lobid.org/gnd/1196030383.json",
+      "format": "json",
+      "sha256": "af27564a4fe8e1fc7b2ba34abe80a50c8018ed1833a7033fd3a14b95e8162045",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 1196030383 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    }
+  }
+}
