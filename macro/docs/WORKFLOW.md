@@ -113,4 +113,4 @@ python3 data/fetch/verify_quotes.py $CORPUS && python3 data/fetch/verify_web_quo
   Chapter 30 (`ch:alternatives`) written and reviewed 2026-10-22; Chapters 31 (`ch:soviet`), 32 (`ch:generaltheory`), 33 (`ch:islm`) and 34 (`ch:warfinance`) 2026-10-23. Part 5, and with it Book 2 (Parts 4 and 5), is complete (2026-10-23; merged into
   main the same day at the author's request).
 
-- Part 6 (第 35—43 章): notes in `docs/agent_prompts/part6_notes.md`; written sequentially in the order 35, 36, …, 43, started 2026-10-28 at the author's request; Chapters 35 (`ch:reconstruction`) and 36 (`ch:brettonwoods`) written and reviewed 2026-10-28; at the author's request work pauses there, with Chapter 37 next.
+- Part 6 (第 35—43 章): notes in `docs/agent_prompts/part6_notes.md`; written sequentially in the order 35, 36, …, 43, started 2026-10-28 at the author's request; Chapters 35 (`ch:reconstruction`) and 36 (`ch:brettonwoods`) written and reviewed 2026-10-28, Chapter 37 (`ch:mundell`) 2026-10-29 after the author asked to continue; Chapter 38 next.
