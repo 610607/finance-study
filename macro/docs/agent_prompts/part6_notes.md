@@ -723,3 +723,24 @@ zh/ch33_islm.tex and zh/ch38_phillips.tex.
 - Labels: `sec:consumption-…`, `eq:consumption-…`, `fig:consumption_…`, `tab:consumption-…`,
   `ex:consumption-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 39
+- Who received money is read from the law itself, section by section, not from a speech about it: the
+  Tax Reduction Act of 1975 has the rebate (§6428), the special payment of 50 dollars to three groups
+  of benefit recipients (§702) and a new refundable earned income credit (§43, §204); a sentence on who
+  got nothing must account for every payment the law makes.
+- Read the unit of a rule: "each individual", with a joint return counted as one individual, is per
+  return, not per person; state phase-outs exactly (which part phases out, between which incomes).
+- Say which restriction a test statistic tests (one lag of income or four), with its own critical
+  value.
+- A worked example uses the estimate that matches its assumptions (Hall's log-utility 0.996, not the
+  quadratic-utility 1.011).
+- A list announced with a number is given in full (Modigliani's six propositions, Kennedy's six
+  reforms), or described without the number (Chapter 37's lesson again).
+- An equation taken from a source is copied in full, with its conditions and the source's notation,
+  and checked against the page image.
+- Name a measure as the source does: Hall and Jorgenson's "effective rate" of the credit is not an
+  effective tax rate.
+- A line that sits on an axis at the figure's scale gets its own labelled leader line.
+- The section for Chapter 40 is not written yet: the author asked to pause after Chapter 39
+  ("39章写完后暂停并提交", 2026-10-29).
