@@ -229,6 +229,8 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     "ha_issue": [("Economy, |1978", "num"), ("vol. |86", "num"), ("no. |6", "num"), ("© |1978", "num")],
     "ha_lags": [("zero is |1.7", "num"), ("of |2.7", "num"), ("the |5", "num")],
     "ha_exclusion": [("is |0.1", "num"), ("F of |3.9", "num")],
+    "ha_lags4": [("all |four", "en"), ("is |2.0", "num"), ("of |2.4", "num"), ("the |5", "num")],
+    "to_dk": [],
     "hj_credit7": [("during |1962", "num"), ("a |seven", "en"), ("Act of |1962", "num")],
     "hj_1964": [("In |1964", "num"), ("around |ten", "en")],
     # Modigliani and Steindel (1977), Blinder (1981)
@@ -319,8 +321,8 @@ def check_readings(df: pd.DataFrame) -> None:
             got = read_row(r.id, " ".join(r.quote.split()))
             n += bool(vals)
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
-    quoted("rows with values, each read from its quotation", n, 167)
-    quoted("rows read on a page image (no quotation)", img, 121)
+    quoted("rows with values, each read from its quotation", n, 182)
+    quoted("rows read on a page image (no quotation)", img, 124)
     Q, notes = quotes(), meta()["notes"]
     for rid, word, named in MISPRINTS:
         assert word in Q[rid], (rid, word)                                      # printed in the quotation
@@ -398,6 +400,28 @@ def euler2(y1: float, y2: float, r: float, delta: float) -> tuple[float, float]:
 def first_year(x: float, mpc: float, r: float, k: float, years: float) -> dict[str, float]:
     """ex:consumption-windfall: what a windfall x adds to the first year's consumption under the three rules."""
     return dict(keynes=mpc * x, pih=k * r * x, lch=x / years)
+
+
+def rebate75(liability: float, agi: float) -> float:
+    """The refund of 1974 taxes, section 6428 of the Act (a single return; a joint return counts as one individual):
+    10 per cent of the liability, at least the lesser of the liability and $100, at most $200; the excess over that
+    minimum shrinks in proportion to the adjusted gross income above $20,000, to nothing at $30,000."""
+    F = facts()
+    lo, hi, rate = F["pl_min"][3], F["pl_max"][0], F["pl_rebate"][0] / 100
+    a, step = F["pl_phase"]
+    minimum = min(liability, lo)
+    amount = max(min(rate * liability, hi), minimum)
+    return minimum + (amount - minimum) * (1 - min(max(agi - a, 0) / step, 1))
+
+
+def eitc75(earned: float, agi: float | None = None) -> float:
+    """The earned income credit of section 43 (1975): 10 per cent of the earned income up to $4,000, reduced (not
+    below zero) by 10 per cent of the adjusted gross income (or, if greater, the earned income) above $4,000."""
+    F = facts()
+    pct, cap = F["pl_eitc"]
+    agi = earned if agi is None else agi
+    cut = F["pl_eitc_limit"][0] / 100 * max(max(agi, earned) - F["pl_eitc_limit2"][0], 0)
+    return max(pct / 100 * min(earned, cap) - cut, 0)
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -738,6 +762,7 @@ def opening(F, Y, Q):
     has("ford_refund", "a one-time refund to individual 1974 taxpayers")
     said("他要的是给 1974 年的个人纳税人一次性退税，每人最多 1,000 美元", y74, cap)
     has("ford_credits", "bigger investment credits", "expand and make more jobs")
+    say("他还要更大的投资抵免，即让企业按买进新设备的价款的一定比例抵减所得税（本书的解读）")
     has("ford_jobs", "my main concern")
     has("ford_temporary", "temporary tax incentives to charge up our free enterprise system",
         "not by government handouts and make-work programs")
@@ -748,8 +773,10 @@ def opening(F, Y, Q):
          mon("ford_compromise", "January"), lo * 1e9, hi * 1e9)
     assert lo == bn and lo < total < hi
     has("ford_within", "within reason")
-    said("按这项法律，每人退还 1974 年所得税的 10\\%", F["pl_refund_title"][0], F["pl_rebate"][0])
+    said("按这项法律，每个纳税人退还 1974 年所得税的 10\\%，夫妇合并申报的算作一个人", F["pl_refund_title"][0],
+         F["pl_rebate"][0])
     has("pl_rebate", "10 percent of the amount of his liability for tax")
+    has("pl_joint", "joint return", "both spouses shall be treated as one individual")       # per return, not per person
     has("pl_refund_title", "REFUND OF 1974 INDIVIDUAL INCOME TAXES")
     mn = F["pl_min"][3]
     has("pl_min", "shall not be less than the lesser of", "the amount of the taxpayer's liability for tax")
@@ -757,7 +784,11 @@ def opening(F, Y, Q):
     a, step = F["pl_phase"]
     has("pl_excess", "the applicable minimum payment")
     has("pl_phase", "(but not below zero)", "adjusted gross income for the taxable year in excess of $20,000")
-    said("调整后总收入超过 2 万美元的人，退款按超出的部分递减，到 3 万美元减回最低额（本书的计算）", a, a + step)
+    said("调整后总收入超过 2 万美元的，退款高出最低额的部分按比例递减", a)
+    said("到 3 万美元，退款只剩 100 美元，收入再高也是这个数（本书的计算）", a + step, rebate75(10 ** 4, a + step))
+    assert rebate75(10 ** 4, a + step) == rebate75(10 ** 4, 10 ** 5) == mn                # the minimum from $30,000 on
+    assert rebate75(2000, a + step / 2) == mn + (F["pl_max"][0] - mn) / 2                  # half way down at $25,000
+    assert rebate75(60, 5000) == 60 and rebate75(800, 9000) == mn and rebate75(1500, 15000) == 150
     has("pl_50", "for the month of March, 1975", "monthly insurance benefit payable under title II of the Social "
         "Security Act", "Railroad Retirement Act", "supplemental security income")
     has("pl_50once", "only one such $50 payment")
@@ -765,7 +796,7 @@ def opening(F, Y, Q):
          mon("pl_50", "March"), F["pl_50"][1])
     assert F["pl_50once"][-1] == F["pl_50"][1]
     has("pl_credit7", "7 percent of the qualified investment")
-    said("企业的投资抵免一般是 7\\%", F["pl_credit7"][1])
+    said("企业的投资抵免，按这项法律一般是 7\\%", F["pl_credit7"][1])
     T = F["pl_transition"]
     has("pl_transition", "after January 21, 1975", "and before January 1, 1977", "acquired by the taxpayer",
         "construction, reconstruction, or erection")
@@ -775,9 +806,25 @@ def opening(F, Y, Q):
     assert T[4] == 1                                                             # before January 1, 1977
     # who receives it, who pays
     say("钱发给谁、由谁来付，国会写进了法律，福特也在讲话里说了")
-    said("退税按 1974 年交的所得税算，那一年不交所得税的人拿不到，靠福利过活的人只拿到那 50 美元（本书的解读）",
+    said("退税按 1974 年交的所得税算，那一年不交所得税的人拿不到退税，领上面三种给付的人不论交没交税，都另有 50 美元（本书的解读）",
          F["pl_refund_title"][0], F["pl_50"][1])
+    # the earned income credit of section 204: 10 per cent of earned income up to $4,000, less 10 per cent of the
+    # income above $4,000, refunded where it exceeds the tax, for 1975 only (section 209 (b))
+    has("pl_eitc_title", "CREDIT FOR CERTAIN EARNED INCOME")
+    sec, _, y74e = F["pl_eitc_year"]
+    pct, cap = F["pl_eitc"]
+    assert sec == 204 and y74e == F["pl_refund_title"][0] and F["pl_eitc_limit"] == [pct] and F["pl_eitc_limit2"] == [cap]
+    has("pl_eitc", "of the earned income for the taxable year as does not exceed")
+    has("pl_eitc_limit", "of the adjusted gross income")
+    has("pl_eitc_child", "a child of that individual")
+    has("pl_eitc_refund", "CREDIT EXCEEDS LIABILITY FOR TAX")
+    has("pl_eitc_year", "taxable years beginning after December 31, 1974")
+    said("法律还为 1975 年度新设了劳动所得抵免，家里养着孩子的劳动者按劳动收入的 10\\% 抵税，收入只算到 4,000 美元，再高就递减",
+         y74e + 1, pct, cap)
+    say("抵免超过应交税款的差额照样退还，没有交税的低收入家庭因此也能拿到（本书的解读）")
+    assert eitc75(cap) == pct / 100 * cap and eitc75(2 * cap) == 0 and eitc75(cap / 2) == pct / 100 * cap / 2
     has("ford_middle", "fails to give adequate tax relief", "who already contribute the biggest share of Federal taxes")
+    say("联邦税的最大份额本来就是他们交的")
     (more,) = F["ford_more7"]
     fy, deficit = F["ford_deficit60"]
     has("ford_deficit60", "fiscal year 1976 deficit", "and other changes")
@@ -798,8 +845,6 @@ def world(F, Y, Q):
     has("fr_keynes", "saved as real income increases")
     say("照弗里德曼引的凯恩斯的话，实际收入增加时，收入里储蓄的比例更大")
     said("教学例子里边际消费倾向取 0.6，乘数是 2.5（\\exref{ex:generaltheory-cross}）", MPC, 1 / (1 - MPC))
-    said("模型 I 的消费也随当年的收入变，冲击乘数约 1.93（\\exref{ex:phillips-klein}）",
-         *there("ch38_phillips", "冲击乘数约 1.93"))
     said("只要$a>0$，收入越高，储蓄占收入的比例就越高", 0)
     # Friedman's review
     said("1957 年回顾，消费函数是用两类数据估计的", F["fr_title"][0])
@@ -819,10 +864,6 @@ def world(F, Y, Q):
     assert F["ku_paper"] == [6, F["ku_date"][0]]
     has("ku_decades", "relate to decades")
     has("ku_two", "Net capital formation is one component of the net national product", "the other is consumers' outlay")
-    said("他说，过去净资本形成从没有超过国民收入的 15\\%，而眼下的战时支出计划，要把国民收入的 40\\% 或 50\\% 从个人与家庭的消费"
-         "里移开", F["ku_15"][0], *F["ku_war"])
-    has("ku_15", "not more than 15 per cent of national income")
-    has("ku_war", "diverting 40 or 50 per cent of national income from immediate consumption by individuals and families")
     has("ku_durables", "includes residential construction", "passenger cars, furniture")
     K = kuznets()
     shares = [K[y][7] for y in range(1879, 1920, 5)]
@@ -851,7 +892,7 @@ def world(F, Y, Q):
     said("他说，1940 年代后半期的三项经验研究", 1900 + forty)
     chk("    three contributions (三项)", told("1940 年代后半期的三项经验研究", "后半期的", "项"), three)
     has("md_kuznets", "since the middle of the 19th century, despite the large rise in per capita income")
-    said("储蓄率从 19 世纪中叶以来变化不大，人均收入却大大提高", F["md_kuznets"][1])
+    say("第一项就是上面库兹涅茨等人的证据")
     has("fr_brady_fn", "Dorothy S. Brady and Rose D. Friedman")
     has("fr_brady", "depends not on its absolute income but on its position in the distribution of income")  # 2nd witness
     has("md_brady", "a reconciliation of Kuznets' results with budget study evidence")
@@ -881,9 +922,16 @@ def lifecycle(F, Y, Q):
     has("md_prop_intro", "almost counter intuitive")
     chk("    six propositions (六条)", told("这个精简的模型推出六条命题", "推出", "条"), F["md_prop6"][0])
     has("md_prop1", "entirely independent of its per capita income")
+    has("md_prop2", "not simply the result of differential thrift", "consistent with an identical individual")
     has("md_prop3", "the higher the long run growth rate of the economy. It will be zero for zero growth.")
+    has("md_prop4", "a decreasing function of the growth rate, thus being largest at zero growth")
+    has("md_prop5s", "even if no wealth is passed on by bequests")
     has("md_prop6", "the prevailing length of retirement")
+    assert [F[f"md_prop{i}"][0] for i in (1, 2, 4, 6)] == [1, 2, 4, 6] and F["md_prop5s"] == [5]   # all six named
+    say("各国储蓄率不同，未必因为国民节俭的程度不同，个人行为完全一样，国家的储蓄率也可以不一样",
+        "财富收入比却随增长率提高而下降，零增长时最大", "即使不留遗产，一国也能积累起相对收入相当可观的财富")
     has("md_prop5", "without any appeal to the bequest process", "a quite radical departure from conventional wisdom")
+    say("照这个数，不靠遗产，也差不多能解释美国的全部财富，他说这是对传统看法相当激进的背离")
     # the stationary economy and growth
     has("md_stationary", "just offsets the accumulation of the active population in view of retirement")
     has("md_single", "W/Y depends on a single parameter, the length of retirement")
@@ -971,7 +1019,10 @@ def permanent(F, Y, Q):
     has("fr_empty", "no empirical data could contradict it")
     has("fr_uncorrelated", "uncorrelated with one another and with the corresponding permanent components")
     assert "ρ_{y_t y_p} = ρ_{c_t c_p} = ρ_{y_t c_t} = 0" in transcription("fr_corr")
-    # the paydays
+    # the paydays: the opening of the last chapter, IX
+    has("fr_theme", "central theme of this monograph", "a simple hypothetical example")
+    assert page("fr_theme") == page("fr_payday") == 220 and "chapter IX" in column("note")["fr_theme"]
+    say("弗里德曼在最后一章开头说，全书的中心思想可以用一个假想的例子说明")
     a, b = F["fr_payday"]
     said("一群人每周挣 100 美元、花 100 美元，发薪日错开，每天有七分之一的人领工资", a, b)
     chk("    one-seventh (七分之一)", told("每天有七分之一的人领工资", "每天有", "的人"), F["fr_payday2"][0])
@@ -1027,6 +1078,8 @@ def permanent(F, Y, Q):
     chk("    六成", told("花掉六成", "花掉", "成") / 10, MPC)
     said("（2）永久收入增加$0.03\\times200=6$，消费每年增加$0.9\\times6=5.4$，当年花掉 2.7\\%，以后年年如此。", RATE, WINDFALL,
          RATE * WINDFALL, K_PIH, RATE * WINDFALL, R["pih"], 100 * R["pih"] / WINDFALL)
+    said("6 美元是这笔钱按 3\\% 每年生出的利息，即它的年金值（本书的解读）", RATE * WINDFALL, 100 * RATE)
+    assert R["pih"] < RATE * WINDFALL         # at most the annuity value (pa_inconsistent): k < 1 spends less
     said("（3）$200/40=5$，每年多花 5，当年花掉 2.5\\%。", WINDFALL, YEARS_LEFT[0], R["lch"], R["lch"],
          100 * R["lch"] / WINDFALL)
     old = WINDFALL / YEARS_LEFT[1]
@@ -1056,11 +1109,15 @@ def euler(F, Y, Q):
     said("$c_1+c_2/(1+r)=y_1+y_2/(1+r)$", 1, 1)
     said("今天少花 1 元，明天能多花$1+r$元", 1, 1)
     said("$u'(c_1)=\\frac{1+r}{1+\\delta}\\,u'(c_2)$", 1, 1)
-    has("ha_et", "conditional on all information available in t", "rate of subjective time preference")
+    has("ha_et", "conditional on all information available in t", "rate of subjective time preference",
+        "(r ≥ δ), assumed constant over time")
+    say("$\\delta$是主观的时间偏好率，即消费者把明天的效用看得比今天轻多少", "实际利率$r$假定不随时间变，也不低于$\\delta$")
     assert "E_t u′(c_{t+1}) = [(1 + δ)/(1 + r)]u′(c_t)" in transcription("ha_theorem")
     has("ha_cor1", "income or wealth in periods t or earlier are irrelevant")
     has("ha_cor3", "quadratic", "no variable observed in period t or earlier will have a nonzero coefficient")
     has("ha_abstract", "random walk with trend", "consumption itself should evolve in the same way")
+    say("消费本身因此近似一个带趋势的随机游走",
+        "也就是说，消费在趋势之外的变动，事先都预测不到（本书的解读）")
     # the evidence
     T1 = F["ha_table1"]
     has("ha_table1", "REGRESSION RESULTS FOR THE BASIC MODEL, 1948–77")
@@ -1068,21 +1125,31 @@ def euler(F, Y, Q):
     said("霍尔用 1948—1977 年美国按季度、按人头的非耐用品与服务消费检验，单位是 1972 年美元", T1[1], 1900 + T1[2],
          F["ha_data"][0])
     has("ha_durables", "Dropping durables altogether")
-    said("只用上一季的消费做回归，系数是$1.011$", T1[6])
+    said("效用取二次函数，只用上一季的消费做回归，系数是$1.011$", T1[6])
+    assert T1[3:5] == [1.3, -1] and "quadratic" in column("note")["ha_table1"]            # equation 1.3, sigma = -1
     f1, crit, pct = F["ha_lags"]
     assert "c_{t−2}, c_{t−3}, and c_{t−4} are all zero" in transcription("ha_lags")
     said("再加三个更早季度的消费，$F$统计量是 1.7，5\\% 显著水平的临界值是 2.7", f1, pct, crit)
     chk("    three earlier quarters (三个)", told("再加三个更早季度的消费", "再加", "个"), 3)
+    say("$F$统计量衡量新加的几个变量一起多解释了多少，超过临界值才算有预测力（本书的解读）")
     has("ha_refuted", "If lagged income has substantial predictive power beyond that of lagged consumption")
     has("ha_income", "a single lagged level of disposable income has essentially no predictive value at all")
     has("ha_confirmed", "It is confirmed for real disposable income")
     f0, crit0 = F["ha_exclusion"]
-    said("把收入的各个滞后项一起去掉，$F$统计量是 0.1，临界值是 3.9", f0, crit0)
+    assert "all but the constant and c_{t−1}" in transcription("ha_exclusion") and F["ha_income"] == [3.1]
+    said("只加上一季的可支配收入，$F$统计量是 0.1，远低于临界值 3.9，它几乎没有预测力", f0, crit0)
+    four, f4, crit4, pct4 = F["ha_lags4"]
+    assert f4 < crit4 and pct4 == pct and "somewhat less than" in transcription("ha_lags4")
+    has("ha_lags4", "Equation 3.2 tries a year-long distributed lag")
+    said("加上前四个季度的收入，$F$统计量是 2.0，也略低于临界值 2.4", f4, crit4)
+    chk("    four lagged incomes (四个)", told("加上前四个季度的收入", "前", "个"), four)
     has("ha_stock", "lagged by a single quarter", "refutes the simple random-walk hypothesis")
     has("ha_rejected", "is rejected by the data")
     has("ha_modified", "some part of consumption takes time to adjust to a change in permanent income")
     has("ha_little", "there seems little reason to doubt")
-    has("ha_policy", "only unexpected changes in policy affect consumption")
+    has("ha_policy", "For policy analysis, the pure life cycle–permanent income hypothesis supports the modern view",
+        "only unexpected changes in policy affect consumption")
+    say("他说，就政策分析而言，纯粹的假说支持一种现代的看法，只有出乎意料的政策变化才影响消费")
     has("ha_transitory", "incapable of having a transitory effect on consumption")
     has("ha_noeffect", "none of the findings of the paper implies")
     has("ha_permanent_tax", "a permanent tax reduction generates an immediate increase in permanent income")
@@ -1109,7 +1176,12 @@ def euler(F, Y, Q):
     f1_, f2_ = euler2(E["y"], E["y"], E["r"], 0)
     said("（3）$c_2=1.05\\,c_1$，代入预算约束，$c_1+c_1=195.24$，$c_1\\approx97.62$，$c_2\\approx102.50$。", 1 + E["r"], pv,
          f1_, f2_)
-    said("霍尔估计的系数 1.011 略大于 1，说的也是人均消费在缓慢增长", T1[6], 1)
+    # Hall's Table 1, equation 1.2: sigma = 1 (log utility), the regression of 1/c_t on 1/c_{t-1}, gamma = (1+δ)/(1+r)
+    LG = F["ha_table1_log"]
+    assert LG[:4] == T1[:3] + [1.2] and LG[4] == 1 and "1/c_t on 1/c_{t−1}" in column("note")["ha_table1_log"]
+    assert LG[5] < 1                                       # r > δ: consumption rises, as in (3) of the example
+    said("霍尔的表 1 里，对数效用下$\\frac{1+\\delta}{1+r}$的估计是 0.996，略小于 1，即人均消费每季约增长 0.4\\%（本书的计算）",
+         T1[0], 1, 1, LG[5], 1, 100 * (1 / LG[5] - 1))
 
 
 def investment(F, Y, Q):
@@ -1123,6 +1195,8 @@ def investment(F, Y, Q):
     said("他要抵免追溯到 1962 年 1 月 1 日", y, mon("erp_retro", "January"), d)
     has("erp_profit", "by reducing the net cost of acquiring new equipment")
     has("erp_selffinance", "in part self-financing")
+    has("erp_revenues", "favorable effects on the level of economic activity", "add to Federal revenues")
+    say("它还部分地自己为自己筹资，刺激起来的新投资会提高当年的经济活动，进而增加联邦的收入")
     has("erp_six", "improve the equity and efficiency of the tax system", "(6) Revision")
     has("erp_offset", "offset the remaining net revenue loss")
     chk("    six reforms (六项)", told("他提议用六项改革抵补", "用", "项"), F["erp_six"][0])
@@ -1130,9 +1204,20 @@ def investment(F, Y, Q):
     has("erp_withholding", "withholding principle to dividend and interest income")
     has("erp_dividend", "dividend exclusion", "dividend credit")
     has("erp_expense", "business deductions for entertainment")
-    said("头两项是对股息与利息所得实行源泉扣缴，取消 50 美元的股息免税额与 4\\% 的股息抵免，第三项是限制招待费等业务开支的扣除",
+    said("前三项是对股息与利息所得实行源泉扣缴，取消 50 美元的股息免税额与 4\\% 的股息抵免，限制招待费、礼品等业务开支的扣除",
          *F["erp_dividend"][1:])
-    say("得到抵免的是购置机器设备的企业，补上收入缺口的，是股息与利息的收入者和扣除招待费的企业（本书的解读）")
+    has("erp_expense", "entertainment, gifts, and other expenses")
+    assert F["erp_capgains"] == [4] and F["erp_mutuals"] == [5] and F["erp_foreign"] == [6] == F["erp_six"]
+    has("erp_capgains", "capital gains from the sale of depreciable property")
+    has("erp_mutuals", "to cooperatives", "mutual fire and casualty insurance companies",
+        "mutual savings banks and savings and loan associations")
+    has("erp_foreign", "the tax treatment of foreign income")
+    say("后三项是取消出售可折旧财产的资本利得优惠，取消合作社、互助保险公司、互助储蓄银行与储蓄贷款协会的优惠，修改境外所得的课税")
+    chk("    the first three and the last three (前三项、后三项)",
+        told("前三项是对股息与利息所得实行源泉扣缴", "前", "项") + told("后三项是取消出售可折旧财产的资本利得优惠", "后", "项"),
+        F["erp_six"][0])
+    say("得到抵免的是购置机器设备的企业。补上收入缺口的，是股息与利息的收入者、扣除招待费的企业、出售可折旧财产的人、合作社与互助金融机构，"
+        "以及有境外所得的纳税人（本书的解读）")
     has("erp_cea_credit", "raise significantly the after-tax return on new investment")
     assert page("erp_cea_credit") >= page("erp_cea")
     said("顾问委员会的年度报告也说，8\\% 的抵免会显著提高新投资的税后回报", F["erp_cea_credit"][0])
@@ -1147,7 +1232,8 @@ def investment(F, Y, Q):
     said("国会最后通过的《1962 年收入法》，对机器设备实行 7\\% 的投资抵免", y62b, seven)
     _, eff = F["hj_effective"]
     has("hj_effective", "inapplicable to very short-lived assets")
-    said("短寿命的资产不适用，他们说有效税率因此约为 6.6\\%", eff)
+    said("抵免对寿命很短的资产不适用，他们说抵免的有效比率因此约为 6.6\\%", eff)
+    has("hj_effective", "reduce its effective rate to about")                        # the rate of the credit
     # Hall and Jorgenson
     has("hp_hj", "American Economic Review", "(with Dale W. Jorgenson)")
     said("霍尔与乔根森 1967 年在《美国经济评论》上回答", F["hp_hj"][0])
@@ -1156,12 +1242,15 @@ def investment(F, Y, Q):
     has("hj_jorgenson", "studied previously by D. W. Jorgenson")
     has("hj_rent", "supply capital services to itself")
     assert "(3) c = q(r + δ)" in transcription("hj_eq3") and "static expectations" in transcription("hj_eq3")
-    said("每 1 美元投资的折旧扣除的现值$z$与抵免率$k$", 1)
+    say("企业可以在以后各年把折旧从应税所得里分年扣除")
+    said("这些扣除折成的现值，按每 1 美元投资计，记作$z$", 1)
+    say("再加上营业所得的税率$u$与抵免率$k$，就是")
     assert "one dollar's investment" in transcription("hj_eq6")
     has("hj_fn6", "This assumption is valid for 1962 and 1963")
     said("这里假定折旧的基数要扣掉抵免，霍尔与乔根森说这只适用于 1962 年与 1963 年", *F["hj_fn6"][1:3])
     has("hj_1964", "on the cost before rather than after the tax credit")
-    said("1964 年起折旧按抵免以前的成本计算，他们说有效税率因此提到约 10\\%", *F["hj_1964"])
+    said("1964 年起折旧按抵免以前的成本计算，他们说抵免的有效比率因此提到约 10\\%", *F["hj_1964"])
+    has("hj_1964", "its effective rate was raised")
     assert F["hj_fn6"][3] == F["hj_1964"][0]
     assert "(12) K+ = α pQ/c" in transcription("hj_eq12") and "Cobb-Douglas" in transcription("hj_eq12")
     has("hj_lag", "funds appropriated, orders and contracts let")
@@ -1176,7 +1265,8 @@ def investment(F, Y, Q):
     has("hj_startling", "quite startling")
     has("hj_net", "net investment in manufacturing equipment in 1963")
     said("他们说，7\\% 的抵免效果“相当惊人”，1963 年制造业设备的净投资有 40.9\\% 可归于它", F["hj_startling"][0], y63, pct)
-    has("hj_less", "less startling")
+    has("hj_less", "less startling", "this impact is also quite dramatic")
+    say("按总投资算，作用没有那么惊人，他们说也相当显著")
     bn, y63b, share = F["hj_gross"]
     said("1963 年制造业设备的总投资 84.6 亿美元，10.2\\% 来自抵免", y63b, bn * 1e9, share)
     has("hj_potent", "a potent stimulus to investment expenditure")
@@ -1195,8 +1285,9 @@ def investment(F, Y, Q):
          1 - U["u"] * U["z"], 1 - U["u"], c1)
     k7 = seven / 100
     c2 = usercost(**U, k=k7)
-    said("（3）$c=0.35\\times(1-0.07)\\approx0.326$，低了 7\\%。", c1, 1, k7, c2, 100 * (1 - c2 / c1))
-    said("意愿资本增加$0.35/0.326-1\\approx7.5\\%$。", c1, c2, 1, 100 * (c1 / c2 - 1))
+    said("（3）$c=0.35\\times(1-0.07)=0.3255$，低了 7\\%。", c1, 1, k7, c2, 100 * (1 - c2 / c1))
+    assert np.isclose(c2, 0.3255)                                                # exact, so 0.35/0.3255 - 1 is 7.5%
+    said("意愿资本增加$0.35/0.3255-1\\approx7.5\\%$。", c1, c2, 1, 100 * (c1 / c2 - 1))
     said("（4）租金从 0.286 降到 0.267，意愿资本增加$0.286/0.267-1\\approx7.1\\%$（本书的计算）", before, after, before,
          after, 1, 100 * (before / after - 1))
     # Tobin
@@ -1212,7 +1303,16 @@ def investment(F, Y, Q):
     said("这种调整成本使$q$可以长期偏离 1", 1)
     has("to_net", "an equation for net investment")
     assert "I_t = q_t^K ΔK_t = q_t^K K_{t−1} f(q_t^K)" in transcription("to_eq3")
-    assert "f(1) = g, f′(q_t^K) ≥ 0" in transcription("to_eq3")
+    assert "where ΔK_t + δK_{t−1} ≥ 0, f(1) = g, f′(q_t^K) ≥ 0, 0 < f^{−1}(−δ) < 1" in transcription("to_eq3")
+    has("to_kstock", "valued at normal replacement cost, at the beginning of")
+    assert transcription("to_dk") == "ΔK_t is the addition of K_{t−1} occurring in period t."
+    has("to_depr", "the rate of depreciation of capital")
+    say("$q_t^K$就是$t$期的$q$，$K_{t-1}$是$t$期期初按正常重置成本计的资本存量，$\\Delta K_t$是它在$t$期的增加，$\\delta$是资本的"
+        "折旧率，$g$是经济的自然增长率")
+    has("to_valued", "valued at asset market prices rather than normal replacement costs")
+    say("他说明，这里的投资按资产的市场价格计，不按正常重置成本计", "所以资本存量的增加要乘以$q$（本书的解读）")
+    has("to_zero", "the value that induces zero gross investment")
+    said("使总投资为零的那个$q$值在 0 与 1 之间", 0, 1)
     has("to_g", "the natural rate of growth of the economy")
     has("to_normal", "keeps the capital stock growing at the trend of the economy")
     said("$q=1$时资本存量按自然增长率增长，$q$越高，积累得越快（本书的解读）", 1)
@@ -1224,7 +1324,12 @@ def investment(F, Y, Q):
     said("{$q=1$时资本按自然增长率增长，$q$高时加快\\cite{tobin1981}}", 1)
     said("{投资过快带来调整成本，$q$因而可以长期偏离 1\\cite{tobin1981}}", 1)
     has("hj_conclusion", "the level and timing of investment expenditures")
-    has("to_financing", "The Financing of Government Deficits")
+    say("\\cmprow{政策怎样影响投资}{税收改变使用成本，非常有效地改变投资的水平与时间\\cite{hj1967}}")
+    has("to_classical", "The classical variant.", "the roles of p and Y interchanged")
+    has("to_monetary", "Monetary expansion is not neutral but lowers real interest rates",
+        "shifts the composition of output from consumption to investment")
+    assert page("to_monetary") == page("to_classical") + 1                       # the classical variant, after Table 3
+    say("{在他模型的古典变体里，货币扩张压低实际利率，使产出从消费转向投资\\cite{tobin1981}}")
     # 1975 again
     T = F["pl_transition"]
     said("1975 年，国会把抵免暂时提到 10\\%，到 1977 年为止", F["pl_title"][0], F["pl_credit10"][0], T[5])
@@ -1321,6 +1426,11 @@ def check(F, Y, Q):
     has("jps_smaller", "could receive smaller rebates")
     said("国税局按每个纳税人 2000 年的纳税申报确定金额，2000 年税额不到 300 或 600 美元的，退得也少", y00, *F["jps_smaller"])
     said("照这个规则，2000 年没有所得税的家庭拿不到退税（本书的解读）", y00)
+    got, notgot, nofile = F["jps_treasury"]
+    has("jps_treasury", "tax returns received a rebate", "did not file and so also did not receive rebates")
+    assert "Treasury estimates" in column("note")["jps_treasury"]
+    said("他们转述财政部未公布的估计，约 8,950 万份纳税申报拿到退税，2,350 万份没有拿到", got * 1e6, notgot * 1e6)
+    said("另有约 2,290 万户没有申报，也没有拿到", nofile * 1e6)
     has("jps_digit", "the second-to-last digit of the taxpayer's Social Security number", "effectively randomly assigned")
     p20, p40, _, third2, _ = F["jps_spent"]
     has("jps_spent", "on non-durable goods during the three-month period", "roughly another third")
@@ -1328,6 +1438,7 @@ def check(F, Y, Q):
     chk("    another third (约三分之一)", told("下一个三个月又花掉约三分之一", "花掉约", ""), third2)
     has("jps_twothirds", "the quarter of receipt and subsequent three-month period")
     has("jps_liquidity", "low levels of liquid assets and low income", "consistent with their facing liquidity constraints")
+    say("流动性约束是说，家庭想按将来的收入借钱却借不到，只能按手头的钱花（本书的解读）")
     # 2008
     _, y08, bn, mil = F["pa_esa"]
     has("pa_esa", "enacted in February 2008", "consisted primarily of a 100 billion dollar program",
@@ -1340,10 +1451,18 @@ def check(F, Y, Q):
     has("pa_85", 'roughly 85% of "tax units"')
     has("pa_noliability", "Households without tax liability received basic payments")
     has("pa_qualifying", "at least $3,000 of qualifying income", "earned income and Social Security benefits")
-    said("没有所得税、但有至少 3,000 美元合格收入的家庭也能拿到基本款", F["pa_qualifying"][0])
+    has("pa_eligible", "a household needed to have positive net income tax liability, or at least sufficient")
+    said("要拿到基本款，家庭要有正的所得税额，或者有至少 3,000 美元的合格收入，合格收入包括劳动收入与社会保障金",
+         F["pa_qualifying"][0])
+    (y07,) = F["pa_filers"]
+    has("pa_filers", "only those filing 2007 returns received the payments")
+    said("款项按 2007 年的纳税申报计算，没有申报 2007 年所得税的家庭拿不到", y07, y07)
+    assert y07 == y08 - 1
     has("pa_phase", "being reduced by five percent of the amount by which adjusted gross income exceeded $75,000")
     has("pa_targeted", "more targeted to lower-income households than were the 2001 tax rebates")
-    said("收入高的按比例递减，所以比 2001 年的退税更偏向低收入家庭（\\tabref{tab:consumption-rebates}）", F["pa_targeted"][0])
+    five, single, couple = F["pa_phase"]
+    said("调整后总收入超过 7.5 万美元（夫妇 15 万）的，超出部分的 5\\% 从款项里扣掉，所以比 2001 年的退税更偏向低收入家庭"
+         "（\\tabref{tab:consumption-rebates}）", single, couple, five, F["pa_targeted"][0])
     lo, hi, tlo, thi = F["pa_spent"]
     has("pa_spent", "on nondurable expenditures during the three-month period", "in particular vehicles")
     said("他们估计，三个月里花在非耐用品上的约占刺激款的 12\\%—30\\%", lo, hi)
@@ -1351,8 +1470,9 @@ def check(F, Y, Q):
     has("pa_inconsistent", "inconsistent with both Ricardian equivalence",
         "consume at most the annuitized value of a transitory increase in income")
     # tab:consumption-rebates
-    said("1975 & 1974 年个人所得税的 10\\%，至少 100 美元（税额更少的全退），至多 200 美元；福利领取者每人 50 美元 & 第二季度发出 80 "
-         "亿美元，6 月发给社会保障领取者 17 亿美元 & 头三个季度不到四分之一（校正自相关）到三分之一（不校正） \\\\",
+    said("1975 & 1974 年个人所得税的 10\\%，至少 100 美元（税额更少的全退），至多 200 美元；社会保障、铁路退休金与补充保障收入的领取者"
+         "每人 50 美元 & 第二季度发出 80 亿美元，6 月发给社会保障领取者 17 亿美元 & 头三个季度不到四分之一（校正自相关）到三分之一（不校正）"
+         " \\\\",
          F["pl_title"][0], F["pl_refund_title"][0], F["pl_rebate"][0], F["pl_min"][3], F["pl_max"][0], F["pl_50"][1],
          eight * 1e9, mon("ms_june", "June"), j17 * 1e9)
     said("2001 & 约三分之二的家庭，通常 300 或 600 美元 & 7 月下旬到 9 月底，按社会保障号码倒数第二位 & 三个月内非耐用品 20\\%—40\\%，"
@@ -1481,7 +1601,16 @@ def debate(F, Y, Q):
     has("hy_accounting", "conceptual differences between U.S. and Japanese national accounting")
     has("hy_reject", "After rejecting the life-cycle explanations")
     has("hy_taxes", "probably not the main factor", "saving does not appear to be responsive to interest rates")
+    say("他提出一个自己称为简单化的看法，前提是接受王朝式的观点")
+    has("hy_dynastic", "the dynastic view of Barro (1974) and Becker (1981)")
+    has("hy_horizon", "a significant flow of bequests", "the infinite horizon assumption may be a good approximation")
+    say("他说，大量遗产的存在意味着，把寿命当作无限长可能是很好的近似")
+    has("hy_growthmodel", "the economy's response to the low initial wealth is a high saving rate",
+        "gradually stabilizes to a lower level as wealth approaches its steady-state value")
+    say("日本的财富起点又很低，按无限期的最优增长模型，储蓄率先高，再随财富接近稳态而降下来")
+    assert page("hy_dynastic") == page("hy_horizon") == page("hy_notest") < page("hy_growthmodel") == page("hy_children")
     has("hy_children", "in order for their children to live as well as Americans do")
+    say("照这个看法，日本人积累财富，是为了让子女过得和美国人一样好")
     fifteen, y60 = F["hy_simplistic"]
     has("hy_simplistic", "this simplistic view", "(though not in the 1960s")
     said("他说，这个看法与日本近 15 年的经历相符，1960 年代则不然", fifteen, y60)
@@ -1491,12 +1620,15 @@ def debate(F, Y, Q):
     has("fhp_access", "do not have sufficient access to external capital markets")
     has("fhp_excess", '"excess sensitivity" to movements in cash flow')
     has("fhp_finding", "more sensitive to cash flow for the group of firms")
-    has("fhp_q", "for firms paying no dividends")
+    has("fhp_q", "q values remain very high for significant periods of time for firms paying no dividends",
+        "relative to those for mature firms")
+    say("不发股息的企业$q$值比成熟企业高，而且长期如此")
     said("按 Fazzari、Hubbard 与 Petersen（1987）的工作论文", F["fhp_title"][1])
     has("kz_notgood", "are not good indicators of financing constraints")
     said("按 Kaplan 与 Zingales（2000）的回应", F["kz_wp"][1])
     has("kz_admit", "FHP [1999] admit")
-    has("kz_empirical", "ultimately an empirical question")
+    has("kz_empirical", "The only disagreement", "how pervasive the non-monotonicity result is", "ultimately an empirical question")
+    say("双方剩下的分歧只在于，敏感度不随约束加重而一直上升的现象有多普遍，这最终是一个经验问题")
 
 
 def deeper(F, Y, Q):
@@ -1515,7 +1647,8 @@ def deeper(F, Y, Q):
     said("1962 年的报告到第 27 页是肯尼迪的报告，从第 31 页起是顾问委员会的年度报告", F["erp_title"][0], page("erp_end"),
          page("erp_cea"))
     has("erp_end", "I ask the support of the Congress and the American people")
-    for rid in ("erp_urge", "erp_centerpiece", "erp_retro", "erp_profit", "erp_selffinance", "erp_six"):
+    for rid in ("erp_urge", "erp_centerpiece", "erp_retro", "erp_profit", "erp_selffinance", "erp_revenues", "erp_six",
+                "erp_capgains", "erp_mutuals", "erp_foreign"):
         assert page(rid) <= page("erp_end"), rid
     for rid in ("erp_cea_credit", "erp_cea_sign", "erp_tobin_office"):
         assert page(rid) >= page("erp_cea"), rid
@@ -1586,6 +1719,10 @@ def deeper(F, Y, Q):
     assert "they agree" in sw
     said("日本的储蓄率有经济社会综合研究所的表格与 Horioka（2024）的表 S-1 两处", F["ho_wp"][1], 1)
     said("本书没有读到 Fazzari 等 1999 年的原文", F["kz_admit"][0])
+    it = notes.split("Indirect testimony:")[1].split("Not obtained:")[0]
+    assert "unpublished Treasury estimates" in it and "(jps_treasury)" in it
+    said("2001 年拿到与没拿到退税的申报数，是 Johnson 等转述的财政部未公布估计", F["jps_title"][0])
+    assert "ha_table1_log" in sw and "ha_lags4" in sw
     assert F["kz_admit"] == F["kz_empirical"]
     # not obtained
     nl = notes.split("Not obtained:")[1].split("Life dates:")[0]
@@ -1618,7 +1755,7 @@ def legacy(F, Y, Q):
     said("莫迪利亚尼的演讲已经讨论巴罗 1974 年的李嘉图等价命题", F["md_barro"][0])
     has("ho_peak", "the Covid-19 pandemic period of 2020-21")
     said("2020 年疫情中的转移支付在\\chref{ch:pandemic}", F["ho_peak"][3])
-    said("1975 年按交的税发，2008 年也发给没有所得税的家庭（本书的概括）", F["pl_title"][0], F["pa_title"][0])
+    said("1975 年主要按交的税发，2008 年也发给没有所得税、但有合格收入的家庭（本书的概括）", F["pl_title"][0], F["pa_title"][0])
     said("投资对融资条件的依赖，在 2008 年以后的金融摩擦模型里重新受到重视（\\chref{ch:frictions}）", F["pa_title"][0])
 
 
@@ -1644,7 +1781,9 @@ def selfcheck(F, Y, Q):
     said("生命周期规则取还有 30 年可活", SC_YEARS)
     said("两期模型，对数效用，$r=4\\%$，$\\delta=2\\%$", 100 * SC_R, 100 * SC_DELTA)
     assert SC_K == (F["hj_credit7"][1] / 100, F["pl_credit10"][0] / 100)
-    said("抵免从 7\\% 提到 1975 年的 10\\%，使用成本降低百分之几？", 100 * SC_K[0], F["pl_title"][0], 100 * SC_K[1])
+    said("仍照 1962—1963 年的规则把折旧的基数扣掉抵免，抵免从 7\\% 提到 10\\%，使用成本降低百分之几？", F["hj_fn6"][1],
+         F["hj_fn6"][2], 100 * SC_K[0], 100 * SC_K[1])
+    assert F["hj_fn6"][3] > F["hj_fn6"][2]           # after 1963 the base was not reduced: the question keeps the rule
     said("2008 年的刺激款，非耐用品与总支出的两组估计差得很多", F["pa_title"][0])
     items = re.search(r"\\begin\{selfcheck\}(.*?)\\end\{selfcheck\}", tex_text(), re.DOTALL).group(1).count("\\item")
     answers = re.search(r"\\begin\{answers\}(.*?)\\end\{answers\}", tex_text(), re.DOTALL).group(1).count("\\item")
@@ -1696,7 +1835,14 @@ def models() -> None:
     assert "(6) c = q(r + δ)(1 − k)(1 − uz)/(1 − u)" in transcription("hj_eq6")
     eqn = {lab: body.strip() for body, lab in re.findall(r"\\begin\{equation\}\n(.*?)\\label\{(eq:[^}]+)\}", t, re.DOTALL)}
     assert eqn == {"eq:consumption-permanent": "c_p=k(i,w,u)\\,y_p,\\qquad y=y_p+y_t,\\qquad c=c_p+c_t,",
-                   "eq:consumption-q": "I_t=q_t\\,\\Delta K_t=q_t\\,K_{t-1}\\,f(q_t),\\qquad f(1)=g,"}, eqn
+                   "eq:consumption-q": "\\begin{gathered}\nI_t=q_t^K\\,\\Delta K_t=q_t^K\\,K_{t-1}\\,f(q_t^K),\\\\\n"
+                                       "\\Delta K_t+\\delta K_{t-1}\\ge0,\\qquad f(1)=g,\\qquad f'(q_t^K)\\ge0,\\qquad "
+                                       "0<f^{-1}(-\\delta)<1,\n\\end{gathered}"}, eqn
+    # Tobin's (3) as printed (to_eq3), condition by condition
+    for tex, printed in (("I_t=q_t^K\\,\\Delta K_t=q_t^K\\,K_{t-1}\\,f(q_t^K)", "I_t = q_t^K ΔK_t = q_t^K K_{t−1} f(q_t^K)"),
+                         ("\\Delta K_t+\\delta K_{t-1}\\ge0", "ΔK_t + δK_{t−1} ≥ 0"), ("f(1)=g", "f(1) = g"),
+                         ("f'(q_t^K)\\ge0", "f′(q_t^K) ≥ 0"), ("0<f^{-1}(-\\delta)<1", "0 < f^{−1}(−δ) < 1")):
+        assert tex in eqn["eq:consumption-q"] and printed in transcription("to_eq3"), (tex, printed)
     rng = np.random.default_rng(39)
     # C = a + cY: with a > 0 the saving ratio rises with income
     for a, c in rng.uniform(0.01, 0.95, (50, 2)):
@@ -1751,6 +1897,17 @@ def models() -> None:
     # the desired capital alpha p Q / c: proportional to 1/c
     for c, c2 in rng.uniform(0.1, 0.5, (20, 2)):
         assert np.isclose((0.3 / c2) / (0.3 / c) - 1, c / c2 - 1)
+    # Tobin's (3) with a linear f: at q = 1 the stock grows at g, faster with q; gross investment is zero at
+    # q = f^{-1}(-delta), between 0 and 1 when the slope exceeds g + delta
+    for _ in range(200):
+        g, d = rng.uniform(0, 0.05), rng.uniform(0.02, 0.15)
+        a = rng.uniform(g + d + 0.01, 1.0)
+        f = lambda q: g + a * (q - 1)                                            # noqa: E731
+        q0 = 1 - (g + d) / a
+        assert np.isclose(f(1), g) and 0 < q0 < 1 and np.isclose(f(q0) + d, 0)
+        for q in rng.uniform(0.5, 2, 5):
+            K = rng.uniform(1, 10)
+            assert (K * f(q) + d * K >= 0) == (q >= q0 - 1e-12) and (f(q) > g) == (q > 1)
     # Friedman's paydays: on any one day the measured saving ratio rises with measured income
     week, days = facts()["fr_payday"][0], round(1 / facts()["fr_payday2"][0])
     income = np.array([week] + [0] * (days - 1), dtype=float)
@@ -1810,12 +1967,11 @@ AGREE = [(("gnd_ford_born", 0), ("loc_ford", 0)), (("gnd_ford_died", 0), ("loc_f
 EVENTS = [("\\chref{ch:generaltheory}把它写成$C=a+cY$", "ch32_generaltheory", "$C=a+cY$"),
           ("教学例子里边际消费倾向取 0.6，乘数是 2.5（\\exref{ex:generaltheory-cross}）", "ch32_generaltheory",
            "乘数$1/(1-0.6)=2.5$"),
-          ("模型 I 的消费也随当年的收入变，冲击乘数约 1.93（\\exref{ex:phillips-klein}）", "ch38_phillips", "冲击乘数约 1.93"),
           ("\\chref{ch:islm}把投资写成利率的减函数$I=I_0-bi$", "ch33_islm", "投资$I=I_0-b\\,i$"),
-          ("模型 I 让投资随利润增加、随上年的资本存量减少（式~\\eqref{eq:phillips-klein}）", "ch38_phillips",
+          ("\\chref{ch:generaltheory}讲的是资本边际效率与动物精神", "ch32_generaltheory",
+           "\\section{投资、预期与“动物精神”}\\label{sec:generaltheory-expectations}"),
+          ("投资随利润与资本存量变，乘数与周期", "ch38_phillips",
            "I&=17.79+0.23\\,\\Pi+0.55\\,\\Pi_{-1}-0.15\\,K_{-1}"),
-          ("\\chref{ch:generaltheory}讲过凯恩斯的资本边际效率与动物精神（\\secref{sec:generaltheory-expectations}）",
-           "ch32_generaltheory", "\\section{投资、预期与“动物精神”}\\label{sec:generaltheory-expectations}"),
           ("实际消费反而增加了 2.1\\%，简单的消费函数解释不了", "ch32_generaltheory", "要用别的原因解释"),
           ("按\\chref{ch:prices}的折现", "ch03_prices", "按某个利率折现的现值"),
           ("\\chref{ch:phillips}的模型 I 里，消费是工资总额的 0.80 倍", "ch38_phillips",
@@ -1861,10 +2017,8 @@ def book(F, Q):
         assert f"\\label{{{label}}}" in (ROOT / "zh" / f"{ch}.tex").read_text(encoding="utf-8"), (label, ch)
     for ch in POINTERS:
         assert re.search(r"\\(?:chref|ref)\{ch:consumption\}", chapter(ch)), ch
-    for lab, ch in (("sec:generaltheory-check", "ch32_generaltheory"), ("sec:generaltheory-expectations",
-                                                                        "ch32_generaltheory"),
-                    ("ex:generaltheory-cross", "ch32_generaltheory"), ("sec:phillips-models", "ch38_phillips"),
-                    ("eq:phillips-klein", "ch38_phillips"), ("ex:phillips-klein", "ch38_phillips")):
+    for lab, ch in (("sec:generaltheory-check", "ch32_generaltheory"), ("ex:generaltheory-cross", "ch32_generaltheory"),
+                    ("sec:phillips-models", "ch38_phillips")):
         assert f"{{{lab}}}" in t and f"\\label{{{lab}}}" in chapter(ch), lab
     print(f"ok {len(LIVES) + len(BORN)} life dates, {len(EVENTS)} statements of other chapters, {len(LATER)} other "
           f"chapters named")
@@ -2013,10 +2167,13 @@ def counts() -> None:
     assert not re.search(r"(?<![意看])见\\(?:chref|secref|figref|tabref|exref|eqref)", t)
     assert "\\chapterstub" not in t
     # who receives the money and who pays, in the sources' words where they exist
-    for words in ("钱发给谁、由谁来付，国会写进了法律", "那一年不交所得税的人拿不到，靠福利过活的人只拿到那 50 美元",
-                  "“数以百万计的中等收入纳税人”", "退出去的钱眼下是政府借来的，将来要由纳税人偿还",
-                  "得到抵免的是购置机器设备的企业，补上收入缺口的，是股息与利息的收入者和扣除招待费的企业",
-                  "“所有商人和农民”", "照这个规则，2000 年没有所得税的家庭拿不到退税", "比 2001 年的退税更偏向低收入家庭",
+    for words in ("钱发给谁、由谁来付，国会写进了法律", "夫妇合并申报的算作一个人",
+                  "那一年不交所得税的人拿不到退税，领上面三种给付的人不论交没交税，都另有 50 美元",
+                  "没有交税的低收入家庭因此也能拿到", "“数以百万计的中等收入纳税人”", "联邦税的最大份额本来就是他们交的",
+                  "退出去的钱眼下是政府借来的，将来要由纳税人偿还", "得到抵免的是购置机器设备的企业。补上收入缺口的，是股息与利息的收入者、"
+                  "扣除招待费的企业、出售可折旧财产的人、合作社与互助金融机构，以及有境外所得的纳税人",
+                  "进而增加联邦的收入", "“所有商人和农民”", "照这个规则，2000 年没有所得税的家庭拿不到退税",
+                  "2,350 万份没有拿到", "没有申报 2007 年所得税的家庭拿不到", "比 2001 年的退税更偏向低收入家庭",
                   "一次性发钱该发给谁，每一次都要重新决定"):
         assert words in main, words
     # the three debates of the editor's notes are left open

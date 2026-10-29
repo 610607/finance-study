@@ -165,16 +165,25 @@ def consumption_windfall():
     a2.axvline(R["pih"], color=AMBER, lw=1.2, zorder=3)
     a2.axvline(R["lch"], color=OUTPUT, lw=1.2, ls=(0, (4, 2)), zorder=3)
     _text(a2, R["keynes"] + 1.2, 2.62, T(f"凯恩斯式 {R['keynes']:.0f}%", f"Keynes {R['keynes']:.0f}%"), INK, size=7.6)
-    _text(a2, low + 1.5, 2.62, T("另两条规则不到 1%", "the other two: <1%"), AMBER, size=7.6)
+    # The two long-run rules sit below 1%, on the zero line at this scale: the axis starts a little left of zero so
+    # that their lines stand clear of it, and each is labelled, with a leader, in a gap between the bars.
+    lead = 8
+    for y, key, col, name in ((1.5, "pih", AMBER, T("永久收入", "permanent income")),
+                              (0.5, "lch", OUTPUT, T("生命周期", "life cycle"))):
+        lab = a2.annotate(f"{name} {R[key]:.3f}%", xy=(R[key], y), xytext=(lead, y), color=col, fontsize=7.6,
+                          ha="left", va="center", zorder=8,
+                          arrowprops=dict(arrowstyle="-", color=col, lw=0.7, shrinkA=1, shrinkB=0))
+        halo(lab, 2.0)
     a2.set_yticks(ys)
     a2.set_yticklabels([names[n] for n, _, _ in B["bars"]])
     a2.set_ylim(-0.5, 2.9)
-    a2.set_xlim(0, 120)
+    a2.set_xlim(-6, 120)
     a2.set_xticks([0, 20, 40, 60, 80, 100])
     a2.set_xlabel(T("三个月里花掉的比例（%）", "share spent in three months (%)"))
     _grid(a2, "x")
     _title(a2, T("(b) 实测远高于两条长期规则", "(b) Far above the long-run rules"))
-    assert low < 1 < min(lo for _, lo, _ in B["bars"]) and max(hi for _, _, hi in B["bars"]) + 20 < 120
+    assert low < 1 < lead < min(lo for _, lo, _ in B["bars"]) and max(hi for _, _, hi in B["bars"]) + 20 < 120
+    assert abs(R["pih"] - R["lch"]) > 0.01                       # two labels, as the lines nearly coincide
     return fig
 
 
