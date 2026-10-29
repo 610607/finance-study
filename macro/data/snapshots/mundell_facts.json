@@ -1,0 +1,240 @@
+{
+ "title": "Quotations for Chapter 37: Canada's floating exchange rate of 1950-1962 and the Coyne affair, the papers of Fleming (1962) and Mundell (1963) and the history of their model, the test of the trilemma, the global financial cycle, optimum currency areas, Sri Lanka's exchange rate in early 2022, and life dates",
+ "source": "Bank of Canada (Powell, A History of the Canadian Dollar, 2005; Annual Reports 1961 and 1962); Statistics Canada (Historical Statistics of Canada, 1983); Economic Report of the President 1964; IMF Staff Papers (Fleming 1962; Boughton 2003); Canadian Journal of Economics and Political Science (Mundell 1963); NobelPrize.org; NBER Working Papers 10396 and 21162; ECB Working Paper 138; Central Bank of Sri Lanka; Library of Congress; Deutsche Nationalbibliothek",
+ "url": "https://www.bankofcanada.ca/wp-content/uploads/2010/07/dollar_book.pdf",
+ "series": "quotations (column quote) with their page (column juan) and the numbers read from them (column value, ';'-separated, by the READINGS of checks/check_ch37.py)",
+ "retrieved": "2026-10-29",
+ "license": "Bank of Canada website content: Powell (2005) and the Annual Reports of 1961 and 1962 (the Bank's open archive, oar-rao.bank-banque-canada.ca). The Bank's terms, read on 2026-10-29 at https://www.bankofcanada.ca/terms/ (rows bc_permit, bc_attrib, bc_notes, bc_logo, bc_third): 'Except as indicated below (section 2, Exceptions to Permission to Reproduce ), the Bank permits you to freely use, copy, distribute and transmit its website content under the following terms:' '1.1. Attribution You must attribute the Bank of Canada as the source of the content, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests that the Bank endorses you or your use of the content.' '2.1. Bank Note Images Permission to reproduce bank note images must be obtained in writing from the Bank.' '2.2. Reproduction of the Bank's Logo and Wordmark The Bank's logo and wordmark may not be reproduced, whether for personal, commercial or non-commercial purposes, without written authorization from the Bank.' 'The Bank does not grant You permission to re-use such third-party content unless it expressly indicates that You may do so.' The book names the Bank of Canada as the source of these quotations (bibliography items powell2005, boc1961 and boc1962) and says that they are translated into Chinese (a change); it reproduces no bank-note image, no logo and none of the book's images marked 'Image protected by copyright' (row pw_images). The third-party content quoted in Powell (the statements of Douglas Abbott and Donald Fleming, Coyne's memorandum, The Economist, Goforth, Muirhead, Helliwell) is used in short phrases only. Statistics Canada: Historical Statistics of Canada (11-516-X), under the Statistics Canada Open Licence (https://www.statcan.gc.ca/en/terms-conditions/open-licence, date modified 2025-07-10; rows sl_a, sl_b): '(a) You shall include and maintain the following notice on all licensed rights of the Information: Source: Statistics Canada, name of product, reference date. Reproduced and distributed on an \"as is\" basis with the permission of Statistics Canada.' '(b) Where any Information is contained within a Value-added Product, you shall include on such Value-added Product the following notice: Adapted from Statistics Canada, name of product, reference date. This does not constitute an endorsement by Statistics Canada of this product.' The book's figure and example use the data in a value-added product, with the notice: 'Adapted from Statistics Canada, Historical Statistics of Canada, 11-516-X, Section J, Series J560-567 and J471-480, 1983. This does not constitute an endorsement by Statistics Canada of this product.' Economic Report of the President 1964: a work of the United States government, public domain (the copy of The American Presidency Project). IMF eLibrary, Fleming (1962) and Boughton (2003) (row fl_copyright): 'INTERNATIONAL MONETARY FUND COPYRIGHT © 2010-2026. ALL RIGHTS RESERVED.' Short phrases only, otherwise paraphrase. Cambridge Core, Mundell (1963) (row mu_copyright): 'Copyright © Canadian Political Science Association 1963' Short phrases only. NobelPrize.org (row nb_copyright): 'Copyright © Nobel Prize Outreach 2026' Short phrases only. NBER Working Papers (rows os_copyright, ry_copyright): '©2004 by Maurice Obstfeld, Jay C. Shambaugh, and Alan M. Taylor. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' '© 2015 by Hélène Rey. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' Short quotations, with the notice as printed in the bibliography. ECB Working Paper 138 (rows mg_ecb, mg_notice): '© European Central Bank, 2002' 'All rights reserved. Reproduction for educational and non-commercial purposes is permitted provided that the source is acknowledged.' The author's text is used in short phrases only. Central Bank of Sri Lanka (rows cs_range, cs_spread): a derived extract only. Library of Congress Name Authority File: public data. Gemeinsame Normdatei (row gnd_licence): 'http://creativecommons.org/publicdomain/zero/1.0/'.",
+ "used_in": [
+  37
+ ],
+ "fetch": "data/fetch/mundell37.py",
+ "citation": "Bank of Canada; Statistics Canada; and the works listed in the bibliography block of Chapter 37",
+ "notes": "Pages (column juan): Powell's book prints page N on PDF page N+6, the Economic Report of the President page N on PDF page N+8; the web pages and the CSV files have no pages. Disagreements between the sources: the official rate of 1949 was in effect from 19 September (Abbott, pw_abbott) or from 20 September 1949 (Powell, pw_dev49a and pw_sep20; the pound was devalued on 19 September, pw_fn75); in October 1950 the Canadian dollar rose 'five cents' to roughly US$0.95 (pw_oct2), from a par of US$0.9091 (pw_par49): about four cents; between 1952 and 1960 it traded between US$1.02 and US$1.06 (pw_premium), but the yearly lows of Historical Statistics of Canada are below US$1.02 in each year and below US$1.00 in 1952 and 1955 (hs560_1952, hs560_1955, hs560_1957, hs560_1959, hs560_1960; the snapshot canada_float_1946_1965); Coyne was Deputy Governor in January 1949 (Powell, pw_coyne49) or assistant to the Governor in 1944-1949 and Deputy Governor from 1950 (GND, gnd_coyne_bank); Obstfeld, Shambaugh and Taylor's text calls the Bretton Woods coefficient indistinguishable from zero (os_bwzero), their Table 1 marks -.20 and -.26 as significant at the 90 and 95 per cent levels (os_t1_bw). Second witnesses: Coyne's resignation on 13 July 1961 (Powell, pw_senate and pw_resigned: the day after 12 July; the Annual Report 1961, ar61_coyne); Rasminsky's appointment on 24 July (pw_rasminsky, ar61_coyne); the par value of 2 May 1962 (pw_may62, ar62_par, and 1/0.925 = 1.081); the US$1,050 million of June 1962 (pw_jun24, ar62_measures, ar62_credits), Powell citing the Annual Report 1962 (pw_ar62cite): one witness; the peak of US$1.0614 on 20 August 1957 (pw_premium) against the low of 0.9422 Canadian dollars per US dollar in 1957 (hs560_1957); Diefenbaker as Prime Minister (ar62_jun24, loc_diefenbaker_pm); Fleming's paper of November 1962 (bg_ref_fleming, fl_volume). Indirect testimony: the statements of Abbott (1950, 1951) and of Donald Fleming (1961, 1962), Coyne's memorandum of 1949 and his Annual Report for 1960, Friedman's debate of 1948, The Economist of 12 May 1962, Goforth (1950, pw_gravely), Muirhead (1999, pw_fn79b) and Helliwell, all through Powell; Donald Fleming's statement of 1 August 1961 as the Annual Report 1961 prints it (ar61_harmony); Rhomberg's econometric model through Fleming (fl_rhomberg) and Mundell (mu_rhomberg); Mundell (1961, 1973), McKinnon (1963) and Kenen (1969) through Mongelli (2002) and the Nobel press release; Mundell's paper of March 1962 through Powell (pw_fn82) and the Nobel press release (nb_assign). Single witnesses: the monetary policy of June-November 1962 (the interest-rate aim, the contraction of the money supply, the Bank Rate cuts of 12 October and 13 November: ar62_objective, ar62_rates, ar62_contraction, ar62_sept, ar62_cuts) rests on the Annual Report 1962 alone. Reading across a page: Powell's sentence 'Restrictive monetary policy ... led to a sharp deterioration in relations between the' (pw_restrictive) ends on the next page with 'Bank and the academic community.' (pw_restrictive2): the relations are those of the Bank with the economists, not with the government (pw_diefgov); the devaluation of 1949 'on' (pw_dev49a) ends on the next page with '20 September 1949.' and the call of footnote 75 (pw_sep20). Misreadings and misprints as printed in the quotations: 'Dornbuseh' for 'Dornbusch' (bg_dornbusch); 'Mundeil' for 'Mundell' (bg_before); 'Mundelfs' for 'Mundell's' (bg_vernacular); Powell prints 'Milton's Friedman's' (pw_friedman3); the text layer letter-spaces 'recommended more vigorous foreign exchange' (pw_imfstaff); 'cross-border' with the Unicode hyphen U+2010 (ry_certainly). Not obtained: Mundell (1961) and McKinnon (1963) in the American Economic Review (JSTOR answered with a bot check, not passed); Kenen (1969); Friedman (1953); McKinnon (2004); Mundell (1962), IMF Staff Papers; Rey's Jackson Hole paper of 2013 (the NBER version says it was presented at the Jackson Hole Symposium, without a year: ry_jh); the IMF's Annual Reports of 1950 and 1962 (imf.org refused access); the House of Commons Debates (no terms of use found for the site, not quoted); the Bank of Russia's table of its refinancing rate (the rate rises of May 1998 rest on Chiodo and Owyang alone). The volume of McKinnon (1963) in Mongelli's references (mg_ref_mckinnon) is not checked. Life dates: Donald Fleming, Diefenbaker and Friedman from the Library of Congress; Abbott, Coyne and McKinnon from the GND (the LoC heading of Coyne has no year of death: loc_coyne); Marcus Fleming, Kenen and Mundell from both; Rasminsky: the LoC heading gives 1908 and no year of death (loc_rasminsky), no record in the GND or data.bnf.fr: '生卒年未详'. Rows of other snapshots used by the chapter: intro_facts (co_band, co_gko30, co_twice, co_depleted, co_aug17, co_sep2), external_facts (lk_adjust, lk_float), brettonwoods_facts (bo_pegged, b59_conv, b61_reval, b70_de_inflow, b70_de_float, bt_de_c, b70_fr_flight, bo_controls_de) and bis_fx (lkr_usd_eop, February and April 2022).",
+ "sources": {
+  "powell2005": {
+   "url": "https://www.bankofcanada.ca/wp-content/uploads/2010/07/dollar_book.pdf",
+   "format": "pdf",
+   "sha256": "8482a3e1b320c593c641bef7d1dd88b68f6fffd54281ed8903a38701268be811",
+   "version": "James Powell, A History of the Canadian Dollar, Bank of Canada, December 2005 (the expanded edition, ISBN 0-660-19571-2), the PDF of the Bank of Canada's website (printed page = PDF page - 6)",
+   "retrieved": "2026-10-29"
+  },
+  "bocterms37": {
+   "url": "https://www.bankofcanada.ca/terms/",
+   "format": "html",
+   "sha256": "8ad634d6587904648e217a9ed8d4250de39366320c7a599c2f7c1f7ff0e1ecea",
+   "version": "Bank of Canada, Terms and Conditions (web page)",
+   "retrieved": "2026-10-29"
+  },
+  "boc1961": {
+   "url": "https://oar-rao.bank-banque-canada.ca/record/2659/files/BOC_Annual_Report_1961.pdf",
+   "format": "pdf",
+   "sha256": "ff8bdd8d4fc50d6dd99be1c95cd2a61d9226c1e39b4cb946d11b5eccc2c6e74f",
+   "version": "Bank of Canada, Annual Report of the Governor to the Minister of Finance and Statement of Accounts for the Year 1961 (Louis Rasminsky), the scan with its text layer in the Bank's open archive",
+   "retrieved": "2026-10-29"
+  },
+  "boc1962": {
+   "url": "https://www.oar-rao.bank-banque-canada.ca/record/2660/files/BOC_Annual_Report_1962.pdf",
+   "format": "pdf",
+   "sha256": "bae3e99cdbf379e87d26db796767cff59ad2a617f81ab6cf4ebfd6794afdbe06",
+   "version": "Bank of Canada, Annual Report of the Governor to the Minister of Finance and Statement of Accounts for the Year 1962 (dated February 28th, 1963), the scan with its text layer in the Bank's open archive",
+   "retrieved": "2026-10-29"
+  },
+  "hsc_j560": {
+   "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionj/J560_567-eng.csv",
+   "format": "txt",
+   "sha256": "1a43a946d27ccd23595a9ee65473302cb63ebb3cdfd14089867e237edac04cd4",
+   "version": "Statistics Canada, Historical Statistics of Canada (11-516-X), second edition 1983 (archived), Section J, Series J560-567, Foreign exchange rates, 1913 to 1977 (CSV)",
+   "retrieved": "2026-10-29"
+  },
+  "hsc_j471": {
+   "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionj/J471_480-eng.csv",
+   "format": "txt",
+   "sha256": "b2fff33e8c0917cc8a75978ced6b9955ded49fcf86d60051a72e1e6be9c4fc68",
+   "version": "Statistics Canada, Historical Statistics of Canada (11-516-X), second edition 1983 (archived), Section J, Series J471-480, Bond and stock yields, annual averages, 1934 to 1977 (CSV, Latin-1)",
+   "retrieved": "2026-10-29"
+  },
+  "hsc_sectionj37": {
+   "url": "https://www150.statcan.gc.ca/n1/pub/11-516-x/sectionj/4147440-eng.htm",
+   "format": "html",
+   "sha256": "b785b445d7c6cb7794f90f71d45f8a6d48e2334281c1b413f1248990e3e41306",
+   "version": "Statistics Canada, Historical Statistics of Canada, Section J: Banking and Finance (John Chant), the section's web page with the sources of the tables",
+   "retrieved": "2026-10-29"
+  },
+  "hsc_cat37": {
+   "url": "https://www150.statcan.gc.ca/n1/en/catalogue/11-516-X",
+   "format": "html",
+   "sha256": "f00f58c538ddbd34d9a72c9f54640ec4bb0600a5adef3b4716f3d5c397224c01",
+   "version": "Statistics Canada, catalogue page of Historical Statistics of Canada (11-516-X), archived",
+   "retrieved": "2026-10-29"
+  },
+  "statcanlicence37": {
+   "url": "https://www.statcan.gc.ca/en/terms-conditions/open-licence",
+   "format": "html",
+   "sha256": "8a6c080e6d9458945815d558c15a1a787e27d01a33d8dd07a99daeaa9b4bacc2",
+   "version": "Statistics Canada Open Licence (web page, date modified 2025-07-10)",
+   "retrieved": "2026-10-29"
+  },
+  "erp1964": {
+   "url": "https://presidency.ucsb.edu/sites/default/files/books/presidential-documents-archive-guidebook/the-economic-report-of-the-president-truman-1947-obama-2017/1964.pdf",
+   "format": "pdf",
+   "sha256": "eca24f5f669db3e7f1868d7d59777fe6595d559489ea71937511a0248c496ca4",
+   "version": "Economic Report of the President, January 1964, with the Annual Report of the Council of Economic Advisers; Table C-48 (pp. 265-266, PDF pp. 273-274); the copy of The American Presidency Project",
+   "retrieved": "2026-10-29"
+  },
+  "fleming1962": {
+   "url": "https://www.elibrary.imf.org/view/journals/024/1962/003/article-A004-en.xml",
+   "format": "html",
+   "sha256": "a80d6f00ff700a1b155725ae047a70ab4ead3be3f7d80ff0031370fb17eda6c7",
+   "version": "J. Marcus Fleming, 'Domestic Financial Policies Under Fixed and Under Floating Exchange Rates', IMF Staff Papers 9(3) (the page's cover title: 'Volume 9 No. 3'), 1962; the month (November) and pages (369-79) as Boughton (2003) cites them (DOI 10.5089/9781451968873.024.A004); the full text of the IMF eLibrary's web page (the PDF answered with a challenge page)",
+   "retrieved": "2026-10-29"
+  },
+  "boughton2003": {
+   "url": "https://www.elibrary.imf.org/view/journals/024/2003/001/article-A001-en.xml",
+   "format": "html",
+   "sha256": "2a43b2c0bb0ebca134090a4ecd031dc89cb34ea94508aa20330a5ed90dc2b206",
+   "version": "James M. Boughton, 'On the Origins of the Fleming-Mundell Model', IMF Staff Papers 50(1) (the page's cover title: 'Volume 50, No. 1'), published 17 April 2003 (DOI 10.5089/9781589061248.024.A001), the full text of the IMF eLibrary's web page (an OCR text)",
+   "retrieved": "2026-10-29"
+  },
+  "mundell1963": {
+   "url": "https://www.cambridge.org/core/journals/canadian-journal-of-economics-and-political-science-revue-canadienne-de-economiques-et-science-politique/article/abs/capital-mobility-and-stabilization-policy-under-fixed-and-flexible-exchange-rates/1C0D6743C46645F447F2338146CA61B9",
+   "format": "html",
+   "sha256": "5cbe6077354f293659985a5d3755f86263c25949a73211e5f97ff926e56c71b7",
+   "version": "R. A. Mundell, 'Capital Mobility and Stabilization Policy Under Fixed and Flexible Exchange Rates', Canadian Journal of Economics and Political Science 29(4), November 1963, pp. 475-485 (DOI 10.2307/139336), Cambridge Core's page: the extract of the first page and the footnotes",
+   "retrieved": "2026-10-29"
+  },
+  "nobel1999": {
+   "url": "https://www.nobelprize.org/prizes/economic-sciences/1999/press-release/",
+   "format": "html",
+   "sha256": "5af1bac99039d6ff4cbc909a6964ddcab4b860563f0a97b2307aceeaa32e9925",
+   "version": "The Royal Swedish Academy of Sciences, press release of 13 October 1999 (NobelPrize.org)",
+   "retrieved": "2026-10-29"
+  },
+  "ost2004": {
+   "url": "https://www.nber.org/system/files/working_papers/w10396/w10396.pdf",
+   "format": "pdf",
+   "sha256": "9a52264288211f3045b03b37cd5c8640867e04caaf836f9c3047661093403bdc",
+   "version": "Maurice Obstfeld, Jay C. Shambaugh and Alan M. Taylor, 'The Trilemma in History: Tradeoffs among Exchange Rates, Monetary Policies, and Capital Mobility', NBER Working Paper 10396, March 2004",
+   "retrieved": "2026-10-29"
+  },
+  "rey2015": {
+   "url": "https://www.nber.org/system/files/working_papers/w21162/w21162.pdf",
+   "format": "pdf",
+   "sha256": "d3cb3bbcb3e56947021d216b672b7b81dbd994518316e11de328d0800b29293b",
+   "version": "Helene Rey, 'Dilemma not Trilemma: The Global Financial Cycle and Monetary Policy Independence', NBER Working Paper 21162, May 2015, revised February 2018",
+   "retrieved": "2026-10-29"
+  },
+  "mongelli2002": {
+   "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp138.pdf",
+   "format": "pdf",
+   "sha256": "3ca01b800ae14c874802f519c1adbba2e262f2cde51bbb3967292c68ca7795dc",
+   "version": "Francesco Paolo Mongelli, 'New Views on the Optimum Currency Area Theory: What Is EMU Telling Us?', ECB Working Paper No. 138, April 2002",
+   "retrieved": "2026-10-29"
+  },
+  "cbsl_ar2022": {
+   "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/publications/annual_report/2022/en/9_Chapter_05.pdf",
+   "format": "pdf",
+   "sha256": "0b36745103f98ad4f9a1000134cd62b907cae142913f06b8553fdbde755a632f",
+   "version": "Central Bank of Sri Lanka, Annual Report 2022, chapter 5 'External Sector Developments and Policies' (published April 2023)",
+   "retrieved": "2026-10-14"
+  },
+  "loc_fleming_jm37": {
+   "url": "https://id.loc.gov/authorities/names/n50004066.madsrdf.json",
+   "format": "json",
+   "sha256": "6399cd38880afc41e4c59dac9129bc42bae7839cb921673d89f6d2ce05b887f2",
+   "version": "Library of Congress Name Authority File, record n50004066 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_fleming_dm37": {
+   "url": "https://id.loc.gov/authorities/names/n85065901.madsrdf.json",
+   "format": "json",
+   "sha256": "018216aaa927e070bc72e17a39554746f3651a87ee47007f3b84ccf9ef84fd1a",
+   "version": "Library of Congress Name Authority File, record n85065901 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_diefenbaker37": {
+   "url": "https://id.loc.gov/authorities/names/n50025505.madsrdf.json",
+   "format": "json",
+   "sha256": "a7206b022ff77f3d2a769ab85228d66dcb78425955a7150c911c3c25ba8f4e67",
+   "version": "Library of Congress Name Authority File, record n50025505 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_kenen37": {
+   "url": "https://id.loc.gov/authorities/names/n50045330.madsrdf.json",
+   "format": "json",
+   "sha256": "68c754c5980cfff660e1d8d8d219e20e339a76f1103c177271713e5d09699681",
+   "version": "Library of Congress Name Authority File, record n50045330 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_coyne37": {
+   "url": "https://id.loc.gov/authorities/names/nb2010023831.madsrdf.json",
+   "format": "json",
+   "sha256": "fcc73e1e41ef62201571e4e2c0db7c6e7d9f19bd0b112a5d55e556fe9deca571",
+   "version": "Library of Congress Name Authority File, record nb2010023831 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_rasminsky37": {
+   "url": "https://id.loc.gov/authorities/names/n85242052.madsrdf.json",
+   "format": "json",
+   "sha256": "bcc9dcae55212d1b523bc62e7b0f063e830c44b491f01c6189714dedc3d0295c",
+   "version": "Library of Congress Name Authority File, record n85242052 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_mundell37": {
+   "url": "https://id.loc.gov/authorities/names/n50031983.madsrdf.json",
+   "format": "json",
+   "sha256": "32a0f4b9c5ebc8d1177193249d6d0e0c83c41102b62f54509df12dd413b5f120",
+   "version": "Library of Congress Name Authority File, record n50031983 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "loc_friedman37": {
+   "url": "https://id.loc.gov/authorities/names/n79117948.madsrdf.json",
+   "format": "json",
+   "sha256": "1157d1076598fad29c980bca0c15dd1b825b897e85150438ac9b920c1e60c4c5",
+   "version": "Library of Congress Name Authority File, record n79117948 (MADS/RDF JSON from id.loc.gov)",
+   "retrieved": "2026-10-29"
+  },
+  "gnd_mundell37": {
+   "url": "https://lobid.org/gnd/124383254.json",
+   "format": "json",
+   "sha256": "5f834911d6527d87bc3ff0994eb6f0b4dadefd1aff9561c08d663ab121132607",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 124383254 (JSON from lobid.org)",
+   "retrieved": "2026-10-29"
+  },
+  "gnd_mckinnon37": {
+   "url": "https://lobid.org/gnd/124007562.json",
+   "format": "json",
+   "sha256": "08791497f6e609b438abe043ed7bbfc09f66d94dae7440c46dbf6c5062afd4bb",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 124007562 (JSON from lobid.org)",
+   "retrieved": "2026-10-29"
+  },
+  "gnd_abbott37": {
+   "url": "https://lobid.org/gnd/1073953181.json",
+   "format": "json",
+   "sha256": "5a97223a61124089e7e0e0b0a5db3de3046edd483663be505ba89607aad56431",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 1073953181 (JSON from lobid.org)",
+   "retrieved": "2026-10-29"
+  },
+  "gnd_kenen37": {
+   "url": "https://lobid.org/gnd/120108798.json",
+   "format": "json",
+   "sha256": "74394ae13bbdaf8b3a1d3dde38582d05fc5af56ed0d25b9e5b517f2389c71607",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 120108798 (JSON from lobid.org)",
+   "retrieved": "2026-10-29"
+  },
+  "gnd_fleming_jm37": {
+   "url": "https://lobid.org/gnd/1089610963.json",
+   "format": "json",
+   "sha256": "7ea4f033074aee9a5a5c51ba024464f35d8f242f26cddcadb8e5355071d214bd",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 1089610963 (JSON from lobid.org)",
+   "retrieved": "2026-10-29"
+  },
+  "gnd_coyne37": {
+   "url": "https://lobid.org/gnd/1196030383.json",
+   "format": "json",
+   "sha256": "af27564a4fe8e1fc7b2ba34abe80a50c8018ed1833a7033fd3a14b95e8162045",
+   "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 1196030383 (JSON from lobid.org)",
+   "retrieved": "2026-10-29"
+  }
+ }
+}
