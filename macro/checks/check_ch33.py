@@ -825,7 +825,7 @@ def is_curve(F, Y, Q):
     assert I0 - b * i_0 == M1_CROSS["I2"]
     # Tinbergen and Frisch at Oxford
     assert Q["ox_afternoon"].startswith("On Saturday afternoon") and Q["ox_tinbergen"].startswith("At the same session")
-    said("用约 12 个方程描述战后美国经济周期的尝试", F["ox_twelve"][0])
+    said("用约 12 个方程描述一战以后美国经济周期的尝试", F["ox_twelve"][0])
     assert "American cycles after the war" in Q["ox_twelve"]
     assert "the influence of interest rates on the volume of investment activity seems to have been very small" in Q["ox_interest"]
     ten, fifteen = F["ox_frisch"]

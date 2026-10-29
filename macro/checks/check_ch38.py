@@ -1495,7 +1495,7 @@ def gap(F, Y, Q):
 def models_section(F, Y, Q):
     said("1936 年 9 月的牛津会议上", *there("ch33_islm", "1936 年 9 月的牛津"))
     said("介绍了他用约 12 个方程描述一战以后美国经济周期的尝试（\\chref{ch:islm}）",
-         *there("ch33_islm", "介绍了他用约 12 个方程描述战后美国经济周期的尝试"))
+         *there("ch33_islm", "介绍了他用约 12 个方程描述一战以后美国经济周期的尝试"))
     has("nbb_samuelson", "my dissertation under Paul Samuelson", "the Cowles Commission of the University of Chicago")
     has("nbb_reviving", "early attempts at econometric model building for the United States")
     a, b = F["kl_title"]
@@ -1929,7 +1929,7 @@ EVENTS = [("上一章的模型假定物价不动", "ch37_mundell", "本章的模
           ("\\chref{ch:islm}的 IS–LM 把货币工资当作给定（\\secref{sec:islm-legacy}）", "ch33_islm", "希克斯先把货币工资固定下来"),
           ("1936 年 9 月的牛津会议上", "ch33_islm", "1936 年 9 月的牛津"),
           ("介绍了他用约 12 个方程描述一战以后美国经济周期的尝试（\\chref{ch:islm}）", "ch33_islm",
-           "介绍了他用约 12 个方程描述战后美国经济周期的尝试"),
+           "介绍了他用约 12 个方程描述一战以后美国经济周期的尝试"),
           ("在物价追上来以前，增加的货币刺激了产业（\\secref{sec:bullion-hume}）", "ch19_bullion",
            "因为在物价追上来以前，增加的货币刺激了产业"),
           ("凯恩斯 1940 年用计划的支出与产能之差判断通胀的压力（式~\\eqref{eq:warfinance-gap}）", "ch34_warfinance",

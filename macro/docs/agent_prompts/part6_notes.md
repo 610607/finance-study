@@ -579,3 +579,147 @@ the story. Model chapters: zh/ch33_islm.tex and zh/ch37_mundell.tex.
   equations.
 - Labels: `sec:phillips-…`, `eq:phillips-…`, `fig:phillips_…`, `tab:phillips-…`, `ex:phillips-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 38
+- A document with parts by different authors is attributed part by part: the 1962 *Economic Report of
+  the President* is Kennedy's report (pp. iii–27, signed) and the Council of Economic Advisers' Annual
+  Report (from p. 31); each sentence goes to the author of the part it is on, by page, and the check
+  script tests the page. Documents are not the subjects of sentences ("报告说"): name the author.
+- Keep a source's mood: a conjecture ("It would seem plausible"), a rhetorical question, a figure
+  caption or a "this suggests … may have been" is not a finding; a hedge in the source stays in the
+  translation.
+- Check what a source actually correlated or measured, not only its title: Fisher's title says
+  unemployment, his computation uses an employment index (the Harvard Committee's, built from both).
+- A compare box states what each side claimed or assumed (the Cowles programme assumed autonomous
+  relations that hold in changed conditions), not what a later critique says it cannot do; the
+  critique is the later chapter's.
+- Relative time words are read at the document's date: "after the war" in a report of 1936 means
+  after the First World War ("一战以后").
+- An authority record's source note can give dates its heading lacks (Okun: LoC n50025079, Who Was Who
+  in America, vol. 7); record the note and its source as rows.
+- Rows read on page images are not checked by `verify_web_quotes.py`: the reviewer renders those
+  pages and checks each by eye.
+- Quoted text: NARRATIVE §7.1 sets an upper limit (at most 15% of the main text), not a lower one.
+
+## 第 39 章 `ch:consumption` 消费与投资理论 (`zh/ch39_consumption.tex`)
+
+A theory chapter, like Chapters 33, 37 and 38: the theories of consumption and investment are the
+spine; who built them, from what evidence, and how they were tested are the story. Model chapters:
+zh/ch33_islm.tex and zh/ch38_phillips.tex.
+
+- Neighbours:
+  - Ch 32 owns Keynes's consumption function and multiplier (`eq:generaltheory-cross`,
+    `ex:generaltheory-cross`, $C=a+cY$), the marginal efficiency of capital and "animal spirits"
+    (`sec:generaltheory-expectations`, Kuznets's investment figures `ex:generaltheory-kuznets`), and the
+    British counter-example (real consumption up 2.1% in 1929–32 while real GDP fell 5.3%,
+    `sec:generaltheory-check`, self-check 5: "要用别的原因解释"). Use its letters; explain the
+    counter-example with the new theories.
+  - Ch 33 owns the investment demand $I=I_0-bi$ in IS–LM; Ch 38 owns Klein's Model I, whose
+    consumption equation (0.80 of the wage bill, 0.02 and 0.23 of this year's and last year's profits)
+    and investment equation (profits and the capital stock) drive its multipliers and cycle; Ch 38 ends
+    with this chapter's question. Refer back in a clause.
+  - Ch 3 owns the Fisher relation, present values and bond prices (`eq:prices-fisher`); Ch 2 the
+    national accounts and the saving identity; Ch 25 Fisher's *Theory of Interest* (money illusion).
+    Use their notation for the real interest rate and discounting.
+  - Later chapters own: Ch 40 the saving rate in growth (Solow; its stub asks “长期增长为什么不能只靠多储蓄？”);
+    Ch 42 Japan's high growth and industrial policy; Ch 48 rational expectations (Muth 1961) and the
+    Lucas critique; Ch 50 Ricardian equivalence (Barro 1974); Ch 53 the Euler equation in real
+    business cycle models; Ch 58 Japan's bubble; Ch 65 financial frictions; Ch 68 fiscal multipliers;
+    Ch 71 heterogeneity, hand-to-mouth households and the MPC in HANK models; Ch 73 the transfers of
+    2020; Ch 79 ageing and the life-cycle model. Here each is at most a sentence with `\chref`.
+- Owns:
+  - the puzzle: Kuznets's long-run evidence that the share of income saved did not rise with income
+    over decades (NBER, if obtained: *Uses of National Income in Peace and War*, 1942, or *National
+    Product since 1869*, 1946), against the cross-section and short-run evidence that fits Keynes's
+    falling average propensity; how Friedman (1957) and Modigliani state the puzzle;
+  - the life-cycle hypothesis: Modigliani and Brumberg (1954) and Ando and Modigliani (1963), through
+    what can be obtained (Modigliani's Nobel lecture of 1985 on nobelprize.org, "Life Cycle, Individual
+    Thrift, and the Wealth of Nations"; anything else verified). Its key aggregate result: the saving
+    rate depends on the growth rate of income and the age structure, not on the level of income;
+  - the permanent-income hypothesis: Friedman (1957, *A Theory of the Consumption Function*, NBER, full
+    text on nber.org: NBER © notice, short quotations): permanent and transitory income, $c=kY_p$, how
+    he read the cross-section and time-series evidence, and what a transitory windfall should do;
+  - the Euler equation and Hall (1978, *JPE*; his NBER working paper 170 of 1977, if on nber.org):
+    intertemporal smoothing, the random walk under his assumptions, his test (lagged income does not
+    predict the change in consumption; what he found about stock prices). Rational expectations as
+    an assumption here, explained in a sentence; their theory is Ch 48's;
+  - investment: Jorgenson (1963, *AER* Papers and Proceedings, "Capital Theory and Investment
+    Behavior") and the user cost of capital; Hall and Jorgenson (1967, *AER*, "Tax Policy and
+    Investment Behavior") on the investment tax credit of 1962 (the credit itself from the Revenue Act
+    of 1962 and the *Economic Report of the President*, public domain); Tobin's $q$ (Tobin 1969, *JMCB*;
+    Brainard and Tobin 1968; Cowles Foundation papers on cowles.yale.edu, if the papers open there).
+    Hayashi (1982) on marginal and average $q$ in a sentence, if verified;
+  - the tests with one-off payments: the US tax rebate of 1975 (Modigliani and Steindel 1977, *BPEA*,
+    on brookings.edu, if obtained; Blinder 1981), the rebates of 2001 (Johnson, Parker and Souleles
+    2006, *AER*; NBER working paper) and the stimulus payments of 2008 (Parker, Souleles, Johnson and
+    McClelland 2013, *AER*; NBER working paper), Japan's shopping coupons of 1999 (Hsieh, Shimizutani
+    and Hori 2010, NBER working paper): what share of a payment was spent, on what, and how soon. The
+    transfers of 2020 are Ch 73's; heterogeneity of the MPC is Ch 71's (a sentence each).
+- Promises (FORWARD_REFS rows pointing to 39): from Ch 32 (the consumption function rewritten by the
+  permanent-income and life-cycle theories; the British counter-example of 1929–32) and Ch 38 (the
+  question; Model I's consumption and investment equations). Mark each done with the labels.
+- The case: Japan's high saving rate (the PLAN's case): the household saving rate from the national
+  accounts (Cabinet Office ESRI, www.esri.cao.go.jp answered on 2026-10-29: read its terms of use,
+  copy them verbatim; note the SNA basis and breaks in the series), its rise in the high-growth years
+  and its peak; the explanations and their disputes: the life-cycle model with fast growth and a young
+  population (Modigliani; Horioka's surveys, NBER or ESRI working papers, if obtained), measurement
+  (Hayashi 1986, *NBER Macroeconomics Annual*, "Why Is Japan's Saving Rate So Apparently High?", on
+  nber.org), bonuses, the cost of housing and land, the social security system, culture. The fall of
+  the rate with ageing gets one sentence pointing to Ch 79; the bubble to Ch 58.
+- When it begins: Ch 38 ends with the question. A candidate opening is a one-off payment and what
+  people did with it (the 1975 rebate, or Japan's coupons of 1999), or Friedman's or Modigliani's own
+  moment; choose what the documents support.
+- Teaching (`eq:consumption-…`, worked examples with teaching inputs or the sources' own numbers):
+  - the two-period budget constraint and the Euler equation (with Ch 3's discounting); the random
+    walk as a special case, with its assumptions stated;
+  - a one-off payment of a given size under three theories: Keynes's MPC (Ch 32's $c$), the
+    permanent-income rule (annuity value at interest rate $r$) and the life-cycle rule (spread over the
+    remaining years): how much is spent in the first year;
+  - the life-cycle saving pattern (work years, retirement years) and the aggregate saving rate with and
+    without growth of income: why faster growth raises the saving rate in the model (the Japanese
+    case);
+  - the user cost $c=p_K(r+\delta)$ (with taxes and the investment tax credit as an extension, if
+    Hall and Jorgenson are obtained), the desired capital stock with a Cobb–Douglas technology, and
+    investment as gradual adjustment; Tobin's $q$ as the ratio of market value to replacement cost and
+    what it implies for investment; the two related in a sentence (Hayashi 1982, if verified);
+  - an estimate from a rebate study read as an MPC: what the share spent says about the three
+    theories.
+- Compare boxes (the PLAN's candidates): 生命周期假说 vs 持久收入假说; 乔根森投资模型 vs 托宾 $q$. Every cell
+  must belong to the two theories compared, with the authors' own statements.
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - Do households smooth consumption as the theories say, or spend windfalls? Hall's random walk and
+    Friedman's transitory income against the rebate studies (and "excess sensitivity", Flavin 1981, in a
+    sentence if verified); liquidity constraints as the reconciliation offered by the rebate authors
+    themselves.
+  - Why was Japan's saving rate so high? Life cycle and growth against measurement and institutions
+    (Hayashi 1986; Horioka). Read what each actually concluded.
+  - What drives investment: the user cost and $q$, or cash flow and sales (the accelerator; Fazzari,
+    Hubbard and Petersen 1988, *BPEA*, on brookings.edu, against Kaplan and Zingales 1997, if obtained)?
+    One paragraph; financial frictions are Ch 65's.
+- Political character (write_template rule 5): who receives a one-off payment and who pays for it;
+  who gains from an investment tax credit; said plainly with the sources' own words where they exist
+  (the 1962 and 1975 reports and debates), without softening or inflating.
+- Data and sources (journal issues, dates and working-paper numbers in this list are leads, not
+  evidence: verify each; probed 2026-10-29: www.nber.org, cowles.yale.edu, web.stanford.edu,
+  www.nobelprize.org, www.esri.cao.go.jp, www.stat.go.jp, www.e-stat.go.jp, www.boj.or.jp,
+  www.imes.boj.or.jp, www.mof.go.jp, www.bea.gov, apps.bea.gov, www.federalreserve.gov,
+  www.brookings.edu, www.aeaweb.org, www.econstor.eu, ideas.repec.org, www.irs.gov, www.census.gov,
+  economics.mit.edu answered; www.ssa.gov and www.cbo.gov answered 403; www.econ.yale.edu did not
+  answer; www.jstor.org answers with a bot check: do not try it):
+  - NBER books and working papers on nber.org (Friedman 1957, Kuznets, Hayashi 1986, the rebate
+    papers): short quotations with the © notice exactly as printed;
+  - BEA NIPA tables (personal saving rate, consumption; public domain) and the Economic Report of the
+    President (govinfo or the American Presidency Project) for US series; do not use FRED or ALFRED;
+  - Japan: ESRI national accounts (household saving rate), Statistics Bureau family income and
+    expenditure surveys (www.stat.go.jp), with their terms copied verbatim; Bank of Japan data: credit
+    "Bank of Japan";
+  - the UK figures of Ch 32's counter-example from the BoE millennium workbook (cached under
+    ~/.cache/finance-study/boe; see data/SOURCES.md), if a figure is redrawn.
+- Figures: the three theories' responses to a one-off payment (teaching); the life-cycle profile of
+  income, consumption and wealth; Japan's household saving rate (and growth) from the national
+  accounts; optionally the user cost or $q$ against investment.
+- Ending: return to the opening and hand over Ch 40's question “长期增长为什么不能只靠多储蓄？” (read its
+  stub's guide box): the saving that this chapter explains is what Solow's model takes as given.
+- Labels: `sec:consumption-…`, `eq:consumption-…`, `fig:consumption_…`, `tab:consumption-…`,
+  `ex:consumption-…`.
+- Length: 8,000–9,000 characters of main text.
