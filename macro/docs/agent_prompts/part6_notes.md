@@ -442,3 +442,140 @@ what experience) and its tests are the story. Model chapter: zh/ch33_islm.tex.
 - A statistical compilation that takes its numbers from the same institution's publication (the
   *Historical Statistics of Canada* from the *Bank of Canada Review*) agrees with that institution's
   history but is not an independent witness.
+
+## 第 38 章 `ch:phillips` 菲利普斯曲线与宏观计量模型 (`zh/ch38_phillips.tex`)
+
+A theory chapter, like Chapters 33 and 37: the relation and the models are the spine, and how they
+were found (whose data, what method), how they were turned into policy and how they were tested are
+the story. Model chapters: zh/ch33_islm.tex and zh/ch37_mundell.tex.
+
+- Neighbours:
+  - Ch 19 (`sec:bullion-hume`): Hume's remark that added money stimulates industry before prices
+    catch up, and the sentence "货币在短期内不中性、在长期内中性，这个两分法后来贯穿了宏观经济学" that
+    points here. Refer back in a clause; the long-run half is Ch 44's.
+  - Ch 32 (`sec:generaltheory-legacy`, 教科书的凯恩斯) and Ch 33 (`sec:islm-legacy`: IS–LM takes the
+    money wage as given; 谁把它们找了回来 names this chapter and Ch 44; Modigliani 1944 known only from
+    his 1985 recollection; Tinbergen's twelve equations and Frisch at the Oxford meeting of 1937). Use
+    Ch 33's letters ($c$, $b$, $k$, $h$, $A$) if the model is extended; do not re-derive IS–LM.
+  - Ch 34 (`sec:warfinance-gap`, `eq:warfinance-gap`; 需求与产能的账 says "产出缺口与通胀的关系是本章的题目"):
+    the gap between planned spending and capacity becomes the output gap; keep that promise with the
+    output gap and its relation to unemployment and wages (Okun 1962, if obtained), not by retelling
+    1940.
+  - Ch 37 ends with this chapter's question: its model holds prices fixed, and Canada's quarrel of
+    1961 (unemployment doubled from 1956 to 1961, Coyne fearing inflation) is the example. Answer it.
+  - Ch 39 owns the consumption and investment theories (Modigliani–Brumberg 1954, Friedman 1957,
+    Jorgenson 1963, Tobin 1969): the large models' consumption and investment equations are described
+    here as equations, their theory is Ch 39's (the ending hands over its question).
+  - Ch 44 owns Phelps (1967) and Friedman (1968), the natural rate, the expectations-augmented curve,
+    the accelerationist hypothesis and the test of the 1970s; Ch 45 monetarism; Ch 47 supply shocks
+    and stagflation; Ch 48 rational expectations and the Lucas critique of macroeconometric models
+    (1976); Ch 54 the New Keynesian Phillips curve; Ch 74 the curve in the 2020s. Here each is at most a
+    sentence with `\chref`. Do not derive the expectations-augmented curve; Samuelson and Solow's own
+    warning about the longer run is this chapter's, the theory of the shift is Ch 44's.
+- Owns:
+  - Phillips (1958, *Economica*): his data (the money-wage-rate indexes and the unemployment figures
+    he used for 1861–1913, 1913–48 and 1948–57, and where each came from), his method (how he measured
+    the rate of change, how he averaged over intervals of unemployment, the curve he fitted and its
+    parameters, the loops and how he read them, the years he set aside and why) and his conclusions in
+    his own terms (the unemployment rate at which wages would be stable; the rate compatible with stable
+    prices given productivity growth). Read the paper itself; every number from it is checked against
+    the page.
+  - Phillips himself: the New Zealand engineer at the LSE, the hydraulic machine (MONIAC, 1949) in a
+    sentence or two if verified (the Science Museum Group's collection pages answered on 2026-10-29),
+    life dates from an authority file.
+  - Lipsey (1960, *Economica*): the theory behind the curve (wages respond to the excess demand for
+    labour, unemployment as its proxy), the loops, and the re-estimation with the rate of change of
+    unemployment and of prices: the step from a fitted regularity to a behavioural relation.
+  - Samuelson and Solow (1960, *AER* Papers and Proceedings, read at the meetings of December 1959): the
+    US data they plotted, the "menu" (verify the exact phrase and what it is a menu of), the two points
+    they named on their curve, and their own caveats (the curve may shift in the longer run; policy
+    that keeps demand low might change it). Copyright: short phrases only.
+  - The output gap: Okun (1962, "Potential GNP: Its Measurement and Significance"; a Cowles Foundation
+    reprint may be on cowles.yale.edu) and its rule of thumb relating unemployment to the gap (verify
+    the ratio and the period), and the Council of Economic Advisers' *Economic Report of the President*
+    of January 1962 (US government, public domain) with its unemployment target: the menu as an
+    official choice.
+  - Macroeconometric models: from Tinbergen (Ch 33's twelve equations; the League of Nations volumes of
+    1939, if obtained) through Haavelmo (1944) and the Cowles Commission's structural equations and the
+    identification problem (in a paragraph), to Klein and Goldberger (1955, *An Econometric Model of the
+    United States 1929–1952*): its size (count the equations and identities), its data (annual, which
+    years left out), its estimation method, its blocks (consumption, investment, the labour market —
+    check whether it has a wage-adjustment equation and how it relates to Phillips's), and what it was
+    used for (forecasts, multipliers; Adelman and Adelman 1959 in a sentence if obtained). Klein's
+    Model I (Klein 1950, Cowles Commission Monograph 11, 1921–41, three behavioural equations) is the
+    candidate for the teaching example if the monograph opens on cowles.yale.edu. Klein's Nobel prize
+    (1980; nobelprize.org answered) with its citation.
+- Promises (FORWARD_REFS rows pointing to 38): from Ch 19 (the short-run/long-run dichotomy), Ch 32
+  (the textbook Keynes joined to price adjustment), Ch 33 (IS–LM joined to wage and price adjustment;
+  Modigliani 1944), Ch 34 (the gap as the output gap and its relation to inflation) and Ch 37 (the menu
+  question; Canada 1961). Mark each done with the labels; where a row names Ch 44 too, say which half
+  this chapter kept.
+- When it begins: Ch 37 ends with the question. A candidate opening is the paper's own moment (Phillips
+  at the LSE, 1958, with a century of British figures on one page) or Samuelson and Solow at the
+  meetings of December 1959; choose what the documents support.
+- Teaching:
+  - the relation (`eq:phillips-…`): Phillips's fitted curve with his parameters; the step from wage
+    inflation to price inflation (price inflation ≈ wage inflation minus productivity growth, a
+    teaching approximation: say so); Okun's rule;
+  - worked examples with teaching inputs or the sources' own numbers: (1) read Phillips's curve: wage
+    change at two unemployment rates, and the rate at which wages are stable; (2) from his curve to the
+    unemployment rate compatible with stable prices, with his productivity figure; (3) the menu: a
+    choice between two points and what each costs whom; (4) a small macroeconometric model (Klein's
+    Model I or a three-equation teaching model built from Ch 33's IS): solve it, compute an impact and a
+    long-run multiplier, and show what "simulation" means;
+  - reproduce the curve: the UK scatter 1861–1913 with Phillips's fitted curve and the points of
+    1948–57, from Phillips's own table if it gives the numbers, otherwise from the BoE millennium
+    workbook (v3.1, already used by earlier chapters: name the sheets and the underlying sources the
+    workbook asks users to cite). Revised series are not Phillips's series: say which you plot and
+    show where they differ.
+- Compare box: 统计关系 vs 结构关系 (the PLAN's candidate): a fitted regularity (Phillips's curve over
+  1861–1913) against a behavioural equation with an identified cause (Lipsey's excess demand; the
+  Cowles structural equations). The question of what changes when policy changes is Ch 48's; one cell
+  or one sentence may point there. Every cell must belong to the two kinds compared.
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - Did the economists of the 1960s believe in a stable menu they could exploit? The usual story (in
+    Friedman's Nobel lecture of 1976, nobelprize.org, short phrases) against Samuelson and Solow's own
+    caveats and Forder (2014, *Macroeconomics and the Phillips Curve Myth*, OUP, if obtained: short
+    phrases). Read what each actually wrote.
+  - Can statistics test economic theories? Keynes's review of Tinbergen (*Economic Journal* 1939,
+    "Professor Tinbergen's Method"; Keynes is in the public domain in the UK, record the copy used) and
+    Tinbergen's reply (1940), if obtained; Haavelmo's answer in the probability approach.
+  - Who found the curve first? Fisher (1926, *International Labour Review*, "A Statistical Relation
+    between Unemployment and Price Changes"; the ILO library hosts back issues: check, and copy the
+    ILO's reproduction terms) and his 1973 reprint ("I Discovered the Phillips Curve", *JPE*), against
+    what Phillips measured (wages, not prices; a century, not a decade). One paragraph, if verified.
+- Political character (write_template rule 5): a point on the menu chooses who bears the cost, the
+  unemployed (which workers, if a source says) or those whose incomes are fixed in money; say it plainly
+  with the sources' own words where they exist (Samuelson and Solow's, the 1962 Report's). Britain's
+  "stop–go" and incomes policies of the 1960s at most in a sentence, verified (Hansard through
+  api.parliament.uk, Open Parliament Licence; hansard.parliament.uk answered 403 on 2026-10-29).
+- Data and sources (journal issues, page ranges and dates in this list are leads, not evidence: verify
+  each; probed 2026-10-29: www.bankofengland.co.uk, archive.org, fraser.stlouisfed.org (unstable),
+  www.govinfo.gov, www.presidency.ucsb.edu, www.nobelprize.org, www.ons.gov.uk, cowles.yale.edu,
+  elischolar.library.yale.edu, www.nber.org, www.aeaweb.org, eprints.lse.ac.uk, www.econlib.org,
+  collection.sciencemuseumgroup.org.uk, www.census.gov answered; onlinelibrary.wiley.com, www.bls.gov,
+  download.bls.gov, babel.hathitrust.org, hansard.parliament.uk and www.rbnz.govt.nz answered 403;
+  www.jstor.org answers with a bot check: do not retry it):
+  - Phillips (1958): Wiley is blocked and JSTOR has a bot check. A JSTOR-derived copy is on a
+    university course page (found by web search 2026-10-29: elearning.unito.it, "Phillips_Econ58.pdf");
+    read it to verify, cite the journal, record the copy used and its SHA-256, quote short phrases only
+    (Phillips d. 1975; in copyright). Lipsey (1960) and Samuelson–Solow (1960): look for comparable
+    copies; record each as not obtained if none opens.
+  - UK data: the BoE millennium workbook (cached under ~/.cache/finance-study/boe; see data/SOURCES.md
+    for the rows already using it and how they cite it).
+  - US data: BLS is blocked; use the Census Bureau's *Historical Statistics of the United States,
+    Colonial Times to 1970* (www.census.gov, public domain) or the Economic Report of the President's
+    statistical tables (govinfo or FRASER; FRASER is not FRED, but check its terms page before use).
+    Do not use FRED or ALFRED.
+  - Klein and Goldberger (1955): archive.org lists copies (identifiers such as
+    `econometricmodel0000klei`); they may be lending-only: if the text cannot be read, record it as
+    not obtained and describe the model only from what can be verified (Klein's Nobel lecture and
+    autobiography on nobelprize.org, a Cowles monograph or paper that describes it).
+- Figures: the UK curve (scatter and fitted curve, 1861–1913, with 1948–57 marked); the US menu
+  (Samuelson and Solow's two points against the US record of the 1950s and 1960s, ending in 1969: the
+  1970s are Ch 44's); optionally the small model's simulated path.
+- Ending: return to the opening and hand over Ch 39's question “政府一次性发钱，人们会花掉多少？企业凭什么决定投资？”
+  (read its stub's guide box): the big models' largest blocks were the consumption and investment
+  equations.
+- Labels: `sec:phillips-…`, `eq:phillips-…`, `fig:phillips_…`, `tab:phillips-…`, `ex:phillips-…`.
+- Length: 8,000–9,000 characters of main text.
