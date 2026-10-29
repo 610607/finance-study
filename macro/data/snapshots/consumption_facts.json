@@ -1,0 +1,429 @@
+{
+  "title": "Quotations for Chapter 39: Ford's address and the Tax Reduction Act of 1975, the Economic Report of the President of January 1962, Friedman's theory of the consumption function (1957), Kuznets (1942), the Nobel lectures of Modigliani and Tobin, Hall (1978), Hall and Jorgenson (1967), Modigliani and Steindel (1977), Blinder (1981), the studies of the rebates of 2001 and 2008, Fazzari, Hubbard and Petersen and Kaplan and Zingales on investment, Hayashi (1986) and Horioka (2024) on Japan's saving, ESRI's pages and terms, and life dates",
+  "source": "The American Presidency Project; govinfo.gov (Statutes at Large); Economic Report of the President 1962; National Bureau of Economic Research (Friedman 1957; Kuznets 1942; Hayashi 1986; working papers); NobelPrize.org (Modigliani 1985; Tobin 1981); Journal of Political Economy (Hall 1978; Blinder 1981); The American Economic Review (Hall and Jorgenson 1967); Brookings Papers on Economic Activity (Modigliani and Steindel 1977); 内閣府経済社会総合研究所; デジタル庁; Library of Congress; Deutsche Nationalbibliothek",
+  "url": "https://www.presidency.ucsb.edu/documents/address-the-nation-upon-signing-the-tax-reduction-act-1975",
+  "series": "quotations (column quote) with their page (column juan) and the numbers read from them (column value, ';'-separated, by the READINGS of checks/check_ch39.py); a row read on a page image has no quotation and its transcription between « and » in the note; column dynasty holds the country of the source",
+  "retrieved": "2026-10-29",
+  "license": "Works of the United States government, public domain: Ford's address of 29 March 1975 (the copy of The American Presidency Project, whose footer prints 'Copyright © The American Presidency Project' for the site: row ford_copyright), Public Law 94-12 (the scan of the Statutes at Large on govinfo.gov) and the Economic Report of the President of January 1962 (the copy of The American Presidency Project). National Bureau of Economic Research: Friedman (1957), whose copyright page prints 'Copyright 1957 by Princeton University Press' (row fr_copyright), Kuznets (1942) and Hayashi (1986), the NBER's PDFs of the volumes; the working papers of Johnson, Parker and Souleles (2004), Parker, Souleles, Johnson and McClelland (2011), Kaplan and Zingales (2000) and Horioka (2024) print their © notices (rows jps_copyright, pa_copyright, kz_copyright, ho_copyright): '©2004 by David S. Johnson, Jonathan A. Parker, and Nicholas S. Souleles. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' '© 2011 by Jonathan A. Parker, Nicholas S. Souleles, David S. Johnson, and Robert McClelland. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' '© 2000 by Steven N. Kaplan and Luigi Zingales. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' '© 2024 by Charles Yuji Horioka. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.'; Fazzari, Hubbard and Petersen (1987) prints none. Short quotations only, with the © notices exactly as printed in the bibliography; otherwise paraphrased with '% 据:' anchors. Articles in copyright, read to verify in copies the journals did not post (the address, the date and the SHA-256 of each copy are recorded in the notes; the copies are not committed; the journals are cited): Hall (1978, Journal of Political Economy; row ha_issue: '[Journal of Political Economy, 1978, vol. 86, no. 6] © 1978 by The University of Chicago. 0022-3808/78/8606-0005$01.44') and Hall and Jorgenson (1967, The American Economic Review), the scans on Hall's page at Stanford University; Blinder (1981, Journal of Political Economy), the reprint posted by the NBER as its Working Paper 283 (row bl_jpe: '[Journal of Political Economy, 1981, vol. 89, no. 1] © 1981 by The University of Chicago. 0022-3808/81/8901-0003$01.50'). Short phrases only, otherwise paraphrase. Brookings Papers on Economic Activity (Modigliani and Steindel 1977), the PDF on brookings.edu: the Brookings Institution's terms of use, read on 2026-10-29 at https://www.brookings.edu/terms-of-use/ (rows bt_licence, bt_commercial, bt_property): 'a limited, revocable, nonexclusive, nontransferable, and non-sublicensable license to access and make personal use of this site' 'This license does not include any resale or commercial use of this site or its contents' 'All content included on this site, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Brookings or its content suppliers and protected by all applicable proprietary rights laws.'. Short phrases only, in Chinese translation, otherwise paraphrase; the article cited. NobelPrize.org: Modigliani's lecture (row md_copyright): 'Copyright © The Nobel Foundation 1985 From Nobel Lectures , Economics 1981-1990 , Editor Karl-Göran Mäler, World Scientific Publishing Co., Singapore, 1992'; Tobin's lecture (row to_copyright): 'Copyright © The Nobel Foundation 1981 From Nobel Lectures , Economics 1981-1990 , Editor Karl-Göran Mäler, World Scientific Publishing Co., Singapore, 1992'. Short phrases only, the pages cited. 内閣府経済社会総合研究所 (Economic and Social Research Institute, Cabinet Office, Government of Japan), the tables of the Annual Report on National Accounts of 1998 (1990 base, 68SNA) and 2024 (2020 base, 2008SNA): ESRI's page of use (row esri_terms): '内閣府のホームページ全般にかかる御注意等については、内閣府ホームページ内の「このホームページについて」を御覧ください。'; the Cabinet Office's page (row cao_terms): '当ホームページ利用者の「内閣府ホームページ利用規約」を規定しています。コンテンツ利用に当たっては、本利用規約に同意したものとみなします。'; its terms of use (rows cao_rules, cao_rules_date): '当ウェブサイトで公開している情報(以下「コンテンツ」という。)の著作権は、特記されていない限り内閣府に帰属し、権利表記の記載がない限り公共データ利用規約(第1.0版)(デジタル庁) が適用されます。' '令和7年3月25日現在'; the Public Data License of the Digital Agency, version 1.0, read on 2026-10-29 at https://www.digital.go.jp/resources/open_data/public_data_license_v1.0 (rows pdl_commercial, pdl_numbers, pdl_source, pdl_example, pdl_edit, pdl_edit_example, pdl_notraw, pdl_ccby): '商用利用も可能です。' 'なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、これらについては本利用ルールの適用はなく、自由に利用できます。' '本コンテンツを利用する際は出典を記載してください。' '(出典記載例)出典:D庁ウェブサイト(当該ページのURL)、PDL1.0(規約原文ページのURL)' '本コンテンツを編集・加工等して利用する場合は、上記出典とは別に、編集・加工等を行ったこと及びその主体を記載してください。' '(本コンテンツを編集・加工等して利用する場合の記載例)「○○動向調査」(D庁)(当該ページのURL)を加工して作成' 'なお、編集・加工した情報を、あたかも国又は府省等(本コンテンツの提供者が地方公共団体等の公的機関の場合はその地方公共団体等の公的機関)が作成した未加工のままであるかのような態様で公表・利用してはいけません。' '本利用ルールは、クリエイティブ・コモンズ・ライセンスの表示4.0国際ライセンス に規定される著作権利用許諾条件(以下「CC BY」といいます。)と互換性があります。' The book credits the source in the bibliography and in the figure's caption, and says there that the book processed the tables (the two bases drawn as two series, the growth rates of real GDP read from the tables of growth rates). Robert E. Hall's page of selected papers (Stanford University): two lines of the list of publications, as facts of publication. Library of Congress Name Authority File: public data. Gemeinsame Normdatei (row gnd_licence): 'http://creativecommons.org/publicdomain/zero/1.0/'.",
+  "used_in": [
+    39
+  ],
+  "fetch": "data/fetch/consumption39.py",
+  "citation": "the works listed in the bibliography block of Chapter 39 (references_zh.tex)",
+  "notes": "Pages (column juan): Public Law 94-12 prints page N of volume 89 of the Statutes at Large on PDF page N-25; the Economic Report of the President 1962 page N on PDF page N+8 (the title page on PDF page 3, the Council's letter of transmittal, p. 31, on PDF page 39); Friedman (1957), the front matter (chapter c4402): the NBER's cover page PDF page 1, the series page PDF page 7, the title page PDF page 8, the copyright page PDF page 9, the preface pp. ix-x PDF pages 14-15; chapter I (c4403) page N on PDF page N+1; chapter III (c4405) page N on PDF page N-18; chapter IX (c4411) page N on PDF page N-218; Kuznets (1942) page N on PDF page N+1 (the NBER's cover page PDF page 1, the title page PDF page 2); Modigliani's lecture page N on PDF page N-149; Tobin's lecture page N on PDF page N-11; Hall (1978) page N on PDF page N-970; Hall and Jorgenson (1967) page N on PDF page N-390; Modigliani and Steindel (1977) page N on PDF page N-174; Blinder (1981) page N on PDF page N-25; Hayashi (1986) page N on PDF page N-145 (the NBER's cover page PDF page 1); the NBER working papers of 1987-2024 by PDF page; Horioka's Table S-1 on PDF pages 25-26, printed pp. 23-24; the web pages and the authority records have no pages. Copies of journal articles read on third-party sites (not committed): hall1978img https://web.stanford.edu/~rehall/Stochastic-JPE-Dec-1978.pdf (Hall's page at Stanford University) read on 2026-10-29, SHA-256 04876cfd8dfc42fd6b0834ed7df9a13643e9304d4f1c2d3756a182c38b31982e; hj1967img https://web.stanford.edu/~rehall/Tax-Policy-AER-June-1967.pdf (Hall's page at Stanford University) read on 2026-10-29, SHA-256 ce789b238827acb8ce54317761d68b23240e5d653c5f3c75617d5847220a4a21; blinder1981 https://www.nber.org/system/files/working_papers/w0283/w0283.pdf (the NBER's reprint of the Journal of Political Economy) read on 2026-10-29, SHA-256 bfdd5f41dce12212d2f5e17226ba4de975aeb1519cf928abf4f00116b0e86797. Rows read on page images (no quotation, the transcription between « and » in the note): Hall (1978) and Hall and Jorgenson (1967), whose scans have no usable text layer; Modigliani and Steindel (1977), whose text layer has no spaces between the words; Table 2 of Kuznets (1942), whose figures the text layer misreads; the headings of Public Law 94-12 that the text layer spaces out (pp. 27, 36, 66); Friedman's equations (2.6) to (3.3), Modigliani's Figures 1 and 2 and equations (1) to (3), Tobin's equation (3), which the text layers do not carry; the journal's line at the foot of Blinder's first page; Horioka's Table S-1, an image without a text layer. Misreadings of the text layers and misprints, each as printed in the quotation: 'IL' for 'II' (fr_postwar); 'use' for 'rise' (fr_rise); 'bow' for 'how' (fr_define); 'pro. portion' for 'proportion' (fr_keynes); 'FrancoModigliani' without a space (fr_fn12); '3 l/4' for 3¼ (md_numbers); 'lit' for 'fit' (md_lit); '4 l/3' for 4⅓ (md_three_pct); '[ 19631)' for '[1963])' (md_wealth_series); 'Pagers on Economics Activity' for 'Papers on Economic Activity' (md_ref_steindel); 'ol,served' for 'observed' (hy_accounting). The fractions are read by the rule 'lfrac' of checks/check_ch39.py. Disagreements between the sources: Modigliani's lecture cites 'Modigliani and Steindel [1971]' (md_steindel); its list of references gives the paper of 1977 (md_ref_steindel). Modigliani says the model predicted for the United States, at 3 per cent growth, a wealth-income ratio of 4⅓ and a saving rate of 13 per cent (md_three_pct), without the assumptions; the stripped-down model of the lecture with L = 50, M = 10 (md_delta) gives about 3.69 and 11.1 per cent at 3 per cent (checks/check_ch39.py). Horioka writes that the household saving rate exceeded 15 per cent only from 1961 to 1986 (ho_period); Horioka's Table S-1 has 14.9 in 1963 and 14.1 in 1967 (ho_t1_1963, ho_t1_1967). The note of Table S-1 gives the 2008SNA data the base year 2020 (ho_table_note), the note of Horioka's Figure 1 the base year 2015 (ho_fig_note); ESRI's tables of 2024 are on the 2020 base (esri2024_title). Modigliani and Steindel give the rebate paid out in the second quarter of 1975 as $8 billion, a $32 billion annual rate (ms_paid), and later call the rebate 'nearly $26 billion' (ms_26), without saying how it is counted. Kuznets's day of death: 8 July 1985 in the LoC record (loc_kuznets_died), 9 July 1985 in the GND (gnd_kuznets_died). Single witnesses: Kuznets's averages by decades (ku_t2_1879 to ku_t2_1929); Friedman's estimates of k, of the horizon and of the multiplier (fr_k_groups, fr_horizon, fr_kstar, fr_mult); Hall's regression and F statistics (ha_table1, ha_lags, ha_exclusion); Hall and Jorgenson's rentals and shares (hj_rental, hj_net, hj_gross); Modigliani and Steindel's Table 6 (ms_table6, ms_fourth); Blinder's estimates (bl_blend, bl_38); the estimates of the rebates of 2001 and 2008 (jps_spent, jps_twothirds, pa_spent). Japan's household saving rate has two witnesses, ESRI's tables (esri_household_saving_1955_2024) and Horioka's Table S-1, which cites them (ho_t1_1955 to ho_t1_2024, ho_table_note); they agree. Indirect testimony: Friedman quoting Keynes (fr_keynes); Modigliani on the essays with Brumberg (md_essays), on Reid (md_reid), on Brady and Friedman (md_brady) and on Ando and Modigliani (1963) (md_wealth_series); Hall and Jorgenson on Jorgenson's earlier work (hj_jorgenson); Tobin on Tobin and Brainard (1968) and Tobin (1969) (to_footnote); Modigliani and Steindel on Tobin and Dolde (ms_tobin_dolde); Kaplan and Zingales on Fazzari, Hubbard and Petersen (1999) (kz_admit, kz_empirical); the journal versions of Johnson, Parker and Souleles (2006) and of Fazzari, Hubbard and Petersen (1988) from the references of Parker et al. and of Kaplan and Zingales (pa_ref_jps, kz_ref_fhp). Not obtained: Modigliani and Brumberg (1954) and (1979); Ando and Modigliani (1963); Jorgenson (1963); Tobin (1969); Brainard and Tobin (1968); Hayashi (1982); Flavin (1981); Hsieh, Shimizutani and Hori (2010); Kaplan and Zingales (1997): only the scan of NBER Working Paper 5267 (September 1995), whose text layer is not readable; Fazzari, Hubbard and Petersen's response of January 1996, NBER Working Paper 5462, likewise; Fazzari, Hubbard and Petersen (1999), which Kaplan and Zingales answer. Life dates: Ford, Friedman, Keynes, Kuznets, Reid, Fisher, Kennedy, Tobin and Hall from the Library of Congress (loc_ford, loc_friedman, loc_keynes, loc_kuznets, loc_reid, loc_fisher, loc_kennedy, loc_tobin, loc_hall); the GND agrees where it has the years (gnd_ford_born, gnd_ford_died, gnd_kuznets_born, gnd_kuznets_died, gnd_reid_born, gnd_reid_died, gnd_tobin_born, gnd_tobin_died, gnd_hall_born). Modigliani: the LoC heading has no years, the record's source note gives the dates of birth and death (loc_modigliani_note), as the GND does (gnd_modigliani_born, gnd_modigliani_died). Jorgenson's year of death and Ando's year of birth from the GND only (gnd_jorgenson_died, gnd_ando_born); the LoC record of Ando has 'd. 2002' in a source note (loc_ando_note), as the GND has (gnd_ando_died). Steindel's year of birth from the LoC record's source note (loc_steindel_born). Brumberg: no record found in the LoC or the GND: '生卒年未详'.",
+  "sources": {
+    "ford1975": {
+      "url": "https://www.presidency.ucsb.edu/documents/address-the-nation-upon-signing-the-tax-reduction-act-1975",
+      "format": "html",
+      "sha256": "18acd2b4f5ec58d5a17e3f8a2906697e98ceab1bc21c99711b1d95620a00f15f",
+      "version": "Gerald R. Ford, Address to the Nation Upon Signing the Tax Reduction Act of 1975, March 29, 1975, The American Presidency Project, University of California, Santa Barbara (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "pl9412": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-89/pdf/STATUTE-89-Pg26.pdf",
+      "format": "pdf",
+      "sha256": "f844a10cf7b81ddd9d803ca583eef56f3942cc10f05cfbb6e6eae7900bb5cb5d",
+      "version": "Public Law 94-12, the Tax Reduction Act of 1975, March 29, 1975, United States Statutes at Large, vol. 89, pp. 26-67, the scan with its text layer on govinfo.gov (printed page = PDF page + 25)",
+      "retrieved": "2026-10-29"
+    },
+    "pl9412img": {
+      "url": "https://www.govinfo.gov/content/pkg/STATUTE-89/pdf/STATUTE-89-Pg26.pdf",
+      "format": "image",
+      "sha256": "f844a10cf7b81ddd9d803ca583eef56f3942cc10f05cfbb6e6eae7900bb5cb5d",
+      "version": "The same scan, read on images of PDF pages 2, 11 and 41 (89 Stat. 27, 36 and 66) rendered with pdftoppm, where the text layer spaces the letters of the headings",
+      "retrieved": "2026-10-29"
+    },
+    "erp1962": {
+      "url": "https://presidency.ucsb.edu/sites/default/files/books/presidential-documents-archive-guidebook/the-economic-report-of-the-president-truman-1947-obama-2017/1962.pdf",
+      "format": "pdf",
+      "sha256": "461362331fe6c0a1b85dee406b147a2fd16d6ad6632483c34bb7c6aae7409adf",
+      "version": "Economic Report of the President, Transmitted to the Congress January 1962, together with the Annual Report of the Council of Economic Advisers (Washington: GPO, 1962), the PDF of The American Presidency Project, University of California, Santa Barbara (printed page = PDF page - 8; the letter of transmittal, p. iii = PDF p. 5)",
+      "retrieved": "2026-10-29"
+    },
+    "friedman1957a": {
+      "url": "https://www.nber.org/system/files/chapters/c4402/c4402.pdf",
+      "format": "pdf",
+      "sha256": "ababa5b70af9c694e72f66a4c5c5bcbb51f78d2a416b1a02ac11fc8d025ef658",
+      "version": "Milton Friedman, A Theory of the Consumption Function (Princeton: Princeton University Press for the National Bureau of Economic Research, 1957; General Series 63), the NBER's PDF of the front matter (chapter c4402): the PDF of the National Bureau of Economic Research, whose first page is the NBER's cover page of an out-of-print volume; the scan of the Indian edition of 1970 (PDF p. 9 the copyright page; the preface, pp. ix-x = PDF pp. 14-15)",
+      "retrieved": "2026-10-29"
+    },
+    "friedman1957b": {
+      "url": "https://www.nber.org/system/files/chapters/c4403/c4403.pdf",
+      "format": "pdf",
+      "sha256": "ddeb7e52b34d9b87585ef54fca20ca1552ea7e6fa1cc8f78ce1d04490a99ffd6",
+      "version": "Milton Friedman, A Theory of the Consumption Function (Princeton: Princeton University Press for the National Bureau of Economic Research, 1957; General Series 63), the NBER's PDF of chapter I, Introduction (c4403; printed page = PDF page - 1)",
+      "retrieved": "2026-10-29"
+    },
+    "friedman1957c": {
+      "url": "https://www.nber.org/system/files/chapters/c4405/c4405.pdf",
+      "format": "pdf",
+      "sha256": "418d026e0e5355568085fb4acf23ad86ef1020743216b05c388d1ec887a4ab03",
+      "version": "Milton Friedman, A Theory of the Consumption Function (Princeton: Princeton University Press for the National Bureau of Economic Research, 1957; General Series 63), the NBER's PDF of chapter III, The Permanent Income Hypothesis (c4405; printed page = PDF page + 18)",
+      "retrieved": "2026-10-29"
+    },
+    "friedman1957img": {
+      "url": "https://www.nber.org/system/files/chapters/c4405/c4405.pdf",
+      "format": "image",
+      "sha256": "418d026e0e5355568085fb4acf23ad86ef1020743216b05c388d1ec887a4ab03",
+      "version": "The same PDF of chapter III, read on the image of PDF page 8 (p. 26) rendered with pdftoppm: the equations (2.6), (3.1), (3.2) and (3.3), which the text layer does not carry",
+      "retrieved": "2026-10-29"
+    },
+    "friedman1957d": {
+      "url": "https://www.nber.org/system/files/chapters/c4411/c4411.pdf",
+      "format": "pdf",
+      "sha256": "0adaa32599df59e4f1a995974236eb1db2dbce83c8bd64aa7a32cfa449a0f1df",
+      "version": "Milton Friedman, A Theory of the Consumption Function (Princeton: Princeton University Press for the National Bureau of Economic Research, 1957; General Series 63), the NBER's PDF of chapter IX, Summary and Conclusion (c4411; printed page = PDF page + 218)",
+      "retrieved": "2026-10-29"
+    },
+    "kuznets1942": {
+      "url": "https://www.nber.org/system/files/chapters/c9339/c9339.pdf",
+      "format": "pdf",
+      "sha256": "dde0c7e27ce6060d19899cb88e77ef292bc6490862f6dcdba238ef0e7ea201f2",
+      "version": "Simon Kuznets, Uses of National Income in Peace and War, Occasional Paper 6 (New York: National Bureau of Economic Research, March 1942), the PDF of the National Bureau of Economic Research, whose first page is the NBER's cover page of an out-of-print volume (printed page = PDF page - 1)",
+      "retrieved": "2026-10-29"
+    },
+    "kuznets1942img": {
+      "url": "https://www.nber.org/system/files/chapters/c9339/c9339.pdf",
+      "format": "image",
+      "sha256": "dde0c7e27ce6060d19899cb88e77ef292bc6490862f6dcdba238ef0e7ea201f2",
+      "version": "The same PDF, Table 2 read on the image of PDF page 32 (p. 31) rendered with pdftoppm at 300 dpi, where the text layer misreads many figures",
+      "retrieved": "2026-10-29"
+    },
+    "modigliani1985": {
+      "url": "https://www.nobelprize.org/uploads/2018/06/modigliani-lecture.pdf",
+      "format": "pdf",
+      "sha256": "20dfc67237b8d413ff51e623a6610dfcf123868a32941ff6387cf2d6a3e68f05",
+      "version": "Franco Modigliani, 'Life Cycle, Individual Thrift and the Wealth of Nations', Nobel Memorial Lecture, 9 December 1985, the PDF of NobelPrize.org (Nobel Lectures, Economics 1981-1990, World Scientific, 1992; printed page = PDF page + 149)",
+      "retrieved": "2026-10-29"
+    },
+    "modigliani1985img": {
+      "url": "https://www.nobelprize.org/uploads/2018/06/modigliani-lecture.pdf",
+      "format": "image",
+      "sha256": "20dfc67237b8d413ff51e623a6610dfcf123868a32941ff6387cf2d6a3e68f05",
+      "version": "The same PDF, read on the images of PDF pages 6-8 (pp. 155-157) rendered with pdftoppm: Figures 1 and 2 and the equations (1)-(3)",
+      "retrieved": "2026-10-29"
+    },
+    "nobel_mod39": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1985/modigliani/lecture/",
+      "format": "html",
+      "sha256": "0efd4c4ccb25409ace7e0f67f8e058e4e22a345294a2dc040aa73c59611a6ff8",
+      "version": "NobelPrize.org, Franco Modigliani, Prize lecture (web page, with the copyright notice of the lecture)",
+      "retrieved": "2026-10-29"
+    },
+    "hall1978img": {
+      "url": "https://web.stanford.edu/~rehall/Stochastic-JPE-Dec-1978.pdf",
+      "format": "image",
+      "sha256": "04876cfd8dfc42fd6b0834ed7df9a13643e9304d4f1c2d3756a182c38b31982e",
+      "version": "Robert E. Hall, 'Stochastic Implications of the Life Cycle-Permanent Income Hypothesis: Theory and Evidence', Journal of Political Economy 86 (6), December 1978, pp. 971-987: the scan on Hall's page at Stanford University, whose text layer is not usable, read on images of PDF pages 1-15 rendered with pdftoppm (printed page = PDF page + 970); read to verify, not committed",
+      "retrieved": "2026-10-29"
+    },
+    "hj1967img": {
+      "url": "https://web.stanford.edu/~rehall/Tax-Policy-AER-June-1967.pdf",
+      "format": "image",
+      "sha256": "ce789b238827acb8ce54317761d68b23240e5d653c5f3c75617d5847220a4a21",
+      "version": "Robert E. Hall and Dale W. Jorgenson, 'Tax Policy and Investment Behavior', The American Economic Review 57 (3), June 1967, pp. 391-414: the scan on Hall's page at Stanford University, whose text layer is not usable, read on images of PDF pages 1-20 rendered with pdftoppm (printed page = PDF page + 390); read to verify, not committed",
+      "retrieved": "2026-10-29"
+    },
+    "hall_pubs39": {
+      "url": "https://rehall.people.stanford.edu/all-publications/selected-published-papers",
+      "format": "html",
+      "sha256": "18ca1649237b50fc5f1e8dc21d63e9dc2ca9641f7a541d57511319e99a0924ed",
+      "version": "Robert E. Hall, Selected published papers (his web page at Stanford University)",
+      "retrieved": "2026-10-29"
+    },
+    "tobin1981": {
+      "url": "https://www.nobelprize.org/uploads/2018/06/tobin-lecture.pdf",
+      "format": "pdf",
+      "sha256": "1e2420a4280d1254354119f4a4fb6cdc22f960a0f5cef631b85977bd2b4e7914",
+      "version": "James Tobin, 'Money and Finance in the Macro-Economic Process', Nobel Memorial Lecture, 8 December 1981, the PDF of NobelPrize.org (Nobel Lectures, Economics 1981-1990, World Scientific, 1992; printed page = PDF page + 11)",
+      "retrieved": "2026-10-29"
+    },
+    "tobin1981img": {
+      "url": "https://www.nobelprize.org/uploads/2018/06/tobin-lecture.pdf",
+      "format": "image",
+      "sha256": "1e2420a4280d1254354119f4a4fb6cdc22f960a0f5cef631b85977bd2b4e7914",
+      "version": "The same PDF, equation (3) read on the image of PDF page 10 (p. 21) rendered with pdftoppm",
+      "retrieved": "2026-10-29"
+    },
+    "nobel_tob39": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1981/tobin/lecture/",
+      "format": "html",
+      "sha256": "d649d773476f34888ba5d69899b7a45705981ee400fed07f47796970d6df5a16",
+      "version": "NobelPrize.org, James Tobin, Prize lecture (web page, with the copyright notice of the lecture)",
+      "retrieved": "2026-10-29"
+    },
+    "ms1977img": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1977/01/1977a_bpea_modigliani_steindel_hymans_juster.pdf",
+      "format": "image",
+      "sha256": "b3f70ce376fd72c1fabba2887d305b342b49e537b51f01c99cb1a05148db1075",
+      "version": "Franco Modigliani and Charles Steindel, 'Is a Tax Rebate an Effective Tool for Stabilization Policy?', Brookings Papers on Economic Activity 1977 (1), pp. 175-209 (with the discussion), the PDF on brookings.edu, whose text layer has no spaces between the words, read on images of PDF pages 1-5 and 24-27 (pp. 175-179 and 198-201) rendered with pdftoppm (printed page = PDF page + 174)",
+      "retrieved": "2026-10-29"
+    },
+    "bpea_ms39": {
+      "url": "https://www.brookings.edu/articles/is-a-tax-rebate-an-effective-tool-for-stabilization-policy/",
+      "format": "html",
+      "sha256": "188aebfedf3e7835ce91b7ffc5a5f1ecb1b52e1c5aac4560aaea911c27f94590",
+      "version": "Brookings Institution, the page of the article (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "brookings_terms39": {
+      "url": "https://www.brookings.edu/terms-of-use/",
+      "format": "html",
+      "sha256": "431474a2d0db1720fdccf769a3762fbdff8659026ca95c970eadf3b81fd4f9c9",
+      "version": "Brookings Institution, Terms of Use (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "blinder1981": {
+      "url": "https://www.nber.org/system/files/working_papers/w0283/w0283.pdf",
+      "format": "pdf",
+      "sha256": "bfdd5f41dce12212d2f5e17226ba4de975aeb1519cf928abf4f00116b0e86797",
+      "version": "Alan S. Blinder, 'Temporary Income Taxes and Consumer Spending', Journal of Political Economy 89 (1), February 1981, pp. 26-53: the reprint that the NBER posts as its working paper 283 (printed page = PDF page + 25)",
+      "retrieved": "2026-10-29"
+    },
+    "blinder1981img": {
+      "url": "https://www.nber.org/system/files/working_papers/w0283/w0283.pdf",
+      "format": "image",
+      "sha256": "bfdd5f41dce12212d2f5e17226ba4de975aeb1519cf928abf4f00116b0e86797",
+      "version": "The same PDF, the journal's line at the foot of PDF page 1 (p. 26), which the text layer misreads, read on the image rendered with pdftoppm",
+      "retrieved": "2026-10-29"
+    },
+    "jps2004": {
+      "url": "https://www.nber.org/system/files/working_papers/w10784/w10784.pdf",
+      "format": "pdf",
+      "sha256": "583262e2bcb3ed159a321feb3629c388557b7a2e8bfe769a26922be5015fceea",
+      "version": "David S. Johnson, Jonathan A. Parker and Nicholas S. Souleles, 'Household Expenditure and the Income Tax Rebates of 2001', NBER Working Paper 10784, September 2004 (pages: PDF pages)",
+      "retrieved": "2026-10-29"
+    },
+    "parker2011": {
+      "url": "https://www.nber.org/system/files/working_papers/w16684/w16684.pdf",
+      "format": "pdf",
+      "sha256": "19abc59a29749c2607aee8747fa7b27c0e374d3f8c78130ac520d1e693a31560",
+      "version": "Jonathan A. Parker, Nicholas S. Souleles, David S. Johnson and Robert McClelland, 'Consumer Spending and the Economic Stimulus Payments of 2008', NBER Working Paper 16684, January 2011, revised March 2013 (pages: PDF pages)",
+      "retrieved": "2026-10-29"
+    },
+    "fhp1987": {
+      "url": "https://www.nber.org/system/files/working_papers/w2387/w2387.pdf",
+      "format": "pdf",
+      "sha256": "0c401597557bacb2a5d9f306ab6e1f5d9dbc64ab217e7aa8457fa12409deef00",
+      "version": "Steven Fazzari, R. Glenn Hubbard and Bruce C. Petersen, 'Financing Constraints and Corporate Investment', NBER Working Paper 2387, September 1987 (pages: PDF pages)",
+      "retrieved": "2026-10-29"
+    },
+    "kz2000": {
+      "url": "https://www.nber.org/system/files/working_papers/w7659/w7659.pdf",
+      "format": "pdf",
+      "sha256": "f2b1f8990dd4436225ee90ee20c2696d6ca6e61fb31d4e54e24d1a1a0891a421",
+      "version": "Steven N. Kaplan and Luigi Zingales, 'Investment-Cash Flow Sensitivities are not Valid Measures of Financing Constraints', NBER Working Paper 7659, April 2000 (pages: PDF pages)",
+      "retrieved": "2026-10-29"
+    },
+    "hayashi1986": {
+      "url": "https://www.nber.org/system/files/chapters/c4247/c4247.pdf",
+      "format": "pdf",
+      "sha256": "0ebf960df0666e667f86bff87e5d501ed5a8db93e38d20964f26f7ea3ca8dccf",
+      "version": "Fumio Hayashi, 'Why Is Japan's Saving Rate So Apparently High?', in Stanley Fischer (ed.), NBER Macroeconomics Annual 1986, vol. 1 (Cambridge, MA: MIT Press, 1986), pp. 147-234 (with the comments and the discussion), the PDF of the National Bureau of Economic Research, whose first page is the NBER's cover page of an out-of-print volume (printed page = PDF page + 145)",
+      "retrieved": "2026-10-29"
+    },
+    "horioka2024": {
+      "url": "https://www.nber.org/system/files/working_papers/w33181/w33181.pdf",
+      "format": "pdf",
+      "sha256": "38dd987f182f2274a67e0accd447fee0f5aad5abc46ff7b14077901d2ce765b5",
+      "version": "Charles Yuji Horioka, 'Household Saving in Japan: The Past, Present, and Future', NBER Working Paper 33181, November 2024, revised January 2026 (pages: PDF pages)",
+      "retrieved": "2026-10-29"
+    },
+    "horioka2024img": {
+      "url": "https://www.nber.org/system/files/working_papers/w33181/w33181.pdf",
+      "format": "image",
+      "sha256": "38dd987f182f2274a67e0accd447fee0f5aad5abc46ff7b14077901d2ce765b5",
+      "version": "The same PDF, Table S-1 read on the images of PDF pages 25-26 (pp. 23-24) rendered with pdftoppm: the table is an image without a text layer",
+      "retrieved": "2026-10-29"
+    },
+    "esri_h10": {
+      "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/kakuhou/files/h10/12annual_report_j.html",
+      "format": "html",
+      "sha256": "90ee852e87bf6f9a57f47fd9b762cd0c7687a17ba7517b4fa20bd8c6ac1d76a7",
+      "version": "内閣府経済社会総合研究所, 1998年度国民経済計算（1990基準・68SNA）, the page of the tables (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "esri2024": {
+      "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/kakuhou/files/2024/2024_kaku_top.html",
+      "format": "html",
+      "sha256": "b750318661744a7f5d28e3ea9d7bd1b483769dbabe4bd7c3faa599c31788a46f",
+      "version": "内閣府経済社会総合研究所, 2024年度国民経済計算（2020年基準・2008SNA）, the page of the tables (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "esri_goriyou39": {
+      "url": "https://www.esri.cao.go.jp/jp/goriyou.html",
+      "format": "html",
+      "sha256": "1b914ee859ed239403c72b73a18f9bcc13f96a8534709dcefe1726c0e37f6a1c",
+      "version": "内閣府経済社会総合研究所, ご利用について (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "cao_notice39": {
+      "url": "https://www.cao.go.jp/notice.html",
+      "format": "html",
+      "sha256": "9637feed96f8839afbbe8ce25ee89ddf8db4789d1203dacf6c8cb590663ea17c",
+      "version": "内閣府, このホームページについて (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "cao_rules39": {
+      "url": "https://www.cao.go.jp/notice/rule.html",
+      "format": "html",
+      "sha256": "1b544b04c32a7c58494715c21841efd909a2dd9f386d1a10900f9d6d36c49b85",
+      "version": "内閣府, 内閣府ホームページ利用規約 (web page, 令和7年3月25日現在)",
+      "retrieved": "2026-10-29"
+    },
+    "digital_pdl39": {
+      "url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+      "format": "html",
+      "sha256": "5dfa0593108fe86b2d896002eb00e68721c1d8e34a68695903e14481820ca2ca",
+      "version": "デジタル庁, 公共データ利用規約（第1.0版） (web page)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_ando39": {
+      "url": "https://id.loc.gov/authorities/names/n84039092.madsrdf.json",
+      "format": "json",
+      "sha256": "f85436e043b4f801c6b171992e1183fe7d51978a227f63f26b0e8d6c469be175",
+      "version": "Library of Congress Name Authority File, record n84039092 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_fisher39": {
+      "url": "https://id.loc.gov/authorities/names/n50005294.madsrdf.json",
+      "format": "json",
+      "sha256": "be10dd7e18d478e81272dae97b6ef3f77d9dfe16fe27cd6abcf7f080f2fb065b",
+      "version": "Library of Congress Name Authority File, record n50005294 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_ford39": {
+      "url": "https://id.loc.gov/authorities/names/n79022087.madsrdf.json",
+      "format": "json",
+      "sha256": "f5e21e112aad62ff6427239f767e23724496b93bc3a8be96acebf15a639161ce",
+      "version": "Library of Congress Name Authority File, record n79022087 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_friedman39": {
+      "url": "https://id.loc.gov/authorities/names/n79117948.madsrdf.json",
+      "format": "json",
+      "sha256": "1157d1076598fad29c980bca0c15dd1b825b897e85150438ac9b920c1e60c4c5",
+      "version": "Library of Congress Name Authority File, record n79117948 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_hall39": {
+      "url": "https://id.loc.gov/authorities/names/n79096513.madsrdf.json",
+      "format": "json",
+      "sha256": "89fdcb6d49a329deaaa253d5150c66c87077da664921df7c289b8bf17a0b8255",
+      "version": "Library of Congress Name Authority File, record n79096513 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_jorgenson39": {
+      "url": "https://id.loc.gov/authorities/names/n50038429.madsrdf.json",
+      "format": "json",
+      "sha256": "f99a6650a8bcc209252ffad3dde57d507be98c73c8cc1e10a38fdf0e80f5dfb4",
+      "version": "Library of Congress Name Authority File, record n50038429 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_kennedy39": {
+      "url": "https://id.loc.gov/authorities/names/n79055297.madsrdf.json",
+      "format": "json",
+      "sha256": "c0940906a52f104ab0d7919fdf10c878b1871644bc87f2f390ffe46742754cec",
+      "version": "Library of Congress Name Authority File, record n79055297 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_keynes39": {
+      "url": "https://id.loc.gov/authorities/names/n79004113.madsrdf.json",
+      "format": "json",
+      "sha256": "3de9317d7744e4841b05b5b15630089ccd3d8ad52979cea130cb63e7ed05a9a7",
+      "version": "Library of Congress Name Authority File, record n79004113 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_kuznets39": {
+      "url": "https://id.loc.gov/authorities/names/n79099294.madsrdf.json",
+      "format": "json",
+      "sha256": "b314cf1986661e963fba21facf2893fea0cc39855b215a3e43ac1a5ba97eb641",
+      "version": "Library of Congress Name Authority File, record n79099294 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_modigliani39": {
+      "url": "https://id.loc.gov/authorities/names/n78090530.madsrdf.json",
+      "format": "json",
+      "sha256": "1aeec4b6d6a15eb7b5e8ffc68e64901b6e11cd4c266d0138af3ddb2fe353d282",
+      "version": "Library of Congress Name Authority File, record n78090530 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_reid39": {
+      "url": "https://id.loc.gov/authorities/names/n88623679.madsrdf.json",
+      "format": "json",
+      "sha256": "d3c07090f5d9c0e16cd55fb04c85ab7ec559333643c5153bbf7dc2eaed239635",
+      "version": "Library of Congress Name Authority File, record n88623679 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_steindel39": {
+      "url": "https://id.loc.gov/authorities/names/no95017023.madsrdf.json",
+      "format": "json",
+      "sha256": "9c2b24b4b8b9e5206a69dba6d528a98f7022f667b504025ea3483deb211f8b84",
+      "version": "Library of Congress Name Authority File, record no95017023 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "loc_tobin39": {
+      "url": "https://id.loc.gov/authorities/names/n50013841.madsrdf.json",
+      "format": "json",
+      "sha256": "6d51c3e8a187285d349788de84acc8faaf819962fc5a43b8d9ee4d928e7ac56d",
+      "version": "Library of Congress Name Authority File, record n50013841 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_ando39": {
+      "url": "https://lobid.org/gnd/132773058.json",
+      "format": "json",
+      "sha256": "1581fe64120f0da8d59fc6e0dd1df3824ffb419d336e57bac5e34c160160cfb7",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 132773058 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_ford39": {
+      "url": "https://lobid.org/gnd/118534297.json",
+      "format": "json",
+      "sha256": "c5f80af02d9cced6e1e5d16c6973e7b1c02306858a267710ebde891170a0e4b2",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118534297 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_hall39": {
+      "url": "https://lobid.org/gnd/120536064.json",
+      "format": "json",
+      "sha256": "3fccc37eb482ca45e4d78eff80ba70918b6e7d318127964b4782927119a7c640",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 120536064 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_jorgenson39": {
+      "url": "https://lobid.org/gnd/12301560X.json",
+      "format": "json",
+      "sha256": "29273a30a74399b3f0adfad228e3638fc693a13360803cd7b1b00e3d8f631b72",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 12301560X (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_kuznets39": {
+      "url": "https://lobid.org/gnd/118931067.json",
+      "format": "json",
+      "sha256": "c4d8dbec85a0fc2610b9fb6d12effe811f6a1e30e628f3ba5728e53408ca8965",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118931067 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_modigliani39": {
+      "url": "https://lobid.org/gnd/121179613.json",
+      "format": "json",
+      "sha256": "abb6a4080783ecb0958472ff99b0976b0d2235d1df0510bd1173920d160a9d0b",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 121179613 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_reid39": {
+      "url": "https://lobid.org/gnd/170579697.json",
+      "format": "json",
+      "sha256": "b2ec8fc5f95920bb3dfcb1d9b3dae69ce4d5ceb8b1fd4951ebf081b2b96534b3",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 170579697 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    },
+    "gnd_tobin39": {
+      "url": "https://lobid.org/gnd/118623036.json",
+      "format": "json",
+      "sha256": "55163a5ce081cfa7759833bca989ef2ff7cdeb7c81d038fcd7da93711bfd19d8",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118623036 (JSON from lobid.org)",
+      "retrieved": "2026-10-29"
+    }
+  }
+}

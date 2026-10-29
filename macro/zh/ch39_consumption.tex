@@ -1,15 +1,356 @@
-% 第 39 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 39 章”，写法见 docs/STYLE.md。
+% 第 39 章。数字与教学模型：checks/check_ch39.py；图：figsrc/fig_ch39.py。
+% 史料：consumption_facts（取数脚本 data/fetch/consumption39.py）；日本的家庭储蓄率与实际增长率：esri_household_saving_1955_2024（同一脚本）。
 \chapter{消费与投资理论}\label{ch:consumption}
 
 \begin{chapterguide}
 \guidequestion{政府一次性发钱，人们会花掉多少？企业凭什么决定投资？}
 \begin{guidegoals}
-\item 比较凯恩斯消费函数、生命周期假说（1954）与持久收入假说（1957）的预测；
+\item 比较凯恩斯消费函数、生命周期假说与永久收入假说对一次性收入的预测；
 \item 用欧拉方程说明跨期消费平滑，以及霍尔（1978）的随机游走含义；
-\item 推导乔根森的新古典投资模型（1963）与托宾 $q$（1969）；
-\item 用退税与一次性转移支付的实证研究检验这些理论。
+\item 推导资本的使用成本与霍尔—乔根森（1967）的投资模型，说明托宾的 $q$；
+\item 用退税与一次性补助的实证研究检验这些理论。
 \end{guidegoals}
 \guideprereq{\chref{ch:generaltheory}\enspace\nameref{ch:generaltheory}；\chref{ch:prices}\enspace\nameref{ch:prices}}
 \end{chapterguide}
 
-\chapterstub
+1975 年 3 月 29 日晚上 7 点半刚过，福特（Gerald R. Ford，1913—2006）在白宫椭圆形办公室发表了一篇电台与电视直播的讲话\cite{ford1975,loc39}。讲话中间，他签署了国会送来的 H.R. 2166，即《1975 年减税法》\cite{ford1975,pl9412}。他说，11 周以前，他请新国会先通过一项简单的减税，把联邦所得税减少 160 亿美元\cite{ford1975}。他要的是给 1974 年的个人纳税人一次性退税，每人最多 1,000 美元，“足以帮助购买新汽车、家用电器或其他改善”\cite{ford1975}。他还要更大的投资抵免，鼓励“所有商人和农民”扩张、多雇人\cite{ford1975}。他说，就业那时和现在都是他最关心的事，帮失业的人回去工作，最好的办法是用暂时的税收刺激给自由企业制度充电，而不靠永远停不下来的政府救济与以工代赈\cite{ford1975}。
+% 据: ford_time, ford_broadcast, ford_signed, ford_note_law, ford_request, ford_refund, ford_credits, ford_jobs, ford_temporary, pl_title, loc_ford, gnd_ford, gnd_ford_born, gnd_ford_died
+
+国会给的与他要的不一样。福特说，减税总额 230 亿美元，介于他 1 月提出的 160 亿与参议院通过的 320 亿之间\cite{ford1975}。他说，这个数还在合理的范围之内\cite{ford1975}。按这项法律，每人退还 1974 年所得税的 10\%\cite{pl9412}。退款不少于 100 美元，税额不到 100 美元的就全部退还，退款至多 200 美元\cite{pl9412}。调整后总收入超过 2 万美元的人，退款按超出的部分递减，到 3 万美元减回最低额（本书的计算）\cite{pl9412}。1975 年 3 月领取社会保障、铁路退休金或补充保障收入的人，每人另得 50 美元，领几种也只得一份\cite{pl9412}。企业的投资抵免一般是 7\%\cite{pl9412}。1975 年 1 月 21 日以后到 1977 年以前购置或建造的资产，抵免提到 10\%\cite{pl9412}。
+% 据: ford_compromise, ford_within, pl_rebate, pl_min, pl_max, pl_excess, pl_phase, pl_50, pl_50once, pl_credit10, pl_credit7, pl_transition
+
+钱发给谁、由谁来付，国会写进了法律，福特也在讲话里说了。退税按 1974 年交的所得税算，那一年不交所得税的人拿不到，靠福利过活的人只拿到那 50 美元（本书的解读）。在福特看来，这项法案没有给“数以百万计的中等收入纳税人”足够的减免\cite{ford1975}。他说，减税比他提的多了约 70 亿美元，加上其他变化，1976 财年的联邦赤字估计会到约 600 亿美元\cite{ford1975}。退出去的钱眼下是政府借来的，将来要由纳税人偿还（本书的解读）。
+% 据: pl_rebate, pl_50, ford_middle, ford_more7, ford_deficit60
+
+福特设想，退回的钱会去买汽车与家电，加大的抵免会让企业扩张\cite{ford1975}。\chref{ch:phillips}的模型 I 里，消费是工资总额的 0.80 倍，再加当年与上年利润的 0.02 倍与 0.23 倍（\secref{sec:phillips-models}）。投资随利润与资本存量变，乘数与周期都从这两个方程来。消费方程为什么这样写，投资又由什么决定，模型本身不回答。政府一次性发钱，人们会花掉多少？企业凭什么决定投资？
+% 据: ford_refund, ford_credits
+
+\section{当时的世界}\label{sec:consumption-world}
+
+凯恩斯（John Maynard Keynes，1883—1946）的消费函数只看当年的收入\cite{loc39}。照弗里德曼引的凯恩斯的话，实际收入增加时，收入里储蓄的比例更大\cite{friedman1957}。\chref{ch:generaltheory}把它写成$C=a+cY$，教学例子里边际消费倾向取 0.6，乘数是 2.5（\exref{ex:generaltheory-cross}）。模型 I 的消费也随当年的收入变，冲击乘数约 1.93（\exref{ex:phillips-klein}）。在$C=a+cY$里，只要$a>0$，收入越高，储蓄占收入的比例就越高。
+% 据: loc_keynes, fr_keynes
+
+弗里德曼（Milton Friedman，1912—2006）1957 年回顾，消费函数是用两类数据估计的，一类是时间序列，一类是家庭预算调查\cite{friedman1957,loc39}。他说，两类数据起初都像是证实了凯恩斯，当期消费与收入高度相关\cite{friedman1957}。边际消费倾向小于 1，也小于平均消费倾向，收入越高，储蓄的比例越大\cite{friedman1957}。接着出现了“严重的证据冲突”\cite{friedman1957}。库兹涅茨（Simon Kuznets，1901—1985）对美国 1899 年以来储蓄的估计显示，半个世纪里实际收入大幅增加，储蓄的比例却没有上升\cite{friedman1957,loc39}。二战以后的储蓄率，也比按两次大战之间的关系推算的低得多\cite{friedman1957}。
+% 据: fr_twokinds, fr_confirm, fr_mpc, fr_conflict, fr_kuznets1, fr_kuznets2, fr_postwar, loc_friedman, loc_kuznets, gnd_kuznets, gnd_kuznets_born
+
+库兹涅茨自己的数，量的是资本形成。1942 年他在美国国民经济研究局（NBER）的报告里，按十年一段，把美国的净资本形成与净国民产值相比\cite{kuznets1942}。净国民产值只分两块，一块是消费者的支出，一块是净资本形成\cite{kuznets1942}。他说，过去净资本形成从没有超过国民收入的 15\%，而眼下的战时支出计划，要把国民收入的 40\% 或 50\% 从个人与家庭的消费里移开\cite{kuznets1942}。他的资本形成包括住宅建筑，不包括汽车、家具这类消费者的耐用品\cite{kuznets1942}。按 1929 年价格，从 1879—1888 年到 1919—1928 年，净国民产值增加到约 4.5 倍，资本形成的份额却在 10\% 到 15\% 之间起落（\tabref{tab:consumption-kuznets}）。他问，人均收入提高了，消费的倾向为什么没有减弱，储蓄的倾向为什么没有增强\cite{kuznets1942}？这是全国的储蓄占产值的比例，与家庭储蓄占可支配收入的比例量的不是同一样东西（本书的解读）。
+% 据: ku_title, ku_two, ku_15, ku_war, ku_durables, ku_decades, ku_why, ku_stable, ku_t2_1879, ku_t2_1919
+
+\begin{table}[tbp]
+\centering\small
+\caption{库兹涅茨的十年平均：美国的净国民产值与净资本形成，1879—1938 年}\label{tab:consumption-kuznets}
+\begin{tabularx}{\linewidth}{@{}Y r r r r@{}}
+\toprule
+十年 & 净国民产值 & 净资本形成 & 份额（\%） & 当年价格的份额（\%） \\
+\midrule
+1879—1888 & 15,175 & 1,766 & 11.6 & 10.4 \\
+1889—1898 & 21,189 & 3,145 & 14.8 & 12.0 \\
+1899—1908 & 32,402 & 4,110 & 12.7 & 11.3 \\
+1909—1918 & 45,034 & 5,817 & 12.9 & 11.3 \\
+1919—1928 & 68,598 & 6,905 & 10.1 & 10.8 \\
+1929—1938 & 71,110 & 1,610 & 2.3 & 3.1 \\
+\bottomrule
+\end{tabularx}
+\datasource{库兹涅茨（1942）表 2，每年的平均数，百万美元。前三列按 1929 年价格，份额是净资本形成占净国民产值的比例。原表每五年起一段、十年相叠，这里每隔一行取一行。}
+\end{table}
+% 据: ku_t2_1879, ku_t2_1889, ku_t2_1899, ku_t2_1909, ku_t2_1919, ku_t2_1929, ku_t2_head
+
+大萧条的十年里，这个份额才跌到 2.3\%。莫迪利亚尼（Franco Modigliani，1918—2003）1985 年在诺贝尔奖演讲里回顾了这段历史\cite{modigliani1985,loc39}。他说，1940 年代后半期的三项经验研究，给了这种“极其简单”的储蓄观致命一击\cite{modigliani1985}。第一项是库兹涅茨等人的证据，储蓄率从 19 世纪中叶以来变化不大，人均收入却大大提高\cite{modigliani1985}。第二项是 Dorothy Brady 与 Rose Friedman（1947）的研究，它调和了库兹涅茨的结果与预算调查，家庭的储蓄率取决于它在全体中的相对收入\cite{modigliani1985}。第三项是里德（Margaret G. Reid，1896—1991）没有发表的分析，她认为消费取决于正常的或“永久的”收入\cite{modigliani1985,loc39}。莫迪利亚尼说，这是生命周期假说与弗里德曼的永久收入假说共同的灵感来源\cite{modigliani1985}。
+% 据: ku_t2_1929, md_lecture, md_three, md_kuznets, md_brady, md_relative, md_reid, md_inspiration, fr_brady_fn, fr_brady, loc_modigliani, gnd_modigliani, gnd_modigliani_born, gnd_modigliani_died, loc_reid, gnd_reid
+
+投资一边，也只有几个经验式子。\chref{ch:islm}把投资写成利率的减函数$I=I_0-bi$，模型 I 让投资随利润增加、随上年的资本存量减少（式~\eqref{eq:phillips-klein}）。\chref{ch:generaltheory}讲过凯恩斯的资本边际效率与动物精神（\secref{sec:generaltheory-expectations}）。企业在什么样的利率与税制下买多少机器，这些式子都没有推导。
+
+\section{生命周期：一生的预算}\label{sec:consumption-lifecycle}
+
+据莫迪利亚尼 1985 年的回顾，1952—1954 年，他与布伦伯格（Richard Brumberg，生卒年未详）写了两篇论文，为生命周期假说打下了基础\cite{modigliani1985}。一篇讲横截面数据，1954 年发表，一篇讲总量消费函数，到 1979 年才印出来\cite{modigliani1985}。他们要说明，那些站得住的经验规律，都可以用追求效用最大的理性消费者来解释\cite{modigliani1985}。这样的消费者把一生的资源最优地分配到各个年龄，像费雪（Irving Fisher，1867—1947）讲过的那样\cite{modigliani1985,loc39}。一生的资源，是劳动收入的现值加上得到的遗产\cite{modigliani1985}。
+% 据: md_essays, md_purpose, md_resources, loc_fisher
+
+他们先用一个“精简版”的模型\cite{modigliani1985}。收入在退休以前不变，退休以后为零，利率为零，一生的消费保持不变，不留遗产\cite{modigliani1985}。因为退休期跟在工作期后面，平滑消费的结果是财富随年龄先升后降，像一个驼峰\cite{modigliani1985}。设一个人工作$N$年，一生$L$年，每年收入$\bar Y$，在工作的第$t$年初已有财富$A_t$，则他以后每年的消费是
+\begin{keyeq}
+C=\frac{A_t+(N-t)\,\bar Y}{L-t},\qquad 0\le t\le N.\label{eq:consumption-lifecycle}
+\end{keyeq}
+刚开始工作时$A_0=0$，消费是$(N/L)\,\bar Y$，这正是莫迪利亚尼图 1 里的那条消费线\cite{modigliani1985}。退休时财富最多，以后逐年花掉，到$L$年末正好为零（\figref{fig:consumption_lifecycle}）。
+% 据: md_stripped, md_assumptions, md_hump, md_fig1
+
+这个精简的模型推出六条命题，莫迪利亚尼说它们当时“几乎违反直觉”\cite{modigliani1985}。一国的储蓄率与人均收入完全无关\cite{modigliani1985}。个人行为相同的国家之间，长期增长越快，总储蓄率越高，零增长时储蓄率为零\cite{modigliani1985}。决定财富收入比与储蓄率的主要参数，是退休期的长短\cite{modigliani1985}。不靠遗产，也差不多能解释美国的全部财富，他说这是对传统看法相当激进的背离\cite{modigliani1985}。
+% 据: md_prop_intro, md_prop1, md_prop3, md_prop6, md_prop5
+
+道理在年龄结构里。在静止的经济里，退休者花掉的正好抵消在职者为退休攒下的，总储蓄为零，财富收入比等于退休年数的一半\cite{modigliani1985}。他们取退休 10 年，财富是收入的 5 倍，与 Goldsmith 研究美国储蓄的初步估计相近\cite{modigliani1985}。经济增长时，储蓄率等于增长率乘以财富收入比\cite{modigliani1985}。增长率 2\% 时，财富收入比是 4，储蓄率是 8\%\cite{modigliani1985}。增长率 4\% 时，两者分别是 3.25 与 13\%\cite{modigliani1985}。人口增长使攒钱的年轻人多于花钱的退休者，生产率增长使年轻一代一生的资源多于老一代，两种增长都提高储蓄率\cite{modigliani1985}。他把前一种叫作 Neisser 效应，后一种叫作 Bentzel 效应\cite{modigliani1985}。
+% 据: md_stationary, md_single, md_wy, md_ten, md_goldsmith, md_growth_eq, md_numbers, md_neisser, md_bentzel
+
+模型还给出短期的总消费函数，消费是劳动收入与财富的线性函数，$C=\alpha Y_L+\delta W$\cite{modigliani1985}。他取的标准假设是一生 50 年、退休 10 年、增长率 3\%\cite{modigliani1985}。照这些假设，财富的系数约为$\delta=0.07$\cite{modigliani1985}。据他的回顾，1960 年代初美国有了私人财富的年度序列，安藤（Albert Ando，1929—2002）与他 1963 年检验了这个方程，拟合得相当好\cite{modigliani1985,loc39,gnd39}。他也说，这个方程后来在许多国家与时期都估计过，财富的系数常常低于 0.07，部分原因是收入用的是总收入，而不只是劳动收入\cite{modigliani1985}。
+% 据: md_eq3, md_delta, md_wealth_series, md_many, md_lower, loc_ando, gnd_ando, gnd_ando_born, gnd_ando_died
+
+\begin{example}{一生的预算}\label{ex:consumption-lifecycle}
+用式~\eqref{eq:consumption-lifecycle}，取莫迪利亚尼的标准假设，一生$L=50$年，退休 10 年，即$N=40$；每年收入$\bar Y=1$，数字为教学输入。（1）每年消费多少？工作时每年存多少？（2）退休那一刻的财富是多少？（3）每个年龄各有 1 人、经济静止时，总财富是总收入的几倍？总储蓄是多少？（4）若人口每年增长 2\%，储蓄率是多少？
+\solution
+（1）$C=40/50=0.8$，每年存$1-0.8=0.2$。（2）$40\times0.2=8$，是 8 年的收入，够退休后 10 年每年花 0.8。（3）总收入是在职的 40 人的收入，即 40。财富在工作期从 0 升到 8，退休期从 8 降到 0，总财富是两个三角形的面积，$40\times8/2+10\times8/2=200$，是总收入的 5 倍，等于退休年数的一半。40 个在职者每年存$40\times0.2=8$，10 个退休者每年花掉$10\times0.8=8$，总储蓄为零。（4）年轻的年龄组人多，按连续的年龄把各组的人数以每年 2\% 递减加权，财富收入比约 4.08，储蓄率约$0.02\times4.08\approx8.2\%$（本书的计算），与莫迪利亚尼的 4 与 8\% 相合\cite{modigliani1985}。人口增长 4\% 时，算出来是约 3.33 与 13.3\%。
+\end{example}
+% 据: md_delta, md_numbers
+
+\fig{consumption_lifecycle}{生命周期的预算（本书的计算）。(a) 莫迪利亚尼与布伦伯格的精简模型：一生 50 年，工作 40 年，收入每年 1，利率为零，消费每年 0.8，财富在退休时最多，是 8。(b) 人口增长率与总储蓄率：曲线按同一模型、按连续的年龄计算，静止时储蓄率为零；方块是莫迪利亚尼在演讲里给出的 2\% 时的 8\% 与 4\% 时的 13\%。}{fig:consumption_lifecycle}
+% 据: md_fig1, md_numbers
+
+\section{永久收入：暂时的收入多半存起来}\label{sec:consumption-permanent}
+
+弗里德曼的《消费函数理论》1957 年作为 NBER 的研究出版\cite{friedman1957}。他在序言里说，靠妻子对这个领域的兴趣，以及夫妇俩与 Dorothy Brady 的友谊，他一直关注消费的经验研究\cite{friedman1957}。与 Brady 的交谈引出一系列关于消费数据的讨论，里德后来也加入，并对讨论中形成的假说做了严格的检验\cite{friedman1957}。检验看来通过以后，里德催他把背后的理论写出来，这本书就是结果\cite{friedman1957}。他说，虽然由他执笔，书在要紧处是这几个人的共同产品\cite{friedman1957}。他能找到的最早的书面稿，是 1951 年 6 月 8 日的一份 4 页打字稿\cite{friedman1957}。写完初稿以后他才看到莫迪利亚尼与布伦伯格的两篇论文，他认为思路相近反映了“共同的学术环境”\cite{friedman1957}。
+% 据: fr_title, fr_preface_kept, fr_preface_group, fr_reid_test, fr_pressed, fr_joint, fr_typescript, fr_fn12, fr_common
+
+弗里德曼把测得的收入$y$分成永久部分$y_p$与暂时部分$y_t$，消费也一样\cite{friedman1957}。永久部分反映消费者认为决定其财富的那些因素，包括它拥有的非人力财富\cite{friedman1957}。暂时部分反映其余的一切因素\cite{friedman1957}。假说的核心是
+\begin{equation}
+c_p=k(i,w,u)\,y_p,\qquad y=y_p+y_t,\qquad c=c_p+c_t,\label{eq:consumption-permanent}
+\end{equation}
+比例$k$与永久收入的高低无关，取决于借贷的利率$i$、非人力财富与收入之比$w$，以及决定消费者口味的各种因素$u$\cite{friedman1957}。$u$里有家庭的人数与年龄\cite{friedman1957}。他承认，这样一般的形式是空的，任何数据都驳不倒它\cite{friedman1957}。给它内容的是另一条假定，暂时部分与永久部分不相关，暂时的收入与暂时的消费也不相关\cite{friedman1957}。
+% 据: fr_split, fr_permanent_def, fr_transitory_def, fr_eq, fr_k, fr_i, fr_w, fr_u, fr_empty, fr_uncorrelated
+
+这样就能解释预算调查里的规律。弗里德曼在书末举了一个例子\cite{friedman1957}。一群人每周挣 100 美元、花 100 美元，发薪日错开，每天有七分之一的人领工资\cite{friedman1957}。若只调查某一天，把当天的现金收入算作收入，领工资的人有储蓄，其余的人收入为零而在花钱，储蓄的比例就随测得的收入上升\cite{friedman1957}。他说，用一年做统计期，这种错误也不会小到可以忽略\cite{friedman1957}。测得的收入高的家庭里，暂时收入为正的多，测得的储蓄率自然高（本书的概括）。
+% 据: fr_payday, fr_payday2, fr_payday3, fr_year
+
+他对美国的估计，大都标明是试探性的。消费者的视野看来大约是 3 年，持续更短的影响算作暂时收入，他说这是“高度试探性”的结论\cite{friedman1957}。工资收入者的$k$在$0.90$到$0.95$之间，企业主在$0.80$到$0.90$之间，部分原因是企业主的收入更不确定\cite{friedman1957}。美国总消费与总收入之比半个多世纪大致不变，约为$0.88$，这里的消费不计大件耐用品的购买\cite{friedman1957}。照他估计的消费函数，个人可支配收入对自主支出的乘数只有约 1.4\cite{friedman1957}。他特别声明，这是以收入—支出理论成立为前提的有条件的说法\cite{friedman1957}。
+% 据: fr_horizon, fr_tentative, fr_k_groups, fr_k_uncertain, fr_kstar, fr_mult, fr_conditional
+
+意外之财该怎样处理？弗里德曼自问，得到一笔意外之财的人，难道不会拿一部分去“挥霍”吗\cite{friedman1957}？他答，这要看消费怎样定义。按他的定义，许多随手算作消费的支出要改算储蓄\cite{friedman1957}。他又反问，意外之财难道不会用来买耐用品吗\cite{friedman1957}？一笔早就预期到的遗产，在永久收入里已经算过，到手时消费本不该变，除非事先无法凭这笔遗产借钱\cite{friedman1957}。意料之外的遗产也一样，只有超出它带来的那部分永久收入的余额才是暂时收入\cite{friedman1957}。
+% 据: fr_windfall, fr_define, fr_reclassified, fr_durables, fr_expected, fr_borrow, fr_unexpected
+
+莫迪利亚尼说，永久收入假说与生命周期假说的主要区别，是它在“简化”的假定下把寿命看作无限长\cite{modigliani1985}。两个假说的分歧在增长。弗里德曼推测，收入快速上升、人们预期它会持续时，永久收入相对测得的收入升高，储蓄率可能因此下降\cite{friedman1957}。他也说，这要看增长从哪里来\cite{friedman1957}。若增长至少部分靠国内资本，国内资本的回报又高，储蓄的高回报可能抵消这个作用\cite{friedman1957}。莫迪利亚尼说，生命周期模型的结论与此“截然相反”\cite{modigliani1985}。他认为原因在于，寿命无限长时，不会有年轻一代比老一代更富而多储蓄的效应\cite{modigliani1985}。
+% 据: md_pih, fr_rise, fr_reason, fr_source, fr_offset, md_opposite, md_infinite
+
+\begin{compare}{生命周期假说与永久收入假说}{生命周期假说（莫迪利亚尼与布伦伯格）}{永久收入假说（弗里德曼）}
+\cmprow{消费取决于什么}{一生的资源，即劳动收入的现值加上得到的遗产\cite{modigliani1985}}{永久收入，$c_p=k\,y_p$，$k$取决于利率、财富收入比与口味\cite{friedman1957}}
+\cmprow{看多长的时间}{一生，工作期之后有退休期\cite{modigliani1985}}{他的估计里，消费者的视野看来约 3 年\cite{friedman1957}}
+\cmprow{储蓄为了什么}{为退休攒钱，财富随年龄先升后降\cite{modigliani1985}}{暂时收入主要表现为资产与负债的变化\cite{friedman1957}}
+\cmprow{收入水平与储蓄率}{储蓄率与人均收入完全无关\cite{modigliani1985}}{储蓄率与收入水平无关\cite{friedman1957}}
+\cmprow{增长与储蓄率}{增长越快，储蓄率越高\cite{modigliani1985}}{预期持续的快速增长可能压低储蓄率\cite{friedman1957}}
+\cmpsum{两者都说消费看长期的资源，暂时的收入多半存起来。莫迪利亚尼说，两者的含义只在很少几处有重要差别，增长是其中之一\cite{modigliani1985}。}
+\end{compare}
+% 据: md_resources, md_stripped, md_hump, md_prop1, md_prop3, md_few, fr_eq, fr_k, fr_horizon, fr_assets, fr_level, fr_rise
+
+\begin{example}{一笔 200 美元的退税}\label{ex:consumption-windfall}
+1975 年的退税每人至多 200 美元\cite{pl9412}。设一个家庭收到 200 美元，以下都是教学输入。（1）按\chref{ch:generaltheory}的消费函数，边际消费倾向 0.6，当年多花多少？（2）按永久收入假说，利率 3\%，$k=0.9$，取弗里德曼给工资收入者的下限，当年多花多少？（3）按生命周期假说，利率为零，户主还有 40 年可活，当年多花多少？若是还有 10 年可活的退休者呢？
+\solution
+（1）$0.6\times200=120$，花掉六成。（2）永久收入增加$0.03\times200=6$，消费每年增加$0.9\times6=5.4$，当年花掉 2.7\%，以后年年如此。（3）$200/40=5$，每年多花 5，当年花掉 2.5\%。退休者每年多花$200/10=20$，即 10\%。三条规则对第一年的预测，相差二十多倍（本书的计算）。永久收入与生命周期两种规则的差别，主要在于剩下的年数，年纪越大，花得越快。
+\end{example}
+% 据: pl_max, fr_k_groups
+
+\fig{consumption_windfall}{一笔一次性收入花掉的比例。(a) \exref{ex:consumption-windfall}的三条规则下，累计花掉的比例（本书的计算，教学输入）。(b) 收到款项的三个月里花掉的比例：横条是 Johnson、Parker 与 Souleles（2004）对 2001 年退税、Parker 等（2011）对 2008 年刺激款的估计区间，竖线是三条规则对第一个季度的预测。数据：Johnson 等（2004），Parker 等（2011）。}{fig:consumption_windfall}
+% 据: jps_spent, pa_spent
+
+\section{欧拉方程与随机游走}\label{sec:consumption-euler}
+
+1978 年，霍尔（Robert E. Hall，1943 年生）在《政治经济学杂志》第 86 卷第 6 期上发表《生命周期—永久收入假说的随机含义》\cite{hall1978,loc39}。11 年前，他还是麻省理工学院的研究生，与乔根森合写过一篇讲税收与投资的论文（\secref{sec:consumption-investment}）\cite{hj1967}。霍尔说，按这一假说，消费者估计自己长期能消费多少，再把当期消费定在这个估计的适当比例上\cite{hall1978}。经验研究的难处在于，怎样把过去的收入与对未来收入的预期连起来\cite{hall1978}。这种连接几乎总是写成固定的分布滞后，而卢卡斯批评过这种做法\cite{hall1978}。
+% 据: ha_title, ha_issue, hj_authors, ha_view, ha_problem, ha_lucas, loc_hall, gnd_hall, gnd_hall_born
+
+先看两期。消费者今天与明天的收入是$y_1$与$y_2$，实际利率是$r$。按\chref{ch:prices}的折现，消费的现值等于收入的现值，$c_1+c_2/(1+r)=y_1+y_2/(1+r)$。今天少花 1 元，明天能多花$1+r$元。效用最大时，两种用法带来的效用相等，$u'(c_1)=\frac{1+r}{1+\delta}\,u'(c_2)$，$\delta$是主观的时间偏好率。这就是\textbf{欧拉方程}。$r=\delta$时两期的边际效用相等，消费也相等。
+
+霍尔把它推广到收入不确定的多期情形，证明了一条定理\cite{hall1978}：
+\begin{keyeq}
+E_t\,u'(c_{t+1})=\frac{1+\delta}{1+r}\,u'(c_t).\label{eq:consumption-euler}
+\end{keyeq}
+期望按$t$期所有可得的信息计算，也就是假定消费者充分利用他们知道的一切\cite{hall1978}。这是\textbf{理性预期}的一种用法，它的理论在\chref{ch:ratex}。由此推出，除了当期消费，$t$期的任何信息都无助于预测下期的消费，收入与财富也一样\cite{hall1978}。效用是二次函数时，下期消费是本期消费的线性函数加一个扰动，再加进任何更早的变量，系数都应为零\cite{hall1978}。消费本身因此近似随机游走\cite{hall1978}。
+% 据: ha_theorem, ha_et, ha_cor1, ha_cor3, ha_abstract
+
+直觉是这样的。消费者今天定消费时，已经用上了他对将来收入的全部估计。明天消费变多少，只取决于明天才知道的新消息，而新消息今天预测不到（本书的解读）。过去收入里有用的信息，早已包含在今天的消费里。霍尔因此绕开了收入预期的难题，他不必知道消费者怎样预测收入，只看消费本身怎样变（本书的解读）。
+
+霍尔用 1948—1977 年美国按季度、按人头的非耐用品与服务消费检验，单位是 1972 年美元\cite{hall1978}。他去掉耐用品，以免结论来自给耐用品估算服务流的方法\cite{hall1978}。只用上一季的消费做回归，系数是$1.011$\cite{hall1978}。再加三个更早季度的消费，$F$统计量是 1.7，5\% 显著水平的临界值是 2.7\cite{hall1978}。霍尔说，如果滞后的收入在滞后的消费之外还有相当的预测力，这个假说就被驳倒了\cite{hall1978}。上一季的可支配收入几乎没有预测力\cite{hall1978}。把收入的各个滞后项一起去掉，$F$统计量是 0.1，临界值是 3.9\cite{hall1978}。股票价格却有用，上一季股价的变动有助于预测下一季的消费，他说这在形式上驳倒了简单的随机游走假说\cite{hall1978}。
+% 据: ha_data, ha_durables, ha_table1, ha_lags, ha_refuted, ha_income, ha_exclusion, ha_stock
+
+霍尔说，纯粹的假说被数据否定了，可数据看来与修改过的假说完全相容，只要承认部分消费要过一段时间才对永久收入的变化作出调整\cite{hall1978}。他的结论是，看来没有什么理由怀疑生命周期—永久收入假说\cite{hall1978}。政策上，只有出乎意料的变化才影响消费，只在短期改变收入的政策，无法只在短期改变消费\cite{hall1978}。他也说明，这并不意味着影响收入的政策对消费没有作用，永久的减税会立刻提高永久收入，从而立刻提高消费\cite{hall1978}。
+% 据: ha_rejected, ha_modified, ha_little, ha_policy, ha_transitory, ha_noeffect, ha_permanent_tax
+
+\begin{example}{两期的欧拉方程}\label{ex:consumption-euler}
+两期，收入$y_1=y_2=100$，效用$u(c)=\ln c$，数字为教学输入。（1）利率$r=5\%$，$\delta=5\%$，两期各消费多少？（2）第一期意外多得 10，两期各消费多少？第一期花掉了几成？（3）若$\delta=0$，利率仍是 5\%，消费怎样随时间变化？
+\solution
+对数效用下$u'(c)=1/c$，欧拉方程化为$c_2=\frac{1+r}{1+\delta}\,c_1$。（1）$\frac{1+r}{1+\delta}=1$，$c_1=c_2$。收入的现值是$100+100/1.05\approx195.24$，$c_1(1+1/1.05)=195.24$，$c_1=c_2=100$。（2）现值增加到约 205.24，$c_1=c_2\approx105.12$，第一期多花约 5.12，约五成；另外五成存到第二期花。期数越多，第一期花掉的比例越小，若利率为零、分 40 年平摊，就只剩 2.5\%（本书的计算）。（3）$c_2=1.05\,c_1$，代入预算约束，$c_1+c_1=195.24$，$c_1\approx97.62$，$c_2\approx102.50$。利率高于时间偏好率时，消费随时间上升。霍尔估计的系数 1.011 略大于 1，说的也是人均消费在缓慢增长\cite{hall1978}。
+\end{example}
+% 据: ha_table1
+
+\section{投资：资本的使用成本与市场估值}\label{sec:consumption-investment}
+
+1962 年 1 月，肯尼迪（John F. Kennedy，1917—1963）在《总统经济报告》里请国会尽早通过他的税收提案\cite{erp1962,loc39}。他写道：“这些提案的核心，是对可折旧的机器设备的总投资给予 8\% 的税收抵免。”\cite{erp1962} 他要抵免追溯到 1962 年 1 月 1 日\cite{erp1962}。他说，抵免降低了购置新设备的净成本，从而提高生产性投资的利润，它还部分地自己为自己筹资\cite{erp1962}。其余的收入损失，他提议用六项改革抵补，说这些改革是为了让税制更公平、更有效率\cite{erp1962}。头两项是对股息与利息所得实行源泉扣缴，取消 50 美元的股息免税额与 4\% 的股息抵免，第三项是限制招待费等业务开支的扣除\cite{erp1962}。
+% 据: erp_title, erp_urge, erp_centerpiece, erp_retro, erp_profit, erp_selffinance, erp_offset, erp_withholding, erp_dividend, erp_expense, erp_six, loc_kennedy
+
+得到抵免的是购置机器设备的企业，补上收入缺口的，是股息与利息的收入者和扣除招待费的企业（本书的解读）。顾问委员会的年度报告也说，8\% 的抵免会显著提高新投资的税后回报\cite{erp1962}。在年度报告上署名的三位委员里有托宾（James Tobin，1918—2002），他 1961 年 1 月 27 日就任\cite{erp1962,loc39}。据霍尔与乔根森，国会最后通过的《1962 年收入法》，对机器设备实行 7\% 的投资抵免\cite{hj1967}。短寿命的资产不适用，他们说有效税率因此约为 6.6\%\cite{hj1967}。
+% 据: erp_cea_credit, erp_cea_sign, erp_cea_sign2, erp_tobin_office, loc_tobin, gnd_tobin, gnd_tobin_born, gnd_tobin_died, hj_credit7, hj_effective
+
+这个抵免有多大作用？霍尔与乔根森 1967 年在《美国经济评论》上回答\cite{hj1967}。他们说，税收政策能有效影响投资，在决策者与经济学家中是一种“信条”，却还没有人估计过它的作用有多大\cite{hj1967}。他们用的是乔根森（Dale W. Jorgenson，1933—2022）此前研究过的新古典理论\cite{hj1967,loc39,gnd39}。企业被看作把资本租给自己，资本服务的租金就是\textbf{资本的使用成本}\cite{hj1967}。资本品的价格为$q$，折现率为$r$，重置率为$\delta$，对资本品价格的预期不变时，$c=q(r+\delta)$\cite{hj1967}。加上营业所得的税率$u$、每 1 美元投资的折旧扣除的现值$z$与抵免率$k$，就是
+\begin{keyeq}
+c=q\,(r+\delta)\,\frac{(1-k)(1-uz)}{1-u}.\label{eq:consumption-usercost}
+\end{keyeq}
+这里假定折旧的基数要扣掉抵免，霍尔与乔根森说这只适用于 1962 年与 1963 年\cite{hj1967}。1964 年起折旧按抵免以前的成本计算，他们说有效税率因此提到约 10\%\cite{hj1967}。
+% 据: hj_title, hj_faith, hj_noattempt, hj_jorgenson, hj_rent, hj_eq3, hj_eq6, hj_fn6, hj_1964, loc_jorgenson, gnd_jorgenson, gnd_jorgenson_born, gnd_jorgenson_died
+
+在柯布—道格拉斯技术下，资本的边际产品价值等于租金时，意愿的资本存量是$K^{+}=\alpha pQ/c$，$p$是产品价格，$Q$是产量，$\alpha$是产出对资本的弹性\cite{hj1967}。意愿资本变了以后，计划、拨款、订货与签约都要时间，投资按一定的比例分摊在以后各期\cite{hj1967}。再加上与资本存量成比例的重置投资，投资就是意愿资本过去变化的加权和\cite{hj1967}。他们说，这是人们熟悉的灵活加速数投资理论的直接推广\cite{hj1967}。照这个式子，租金低 1\%，意愿资本大约多 1\%（本书的解读）。
+% 据: hj_eq12, hj_lag, hj_eq13, hj_accelerator
+
+他们算出，1962 年的抵免把制造业设备的租金从$0.286$降到$0.267$\cite{hj1967}。他们说，7\% 的抵免效果“相当惊人”，1963 年制造业设备的净投资有 40.9\% 可归于它\cite{hj1967}。按总投资算，比例就没有那么惊人\cite{hj1967}。1963 年制造业设备的总投资 84.6 亿美元，10.2\% 来自抵免\cite{hj1967}。他们的结论是，投资抵免是对投资的有力刺激\cite{hj1967}。按他们的计算，1962 年的抵免与折旧新规使投资转向设备\cite{hj1967}。
+% 据: hj_since1962, hj_rental, hj_startling, hj_net, hj_less, hj_gross, hj_potent, hj_shift
+
+\begin{example}{抵免与资本的使用成本}\label{ex:consumption-usercost}
+用式~\eqref{eq:consumption-usercost}，资本品价格$q=1$，$r=0.10$，$\delta=0.15$，税率$u=0.5$，折旧扣除的现值$z=0.6$，都是教学输入。（1）没有税时，使用成本是多少？（2）有所得税、没有抵免时呢？（3）加上 7\% 的抵免呢？意愿资本增加多少？（4）用霍尔与乔根森算出的制造业设备的租金，意愿资本增加多少？
+\solution
+（1）$c=1\times(0.10+0.15)=0.25$。（2）$c=0.25\times(1-0.5\times0.6)/(1-0.5)=0.25\times0.7/0.5=0.35$。所得税本身抬高了使用成本，折旧扣除抵消了一部分。（3）$c=0.35\times(1-0.07)\approx0.326$，低了 7\%。柯布—道格拉斯技术下$K^{+}$与$c$成反比，意愿资本增加$0.35/0.326-1\approx7.5\%$。（4）租金从 0.286 降到 0.267，意愿资本增加$0.286/0.267-1\approx7.1\%$（本书的计算）\cite{hj1967}。这些增加不会一年做完，按分布滞后摊到以后几年。
+\end{example}
+% 据: hj_rental, hj_credit7
+
+托宾 1981 年 12 月 8 日的诺贝尔奖演讲，从资产的市场估值讲投资\cite{tobin1981}。旧的资本品在市场上有估值，这些估值常常高于或低于它们的\textbf{重置成本}，即按正常速度生产并安装同样的新资本品的成本\cite{tobin1981}。股票市场给资本品的估价高时，高出重置成本的那部分诱使投资者加快积累资本\cite{tobin1981}。他把市场估值与正常重置成本之比记作$q$，它的正常值是 1\cite{tobin1981}。投资太快会给企业与整个经济带来额外的成本，这种调整成本使$q$可以长期偏离 1\cite{tobin1981}。他的净投资方程是
+\begin{equation}
+I_t=q_t\,\Delta K_t=q_t\,K_{t-1}\,f(q_t),\qquad f(1)=g,\label{eq:consumption-q}
+\end{equation}
+$g$是经济的自然增长率\cite{tobin1981}。他说的正常投资，是让资本存量按经济的趋势增长的投资\cite{tobin1981}。$q=1$时资本存量按自然增长率增长，$q$越高，积累得越快（本书的解读）。托宾说，$q$理论是他与 Brainard 1968 年的论文正式提出的，他 1969 年的论文又作了讨论与应用\cite{tobin1981}。他也说，它是厂商新古典理论的直接应用，所以有许多先驱\cite{tobin1981}。
+% 据: to_lecture, to_market, to_replacement, to_margin, to_qdef, to_adjust, to_net, to_eq3, to_g, to_normal, to_footnote, to_precursors, nb_tobin_page
+
+\begin{compare}{乔根森的投资模型与托宾的 $q$}{乔根森（霍尔与乔根森 1967）}{托宾（1981 年的演讲）}
+\cmprow{投资看什么}{资本服务的租金，取决于资本品价格、折现率、重置率与税\cite{hj1967}}{资本品的市场估值与正常重置成本之比$q$\cite{tobin1981}}
+\cmprow{意愿的资本}{资本的边际产品价值等于租金，柯布—道格拉斯下$K^{+}=\alpha pQ/c$\cite{hj1967}}{$q=1$时资本按自然增长率增长，$q$高时加快\cite{tobin1981}}
+\cmprow{为什么逐步调整}{计划、拨款、订货与签约要时间，投资按比例分摊到以后各期\cite{hj1967}}{投资过快带来调整成本，$q$因而可以长期偏离 1\cite{tobin1981}}
+\cmprow{作者强调的政策}{税收政策非常有效地改变投资的水平与时间\cite{hj1967}}{演讲讨论的是金融市场与政府赤字的筹资怎样影响资产价格\cite{tobin1981}}
+\cmpsum{托宾自己说，$q$理论是厂商新古典理论的直接应用\cite{tobin1981}。一个从租金算出意愿的资本，一个看市场价格怎样偏离重置成本（本书的概括）。}
+\end{compare}
+% 据: hj_rent, hj_eq6, hj_eq12, hj_lag, hj_conclusion, to_qdef, to_eq3, to_g, to_adjust, to_financing, to_precursors
+
+1975 年，国会把抵免暂时提到 10\%，到 1977 年为止\cite{pl9412}。霍尔与乔根森说，税收政策能改变投资的时间，照这个结论，暂时的抵免会让企业把投资提前（本书的解读）\cite{hj1967}。福特在同一篇讲话里警告，若赤字涨到 1,000 亿美元，联邦政府要到私人市场借钱，利率会再度上升\cite{ford1975}。他说，那时企业即使有更高的抵免，也会推迟投资与扩张\cite{ford1975}。照式~\eqref{eq:consumption-usercost}，利率与抵免都在使用成本里，作用方向相反（本书的解读）。
+% 据: pl_credit10, pl_transition, hj_conclusion, ford_100, ford_rates, ford_delay
+
+\section{数据核对与反例}\label{sec:consumption-check}
+
+先回到\chref{ch:generaltheory}的反例。1929—1932 年，英国的实际 GDP 下降了 5.3\%，实际消费反而增加了 2.1\%，简单的消费函数解释不了（\secref{sec:generaltheory-check}）。弗里德曼说，暂时收入主要表现为资产与负债的变化，即测得的储蓄\cite{friedman1957}。如果英国家庭把萧条里收入的下降看作暂时的，消费可以不跟着降，减少的是储蓄（本书的解读）。按生命周期假说，决定消费的是一生的资源，当年的收入只占其中一小部分（本书的解读）。这只说明新理论容许这样的结果，它并没有检验这件事。
+% 据: fr_assets
+
+1975 年的退税是第一次检验。莫迪利亚尼与斯坦德尔（Charles Steindel，1951 年生）1977 年在《布鲁金斯经济活动论文》上分析了它\cite{ms1977,loc39}。他们说，暂时的减税要达到目的，政府每少收 1 美元税，消费的反应就要大，而且要集中在减税以后的短时间里\cite{ms1977}。按他们的数，第二季度退税发出 80 亿美元，折合年率 320 亿\cite{ms1977}。同时还有两项变化，5 月起预扣的税按年率减少 120 亿美元\cite{ms1977}。6 月向社会保障的领取者发出 17 亿美元，他们认为这些人会很快、全部花掉，所以不算作退税的一部分\cite{ms1977}。
+% 据: ms_title, ms_authors, ms_criterion, ms_paid, ms_three, ms_withholding, ms_june, ms_ssrecip, loc_steindel
+
+他们用自己的方程推算没有退税时的消费\cite{ms1977}。校正误差的自相关以后，头三个季度花掉的不到退税的四分之一，不校正也只到三分之一\cite{ms1977}。两种推算都显示，到第六个季度末几乎全部花掉，他们却说这个结果难以当真，因为它意味着极不可能的反应模式\cite{ms1977}。他们说，退税没有引起支出的迅速增加，第二季度的储蓄却大幅上升\cite{ms1977}。他们用了三个现成的消费模型和一个专门构建的模型\cite{ms1977}。他们自己的“永久税”方程与 MPS 模型都是单一方程，估计 1975 年进入支出的只是退税的一小部分\cite{ms1977}。DRI 与密歇根的模型把消费拆成许多部分分别估计，估计到 1975 年底已花掉一大部分\cite{ms1977}。他们说，细看之下这种两分并不分明，密歇根模型的高估主要来自家具方程\cite{ms1977}。他们推测，1977 年初卡特政府提出、后来撤回的那次退税，钱集中发给包括转移支付领取者在内的低收入者，可能会比 1975 年的稍有效\cite{ms1977}。
+% 据: ms_equation, ms_table6, ms_fourth, ms_sixth, ms_nosurge, ms_saving, ms_models, ms_dichotomy, ms_blurs, ms_carter, ms_1977
+
+他们说，不同类型的税收变化引起不同的反应，这至少在定性上与永久收入和生命周期假说的预测相符\cite{ms1977}。他们的结论是，有“强有力但并不一致的证据”表明，退税不是迅速而暂时地刺激消费的特别有效的办法\cite{ms1977}。他们也承认，误差太大，所以既不能排除第一年几乎没有花，也不能排除花得几乎与退税一样多\cite{ms1977}。按 Blinder（1981）的估计，暂时的减税被当作一半正常的减税、一半纯粹的意外之财\cite{blinder1981}。在一年的计划期里，退税的作用只有同样大小的永久减税的约 38\%\cite{blinder1981}。这个估计的标准误差不可避免地很大\cite{blinder1981}。按他的记述，1975 年的储蓄率从退税前的 6.4\% 跳到退税那个季度的 9.7\%，他认为这表明退税花掉的不多\cite{blinder1981}。
+% 据: ms_differential, ms_conclusion, ms_cannot, bl_blend, bl_38, bl_se, bl_saving
+
+2001 年的退税成了一次近乎随机的实验。按 Johnson、Parker 与 Souleles（2004）的工作论文，2001 年 7 月下旬到 9 月底，约三分之二的美国家庭收到退税支票，通常是 300 或 600 美元\cite{jps2004}。退税是把最低一档税率从 15\% 降到 10\% 的预付款\cite{jps2004}。国税局按每个纳税人 2000 年的纳税申报确定金额，2000 年税额不到 300 或 600 美元的，退得也少\cite{jps2004}。照这个规则，2000 年没有所得税的家庭拿不到退税（本书的解读）。支票在哪一周寄出，取决于社会保障号码的倒数第二位，这个数字实际上是随机的\cite{jps2004}。他们估计，家庭在收到退税的三个月里把 20\%—40\% 花在非耐用品上，下一个三个月又花掉约三分之一\cite{jps2004}。他们说，收到的那个季度与下一个三个月里，一共花掉了约三分之二\cite{jps2004}。反应最大的是流动资产少、收入低的家庭，他们说这与流动性约束相符\cite{jps2004}。
+% 据: jps_title, jps_mailed, jps_advance, jps_irs, jps_smaller, jps_digit, jps_spent, jps_twothirds, jps_liquidity
+
+2008 年的刺激款更大，发得也更宽。按 Parker、Souleles、Johnson 与 McClelland（2011）的工作论文，《2008 年经济刺激法》2 月通过\cite{parker2011}。法案的主体是一项约 1,000 亿美元的计划，向约 1.3 亿个纳税申报单位发款，约占全部纳税单位的 85\%\cite{parker2011}。没有所得税、但有至少 3,000 美元合格收入的家庭也能拿到基本款，合格收入包括劳动收入与社会保障金\cite{parker2011}。收入高的按比例递减，所以比 2001 年的退税更偏向低收入家庭（\tabref{tab:consumption-rebates}）\cite{parker2011}。他们估计，三个月里花在非耐用品上的约占刺激款的 12\%—30\%\cite{parker2011}。算上汽车等耐用品，总支出约占 50\%—90\%\cite{parker2011}。他们说，这个反应与李嘉图等价不符，也与标准的生命周期—永久收入假说不符，后者说家庭最多只花掉这笔钱的年金值\cite{parker2011}。
+% 据: pa_title, pa_esa, pa_85, pa_noliability, pa_qualifying, pa_phase, pa_targeted, pa_spent, pa_inconsistent
+
+\begin{table}[tbp]
+\centering\small
+\caption{三次一次性发钱：谁拿到，花掉多少}\label{tab:consumption-rebates}
+\begin{tabularx}{\linewidth}{@{}l Y Y Y@{}}
+\toprule
+年份 & 发给谁、发多少 & 什么时候发 & 估计花掉的比例 \\
+\midrule
+1975 & 1974 年个人所得税的 10\%，至少 100 美元（税额更少的全退），至多 200 美元；福利领取者每人 50 美元 & 第二季度发出 80 亿美元，6 月发给社会保障领取者 17 亿美元 & 头三个季度不到四分之一（校正自相关）到三分之一（不校正） \\
+2001 & 约三分之二的家庭，通常 300 或 600 美元 & 7 月下旬到 9 月底，按社会保障号码倒数第二位 & 三个月内非耐用品 20\%—40\%，下三个月约再三分之一 \\
+2008 & 约 1.3 亿个纳税申报单位；单身 300 到 600 美元，夫妇 600 到 1,200 美元，每个孩子 300 美元 & 按社会保障号码最后两位 & 三个月内非耐用品 12\%—30\%，含汽车等共 50\%—90\% \\
+\bottomrule
+\end{tabularx}
+\datasource{1975 年据《1975 年减税法》与莫迪利亚尼、斯坦德尔（1977）表 6，2001 年据 Johnson、Parker 与 Souleles（2004），2008 年据 Parker、Souleles、Johnson 与 McClelland（2011）。三项研究的消费定义与时间窗口不同。}
+\end{table}
+% 据: pl_rebate, pl_min, pl_max, pl_50, ms_paid, ms_june, ms_table6, ms_fourth, jps_mailed, jps_digit, jps_spent, pa_esa, pa_amounts, pa_child, pa_digits, pa_spent
+
+\begin{example}{把估计读成边际消费倾向}\label{ex:consumption-mpc}
+2001 年的典型退税是 300 美元\cite{jps2004}。仍用\exref{ex:consumption-windfall}的教学输入。（1）三条规则各预测第一个季度花掉多少？（2）按 Johnson、Parker 与 Souleles 的估计，三个月里非耐用品花掉 20\%—40\%，六个月里一共花掉多少？（3）这个估计与哪条规则相近？
+\solution
+（1）按边际消费倾向 0.6，当期花掉$0.6\times300=180$，即 60\%。按永久收入假说，每年多花$0.9\times0.03\times300=8.1$，一个季度约 2.0，约 0.7\%。按生命周期假说，还有 40 年可活，每年多花$300/40=7.5$，一个季度约 1.9，约 0.6\%。（2）下一个三个月又花掉约三分之一，六个月里非耐用品一共约 53\%—73\%（本书的计算），与他们自己说的约三分之二相合\cite{jps2004}。（3）20\%—40\% 是永久收入与生命周期规则预测的约三十到六十多倍，又低于凯恩斯式的 60\%（本书的计算）。这还只算非耐用品。
+\end{example}
+% 据: jps_typical, jps_spent, jps_twothirds
+
+\begin{pitfall}[研究说的花掉，就是理论说的消费]
+两边量的常常不是一样东西。弗里德曼把消费定义为服务的价值，许多随手算作消费的支出要改算储蓄\cite{friedman1957}。莫迪利亚尼与斯坦德尔介绍过一种看法，认为暂时的减税会迅速而大幅地影响消费者的支出\cite{ms1977}。它的一个论证用服务流的消费概念，MPS 模型就把消费定义为非耐用品与服务的支出，加上耐用品存量的估算服务流\cite{ms1977}。照这个定义，即使暂时的减税被存了起来，储蓄也可能表现为购买耐用品，消费者的支出照样增加\cite{ms1977}。2008 年算上汽车以后花掉的比例，比只算非耐用品高出一倍以上（\tabref{tab:consumption-rebates}）。拿一项研究的比例检验理论，先要把两边的消费换成同一个定义。霍尔干脆只看非耐用品与服务\cite{hall1978}。
+\end{pitfall}
+% 据: fr_define, fr_reclassified, ms_opponents, ms_serviceflow, ms_mps, ms_hence, pa_spent, ha_durables
+
+\begin{case}{日本 · 1955—2024 · 家庭储蓄率的升与降}
+按内阁府经济社会综合研究所的国民经济计算，日本家庭（含个人企业）的储蓄率是储蓄除以可支配收入，1955 年是 11.9\%\cite{esri68}。高速增长期的 1956—1973 年，实际国内总支出平均每年增长约 9.2\%（本书的计算）\cite{esri68}。家庭储蓄率在 1974 年与 1976 年都到了 23.2\%，以后总体下降，1998 年是 13.4\%\cite{esri68}。这些数按 1968 年的国民账户体系，以 1990 年为基准\cite{esri68}。
+% 据: esri_h10_title, esri_h10_household, esri_h10_growth, ho_t1_1955, ho_t1_1974, ho_t1_1976, ho_t1_1998
+
+现行的统计按 2008 年的国民账户体系，以 2020 年为基准，储蓄率的分母加上了养老金权益的变动调整\cite{esri2024}。按它，1994 年是 12.3\%，2014 年降到$-1.6\%$\cite{esri2024}。疫情中的 2020 年升到 10.2\%，2024 年是 1.1\%\cite{esri2024}。两个基准在重叠的 1994—1998 年相差 1.0 到 4.3 个百分点（本书的计算），\figref{fig:consumption_japan}把它们分开画。
+% 据: esri2024_title, esri2024_household, ho_t1_1994, ho_t1_2014, ho_t1_2020, ho_t1_2024
+
+莫迪利亚尼演讲的图 2 里，日本在右上角，储蓄率与增长都最高，美国靠近左下角\cite{modigliani1985}。他说，美国这个最富的国家储蓄率反而偏低，生命周期假说可以用增长率不高来解释\cite{modigliani1985}。按 Horioka（2024）的综述，日本的家庭储蓄率并非一直很高，它在 1970 年代中期达到 23.2\% 的峰值，此后总体下降\cite{horioka2024}。他说，若是文化与国民性使然，储蓄率应当一直高，而且平稳或下降\cite{horioka2024}。实际上它在许多时期很低甚至为负，1950 年代中期到 1970 年代中期还明显上升过，他认为这些证据表明文化不是主要原因\cite{horioka2024}。日本的高速增长是\chref{ch:eastasia}的题目。
+% 据: md_fig2, md_us_low, md_puzzle, ho_notalways, ho_peak, ho_culture_expect, ho_culture, ho_exclude
+\end{case}
+
+\fig{consumption_japan}{日本的家庭储蓄率与经济增长。(a) 家庭（含个人企业）的储蓄率，实线按 1968 年国民账户体系（1990 年基准，储蓄除以可支配收入），虚线按 2008 年国民账户体系（2020 年基准，分母加上养老金权益的变动调整），两者在 1994—1998 年重叠。(b) 实际国内总支出的年增长率，基准同上，横线是 1956—1973 年的平均，约 9.2\%（本书的计算）。数据：内阁府经济社会综合研究所《1998 年度国民经济计算》与《2024 年度国民经济计算》，本书据其表格加工。}{fig:consumption_japan}
+% 据: esri_h10_household, esri2024_household, esri_h10_growth, esri2024_growth
+
+\section{三个争论}\label{sec:consumption-debate}
+
+\subsubsection{家庭平滑消费，还是花掉到手的钱}
+
+第一个争论是家庭会不会像理论说的那样平滑消费。平滑这一方的证据来自总量数据。霍尔发现，上一季的收入对预测消费几乎没有帮助\cite{hall1978}。莫迪利亚尼与斯坦德尔发现，1975 年的退税没有引起支出的迅速增加\cite{ms1977}。另一方的证据来自 2001 年与 2008 年近乎随机的发款时间，花掉的比例远高于永久收入假说的预测（\exref{ex:consumption-mpc}）。
+% 据: ha_income, ms_nosurge
+
+双方各有让步。霍尔承认，股价的预测力否定了纯粹的随机游走，他的修改是让部分消费调整得慢一些\cite{hall1978}。莫迪利亚尼与斯坦德尔承认，误差太大，也不能排除 1975 年的退税第一年几乎全被花掉\cite{ms1977}。他们也介绍了托宾与 Dolde 强调过的看法，相当一部分退税会落到受信贷配给约束、消费低于最优的家庭手里，这些家庭会很快花掉\cite{ms1977}。弗里德曼自己也留了借不到钱这个例外\cite{friedman1957}。退税研究的作者用流动性约束来调和，反应最大的是流动资产少、收入低的家庭\cite{jps2004}。他们也说，流动资产多、收入高的家庭，点估计同样略大，只是统计上不显著\cite{jps2004}。至今没有定论。
+% 据: ha_rejected, ha_modified, ms_cannot, ms_rationing, ms_tobin_dolde, fr_borrow, jps_liquidity, jps_high
+
+\subsubsection{日本的储蓄率为什么高}
+
+第二个争论是日本的储蓄率为什么这么高。生命周期一方看增长与年龄结构。莫迪利亚尼说，增长如今被普遍看作各国储蓄率差别的一个主要来源\cite{modigliani1985}。按 Horioka（2024）的综述，人口年龄结构的变化能解释日本家庭储蓄率过去与未来的大部分趋势，近年的下降则更多来自退休老人储蓄率的下降\cite{horioka2024}。他说，OECD 的国民账户显示，日本的家庭储蓄率 1970 年代中期在 OECD 国家里最高，近年已接近末位\cite{horioka2024}。他也列出消费信贷与社会安全网的缺乏、高增长、储蓄的税收优惠、鼓励储蓄的政策、土地与住房价格高，认为它们大概也是部分原因\cite{horioka2024}。
+% 据: md_growth_source, ho_age, ho_oecd, ho_other
+
+另一方先质疑这个数本身。按 Hayashi（1986）的估计，日本的储蓄率不论怎样定义，确实高于美国可比的储蓄率，只是没有通常以为的那么高\cite{hayashi1986}。他认为，两国国民核算的概念差别，能解释观察到的差别的相当一部分\cite{hayashi1986}。他否定了生命周期的解释，也认为税收大概不是主要原因，因为储蓄看来对利率不敏感\cite{hayashi1986}。他提出一个自己称为简单化的看法，日本人积累财富，是为了让子女过得和美国人一样好\cite{hayashi1986}。他说，这个看法与日本近 15 年的经历相符，1960 年代则不然\cite{hayashi1986}。他也说明，文中没有把这种王朝式模型与其他遗产理论做直接、正式的检验\cite{hayashi1986}。至今没有定论。
+% 据: hy_title, hy_notasmuch, hy_accounting, hy_reject, hy_taxes, hy_children, hy_simplistic, hy_notest
+
+\subsubsection{投资看资本成本，还是看现金流}
+
+第三个争论是投资由什么决定。资本成本一方有霍尔与乔根森的估计和托宾的$q$。按 Fazzari、Hubbard 与 Petersen（1987）的工作论文，大多数投资模型假定企业能对集中的证券市场定出的价格作出反应\cite{fhp1987}。他们说，有些企业拿不到足够的外部资金，投资会对现金流“过度敏感”\cite{fhp1987}。他们发现，最可能受融资约束的那组企业，投资对现金流更敏感，不分红的企业$q$值可以长期很高\cite{fhp1987}。按 Kaplan 与 Zingales（2000）的回应，投资对现金流的敏感度不是融资约束的有效指标\cite{kz2000}。据他们的转述，Fazzari 等人的回应也承认，陷入财务困境的企业敏感度可能较低\cite{kz2000}。他们说，剩下的分歧在于这种情形有多普遍，这最终是一个经验问题\cite{kz2000}。融资摩擦是\chref{ch:frictions}的题目。至今没有定论。
+% 据: fhp_title, fhp_assumption, fhp_access, fhp_excess, fhp_finding, fhp_q, kz_title, kz_notgood, kz_admit, kz_empirical
+
+\begin{deeper}[史料说明]
+\textbf{版本。}福特的讲话据美国总统资料项目网站，《1975 年减税法》据政府出版局网站上《美国法律大全》第 89 卷第 26—67 页的扫描本，1962 年的《总统经济报告》据美国总统资料项目网站上的 PDF，都是美国政府的作品。1962 年的报告到第 27 页是肯尼迪的报告，从第 31 页起是顾问委员会的年度报告，正文按每句所在的部分写作者。弗里德曼（1957）据 NBER 网站上各章的 PDF，扫描的是 1970 年的印度版，版权页印着 1957 年普林斯顿大学出版社的版权。库兹涅茨（1942）是 NBER 的第 6 号不定期论文。莫迪利亚尼与托宾的演讲据诺贝尔奖网站的 PDF。霍尔（1978）与霍尔、乔根森（1967）据霍尔在斯坦福大学网站上的扫描本，文字层不可用，按页面图像读。莫迪利亚尼与斯坦德尔（1977）据布鲁金斯学会网站上的 PDF，文字层没有词间空格，也按页面图像读。Blinder（1981）读的是 NBER 网站上第 283 号工作论文的文件，它是《政治经济学杂志》的重印本。Johnson 等（2004）与 Parker 等（2011）读的是 NBER 工作论文，后者是 2013 年 3 月的修订稿；据 Parker 等的参考文献，前者 2006 年发表在《美国经济评论》上。Fazzari 等（1987）是 NBER 第 2387 号工作论文，据 Kaplan 与 Zingales 的参考文献，它 1988 年发表在《布鲁金斯经济活动论文》上。日本的储蓄率据内阁府经济社会综合研究所网站上 1998 年度与 2024 年度国民经济计算的表格。
+
+\textbf{文字层的误读。}库兹涅茨表 2 的数字，文字层多处读错，本书按页面图像读。弗里德曼书中，World War II 的 II 读作“IL”，rise 读作“use”，how 读作“bow”。莫迪利亚尼演讲里，3 又四分之一读作“3 l/4”，fit 读作“lit”。
+
+\textbf{不一致之处。}莫迪利亚尼说，当年他们对美国的预测，按 3\% 的增长率是财富收入比 4 又三分之一、储蓄率 13\%。演讲没有说明这组预测的假设，照同一个精简模型，3\% 时约是 3.69 与 11.1\%（本书的计算）。莫迪利亚尼在正文里引的是 1971 年的莫迪利亚尼与斯坦德尔，参考文献里写的是 1977 年。Horioka（2024）说战后只有 1961—1986 年的家庭储蓄率超过 15\%，他自己的表 S-1 里 1963 年是 14.9\%，1967 年是 14.1\%。他的表 S-1 说 2008 年体系的数以 2020 年为基准，图 1 的注写的是 2015 年。莫迪利亚尼与斯坦德尔在第 179 页说第二季度发出 80 亿美元，折合年率 320 亿；第 198 页说退税将近 260 亿美元，没有说明口径，正文用前者。
+
+\textbf{只有一个来源的数。}库兹涅茨的十年平均，弗里德曼的$k$、视野与乘数，霍尔的系数与$F$统计量，霍尔与乔根森的租金与 40.9\%，莫迪利亚尼与斯坦德尔表 6 的比例，三项退税研究的估计，都只有作者自己的文本。日本的储蓄率有经济社会综合研究所的表格与 Horioka（2024）的表 S-1 两处，后者注明转引前者，只说明两者一致。Kaplan 与 Zingales 说 Fazzari 等人承认的那一点，是转述，本书没有读到 Fazzari 等 1999 年的原文。
+
+\textbf{没有取得的。}莫迪利亚尼与布伦伯格的两篇论文、安藤与莫迪利亚尼（1963）、乔根森（1963）、Tobin（1969）与 Brainard 与 Tobin（1968）都没有读到，正文据莫迪利亚尼、霍尔与乔根森和托宾自己的转述，在用到的地方写明。Hayashi（1982）关于边际$q$与平均$q$的论文、Flavin（1981）关于消费对收入过度敏感的论文、Hsieh、Shimizutani 与 Hori（2010）对日本地域振兴券的研究，本书都没有取得，正文不写。Kaplan 与 Zingales（1997）的论文，本书只取得 NBER 网站上第 5267 号工作论文的扫描本，文字层无法读。Fazzari 等人 1996 年的回应（第 5462 号）也是这样，正文只用 Kaplan 与 Zingales 2000 年的回应。
+
+\textbf{生卒年。}福特、弗里德曼、凯恩斯、库兹涅茨、里德、费雪、肯尼迪、托宾与霍尔据美国国会图书馆的规范档。莫迪利亚尼的标目没有年份，生卒年据该记录的出生日期与来源注，与德国国家图书馆的记录相合。乔根森的卒年、安藤的生年只见于德国国家图书馆（经 lobid.org），国会图书馆的安藤记录只在来源注里写着卒于 2002 年。斯坦德尔的生年据国会图书馆的记录。库兹涅茨的卒日，国会图书馆写 7 月 8 日，德国国家图书馆写 7 月 9 日，正文只用年份。布伦伯格在两处都没有找到记录，正文写生卒年未详\cite{loc39,gnd39}。
+\end{deeper}
+% 据: ford_note, pl_title, erp_title, erp_cea_sign, fr_copyright, fr_indian, ku_title, md_lecture, to_lecture, ha_issue, hj_title, ms_title, bl_jpe, jps_title, pa_title, pa_revised, pa_ref_jps, fhp_title, kz_ref_fhp, esri_h10_title, esri2024_title, fr_postwar, fr_rise, fr_define, md_numbers, md_lit, md_three_pct, md_steindel, md_ref_steindel, ho_period, ho_t1_1963, ho_t1_1967, ho_table_note, ho_fig_note, ms_paid, ms_26, kz_admit, loc_ando_note, gnd_ando_born, gnd_jorgenson_died, gnd_kuznets_died, loc_kuznets_died, loc_modigliani_note, loc_steindel
+
+\section{今天还剩什么}\label{sec:consumption-legacy}
+
+\textbf{欧拉方程。}霍尔的式~\eqref{eq:consumption-euler}后来成了宏观模型里家庭行为的标准写法，实际经济周期模型就用它（\chref{ch:rbc}）。他在论文开头引了卢卡斯 1976 年的批评，用历史数据估计的关系在政策改变以后是否还可靠，是\chref{ch:ratex}的题目。霍尔绕开收入预期的办法，也成了后来许多检验的出发点，退税研究问的正是消费对事先知道的收入变化有没有反应（本书的解读）。
+% 据: ha_lucas
+
+\textbf{谁拿到钱。}莫迪利亚尼的演讲已经讨论巴罗 1974 年的李嘉图等价命题，减税若靠将来的税偿还，理性的家庭会不会把它存起来，是\chref{ch:budget}的题目\cite{modigliani1985}。流动资产少的家庭花得多，后来发展成手停口停的家庭与异质性模型（\chref{ch:heterogeneity}）。2020 年疫情中的转移支付在\chref{ch:pandemic}，衰退时财政乘数的大小在\chref{ch:multipliers}。一次性发钱该发给谁，每一次都要重新决定。1975 年按交的税发，2008 年也发给没有所得税的家庭（本书的概括）。
+% 据: md_barro, pl_rebate, pa_noliability
+
+\textbf{日本与储蓄。}日本的泡沫与此后的停滞是\chref{ch:japanbubble}的题目，老龄化怎样影响储蓄与利率是\chref{ch:demography}的题目。投资对融资条件的依赖，在 2008 年以后的金融摩擦模型里重新受到重视（\chref{ch:frictions}）。
+
+\begin{takeaways}
+\begin{itemize}
+\item 凯恩斯的消费函数只看当年的收入。库兹涅茨发现美国几十年里资本形成占产值的份额没有随收入上升，弗里德曼称之为“严重的证据冲突”。
+\item 生命周期假说说消费看一生的资源，储蓄为了退休。它推出储蓄率与人均收入无关，增长越快储蓄率越高，莫迪利亚尼算出增长 2\% 时约 8\%、4\% 时约 13\%。
+\item 永久收入假说说消费是永久收入的一个比例$k$，暂时收入多半存起来。弗里德曼的估计里，工资收入者的$k$在$0.90$到$0.95$之间，乘数只有约 1.4，他说这些都是试探性的、有条件的。
+\item 欧拉方程把今天与明天的消费连起来。霍尔（1978）推出消费近似随机游走，上一季的收入没有预测力，股价却有。
+\item 资本的使用成本把利率、折旧与税放进投资决策，霍尔与乔根森（1967）估计 1962 年的 7\% 抵免带来 1963 年制造业设备净投资的 40.9\%。托宾的$q$看市场估值与重置成本之比。
+\item 1975 年、2001 年与 2008 年的一次性发钱检验了这些理论，2001 年与 2008 年的估计远高于永久收入假说的预测，流动性约束是作者给出的调和。家庭是否平滑消费、日本为什么储蓄多、投资看资本成本还是现金流，至今没有定论。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 用式~\eqref{eq:consumption-lifecycle}，一生 60 年，工作 45 年，每年收入 1，利率为零。每年消费多少？退休时财富多少？静止经济的财富收入比是多少？
+\item 2001 年的典型退税是 600 美元的家庭，按\exref{ex:consumption-windfall}的三条规则，第一年各多花多少？生命周期规则取还有 30 年可活。
+\item 两期模型，对数效用，$r=4\%$，$\delta=2\%$。按欧拉方程，第二期的消费是第一期的几倍？
+\item 用式~\eqref{eq:consumption-usercost}与\exref{ex:consumption-usercost}的教学输入，抵免从 7\% 提到 1975 年的 10\%，使用成本降低百分之几？意愿资本增加百分之几？
+\item 为什么生命周期假说预测增长越快储蓄率越高，弗里德曼却推测快速增长可能压低储蓄率？
+\item 2008 年的刺激款，非耐用品与总支出的两组估计差得很多。用它检验永久收入假说时要注意什么？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $C=45/60=0.75$，每年存 0.25；退休时财富$45\times0.25=11.25$，够退休后 15 年每年花 0.75。财富收入比等于退休年数的一半，即 7.5。
+\item 凯恩斯式：$0.6\times600=360$。永久收入：$0.9\times0.03\times600=16.2$。生命周期：$600/30=20$。
+\item $c_2/c_1=1.04/1.02\approx1.02$，第二期多消费约 2\%。利率高于时间偏好率，消费随时间上升。
+\item 7\% 时$c=0.35\times0.93=0.3255$，10\% 时$c=0.35\times0.90=0.315$，降低约 3.2\%；意愿资本与$c$成反比，增加$0.3255/0.315-1\approx3.3\%$。
+\item 生命周期模型里人的寿命有限，增长使年轻的储蓄者多于年老的花钱者，或使年轻一代一生的资源多于老一代，总储蓄于是为正。弗里德曼的消费者寿命近似无限长，预期持续的增长先抬高永久收入，消费相对当期收入上升；他也说这要看增长从哪里来。
+\item 两组估计的消费定义不同。永久收入假说里的消费是服务的价值，买汽车大部分属于储蓄；检验时应拿非耐用品与服务去比，或者把耐用品换算成服务流。
+\end{answers}
+
+回到 1975 年 3 月 29 日的椭圆形办公室。福特盼着退税去买汽车与家电，盼着抵免让企业扩张。照永久收入与生命周期的理论，一次性的退税多半会被存起来；后来的研究发现，钱少的家庭花得多。存下的钱成了家庭的财富，也成了投资的资金来源（本书的解读）。日本的家庭储蓄率在高速增长的年代里总体走高，到增长放慢时才达到顶峰。下一章索洛的增长模型把储蓄率当作给定，问的是储蓄能把增长推到哪里。长期增长为什么不能只靠多储蓄？
+% 据: ford_refund, ford_credits, jps_liquidity, esri_h10_household
