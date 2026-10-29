@@ -55,10 +55,10 @@ MONTHS = {m: i for i, m in enumerate(["january", "february", "march", "april", "
 # the rows of other chapters' snapshots that this chapter uses (each snapshot lists 37 in its used_in)
 REUSED = {"intro_facts": ("co_band", "co_gko30", "co_twice", "co_depleted", "co_aug17", "co_sep2"),
           "external_facts": ("lk_adjust", "lk_float"),
-          "brettonwoods_facts": ("bo_pegged", "b59_conv", "b61_reval", "b70_de_inflow", "b70_de_float", "bt_de_c",
-                                 "b70_fr_flight", "bo_controls_de")}
+          "brettonwoods_facts": ("bo_pegged", "b59_conv", "b61_reval", "b70_de_inflow", "b70_de_float", "b70_fr_flight",
+                                 "bo_controls_de")}
 # works of the bibliography that other chapters' blocks hold and this chapter cites unchanged
-REUSED_KEYS = {"cbsl2023ar", "chiodo2002", "bis2026", "bis36", "bordo1993"}
+REUSED_KEYS = {"cbsl2023ar", "chiodo2002", "bis2026", "bis36"}
 
 
 def chk(what: str, value, expected=None, tol: float = 1e-6, rel: float = 0.0) -> float:
@@ -263,7 +263,6 @@ EN, NUM, WD = "en", "num", "word"
 READINGS: dict[str, list[tuple[str, str]]] = {
     'pw_edition': [],
     'pw_images': [],
-    'pw_untenable': [],
     'pw_oct2': [('in |1949', 'num'), ('on |2', 'num'), ('October |1950', 'num'), ('rising |five', 'en'), ('US$|0.95', 'num')],
     'pw_letter': [('late |1960', 'num'), ('|twenty-nine', 'en')],
     'pw_consult': [('than |one', 'en'), ('(Abbott |1950', 'num')],
@@ -300,6 +299,7 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     'ry_wp': [('Working Paper |21162', 'num'), ('May |2015', 'num'), ('February |2018', 'num')],
     'mg_ref_1973': [('(|1973', 'num'), ('pp.|114', 'num'), ('-|32', 'num')],
     'cs_range': [('Rs.|200', 'num'), ('-|203', 'num'), ('early |2022', 'num')],
+    'ar62_sept7': [('announced September |7', 'num')],
     'gnd_licence': [],
 }
 
@@ -352,7 +352,7 @@ def check_readings(df: pd.DataFrame) -> None:
         got = read_row(r.id, " ".join(r.quote.split()))
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
         n += bool(vals)
-    quoted("rows with values, each read from its quotation", n, 158)
+    quoted("rows with values, each read from its quotation", n, 164)
     Q, notes = quotes(), meta()["notes"]
     for rid, word, named in MISPRINTS:
         assert word in Q[rid], (rid, word)                                      # printed in the quotation
@@ -453,7 +453,6 @@ TRANSLATIONS = {
     # sec:mundell-world
     "严重受损、十分难堪": "pw_gravely",
     "不那么负责的成员": "pw_gravely",
-    "至少起初，浮动被看作临时的措施": "pw_temporary",
     "有点特立独行": "pw_maverick",
     "我得出的结论是，我们最好不要依赖外汇限制": "pw_abbott51",
     # sec:mundell-origins
@@ -479,7 +478,7 @@ TRANSLATIONS = {
     "在某种意义上是对基金组织的妥协": "pw_managed",
     "给从事国际交易的人一个汇率稳定的切实保证": "pw_assurance",
     "官员们自然给不了这个保证，尽管他们相信均衡的汇率远在这个水平以上": "pw_officials",
-    "人们仍然怀疑新汇率守不守得住，政治的不确定更是如此": "pw_doubts",
+    "人们仍然怀疑新汇率守不守得住，何况当时政局不明": "pw_doubts",
     "守住汇率的能力与决心": "ar62_objective",
     "足以带来资本的净流入，弥补国际收支经常账户的逆差，并重建耗减了的外汇储备": "ar62_rates",
     "仍有相当多的失业人力与闲置的生产能力": "ar62_slack",
@@ -520,9 +519,8 @@ KEYWORDS = {
                    "conditions of supply and demand"],
     "pw_natural": ["have a natural rate which could move up or down from time to time as economic conditions might "
                    "require."],
-    "mu_canada": ["a high degree of relevance", "the vast New York market"],
+    "mu_canada": ["It should also have a high degree of relevance", "the vast New York market"],
     "pw_gravely": ['"gravely compromised and embarrassed"', '"less responsible members"'],
-    "pw_temporary": ["At least initially, floating was viewed as a temporary measure."],
     "pw_maverick": ["something of a maverick"],
     "pw_abbott51": ["The conclusion I have come to is that we would be better advised not to rely on exchange "
                     "restrictions"],
@@ -752,7 +750,7 @@ def guide(F, Y, Q):
     m61, m63, k69 = F["mg_start"][:3]
     has("mg_start", "Mundell (1961), McKinnon (1963), and Kenen (1969)")
     said("概括蒙代尔（1961）的最优货币区标准，以及麦金农（1963）与凯南（1969）的补充", m61, m63, k69)
-    say("把模型用于第一章的俄罗斯与斯里兰卡问题")
+    say("把模型用于第一章的俄罗斯与斯里兰卡问题")                               # the goal as the PLAN gives it
     assert "\\chapterstub" not in t
 
 
@@ -770,24 +768,35 @@ def opening(F, Y, Q):
     assert opened.weekday() == 0                                                 # the Monday
     chk("    two days later (两天以后)", (opened - floated).days, told("两天以后市场开盘", "", "天以后"))
     said("加元很快升到约 95 美分", 100 * usd95)
+    say("据 Powell 的《加元史》所引，他说")                                      # indirect testimony, named where it is used
     # the inflows, the options
     said("1950 年第三季度，人们猜加元又要升值，短期资本的流入急剧增加", F["pw_inflows"][0])
     has("pw_inflows", "particularly through the third quarter of 1950", "speculation regarding a Canadian-dollar revaluation")
     said("放宽上下 1\\% 的波动幅度", F["pw_options"][0])
-    has("pw_options", "permitted ±1 per cent fluctuation band", "dismissed as impractical")
+    has("pw_options", "permitted ±1 per cent fluctuation band", "apparently dismissed as impractical")
+    say("别的办法当时似乎都被当作不切实际而放弃了")
+    y46, y49 = F["pw_criticism"]
+    said("1946 年升值、1949 年又贬值以后，政府受过批评，再升值一次被看作不可接受", y46, y49)
+    has("pw_criticism", "Given the criticism levelled against the government", "another revaluation was viewed as unacceptable")
+    assert [y46, y49] == F["pw_mistake"]
     has("pw_revalue", "how much of a revaluation would be required")
     has("pw_bands", "how wide the bands would have to be")
     has("pw_untenable", "for a country dependent on foreign capital")
     # Coyne's memorandum
-    said("浮动的主意，1949 年初就有人讨论", F["pw_early49"][0])
-    has("pw_early49", "as early as the beginning of 1949")
+    said("浮动的主意，1949 年初就已有很多人讨论", F["pw_early49"][0])
+    has("pw_early49", "widely discussed as early as the beginning of 1949")
     said("那年 1 月写了一份当时保密的备忘录", mon("pw_coyne49", "January"))
     has("pw_coyne49", "then-secret memorandum", "while retaining exchange controls")
     has("pw_inertia", "government inertia")
+    say("据 Powell 的引述，他在备忘录里说")
     # Mundell, and the question
     assert Y["mu_assume"] == F["mu_issue"][2] == F["mu_presented"][1]
     said("他 1963 年的论文假定资本完全流动", Y["mu_assume"])
     has("mu_assume", "cannot maintain an interest rate different from the general level prevailing abroad")
+    # 'It' of mu_canada is the assumption, which overstates the case; 'should'
+    has("mu_overstate", "This assumption will overstate the case")
+    say("他承认这个假定说过了头，又说它对加拿大这样的国家也应当有“高度的相关性”")
+    say("货币政策可以自己定")                                                    # not the interest rate: i = i^f
     has("nb_born", "born in Canada in 1932")
     d14, y51 = F["pw_dec51"]
     revoked = datetime.date(int(y51), mon("pw_dec51", "December"), int(d14))
@@ -817,17 +826,34 @@ def world(F, Y, Q):
     assert F["pw_par49"][:2] == [y49, usd9091]
     said("这个平价在基金组织登记，波动的幅度也是上下 1\\%", F["pw_par49"][2])
     # the Fund
+    # the IMF's staff (Powell citing the minutes of the Executive Board), not the Fund itself
     has("pw_imfstaff", "over the opposition of IMF staff", "the imposition of controls on capital inflows (IMF 1950)")
+    has("pw_ref_imf1950", "International Monetary Fund. 1950.", "Executive Board Minutes")
+    say("加拿大是顶着基金组织工作人员的反对浮动的。据 Powell 引述的基金组织记录，工作人员主张")
     has("pw_gravely", "(Goforth 1950)", "set a bad example")
+    said("据 Powell 引述的 Goforth 1950 年 10 月的备忘录，当时还有人担心", F["pw_ref_goforth"][0], mon("pw_ref_goforth", "October"))
+    has("pw_ref_goforth", "Reactions to the New Canadian 'Floating' Rate.\" Memorandum")
+    assert F["pw_ref_goforth"][0] == F["pw_gravely"][0]
     has("pw_fn79", "close relationship with the IMF", "the economic argument in favour of a float was sound")
-    has("ar61_ed", "over the past years in my capacity of Executive Director of the International Monetary Fund")
-    said("1961 年以前多年任基金组织与世界银行的执行董事", Y["ar61_ed"])
+    # Rasminsky: a senior official of the Bank and Executive Director until September 1962
+    y62, y99m, _ = F["pw_ed62"]
+    has("pw_ed62", "Canada's first Executive Director", "until September 1962",
+        "while remaining a senior official of the Bank of Canada")
+    said("是加拿大银行的高级官员，又是加拿大在基金组织的第一任执行董事，一直做到 1962 年 9 月", y62,
+         mon("pw_ed62", "September"))
+    assert y62 > Y["ar61_ed"]                                                    # still in post when he became Governor
+    has("ar61_ed", "over the past years in my capacity of Executive Director of the International Monetary Fund",
+        "and International Bank")
+    say("他也任过世界银行的执行董事\\cite{boc1961}")
     y30, y99, _ = F["pw_fn79b"]
-    has("pw_fn79b", "inflation not deflation", "no tendency towards competitive devaluations")
-    said("据 Powell 引述的 Muirhead（1999），与 1930 年代不同", y99, y30)
+    assert y99 == y99m
+    has("pw_fn79b", "He also recognized", "inflation not deflation", "no tendency towards competitive devaluations")
+    said("据 Powell 引述的 Muirhead（1999），他也看到，与 1930 年代不同", y99, y30)
     # Abbott's assurance; almost twelve years
     one, y50 = F["pw_consult"]
     has("pw_consult", "ultimately to conform to the provisions of the Fund's Articles of Agreement")
+    has("pw_temporary", "At least initially, floating was viewed as a temporary measure.")
+    say("至少起初，浮动被看作临时的措施\\cite{powell2005}。阿博特表示")       # Powell's words, not Abbott's
     said("最终遵守协定里汇率不得偏离平价 1\\% 以上的规定", one)
     said("可加拿大将近 12 年以后才重新钉住汇率", F["pw_almost12"][0])
     D = dates()
@@ -836,7 +862,7 @@ def world(F, Y, Q):
     chk("    the twelve years of the section title", told("\\section{加拿大的十二年}", "的", "年"), F["pw_almost12"][0])
     # the controls go
     assert "December 1951" in column("note")["pw_abbott51"]
-    said("1951 年 12 月，阿博特在演说里说", Y["pw_abbott51"], MONTHS["december"])
+    said("据 Powell 的引述，1951 年 12 月，阿博特在演说里说", Y["pw_abbott51"], MONTHS["december"])
     said("同月 14 日，外汇管制条例被撤销", F["pw_dec51"][0])
     has("pw_dec51", "on 14 December 1951, the Foreign Exchange Control Regulations were revoked")
     said("《外汇管制法》本身 1952 年 10 月废止", F["pw_repealed"][1], mon("pw_repealed", "October"))
@@ -860,6 +886,7 @@ def origins(F, Y, Q):
     has("bg_mundell61", "until mid-September", "from Italy (where he had been teaching)")
     said("9 月中才从任教的意大利到任", mon("bg_mundell61", "September"))
     has("nb_imf", "apparently stimulated Mundell's choice of research problems")
+    said("照瑞典皇家科学院 1999 年新闻稿的说法，在研究部的这段经历，看来激发了蒙代尔对研究题目的选择", F["nb_date"][1])
     dm61, dm28, d8 = F["bg_dm"]
     assert F["bg_draft"][0] == 1900 + dm61 and dm28 == 28
     has("bg_dm", "Internal Financial Policies Under Fixed and Floating Exchange Rates")
@@ -884,7 +911,10 @@ def origins(F, Y, Q):
     said("1950 年代就让加元对美元浮动", F["nb_canada"][0])
     has("nb_canada", "had allowed its currency to float against the US dollar")
     # the name
-    said("1976 年，这些贡献在 Dornbusch 的一系列论文里被归纳为", F["bg_dornbusch"][0])
+    said("1976 年，Dornbusch 在一系列论文里把这些贡献归纳为他所说的“蒙代尔–弗莱明模型”，这个叫法从此通行",
+         F["bg_dornbusch"][0])
+    has("bg_dornbusch", "what he called the Mundell-Fleming model")
+    has("bg_since", "Ever since, that terminology")
     has("bg_vernacular", "Fleming's equations combined with Mundelfs policy analysis")
     has("bg_equally", "at least equally justified")
     d13, y99, _ = F["nb_date"]
@@ -898,7 +928,8 @@ def origins(F, Y, Q):
     has("mu_fiscal", "financed by government bond issues with no change in the money supply")
     has("mu_omo", "which only temporarily changes the money supply")
     has("fl_rhomberg", "an econometric model of the Canadian economy", "over a large part of the postwar period")
-    has("mu_rhomberg", "the applicability of the conclusions to the Canadian case")
+    has("mu_rhomberg", "Perhaps the most complete verification", "the applicability of the conclusions to the Canadian case")
+    say("{完全流动的假定对受纽约市场支配的加拿大应当高度相关；说 Rhomberg 的模型也许最完整地验证了结论对加拿大适用")
 
 
 def model_section(F, Y, Q):
@@ -992,15 +1023,18 @@ def model_section(F, Y, Q):
 def canada_section(F, Y, Q):
     C, S = canada(), bill_spread()
     two, y52, y60, lo, hi, peak, d20, y57 = F["pw_premium"]
-    said("到 1952 年，加元对美元有了约 2\\% 的溢价", y52, two)
+    said("到 1952 年，1 加元已比 1 美元贵约 2\\%，这叫加元对美元的溢价", y52, 1, 1, two)
     has("pw_premium", "a small premium of about 2 per cent")
     c = {y: cents(y) for y in range(int(y52), int(y60) + 1)}
     said("1952—1960 年 1 加元合 101.4 到 104.3 美分", y52, y60, 1, min(c.values()), max(c.values()))
     said("最高是 1957 年 8 月 20 日的约 106 美分", y57, mon("pw_premium", "August"), d20, 100 * peak)
-    has("pw_efa", "limited to smoothing short-run fluctuations")
+    has("pw_efa", "Canada through the Exchange Fund Account was limited to smoothing short-run fluctuations")
+    assert "'Foreign exchange intervention by the Bank of'" in column("note")["pw_efa"]
+    say("加拿大银行通过外汇平准账户买卖外汇，也只是熨平短期的波动")
     # the inflows and the bill spread
     said("1950 年代后期", F["pw_late50s"][0])
-    has("pw_late50s", "During the late 1950s")
+    has("pw_late50s", "During the late 1950s", "Canadian authorities became concerned")
+    say("1950 年代后期，加拿大当局担心国际竞争力在恶化")
     last = dates()["par62"].year                                               # to the year of the peg
     first = last
     while S.loc[first - 1] > 0:                                                # the run of years above the US
@@ -1019,7 +1053,9 @@ def canada_section(F, Y, Q):
     assert u61 / u56 > 2 and "more than doubled" in Q["pw_unemp"]
     has("pw_unemp", "the government sought to ease policy")
     said("科因在 1960 年的年报里说", F["pw_ar1960"][0])
-    has("pw_ar1960", "(Bank of Canada Annual Report 1960, 22)")
+    has("pw_ar1960", "(Bank of Canada Annual Report 1960, 22)", "in an attempt to drive down interest rates generally",
+        "with or without the motive of thereby reducing the inflow of capital", "would prove to be an ineffective approach")
+    say("据 Powell 的引述，科因在 1960 年的年报里说，为了普遍压低利率而再大规模地扩张货币", "即使意在借此减少资本的流入，也是如此")
     has("pw_restrictive2", "Bank and the academic community.")
     y60b, n29 = F["pw_letter"]
     said("1960 年底，29 位知名的加拿大经济学家联名写信，要求撤换科因", y60b, n29)
@@ -1048,7 +1084,8 @@ def canada_section(F, Y, Q):
          CANADA_M, OPEN["h"] * OPEN["i_f"], OPEN["k"], m["Y"], OPEN["x"], s, m["Y"], m["A"], OPEN["b"] * OPEN["i_f"],
          OPEN["x"] * m["e"], 7, 9, m["e"], 100 * (1 - m["e"]), OPEN["x"] * m["e"], OPEN["m"], m["Y"], -m["NX"])
     chk("    e = 7/9", m["e"], 7 / 9, tol=1e-12)
-    said("正是 1950 年代末加拿大的抱怨", F["pw_late50s"][0])
+    said("又让本币升值、净出口减少，正是 1950 年代末加拿大当局担心的事", F["pw_late50s"][0])
+    assert m["e"] < OPEN["e0"] and m["NX"] < 0                                   # e falls: the Canadian dollar rises
     # fig:mundell_canada
     D, P = dates(), pars()
     said("加拿大的浮动汇率，1946—1965 年。(a) 1 加元合多少美分（年均汇率的倒数），浅色的竖条是当年的最高价与最低价；虚线是 1949 年"
@@ -1062,7 +1099,9 @@ def canada_section(F, Y, Q):
     assert FIG_BILLS[1] == int(S.index[-1]) and FIG_BILLS[0] == D["float"].year and F["hs471_note"][0] == 1954
     # 1961: the quarrel
     d30, y61b = F["pw_pension"]
-    said("冲突在 1961 年变成了个人的", y61b)
+    said("冲突在 1961 年到了顶点", y61b)
+    has("pw_pension", "objected to the size of the Governor's pension", "came to a head on 30 May 1961")
+    say("政府又嫌董事会给科因定的退休金太多")
     said("5 月 30 日，政府要求科因辞职，他拒绝了", mon("pw_pension", "May"), d30)
     has("pw_pension", "with the government requesting the resignation of Governor Coyne. The Governor refused.")
     d20b = F["pw_budget61"][0]
@@ -1073,7 +1112,7 @@ def canada_section(F, Y, Q):
     COVERED.append("Donald Fleming，1905—1986")
     # the bill, the Senate, the resignation
     has("pw_bill", "to declare the position of Governor vacant", "passed the House of Commons on 7 July")
-    said("法案 7 月 7 日在下院通过，参议院的委员会听了科因的证词，7 月 12 日认定他没有失职", mon("pw_bill", "July"),
+    said("法案 7 月 7 日在下院通过，参议院的委员会听了科因的证词，7 月 12 日认定他没有不当行为", mon("pw_bill", "July"),
          F["pw_bill"][1], mon("pw_senate", "July"), F["pw_senate"][0])
     has("pw_senate", "there had been no misconduct")
     has("pw_resigned", "The following day, the full Senate confirmed", "as a vindication of his conduct")
@@ -1094,11 +1133,13 @@ def canada_section(F, Y, Q):
     # the exchange rate follows the policy
     a101, a97, y61e, a96, three, y61f = F["pw_weaken"]
     said("预算以前 1 加元约合 101 美分，预算以后很快跌到 97 美分", 1, 100 * a101, 100 * a97)
-    said("10 月，唐纳德·弗莱明宣布，加元对美元合适的折价“很可能大于现在的 3\\%”，加元又跌到 96 美分以下",
+    said("据 Powell 的引述，10 月，唐纳德·弗莱明宣布，加元对美元合适的折价“很可能大于现在的 3\\%”，加元又跌到 96 美分以下",
          mon("pw_weaken", "October"), three, 100 * a96)
+    said("折价与溢价相反，是 1 加元比 1 美元便宜的部分", 1, 1)
     chk("    the discount of 3 per cent: 100 - 97", 100 - 100 * a97, three, tol=0.5)
     has("pw_managed", "was in some ways a compromise with the IMF")
-    has("pw_fundfix", "to return to a fixed exchange rate regime")
+    has("pw_fundfix", "The Fund was encouraging Canadian authorities", "to return to a fixed exchange rate regime")
+    say("基金组织当时在鼓励加拿大")
     u95, y61g, y62 = F["pw_stab"]
     said("1961 年 11 月到 1962 年 3 月，加元稳定在约 95 美分", y61g, mon("pw_stab", "November"), y62, mon("pw_stab", "March"),
          100 * u95)
@@ -1109,8 +1150,10 @@ def canada_section(F, Y, Q):
          100 * par, band)
     has("ar62_band", "within one per cent on either side of the par value")
     has("pw_assurance", "the Government has concluded that it would be desirable")
+    say("据 Powell 的引述，财政部长办公室在新闻稿里说")
     p925, p95, p90 = F["pw_fn84"][:3]
-    said("选这个数，是因为它在 95 与 90 美分的正中", 100 * p95, 100 * p90)
+    said("选这个数，看来是因为它在 95 与 90 美分的正中", 100 * p95, 100 * p90)
+    has("pw_fn84", "was apparently chosen")
     chk("    halfway between 95 and 90", (p95 + p90) / 2, p925, tol=1e-12)
     has("pw_fn84", "halfway between US$0.95 and US$0.90 (Helliwell 2005-06)")
     said("唐纳德·弗莱明要的是加元即使自由浮动也不会跌破 90 美分的保证", 100 * F["pw_fn84a"][0])
@@ -1134,6 +1177,9 @@ def canada_section(F, Y, Q):
     said("加拿大银行同日把银行利率定为 6\\%", F["ar62_bankrate"][0])
     has("ar62_bankrate", "the minimum rate at which the Bank of Canada makes advances to chartered banks")
     has("ar62_duty", "to protect the external value of the national monetary unit")
+    has("ar62_consult", "after consultation with the Prime Minister and the Minister of Finance")
+    say("保护本国货币单位的对外价值，事先与总理、财政部长商量过")
+    say("银行利率是加拿大银行向特许银行（即加拿大的商业银行）放款的最低利率")
     m250, m1050 = F["ar62_measures"]
     has("ar62_measures", "reductions in Government expenditure amounting to $250 million in a full fiscal year")
     said("在一个完整的财政年度里削减政府支出 2.5 亿加元", m250 * 1e6)
@@ -1141,19 +1187,22 @@ def canada_section(F, Y, Q):
     imf300 = F["ar62_parts"][0]
     exim, fed, boe = F["ar62_parts2"]
     said("其中向基金组织提款 3 亿美元，美国进出口银行给了 4 亿美元的信贷额度", imf300 * 1e6, exim * 1e6)
-    said("与美联储的互惠货币安排是 2.5 亿美元，与英格兰银行的是 1 亿美元", fed * 1e6, boe * 1e6)
+    said("与美联储的互惠货币安排是 2.5 亿美元，与英格兰银行的同类安排是 1 亿美元", fed * 1e6, boe * 1e6)
     assert imf300 + exim + fed + boe == m1050 == F["ar62_credits"][0]
+    say("互惠货币安排就是\\chref{ch:brettonwoods}说的互换，两家中央银行互相提供信贷额度")
+    has("ar62_parts2", "a reciprocal currency arrangement", "a comparable arrangement with the Bank of England")
     has("pw_restored", "during the second half of 1962", "gradually ease the emergency measures")
     dec2539, dec300 = F["ar62_dec"]
     said("12 月底，官方的黄金与美元储备是 25.39 亿美元，其中 3 亿美元是向基金组织提款所得", mon("ar62_dec", "December"),
          dec2539 * 1e6, dec300 * 1e6)
     assert dec300 == imf300
-    said("欠基金组织的，1964 年全部还清", F["pw_repaid"][0])
+    said("欠基金组织的，到 1964 年全部还清", F["pw_repaid"][0])
+    has("pw_repaid", "Funds owed to the IMF were fully repaid by 1964.")
     has("pw_repaid", "excluding that of the IMF, was repaid by the end of the year")
     # after the case: the monetary policy of 1962
     said("人们怀疑 92.5 美分守不住", 100 * par)
     has("ar62_spread", "the spread between interest rates in Canada and the United States widened substantially")
-    said("经济从 1961 年初起已在周期性地扩张", F["ar62_expansion"][0])
+    said("加拿大银行在年报里说，经济从 1961 年初起已在周期性地扩张", F["ar62_expansion"][0])
     has("ar62_expansion", "since early in 1961")
     has("ar62_contraction", "a temporary but sharp contraction in total chartered bank assets and in the total money supply",
         "came to an end in early September")
@@ -1161,8 +1210,9 @@ def canada_section(F, Y, Q):
     said("到 9 月，储备与信心恢复得够了，货币政策才开始放松", mon("ar62_sept", "September"))
     has("ar62_sept", "permit some relaxation of monetary policy")
     p5, d12, p4, d13b = F["ar62_cuts"]
-    said("银行利率 10 月 12 日降到 5\\%，11 月 13 日降到 4\\%", mon("ar62_cuts", "October"), d12, p5,
-         mon("ar62_cuts", "November"), d13b, p4)
+    has("ar62_sept7", "reduction of the Bank Rate", "announced September 7")
+    said("银行利率 9 月 7 日起下调，10 月 12 日降到 5\\%，11 月 13 日降到 4\\%", mon("ar62_sept7", "September"),
+         F["ar62_sept7"][0], mon("ar62_cuts", "October"), d12, p5, mon("ar62_cuts", "November"), d13b, p4)
     assert F["ar62_bankrate"][0] > p5 > p4
     # who paid
     say("谁付了代价，从措施本身就看得出来（本书的解读）")
@@ -1180,6 +1230,7 @@ def canada_section(F, Y, Q):
 
 def trilemma(F, Y, Q):
     has("nb_trinity", "self-evident for academic economists")
+    say("在资本完全流动、本国是小国、物价不变这几个假定下，模型直接给出了三选二")    # the corollary and its assumptions
     y1931 = there("ch29_depressionworld", "1931 年，英国放弃了固定汇率，德国放弃了资本的自由流动，法国两样都守住，付出的是通缩。")
     said("1931 年，英国放弃了固定汇率，德国放弃了资本的自由流动，法国两样都守住，付出的是通缩", *y1931)
     said("加拿大 1950 年选了浮动，1962 年回到钉住", dates()["float"].year, dates()["par62"].year)
@@ -1187,18 +1238,14 @@ def trilemma(F, Y, Q):
     # West Germany (Chapter 36's rows)
     F36, Q36, Y36 = other("brettonwoods_facts")
     five, _, _, y61 = F36["b61_reval"]
-    said("它 1961 年 3 月把马克升值 5\\%", y61, their_mon("brettonwoods_facts", "b61_reval", "March"), five)
+    # Chapter 36 tells the rest (the inflows of April-May 1969, the dates of the float): a clause here
+    said("马克是西德的货币单位，1961 年 3 月升值 5\\%", y61, their_mon("brettonwoods_facts", "b61_reval", "March"), five)
     their("brettonwoods_facts", "b70_de_inflow", "In the final days of April and the first days of May",
           "just over $4 milliard")
-    d29, d26 = F36["bt_de_c"]
-    said("1969 年 4 月底 5 月初，流入西德的资金略多于 40 亿美元；9 月 29 日到 10 月 26 日，联邦银行停止在干预上限买进美元",
-         Y36["b70_de_inflow"], their_mon("brettonwoods_facts", "b70_de_inflow", "April"),
-         their_mon("brettonwoods_facts", "b70_de_inflow", "May"), F36["b70_de_inflow"][0] * 1e9,
-         their_mon("brettonwoods_facts", "bt_de_c", "September"), d29, their_mon("brettonwoods_facts", "bt_de_c", "October"),
-         d26)
     their("brettonwoods_facts", "b70_de_float", "to suspend its purchases of dollars at the upper intervention limit")
+    said("1969 年资金大量流入，联邦银行停止在干预上限买进美元，马克浮动（\\chref{ch:brettonwoods}）", Y36["b70_de_inflow"])
     their("brettonwoods_facts", "b70_fr_flight", "despite the exchange controls", "capital flight")
-    assert Y36["bt_de_c"] == Y36["b70_de_inflow"] == F36["b70_fr_flight"][1]
+    assert Y36["b70_de_inflow"] == F36["b70_fr_flight"][1]
     said("\\cmprow{例子}{加拿大 1950—1962 年}{布雷顿森林时期的多数国家；西德 1960 年又限制资本流入}", dates()["float"].year,
          dates()["par62"].year, F36["bo_controls_de"][1])
     their("brettonwoods_facts", "bo_controls_de", "only to impose restrictions on capital inflows again in 1960")
@@ -1216,6 +1263,8 @@ def trilemma(F, Y, Q):
     said("金本位时期，钉住国的系数约 0.5，不钉住国接近 0", d[5], d[6])
     said("布雷顿森林以后，钉住国仍约 0.5，不钉住国约 0.3", post[5], post[6], slack=0.01)
     has("os_bw", "a clear by-product of widespread capital controls")
+    has("os_bwzero", "seem to have essentially shut down")
+    say("布雷顿森林时期的资本管制看来“基本上关掉了”")
     said("两个时期的系数都远不到 1", 1)
     has("os_neither", "In neither era do we see slope coefficients or R")
     has("os_not1", "no exchange rate bands, costless arbitrage, and perfect regime credibility")
@@ -1255,6 +1304,8 @@ def trilemma(F, Y, Q):
          F["cs_range"][1])
     has("cs_range", "moral suasion")
     their("external_facts", "lk_adjust", "in early March 2022")
+    has("cs_liquidity", "significant shortage in liquidity in the domestic foreign exchange market")
+    say("国内外汇市场的流动性严重短缺，官方汇率与“灰色市场汇率”的差距越来越大")
     said("3 月初只好让汇率调整", their_mon("external_facts", "lk_adjust", "March"))
     their("external_facts", "lk_float", "the subsequent floating of the exchange rate")
     L = lkr()
@@ -1310,7 +1361,7 @@ def debate(F, Y, Q):
     said("1970 年代初布雷顿森林体系崩溃以后", y70)
     has("pw_model", "provide a model for the rest of the world", "during the early 1970s")
     has("pw_academics", "generally unpopular in business circles")
-    said("弗莱明 1962 年也说", Y["fl_equilibrating"])
+    said("马库斯·弗莱明 1962 年的论文也说", Y["fl_equilibrating"])
     said("1950 年代的加拿大“一般就是这样”", F["fl_equilibrating"][0])
     has("fl_equilibrating", "to mitigate the exchange rate variations resulting from variations in internal financial policy")
     said("弗里德曼（Milton Friedman，1912—2006）1948 年在芝加哥大学与加拿大银行的副行长辩论", F["loc_friedman"][0],
@@ -1326,6 +1377,7 @@ def debate(F, Y, Q):
     has("pw_fn80", "The Economist", "Inquest on a Floating Exchange Rate")
     said("说浮动汇率在 1950—1957 年也许对加拿大有益", y50b, 1900 + y57)
     has("pw_fn80b", "With interest rates remaining very high")
+    say("另一方看 1950 年代后半期。当局担心强势的加元削弱了竞争力")
     said("推动了蒙代尔 1962 年关于内外平衡下货币与财政政策搭配的论文", F["pw_fn82"][0])
     has("pw_fn82", "The Appropriate Use of Monetary and Fiscal Pol")
     assert F["mu_fn5_1962"][2] == F["pw_fn82"][0]
@@ -1337,7 +1389,11 @@ def debate(F, Y, Q):
     has("ry_centre", "monetary policy in the centre country")
     has("ry_directly", "if and only if the capital account is managed")
     has("ry_certainly", "countries with fixed exchange rates cannot have independent monetary policies")
-    has("ry_options", "( a) targeted capital controls")
+    has("ry_options", "( a) targeted capital controls", "(b) acting on one of the sources of the financial cycle itself")
+    has("ry_options2", "(c) acting on the transmission channel cyclically",
+        "(d) acting on the transmission channel structurally by imposing stricter limits on leverage")
+    assert "(e)" not in Q["ry_options2"] and told("开出的办法有四种", "有", "种") == 4     # count the items: four
+    say("以及对所有金融中介的杠杆设更严的上限")
     said("不钉住的国家无论 1914 年以前还是现在", F["os_nonpegs"][0])
     said("对基准国利率的反应比 1914 年以前的更强", F["os_stronger"][0])
     has("os_stronger", "to respond more strongly to changes in the base")
@@ -1383,21 +1439,31 @@ def deeper(F, Y, Q):
     p99, p95, p90 = F["os_t1_legend"]
     has("os_t1_legend", "a at 95%, and b at 90%")
     said("表 1 却把 $-0.20$ 与 $-0.26$ 分别标为在 90\\% 与 95\\% 的水平上显著", 1, -bw[2], -bw[3], p90, p95)
+    assert bw[2] < 0 and bw[3] < 0                                               # neither reading: following the base
+    say("两种读法都说明，那时钉住的国家利率并不跟着基准国走（本书的解读）")
     # the indirect testimony
-    said("科因 1949 年的备忘录与 1960 年的年报、弗里德曼 1948 年的辩论、《经济学人》1962 年的文章", F["pw_early49"][0],
-         F["pw_ar1960"][0], F["pw_friedman"][0], F["pw_fn80"][1])
-    said("Goforth（1950）、Muirhead（1999）与 Helliwell 的说法", F["pw_gravely"][0], F["pw_fn79b"][1])
+    said("科因 1949 年的备忘录与 1960 年的年报、基金组织工作人员 1950 年的意见（Powell 引的是基金组织执行董事会的记录）、弗里德曼 1948 年"
+         "的辩论、《经济学人》1962 年的文章", F["pw_early49"][0], F["pw_ar1960"][0], F["pw_imfstaff"][0],
+         F["pw_friedman"][0], F["pw_fn80"][1])
+    assert F["pw_ref_imf1950"][0] == F["pw_imfstaff"][0]
+    has("pw_untenable", "(Hexner 1954, 248)")
+    said("Hexner（1954）、Goforth（1950）、Muirhead（1999）与 Helliwell 的说法", F["pw_untenable"][0], F["pw_gravely"][0],
+         F["pw_fn79b"][1])
     said("1962 年 6 月的数字，Powell 引的是 1962 年的年报", Y["ar62_jun24"], mon("ar62_jun24", "June"), F["pw_ar62cite"][0])
     has("pw_ar62cite", "(Bank of Canada Annual Report 1962, 8)")
     has("pw_jun24", "US$1,050 million in financial support")
     said("蒙代尔（1961、1973）、麦金农（1963）与凯南（1969）据 Mongelli（2002）", F["mg_start"][0], F["mg_1973"][1],
          F["mg_start"][1], F["mg_start"][2], F["mg_ecb"][0])
     # single witnesses
-    said("加元 1950 年代的溢价、1961—1962 年的汇率与加拿大的失业率只据 Powell", F["pw_late50s"][0], F["pw_weaken"][2],
-         F["pw_stab"][2])
+    two, y52, _, _, _, _, d20, y57 = F["pw_premium"]
+    said("1952 年约 2\\% 的溢价、1957 年 8 月 20 日的高点、1961—1962 年的汇率与加拿大的失业率只据 Powell", y52, two, y57,
+         mon("pw_premium", "August"), d20, F["pw_weaken"][2], F["pw_stab"][2])
+    # Historical Statistics takes its rates from the Bank of Canada Review: consistent, not independent
+    has("hs_src560", "Source: Bank of Canada Review , table 65.")
+    say("《加拿大历史统计》的年均汇率取自《加拿大银行评论》，与 Powell 相合，不算独立的证人")
     said("储备、国际信贷与 1962 年秋的银行利率只据 1962 年的年报", Y["ar62_cuts"], r62)
     assert "Single witnesses" in notes and "rests on the Annual Report 1962 alone" in notes
-    said("俄罗斯的加息只据 Chiodo 与 Owyang（第 1 章）", 1)
+    said("俄罗斯的加息只据 Chiodo 与 Owyang（\\chref{ch:intro}）")
     assert "the rate rises of May 1998 rest on Chiodo and Owyang alone" in notes
     said("斯里兰卡的 200 到 203 卢比只据中央银行的年报", F["cs_range"][0], F["cs_range"][1])
     # not obtained (the snapshot's notes)
@@ -1426,12 +1492,16 @@ def legacy(F, Y, Q):
     has("nb_limits", "highly simplified assumptions about expectations", "gradual price adjustment and rational expectations")
     has("nb_overshoot", "temporarily")
     has("nb_independence", "independent responsibility for price stability")
+    has("nb_decentral", "primary concern was not decentralization itself", "by explaining the conditions for decentralization")
+    say("他关心的并不是分权本身，可他说明了政府与中央银行各管一样工具的条件，由此预见了")
+    has("nb_limits", "These shortcomings have been remedied by later researchers")
     said("拉斯明斯基 1961 年的两条原则", F["ar61_statement"][1])
 
 
 def takeaways(F, Y, Q):
-    said("这个模型由弗莱明（1962）与蒙代尔（1963）各自独立、大约同时提出，1976 年才被叫作蒙代尔–弗莱明模型",
-         F["bg_ref_fleming"][0], Y["mu_assume"], F["bg_dornbusch"][0])
+    said("这个模型由弗莱明（1962）与蒙代尔（1963）各自独立、大约同时提出。1976 年 Dornbusch 把它归纳为蒙代尔–弗莱明模型，"
+         "这个叫法从此通行", F["bg_ref_fleming"][0], Y["mu_assume"], F["bg_dornbusch"][0])
+    say("马库斯·弗莱明认为战后很长一段时期的加拿大很可能就是这样")
     D, C = dates(), canada()
     below_par = [y for y in range(1950, 1962) if C.loc[y, "cad_per_usd_avg"] < 1]
     assert below_par == list(range(1952, 1961))                                  # 9 of the 11 full years: 多在
@@ -1462,6 +1532,7 @@ def selfcheck(F, Y, Q):
     assert pg["mult"] > m["fiscal_peg"]["mult"]                                 # a smaller m: a larger multiplier
     said("浮动时净出口仍要减少 4，$x$小了，汇率就要升得更多", -fl["NX"])
     assert (1 - fl["e"]) > (1 - m["fiscal_float"]["e"])
+    say("近于管住外汇的买卖，放弃了资本的自由流动，最后汇率也守不住，只好放开")
     say("储备会一直减少，直到用完。这就是\\exref{ex:intro-peg}的第（2）问，储备耗尽以后只能放弃钉住")
     st, fk, lg = m["sc3_ster"], m["sc3_float"], m["sc3_long"]
     said("$mh/k=8$，$\\kappa=4$小于它，BP 比 LM 陡", st["threshold"], SC3["kappa"])
@@ -1628,7 +1699,9 @@ EVENTS = [("在平价上下 1\\% 以内维持汇率（\\chref{ch:brettonwoods}�
           ("9 月 2 日开始浮动", "ch01_intro", "9 月 2 日，卢布开始浮动"),
           ("4 月末是 345 卢比（\\chref{ch:external}）", "ch05_external", "4 月末折合 345.27 卢比"),
           ("借款征收利息平衡税（\\chref{ch:brettonwoods}）", "ch36_brettonwoods", "征收利息平衡税"),
-          ("它 1961 年 3 月把马克升值 5\\%", "ch36_brettonwoods", "西德 1961 年 3 月把马克升值 5\\%"),
+          ("马克是西德的货币单位，1961 年 3 月升值 5\\%", "ch36_brettonwoods", "西德 1961 年 3 月把马克升值 5\\%"),
+          ("互惠货币安排就是\\chref{ch:brettonwoods}说的互换", "ch36_brettonwoods",
+           "美国与其他中央银行签订互换协定，双方互相提供双边的信贷额度"),
           ("马克浮动（\\chref{ch:brettonwoods}）", "ch36_brettonwoods", "马克的汇率浮动")]
 # the chapters this one hands on to
 LATER = {"ch:floating": "ch46_floating", "ch:euro": "ch60_euro", "ch:emcrises": "ch61_emcrises",
@@ -1773,7 +1846,7 @@ def counts() -> None:
     assert "\\chapterstub" not in t
     # who paid for the defence of the peg in 1962, and the quarrel that cost Coyne his post
     for words in ("谁付了代价", "进口商", "消费者", "出国的旅客", "靠政府开支的人", "借款人", "失业的人",
-                  "参议院认定他没有失职，他还是辞了职", "银行利率定在了 6\\%，货币收紧了"):
+                  "参议院认定他没有不当行为，他还是辞了职", "银行利率定在了 6\\%，货币收紧了"):
         assert words in main, words
     # the two debates of the editor's notes are left open
     for words in ("第一个争论", "第二个争论"):
