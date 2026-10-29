@@ -139,6 +139,11 @@ def page(rid: str) -> int:
     return int(re.search(r"pp?\. (\d+)", column("juan")[rid]).group(1))
 
 
+def president_last() -> int:
+    """The last page of the President's Economic Report of 1962, where his signature is (the Council's report follows)."""
+    return int(re.search(r"and p\. (\d+) \(PDF", column("juan")["erp_signature"]).group(1))
+
+
 def chapter(name: str) -> str:
     """Another chapter's text without its comment lines."""
     t = (ROOT / "zh" / f"{name}.tex").read_text(encoding="utf-8")
@@ -314,6 +319,7 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     'ar_kg': [('Robert |1964', 'num')],
     # the web pages and the authority records
     'smg_fourteen': [('Approximately |fourteen', 'en')],
+    'loc_okun_note': [('Nov. 28, |1928', 'num'), ('May 23, |1980', 'num')],
     'gnd_licence': [],
 }
 
@@ -391,8 +397,8 @@ def check_readings(df: pd.DataFrame) -> None:
             got = read_row(r.id, " ".join(r.quote.split()))
             n += bool(vals)
         assert [round(g, 6) for g in got] == [round(v, 6) for v in vals], f"{r.id}: read {got}, value column {vals}"
-    quoted("rows with values, each read from its quotation", n, 165)
-    quoted("rows read on a page image (no quotation)", img, 69)
+    quoted("rows with values, each read from its quotation", n, 170)
+    quoted("rows read on a page image (no quotation)", img, 72)
     Q, notes = quotes(), meta()["notes"]
     for rid, word, named in MISPRINTS:
         assert word in Q[rid], (rid, word)                                      # printed in the quotation
@@ -587,23 +593,16 @@ TRANSLATIONS = {
     "战胜失业不是经济政策唯一的目的，但它一定是不可缺少的开端。": "erp_conquest",
     "我们承担不起满足于任何规定的失业水平。但为了工作的需要，我们把 4\\% 的失业率看作一个临时的目标。": "erp_target",
     "非自愿的失业是经济浪费的一个标志，但失业根本的恶，在于它是对人的尊严的冒犯。": "erp_dignity",
-    "任何实际的失业目标都只是一时的折中，达到它绝不能成为松懈的理由，而应当激励人们去找出把失业率降得更低的办法。":
-        "erp_compromise",
-    "以经济现有的结构，以及物价与工资决定的过程，认真地把失业推到接近零，会造成很高的物价上涨率。": "erp_zero_infl",
     "任意地重新分配": "erp_redistribution",
-    "消除总需求不足造成的失业，又不造成需求引起的通胀": "erp_fullemp",
-    "选定稳定政策的某个目标，并不使政策承诺一个不可更改的、与充分就业相应的失业率定义。情况可能改变失业率与物价水平对总需求"
-    "数量的反应程度。因此，当前的经验必须是向导。": "erp_commit",
     "稳定政策一个合理而审慎的充分就业目标": "erp_reasonable",
-    "4\\% 的失业是一个不高的目标，但必须强调，这是一个应当只靠稳定政策就能达到的目标。": "erp_modest",
     "持久的、系统的特征": "erp_notpermanent",
     "并没有一个确切的失业率，到了那里，总需求的扩张就突然不再影响就业，只影响一般物价水平。": "erp_noprecise",
     "这类估计当然不可能精确": "erp_precise",
-    "失业的水平是经济浪费的晴雨表。失业率每向 4\\% 前进 1 个百分点，在战后的扩张时期意味着总产出约增加 3\\%。": "erp_3pct",
+    "经济浪费的晴雨表": "erp_3pct",
     "代价极高的药": "erp_expensive",
     "公平会被牺牲，因为整个经济，尤其是失业者，会因少数个人与集团行使经济权力的方式而受罪。": ("erp_equity", "erp_equity2"),
-    "自由而进步的经济在增长中不可避免的一部分": "erp_displacement",
-    "进步的牺牲品；他们被迫长期失业，这对谁都没有好处，却把不公正的惩罚加在任意挑出的少数人身上": "erp_victims",
+    "进步的牺牲品": "erp_victims",
+    "把不公正的惩罚加在任意挑出的少数人身上": "erp_victims",
     "约 8\\%": "erp_magnified",
     "约 3\\%": "erp_3pct",
     "复兴": "nbb_reviving",
@@ -612,6 +611,7 @@ TRANSLATIONS = {
     "劳工日益增强的谈判力量": "kl_trend",
     "纯粹是一个实物体系": "kl_real",
     "无法区分": "kl_nodistinguish",
+    "自主的": "kl_autonomous",
     "没有给出可靠性的量度": "kl_reliability",
     "太过加总": "kl_aggregative",
     "最为著名": "nb_famous",
@@ -683,14 +683,8 @@ KEYWORDS = {
     "erp_conquest": ["The conquest of unemployment is not the sole end of economic policy", "indispensable beginning"],
     "erp_target": ["We cannot afford to settle for any prescribed level of unemployment", "a temporary target"],
     "erp_dignity": ["a sign of economic waste", "an affront to human dignity"],
-    "erp_compromise": ["only a temporary compromise", "a still lower rate"],
-    "erp_zero_infl": ["push unemployment close to zero", "a high rate of price inflation"],
     "erp_redistribution": ["an arbitrary redistribution"],
-    "erp_fullemp": ["eliminate the unemployment which results from inadequate aggregate demand",
-                    "demand-induced inflation"],
-    "erp_commit": ["does not commit policy to an unchangeable definition", "Current experience must therefore be the guide"],
     "erp_reasonable": ["a reasonable and prudent full employment target for stabilization policy"],
-    "erp_modest": ["Unemployment of 4 percent is a modest goal", "achievable by stabilization policy alone"],
     "erp_notpermanent": ["a permanent and systematic feature"],
     "erp_noprecise": ["There is no precise unemployment rate", "affect solely the general price level"],
     "erp_precise": ["cannot, of course, be precise"],
@@ -698,7 +692,6 @@ KEYWORDS = {
     "erp_expensive": ["an extremely expensive cure"],
     "erp_equity": ["Equity would be sacrificed", "the unemployed in particular"],
     "erp_equity2": ["exercise their economic power"],
-    "erp_displacement": ["an inevitable part of the growth of a free and progressive economy"],
     "erp_victims": ["victims of progress", "an unjust penalty on an arbitrarily selected few"],
     "erp_magnified": ["about 8 percent"],
     "nbb_reviving": ["reviving"],
@@ -707,6 +700,7 @@ KEYWORDS = {
     "kl_trend": ["the growing bargaining strength of labor"],
     "kl_real": ['purely a "real" system'],
     "kl_nodistinguish": ["no way of distinguishing"],
+    "kl_autonomous": ["autonomous behavior patterns"],
     "kl_reliability": ["No measures of reliability are given here"],
     "kl_aggregative": ["too aggregative"],
     "nb_famous": ["became the most famous"],
@@ -960,12 +954,22 @@ def opening(F, Y, Q):
 
 
 def world(F, Y, Q):
-    said("1962 年美国《总统经济报告》所附的顾问委员会年度报告回顾说", F["erp_title"][0])
+    said("1962 年，美国总统经济顾问委员会在随《总统经济报告》发表的年度报告里回顾", F["erp_title"][0])
+    say("顾问委员会写道：“失业从前")
     has("erp_title", "TOGETHER WITH THE ANNUAL REPORT OF THE COUNCIL OF ECONOMIC ADVISERS")
     has("erp_depression", "assume national responsibility", "involuntary")
     said("美国 1946 年的《就业法》要求总统向国会提交经济报告", F["erp_act"][0])
     has("erp_act", "as required under the Employment Act of 1946")
-    said("1962 年 1 月的报告说，复苏只把经济带到了", F["erp_title"][0], mon("erp_title", "January"))
+    said("肯尼迪（John F. Kennedy，1917—1963）在 1962 年 1 月的报告里说，复苏只把经济带到了", *F["loc_kennedy"],
+         F["erp_title"][0], mon("erp_title", "January"))
+    # the speakers: the President's report runs to p. 27, the Council's Annual Report from p. 31
+    for rid in ("erp_maximum", "erp_conquest", "erp_twothirds", "erp_target", "erp_1963", "erp_price"):
+        assert page(rid) <= president_last(), rid
+    for rid in ("erp_depression", "erp_conscience", "erp_dignity", "erp_zero", "erp_zero_infl", "erp_redistribution",
+                "erp_partial", "erp_reasonable", "erp_commit", "erp_1955", "erp_notpermanent", "erp_noprecise",
+                "erp_precise", "erp_gap49", "erp_3pct", "erp_expensive", "erp_equity", "erp_displacement", "erp_pool",
+                "erp_victims", "erp_magnified", "erp_jobs"):
+        assert page(rid) >= page("erp_cea"), rid
     has("erp_maximum", "only part of the way")
     B = boe()["civilian_unemp_pct"].loc[1948:1957]
     lo_y, hi_y = F["ph_periods"][4:6]
@@ -981,7 +985,8 @@ def world(F, Y, Q):
     has("ss_1946", "successive rounds of wage increases resulting from collective bargaining")
     a, b = F["ss_creep"]
     said("1955—1958 年物价又缓慢爬升，后期似乎是在产能日益过剩", a, 1900 + b)
-    has("ss_causations", "demand-pull versus cost-push")
+    has("ss_causations", "It is no wonder then", "demand-pull versus cost-push")
+    say("萨缪尔森与索洛说，难怪经济学家在争论通胀的原因，是需求拉动还是成本推动")
     has("ss_accelerate", "we do not draw the firm conclusion")
     # the theory
     said("1976 年在诺贝尔奖演讲里回顾了失业与通胀之间有稳定关系的假说", F["fr_lecture"][1])
@@ -1000,6 +1005,8 @@ def curve_section(F, Y, Q):
     has("ph_pbh", "indexof hourlywage rates", "Sheila Hopkins")
     has("ph_unemp", "Board of Trade and the Ministry of Labour", "from trade union returns")
     has("ph_central", "first centraldifference")
+    has("ph_fn_central", "The index is apparentlyintended to measure the average")
+    say("这个指数看来是要量一年里工资率的平均水平")
     a, b, c = F["ph_1861"]
     said("比如 1861 年的数，用的是 1860 年与 1862 年的指数", a, c, b)
     assert b - c == 2 and a == p[0]
@@ -1035,7 +1042,9 @@ def curve_section(F, Y, Q):
     a, b, c = F["ph_1893"][:3]
     said("1893—1896 年景气回升，工资却涨得比平常慢", a, b)
     said("1897 年终于酿成劳资冲突", F["ph_1893"][5])
-    has("ph_1893", "exceptional resistance by employers to wage increases", "culminating in industrial strife")
+    has("ph_1893", "This suggests that there may have been exceptional resistance by employers to wage increases",
+        "culminating in industrial strife")
+    say("他猜测，这可能是雇主格外抵制加薪")
     _, _, _, eight, y98 = F["ph_eight"]
     chk("    eight hours (八小时)", told("那几年雇主联合会抵制工会八小时工作日的要求", "工会", "小时"), eight)
     said("一直到 1898 年 1 月", y98, mon("ph_eight", "January"))
@@ -1049,10 +1058,18 @@ def curve_section(F, Y, Q):
     has("ph_timelag", "collectivebargaining", "arbitration")
     # 1913-1948
     y21, y48, a, b = F["ph_1921src"]
-    said("1913—1948 年的工资，1921 年起用劳工部的小时工资率指数，失业率 1921—1945 年用劳工部的英国数字", p[2], p[3], y21,
-         a, b)
+    a13, b13, c13, d13 = F["ph_1913src"]
+    said("1913—1920 年沿用前一段的序列", a13, b13)
+    assert a13 == p[2] and (c13, d13) == (p[0], p[1]) and b13 + 1 == y21
+    has("ph_1913src", "the series used are a continuationof those used for the period")
+    said("1921—1948 年的工资用劳工部每年 12 月底的小时工资率指数", y21, y48, mon("ph_1921src", "December"))
     assert y48 == p[3]
-    has("ph_1921src", "index of hourlywage rates", "the United Kingdom")
+    has("ph_1921src", "index of hourlywage rates at the end of Decemberof each year",
+        "the percentagechange in the index each year being taken as a measureof the averagerate", "the United Kingdom")
+    a46, b46 = F["ph_1946src"]
+    said("失业率 1921—1945 年用劳工部的联合王国数字，1946—1948 年取自国际劳工组织的统计年鉴", a, b, a46, b46)
+    assert a46 == b + 1 and b46 == p[3]
+    has("ph_1946src", "StatisticalYearbooksof the InternationalLabourOrganisation")
     said("1915—1918 年失业很少", *F["ph_1915"])
     has("ph_1915", "automaticcost of livingadjustments")
     u20, y20, u21, y21, w21, _ = F["ph_1921"]
@@ -1076,7 +1093,8 @@ def curve_section(F, Y, Q):
     a, b, u, yc = F["ph_1925curve"]
     said("按 1861—1913 年的曲线，这个失业率对应$-0.56\\%$", a, b, -yc)
     chk("    the curve at 10.94 per cent (-0.56)", y_of(u), yc, tol=0.005)
-    has("ph_view", "the evidence does not support the view")
+    has("ph_view", "the evidence does not support the view", "increased resistance to downward movements of wage rates")
+    say("是因为工资率往下调时遇到的抵制比以前大")
     said("1935—1937 年工资的涨幅", F["ph_1935"][0], F["ph_1935"][2])
     said("1940 年与 1941 年的加薪", *F["ph_war"])
     has("ph_war", "the effectiveness of the economic controls")
@@ -1197,6 +1215,7 @@ def prices(F, Y, Q):
     p = F["ph_periods"]
     said("他认为 1861—1913 年只有 1862 年的进口价格上涨", p[0], p[1], F["ph_mild"][0])
     has("ph_support", "seems in general to support")
+    say("统计证据看来大体支持他的假说")
     g2, u_stable = F["ph_stable"]
     said("假定生产率每年提高 2\\%，要让产品价格稳定，失业率要“略低于 2.5\\%”", g2, u_stable)
     said("要让工资率稳定，失业率要在 5.5\\% 左右", F["ph_wages5"][0])
@@ -1241,6 +1260,8 @@ def menu_section(F, Y, Q):
     has("ss_suigeneris", "money wages rose or failed to fall in the face of massive unemployment")
     p20, y34 = F["ss_1934"]
     said("1934 年工资涨了 20\\%", y34, p20)
+    has("ss_1934", "must represent the NRA codes")
+    say("一定反映了按国家工业复兴法订立的行业法规（\\chref{ch:alternatives}）")
     said("到 1933 年许多失业已成为结构性的", F["ss_structural"][0])
     century = int(y60) // 100 + 1
     has("ss_early", "the first decade of the century and the twenties")
@@ -1252,7 +1273,8 @@ def menu_section(F, Y, Q):
     said("他们判断，现在要失业“更像是 8\\%”", F["ss_8pct"][0])
     has("ss_shift", "in the forties and fifties")
     said("这条关系在 1940 与 1950 年代略微但明显地向上移了", 1940, 1950)
-    has("ss_compact", "geographicalcompactness")
+    has("ss_compact", "It would seem plausible that the sheer geographicalcompactness",
+        "Moreover, the British have pursued a more deliberate policy of relocation of industry")
     has("ss_mobility", "geographical and industrial")
     g, lo, hi = F["ss_point1"]
     said("要让工资只按 2.5\\% 的生产率增长上涨，美国似乎要有 5\\% 到 6\\% 的平民劳动力失业", g, lo, hi)
@@ -1269,10 +1291,16 @@ def menu_section(F, Y, Q):
     has("ss_down", "shift the curve downwardin the longer run")
     has("ss_up", "more and more unemployment being needed just to keep prices stable")
     said("他们提到，美国也许要 8\\% 到 10\\% 的失业才能稳住货币工资", *F["ss_810"])
+    has("ss_810", "there is a suggestion")
+    has("ss_forever", "Is not this kind of relationshipalso one which depends heavily on remembered experience?")
+    say("这种关系是不是也在很大程度上取决于“记得的经验”")
+    has("ss_nojudge", "no conclusive or suggestive evidence")
+    has("ss_welcome", "the believers in demand-pull ought to welcome such an experiment")
+    has("ss_pain", "equally convinced")
     assert F["ss_forever"] == F["ss_810"]
     has("ss_bias", "inflationary bias")
     has("ss_experiment", "deliberate policy")
-    has("ss_teachers", "schoolteachers, pensioners")
+    has("ss_teachers", "The same expectations will induce schoolteachers, pensioners")
     # the compare box
     p = F["ph_periods"]
     said("\\begin{compare}{菲利普斯（1958）与萨缪尔森、索洛（1960）}{菲利普斯（1958）}{萨缪尔森与索洛（1960）}", F["ph_source"][2],
@@ -1355,8 +1383,9 @@ def case(F, Y, Q):
          100 * (K[1961] / K[1960] - 1))
     cols = ["year", "canada", "atlantic", "quebec", "ontario", "prairie", "bc", "newfoundland"]
     R = dict(zip(cols, D[1961]))
-    said("1961 年，安大略的失业率是 5.5\\%，大西洋地区是 11.2\\%，纽芬兰是 19.5\\%", 1961, R["ontario"], R["atlantic"],
+    said("1961 年的年平均失业率，安大略是 5.5\\%，大西洋地区是 11.2\\%，纽芬兰是 19.5\\%", 1961, R["ontario"], R["atlantic"],
          R["newfoundland"])
+    has("hs_d491_title", "Unemployment rates, by region, annual averages")
     has("hs_d491_fn1", "Excludes the Yukon Territory, the Northwest Territories and Indians on reserves.")
     say("这些数字不含育空、西北地区与保留地上的印第安人")
     ca = M.loc[1956:1961]
@@ -1393,7 +1422,9 @@ def gap(F, Y, Q):
     has("ok_trial", "Trial gaps")
     said("第三种同时估计趋势与弹性，弹性在 0.35 到 0.40 之间", *F["ok_elastic"][:2])
     has("ok_method3", "Fitted trend and elasticity")
-    said("他把这些系数“主观加权”平均，得到 3.2，写成", F["ok_weighted"][2])
+    said("几种方法一致的，是产出与失业率之间约 3 比 1 的关系", F["ok_weighted"][0], F["ok_weighted"][1])
+    has("ok_weighted", "The uniformity that emerged from these various techniques was the approximate 3-to-1 link")
+    said("他把相关的系数“主观加权”平均，得到 3.2，写成", F["ok_weighted"][2])
     one, k, u0 = F["ok_rule"]
     five = F["ok_five"]
     said("失业 4\\% 时，潜在产出等于实际产出；失业 5\\% 时，缺口是 GNP 的 3.2\\%", five[0], five[1], five[2])
@@ -1406,30 +1437,27 @@ def gap(F, Y, Q):
     said("把失业率降低 1.5 个百分点，就业的“分数”只是从 94.5 提到 96", g0 - g1, s0, s1)
     assert (100 - g0, 100 - g1) == (s0, s1)
     # the Report of January 1962
-    said("1962 年 1 月，《总统经济报告》把 4\\% 写成了目标", F["erp_title"][0], mon("erp_title", "January"),
+    said("1962 年 1 月，肯尼迪在《总统经济报告》里把 4\\% 写成了目标", F["erp_title"][0], mon("erp_title", "January"),
          F["erp_target"][0])
     has("erp_conquest", "it is surely an indispensable beginning")
     has("erp_signature", "John F. Kennedy")
-    four_, fifteen, seven, twothirds, u4b = F["erp_twothirds"]
-    said("战后有三分之二的月份，能工作、愿意工作、也在找工作的人当中有 4\\% 以上找不到工作", u4b)
-    assert abs(twothirds - 2 / 3) < 1e-9
-    has("erp_twothirds", "4 percent or more of those able, willing, and seeking to work")
     said("为了工作的需要，我们把 4\\% 的失业率看作一个临时的目标", F["erp_target"][0])
     said("他说这个目标 1963 年可以达到，复苏也必须不危及过去 4 年的物价稳定", F["erp_1963"][0], F["erp_price"][0])
     has("erp_dignity", "Involuntary unemployment")
-    chk("    three reasons (三条理由)", told("报告列出关心失业的三条理由", "的", "条理由"), F["erp_reasons"][0])
-    has("erp_reasons", "the human obligation to prevent and to relieve economic distress", "choose freely how to use his time",
-        "the economic waste of leaving productive resources idle")
+    say("顾问委员会在年度报告的引言里写道：“非自愿的失业")
+    has("erp_compromise", "only a temporary compromise", "an incentive to search out ways to achieve a still lower rate")
+    has("erp_zero_infl", "push unemployment close to zero would produce a high rate of price inflation")
+    has("erp_commit", "does not commit policy to an unchangeable definition", "Current experience must therefore be the guide")
     has("erp_zero", "But zero unemployment is unattainable.", "A feasible interim goal")
     has("erp_partial", "is only partial")
     said("在当时的情况下，约 4\\% 的失业率是“稳定政策一个合理而审慎的充分就业目标”", F["erp_reasonable"][0])
-    said("4\\% 的失业是一个不高的目标，但必须强调", F["erp_modest"][0])
     u4c, y55, y57, lo, hi = F["erp_1955"]
     said("经济上一次处在 4\\% 左右，是 1955 年 5 月到 1957 年 8 月，失业率在 3.9\\% 到 4.4\\% 之间", u4c, y55,
          mon("erp_1955", "May"), y57, mon("erp_1955", "August"), lo, hi)
     has("erp_competitive", "impaired the competitiveness of some U.S. products in world markets")
     has("erp_sobering", "sobering")
-    said("报告认为，这样的压力并不是经济在 4\\% 附近运行时", F["erp_notpermanent"][0])
+    said("委员会认为，这样的压力并不是经济在 4\\% 附近运行时", F["erp_notpermanent"][0])
+    has("erp_noprecise", "suddenly ceases to affect employment and begins to affect solely the general price level")
     has("erp_notpermanent", "when it is operating in the neighborhood of 4 percent unemployment")
     y61, g51, _, g28 = F["erp_gap49"]
     said("1961 年第一季度，实际 GNP 比充分就业时的产出少 510 亿美元，按 1961 年价格的年率计", y61, g51 * 1e9, y61)
@@ -1438,26 +1466,26 @@ def gap(F, Y, Q):
     said("失业率每向 4\\% 前进 1 个百分点，在战后的扩张时期意味着总产出约增加 3\\%", F["erp_3pct"][0], 1, F["erp_3pct"][1])
     has("erp_restrict", "keeping the economy far below full employment")
     has("erp_pool", "vocational training and retraining")
-    has("erp_resistance", "resistance to technological progress")
+    has("erp_displacement", "an inevitable part of the growth of a free and progressive economy")
     # the example
     _, un, _, lab, two, u4d = F["erp_jobs"]
     said("\\begin{example}{1961 年的缺口}", F["erp_jobs"][0])
     u61 = F["erp_magnified"][1]
     said("1961 年美国的失业率是 6.7\\%，失业 480 万人，劳动力 7,160 万人", y61, u61, un * 1e6, lab * 1e6)
     chk("    4.8/71.6 (6.7 per cent)", 100 * un / lab, u61, tol=0.05)
-    said("与报告“约 8\\%”的说法比较", F["erp_magnified"][4])
+    said("与顾问委员会“约 8\\%”的说法比较", F["erp_magnified"][4])
     said("（2）失业率若是 4\\%，失业的人有多少？", u4d)
     gap_ = k * (u61 - u0)
     said("（1）$0.032\\times(6.7-4)=0.0864$，高约 8.6\\%", k, u61, u0, gap_, 100 * gap_)
     rule = F["erp_3pct"][1]
-    said("报告用“约 3\\%”的经验关系，$2.7\\times3\\%\\approx8.1\\%$，与“约 8\\%”相合", rule, u61 - u0, rule,
+    said("委员会用“约 3\\%”的经验关系，$2.7\\times3\\%\\approx8.1\\%$，与“约 8\\%”相合", rule, u61 - u0, rule,
          rule * (u61 - u0), F["erp_magnified"][4])
     at4 = lab * 100 * u4d / 100
     said("（2）$7{,}160\\times4\\%\\approx286$万人，$480-286=194$万人，约 200 万人", lab * 100, u4d, at4, un * 100,
          round(at4), un * 100 - round(at4), two * 1e6)
     emp = lab * 100 - un * 100
     jobs = un * 100 - round(at4)
-    said("实际就业是$7{,}160-480=6{,}680$万人，$194/6{,}680\\approx2.9\\%$，即报告说的约 3\\%", lab * 100, un * 100, emp, jobs,
+    said("实际就业是$7{,}160-480=6{,}680$万人，$194/6{,}680\\approx2.9\\%$，即委员会说的约 3\\%", lab * 100, un * 100, emp, jobs,
          emp, 100 * jobs / emp, F["erp_magnified"][3])
     said("就业只多 3\\%，产出却多约 8\\%", F["erp_magnified"][3], F["erp_magnified"][4])
     has("erp_favorable", "a number of other favorable effects on output")
@@ -1466,7 +1494,7 @@ def gap(F, Y, Q):
 
 def models_section(F, Y, Q):
     said("1936 年 9 月的牛津会议上", *there("ch33_islm", "1936 年 9 月的牛津"))
-    said("介绍了他用约 12 个方程描述战后美国经济周期的尝试（\\chref{ch:islm}）",
+    said("介绍了他用约 12 个方程描述一战以后美国经济周期的尝试（\\chref{ch:islm}）",
          *there("ch33_islm", "介绍了他用约 12 个方程描述战后美国经济周期的尝试"))
     has("nbb_samuelson", "my dissertation under Paul Samuelson", "the Cowles Commission of the University of Chicago")
     has("nbb_reviving", "early attempts at econometric model building for the United States")
@@ -1475,7 +1503,7 @@ def models_section(F, Y, Q):
     said("1950 年，他出版了《美国的经济波动，1921—1941》，是考尔斯委员会的一本专著", F["kl_imprint"][0], a, b)
     assert (a, b, y50) == (a2, b2, F["kl_imprint"][0]) and no == F["kl_page"][0]
     has("kl_cfm", "Economic Fluctuations in the United States, 1921-1941, by LAWRENCE R. KLEIN")
-    said("序言说，这本书出自 1944—1947 年考尔斯委员会里经济学家与数理统计学家的密切合作", *F["kl_preface"])
+    said("克莱因在序言里说，这本书出自 1944—1947 年考尔斯委员会里经济学家与数理统计学家的密切合作", *F["kl_preface"])
     has("kl_preface", "great mutual cooperation among economists and mathematical statisticians")
     has("kl_tentative", "a relatively small number of annual observations", "another strong reason")
     has("kl_running", "MODEL I, A SIMPLE THREE-EQUATION SYSTEM")
@@ -1490,7 +1518,8 @@ def models_section(F, Y, Q):
     said("下标$-1$指上一年", 1)
     has("kl_g", "goods demanded by the government and foreigners (G)")
     has("kl_g_fn", "The foreign demand is net of imports.")
-    said("除时间$t$以外，所有变量都按 1934 年的美元计，单位是十亿美元", F["kl_units"][0])
+    said("除时间$t$以外，所有变量都按 1934 年的价格计，即扣除了物价的变动，单位是十亿美元", F["kl_units"][0])
+    has("kl_wagebill", "measured in constant dollars")
     has("kl_units", "All variables except t are measured in billions of 1934 dollars.")
     has("kl_real", 'purely a "real" system', "the quantity of money plays no role")
     has("kl_simplify", "simplifying assumption")
@@ -1498,12 +1527,22 @@ def models_section(F, Y, Q):
     has("kl_identify", "the conditions for identifiability")
     has("kl_special", "all government variables are identically zero", "no lags or trends")
     has("kl_insure", "the lags and trends actually insure the identification here")
-    said("他用 1921—1941 年每一年的数据，以最大似然法估计，并假定各方程的扰动互不相关", *F["kl_data"])
-    has("kl_ml", "The method of maximum likelihood")
+    say("估计以前要先问能不能识别，即数据能不能把一个方程与其他方程的组合区分开")
+    said("他用 1921—1941 年每一年的数据，以最大似然法估计，用上了事先由理论定下的全部信息，并假定各方程的扰动互不相关", *F["kl_data"])
+    has("kl_ml", "The method of maximum likelihood (using all available a priori information)")
+    # the preface: autonomous behaviour patterns, and what did not carry over to the postwar years
+    has("kl_autonomous", "autonomous behavior patterns", "under both prewar and postwar conditions")
+    has("kl_postwar", "they do not carry over in all respects to the postwar situation")
+    has("kl_weak", "the inadequacy of relations that serve to determine absolute price levels and household consumption")
+    assert {column("juan")[r] for r in ("kl_autonomous", "kl_postwar", "kl_weak")} == {"p. vii (PDF p. 7)"}
+    say("最弱的是决定物价的绝对水平与家庭消费的那些关系")
     has("kl_rho", "no correlation between the disturbances")
     has("kl_reasonable", "all have the signs that we should expect")
     p = F["ph_periods"]
     said("\\cmprow{例子}{菲利普斯 1861—1913 年的曲线\\cite{phillips1958}}{克莱因的模型 I，1921—1941 年", p[0], p[1], a, b)
+    say("\\cmprow{靠的假定}{过去一起变的，以后也一起变}{方程写的若真是行为本身，情况变了也该成立\\cite{klein1950}；"
+        "政策规则变了以后是不是这样，是卢卡斯批判的题目（\\chref{ch:ratex}）}")
+    assert "不能回答" not in tex_text()
     # the example
     k = klein_coef()
     cf = klein_closed()
@@ -1542,12 +1581,12 @@ def models_section(F, Y, Q):
     said("虚线是长期的 5.07。系数据克莱因（1950）", cf["capital"], F["kl_imprint"][0])
     # the cycle; the Nobel pages
     say("投资取决于利润，利润随产出走，资本积累起来又压低投资，产出于是一起一伏")
-    said("瑞典皇家科学院 1980 年的新闻稿说", F["nb_date"][1])
+    said("瑞典皇家科学院 1980 年在新闻稿里说", F["nb_date"][1])
     has("nb_tinbergen", "the analysis of business conditions and price movements")
     has("nb_aim", "an instrument for forecasting", "studying the effects of economic-political measures")
     has("nb_famous", "in collaboration with Arthur Goldberger")
     has("nbb_goldberger", "my student, Arthur Goldberger", "a series of generations of the Michigan Model")
-    said("新闻稿说，到 1950 年代，他的美国模型已成为短期预测的成功工具", F["nb_forecasts"][0])
+    said("照科学院的说法，到 1950 年代，他的美国模型已成为短期预测的成功工具", F["nb_forecasts"][0])
     has("nb_forecasts", "In the course of the 1950s", "a successful instrument for short-term forecasts")
     said("1980 年他获得诺贝尔经济学奖，理由是建立计量经济模型", F["nbf_name"][0])
     has("nbf_motivation", "the application to the analysis of economic fluctuations and economic policies")
@@ -1565,8 +1604,10 @@ def debate(F, Y, Q):
     has("fr_dissenters", "a few dissenters questioned its validity")
     has("ss_shortrun", "in short-run terms")
     has("ss_nojudge", "we shall not attempt to give judgment on them")
-    said("1962 年的报告说，失业率目标不是不可更改的定义，4\\% 只是“临时的目标”", F["erp_title"][0], F["erp_target"][0])
-    said("报告也确实按 4\\% 算了缺口", F["erp_magnified"][0])
+    said("1962 年，肯尼迪把 4\\% 只叫作“临时的目标”", F["erp_title"][0], F["erp_target"][0])
+    say("顾问委员会也说，选定的目标并不承诺一个不可更改的充分就业定义")
+    has("erp_commit", "does not commit policy to an unchangeable definition")
+    said("顾问委员会也确实按 4\\% 算了缺口", F["erp_magnified"][0])
     has("erp_magnified", "An unemployment rate of 4.0 percent instead of 6.7 percent for 1961")
     # Fisher
     no, y26 = F["fi_issue"]
@@ -1576,6 +1617,13 @@ def debate(F, Y, Q):
     said("在 1915—1925 年这段重要的时期，美国美元价值的变动率与失业的相关系数“高达 90\\%”", *F["fi_90"])
     has("fi_90", "the significant period", "Pearsonian correlation")
     has("fi_distributed", "the method of distributed lag")
+    # the correlation computed in the body: price change (P', the distributed lag) against employment (E)
+    assert F["fi_pe"] == F["fi_90"][:2]
+    has("fi_pe", "The correlation between P' and E")
+    has("fi_e", "The dotted curve E represents employment", "Harvard Committee of Economic Research")
+    has("fi_e_fn", "statistics of both employment and unemployment", "put together into one index")
+    has("fi_fixed", "between price-change and employment")
+    say("正文里算这个相关时，他用的是物价变动与就业，就业取自哈佛经济研究委员会的统计")
     has("fi_spread", "about three per cent. of the effect will be felt in a month")
     said("用固定的滞后，相关最高只有 79\\%，是滞后 4 个月时的", *F["fi_fixed"])
     a, b = F["fi_violent"]
@@ -1587,7 +1635,7 @@ def debate(F, Y, Q):
     p = F["ph_periods"]
     chk("    almost a hundred years (将近一百年)", told("菲利普斯量的是货币工资率，跨了将近一百年", "将近", "年"), 100)
     assert 90 < p[5] - p[0] < 100
-    said("费雪量的是物价，主要靠 1915—1924 年的月度数据", a, b)
+    said("费雪量的是物价的变动与就业，主要靠 1915—1924 年的月度数据", a, b)
 
 
 def deeper(F, Y, Q):
@@ -1610,6 +1658,8 @@ def deeper(F, Y, Q):
     assert "a blank page: the scan has no copyright page" in column("note")["kl_nocopyright"]
     assert hosts["erp1962"] == hosts["erp1971"] == "presidency.ucsb.edu"
     said("1962 年与 1971 年的《总统经济报告》据美国总统资料项目网站上的 PDF", F["erp_title"][0], F["e71_title"][0])
+    said("1962 年的报告分两部分，到第 27 页是总统的经济报告", F["erp_title"][0], president_last())
+    said("从第 31 页起是顾问委员会的年度报告", page("erp_cea"))
     assert "the President's handwritten signature under the letter of transmittal and under his report" in column(
         "note")["erp_signature"]
     assert hosts["friedman1976"] == "www.nobelprize.org" and src["friedman1976"]["format"] == "pdf"
@@ -1660,7 +1710,10 @@ def deeper(F, Y, Q):
     assert "the American Economic Association's pages did not open" in nl and "the Hansard website refused access" in nl
     say("萨缪尔森与索洛宣读论文的日期，美国经济学会的网页没有打开", "英国下院议事录的网站拒绝访问，正文不写英国后来时紧时松的需求政策")
     # the life dates
-    said("奥肯，德国国家图书馆与法国国家图书馆都只有 1928 年的生年", F["gnd_okun_born"][0])
+    said("德国国家图书馆与法国国家图书馆都只有 1928 年的生年，与之相合，卒年只有这一个来源", F["gnd_okun_born"][0])
+    said("生卒年据国会图书馆那条记录的来源注，注里引的是 Who Was Who in America 第 7 卷", F["loc_okun_source"][0])
+    assert Q["loc_okun_source"].startswith("WwasW, v.") and "(loc_okun_note, loc_okun_source)" in notes
+    assert "Okun's year of death (loc_okun_note)" in notes.split("Single witnesses:")[1].split("Indirect testimony")[0]
     assert F["bnf_okun"] == F["gnd_okun_born"] == F["bnf_okun_born"] and "gnd_okun_died" not in F
     assert Q["loc_okun"] == "Okun, Arthur M." and "loc_okun" not in F
     assert Q["loc_solow"] == "Solow, Robert M." and F["loc_goldberger"] == [1930]
@@ -1675,8 +1728,7 @@ def legacy(F, Y, Q):
     has("nb_link", '"LINK"')
     said("2021—2023 年的通胀又让人重新讨论它（\\chref{ch:inflation21}）", *there("ch74_inflation21",
                                                                          "\\chapter{2021—2023 年通胀}"))
-    say("1962 年的报告把 4\\% 叫作临时的目标，说当前的经验必须是向导")
-    said("1962 年的报告把 4\\% 叫作临时的目标", F["erp_title"][0], F["erp_target"][0])
+    said("1962 年，肯尼迪把 4\\% 叫作临时的目标，顾问委员会说当前的经验必须是向导", F["erp_title"][0], F["erp_target"][0])
     has("erp_commit", "Current experience must therefore be the guide")
 
 
@@ -1689,9 +1741,10 @@ def takeaways(F, Y, Q):
     said("菲利普斯据此推出，生产率每年提高 2\\% 时，物价稳定的失业率略低于 2.5\\%", *F["ph_stable"])
     said("萨缪尔森与索洛（1960）把曲线搬到美国、换成物价，画成“选择的菜单”，物价稳定要失业约 5.5\\%，失业 3\\% 要物价每年涨约 4.5\\%",
          F["ss_issue"][3], F["ss_pointA"][0], *F["ss_pointB"])
-    said("奥肯（1962）估计，失业率在 4\\% 以上每多 1 个百分点，产出约少 3\\%。1962 年的《总统经济报告》把 4\\% 当作临时的目标",
+    said("奥肯（1962）估计，失业率在 4\\% 以上每多 1 个百分点，产出约少 3\\%。1962 年，肯尼迪在《总统经济报告》里把 4\\% 当作临时的目标",
          F["ok_reprint"][0], F["ok_answer"][0], 1, F["ok_answer"][1], F["erp_title"][0], F["erp_target"][0])
-    say("并说失业的代价由整个经济、尤其是失业者承担")
+    say("顾问委员会说，为消除物价上涨的一切风险而把需求压得太紧，受罪的是整个经济，尤其是失业者")
+    has("erp_restrict", "an attempt to restrict aggregate demand so severely as to eliminate all risk")
     has("erp_equity", "the economy as a whole, and the unemployed in particular, would suffer")
     cf = klein_closed()
     said("克莱因的模型 I 用三个行为方程与三个定义式描述 1921—1941 年的美国，冲击乘数约 1.93，长期乘数约 2.32",
@@ -1851,7 +1904,8 @@ LIVES = {"A. W. H. Phillips，1914—1975": (("loc_phillips", 0), ("loc_phillips
          "Jan Tinbergen，1903—1994": (("loc_tinbergen", 0), ("loc_tinbergen", 1), "loc_tinbergen", "Tinbergen, Jan"),
          "Arthur Goldberger，1930—2009": (("gnd_goldberger_born", 0), ("gnd_goldberger_died", 0), "gnd_goldberger",
                                          "Goldberger, Arthur Stanley"),
-         "Irving Fisher，1867—1947": (("loc_fisher", 0), ("loc_fisher", 1), "loc_fisher", "Fisher, Irving")}
+         "Irving Fisher，1867—1947": (("loc_fisher", 0), ("loc_fisher", 1), "loc_fisher", "Fisher, Irving"),
+         "Arthur Okun，1928—1980": (("loc_okun_note", 0), ("loc_okun_note", 1), "loc_okun", "Okun, Arthur M.")}
 # where two authorities have a year, they agree: (row, index) pairs
 AGREE = [(("gnd_phillips_born", 0), ("loc_phillips", 0)), (("gnd_phillips_died", 0), ("loc_phillips", 1)),
          (("smg_engineer", 0), ("loc_phillips", 0)), (("smg_engineer", 1), ("loc_phillips", 1)),
@@ -1861,7 +1915,8 @@ AGREE = [(("gnd_phillips_born", 0), ("loc_phillips", 0)), (("gnd_phillips_died",
          (("nbf_born", 1), ("gnd_klein_born", 0)), (("nbf_born", 0), ("gnd_klein_born", 2)),
          (("nbf_born", 3), ("gnd_klein_died", 0)), (("nbf_born", 2), ("gnd_klein_died", 2)),
          (("nbb_died", 0), ("gnd_klein_died", 2)), (("nbb_died", 1), ("gnd_klein_died", 0)),
-         (("loc_goldberger", 0), ("gnd_goldberger_born", 0)), (("bnf_okun", 0), ("gnd_okun_born", 0))]
+         (("loc_goldberger", 0), ("gnd_goldberger_born", 0)), (("bnf_okun", 0), ("gnd_okun_born", 0)),
+         (("loc_okun_note", 0), ("gnd_okun_born", 0))]
 # what other chapters tell: (words of this chapter, chapter where it is told, words there)
 EVENTS = [("上一章的模型假定物价不动", "ch37_mundell", "本章的模型假定物价不动"),
           ("加拿大 1956—1961 年的失业率翻了一番还多", "ch37_mundell", "1956—1961 年失业率翻了一番还多"),
@@ -1873,7 +1928,7 @@ EVENTS = [("上一章的模型假定物价不动", "ch37_mundell", "本章的模
            "政府想放松政策，支持需求，减少经济里的闲置"),
           ("\\chref{ch:islm}的 IS–LM 把货币工资当作给定（\\secref{sec:islm-legacy}）", "ch33_islm", "希克斯先把货币工资固定下来"),
           ("1936 年 9 月的牛津会议上", "ch33_islm", "1936 年 9 月的牛津"),
-          ("介绍了他用约 12 个方程描述战后美国经济周期的尝试（\\chref{ch:islm}）", "ch33_islm",
+          ("介绍了他用约 12 个方程描述一战以后美国经济周期的尝试（\\chref{ch:islm}）", "ch33_islm",
            "介绍了他用约 12 个方程描述战后美国经济周期的尝试"),
           ("在物价追上来以前，增加的货币刺激了产业（\\secref{sec:bullion-hume}）", "ch19_bullion",
            "因为在物价追上来以前，增加的货币刺激了产业"),
@@ -1887,7 +1942,7 @@ EVENTS = [("上一章的模型假定物价不动", "ch37_mundell", "本章的模
 LATER = {"ch:naturalrate": "ch44_naturalrate", "ch:monetarism": "ch45_monetarism", "ch:oil": "ch47_oil",
          "ch:ratex": "ch48_ratex", "ch:newkeynesian": "ch54_newkeynesian", "ch:inflation21": "ch74_inflation21",
          "ch:interwar": "ch27_interwar", "ch:warfinance": "ch34_warfinance", "ch:mundell": "ch37_mundell",
-         "ch:islm": "ch33_islm"}
+         "ch:islm": "ch33_islm", "ch:alternatives": "ch30_alternatives"}
 # the chapters that point here
 POINTERS = ("ch19_bullion", "ch32_generaltheory", "ch33_islm", "ch34_warfinance", "ch44_naturalrate", "ch48_ratex")
 
@@ -1903,7 +1958,8 @@ def book(F, Q):
     for (r1, i1), (r2, i2) in AGREE:
         assert F[r1][i1] == F[r2][i2], (r1, r2)
     assert "dateOfBirth" in column("juan")["gnd_solow_born"] and "dateOfDeath" in column("juan")["gnd_coyne_died"]
-    assert "奥肯（Arthur Okun，生卒年未详）" in t
+    assert "奥肯（Arthur Okun，1928—1980）" in t and "生卒年未详" not in t
+    has("loc_okun_note", "(Okun, Arthur M.;", "economist; chair., Council of Economic Advisors")
     assert "Okun" in Q["gnd_okun"] and "Okun" in Q["bnf_okun"] and "gnd_okun_died" not in Q
     has("smg_life", "Bill Phillips 1914 - 1975", "Nationality: New Zealander")
     for here, ch, there_ in EVENTS:
@@ -1974,6 +2030,9 @@ def witnesses(F, Q):
             assert Q[head_row].replace("-", "--") in items["loc38"], head_row
     for rid in ("loc_solow", "loc_okun", "loc_goldberger"):
         assert Q[rid].replace("-", "--") in items["loc38"], rid
+    assert "Who Was Who in America 第 7 卷第 435 页：b. Nov. 28, 1928, d. May 23, 1980" in items["loc38"]
+    assert Q["loc_okun_note"].startswith("p. 435 (") and "b. Nov. 28, 1928" in Q["loc_okun_note"]
+    assert "第 vii、viii、62—68 页（PDF 第 7、8、74—80 页）" in items["klein1950"]
     # every source of the snapshot is named by its URL in its item
     for key, s in m["sources"].items():
         item = "loc38" if key.startswith("loc_") else "gnd38" if key.startswith("gnd_") else ITEM_OF.get(key, key)
