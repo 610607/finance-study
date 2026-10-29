@@ -314,3 +314,113 @@ to Part 6. Read them all before writing. In short:
   interwar standard (Chapter 27), not the classical one; use the resumption of 1821 (Chapter 19).
 - An inference drawn from an institution's list of facts is the book's, not the institution's: put
   the citation after the facts and mark the inference (本书的解读).
+
+## 第 37 章 `ch:mundell` 蒙代尔–弗莱明与最优货币区 (`zh/ch37_mundell.tex`)
+
+A theory chapter, like Chapter 33: the model is the spine, and its history (who built it, when, from
+what experience) and its tests are the story. Model chapter: zh/ch33_islm.tex.
+
+- Neighbours:
+  - Ch 5 owns the balance of payments (`eq:external-bop`), the real exchange rate (`eq:external-real`,
+    $e$ = home currency per unit of foreign currency, so a rise is a depreciation; foreign variables
+    carry a superscript f, $i^{f}$, $P^{f}$), the parity conditions (`eq:external-cip`,
+    `eq:external-uip`) and the compare box 固定汇率与浮动汇率, whose trilemma sentence points here. Use
+    its notation; do not re-derive the identities.
+  - Ch 33 owns IS–LM (`eq:islm-is`, `eq:islm-lm`, `eq:islm-solution`, with $c$, $b$, $k$, $h$ and
+    $A$): extend that model to the open economy with the same letters; do not re-derive the closed
+    model.
+  - Ch 16 (`eq:merc-peg`: who pegs a price gives up the quantity), Ch 1 (the peg and seigniorage in
+    `ex:intro-peg` and `sec:intro-afford`; the Russian and Sri Lankan questions), Ch 29 (the trilemma as a
+    description of 1931) and Ch 36 (West Germany 1960–61 and 1969, France's capital flight; Ch 36 ends
+    with this chapter's question) are the cases this chapter's theory explains: refer back in a clause.
+  - Ch 46 owns 1971–73, Dornbusch's overshooting and floating rates after 1973; Ch 60 owns the EMS,
+    the ERM crisis of 1992–93 and the euro judged against the OCA criteria (with Frankel and Rose's
+    endogeneity, if used); Ch 61 owns the currency-crisis models and the full account of Russia 1998
+    (Chiodo and Owyang), Hong Kong and Argentina; Ch 76 owns the CFA franc, dollarization and the
+    currency hierarchy. Here each is at most a sentence with `\chref`.
+  - Two Flemings: J. Marcus Fleming, the IMF economist of the 1962 paper, is not Donald
+    Fleming, Canada's Minister of Finance in the Coyne affair of 1961. Name both in full at first use
+    if both appear, with dates from an authority file.
+- Owns:
+  - the open-economy IS–LM with a balance-of-payments condition: Mundell (1963, *Canadian Journal of
+    Economics and Political Science*) and Fleming (1962, *IMF Staff Papers*), and how the pair got its
+    name (Boughton 2003, *IMF Staff Papers*, on the origins, if obtained: Mundell at the IMF's
+    research department 1961–63; who called it "Mundell–Fleming" first);
+  - the results under perfect capital mobility: under a fixed rate monetary policy cannot move income
+    (the money supply follows the reserves) and fiscal policy works with full force; under a float
+    monetary policy works through the exchange rate and fiscal policy is crowded out by appreciation;
+    then imperfect mobility (a BP curve with a finite slope) in a paragraph;
+  - the trilemma ("impossible trinity") as the model's corollary, and its empirical test (Obstfeld,
+    Shambaugh and Taylor, "The Trilemma in History", NBER working paper, if obtained: do pegged
+    countries' interest rates follow the base country's, under the gold standard, Bretton Woods and
+    after?);
+  - the case: Canada's float, 30 September 1950 to 2 May 1962 (the inflows of 1950, the IMF's
+    reaction to a member leaving its par value, the premium over the US dollar in the 1950s, the
+    Coyne affair of 1961, the peg at 92½ US cents of 2 May 1962 and the crisis of June 1962). Mundell
+    was Canadian, and the 1963 paper names Canada's experience: verify what it says;
+  - optimum currency areas: Mundell (1961, *AER*: factor mobility, his two-region example), McKinnon
+    (1963, *AER*: openness) and Kenen (1969: diversification), with what each criterion means for a
+    region choosing to share a money; the answer to the second half of the guide question, in
+    general terms (the euro's own test is Ch 60's).
+- Promises (FORWARD_REFS rows pointing to 37): from Ch 5 (the trilemma; with a peg and free capital,
+  monetary policy follows the anchor), Ch 16 (a peg gives up the money supply; Law's peg as the
+  analogy), Ch 29 (the theory behind 1931's three choices), Ch 33 (the open-economy IS–LM), Ch 34 (the
+  Articles left capital controls to members) and Ch 36 (West Germany 1960–61 and 1969, France under
+  controls). Mark each done with the labels. The PLAN's guide also promises to apply the model to
+  Ch 1's Russian and Sri Lankan questions: one paragraph each, with Ch 1's facts and at most a few new
+  verified numbers (for Russia, the defence of the band by interest rates before 17 August 1998; for
+  Sri Lanka, the rate held near 200–203 rupees to the dollar and the float of March 2022, from the
+  CBSL, derived extract only), and say which corner of the triangle each tried to hold.
+- When it begins: Ch 36 ends with West Germany in 1969 and this chapter's question. Answer it with the
+  model: with free capital movement the interest rate is set abroad if the rate is fixed; a country
+  keeps its own monetary policy only by floating or by controls.
+- Teaching:
+  - the model (`eq:mundell-…`): Ch 33's IS with net exports $\mathit{NX}=x\,e-mY$ (linear, teaching
+    form, with $P$ and $P^{f}$ fixed so $e$ moves $q$), Ch 33's LM, and the capital-mobility condition
+    $i=i^{f}$ (perfect mobility, from `eq:external-uip` with static expectations) or a BP condition with
+    a finite slope; solve for $Y$ and $e$ (float) or $Y$ and $M$ (peg);
+  - worked examples with teaching inputs: a fiscal expansion under each regime; a monetary expansion
+    under a peg and the reserves it costs (tie to `eq:merc-peg` and Ch 1's example); one with Canada's
+    own numbers if the data allow (the premium, the interest differential);
+  - the OCA criteria as a short worked comparison (two regions hit by a demand shift: what adjusts
+    with a common money and without one).
+- Compare box: 固定汇率下的财政政策 vs 浮动汇率下的财政政策 (the PLAN's candidate); optionally a table of
+  the three OCA criteria (author, year, criterion, what it implies).
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - did Canada's float work? Friedman (1953, "The Case for Flexible Exchange Rates": short phrases) and
+    the record of the 1950s, against the conflict of 1961 and the return to a peg in 1962 (was the float
+    the problem, or the policy mix?);
+  - does the trilemma still hold, or is it a "dilemma" (Rey 2013, Jackson Hole, and its NBER version: a
+    global financial cycle reaches floaters too), against the evidence that floaters keep more
+    monetary autonomy (Obstfeld, Shambaugh and Taylor; others, if obtained);
+  - Mundell I against Mundell II (McKinnon 2004, *JCMS*: Mundell's 1961 case for flexible rates
+    between regions against his 1973 arguments for common currencies), if the sources can be had.
+- Data and sources (working-paper numbers, journal issues and dates in this list are leads, not
+  evidence: verify each; probed 2026-10-29: www.bankofcanada.ca, www150.statcan.gc.ca, www.nber.org,
+  archive.org, parl.canadiana.ca, www.elibrary.imf.org, www.jstor.org, www.ecb.europa.eu, www.cbsl.gov.lk,
+  www.cbr.ru, eh.net, publications.gc.ca answered; www.imf.org and www.lipad.ca did not):
+  - Bank of Canada: annual reports of the Governor 1950–62, its historical exchange-rate and
+    interest-rate tables, and Powell, *A History of the Canadian Dollar* (Bank of Canada, 2005), if on
+    the site. Terms (read 2026-10-29, bankofcanada.ca/terms/): content may be freely used, copied and
+    distributed if "the Bank of Canada" is attributed as the source and changes are indicated; bank-note
+    images, the logo and third-party content are excepted. Record the copy and the terms in the json.
+  - Statistics Canada: *Historical Statistics of Canada* (11-516-X; exchange rates and interest rates)
+    under the Statistics Canada Open Licence: copy its attribution statement verbatim.
+  - Canada's House of Commons Debates (30 September 1950 statement by the Minister of Finance, Douglas
+    Abbott; the debates of 1961 and 1962) through parl.canadiana.ca: check the terms first; short
+    quotations.
+  - IMF: Fleming (1962) and Boughton (2003) through the IMF eLibrary if they open (IMF copyright: short
+    phrases); the IMF's annual reports of 1951 and 1962 on Canada's float and peg.
+  - Mundell (1961, 1963), McKinnon (1963), Kenen (1969), Friedman (1953), Rey (2013): in copyright,
+    short phrases only, otherwise paraphrase with `% 据:` anchors; NBER working papers with the ©
+    notice exactly as printed.
+  - Ch 1's own snapshots (`chiodo2002`, `cbr2026`, `cbsl2023ar` and their terms: CBR link to the source,
+    not commercial; CBSL derived extract only) for Russia and Sri Lanka.
+- Figures: the model (IS, LM and the capital-mobility line under a peg and a float, before and after
+  a fiscal and a monetary expansion); Canada 1950–1962 (the US-dollar price of the Canadian dollar,
+  monthly or annual, with the Canadian–US interest differential if a series can be had); optionally
+  the trilemma test.
+- Ending: return to the opening and hand over Ch 38's question “通胀与失业真是一张可以点菜的菜单吗？”
+  (read its stub's guide box).
+- Labels: `sec:mundell-…`, `eq:mundell-…`, `fig:mundell_…`, `tab:mundell-…`, `ex:mundell-…`.
+- Length: 8,000–9,000 characters of main text.
