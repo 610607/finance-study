@@ -424,3 +424,21 @@ what experience) and its tests are the story. Model chapter: zh/ch33_islm.tex.
   (read its stub's guide box).
 - Labels: `sec:mundell-…`, `eq:mundell-…`, `fig:mundell_…`, `tab:mundell-…`, `ex:mundell-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 37
+- Count a source's items before naming their number (Rey 2015 lists four options, (a)–(d), not three);
+  the check script should test that there is no further item.
+- Read the subject and the mood of a quoted sentence: in Mundell (1963) "It should also have a high
+  degree of relevance … to a country like Canada" the subject is the assumption of perfect mobility,
+  just admitted to "overstate the case", and "should" is a claim of relevance, not a finding.
+- When a later author reports a reaction, name whose reaction and in which document: Powell gives the
+  IMF staff's opposition from the Executive Board minutes and the "gravely compromised" worry from a
+  Bank of Canada memorandum, not "the IMF".
+- An author's own sentence placed straight after a quoted statement reads as the speaker's: keep the
+  author's sentence unquoted and before or apart from the statement.
+- The narrative must agree with the chapter's model: under a float with perfect mobility the model
+  has $i=i^{f}$, so a floating Canada kept its monetary policy, not its interest rate.
+- "X called it Y" is not "it was named Y in year Z": keep the source's attribution of a name.
+- A statistical compilation that takes its numbers from the same institution's publication (the
+  *Historical Statistics of Canada* from the *Bank of Canada Review*) agrees with that institution's
+  history but is not an independent witness.
