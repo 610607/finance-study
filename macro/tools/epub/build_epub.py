@@ -213,6 +213,11 @@ class Converter:
 
     # -- references ---------------------------------------------------------
     def link(self, label: str, text: str) -> str:
+        # pandoc 3.1 does not carry a figure's id across the files it splits the book into: a link to a figure of
+        # another chapter would point at a fragment that file lacks (epubcheck RSC-012), so it is printed as text
+        if label.startswith("fig:") and self.chapter is not None \
+                and not self.n.num(label).startswith(f"{self.chapter}."):
+            return text
         if label in self.included:
             return f"\\hyperref[{sanitize(label)}]{{{text}}}"
         return text
