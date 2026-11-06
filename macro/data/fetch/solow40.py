@@ -22,7 +22,9 @@ checks/check_ch40.py.
 pwt1001_convergence and pwt1001_usa are read from the workbook pwt1001.xlsx of Penn World Table 10.01 (sheet Data;
 DOCS below; CC BY 4.0, cite Feenstra, Inklaar and Timmer 2015). pwt1001_convergence has one row for each country with
 rgdpe, rgdpna and pop in 1960 and rgdpna and pop in 2019 and with csh_i in every year from 1960 to 2019: those figures,
-the mean of csh_i over the 60 years and hc in 1960 (empty where the workbook has none). pwt1001_usa has the United
+the mean of csh_i over the 60 years and hc in 1960 (empty where the workbook has none), with the workbook's own flags:
+csh_i in 1960 and 1961, the years 1960-2019 whose i_outlier is 'Outlier' (joined with ';') and i_xr in 1960 and 2019.
+pwt1001_usa has the United
 States' rgdpna, emp, rnna, labsh and pop for 1950-2019. The figures are written as the workbook stores them (repr of
 the float). This script compares what it reads with the snapshots (or writes them with --write), then runs
 checks/check_ch40.py.
@@ -50,7 +52,8 @@ DOCS = {
                      "sha256": "bf2b66c5fd8b465870eeab8bbfa3a57e73253a3236a933286259efbbb5fb67a2"},
 }
 CONV_COLUMNS = ["countrycode", "country", "rgdpe_1960", "rgdpna_1960", "pop_1960", "rgdpna_2019", "pop_2019",
-                "csh_i_mean_1960_2019", "hc_1960"]
+                "csh_i_mean_1960_2019", "hc_1960", "csh_i_1960", "csh_i_1961", "i_outlier_years", "i_xr_1960",
+                "i_xr_2019"]
 USA_COLUMNS = ["year", "rgdpna", "emp", "rnna", "labsh", "pop"]
 FIRST, LAST = 1960, 2019
 
@@ -95,7 +98,10 @@ def convergence(data) -> list[dict[str, str]]:
             continue
         out.append(dict(zip(CONV_COLUMNS, [code, a["country"], num(a["rgdpe"]), num(a["rgdpna"]), num(a["pop"]),
                                            num(b["rgdpna"]), num(b["pop"]), num(sum(csh) / len(csh)),
-                                           num(a["hc"])])))
+                                           num(a["hc"]), num(a["csh_i"]), num(d[FIRST + 1]["csh_i"]),
+                                           ";".join(str(y) for y in range(FIRST, LAST + 1)
+                                                    if d[y]["i_outlier"] == "Outlier"),
+                                           a["i_xr"], b["i_xr"]])))
     return out
 
 

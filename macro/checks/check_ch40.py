@@ -1638,6 +1638,20 @@ def deeper(F, Y, Q):
     said("Weitzman（1970）的工作论文版本在耶鲁大学的网站上，网站要求通过 Cloudflare 的人机验证，本书没有取得",
          F["ef_ref_weitzman"][0])
     said("Pritchett 后来在《经济展望杂志》上的同名文章，网站拒绝访问，正文用 1995 年的工作论文", F["pr_date"][1])
+    # the workbook's own flags (sheet Legend: i_outlier for pl_gdpe or pl_gdpo, i_xr estimated or market-based)
+    raw = load_snapshot("pwt1001_convergence", keep_default_na=False)[0].set_index("countrycode")
+    out = {c: [int(y) for y in v.split(";")] for c, v in raw["i_outlier_years"].items() if v}
+    assert out["MLT"] == list(range(1960, 1965)) and out["VEN"] == list(range(2015, 2020))
+    assert raw.loc["MLT", "csh_i_1960"] > 1 and raw.loc["MLT", "csh_i_1961"] > 1
+    xr = raw[(raw["i_xr_1960"] == "Estimated") | (raw["i_xr_2019"] == "Estimated")]
+    assert raw.loc["ROU", "i_xr_1960"] == "Estimated" and raw.loc["VEN", "i_xr_2019"] == "Estimated"
+    assert set(raw["i_xr_1960"]) | set(raw["i_xr_2019"]) == {"Estimated", "Market-based"}
+    said("样本里有 10 个国家的价格水平在某些年份被标为异常值，其中有马耳他 1960—1964 年与委内瑞拉 2015—2019 年",
+         len(out), 1960, 1964, 2015, 2019)
+    said("马耳他 1960 年与 1961 年的投资份额还高于 GDP", PWT_FIRST, PWT_FIRST + 1)
+    said("有 5 个国家 1960 年或 2019 年的汇率是估计的，其中有罗马尼亚 1960 年与委内瑞拉 2019 年", len(xr), PWT_FIRST,
+         PWT_LAST, PWT_FIRST, PWT_LAST)
+    say("本书照用这些数，没有剔除。")
 
 
 def legacy(F, Y, Q):

@@ -865,3 +865,163 @@ chapters: zh/ch33_islm.tex and zh/ch39_consumption.tex.
   it starts.
 - Labels: `sec:solow-…`, `eq:solow-…`, `fig:solow_…`, `tab:solow-…`, `ex:solow-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 40
+- A sentence cited to a source must be in that source. The draft hung "计划经济里，投资率由中央定" on
+  Solow's Nobel lecture, which does not say it; the source that does speak to who chooses the saving
+  rate is Solow (1956, p. 93, "Policy Implications"). An inference from the model or a case is the
+  book's and says so.
+- A conclusion carried into another chapter keeps the conditions of its derivation: Ch 21's two-factor
+  TFP overstates three-factor TFP only if capital per worker rose (Ch 21 itself says “一般”).
+- When an author gives reasons for a reservation, give those reasons (Baumol's footnote 5: the 1870
+  figures were back-extrapolated, and initial income is on both sides of the regression), not a
+  neighbouring argument from another passage (the 72 countries serve a different point).
+- Compare rival estimates over the same period: Denison's 1.37 is for 1950–1962, where Jorgenson and
+  Griliches get 0.30; the choice of period explains 0.20 of the gap. The period is part of the dispute.
+- A breakdown known only through another author's account is framed as such (Denison's 1929–1982
+  split “据索洛的转述”).
+- Keep the speaker's own caveat next to the claim reported (Solow's "Well, not simply": doubling the
+  planned saving rate does not double the actual one unless investment keeps pace).
+- Name a dataset's variable as it is defined (PWT `rgdpna` real GDP, `labsh` the share of labour
+  compensation in GDP, both capital and output at constant prices for K/Y), and say in a table's note
+  exactly what the regression ran.
+- A simulated comparison says what it compares: consumption per effective worker catches up with the
+  path without the higher saving rate, not with its old level.
+- Report a dataset's own quality flags for the observations the text relies on: PWT 10.01 marks price
+  levels as outliers (`i_outlier`), exchange rates as estimated (`i_xr`), and some investment shares are
+  above GDP (Malta 1960–1961); keep the flags in the snapshot and say once what the book did with them.
+- Place names in a list of economies: 中国大陆、中国台湾、中国香港 (the reviewer's choice in Ch 40;
+  docs/STYLE.md has no rule yet and the Ch 42 stub has bare 台湾、香港: an open point for the author;
+  until decided, follow Ch 40).
+- When fixes push the main text over 9,000 characters, cut peripheral sentences and keep their snapshot
+  rows and checks.
+
+## 第 41 章 `ch:development` 发展经济学：二元经济、进口替代与大推进 (`zh/ch41_development.tex`)
+
+A theory-and-policy chapter: the models (Lewis's dual economy, the Prebisch–Singer terms of trade,
+the big push) are the spine; the case is how governments in Latin America, India and Ghana acted on
+them after 1945, who decided and who paid. Model chapters: zh/ch40_solow.tex (theory with a case and a
+data test) and zh/ch31_soviet.tex (a planned industrialisation told with its costs).
+
+- Neighbours:
+  - Ch 40 owns Harrod–Domar, the Solow model, Swan's elastic labour supply ("the typical classical
+    answer"), the convergence tests on PWT 10.01 and Pritchett's divergence: use them in a clause
+    (`eq:solow-steady`, `tab:solow-convergence`), do not re-derive them. Ch 40 ends with this
+    chapter's question and says the next chapter starts from surplus labour and the dual economy.
+  - Ch 24 owns the periphery in the first globalisation (India's silver rupee, Naoroji's drain,
+    Maddison's quarter of India's savings sent abroad); Ch 29 owns the Depression's terms-of-trade
+    shock and Prebisch at the Banco Central de la República Argentina, 1935–1943 (his life dates are
+    there); Ch 31 owns Soviet industrialisation, the scissors and Cheremukhin et al.'s finding of no
+    support for the big push (`ch:soviet`): refer back in a clause.
+  - Later chapters own: Ch 42 East Asia (export orientation in practice, Japan's and Korea's industrial
+    policy, the growth-accounting debate; the compare box 进口替代 vs 出口导向 here states the two
+    strategies, the East Asian evidence is Ch 42's), Ch 43 planned economies (China's First Five-Year
+    Plan and the Great Leap famine), Ch 51 the Latin American debt crisis of 1982 (how ISI was
+    financed in the 1970s and ended), Ch 52 the hyperinflations, Ch 56 endogenous growth, Ch 61
+    emerging-market crises, Ch 72 China's credit and its Lewis turning point if that chapter takes it,
+    Ch 78 tariffs and industrial policy today, Ch 79 demography. Here each is at most a sentence.
+- Owns:
+  - Lewis (1954, *Manchester School*, "Economic Development with Unlimited Supplies of Labour"): the
+    subsistence sector and the capitalist sector, the wage fixed at a margin above subsistence, the
+    reinvested profits, the rising share of profits and saving (his question of how a community
+    saving 4 or 5 per cent of national income comes to save 12 to 15 per cent: verify the words; it
+    answers Ch 40's saving rate), the turning point; Lewis's Nobel lecture of 1979 and Schultz's
+    (both on nobelprize.org, © The Nobel Foundation) for the later accounts and the objection that
+    the marginal product of farm labour is not zero (Schultz 1964, if obtained, only through his own
+    lecture otherwise);
+  - Prebisch (1950, UN ECLA, *The Economic Development of Latin America and its Principal Problems*;
+    a copy on archive.org: verify the edition and the UN's terms) and Singer (1950, *AER* Papers and
+    Proceedings, "The Distribution of Gains between Investing and Borrowing Countries"); the UN's
+    *Relative Prices of Exports and Imports of Under-developed Countries* (1949) if it can be had from
+    digitallibrary.un.org; the thesis, the numbers they used (the UK's terms of trade from 1876), and
+    the objections (Viner, Haberler, or later tests such as Grilli and Yang 1988 if obtained);
+  - import-substituting industrialisation in practice: Latin America after 1945 (Argentina, Brazil,
+    Mexico: tariffs, multiple exchange rates, state firms), with data that can be had (MOxLAD, INEGI,
+    the Maddison Project 2023, WDI); the effective rate of protection (Balassa, Corden; a worked
+    example); the critiques (Little, Scitovsky and Scott 1970; Krueger 1974 on rent-seeking) and the
+    defence (Hirschman; the industry that ISI built);
+  - the big push: Rosenstein-Rodan (1943, *Economic Journal*, "Problems of Industrialisation of
+    Eastern and South-Eastern Europe"), Nurkse (1953) and Hirschman (1958) in a sentence each,
+    Murphy, Shleifer and Vishny (1989, *JPE*; NBER working paper 2708, on nber.org, © notice as
+    printed) for the coordination failure and the two equilibria; Easterly (1999, "The Ghost of
+    Financing Gap", World Bank policy research working paper 1807, documents.worldbank.org: copy its
+    rights statement) on the Harrod–Domar financing-gap model in aid practice (a bridge to Ch 40);
+  - the cases (the PLAN's): India's five-year plans (the Second Plan of 1956 and the Mahalanobis
+    model: heavy industry first; Planning Commission documents on niti.gov.in or archive.org; read
+    the Indian government's terms of use), Ghana after independence (Nkrumah, the Seven-Year
+    Development Plan of 1963–64 on archive.org, the Volta River project, the Cocoa Marketing Board's
+    producer price against the world price), Latin American ISI.
+- Promises (FORWARD_REFS rows pointing to 41): from Ch 14 (institutions with long-run effects: Dell's
+  mining mita), Ch 21 (Allen's question reversed: why low-wage countries should use technology made
+  for high wages; how poor countries take off), Ch 24 (where the savings of poor countries go:
+  Maddison's quarter of India's savings) and Ch 40 (the question; the 27 poorest in 1960, 13 of which
+  grew more slowly than the richest quarter; why saving, population and technology differ). Mark each
+  done with the labels, or say why a row passes on.
+- When it begins: Ch 40 ends with the question. Candidate openings: Lewis's article of May 1954 and
+  its first question; Prebisch's ECLA report of 1949–50 (presented at Havana, verify); Ghana's
+  independence day, 6 March 1957; India's Second Plan presented to Parliament in 1956. Choose what
+  the documents support. "起飞" is Rostow's word (1956, *EJ*, "The Take-Off into Self-Sustained
+  Growth"; 1960): say whose word it is if the chapter uses it, in a clause.
+- Teaching (`eq:development-…`, worked examples with teaching inputs or the sources' own numbers):
+  - Lewis's model: capitalist-sector labour demand from $\partial Y_c/\partial L_c=w$ with
+    $Y_c=A\,K^{\alpha}L_c^{1-\alpha}$, the wage fixed while surplus labour lasts, profits $\alpha Y_c$
+    reinvested, so the capitalist sector and the saving rate of the whole economy rise; the turning
+    point when the subsistence sector's surplus is used up (a simulation with teaching inputs: when is
+    the turning point reached, and how does the economy's saving rate move from about 5% towards 12%?);
+  - the net barter terms of trade $P_x/P_m$ and the income terms of trade; the effective rate of
+    protection $(t_f-a\,t_m)/(1-a)$ with an example; the big push as two equilibria (a firm's
+    profit depends on how many others industrialise: a two-line payoff example); the financing gap
+    $I/Y=\text{ICOR}\times g$ and why Ch 40's model says it misleads.
+- Compare box (the PLAN's candidate): 进口替代 vs 出口导向, each cell with the authors' own
+  statements; a second if the material earns it (平衡增长 vs 不平衡增长: Nurkse against Hirschman).
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - Is there surplus labour with a marginal product near zero? Lewis against Schultz (and Sen if
+    obtained);
+  - Did primary producers' terms of trade decline in the long run? Prebisch and Singer against their
+    critics and the later tests;
+  - Did import substitution fail, or did it build the industry that later exported? Krueger and Little
+    et al. against Hirschman and the structuralists (the East Asian comparison is Ch 42's: a sentence);
+  - Big push and aid: Rosenstein-Rodan and Murphy–Shleifer–Vishny against Easterly.
+- Political character (write_template rule 5): who decided and who paid. The planners chose heavy
+  industry and the investment rate (India); the marketing board paid cocoa farmers less than the world
+  price and the state spent the difference (Ghana); tariffs and overvalued exchange rates taxed
+  exporters and consumers to favour industry (Latin America); in Lewis's model the wage is held down
+  while profits rise. Say it plainly with the sources' own words and numbers; the one-party state in
+  Ghana and the Preventive Detention Act in a clause if the sources support it.
+- Data and sources (journal issues, dates and document numbers in this list are leads, not evidence:
+  verify each; probed 2026-11-06: archive.org, digitallibrary.un.org, www.nber.org, niti.gov.in,
+  documents.worldbank.org, openknowledge.worldbank.org, databank.worldbank.org, www.nobelprize.org,
+  eprints.lse.ac.uk, www.gutenberg.org, en.wikisource.org, www.ilo.org, www.rug.nl, dataverse.nl,
+  www.indianculture.gov.in, www.rbi.org.in, www.mospi.gov.in, www.indiabudget.gov.in,
+  dspace.gipe.ac.in, moxlad.cienciassociales.edu.uy, www.inegi.org.mx, www.bcra.gob.ar,
+  www.bog.gov.gh, statsghana.gov.gh, unstats.un.org, www.wto.org, eh.net, eml.berkeley.edu,
+  www.econlib.org, fraser.stlouisfed.org, www.cia.gov and www.govinfo.gov answered;
+  repositorio.cepal.org, www.cepal.org, www.wider.unu.edu, babel.hathitrust.org, www.ibge.gov.br,
+  scholar.princeton.edu and www.princeton.edu answered 403; planningcommission.nic.in,
+  egazette.gov.in, dbie.rbi.org.in, dpul.princeton.edu and www.econ.yale.edu did not answer;
+  api.worldbank.org answered 404; www.jstor.org answers with a bot check: do not try it; archive.org
+  has `1950-prebisch-un-the-economic-development-of-latin-america-and-its-principal-problems`,
+  `micro_IA40244301_0028` (Ghana, Seven-year development plan, a brief outline) and
+  `micro_IA40244302_0071` (India, Second five-year plan, a draft outline): verify each item's
+  metadata and rights before use):
+  - Lewis (1954), Singer (1950), Rosenstein-Rodan (1943), Rostow (1956), Nurkse, Hirschman, Krueger,
+    Little–Scitovsky–Scott, Schultz: in copyright, short phrases only; look for copies on course pages
+    or the authors' sites (read to verify, record URL, date and SHA-256, never commit the file), else
+    record each as not obtained;
+  - UN documents (Prebisch 1950, UN 1949): read the UN's terms of use; short phrases;
+  - Government of India and Government of Ghana documents: read the terms that apply (India's
+    Copyright Act s. 52(1)(q) for reports of committees and commissions; Ghana's copyright law) and
+    record them; short phrases unless the terms allow more;
+  - NBER working papers: the © notice exactly as printed; World Bank papers: copy the rights statement;
+  - Maddison Project 2023 (cached; CC BY 4.0 with its citation policy), PWT 10.01 (CC BY 4.0, Feenstra,
+    Inklaar and Timmer 2015), WDI (CC BY 4.0), MOxLAD and INEGI: read and record each one's terms.
+- Figures: the Lewis diagram (the capitalist sector's labour demand shifting out along a flat wage
+  until the turning point); a terms-of-trade series (Prebisch's own numbers or a later index);
+  GDP per head of the cases against a benchmark (Maddison 2023: Argentina, Brazil, Mexico, India,
+  Ghana, with Korea for the Ch 42 comparison); a protection or plan figure if the data support it.
+- Ending: return to the opening and hand over Ch 42's question, the guide question of its stub
+  (zh/ch42_eastasia.tex: whether the high growth of Japan and the four East Asian “小龙” was a miracle
+  of productivity or the result of accumulation); copy it exactly from the stub.
+- Labels: `sec:development-…`, `eq:development-…`, `fig:development_…`, `tab:development-…`,
+  `ex:development-…`.
+- Length: 8,000–9,000 characters of main text.
