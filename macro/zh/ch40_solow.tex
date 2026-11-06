@@ -1,15 +1,350 @@
-% 第 40 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 40 章”，写法见 docs/STYLE.md。
+% 第 40 章。数字与教学模型：checks/check_ch40.py；图：figsrc/fig_ch40.py。
+% 史料：solow_facts（取数脚本 data/fetch/solow40.py）；跨国收敛的检验：pwt1001_convergence 与 pwt1001_usa（同一脚本）。
 \chapter{索洛增长模型}\label{ch:solow}
 
 \begin{chapterguide}
 \guidequestion{长期增长为什么不能只靠多储蓄？}
 \begin{guidegoals}
 \item 推导索洛—斯旺模型（1956）的稳态与收敛速度；
-\item 做增长核算，并解释“索洛余量”；
+\item 做增长核算，并解释索洛余量；
 \item 区分绝对收敛与条件收敛，用跨国数据检验；
 \item 用模型解释储蓄率、人口增长与人均收入的关系。
 \end{guidegoals}
 \guideprereq{\chref{ch:divergence}\enspace\nameref{ch:divergence}；\chref{ch:accounts}\enspace\nameref{ch:accounts}}
 \end{chapterguide}
 
-\chapterstub
+1987 年 12 月 8 日，索洛（Robert M. Solow，1924—2023）在斯德哥尔摩作纪念诺贝尔的演讲，题为《增长理论及以后》\cite{solow1987,loc40,gnd40}。他开场说，他知道自己来过这个大厅，不过那是在现实里，而且是醒着的\cite{solow1987}。他说，增长理论不是从他 1956 年与 1957 年的文章开始的，也没有在那里结束\cite{solow1987}。1950 年代，他走的路是哈罗德（Roy Harrod，1900—1978）与多马（Evsey D. Domar，1914—1997）标出来的\cite{solow1987,loc33,gnd34}。刘易斯（W. Arthur Lewis，1915—1991）在稍有不同的背景下也标过这条路\cite{solow1987,loc40,gnd40}。他想弄清并消除自己对他们的工作的“某种不安”\cite{solow1987}。那一年的经济学奖只授给他一人，理由是他对经济增长理论的贡献\cite{nobel1987}。
+% 据: nb_title, nb_stockholm, nb_room, nb_notbegin, nb_trail, nb_discomfort, nf_motivation, nf_share, nf_prize, loc_solow, loc_solow_born, loc_solow_died, gnd_solow_born, gnd_solow_died, nf_born, nf_died, loc_lewis, gnd_lewis_born, gnd_lewis_died
+
+按索洛的回顾，哈罗德与多马走的路明显不同，得到的却是同一个古典式的简单答案\cite{solow1987}。经济要以不变的速度稳定增长，国民储蓄率必须等于资本—产出比乘以（有效）劳动力的增长率\cite{solow1987}。三个量在他们那里都是给定的常数，各自偶尔变动，稳定增长于是成了“奇迹般的运气”\cite{solow1987}。他说，这个条件还给出一个处方。在劳动过剩的经济里，要让增长率翻一番，让储蓄率翻一番就行，也许通过政府预算来做\cite{solow1987}。在不发达国家，这个处方看来可用。他相信自己记得，讨论经济发展的著作常说，从慢增长转到快增长，关键是持续提高储蓄率\cite{solow1987}。
+% 据: nb_routes, nb_constants, nb_sporadic, nb_luck, nb_recipe, nb_underdeveloped, nb_writings
+
+索洛说，这个处方在他听来不可信，为什么不信，他已经记不清了，可就是不信\cite{solow1987}。他正是带着这样的心思，开始摆弄增长理论，想改进哈罗德—多马模型\cite{solow1987}。他也说不清自己为什么先想到换掉固定的资本—产出比，只说做学生时就更喜欢生产理论\cite{solow1987}。单个产品的技术也许不很灵活，可是整个经济能选择多生产资本密集或劳动密集的产品，总的要素密集度应当变化得多\cite{solow1987}。
+% 据: nb_implausible, nb_spirit, nb_whyfirst, nb_production, nb_intensity
+
+\chref{ch:consumption}问家庭为什么储蓄，储蓄率怎样随增长变化。这一章反过来，把储蓄率当作给定，问储蓄能把增长推到哪里。长期增长为什么不能只靠多储蓄？
+
+\section{当时的世界}\label{sec:solow-world}
+
+哈罗德 1939 年 3 月在《经济学杂志》上发表《论动态理论》\cite{harrod1939}。他说，增长稳定进行时，静态的方法不够用，需要一种新的研究方法，甚至是一场“思想上的革命”\cite{harrod1939}。他的“基本方程”把加速原理与乘数理论结合在一起\cite{harrod1939}。他把有保证的增长率定义为这样一种速度，它一旦实现，各方都满意，觉得自己生产得不多也不少\cite{harrod1939}。基本方程最简单的形式是$G_w=s/C$，$s$是储蓄占收入的比例，$C$是技术等条件要求的每增加一单位产出所需的资本\cite{harrod1939}。他给的数字是，储蓄占收入的 10\%，资本系数为 4，有保证的增长率就是每年 2.5\%\cite{harrod1939}。
+% 据: hr_title, hr_static, hr_revolution, hr_marriage, hr_fundamental, hr_warranted, hr_eq, hr_symbols, hr_numbers
+
+他说，这条路上的每一点都是均衡，生产者留在上面就满意，可这是“高度不稳定的”均衡\cite{harrod1939}。实际增长快于有保证的增长率时，资本品的增加少于企业想要的，存货不足、设备短缺，企业进一步扩张\cite{harrod1939}。增长于是离有保证的速度越来越远，偏离不会自行纠正，只会自我加剧\cite{harrod1939}。慢于它时，资本品过剩，压抑的力量随之而来\cite{harrod1939}。他在这里加了一句，这对商业周期的分析很有意思\cite{harrod1939}。储蓄倾向提高，有保证的增长率随之提高，眼前的效果却是让它高于实际的增长率，由此产生的压抑把实际增长越拉越低\cite{harrod1939}。在他的框架里，多储蓄未必带来快增长，先来的可能是萧条（本书的解读）。
+% 据: hr_point, hr_unstable, hr_excess, hr_diverge, hr_aggravating, hr_redundance, hr_cycle, hr_save
+
+哈罗德还定义了自然增长率，即人口增加、资本积累、技术改进与工作闲暇偏好所允许的最高增长率，前提是一直保持某种意义上的充分就业\cite{harrod1939}。他说，两种增长率没有内在的趋势相互一致\cite{harrod1939}。经济的增长快不过自然增长率所允许的速度\cite{harrod1939}。有保证的增长率高于它，经济就有长期萧条的倾向，萧条把有保证的增长率拉下来，代价是长期失业\cite{harrod1939}。他说，有不少理由认为，有保证的增长率低于自然增长率，比高于它要好\cite{harrod1939}。多马 1946 年在《计量经济学》第 14 卷上发表《资本扩张、增长率与就业》，从第 137 页起\cite{domar1946}。他 1944 年关于债务负担的文章在\chref{ch:warfinance}（\exref{ex:warfinance-domar}）。
+% 据: hr_natural, hr_coincide, hr_cannot, hr_chronic, hr_better, dm_index, dm_volume
+
+索洛 1956 年 2 月在《经济学季刊》上发表《对经济增长理论的一个贡献》\cite{solow1956}。开头一句是，一切理论都依赖不完全真实的假设\cite{solow1956}。照他的概括，哈罗德—多马这条思路的结论是，即使在长期，经济至多也只是平衡在均衡增长的“刀刃”上\cite{solow1956}。储蓄率、资本—产出比与劳动力增长率稍稍偏离，结果就是失业不断增加或通货膨胀持续下去\cite{solow1956}。
+% 据: s56_title, s56_assumptions, s56_knife, s56_slip
+
+他说，有保证的增长率与自然增长率的对立，归根到底来自一个“关键”假设，生产按固定比例进行，没有用劳动替代资本的可能\cite{solow1956}。放弃这个假设，刀刃的说法似乎也就随之消失\cite{solow1956}。他还说，哈罗德—多马模型总是用短期的工具研究长期问题，讲的是乘数、加速数与那个固定的资本系数\cite{solow1956}。他的模型接受哈罗德—多马的全部假设，只有固定比例除外\cite{solow1956}。
+% 据: s56_crucial, s56_fixed, s56_abandon, s56_tools, s56_multiplier, s56_accepts
+
+同一年 11 月，澳大利亚国立大学的斯旺（Trevor W. Swan，1918—1989）在《经济纪录》上发表《经济增长与资本积累》\cite{swan1956,loc40,gnd40}。他说，文章的目的是用两张图说明资本积累与劳动力增长的联系，这是斯密、穆勒与刘易斯共同的主题\cite{swan1956}。他的生产函数是$Y=K^{\alpha}N^{\beta}$，规模报酬不变，$\alpha+\beta=1$\cite{swan1956}。他在脚注里提到，索洛 1956 年 2 月的文章用了类似的办法\cite{swan1956}。两人各自把可替代的生产函数放进了哈罗德的框架（本书的解读）。劳动过剩的经济怎样发展，是\chref{ch:development}的题目。
+% 据: sw_issue, sw_title, sw_anu, sw_aim, sw_cobb, sw_solow, loc_swan, loc_swan_note, gnd_swan, gnd_swan_born, gnd_swan_died
+
+\section{模型：储蓄、资本与稳态}\label{sec:solow-model}
+
+索洛的模型只有一种商品，即全部产出，一部分消费，其余储蓄并投资\cite{solow1956}。储蓄的比例是常数$s$，资本存量的增加就等于$sY$，这是他的基本恒等式\cite{solow1956}。封闭经济里储蓄等于投资，资本存量按\chref{ch:accounts}的式~\eqref{eq:accounts-capital}积累。生产函数$Y=F(K,L)$规模报酬不变，劳动力因人口增长而按不变的速度$n$增长，而且一直充分就业\cite{solow1956}。实际工资与资本的实际租金按边际产品决定，使现有的劳动与资本都被用上\cite{solow1956}。
+% 据: s56_one, s56_saving, s56_identity, s56_crs, s56_labor, s56_full, s56_prices, s56_rental
+
+\subsubsection{资本积累的方程}
+
+用每个工人的量来写，$k=K/L$，$y=Y/L$。取科布—道格拉斯形式$y=k^{\alpha}$，$\alpha$是资本的份额，再设资本每年按$\delta$折旧，就得到
+\begin{keyeq}
+\Delta k=s\,k^{\alpha}-(n+\delta)\,k .\label{eq:solow-accumulation}
+\end{keyeq}
+右边第一项是每个工人的储蓄，第二项是使人均资本不变所需的投资，一部分补上折旧，一部分装备新来的工人。索洛自己的写法是$\dot r=sF(r,1)-nr$，$r$是资本与劳动之比，产出按补足折旧以后的净产出计，所以没有$\delta$\cite{solow1956}。
+% 据: s56_eq6, s56_net
+
+$\Delta k=0$时，资本与劳动按同一速度增长，人均产出不再变化，这就是稳态：
+\begin{keyeq}
+k^{*}=\Bigl(\frac{s}{n+\delta}\Bigr)^{\frac{1}{1-\alpha}},\qquad y^{*}=\Bigl(\frac{s}{n+\delta}\Bigr)^{\frac{\alpha}{1-\alpha}} .\label{eq:solow-steady}
+\end{keyeq}
+报酬递减是这里的关键。人均资本越多，再多一单位资本带来的产出越少，储蓄跟着产出增长得越来越慢，维持资本所需的投资却与资本同比例增加。两者迟早相等。稳态是稳定的。资本少于$k^{*}$时，储蓄多于维持所需的投资，$k$上升；多于$k^{*}$时，$k$下降\cite{solow1956}。索洛说，在科布—道格拉斯的情形下根本不会有刀刃，经济能适应任何给定的劳动力增长率\cite{solow1956}。稳态的资本—产出比是$s/n$，自然增长率等于有保证的增长率。他说，这不是偶然的运气，是供求调整的结果\cite{solow1956}。
+% 据: s56_stable, s56_never, s56_ratio, s56_luck
+
+稳定也不是必然的。索洛画了一条有三个交点的曲线，两头的两个稳定，中间的不稳定\cite{solow1956}。经济走向哪一头，看起点的资本—劳动比\cite{solow1956}。他还画了一种生产率很高、储蓄又多的经济，人均资本与人均产出无限增长\cite{solow1956}。前一种图形后来常被用来讲贫困陷阱，后一种接近内生增长（本书的解读）。固定比例是他的第一个例子，即哈罗德—多马的情形。资本—劳动比下降时劳动过剩，失业越来越多；上升时过剩的生产能力也越来越大\cite{solow1956}。
+% 据: s56_three, s56_lower, s56_unbounded, s56_fixedexample, s56_labor_red, s56_excess, s56_redundancy
+
+他在结尾提醒，以上都是新古典的一面，尤其是充分就业的经济学，凯恩斯的收入分析里的种种困难与刚性都被搁到一边\cite{solow1956}。他说，他并不认为这些问题不存在，也不认为它们在长期无关紧要\cite{solow1956}。他的目的是检查增长的“走钢丝”观\cite{solow1956}。需求不足引起的失业与产能闲置，仍可以归于总需求的老原因，只是不那么容易归于偏离一个狭窄的“平衡”\cite{solow1956}。
+% 据: s56_neoclassical, s56_shunted, s56_notcontend, s56_tightrope, s56_demand
+
+\subsubsection{储蓄率改变的是水平}
+
+式~\eqref{eq:solow-steady}回答了本章的问题。储蓄率决定稳态的人均产出有多高，决定不了它长期增长得多快。$y^{*}$对$s$的弹性是$\alpha/(1-\alpha)$，资本份额为三分之一时是$1/2$（本书的计算）。储蓄率翻一番，稳态的人均产出只增加约 41\%。索洛 1987 年说，一个发展中经济若能永久提高储蓄率，产出的水平会更高，因此会有一段时间增长得更快\cite{solow1987}。可是它得不到永久更高的增长率\cite{solow1987}。按哈罗德的方程，资本系数为 4 时，储蓄率从 10\% 提到 20\%，有保证的增长率也翻一番（本书的计算）。在索洛的模型里，同样的提高只抬高人均产出的水平，长期增长率不变。
+% 据: nb_developing, nb_notpermanent, hr_numbers
+
+斯旺的数字例子是，劳动力每年增长 1\%，资本的份额 0.4\cite{swan1956}。他让一场节俭运动把储蓄率从 5\% 提到 10\%\cite{swan1956}。新的均衡点上，人均产出与工资更高，资本—产出比与利润率更低，这些变化是永久的，增长却只在过渡期间加快\cite{swan1956}。他说，按“合理的”数字，连储蓄率猛然提高的冲击效应对增长率也可能不太重要\cite{swan1956}。储蓄率翻一番，资本的收益率是 8\%，增长率在过渡开始时最多只提高 0.4 个百分点\cite{swan1956}。这个数来自$\Delta s\times8\%=5\%\times8\%=0.4\%$（本书的计算）。
+% 据: sw_n, sw_alpha, sw_s, sw_thrift, sw_at1, sw_permanent, sw_plausible, sw_impact
+
+斯旺说，对这种轻积累、重技术的论证，至少有两种回答\cite{swan1956}。一是技术进步的速度未必与积累无关，积累也可能带来外部经济，资本真正的社会收益于是高于按一般私人经验估计的“合理”数字。他说斯密会喜欢这一点，只是这里不展开\cite{swan1956}。二是劳动力的增长率也许与积累的速度有关，他说这是典型的古典回答\cite{swan1956}。劳动供给有弹性，可以解释为马尔萨斯式的人口反应，可以是隐蔽失业，可以来自工会的抵制或别的制度障碍，也可以是潜在的外来劳工\cite{swan1956}。这时提高储蓄率，增长率几乎同比例地提高，不只在过渡期间，均衡时也是如此\cite{swan1956}。工资与人均产出却改善不多\cite{swan1956}。这正是索洛记得的那个处方所设想的劳动过剩的经济（本书的解读）。
+% 据: sw_answers, sw_external, sw_smith, sw_classical, sw_classical2, sw_elastic, sw_union, sw_proportion, sw_wage
+
+增长要一直快下去，靠的是技术进步。索洛加上了按不变速度把生产函数整个放大的中性技术进步\cite{solow1956}。斯旺设技术进步每年贡献$m$，取 0.5\%，他说人均产出因此不但永久提高，而且永远上升\cite{swan1956}。设技术进步提高劳动的效率，$A$每年增长$g$，把式~\eqref{eq:solow-accumulation}里的$k$换成每个有效工人的资本$k/A$，$n+\delta$换成$n+g+\delta$即可（本书的推导）。稳态时每个工人的产出与资本都按$g$增长，资本—产出比与要素份额不变。这条路叫平衡增长路径。
+% 据: s56_neutral, sw_m, sw_rising
+
+\begin{compare}{水平效应与增长效应}{水平效应（索洛与斯旺）}{增长效应（模型以外的机制）}
+\cmprow{储蓄率提高以后}{稳态的增长率与储蓄率无关，只在一段时间里增长得更快\cite{solow1987}}{哈罗德—多马的处方：储蓄率翻一番，增长率也翻一番\cite{solow1987}}
+\cmprow{永久的是什么}{人均产出与工资永久提高，增长只在过渡期间加快\cite{swan1956}}{技术进步可能随积累加快，资本的社会收益高于私人经验估计的数\cite{swan1956}}
+\cmprow{劳动力}{劳动力增长是外生的，完全无弹性地供给\cite{solow1956}}{劳动供给有弹性时，储蓄率提高几乎同比例地提高增长率，均衡时也是如此\cite{swan1956}}
+\cmprow{资本的报酬}{报酬递减，科布—道格拉斯的情形下经济总会走向稳态\cite{solow1956}}{资本份额为 1、报酬不递减时，半衰期无穷长\cite{bsm1990}}
+\cmpsum{分歧在报酬递减有多强，技术进步与劳动力增长是不是外生的。中间两行右边的机制是斯旺自己提出的，外部经济那一条他说不在这里展开\cite{swan1956}。}
+\end{compare}
+% 据: nb_independent, nb_developing, nb_recipe, sw_permanent, sw_external, s56_inelastic, sw_proportion, s56_never, bs_alpha1, sw_smith
+
+\begin{example}{储蓄率翻一番}\label{ex:solow-double}
+教学输入：$\alpha=1/3$，$n=1\%$，$g=2\%$，$\delta=3\%$，储蓄率从 10\% 提到 20\%。（1）稳态的每个有效工人的资本与产出各变为原来的几倍？（2）稳态的消费变为原来的几倍？储蓄率刚提高时，消费下降多少？（3）提高的当年，每个工人的产出增长率提高多少？
+\solution
+（1）$n+g+\delta=6\%$。资本是$2^{1.5}\approx2.83$倍，产出是$2^{0.5}\approx1.41$倍，即增加约 41\%。（2）消费是$(1-s)\,y$，稳态的消费是$0.8\times1.41/0.9\approx1.26$倍，增加约 26\%。刚提高时产出还没变，消费降为原来的$0.8/0.9$，下降约 11\%。（3）原来的稳态里$s\,y/k=6\%$，储蓄率翻一番，有效资本每年增长$12\%-6\%=6\%$，产出增长率提高$\alpha\times6\%=2$ 个百分点，每个工人的产出增长率从 2\% 升到 4\%。以后逐年回落，长期仍是 2\%（本书的计算）。
+\end{example}
+
+\fig{solow_diagram}{索洛图（本书的计算，教学输入$\alpha=1/3$，$n+g+\delta=6\%$）。曲线是每个有效工人的储蓄$s\,k^{\alpha}$，实线$s=10\%$，虚线$s=20\%$；直线是维持资本所需的投资$(n+g+\delta)\,k$。交点是稳态，储蓄率翻一番，交点右移，资本变为约 2.83 倍，产出只变为约 1.41 倍。}{fig:solow_diagram}
+
+\subsubsection{人口增长与人均收入}
+
+式~\eqref{eq:solow-steady}也说明了人口增长的作用。$n$越高，每年要给更多新来的工人配上资本，人均资本被摊得越薄，稳态的人均产出就越低。$y^{*}$对$n+\delta$的弹性是$-\alpha/(1-\alpha)$，资本份额三分之一时是$-1/2$（本书的计算）。Mankiw、Romer 与 Weil 也是这样解释的，教科书模型里人口增长降低收入，是因为现有的资本要摊给更多的工人\cite{mrw1990}。在他们加上人力资本的模型里，人均收入对$n+g+\delta$的弹性是$-2$，不是$-1/2$\cite{mrw1990}。按\exref{ex:solow-double}的教学输入，人口增长率从 1\% 提到 3\%，稳态的人均产出下降约 13\%（本书的计算）。储蓄率与人口增长率的作用方向相反，大小由资本份额决定，这就是模型对各国人均收入差别的解释（本书的概括）。
+% 据: mrw_spread, mrw_elasticity
+
+\subsubsection{模型要对上的典型事实}
+
+平衡增长路径要求每个工人的产出稳定增长，资本—产出比与要素份额大致不变（本书的概括）。按 Easterly 与 Fischer 的说法，市场经济的资本—产出比长期被认为相对稳定，这是有名的 Kaldor 典型事实，近来的研究却与它相反\cite{ef1995}。索洛指出，科布—道格拉斯函数的特性正是劳动的相对份额不变，等于$1-a$，他的$a$就是这里的$\alpha$\cite{solow1956}。\chref{ch:marx}算过英国，雇员报酬占 GDP 的份额 1855 年是 52.9\%，1913 年是 54.4\%（\figref{fig:marx_uk}）。那一章也发现，英国的资本对产出之比在那半个世纪里没有持续上升。按 Penn World Table 10.01，美国每个就业者的实际产出 1950—2019 年每年增长约 1.7\%（本书的计算）\cite{pwt1001}。劳动的份额 1950 年约 63\%，2019 年约 60\%\cite{pwt1001}。按不变价格的资本—产出比，却从 4.3 降到了 3.4（本书的计算）。份额大致不变，资本—产出比并不那么稳定（本书的解读）。
+% 据: ef_kaldor, ef_contradicts, s56_share, pwt_title, pwt_cite
+
+\section{过渡与黄金律}\label{sec:solow-transition}
+
+稳态要多久才能到达？斯旺在脚注里说，经济只是渐近地趋向新的均衡，要到无穷远才到达，趋近的速度与剩下的距离直接相关\cite{swan1956}。他说，过渡期间增长先加快再放慢，这可能在几个世纪里都看得出来，全看数字怎样假定，不过只有极端的假定才会这样\cite{swan1956}。在稳态附近把式~\eqref{eq:solow-accumulation}线性化，每年缩小的差距约是
+\begin{equation}
+\lambda\approx(1-\alpha)(n+g+\delta),\label{eq:solow-speed}
+\end{equation}
+差距缩小一半要$\ln 2/\lambda$年（本书的推导）。按 Mankiw、Romer 与 Weil（1990）的算法，资本份额三分之一、$n+g+\delta=6\%$时，$\lambda$是 4\%，经济约 17 年走完到稳态的一半路程\cite{mrw1990}。资本份额越大，报酬递减越慢，收敛也越慢。
+% 据: sw_speed, sw_centuries, mrw_lambda, mrw_textbook
+
+\figref{fig:solow_transition}画的是这个过程。提高储蓄率的当年，每个工人的产出增长率几乎翻了一番，多出来的部分随后逐年缩小，10 年以后只剩一半多一点。人均产出的水平却一直高于旧路径（本书的计算）。
+
+\begin{example}{过渡要多久}\label{ex:solow-transition}
+接\exref{ex:solow-double}，储蓄率在第 0 年从 10\% 提到 20\%。（1）按式~\eqref{eq:solow-speed}，对数产出与新稳态的差距每年缩小多少？一半的差距要多少年？（2）按式~\eqref{eq:solow-accumulation}逐年模拟，第 10 年、第 30 年每个有效工人的产出走完了多少路程？
+\solution
+（1）$\lambda=(2/3)\times6\%=4\%$，半衰期$0.693/0.04\approx17$ 年。（2）逐年模拟，第 10 年走完约 41\% 的对数差距，第 30 年约 77\%，一半的差距约用 14 年（本书的计算）。比线性化的近似快，因为差距大时，储蓄超出维持所需的部分按比例也大。线性化只在稳态附近准确。
+\end{example}
+
+\fig{solow_transition}{储蓄率从 10\% 提到 20\% 以后的过渡（本书的计算，教学输入同\exref{ex:solow-double}）。(a) 看曲线怎样趋近：每个工人的产出（对数，第 0 年为 0），实线是新路径，虚线是储蓄率不变的旧路径，两条线最终平行。(b) 看增长率怎样回落：每个工人的产出增长率，提高的当年接近 4\%，以后逐年回到 2\%。}{fig:solow_transition}
+
+索洛 1987 年回顾，模型给资本形成的作用这样小，起初连他自己也很意外\cite{solow1987}。稳态的增长率与投资率无关，想一想理论就明白；难接受的是，即使在较短的时期，多投资对过渡期的增长也帮不了多少\cite{solow1987}。照他的说法，向更高的均衡增长路径过渡，几乎没有给鼓励投资的政策留下杠杆\cite{solow1987}。
+% 据: nb_surprised, nb_quota, nb_shorter, nb_leverage
+
+储蓄率越高，稳态的产出越高，可多储蓄是用少消费换来的。1961 年，耶鲁大学的经济学助理教授菲尔普斯（Edmund S. Phelps，1933—2026）写了一则寓言，副题是“给增长迷的寓言”\cite{phelps1961,loc40,gnd40,nobel2006}。索洛维亚王国陷入一场大争论，许多人说经济还能增长得更快，另一些人说可持续的增长最好，它只能来自自然的力量\cite{phelps1961}。国王派工作组去弄清经济的事实，又设奖征求最优的投资率\cite{phelps1961}。一个聪明的农民 Oiko Nomos 来领奖，他的定理是，在自然增长的黄金时代路径里，最优的那条，投资率等于竞争的利润率\cite{phelps1961}。他把这叫作积累的“黄金律”，每一代人为后代投资的份额，恰好是它希望前人为自己投资的份额\cite{phelps1961}。
+% 据: ph_title, ph_yale, ph_kingdom, ph_faster_debate, ph_sustainable, ph_natural, ph_task, ph_prize, ph_peasant, ph_theorem, ph_golden, ph_each, loc_phelps, loc_phelps_born, gnd_phelps, gnd_phelps_born, gnd_phelps_died, nf_phelps_born, nf_phelps_died
+
+这位农民说，现在的资本—产出比若低于黄金律的水平，消费就得放慢，直到不再不足；高于它，就得加快消费\cite{phelps1961}。达到以后，人们要立下庄严的约定，此后一直按黄金律投资，将来就没有哪一代人会希望当初选了别的投资率\cite{phelps1961}。人群高兴地散去，也有怀疑的人提醒国王，这些定理靠的是假定\cite{phelps1961}。国王的计量经济学家最后认定，生产函数是科布—道格拉斯形式，人们很快明白$a$是资本的份额，黄金律路径上的$s$就等于$a$\cite{phelps1961}。人们于是要求国王拿出走上黄金律路径的计划，国王宣布黄金律增长为国家目标，开征了专门的税\cite{phelps1961}。
+% 据: ph_slowed, ph_faster, ph_compact, ph_nogeneration, ph_crowd, ph_skeptics, ph_econometricians, ph_cobb, ph_share, ph_sa, ph_pressed, ph_levies
+
+按\exref{ex:solow-double}的教学输入，储蓄率从 20\% 提到黄金律的三分之一，提高的那一年消费要减少六分之一，约 27 年以后消费才回到原来的水平（本书的计算）。少消费的是过渡期间活着的人，多消费的是以后的人（本书的解读）。储蓄率高于黄金律时，少储蓄一点，现在与将来都能多消费，这样的经济积累过度了（本书的解读）。
+
+模型里的$s$是一个参数。在实际的经济里，它是家庭、企业与政府的选择加总起来的（\chref{ch:consumption}）。索洛记得的那个处方，是通过政府预算提高储蓄率；计划经济里，投资率由中央定\cite{solow1987}。储蓄率由谁定，谁就决定了这笔账由哪几代人付（本书的解读）。
+% 据: nb_recipe
+
+\begin{example}{黄金律}\label{ex:solow-golden}
+教学输入同\exref{ex:solow-double}。（1）稳态的每个有效工人的消费是$(1-s)\bigl(s/(n+g+\delta)\bigr)^{\alpha/(1-\alpha)}$，它在什么储蓄率最大？（2）储蓄率为 10\%、20\% 与三分之一时，稳态消费之比是多少？
+\solution
+（1）对$s$求导并令其为零，$s=\alpha=1/3$。（2）消费与$(1-s)\sqrt{s}$成正比，三者分别是 0.285、0.358 与 0.385。黄金律的稳态消费比 20\% 时多约 8\%，比 10\% 时多约 35\%（本书的计算）。
+\end{example}
+
+\section{增长核算与索洛余量}\label{sec:solow-accounting}
+
+1957 年 8 月，索洛在《经济学与统计学评论》上发表《技术变化与总量生产函数》\cite{solow1957}。他说，新的东西是一种区分人均产出的变化的简单办法，看哪些来自技术变化，哪些来自人均资本的增加\cite{solow1957}。代价是多一条时间序列，即劳动或财产在总收入中的份额，再加一个假定，要素按边际产品取得报酬\cite{solow1957}。他不靠加总与指数的定理来辩护，说这种总量经济学要么吸引人，要么不吸引人，他自己两派都属于\cite{solow1957}。资本能不能加成一个数，当时就有人质疑。索洛在注里说，琼·罗宾逊（Joan Robinson，1903—1983）探讨过给资本的数量以确切含义的许多深刻困难\cite{solow1957,loc40,gnd40}。他用“技术变化”泛指生产函数的任何移动，经济放慢、加速、劳动力受教育程度的改善，都算在里面\cite{solow1957}。
+% 据: s57_title, s57_wrinkle, s57_price, s57_appeals, s57_robinson, s57_shorthand, loc_robinson, gnd_robinson_born, gnd_robinson_died
+
+生产函数$Q=A(t)f(K,L)$规模报酬不变时，产出的增长可以分成三块：
+\begin{keyeq}
+g_Y=\alpha\,g_K+(1-\alpha)\,g_L+g_A ,\label{eq:solow-accounting}
+\end{keyeq}
+$\alpha$是资本的份额，$g_A$是减去资本与劳动的贡献以后剩下的部分，后来叫索洛余量。索洛按每个工时写成$\dot q/q=\dot A/A+w_K\,\dot k/k$，$q$与$k$是每个工时的产出与资本，$w_K$是资本的份额\cite{solow1957}。他用的是美国私人非农业部门 1909—1949 年的数据，产出用 Kendrick 的实际国民生产总值，资本用 Goldsmith 的估计\cite{solow1957}。他把 Goldsmith 的资本按每年的失业比例扣减，假定资本与劳动总是同比例地闲置。他说，这无疑是错的，不过大概更接近真实\cite{solow1957}。
+% 据: s57_eq1a, s57_eq2a, s57_data, s57_goldsmith, s57_unemployed
+
+按他的计算，40 年里每个工时的产出大约翻了一番，生产函数累计上移约 80\%\cite{solow1957}。他说，可以认为增长里约八分之一归于每个工时的资本增加，其余八分之七归于技术变化\cite{solow1957}。具体算法是，按 1939 年价格，每个工时的实际国民生产总值从 62.3 美分增加到 127.5 美分，除去技术变化以后只有 70.5 美分\cite{solow1957}。65 美分的增加里，约 8 美分归于资本密集度的提高\cite{solow1957}。整个时期生产函数平均每年上移约 1.5\%\cite{solow1957}。
+% 据: s57_doubled, s57_eighth, s57_t1_dollars, s57_623, s57_cents, s57_avg
+
+他也看到时期之间的差别，大约在 1930 年似乎有一个转折\cite{solow1957}。前 21 年的上移平均每年约 0.9\%\cite{solow1957}。后 19 年快得多，平均每年约 2.25\%\cite{solow1957}。他又说，事后这样切分时期总是危险的，也许只能说，有证据表明技术变化在 1929 年以后可能加快了\cite{solow1957}。前半期的 1909—1929 年，资本密集度的提高能解释约三分之一\cite{solow1957}。他特别说明，这不是说投资少得多时技术进步照样会以同样的速度发生，很多甚至几乎全部的创新要体现在新的厂房与设备里才能实现\cite{solow1957}。他在总结里还说，这一时期的技术变化平均是中性的，扣除技术变化以后的总量生产函数显出报酬递减，只是曲率不大\cite{solow1957}。
+% 据: s57_break, s57_first21, s57_posthoc, s57_fn6, s57_embodied, s57_neutral, s57_curvature
+
+斯旺在附录里正面回应了资本的计量问题。他引罗宾逊的话，学生被教着写出产出是劳动与资本的函数，又被匆匆带到下一个问题，指望他忘了问资本用什么单位量\cite{swan1956}。他说，如果非要竖一个“稻草人”（这是罗宾逊的叫法）来挡住指数问题，就设资本由大量一模一样、永不磨损的积木组成，拆装几乎不费成本与时间\cite{swan1956}。在这样的假定下，正文的基本模型可以严格地建立起来，谁也不会被误导\cite{swan1956}。他也说，在变化的过程里处理资本这个概念有很大的困难，这不奇怪\cite{swan1956}。
+% 据: sw_robinson_fn, sw_units, sw_scarecrow, sw_meccano, sw_deceive, sw_difficulties
+
+\begin{example}{索洛的增长核算}\label{ex:solow-accounting}
+按索洛的表 1，1909 年每个工时的产出是 62.3 美分，每个工时的资本是 2.06 美元，财产的份额 0.335；1949 年三者是 127.5 美分、2.70 美元与 0.326\cite{solow1957}。（1）两者每年各增长多少（对数）？（2）资本份额取两年的平均，资本深化贡献多少？余量是多少？
+\solution
+（1）产出每年$\ln(127.5/62.3)/40\approx1.79\%$，资本每年$\ln(2.70/2.06)/40\approx0.68\%$。（2）平均份额约 0.33，资本深化贡献$0.33\times0.68\%\approx0.22$ 个百分点，余量约 1.57\%，资本的贡献约占八分之一（本书的计算）。索洛逐年算的$A(t)$到 1949 年是 1.809，每年约 1.48\%，比两端一次算的略低。
+\end{example}
+% 据: s57_t1_1909, s57_t1_1949
+
+索洛不是第一个发现余量很大的人。阿布拉莫维茨（Moses Abramovitz，1912—2000）1956 年在美国国民经济研究局发表第 52 号不定期论文\cite{abramovitz1956,loc40,gnd40}。他比较了 1869—1878 年与 1944—1953 年两个十年，按不变价格，人均净国民产值约增加到四倍，人口增加到三倍多\cite{abramovitz1956}。他把人均的劳动与资本按基期 1919—1928 年的收入份额加成一个资源指数，它在这期间只上升约 14\%\cite{abramovitz1956}。具有代表性的一单位资源，生产率因此必须提高约 250\%\cite{abramovitz1956}。他也说，这个结果部分可能来自基期的选择\cite{abramovitz1956}。他说，这个结果“令人清醒”，生产率的重要性可以看作“我们无知的度量”\cite{abramovitz1956}。索洛在文中也引了 Fabricant 的估计，1871—1951 年人均产出的增加约 90\% 来自技术进步\cite{solow1957}。
+% 据: ab_title, ab_op52, ab_reprinted, ab_quadrupled, ab_index, ab_14, ab_250, ab_base, ab_1919, ab_sobering, ab_ignorance, s57_fabricant, loc_abramovitz, loc_abramovitz_note, gnd_abramovitz_born, gnd_abramovitz_died
+
+索洛 1987 年回顾，1957 年的结果是“惊人的”，他想自己原以为直接的资本形成作用会更大\cite{solow1987}。他说，这个大的结论在此后 30 年里站住了，增长核算也精细得多，尤其是丹尼森（Edward F. Denison，1915—1992）的工作\cite{solow1987,loc40,gnd40}。主要的改进是把广义的技术进步拆成几块，其中最重要的是各种人力资本变量与狭义的技术变化\cite{solow1987}。按丹尼森的估计，1929—1982 年美国非住宅企业的实际产出每年增长 3.1\%\cite{solow1987}。受教育程度不变的劳动投入增加贡献四分之一，劳动者受教育程度的提高贡献 16\%\cite{solow1987}。资本只贡献 12\%，索洛说，这恰好与他 1909—1949 年的结果几乎一样\cite{solow1987}。资源配置的改善与规模经济各贡献 11\%，索洛说后一项的估算很不可靠\cite{solow1987}。知识的进步贡献 34\%\cite{solow1987}。各项加起来是 109\%，其余因素使增长每年少了不到 0.3 个百分点\cite{solow1987}。
+% 据: nb_startling, nb_expected, nb_heldup, nb_unpack, nb_denison, nb_quarter, nb_education, nb_capital12, nb_allocation, nb_scale, nb_knowledge, nb_109, nb_misc, loc_denison, gnd_denison_born
+
+\subsubsection{两种要素的全要素生产率}
+
+\chref{ch:smith}把人均产出分成劳动生产率与有用劳动的比例（式~\eqref{eq:smith-twofactors}），增长核算把劳动生产率再分成人均资本与全要素生产率。\chref{ch:divergence}的模型只有土地与劳动，$y=\tilde A(X/L)^{\alpha}$。若产出其实是$Y=A\,K^{\beta}X^{\alpha}L^{1-\alpha-\beta}$，人均产出就是$y=A\,k^{\beta}(X/L)^{\alpha}$，于是$\Delta\ln\tilde A=\Delta\ln A+\beta\,\Delta\ln k$（本书的推导）。人均资本增加时，两种要素的全要素生产率多出资本份额乘以人均资本的增长率，把资本深化也算进了技术。\chref{ch:divergence}算出的 1800—1860 年每年约 0.8\%，因此高于按三种要素算的数（本书的解读）。
+
+\section{数据检验：穷国追得上吗}\label{sec:solow-check}
+
+如果各国的储蓄率、人口增长率、折旧与技术都一样，模型预测穷国增长得快，这叫绝对收敛（本书的概括）。参数不一样，每个国家趋向自己的稳态，离自己的稳态越远增长越快，这叫条件收敛。Baumol（1986）用 Maddison 样本里的 16 个工业国，看 1870—1979 年\cite{baumol1986}。按他的回归，1870 年每个工时的 GDP 越高，此后的增长越慢，斜率是$-0.75$，$R^{2}$为 0.88\cite{baumol1986}。他也说明，换成 72 个国家，$R^{2}$几乎为零，回归线连负的斜率都没有\cite{baumol1986}。
+% 据: bm_title, bm_16, bm_eq, bm_72
+
+按 Baumol 的另一种说得通的解释，各国的政策与行为固然很影响生产率的增长，领先经济对追随者的外溢也很大，至少在工业国之间如此\cite{baumol1986}。一个工业国提高了自己的生产率，长期也几乎自动地提高别的工业国的生产率，这样的措施具有公共品的性质\cite{baumol1986}。他说，计划经济自成一个“收敛俱乐部”，收敛看来也见于计划经济，不见于欠发达国家\cite{baumol1986}。他说，部分原因很可能与产品结构和教育有关，不生产汽车的国家，从日本更好的造车机器人那里得不到好处\cite{baumol1986}。
+% 据: bm_spillover, bm_almost, bm_public, bm_club, bm_ldc, bm_cars
+
+按 De Long（1987）的工作论文，Baumol 样本里的收敛是构造出来的\cite{delong1987}。Maddison 的研究对象本来就是后来发展成功、如今收入很高的国家，样本有选择偏差\cite{delong1987}。他以 Maddison 16 国里 1870 年第二穷的芬兰的收入为界，重选了 1870 年看来同样可能收敛的 22 国\cite{delong1987}。日本被去掉，阿根廷、智利、东德、爱尔兰、新西兰、葡萄牙与西班牙被加进来\cite{delong1987}。他说，16 国对数收入的标准差 1979 年只有 1870 年的 35\%，这 22 国却和 1870 年一样分散\cite{delong1987}。他又考虑 1870 年收入的测量误差，误差方差与回归扰动的方差相等时，1870 年以来的增长与 1870 年的收入无关\cite{delong1987}。
+% 据: dl_title, dl_construction, dl_design, dl_selection, dl_japan, dl_finland, dl_22, dl_sd, dl_halfvar, dl_error, dl_noconv
+
+按 Barro（1989）的工作论文，约 100 个国家战后的人均增长率与初始的人均产出无关\cite{barro1989}。他说，保持中小学入学率衡量的初始人力资本不变，有证据表明人均产出较低的国家增长较快\cite{barro1989}。他还发现，政府消费与增长负相关，政治稳定与增长正相关\cite{barro1989}。他也说，撒哈拉以南非洲与拉丁美洲增长较弱，他的分析有相当一部分没能解释\cite{barro1989}。
+% 据: br_title, br_uncorrelated, br_school, br_government, br_unexplained, br_africa
+
+按 Barro 与 Sala-i-Martin（1990）的估计，美国各州 1840 年以来的收敛速度无论哪个时期都约为每年 2\% 到 2.5\%\cite{bsm1990}。98 个国家 1960—1985 年的简单回归看不出收敛，加上其他解释变量以后，速度也约为每年 2\%\cite{bsm1990}。他们说，新古典模型要配上这个速度，资本份额得在 0.8 左右\cite{bsm1990}。资本份额越低，报酬递减来得越快，收敛就比数据显示的快\cite{bsm1990}。模型扩展到开放经济，穷国追得更快，所需的资本份额就更高\cite{bsm1990}。
+% 据: bs_title, bs_1840, bs_states, bs_98, bs_countries, bs_alpha, bs_lower, bs_open, bs_higher
+
+Mankiw、Romer 与 Weil（1990）的检验针对稳态的水平\cite{mrw1990}。按他们的说法，教科书模型对储蓄与人口增长的影响方向预测对了，大小却不对，数据里的影响太大，模型隐含的资本份额是 0.59，不是三分之一\cite{mrw1990}。加上人力资本以后，模型能解释各国人均收入差别的约 80\%，物质资本与人力资本的份额都约为三分之一\cite{mrw1990}。他们说，控制了决定稳态的变量，人均收入有明显的收敛，速度约为模型预测的每年 2\%\cite{mrw1990}。储蓄率本身也随增长而变（\chref{ch:consumption}），增长对储蓄率的回归不等于模型里储蓄的因果效应（本书的解读）。
+% 据: mrw_title, mrw_direction, mrw_toolarge, mrw_059, mrw_80, mrw_third, mrw_controlling, mrw_converge, mrw_lambda
+
+\begin{table}[tbp]
+\centering\small
+\caption{收敛的检验：1960—2019 年（本书的计算）}\label{tab:solow-convergence}
+\begin{tabularx}{\linewidth}{@{}Y r r r@{}}
+\toprule
+ & 绝对收敛 & 条件收敛 & 加人力资本 \\
+\midrule
+初始收入的系数（百分点） & $-0.05$ & $-0.76$ & $-1.22$ \\
+隐含的收敛速度（\%） & — & 1.0 & 2.1 \\
+$R^{2}$ & 0.00 & 0.35 & 0.44 \\
+国家数 & 111 & 111 & 104 \\
+\bottomrule
+\end{tabularx}
+\datasource{Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015）。因变量是 1960—2019 年每年的人均实际 GDP 增长率，初始收入是 1960 年人均实际 GDP（按支出法与购买力平价）的对数。条件收敛加上平均投资份额与$n+0.05$的对数，最后一列再加 1960 年的人力资本指数。系数是对数初始收入增加 1 时增长率变化的百分点，收敛速度按 59 年换算。}
+\end{table}
+
+本书用 Penn World Table 10.01 做了同样的检验，结果列在\tabref{tab:solow-convergence}，画在\figref{fig:solow_convergence}\cite{pwt1001}。样本是 1960 年与 2019 年都有数据、每年都有投资份额的国家。它们此后的人均增长率与 1960 年的人均收入几乎无关。控制投资份额与人口增长以后，系数变负。再加上 1960 年的人力资本，隐含的收敛速度与 Barro、Sala-i-Martin 和 Mankiw、Romer、Weil 的估计相近（本书的计算）。1960 年最穷的四分之一国家，此后平均每年增长 2.3\%，最富的四分之一是 2.0\%（本书的计算）。只看 1960 年最富的 30 个国家，系数也几乎为零，其中的委内瑞拉此后人均收入下降（本书的计算）。
+% 据: pwt_title, pwt_ref, pwt_licence, pwt_coverage
+
+\fig{solow_convergence}{收敛的检验，111 个国家，1960—2019 年（本书的计算）。(a) 看点云有没有斜率：横轴是 1960 年人均实际 GDP 的对数，纵轴是此后每年的人均增长率。(b) 看控制以后的斜率：纵轴换成去掉投资份额与人口增长的影响以后的增长率（加上样本均值），直线是回归线。数据：Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015）。}{fig:solow_convergence}
+
+长期看，差距是扩大的。按 Pritchett（1995）为世界银行写的工作论文，最富国与最穷国人均收入之比，1870 年是 8.7，1960 年是 38，1985 年是 51\cite{pritchett1995}。他假定穷国的人均 GDP 不会低于按 1985 年购买力平价计的 250 美元\cite{pritchett1995}。按他的估计，1870—1985 年这个比扩大到约六倍，各国对数人均收入的标准差增加了 60\% 到 100\%\cite{pritchett1995}。照他的说法，人均产出的发散也许是现代经济史的主要特征\cite{pritchett1995}。他也说，绝对的发散与条件收敛并不矛盾\cite{pritchett1995}。
+% 据: pr_title, pr_title2, pr_date, pr_ratio, pr_floor, pr_sixfold, pr_dominant, pr_compatible
+
+\begin{compare}{绝对收敛与条件收敛}{绝对收敛（Baumol）}{条件收敛（Barro；Mankiw、Romer 与 Weil）}
+\cmprow{预测}{1870 年生产率越高，此后增长越慢\cite{baumol1986}}{保持初始的人力资本不变，初始较穷的国家增长较快\cite{barro1989}}
+\cmprow{样本}{Maddison 的 16 个工业国\cite{baumol1986}}{约 100 个国家，战后\cite{barro1989}}
+\cmprow{速度}{斜率$-0.75$，$R^{2}$为 0.88\cite{baumol1986}}{每年约 2\%\cite{bsm1990,mrw1990}}
+\cmprow{作者的保留}{高相关不必太当真，72 国几乎无关\cite{baumol1986}}{教科书模型隐含的资本份额太高，要加人力资本\cite{mrw1990}}
+\cmpsum{两者问的不是一件事。条件收敛允许各国趋向不同的稳态，与按 Pritchett 的估计长期存在的绝对发散可以同时成立\cite{pritchett1995}。}
+\end{compare}
+% 据: bm_eq, bm_16, bm_seriously, bm_72, br_school, br_uncorrelated, bs_countries, mrw_lambda, mrw_059, mrw_80, pr_compatible
+
+\begin{pitfall}[条件收敛说穷国会追上富国]
+条件收敛说的是，每个国家趋向自己的稳态。储蓄率低、人口增长快、人力资本少的国家，稳态本来就低，它可以一直收敛，却永远追不上。按 Pritchett 的估计，1870—1985 年各国是发散的，这与 Barro 的条件收敛并不冲突\cite{pritchett1995,barro1989}。模型只说在给定储蓄、人口与技术的条件下一个国家会走到哪里，没有说这些条件怎样改变。
+\end{pitfall}
+% 据: pr_compatible, br_school
+
+苏联是这个预测的一个极端的检验，投资在上升，增长率却一个十年比一个十年低（\figref{fig:solow_soviet}）。按 Easterly 与 Fischer 的说法，通常的解释是粗放增长\cite{ef1995}。按 Ofer（1987）的定义，粗放增长主要靠积累投入，不靠提高生产率，按 Ofer 的说法，它的特征之一是资本—产出比上升\cite{ef1995}。照索洛模型的读法，多投资只能把人均产出的水平抬高，报酬递减迟早会把增长拉回来（本书的解读）。
+% 据: ef_title, ef_extensive
+
+\begin{case}{苏联 · 1950—1987 · 高投资与增长放缓}
+苏联的增长估计在\chref{ch:soviet}（\tabref{tab:soviet-growth}），1932—1933 年的饥荒也在那里。按 Easterly 与 Fischer（1995）用的西方数据，每个工人的产出 1950—1959 年每年增长 5.8\%，1980—1987 年只有 1.4\%\cite{ef1995}。每个工人的资本同期每年增长 7.4\% 与 4.0\%\cite{ef1995}。他们说，按西方的估计，苏联投资的份额 1950—1975 年翻了一番\cite{ef1995}。不寻常的是，投资在上升，增长却在下降\cite{ef1995}。1985 年的资本—产出比是 4.9\cite{ef1995}。
+% 据: ef_t1_head, ef_t1_y, ef_t1_k, ef_t1_source, ef_doubled, ef_unusual, ef_ky
+
+多投资由谁决定、代价由谁承担，美国中央情报局的估计里有数字。1990 年，美国国会联合经济委员会印行了该局分析员 Kurtzweg 按 1982 年价格估计苏联国民生产总值的研究\cite{jec1990}。按这项估计，1951—1965 年，国民生产总值每年增长 5.1\%，消费 4.6\%，投资 9.6\%\cite{jec1990}。按 Kurtzweg 的研究，1970 年代中期以后增长放慢，投资、国防与消费争夺资源，“莫斯科的优先次序看来变化很小”，三者在国民生产总值中的份额 1970 年以后大致不变\cite{jec1990}。“计划者让投资的增长在 1975 年以后显著放慢”，居民的生活水平仍在提高，提高的速度却明显放慢\cite{jec1990}。人均消费的增长从 1966—1975 年的每年 3.3\% 降到 1976—1987 年的 1.3\%\cite{jec1990}。投资与国防的份额由莫斯科定，消费的放慢由居民承受（本书的解读）。
+% 据: jec_title, jec_date, jec_print, jec_analysts, jec_author, jec_t2_head, jec_t2_gnp, jec_t2_cons, jec_t2_inv, jec_competition, jec_priorities, jec_planners, jec_living, jec_percapita
+
+Easterly 与 Fischer 用模型来读这些数。资本份额取他们比较各国时用的 0.4，按科布—道格拉斯函数读，1980—1987 年全要素生产率的增长是负的（\exref{ex:solow-soviet}）。他们沿着 Weitzman（1970）的思路，估计替代弹性不变的生产函数，替代弹性只有 0.37，各个十年的全要素生产率都在每年 1.1\% 左右\cite{ef1995}。照这个读法，增长放缓全都来自资本的报酬递减\cite{ef1995}。按他们的转述，Weitzman（1990）把苏联的增长说成索洛（1956）的新古典模型见过的最好的应用\cite{ef1995}。
+% 据: ef_t4_alpha, ef_weitzman, ef_ref_weitzman, ef_t6_eq, ef_t6_sigma, ef_t6_tfp, ef_entirely, ef_best
+\end{case}
+
+\fig{solow_soviet}{苏联的高投资与增长放缓。(a) 看两组柱子怎样分开：每个工人的产出与资本每年的增长率（\%），西方的数据，按十年。(b) 看投资与消费在哪个时期分开：国民生产总值、消费与投资每年的增长率（\%），按 1982 年要素成本。数据：(a) Easterly 与 Fischer（1995）表 1；(b) 美国国会联合经济委员会（1990）表 2。}{fig:solow_soviet}
+
+\begin{example}{用模型读苏联的数}\label{ex:solow-soviet}
+用案例里 Easterly 与 Fischer 表 1 的数\cite{ef1995}。（1）资本份额取 0.4，按式~\eqref{eq:solow-accounting}，1950—1959 年与 1980—1987 年的全要素生产率各增长多少？（2）每个工人的资本增长比产出快，资本—产出比怎样变？
+\solution
+（1）$5.8-0.4\times7.4=2.84\%$，$1.4-0.4\times4.0=-0.2\%$（本书的计算）。按科布—道格拉斯函数读，增长放缓主要是技术进步停了。（2）两个时期资本都比产出每年快约 1.6 到 2.6 个百分点，资本—产出比一直上升。替代弹性越低，资本对劳动的比例上升时，资本的边际产品降得越快，Easterly 与 Fischer 据此把放缓归于报酬递减\cite{ef1995}。
+\end{example}
+
+\section{三个争论}\label{sec:solow-debate}
+
+\subsubsection{余量是技术，还是测量误差}
+
+第一个争论是索洛余量量的是什么。技术一方有索洛与阿布拉莫维茨。乔根森（Dale W. Jorgenson，1933—2022）与格里利克斯（Zvi Griliches，1930—1999）1967 年提出相反的假说\cite{jg1967,loc39,gnd39,loc40,gnd40}。他们说，如果产出与投入都量得准确，产出的增长大部分可以由投入的增长解释\cite{jg1967}。他们注意到，全要素生产率已经有了“余量”与“我们无知的度量”这样的名字，只把它改称技术进步或知识进步，增长仍然没有得到解释\cite{jg1967}。他们说，以前的数据里许多最重要的测量误差来自不正确的加总，例如投资品价格量错了，总产出与资本账户都会有偏差\cite{jg1967}。按他们的估计，美国私人国内经济 1945—1965 年全要素生产率的增长，修正以后从每年 1.6\% 降到 0.1\%\cite{jg1967}。丹尼森 1969 年反驳说，这个数与几乎所有别的研究得到的大得多的数相反，以 1945 年为起点也把他们的数压到了最低\cite{denison1969}。他自己在《增长率为什么不同》里得到的是 1.37 个百分点\cite{denison1969}。
+% 据: jg_reprint, jg_hypothesis, jg_labels, jg_relabel, jg_incorrect, jg_correct, jg_investment, jg_1945, jg_economy, jg_160, dn_title, dn_1969, dn_010, dn_1945, dn_137, loc_griliches, gnd_griliches, gnd_griliches_born, gnd_griliches_died
+
+双方各有让步。乔根森与格里利克斯说，他们的结论并非知识的进步可以忽略，知识的积累与别的资本积累一样受经济规律支配\cite{jg1967}。按美国经济分析局 1972 年的说明，他们在《增长核算中的问题：答丹尼森》里“赋予生产率大得多的作用”，在若干方面接近了丹尼森的概念与方法，分歧仍然很大\cite{scb1972}。索洛自己 1957 年就说过，很多创新要体现在新设备里\cite{solow1957}。他后来做了体现型的模型，按常识它应当更合事实，结果并没有；丹尼森也认为，体现的想法没有解释力\cite{solow1987}。他 1987 年引丹尼森的估计说，技术仍是增长的主要动力，人力资本投资居第二，这些数不必全信，传达的信息却很清楚\cite{solow1987}。至今没有定论。
+% 据: jg_knowledge, jg_replytitle, scb_reply, s57_embodied, nb_embodiment, nb_noexplanatory, nb_engine, nb_believe
+
+\subsubsection{穷国会不会追上来}
+
+第二个争论是收敛。Baumol 的 16 国收敛得很快，按 De Long 的检验，那是样本选择出来的。条件收敛一方有 Barro 与 Mankiw、Romer、Weil，长期的绝对发散一方有 Pritchett。Baumol 自己的保留是，高相关不必太当真\cite{baumol1986}。按 Mankiw、Romer 与 Weil 的说法，教科书模型隐含的资本份额太高\cite{mrw1990}。他们也说，物质资本大致得到了它的社会报酬，资本积累没有很大的外部性\cite{mrw1990}。按 De Long 的结论，促成收敛的力量被促成发散的力量抵消了，连最应该收敛的国家也是如此\cite{delong1987}。他也承认，这不是说没有推动收敛的力量，收敛有时会发生，技术是公共品\cite{delong1987}。至今没有定论。
+% 据: bm_seriously, mrw_toolarge, mrw_social, mrw_externalities, dl_forces, dl_concede
+
+\subsubsection{苏联的增长为什么放缓}
+
+第三个争论是苏联。Easterly 与 Fischer 归于替代弹性低带来的报酬递减\cite{ef1995}。他们也列出文献里别的解释，有技术进步放慢、国防负担，还有种种激励问题\cite{ef1995}。他们承认，这些结果有赖于识别生产函数所需的假定，在官方数据里找到一些低弹性的支持，在 Khanin 的数据里却没有\cite{ef1995}。按他们的转述，Weitzman 的结果争论很大，Bergson（1983）的批评是，它隐含早年过高的资本边际产品\cite{ef1995}。他们认为，苏联在 1970 年代与 1980 年代投入的研发资源越来越多，又借用西方技术，全要素生产率的增长保持不变，比一路下降更可信\cite{ef1995}。他们看不出效率为什么会恶化到能解释这种下降的程度\cite{ef1995}。他们自己也问，在专制地指挥的经济里，苏联积累的资本品种类窄，这是不是替代难的原因\cite{ef1995}。计划经济怎样运转是\chref{ch:planned}的题目。至今没有定论。
+% 据: ef_low, ef_causes, ef_causes2, ef_caveats, ef_khanin, ef_debated, ef_bergson, ef_rd, ef_compelling, ef_why
+
+\begin{deeper}[史料说明]
+\textbf{版本。}索洛（1956、1957）、哈罗德（1939）、菲尔普斯（1961）与 Baumol（1986）据皮凯蒂在巴黎经济学院网站上放的 JSTOR 本，只用来核对。斯旺（1956）据互联网档案馆的《经济纪录》缩微胶片扫描本。索洛的演讲据诺贝尔奖网站。阿布拉莫维茨（1956）据 NBER 网站上的第 52 号不定期论文。De Long、Barro、Barro 与 Sala-i-Martin、Mankiw、Romer 与 Weil 用的都是 NBER 工作论文，Pritchett 用的是世界银行的工作论文，发表在期刊上的版本没有读到。Easterly 与 Fischer 据世界银行网站上《世界银行经济评论》1995 年第 9 卷第 3 期的 PDF。联合经济委员会的报告据互联网档案馆的缩微胶片扫描本。乔根森与格里利克斯（1967）与丹尼森（1969）据美国经济分析局网站上《当代商业概览》1972 年 5 月第二部分的重印本，前者注明经作者更正。
+
+\textbf{说法的出处。}“刀刃”是索洛（1956）对哈罗德—多马思路的概括，本书在哈罗德 1939 年的文章里没有找到这个词。“我们无知的度量”见于阿布拉莫维茨（1956），乔根森与格里利克斯（1967）说这是余量已有的名字之一，更早的出处本书没有找到。
+
+\textbf{文字层的误读。}斯旺的扫描本把技术进步的“½ per cent”读作“4 per cent”，把居中的小数点读作连字符，乔根森与格里利克斯的重印本也是这样。索洛（1957）的总结里，87.5\% 读作“87'2”，他的表 1 与 Easterly 与 Fischer 的表也有读错的数，这些都按页面图像读。
+
+\textbf{不一致之处。}索洛（1956）第 85 页说，加上中性技术进步以后，产出的增长率最终是$n+ag/b$，$b=1-a$，资本—产出比每年增长$g$。按他自己的生产函数，产出与资本都按$n+g/b$增长，资本—产出比不变（本书的计算）。Easterly 与 Fischer 的表 6 把$c_5$一行标作替代弹性，印的是$-0.37$；按他们的式 (6)，替代弹性是$-c_5$，即 0.37（本书的计算）。Pritchett 正文说 1985 年的比是 51，表里是 51.6。诺贝尔奖网站上的演讲稿把“eighth”写作“eight”。国会图书馆斯旺的记录，出生日期一栏写 1818 年，标目与来源注都是 1918 年。
+
+\textbf{只有一个来源的数。}索洛 1909—1949 年的数、斯旺的数字例子、哈罗德的方程与数字，都只有作者自己的文本。丹尼森 1929—1982 年的分解只据索洛的转述，《增长率为什么不同》里的数只据丹尼森 1969 年的文章。苏联的增长率有 Easterly 与 Fischer 和联合经济委员会两处，前者的表 1 引的是 Gomulka 与 Schaffer（1991）。Ofer、Weitzman、Bergson 与 Krugman 的看法只据 Easterly 与 Fischer 的转述。Penn World Table 的检验是本书的计算，只用了这一个数据库。
+
+\textbf{没有取得的。}多马（1946）的原文没有取得，只核对了《计量经济学》第 14 卷的目录。Weitzman（1970）的工作论文版本在耶鲁大学的网站上，网站要求通过 Cloudflare 的人机验证，本书没有取得。Kaldor 的原文本书没有取得，他的典型事实据 Easterly 与 Fischer 的转述。Pritchett 后来在《经济展望杂志》上的同名文章，网站拒绝访问，正文用 1995 年的工作论文。中央情报局阅览室的文件页面打不开。
+
+\textbf{生卒年。}索洛的标目没有年份，生卒日期见国会图书馆记录的来源注，与诺贝尔奖网站和德国国家图书馆（经 lobid.org）的记录相合。斯旺、丹尼森、格里利克斯、刘易斯与罗宾逊的年份见国会图书馆的标目，德国国家图书馆的记录相合，只是丹尼森那里没有卒年。阿布拉莫维茨的标目没有年份，生卒年见来源注，与德国国家图书馆相合。菲尔普斯的标目没有年份，生年见国会图书馆记录的来源注，卒年见德国国家图书馆与诺贝尔奖网站的记录，两处的生日也与来源注相合。乔根森的生卒年据\chref{ch:consumption}的记录，哈罗德与多马的据\chref{ch:islm}与\chref{ch:warfinance}的记录\cite{loc40,gnd40,nobel2006}。
+\end{deeper}
+% 据: s57_title, hr_title, ph_title, bm_title, sw_issue, nb_title, ab_title, dl_title, br_title, bs_title, mrw_title, pr_title, ef_title, jec_title, jg_reprint, dn_title, s56_knife, ab_ignorance, jg_labels, sw_m_ocr, sw_m, sw_alpha, jg_160, s57_ocr, s57_summary, s56_ag, s56_kyg, ef_t6_sigma, ef_t6_eq, pr_ratio, pr_t_1985, nb_eight, loc_swan_born, loc_swan, loc_swan_note, dm_index, ef_t1_source, loc_solow, loc_solow_born, loc_solow_died, loc_solow_wapo, loc_abramovitz, loc_abramovitz_note, loc_phelps, loc_phelps_born, gnd_phelps_died, nf_phelps_died, gnd_denison_born, gnd_licence
+
+\section{今天还剩什么}\label{sec:solow-legacy}
+
+\textbf{增长核算。}式~\eqref{eq:solow-accounting}成了统计机构与研究者的常规工具，余量后来叫全要素生产率。乔根森与格里利克斯的批评留下的，是把投入量得更细，劳动按受教育程度分、资本按种类分。东亚的高速增长主要靠积累还是靠效率，是\chref{ch:eastasia}的题目。按 Easterly 与 Fischer 的转述，Krugman（1994）把苏联增长意外的放缓当作比喻，说的是所谓东亚将来的增长放缓\cite{ef1995}。那场争论也在那一章。
+
+\textbf{技术从哪里来。}模型把$g$当作外生的，内生增长理论把它放进模型，让广义资本的报酬不再递减，Barro 与 Sala-i-Martin 的资本份额 0.8 与 1 的差别就在这里（\chref{ch:endogenous}）。人口增长放慢、人工智能会不会改变$g$，是\chref{ch:demography}的题目。苏联解体与转轨以后的增长在\chref{ch:transition}。
+
+\textbf{收敛与追赶。}条件收敛的回归成了跨国增长研究的标准做法，各国人均收入的差别有多少来自积累、多少来自效率，是它的延续。1960—2019 年人均增长率每年超过 4\% 的有 9 个经济体，即台湾、韩国、博茨瓦纳、新加坡、马耳他、泰国、中国大陆、香港与罗马尼亚（本书的计算）。其中韩国、泰国、中国大陆与博茨瓦纳 1960 年在最穷的四分之一里，同一组的 27 个国家却有 13 个增长得比最富的四分之一慢，差距反而拉大了（\figref{fig:solow_convergence}）。
+
+\textbf{储蓄率从哪里来。}模型把储蓄率当作给定。让家庭按欧拉方程选择储蓄（\chref{ch:consumption}），黄金律就成了最优储蓄问题的一个参照，实际经济周期模型在这个骨架上加了技术冲击（\chref{ch:rbc}）。穷国的储蓄、人口与技术为什么与富国不同，又怎样改变，是发展经济学的问题（\chref{ch:development}）。
+
+\textbf{份额与不平等。}平衡增长路径要求要素份额不变。劳动份额近几十年是否下降、资本收益与增长率谁大，是\chref{ch:heterogeneity}的不平等之争的起点。
+
+\begin{takeaways}
+\begin{itemize}
+\item 哈罗德与多马的条件是储蓄率等于资本—产出比乘以劳动力的增长率。三个量都固定时，稳定增长要靠运气，由此还推出多储蓄就能多增长的处方。
+\item 索洛与斯旺 1956 年让资本与劳动可以替代，刀刃消失了。稳态由$s\,k^{\alpha}=(n+\delta)\,k$决定，储蓄率改变的是人均产出的水平，长期增长率由技术进步决定。
+\item 稳态附近的收敛速度约为$(1-\alpha)(n+g+\delta)$，资本份额三分之一时差距约 17 年缩小一半。黄金律的储蓄率等于资本份额，提高储蓄率的代价是眼前的消费。
+\item 索洛（1957）算出美国 1909—1949 年每个工时的产出翻了一番，约八分之七归于技术变化。阿布拉莫维茨称余量为“我们无知的度量”，乔根森与格里利克斯认为它主要是测量误差。
+\item 绝对收敛在长期与全世界的样本里不成立，条件收敛的速度每年约 2\%。苏联在投资率上升时增长放缓，一种读法是替代弹性低、报酬递减快。余量、收敛与苏联放缓的原因，至今没有定论。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 用式~\eqref{eq:solow-steady}，$\alpha=1/3$，$n+g+\delta=6\%$，储蓄率 15\% 时每个有效工人的资本与产出是多少？
+\item 资本份额从三分之一提高到二分之一，储蓄率翻一番时稳态产出增加多少？
+\item 按式~\eqref{eq:solow-speed}，$\alpha=0.8$、$n+g+\delta=9\%$时，半衰期是多少年？
+\item 某国每个工人的产出每年增长 3\%，每个工人的资本每年增长 4\%，资本份额 0.35。全要素生产率每年增长多少？
+\item 为什么增长率对储蓄率的跨国回归，不能直接读成多储蓄带来多少增长？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $k=(0.15/0.06)^{1.5}=2.5^{1.5}\approx3.95$，$y=2.5^{0.5}\approx1.58$。
+\item 弹性从$1/2$变为 1，翻一番时产出从增加约 41\% 变为增加 100\%。
+\item $\lambda=0.2\times9\%=1.8\%$，半衰期$0.693/0.018\approx39$ 年。
+\item $3\%-0.35\times4\%=1.6\%$。
+\item 储蓄率本身随增长而变，生命周期的储蓄在增长快时更高（\chref{ch:consumption}）；储蓄率高的国家，人口增长与人力资本往往也不同。
+\end{answers}
+
+回到 1987 年 12 月的斯德哥尔摩。索洛不信的那个处方，他的模型给了回答。多储蓄能把人均产出抬到更高的水平，却不能让它永远增长得更快，代价是眼前少消费。模型说的是一个穷国如果像富国那样储蓄与投资，会走到哪里，没有说它怎样开始。下一章的发展经济学从劳动过剩与二元经济讲起。穷国怎样起飞？
+% 据: nb_title, nb_implausible

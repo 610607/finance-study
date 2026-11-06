@@ -1,0 +1,331 @@
+{
+  "title": "Quotations for Chapter 40: Solow's Nobel lecture (1987), Harrod (1939), Domar (1946), Solow (1956, 1957), Swan (1956), Phelps (1961), Abramovitz (1956), Baumol (1986), De Long (1987), Barro (1989), Barro and Sala-i-Martin (1990), Mankiw, Romer and Weil (1990), Pritchett (1995), Easterly and Fischer (1995), the study of Soviet GNP for the Joint Economic Committee (1990), Jorgenson and Griliches (1967) and Denison (1969) in the Survey of Current Business of May 1972, the record of Penn World Table 10.01, and life dates",
+  "source": "NobelPrize.org; The Economic Journal; Econometrica; The Quarterly Journal of Economics; The Economic Record; The American Economic Review; The Review of Economics and Statistics; National Bureau of Economic Research (Abramovitz 1956; working papers); The World Bank (Policy Research Working Papers; The World Bank Economic Review); Joint Economic Committee, Congress of the United States; Survey of Current Business (Bureau of Economic Analysis); DataverseNL (Penn World Table 10.01); archive.org; Library of Congress; Deutsche Nationalbibliothek",
+  "url": "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/lecture/",
+  "series": "quotations (column quote) with their page (column juan) and the numbers read from them (column value, ';'-separated, by the READINGS of checks/check_ch40.py); a row read on a page image has no quotation and its transcription between « and » in the note; column dynasty holds the country of the source",
+  "retrieved": "2026-11-06",
+  "license": "NobelPrize.org: Solow's lecture of 8 December 1987, whose page prints (row nb_copyright) 'Copyright © The Nobel Foundation 1987'; short phrases only, the page cited. The pages of facts of Solow (1987) and Phelps (2006): facts of the prize and life dates. Articles in copyright, read to verify in copies the journals did not post (the address, the date and the SHA-256 of each copy are recorded in the notes; the copies are not committed; the journals are cited): Harrod (1939, The Economic Journal), Solow (1956, The Quarterly Journal of Economics), Phelps (1961, The American Economic Review), Solow (1957, The Review of Economics and Statistics) and Baumol (1986, The American Economic Review), the JSTOR copies on Thomas Piketty's page at the Paris School of Economics; Swan (1956, The Economic Record), the microfilm scan of the issue on archive.org. Short phrases only, otherwise paraphrased with '% 据:' anchors. National Bureau of Economic Research: Abramovitz (1956), Occasional Paper 52, the NBER's PDF (reprinted from The American Economic Review: row ab_reprinted, 'Reprinted from the American Economic Review'), and the working papers of De Long (1987), Barro (1989), Barro and Sala-i-Martin (1990) and Mankiw, Romer and Weil (1990): none of them prints a © notice. Short quotations only, the papers cited. The World Bank: Easterly and Fischer (1995), The World Bank Economic Review 9 (3), whose first page prints (row ef_copyright, as the text layer reads it) 'C) 1995 The International Bank for Reconstruction and Development /THE', that is '© 1995 The International Bank for Reconstruction and Development / THE WORLD BANK'; Pritchett (1995), Policy Research Working Paper 1522, whose page of summary findings prints (row pr_series) 'The papers carry the names of the authors and should be used and cited accordingly.' Both statements are copied into the bibliography. Short phrases only, the documents cited. Works of the United States government, public domain: the study of Soviet GNP printed for the Joint Economic Committee in November 1990, prepared by analysts of the Central Intelligence Agency (rows jec_analysts, jec_author: 'is a study of the Soviet Gross National Product prepared for the committee by analysts of the Central Intelligence Agency.' 'The author of the study is Laurie Kurtzweg, an analyst with the CIA.'), the microfiche scan on archive.org; the introduction of the Bureau of Economic Analysis to Part II of the Survey of Current Business of May 1972 (row scb_reply). The articles reprinted in the same issue, Jorgenson and Griliches (1967, from The Review of Economic Studies) and Denison (1969), are treated as in copyright: short phrases only. Penn World Table 10.01, the dataset's record on DataverseNL (row pwt_licence): 'CC-BY-4.0'; the citation it asks for (rows pwt_cite, pwt_ref): 'When using these data (for whatever purpose), please make the following reference:' 'Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), \"The Next Generation of the Penn World Table\" American Economic Review, 105(10), 3150-3182'. The book cites it so in the bibliography, the table and the figure. archive.org: the metadata records of the scans (archive_idx40, archive_swan40, archive_jec40), facts of publication. Library of Congress Name Authority File: public data. Gemeinsame Normdatei (row gnd_licence): 'http://creativecommons.org/publicdomain/zero/1.0/'.",
+  "used_in": [
+    40
+  ],
+  "fetch": "data/fetch/solow40.py",
+  "citation": "the works listed in the bibliography block of Chapter 40 (references_zh.tex)",
+  "notes": "Pages (column juan): Harrod (1939) prints page N on PDF page N-12; Solow (1956) page N on PDF page N-63; Phelps (1961) page N on PDF page N-636; Solow (1957) page N on PDF page N-310; Baumol (1986) page N on PDF page N-1070 (PDF page 1 of these five copies is JSTOR's cover page); Swan (1956), the scan of the whole issue, page N on PDF page N-186; Abramovitz (1956) page N on PDF page N+1 (PDF page 1 is the NBER's cover page, PDF pages 2 and 3 the unnumbered title page and its back); Easterly and Fischer (1995), the PDF of the whole issue, page N on PDF page N-336; the study printed for the Joint Economic Committee page N on PDF page N+10 (the text-layer rows have no page); the NBER working papers, Pritchett (1995) and the Survey of Current Business of May 1972 by PDF page; the index of Econometrica 14 on the image of its first page; the web pages, the metadata records, the dataset's record and the authority records have no pages. Copies of journal articles read on third-party sites (not committed): harrod1939 http://piketty.pse.ens.fr/files/Harrod1939.pdf (Thomas Piketty's page at the Paris School of Economics) read on 2026-11-06, SHA-256 64934a70e1f7f14eb80583906c1c59f83f00af7ce42192aff1062065e90a5cab; solow1956 http://piketty.pse.ens.fr/files/Solow1956.pdf (the same page) read on 2026-11-06, SHA-256 2aa6d78499866ff39f352eec4ca4068d3b90c0c7888ef11817b51cbaba57df52; phelps1961 http://piketty.pse.ens.fr/files/Phelps1961.pdf (the same page) read on 2026-11-06, SHA-256 54a25c8d70f054db13db18f39917fe93263a6eec808d7d86cd6abac77145a17e; solow1957 http://piketty.pse.ens.fr/files/Solow1957.pdf (the same page) read on 2026-11-06, SHA-256 9dc491dc52e944c915d9c5028e6f85bb91c3a2d3057cc8e93269880ee9c439db; baumol1986 http://piketty.pse.ens.fr/files/Baumol1986.pdf (the same page) read on 2026-11-06, SHA-256 84eb88d3786b6bc30ffe5a52ce287a984c7c8abd297b125a9a4b773a16c5e497; swan1956 https://archive.org/download/sim_economic-record_1956-11_32_63/sim_economic-record_1956-11_32_63.pdf (the microfilm scan of the issue on archive.org) read on 2026-11-06, SHA-256 8844cef90026abd472ec187169969a9d187ff1de2cdfa72c884ca807c8b378e7. Rows read on page images (no quotation, the transcription between « and » in the note): Harrod's fundamental equation and his numbers (pp. 17-18), whose subscripts and fractions the text layer drops; Solow's equation (6) of 1956 (p. 69); Swan's production function (p. 334) and his rate of technical progress (p. 337); Solow (1957), pp. 312-317 and 320, whose text layer interleaves the two columns and misreads the figures; Easterly and Fischer's Tables 1 and 6 and their equation (6) (pp. 343, 356, 357); the study for the Joint Economic Committee, pp. 6-7 (the text and Table 2), whose text layer is poor; the index of Econometrica 14. Misreadings of the text layers and misprints, each as printed in the quotation: 'eight' for 'eighth' (nb_eight); 'approachindeed' for 'approach—indeed' (hr_revolution); 'equilibriumpoint' without a space (hr_point); 'ri' for 'r1' (s56_three, s56_lower); '0-4' for '0·4' (sw_alpha, sw_impact); '4 per cent' for '½ per cent' (sw_m_ocr), as the page image shows (sw_m); 'anwers' for 'answers' (sw_answers); 'AContribution' without a space (sw_solow); 'investmenetis' for 'investment is' (ph_theorem); 'dispersed,happy' without a space (ph_crowd); '87'2' for '87½' (s57_ocr), as the page image shows (s57_summary); '0.751n' for '0.75 ln' (bm_eq); 'thirtyfive' for 'thirty-five' (dl_sd); 'are are' as printed (dl_concede); 'fl' for 'β' (bs_countries); 'o' for 'α' (mrw_059); 'end' for 'and' (mrw_third, mrw_textbook); 'a-$-l/3' for 'α = β = 1/3' (mrw_lambda); '-O' for 'β = 0' (mrw_textbook); 'affects' for 'effects' (mrw_direction); 'modem' for 'modern' (pr_dominant); words run together (pr_ratio, pr_dominant, pr_compatible); 'C)' for '©' (ef_copyright); 'tp' for 'to' (ef_caveats); '1-60' and '0-10' for '1·60' and '0·10' (jg_160); '1818' for '1918' (loc_swan_born). The decimals with a raised point that the text layers read as hyphens are read by the rule 'dot' of checks/check_ch40.py, the 'l' of 'l/3' by the rule 'lfrac'. Disagreements and slips in the sources: Solow (1956, p. 85) gives the eventual growth rate of output with neutral technical change as n + ag/b and the growth of K/Y as g (s56_ag, s56_kyg); with his own production function Y = e^{gt} K^a L^b, b = 1 - a, output and capital both grow at n + g/b on the balanced path and K/Y is constant (checks/check_ch40.py). Easterly and Fischer's Table 6 labels the row c5 the elasticity of substitution and prints -0.37 (ef_t6_sigma); by their equation (6) (ef_t6_eq) the elasticity is -c5, 0.37, as their text says it is low (ef_low). Pritchett's text gives the ratio of 1985 as 51 (pr_ratio), his table 51.6 (pr_t_1985). The LoC record of Swan has '1818-01-14' in the field of the date of birth (loc_swan_born), 1918 in the heading and the source note (loc_swan, loc_swan_note). Single witnesses: Harrod's equation and numbers (hr_eq, hr_numbers); Swan's numerical example (sw_n, sw_alpha, sw_s, sw_thrift, sw_impact, sw_m); Solow's figures for 1909-1949 (s57_t1_1909, s57_t1_1949, s57_first21, s57_doubled, s57_eighth, s57_623, s57_cents, s57_avg, s57_fn6), which his lecture of 1987 repeats in round terms (nb_eight, nb_capital12); Abramovitz's index (ab_14, ab_250); Denison's decomposition of 1929-1982, only in Solow's lecture (nb_denison to nb_misc), and his figure of Why Growth Rates Differ, only in his article of 1969 (dn_137); Baumol's and De Long's regressions (bm_eq, dl_sd); the estimates of Barro and Sala-i-Martin and of Mankiw, Romer and Weil (bs_states, bs_alpha, mrw_059, mrw_80, mrw_lambda); Pritchett's ratios (pr_ratio, pr_sixfold); Easterly and Fischer's Table 1, which cites Gomulka and Schaffer (1991) (ef_t1_source), and their Table 6; the estimates of Soviet GNP in 1982 prices (jec_t2_gnp, jec_t2_cons, jec_t2_inv, jec_percapita). The reduction of total factor productivity growth by Jorgenson and Griliches has two witnesses, their article (jg_160) and Denison's (dn_010); they agree. Indirect testimony: Solow's lecture on Harrod, Domar and Lewis (nb_trail, nb_routes) and on Denison (nb_heldup to nb_misc); Swan on Joan Robinson (sw_robinson_fn, sw_units, sw_scarecrow); Solow (1957) on Joan Robinson (s57_robinson), on Kendrick's and Goldsmith's series (s57_data, s57_goldsmith) and on Fabricant (s57_fabricant); De Long on Maddison (1982) (dl_design); Easterly and Fischer on Ofer (1987) (ef_extensive), on the Kaldor stylized fact (ef_kaldor, ef_contradicts), on Weitzman (1970, 1990) (ef_weitzman, ef_best), on Bergson (1983) (ef_bergson), on Krugman (1994) (ef_krugman) and on Khanin's data (ef_khanin); the BEA's introduction on the reply of Jorgenson and Griliches (scb_reply). Not obtained: Domar (1946) itself: only the index of Econometrica 14 (dm_index); Weitzman (1970): the working paper on Yale University's site sits behind a Cloudflare challenge, not tried; Kaldor's statement of the stylized facts; Ofer (1987); Pritchett's article in The Journal of Economic Perspectives (1997): the site refused access; Denison, Why Growth Rates Differ (1967); the pages of the CIA's reading room, which did not open. Life dates: Swan, Denison, Griliches, Lewis and Robinson from the headings of the Library of Congress (loc_swan, loc_denison, loc_griliches, loc_lewis, loc_robinson); the GND agrees where it has the years (gnd_swan_born, gnd_swan_died, gnd_denison_born, gnd_griliches_born, gnd_griliches_died, gnd_lewis_born, gnd_lewis_died, gnd_robinson_born, gnd_robinson_died). Solow: the LoC heading has no years; the record's source notes give the date of birth (loc_solow_born) and of death (loc_solow_died, loc_solow_wapo), as NobelPrize.org (nf_born, nf_died) and the GND (gnd_solow_born, gnd_solow_died) do. Abramovitz: the heading has no years; the source note gives them (loc_abramovitz_note), as the GND does (gnd_abramovitz_born, gnd_abramovitz_died). Phelps: the heading has no years; the source note gives the date of birth (loc_phelps_born); the date of death from the GND (gnd_phelps_died) and NobelPrize.org (nf_phelps_died), which agree, as they do on the date of birth (gnd_phelps_born, nf_phelps_born). Harrod, Domar and Jorgenson: the records of Chapters 33, 34 and 39 (islm_facts, warfinance_facts, consumption_facts).",
+  "sources": {
+    "nobel_solow40": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/lecture/",
+      "format": "html",
+      "sha256": "febdea92fdd3dbc82bb44ecd5bf8f07f2d6db34b8e081d61ce7f74086a3c4443",
+      "version": "Robert M. Solow, 'Growth Theory and After', Lecture to the memory of Alfred Nobel, December 8, 1987, NobelPrize.org, Prize lecture (web page, with the copyright notice of the lecture)",
+      "retrieved": "2026-11-06"
+    },
+    "nobel_facts40": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1987/solow/facts/",
+      "format": "html",
+      "sha256": "2b0f8f796b49427acc88f011799085bb9d074ad266c1ff14289ca7a8e48c4507",
+      "version": "NobelPrize.org, Robert M. Solow, Facts (web page)",
+      "retrieved": "2026-11-06"
+    },
+    "nobel_phelps40": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2006/phelps/facts/",
+      "format": "html",
+      "sha256": "1f9789900362913c3eea852c8d0427c1ce94b5a2992b55aec5ecdf6cf1fa0ea9",
+      "version": "NobelPrize.org, Edmund S. Phelps, Facts (web page)",
+      "retrieved": "2026-11-06"
+    },
+    "harrod1939": {
+      "url": "http://piketty.pse.ens.fr/files/Harrod1939.pdf",
+      "format": "pdf",
+      "sha256": "64934a70e1f7f14eb80583906c1c59f83f00af7ce42192aff1062065e90a5cab",
+      "version": "R. F. Harrod, 'An Essay in Dynamic Theory', The Economic Journal 49 (193), March 1939, pp. 14-33: the JSTOR copy that Thomas Piketty posts on his page at the Paris School of Economics (piketty.pse.ens.fr), read to verify, not committed (printed page = PDF page + 12)",
+      "retrieved": "2026-11-06"
+    },
+    "harrod1939img": {
+      "url": "http://piketty.pse.ens.fr/files/Harrod1939.pdf",
+      "format": "image",
+      "sha256": "64934a70e1f7f14eb80583906c1c59f83f00af7ce42192aff1062065e90a5cab",
+      "version": "The same copy, the equations of PDF pages 5 and 6 (pp. 17-18) read on the images rendered with pdftoppm",
+      "retrieved": "2026-11-06"
+    },
+    "econometrica1946img": {
+      "url": "https://archive.org/download/sim_econometrica_1946_14_index/sim_econometrica_1946_14_index.pdf",
+      "format": "image",
+      "sha256": "ef25f370173863a5dd3663707ff0dbcfbc9cf00dc4f4fbbef30d2aa852cc0455",
+      "version": "Econometrica, vol. 14 (1946), the index of articles, the microfilm scan on archive.org (item sim_econometrica_1946_14_index), read on the image of its first page",
+      "retrieved": "2026-11-06"
+    },
+    "archive_idx40": {
+      "url": "https://archive.org/metadata/sim_econometrica_1946_14_index",
+      "format": "json",
+      "sha256": "0b12b2582105d85e1b3d6e7eca57f8114458db15b391e78408efc128aaf91fd1",
+      "version": "archive.org, the metadata record of item sim_econometrica_1946_14_index (JSON)",
+      "retrieved": "2026-11-06"
+    },
+    "solow1956": {
+      "url": "http://piketty.pse.ens.fr/files/Solow1956.pdf",
+      "format": "pdf",
+      "sha256": "2aa6d78499866ff39f352eec4ca4068d3b90c0c7888ef11817b51cbaba57df52",
+      "version": "Robert M. Solow, 'A Contribution to the Theory of Economic Growth', The Quarterly Journal of Economics 70 (1), February 1956, pp. 65-94: the JSTOR copy that Thomas Piketty posts on his page at the Paris School of Economics (piketty.pse.ens.fr), read to verify, not committed (printed page = PDF page + 63)",
+      "retrieved": "2026-11-06"
+    },
+    "solow1956img": {
+      "url": "http://piketty.pse.ens.fr/files/Solow1956.pdf",
+      "format": "image",
+      "sha256": "2aa6d78499866ff39f352eec4ca4068d3b90c0c7888ef11817b51cbaba57df52",
+      "version": "The same copy, equation (6) read on the image of PDF page 6 (p. 69) rendered with pdftoppm",
+      "retrieved": "2026-11-06"
+    },
+    "swan1956": {
+      "url": "https://archive.org/download/sim_economic-record_1956-11_32_63/sim_economic-record_1956-11_32_63.pdf",
+      "format": "pdf",
+      "sha256": "8844cef90026abd472ec187169969a9d187ff1de2cdfa72c884ca807c8b378e7",
+      "version": "T. W. Swan, 'Economic Growth and Capital Accumulation', The Economic Record 32 (63), November 1956, pp. 334-361: the microfilm scan of the issue on archive.org (item sim_economic-record_1956-11_32_63) with its text layer, read to verify, not committed (printed page = PDF page + 186)",
+      "retrieved": "2026-11-06"
+    },
+    "swan1956img": {
+      "url": "https://archive.org/download/sim_economic-record_1956-11_32_63/sim_economic-record_1956-11_32_63.pdf",
+      "format": "image",
+      "sha256": "8844cef90026abd472ec187169969a9d187ff1de2cdfa72c884ca807c8b378e7",
+      "version": "The same scan, PDF pages 148 and 151 (pp. 334 and 337) read on the images rendered with pdftoppm, where the text layer misreads the production function and the rate of technical progress",
+      "retrieved": "2026-11-06"
+    },
+    "archive_swan40": {
+      "url": "https://archive.org/metadata/sim_economic-record_1956-11_32_63",
+      "format": "json",
+      "sha256": "6ce928d28f2ac294a37711a7b3ccbe6619521447f6232af568c5a14c787c8094",
+      "version": "archive.org, the metadata record of item sim_economic-record_1956-11_32_63 (JSON)",
+      "retrieved": "2026-11-06"
+    },
+    "phelps1961": {
+      "url": "http://piketty.pse.ens.fr/files/Phelps1961.pdf",
+      "format": "pdf",
+      "sha256": "54a25c8d70f054db13db18f39917fe93263a6eec808d7d86cd6abac77145a17e",
+      "version": "Edmund Phelps, 'The Golden Rule of Accumulation: A Fable for Growthmen', The American Economic Review 51 (4), September 1961, pp. 638-643: the JSTOR copy that Thomas Piketty posts on his page at the Paris School of Economics (piketty.pse.ens.fr), read to verify, not committed (printed page = PDF page + 636)",
+      "retrieved": "2026-11-06"
+    },
+    "solow1957": {
+      "url": "http://piketty.pse.ens.fr/files/Solow1957.pdf",
+      "format": "pdf",
+      "sha256": "9dc491dc52e944c915d9c5028e6f85bb91c3a2d3057cc8e93269880ee9c439db",
+      "version": "Robert M. Solow, 'Technical Change and the Aggregate Production Function', The Review of Economics and Statistics 39 (3), August 1957, pp. 312-320: the JSTOR copy that Thomas Piketty posts on his page at the Paris School of Economics (piketty.pse.ens.fr), read to verify, not committed (printed page = PDF page + 310)",
+      "retrieved": "2026-11-06"
+    },
+    "solow1957img": {
+      "url": "http://piketty.pse.ens.fr/files/Solow1957.pdf",
+      "format": "image",
+      "sha256": "9dc491dc52e944c915d9c5028e6f85bb91c3a2d3057cc8e93269880ee9c439db",
+      "version": "The same copy, whose text layer interleaves the two columns and reads many figures wrongly, read on the images of PDF pages 2-7 and 10 (pp. 312-317 and 320) rendered with pdftoppm",
+      "retrieved": "2026-11-06"
+    },
+    "abramovitz1956": {
+      "url": "https://www.nber.org/system/files/chapters/c5650/c5650.pdf",
+      "format": "pdf",
+      "sha256": "8e2d6e861b3690014543b4cc0b8c05bc2555a26ef73b8b611e2392ac043151c9",
+      "version": "Moses Abramovitz, Resource and Output Trends in the United States since 1870, Occasional Paper 52 (New York: National Bureau of Economic Research, 1956), the NBER's PDF (chapter c5650), whose first page is the NBER's cover page of an out-of-print volume (printed page = PDF page - 1)",
+      "retrieved": "2026-11-06"
+    },
+    "baumol1986": {
+      "url": "http://piketty.pse.ens.fr/files/Baumol1986.pdf",
+      "format": "pdf",
+      "sha256": "84eb88d3786b6bc30ffe5a52ce287a984c7c8abd297b125a9a4b773a16c5e497",
+      "version": "William J. Baumol, 'Productivity Growth, Convergence, and Welfare: What the Long-Run Data Show', The American Economic Review 76 (5), December 1986, pp. 1072-1085: the JSTOR copy that Thomas Piketty posts on his page at the Paris School of Economics (piketty.pse.ens.fr), read to verify, not committed (printed page = PDF page + 1070)",
+      "retrieved": "2026-11-06"
+    },
+    "delong1987": {
+      "url": "https://www.nber.org/system/files/working_papers/w2419/w2419.pdf",
+      "format": "pdf",
+      "sha256": "d1ec3329ce7207b1f6ee5078f1599c374aec368830ad517c1b3dc1ed01fa9df4",
+      "version": "J. Bradford De Long, 'Have Productivity Levels Converged? Productivity Growth, Convergence, and Welfare in the Very Long Run', NBER Working Paper 2419, October 1987 (pages: PDF pages)",
+      "retrieved": "2026-11-06"
+    },
+    "barro1989": {
+      "url": "https://www.nber.org/system/files/working_papers/w3120/w3120.pdf",
+      "format": "pdf",
+      "sha256": "d518221d9c71ecaf5e234ca97d8b2f4fa91b6b9bebe286c8adbdc761743884b8",
+      "version": "Robert Barro, 'Economic Growth in a Cross Section of Countries', NBER Working Paper 3120, September 1989 (pages: PDF pages)",
+      "retrieved": "2026-11-06"
+    },
+    "bsm1990": {
+      "url": "https://www.nber.org/system/files/working_papers/w3419/w3419.pdf",
+      "format": "pdf",
+      "sha256": "3c90dba7cbd8cf76020cca603b790645a76e9e99de97e78398d8ba0f1eff6dcc",
+      "version": "Robert J. Barro and Xavier Sala i Martin, 'Economic Growth and Convergence across the United States', NBER Working Paper 3419, August 1990 (pages: PDF pages)",
+      "retrieved": "2026-11-06"
+    },
+    "mrw1990": {
+      "url": "https://www.nber.org/system/files/working_papers/w3541/w3541.pdf",
+      "format": "pdf",
+      "sha256": "2d76ce9aefd3aff2df36f939d70b9f65da1c661eb330b91293a8579940258ac2",
+      "version": "N. Gregory Mankiw, David Romer and David N. Weil, 'A Contribution to the Empirics of Economic Growth', NBER Working Paper 3541, December 1990 (pages: PDF pages)",
+      "retrieved": "2026-11-06"
+    },
+    "pritchett1995": {
+      "url": "https://documents1.worldbank.org/curated/en/103231468766464256/pdf/multi-page.pdf",
+      "format": "pdf",
+      "sha256": "9f5ae90cda670de3680fc58bb55d817a2612b6ffa249676d13ded22f6dbef872",
+      "version": "Lant Pritchett, 'Divergence, Big Time', Policy Research Working Paper 1522, The World Bank, October 1995, the PDF of documents.worldbank.org (pages: PDF pages)",
+      "retrieved": "2026-11-06"
+    },
+    "ef1995": {
+      "url": "https://documents1.worldbank.org/curated/en/843611468751543283/pdf/multi-page.pdf",
+      "format": "pdf",
+      "sha256": "26cbbaee0af0df29a84cc56d5077cb7e2f3a425e0eb14e9b80be6c84591365e9",
+      "version": "William Easterly and Stanley Fischer, 'The Soviet Economic Decline', The World Bank Economic Review 9 (3), September 1995, pp. 341-371: the PDF of the whole issue on documents.worldbank.org (printed page = PDF page + 336)",
+      "retrieved": "2026-11-06"
+    },
+    "ef1995img": {
+      "url": "https://documents1.worldbank.org/curated/en/843611468751543283/pdf/multi-page.pdf",
+      "format": "image",
+      "sha256": "26cbbaee0af0df29a84cc56d5077cb7e2f3a425e0eb14e9b80be6c84591365e9",
+      "version": "The same PDF, Tables 1 and 6 and equation (6) read on the images of PDF pages 7, 20 and 21 (pp. 343, 356 and 357) rendered with pdftoppm, where the text layer misreads the figures",
+      "retrieved": "2026-11-06"
+    },
+    "jec1990": {
+      "url": "https://archive.org/download/micro_IA41152852_1194/micro_IA41152852_1194_djvu.txt",
+      "format": "txt",
+      "sha256": "64aa163f901bc4124dca1859f117b4b13c7635f42a54e1d8840d626894cddc0c",
+      "version": "Measures of Soviet Gross National Product in 1982 Prices: A Study Prepared for the Use of the Joint Economic Committee, Congress of the United States, November 1990 (101st Congress, 2d Session, Joint Committee Print S. Prt. 101-123), the text layer (djvu) of the microfiche scan on archive.org (item micro_IA41152852_1194)",
+      "retrieved": "2026-11-06"
+    },
+    "jec1990img": {
+      "url": "https://archive.org/download/micro_IA41152852_1194/micro_IA41152852_1194.pdf",
+      "format": "image",
+      "sha256": "787e90d52ecb187785cd82c3cae33b5b3463f31d005fde9fb0366e086e45d7b9",
+      "version": "The same scan (PDF), whose text layer is poor, read on the images of PDF pages 16 and 17 (pp. 6 and 7: the text and Table 2) rendered with pdftoppm (printed page = PDF page - 10)",
+      "retrieved": "2026-11-06"
+    },
+    "archive_jec40": {
+      "url": "https://archive.org/metadata/micro_IA41152852_1194",
+      "format": "json",
+      "sha256": "74fae033d2351a231d76d4f7270e73fc36d46286705d5eeb399bc690e319a0a9",
+      "version": "archive.org, the metadata record of item micro_IA41152852_1194 (JSON)",
+      "retrieved": "2026-11-06"
+    },
+    "scb1972": {
+      "url": "https://apps.bea.gov/scb/issues/1972/scb-1972-may.pdf",
+      "format": "pdf",
+      "sha256": "f604bf4475ef9daf3fe184b8d7cba6a6439d60b731cdad7a74d58ac4a935903e",
+      "version": "Survey of Current Business 52 (5), May 1972, Part II (The Measurement of Productivity), the PDF of the Bureau of Economic Analysis: the introduction, D. W. Jorgenson and Z. Griliches, 'The Explanation of Productivity Change' (reprinted with corrections from The Review of Economic Studies 34 (3), July 1967) and Edward F. Denison, 'Some Major Issues in Productivity Analysis' (from the Survey of May 1969); pages: PDF pages of the whole issue",
+      "retrieved": "2026-11-06"
+    },
+    "pwt1001": {
+      "url": "https://dataverse.nl/api/datasets/:persistentId/?persistentId=doi:10.34894/QT5BCC",
+      "format": "json",
+      "sha256": "7e15a79a695e41e32eee458dffe71f462d14248d22cc3a88db37c0e343efdb64",
+      "version": "Penn World Table version 10.01, the dataset's record on DataverseNL (doi:10.34894/QT5BCC), JSON from the Dataverse API",
+      "retrieved": "2026-11-06"
+    },
+    "loc_solow40": {
+      "url": "https://id.loc.gov/authorities/names/n50013075.madsrdf.json",
+      "format": "json",
+      "sha256": "dd3c5e0e5a7c8f643f46fee2e46b825efac5c95616a221cb5f14fbd7c2506a80",
+      "version": "Library of Congress Name Authority File, record n50013075 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_swan40": {
+      "url": "https://id.loc.gov/authorities/names/no2023018932.madsrdf.json",
+      "format": "json",
+      "sha256": "c017a403135f6e4c671cc3b6cae30e17950ffd40c2878da3ed2c896f4183274f",
+      "version": "Library of Congress Name Authority File, record no2023018932 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_phelps40": {
+      "url": "https://id.loc.gov/authorities/names/n80051668.madsrdf.json",
+      "format": "json",
+      "sha256": "9e44e84914bd300717947405d5935032f5a1dd8413b7df84b3f1132d98b5084b",
+      "version": "Library of Congress Name Authority File, record n80051668 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_abramovitz40": {
+      "url": "https://id.loc.gov/authorities/names/n87907544.madsrdf.json",
+      "format": "json",
+      "sha256": "7aec5d4f698608fa9ce4f5b71b2139b6422e94f73604444177fdd083f4d8eef6",
+      "version": "Library of Congress Name Authority File, record n87907544 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_denison40": {
+      "url": "https://id.loc.gov/authorities/names/n79100492.madsrdf.json",
+      "format": "json",
+      "sha256": "2e3c9ccd8d7fa44a9620648f9b12e2434cb3ba3108d413ad6239369a7f12960f",
+      "version": "Library of Congress Name Authority File, record n79100492 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_griliches40": {
+      "url": "https://id.loc.gov/authorities/names/n83053993.madsrdf.json",
+      "format": "json",
+      "sha256": "8696261a21d5ea15cf254d5ec026a6fe1c23b35dcfba23fe038677c7b642f98d",
+      "version": "Library of Congress Name Authority File, record n83053993 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_lewis40": {
+      "url": "https://id.loc.gov/authorities/names/n50049603.madsrdf.json",
+      "format": "json",
+      "sha256": "0e6b149107b09b7cbb1c126570b4c86d4a133404a81cb81918921b126b01ec99",
+      "version": "Library of Congress Name Authority File, record n50049603 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_robinson40": {
+      "url": "https://id.loc.gov/authorities/names/n79006675.madsrdf.json",
+      "format": "json",
+      "sha256": "a5eb7da827690813d4b41aca78ae345e3c9087240cbbb4ca2bd62af83e4eaf90",
+      "version": "Library of Congress Name Authority File, record n79006675 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_solow40": {
+      "url": "https://lobid.org/gnd/118994204.json",
+      "format": "json",
+      "sha256": "5351ad46043a3baf308c239e437b4239955ba798d855146bdddcafeef1d577fe",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118994204 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_swan40": {
+      "url": "https://lobid.org/gnd/170227650.json",
+      "format": "json",
+      "sha256": "e818bccdf70f03baabe0d58f6216f0506596ac8b80772d4f6c8290538ae0c834",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 170227650 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_phelps40": {
+      "url": "https://lobid.org/gnd/124719414.json",
+      "format": "json",
+      "sha256": "10e71cb9cd587038689bc7b01b029ed3b31eb437934197afa8861193b2a39284",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 124719414 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_abramovitz40": {
+      "url": "https://lobid.org/gnd/136641989.json",
+      "format": "json",
+      "sha256": "ec796fc54e305205d75c8fc2c840df71450de84b6854ebf4b5e49af3f7cc14e5",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 136641989 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_denison40": {
+      "url": "https://lobid.org/gnd/132221195.json",
+      "format": "json",
+      "sha256": "aefcdd247ad34dad2f9d67d13c20345c24db7cf5791e8e2433bbc3321b04aa07",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 132221195 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_griliches40": {
+      "url": "https://lobid.org/gnd/12379918X.json",
+      "format": "json",
+      "sha256": "41278d517376f31a9629bafade75a442c4ba522d4d35e3630cc76ac9a8edf3ac",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 12379918X (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_lewis40": {
+      "url": "https://lobid.org/gnd/118640542.json",
+      "format": "json",
+      "sha256": "bce9ce599f921b117bc45278162aefd216b1ae8784e1a9d5c07cfe3bc2ef4d75",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118640542 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_robinson40": {
+      "url": "https://lobid.org/gnd/118745573.json",
+      "format": "json",
+      "sha256": "4a71189b5dd3f3dad54bd498b5f062edeab3de59b4c2ce095ab2ce8c12d293d6",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118745573 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    }
+  }
+}

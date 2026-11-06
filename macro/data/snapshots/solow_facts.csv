@@ -1,0 +1,387 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+nb_title,美国,1987,,8;1987,,,nobel_solow40,web page,"Lecture to the memory of Alfred Nobel, December 8, 1987 Growth Theory and After",
+nb_copyright,美国,1987,,1987,,,nobel_solow40,web page,Copyright © The Nobel Foundation 1987,the copyright notice of the lecture
+nb_room,美国,1987,,,,,nobel_solow40,web page,"I know that I have been in this room before, but that was in real life, and I was awake.",
+nb_stockholm,美国,1987,,1987,,,nobel_solow40,web page,(I hope these strange Latin phrases are still understood in Stockholm in 1987!),
+nb_notbegin,美国,1987,,1956;1957,,,nobel_solow40,web page,"Growth theory did not begin with my articles of 1956 and 1957, and it certainly did not end there.",
+nb_trail,美国,1987,,1950,,,nobel_solow40,web page,"in the 1950s I was following a trail that had been marked out by Roy Harrod and by Evsey Domar, and also by Arthur Lewis in a slightly different context.",
+nb_discomfort,美国,1987,,,,,nobel_solow40,web page,Actually I was trying to track down and relieve a certain discomfort that I felt with their work.,
+nb_routes,美国,1987,,,,,nobel_solow40,web page,"They arrived by noticeably different routes, at a classically simple answer: the national saving rate (the fraction of income saved) has to be equal to the product of the capital-output ratio and the rate of growth of the (effective) labor force.",
+nb_constants,美国,1987,,,,,nobel_solow40,web page,"were given constants, facts of nature.",
+nb_sporadic,美国,1987,,,,,nobel_solow40,web page,"All of them were understood to be capable of changing from time to time, but sporadically and more or less independently.",
+nb_luck,美国,1987,,,,,nobel_solow40,web page,"In that case, however, the possibility of steady growth would be a miraculous stroke of luck.",
+nb_recipe,美国,1987,,2;2,,,nobel_solow40,web page,"then a recipe for doubling the rate of growth in a labor surplus economy was simply to double the savings rate, perhaps through the public budget.",
+nb_underdeveloped,美国,1987,,,,,nobel_solow40,web page,"In underdeveloped countries, however, where the appetite for new capital is likely to be pretty strong, the recipe looked usable.",
+nb_writings,美国,1987,,,,,nobel_solow40,web page,I believe I remember that writings on economic development often asserted that the key to a transition from slow growth to fast growth was a sustained rise in the savings rate.,
+nb_implausible,美国,1987,,,,,nobel_solow40,web page,"The recipe sounded implausible to me. I can no longer remember exactly why, but it did.",
+nb_spirit,美国,1987,,,,,nobel_solow40,web page,"That was the spirit in which I began tinkering with the theory of economic growth, trying to improve on the Harrod-Domar model.",
+nb_whyfirst,美国,1987,,,,,nobel_solow40,web page,I can not tell you why I thought first about replacing the constant capital-output (and labor-output) ratio,
+nb_production,美国,1987,,,,,nobel_solow40,web page,even as a student I was drawn to the theory of production rather than to the formally almost identical theory of consumer choice.,
+nb_intensity,美国,1987,,,,,nobel_solow40,web page,"even if technology itself is not so very flexible for each single good at a given time, aggregate factor-intensity must be much more variable because the economy can choose to focus on capital-intensive or labor-intensive or land-intensive goods.",
+nb_developing,美国,1987,,,,,nobel_solow40,web page,"A developing economy that succeeds in permanently increasing its saving (investment) rate will have a higher level of output than if it had not done so, and must therefore grow faster for a while.",
+nb_notpermanent,美国,1987,,,,,nobel_solow40,web page,But it will not achieve a permanently higher rate of growth of output.,
+nb_independent,美国,1987,,,,,nobel_solow40,web page,"it turned out to be an implication of diminishing returns that the equilibrium rate of growth is not only not proportional to the saving (investment) rate, but is independent of the saving (investment) rate.",
+nb_startling,美国,1987,,1957,,,nobel_solow40,web page,the main result of that 1957 exercise was startling.,
+nb_eight,美国,1987,,0.875;0.125,,,nobel_solow40,web page,"some seven-eighths of that increase could be attributed to ""technical change in the broadest sense"" and only the remaining eight could be attributed to conventional increase in capital intensity.",'eight' for 'eighth'
+nb_fabricant,美国,1987,,,,,nobel_solow40,web page,Actually Solomon Fabricant at the National Bureau of Economic Research had come up with a similar breakdown for a slightly earlier period,
+nb_expected,美国,1987,,,,,nobel_solow40,web page,I think I had expected to find a larger role for straightforward capital formation than I actually found,
+nb_heldup,美国,1987,,30,,,nobel_solow40,web page,"The broad conclusion has held up surprisingly well in the thirty years since then during which time ""growth accounting"" has been refined quite a lot, especially by Edward Denison.",
+nb_unpack,美国,1987,,,,,nobel_solow40,web page,"The main refinement has been to unpack ""technical progress in the broadest sense"" into a number of constituents of which various human-capital variables and ""technological change in the narrow sense"" are the most important.",
+nb_denison,美国,1987,,1929;1982;3.1,,,nobel_solow40,web page,"Taking the period from 1929 to 1982 and smoothing away the business cycle, he finds that the real non-residential business output increased at an average rate of 3.1 percent a year.",
+nb_quarter,美国,1987,,0.25,,,nobel_solow40,web page,Denison estimates that a quarter of it can be attributed to increased labor input of constant educational level.,
+nb_education,美国,1987,,16;0.5,,,nobel_solow40,web page,Another 16 percent (i.e. about 1/2 percent a year) is credited to the increased educational qualifications of the average worker.,
+nb_capital12,美国,1987,,12;1909;1949,,,nobel_solow40,web page,"The growth of ""capital"" accounts for 12 percent of the growth of output; this is coincidentally almost exactly what I found for 1909-1949 using my original method",
+nb_allocation,美国,1987,,11,,,nobel_solow40,web page,"Then Denison imputes 11 percent of total growth to ""improved allocation of resources""",
+nb_scale,美国,1987,,11,,,nobel_solow40,web page,"Another 11 percent goes to ""economies of scale"" (but this must be a very insecure imputation).",
+nb_knowledge,美国,1987,,34,,,nobel_solow40,web page,"Finally 34 % of recorded growth is credited to ""the growth of knowledge"" or technological progress in the narrow sense.",
+nb_109,美国,1987,,109,,,nobel_solow40,web page,"If you add up these percentages, you will see that Denison has accounted for 109 percent of measured growth.",
+nb_misc,美国,1987,,9;3.1;0.3,,,nobel_solow40,web page,"Miscellaneous factors must then have reduced the growth of output by nine percent of 3.1 percent, or just under 0.3 percent a year.",
+nb_engine,美国,1987,,,,,nobel_solow40,web page,"Thus technology remains the dominant engine of growth, with human capital investment in second place.",
+nb_believe,美国,1987,,,,,nobel_solow40,web page,One does not have to believe in the accuracy of these numbers; the message they transmit is pretty clear anyway.,
+nb_surprised,美国,1987,,,,,nobel_solow40,web page,"In the beginning, I was quite surprised at the relatively minor part the model ascribed to capital formation.",
+nb_quota,美国,1987,,,,,nobel_solow40,web page,The fact that the steady-state rate of growth is independent of the investment quota was easy to understand; it only required thinking through the theory.,
+nb_shorter,美国,1987,,,,,nobel_solow40,web page,It was harder to feel comfortable with the conclusion that even in the shorter run increased investment would do very little for transitory growth.,
+nb_leverage,美国,1987,,,,,nobel_solow40,web page,The transition to a higher equilibrium growth path seemed to offer very little leverage for policy aimed at promoting investment.,
+nb_embodiment,美国,1987,,,,,nobel_solow40,web page,"If common sense was right, the embodiment model should have fit the facts significantly better than the earlier one. But it did not.",
+nb_noexplanatory,美国,1987,,,,,nobel_solow40,web page,"Denison, whose judgment I respect, came to the conclusion that there was no explanatory value in the embodiment idea.",
+nf_born,美国,1987,,23;1924,,,nobel_facts40,web page,"Born: 23 August 1924, Brooklyn, NY, USA",
+nf_died,美国,1987,,21;2023,,,nobel_facts40,web page,"Died: 21 December 2023, Lexington, MA, USA",
+nf_prize,美国,1987,,1987,,,nobel_facts40,web page,Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 1987,
+nf_motivation,美国,1987,,,,,nobel_facts40,web page,"Prize motivation: ""for his contributions to the theory of economic growth""",
+nf_share,美国,1987,,1,,,nobel_facts40,web page,Prize share: 1/1,
+nf_phelps_born,美国,2006,,26;1933,,,nobel_phelps40,web page,"Born: 26 July 1933, Evanston, IL, USA",
+nf_phelps_died,美国,2006,,15;2026,,,nobel_phelps40,web page,Died: 15 May 2026,
+hr_title,英国,1939,,49;193;1939;14;33,,,harrod1939,JSTOR cover page (PDF p. 1),"An Essay in Dynamic Theory Author(s): R. F. Harrod Source: The Economic Journal, Vol. 49, No. 193 (Mar., 1939), pp. 14-33",the JSTOR cover page
+hr_revolution,英国,1939,,,,,harrod1939,p. 15 (PDF p. 3),"A new method of approachindeed, a mental revolution-is needed.",
+hr_static,英国,1939,,,,,harrod1939,p. 15 (PDF p. 3),then the static method will not suffice.,
+hr_marriage,英国,1939,,,,,harrod1939,p. 16 (PDF p. 4),constituting the marriage of the acceleration principle and the multiplier theory.,
+hr_warranted,英国,1939,,,,,harrod1939,p. 16 (PDF p. 4),"The warranted rate of growth is taken to be that rate of growth which, if it occurs, will leave all parties satisfied that they have produced neither more nor less than the right amount.",
+hr_point,英国,1939,,,,,harrod1939,p. 16 (PDF p. 4),"is an equilibriumpoint in the sense that producers, if they remain on it, will be satisfied",'equilibriumpoint' without a space
+hr_unstable,英国,1939,,,,,harrod1939,p. 16 (PDF p. 4),"the equilibrium is, for reasons to be explained, a highly unstable one.",
+hr_eq,英国,1939,,1,,,harrod1939img,p. 17 (PDF p. 5),,"read on the page image of p. 17 (PDF p. 5): «Reserving proof for the next paragraph, we may now write the Fundamental Equation in its simplest form: G_w = s/C . . . 1»"
+hr_fundamental,英国,1939,,4,,,harrod1939,p. 18 (PDF p. 6),"This is the fundamental equation, stated in paragraph 4, which determines the warranted rate of growth.",
+hr_symbols,英国,1939,,,,,harrod1939img,p. 18 (PDF p. 6),,"read on the page image of p. 18 (PDF p. 6): «If the value of the increment of stock of capital per unit increment of output which actually occurs, C_p, is equal to C, the amount of capital per unit increment of output required by technological and other conditions (including the state of confidence, the rate of interest, etc.)»"
+hr_numbers,英国,1939,,10;4;2.5,,,harrod1939img,p. 18 (PDF p. 6),,"read on the page image of p. 18 (PDF p. 6): «if 10 per cent. of income were saved and the capital coefficient per annum (C) were equal to 4, the warranted rate of growth would be 2½ per cent. per annum.»"
+hr_excess,英国,1939,,,,,harrod1939,p. 22 (PDF p. 10),"There will be, in fact, an undue depletion of stock or shortage of equipment, and the system will be stimulated to further expansion.",
+hr_diverge,英国,1939,,,,,harrod1939,p. 22 (PDF p. 10),"will move farther from it in an upward direction, and the farther it diverges, the greater the stimulus to expansion will be.",
+hr_aggravating,英国,1939,,,,,harrod1939,p. 22 (PDF p. 10),"A departure from equilibrium, instead of being self-righting, will be self-aggravating.",
+hr_redundance,英国,1939,,,,,harrod1939,p. 22 (PDF p. 10),"there will be a redundance of capital goods, and a depressing influence will be exerted;",
+hr_cycle,英国,1939,,,,,harrod1939,p. 22 (PDF p. 10),Of interest this for trade-cycle analysis !,
+hr_save,英国,1939,,,,,harrod1939,pp. 22-23 (PDF pp. 10-11),"Suppose an increase in the propensity to save, which means that the values of s are increased for all levels of income. This necessarily involves, ceteris paribus, a higher rate of warranted growth. But if the actual growth was previously equal to the warranted growth, the immediate effect is to raise the warranted 1939] AN ESSAY IN DYNAMIC THEORY 23 rate above the actual rate. This state of affairs sets up a depressing influence which will drag the actual rate progressively farther below the warranted rate.",
+hr_natural,英国,1939,,,,,harrod1939,p. 30 (PDF p. 18),"This is the maximum rate of growth allowed by the increase of population, accumulation of capital, technological improvement and the work/ leisure preference schedule, supposing that there is always full employment in some sense.",
+hr_coincide,英国,1939,,,,,harrod1939,p. 30 (PDF p. 18),There is no inherent tendency for these two rates to coincide.,
+hr_cannot,英国,1939,,,,,harrod1939,p. 30 (PDF p. 18),The system cannot advance more quickly than the natural rate allows.,
+hr_chronic,英国,1939,,,,,harrod1939,p. 30 (PDF p. 18),"If the proper warranted rate is above this, there will be a chronic tendency to depression; the depressions drag down the warranted rate below its proper level, and so keep its average value over a term of years down to the natural rate. But this reduction of the warranted rate is only achieved by having chronic unemployment.",
+hr_better,英国,1939,,,,,harrod1939,p. 30 (PDF p. 18),There is much to be said for the view that it is better that the proper warranted rate should be lower rather than higher than the natural rate.,
+dm_index,美国,1946,,137,,,econometrica1946img,index page (PDF p. 1),,"read on the page image of index page (PDF p. 1): «INDEX ARTICLES Page ... DOMAR, EVSEY D.: Capital Expansion, Rate of Growth, and Employment 137»"
+dm_volume,美国,1946,,1946;14,,,archive_idx40,metadata record,Econometrica 1946: Vol 14 Index,the title of the item
+s56_title,美国,1956,,70;1;1956;65;94,,,solow1956,JSTOR cover page (PDF p. 1),"A Contribution to the Theory of Economic Growth Author(s): Robert M. Solow Source: The Quarterly Journal of Economics, Vol. 70, No. 1 (Feb., 1956), pp. 65-94",the JSTOR cover page
+s56_assumptions,美国,1956,,,,,solow1956,p. 65 (PDF p. 2),All theory depends on assumptions which are not quite true.,
+s56_crucial,美国,1956,,,,,solow1956,p. 65 (PDF p. 2),"A ""crucial"" assumption is one on which the conclusions do depend sensitively",
+s56_one,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),"There is only one commodity, output as a whole",
+s56_knife,美国,1956,,,,,solow1956,p. 65 (PDF p. 2),The characteristic and powerful conclusion of the Harrod-Domar line of thought is that even for the long run the economic system is at best balanced on a knife-edge of equilibrium growth.,
+s56_slip,美国,1956,,,,,solow1956,p. 65 (PDF p. 2),"to slip ever so slightly from dead center, the consequence would be either growing unemployment or prolonged inflation.",
+s56_fixed,美国,1956,,,,,solow1956,p. 65 (PDF p. 2),turns out in the end to flow from the crucial assumption that production takes place under conditions of fixed proportions. There is no possibility of substituting labor for capital in production.,
+s56_abandon,美国,1956,,,,,solow1956,p. 65 (PDF p. 2),"If this assumption is abandoned, the knife-edge notion of unstable balance seems to go with it.",
+s56_tools,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),A remarkable characteristic of the Harrod-Domar model is that it consistently studies long-run problems with the usual short-run tools.,
+s56_multiplier,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),"Instead Harrod and Domar talk of the long run in terms of the multiplier, the accelerator, ""the"" capital coefficient.",
+s56_accepts,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),which accepts all the Harrod-Domar assumptions except that of fixed proportions.,
+s56_saving,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),"Part of each instant's output is consumed and the rest is saved and invested. The fraction of output saved is a constant s, so that the rate of saving is sY(t).",
+s56_identity,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),so we have the basic identity at every instant of time: K = sY.,
+s56_net,美国,1956,,,,,solow1956,p. 66 (PDF p. 3),Output is to be understood as net output after making good the depreciation of capital.,
+s56_crs,美国,1956,,,,,solow1956,p. 67 (PDF p. 4),that it shows constant returns to scale.,
+s56_labor,美国,1956,,,,,solow1956,p. 67 (PDF p. 4),As a result of exogenous population growth the labor force increases at a constant relative rate n.,
+s56_full,美国,1956,,,,,solow1956,p. 67 (PDF p. 4),By identifying the two we are assuming that full employment is perpetually maintained.,
+s56_inelastic,美国,1956,,,,,solow1956,p. 67 (PDF p. 4),It says that the exponentially growing labor force is offered for employment completely inelastically.,
+s56_prices,美国,1956,,,,,solow1956,p. 68 (PDF p. 5),Then the real wage rate adjusts so that all available labor is employed,
+s56_rental,美国,1956,,,,,solow1956,p. 68 (PDF p. 5),there is a similar marginal productivity equation for capital which determines the real rental per unit of time for the services of capital stock.,
+s56_eq6,美国,1956,,6;1,,,solow1956img,p. 69 (PDF p. 6),,"read on the page image of p. 69 (PDF p. 6): «and dividing out the common factor we arrive finally at (6) ṙ = sF(r,1) − nr.»"
+s56_stable,美国,1956,,,,,solow1956,p. 70 (PDF p. 7),Thus the equilibrium value r* is stable.,
+s56_three,美国,1956,,,,,solow1956,p. 71 (PDF p. 8),"tion will show that ri and r3 are stable, r2 is not.",'ri' for 'r1'
+s56_lower,美国,1956,,,,,solow1956,p. 71 (PDF p. 8),"Depending on the initially observed capital-labor ratio, the system will develop either to balanced growth at capital-labor ratio ri or r3.",'ri' for 'r1'
+s56_unbounded,美国,1956,,,,,solow1956,p. 72 (PDF p. 9),The first system is so productive and saves so much that perpetual full employment will increase the capital-labor ratio (and also the output per head) beyond all limits,
+s56_fixedexample,美国,1956,,1,,,solow1956,p. 73 (PDF p. 10),Example 1: Fixed Proportions. This is the Harrod-Domar case.,
+s56_labor_red,美国,1956,,,,,solow1956,p. 75 (PDF p. 12),"labor becomes redundant, and the extent of the redundancy grows.",
+s56_excess,美国,1956,,,,,solow1956,p. 75 (PDF p. 12),"the absolute amount of excess capacity is growing, too.",
+s56_redundancy,美国,1956,,,,,solow1956,p. 75 (PDF p. 12),This appearance of redundancy independent of any price-wage movements is a consequence of fixed proportions,
+s56_never,美国,1956,,,,,solow1956,p. 73 (PDF p. 10),in the case of the Cobb-Douglas function there never can be - any knife-edge. The system can adjust to any given rate of growth of the labor force,
+s56_luck,美国,1956,,,,,solow1956,p. 77 (PDF p. 14),"the natural rate equals ""the"" warranted rate, not as an odd piece of luck but as a consequence of demand-supply adjustments.",
+s56_ratio,美国,1956,,,,,solow1956,p. 77 (PDF p. 14),It follows at once that the equilibrium value of K/ Y is s/n.,
+s56_neutral,美国,1956,,,,,solow1956,p. 85 (PDF p. 22),An especially easy kind of technological change is that which simply multiplies the production function by an increasing scale factor.,
+s56_ag,美国,1956,,,,,solow1956,p. 85 (PDF p. 22),In the long run the capital stock increases at the relative rate n + g/b (compared with n in the case of no technological change). The eventual rate of increase of real output is n + ag/b.,
+s56_share,美国,1956,,1,,,solow1956,p. 85 (PDF p. 22),the special property of the Cobb-Douglas function is that the relative share of labor is constant at 1 - a.,
+s56_kyg,美国,1956,,,,,solow1956,p. 86 (PDF p. 23),"since Y eventually grows at rate n + ag/b and K at rate n + g/b, the capital coefficient K/Y grows at rate n + g/b - n - ag/b = g.",
+s56_neoclassical,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),Everything above is the neoclassical side of the coin. Most especially it is full employment economics,
+s56_shunted,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),All the difficulties and rigidities which go into modern Keynesian income analysis have been shunted aside.,
+s56_notcontend,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),"It is not my contention that these problems don't exist, nor that they are of no significance in the long run.",
+s56_tightrope,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),My purpose was to examine what might be called the tightrope view of economic growth,
+s56_demand,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),"Underemployment and excess capacity or their opposites can still be attributed to any of the old causes of deficient or excess aggregate demand, but less readily to any deviation from a narrow ""balance.""",
+sw_issue,澳大利亚,1956,,1956;11;32;63,,,archive_swan40,metadata record,The Economic Record 1956-11: Vol 32 Iss 63,the title of the item
+sw_title,澳大利亚,1956,,,,,swan1956,p. 334 (PDF p. 148),AND CAPITAL ACCUMULATION From Adam Smith to Arthur Lewis.,the heading and subtitle as the text layer reads them
+sw_anu,澳大利亚,1956,,,,,swan1956,p. 343 (PDF p. 157),"T. W. Swan Australian National University, Canberra.",
+sw_aim,澳大利亚,1956,,,,,swan1956,p. 334 (PDF p. 148),"The aim of this paper is to illustrate with two diagrams a theme common to Adam Smith, Mill, and Lewis, the theory of which is perhaps best seen in Ricardo: namely, the connexion between capital accumulation and the growth of the productive labour force.",
+sw_cobb,澳大利亚,1956,,,,,swan1956img,p. 334 (PDF p. 148),,"read on the page image of p. 334 (PDF p. 148): «according to the constant-elasticity production function Y = K^α N^β. With constant returns to scale, α + β = 1.»"
+sw_robinson_fn,澳大利亚,1956,,,,,swan1956,p. 334 (PDF p. 148),An appendix discusses some of the questions-especially those raised by Joan Robinson-concerning the role of Capital as a factor of production in the neoclassical theory.,
+sw_s,澳大利亚,1956,,10,,,swan1956,p. 335 (PDF p. 149),a line through the origin with a slope equal to the saving ratio (s = 10 per cent).,
+sw_alpha,澳大利亚,1956,,0.4,,,swan1956,p. 335 (PDF p. 149),"another line through the origin, of slope as (a = 0-4)",'a = 0-4' for 'α = 0·4'
+sw_n,澳大利亚,1956,,1,,,swan1956,p. 336 (PDF p. 150),the rate of growth of the labour force being assumed for the present to be constant (n = 1 per cent).,
+sw_thrift,澳大利亚,1956,,5;10,,,swan1956,p. 337 (PDF p. 151),"Suppose the economy is at (2), and that a thrift campaign suddenly raises the saving ratio from 5 per cent to 10 per cent.",
+sw_at1,澳大利亚,1956,,,,,swan1956,p. 337 (PDF p. 151),"At (1) output per head and the wage rate are higher than at (2), while the output-capital ratio and the profit rate are lower.",
+sw_permanent,澳大利亚,1956,,,,,swan1956,p. 337 (PDF p. 151),"These are permanent changes, but the rate of economic growth is faster only in the course of transition from (2) to (1).",
+sw_m_ocr,澳大利亚,1956,,,,,swan1956,p. 337 (PDF p. 151),"In Figure 1 the distance AB on the vertical axis is m, at an assumed rate of 4 per cent.",the text layer's '4 per cent' for '½ per cent'
+sw_m,澳大利亚,1956,,0.5,,,swan1956img,p. 337 (PDF p. 151),,"read on the page image of p. 337 (PDF p. 151): «''Neutral'' technical progress contributes to the growth of output an annual m per cent beyond the contributions of capital and labour. In Figure 1 the distance AB on the vertical axis is m, at an assumed rate of ½ per cent.»"
+sw_rising,澳大利亚,1956,,,,,swan1956,p. 337 (PDF p. 151),"But the main change is that output per head is not only permanently higher, but perpetually rising",
+sw_solow,澳大利亚,1956,,1956,,,swan1956,p. 337 (PDF p. 151),"A similar device is used by R. M. Solow (AContribution to the Theory of Economic Growth, Quarterly Journal of Economics, February, 1956).",footnote 6; 'AContribution' without a space
+sw_speed,澳大利亚,1956,,,,,swan1956,p. 337 (PDF p. 151),"The approach to the point (1) along y, is asymptotic-i.e., (1) is reached only in infinity, the speed of travel towards it being directly related to the distance remaining to be travelled.",footnote 6
+sw_centuries,澳大利亚,1956,,,,,swan1956,p. 338 (PDF p. 152),"the ''transitional'' acceleration-deceleration of growth might be visible for centuries, depending entirely on the numerical assumptions. However, only extreme assumptions could produce such a result.",
+sw_plausible,澳大利亚,1956,,,,,swan1956,p. 338 (PDF p. 152),It is at first sight disconcerting to find that ''plausible'' figuring suggests that even the impact effect of a sharp rise in the saving ratio may be of minor importance for the rate of growth,
+sw_impact,澳大利亚,1956,,0.4;8,,,swan1956,p. 338 (PDF p. 152),"the maximum amount added to the rate of growth, at the beginning of the transition from (2) to (1) in Figure 1, is only 0-4 per cent, though the thrift campaign doubles the saving ratio at a point where the yield on capital is 8 per cent.",'0-4' for '0·4'
+sw_answers,澳大利亚,1956,,,,,swan1956,p. 338 (PDF p. 152),"To this anti-accumulation, pro-technology line of argument there are at least two possible anwers.",'anwers' for 'answers'
+sw_external,澳大利亚,1956,,,,,swan1956,p. 338 (PDF p. 152),"First, the rate of technical progress may not be independent of the rate of accumulation, or (what comes to much the same thing) accumulation may give rise to external economies, so that the true social yield of capital is greater than any ''plausible'' figure based on common private experience.",
+sw_smith,澳大利亚,1956,,,,,swan1956,p. 338 (PDF p. 152),"This point would have appealed to Adam Smith, but it will not be pursued here.",
+sw_classical,澳大利亚,1956,,,,,swan1956,p. 338 (PDF p. 152),"Second, the rate of growth of labour may",the sentence goes on on the next page
+sw_classical2,澳大利亚,1956,,,,,swan1956,p. 339 (PDF p. 153),not be independent of the rate of accumulation. This is the distinctively classical answer.,
+sw_elastic,澳大利亚,1956,,,,,swan1956,p. 339 (PDF p. 153),"This situation may be given a Malthusian interpretation, as the response of population to an improvement in the means of subsistence; it may be a situation of ''disguised unemployment'', with unproductive labour kept in reserve",
+sw_union,澳大利亚,1956,,,,,swan1956,p. 339 (PDF p. 153),"it may be the result of Trade Union resistance or some other kind of institutional or conventional barrier, expressed in real terms; or it, may reflect a potential supply of migrant labour",
+sw_proportion,澳大利亚,1956,,,,,swan1956,p. 339 (PDF p. 153),"a higher saving ratio will evidently raise the rate of economic growth almost in proportion-and not only ''transitionally'', but in equilibrium as well.",
+sw_wage,澳大利亚,1956,,,,,swan1956,p. 339 (PDF p. 153),the wage rate and output per head (of productively employed labour) will not be much improved,
+sw_scarecrow,澳大利亚,1956,,,,,swan1956,p. 343 (PDF p. 157),If we had to put up a scarecrow (as Joan Robinson calls it) to keep off the index-number birds and Joan Robinson herself,
+sw_units,澳大利亚,1956,,,,,swan1956,p. 344 (PDF p. 158),"and then he is hurried on to the next question, in the hope that he will forget to ask in what units C is measured.",Swan quoting Joan Robinson
+sw_meccano,澳大利亚,1956,,,,,swan1956,p. 344 (PDF p. 158),"Capital is made up of a large number of identical meccano sets, which never wear out and can be put together, taken apart, and reassembled with negligible cost or delay",
+sw_deceive,澳大利亚,1956,,,,,swan1956,p. 344 (PDF p. 158),"With assumptions of this kind, the basic model of the text could be rigorously established in a form that would deceive nobody.",
+sw_difficulties,澳大利亚,1956,,,,,swan1956,p. 345 (PDF p. 159),That there should be great difficulties in handling the concept of Capital in a process of change is not surprising.,
+ph_title,美国,1961,,51;4;1961;638;643,,,phelps1961,JSTOR cover page (PDF p. 1),"The Golden Rule of Accumulation: A Fable for Growthmen Author(s): Edmund Phelps Source: The American Economic Review, Vol. 51, No. 4 (Sep., 1961), pp. 638-643",the JSTOR cover page
+ph_kingdom,美国,1961,,,,,phelps1961,p. 638 (PDF p. 2),Once upon a time the Kingdom of Solovia was gripped by a great debate.,
+ph_faster_debate,美国,1961,,,,,phelps1961,p. 638 (PDF p. 2),"This is a growing economy but it can grow faster,",
+ph_sustainable,美国,1961,,,,,phelps1961,p. 638 (PDF p. 2),"Sustainable growth is best,",
+ph_natural,美国,1961,,,,,phelps1961,p. 638 (PDF p. 2),and that can come only from natural forces.,
+ph_task,美国,1961,,,,,phelps1961,p. 638 (PDF p. 2),So the King appointed a task force to learn the facts of Solovian economic life.,
+ph_prize,美国,1961,,,,,phelps1961,p. 639 (PDF p. 3),So he established a prize for the discovery of the optimum investment ratio.,
+ph_peasant,美国,1961,,,,,phelps1961,p. 639 (PDF p. 3),"Soon a brilliant peasant, Oiko Nomos, claimed the prize.",
+ph_theorem,美国,1961,,,,,phelps1961,p. 641 (PDF p. 5),"Theorem: Along the optimal golden-age path, under conditions of natural growth, the rate of investmenetis equal to the competitive rate of profits.",'investmenetis' for 'investment is'
+ph_golden,美国,1961,,12,,,phelps1961,p. 642 (PDF p. 6),We may call relation (12) the golden rule of accumulation,
+ph_each,美国,1961,,3,,,phelps1961,p. 642 (PDF p. 6),"each generation invests on behalf of future generations that share of income which, subject to (3), it would have had past generations invest on behalf of it.",
+ph_slowed,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),"If our present capital-output ratio is smaller, then our consumption must be slowed until our ratio is no longer deficient.",
+ph_faster,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),"If our present ratio exceeds the golden-rule ratio, then we must consume faster until our capital-output ratio is no longer excessive.",
+ph_compact,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),we must make a solemn compact henceforth to invest by the golden rule.,
+ph_nogeneration,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),"no generation in all the future of Solovia will ever wish we had chosen a different, successfully enforced investment ratio.",
+ph_crowd,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),"The crowd dispersed,happy for their Kingdom's future.","'dispersed,happy' without a space"
+ph_skeptics,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),But there were skeptics who reminded the King of Oiko's assumptions. They questioned Solovia's immunity from technological unemployment. They wondered whether their production function admitted of a natural growth rate.,
+ph_econometricians,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),So the King named a team of econometricians to investigate the shape of the Solovian production function.,
+ph_cobb,美国,1961,,,,,phelps1961,p. 642 (PDF p. 6),The King's econometricianswere eventually satisfied that productionin Solovia took place according to the Cobb-Douglas function,
+ph_share,美国,1961,,,,,phelps1961,p. 643 (PDF p. 7),It did not take them long to realize that a was capital's share.,'a' for 'α'
+ph_sa,美国,1961,,,,,phelps1961,p. 643 (PDF p. 7),"On the golden-rule path, s would equal a.",'a' for 'α'
+ph_pressed,美国,1961,,,,,phelps1961,p. 643 (PDF p. 7),the Solovian people pressed the King for a program to attain the golden-rule path.,
+ph_levies,美国,1961,,,,,phelps1961,p. 643 (PDF p. 7),So the King proclaimed golden-rule growth a national purpose and instituted special levies.,
+ph_yale,美国,1961,,,,,phelps1961,p. 643 (PDF p. 7),The author is assistant professor of economics at Yale University.,
+s57_title,美国,1957,,39;3;1957;312;320,,,solow1957,JSTOR cover page (PDF p. 1),"Technical Change and the Aggregate Production Function Author(s): Robert M. Solow Source: The Review of Economics and Statistics, Vol. 39, No. 3 (Aug., 1957), pp. 312-320",the JSTOR cover page
+s57_wrinkle,美国,1957,,,,,solow1957img,p. 312 (PDF p. 2),,read on the page image of p. 312 (PDF p. 2): «The new wrinkle I want to describe is an elementary way of segregating variations in output per head due to technical change from those due to changes in the availability of capital per head.»
+s57_price,美国,1957,,,,,solow1957img,p. 312 (PDF p. 2),,"read on the page image of p. 312 (PDF p. 2): «In this case the price consists of one new required time series, the share of labor or property in total income, and one new assumption, that factors are paid their marginal products.»"
+s57_appeals,美国,1957,,,,,solow1957img,p. 312 (PDF p. 2),,read on the page image of p. 312 (PDF p. 2): «I would not try to justify what follows by calling on fancy theorems on aggregation and index numbers. Either this kind of aggregate economics appeals or it doesn't. Personally I belong to both schools.»
+s57_robinson,美国,1957,,,,,solow1957img,p. 312 (PDF p. 2),,read on the page image of p. 312 (PDF p. 2): «Mrs. Robinson in particular has explored many of the profound difficulties that stand in the way of giving any precise meaning to the quantity of capital»; footnote 1
+s57_shorthand,美国,1957,,,,,solow1957img,p. 312 (PDF p. 2),,"read on the page image of p. 312 (PDF p. 2): «I am using the phrase “technical change” as a short-hand expression for any kind of shift in the production function. Thus slowdowns, speed-ups, improvements in the education of the labor force, and all sorts of things will appear as “technical change.”»"
+s57_eq1a,美国,1957,,,,,solow1957img,p. 312 (PDF p. 2),,"read on the page image of p. 312 (PDF p. 2): «Q = A(t)f(K,L) (1a)»"
+s57_eq2a,美国,1957,,,,,solow1957img,p. 313 (PDF p. 3),,"read on the page image of p. 313 (PDF p. 3): «Let Q/L = q, K/L = k, w_L = 1 − w_K; note that q̇/q = Q̇/Q − L̇/L etc., and (2) becomes q̇/q = Ȧ/A + w_K k̇/k. (2a)»"
+s57_data,美国,1957,,,,,solow1957img,p. 314 (PDF p. 4),,"read on the page image of p. 314 (PDF p. 4): «Thus my q is a time series of real private non-farm GNP per man hour, Kendrick's valuable work.»"
+s57_goldsmith,美国,1957,,,,,solow1957img,p. 314 (PDF p. 4),,"read on the page image of p. 314 (PDF p. 4): «Naturally I have used Goldsmith's estimates (with government, agricultural, and consumer durables eliminated).»"
+s57_unemployed,美国,1957,,,,,solow1957img,p. 314 (PDF p. 4),,"read on the page image of p. 314 (PDF p. 4): «I have simply reduced the Goldsmith figures by the fraction of the labor force unemployed in each year, thus assuming that labor and capital always suffer unemployment to the same percentage. This is undoubtedly wrong, but probably gets closer to the truth than making no correction at all.»"
+s57_t1_1909,美国,1957,,1909;0.335;0.623;2.06;1,,,solow1957img,p. 315 (PDF p. 5),,read on the page image of p. 315 (PDF p. 5): «TABLE 1.—DATA FOR CALCULATION OF A(t): 1909: share of property in income .335; priv. nonfarm GNP per manhour $.623; employed capital per manhour $2.06; A(t) 1.000»
+s57_t1_1949,美国,1957,,1949;0.326;1.275;2.7;1.809,,,solow1957img,p. 315 (PDF p. 5),,read on the page image of p. 315 (PDF p. 5): «1949: share of property in income .326; priv. nonfarm GNP per manhour 1.275; employed capital per manhour 2.70; A(t) 1.809»
+s57_t1_dollars,美国,1957,,1939,,,solow1957img,p. 315 (PDF p. 5),,"read on the page image of p. 315 (PDF p. 5): «Column (5): Private nonfarm GNP per man hour, 1939 dollars.»"
+s57_break,美国,1957,,1930,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «Almost, but not quite, for there does seem to be a break at about 1930.»"
+s57_first21,美国,1957,,21;0.9;19;2.25,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «The first 21 relative shifts average about 9/10 of one per cent per year, while the last 19 average 2¼ per cent per year.»"
+s57_posthoc,美国,1957,,1929,,,solow1957img,p. 316 (PDF p. 6),,read on the page image of p. 316 (PDF p. 6): «Such post hoc splitting-up of a period is always dangerous. Perhaps I should leave it that there is some evidence that technical change (broadly interpreted) may have accelerated after 1929.»
+s57_avg,美国,1957,,40;1.5,,,solow1957img,p. 316 (PDF p. 6),,read on the page image of p. 316 (PDF p. 6): «The over-all result for the whole 40 years is an average upward shift of about 1.5 per cent per year.»
+s57_doubled,美国,1957,,40;80,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «over the 40 year period output per man hour approximately doubled. At the same time, according to Chart 2, the cumulative upward shift in the production function was about 80 per cent.»"
+s57_eighth,美国,1957,,0.125;0.875,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «It is possible to argue that about one-eighth of the total increase is traceable to increased capital per man hour, and the remaining seven-eighths to technical change.»"
+s57_623,美国,1957,,0.623;1.275;1.809;1949;40;0.705,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «real GNP per man hour increased from $.623 to $1.275. Divide the latter figure by 1.809, which is the 1949 value for A(t), and therefore the full shift factor for the 40 years. The result is a “corrected” GNP per man hour, net of technical change, of $.705.»"
+s57_cents,美国,1957,,8;65,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «Thus about 8 cents of the 65 cent increase can be imputed to increased capital intensity, and the remainder to increased productivity.»"
+s57_embodied,美国,1957,,,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «Of course this is not meant to suggest that the observed rate of technical progress would have persisted even if the rate of investment had been much smaller or had fallen to zero. Obviously much, perhaps nearly all, innovation must be embodied in new plant and equipment to be realized at all.»"
+s57_fn6,美国,1957,,1909;29;0.3333333333,,,solow1957img,p. 316 (PDF p. 6),,"read on the page image of p. 316 (PDF p. 6): «For the first half of the period, 1909–29, a similar computation attributes about one-third of the observed increase in GNP per man-hour to increased capital intensity.»; footnote 6"
+s57_fabricant,美国,1957,,1871;1951;90,,,solow1957img,p. 317 (PDF p. 7),,"read on the page image of p. 317 (PDF p. 7): «For comparison, Solomon Fabricant has estimated that over the period 1871–1951 about 90 per cent of the increase in output per capita is attributable to technical progress.»"
+s57_neutral,美国,1957,,,,,solow1957img,p. 320 (PDF p. 10),,read on the page image of p. 320 (PDF p. 10): «1. Technical change during that period was neutral on average.»
+s57_summary,美国,1957,,87.5;12.5,,,solow1957img,p. 320 (PDF p. 10),,"read on the page image of p. 320 (PDF p. 10): «3. Gross output per man hour doubled over the interval, with 87½ per cent of the increase attributable to technical change and the remaining 12½ per cent to increased use of capital.»"
+s57_curvature,美国,1957,,,,,solow1957img,p. 320 (PDF p. 10),,"read on the page image of p. 320 (PDF p. 10): «4. The aggregate production function, corrected for technical change, gives a distinct impression of diminishing returns, but the curvature is not violent.»"
+s57_ocr,美国,1957,,,,,solow1957,p. 320 (PDF p. 10),with 87'2 per cent of the increase,the text layer's '87'2' for '87½'
+ab_title,美国,1956,,1870,,,abramovitz1956,NBER cover page (PDF p. 1),Volume Title: Resource and Output Trends in the United States Since 1870 Volume Author/Editor: Moses Abramovitz Volume Publisher: NBER,the NBER's cover page
+ab_op52,美国,1956,,52;1956,,,abramovitz1956,title page (PDF p. 2),"OCCASIONAL PAPER 52 NATIONAL BUREAU OF ECONOMIC RESEARCH, INC. 1956",
+ab_reprinted,美国,1956,,,,,abramovitz1956,back of the title page (PDF p. 3),Reprinted from the American Economic Review,
+ab_quadrupled,美国,1956,,1869;78;1944;53;4;3,,,abramovitz1956,p. 6 (PDF p. 7),"between the decade 1869-78 and the decade 1944-53, net national product per capita in constant prices approximately quadrupled, while population more than tripled.",
+ab_index,美国,1956,,,,,abramovitz1956,p. 11 (PDF p. 12),It tells us how net national product per capita would have grown had the productivity of resources remained constant at base period levels while only the supplies of resources per head increased.,
+ab_14,美国,1956,,14,,,abramovitz1956,p. 11 (PDF p. 12),"Such an index, based on the twenties, rises only some 14 per cent between the seventies and the last decade.",
+ab_250,美国,1956,,250,,,abramovitz1956,p. 11 (PDF p. 12),"To account for the quadrupling of net national product per capita, the productivity of a representative unit of all resources must have increased some 250 per cent.",
+ab_base,美国,1956,,,,,abramovitz1956,p. 11 (PDF p. 12),This result may arise in some part from our choice of a base period.,
+ab_1919,美国,1956,,1919;28,,,abramovitz1956,p. 11 (PDF p. 12),"We chose a fairly recent base period, 1919-28",
+ab_sobering,美国,1956,,,,,abramovitz1956,p. 11 (PDF p. 12),"it should be, in a sense, sobering, if not discouraging, to students of economic growth.",
+ab_ignorance,美国,1956,,,,,abramovitz1956,p. 11 (PDF p. 12),the indicated importance of this element may be taken to be some sort of measure of our ignorance about the causes of economic growth in the United States,
+bm_title,美国,1986,,76;5;1986;1072;1085,,,baumol1986,JSTOR cover page (PDF p. 1),"Productivity Growth, Convergence, and Welfare: What the Long-Run Data Show Author(s): William J. Baumol Source: The American Economic Review, Vol. 76, No. 5 (Dec., 1986), pp. 1072-1085",the JSTOR cover page
+bm_16,美国,1986,,16,,,baumol1986,p. 1074 (PDF p. 4),the median increase in productivity among the 16 industrialized leaders in Maddison's sample,
+bm_eq,美国,1986,,1870;1979;5.25;-0.75;1870;0.88,,,baumol1986,p. 1076 (PDF p. 6),"GrowthRate (1870-1979) = 5.25 -0.751n (GDP per WorkHr, 1870), R2 = 0.88.",'0.751n' for '0.75 ln'
+bm_seriously,美国,1986,,,,,baumol1986,p. 1076 (PDF p. 6),The high correlation should not be taken too seriously.,footnote 5
+bm_72,美国,1986,,72,,,baumol1986,p. 1076 (PDF p. 6),"the 72-country data depicted in Figure 3 hardly constitute a close fit (the R2 is virtually zero), and do not even yield a negatively sloping regression line.",
+bm_spillover,美国,1986,,,,,baumol1986,p. 1077 (PDF p. 7),"However, a plausible alternative interpretation is that while national policies and behavior patterns do substantially affect productivity growth, the spillovers from leader economies to followers are large-at least among the group of industrial nations.",
+bm_public,美国,1986,,,,,baumol1986,p. 1077 (PDF p. 7),"In other words, for such nations a successful productivity-enhancing measure has the nature of a public good.",
+bm_almost,美国,1986,,,,,baumol1986,p. 1077 (PDF p. 7),it will almost automatically do the same in the long run for industrialized country B,
+bm_club,美国,1986,,,,,baumol1986,p. 1079 (PDF p. 9),the centrally planned economies are members of a convergence club of their own,
+bm_ldc,美国,1986,,,,,baumol1986,p. 1072 (PDF p. 2),with convergence apparently shared by planned economies but not less developed countries.,
+bm_cars,美国,1986,,,,,baumol1986,p. 1080 (PDF p. 10),But part of the explanation may well be related to product mix and education. A less developed country that produces no cars cannot benefit from the invention and adoption of a better car-producing robot in Japan,
+dl_title,美国,1987,,2419,,,delong1987,PDF p. 1,"HAVE PRODUCTIVITY LEVELS CONVERGED? PRODUCTIVITY GROWTH, CONVERGENCE, AND WELFARE IN THE VERY LONG RUN J. Bradford De Long Working Paper No. 2419",
+dl_construction,美国,1987,,,,,delong1987,PDF p. 2,But convergence in Baumol's sample is guaranteed by construction.,
+dl_design,美国,1987,,1982,,,delong1987,PDF p. 2,Maddison's (1982) study is by design of nations that have successfully developed and today have high incomes,
+dl_selection,美国,1987,,,,,delong1987,PDF p. 2,Baumol's data are thus contaminated by sample selection bias,
+dl_22,美国,1987,,22,,,delong1987,PDF p. 6,"while Argentina, Chile, East Germany,8 Ireland, New Zealand, Portugal and Spain are added. Growth and initial per capita income levels for this resulting ""once-rich twenty-two"" sample",'8' is a footnote mark
+dl_japan,美国,1987,,,,,delong1987,PDF p. 6,This sample does not provide a fair test of convergence.,on Japan in 1870
+dl_finland,美国,1987,,1870;1870,,,delong1987,PDF p. 6,The second poorest of Maddison's sixteen in 1870 was Finland. Taking Finland's 1870 income as a cutoff leads to a sample in which Japan is removed,
+dl_sd,美国,1987,,1979;35;1870;22;1870,,,delong1987,PDF p. 9,d deviation of log income in 1979 is only thirtyfive percent of its 1870 value. But the appearance of convergence is due to selection bias: the once-rich twenty-two have as wide a spread of relative incomes today as in 1870.,
+dl_error,美国,1987,,1870;1870,,,delong1987,PDF p. 9,"For the central case of equal variances, growth since 1870 is unrelated to income in 1870.",
+dl_halfvar,美国,1987,,,,,delong1987,PDF p. 9,"When measurement error variance is assumed equal to half disturbance variance, the slope is slightly but not significantly negative.",
+dl_noconv,美国,1987,,,,,delong1987,PDF p. 9,There is no convergence. Those countries with income edges have on average maintained them.,
+dl_forces,美国,1987,,,,,delong1987,PDF p. 2,"The forces making for ""convergence"" have been counterbalanced by forces making for ""divergence"" even for those nations which should have converged most easily.",
+dl_concede,美国,1987,,,,,delong1987,PDF p. 11,This is not to say that there are are no forces pushing for convergence. Convergence does sometimes happen. Technology is a public good.,'are are' as printed
+br_title,美国,1989,,3120,,,barro1989,PDF p. 1,ECONOMIC GROWTH IN A CROSS SECTION OF COUNTRIES Robert Barro Working Paper No. 3120,
+br_uncorrelated,美国,1989,,100,,,barro1989,PDF p. 2,per capita growth rates for about 100 countries in the post-World War II period are uncorrelated with the starting level of per capita product.,
+br_school,美国,1989,,,,,barro1989,PDF p. 2,"However, if one holds constant measures of initial human capital-measured by primary and secondary school-enrollment rates-there is evidence that countries with lower per capita product tend to grow faster.",
+br_government,美国,1989,,,,,barro1989,PDF p. 2,"the cross-country data indicate that government consumption is inversely related to growth, whereas public investment has little relation with growth. Average growth rates are positively related to political stability",
+br_africa,美国,1989,,,,,barro1989,PDF p. 22,The estimated coefficient on AFRICA is significantly negative,
+br_unexplained,美国,1989,,,,,barro1989,PDF p. 2,the analysis leaves unexplained a good deal of the relatively weak growth performances of countries in sub- Saharan Africa and Latin America.,
+bs_title,美国,1990,,3419,,,bsm1990,PDF p. 1,ECONOMIC GROWTH AND CONVERGENCE ACROSS THE UNITED STATES Robert J. Barro Xavier Sala I Martin Working Paper No 3419,
+bs_states,美国,1990,,2;2.5,,,bsm1990,PDF p. 37,the speed of convergence appears to be roughly the same-about 2 to 2-1/2 percent per year-regardless of the time period,
+bs_1840,美国,1990,,1840,,,bsm1990,PDF p. 2,we examine data since 1840 from the U.S. states.,
+bs_98,美国,1990,,1960;1985;98,,,bsm1990,PDF p. 3,Simple regressions for the growth rate of real per capita GDP from 1960 to 1985 for 98 countries indicate lack of convergence.,
+bs_countries,美国,1990,,2,,,bsm1990,PDF p. 37,then we estimate fl-coefficients that are similar-roughly 2% per year-to those found for the U.S. states.,'fl' for 'β'
+bs_alpha,美国,1990,,0.8,,,bsm1990,PDF p. 3,the model requires a high capital-share coefficient-in the neighborhood of 0.8-so that diminishing returns to capital set in slowly as an economy develops.,
+bs_lower,美国,1990,,,,,bsm1990,PDF p. 37,"Lower values of a, which imply that diminishing returns to capital set in more quickly, imply a more rapid rate of convergence than that revealed by the data.",'a' for 'α'
+bs_open,美国,1990,,,,,bsm1990,PDF p. 37,"Extensions of the neoclassical model to an open economy tend to speed up the process of convergence; the mobility of capital, labor, and technology implies that poor economies catch up faster to rich ones.",
+bs_higher,美国,1990,,,,,bsm1990,PDF p. 3,The required capital-share coefficient becomes even higher if we allow for open-economy features,
+bs_alpha1,美国,1990,,0.8;1;27,,,bsm1990,PDF p. 38,"The difference between a=0.8-where diminishing returns to capital set in slowly-and a=1.0-where diminishing returns set in not at all-may seem to be minor. But, as shown in Table 1, the difference amounts to a half life of 27 years in the former case versus infinity in the latter.",
+mrw_title,美国,1990,,3541,,,mrw1990,PDF p. 1,A CONTRIBUTION TO THE EMPIRICS OF ECONOMIC GROWTH N. Gregory Mankiw David Romer David N. Weil Working Paper No. 3541,
+mrw_80,美国,1990,,80,,,mrw1990,PDF p. 2,The model explains about 80 percent of the international variation in income per capita,
+mrw_toolarge,美国,1990,,,,,mrw1990,PDF p. 3,"In the data, the effects of saving and population growth on income are too large.",
+mrw_direction,美国,1990,,,,,mrw1990,PDF p. 3,"Although the model correctly predicts the direction of the affects of saving and population growth, it does not correctly predict the magnitudes.",'affects' for 'effects'
+mrw_059,美国,1990,,0.59;0.02,,,mrw1990,PDF p. 12,the o implied by the coefficient in the constrained regression for the intermediate sample is .59 (with a standard error of .02).,'o' for 'α'
+mrw_third,美国,1990,,0.3333333333,,,mrw1990,PDF p. 19,"For non-oil end intermediate samples, a and ft are about 1/3","'end' for 'and', 'a' for 'α', 'ft' for 'β'"
+mrw_lambda,美国,1990,,0.3333333333;0.06;0.02;35,,,mrw1990,PDF p. 21,"if a-$-l/3 and n+g+6-.06, then the convergence rate (A) would equal .02. This implies that the economy moves halfway to steady state in about 35 years.","'a-$-l/3' for 'α = β = 1/3', '6' for 'δ', 'A' for 'λ'"
+mrw_textbook,美国,1990,,0.04;17,,,mrw1990,PDF p. 21,"If -O, then A becomes .04, end the economy moves halfway to steady state in about 17 years.","'-O' for 'β = 0', 'A' for 'λ', 'end' for 'and'"
+mrw_converge,美国,1990,,,,,mrw1990,PDF p. 26,"Moreover, convergence occurs at approximately the rate that the model predicts.",
+mrw_controlling,美国,1990,,,,,mrw1990,PDF p. 26,"After controlling for those variables that the Solow model says determine the steady state, there is substantial convergence in income per capita.",
+mrw_spread,美国,1990,,,,,mrw1990,PDF p. 30,"In the textbook model, higher population growth lowers income because the available capital must be spread more thinly over the population of workers.",
+mrw_elasticity,美国,1990,,0.3333333333;-0.5;-2,,,mrw1990,PDF p. 30,"In the textbook model with a capital share of 1/3, the elasticity of income per capita with respect to n+g+6 is -1/2. In our augmented model, this elasticity is -2.",'6' for 'δ'
+mrw_social,美国,1990,,,,,mrw1990,PDF p. 29,capital receives approximately its social return.,
+mrw_externalities,美国,1990,,,,,mrw1990,PDF pp. 29-30,"In other words, there are not 27 substantial externalities to the accumulation of physical capital.","across a page break, with the page number"
+pr_title,美国,1995,,1522,,,pritchett1995,PDF p. 2,POLicy RESEARCH WORKING PAPER 1522,the summary page
+pr_title2,美国,1995,,,,,pritchett1995,PDF p. 3,"Divergence, Big Time Lant Pritchett",
+pr_date,美国,1995,,1995;1995,,,pritchett1995,PDF p. 1,Background paper for World Development Report 1995 The World Bank Office of the Vice President Development Economics October 1995,
+pr_series,美国,1995,,,,,pritchett1995,PDF p. 2,The papers carry the names of the authors and should be used and cited accordingly.,the statement of the series
+pr_sixfold,美国,1995,,1870;1985;6;60;100,,,pritchett1995,PDF p. 2,"Pritchett estimates that between 1870 and 1985 the ratio of incomes in the richest and poorest countries increased sixfold, the standard deviation of (natural log) per capita incomes increased by between 60 and 100 percent",the summary page
+pr_floor,美国,1995,,250;1985,,,pritchett1995,PDF p. 9,This section will just assume this level is P$250 (expressed in 1985 US purchasing power parity (PPP) adjusted dollars,
+pr_ratio,美国,1995,,8.7;1870;38;1960;51;1985,,,pritchett1995,PDF p. 11,the ratio of the top to the bottom income countrieshas increasedfrom 8.7 in 1870to 38 by 1960 and to 51 by 1985,words run together in the text layer
+pr_t_1985,美国,1995,,8.7;8.7;38.1;51.6,,,pritchett1995,PDF p. 12,Ratio of GDP per capita of richest to poorest country 8.7 8.7 38.1 51.6,"the table: 1870 (two methods), 1960, 1985"
+pr_dominant,美国,1995,,,,,pritchett1995,PDF p. 5,"First, divergencein output per person across countriesis perhaps the dominantfeature of modem economichistory.",words run together; 'modem' for 'modern'
+pr_compatible,美国,1995,,,,,pritchett1995,PDF p. 6,"Second,absolutedivergenceis compatiblewith conditionalconvergence.",words run together
+ef_title,苏联,1995,,9;1995;3;341,,,ef1995,p. 339 (PDF p. 3),THE WORLD BANK ECONOMIC REVIEW Volume9 September1995 Number 3 The Soviet Economic Decline William Easterly and Stanley Fischer 341,the contents of the issue
+ef_copyright,苏联,1995,,1995,,,ef1995,p. 341 (PDF p. 5),C) 1995 The International Bank for Reconstruction and Development /THE,'C)' for '©'; the notice ends 'WORLD BANK' after the page number
+ef_causes,苏联,1995,,,,,ef1995,p. 341 (PDF p. 5),Accounts of the declining Soviet economic growth emphasize different causes: the Soviet reliance on extensive growth,
+ef_causes2,苏联,1995,,,,,ef1995,p. 341 (PDF p. 5),"the declining rate of productivity growth or technical progress associated with the difficulties of adopting and adapting to the sophisticated technologies being introduced in market economies; the defense burden; and a variety of special factors relating to the absence of appropriate incentives in the Soviet system, including corruption and demoralization",
+ef_t1_head,苏联,1995,,1;1928;87,,,ef1995img,p. 343 (PDF p. 7),,"read on the page image of p. 343 (PDF p. 7): «Table 1. Growth Rates in the Soviet Economy, Based on Different Data Sources, 1928–87 (average annual percent). Western data, Total economy.»"
+ef_t1_y,苏联,1995,,1950;59;5.8;1960;69;3;1970;79;2.1;1980;87;1.4,,,ef1995img,p. 343 (PDF p. 7),,read on the page image of p. 343 (PDF p. 7): «Output per worker: 1950–59 5.8; 1960–69 3.0; 1970–79 2.1; 1980–87 1.4»
+ef_t1_k,苏联,1995,,1950;59;7.4;1960;69;5.4;1970;79;5;1980;87;4,,,ef1995img,p. 343 (PDF p. 7),,read on the page image of p. 343 (PDF p. 7): «Capital per worker: 1950–59 7.4; 1960–69 5.4; 1970–79 5.0; 1980–87 4.0»
+ef_t1_source,苏联,1995,,1991,,,ef1995img,p. 343 (PDF p. 7),,read on the page image of p. 343 (PDF p. 7): «Source: Gomulka and Schaffer (1991).»
+ef_extensive,苏联,1995,,1987,,,ef1995,p. 349 (PDF p. 13),"the conventional hypothesis for the Soviet decline in growth is the pattern of extensive growth, defined by Ofer (1987) as growth mainly through input accumulation rather than through productivity growth. Ofer notes that a key feature of extensive growth is a rising capitaloutput ratio.",
+ef_kaldor,苏联,1995,,,,,ef1995,p. 350 (PDF p. 14),"Capital-output ratios in market economies have indeed long been thought to remain relatively stable, according to the famous Kaldor stylized fact",
+ef_contradicts,苏联,1995,,,,,ef1995,p. 350 (PDF p. 14),"However, recent research on capital accumulation in market economies contradicts the Kaldor stylized fact",
+ef_ky,苏联,1995,,4.9;1985,,,ef1995,p. 351 (PDF p. 15),The K-Y ratio as measured by the Western GDP and total capital stock series was 4.9 in 1985,
+ef_doubled,苏联,1995,,1950;1975,,,ef1995,p. 351 (PDF p. 15),"The Soviet investment share doubled between 1950 and 1975, as can be seen in the Western estimates presented in figure 3.",
+ef_unusual,苏联,1995,,,,,ef1995,p. 352 (PDF p. 16),What was unusual was the fact that Soviet growth was declining while its investment was rising.,
+ef_t4_alpha,苏联,1995,,0.4,,,ef1995,p. 354 (PDF p. 18),Cobb-Douglas production function with a capital share of 0.4 across economies,
+ef_weitzman,苏联,1995,,0.4,,,ef1995,p. 355 (PDF p. 19),Weitzman's basic finding was that a CES production function with a low elasticity of substitution of 0.4 fit the data better than the Cobb-Douglas,
+ef_ref_weitzman,苏联,1995,,1970;60;5;676;92,,,ef1995,p. 370 (PDF p. 34),"Weitzman, Martin L. 1970. ""Soviet Postwar Economic Growth and Capital-Labor Substitution."" American Economic Review 60(5, December):676-92.",the list of references
+ef_debated,苏联,1995,,,,,ef1995,p. 355 (PDF p. 19),This result has been hotly debated.,
+ef_bergson,苏联,1995,,1983,,,ef1995,p. 355 (PDF p. 19),Bergson (1983) criticized this result on the grounds that it implied implausibly high estimates of the marginal product of capital in earlier years.,
+ef_t6_eq,苏联,1995,,,,,ef1995img,p. 356 (PDF p. 20),,read on the page image of p. 356 (PDF p. 20): «(6) ln(Y/L) = c1 t1950–59 + c2 t1960–69 + c3 t1970–79 + c4 t1980–87 + [c5/(1+c5)] ln[c6 (K/L)^((1+c5)/c5) + (1−c6)] + c7.»
+ef_low,苏联,1995,,,,,ef1995,p. 356 (PDF p. 20),lend themselves to the CES form with low elasticities of substitution between capital and labor (significantly below one) and roughly constant rates of TFP growth.,
+ef_caveats,苏联,1995,,,,,ef1995,p. 356 (PDF p. 20),"We regard these results as very suggestive, but we note again the caveats. First, these results are conditional on assumptions that we need tp identify the production function.",'tp' for 'to'
+ef_khanin,苏联,1995,,,,,ef1995,p. 356 (PDF p. 20),we found some support in the official data for the low-elasticity hypothesis but none in Khanin's data.,
+ef_t6_sigma,苏联,1995,,-0.37,,,ef1995img,p. 357 (PDF p. 21),,"read on the page image of p. 357 (PDF p. 21): «Table 6. Elasticities of Substitution and Total Factor Productivity Growth with Estimated Constant Elasticity of Substitution Functions, U.S.S.R, 1950–87. Total economy: Elasticity of substitution (c5) −0.37»"
+ef_t6_tfp,苏联,1995,,1.09;1.1;1.16;1.09,,,ef1995img,p. 357 (PDF p. 21),,read on the page image of p. 357 (PDF p. 21): «TFP growth: 1950–59 (c1) 1.09; 1960–69 (c2) 1.10; 1970–79 (c3) 1.16; 1980–87 (c4) 1.09»
+ef_entirely,苏联,1995,,,,,ef1995img,p. 357 (PDF p. 21),,"read on the page image of p. 357 (PDF p. 21): «in table 6, extensive growth—diminishing returns to capital—accounts entirely for the growth slowdown.»"
+ef_rd,苏联,1995,,1970;1980,,,ef1995,p. 358 (PDF p. 22),"Because the U.S.S.R. was spending increasing R&D resources and borrowing Western technology in the 1970s and 1980s, we find a constant rate of TFP growth more plausible than a falling rate.",
+ef_compelling,苏联,1995,,,,,ef1995,p. 358 (PDF p. 22),We cannot see a compelling story for the sort of worsening efficiency in resource use and technology adaptation,
+ef_best,苏联,1995,,1990;1990;1956,,,ef1995,p. 363 (PDF p. 27),Weitzman (1990) describes Soviet growth (as analyzed by Ofer 1990) as the best application of the Solow (1956) neoclassical model ever seen.,
+ef_krugman,苏联,1995,,1994,,,ef1995,p. 363 (PDF p. 27),Krugman (1994) has an entertaining description of the unanticipated Soviet growth decline as a metaphor for the alleged future growth slowdown in East Asia.,
+ef_why,苏联,1995,,,,,ef1995,p. 363 (PDF p. 27),"Could one explanation for the Soviets' substitution problems be that, under an autocratically directed economic system, they accumulated a narrow rather than a broad range of capital goods because only certain types of capital were amenable to central a",
+jec_title,苏联,1990,,1982,,,archive_jec40,metadata record,"Measures of Soviet Gross National Product in 1982 Prices: A Study Prepared for the Use of the Joint Economic Committee, Congress of the United States",
+jec_date,苏联,1990,,1990,,,jec1990,text layer (djvu),THE JOINT ECONOMIC COMMITTEE CONGRESS OF THE UNITED STATES NOVEMBER 1990,
+jec_print,苏联,1990,,101;2,,,jec1990,text layer (djvu),101st Congress 2d Session JOINT COMMITTEE PRINT,
+jec_analysts,苏联,1990,,,,,jec1990,text layer (djvu),is a study of the Soviet Gross National Product prepared for the committee by analysts of the Central Intelligence Agency.,the letter of transmittal
+jec_author,苏联,1990,,,,,jec1990,text layer (djvu),"The author of the study is Laurie Kurtzweg, an analyst with the CIA.",the letter of transmittal
+jec_competition,苏联,1990,,1970,,,jec1990img,p. 6 (PDF p. 16),,"read on the page image of p. 6 (PDF p. 16): «Competition for Resources. Competition intensified among the major claimants on GNP—investment, defense, and consumption—as Soviet economic growth slowed after the mid-1970s.»"
+jec_priorities,苏联,1990,,1987;1970,,,jec1990img,p. 6 (PDF p. 16),,"read on the page image of p. 6 (PDF p. 16): «Through 1987, however, Moscow's priorities appeared to change little, as the shares of GNP allocated to these claimants remained much the same—in current prices—after 1970.»"
+jec_planners,苏联,1990,,1975;4.8;1966;75;2.4;1976;85,,,jec1990img,p. 6 (PDF p. 16),,read on the page image of p. 6 (PDF p. 16): «Planners allowed the rate of investment growth to slow markedly after 1975. Annual rates of increase in investment slipped from an average of 4.8 percent per year during 1966-75 to 2.4 percent during 1976-85.»
+jec_living,苏联,1990,,1975,,,jec1990img,p. 6 (PDF p. 16),,"read on the page image of p. 6 (PDF p. 16): «The standard of living of the population continued to rise, but the rate of improvement slowed markedly after 1975.»"
+jec_percapita,苏联,1990,,1.3;1976;87;3.3;1966;75,,,jec1990img,p. 6 (PDF p. 16),,"read on the page image of p. 6 (PDF p. 16): «Annual growth of per capita consumption averaged 1.3 percent during 1976-87, down from 3.3 percent during 1966-75.»"
+jec_t2_head,苏联,1990,,2;1951;87;1982;1951;65;1966;75;1976;80;1981;85;1986;1987,,,jec1990img,p. 7 (PDF p. 17),,"read on the page image of p. 7 (PDF p. 17): «Table 2 USSR: GNP Growth by End Use, 1951-87 (a) Percent; a Based on 1982 factor cost; b Average annual; columns 1951-65, 1966-75, 1976-80, 1981-85, 1986, 1987»"
+jec_t2_gnp,苏联,1990,,5.1;3.9;1.9;1.8;4;1.3,,,jec1990img,p. 7 (PDF p. 17),,read on the page image of p. 7 (PDF p. 17): «Total GNP 5.1 3.9 1.9 1.8 4.0 1.3»
+jec_t2_cons,苏联,1990,,4.6;4.4;2.5;2;1.7;2.7,,,jec1990img,p. 7 (PDF p. 17),,read on the page image of p. 7 (PDF p. 17): «Consumption 4.6 4.4 2.5 2.0 1.7 2.7»
+jec_t2_inv,苏联,1990,,9.6;4.8;2.1;2.6;5.4;1.2,,,jec1990img,p. 7 (PDF p. 17),,read on the page image of p. 7 (PDF p. 17): «Investment 9.6 4.8 2.1 2.6 5.4 1.2»
+scb_reply,美国,1972,,,,,scb1972,PDF p. 91,"Jorgenson and Griliches now assign a much larger role to productivity in the explanation of economic growth, and in several respects have come closer to the concepts and methodology advocated by Denison. But substantial differences remain",
+jg_reprint,美国,1972,,3;99;1967,,,scb1972,PDF p. 92,"The Explanation of Productivity Change By D. W. JORGENSON and Z. GRILICHES Reprinted with corrections from The Review of Economic Studies Vol. XXXIV (3), No. 99 (July 1967)",
+jg_hypothesis,美国,1972,,,,,scb1972,PDF p. 93,"if quantities of output and input are measured accurately, growth in total output is largely explained by growth in total input.",
+jg_incorrect,美国,1972,,,,,scb1972,PDF p. 94,Many of the most important errors of measurement in previous compilations of data on real product and real factor input arise from incorrect aggregation.,
+jg_correct,美国,1972,,,,,scb1972,PDF p. 94,we attempt to correct a number of common errors of measurement of real product and real factor input,
+jg_investment,美国,1972,,,,,scb1972,PDF p. 94,an error in the measurement of the price of investment goods results in a bias in total output and a bias in the capital accounts,
+jg_labels,美国,1972,,,,,scb1972,PDF p. 93,changes in total factor productivity have been given such labels as The Residual or The Measure of Our Ignorance.,
+jg_relabel,美国,1972,,,,,scb1972,PDF p. 93,Simply relabelling these changes as Technical Progress or Advance of Knowledge leaves the problem of explaining growth in total output unsolved.,
+jg_1945,美国,1972,,20;1945;65,,,scb1972,PDF p. 104,"We begin by constructing indexes of total output and total input for the United States for the twenty-year period following World War II, 1945-65",
+jg_160,美国,1972,,1.6;0.1,,,scb1972,PDF p. 117,the rate of growth of total factor productivity is reduced from 1-60 per cent per year to 0-10 per cent per year.,'1-60' and '0-10' for '1·60' and '0·10'
+jg_economy,美国,1972,,1945;1965,,,scb1972,PDF p. 117,"U.S. PRIVATE DOMESTIC ECONOMY, 1945-1965",the title of the charts
+jg_knowledge,美国,1972,,,,,scb1972,PDF p. 118,"Our conclusion is not that advances in knowledge are negligible, but that the accumulation of knowledge is governed by the same economic laws as any other process of capital accumulation.",
+dn_title,美国,1972,,,,,scb1972,PDF p. 91,Some Major Issues in Productivity Analysis: An Examination of Estimates by Jorgenson and Griliches,
+dn_1969,美国,1972,,1969;1;27,,,scb1972,PDF p. 91,"as published in the May 1969 SURVEY, Part II, pp. 1-27",the BEA's list of contents
+jg_replytitle,美国,1972,,,,,scb1972,PDF p. 91,Issues in Growth Accounting: A Reply to Edward F. Denison,the BEA's list of contents
+dn_010,美国,1972,,0.1,,,scb1972,PDF p. 125,"They concluded that output per unit of input contributed little to the growth rate of output-only 0.10 percentage points, to be exact. This estimate contrasts with much larger amounts obtained in virtually all other studies.",
+dn_137,美国,1972,,1.37,,,scb1972,PDF p. 125,I arrived at 1.37 percentage points in Why Growth Rates Differ,
+dn_1945,美国,1972,,1945,,,scb1972,PDF p. 126,Use of 1945 as a starting point minimizes their figure.,
+pwt_title,,2023,,10.01,,,pwt1001,dataset record,Penn World Table version 10.01,
+pwt_cite,,2023,,,,,pwt1001,dataset record,"When using these data (for whatever purpose), please make the following reference:",
+pwt_ref,,2023,,2015;105;10;3150;3182,,,pwt1001,dataset record,"Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), ""The Next Generation of the Penn World Table"" American Economic Review, 105(10), 3150-3182",
+pwt_licence,,2023,,,,,pwt1001,dataset record,CC-BY-4.0,the licence of the dataset
+pwt_coverage,,2023,,183;1950;2019,,,pwt1001,dataset record,covering 183 countries between 1950 and 2019,
+loc_solow,美国,,,,,,loc_solow40,authority record,"Solow, Robert M.",no year in the heading
+loc_swan,澳大利亚,,,1918;1989,,,loc_swan40,authority record,"Swan, Trevor Winchester, 1918-1989",
+loc_phelps,美国,,,,,,loc_phelps40,authority record,"Phelps, Edmund S.",no year in the heading
+loc_abramovitz,美国,,,,,,loc_abramovitz40,authority record,"Abramovitz, Moses",no year in the heading
+loc_denison,美国,,,1915;1992,,,loc_denison40,authority record,"Denison, Edward F. (Edward Fulton), 1915-1992",
+loc_griliches,美国,,,1930;1999,,,loc_griliches40,authority record,"Griliches, Zvi, 1930-1999",
+loc_lewis,英国,,,1915;1991,,,loc_lewis40,authority record,"Lewis, W. Arthur (William Arthur), 1915-1991",
+loc_robinson,英国,,,1903;1983,,,loc_robinson40,authority record,"Robinson, Joan, 1903-1983",
+loc_solow_born,美国,,,23;1924,,,loc_solow40,authority record,"CIP t.p. (Robert M. Solow) data sht. (b. Aug. 23, 1924)",a source note of the record
+loc_solow_died,美国,,,1987;21,,,loc_solow40,authority record,"Robert M. Solow, who won the 1987 Nobel Prize in economics for exploring the impact of technology on economic growth, died Dec. 21",a source note of the record
+loc_solow_wapo,美国,,,22;2023,,,loc_solow40,authority record,"Washington post WWW site, viewed December 22, 2023",the source of that note
+loc_swan_note,澳大利亚,,,14;1918;1989,,,loc_swan40,authority record,(Trevor Swan; born on 14 January 1918; died in 1989; a life-long Keynesian economist),a source note of the record
+loc_swan_born,澳大利亚,,,1818;1;14,,,loc_swan40,authority record,1818-01-14,the field birthDate of the record
+loc_phelps_born,美国,,,7;26;33,,,loc_phelps40,authority record,CIP t.p. (Edmund S. Phelps) CIP data sheet (b. 7-26-33),a source note of the record
+loc_abramovitz_note,美国,,,1912;1;2000;88,,,loc_abramovitz40,authority record,"(Moses Abramovitz; economist; former pres., American Economic Association; b. 1912 in Brooklyn; d. Dec. 1, 2000 at Stanford Univ. Hospital at age 88)",a source note of the record
+gnd_solow,美国,,,,,,gnd_solow40,"authority record, preferredName","Solow, Robert M.",
+gnd_solow_born,美国,,,1924;8;23,,,gnd_solow40,"authority record, dateOfBirth",1924-08-23,
+gnd_solow_died,美国,,,2023;12;21,,,gnd_solow40,"authority record, dateOfDeath",2023-12-21,
+gnd_swan,澳大利亚,,,,,,gnd_swan40,"authority record, preferredName","Swan, Trevor Winchester",
+gnd_swan_born,澳大利亚,,,1918,,,gnd_swan40,"authority record, dateOfBirth",1918,
+gnd_swan_died,澳大利亚,,,1989,,,gnd_swan40,"authority record, dateOfDeath",1989,
+gnd_phelps,美国,,,,,,gnd_phelps40,"authority record, preferredName","Phelps, Edmund S.",
+gnd_phelps_born,美国,,,1933;7;26,,,gnd_phelps40,"authority record, dateOfBirth",1933-07-26,
+gnd_phelps_died,美国,,,2026;5;15,,,gnd_phelps40,"authority record, dateOfDeath",2026-05-15,
+gnd_abramovitz,美国,,,,,,gnd_abramovitz40,"authority record, preferredName","Abramovitz, Moses",
+gnd_abramovitz_born,美国,,,1912,,,gnd_abramovitz40,"authority record, dateOfBirth",1912,
+gnd_abramovitz_died,美国,,,2000;12;1,,,gnd_abramovitz40,"authority record, dateOfDeath",2000-12-01,
+gnd_denison,美国,,,,,,gnd_denison40,"authority record, preferredName","Denison, Edward Fulton",
+gnd_denison_born,美国,,,1915,,,gnd_denison40,"authority record, dateOfBirth",1915,
+gnd_griliches,美国,,,,,,gnd_griliches40,"authority record, preferredName","Griliches, Zvi",
+gnd_griliches_born,美国,,,1930,,,gnd_griliches40,"authority record, dateOfBirth",1930,
+gnd_griliches_died,美国,,,1999;11;4,,,gnd_griliches40,"authority record, dateOfDeath",1999-11-04,
+gnd_lewis,英国,,,,,,gnd_lewis40,"authority record, preferredName","Lewis, William Arthur",
+gnd_lewis_born,英国,,,1915;1;23,,,gnd_lewis40,"authority record, dateOfBirth",1915-01-23,
+gnd_lewis_died,英国,,,1991;6;15,,,gnd_lewis40,"authority record, dateOfDeath",1991-06-15,
+gnd_robinson,英国,,,,,,gnd_robinson40,"authority record, preferredName","Robinson, Joan",
+gnd_robinson_born,英国,,,1903;10;31,,,gnd_robinson40,"authority record, dateOfBirth",1903-10-31,
+gnd_robinson_died,英国,,,1983;8;5,,,gnd_robinson40,"authority record, dateOfDeath",1983-08-05,
+gnd_licence,美国,,,,,,gnd_solow40,authority record,http://creativecommons.org/publicdomain/zero/1.0/,the licence of the GND data as lobid.org gives it

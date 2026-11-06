@@ -1,0 +1,14 @@
+{
+  "title": "Penn World Table 10.01: the United States, 1950-2019",
+  "series": "year; in the words of the sheet Legend: rgdpna ('Real GDP at constant 2017 national prices (in mil. 2017US$)'), emp ('Number of persons engaged (in millions)'), rnna ('Capital stock at constant 2017 national prices (in mil. 2017US$)'), labsh ('Share of labour compensation in GDP at current national prices'), pop ('Population (in millions)')",
+  "notes": "Read from the workbook pwt1001.xlsx, sheet Data, downloaded from https://dataverse.nl/api/access/datafile/354095 (SHA-256 bf2b66c5fd8b465870eeab8bbfa3a57e73253a3236a933286259efbbb5fb67a2), whose SHA-1, 7461933f7561767ffbd77db3ab984d60cb21e9ef, is the one the dataset record gives. The figures are written as the workbook stores them (Python's repr of the float). The workbook's sheet Info says: 'When using these data, please refer to the following paper:' and gives the same reference. checks/check_ch40.py computes the growth of rgdpna/emp 1950-2019, the labour share of 1950 and 2019 and rnna/rgdpna in both years.",
+  "source": "Penn World Table version 10.01, Groningen Growth and Development Centre, University of Groningen (DataverseNL, doi:10.34894/QT5BCC, released 2023-01-26)",
+  "url": "https://doi.org/10.34894/QT5BCC",
+  "retrieved": "2026-11-06",
+  "license": "CC BY 4.0: the record of the dataset on DataverseNL (doi:10.34894/QT5BCC, the JSON of https://dataverse.nl/api/datasets/:persistentId/?persistentId=doi:10.34894/QT5BCC, read on 2026-11-06) gives the licence as 'CC-BY-4.0' (http://creativecommons.org/licenses/by/4.0). Its description asks: 'When using these data (for whatever purpose), please make the following reference: Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), \"The Next Generation of the Penn World Table\" American Economic Review, 105(10), 3150-3182, DOI: 10.1257/aer.20130954, available for download at www.ggdc.net/pwt'. The book cites Feenstra, Inklaar and Timmer (2015) with the database in the bibliography, the table and the figure, and says there that the regressions are its own calculation.",
+  "used_in": [
+    40
+  ],
+  "fetch": "data/fetch/solow40.py",
+  "citation": "Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), \"The Next Generation of the Penn World Table\", American Economic Review 105(10): 3150-3182 (bibitem pwt1001 of Chapter 40)"
+}
