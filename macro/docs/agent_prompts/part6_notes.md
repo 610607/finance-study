@@ -1185,3 +1185,8 @@ Japanese case box and the ESRI series).
   stub's guide box and copy the question exactly).
 - Labels: `sec:eastasia-…`, `eq:eastasia-…`, `fig:eastasia_…`, `tab:eastasia-…`, `ex:eastasia-…`.
 - Length: 8,000–9,000 characters of main text.
+- Paused 2026-11-06 at the author's request (“先保存已有工作并暂停”) before any chapter file was written. Start
+  from `docs/agent_prompts/ch42_handoff.md` (the first writer's sources with URLs and SHA-256, the terms read,
+  the facts already checked with page numbers, the plan: opening on the World Bank's release of 26 September
+  1993 and Preston's foreword) and `docs/agent_prompts/ch42_writer_brief.txt` (the brief; replace its scratchpad
+  paths with the new session's).

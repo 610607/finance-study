@@ -761,6 +761,7 @@
 - **案例**：日本、韩国、台湾、香港、新加坡
 - **对照框候选**：要素积累 vs 生产率增长；产业政策 vs 市场
 - **前置**：第 40 章（索洛增长模型），第 41 章（发展经济学：二元经济、进口替代与大推进）
+- **进行中（2026-11-06 暂停）**：作者要求先保存已有工作并暂停时，正文、快照、检查脚本与图都还没有写；第一位作者读到的来源（网址与 SHA-256）、使用条件、已核对的事实与写作计划（以世界银行 1993 年 9 月 26 日发布《东亚奇迹》与普雷斯顿的前言开场，以报告把中国排除在外的脚注引出第 43 章的问题）存在 `docs/agent_prompts/ch42_handoff.md`，写作简报存在 `docs/agent_prompts/ch42_writer_brief.txt`。
 
 #### 第 43 章 `ch:planned` 成熟的计划经济：苏联、东欧、毛泽东时期的中国与南斯拉夫 — `zh/ch43_planned.tex`
 *Mature planned economies: the USSR, Eastern Europe, Mao's China and Yugoslavia*
