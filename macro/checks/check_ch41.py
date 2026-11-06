@@ -11,8 +11,9 @@ Inputs:
                                 5.1 read on the page image); Easterly (1997), World Bank Policy Research Working Paper
                                 1807 (three passages read on the page images); Murphy, Shleifer and Vishny (1988), NBER
                                 Working Paper 2708 (the equations read on the page images); the Indian Planning
-                                Commission's draft outline of the Second Plan (1956), its reappraisal (1958) and the
-                                Third Plan (1961, page 51 read on the page image), the Ghanaian outline of the Seven-Year
+                                Commission's draft outline of the Second Plan (1956), its reappraisal (1958, paragraph
+                                2 read on the page image) and the Third Plan (1961, page 51 read on the page image), the
+                                Ghanaian outline of the Seven-Year
                                 Plan (1963), all microfilm scans on archive.org; two World Bank reports on Ghana (1967,
                                 1970); the terms of use of the United Nations, the Indian and Ghanaian copyright acts; the
                                 authority records of the Library of Congress and the GND. data/fetch/verify_web_quotes.py
@@ -46,6 +47,7 @@ from __future__ import annotations
 import math
 import os
 import re
+import unicodedata
 from functools import lru_cache
 from pathlib import Path
 
@@ -61,7 +63,8 @@ MONTHS = {m: i for i, m in enumerate(["january", "february", "march", "april", "
                                       "september", "october", "november", "december"], 1)}
 FETCH = "data/fetch/development41.py"
 # works of the bibliography that other chapters' blocks hold and this chapter cites unchanged
-REUSED_KEYS = {"loc40", "gnd40", "bnf29", "maddison1971", "dell2010", "cggt2013", "pwt1001", "mpd2023"}
+REUSED_KEYS = {"loc40", "gnd40", "bnf29", "maddison1971", "dell2010", "cggt2013", "pwt1001", "mpd2023",
+               "boltvanzanden2024"}
 # rows of other chapters' snapshots the anchors of this chapter name
 OTHER_ROWS = {"periphery_facts": ("md_quarter",), "depressionworld_facts": ("bnf_prebisch",),
               "africa_money_facts": ("dell_25", "dell_6", "dell_channels")}
@@ -246,6 +249,7 @@ READINGS: dict[str, list[tuple[str, str]]] = {
     "i3_growth": [("over |5", "num"), ("than |14", "num"), ("about |11·5", "mdot")],
     "i3_savings": [("about |8·5", "mdot"), ("about |11·5", "mdot")],
     "i3_ocr": [],
+    "i8_ocr": [],
     # Ghana
     "gh_six": [("|Six", "en"), ("every |ten", "en")],
     "gh_split": [("£6|476", "num"), ("£G|540", "num")],
@@ -307,6 +311,7 @@ MISPRINTS = [("lw_central", "converts itseli", "'itseli' for 'itself'"),
              ("i8_areas", "tke", "'tke' for 'the'"),
              ("i3_ocr", "11:5", "'11:5' for '11·5'"),
              ("i3_ocr", "8°5", "'8°5' for '8·5'"),
+             ("i8_ocr", "4600", "'4600' for '4500'"),
              ("gh_savings", "@conomy", "'@conomy' for 'economy'"),
              ("gh_split", "£6476", "'£6476' for '£G476'"),
              ("gh_deficit", "es es", "'.. es es' for the leaders of the table"),
@@ -341,7 +346,7 @@ def check_readings(df: pd.DataFrame) -> None:
     assert set(src) == set(df["file"]), sorted(set(src) ^ set(df["file"]))
     # the page images belong to the documents of the snapshot: the same address and file
     for key, s in src.items():
-        if s["format"] == "image" and key != "india1961img41":
+        if s["format"] == "image" and key not in ("india1961img41", "india1958img41"):    # the PDF of a scan
             base = key.replace("img", "")
             assert src[base]["url"] == s["url"] and src[base]["sha256"] == s["sha256"], key
     # a key another snapshot holds names the same document
@@ -352,7 +357,7 @@ def check_readings(df: pd.DataFrame) -> None:
                 assert other[key]["url"] == s["url"] and other[key]["sha256"] == s["sha256"], (name, key)
 
 
-N_QUOTED, N_IMAGE = 134, 23
+N_QUOTED, N_IMAGE = 136, 24
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -372,6 +377,7 @@ TRANSLATIONS = {
     "I860's": "pb_63",
     "11:5": "i3_ocr",
     "8°5": "i3_ocr",
+    "4600": "i8_ocr",
 }
 # the words of the source each rendering renders, in the quotation (or the transcription of the page image)
 KEYWORDS = {
@@ -385,6 +391,7 @@ KEYWORDS = {
     "ll_virtues": ["the virtues of exporting"],
     "pb_63": ["I860's"],
     "i3_ocr": ["11:5", "8°5"],
+    "i8_ocr": ["4600"],
 }
 
 
@@ -421,7 +428,7 @@ def check_text(df: pd.DataFrame) -> None:
     assert set(KEYWORDS) == {r for t in TRANSLATIONS.values() for r in ((t,) if isinstance(t, str) else t)}
     # the misreadings quoted in the 史料说明 are those of MISPRINTS
     deeper = re.search(r"\\begin\{deeper\}\[史料说明\].*?\\end\{deeper\}", tex_text(), re.DOTALL).group(0)
-    for q in ("I860's", "11:5", "8°5"):
+    for q in ("I860's", "11:5", "8°5", "4600"):
         assert f"“{q}”" in deeper, q
         rid = TRANSLATIONS[q]
         assert any(m[0] == rid and q in m[1] for m in MISPRINTS), q
@@ -708,9 +715,12 @@ def opening(F, Y, Q):
     say("走在曼谷的路上", "那天他忽然想到，两个问题有同一个答案")
     has("lb_steel", "what determines the relative prices of steel and coffee")
     say("一个是钢与咖啡的相对价格由什么决定")
-    has("lb_britain", "real wages in Britain remained more or less constant while profits and savings soared")
+    has("lb_britain", "Apparently, during", "real wages in Britain remained more or less constant while profits and savings soared")
     assert told("另一个是英国工业革命的头五十年里", "头", "年") == F["lb_britain"][0]
-    say("实际工资大致不变，利润与储蓄却猛增")
+    say("实际工资看来大致不变，利润与储蓄却猛增")                                # 'Apparently'
+    has("lb_neoclassical", "could not be squared with the neoclassical framework",
+        "a rise in investment should raise wages and depress the rate of return on capital")
+    say("按新古典的框架，投资增加应当抬高工资、压低资本的收益率，英国的经验与此对不上")
     has("lb_unlimited", "Throw away the neoclassical assumption that the quantity of labour is fixed",
         "will keep wages down, producing cheap coffee in the first case and high profits in the second case")
     say("扔掉劳动数量固定的新古典假定，“无限的劳动供给”会压住工资，在前一个问题里带来便宜的咖啡，在后一个问题里带来高额的利润")
@@ -724,8 +734,10 @@ def opening(F, Y, Q):
     has("lw_why", "why saving increased relatively to national income")
     say("经济发展理论的中心问题，是理解储蓄怎样相对于国民收入提高起来")
     a, b, c, d = F["lw_central"]
-    said("一个社会过去只把国民收入的 4\\% 或 5\\% 甚至更少用于储蓄和投资", a, b)
-    said("后来，它的自愿储蓄达到国民收入的 12\\% 到 15\\% 甚至更多", c, d)
+    has("lw_central", "to understand the process by which a community which was previously saving",
+        "converts itseli into an economy where voluntary saving is running at about 12 to 15 per cent")
+    said("一个社会原先只把国民收入的 4\\% 或 5\\% 甚至更少用于储蓄和投资", a, b)
+    said("要理解的是，它怎样变成自愿储蓄约占国民收入 12\\% 到 15\\% 甚至更多的经济", c, d)    # a process, not events
     has("lb_applause", "greeted equally with applause and with cries of outrage")
     assert F["lb_applause"] == [F["lw_issue"][0]]
     say("他说，文章发表以后，掌声与愤怒的叫声一样多")
@@ -749,15 +761,19 @@ def world(F, Y, Q):
     has("lb_students", "the throng of Asian and African students at Manchester",
         "lecturing systematically on development economics from about 1950")
     said("使他约从 1950 年起系统地讲授发展经济学", F["lb_students"][0])
+    say("那几年，亚洲与非洲的许多国家刚刚独立或正在走向独立（本书的概括）")
     has("wd_copyright", "1987")
-    has("wd_wars", "access to export markets and to manufactured imports reduced", "Their terms of trade fell drastically.")
+    has("wd_wars", "during the turbulent years spanning the world wars",
+        "access to export markets and to manufactured imports reduced", "Their terms of trade fell drastically.")
+    say("两次世界大战前后的动荡年代里，出口初级产品的国家先吃了苦头",
+        "贸易条件，即出口品与进口品的价格之比，急剧恶化")
     said("按世界银行《1987 年世界发展报告》的回顾", F["wd_copyright"][0])
     has("wd_argentina", "Argentina and others", "the protective import substitution course in the 1930s")
     said("阿根廷等国因此在 1930 年代走上保护性的进口替代", F["wd_argentina"][0])
     has("wd_secular", "predictions of a secular decline in the")
     has("wd_secular2", "terms of trade against primary products were com-")
     has("wd_newly", "many of the newly independent countries thought it sensible to shift quickly to industries")
-    assert told("报告说，战后头二十年", "头", "年") == 20
+    assert told("世界银行说，战后头二十年", "头", "年") == 20
     has("wd_colonial", "previous colonial status", "breaking away from the colonial economic system")
     has("wd_protection", "the early industrialization of Europe, North America, and Japan")
     has("wd_soviet", "the Soviet Union's rapid industrialization", "government ownership, planning, and production")
@@ -775,7 +791,9 @@ def world(F, Y, Q):
     y40, y50, eight = F["ll_theories"]
     has("ll_theories", "balanced growth, regional integration, the two-gap model, structural inflation",
         "make sense if world trade is stagnant")
-    said("刘易斯 1979 年回顾，1940 与 1950 年代的经济学家造了一整套理论", F["ll_title"][1], 1900 + y40, 1900 + y50)
+    has("ll_theories", "in the 40s and 50s we created a whole set of theories")
+    said("刘易斯 1979 年回顾，1940 与 1950 年代，包括他在内的经济学家造了一整套理论", F["ll_title"][1], 1900 + y40,
+         1900 + y50)
     has("ll_inwards", "oriented inwards mainly towards import substitution")
     rate, a, b = F["ll_trade"]
     said("他说，1913—1939 年世界贸易每年只增长 0.9\\%", a, b, rate)
@@ -803,12 +821,14 @@ def world(F, Y, Q):
     has("ea_stages", "W.W. Rostow published his best-selling The Stages of Economic Growth")
     (y60r,) = F["ea_stages"]
     lo, hi, six_years = F["ea_takeoff"]
-    has("ea_takeoff", "investment increasing from 5 to 10 percent of income", "Sir Arthur Lewis had said six years earlier")
+    has("ea_takeoff", "The only determinant of output takeoff that Rostow cited",
+        "investment increasing from 5 to 10 percent of income", "Sir Arthur Lewis had said six years earlier")
     assert y60r - six_years == F["lw_issue"][0]
-    said("罗斯托 1960 年的《经济增长的阶段》把起飞的标志定为投资从收入的 5\\% 提到 10\\%", y60r, lo, hi)
+    said("按 Easterly 的转述，罗斯托 1960 年的《经济增长的阶段》为起飞只举出一个决定因素，即投资从收入的 5\\% 提到 10\\%",
+         y60r, lo, hi)
     assert told("几乎就是刘易斯六年前的说法", "刘易斯", "年前") == six_years
     has("ea_rostow_gap", "Rostow used the Harrod Domar growth model", "aid to fill the “financing gap”")
-    say("罗斯托用哈罗德—多马模型算起飞需要的投资，再让西方的援助填上它与国民储蓄之间的“资金缺口”")
+    say("在他的转述里，罗斯托用哈罗德—多马模型算起飞需要的投资，再让西方的援助填上它与国民储蓄之间的“资金缺口”")
 
 
 def lewis_model(F, Y, Q):
@@ -820,6 +840,9 @@ def lewis_model(F, Y, Q):
     has("lw_floor", "set a floor to wages in the capitalist sector")
     (gap,) = F["lw_gap"]
     said("他说，实际上两者之间通常差 30\\% 或更多", gap)
+    has("lw_several", "This gap may be explained in several ways.")
+    assert "higher cost of living" in column("note")["lw_explain"]
+    say("这可以有几种解释，其中有城里的生活更贵，也有离开轻松的生活方式、进入更有纪律的城市环境的心理代价")
     assert np.isclose(WBAR - SUBS, gap / 100)                                     # the teaching wage: the gap of 30%
     has("lw_explain", "the psychological cost of transferring from the easy going way of life")
     has("lw_margin", "up to the point where the marginal productivity of labour equals the current wage")
@@ -871,7 +894,9 @@ def lewis_model(F, Y, Q):
     assert np.isclose(dp + (LCMAX - LC0) * (WBAR - SUBS), d)                     # the rest of the rise is the wages
     has("sc_title", "December 8, 1979")
     has("sc_finetuning", "fine-tuning entrepreneurs", "many experts fail to recognize how efficient they are")
-    said("舒尔茨 1979 年的演讲说，农民在自己小小的配置范围里是精于微调的企业家", F["sc_title"][1])
+    said("舒尔茨在 1979 年的演讲里说，农民在自己小小的配置范围里是精于微调的企业家", F["sc_title"][1])
+    has("sc_1964", "I first presented an analysis of this entrepreneurial behaviour in Transforming Traditional Agriculture")
+    said("他说，这种企业家行为他最早是在 1964 年的《改造传统农业》里分析的", F["sc_1964"][0])
     has("lw_petty", "Petty retail trading")
     has("lw_domestic", "domestic service")
 
@@ -882,14 +907,23 @@ def isi(F, Y, Q):
     has("pb_essay", "I have the honour to transmit to you herewith an essay entitled")
     has("pb_secretary", "Secretary-General of the United Nations")
     has("pb_author", "Professor Raul Prebisch")
-    said("1949 年 10 月 9 日，联合国拉丁美洲经济委员会的执行秘书在智利圣地亚哥写信给联合国秘书长", y49,
-         mon("pb_letter", "October"), day)
+    for rid in ("pb_letter", "pb_essay", "pb_author", "pb_secretary", "pb_signer", "pb_purpose"):
+        assert column("juan")[rid] == "p. v (PDF p. 4)", rid                     # the letter is on p. v
+    has("pb_signer", "GUSTAVO MARTINEZ CABANAS Executive Secretary")
+    name = "Gustavo Martínez Cabañas"
+    plain = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
+    assert plain.upper() == "GUSTAVO MARTINEZ CABANAS"                           # the signature, printed without accents
+    said("1949 年 10 月 9 日，马丁内斯·卡瓦尼亚斯", y49, mon("pb_letter", "October"), day)
+    say("他是联合国拉丁美洲经济委员会的执行秘书，随信转交一篇论文")
+    say(f"马丁内斯·卡瓦尼亚斯（{name}，生卒年未详）在智利圣地亚哥写信给联合国秘书长")   # no dates found (STYLE §3)
     their("depressionworld_facts", "bnf_prebisch", "Raúl Prebisch (1901-1986)")
     day50, y50 = F["pb_date"]
-    has("pb_lake", "Lake Success, New York")
+    has("pb_lake", "DEPARTMENT OF ECONOMIC AFFAIRS Lake Success")
+    assert column("juan")["pb_lake"] == "title page (PDF p. 1)"
     has("pb_spanish", "Original text: Spani1h")
     has("pb_symbol", "E/CN.12/89/Rev.1* 27 April 1950", "Original text: Spanish")
-    said("1950 年 4 月 27 日，联合国在纽约成功湖印出它的英文本，原文是西班牙文", y50, mon("pb_date", "April"), day50)
+    said("英文本的文件日期是 1950 年 4 月 27 日", y50, mon("pb_date", "April"), day50)
+    say("书名页署的是联合国经济事务部与纽约成功湖，原文是西班牙文")
     has("pb_purpose", "one of its main purposes")
     has("pb_schema", "the out-dated schema of the international division of labour")
     has("pb_periphery", "as part of the periphery of the world economic system",
@@ -898,14 +932,15 @@ def isi(F, Y, Q):
     has("pb_false", "conclusively proved false by facts")
     has("pb_benefits", "have not reached the periphery in a measure comparable")
     has("pb_means", "Industrialization is not an end in itself, but the principal means")
-    say("报告说，工业化本身“不是目的”，是这些国家分享技术进步的好处、逐步提高大众生活水平的主要手段")
+    say("普雷维什开头就说，拉丁美洲的现实正在瓦解过时的国际分工图式")
+    say("在他看来，工业化本身“不是目的”，是这些国家分享技术进步的好处、逐步提高大众生活水平的主要手段")
     # Table 1
     D = terms()
     t1, base_a, base_b, hundred = F["pb_t1_title"]
     has("pb_t1_title", "Ratio of prices of primary commodities to those of manufactured goods",
         "according to data of the Board of trade")
     assert D.iloc[0]["ratio"] == hundred and D.iloc[0]["first"] == base_a and D.iloc[0]["last"] == 1800 + base_b
-    said("报告的表 1 用英国贸易部的进出口平均价格指数，以 1876—1880 年为 100", t1, base_a, 1800 + base_b, hundred)
+    said("普雷维什的表 1 用英国贸易部的进出口平均价格指数，以 1876—1880 年为 100", t1, base_a, 1800 + base_b, hundred)
     r = D.set_index("period")["ratio"]
     said("这个比到 1936—1938 年降到 64.1，1946—1947 年回到 68.7", 1936, 1938, r["1936-1938"], 1946, 1947, r["1946-1947"])
     s63, y1860, y1930, more = F["pb_63"]
@@ -914,14 +949,16 @@ def isi(F, Y, Q):
          y1930, y1860, s63, more)
     has("pb_quality", "do not reflect the differences in quality of finished products")
     pct, y1870, y1930b = F["pb_365"]
-    said("报告第 12 页又说，从 1870 年代到 1930 年代，价格之比恶化了 36.5\\%", page("pb_365"), y1870, y1930b, pct)
+    said("他在第 12 页又说，从 1870 年代到 1930 年代，价格之比恶化了 36.5\\%", page("pb_365"), y1870, y1930b, pct)
     top = D.loc[D["ratio"].idxmax()]
     low = D.loc[D["ratio"].idxmin()]
     assert top["period"] == "1881-1885" and low["period"] == "1931-1935"
     said("表里的比值在 1880 年代前半期最高，为 102.4", 1880, top["ratio"])
+    say("为 102.4，此后再没有回到这个高度")
     said("1921—1925 年是 67.3", 1921, 1925, r["1921-1925"])
     said("1931—1935 年最低，为 62.0", low["first"], low["last"], low["ratio"])
-    assert (D["ratio"].iloc[1:] <= D["ratio"].iloc[1]).all()                       # 此后一路走低: never above again
+    assert (D["ratio"].iloc[2:] < D["ratio"].iloc[1]).all()                        # 此后再没有回到这个高度
+    assert (D["ratio"].diff().iloc[2:] > 0).any()                                  # though not falling all the way
     has("pb_upswing", "competition between entrepreneurs and by the pressure of trade unions")
     has("pb_rigid", "well-known resiotance to a lowering of wages", "The pressure then moves toward the periphery")
     has("pb_organization", "lack of organization among the workers employed in primary production")
@@ -930,14 +967,20 @@ def isi(F, Y, Q):
     has("pb_t1_1938", "The figures for the thirties go only as far as 1938 inclusive.")
     said("数据是英国贸易部的进出口平均价格指数，1930 年代只到 1938 年", 1930, F["pb_t1_1938"][0])
     # the tools and the effective rate of protection
-    said("世界银行 1987 年的报告说，进口替代的国家通常先生产最终工业品来替代进口", F["wd_copyright"][0])
+    say("进口许可是进口要先得到政府逐笔批准，高估的汇率是把本币的官价定得比市场愿意出的更高，进口因此变便宜，"
+        "出口挣到的本币却变少（本书的概括）")
+    said("世界银行在 1987 年的报告里说，进口替代的国家通常先生产最终工业品来替代进口", F["wd_copyright"][0])
     has("wd_final", "typically started by producing final manufactures", "initial bursts in the growth of manufacturing")
     has("wd_foreign", "sustained industrial growth depended on the expansion of exports")
     has("wd_tools", "import licensing and quantitative restrictions, to tariffs")
     has("wd_hidden", "stamp taxes, port duties, and advance deposit requirements")
     has("wd_public", "Publicly owned firms or industries have expanded rapidly")
     has("wd_multinationals", "trade policies that restricted imports of final manufactures")
-    has("wd_erp_def", "expressed as a percentage of the latter")
+    has("wd_erp_def", "the difference between value added (per unit of output) in domestic prices and value added in world "
+        "prices", "expressed as a percentage of the latter")
+    say("要看增加值，即产品的价值减去所用投入品的价值（本书的概括）",
+        "世界银行把有效保护率定义为按国内价格算的单位增加值与按世界价格算的单位增加值之差，以后者的百分比表示",
+        "投入品的关税越低，有效保护越高。最终产品的关税高于投入品的关税时，增加值所占的比例越小，同样的名义关税给的有效保护也越高")
     price, inputs, va = F["wd_sweater60"][0] + F["wd_sweater60"][1], F["wd_sweater60"][0], F["wd_sweater60"][1]
     assert F["wd_sweater"] == [ERP_PRICE] and inputs == ERP_INPUT and price == ERP_PRICE
     tf, p120 = F["wd_sweater20"]
@@ -957,7 +1000,8 @@ def isi(F, Y, Q):
     said("$(0.2-0.6\\times0.4)/0.4=-10\\%$，保护变成了负的（本书的计算）", ERP_TF, a, ERP_TM[1], 1 - a,
          -100 * erp(ERP_TF, a, ERP_TM[1]))
     assert erp(ERP_TF, a, ERP_TM[1]) < 0
-    said("毛衣的买主每件多付 20 美元，毛衣厂的增加值却多出一半", p120 - ERP_PRICE)
+    said("在第（1）问里，毛衣的买主每件多付 20 美元，毛衣厂的增加值多出一半", p120 - ERP_PRICE)
+    assert (dom - va) / va == told("毛衣厂的增加值多出一半", "多出", "")
     # the bias
     has("wd_bias", "bias against exports in all countries for which")
     has("wd_singapore", "Singapore and the Republic of Korea")
@@ -970,7 +1014,7 @@ def isi(F, Y, Q):
     said("最大的是智利，1967 年达 229 个百分点", y67, p229)
     has("sc_priority", "top priority to industry, which includes keeping food grains cheap")
     has("sc_politics", "favor the urban population at the expense of rural people")
-    said("舒尔茨 1979 年的演讲说，政策把最高的优先给了工业", F["sc_title"][1])
+    said("舒尔茨在 1979 年的演讲里说，政策把最高的优先给了工业", F["sc_title"][1])
     say("关税向买进口品与国产品的消费者征税，高估的汇率向出口者征税，这里的出口者多是农民与矿业（本书的概括）")
     # the compare box
     has("ll_virtues", "Then nearly every country discovered the virtues of exporting.")
@@ -1003,9 +1047,10 @@ def push(F, Y, Q):
     has("ms_rr2", "they could each create income that becomes a source of demand for goods in other sectors")
     has("ms_simultaneous", "even when no sector can break even industrializing alone")
     has("ms_doctrine", "into a doctrine of balanced growth or the big push")
-    said("1943 年提出过这个想法", F["ms_rr"][0])
     has("ms_date", "September 1988")
-    said("按 Murphy、Shleifer 与 Vishny 1988 年的工作论文的转述", F["ms_date"][0])
+    said("按 Murphy、Shleifer 与 Vishny 的说法，这是罗森斯坦—罗丹（Paul N. Rosenstein-Rodan，1902—1985）1943 年的想法",
+         F["gnd_rr_born"][0], F["gnd_rr"][0], F["ms_rr"][0])                    # their attribution
+    said("在他们 1988 年工作论文的转述里，各部门同时采用规模报酬递增的技术", F["ms_date"][0])
     has("ms_cottage", "the cottage technology for each good yields 1 unit of output for each unit of labor input")
     has("ms_irs", "a fixed cost of F units of labor to set up a factory", "α > 1 units of output for 1 unit of labor input")
     say("每种商品可以用手工生产，一单位劳动出一单位产品")
@@ -1017,12 +1062,15 @@ def push(F, Y, Q):
     said("模型要有意思，生产率的提高必须超过补偿，即$a-1>v$", 1)
     has("ms_premium", "pays a wage premium", "even if its investment loses money")
     has("ms_pareto", "the Pareto superiority of the equilibrium with industrialization")
-    has("ms_coordination", "which the government can promote")
+    has("ms_coordination", "Such spillovers give rise to the possibility that coordination of investments across sectors",
+        "which the government can promote", "is essential for industrialization")
+    say("他们说，这样的外溢使协调各部门的投资有可能成为工业化必不可少的条件，而这种协调是政府可以推动的")
     has("ms_dynamic", "A two-period model suffices to illustrate the big push in a dynamic context.")
     has("ms_railroad", "a railroad or other shared infrastructure", "defray the fixed cost of building the railroad")
     has("ms_relevance", "of some relevance for less developed countries")
-    has("i8_areas", "the less developed areas", "high priority was given to social services")
-    said("1958 年的摘要说，国家发展委员会要求在分配项目时照顾欠发达地区的需要", F["i8_date"][0])
+    has("i8_areas", "The National Development Council also expressed the view", "the less developed areas",
+        "high priority was given to social services")
+    said("按它 1958 年的摘要，国家发展委员会认为，分配项目时要照顾欠发达地区的需要", F["i8_date"][0])
     # ex:development-push
     lo, hi = f_range(PUSH_L, PUSH_A, PUSH_V)
     said("教学输入：$L=100$，$a=1.5$，$v=0.2$", PUSH_L, PUSH_A, PUSH_V)
@@ -1036,6 +1084,7 @@ def push(F, Y, Q):
     assert lo < PUSH_F < hi and PUSH_A - 1 > PUSH_V
     assert profit_alone(PUSH_L, PUSH_A, PUSH_V, PUSH_F) < 0 < profit_all(PUSH_L, PUSH_A, PUSH_V, PUSH_F)
     # the financing gap
+    say("增量资本产出比（ICOR）是投资与由它带来的产出增量之比，即每多产出一单位要投入几单位资本（本书的概括）")
     i2, i5 = F["ea_icor"]
     has("ea_icor", "somewhere between 2 and 5")
     said("当时的经济学家认为 ICOR 在 2 到 5 之间", i2, i5)
@@ -1067,17 +1116,27 @@ def push(F, Y, Q):
          icors[3], i14)
     said("（1）$14/5=2.8$。（2）$14-11.5=2.5$个百分点，约为国民收入的 2.5\\%。（3）$14/8.7\\approx1.6\\%$", i14, g5, i14 / g5,
          i14, s115, i14 - s115, i14 - s115, i14, icors[3], i14 / icors[3])
+    # the World Bank's ICOR is of gross investment, the plan's 14 per cent net investment: the growth is understated
+    has("wd_icor_def", "the ratio of gross investment")
+    has("wd_icor_def2", "to the increase in GDP.")
+    assert "net investment to the extent of more than 14 per cent" in transcription("i3_growth")
+    said("世界银行的 ICOR 按总投资算，计划的 14\\% 是净投资，用前者去除后者，增长会算低，这里只看量级（本书的解读）", i14)
+    say("ICOR 并不是常数，每个工人的资本越多，同样的投资带来的增长越少")
     # Easterly's tests
     n88, y65, y95 = F["ea_88"]
     (p60,) = F["ea_60"]
-    has("ea_60", "a negative relationship between foreign aid and investment")
-    said("88 个国家 1965—1995 年的数据里，援助与投资的关系 60\\% 是负的", n88, y65, 1900 + y95, p60)
+    has("ea_60", "60 percent of the countries show a negative relationship between foreign aid and investment")
+    said("Easterly 的检验用了 88 个国家 1965—1995 年的数据，其中 60\\% 的国家，援助与投资呈负相关", n88, y65, 1900 + y95,
+         p60)
     n6, n88b, one = F["ea_six"]
     assert n88b == n88 and one == 1
-    said("只有 6 个国家通过检验，即援助增加投资至少同样多，而且显著", n6)
+    has("ea_six", "a positive and significant coefficient greater than or equal to one")
+    said("只有 6 个国家通过检验，即援助至少一对一地变成投资，而且统计上显著", n6)
     has("ea_tunisia", "fits one country: Tunisia", "is likely to have occurred by chance")
     s1, n138 = F["ea_tunisia"]
-    said("138 国里成功 1 个，很可能只是偶然", n138, s1)
+    has("ea_tunisia", "1 success out of 138 countries is likely to have occurred by chance",
+        "even if the model made no empirical sense")
+    said("在他看来，资金缺口模型只适合突尼斯一国，而即使模型毫无经验依据，138 国里也很可能偶然出现 1 个成功", n138, s1)
     has("ea_zambia", "Zambia would today be an industrialized country")
     has("ea_mineral", "mineral resources gave them a pool of savings")
     y67, seven = F["ea_kamarck"]
@@ -1085,19 +1144,19 @@ def push(F, Y, Q):
     said("Kamarck 1967 年预测，加纳、尼日利亚与赞比亚等矿产给了它们储蓄的国家，增长率很可能达到或超过 7\\%", y67, seven)
     a, b, med = F["ea_median"]
     said("这些国家 1967—1992 年增长率的中位数只有 2.8\\%", a, 1900 + b, med)
-    t4, _, _, g7, i35 = F["ea_table4"]
-    has("ea_table4", "nine-tenths or more of the sample violate the “necessary” condition")
-    said("按他的表 4，把增长 7\\% 以上的年份挑出来，ICOR 取通常的 3.5 时", t4, g7, i35)
+    t4, y50t, y92t, g7, i35 = F["ea_table4"]
+    has("ea_table4", "nine-tenths or more of the sample violate the “necessary” condition", "over 1950-92")
+    said("在他的表 4 里，1950—1992 年增长达到 7\\% 以上的年份，按通常的 3.5 的 ICOR 算", t4, y50t, 1900 + y92t, g7, i35)
     assert told("九成以上没有达到所谓必要的投资率", "", "以上") == 0.9
 
 
 def cases(F, Y, Q):
     (y55,) = F["in_planframe"]
     has("in_planframe2", "Professor P. C. Mahalanobis's Draft Recommendations for the Formulation of the Second Five Year Plan")
-    said("1955 年 3 月，统计学家马哈拉诺比斯", y55, mon("in_planframe", "March"))
+    said("1955 年 3 月，马哈拉诺比斯教授", y55, mon("in_planframe", "March"))              # 'Professor', as the outline
     has("in_date", "February 1956")
-    said("按计划委员会 1956 年 2 月的草案大纲，国家发展委员会 5 月初大体同意它的思路", F["in_date"][0],
-         mon("in_date", "February"), mon("in_ndc", "May"))
+    said("按计划委员会 1956 年 2 月的草案大纲，国家发展委员会 1955 年 5 月初大体同意它的思路", F["in_date"][0],
+         mon("in_date", "February"), F["in_ndc"][0], mon("in_ndc", "May"))
     has("in_agreed", "generally agreed with the basic approach of the 'plan-frame'")
     p25, five, m10, m12 = F["in_targets"]
     said("委员会要求计划能在五年里让国民收入增加约 25\\%，给 1,000 万到 1,200 万人提供就业", p25, m10 * 1e6, m12 * 1e6)
@@ -1111,9 +1170,16 @@ def cases(F, Y, Q):
     has("in_capital", "requires a great deal of capital but it absorbs comparatively little manpower")
     has("in_demand", "does not enlarge the supply of consumer goods in the short run")
     has("in_sacrifice", "a measure of sacrifice in the matter of consumption")
+    say("它说，印度在钢这样的部门可能有比较成本优势", "它的结论是，在从基础加强经济的时候，消费上作出一定的牺牲不可避免")
+    has("in_diminishes", "The sacrifice diminishes as more power, more transport")
+    has("in_returns", "increasingly large returns")
+    has("in_balanced", "a well-organised effort to utilise labour for increasing the supplies of much-needed consumer goods")
+    has("in_unemployment", "alleviates the immediate problem of unemployment")
+    say("计划委员会自己的回答是，电力、运输与机器多起来以后，牺牲会减少，长远看社会得到越来越大的回报；"
+        "眼下则组织劳动多产急需的消费品，缓解失业")
     i7, i12 = F["in_investment"]
     s7, s10 = F["in_savings"]
-    said("大纲要把投资从国民收入的约 7\\% 提到第二个计划末的近 12\\%", i7, i12)
+    said("计划委员会要把投资从国民收入的约 7\\% 提到第二个计划末的近 12\\%", i7, i12)
     said("国内储蓄要从约 7\\% 提到 10\\% 以上，其余靠外部资源", s7, s10)
     _, y63, _, _, y85 = F["wd_groups"]
     said("按世界银行 1987 年的分类，印度 1963—1985 年属于强内向型", F["wd_copyright"][0], y63, 1900 + y85)
@@ -1126,15 +1192,28 @@ def cases(F, Y, Q):
          mon("i8_date", "SEPTEMBER"), mon("i8_memo", "May"))
     lakh, crore = F["in_crore"]
     (outlay,) = F["i8_ceiling"]
-    said("它的总支出限于 4,500 克罗尔卢比", outlay)
+    (resources,) = F["i8_resources"]
+    ceiling, part_a, part_b = F["i8_resolution"]                                 # para. 2, read on the page image
+    assert part_a == outlay and part_a + part_b == ceiling and resources < part_a
+    has("i8_resources", "for the five years at Rs. 4,260 crores")
+    has("i8_resolution", "The National Development Council adopted a resolution", "divided into two parts",
+        "Part 'A' of the Plan involving a total outlay of Rs. 4500 crores", "Part 'B' of the Plan")
+    has("i8_ceiling", "Part 'A' of the Plan was proposed to be limited to a total outlay of Rs. 4,500 crores")
+    said("估计五年的财政资源只有 4,260 克罗尔卢比", resources)
     said("克罗尔是印度的计数单位，1 克罗尔等于 1,000 万", 1, crore)
-    has("i8_reserves", "placed before Parliament in March 1958")
-    said("外汇储备的下降，在 1958 年 3 月提交议会的一份文件里已有详细检讨", F["i8_reserves"][0],
-         mon("i8_reserves", "March"))
+    said("国家发展委员会随后通过决议，在 4,800 克罗尔的上限内把计划分成两部分", ceiling)
+    said("A 部分的总支出限于 4,500 克罗尔，除了与农业增产直接相关的项目，还有“核心”项目", part_a)
+    said("其余 300 克罗尔的项目归 B 部分，有了更多资源才做", part_b)
+    has("i8_reserves", "The decline in foreign exchange reserves")
+    has("i8_licensing", "to curtail import licensing")
+    assert "decline in foreign exchange reserves" in column("note")["i8_licensing"]
+    has("i8_corelist", "the 'core' projects i.e., steel plants, coal mining, railways, and certain power projects")
+    say("外汇储备下降以后，进口许可被削减，外汇主要留给钢厂、煤矿、铁路与部分电力这些核心项目")
     has("i3_ambition", "as much in five years as has been realised in the ten years of the")
-    said("1961 年的第三个计划说，国家要在五年里做到前两个计划十年里做到的那么多", Y["i3_ambition"])
+    said("计划委员会 1961 年在第三个计划里说，国家要在五年里做到前两个计划十年里做到的那么多", Y["i3_ambition"])
     m14, m17 = F["i3_employment"]
-    said("这个计划估计，计划里的项目可以提供约 1,400 万个新增就业，同期劳动力却要增加约 1,700 万", m14 * 1e6, m17 * 1e6)
+    said("它估计，计划里的项目可以提供约 1,400 万个新增就业，同期劳动力却要增加约 1,700 万", m14 * 1e6, m17 * 1e6)
+    assert m14 < m17                                                               # 就业仍跟不上
     has("i3_balance", "large-scale rural works programmes, village and")
     # Ghana
     y57, y66, y57b, y60 = F["loc_nkrumah_pm"]
@@ -1153,11 +1232,13 @@ def cases(F, Y, Q):
     has("gh_foreword", "President of the Republic of Ghana")
     has("gh_science", "based on the use of science and technology to revolutionize our agriculture and industry")
     six_, ten = F["gh_six"]
-    assert told("大纲说，十个就业的加纳人里有六个在农业", "说，", "个就业") == ten
+    assert told("按大纲，十个就业的加纳人里有六个在农业", "大纲，", "个就业") == ten
     assert told("十个就业的加纳人里有六个在农业", "有", "个在") == six_
     has("gh_six", "more than half of the national income")
     has("gh_savings", "a home market for the manufactured goods", "a substantial part of the savings")
-    has("gh_burden", "a great burden and responsibility")
+    has("gh_burden", "Therefore a great burden and responsibility")
+    say("计划委员会办公室写道，劳动从土地转向工厂的时候", "它接着说，经济发展成败的重担因此落在从事农业的人身上",
+        "计划委员会办公室说，可可涨价会增加政府收入")
     has("gh_prerequisite", "an essential pre-requisite for that sustained growth in national income")
     total, depreciation = F["gh_total"]
     public, private = F["gh_split"]
@@ -1173,7 +1254,10 @@ def cases(F, Y, Q):
     has("gh_residual", "which is a residual element.")
     # the case box
     said("\\begin{case}{加纳 · 1947—1970 · 可可销售局}", F["wc_cmb"][0], F["wc_date"][1])
-    said("按世界银行 1970 年的项目报告，可可销售局按 1947 年的条例设立", F["wc_date"][1], F["wc_cmb"][0])
+    say("付账的是种可可的农民（本书的解读）")
+    has("wc_monopoly", "owned monopoly, the Cocoa Marketing Board (CMB)")
+    said("按世界银行农业项目局 1970 年的项目报告，可可销售局是国营的独家收购者，按 1947 年的条例设立", F["wc_date"][1],
+         F["wc_cmb"][0])
     has("wc_cmb", "permitted it to fix producer prices for cocoa")
     has("wc_support", "at times of low world prices")
     nc90, y57c = F["wc_reserve"]
@@ -1184,14 +1268,27 @@ def cases(F, Y, Q):
     y65b, _ = F["wc_1965"]
     has("wc_1965", "prohibited CMB from accumulating reserves", "transfer operating surpluses to the Government")
     said("1965 年的新法律禁止销售局积累储备", y65b)
+    # para. 3.01: the authors put the decline down to four decisions of the Government, and list three results
+    has("wc_early", "taken in the early 1960's to:")
+    assert "Government decisions" in column("note")["wc_early"]
+    said("报告的作者把产量下降主要归于政府 1960 年代初的几项决定", F["wc_early"][0])
+    has("wc_noncocoa", "used by the Government for non-cocoa purposes")
+    has("wc_reduce", "reduce producer prices in line with falling world prices")
+    has("wc_marketing", "establish a new system of cocoa marketing")
+    has("wc_disband", "disband, for all practical purposes, the Ministry")
+    assert "cocoa extension and disease control services" in column("note")["wc_disband"]
+    say("除了动用销售局的资金，政府还随世界价格下跌一路压低收购价，另建可可的销售体系，"
+        "并实际上解散了农业部的可可推广与病虫害防治服务")                          # (a) is the paragraph before
     (c12,) = F["wc_1959"]
     y59, c67, y65c = F["wc_1965price"]
     (grams,) = F["wc_lb"]
-    said("报告说，生产者价格 1959 年是每磅 12 美分，1 磅约合 0.45 公斤", y59, c12, 1, grams / 1000)
-    said("到 1965 年，价格降到 6.7 美分", y65c, c67)
-    has("wc_plantings", "the neglect of farm upkeep")
+    said("收购价从 1959 年的每磅 12 美分降到 1965 年的 6.7 美分，1 磅约合 0.45 公斤", y59, c12, y65c, c67, 1, grams / 1000)
+    has("wc_plantings", "the neglect of farm upkeep for the same reason")
+    assert "through inadequate producer prices" in column("note")["wc_plantings"]
+    has("wc_pests", "of pest and disease attack")
+    say("新种植与农场的管理都因价格太低而减少，病虫害也卷土重来")
     g312, y62, g27, y66b = F["wc_pesticide"]
-    said("可可农药的用量 1962 年最多，有 31.2 万加仑，1966 年只剩 2.7 万加仑", y62, g312, y66b, g27)
+    said("可可农药的用量从 1962 年最多的 31.2 万加仑降到 1966 年的 2.7 万加仑", y62, g312, y66b, g27)
     y64c, y65d, crop = F["wc_crop"]
     (t400,) = F["wc_400"]
     said("收成在 1964/65 年度达到 568,032 吨，此后下降，近年平均约 40 万吨", y64c, y65d, crop, t400)
@@ -1201,11 +1298,16 @@ def cases(F, Y, Q):
     c27, c13b, c15 = F["wc_split"]
     c77, _ = F["wc_duty"]
     assert c13b == c13
-    said("世界银行按每磅 27 美分的长期价格算，农民得 13 美分，销售局的盈余 1.5 美分，出口税 7.7 美分", c27, c13b, c15, c77)
+    # the report 'may not be ... quoted as representing their views' (wc_rights2): its authors, not the Bank
+    assert "世界银行按" not in tex_text()
+    said("报告的作者按每磅 27 美分的长期价格算，农民得 13 美分，销售局的盈余 1.5 美分，出口税 7.7 美分", c27, c13b, c15, c77)
     nc80, t400b = F["wc_80"]
     assert t400b == t400
     said("收成若是 40 万吨，政府每年留下约 8,000 万新塞地", t400b, nc80 * 1e6)
-    has("wc_80", "is justifiable only in the light of Ghana's present overall difficult economic and financial position")
+    has("wc_80", "is justifiable only in the light of Ghana's present overall difficult economic and financial position",
+        "and if the Government is prepared to actively help farmers")
+    say("他们认为，政府留下这么大的份额，要加纳眼下的经济与财政确实困难，政府又愿意积极帮农民把生产率提到种可可有利可图的"
+        "水平，才说得过去")
     said("按世界银行 1987 年的分类，加纳与印度 1963—1985 年都属于强内向型", F["wd_copyright"][0], y63, 1900 + y85)
     said("计划委员会的草案大纲，1956 年 2 月", F["in_date"][0], mon("in_date", "February"))
     said("计划委员会办公室的简要大纲，1963 年 12 月", F["gh_date"][0], mon("gh_date", "December"))
@@ -1244,6 +1346,7 @@ def data_check(F, Y, Q):
     said("\\datasource{Maddison Project Database 2023（Bolt 与 van Zanden 2024，CC BY 4.0），工作簿 mpd2023\\_web.xlsx 的 Full data 表",
          2023, 2024, 4.0, 2023)
     assert "2024" in load_snapshot("maddison2023_development")[1]["citation"]
+    say("增长率是两端年份之间的年均复合增长率")                                  # cagr(): compound, between the end years
     said("1950—1980 年每年分别约 4.4\\% 与 3.5\\%（本书的计算）", 1950, 1980, cagr("BRA", 1950, 1980), cagr("MEX", 1950, 1980))
     assert groups_of("Brazil") == ["Moderately outward oriented"] * 2
     assert groups_of("Mexico") == ["Moderately inward oriented"] * 2
@@ -1288,13 +1391,18 @@ def data_check(F, Y, Q):
     said("1973—1985 年各组都明显变差", y73b, 1900 + y85b)
     said("外向型两组是 4.5 与 5.0。内向型两组是 6.2 与 8.7", o1, o2, n1, n2)
     said("六个经济体的人均 GDP，1950—2022 年（2011 年国际元，对数刻度）", 1950, P.index.max(), 2011)
-    said("(a) 三个拉美国家 1980 年以前增长，此后停滞。(b) 印度、加纳与韩国 1960 年的起点相近，此后分开。", 1980, 1960)
+    said("(a) 三个拉美国家 1980 年以前增长，此后停滞。(b) 印度、加纳与韩国 1960 年的起点相差不到一倍，此后分开。", 1980, 1960)
     v60 = [P.loc[1960, c] for c in ("IND", "GHA", "KOR")]
-    assert max(v60) / min(v60) < 2
+    assert max(v60) / min(v60) < 2                                                 # 相差不到一倍
+    said("虚线标出 1980 年。数据：Maddison 项目数据库 2023 年版（Bolt 与 van Zanden 2024，CC BY 4.0）", 1980, 2023, 2024, 4.0)
+    assert "axvline(1980" in (ROOT / "figsrc" / "fig_ch41.py").read_text(encoding="utf-8")
 
 
 def debate(F, Y, Q):
     has("sc_calculating", "are calculating economic agents")
+    said("站在另一边的是舒尔茨（本书的概括）。他在 1979 年的演讲里说，农民是计算成本、收益与风险的经济人", F["sc_title"][1])
+    said("按世界银行工作人员 1970 年的报告，加纳可可的新种植减少、农场疏于管理，原因是收购价太低", F["wc_date"][1])
+    assert "少喷农药" not in tex_text()                                             # the pesticides fell with the services
     has("sc_mistake", "standard economic theory is inadequate for understanding low income countries")
     has("sc_curiosities", "at best intellectual curiosities")
     has("sc_prospects", "provided they are not dissipated by politics and governmental policies that discriminate against agriculture")
@@ -1316,7 +1424,9 @@ def debate(F, Y, Q):
     n41, *_ = F["wd_41"]
     assert n41 == F["wd_groups"][0] == 41
     said("世界银行把 41 个经济体按贸易战略分组", n41)
-    has("wd_superior", "broadly superior to that of the")
+    has("wd_superior", "The figures suggest", "broadly superior to that of the")
+    assert "in almost all respects" in column("note")["wd_superior"]
+    say("认为数字显示外向型经济的表现几乎在各方面都大体更好", "它也承认，分类的中间两组可能有争议")
     has("wd_intermediate", "there may be scope for disagreement over the two intermediate subgroups")
     has("wd_korea", "the Republic of Korea, sustained their industrial")
     has("lw_protection", "an equally valid foundation of arguments for protection")
@@ -1341,10 +1451,18 @@ def deeper(F, Y, Q):
     said("Murphy、Shleifer 与 Vishny 用的是 NBER 第 2708 号工作论文（1988 年 9 月），Easterly 用的是世界银行第 1807 号政策研究工作论文（1997 年 8 月）",
          F["ms_number"][0], F["ms_date"][0], mon("ms_date", "September"), F["ea_number"][0], Y["ea_date"],
          mon("ea_date", "August"))
-    said("印度的第二个计划草案大纲（1956）、第三个五年计划（1961）与加纳的七年计划大纲（1963）", F["in_date"][0],
-         Y["i3_title"], F["gh_date"][0])
-    said("罗森斯坦—罗丹（1943）、罗斯托（1960）、纳克斯（1953）、舒尔茨（1964）、Krueger（1974）与 Little、Scitovsky 和 Scott（1970）",
+    said("印度的第二个计划草案大纲（1956）、1958 年的重新评估摘要、第三个五年计划（1961）与加纳的七年计划大纲（1963）"
+         "据互联网档案馆的缩微胶片扫描本，1958 年摘要的第 2 段按页面图像读", F["in_date"][0], F["i8_date"][0], Y["i3_title"],
+         F["gh_date"][0], F["i8_date"][0], 2)
+    assert column("file")["i8_resolution"] == "india1958img41" and column("juan")["i8_resolution"].startswith("para. 2 ")
+    say("舒尔茨的演讲没有提到刘易斯，第一个争论把两人放在一起，是本书的安排")
+    said("罗森斯坦—罗丹（1943）、罗斯托（1960）、Nurkse（1953）、舒尔茨（1964）、Krueger（1974）与 Little、Scitovsky 和 Scott（1970）",
          F["ms_rr_ref"][0], F["ea_stages"][0], F["ms_doctrine"][0], F["sc_1964"][0], F["wd_krueger"][0], F["wd_lss"][0])
+    say("Singer 与 Hirschman 的著作")
+    for zh_name in ("辛格", "赫希曼", "纳克斯"):                                    # named in Latin script, without dates
+        assert zh_name not in tex_text(), zh_name
+    said("舒尔茨（1964）只按他本人演讲里的一句话提到", F["sc_1964"][0])
+    say("送达信的署名者马丁内斯·卡瓦尼亚斯的生卒年没有找到")
     has("ms_rr_ref", "Problems of Industrialization of Eastern and South-Eastern Europe")
     has("wd_krueger", "The Political Economy of the Rent-Seeking Society")
     has("sc_1964", "Transforming Traditional Agriculture")
@@ -1362,12 +1480,23 @@ def deeper(F, Y, Q):
     said("印度第三个计划的文字层把 11.5 与 8.5 读作“11:5”“8°5”，按页面图像读", F["i3_growth"][2], F["i3_savings"][0],
          *[float(x) for x in ocr_read])
     assert [float(x) for x in ocr_read] == [math.floor(F["i3_growth"][2]), 5, math.floor(F["i3_savings"][0]), 5]
+    misread8 = float(re.search(r"Rs\. (\d+) crores", words_of("i8_ocr")).group(1))
+    assert misread8 - F["i8_resolution"][1] == 100                                # a 5 read as a 6
+    said("1958 年摘要的文字层漏了第 2 段的第一行，又把其中的 4500 读作“4600”", F["i8_date"][0], 2, F["i8_resolution"][1],
+         misread8)
     D = terms()
     fall = 100 - D.set_index("period")["ratio"]["1936-1938"]
-    said("普雷维什第 8 页说 1930 年代只能买到 1860 年代的 63\\%，表 1 却从 1876—1880 年算起，1936—1938 年的 64.1 对应的是下降 35.9\\%",
-         page("pb_63"), 1930, 1860, F["pb_63"][0], 1, 1876, 1880, 1936, 1938, 100 - fall, fall)
-    said("第 12 页说从 1870 年代到 1930 年代恶化 36.5\\%，与 63\\% 也不完全一致（本书的计算）", page("pb_365"), 1870, 1930,
-         F["pb_365"][0], F["pb_63"][0])
+    r = D.set_index("period")["ratio"]
+    mean30 = (r["1931-1935"] + r["1936-1938"]) / 2                                # the two periods of the 1930's
+    assert round(mean30) == F["pb_63"][0] and abs(100 * (100 / mean30 - 1) - F["pb_63"][3]) < 0.05
+    said("普雷维什第 8 页说 1930 年代只能买到 1860 年代的 63\\%，表 1 却从 1876—1880 年算起", page("pb_63"), 1930, 1860,
+         F["pb_63"][0], 1, 1876, 1880)
+    said("表里 1931—1935 年与 1936—1938 年这两期的平均是 63.05，与第 8 页的 63\\% 和 58.6\\% 都相合", 1931, 1935, 1936, 1938, mean30,
+         page("pb_63"), F["pb_63"][0], F["pb_63"][3])
+    said("1936—1938 年一期的 64.1 对应的却是下降 35.9\\%", 1936, 1938, 100 - fall, fall)
+    assert min(abs(100 - mean30 - F["pb_365"][0]), abs(fall - F["pb_365"][0])) > 0.3
+    said("第 12 页说从 1870 年代到 1930 年代恶化 36.5\\%，与这几个数都不完全一致", page("pb_365"), 1870, 1930, F["pb_365"][0])
+    say("他用的是哪种比较，文中没有说（本书的计算）")
     has("ea_fn6", "W.A. Lewis 1954,p. 139")
     has("ea_lewisquote", "the central fact of economic development is rapid capital accumulation")
     has("lw_rapid", "the central fact of economic development is rapid capital accumulation")
@@ -1376,7 +1505,7 @@ def deeper(F, Y, Q):
     yd, md, dd = F["loc_rostow_d"]
     yg, mg, dg = F["gnd_rostow_d"]
     assert yd == yg and md == mg and dd - dg == 1
-    said("国会图书馆罗斯托的记录写他 2003 年 2 月 14 日去世，GND 写 13 日", yd, md, dd, dg)
+    said("国会图书馆罗斯托的记录写他 2003 年 2 月 14 日去世，GND 写 13 日，年份相同，正文只写年份", yd, md, dd, dg)
     assert "loc_rr" not in F and Q["loc_rr"] == "Rosenstein-Rodan, P. N."
     say("罗森斯坦—罗丹的生卒年只见于 GND")
 
@@ -1385,6 +1514,8 @@ def legacy(F, Y, Q):
     has("lb_demographic", "a phase in the demographic cycle")
     mita = there("ch14_africa", "1573—1812 年，秘鲁与玻利维亚实行")
     assert 190 <= 2010 - mita[1] < 200                                            # Dell (2010): nearly two centuries
+    said("米塔制是 1573—1812 年西班牙人在秘鲁与玻利维亚推行的强迫采矿劳役", *mita)
+    say("收购价与出口税由谁定，决定了农民能拿到世界价格的多少（本书的解读）")
     assert their("africa_money_facts", "dell_25", "around 25%") == ["25"]
     assert their("africa_money_facts", "dell_6", "around 6 percentage points") == ["6"]
     their("africa_money_facts", "dell_channels", "land tenure and public goods provision")
@@ -1429,9 +1560,9 @@ def selfcheck(F, Y, Q):
 
 def ending(F, Y, Q):
     said("回到 1952 年 8 月曼谷的那条路", F["lb_bangkok"][0], mon("lb_bangkok", "August"))
-    said("1957 年起，他做过加纳总理的经济顾问", F["lb_ghana"][1])
+    said("1957 年起，他做过加纳总理的联合国经济顾问", F["lb_ghana"][1])
     said("到 1979 年，他说许多国家曾经向内，主要靠进口替代，后来几乎每个国家都发现了出口的“好处”", F["ll_title"][1])
-    say("下一章讲的是最早转向出口的那几个经济。")
+    say("下一章讲的是最早转向出口的那几个经济体。")
     t = tex_text().rstrip()
     assert t.endswith(NEXT), "the last words are not Chapter 42's question"
     assert t.index("\\end{answers}") < t.index("回到 1952 年 8 月曼谷的那条路")
@@ -1555,6 +1686,8 @@ EVENTS = [("按 Maddison 的估计，殖民统治把印度四分之一左右的�
           ("这是\\chref{ch:divergence}末尾反过来问的 Allen 的问题", "ch21_divergence",
            "Allen 的问题也可以反过来问：工资低的国家为什么要用发达国家为高工资设计的技术？"),
           ("米塔制结束将近两百年后", "ch14_africa", "米塔制结束将近两百年后"),
+          ("米塔制是 1573—1812 年西班牙人在秘鲁与玻利维亚推行的强迫采矿劳役（\\chref{ch:africa}）", "ch14_africa",
+           "1573—1812 年，秘鲁与玻利维亚实行“一种大规模的强迫采矿劳役制度”，即米塔制（mita）"),
           ("上一章的检验里，1960 年最穷的四分之一共 27 个国家", "ch40_solow",
            "同一组的 27 个国家却有 13 个增长得比最富的四分之一的平均速度慢"),
           ("刘易斯（W. Arthur Lewis，1915—1991）", "ch40_solow", "刘易斯（W. Arthur Lewis，1915—1991）"),
@@ -1611,7 +1744,7 @@ ITEM_OF = {"lewis1954ms41": "lewis1954", "lewisbio41": "lewisbio1979", "lewis197
            "prebisch41img": "prebisch1950", "untou41": "prebisch1950", "uncopyright41": "prebisch1950",
            "wdr1987_41": "wdr1987", "wdr1987_41img": "wdr1987", "easterly41": "easterly1997",
            "easterly41img": "easterly1997", "msv41": "msv1988", "msv41img": "msv1988", "india1956_41": "india1956",
-           "india1958_41": "india1958", "india1961_41": "india1961", "india1961img41": "india1961",
+           "india1958_41": "india1958", "india1958img41": "india1958", "india1961_41": "india1961", "india1961img41": "india1961",
            "indialaw41": "india1956", "ghana1963_41": "ghana1963", "ghanalaw41": "ghana1963",
            "wbcocoa41": "wbcocoa1970", "wbcocoa41img": "wbcocoa1970", "wbstab41": "wbstab1967"}
 
@@ -1774,11 +1907,19 @@ def counts() -> None:
                   "按这个图式，拉丁美洲作为世界经济体系的外围", "原因是国内政治通常偏向城市人口，牺牲人数多得多的农村人口",
                   "计划委员会知道这条路的代价", "消费上作出一定的牺牲不可避免", "代价由眼前的消费与没被吸收的人力承担",
                   "付账的是种可可的农民", "这笔钱和后来积累的资金都被政府用于可可以外的用途",
-                  "按世界价格卖可可的是国家，拿差价去投资的也是国家，少收的是农民",
+                  "按世界价格卖可可的是国家，决定差价用在哪里的也是国家，少收的是农民",
                   "决定投资率与优先次序的是计划委员会与政府，付账的是消费者与种可可的农民",
                   "\\section{印度与加纳：谁决定，谁承担}", "直到 1966 年被政变推翻", "苏联工业化的代价与那场饥荒",
                   "中国的大跃进及其饥荒"):
         assert words in main, words
+    # documents are not the subjects of sentences: the author is named (part6_notes, editor's round on Chapter 38)
+    for bad in ("报告说", "报告还", "报告把", "报告承认", "同一份报告", "大纲说", "大纲要", "摘要说", "演讲说", "第三个计划说"):
+        assert bad not in main, bad
+    # at most one source frame (按……的说法、转述……) in a sentence
+    frame = re.compile(r"按[^，。；“”]{0,40}?的(?:说法|转述|解释|估计|检验|算法|回顾|分类|数字|自述|定义|项目报告|报告|摘要|"
+                       r"草案大纲|工作论文|模型)")
+    for s in re.split(r"(?<=[。？！])|\n", re.sub(r"“[^”]*”", "“”", main)):
+        assert len(frame.findall(s)) <= 1, s
     # Ghana's one-party state and the Preventive Detention Act: no source read
     for words in ("一党", "预防性拘留", "Preventive Detention"):
         assert words not in t, words
