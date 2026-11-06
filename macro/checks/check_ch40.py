@@ -396,7 +396,7 @@ def check_readings(df: pd.DataFrame) -> None:
                 assert other[key]["url"] == s["url"] and other[key]["sha256"] == s["sha256"], (name, key)
 
 
-N_QUOTED, N_IMAGE = 132, 51
+N_QUOTED, N_IMAGE = 134, 51
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -809,8 +809,9 @@ def opening(F, Y, Q):
     said("1987 年 12 月 8 日，索洛", y87, mon("nb_title", "December"), F["nb_title"][0])
     assert F["nb_stockholm"] == [y87]
     say("在斯德哥尔摩作纪念诺贝尔的演讲，题为《增长理论及以后》")
+    has("nb_dream", "So I do not know if I have ever dreamt about giving this Lecture.")
     has("nb_room", "I have been in this room before", "in real life, and I was awake")
-    say("他开场说，他知道自己来过这个大厅，不过那是在现实里，而且是醒着的")
+    say("他开场说，他不知道自己有没有梦见过作这次演讲；他知道自己来过这个大厅，不过那是在现实里，而且是醒着的")
     has("nb_notbegin", "did not begin with my articles", "did not end there")
     said("他说，增长理论不是从他 1956 年与 1957 年的文章开始的，也没有在那里结束", *F["nb_notbegin"])
     assert F["nb_notbegin"] == [F["s56_title"][2], F["s57_title"][2]]
@@ -833,6 +834,10 @@ def opening(F, Y, Q):
     has("nb_recipe", "a recipe for doubling the rate of growth in a labor surplus economy",
         "simply to double the savings rate, perhaps through the public budget")
     say("在劳动过剩的经济里，要让增长率翻一番，让储蓄率翻一番就行，也许通过政府预算来做")
+    has("nb_notsimply", "doubling the ex ante saving rate would not double the ex post saving rate",
+        "unless something were taking care of the ex ante investment rate at the same time")
+    assert "Well, not simply:" in column("note")["nb_notsimply"]
+    say("他随即补了一句，事情没有这样简单，计划中的储蓄率翻一番，要有别的力量让投资同时跟上，实际的储蓄率才会翻一番")
     has("nb_underdeveloped", "In underdeveloped countries", "the recipe looked usable")
     has("nb_writings", "I believe I remember", "a sustained rise in the savings rate")
     say("他相信自己记得，讨论经济发展的著作常说，从慢增长转到快增长，关键是持续提高储蓄率")
@@ -946,7 +951,8 @@ def model(F, Y, Q):
     has("s56_demand", "deficient or excess aggregate demand")
     # the saving rate changes the level
     assert np.isclose(ALPHA / (1 - ALPHA), 0.5)
-    said("$y^{*}$对$s$的弹性是$\\alpha/(1-\\alpha)$，资本份额为三分之一时是$1/2$（本书的计算）", 1, 1, 2)
+    said("$y^{*}$对$s$的弹性，即储蓄率提高 1\\% 时$y^{*}$提高的百分比，是$\\alpha/(1-\\alpha)$，资本份额为三分之一时是$1/2$"
+         "（本书的计算）", 1, 1, 1, 2)
     assert np.isclose(told("资本份额为三分之一时是", "资本份额为", "时是"), ALPHA)
     y_up = 100 * (steady(S1)[1] / steady(S0)[1] - 1)
     said("储蓄率翻一番，稳态的人均产出只增加约 41\\%", y_up)
@@ -992,7 +998,7 @@ def model(F, Y, Q):
     (a8, a1, half) = F["bs_alpha1"]
     has("bs_alpha1", "diminishing returns set in not at all", "versus infinity in the latter")
     assert a1 == 1 and speed(a1, NGD) == 0                                       # no convergence: an infinite half-life
-    said("资本份额为 1、报酬不递减时，半衰期无穷长", a1)
+    said("资本份额为 1、报酬不递减时，经济不趋向稳态，半衰期无穷长", a1)
     has("nb_independent", "independent of the saving (investment) rate")
     has("s56_inelastic", "completely inelastically")
     # ex:solow-double
@@ -1010,8 +1016,8 @@ def model(F, Y, Q):
     g = growth(P)
     up = 100 * ALPHA * (S1 / S0 - 1) * NGD                                        # the first year, approximately
     assert np.isclose(S0 * steady(S0)[1] / steady(S0)[0], NGD) and abs(g[0] - (100 * G + up)) < 0.1
-    said("（3）原来的稳态里$s\\,y/k=6\\%$，储蓄率翻一番，有效资本每年增长$12\\%-6\\%=6\\%$，产出增长率提高$\\alpha\\times6\\%=2$ "
-         "个百分点，每个工人的产出增长率从 2\\% 升到 4\\%", 100 * NGD, 200 * NGD, 100 * NGD, 100 * NGD, 100 * NGD, up,
+    said("（3）原来的稳态里$s\\,y/k=6\\%$，储蓄率翻一番，有效资本每年增长$12\\%-6\\%=6\\%$，产出增长率约提高$\\alpha\\times6\\%=2$ "
+         "个百分点，每个工人的产出增长率从 2\\% 升到约 4\\%", 100 * NGD, 200 * NGD, 100 * NGD, 100 * NGD, 100 * NGD, up,
          100 * G, 100 * G + up)
     assert abs(g[-1] - 100 * G) < 1e-3 and np.all(np.diff(g) < 0)
     said("以后逐年回落，长期仍是 2\\%（本书的计算）", 100 * G)
@@ -1024,7 +1030,7 @@ def model(F, Y, Q):
     third, el_text, el_aug = F["mrw_elasticity"]
     assert np.isclose(third, ALPHA) and np.isclose(el_text, -ALPHA / (1 - ALPHA)) and el_aug == -2
     has("mrw_elasticity", "with respect to n+g+6 is -1/2", "In our augmented model, this elasticity is -2.")
-    said("在他们加上人力资本的模型里，人均收入对$n+g+\\delta$的弹性是$-2$，不是$-1/2$", -el_aug, 1, 2)
+    said("在 Mankiw、Romer 与 Weil 加上人力资本的模型里，人均收入对$n+g+\\delta$的弹性是$-2$，不是$-1/2$", -el_aug, 1, 2)
     y_n = 100 * (1 - steady(S0, ngd=N_HIGH + G + DELTA)[1] / steady(S0)[1])
     assert np.isclose(y_n, 100 * (1 - steady(S1, ngd=N_HIGH + G + DELTA)[1] / steady(S1)[1]))   # whatever the saving rate
     said("按\\exref{ex:solow-double}的教学输入，人口增长率从 1\\% 提到 3\\%，稳态的人均产出下降约 13\\%（本书的计算）",
@@ -1043,11 +1049,15 @@ def model(F, Y, Q):
     out = U["rgdpna"] / U["emp"]
     gy = 100 * math.log(out.loc[2019] / out.loc[1950]) / (2019 - 1950)
     has("pwt_title", "Penn World Table version 10.01")
-    said("按 Penn World Table 10.01，美国每个就业者的实际产出 1950—2019 年每年增长约 1.7\\%（本书的计算）",
+    assert "Number of persons engaged" in load_snapshot("pwt1001_usa")[1]["series"]
+    said("按 Penn World Table 10.01，美国每个就业者的实际 GDP 1950—2019 年每年增长约 1.7\\%（本书的计算）",
          F["pwt_title"][0], 1950, 2019, gy)
-    said("劳动的份额 1950 年约 63\\%，2019 年约 60\\%", 1950, 100 * U.loc[1950, "labsh"], 2019, 100 * U.loc[2019, "labsh"])
+    said("劳动报酬占 GDP 的份额 1950 年约 63\\%，2019 年约 60\\%", 1950, 100 * U.loc[1950, "labsh"], 2019, 100 * U.loc[2019, "labsh"])
     ky = U["rnna"] / U["rgdpna"]
-    said("按不变价格的资本—产出比，却从 4.3 降到了 3.4（本书的计算）", ky.loc[1950], ky.loc[2019])
+    series = load_snapshot("pwt1001_usa")[1]["series"]
+    assert "rnna ('Capital stock at constant 2017 national prices" in series
+    assert "rgdpna ('Real GDP at constant 2017 national prices" in series
+    said("资本存量与 GDP 之比都按不变价格算，却从 4.3 降到了 3.4（本书的计算）", ky.loc[1950], ky.loc[2019])
     assert ky.max() / ky.min() > 1.2 and U["labsh"].max() - U["labsh"].min() < 0.1
     say("份额大致不变，资本—产出比并不那么稳定（本书的解读）")
 
@@ -1056,7 +1066,7 @@ def transition_(F, Y, Q):
     has("sw_speed", "(1) is reached only in infinity",
         "the speed of travel towards it being directly related to the distance remaining to be travelled")
     has("sw_centuries", "might be visible for centuries", "only extreme assumptions could produce such a result")
-    said("差距缩小一半要$\\ln 2/\\lambda$年（本书的推导）", 2)
+    said("差距缩小一半所需的年数叫半衰期，是$\\ln 2/\\lambda$（本书的推导）", 2)
     third, ngd, lam35, half35 = F["mrw_lambda"]
     lam, half = F["mrw_textbook"]
     assert np.isclose(third, ALPHA) and np.isclose(ngd, NGD) and np.isclose(speed(ALPHA, NGD), lam)
@@ -1121,12 +1131,21 @@ def transition_(F, Y, Q):
     drop, back = recovery_year()
     assert np.isclose(drop, 1 / 6)
     said("按\\exref{ex:solow-double}的教学输入，储蓄率从 20\\% 提到黄金律的三分之一，提高的那一年消费要减少六分之一，约 27 年以后"
-         "消费才回到原来的水平（本书的计算）", 100 * S1, back)
+         "，每个工人的消费才赶上储蓄率不变时的那条路径（本书的计算）", 100 * S1, back)
     phrase = "储蓄率从 20\\% 提到黄金律的三分之一，提高的那一年消费要减少六分之一"
     assert np.isclose(told(phrase, "黄金律的", "，"), ALPHA) and np.isclose(told(phrase, "减少", ""), drop)
     say("少消费的是过渡期间活着的人，多消费的是以后的人（本书的解读）")
     say("储蓄率高于黄金律时，少储蓄一点，现在与将来都能多消费，这样的经济积累过度了（本书的解读）")
-    say("索洛记得的那个处方，是通过政府预算提高储蓄率；计划经济里，投资率由中央定")
+    say("模型里的$s$是一个参数。在实际的经济里，它是家庭、企业与政府的选择加总起来的（\\chref{ch:consumption}）")
+    say("索洛记得的那个处方，就是通过政府预算提高储蓄率")
+    has("s56_policy", "via tax, expenditure, and monetary policies", "leaves the nation some leeway to choose",
+        "relatively heavy capital formation, low consumption, rapid growth; or the reverse, or some mixture")
+    has("s56_strains", "cheap money and a budget surplus", "without serious strains")
+    assert page("s56_policy") == page("s56_strains") > page("s56_demand")                # the last section, Policy Implications
+    said("他 1956 年在文末说，税收、支出与货币政策都能维持充分就业，国家因此有余地选择，是多积累、少消费、快增长，还是反过来，或者折中",
+         F["s56_title"][2])
+    say("他也说，这类政策，例如低利率加预算盈余，难免带来严重的紧张")
+    say("在计划经济里，投资率由中央的计划者定，后面苏联的案例就是这样（\\secref{sec:solow-check}）")
     say("储蓄率由谁定，谁就决定了这笔账由哪几代人付（本书的解读）")
     # ex:solow-golden
     said("（1）稳态的每个有效工人的消费是$(1-s)\\bigl(s/(n+g+\\delta)\\bigr)^{\\alpha/(1-\\alpha)}$，它在什么储蓄率最大？", 1, 1)
@@ -1240,7 +1259,6 @@ def accounting(F, Y, Q):
     has("ab_base", "may arise in some part from our choice of a base period")
     fy0, fy1, fpct = F["s57_fabricant"]
     has("s57_fabricant", "Solomon Fabricant has estimated", "attributable to technical progress")
-    said("索洛在文中也引了 Fabricant 的估计，1871—1951 年人均产出的增加约 90\\% 来自技术进步", fy0, fy1, fpct)
     has("nb_fabricant", "Solomon Fabricant at the National Bureau of Economic Research")
     # Solow's look back and Denison
     has("nb_startling", "the main result of that 1957 exercise was startling")
@@ -1253,7 +1271,7 @@ def accounting(F, Y, Q):
     has("nb_unpack", "various human-capital variables", '"technological change in the narrow sense"')
     d0, d1, g31 = F["nb_denison"]
     has("nb_denison", "real non-residential business output increased at an average rate of 3.1 percent a year")
-    said("按丹尼森的估计，1929—1982 年美国非住宅企业的实际产出每年增长 3.1\\%", d0, d1, g31)
+    said("据索洛的转述，丹尼森估计，1929—1982 年美国非住宅企业的实际产出每年增长 3.1\\%", d0, d1, g31)
     quarter, (edu, half) = F["nb_quarter"][0], F["nb_education"]
     assert abs(edu / 100 * g31 - half) < 0.01
     has("nb_quarter", "increased labor input of constant educational level")
@@ -1274,7 +1292,8 @@ def accounting(F, Y, Q):
     # two-factor productivity
     said("若产出其实是$Y=A\\,K^{\\beta}X^{\\alpha}L^{1-\\alpha-\\beta}$", 1)
     say("人均资本增加时，两种要素的全要素生产率多出资本份额乘以人均资本的增长率，把资本深化也算进了技术")
-    said("\\chref{ch:divergence}算出的 1800—1860 年每年约 0.8\\%，因此高于按三种要素算的数（本书的解读）",
+    said("只要那几十年英格兰每个工人的资本有所增加，\\chref{ch:divergence}算出的 1800—1860 年每年约 0.8\\%，就高于按三种要素算的数"
+         "（本书的推导）",
          *there("ch21_divergence", "1800—1860 年，全要素生产率每年增长 0.80\\%"))
 
 
@@ -1285,6 +1304,7 @@ def check(F, Y, Q):
     has("bm_16", "the 16 industrialized leaders in Maddison's sample")
     said("Baumol（1986）用 Maddison 样本里的 16 个工业国，看 1870—1979 年", y86, F["bm_16"][0], y0, y1)
     said("按他的回归，1870 年每个工时的 GDP 越高，此后的增长越慢，斜率是$-0.75$，$R^{2}$为 0.88", y0, -slope, r2)
+    said("$R^{2}$是回归能解释的增长率差别所占的比例，0.88 即 88\\%", r2, 100 * r2)
     has("bm_72", "R2 is virtually zero", "do not even yield a negatively sloping regression line")
     said("他也说明，换成 72 个国家，$R^{2}$几乎为零，回归线连负的斜率都没有", F["bm_72"][0])
     has("bm_spillover", "a plausible alternative interpretation", "the spillovers from leader economies to followers")
@@ -1292,7 +1312,7 @@ def check(F, Y, Q):
     has("bm_public", "the nature of a public good")
     has("bm_club", "members of a convergence club of their own")
     has("bm_ldc", "shared by planned economies but not less developed countries")
-    has("bm_cars", "product mix and education", "a better car-producing robot in Japan")
+    has("bm_cars", "may well be related to product mix and education", "a better car-producing robot in Japan")
     # De Long
     has("dl_title", "Working Paper No. 2419")
     said("按 De Long（1987）的工作论文", wp_year("delong1987"))
@@ -1362,19 +1382,29 @@ def check(F, Y, Q):
     said("$R^{2}$ & 0.00 & 0.35 & 0.44", A["r2"], Cn["r2"], H["r2"])
     said("国家数 & 111 & 111 & 104", A["n"], Cn["n"], H["n"])
     assert A["n"] == len(pwt()) and H["n"] == pwt()["hc"].notna().sum()
-    pwt_cite = "Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015）"
-    said(pwt_cite, F["pwt_title"][0], F["pwt_ref"][0])
-    said("因变量是 1960—2019 年每年的人均实际 GDP 增长率，初始收入是 1960 年人均实际 GDP", PWT_FIRST, PWT_LAST, PWT_FIRST)
-    said("条件收敛加上平均投资份额与$n+0.05$的对数，最后一列再加 1960 年的人力资本指数", GD, PWT_FIRST)
+    pwt_cite = "Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015；CC BY 4.0）"
+    assert words_of("pwt_licence") == "CC-BY-4.0"
+    said(pwt_cite, F["pwt_title"][0], F["pwt_ref"][0], float(words_of("pwt_licence").rsplit("-", 1)[1]))
+    series = load_snapshot("pwt1001_convergence")[1]["series"]
+    for words in ("rgdpna_2019 ('Real GDP at constant 2017 national prices", "rgdpe_1960 ('Expenditure-side real GDP at "
+                  "chained PPPs", "csh_i, 'Share of gross capital formation", "'Human capital index, based on years of "
+                  "schooling and returns to education'"):
+        assert words in series, words
+    said("因变量是 1960—2019 年每年的人均实际 GDP 增长率（按本国的不变价格），初始收入是 1960 年人均实际 GDP", PWT_FIRST,
+         PWT_LAST, PWT_FIRST)
+    said("条件收敛加上 1960—2019 年平均投资份额的对数与$n+0.05$的对数，$n$是人口增长率；最后一列再加 1960 年人力资本指数的对数，"
+         "有这个指数的国家少一些", PWT_FIRST, PWT_LAST, GD, PWT_FIRST)
     said("系数是对数初始收入增加 1 时增长率变化的百分点，收敛速度按 59 年换算", 1, PWT_LAST - PWT_FIRST)
     said("本书用 Penn World Table 10.01 做了同样的检验", F["pwt_title"][0])
-    said("样本是 1960 年与 2019 年都有数据、每年都有投资份额的国家", PWT_FIRST, PWT_LAST)
+    said("各国 1960 年的收入按购买力平价比较，即按同一篮子商品在各国的价格折算，不按市场汇率（\\chref{ch:external}）", PWT_FIRST)
+    said("样本是 1960 年与 2019 年都有数据、每年都有投资份额（资本形成占 GDP 的比例）的国家", PWT_FIRST, PWT_LAST)
     assert A["r2"] < 0.01
     said("它们此后的人均增长率与 1960 年的人均收入几乎无关", PWT_FIRST)
     say("控制投资份额与人口增长以后，系数变负")
     assert abs(H["lam"] - 100 * F["mrw_lambda"][2]) < 0.25 and lo <= H["lam"] <= hi
-    said("再加上 1960 年的人力资本，隐含的收敛速度与 Barro、Sala-i-Martin 和 Mankiw、Romer、Weil 的估计相近（本书的计算）",
+    said("再加上 1960 年的人力资本指数，隐含的收敛速度与 Barro、Sala-i-Martin 和 Mankiw、Romer、Weil 的估计相近（本书的计算）",
          PWT_FIRST)
+    say("这个指数按受教育的年数与教育的回报编制")
     poor, rich, q = quarters()
     assert q == 27
     said("1960 年最穷的四分之一国家，此后平均每年增长 2.3\\%，最富的四分之一是 2.0\\%（本书的计算）", PWT_FIRST, poor, rich)
@@ -1407,12 +1437,18 @@ def check(F, Y, Q):
     said("斜率$-0.75$，$R^{2}$为 0.88", -slope, r2)
     said("每年约 2\\%\\cite{bsm1990,mrw1990}", F["bs_countries"][0])
     has("bm_seriously", "The high correlation should not be taken too seriously.")
-    said("高相关不必太当真，72 国几乎无关", F["bm_72"][0])
+    has("bm_backward", "the 1870 figures were calculated by Maddison using backward extrapolation of growth rates")
+    has("bm_spurious", "both sides of the equation", "a spurious appearance of close relationship")
+    assert F["bm_backward"] == [y0]
+    said("1870 年的数是倒推的，高相关不必太当真；换成 72 国几乎无关", F["bm_backward"][0], F["bm_72"][0])
+    said("Baumol 自己的保留是，高相关不必太当真，1870 年的数是 Maddison 用增长率倒推出来的，初始收入又同时出现在回归的两边",
+         F["bm_backward"][0])
     said("按 Pritchett 的估计，1870—1985 年各国是发散的", s0, s1)
     # the Soviet Union
     has("ef_extensive", "defined by Ofer (1987) as growth mainly through input accumulation",
         "a key feature of extensive growth is a rising capitaloutput ratio")
-    said("按 Ofer（1987）的定义，粗放增长主要靠积累投入，不靠提高生产率", F["ef_extensive"][0])
+    said("按他们的转述，这是 Ofer（1987）的说法，指主要靠积累投入、不靠提高生产率的增长，它的一个关键特征是资本—产出比上升",
+         F["ef_extensive"][0])
 
 
 def case(F, Y, Q):
@@ -1421,7 +1457,8 @@ def case(F, Y, Q):
     assert T[0::3] == K[0::3] and T[1::3] == K[1::3]
     has("ef_t1_head", "Growth Rates in the Soviet Economy", "Western data")
     said("苏联 · 1950—1987 · 高投资与增长放缓", T[0], 1900 + T[-2])
-    say("苏联的增长估计在\\chref{ch:soviet}（\\tabref{tab:soviet-growth}），1932—1933 年的饥荒也在那里")
+    say("苏联整个时期的三种增长估计在\\chref{ch:soviet}（\\tabref{tab:soviet-growth}），1932—1933 年的饥荒也在那里")
+    say("这里按十年看每个工人的数")
     COVERED.append("1932—1933 年的饥荒也在那里")                                    # EVENTS: Chapter 31 tells it
     said("按 Easterly 与 Fischer（1995）用的西方数据，每个工人的产出 1950—1959 年每年增长 5.8\\%，1980—1987 年只有 1.4\\%",
          F["ef_title"][1], T[0], 1900 + T[1], T[2], T[9], 1900 + T[10], T[11])
@@ -1447,9 +1484,9 @@ def case(F, Y, Q):
          F["jec_t2_gnp"][0], F["jec_t2_cons"][0], F["jec_t2_inv"][0])
     has("jec_competition", "Competition intensified among the major claimants on GNP—investment, defense, and consumption",
         "after the mid-1970s")
-    has("jec_priorities", "remained much the same")
-    said("按 Kurtzweg 的研究，1970 年代中期以后增长放慢，投资、国防与消费争夺资源，“莫斯科的优先次序看来变化很小”，三者在国民"
-         "生产总值中的份额 1970 年以后大致不变", F["jec_competition"][0], F["jec_priorities"][1])
+    has("jec_priorities", "remained much the same", "in current prices")
+    said("按 Kurtzweg 的研究，1970 年代中期以后增长放慢，投资、国防与消费争夺资源，“莫斯科的优先次序看来变化很小”，三者按当年价格"
+         "在国民生产总值中的份额 1970 年以后大致不变", F["jec_competition"][0], F["jec_priorities"][1])
     has("jec_living", "The standard of living of the population continued to rise",
         "the rate of improvement slowed markedly after 1975")
     assert F["jec_planners"][0] == F["jec_living"][0]
@@ -1468,6 +1505,7 @@ def case(F, Y, Q):
     (c5,) = F["ef_t6_sigma"]
     tf = F["ef_t6_tfp"]
     assert all(abs(x - 1.1) < 0.07 for x in tf)
+    said("替代弹性衡量资本与劳动互相替代的难易，科布—道格拉斯函数的替代弹性是 1", 1)
     said("他们沿着 Weitzman（1970）的思路，估计替代弹性不变的生产函数，替代弹性只有 0.37，各个十年的全要素生产率都在每年 1.1\\% 左右",
          F["ef_ref_weitzman"][0], -c5, float(np.mean(tf)))
     has("ef_entirely", "extensive growth—diminishing returns to capital—accounts entirely for the growth slowdown")
@@ -1475,7 +1513,7 @@ def case(F, Y, Q):
     said("按他们的转述，Weitzman（1990）把苏联的增长说成索洛（1956）的新古典模型见过的最好的应用", F["ef_best"][0],
          F["ef_best"][2])
     # the figure
-    said("按 1982 年要素成本", head[3])
+    said("按 1982 年要素成本，即扣除间接税、加上补贴以后的价格", head[3])
     has("ef_t1_head", "Table 1.")
     said("数据：(a) Easterly 与 Fischer（1995）表 1；(b) 美国国会联合经济委员会（1990）表 2", F["ef_title"][1],
          F["ef_t1_head"][0], F["jec_date"][0], head[0])
@@ -1512,15 +1550,20 @@ def debate(F, Y, Q):
     has("dn_010", "only 0.10 percentage points", "much larger amounts obtained in virtually all other studies")
     assert F["dn_010"][0] == t1                                                  # the second witness of 0.1
     has("dn_1945", "Use of 1945 as a starting point minimizes their figure.")
-    said("丹尼森 1969 年反驳说，这个数与几乎所有别的研究得到的大得多的数相反，以 1945 年为起点也把他们的数压到了最低",
+    said("丹尼森 1969 年反驳说，他们修正以后的数与几乎所有别的研究得到的大得多的数相反，以 1945 年为起点也把这个数压到了最低",
          F["dn_1969"][0], F["dn_1945"][0])
     has("dn_137", "in Why Growth Rates Differ")
-    said("他自己在《增长率为什么不同》里得到的是 1.37 个百分点", F["dn_137"][0])
+    has("dn_period", "refers to the period from 1950 to 1962", "For this timespan, Jorgenson and Griliches obtain 0.30",
+        "the difference in time period is responsible for 0.20 points")
+    p137, p0, p1, jg5062, jg4565, q0, q1, period = F["dn_period"]
+    assert p137 == F["dn_137"][0] and jg4565 == t1 and (q0, 1900 + q1) == (e0, e1)
+    assert np.isclose(jg5062 - jg4565, period)                                  # the period explains 0.20 of 1.27
+    said("他自己在《增长率为什么不同》里得到的是 1.37 个百分点，那是 1950—1962 年的数", p137, p0, p1)
+    said("他说，同一时期乔根森与格里利克斯得到 0.30，时期的不同只解释两人差距中的 0.20 个百分点", jg5062, period)
     has("jg_knowledge", "not that advances in knowledge are negligible", "governed by the same economic laws")
     has("jg_replytitle", "Issues in Growth Accounting: A Reply to Edward F. Denison")
     has("scb_reply", "come closer to the concepts and methodology advocated by Denison", "substantial differences remain")
     said("按美国经济分析局 1972 年的说明", Y["scb_reply"])
-    said("索洛自己 1957 年就说过，很多创新要体现在新设备里", F["s57_title"][2])
     has("nb_embodiment", "the embodiment model should have fit the facts significantly better", "But it did not.")
     has("nb_noexplanatory", "no explanatory value in the embodiment idea")
     has("nb_engine", "technology remains the dominant engine of growth, with human capital investment in second place")
@@ -1569,9 +1612,9 @@ def deeper(F, Y, Q):
     said("他的表 1 与 Easterly 与 Fischer 的表也有读错的数", 1)
     has("s56_ag", "The eventual rate of increase of real output is n + ag/b.")
     has("s56_kyg", "the capital coefficient K/Y grows at rate n + g/b - n - ag/b = g")
-    said("索洛（1956）第 85 页说，加上中性技术进步以后，产出的增长率最终是$n+ag/b$，$b=1-a$，资本—产出比每年增长$g$",
-         F["s56_title"][2], page("s56_ag"), 1)
-    say("按他自己的生产函数，产出与资本都按$n+g/b$增长，资本—产出比不变（本书的计算）")
+    said("索洛（1956）第 85—86 页说，加上中性技术进步以后，产出的增长率最终是$n+ag/b$，$b=1-a$，资本—产出比每年增长$g$",
+         F["s56_title"][2], page("s56_ag"), page("s56_kyg"), 1)
+    say("按他自己的生产函数，产出与资本都按$n+g/b$增长，资本—产出比不变，他的$n+ag/b$正好少了技术进步本身的$g$（本书的计算）")
     has("ef_t6_sigma", "Table 6.", "Elasticity of substitution (c5) −0.37")
     has("ef_t6_eq", "(6) ln(Y/L)")
     (c5,) = F["ef_t6_sigma"]
@@ -1607,13 +1650,13 @@ def legacy(F, Y, Q):
     assert set(fast["code"]) == {"TWN", "KOR", "BWA", "SGP", "MLT", "THA", "CHN", "HKG", "ROU"}
     assert list(fast.sort_values("g", ascending=False)["code"]) == ["TWN", "KOR", "BWA", "SGP", "MLT", "THA", "CHN",
                                                                     "HKG", "ROU"]
-    said("1960—2019 年人均增长率每年超过 4\\% 的有 9 个经济体，即台湾、韩国、博茨瓦纳、新加坡、马耳他、泰国、中国大陆、香港与罗马尼亚"
+    said("1960—2019 年人均增长率每年超过 4\\% 的有 9 个经济体，即中国台湾、韩国、博茨瓦纳、新加坡、马耳他、泰国、中国大陆、中国香港与罗马尼亚"
          "（本书的计算）", PWT_FIRST, PWT_LAST, 4, len(fast))
     q = quarters()[2]
     poorest = D.iloc[:q]
     assert set(poorest.loc[poorest["g"] > 0.04, "code"]) == {"KOR", "THA", "CHN", "BWA"}
     behind = int((poorest["g"] < quarters()[1] / 100).sum())                      # slower than the richest quarter
-    said("其中韩国、泰国、中国大陆与博茨瓦纳 1960 年在最穷的四分之一里，同一组的 27 个国家却有 13 个增长得比最富的四分之一慢，"
+    said("其中韩国、泰国、中国大陆与博茨瓦纳 1960 年在最穷的四分之一里，同一组的 27 个国家却有 13 个增长得比最富的四分之一的平均速度慢，"
          "差距反而拉大了", PWT_FIRST, q, behind)
 
 
@@ -1810,9 +1853,11 @@ EVENTS = [("哈罗德（Roy Harrod，1900—1978）", "ch33_islm", "哈罗德（
            "\\frac{Y}{N}=\\frac{Y}{L}\\cdot\\frac{L}{N} .\\label{eq:smith-twofactors}"),
           ("\\chref{ch:divergence}的模型只有土地与劳动，$y=\\tilde A(X/L)^{\\alpha}$", "ch21_divergence",
            "$y=\\tilde A(X/L)^{\\alpha}$"),
-          ("1800—1860 年每年约 0.8\\%，因此高于按三种要素算的数", "ch21_divergence",
+          ("1800—1860 年每年约 0.8\\%，就高于按三种要素算的数", "ch21_divergence",
            "比按资本、劳动与土地三种要素算的大"),
-          ("苏联的增长估计在\\chref{ch:soviet}（\\tabref{tab:soviet-growth}）", "ch31_soviet", "\\label{tab:soviet-growth}"),
+          ("苏联整个时期的三种增长估计在\\chref{ch:soviet}（\\tabref{tab:soviet-growth}）", "ch31_soviet",
+           "\\caption{苏联经济增长的三种估计（每年 \\%）}\\label{tab:soviet-growth}"),
+          ("各国 1960 年的收入按购买力平价比较", "ch05_external", "就是\\textbf{购买力平价}（purchasing power parity，PPP）"),
           ("1932—1933 年的饥荒也在那里", "ch31_soviet", "1932—1933 年的饥荒"),
           ("\\chref{ch:consumption}问家庭为什么储蓄，储蓄率怎样随增长变化", "ch39_consumption",
            "下一章索洛的增长模型把储蓄率当作给定，问的是储蓄能把增长推到哪里")]
@@ -1822,7 +1867,7 @@ LATER = {"ch:consumption": "ch39_consumption", "ch:divergence": "ch21_divergence
          "ch:smith": "ch18_smith", "ch:soviet": "ch31_soviet", "ch:planned": "ch43_planned",
          "ch:eastasia": "ch42_eastasia", "ch:endogenous": "ch56_endogenous", "ch:demography": "ch79_demography",
          "ch:transition": "ch59_transition", "ch:rbc": "ch53_rbc", "ch:heterogeneity": "ch71_heterogeneity",
-         "ch:islm": "ch33_islm"}
+         "ch:islm": "ch33_islm", "ch:external": "ch05_external"}
 # the chapters that point here
 POINTERS = ("ch11_medieval", "ch18_smith", "ch21_divergence", "ch22_marx", "ch41_development", "ch42_eastasia",
             "ch53_rbc", "ch56_endogenous")
@@ -2008,7 +2053,7 @@ def counts() -> None:
     # the political character: a higher saving rate is paid for in consumption now; who chose the Soviet investment share
     # and who bore the forgone consumption
     for words in ("可多储蓄是用少消费换来的", "提高的那一年消费要减少六分之一", "少消费的是过渡期间活着的人，多消费的是以后的人",
-                  "储蓄率由谁定，谁就决定了这笔账由哪几代人付", "计划经济里，投资率由中央定",
+                  "储蓄率由谁定，谁就决定了这笔账由哪几代人付", "在计划经济里，投资率由中央的计划者定",
                   "多投资由谁决定、代价由谁承担", "“莫斯科的优先次序看来变化很小”", "“计划者让投资的增长在 1975 年以后显著放慢”",
                   "居民的生活水平仍在提高，提高的速度却明显放慢", "投资与国防的份额由莫斯科定，消费的放慢由居民承受",
                   "在专制地指挥的经济里", "1932—1933 年的饥荒也在那里", "代价是眼前少消费"):

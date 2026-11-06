@@ -2,6 +2,7 @@ id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
 nb_title,美国,1987,,8;1987,,,nobel_solow40,web page,"Lecture to the memory of Alfred Nobel, December 8, 1987 Growth Theory and After",
 nb_copyright,美国,1987,,1987,,,nobel_solow40,web page,Copyright © The Nobel Foundation 1987,the copyright notice of the lecture
 nb_room,美国,1987,,,,,nobel_solow40,web page,"I know that I have been in this room before, but that was in real life, and I was awake.",
+nb_dream,美国,1987,,,,,nobel_solow40,web page,So I do not know if I have ever dreamt about giving this Lecture.,
 nb_stockholm,美国,1987,,1987,,,nobel_solow40,web page,(I hope these strange Latin phrases are still understood in Stockholm in 1987!),
 nb_notbegin,美国,1987,,1956;1957,,,nobel_solow40,web page,"Growth theory did not begin with my articles of 1956 and 1957, and it certainly did not end there.",
 nb_trail,美国,1987,,1950,,,nobel_solow40,web page,"in the 1950s I was following a trail that had been marked out by Roy Harrod and by Evsey Domar, and also by Arthur Lewis in a slightly different context.",
@@ -11,6 +12,7 @@ nb_constants,美国,1987,,,,,nobel_solow40,web page,"were given constants, facts
 nb_sporadic,美国,1987,,,,,nobel_solow40,web page,"All of them were understood to be capable of changing from time to time, but sporadically and more or less independently.",
 nb_luck,美国,1987,,,,,nobel_solow40,web page,"In that case, however, the possibility of steady growth would be a miraculous stroke of luck.",
 nb_recipe,美国,1987,,2;2,,,nobel_solow40,web page,"then a recipe for doubling the rate of growth in a labor surplus economy was simply to double the savings rate, perhaps through the public budget.",
+nb_notsimply,美国,1987,,,,,nobel_solow40,web page,we all knew then – as I am not sure we all know now – that doubling the ex ante saving rate would not double the ex post saving rate unless something were taking care of the ex ante investment rate at the same time.,"after 'Well, not simply:' (the words simply, ex ante and ex post in italics)"
 nb_underdeveloped,美国,1987,,,,,nobel_solow40,web page,"In underdeveloped countries, however, where the appetite for new capital is likely to be pretty strong, the recipe looked usable.",
 nb_writings,美国,1987,,,,,nobel_solow40,web page,I believe I remember that writings on economic development often asserted that the key to a transition from slow growth to fast growth was a sustained rise in the savings rate.,
 nb_implausible,美国,1987,,,,,nobel_solow40,web page,"The recipe sounded implausible to me. I can no longer remember exactly why, but it did.",
@@ -116,6 +118,8 @@ s56_shunted,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),All the difficulties and
 s56_notcontend,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),"It is not my contention that these problems don't exist, nor that they are of no significance in the long run.",
 s56_tightrope,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),My purpose was to examine what might be called the tightrope view of economic growth,
 s56_demand,美国,1956,,,,,solow1956,p. 91 (PDF p. 28),"Underemployment and excess capacity or their opposites can still be attributed to any of the old causes of deficient or excess aggregate demand, but less readily to any deviation from a narrow ""balance.""",
+s56_policy,美国,1956,,,,,solow1956,p. 93 (PDF p. 30),"the multiplicity of routes to full employment, via tax, expenditure, and monetary policies, leaves the nation some leeway to choose whether it wants high employment with relatively heavy capital formation, low consumption, rapid growth; or the reverse, or some mixture.",
+s56_strains,美国,1956,,,,,solow1956,p. 93 (PDF p. 30),I do not mean to suggest that this kind of policy (for example: cheap money and a budget surplus) can be carried on without serious strains.,
 sw_issue,澳大利亚,1956,,1956;11;32;63,,,archive_swan40,metadata record,The Economic Record 1956-11: Vol 32 Iss 63,the title of the item
 sw_title,澳大利亚,1956,,,,,swan1956,p. 334 (PDF p. 148),AND CAPITAL ACCUMULATION From Adam Smith to Arthur Lewis.,the heading and subtitle as the text layer reads them
 sw_anu,澳大利亚,1956,,,,,swan1956,p. 343 (PDF p. 157),"T. W. Swan Australian National University, Canberra.",
@@ -218,6 +222,8 @@ bm_title,美国,1986,,76;5;1986;1072;1085,,,baumol1986,JSTOR cover page (PDF p. 
 bm_16,美国,1986,,16,,,baumol1986,p. 1074 (PDF p. 4),the median increase in productivity among the 16 industrialized leaders in Maddison's sample,
 bm_eq,美国,1986,,1870;1979;5.25;-0.75;1870;0.88,,,baumol1986,p. 1076 (PDF p. 6),"GrowthRate (1870-1979) = 5.25 -0.751n (GDP per WorkHr, 1870), R2 = 0.88.",'0.751n' for '0.75 ln'
 bm_seriously,美国,1986,,,,,baumol1986,p. 1076 (PDF p. 6),The high correlation should not be taken too seriously.,footnote 5
+bm_backward,美国,1986,,1870,,,baumol1986,p. 1076 (PDF p. 6),"First, the 1870 figures were calculated by Maddison using backward extrapolation of growth rates, and hence their correlation is hardly surprising.",footnote 5
+bm_spurious,美国,1986,,,,,baumol1986,p. 1076 (PDF p. 6),"both sides of the equation, thus tending to produce a spurious appearance of close relationship.",footnote 5: the regression of the growth rate on the initial level has the initial level on both sides
 bm_72,美国,1986,,72,,,baumol1986,p. 1076 (PDF p. 6),"the 72-country data depicted in Figure 3 hardly constitute a close fit (the R2 is virtually zero), and do not even yield a negatively sloping regression line.",
 bm_spillover,美国,1986,,,,,baumol1986,p. 1077 (PDF p. 7),"However, a plausible alternative interpretation is that while national policies and behavior patterns do substantially affect productivity growth, the spillovers from leader economies to followers are large-at least among the group of industrial nations.",
 bm_public,美国,1986,,,,,baumol1986,p. 1077 (PDF p. 7),"In other words, for such nations a successful productivity-enhancing measure has the nature of a public good.",
@@ -341,6 +347,7 @@ jg_replytitle,美国,1972,,,,,scb1972,PDF p. 91,Issues in Growth Accounting: A R
 dn_010,美国,1972,,0.1,,,scb1972,PDF p. 125,"They concluded that output per unit of input contributed little to the growth rate of output-only 0.10 percentage points, to be exact. This estimate contrasts with much larger amounts obtained in virtually all other studies.",
 dn_137,美国,1972,,1.37,,,scb1972,PDF p. 125,I arrived at 1.37 percentage points in Why Growth Rates Differ,
 dn_1945,美国,1972,,1945,,,scb1972,PDF p. 126,Use of 1945 as a starting point minimizes their figure.,
+dn_period,美国,1972,,1.37;1950;1962;0.3;0.1;1945;65;0.2,,,scb1972,PDF p. 126,"My summary estimate, that the increase in output per unit of input contributed 1.37 points to the growth rate, refers to the period from 1950 to 1962. For this timespan, Jorgenson and Griliches obtain 0.30, as against 0.10 for 1945-65. Thus, the difference in time period is responsible for 0.20 points of the difference between our summary estimates.",
 pwt_title,,2023,,10.01,,,pwt1001,dataset record,Penn World Table version 10.01,
 pwt_cite,,2023,,,,,pwt1001,dataset record,"When using these data (for whatever purpose), please make the following reference:",
 pwt_ref,,2023,,2015;105;10;3150;3182,,,pwt1001,dataset record,"Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), ""The Next Generation of the Penn World Table"" American Economic Review, 105(10), 3150-3182",
