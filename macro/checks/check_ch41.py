@@ -1015,10 +1015,11 @@ def isi(F, Y, Q):
     has("sc_priority", "top priority to industry, which includes keeping food grains cheap")
     has("sc_politics", "favor the urban population at the expense of rural people")
     said("舒尔茨在 1979 年的演讲里说，政策把最高的优先给了工业", F["sc_title"][1])
-    say("关税向买进口品与国产品的消费者征税，高估的汇率向出口者征税，这里的出口者多是农民与矿业（本书的概括）")
+    say("关税向买进口品与国产品的消费者征税，高估的汇率向出口者征税，这里的出口者多是农民与矿山（本书的概括）")
     # the compare box
-    has("ll_virtues", "Then nearly every country discovered the virtues of exporting.")
-    said("刘易斯 1979 年说，几乎每个国家后来都发现了出口的好处", F["ll_title"][1])
+    has("wd_foreign", "since production usually required imported intermediate and capital goods")
+    has("wd_foreign", "sustained industrial growth depended on the expansion of exports to provide the necessary foreign exchange")
+    said("生产要用进口的中间品与资本品，工业要持续增长，就要靠扩大出口挣外汇（世界银行 1987 年的回顾）", F["wd_copyright"][0])
     has("wd_inward_def", "The average rate of effective protection for home markets is high")
     has("wd_controls", "Direct controls and licensing disincentives to the traditional export sector are pervasive")
     has("wd_overvalued", "the exchange rate is significantly overvalued")
@@ -1054,12 +1055,12 @@ def push(F, Y, Q):
     has("ms_cottage", "the cottage technology for each good yields 1 unit of output for each unit of labor input")
     has("ms_irs", "a fixed cost of F units of labor to set up a factory", "α > 1 units of output for 1 unit of labor input")
     say("每种商品可以用手工生产，一单位劳动出一单位产品")
-    said("工厂先要投入$F$单位劳动的固定成本，此后一单位劳动出$a>1$单位产品，工资要比手工多出补偿$v$", 1)
+    said("工厂先要投入$F$单位劳动的固定成本，此后一单位劳动出$\\theta>1$单位产品，工资要比手工多出补偿$v$", 1)
     has("ms_wage", "w = 1 + v > 1. (6)")
     has("ms_profit", "π = y(1 − (1+v)/α) − F(1+v) (7)")
-    said("总收入为$y$时，一家工厂的利润是$y\\,(1-(1+v)/a)-F\\,(1+v)$", 1, 1, 1)
+    said("总收入为$y$时，一家工厂的利润是$y\\,(1-(1+v)/\\theta)-F\\,(1+v)$", 1, 1, 1)
     has("ms_eq8", "α − 1 > v. (8)")
-    said("模型要有意思，生产率的提高必须超过补偿，即$a-1>v$", 1)
+    said("模型要有意思，生产率的提高必须超过补偿，即$\\theta-1>v$", 1)
     has("ms_premium", "pays a wage premium", "even if its investment loses money")
     has("ms_pareto", "the Pareto superiority of the equilibrium with industrialization")
     has("ms_coordination", "Such spillovers give rise to the possibility that coordination of investments across sectors",
@@ -1073,7 +1074,7 @@ def push(F, Y, Q):
     said("按它 1958 年的摘要，国家发展委员会认为，分配项目时要照顾欠发达地区的需要", F["i8_date"][0])
     # ex:development-push
     lo, hi = f_range(PUSH_L, PUSH_A, PUSH_V)
-    said("教学输入：$L=100$，$a=1.5$，$v=0.2$", PUSH_L, PUSH_A, PUSH_V)
+    said("教学输入：$L=100$，$\\theta=1.5$，$v=0.2$", PUSH_L, PUSH_A, PUSH_V)
     said("（2）取$F=18$，没人建厂时单独建厂的利润是多少？", PUSH_F)
     alone = PUSH_L * (1 - (1 + PUSH_V) / PUSH_A)
     said("第一式要$100\\times(1-1.2/1.5)=20<1.2F$，即$F>16.7$", PUSH_L, 1, 1 + PUSH_V, PUSH_A, alone, 1 + PUSH_V, lo)
@@ -1542,7 +1543,7 @@ def selfcheck(F, Y, Q):
     said("一种产品的名义关税 30\\%，投入品按世界价格占产品价格的一半，投入品免税，有效保护率是多少？投入品征 30\\% 呢？",
          100 * tf, 100 * tm)
     assert told("投入品按世界价格占产品价格的一半", "价格的", "") == a
-    said("$L=100$，$a=1.5$，$v=0.2$，$F=15$ 时", PUSH_L, PUSH_A, PUSH_V, SC_F)
+    said("$L=100$，$\\theta=1.5$，$v=0.2$，$F=15$ 时", PUSH_L, PUSH_A, PUSH_V, SC_F)
     icor, g, s = SC_GAP
     said("某国的 ICOR 为 3，目标增长率 6\\%，国内储蓄率 12\\%", icor, 100 * g, 100 * s)
     e = lewis(SC_LC)
@@ -1579,8 +1580,8 @@ def models() -> None:
     assert eqs == {
         "eq:development-lewis": ("(1-\\alpha)\\,A\\,K^{\\alpha}L_c^{-\\alpha}=\\bar w ,\\qquad \\Pi=Y_c-\\bar w L_c=\\alpha\\,Y_c ,"
                                  "\\qquad \\frac{S}{Y}=\\frac{\\alpha\\,Y_c}{Y_c+Y_s} ."),
-        "eq:development-erp": "\\text{ERP}=\\frac{v'-v}{v}=\\frac{t_f-a\\,t_m}{1-a} ,",
-        "eq:development-push": ("L\\Bigl(1-\\frac{1+v}{a}\\Bigr)-F\\,(1+v)<0 ,\\qquad a\\,(L-F)-L\\,(1+v)>0 ."),
+        "eq:development-erp": "\\text{ERP}=\\frac{V'-V}{V}=\\frac{t_f-a\\,t_m}{1-a} ,",
+        "eq:development-push": ("L\\Bigl(1-\\frac{1+v}{\\theta}\\Bigr)-F\\,(1+v)<0 ,\\qquad \\theta\\,(L-F)-L\\,(1+v)>0 ."),
         "eq:development-gap": "\\frac{I}{Y}=\\text{ICOR}\\times g ,\\qquad \\text{缺口}=\\frac{I}{Y}-\\frac{S}{Y} .",
     }, eqs
     assert "\\begin{equation}" not in t

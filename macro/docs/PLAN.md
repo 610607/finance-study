@@ -1444,6 +1444,9 @@ ex:consumption-lifecycle ex:consumption-windfall ex:consumption-euler ex:consump
 sec:solow-world sec:solow-model sec:solow-transition sec:solow-accounting sec:solow-check sec:solow-debate sec:solow-legacy
 eq:solow-accumulation eq:solow-steady eq:solow-speed eq:solow-accounting tab:solow-convergence fig:solow_diagram fig:solow_transition fig:solow_convergence fig:solow_soviet
 ex:solow-double ex:solow-transition ex:solow-golden ex:solow-accounting ex:solow-soviet
+sec:development-world sec:development-lewis sec:development-isi sec:development-push sec:development-cases sec:development-check sec:development-debate sec:development-legacy
+eq:development-lewis eq:development-erp eq:development-push eq:development-gap tab:development-paths fig:development_lewis fig:development_terms fig:development_paths
+ex:development-lewis ex:development-erp ex:development-push ex:development-gap
 
 ch:intro ch:accounts ch:prices ch:money ch:external ch:mesopotamia ch:greekroman ch:qinhan ch:india ch:islamic ch:medieval ch:songming ch:silver ch:africa ch:finrevolution ch:mercantilism ch:tokugawa ch:smith ch:bullion ch:say ch:divergence ch:marx ch:goldstandard ch:periphery ch:wicksell ch:weimar ch:interwar ch:depressionus
 ch:depressionworld ch:alternatives ch:soviet ch:generaltheory ch:islm ch:warfinance ch:reconstruction ch:brettonwoods ch:mundell ch:phillips ch:consumption ch:solow ch:development ch:eastasia ch:planned ch:naturalrate ch:monetarism ch:floating ch:oil ch:ratex ch:credibility ch:budget ch:latamdebt ch:hyperinflation ch:rbc ch:newkeynesian ch:consensus ch:endogenous

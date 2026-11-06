@@ -185,7 +185,7 @@ def development_paths():
         _grid(ax, "y")
     a1.set_ylabel(T("人均 GDP（2011 年国际元）", "GDP per head (2011 int. $)"), labelpad=2)
     _title(a1, T("(a) 拉美三国 1980 年以后停滞", "(a) Latin America stalled after 1980"))
-    _title(a2, T("(b) 起点相近，此后分开", "(b) Similar starts, different paths"))
+    _title(a2, T("(b) 1960 年相差不到一倍，此后分开", "(b) Under 2:1 in 1960, then apart"))
     assert P.min().min() > 700 and P.max().max() < 50000
     assert P.loc[1980, ["ARG", "BRA", "MEX"]].min() > P.loc[1950, ["ARG", "BRA", "MEX"]].max() / 2
     return fig
