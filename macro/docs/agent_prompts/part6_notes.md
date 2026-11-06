@@ -742,5 +742,126 @@ zh/ch33_islm.tex and zh/ch38_phillips.tex.
 - Name a measure as the source does: Hall and Jorgenson's "effective rate" of the credit is not an
   effective tax rate.
 - A line that sits on an axis at the figure's scale gets its own labelled leader line.
-- The section for Chapter 40 is not written yet: the author asked to pause after Chapter 39
-  ("39章写完后暂停并提交", 2026-10-29).
+- After the pause at Chapter 39 ("39章写完后暂停并提交", 2026-10-29) the author asked to continue
+  ("继续", 2026-11-06); the section for Chapter 40 follows.
+
+## 第 40 章 `ch:solow` 索洛增长模型 (`zh/ch40_solow.tex`)
+
+A theory chapter, like Chapters 33, 37, 38 and 39: the model is the spine; who built it, from what
+problem, and how it was taken to the data (growth accounting, convergence) are the story. Model
+chapters: zh/ch33_islm.tex and zh/ch39_consumption.tex.
+
+- Neighbours:
+  - Ch 2 owns the national accounts and the capital-stock identity $K_{t+1}=K_t+I_t-D_t$
+    (`eq:accounts-capital`) and the saving identity: use them, do not re-derive them.
+  - Ch 18 splits output per head into productivity and the share of useful labour
+    (`eq:smith-twofactors`); Ch 21 owns the Malthusian model (`eq:divergence-escape`), the two-factor
+    TFP with land and labour (`ex:divergence-tfp`, `sec:divergence-test`) and the industrial
+    revolution's numbers. The rows from Ch 18 and Ch 21 ask for growth accounting with capital: say
+    once why two-factor TFP includes capital deepening and so overstates three-factor TFP.
+  - Ch 22 (`sec:marx-legacy`, `fig:marx_uk`, `fig:marx_shares`): the UK wage share and profit proxy of
+    1855–1913 and the Engels' pause; the stylised facts of factor shares (Kaldor 1961, if obtained)
+    start here, the inequality debate is Ch 71's.
+  - Ch 31 owns the Soviet growth estimates of 1928–1987 (`tab:soviet-growth`, Harrison 1993, the
+    Gerschenkron effect `eq:soviet-index`): refer back, do not retell them. Ch 34 owns Domar (1944) on
+    the debt burden with a growing income (`ex:warfinance-domar`); Domar's growth model of 1946 is
+    this chapter's. Harrod's and Domar's life dates are in Ch 33 and Ch 34.
+  - Ch 39 ends with this chapter's question: life-cycle saving rises with growth, Japan's household
+    saving peaked as growth slowed. Saving that depends on growth is a reason why a regression of
+    growth on saving is not the model's causal effect: say so in a sentence where the tests come.
+  - Later chapters own: Ch 41 development (Lewis, import substitution, the big push; its stub asks
+    “穷国怎样起飞？”), Ch 42 East Asia and the Krugman–Young growth-accounting debate, Ch 43 the mature
+    planned economies (Kosygin, Kornai), Ch 56 endogenous growth (Romer, Lucas, AK), Ch 59 transition,
+    Ch 71 inequality and factor shares (Piketty), Ch 79 demography and AI. Here each is at most a
+    sentence with `\chref`.
+- Owns:
+  - the problem Solow answered: Harrod (1939, *Economic Journal*) and Domar (1946, *Econometrica*), the
+    fixed capital–output ratio and the "knife-edge" (whose phrase, verify), through the papers if
+    obtained, otherwise through Solow's own account (Solow 1956's introduction; his Nobel lecture of
+    1987, "Growth Theory and After", nobelprize.org);
+  - Solow (1956, *QJE*, "A Contribution to the Theory of Economic Growth") and Swan (1956, *Economic
+    Record*, "Economic Growth and Capital Accumulation"): a production function with substitution, the
+    accumulation equation, the steady state and its stability; the answer to the guide question
+    (in the model a higher saving rate raises the level of output per worker, not its long-run growth
+    rate, which technical progress sets); the golden rule (Phelps 1961, *AER*, "The Golden Rule of
+    Accumulation", in a paragraph if obtained); the speed of convergence;
+  - Solow (1957, *Review of Economics and Statistics*, "Technical Change and the Aggregate Production
+    Function"): his data (US non-farm output per man-hour, 1909–1949), his method, the share of growth
+    he attributed to technical change, and the residual; Abramovitz (1956, NBER, "Resource and Output
+    Trends in the United States since 1870", on nber.org, NBER © notice) and his "measure of our
+    ignorance" (verify the words and who said them first);
+  - convergence: Baumol (1986, *AER*) and De Long's (1988, *AER*) objection (selection on ex-post
+    success), Barro (1991, *QJE*) and Barro and Sala-i-Martin (1992, *JPE*; NBER working papers) on
+    conditional convergence (the rate they estimate), Mankiw, Romer and Weil (1992, *QJE*; NBER working
+    paper 3541 of 1990, on nber.org): the augmented model with human capital and what share of
+    cross-country differences it explains, with the capital share it implies; Pritchett (1997,
+    *Journal of Economic Perspectives*, "Divergence, Big Time": JEP is open on aeaweb.org) for the long
+    run. Test absolute and conditional convergence on Penn World Table 10.01 (CC BY 4.0: cite Feenstra,
+    Inklaar and Timmer 2015 as its terms ask) or the Maddison Project 2023 (cached; CC BY 4.0 with its
+    citation policy);
+  - the case: the Soviet Union's high investment and slowing growth after 1950 (the PLAN's case):
+    Easterly and Fischer (1995, *World Bank Economic Review*; World Bank policy research working paper
+    1284 of 1994 on documents.worldbank.org, if it opens: the investment share, the growth rates by
+    period, their reading with a low elasticity of substitution after Weitzman 1970, *AER*, if
+    obtained), with Ch 31's estimates referred back; the CIA's and the Joint Economic Committee's
+    estimates (US government, public domain; www.cia.gov answered on 2026-11-06, www.jec.senate.gov did
+    not) if a table can be had; Krugman (1994) only in a sentence pointing to Ch 42.
+- Promises (FORWARD_REFS rows pointing to 40): from Ch 18 (growth accounting), Ch 21 (growth
+  accounting with capital; two-factor TFP overstates three-factor TFP), Ch 22 (factor shares over
+  growth: the stylised facts) and Ch 39 (the question; saving taken as given). Mark each done with the
+  labels; where a row also names Ch 71, say which half was kept.
+- When it begins: Ch 39 ends with the question. A candidate opening is Solow's own moment (the paper
+  of February 1956, or his account in the Nobel lecture of why he distrusted the knife-edge), or the
+  Soviet claim to overtake the West with ever more investment; choose what the documents support.
+- Teaching (`eq:solow-…`, worked examples with teaching inputs or the sources' own numbers):
+  - the model with Cobb–Douglas $y=k^{\alpha}$: $\Delta k=s\,y-(n+\delta)\,k$ (state where it differs
+    from Solow's 1956 notation: he had no depreciation in the basic case), the steady state
+    $k^{*}=(s/(n+\delta))^{1/(1-\alpha)}$, the elasticity of $y^{*}$ with respect to $s$, $\alpha/(1-\alpha)$;
+    with labour-augmenting technical progress at rate $g$, the balanced growth path;
+  - examples: doubling the saving rate (the level effect and the time it takes); the transition path
+    and the half-life with $\lambda\approx(1-\alpha)(n+g+\delta)$ (a simulation, as Ch 38's Model I);
+    the golden rule ($s=\alpha$ under Cobb–Douglas) and who gives up consumption to reach it; growth
+    accounting $g_Y=\alpha g_K+(1-\alpha)g_L+g_A$ with Solow's own 1909–49 numbers; a reading of the
+    Soviet numbers with the model (a rising investment share and falling growth);
+  - the stylised facts as the model's targets (constant growth of output per worker, a stable
+    capital–output ratio and stable factor shares), with Ch 22's UK numbers and PWT's labour share.
+- Compare boxes (the PLAN's candidates): 水平效应 vs 增长效应; 绝对收敛 vs 条件收敛. Every cell must
+  belong to the side it is under, with the authors' own statements.
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - Is the residual technology or mismeasurement? Solow and Abramovitz against Jorgenson and Griliches
+    (1967, *Review of Economic Studies*, "The Explanation of Productivity Change", if obtained), with
+    Denison's reply if obtained;
+  - Do poor countries catch up? Baumol against De Long; conditional convergence (Barro, Mankiw–Romer–
+    Weil) against Pritchett's divergence;
+  - Why did Soviet growth slow: diminishing returns to capital with low substitution (Easterly and
+    Fischer; Weitzman), or incentives and innovation in the system (the planned economy's mechanics
+    are Ch 43's: a sentence).
+- Political character (write_template rule 5): a higher saving rate is paid for in consumption now;
+  who chose the Soviet investment share and who bore the forgone consumption, said plainly with the
+  sources' words where they exist (Ch 31 owns the famine of 1932–33: refer back in a clause, do not
+  retell it).
+- Data and sources (journal issues, dates and working-paper numbers in this list are leads, not
+  evidence: verify each; probed 2026-11-06: www.rug.nl, dataverse.nl, documents.worldbank.org,
+  openknowledge.worldbank.org, www.nber.org, www.nobelprize.org, www.cia.gov, archive.org,
+  economics.mit.edu, www.anu.edu.au, www.econlib.org, fraser.stlouisfed.org, www.bea.gov,
+  www.govinfo.gov, delong.typepad.com and eh.net answered; www.jec.senate.gov, scholar.harvard.edu,
+  www.bls.gov and www.imf.org answered 403; www.ggdc.net and web.stanford.edu did not answer;
+  www.jstor.org answers with a bot check: do not try it):
+  - Solow (1956, 1957), Swan (1956), Harrod (1939), Domar (1946), Phelps (1961), Baumol (1986), De Long
+    (1988), Barro (1991), Jorgenson–Griliches (1967): in copyright, short phrases only; look for
+    copies on course pages or the authors' sites (read to verify, record URL, date and SHA-256, never
+    commit the file), else record each as not obtained;
+  - NBER working papers and books on nber.org (Abramovitz 1956, Mankiw–Romer–Weil, Barro and
+    Sala-i-Martin): the © notice exactly as printed; JEP articles on aeaweb.org: read the AEA's terms;
+  - World Bank working papers: copy the licence or rights statement printed in the document;
+  - PWT 10.01 and the Maddison Project 2023: CC BY 4.0 with their citation requirements; BEA tables:
+    public domain.
+- Figures: the Solow diagram ($s\,y$ and $(n+\delta)k$ for two saving rates); the transition path after
+  a rise in the saving rate (level and growth rate of output per worker); convergence scatters (all
+  countries and a rich-country subset, or absolute against conditional); the Soviet investment share
+  and growth by period.
+- Ending: return to the opening and hand over Ch 41's question “穷国怎样起飞？” (read its stub's guide
+  box): the model says where a poor country would go if it saved and invested like a rich one, not how
+  it starts.
+- Labels: `sec:solow-…`, `eq:solow-…`, `fig:solow_…`, `tab:solow-…`, `ex:solow-…`.
+- Length: 8,000–9,000 characters of main text.
