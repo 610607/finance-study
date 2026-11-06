@@ -1027,3 +1027,161 @@ data test) and zh/ch31_soviet.tex (a planned industrialisation told with its cos
 - Labels: `sec:development-…`, `eq:development-…`, `fig:development_…`, `tab:development-…`,
   `ex:development-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 41
+- Who decided is read from the document's own words, paragraph by paragraph: in the 1958 résumé the
+  Planning Commission submitted a memorandum and the National Development Council adopted the
+  resolution that split the plan. A body that proposes is not the body that decides.
+- A report that says it may not be quoted as representing an institution's views (the World Bank's
+  project reports) is cited to "报告的作者", not to the institution.
+- When a source gives the causes of an outcome, give its causes (PA-43a para. 3.01: four government
+  decisions), not a mechanism the book prefers (farmers' response to price). A sentence that makes
+  the source's facts fit the book's argument is the book's reading and is marked so.
+- Keep every condition of a qualified judgment ("justifiable only … and if …"), and do not sharpen a
+  source's vague phrase ("non-cocoa purposes" is not "investment").
+- Two people set against each other in a debate must have answered each other, or the pairing is
+  marked as the book's (Schultz's 1979 lecture does not mention Lewis).
+- A document's date, its imprint and its signer are three facts: read each from the title page, the
+  back of it and the letter, and do not merge them into an event ("printed at Lake Success on 27
+  April").
+- A trend word is checked against the whole series ("一路走低" when the table rises again three times).
+- A worked example that combines two sources' numbers checks that they measure the same thing (net
+  against gross investment) and says so where they do not.
+- One letter, one meaning within a chapter: when two models use the same symbol for different things
+  (the input share and productivity, value added and a wage premium), rename one and say where the
+  source's symbol differs.
+- A compare box's row compares like with like: a rationale from the time is not set against hindsight
+  decades later.
+- A figure's panel title states only what the data show at the scale drawn ("相差不到一倍", not "相近").
+- Text-layer readings of numbers that matter are confirmed on the page image (the 1958 résumé's
+  4500 read as "4600"); say in the 史料说明 which paragraphs were read on images.
+
+## 第 42 章 `ch:eastasia` 东亚奇迹：日本高速增长与发展型国家 (`zh/ch42_eastasia.tex`)
+
+A theory-and-history chapter: Chapter 40's growth accounting is the tool, applied to Japan's high
+growth of 1955–1973 and to Korea, Taiwan, Hong Kong and Singapore; the developmental state (who chose
+the industries, who allocated the credit, who paid) is the case. The guide question is the debate:
+accumulation or productivity. Model chapters: zh/ch40_solow.tex (theory with a data test on PWT),
+zh/ch41_development.tex (policy told as who decided and who paid) and zh/ch39_consumption.tex (the
+Japanese case box and the ESRI series).
+
+- Neighbours:
+  - Ch 35 owns Japan's reconstruction (the Dodge Line, 360 yen, the Korean War procurement): start
+    from it in a clause (FORWARD_REFS row from Ch 35). Ch 39 owns Japan's household saving rate (the
+    ESRI series, about 9.2% real growth a year in 1956–1973, the peak of 1974 and 1976, Hayashi and
+    Horioka): use its numbers through `\chref{ch:consumption}`, do not re-tell them. Ch 40 owns the
+    Solow model, `eq:solow-accounting`, the convergence tests and Easterly and Fischer's report of
+    Krugman's Soviet parable: use them, do not re-derive. Ch 41 owns import substitution against
+    export orientation (the compare box, WDR 1987's four groups, the effective rate of protection,
+    Korea against Ghana in `tab:development-paths`): build on it in a sentence.
+  - Later chapters own: Ch 43 planned economies (China's First Five-Year Plan and the Great Leap),
+    Ch 46 the end of Bretton Woods and the yen's float (1971–1973), Ch 47 the oil shock of 1973 (the
+    end of Japan's high growth: a clause), Ch 56 endogenous growth (technology and catch-up as theory),
+    Ch 58 Japan's bubble and lost decades, Ch 61 the Asian crisis of 1997–98 (the costs of the
+    developmental state's finance: a clause at most), Ch 72 China, Ch 78 industrial policy today,
+    Ch 79 demography. Each at most a sentence.
+- Owns:
+  - Japan 1955–1973: the growth record (ESRI's national accounts, cached for Ch 39; PWT 10.01, cached;
+    Maddison 2023, cached); the Economic White Paper of July 1956 ("もはや「戦後」ではない", 内閣府
+    www5.cao.go.jp: read the site's terms, 政府標準利用規約 if it applies); Ikeda's income-doubling plan
+    (国民所得倍増計画, the cabinet decision of December 1960: its target rate and what happened; the
+    text on worldjpn.net or the Cabinet Office: read the database's terms); MITI and industrial policy
+    (Johnson 1982 is a book in copyright, likely not obtainable: through those who report it, framed as
+    their report); financial repression (the Temporary Interest Rate Adjustment Law of 1947, the Bank
+    of Japan's window guidance, the Fiscal Investment and Loan Program) with sources that can be had
+    (Bank of Japan, IMES, Ministry of Finance, J-STAGE articles, NBER papers);
+  - Korea: the government of Park Chung-hee from the coup of May 1961, the first five-year plan
+    (1962–1966), the reforms of 1964–1965 (the devaluation and unified rate, the interest-rate reform),
+    export targets, the heavy and chemical industry drive of 1973, state control of bank credit
+    (Westphal 1990 *JEP* on www.aeaweb.org; Rodrik 1995, NBER WP 4964; KDI and K-Developedia documents:
+    read the terms; the Bank of Korea's ECOS did not answer);
+  - Taiwan: the land reform, the foreign-exchange reform of 1958–1960, the 1960 statute for the
+    encouragement of investment, the export processing zone of 1966 (DGBAS national accounts on
+    eng.stat.gov.tw or nstatdb.dgbas.gov.tw: read the open-data licence; Rodrik 1995);
+  - Hong Kong and Singapore: Young (1992, "A Tale of Two Cities", NBER Macroeconomics Annual, on
+    nber.org: © as printed): Singapore's investment rate and near-zero TFP growth against Hong Kong's;
+    the Central Provident Fund (www.cpf.gov.sg, SingStat: read the terms);
+  - the debate: World Bank (1993, *The East Asian Miracle*, documents.worldbank.org: copy the rights
+    statement; who commissioned and paid for the study, if the foreword says so), Krugman (1994,
+    *Foreign Affairs*, "The Myth of Asia's Miracle": in copyright and maybe behind a paywall; if not
+    obtained, only through those who report it), Young (1995, *QJE*, "The Tyranny of Numbers"; NBER WP
+    4680), Kim and Lau (1994) if obtained, Collins and Bosworth (1996, *Brookings Papers*, on
+    brookings.edu), Hsieh (the dual approach with factor prices; a working-paper version if one can be
+    had), Nelson and Pack (1999; World Bank PRWP 1881 if that is it: verify), Easterly and Fischer
+    (1995, cached for Ch 40).
+- Promises (FORWARD_REFS rows pointing to 42): from Ch 21 (Malthus on China's cheap labour and
+  manufactures for foreign sale; East Asia's export-led path), Ch 35 (Japan's high growth after the
+  Korean War procurement, told on from the Dodge Line), Ch 39 (Japan's high growth, with which the
+  household saving rate rose), Ch 40 (accumulation or efficiency, Krugman's parable as Easterly and
+  Fischer report it; Taiwan, Korea, Singapore and Hong Kong among the nine economies over 4% a year)
+  and Ch 41 (the economies that turned to exports first; whether outward orientation caused growth or
+  followed it; Korea's early move from import substitution to export expansion). Mark each done with
+  the labels, or say why a row passes on.
+- When it begins: Ch 41 ends with this chapter's question. Candidate openings: the Economic White
+  Paper of July 1956; the cabinet decision on the income-doubling plan, 27 December 1960 (verify);
+  Krugman's article of November/December 1994; the World Bank's report of September 1993. Choose what
+  the documents support and give the date and the scene the sources allow, nothing more.
+- Teaching (`eq:eastasia-…`, worked examples with teaching inputs or the sources' own numbers):
+  - growth accounting with human capital, $g_Y=\alpha g_K+(1-\alpha)(g_L+g_h)+g_A$ (from Ch 40's
+    `eq:solow-accounting`), applied with PWT 10.01 (rgdpna, rnna, emp, hc, labsh) to Japan and the
+    four economies over the sources' periods: say which variables and years, and compare with Young's
+    and Collins–Bosworth's numbers;
+  - the dual approach: with constant shares, TFP growth equals the share-weighted growth of the
+    rental rate and the wage (Hsieh's argument against Young for Singapore): derive it from the
+    income identity $Y=rK+wL$;
+  - financial repression: a ceiling on the deposit rate below inflation as a transfer from savers to
+    the borrowers who got credit (a worked example with the sources' rates if they can be had);
+  - a Solow transition: why a rising investment share gives fast growth for a time and then slower
+    growth (Ch 40's `eq:solow-speed`; Krugman's argument as reported).
+- Compare boxes (the PLAN's candidates): 要素积累 vs 生产率增长 (Young and Krugman against the World
+  Bank and Hsieh, each cell with their own statements); 产业政策 vs 市场 (Johnson and those who
+  report Amsden and Wade, against the World Bank's "market-friendly" reading), if the material earns it.
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - accumulation or productivity (primal against dual; Singapore against Hong Kong);
+  - did industrial policy pick winners, or did growth happen despite it (the World Bank 1993's mixed
+    verdict and its critics; Korea's heavy and chemical industry drive);
+  - did exports cause growth, or did the investment boom come first (Rodrik 1995 against the
+    outward-orientation reading of Ch 41's World Bank groups);
+  - financial repression: a cheap source of investment or a cost to savers that later fell due (a
+    clause to Ch 58 and Ch 61).
+- Political character (write_template rule 5): who decided and who paid. MITI and the Ministry of
+  Finance in Japan, Park's government in Korea (a military government from 1961; credit through
+  state-controlled banks; the export targets), the planners in Taiwan (martial law from 1949 to 1987:
+  a clause if the sources support it), the Singapore government through the CPF; who paid: savers
+  through controlled deposit rates, consumers through protected home markets, workers where the
+  sources show suppressed wages or controlled unions. Say it plainly with the sources' own words and
+  numbers; name places as STYLE.md §3 says (台湾、香港, no prefix).
+- Data and sources (journal issues, dates and document numbers in this list are leads, not evidence:
+  verify each; probed 2026-11-06: www5.cao.go.jp, www.esri.cao.go.jp, worldjpn.net,
+  www.ioc.u-tokyo.ac.jp, documents.worldbank.org, openknowledge.worldbank.org, www.nber.org,
+  www.brookings.edu, www.bok.or.kr, eng.stat.gov.tw, www.stat.gov.tw, nstatdb.dgbas.gov.tw,
+  www.dgbas.gov.tw, www.singstat.gov.sg, tablebuilder.singstat.gov.sg, www.censtatd.gov.hk,
+  www.boj.or.jp, www.imes.boj.or.jp, www.mof.go.jp, www.kdi.re.kr, www.kdevelopedia.org,
+  www.archives.go.kr, www.foreignaffairs.com, web.mit.edu, dl.ndl.go.jp, warp.ndl.go.jp,
+  www.stat.go.jp, www.e-stat.go.jp, kosis.kr, www.kantei.go.jp, www.ey.gov.tw, www.cbc.gov.tw,
+  www.mof.gov.sg, www.cpf.gov.sg, www.mas.gov.sg, www.hkma.gov.hk, www.aeaweb.org, eml.berkeley.edu,
+  www.econstor.eu, ideas.repec.org, www.jcer.or.jp, www.rieti.go.jp, www.jstage.jst.go.jp,
+  www.piie.com, elibrary.imf.org, www.nobelprize.org, www.rug.nl, dataverse.nl and archive.org
+  answered; www.meti.go.jp, www.ndc.gov.tw, www.mofa.go.jp, www.mod.go.jp, pubs.aeaweb.org,
+  www.krugmanonline.com, scholar.harvard.edu, drodrik.scholar.harvard.edu, www.princeton.edu,
+  www.oecd.org and www.imf.org answered 403; ecos.bok.or.kr, eng.kdi.re.kr, www.cepd.gov.tw,
+  www.legco.gov.hk, www.pkarchive.org and www.econ.yale.edu did not answer; www.jstor.org answers with
+  a bot check: do not try it):
+  - Johnson (1982), Amsden (1989), Wade (1990), Krugman (1994), Young (1992, 1995), Kim–Lau, Collins–
+    Bosworth, Hsieh, Rodrik, Westphal: in copyright, short phrases only; cite the version read
+    (STYLE.md §3: the working paper if that is what was read);
+  - Japanese government documents: read the site's terms (政府標準利用規約 or PDL 1.0) and record them;
+    ESRI's terms as recorded for Ch 39; Bank of Japan: credit "Bank of Japan";
+  - Korean, Taiwanese, Singaporean and Hong Kong government data and documents: read each one's
+    terms and record them; short phrases unless they allow more;
+  - World Bank documents: copy the rights statement; NBER: the © notice as printed;
+  - PWT 10.01 (cached; CC BY 4.0, Feenstra, Inklaar and Timmer 2015) and Maddison 2023 (cached; CC BY
+    4.0 with its citation policy, the original sources of each economy in a bib item).
+- Figures: GDP per head of Japan, Korea, Taiwan, Hong Kong and Singapore against the United States,
+  1950–2019 (PWT or Maddison, log scale); the growth-accounting decomposition (the book's PWT
+  calculation beside Young's or Collins–Bosworth's numbers); the investment share over time
+  (accumulation); a financial-repression or export figure if the data support it.
+- Ending: return to the opening and hand over Ch 43's question “计划经济里的“通胀”藏在哪里？” (read its
+  stub's guide box and copy the question exactly).
+- Labels: `sec:eastasia-…`, `eq:eastasia-…`, `fig:eastasia_…`, `tab:eastasia-…`, `ex:eastasia-…`.
+- Length: 8,000–9,000 characters of main text.
