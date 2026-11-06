@@ -416,6 +416,9 @@ class Converter:
         # pandoc writes \tfrac and \dfrac as <mfrac displaystyle=...>, which EPUB's MathML 3 schema
         # rejects; inline math is text style and display math display style anyway.
         s = re.sub(r"\\[td]frac(?![A-Za-z])", r"\\frac", s)
+        # pandoc 3.1's texmath does not know \Bigl, \Bigr, \biggl … and leaves the whole formula as raw TeX;
+        # it knows \Big and \bigg, which draw the same delimiters (only the PDF's spacing differs)
+        s = re.sub(r"\\(Big|bigg|Bigg)[lrm](?![A-Za-z])", r"\\\1", s)
         s = self.headings(s)
         s = self.boxes(s)
         s = self.floats(s)
