@@ -890,9 +890,11 @@ chapters: zh/ch33_islm.tex and zh/ch39_consumption.tex.
 - Report a dataset's own quality flags for the observations the text relies on: PWT 10.01 marks price
   levels as outliers (`i_outlier`), exchange rates as estimated (`i_xr`), and some investment shares are
   above GDP (Malta 1960–1961); keep the flags in the snapshot and say once what the book did with them.
-- Place names in a list of economies: 中国大陆、中国台湾、中国香港 (the reviewer's choice in Ch 40;
-  docs/STYLE.md has no rule yet and the Ch 42 stub has bare 台湾、香港: an open point for the author;
-  until decided, follow Ch 40).
+- Place names in a list of economies: 台湾、香港 (the author's decision of 2026-11-06, “台湾、香港即可，
+  不用考虑忌讳”, now in docs/STYLE.md §3); 中国大陆 only where it must be told apart from them in the same
+  list, otherwise 中国. The reviewer's 中国台湾、中国香港 in Ch 40 was changed back.
+- The author does not want the NBER working papers replaced by their journal versions (2026-11-06,
+  “不用了”): cite the version actually read.
 - When fixes push the main text over 9,000 characters, cut peripheral sentences and keep their snapshot
   rows and checks.
 

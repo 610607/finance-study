@@ -1664,7 +1664,7 @@ def legacy(F, Y, Q):
     assert set(fast["code"]) == {"TWN", "KOR", "BWA", "SGP", "MLT", "THA", "CHN", "HKG", "ROU"}
     assert list(fast.sort_values("g", ascending=False)["code"]) == ["TWN", "KOR", "BWA", "SGP", "MLT", "THA", "CHN",
                                                                     "HKG", "ROU"]
-    said("1960—2019 年人均增长率每年超过 4\\% 的有 9 个经济体，即中国台湾、韩国、博茨瓦纳、新加坡、马耳他、泰国、中国大陆、中国香港与罗马尼亚"
+    said("1960—2019 年人均增长率每年超过 4\\% 的有 9 个经济体，即台湾、韩国、博茨瓦纳、新加坡、马耳他、泰国、中国大陆、香港与罗马尼亚"
          "（本书的计算）", PWT_FIRST, PWT_LAST, 4, len(fast))
     q = quarters()[2]
     poorest = D.iloc[:q]
