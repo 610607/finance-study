@@ -1,15 +1,391 @@
-% 第 42 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 42 章”，写法见 docs/STYLE.md。
+% 第 42 章。数字与教学模型：checks/check_ch42.py；图：figsrc/fig_ch42.py。
+% 史料：eastasia_facts（取数脚本 data/fetch/eastasia42.py）；增长核算与人均 GDP：pwt1001_eastasia；新加坡中央公积金的缴费率：cpf_rates_1955_2026（同一脚本）。
 \chapter{东亚奇迹：日本高速增长与发展型国家}\label{ch:eastasia}
 
 \begin{chapterguide}
 \guidequestion{日本和东亚“四小龙”的高速增长，是生产率的奇迹，还是要素积累的结果？}
 \begin{guidegoals}
-\item 描述日本 1955—1973 年高速增长的特征与产业政策（Johnson 1982）；
-\item 比较韩国、台湾、香港与新加坡的发展路径；
-\item 概括世界银行（1993）报告与 Krugman (1994)、Young (1995) 的增长核算争论；
+\item 描述日本 1955—1973 年高速增长的特征与产业政策（世界银行 1993 年报告的概括，及其转引的 Johnson 1982）；
+\item 比较韩国、台湾、香港与新加坡的发展路径，说明谁做了决定、代价由谁承担；
+\item 推导带人力资本的增长核算与对偶法，概括世界银行（1993）报告与 Krugman（1994）、Young（1994）的争论，并用 Penn World Table 重算；
 \item 评估金融抑制与出口导向在其中的作用。
 \end{guidegoals}
 \guideprereq{\chref{ch:solow}\enspace\nameref{ch:solow}；\chref{ch:development}\enspace\nameref{ch:development}}
 \end{chapterguide}
 
-\chapterstub
+1993 年 9 月 26 日是星期日。世界银行在华盛顿发出第 93/S17 号新闻稿，用标题宣布东亚的经济“奇迹”可以在别的国家重演\cite{worldbank1993news}。它说，过去三十年东亚的快速增长让数以百万计的人摆脱了贫困，增长大多发生在八个经济体\cite{worldbank1993news}。它们是香港、印度尼西亚、日本、马来西亚、韩国、新加坡、台湾与泰国。按新闻稿的说法，1960 年以来，它们增长的速度是东亚其余地方的两倍，拉丁美洲与南亚的三倍，撒哈拉以南非洲的五倍\cite{worldbank1993news}。
+% 据: wn_number, wn_date, wn_headline, wn_poverty, wn_eight, wn_eight2, wn_twice
+
+新闻稿介绍的是世界银行的政策研究报告《东亚奇迹：经济增长与公共政策》，研究组的组长是佩奇（John Page，生卒年未详）\cite{worldbank1993news,worldbank1993}。行长普雷斯顿（Lewis T. Preston，1926—1995）在前言里说，这项研究是他 1991 年在曼谷的世界银行年会上宣布的\cite{worldbank1993,worldbankpreston,loc42,gnd42}。前言署的日期是 1993 年 8 月。他写道，东亚非凡的增长大部分来自物质资本与人力资本的“更多积累”，在这个意义上，东亚的成功没有什么“神奇”之处\cite{worldbank1993}。前言的末尾感谢日本政府对这项研究的支持\cite{worldbank1993}。研究组在致谢里写明，日本政府给了资金援助\cite{worldbank1993}。
+% 据: wb_team, wn_page, wb_bangkok, wb_signed, wb_august, wb_accumulation, wb_miraculous, wb_japan_support, wb_financial, wp_preston_life, loc_preston_note, gnd_preston
+
+标题里是奇迹，前言里并不神奇，研究组在正文里给出了比例。按研究组的估计，高投资与人力资本大约解释了增长的三分之二，其余来自生产率的提高\cite{worldbank1993}。他们说，这样高的生产率增长超过了多数发展中经济体与工业经济体\cite{worldbank1993}。一年以后，Krugman 在《外交事务》上把东亚的增长比作 1950 年代华约国家的增长，说新加坡的增长靠的是“汗水”\cite{krugman1994}。上一章末尾说的最早转向出口的几个经济体，都在这八个里面（\chref{ch:development}）。日本和东亚“四小龙”的高速增长，是生产率的奇迹，还是要素积累的结果？
+% 据: wb_twothirds, wb_exceeds, kg_parallel, kg_perspiration, kg_source
+
+\section{当时的世界}\label{sec:eastasia-world}
+
+日本的高速增长，是从一句话开始被人记住的。1956 年 7 月 17 日，经济企画厅的昭和 31 年度《年次经济报告》发行，通称经济白皮书\cite{epa1956}。经济企画厅在结语里写道，“已经不再是‘战后’了”（もはや「戦後」ではない）\cite{epa1956}。按它的说法，靠恢复带来的增长已经结束，此后的增长要靠现代化来支撑\cite{epa1956}。它也说，现代化若是国民经济唯一该走的路，推行它的负担就要国民按各自的能力分担\cite{epa1956}。日本怎样走到这一步，\chref{ch:reconstruction}讲过，道奇计划与每美元 360 日元的单一汇率以后，1950 年的朝鲜战争带来了美军的特需。
+% 据: wp56_issued, wp56_title, wp56_hakusho, wp56_sengo, wp56_modern, wp56_burden
+
+经济企画厅把这件事放在冷战里看。它说，两种体制的对立已经从核武器的竞赛转向和平共存，和平共存就是经济增长率的竞争，是提高生产率的较量\cite{epa1956}。它把现代化说成改造自己的过程，这场手术不可能没有痛苦\cite{epa1956}。
+% 据: wp56_race, wp56_pain
+
+此后的数字证实了白皮书的判断。1956—1973 年，日本的实际国内总支出平均每年增长约 9.2\%（\chref{ch:consumption}）。同一时期家庭储蓄率也在上升，1974 年与 1976 年都到了 23.2\%。按 Penn World Table，日本的人均 GDP 1950 年约为美国的 18\%，1973 年约为 59\%（本书的计算）\cite{pwt1001}。Krugman 给的数相近，1973 年以前的十年里日本实际 GDP 每年增长 8.9\%\cite{krugman1994}。他说，1973 年日本的人均 GDP 只有美国的 55\%\cite{krugman1994}。
+% 据: kg_torrid, kg_55
+
+日本的增长也是靠投入堆起来的。按 Penn World Table，1955—1973 年日本的资本存量每年增长约 10\%（本书的计算）\cite{pwt1001}。同期就业每年只增长约 1.4\%，人均 GDP 每年增长约 7.8\%，都是对数增长率（本书的计算）。按当年的购买力平价算，投资占 GDP 的比例从 1955 年的约 18\% 升到 1973 年的约 42\%（本书的计算）。1973 年以后增长慢了下来，Krugman 说 1973—1992 年日本的人均 GDP 每年只增长 3\%\cite{krugman1994}。那一年的石油危机在\chref{ch:oil}，日元转向浮动在\chref{ch:floating}。
+% 据: kg_slow
+
+计划跟在增长后面。1960 年 12 月，日本政府决定了《国民所得倍增计划》\cite{epa1961}。经济企画厅在次年的白皮书里说，1961 年度民间设备投资的规模，已经快要赶上计划最后一年 1970 年度的水平\cite{epa1961}。投资跑在了计划的前面（本书的解读）。按 Penn World Table，日本 1970 年的实际 GDP 约为 1960 年的 2.6 倍（本书的计算）\cite{pwt1001}。
+% 据: wp61_plan, wp61_invest, wp61_title, wp61_signed
+
+这份白皮书的序言署名是经济企画厅长官迫水久常（1902—1977）\cite{epa1961,loc42}。序言的日期是 1961 年 7 月 14 日\cite{epa1961}。他说，倍增计划是给全体国民提供工作的充分就业计划，也是提高生产率的计划\cite{epa1961}。他说，日本经济过去的生产以劳动力过剩、因而工资低为前提\cite{epa1961}。他还说，他让写报告的人撇开政治上的考虑，站在经济研究者的立场如实观察和记述\cite{epa1961}。序言的末尾，他说统制就是掌权的人模仿神\cite{epa1961}。
+% 据: wp61_signed, loc_sakomizu, wp61_fullemp, wp61_lowwage, wp61_nopolitics, wp61_control
+
+八个经济体里，日本以外增长得最早的是四个。世界银行的研究组把香港、韩国、新加坡与台湾叫作“四虎”（Four Tigers），说它们几十年来增长很快，已经进入或接近高收入经济的行列\cite{worldbank1993}。按研究组的数，1960—1985 年日本与四虎的实际人均收入增加到四倍多\cite{worldbank1993}。按 Young 的统计，1966—1990 年前后，四个经济体的人均 GDP 每年增长 5.7\%—6.9\%，香港最低，韩国最高\cite{young1994}。这是对数增长率，即两端取对数之差除以年数\cite{young1994}。上一章用 Penn World Table 算过，1960—2019 年人均增长率每年超过 4\% 的九个经济体里，有台湾、韩国、新加坡与香港（\chref{ch:solow}）。
+% 据: wb_tigers, wb_fourtimes, y4_t11_hksg, y4_t11_krtw, y4_log
+
+\figref{fig:eastasia_levels}画出五个经济体相对美国的人均 GDP。Rodrik 说，1960 年的韩国比许多撒哈拉以南非洲国家还穷，台湾也富不了多少\cite{rodrik1994}。按 Penn World Table，韩国 1960 年的人均 GDP 约为美国的 6.5\%，2019 年约为 64\%（本书的计算）\cite{pwt1001}。新加坡 1960 年约为美国的 15\%，2019 年约为 140\%（本书的计算）。这样的增长是谁安排的，代价又由谁承担？
+% 据: rd_poorer
+
+\fig{eastasia_levels}{五个经济体的人均 GDP 相对美国的水平，1950—2019 年（对数刻度，美国＝100）。日本与台湾从 1950 年代初起，韩国从 1953 年起，香港与新加坡从 1960 年起。数据：Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015，CC BY 4.0）的支出法实际 GDP（按 2017 年美元的链式购买力平价）除以人口，本书的计算。这些观测的价格水平，数据库都标为正常（Regular），汇率都是市场汇率（Market-based）。}{fig:eastasia_levels}
+
+\section{谁决定，谁承担}\label{sec:eastasia-state}
+
+1961 年，陆军将领朴正熙（Park Chung Hee，1917—1979）在韩国夺取了政权\cite{worldbank1993,loc42}。按研究组的叙述，他改组政府来推动快速发展，设立了有广泛预算权力的经济企划院\cite{worldbank1993}。官僚机构管着银行系统，大企业的扩张靠政府担保的融资，官僚因此对大企业有很强的影响力\cite{worldbank1993}。研究组说，这种伙伴关系一直不对等，由官僚机构主导\cite{worldbank1993}。1979 年 10 月 26 日，朴正熙遇刺身亡\cite{loc42}。
+% 据: wb_park, wb_epb, wb_banking, wb_uneven, loc_park, loc_park_note
+
+\subsubsection{韩国：信贷与出口目标}
+
+出口与保护是同时来的。按研究组的分期，1961—1973 年是韩国的出口起飞期，朴正熙一面大力推动出口，一面照旧保护国内市场\cite{worldbank1993}。他们说，贸易体制总体上偏向出口，对出口什么却基本中性\cite{worldbank1993}。
+% 据: wb_takeoff, wb_neutral
+
+钱怎样分，由政府说了算。按研究组的数，1973—1981 年，韩国的政策性贷款约占存款货币银行全部贷款的 60\%\cite{worldbank1993}。在日本、韩国与泰国，政府用明示或暗含的出口目标来决定谁能拿到外汇、投资许可或信贷\cite{worldbank1993}。Rodrik 在评论 Collins 与 Bosworth 时说，韩国政府从 1960 年代初起一心追求投资与增长，用的是行政指导、信贷补贴、税收优惠与公营企业等办法\cite{collinsbosworth1996}。
+% 据: wb_korea_policy, wb_targets, cb_rd_single, cb_rd_tools
+
+出口的支持也走国家控制的银行。研究组说，按政府的明确指示，银行越来越把出口实绩当作信用的标准\cite{worldbank1993}。1973—1979 年的重化工业推动是一次大转向，政府不再给中性的激励，要用一切手段把资源导向特定部门\cite{worldbank1993}。专门的立法挑出六个战略产业，钢铁、石化、有色金属、造船、电子与机械，给它们税收优惠与优惠融资等支持\cite{worldbank1993}。按研究组的说法，动机既有战略上的，即增强国防能力，也有经济上的\cite{worldbank1993}。
+% 据: wb_statebanks, wb_bank_export, wb_hci_shift, wb_hci_six, wb_hci_motive
+
+这次推动的账，研究组算了两面。他们说，韩国至少部分成功了，原因之一是政府从一开始就讲明这些产业要有国际竞争力\cite{worldbank1993}。可是干预无所不在，瓶颈出现了，欠下了大笔债务，劳动密集型产业得不到信贷\cite{worldbank1993}。第二次石油冲击来时，通胀已经很高，汇率升值，重化工业的开工率低，出口乏力，政府于是改变了方针\cite{worldbank1993}。研究组也承认，重化工业推动没有达到预期，它的代价在 1993 年还不完全清楚，但很高\cite{worldbank1993}。
+% 据: wb_hci_partly, wb_hci_starved, wb_hci_switch, wb_hci, wb_hci_costs
+
+付账的人各有不同。土地改革的账先算在地主身上。研究组说，韩国的土地改革第一步由美军在 1947 年发起，把二战结束时没收的日本人的土地分给耕种者，并限定其他土地的地租\cite{worldbank1993}。第二步由韩国政府在 1950 年开始，朝鲜战争以后完成\cite{worldbank1993}。政府接管地主的土地，只给名义上的补偿，把地分给了 90 万名佃农\cite{worldbank1993}。
+% 据: wb_korea_land1, wb_korea_land2, wb_korea_land
+
+劳工那一边，研究组说几乎所有高绩效经济体的政府都限制工会的力量、压制劳工的激进行动，同时让劳工随生产率的提高得到回报\cite{worldbank1993}。
+% 据: wb_unions
+
+\subsubsection{日本：低利率与财政投融资}
+
+日本的办法更多通过金融。按研究组的概括，二战后头十五年，日本用保护性关税与金融优惠扶持了几个弱小的产业\cite{worldbank1993}。直到 1970 年代初，政府都把信贷导向大企业，保护国内市场，帮它们取得规模经济\cite{worldbank1993}。研究组说，通商产业省把外汇分给受青睐的大企业，到 1978 年，制造业的平均有效保护率还有 22\%\cite{worldbank1993}。有效保护率衡量关税对增加值的保护（\chref{ch:development}）。他们也说，大藏省牵制着通商产业省推行补贴的能力\cite{worldbank1993}。
+% 据: wb_weak, wb_japan_credit, wb_miti, wb_mof
+
+做决定的多是官僚（本书的概括）。研究组说，日本的官僚与执政的自由民主党的政策委员会和民间代表商量着起草法律，国会只是批准官僚准备好的东西\cite{worldbank1993}。人事院又替官僚挡住政治压力，它是独立的机构，定官员的薪级与升迁办法，主持文官考试，作出大多数任命\cite{worldbank1993}。首相只任命各省的大臣，除少数情况外，再任命每个省两名次官中的一名\cite{worldbank1993}。研究组引 Johnson（1982）的话说，劳工在政治上失去的，由与生产率挂钩的工资政策来补偿\cite{worldbank1993}。
+% 据: wb_diet, wb_npa2, wb_npa, wb_johnson, wb_johnson_q
+
+官僚的主要工具是行政指导。研究组说，行政指导用威胁与奖赏让民间去做官僚建议的事，它不依据任何法律或法规\cite{worldbank1993}。他们说，通商产业省以善用这一手著称\cite{worldbank1993}。1960 年代中期以前，行政指导都是通商产业省官僚的有力工具\cite{worldbank1993}。通商产业省凭《外汇及外国贸易管理法》牢牢控制着外汇的分配与进口\cite{worldbank1993}。按研究组的叙述，国际压力加上维持出口经济的需要，使政府逐步放开贸易与投资，这个过程从 1960 年代中期开始，到 1979 年才结束\cite{worldbank1993}。
+% 据: wb_guidance, wb_guidance_law, wb_miti_skill, wb_guidance_tool, wb_miti_fx, wb_liberalize
+
+钱从邮政储蓄里来。日本的财政投融资（FILP）用的是政府的邮政储蓄、国民福利存款与国民年金存款\cite{worldbank1993}。按研究组的数，高速增长期它吸收了家庭储蓄的 20\%—40\%，1950 年代约占新增设备贷款的三分之一\cite{worldbank1993}。经济企画厅 1961 年说，紧缩通过日本银行的窗口规制来实行，紧缩时都市银行的资金周转总是很紧\cite{epa1961}。
+% 据: wb_filp_sources, wb_filp_absorbed, wb_filp_third, wp61_window
+
+政府的贷款也看效果。研究组说，日本开发银行是政府的主要贷款机构，1951—1955 年核销的坏账不到平均贷款余额的千分之一，1956—1965 年只有万分之一\cite{worldbank1993}。他们说，加上日本整体经济的成功，贷前审查与贷后监督做得好，损失才这样低\cite{worldbank1993}。
+% 据: wb_jdb, wb_jdb_why
+
+储户拿到的利率被压低了。研究组说，日本存款的实际利率直到 1983 年都是负的，但很稳定\cite{worldbank1993}。他们说，所有高绩效经济体在高速增长期都管制存贷款利率，压低的实际利率把资源从储户转给了借款人，储户主要是家庭，借款人主要是企业\cite{worldbank1993}。研究组说，大多数高绩效经济体的政府把存贷款利率压在市场出清的水平以下，这种做法叫\textbf{金融抑制}（financial repression）\cite{worldbank1993}。\exref{ex:eastasia-repression}算这笔转移有多大。
+% 据: wb_japan_negative, wb_controlled, wb_savers, wb_repdef
+
+\begin{example}{利率上限的账}\label{ex:eastasia-repression}
+教学输入：存款利率上限 4\%，贷款利率上限 6\%，通胀率 6\%；没有上限时，存款的实际利率是 2\%，贷款的实际利率是 4\%。（1）有上限时，存款与贷款的实际利率各是多少？（2）每存 100 单位、由银行贷给企业，一年里储户少得多少，企业少付多少？（3）按两种实际利率，100 单位的存款 10 年后的购买力各是多少？
+\solution
+（1）实际利率约是名义利率减通胀率，存款$4\%-6\%=-2\%$，贷款$6\%-6\%=0$。（2）储户少得$2-(-2)=4$单位，企业少付$4-0=4$单位，储户少得的正是企业少付的（本书的计算）。（3）$100\times0.98^{10}\approx81.7$，$100\times1.02^{10}\approx121.9$。研究组说，政府限制存贷款利率的差距，银行就赚不到过高的租金\cite{worldbank1993}。
+\end{example}
+% 据: wb_transfer, wb_spread
+
+\subsubsection{台湾：戒严下的改革}
+
+台湾的改革是在戒严中进行的。1995 年公布的《戒严时期人民受损权利回复条例》界定了戒严的时期\cite{taiwan1995}。按这部条例，台湾地区的戒严从 1949 年 5 月 20 日起\cite{taiwan1995}。戒严到 1987 年 7 月 14 日为止\cite{taiwan1995}。研究组说，韩国与台湾的土地改革都由面对共产主义威胁、依赖美国援助的威权政府推行\cite{worldbank1993}。在台湾，政府从地主手里收走土地，用国营企业的股份补偿他们\cite{worldbank1993}。研究组说，原来的地主成了国营企业的新股东，与当局的经济计划的成败有了利害关系\cite{worldbank1993}。
+% 据: tw_martial, tw_title, tw_dates, wb_authoritarian, wb_seized_land, wb_tw_landlords
+
+出口转向发生在 1960 年前后。按研究组的年表，1959 年有十九点财经改革方案，1960 年有奖励投资条例，1961 年改为单一汇率\cite{worldbank1993}。Rodrik 概括的正统说法是，汇率统一并贬值，出口商可以免税进口投入品，利率提高，出口在 1960 年代中期起飞\cite{rodrik1994}。他在 1996 年的评论里说，台湾政府从 1960 年起一心追求投资与增长\cite{collinsbosworth1996}。
+% 据: wb_tl_tw, rd_orthodox, rd_tookoff, cb_rd_single
+
+台湾扶持的对象与韩国不同。研究组说，台湾用公共投资办大型制造企业，为以中小企业为主的出口产业提供投入品\cite{worldbank1993}。中小企业主导了台湾的出口，约占出口总值的 60\%\cite{worldbank1993}。
+% 据: wb_tw_public, wb_tw_sme
+
+\subsubsection{新加坡与香港}
+
+两座城市有相同的出身。Young 说，战前两地都是英国的殖民地，都是转口港，本地几乎没有制造业\cite{young1992}。香港经营中国与世界其余地方之间的贸易，新加坡是马来亚、印度尼西亚与世界贸易的通道\cite{young1992}。1950 年代初，从上海逃来的企业家在香港开办工厂，纺织业爆发式地增长\cite{young1992}。新加坡的转口贸易却没有扩张，1950 年代与 1960 年代初经济停滞\cite{young1992}。
+% 据: y2_entrepot, y2_conduit, y2_textiles, y2_stagnation
+
+两座城市起点相近，政府的做法却相反。Young 说，1960 年香港与新加坡的人均 GDP 很接近\cite{young1992}。香港政府奉行自由放任，新加坡政府从 1960 年代初起用强制的国民储蓄和大举招引外资来积累资本\cite{young1992}。他说，战后新加坡政府让国家广泛参与经济活动，花的钱主要来自对劳动收入的重税\cite{young1992}。新加坡的投资占 GDP 的比例从 1960 年的 9\% 升到 1984 年的 43\%\cite{young1992}。香港一直在 20\% 上下\cite{young1992}。新加坡的强制储蓄，靠的是中央公积金。
+% 据: y2_close, y2_laissez, y2_maximalist, y2_invest, y2_hk20
+
+香港的长处在人。Young 说，战后初期香港人口受的教育比新加坡好得多\cite{young1992}。Barro 在评论里估计，1960 年成人平均上学的年数香港是 6.2 年，新加坡是 3.5 年\cite{young1992}。到 1985 年，两地分别是 8.0 年与 5.6 年\cite{young1992}。新加坡则用税收优惠招来外资。按 Young 的叙述，1959 年起的先锋企业地位让选中的企业 5 年、10 年或更久免缴 40\% 的利润税\cite{young1992}。他说，这些优惠名义上不分内外资，实际上绝大多数享受者是外国企业\cite{young1992}。
+% 据: y2_educated, y2_school, y2_pioneer, y2_foreign
+
+\begin{case}{新加坡 · 1955—1990 · 中央公积金}
+中央公积金 1955 年设立，是按个人账户积累的社会保障计划\cite{young1992}。按中央公积金局的数据，35 岁及以下的雇员与雇主 1955 年 7 月起各缴工资的 5\%\cite{cpf2026}。1984 年 7 月起，双方各缴 25\%（\figref{fig:eastasia_cpf}）\cite{cpf2026}。Young 说，成员可以用账户的钱买房和买政府的股份，此外提取余额的能力有限，退休时也是这样\cite{young1992}。1980 年，基金的 95.1\% 投在政府证券上\cite{young1992}。1985 年缴费达到顶峰，相当于国民生产总值的 14.9\%，国民总储蓄的 36\%\cite{young1992}。研究组也说，马来西亚与新加坡用强制的公积金缴费造成了很高的私人储蓄率\cite{worldbank1993}。
+% 据: y2_cpf55, y2_cpf84, y2_housing, y2_withdraw, y2_govsec, y2_gnp, wb_provident
+
+决定缴费率的是政府。人民行动党 1959 年起领导自治的新加坡，1965 年新加坡脱离马来西亚联邦独立\cite{worldbank1993}。1968 年的大选里，人民行动党赢得全部 58 个议席\cite{worldbank1993}。李光耀（Lee Kuan Yew，1923—2015）是新加坡的第一任总理\cite{loc42,gnd42}。1986 年 4 月，雇主的缴费率降到 10\%，Young 说这是为了刺激投资\cite{cpf2026,young1992}。
+% 据: wb_tl_sg, loc_lee, loc_lee_note, gnd_lee, gnd_lee_d, y2_fn30
+
+工人也付了账。Young 说，1968 年通过的劳工立法把升迁、内部调动、招聘、退休、解雇与分派工作都定为不容谈判的管理特权，劳资纠纷一律交工业仲裁法庭强制仲裁\cite{young1992}。罢工损失的工作日，1960 年代中期每年约 4 万个\cite{young1992}。1978—1990 年，除两年外都是零\cite{young1992}。研究组说，新加坡政府担心政治不稳，独立后不久就大幅限制工会的自主，靠压制独立工会、向投资者保证劳资和平来吸引外资\cite{worldbank1993}。
+% 据: y2_1968, y2_1968b, y2_list, y2_prerog, y2_arbitration, y2_mandays, wb_sg_unions, wb_sg_peace
+\end{case}
+
+\fig{eastasia_cpf}{新加坡中央公积金的缴费率（工资的百分比，35 岁及以下），1955—1990 年。实线是雇主，虚线是雇员，1984 年 7 月起各为 25\%，1986 年 4 月雇主的缴费率降到 10\%。数据：中央公积金局，CPF contribution rates，2026 年 11 月 12 日从 data.gov.sg 下载，依新加坡开放数据许可 1.0 版使用（\url{https://data.gov.sg/open-data-licence}）。}{fig:eastasia_cpf}
+
+消费者也付了账。研究组说，日本、韩国与台湾严格管制消费品贷款，对它收很高的利息，还对所谓奢侈消费课重税\cite{worldbank1993}。他们承认，限制消费者的选择，包括最基本的消费与储蓄的决定，是有福利代价的\cite{worldbank1993}。他们又说，不论是否出于强制，储蓄都因投资的回报一直很高而有丰厚的收益\cite{worldbank1993}。按他们的判断，与苏联等用过强制储蓄的经济体不同，这里的福利代价显然被实在的好处抵消了\cite{worldbank1993}。
+% 据: wb_consumer, wb_restrict, wb_payoffs, wb_soviet
+
+决定的人与付账的人可以并排看。决定投资率与信贷流向的是政府与官僚机构，付账的是存款利率被压低的储户、拿名义补偿的地主、消费受到限制的家庭、被强制储蓄的雇员和失去谈判权的工人（本书的概括）。研究组说，公共住房计划在香港与新加坡帮助压低了劳动成本\cite{worldbank1993}。
+% 据: wb_housing
+
+研究组用“共享增长”的原则来解释这种安排。他们说，东亚的领导人为了取得合法性、赢得社会的支持，许诺经济扩张时各个群体都会受益\cite{worldbank1993}。按他们的描述，这些领导人往往是威权的或家长式的，却愿意让技术官僚精英与民间企业的领袖有发言权和实权\cite{worldbank1993}。世界银行在新闻稿里说，八个经济体是世界上仅有的在快速持续增长的同时缩小了贫富差距的经济体\cite{worldbank1993news}。
+% 据: wb_shared, wb_leaders, wn_gap
+
+\section{增长核算：汗水与灵感}\label{sec:eastasia-accounting}
+
+Young 1994 年的工作论文，开头一句就说，这是一篇相当乏味冗长的论文，而且是有意如此\cite{young1994}。他在封面的致谢里说，新加坡政府不同意他“大部分的分析和全部的结论”，却给了他已发表和未发表的数据\cite{young1994}。他在摘要里说，新兴工业化经济体的产出与制成品出口的增长几乎前所未有，全要素生产率的增长却不是\cite{young1994}。他要做的只是一件事，把产出的增长分成投入的增长与余量。
+% 据: y4_boring, y4_singapore, y4_number, y4_date, y4_unprecedented
+
+汗水有三种。第一种是参加工作的人变多了。Young 算过，就业人口比例的上升使香港的人均增长每年多出 1 个百分点，韩国与台湾分别多出 1.2 与 1.3 个百分点\cite{young1994}。新加坡更多，24 年里每年多出 2.6 个百分点\cite{young1994}。第二种是受教育的程度。按 Krugman 转引 Young 的数，新加坡 1966 年过半的工人没有受过正规教育，1990 年三分之二读完了中学\cite{krugman1994}。Young 说，劳动者受教育程度的提高，使每个经济体的劳动投入每年多增长约 1\%\cite{young1994}。
+% 据: y4_particip, y4_stunning, kg_edu, y4_weighting
+
+第三种是资本。按不变价格，新加坡的投资占 GDP 的比例 1960 年是 11\%，1984 年达到 47\%\cite{young1994}。韩国从 1950 年代初的约 5\% 升到 1991 年的接近 40\%\cite{young1994}。台湾在 1975 年最高，约 27\%，此后在 20\% 上下\cite{young1994}。三种投入都只能提高一次（本书的解读）。
+% 据: y4_sg_invest, y4_kr_invest, y4_tw_invest
+
+\subsubsection{带人力资本的核算}
+
+\chref{ch:solow}的式~\eqref{eq:solow-accounting}只有资本与劳动。设产出是$Y=A\,K^{\alpha}(hL)^{1-\alpha}$，$h$是每个劳动者的人力资本，两边取对数再对时间求导，得
+\begin{keyeq}
+g_Y=\alpha\,g_K+(1-\alpha)\,(g_L+g_h)+g_A ,\label{eq:eastasia-accounting}
+\end{keyeq}
+$g$是每年的增长率，$\alpha$是资本的份额，$1-\alpha$是劳动的份额，$g_A$是全要素生产率的增长，即余量（本书的推导）。Young 的劳动投入按工时计，再按性别、年龄与受教育程度加权\cite{young1994}。他的增长率都是对数增长率\cite{young1994}。
+% 据: y4_hours, y4_weighting, y4_log
+
+\begin{example}{香港与新加坡的余量}\label{ex:eastasia-young}
+用 Young 表 3-1 与表 4-1 的数\cite{young1994}。香港 1966—1991 年产出每年增长 0.073，加权资本 0.080，加权劳动 0.032，劳动份额 0.628。新加坡 1966—1990 年依次是 0.085、0.115、0.057 与 0.470。（1）按式~\eqref{eq:eastasia-accounting}，两地的余量各是多少？（2）新加坡若用香港的劳动份额呢？
+\solution
+（1）香港$0.073-0.372\times0.080-0.628\times0.032\approx0.023$，新加坡$0.085-0.530\times0.115-0.470\times0.057\approx-0.003$，与 Young 的 2.3\% 和$-0.3\%$相同。（2）$0.085-0.372\times0.115-0.628\times0.057\approx0.006$，余量升到约 0.6\%（本书的计算）。Young 自己也试过用香港的劳动份额重算新加坡 1974—1989 年的逐年数，平均余量升到 0\cite{young1992}。份额不同，余量就不同。
+\end{example}
+% 据: y4_t31, y4_t41, y4_hk, y4_sg_text, y2_fn79
+
+Young 说，新加坡 24 年里平均每年$-0.3\%$的余量，是几乎前所未有的生产率倒退\cite{young1994}。他在 1992 年就比较过两座城市。按他的表 5，1971—1990 年香港产出增长的 35\% 来自全要素生产率\cite{young1992}。1970—1990 年，新加坡的这个比例是$-8\%$\cite{young1992}。在新加坡，资本积累解释了每个工人产出增长的 117\%\cite{young1992}。
+% 据: y4_sg_text, y2_t5_hk, y2_t5_sg, y2_m8, y2_117
+
+\begin{compare}{两座城市}{香港}{新加坡}
+\cmprow{1960 年的起点}{人均 GDP 与新加坡很接近\cite{young1992}}{约为香港的 108\%（Barro 的评论）\cite{young1992}}
+\cmprow{政府}{奉行自由放任\cite{young1992}}{强制的国民储蓄，大举招引外资\cite{young1992}}
+\cmprow{投资占 GDP}{在 20\% 上下\cite{young1992}}{从 1960 年的 9\% 升到 1984 年的 43\%\cite{young1992}}
+\cmprow{全要素生产率的贡献}{1971—1990 年产出增长的 35\%\cite{young1992}}{1970—1990 年为$-8\%$\cite{young1992}}
+\cmprow{资本的实际回报}{一直在 20\% 以上\cite{young1992}}{1969—1970 年约 40\%，1980 年代后期的景气年份略高于 10\%\cite{young1992}}
+\cmpsum{增长同样快，新加坡用的投入多得多。Krugman 在评论 Young 时问，香港为什么能用少得多的投入做得一样好，他说答案是传统的那一个，“我们不知道”\cite{young1992}。}
+% 据: y2_close, y2_barro_start, y2_laissez, y2_invest, y2_hk20, y2_t5_hk, y2_t5_sg, y2_m8, y2_hk_return, y2_t8_6970, y2_return, y2_kr_dontknow
+\end{compare}
+
+\subsubsection{Krugman 的寓言}
+
+Krugman 1992 年是 Young 那篇比较两座城市的论文的评论人。他说，这篇文章表明许多“新增长理论”找错了方向，新加坡看来根本没有技术进步\cite{young1992}。他也觉得有意思，增长理论做了那么多新的工作，具体到个案，用的还是 35 年前的增长核算\cite{young1992}。
+% 据: y2_kr_barking, y2_kr_startling, y2_kr_35
+
+Krugman 1994 年的文章以“一则警世寓言”开头\cite{krugman1994}。他先讲西方当年对苏联增长的惊恐，再说仔细看过以后，苏联增长最大的意外是它毫无神秘之处\cite{krugman1994}。他说，苏联增长的放慢早在变得明显以前，就已经由增长核算预见到了，这个故事提醒人们不要天真地外推过去的趋势\cite{krugman1994}。新加坡就是这样。按他的数，1966—1990 年新加坡经济每年增长 8.5\%，人均收入每年增长 6.6\%\cite{krugman1994}。就业人口的比例从 27\% 升到 51\%\cite{krugman1994}。他说，这是一场“斯大林也会引以为傲”的资源动员\cite{krugman1994}。这些数，他注明取自 Young\cite{krugman1994}。他承认日本不一样，日本看来既靠投入的高速增长，也靠效率的高速增长\cite{krugman1994}。
+% 据: kg_fable, kg_mystery, kg_predicted, kg_naive, kg_singapore, kg_employed, kg_stalin, kg_fn6, kg_japan
+
+投入驱动的增长为什么会慢下来？Krugman 在脚注里给了一个算例，\exref{ex:eastasia-krugman}照他的数来算\cite{krugman1994}。增长放慢不需要投资率下降，资本的回报下降就够了。这正是\chref{ch:solow}的过渡，按式~\eqref{eq:solow-speed}，人均产出离稳态越近，增长越慢（本书的解读）。他的结论是，亚洲增长若有什么秘密，那就是“延迟满足”\cite{krugman1994}。他也预言，除非发生灾难性的政治动荡，东亚今后十年以上的增长仍会快过西方，但不会再有近年的速度\cite{krugman1994}。
+% 据: kg_fn3_start, kg_deferred, kg_outpace, kg_pace
+
+\begin{example}{报酬递减的算例}\label{ex:eastasia-krugman}
+Krugman 的假设\cite{krugman1994}。劳动力不变，每个工人起初有 10,000 美元的设备，每人生产 10,000 美元的产品，资本的回报率是 40\%，产出的 20\% 用于投资。（1）第一年的增长率是多少？（2）每人的资本翻一番以后，产出升到 14,000 美元，回报率降到 30\% 或 25\%，增长率是多少？（3）要在那时保持第一年的增长率，回报率要多高？
+\solution
+（1）投资$0.2\times10{,}000=2{,}000$，产出增加$0.4\times2{,}000=800$，增长 8\%。（2）投资$0.2\times14{,}000=2{,}800$，回报率 30\% 时产出增加 840，增长 6\%；25\% 时增加 700，增长 5\%，与 Krugman 的数相同\cite{krugman1994}。（3）要增加$0.08\times14{,}000=1{,}120$，回报率须是$1{,}120/2{,}800=40\%$，即回报不能下降（本书的计算）。
+\end{example}
+% 据: kg_fn3_invest, kg_fn3_8, kg_fn3_14, kg_fn3_later
+
+\subsubsection{对偶法}
+
+余量也可以从要素价格算。产出全部分给资本与劳动时，$Y=rK+wL$，$r$是资本的实际回报，$w$是实际工资。两边对时间求导，再除以$Y$，得$g_Y=s_K(g_r+g_K)+s_L(g_w+g_L)$，$s_K=rK/Y$是资本份额，$s_L=wL/Y$是劳动份额。移项，
+\begin{keyeq}
+g_A\equiv g_Y-s_K\,g_K-s_L\,g_L=s_K\,g_r+s_L\,g_w ,\label{eq:eastasia-dual}
+\end{keyeq}
+左边是数量算出的余量，叫原始法，右边用回报与工资的增长算，叫对偶法（本书的推导）。用同一套数据，两边恒等，差别只能出在数据上（本书的解读）。资本越积越多，回报却不降，对偶法就会算出较高的生产率增长。
+% 据: hs_dual
+
+Hsieh（2002）用的正是这个办法，这里只读到了它的摘要。他说，韩国与香港的对偶估计与原始估计相近，台湾的对偶估计每年高出 1 个百分点，新加坡高出 2 个多百分点\cite{hsieh2002}。新加坡的差距，是因为资本的回报一直不变，可新加坡的国民账户显示资本积累很快\cite{hsieh2002}。他说，金融管制、资本所得税、风险溢价的变化与公共投资补贴都解释不了这个差距\cite{hsieh2002}。Young 1992 年按自己的资本存量推算的回报却在下降\cite{young1992}。新加坡的回报 1969—1970 年约为 40\%，1988—1989 年约为 13\%\cite{young1992}。
+% 据: hs_exceed, hs_reason, hs_notexplained, y2_t8_6970, y2_t8_8889
+
+\begin{example}{两种算法的差距}\label{ex:eastasia-dual}
+（1）教学输入：资本份额 0.5，资本的实际回报每年下降 1\%，实际工资每年上升 4\%。按式~\eqref{eq:eastasia-dual}，余量是多少？（2）按 Young 的表 8，新加坡的回报 19 年里从 0.401 降到 0.128，资本份额取 0.53，回报这一项把余量拉低多少？（3）设工资的增长不变，回报若像 Hsieh 说的那样不变，余量会高出多少？
+\solution
+（1）$0.5\times(-1\%)+0.5\times4\%=1.5\%$。（2）回报每年下降$\ln(0.128/0.401)/19\approx-6.0\%$，乘以 0.53，余量被拉低约 3.2 个百分点（本书的计算）。（3）高出的正是这 3.2 个百分点。Hsieh 摘要里说的是高出 2 个多百分点，他用的回报与工资数据不在摘要里，这里只说明机制\cite{hsieh2002}。
+\end{example}
+% 据: y4_t41
+
+\begin{pitfall}[余量低，说明高速增长是虚的]
+产出的增长是实实在在的，Young 自己说，四个经济体的人均产出每年增长 6\%—7\%\cite{young1994}。余量是减出来的数，取决于份额、投入与生产函数的假定。Young 说，他用水泥进口推算出 1950 年代极高的建筑投资，又无法用别的来源印证，新加坡的余量若有偏差，也是高估\cite{young1994}。Krugman 在评论 Young 时说，开放经济的实际增加值很不可靠，新加坡的增长也许比数字显示的更快\cite{young1992}。Rodrik 说，资本与劳动的替代弹性若是 0.5，算出的余量会随时间升高\cite{collinsbosworth1996}。按他的算例，东亚的余量 10 年后是 1.93\%，30 年后是 2.89\%\cite{collinsbosworth1996}。Bosworth 回答，分解靠的是资本份额稳定，与替代弹性无关\cite{collinsbosworth1996}。余量低说的是增长主要靠投入，靠的是少消费、多储蓄（本书的解读）。
+% 据: y4_67, y4_overestimates, y2_kr_fickle, y2_kr_faster, cb_rd_elastic, cb_bosworth, cb_sacrifice
+\end{pitfall}
+
+\section{数据检验：换一套数据}\label{sec:eastasia-check}
+
+Young 用的是各经济体自己的国民账户与人口普查。换一套数据，排序还在吗？\tabref{tab:eastasia-accounting}用 Penn World Table 10.01 重算，时期与 Young 相同（本书的计算）\cite{pwt1001,young1994}。产出用不变价的实际 GDP，资本用不变价的资本存量，劳动用就业人数，人力资本用数据库按受教育年限算的指数，资本份额取 1 减各年劳动份额的平均\cite{pwt1001}。
+% 据: y4_t81, y4_t81_note
+
+\begin{table}[tbp]
+\centering\small
+\caption{增长核算：Penn World Table 10.01 的重算与 Young（1994）（每年 \%，对数增长率）}\label{tab:eastasia-accounting}
+\begin{tabularx}{\linewidth}{@{}Y r r r r r r@{}}
+\toprule
+ & 产出 & 资本份额 & 资本 & 劳动与人力资本 & 余量 & Young 的余量 \\
+\midrule
+香港 1966—1991 & 7.3 & 0.53 & 3.6 & 2.0 & 1.7 & 2.3 \\
+新加坡 1966—1990 & 8.7 & 0.58 & 5.9 & 2.1 & 0.7 & $-0.3$ \\
+韩国 1966—1990 & 9.2 & 0.40 & 3.8 & 3.1 & 2.4 & 1.6 \\
+台湾 1966—1990 & 9.1 & 0.25 & 2.8 & 3.6 & 2.7 & 1.9 \\
+日本 1952—1973 & 8.4 & 0.38 & 3.5 & 1.5 & 3.4 & 4.1 \\
+美国 1966—1990 & 3.1 & 0.38 & 1.1 & 1.6 & 0.4 & — \\
+\bottomrule
+\end{tabularx}
+\datasource{本书的计算：Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015，CC BY 4.0）的 rgdpna、rnna、emp、hc 与 labsh，按式~\eqref{eq:eastasia-accounting}；资本一栏是$\alpha g_K$，劳动与人力资本一栏是$(1-\alpha)(g_L+g_h)$。Young 的余量见他的表 8-1，韩国与台湾不含农业；日本一行是他表 8-2 转引 Christensen、Cummings 与 Jorgenson（1980）的 1952—1973 年。}
+\end{table}
+% 据: y4_t81, y4_t82_japan
+
+排序大体还在。两套数据里，新加坡的余量都最低，日本都最高\cite{young1994,pwt1001}。水平却差得不少，Penn World Table 的新加坡是每年 0.7\%，Young 是$-0.3\%$（本书的计算）。资本份额是一个原因。按 Collins 与 Bosworth 的转述，Young 1995 年的论文给新加坡的资本份额是 0.53，香港是 0.37\cite{collinsbosworth1996}。Penn World Table 的香港是 0.53，台湾的劳动份额 1951—2000 年每年都是同一个数（本书的计算）\cite{pwt1001}。
+% 据: cb_young
+
+Young 的劳动按工时计。他说，除香港的工时下降以外，各地报告的工时大致不变\cite{young1994}。Penn World Table 也是这样，同一时期香港每个就业者一年的工作小时从约 2,600 减到约 2,300，新加坡略有增加（本书的计算）\cite{pwt1001}。把就业人数换成总工时，香港的余量升到约 1.9\%，新加坡仍约 0.7\%，排序不变（本书的计算）。
+% 据: y4_hours, y4_hkhours
+
+日本一行与 Krugman 的判断相合。按 Penn World Table，日本 1952—1973 年的余量每年 3.4\%，是表里最高的，Young 转引的 Christensen 等人的估计是 4.1\%\cite{young1994}。同一张表里，美国 1966—1990 年的余量每年只有 0.4\%（本书的计算）\cite{pwt1001}。换成 1955—1973 年，日本的产出每年增长约 8.8\%（本书的计算）\cite{pwt1001}。资本贡献约 3.8 个百分点，余量约 3.6 个百分点，约占四成（本书的计算）。
+% 据: y4_t82_japan
+
+香港也有一段例外，Young 说 1981—1986 年中英谈判香港前途，商业活动低迷，余量也低\cite{young1994}。韩国与台湾的差距，一部分出在农业上。Young 的数不含农业，他说去掉农业以后，台湾与韩国每个工人的产出增长每年分别低 0.6 与 0.7 个百分点\cite{young1994}。
+% 据: y4_anglo, y4_hk, y4_agri, y4_armies
+
+Collins 与 Bosworth 换了一种做法。他们给所有国家用统一的资本份额 0.35，算 1960—1994 年每个工人的产出\cite{collinsbosworth1996}。韩国与新加坡的余量都是每年 1.5\%，台湾是 2.0\%\cite{collinsbosworth1996}。他们说，东亚（不含中国与日本）的余量每年 1.1\%，只占每个工人产出增长的四分之一\cite{collinsbosworth1996}。用同样的 0.35，Penn World Table 给新加坡 1960—1994 年的余量是 1.8\%（本书的计算）\cite{pwt1001}。用数据库自己的份额，余量只有 0.9\%（本书的计算）。新加坡的分歧，多半出在资本份额上（本书的解读）。
+% 据: cb_share, cb_t6_kr, cb_t6_sg, cb_t6_tw, cb_t7_ea, cb_fourth, cb_similar
+
+\fig{eastasia_accounting}{增长核算的三套估计。(a) Penn World Table 10.01 的分解（本书的计算），每年 \%：资本、劳动与人力资本、余量，时期同\tabref{tab:eastasia-accounting}。(b) 余量的几种估计：Young（1994）的表 8-1 与表 8-2，Penn World Table 同期的重算，Collins 与 Bosworth（1996）表 6 的 1960—1994 年（统一资本份额 0.35），以及 Penn World Table 1960—1994 年按 0.35 的重算。数据：Penn World Table 10.01（Feenstra、Inklaar 与 Timmer 2015，CC BY 4.0），Young（1994），Collins 与 Bosworth（1996）。}{fig:eastasia_accounting}
+
+研究组自己的估计也把新加坡放在后面。按他们在严格假定下的估算，新加坡每年落后国际最佳实践 3.5\%\cite{worldbank1993}。他们把印度尼西亚、马来西亚与新加坡归为投资驱动型，把日本、韩国、香港、泰国与台湾归为生产率驱动型\cite{worldbank1993}。他们也说，生产率的变化不是决定性的因素\cite{worldbank1993}。三套数据的排序一致，水平取决于份额与投入的量法，余量的大小至今没有一个公认的数（本书的解读）。
+% 据: wb_ch1_singapore, wb_ch1_groups, wb_invdriven, wb_proddriven, wb_ch1_dominant
+
+\section{四个争论}\label{sec:eastasia-debate}
+
+\subsubsection{积累还是生产率}
+
+第一个争论是余量本身。积累一方的证据是原始法的核算，Young 说可能除新加坡以外，这些经济体的生产率增长不算特别低，按战后的标准也不算特别高\cite{young1994}。Krugman 走得最远，说新加坡的增长全部可以用投入的增加解释\cite{krugman1994}。生产率一方的证据是对偶法，Hsieh 说新加坡的回报没有下降\cite{hsieh2002}。各方都有让步。Krugman 1992 年说新加坡的增长也许比数字显示的快，又说没有理由认为结果差得很远\cite{young1992}。他 1994 年也承认日本靠了效率\cite{krugman1994}。Barro 在评论里指出，投资率相近的 1966—1970 年前后，新加坡的余量每年 2.9\%，高过香港的 2.1\%\cite{young1992}。他说，这些结果说的更多是资本报酬递减，不是技术变化\cite{young1992}。
+% 据: y4_nothigh, kg_allgrowth, hs_reason, y2_kr_faster, y2_kr_face, kg_japan, y2_barro_tfp, y2_barro_dr
+
+\begin{compare}{要素积累与生产率增长}{积累一方}{生产率一方}
+\cmprow{代表}{Young（1992、1994），Krugman（1994）}{世界银行研究组（1993），Hsieh（2002）}
+\cmprow{方法}{原始法，劳动按工时与受教育程度加权\cite{young1994}}{跨国回归与生产函数\cite{worldbank1993}，对偶法\cite{hsieh2002}}
+\cmprow{结论}{生产率增长不算特别高\cite{young1994}}{高投资与人力资本约解释三分之二，其余是生产率\cite{worldbank1993}}
+\cmprow{新加坡}{24 年里每年$-0.3\%$\cite{young1994}}{对偶估计高出原始估计 2 个多百分点\cite{hsieh2002}}
+\cmprow{各自的让步}{日本靠了效率，新加坡的数字可能偏低\cite{krugman1994,young1992}}{生产率不是决定性的因素\cite{worldbank1993}}
+\cmpsum{两方都同意增长主要来自积累，分歧在余下的那部分是不是特别高。Collins 与 Bosworth 说，他们对韩国、新加坡与台湾的结果与 Young 很相近\cite{collinsbosworth1996}。}
+% 据: y4_nothigh, wb_twothirds, hs_exceed, y4_sg_text, kg_japan, y2_kr_faster, wb_ch1_dominant, cb_similar
+\end{compare}
+
+这场争论关系到谁付账。Collins 与 Bosworth 说，积累的看法若对，提高生活水平就要投资，代价主要是放弃眼前的消费\cite{collinsbosworth1996}。他们承认 Krugman 说得对，每个工人的资本不能一直比劳动增强型的技术进步增长得快，而回报不大幅下降\cite{collinsbosworth1996}。他们也说，东亚的高速增长看来还有余地\cite{collinsbosworth1996}。Rodrik 在评论里概括他们的发现，东亚呈现的是积累的奇迹，尤其是物质资本的积累，不是生产率的奇迹\cite{collinsbosworth1996}。他也提醒，关于全要素生产率的证据是间接的，解读要小心\cite{collinsbosworth1996}。至今没有定论。
+% 据: cb_lesson, cb_krugman, cb_room, cb_rd_miracle, cb_rd_indirect
+
+\subsubsection{产业政策有没有用}
+
+第二个争论是产业政策。世界银行在新闻稿里说，银行以前的研究把压低利率、扶持受青睐的产业这类政策干预说成总是有害于增长\cite{worldbank1993news}。按新闻稿的转述，研究组这一次说，一些政府，特别是东北亚的，在市场薄弱的地方干预，推动了增长\cite{worldbank1993news}。组长佩奇在新闻稿里也提醒，政府干预经济总有风险，既得利益者会把政策变得对自己有利\cite{worldbank1993news}。
+% 据: wn_interventions, wn_boosted, wn_vested
+
+研究组概括了两种看法\cite{worldbank1993}。新古典的一方强调东亚把基本面做对了\cite{worldbank1993}。修正派认为市场总是不能把投资引向增长最快的产业，政府于是有意“把价格做错”\cite{worldbank1993}。研究组的判断是，在东北亚的一些情形下，政府的干预带来了更高、更平等的增长，但成功的前提太严格，别的发展中经济体照着做，常常失败\cite{worldbank1993}。他们也说，在日本、韩国、新加坡与台湾，扶持特定产业看不出有什么影响，受扶持部门的生产率增长并不明显更高\cite{worldbank1993}。
+% 据: wb_neoclassical, wb_marketfail, wb_pricewrong, wb_selective, wb_failure, wb_promotion, wb_promoted
+
+研究组为一部分干预辩护，用的是“竞赛”这个说法。他们说，有的高绩效经济体创造出竞赛，把竞争与企业之间、政府与民间之间的合作结合起来\cite{worldbank1993}。政府按表现分配奖赏，奖赏常常是信贷或外汇\cite{worldbank1993}。简单的竞赛如给出口商配给信贷，复杂的如日本与韩国在政府与企业的审议会里协调民间投资\cite{worldbank1993}。
+% 据: wb_contests, wb_contest_key, wb_councils
+
+新加坡的扶持政策还有一种反面的解释。Young 提出的看法是，新加坡是自己的扶持政策的牺牲品，政策把经济越来越推到它的学习成熟度前面，去生产生产率越来越低的产品\cite{young1992}。按他的说法，各部门内部也许有学习带来的生产率提高，在总量上却被转向生产率较低的产业掩盖了\cite{young1992}。Krugman 在评论里说，这也许是对的，但论文里没有正面的证据\cite{young1992}。
+% 据: y2_victim, y2_ahead, y2_masked, y2_kr_couldbe, y2_kr_noevidence
+
+\begin{compare}{新古典的解读与修正派的解读}{新古典的解读}{修正派的解读}
+\cmprow{东亚做对了什么}{把基本面做对了\cite{worldbank1993}}{有意“把价格做错”，扶持本来长不起来的产业\cite{worldbank1993}}
+\cmprow{市场}{承认的市场失灵很少\cite{worldbank1993}}{市场总是不能把投资引向增长最快的产业\cite{worldbank1993}}
+\cmprow{政府的角色}{提供稳定的宏观环境与可靠的法律框架，促进国内外的竞争\cite{worldbank1993}}{在关键之处“引领市场”\cite{worldbank1993}}
+\cmpsum{两种解读都按研究组的概括，修正派以 Amsden（1989）与 Wade（1989、1990）等人为代表\cite{worldbank1993}。研究组自己的判断是，干预在东北亚的一些情形下有效，前提却很严格（本书的概括）。}
+% 据: wb_neoclassical, wb_pricewrong, wb_marketfail, wb_neo_detail, wb_ledmarket, wb_revisionists
+\end{compare}
+
+Krugman 说，产业政策若真有好处，应当表现为效率异常地增长，可是看不到这样的迹象\cite{krugman1994}。Rodrik 推测，韩国与台湾投资率的跃升，政府深深卷入其中\cite{collinsbosworth1996}。他说香港是这个地区唯一投资率没有上升的经济体，并猜想原因是香港政府奉行自由放任，从来没有投资战略\cite{collinsbosworth1996}。至今没有定论。
+% 据: kg_noefficiency, cb_rd_conjecture, cb_rd_hkonly, cb_rd_guess, cb_rd_hk
+
+\subsubsection{出口还是投资}
+
+第三个争论是因果的方向。按世界银行新闻稿的概括，研究组认为“出口推动”是基本面与干预的结合，对东亚的成功至关重要\cite{worldbank1993news}。在东亚试过的各种干预里，与出口推动相关的那些，对别的发展中经济体最有希望\cite{worldbank1993news}。研究组说，1950 年代连对贸易乐观的人都没有料到，此后三十年韩国出口的增长会是世界贸易的四倍\cite{worldbank1993}。\chref{ch:development}的对照框里，世界银行 1987 年自己也说不清是外向带来了更好的表现，还是更好的表现为外向铺了路\cite{wdr1987}。
+% 据: wn_pushdef, wb_korea_exp, wn_exportpush
+
+Rodrik 在 1994 年的工作论文里说，很难看出出口导向在韩国与台湾的增长中起了重要的因果作用\cite{rodrik1994}。他说，1960 年代出口相对盈利能力的提高太小，出口起初也太少\cite{rodrik1994}。他的解释从投资热潮说起，两地的劳动力相对于物质资本受过很好的教育，资本潜在的回报很高\cite{rodrik1994}。他说，政府补贴并协调投资决策，设法大幅提高了资本的私人回报\cite{rodrik1994}。在他看来，经济的外向是进口资本品的需求增加的结果\cite{rodrik1994}。研究组讲的是相反的方向，朴正熙推动出口，提高了对受过教育的劳动力的需求\cite{worldbank1993}。马尔萨斯 1798 年设想，中国可以靠劳动者之多、劳动之便宜，制造数量极大的制成品向外国出售（\chref{ch:divergence}）。按 Rodrik 的解释，韩国与台湾先有的是受过教育的劳动力与投资热潮，出口随后才来（本书的解读）。至今没有定论。
+% 据: rd_causal, rd_profit, rd_small, rd_boom, rd_educated, rd_engineer, rd_outward, wb_park_educ, rd_emphasis
+
+\subsubsection{金融抑制：便宜的资金还是迟到的账}
+
+第四个争论是金融抑制。研究组说，日本、韩国、马来西亚、泰国与台湾都有过长时期的温和金融抑制\cite{worldbank1993}。压低贷款利率会造成对信贷的超额需求，资本被错配的风险随之提高\cite{worldbank1993}。他们承认，一般而言金融抑制与低增长相连，实际利率大幅为负时尤其如此\cite{worldbank1993}。
+% 据: wb_mildrep, wb_misallocated, wb_lowgrowth
+
+利率对储蓄有多大作用，研究组分两种情形说。从大幅为负提高到正的实际利率，作用最明显\cite{worldbank1993}。1949 年，台湾存款的实际利率是$-300\%$\cite{worldbank1993}。到 1953 年，它提高到约 8.5\%，三年里定期与储蓄存款占货币存量的比例从 2\% 升到 34\%\cite{worldbank1993}。储蓄对正的实际利率的小幅变化却不太敏感，政府因此能温和地压低存款利率，对储蓄的影响很小\cite{worldbank1993}。他们无法断定温和的抑制促进了东北亚的增长，只能说它看来没有妨碍增长\cite{worldbank1993}。后来的账在别的章里，日本的泡沫在\chref{ch:japanbubble}，1997 年的亚洲危机在\chref{ch:emcrises}。至今没有定论。
+% 据: wb_evident, wb_tw_rates, wb_responsive, wb_notinhibit
+
+\begin{deeper}[史料说明]
+\textbf{版本。}世界银行的报告据 documents.worldbank.org 上的扫描本，文字层把许多词连在一起，也有误读。书名页背面、第 vii 页前言的署名、第 1 页关于中国的脚注、第 308 页关于通商产业省与有效保护率的一段，以及第 152、154 页的年表，按页面图像读。新闻稿据同一网站的扫描本。普雷斯顿在前言里说，报告的判断不一定代表世界银行执行董事会及其所代表的政府的看法\cite{worldbank1993}，本书因此把报告里的话归于研究组。Young（1994）用的是 NBER 第 4680 号工作论文（1994 年 3 月），Collins 与 Bosworth 引的 Young（1995）没有读到。Young（1992）据 NBER 网站上《NBER 宏观经济学年刊 1992》的章节本，包括 Krugman 与 Barro 的评论。Rodrik（1994）用的是 NBER 第 4964 号工作论文（1994 年 12 月），它的文字层无法使用，第 1—3 页按页面图像读。Collins 与 Bosworth（1996）据 Brookings 网站上的 PDF，附 Rodrik 的评论与 Bosworth 的答复。Krugman（1994）据网上两份由 JSTOR 下载的副本核对，只用来核对。Hsieh（2002）只读到 IDEAS 上的摘要。经济白皮书据内阁府网站。
+
+\textbf{没有取得的。}Johnson（1982）、Amsden（1989）与 Wade（1990）的书没有读到，正文只按世界银行报告的转引与概括提到。Kim 与 Lau（1994）、Westphal（1990）与 Nelson 与 Pack 的论文没有取得。《国民所得倍增计划》的全文与它的目标增长率没有读到，正文只用 1961 年白皮书的说法。朴正熙 1961 年夺取政权的月份，读到的史料没有写，正文只写年份。研究组组长佩奇的生卒年没有找到，国会图书馆名为 Page, John M. 的记录属于另一个人。
+
+\textbf{不一致之处。}Young 的表 6-1 给台湾 1966—1990 年的余量是 0.024，正文也说 2.4\%，汇总的表 8-1 却是 1.9。研究组在概述里说积累约占增长的三分之二，第 1 章又说高绩效经济体产出增长的 60\% 到 90\% 来自积累\cite{worldbank1993}。Krugman 给新加坡的数注明取自 Young，与 Young 不是两个独立的来源。新加坡的年表把人民行动党的自治、独立与 1968 年的大选写在各年份的下面，各项与年份的对应按图像判断。Penn World Table 的劳动份额在数据开始的若干年里不变，日本 1950—1980 年、韩国 1953—1970 年、香港与新加坡 1960—1980 年都是这样（本书的计算），本书照用。中央公积金局的数据集说百分比按 1 为满分写，数据列印的却是百分数，本书按百分数读，与 Young 的数一致。
+
+\textbf{只有一个来源的。}日本开发银行的坏账、财政投融资的份额、韩国政策性贷款的 60\%、台湾 1949 年与 1953 年的实际利率，只见于世界银行的报告，后者是报告转引的 Chiu（1992）。新加坡罢工损失的工作日、公积金投在政府证券上的比例与先锋企业的税率，只见于 Young（1992）。两地成人上学的年数只见于 Barro 的评论。
+
+\textbf{文字层的误读。}世界银行报告的文字层把 August 1993 读作“Augur 1993”，把 to superior 读作“cosuperior”，把 MITI 读作“Mm”或“MITE”，第 16 页的 clearly offset 读作“dearly offset”，第 129 页标题里的年份读作“11973-791”，都按页面图像改正。Young（1992）的文字层丢了 mid-1960s 的连字符。
+\end{deeper}
+% 据: wb_6090, wb_board, wb_soviet, wb_hci_shift, wb_copyright, wb_rights, wb_printing, wb_series, wb_china, y4_number, y4_date, y2_volume, y2_pages, y2_selection, rd_number, rd_panel, rd_copyright, cb_journal, cb_views, kg_source, kg_jstor, kh_stalin, hs_journal, hs_restricted, wb_johnson, y4_t61, y4_tw_text, wb_ch1_dominant, kg_fn6, wb_tl_sg, wb_signed, wb_accumulation, y2_mandays
+
+\section{今天还剩什么}\label{sec:eastasia-legacy}
+
+\textbf{增长核算。}余量是技术还是测量误差，在东亚又争了一遍，结论取决于份额与投入怎样量。起点也要紧。Krugman 说，中国的难处是不清楚该用哪一年做基年\cite{krugman1994}。从 1978 年决定性地转向市场算起，效率无疑大大提高了\cite{krugman1994}。从文化大革命以前的 1964 年算起，情形更像东亚的几个经济体，效率只是温和地增长\cite{krugman1994}。技术进步本身从哪里来，是\chref{ch:endogenous}的问题。
+% 据: kg_baseline, kg_china78, kg_china64
+
+\textbf{一次性的投入。}Krugman 说，新加坡的就业比例差不多翻了一番，不可能再翻一番\cite{krugman1994}。Young 1992 年说，粗略的跨国资本存量估计显示，到 1980 年代中期，新加坡的物质资本回报已是世界上最低的之一\cite{young1992}。他说，新加坡靠积累维持增长的日子屈指可数了\cite{young1992}。人口老化以后劳动供给怎样变化，在\chref{ch:demography}。
+% 据: kg_double, y2_lowest, y2_numbered
+
+\textbf{金融抑制的账。}低利率把储户的钱转给了企业。研究组 1993 年已经说，1970 年代初以来发展中经济体与全球资本市场越连越紧\cite{worldbank1993}。他们说，这使政府限制资本外逃与投机性资本流入的能力本来有限，如今更小了，却也让它们借到了更便宜的资本\cite{worldbank1993}。日本 1980 年代后期的泡沫与 1997 年的亚洲危机，分别在\chref{ch:japanbubble}与\chref{ch:emcrises}。中国的信贷与有管理的汇率在\chref{ch:chinacredit}。
+% 据: wb_integrated
+
+\textbf{产业政策。}关税在今天的效果在\chref{ch:fragmentation}，世界银行 1993 年的判断是这场争论的一个起点（本书的解读）。
+
+\begin{takeaways}
+\begin{itemize}
+\item 1956—1973 年日本的实际国内总支出平均每年增长约 9.2\%；按 Young 的统计，1966—1990 年前后，韩国、台湾、香港与新加坡的人均 GDP 每年增长约 6\%—7\%。
+\item 决定信贷与投资方向的是政府与官僚机构，付账的是存款利率被压低的储户、拿名义补偿的地主、消费受到限制的家庭、被强制储蓄的雇员和失去谈判权的工人。
+\item 带人力资本的增长核算把产出增长分成资本、劳动与余量；对偶法用回报与工资的增长计算同一个余量，用同一套数据时两者恒等，差别出在数据上。
+\item Young 与 Krugman 认为东亚的增长主要靠积累，世界银行的研究组认为积累约占三分之二、生产率增长也很高；Penn World Table 的重算保留了排序，新加坡最低，水平取决于资本份额。
+\item 产业政策、出口与投资的因果、金融抑制的利弊，至今没有定论。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 按\exref{ex:eastasia-young}香港的数，劳动份额若是 0.70，余量是多少？
+\item 按\exref{ex:eastasia-krugman}，产出 14,000 美元时，回报率若降到 20\%，增长率是多少？
+\item 资本份额 0.4，回报不变，工资每年上升 3\%，对偶法的余量是多少？
+\item 存款利率上限 3\%，通胀率 5\%，没有上限时存款的实际利率是 1\%，每 100 单位存款一年里储户少得多少？
+\item 世界银行的研究组与 Young 都说积累是增长的主要来源，他们争的是什么？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $0.073-0.30\times0.080-0.70\times0.032\approx0.027$，约 2.7\%。
+\item 投资 2,800，产出增加 560，增长 4\%。
+\item $0.4\times0+0.6\times3\%=1.8\%$。
+\item 实际利率$3\%-5\%=-2\%$，比 1\% 少 3 个百分点，即少得 3 单位。
+\item 争的是余下的部分，也就是全要素生产率的增长是不是特别高；这取决于资本份额、投入的量法与对偶法里回报的走势。
+\end{answers}
+
+回到 1993 年 9 月 26 日的那份新闻稿。研究组把中国留在了研究之外\cite{worldbank1993}。他们在第 1 页的脚注里说，中国近来增长很快，用的一些政策像高绩效经济体，但中国的所有制结构、公司治理与政府治理的方法以及对市场的依赖都与它们“很不相同”，变动又快，难以比较\cite{worldbank1993}。研究组讲强制储蓄时也说，别的经济体类似的做法有过惊人的失败，例如已经消失的指令经济里普遍的匮乏与巨大的浪费\cite{worldbank1993}。东亚的政府管着资金的价格，计划经济的政府管着几乎所有的价格（本书的解读）。计划经济里的“通胀”藏在哪里？
+% 据: wb_china, wb_failures, wb_command

@@ -1,0 +1,212 @@
+{
+  "title": "East Asia's growth: quotations of the World Bank's report of 1993 and its news release, Young (1992, 1994), Rodrik (1994), Collins and Bosworth (1996), Krugman (1994), Hsieh (2002), the Japanese Economic White Papers of 1956 and 1961, a Taiwanese statute, and the records of the persons named, with their pages",
+  "source": "The World Bank (1993), The East Asian Miracle and Bank News Release No. 93/S17 (documents.worldbank.org); NBER Working Papers 4680 and 4964 and the NBER Macroeconomics Annual 1992 (nber.org); Brookings Papers on Economic Activity 1996:2 (brookings.edu); Foreign Affairs 73 (6) (a JSTOR-derived copy on cooperative-individualism.org, read to verify); IDEAS/RePEc; 経済企画庁, 年次経済報告 1956 and 1961 (www5.cao.go.jp); 法務部 主管法規查詢系統 and 全國法規資料庫 (Taiwan); the World Bank's archives; Library of Congress; Deutsche Nationalbibliothek (lobid.org); data.gov.sg",
+  "url": "https://documents.worldbank.org/curated/en/975081468244550798/pdf/multi-page.pdf",
+  "series": "id, dynasty (the economy), year, year_note, value (the numbers the quotation prints, ';'-separated, read by checks/check_ch42.py), unit, numeral, file (the key of the document in 'sources'), juan (the printed page and the PDF page), quote (verbatim from the text layer, including its misreadings; empty for a row read on a page image), note",
+  "retrieved": "2026-11-12",
+  "license": "The World Bank: The East Asian Miracle (1993), whose copyright page prints (rows wb_copyright, wb_rights, read on the page image) '© 1993 The International Bank for Reconstruction and Development / THE WORLD BANK' and 'All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior permission of Oxford University Press.'; its foreword says (row wb_board) that the judgments made in it do not necessarily reflect the view of the Bank's Board of Directors or the governments they represent. The news release 93/S17 prints no rights statement (its pages carry 'Public Disclosure Authorized' stamps). Short phrases only, the pages cited. NBER: Rodrik (1994), Working Paper 4964, prints (row rd_copyright, read on the page image) '© 1994 by Dani Rodrik. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' Young (1994), Working Paper 4680 (rows y4_number, y4_date), prints no © notice on its cover or its abstract page; Young (1992) is a selection from an out-of-print volume (row y2_selection) and prints no © notice (the volume's copyright page is not in the selection). All three are in copyright: short phrases only, the pages cited. Brookings: the PDF of Collins and Bosworth (1996) on brookings.edu prints no copyright notice and no copyright page (it is the article with its comments; row cb_journal gives the issue); the terms of use of brookings.edu (rows br_copyright, br_personal) print 'Copyright 2023 – 2024 © The Brookings Institution and/or its licensors. All rights reserved.' and grant 'a limited, revocable, nonexclusive, nontransferable, and non-sublicensable license to access and make personal use of this site'. Short phrases only. Krugman (1994), Foreign Affairs (Council on Foreign Relations), in copyright: read to verify in two JSTOR-derived copies on third-party sites, whose cover page says (row kg_jstor) 'Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at https://about.jstor.org/terms'; not committed, the journal cited, short phrases only. Hsieh (2002): only the abstract on IDEAS (row hs_restricted: 'Access to full text is restricted to AEA members and institutional subscribers.'), quoted in short phrases, the journal cited. Japan: the Cabinet Office's terms of use (rows cao_rules, cao_date) say that the copyright of the site's content belongs to the Cabinet Office unless otherwise noted and that, unless a rights notation is given, '権利表記の記載がない限り 公共データ利用規約（第1.0版）（デジタル庁） が適用されます。' The pages of the White Paper of 1956 carry a rights notation (row wp56_rights) 'All Rights Reserved, Copyright(c) 経済企画庁 １９９４ All Rights Reserved, Copyright(c) (社)経済企画協会 １９９４', so the Public Data License does not apply to them: a few words quoted, the white paper cited. The pages of the White Paper of 1961 carry no rights notation, so the Public Data License 1.0 applies (its terms are recorded for Chapter 39, rows pdl_* of consumption_facts): the source and the licence are cited in the bibliography, and the book's Chinese rendering is marked as its own processing (加工). Taiwan: the statute on the period of martial law is a law, which article 9 of Taiwan's Copyright Act (row tw_ca9) excludes from copyright: '下列各款不得為著作權之標的︰ 一、憲法、法律、命令或公文。' The World Bank's page on Lewis T. Preston gives the facts of a life. The Library of Congress authority records: public data; the GND data through lobid.org (row gnd_licence): http://creativecommons.org/publicdomain/zero/1.0/ (CC0). The Singapore Open Data Licence version 1.0 (rows sl_use, sl_attribution, sl_official) applies to the data snapshot cpf_rates_1955_2026, whose notice the book prints. Short phrases only, otherwise paraphrased with '% 据:' anchors.",
+  "used_in": [
+    42
+  ],
+  "fetch": "data/fetch/eastasia42.py",
+  "citation": "Each row is cited to its document in the bibliography block of Chapter 42 (references_zh.tex): worldbank1993, worldbank1993news, young1994, young1992, rodrik1994, collinsbosworth1996, krugman1994, hsieh2002, epa1956, epa1961, taiwan1995, worldbankpreston, loc42, gnd42; the Singapore Open Data Licence is cited with cpf2026.",
+  "notes": "Every quotation is copied from the text layer of the document as data/fetch/verify_web_quotes.py extracts it (pdftotext with and without -layout, tags removed from web pages, whitespace and Unicode compatibility forms normalized), so the misreadings of the scanned World Bank report and of the Krugman copy stay in the quotations; the rows say what each misreading stands for. The rows of the World Bank report's copyright page, the signature of the foreword (p. vii), its footnote on China (p. 1), the sentence on MITI and effective protection (p. 308) and the timelines of Singapore and Taiwan (pp. 152, 154), and every row of Rodrik (1994), whose text layer is unusable, were read on page images rendered with pdftoppm; their transcriptions are in the notes between « and », and a reviewer checks them by eye. The misreadings of rows wb_soviet (p. 16, 'dearly offset': the page image reads 'clearly offset') and wb_hci_shift (p. 129, the heading's years) were checked on the page images too. The juan column gives the printed page and the PDF page. Young (1994) is the NBER working paper of March 1994, not the article of 1995 in the Quarterly Journal of Economics, which was not read; Young (1992) is the NBER's selection of the chapter with the published comments of Paul Krugman and Robert J. Barro and the discussion. Krugman (1994) was read in two JSTOR-derived copies on third-party sites, cooperative-individualism.org (the source of the rows, with the JSTOR cover page; SHA-256 dd1314f2c11b47dee826bd7645122480e452d333ace3602761960249ac6b8e51) and vault.hanover.edu (row kh_stalin; SHA-256 c6fcb3fb85ad5fa52747e912cd45e078161b053cadf677ea234db19d15414ca8), downloaded on 2026-11-12 and not committed; their text layers are the same OCR and misread a few digits ('y.y', '^.y'), which the book does not use. Hsieh (2002) was read only in its abstract on IDEAS. The web pages of brookings.edu, the World Bank's archives, IDEAS and the Taiwanese law databases carry parts that change between downloads; their SHA-256 are those of the copies in the cache on 2026-11-12. A search result offered as a copy of Hsieh (2002) on a Tsinghua University page was a one-page biography and is not used. The misreadings of the text layers and the misprints, each with its row: 'economieq' for 'economies' (wn_eight); 'Govemors' for 'Governors' (wb_bangkok); 'cosuperior' and 'capita.' for 'to superior' and 'capital.' (wb_accumulation); 'gratfilly' for 'gratefully' (wb_japan_support); 'rcprescnt' for 'represent' (wb_board); 'Augur' for 'August' (wb_signed); 'Pagc' for 'Page' (wb_team); 'Govemrnment' for 'Government' (wb_financial); 'thc' for 'the' (wb_tigers); 'dte' for 'the' (wb_twothirds); 'FHAEs' for 'HPAEs' (wb_exceeds); 'govenment' for 'government' (wb_selective); 'Minisrryof IntcrnationalTrade and Indusry' for 'Ministry of International Trade and Industry' (wb_mof); 'struccure' for 'structure' (wb_pricewrong); '\"led the m.narke\"e' for '\"led the market\"' (wb_ledmarket); 'firns' for 'firms' (wb_transfer); 'appaently' for 'apparently' (wb_notinhibit); 'compeled' and 'dtrough' for 'compelled' and 'through' (wb_provident); 'ac' for 'at' (wb_ch1_singapore); 'nor' for 'not' (wb_ch1_dominant); 'interesr' for 'interest' (wb_repressed); '(Hcr)' for '(HCI)' (wb_hci); '&cing' for 'facing' (wb_authoritarian); 'rhe' for 'the' (wb_seized_land); 'renants' for 'tenants' (wb_korea_land); 'lirmitedunion' for 'limited union' (wb_sg_unions); 'govemment' for 'government' (wb_park); 'authoriry' for 'authority' (wb_epb); 'raceson' for 'rates on' (wb_japan_negative); 'Ha:' and 'filly' for 'HCI' and 'fully' (wb_hci_costs); 'significantdy' for 'significantly' (wb_promoted); 'interesr races' for 'interest rates' (wb_controlled); 'mosdy' for 'mostly' (wb_savers); 'GD?' for 'GDP' (y4_sg_invest); 'extraordinaiy' for 'extraordinary' (y4_sg_text); 'mid1960s' for 'mid-1960s' (y2_mandays); 'srategy' for 'strategy' (cb_rd_hk); 'markersconsistendy' for 'markets consistently' (wb_marketfail); 'Tliailand' for 'Thailand' (wb_proddriven); '引線め' for '引締め' (wp61_window); 'effltive' for 'effective' (wb_jdb_why); 'fist' for 'fast' (wb_korea_exp); 'markeL' for 'market', 'abiity' for 'ability' (wb_integrated); 'caes', 'vice-nunisters', 'resrt' for 'cases', 'vice-ministers', 'rest' (wb_npa); 'nor' for 'not' (wb_responsive); 'protecred fiom', 'Natonal', 'bureaucray's' and 'promotdon' for 'protected from', 'National', 'bureaucracy's' and 'promotion' (wb_npa2); 'Wurid' for 'World' (wb_korea_land1); 'legislatum' for 'legislature' (wb_korea_land2); 'authoriies' for 'authorities'' (wb_tw_landlords); 'contrls' for 'controls' (wb_consumer); 'Restrictons' and 'induding' for 'Restrictions' and 'including' (wb_restrict); 'generaed' and 'consistendy' for 'generated' and 'consistently' (wb_payoffs); 'conwnt', 'fonrer' and 'dearly' for 'contrast', 'former' and 'clearly' (wb_soviet); 'indude' and 'Widespread' for 'include' and 'widespread' (wb_command); 'sociey' for 'society' (wb_shared); 'paternalisdtithey' for 'paternalistic, they' (wb_leaders); 'HPABs' and 'berween' for 'HPAEs' and 'between' (wb_contests); 'caedit' for 'credit' (wb_contest_key); 'especialy' for 'especially' (wb_evident); 'ques tion' for 'question' (a hyphen lost at a line end) (kg_china78); 'rhe stare-controlled' for 'the state-controlled' (wb_statebanks); 'Indostries Drive11973-791', 'takeoffperiod' and 'govremment' for 'Industries Drive (1973-79)', 'takeoff period' and 'government' (wb_hci_shift); 'industriessteel', 'machinery-to' and 'induding' for 'industries—steel', 'machinery—to' and 'including' (wb_hci_six); 'dear fiom' for 'clear from' (wb_hci_partly); 'botdenecks' and 'largscale' for 'bottlenecks' and 'large-scale' (wb_hci_starved); 'apprecated', 'utiliation', ':HC: seccor' and 'switchled' for 'appreciated', 'utilization', 'HCI sector' and 'switched' (wb_hci_switch); 'bureauicracyin' and 'privatcpartiesto' for 'bureaucracy in' and 'private parties to' (wb_guidance); 'MITEis wellkcnownfor' for 'MITI is well known for' (wb_miti_skill); 'rulingliberal' for 'ruling Liberal' (wb_diet); 'powerfil4tool for Mm' for 'powerful tool for MITI' (wb_guidance_tool); 'Mm' for 'MITI' (wb_miti_fx); 'intermationalpressure', 'maintin', 'rade' and 'mid1960sand' for 'international pressure', 'maintain', 'trade' and 'mid-1960s and' (wb_liberalize); 'slow ing' for 'slowing' (a hyphen lost at a line end) (kg_predicted); 'corrobate' for 'corroborate' (y4_overestimates); 'fiavorof' and 'dte' for 'favor of' and 'the' (wb_neutral); 'rtheiroutput growthctcrivres' for 'their output growth derives' (wb_6090).",
+  "sources": {
+    "brookings42": {
+      "url": "https://www.brookings.edu/terms-of-use/",
+      "format": "html",
+      "sha256": "cbf927906ca19b5acc717afbf4984842b0ae67e743d422d7fd11ffd3fadd0f99",
+      "version": "The Brookings Institution, Terms of Use (web page, 'Updated August 2024' in the site's footer)",
+      "retrieved": "2026-11-12"
+    },
+    "cao_rules42": {
+      "url": "https://www.cao.go.jp/notice/rule.html",
+      "format": "html",
+      "sha256": "d331a62f2c196033c27cd11ca5f1501a9c0d4e6c711aba3dd15a4ab122c240a9",
+      "version": "内閣府, 内閣府ホームページ利用規約 (web page, 令和7年3月25日現在)",
+      "retrieved": "2026-11-12"
+    },
+    "cb1996_42": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1997/06/1996b_bpea_collins_bosworth_rodrik.pdf",
+      "format": "pdf",
+      "sha256": "e4442a10fb224d481a81de0ad3bfa277b4d44de2596647a3fab8943349aece52",
+      "version": "Susan M. Collins and Barry P. Bosworth, 'Economic Growth in East Asia: Accumulation versus Assimilation', Brookings Papers on Economic Activity 1996 (2): 135-203, with the comments of Dani Rodrik and Bosworth's reply (the PDF on brookings.edu, 69 pages)",
+      "retrieved": "2026-11-12"
+    },
+    "gnd_lee42": {
+      "url": "https://lobid.org/gnd/118997734.json",
+      "format": "json",
+      "sha256": "567a100659aa9ce70d0ab476e61dc51b7c037658364bb9a7b92f954c65fbca23",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118997734 (JSON from lobid.org)",
+      "retrieved": "2026-11-12"
+    },
+    "gnd_preston42": {
+      "url": "https://lobid.org/gnd/11947932X.json",
+      "format": "json",
+      "sha256": "03f26c82af4feeb13a81cd6f9228e593169e42452d786994c9fbda69d1619214",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 11947932X (JSON from lobid.org)",
+      "retrieved": "2026-11-12"
+    },
+    "hsieh2002_42": {
+      "url": "https://ideas.repec.org/a/aea/aecrev/v92y2002i3p502-526.html",
+      "format": "html",
+      "sha256": "532f4c03e2b9a6f7d71d08d058289af15e4c01b070a9bc1bd6b31a195f6a0de0",
+      "version": "Chang-Tai Hsieh, 'What Explains the Industrial Revolution in East Asia? Evidence From the Factor Markets', American Economic Review 92 (3), June 2002, pp. 502-526: the page of the article on IDEAS/RePEc with its abstract (the full text is restricted)",
+      "retrieved": "2026-11-12"
+    },
+    "krugman1994_42": {
+      "url": "https://cooperative-individualism.org/krugman-paul_the-myth-of-asia's-miracle-1994-dec.pdf",
+      "format": "pdf",
+      "sha256": "dd1314f2c11b47dee826bd7645122480e452d333ace3602761960249ac6b8e51",
+      "version": "Paul Krugman, 'The Myth of Asia's Miracle', Foreign Affairs 73 (6), November/December 1994, pp. 62-78: a JSTOR download (with the JSTOR cover page, stable URL https://www.jstor.org/stable/20046929) on cooperative-individualism.org, read to verify, not committed",
+      "retrieved": "2026-11-12"
+    },
+    "krugmanh42": {
+      "url": "https://vault.hanover.edu/%7Eeiriksson/classes/214/files/MythOfAsiasMiraclePaulKrugman.pdf",
+      "format": "pdf",
+      "sha256": "c6fcb3fb85ad5fa52747e912cd45e078161b053cadf677ea234db19d15414ca8",
+      "version": "the same article: a JSTOR-derived copy (17 pages) on a Hanover College course page, read to verify, not committed",
+      "retrieved": "2026-11-12"
+    },
+    "loc_lee42": {
+      "url": "https://id.loc.gov/authorities/names/n50039577.madsrdf.json",
+      "format": "json",
+      "sha256": "d7b52dfb61041b19c9d65520e44bcbc078d006791e3e84f306ae89ac5fe128d4",
+      "version": "Library of Congress Name Authority File, record n50039577 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_park42": {
+      "url": "https://id.loc.gov/authorities/names/n79058355.madsrdf.json",
+      "format": "json",
+      "sha256": "bf53ebe30538719a61f800f9d0fb57bd6b782134b74ce541611281f30c4b7043",
+      "version": "Library of Congress Name Authority File, record n79058355 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_preston42": {
+      "url": "https://id.loc.gov/authorities/names/no93035927.madsrdf.json",
+      "format": "json",
+      "sha256": "f7d8e3de2a0c26808f169d70b7fdfee47dd86c289f521e2c2439afc5b618fc34",
+      "version": "Library of Congress Name Authority File, record no93035927 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_sakomizu42": {
+      "url": "https://id.loc.gov/authorities/names/n86097827.madsrdf.json",
+      "format": "json",
+      "sha256": "e4360e1cb8d46514dc3093f22dcd628fa02949d75a57e1c46cca88d13b580efa",
+      "version": "Library of Congress Name Authority File, record n86097827 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-12"
+    },
+    "rodrik1994_42img": {
+      "url": "https://www.nber.org/system/files/working_papers/w4964/w4964.pdf",
+      "format": "image",
+      "sha256": "a39fae4fd41301c51aecc4da17d081e5fb02a7d761ae48aba0a4391bf9749d48",
+      "version": "Dani Rodrik, 'Getting Interventions Right: How South Korea and Taiwan Grew Rich', NBER Working Paper No. 4964, December 1994 (the NBER's PDF, 78 pages; its text layer is unusable, PDF pp. 1-3 read on images rendered with pdftoppm)",
+      "retrieved": "2026-11-12"
+    },
+    "sglicence42": {
+      "url": "https://data.gov.sg/open-data-licence",
+      "format": "html",
+      "sha256": "a4e3a9a1356aee9e191e287913d97ef2e14cc6c04668b83ddfc960092f4ae505",
+      "version": "data.gov.sg, Singapore Open Data Licence version 1.0 (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "twcopyright42": {
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=J0070017",
+      "format": "html",
+      "sha256": "e8a29f4fc66ee12a39bf79dbea4b5bef8dae7184e81a3126ed7b1726231a7f95",
+      "version": "全國法規資料庫: 著作權法 (amended 2022-06-15; web page)",
+      "retrieved": "2026-11-12"
+    },
+    "twlaw42": {
+      "url": "https://mojlaw.moj.gov.tw/LawContent.aspx?LSID=FL000007",
+      "format": "html",
+      "sha256": "ed35e9884d9a6077850f5325d96c2fb78cd16861dcdaa1fd2b0707af4c4a1b9d",
+      "version": "法務部, 主管法規查詢系統: 戒嚴時期人民受損權利回復條例 (promulgated 1995-01-28, amended 2000-02-02; web page)",
+      "retrieved": "2026-11-12"
+    },
+    "wb1993_42": {
+      "url": "https://documents.worldbank.org/curated/en/975081468244550798/pdf/multi-page.pdf",
+      "format": "pdf",
+      "sha256": "d29b62c4721f11da5b5b5093a89bc640fdb6f159376136c60b13fc9532557257",
+      "version": "The World Bank, The East Asian Miracle: Economic Growth and Public Policy, A World Bank Policy Research Report, New York: Oxford University Press for the World Bank, 1993 (first printing September 1993), the scan with an OCR text layer on documents.worldbank.org (Report No. 12351, 402 PDF pages)",
+      "retrieved": "2026-11-12"
+    },
+    "wb1993_42img": {
+      "url": "https://documents.worldbank.org/curated/en/975081468244550798/pdf/multi-page.pdf",
+      "format": "image",
+      "sha256": "d29b62c4721f11da5b5b5093a89bc640fdb6f159376136c60b13fc9532557257",
+      "version": "the same scan, pages read on images rendered with pdftoppm (PDF pp. 5, 16, 165, 167, 319)",
+      "retrieved": "2026-11-12"
+    },
+    "wbnews42": {
+      "url": "https://documents.worldbank.org/curated/en/495771624970707489/pdf/Announcement-that-East-Asias-Dramatic-Economic-Growth-Could-be-Repeated-in-Other-Countries-on-September-26-1993.pdf",
+      "format": "pdf",
+      "sha256": "6c66c1a70fc118da60037268e9d8d25bf8c90e6fc518f35b2c73f5a28fe7063d",
+      "version": "The World Bank, Bank News Release No. 93/S17, 'East Asia's economic \"miracle\" could be repeated in other countries, new study shows', Washington, Sunday, September 26, 1993 (6 PDF pages, with a background note), the scan on documents.worldbank.org",
+      "retrieved": "2026-11-12"
+    },
+    "wbpreston42": {
+      "url": "https://www.worldbank.org/en/archive/history/past-presidents/lewis-thompson-preston",
+      "format": "html",
+      "sha256": "99e306d3b095b86be8919368070cd73c3b43b8efafcafc71494d083c7fa4c628",
+      "version": "The World Bank, Archives, Past Presidents: Lewis T. Preston (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "wp1956_42": {
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je56/wp-je56-010501.html",
+      "format": "html",
+      "sha256": "d4210a5ad4ea5552172b873c2ef201010905994e6f30dfbcdea67837fb492d5b",
+      "version": "経済企画庁, 昭和31年度 年次経済報告, 結語 (web page of the online edition on www5.cao.go.jp)",
+      "retrieved": "2026-11-12"
+    },
+    "wp1956m42": {
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je56/wp-je56-0000m1.html",
+      "format": "html",
+      "sha256": "845549fe93f1349c98c74e7ce7191c68f7c3c58a568f77dd2ef78332063c4037",
+      "version": "経済企画庁, 昭和31年度 年次経済報告, the page of the preface with the imprint and the rights notation (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "wp1961_42": {
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je61/wp-je61-010301.html",
+      "format": "html",
+      "sha256": "7e3d18505774df07b73ab21b27bba40a85fbc8033ec1290ced4d19ec7f652f7d",
+      "version": "経済企画庁, 昭和36年度 年次経済報告「成長経済の課題」, 結語―構造変化への適応― (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "wp1961a42": {
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je61/wp-je61-010101.html",
+      "format": "html",
+      "sha256": "bacc7f4fca8c6925f8a95b24c923198577020c3735f52b1ed5ace688ed89c691",
+      "version": "経済企画庁, 昭和36年度 年次経済報告, 総説 序言 (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "wp1961b42": {
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je61/wp-je61-030206.html",
+      "format": "html",
+      "sha256": "5b5fc57de23f9962ec46a5870a93288a76ca29d984ba7bd553d52a0e37ee7ba8",
+      "version": "経済企画庁, 昭和36年度 年次経済報告, 金融構造の変化 (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "wp1961m42": {
+      "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je61/wp-je61-0000m1.html",
+      "format": "html",
+      "sha256": "2850c977d2e8ac155d60edf85283a2c20e25c25aa04444f09e25c03e023e5a83",
+      "version": "経済企画庁, 昭和36年度 年次経済報告, 経済白書の発表にあたって (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "young1992_42": {
+      "url": "https://www.nber.org/system/files/chapters/c10990/c10990.pdf",
+      "format": "pdf",
+      "sha256": "d7cb151d12169f228b5fd847b6b9c0876773fc9a97d370863fa76de246ecc474",
+      "version": "Alwyn Young, 'A Tale of Two Cities: Factor Accumulation and Technical Change in Hong Kong and Singapore', in O. J. Blanchard and S. Fischer (eds), NBER Macroeconomics Annual 1992, vol. 7, MIT Press, pp. 13-64, with the comments of Paul Krugman and Robert J. Barro and the discussion (the NBER's PDF of the chapter, 'a selection from an out-of-print volume')",
+      "retrieved": "2026-11-12"
+    },
+    "young1994_42": {
+      "url": "https://www.nber.org/system/files/working_papers/w4680/w4680.pdf",
+      "format": "pdf",
+      "sha256": "1806bcdae7f1011aecf01c702cf674779efcad3da5395e51d4ded25440861984",
+      "version": "Alwyn Young, 'The Tyranny of Numbers: Confronting the Statistical Realities of the East Asian Growth Experience', NBER Working Paper No. 4680, March 1994 (the NBER's PDF)",
+      "retrieved": "2026-11-12"
+    }
+  }
+}

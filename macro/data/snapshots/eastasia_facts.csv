@@ -1,0 +1,336 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+wn_number,东亚,1993,,,,,wbnews42,p. 1 (PDF p. 1),BANK NEWS RELEASE NO. 93/S17,the number of the release
+wn_date,东亚,1993,,26;1993,,,wbnews42,p. 1 (PDF p. 1),"SUNDAY, SEPTEMBER 26, 1993",the date line of the release
+wn_headline,东亚,1993,,,,,wbnews42,p. 1 (PDF p. 1),"EAST ASIA'S ECONOMIC ""MIRACLE"" COULD BE REPEATED IN OTHER COUNTRIES, NEW STUDY SHOWS",
+wn_poverty,东亚,1993,,3,,,wbnews42,p. 1 (PDF p. 1),The dramatic growth of East Asian economies during the past three decades has lifted millions of people out of poverty,
+wn_eight,东亚,1993,,8,,,wbnews42,p. 1 (PDF p. 1),"with most of the growth occurring in eight economieq: Hong Kong, Indonesia, Japan, Malaysia,",'economieq' for 'economies' in the text layer; the list goes on in row wn_eight2
+wn_eight2,东亚,1993,,,,,wbnews42,p. 1 (PDF p. 1),"Republic of Korea, Singapore, Taiwan and Thailand..",
+wn_twice,东亚,1960,,1960;2;3;5,,,wbnews42,p. 1 (PDF p. 1),"Since 1960, these economies have grown twice as fast as the rest of East Asia, three times as fast as Latin America and South Asia, and five times as fast as sub-Saharan Africa",
+wn_page,东亚,1993,,,,,wbnews42,p. 1 (PDF p. 1),"John Page, the leader of a research team that carried out the study",
+wn_interventions,东亚,1993,,,,,wbnews42,p. 2 (PDF p. 2),suppressing interest rates or promoting favored industries -- as always harmful to growth.,how earlier Bank studies described the 'policy interventions'
+wn_exportpush,东亚,1993,,,,,wbnews42,p. 2 (PDF p. 2),"Of the many interventions tried in East Asia, those associated with export push hold the most promise for other developing economies",
+wn_vested,东亚,1993,,,,,wbnews42,p. 2 (PDF p. 2),Government intervention in the economy always carries a risk that vested interests will shape policies to their own advantage,"Page's words, as the release quotes them"
+wb_copyright,东亚,1993,,1993,,,wb1993_42img,copyright page (PDF p. 5),,"the back of the title page; the text layer is garbled; read on the page image: «© 1993 The International Bank for Reconstruction and Development / THE WORLD BANK 1818 H Street, N.W. Washington, D.C. 20433, U.S.A.»"
+wb_rights,东亚,1993,,,,,wb1993_42img,copyright page (PDF p. 5),,"read on the page image: «All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior permission of Oxford University Press.»"
+wb_printing,东亚,1993,,1993,,,wb1993_42img,copyright page (PDF p. 5),,"read on the page image: «Published by Oxford University Press, Inc. 200 Madison Avenue, New York, N.Y. 10016 ... First printing September 1993»"
+wb_series,东亚,1993,,,,,wb1993_42img,copyright page (PDF p. 5),,read on the page image: «The East Asian miracle : economic growth and public policy. p. cm. — (World Bank policy research reports)»
+wb_bangkok,东亚,1991,,1991,,,wb1993_42,p. v (PDF p. 6),the 1991AnnualMeetings of the Board of Govemors of the World Bank in Bangkok,Preston's foreword; 'Govemors' for 'Governors' in the text layer
+wb_accumulation,东亚,1993,,,,,wb1993_42,p. v (PDF p. 6),most of EastAsiasextraordinarygrowthisdue cosuperior accumulation of physical and human capita.,Preston's foreword; the text layer runs words together and prints 'cosuperior' and 'capita.' for 'to superior' and 'capital.'
+wb_miraculous,东亚,1993,,,,,wb1993_42,p. vi (PDF p. 7),"In thissensethereis nothing'miraculous""aboutthe EastAsianeconomics'success",Preston's foreword; the words run together in the text layer
+wb_japan_support,日本,1993,,,,,wb1993_42,p. vii (PDF p. 8),The support of the Government ofjapan for the researchprogram on the high-performing Asian economics is gratfilly acknowledged.,"Preston's foreword; 'gratfilly' for 'gratefully', 'economics' for 'economies' in the text layer"
+wb_board,东亚,1993,,,,,wb1993_42,p. vii (PDF p. 8),the judgments made herein do not necessarilyreflectthe view of its Board of Directors or the governmentsthey rcprescnt.,Preston's foreword; 'rcprescnt' for 'represent'
+wb_signed,东亚,1993,,1993,,,wb1993_42,p. vii (PDF p. 8),Lewis T. Preston President The World Bank Augur 1993,the signature of the foreword; 'Augur' for 'August' in the text layer (the page image reads 'August 1993')
+wb_team,东亚,1993,,,,,wb1993_42,p. xi (PDF p. 11),PREPAREDBYATEAM LED by John Pagcand comprising,The Research Team; 'Pagc' for 'Page'
+wb_financial,日本,1993,,,,,wb1993_42,p. xiii (PDF p. 12),The financialassistanceof the Govemrnment ofJapan is gratefullyacknowledged.,Acknowledgments; 'Govemrnment' for 'Government'
+wb_tigers,东亚,1993,,,,,wb1993_42,p. xvi (PDF p. 14),"usuallyidentifiedas Hong Kong, thc Republic of Korea, Singapore, and Taiwan, China, have been growing rapidly for decadesand havejoined or approached the ranksof high-income economies.",Definitions: the Four Tigers; 'thc' for 'the'
+wb_china,中国,1993,,,,,wb1993_42img,"p. 1 (PDF p. 16), footnote",,"the text layer of the footnote is garbled ('vtay', 'seruc- . ure', 'mapidflux'); 'from the those' is printed so; read on the page image: «Recently China, particularly southern China, has recorded remarkably high growth rates using policies that in some ways resemble those of the HPAEs. This very significant development is beyond the scope of our study, mainly because China's ownership structure, methods of corporate and civil governance, and reliance on markets are so different from the those of the HPAEs, and in such rapid flux, that cross-economy comparison is problematic.»"
+wb_fourtimes,东亚,1960,,1960;1985;4,,,wb1993_42,p. 2 (PDF p. 17),"Between 1960 and 1985, real income per capita increased more than four times in Japan and the Four Tigers",
+wb_twothirds,东亚,1993,,0.666667,,,wb1993_42,p. 8 (PDF p. 23),These factors account for roughly twothirds of the growth in dte HPAEs.The remainder is attributable to improved productivity.,"Overview; 'twothirds' (the hyphen of 'two-thirds' falls at a line end), 'dte' for 'the'"
+wb_exceeds,东亚,1993,,,,,wb1993_42,p. 8 (PDF p. 23),productivity growth in the FHAEsexceeds that of most other developing and industrial economies,Overview; 'FHAEs' for 'HPAEs'
+wb_selective,东亚,1993,,,,,wb1993_42,p. 6 (PDF p. 21),"in some instances, govenment interventions resulted in higher and more equal growth than otherwisewould have occurred.",Overview: the Bank's judgment on interventions; 'govenment' for 'government'
+wb_failure,东亚,1993,,,,,wb1993_42,p. 6 (PDF p. 21),seekingto followsimilar paths in other developingeconomieshave often met with failure.,
+wb_mof,日本,1993,,,,,wb1993_42,p. 7 (PDF p. 22),In Japan the Ministryof Financeacted as a checkon the ability ofthe Minisrryof IntcrnationalTrade and Indusry to carry out subsidypolicies,Overview; 'Minisrryof IntcrnationalTrade and Indusry' for 'Ministry of International Trade and Industry'
+wb_pricewrong,东亚,1993,,1989,,,wb1993_42,p. 9 (PDF p. 24),"""getting the prices wrong""-altering the incentive struccure-to boost industries that would not otherwise have thrived (Amsden1989).",Overview: the revisionist view as the Bank describes it; 'struccure' for 'structure'
+wb_ledmarket,东亚,1993,,,,,wb1993_42,p. 9 (PDF p. 24),"Revisionistsargue that East Asiangovernments ""led the m.narke""e in critical ways.","Overview; '""led the m.narke""e' for '""led the market""'"
+wb_mildrep,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),"Japan, Korea,Malaysia,Thailand, and Taiwan,China, had extended periodsof mild financialrepression.",
+wb_transfer,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),this resulted in a transfer of income from householdsto firns,Overview; 'firns' for 'firms'; the sentence begins 'Because savers were mostly households and borrowers were mostly firms'
+wb_misallocated,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),This heightensthe risk that capitalwillbe misallocated.,
+wb_notinhibit,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),it appaently did not inhibit it.,Overview; the sentence begins 'While we cannot establish conclusively that mild repression of interest rates at positive real levels enhanced growth in northeast Asia'; 'appaently' for 'apparently'
+wb_provident,新加坡,1993,,,,,wb1993_42,p. 16 (PDF p. 31),Malaysia and Singapore compeled high private savings rates dtrough mandatory provident fund contributions.,"Overview; 'compeled' for 'compelled', 'dtrough' for 'through'"
+wb_ch1_singapore,新加坡,1993,,1.2;3.5,,,wb1993_42,p. 57 (PDF p. 72),falling behind international best practice ac rates of 1.2 percent (Indonesia) to 3.5 percent (Singapore) a year,"chapter 1, under the Bank's restrictive assumptions (appendix 1.1); 'ac' for 'at'"
+wb_ch1_groups,东亚,1993,,,,,wb1993_42,p. 57 (PDF p. 72),investment-driven and productivity-driven economies,"chapter 1: the investment-driven are Indonesia, Malaysia and Singapore, the productivity-driven Japan, Korea, Hong Kong, Thailand and Taiwan, China"
+wb_ch1_dominant,东亚,1993,,,,,wb1993_42,p. 58 (PDF p. 73),But it is nor the dom-inantfactor.,"chapter 1, of productivity change; 'nor' for 'not'"
+wb_weak,日本,1993,,15,,,wb1993_42,p. 83 (PDF p. 97),Japan promoted the developmentof severalweak industries in the first fifteen yearsafter World War II,
+wb_repressed,东亚,1993,,,,,wb1993_42,p. 83 (PDF p. 97),they repressed interesr rates and directed credit in order to-guide investments.,"of Japan, Korea and to a lesser extent Taiwan, China; 'interesr' for 'interest'"
+wb_hci,韩国,1993,,,,,wb1993_42,p. 86 (PDF p. 100),Koreas heavy and chemical industries (Hcr) driveand Japan'scomputer chip push did not live up to expectations.,'(Hcr)' for '(HCI)'
+wb_targets,东亚,1993,,,,,wb1993_42,p. 89 (PDF p. 103),"In Japan, Korea, and Thailand, implicit or explicit export targets were used as the basis for awarding access to foreign exchange, investment licenses, or credit",
+wb_housing,新加坡,1993,,,,,wb1993_42,p. 89 (PDF p. 103),"In Hong Kong and Singapore, Whereinternational prices guided the domestic economy, massive public housing programs helped to keep down labor costs.",
+wb_unions,东亚,1993,,,,,wb1993_42,p. 160 (PDF p. 173),walked a delicate line regarding labor by limiting the power of unions and intervening to check labor radicalism,the subject is 'Nearly all HPAE governments'
+wb_authoritarian,台湾,1993,,,,,wb1993_42,p. 161 (PDF p. 174),"In both cases,authoritarian governments&cing a communist threat were dependent on the assistanceof the United States","of the land reforms of Korea and Taiwan, China; '&cing' for 'facing'"
+wb_seized_land,台湾,1993,,,,,wb1993_42,p. 161 (PDF p. 174),"In Taiwan, China, rhe government seized land from the landlords, compensating them with shares in state enterprises.",'rhe' for 'the'
+wb_korea_land,韩国,1993,,900000,,,wb1993_42,p. 161 (PDF p. 174),"paid the latter nominal compensation, and distributed the land to 900,000 renants",the Korean government took over landlord properties; 'renants' for 'tenants'
+wb_sg_unions,新加坡,1993,,,,,wb1993_42,p. 165 (PDF p. 178),the governmentin Singapore sharply lirmitedunion autonomy soon after independencedue to fears of political instability,'lirmitedunion' for 'limited union'
+wb_sg_peace,新加坡,1993,,,,,wb1993_42,p. 165 (PDF p. 178),by suppressing independent unions and assuring investors industrial peace.,
+wb_johnson,日本,1982,,,,,wb1993_42,p. 165 (PDF p. 178),"(Johnson 1982, p. 151)",the Bank quotes Johnson (1982) on Japanese labour in the same paragraph
+wb_park,韩国,1961,,1961,,,wb1993_42,p. 170 (PDF p. 183),"This was boosted in 1961, when army General Park Chung Hee seized power and reorganized the govemment to promote rapid development.",'govemment' for 'government'
+wb_epb,韩国,1961,,,,,wb1993_42,p. 170 (PDF p. 183),a powerful Economic Planning Board that has had broad budgetary authoriry.,'authoriry' for 'authority'
+wb_banking,韩国,1993,,,,,wb1993_42,p. 170 (PDF p. 183),"control over the banking system has given the bureaucracy strong leverage over big business, which relies on government-backed financing to fund rapid expansion.",
+wb_uneven,韩国,1993,,,,,wb1993_42,p. 170 (PDF p. 183),"The partnership has generaly been uneven, with the bureaucracy dominating the relationship.",
+wb_japan_negative,日本,1983,,1983,,,wb1993_42,p. 207 (PDF p. 219),"Japan maintained negative,but highly stable, real interest raceson depositsuntil 1983",'races' for 'rates'
+wb_filp_sources,日本,1993,,,,,wb1993_42,p. 277 (PDF p. 288),"from the governments postal savings, national welfare deposits, and national pension deposits.",the funds of the Fiscal Investment and Loan Program
+wb_filp_absorbed,日本,1993,,20;40,,,wb1993_42,p. 277 (PDF p. 288),absorbed 20-40 percent of household savings during the rapid growth period.,the text layer prints 'The FILaabsorbed' for 'The FILP absorbed'
+wb_filp_third,日本,1950,,0.333333;1950,,,wb1993_42,p. 280 (PDF p. 291),Japan'sFILPaccountedfor about a third of newequipment lending in the 1950s.,
+wb_korea_policy,韩国,1973,,1973;1981;60,,,wb1993_42,p. 280 (PDF p. 291),"Between 1973 and 1981, Korea'spolicy loans were about 60 percent of the total loans of its deposit money banks.",
+wb_japan_credit,日本,1993,,1970,,,wb1993_42,p. 308 (PDF p. 319),Japanese industrial policy until the early 1970s had severalstrands (Yamamura1986; Yamnamura and Yasuba 1985). The government directed credit to large firms and protected the domestic market to help the firms realizestatic and dynamic economies of scale.,of Japanese industrial policy until the early 1970s
+wb_miti,日本,1978,,1978;22,,,wb1993_42img,p. 308 (PDF p. 319),,"the text layer prints 'mmTt' for MITI and splits the last sentence across lines; read on the page image: «MITI allocated foreign exchange to favored large firms and tried to ensure that technology payments to foreign firms were neither excessive nor duplicated, often forcing licensees to share their information with other Japanese firms. Relatively high levels of protection were used as part of a strategy to help firms to export successfully. As late as 1978, the average of effective rates of protection across the manufacturing sector was 22 percent.»"
+wb_hci_costs,韩国,1993,,,,,wb1993_42,p. 308 (PDF p. 319),"The costs of the Ha: drive are still not filly known, but theywere high","'Ha:' for 'HCI', 'filly' for 'fully'"
+wb_promotion,东亚,1993,,,,,wb1993_42,p. 354 (PDF p. 365),"In Japan, Korea, Singapore, and Taiwan, China, promotion of specific industries had little apparent impact.",
+wb_promoted,东亚,1993,,,,,wb1993_42,p. 354 (PDF p. 365),productivity change was not significantdy higher in promoted sectors.,'significantdy' for 'significantly'
+wb_controlled,东亚,1993,,,,,wb1993_42,p. 356 (PDF p. 367),All HPAEscontrolled interesr races on deposits and loans during much oF their rapid growth.,'interesr races' for 'interest rates'
+wb_savers,东亚,1993,,,,,wb1993_42,p. 356 (PDF p. 367),by transferring resources from savers (mostly households) to borrowers (mosdy firms).,the subject is 'Low real interest rates on deposits and loans'; 'mosdy' for 'mostly'
+wb_tl_sg,新加坡,1968,,1959;1965;1968;58,,,wb1993_42img,"p. 152 (PDF p. 165), appendix 3.1",,the timeline of Singapore; the entries stand above the year they belong to; read on the page image: «1959: Self-government under political leadership of the People's Action Party ... 1965: Independence from Federation of Malaysia ... 1968: Industrial Relations Act; Employment Act; General elections; PAP wins all 58 parliamentary seats»
+wb_tl_tw,台湾,1959,,1959;1960;1961,,,wb1993_42img,"p. 154 (PDF p. 167), appendix 3.1",,"the timeline of Taiwan, China; the entries stand above the year they belong to; read on the page image: «1959: Nineteen-Point Program of Economic and Financial Reform; 1960: Statutes for Encouragement of Investment; 1961: Single Uniform Exchange Rate»"
+y4_number,东亚,1994,,,,,young1994_42,cover (PDF p. 1),Working Paper No. 4680,the cover
+y4_date,东亚,1994,,1994,,,young1994_42,cover (PDF p. 1),March 1994,the cover
+y4_singapore,新加坡,1994,,,,,young1994_42,cover (PDF p. 1),while disagreeing with most of my analysis and all of my conclusions,"the cover: the government of Singapore, which supplied published and unpublished data"
+y4_boring,东亚,1994,,,,,young1994_42,p. 1 (PDF p. 3),"This is a fairly boring and tedious paper, and is intentionally so.",
+y4_log,东亚,1994,,,,,young1994_42,p. 1 (PDF p. 3),"All growth rates reported in this paper are logarithmic, rather than geometric, growth rates.",
+y4_armies,东亚,1994,,,,,young1994_42,p. 1 (PDF p. 3),The labour force estimates for Korea and Taiwan exclude their large (predominantly conscript) armies,
+y4_67,东亚,1994,,6;7,,,young1994_42,abstract (PDF p. 2),has averaged 6% to 7% per annum over the past two and a half decades,the abstract: output per capita
+y4_unprecedented,东亚,1994,,,,,young1994_42,abstract (PDF p. 2),"virtually unprecedented, the growth of total factor productivity in these economies is not.",the abstract; the sentence begins 'While the growth of output and manufacturing exports in the newly industrializing economies of East Asia is'
+y4_stunning,新加坡,1994,,2.6;24,,,young1994_42,p. 2 (PDF p. 4),a stunning 2.6% per annum (for 24 years!) from the growth rate of Singapore,the rise of the participation rate removes this from the growth of output per head
+y4_sg_invest,新加坡,1960,,11;1960;38;1980;47;1984,,,young1994_42,p. 2 (PDF p. 4),"In Singapore, the constant price investment to GD? ratio, at 11% in 1960 had reached 38% by 1980 and an extraordinary 47% by 1984",'GD?' for 'GDP' in the text layer
+y4_t11_hksg,香港,1966,,5.7;6.6,,,young1994_42,p. 3 (PDF p. 5),GDP per Capita: 7.3 1.6 5.7 8.5 1.9 6.6,"Table 1-1, Hong Kong (1966-1991) and Singapore (1966-1990): N, D and N-D; the value column keeps N-D"
+y4_t11_krtw,韩国,1966,,6.9;6.8,,,young1994_42,p. 3 (PDF p. 5),GDPperCapita: 8.5 1.8 6.9 8.6 1.8 6.8,"Table 1-1, South Korea and Taiwan (1966-1990): N, D and N-D; the value column keeps N-D"
+y4_hk,香港,1966,,2.3;1966;1991,,,young1994_42,p. 15 (PDF p. 18),averaging 2.3% over the 1966-1991 period as a whole.,
+y4_anglo,香港,1981,,,,,young1994_42,p. 15 (PDF p. 18),when business activity was depressed by the Anglo-Chinese negotiations over the future of the colony,of 1981-1986
+y4_t31,香港,1966,,0.073;0.08;0.032;0.023;0.628,,,young1994_42,p. 16 (PDF p. 19),66-91 0.073 0.077 0.080 0.026 0.032 0.023 0.628,"Table 3-1, Hong Kong 1966-1991: output, raw capital, weighted capital, raw labour, weighted labour, TFP, labour share"
+y4_t41,新加坡,1966,,0.085;0.115;0.057;-0.003;0.47,,,young1994_42,p. 18 (PDF p. 21),66-90 0.085 0.108 0.115 0.045 0.057 -0.003 0.470,"Table 4-1, Singapore 1966-1990, the economy: the same columns"
+y4_t51,韩国,1966,,0.104;0.137;0.064;0.016;0.68,,,young1994_42,p. 21 (PDF p. 24),66-90 0.104 0.129 0.137 0.054 0.064 0.016 0.680,"Table 5-1, South Korea 1966-1990, the economy excluding agriculture: the same columns"
+y4_t61,台湾,1966,,0.096;0.123;0.051;0.024;0.71,,,young1994_42,p. 23 (PDF p. 26),66-90 0.096 0.118 0.123 0.046 0.051 0.024 0.710,"Table 6-1, Taiwan 1966-1990, the economy excluding agriculture: the same columns"
+y4_tw_text,台湾,1966,,2.4,,,young1994_42,p. 22 (PDF p. 25),comparable to that of Hong Kong (2.4%),
+y4_sg_text,新加坡,1966,,-0.3;24,,,young1994_42,p. 17 (PDF p. 20),"averages an extraordinaiy -0.3% per annum over a twenty-four year period, a virtually unprecedented record of productivity regress",'extraordinaiy' for 'extraordinary'
+y4_overestimates,新加坡,1994,,1950,,,young1994_42,p. 17 (PDF p. 20),"I use data on cement imports to estimate extremely high levels of investment in durable structures during the 1950s (estimates which I have not been able to corrobate using other sources). If anything, the total factor productivity growth rates presented in table 4-1 are likely to be overestimates.","footnote 21: the TFP growth rates of table 4-1, because of the estimates of investment in structures of the 1950s from cement imports"
+y4_t81,东亚,1966,,2.3;-0.3;1.6;1.9,,,young1994_42,p. 33 (PDF p. 36),Economy: 2.3 -0.3 1.6 1.9,"Table 8-1: Hong Kong (1966-1991), Singapore, South Korea and Taiwan (1966-1990)"
+y4_t81_note,东亚,1994,,,,,young1994_42,p. 33 (PDF p. 36),"In the case of Korea and Taiwan, excluding agriculture",the note of Table 8-1
+y4_t82_japan,日本,1952,,1952;1973;4.1,,,young1994_42,p. 33 (PDF p. 36),Japan 1952-1973 4.1,"Table 8-2, from Christensen, Cummings and Jorgenson (1980)"
+y4_nothigh,东亚,1994,,,,,young1994_42,p. 32 (PDF p. 35),"is not particularly low, it is also, by post-war standards, not particularly high.","of productivity growth in the NICs, 'with the possible exception of Singapore'"
+y2_volume,东亚,1992,,1992;7,,,young1992_42,the selection's cover (PDF p. 1),"Volume Title: NBER Macroeconomics Annual 1992, Volume 7",
+y2_pages,东亚,1992,,13;64,,,young1992_42,the selection's cover (PDF p. 1),Chapter pages in book: (p. 13 - 64),
+y2_selection,东亚,1992,,,,,young1992_42,the selection's cover (PDF p. 1),This PDF is a selection from an out-of-print volume from the National Bureau of Economic Research,
+y2_close,香港,1960,,1960,,,young1992_42,p. 14 (PDF p. 3),was quite close in 1960,of GDP per head in Hong Kong and Singapore
+y2_laissez,香港,1960,,1960,,,young1992_42,p. 14 (PDF p. 3),"While the Hong Kong government has emphasized a policy of laissez faire, the Singaporean government has, since the early 1960s, pursued the accumulation of physical capital via forced national saving and the solicitation of a veritable deluge of foreign investment.",
+y2_invest,新加坡,1960,,9;1960;43;1984,,,young1992_42,p. 14 (PDF p. 3),rising from 9% in 1960 to a high of 43% in 1984,"the share of investment in Singapore's GDP (Summers-Heston Mark V, constant international prices, footnote 4)"
+y2_hk20,香港,1960,,20,,,young1992_42,p. 15 (PDF p. 4),Hong Kong's investment rate has fluctuated around some 20% of GDP.,
+y2_victim,新加坡,1992,,,,,young1992_42,p. 16 (PDF p. 5),Singapore is a victim of its own targeting policies,
+y2_cpf55,新加坡,1955,,1955;5;5,,,young1992_42,p. 22 (PDF p. 11),"Established in 1955 as a social security program with individualized accounts, the initial contribution rate to the Provident Fund was set at 5% of the employees' salary, with a matching 5% contribution from the employer.",
+y2_cpf84,新加坡,1975,,1975;15;15;1984;25,,,young1992_42,p. 22 (PDF p. 11),"By 1975, these rates had been raised to 15%/ 15%, and by 1984 to a rather impressive 25% apiece.",
+y2_withdraw,新加坡,1992,,,,,young1992_42,p. 22 (PDF p. 11),"have a limited ability to withdraw their balances, even upon retirement.",
+y2_govsec,新加坡,1980,,1980;95.1,,,young1992_42,p. 22 (PDF p. 11),"As of 1980, fully 95.1% of the Fund was invested in government securities.",
+y2_gnp,新加坡,1985,,1985;14.9;36,,,young1992_42,p. 22 (PDF p. 11),"At peak, in 1985, CPF contributions amounted to a staggering 14.9% of GNP, or 36% of gross national savings.",
+y2_fn30,新加坡,1986,,1986;10,,,young1992_42,p. 22 (PDF p. 11),In 1986the employer's contributionwas reduced to 10%to stimulateinvestment,footnote 30; words run together in the text layer
+y2_1968,新加坡,1968,,,,,young1992_42,p. 22 (PDF p. 11),Labor legislation passed in that year standardized basic conditions of employment,'that year' is 1968 (the sentence before begins '1968 also witnessed')
+y2_1968b,新加坡,1968,,1968,,,young1992_42,p. 22 (PDF p. 11),1968 also witnessed an intensification of efforts to attract foreign investment.,
+y2_prerog,新加坡,1968,,,,,young1992_42,p. 23 (PDF p. 12),and allocation of duties all nonnegotiable managerial prerogatives.,"p. 23; the list begins on p. 22 with 'promotion, internal transfer, recruitment, retirement, dismissal,'"
+y2_arbitration,新加坡,1968,,,,,young1992_42,p. 23 (PDF p. 12),All disputes were henceforth subject to compulsory arbitration at the Industrial Arbitration Court,
+y2_mandays,新加坡,1978,,40000;1960;2;1978;1990,,,young1992_42,p. 23 (PDF p. 12),"Man-days lost because of industrial stoppages fell from an average of some 40,000 per annum in the mid1960s to nil (in all but 2 years) during 1978-1990.",'mid1960s': the text layer drops the hyphen of 'mid-' at a line end
+y2_t5_hk,香港,1971,,1.472;0.549;1.599;0.384;0.23;0.42;0.35,,,young1992_42,p. 35 (PDF p. 24),71-90 1.472 0.549 1.599 0.384 0.23 0.42 0.35,"Table 5, Hong Kong 1971-1990: growth of output, labour and capital (log changes over the period), average capital share, percentage contributions of labour, capital and TFP"
+y2_t5_sg,新加坡,1970,,1.545;0.825;2.402;0.533;0.25;0.83;-0.08,,,young1992_42,p. 35 (PDF p. 24),70-90 1.545 0.825 2.402 0.533 0.25 0.83 -0.08,"Table 5, Singapore 1970-1990: the same columns"
+y2_m8,新加坡,1970,,-8,,,young1992_42,p. 36 (PDF p. 25),contributed to - 8% of output growth in Singapore.,'- 8%' is printed so
+y2_117,新加坡,1970,,117,,,young1992_42,p. 36 (PDF p. 25),Capital accumulation explains 117% of the increase in output per worker in the Singaporean economy during this period.,
+y2_t8_6970,新加坡,1969,,0.401,,,young1992_42,p. 38 (PDF p. 27),1965-66 0.142 1969-70 0.401,Table 8: Hong Kong 1965-66 and Singapore 1969-70 (the implied real rates of return on capital)
+y2_t8_8889,新加坡,1979,,0.128,,,young1992_42,p. 38 (PDF p. 27),1979-80 0.214 1988-89 0.128,Table 8: Singapore 1979-80 and 1988-89
+y2_return,新加坡,1992,,1980;10,,,young1992_42,p. 38 (PDF p. 27),"during boom years such as the late 1980s, just over 10%.","the real return to capital in Singapore, 'initially at about 40%'"
+y2_numbered,新加坡,1992,,,,,young1992_42,p. 38 (PDF p. 27),The days in which Singapore can continue to sustain accumulation driven growth are clearly numbered.,
+y2_kr_barking,东亚,1992,,,,,young1992_42,p. 54 (PDF p. 43),"it suggests that much of the ""new growth theory"" has been barking up the wrong tree.","the comment of Paul Krugman, p. 54"
+y2_kr_startling,新加坡,1992,,,,,young1992_42,p. 55 (PDF p. 44),A growth-accounting exercise produces the startling result that Singapore showed no technical progress at all.,Krugman's comment
+y2_kr_fickle,新加坡,1992,,,,,young1992_42,p. 55 (PDF p. 44),"Such measures are notoriously fickle, easily biased by problems of quality adjustment",Krugman's comment: measures of real value added in very open economies
+y2_kr_faster,新加坡,1992,,,,,young1992_42,p. 55 (PDF p. 44),So one possible rationalization of the results here is that in fact Singapore grew more rapidly than the numbers suggest.,Krugman's comment
+y2_kr_face,新加坡,1992,,,,,young1992_42,p. 55 (PDF p. 44),I have no reason to believe that they are far off base,"Krugman's comment, of the results taken at face value"
+y2_kr_dontknow,东亚,1992,,,,,young1992_42,p. 55 (PDF p. 44),The basic answer is surely the traditional one: We don't know.,"Krugman's comment, to 'Why was Hong-Kong able to do as well as Singapore with far less input?'"
+y2_barro_start,新加坡,1960,,108;24;1960,,,young1992_42,p. 56 (PDF p. 45),Singapore began at 108% of the Hong Kong level (24% of the U.S. level) in 1960,the comment of Robert J. Barro (Summers and Heston 1991)
+y2_barro_tfp,新加坡,1966,,2.1;2.9,,,young1992_42,p. 59 (PDF p. 48),"For Hong Kong, the TFP growth rate is 2.1% per year, whereas for Singapore, it is 2.9% per year.","Barro's comment: 1966-1971 for Hong Kong and 1966-1970 for Singapore, 'for which the investment ratios are similar'"
+y2_barro_dr,新加坡,1992,,,,,young1992_42,p. 59 (PDF p. 48),"As it stands, the empirical results say more about diminishing returns to capital than they do about technical change.",Barro's comment
+rd_copyright,东亚,1994,,1994,,,rodrik1994_42img,PDF p. 1,,"read on the page image: «© 1994 by Dani Rodrik. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.»"
+rd_number,东亚,1994,,4964;1994,,,rodrik1994_42img,PDF p. 1,,read on the page image: «Working Paper No. 4964 ... December 1994»
+rd_panel,东亚,1994,,20;21;22;1994,,,rodrik1994_42img,PDF p. 1,,read on the page image: «Paper presented at the 20th Panel Meeting of Economic Policy on 21-22 October 1994.»
+rd_emphasis,韩国,1960,,1960,,,rodrik1994_42img,abstract (PDF p. 2),,read on the page image: «Most explanations of Korea's and Taiwan's economic growth since the early 1960s place heavy emphasis on export orientation.»
+rd_causal,韩国,1994,,,,,rodrik1994_42img,abstract (PDF p. 2),,"read on the page image: «However, it is difficult to see how export orientation could have played a significant causal role in these countries' growth.»"
+rd_profit,韩国,1960,,1960,,,rodrik1994_42img,abstract (PDF p. 2),,read on the page image: «The measured increase in the relative profitability of exports during the 1960s is too insignificant to account for the phenomenal export boom that ensued.»
+rd_small,韩国,1994,,,,,rodrik1994_42img,abstract (PDF p. 2),,"read on the page image: «Moreover, exports were initially too small to have a significant effect on aggregate economic performance.»"
+rd_boom,韩国,1994,,,,,rodrik1994_42img,abstract (PDF p. 2),,read on the page image: «A more plausible story focuses on the investment boom that took place in both countries.»
+rd_educated,韩国,1960,,1960,,,rodrik1994_42img,abstract (PDF p. 2),,"read on the page image: «In the early 1960s both economies had an extremely well-educated labor force relative to their physical capital stock, rendering the latent return to capital quite high.»"
+rd_engineer,韩国,1994,,,,,rodrik1994_42img,abstract (PDF p. 2),,"read on the page image: «By subsidizing and coordinating investment decisions, government policy managed to engineer a significant increase in the private return to capital.»"
+rd_outward,韩国,1994,,,,,rodrik1994_42img,abstract (PDF p. 2),,read on the page image: «The outward orientation of the economy was the result of the increase in demand for imported capital goods.»
+rd_poorer,韩国,1960,,1960,,,rodrik1994_42img,p. 1 (PDF p. 3),,"read on the page image: «In 1960, South Korea was poorer than many sub-Saharan African countries, and Taiwan not all that much richer (Table 1).»"
+rd_orthodox,韩国,1960,,,,,rodrik1994_42img,p. 1 (PDF p. 3),,"the orthodox story as Rodrik states it; read on the page image: «These policies included the unification of exchange rates accompanied by devaluations, various other measures to stimulate exports (including most significantly duty-free access for exporters to imported inputs), higher interest rates, and some liberalization of the import regime.»"
+rd_tookoff,韩国,1960,,1960,,,rodrik1994_42img,p. 1 (PDF p. 3),,read on the page image: «exports took off in the mid-1960s.»
+cb_journal,东亚,1996,,2;1996,,,cb1996_42,p. 136 (PDF p. 2),"BrookingsPapers on Economic Activity, 2:1996",the running head
+cb_views,东亚,1996,,,,,cb1996_42,p. 135 (PDF p. 1),The views expressedare those of the authorsand should not be interpretedas representative of the staff or trusteesof the BrookingsInstitution.,
+cb_sacrifice,东亚,1996,,,,,cb1996_42,p. 136 (PDF p. 2),a willingness to make the sacrifices of current consumption necessary to invest for the future?,
+cb_share,东亚,1996,,0.35,,,cb1996_42,p. 155 (PDF p. 21),we use a uniform capital share of 0.35 for the entire sample.,
+cb_young,东亚,1996,,0.32;0.29;0.53;0.37,,,cb1996_42,p. 155 (PDF p. 21),"he obtainsa capitalshareof 0.32 for Korea, 0.29 for Taiwan,0.53 for Singapore, and 0.37 for Hong Kong.","footnote 44, of Young (1995)"
+cb_similar,东亚,1996,,,,,cb1996_42,p. 156 (PDF p. 22),"Ourresultsfor Korea, Singapore,andTaiwanarevery similarto those of Young, allowing for our inclusionof the agriculturalsector.",footnote 48
+cb_t6_kr,韩国,1960,,1960;94;5.7;3.3;0.8;1.5,,,cb1996_42,p. 157 (PDF p. 23),Korea 1960-94 5.7 3.3 0.8 1.5,"Table 6 (percentage points a year): growth of output per worker; contributions of physical capital per worker, education per worker and TFP"
+cb_t6_sg,新加坡,1960,,1960;94;5.4;3.4;0.4;1.5,,,cb1996_42,p. 157 (PDF p. 23),Singapore 1960-94 5.4 3.4 0.4 1.5,Table 6: the same columns
+cb_t6_tw,台湾,1960,,1960;94;5.8;3.1;0.6;2,,,cb1996_42,p. 157 (PDF p. 23),Taiwan 1960-94 5.8 3.1 0.6 2.0,Table 6: the same columns
+cb_t7_ea,东亚,1960,,1960;94;4.2;2.5;0.6;1.1,,,cb1996_42,p. 158 (PDF p. 24),East Asia 1960-94 4.2 2.5 0.6 1.1,Table 7: the same columns; East Asia excludes China and Japan
+cb_fourth,东亚,1996,,0.25,,,cb1996_42,p. 158 (PDF p. 24),Gains in TFP account for only one-fourth of the region's growth in output per worker over the past three decades.,
+cb_krugman,东亚,1996,,,,,cb1996_42,p. 189 (PDF p. 55),"Krugmanis certainlyrightto say thatthese countriescannotcontinue to assume that capital per workerwill expand in excess of the growth in labor-augmentingtechnicalchange, withoutsignificantreductionsin the returnto capital.",
+cb_room,东亚,1996,,,,,cb1996_42,p. 190 (PDF p. 56),there appearsto be room for high growth to continue in East Asia,
+cb_rd_miracle,东亚,1996,,,,,cb1996_42,p. 192 (PDF p. 58),"East Asia presentsa miracle of accumulation(of physical capital, in particular)ratherthan of productivity.",the comment of Dani Rodrik: what Collins and Bosworth find
+cb_rd_indirect,东亚,1996,,,,,cb1996_42,p. 192 (PDF p. 58),the evidence on TFP is indirectand has to be intrepretedwith care.,Rodrik's comment
+cb_rd_elastic,东亚,1996,,0.5;1.93;10;2.53;20;2.89;30,,,cb1996_42,p. 194 (PDF p. 60),"with an elasticity of substitutionof 0.5, the implied TFP growth rate would rise to 1.93 percent in ten years, 2.53 percent in twenty years, and 2.89 percentin thirtyyears.",Rodrik's comment and his table B1 (initial capital share 0.35)
+cb_rd_single,韩国,1960,,1960;1960,,,cb1996_42,p. 196 (PDF p. 62),governmentssingle-mindedly pursuedinvestment and growth (from 1960 in Taiwan and from the early 1960s in Korea).,Rodrik's comment
+cb_rd_tools,韩国,1996,,,,,cb1996_42,p. 196 (PDF p. 62),"includingadministrativeguidance, creditsubsidies, tax incentives, public enterprises",Rodrik's comment: the policies of the governments of Korea and Taiwan
+cb_rd_hk,香港,1996,,,,,cb1996_42,p. 197 (PDF p. 63),has never developed an investment srategy.,"Rodrik's comment, of Hong Kong's government; 'srategy' for 'strategy'"
+cb_bosworth,东亚,1996,,,,,cb1996_42,p. 197 (PDF p. 63),"Our decomposition of output growth between capital accumulation and TFP depends on the stability of capital's share, not on the elasticity of substitution.",Bosworth's reply
+br_copyright,美国,2024,,,,,brookings42,web page,Copyright 2023 – 2024 © The Brookings Institution and/or its licensors. All rights reserved.,the terms of use of brookings.edu
+br_personal,美国,2024,,,,,brookings42,web page,"a limited, revocable, nonexclusive, nontransferable, and non-sublicensable license to access and make personal use of this site",
+kg_source,东亚,1994,,1994;73;6;62;78,,,krugman1994_42,JSTOR cover page (PDF p. 1),"Source: Foreign Affairs , Nov. - Dec., 1994, Vol. 73, No. 6 (Nov. - Dec., 1994), pp. 62-78",the JSTOR cover page
+kg_jstor,东亚,1994,,,,,krugman1994_42,JSTOR cover page (PDF p. 1),"Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at https://about.jstor.org/terms",the JSTOR cover page
+kg_fable,东亚,1994,,,,,krugman1994_42,p. 62 (PDF p. 2),A CAUTIONARY FABLE,
+kg_mystery,苏联,1994,,,,,krugman1994_42,p. 63 (PDF p. 3),the big surprise about Soviet growth was that when closely examined it posed no mystery,
+kg_singapore,新加坡,1966,,1966;1990;8.5;3;6.6,,,krugman1994_42,p. 70 (PDF p. 10),"Between 1966 and 1990, the Singaporean economy grew a remarkable 8.5 percent per annum, three times as fast as the United States; per capita income grew at a 6.6 percent rate",
+kg_perspiration,新加坡,1994,,,,,krugman1994_42,p. 70 (PDF p. 10),based on perspiration rather than,the sentence goes on 'inspiration' after a line break
+kg_stalin,新加坡,1994,,,,,krugman1994_42,p. 70 (PDF p. 10),would have done Stalin proud,'Singapore grew through a mobilization of resources that would have done Stalin proud'
+kg_employed,新加坡,1966,,27;51,,,krugman1994_42,p. 70 (PDF p. 10),surged from 27 to 51 percent,"the employed share of the population, from Young"
+kg_fn6,新加坡,1994,,,,,krugman1994_42,p. 71 (PDF p. 11),"These figures are taken from Young, ibid.",footnote 6
+kg_japan,日本,1994,,,,,krugman1994_42,p. 73 (PDF p. 13),seems to have grown both through high rates of input growth and through high rates of efficiency growth,"the subject is 'Japan, unlike the East Asian ""tigers,""'"
+kg_torrid,日本,1963,,8.9,,,krugman1994_42,p. 74 (PDF p. 14),torrid 8.9 percent annually,Japan's real GDP over the decade before 1973
+kg_55,日本,1973,,55,,,krugman1994_42,p. 73 (PDF p. 13),per capita gdp was only 55 percent of America's,Japan in 1973
+kg_fn3_start,东亚,1994,,10000;10000;40,,,krugman1994_42,p. 67 (PDF p. 7),"let us assume that initially each worker is equipped with $10,000 worth of equipment; that each worker produces goods and services worth $10,000; and that capital initially earns a 40 percent rate of return",footnote 3: 'a hypothetical example' with 'arbitrary numbers' and a stationary labour force
+kg_fn3_invest,东亚,1994,,20,,,krugman1994_42,p. 68 (PDF p. 8),"Suppose, now, that this country consistently invests 20 percent of its output",
+kg_fn3_8,东亚,1994,,800;8,,,krugman1994_42,p. 68 (PDF p. 8),that will increase output by $800: an 8 percent rate of growth,
+kg_fn3_14,东亚,1994,,14000,,,krugman1994_42,p. 68 (PDF p. 8),"output per worker will have increased only to $14,000","by the time capital per worker has doubled to $20,000"
+kg_fn3_later,东亚,1994,,30;840;6;25;5,,,krugman1994_42,p. 68 (PDF p. 8),"at a 30 percent rate of return, this will raise output by only $840, that is, generate a growth rate of only 6 percent; at a 25 percent rate of return it will generate a growth rate of only 5 percent",
+kg_noefficiency,东亚,1994,,,,,krugman1994_42,p. 78 (PDF p. 18),And there is no sign of such exceptional efficiency growth.,of the benefits that strategic trade and industrial policies should have shown
+kg_deferred,东亚,1994,,,,,krugman1994_42,p. 78 (PDF p. 18),"If there is a secret to Asian growth, it is simply deferred gratification",
+kg_pace,东亚,1994,,,,,krugman1994_42,p. 78 (PDF p. 18),But it will not do so at the pace of recent years.,the sentence before: growth in East Asia 'will continue to outpace growth in the West for the next decade and beyond' ('barring a catastrophic political upheaval')
+kh_stalin,新加坡,1994,,,,,krugmanh42,p. 70 (PDF p. 9),would have done Stalin proud,the same article in the copy on vault.hanover.edu
+hs_dual,东亚,2002,,,,,hsieh2002_42,web page,This paper presents dual estimates of total factor productivity growth (TFPG) for East Asian countries.,
+hs_exceed,东亚,2002,,1;2,,,hsieh2002_42,web page,"While the dual estimates of TFPG for Korea and Hong Kong are similar to the primal estimates, they exceed the primal estimates by 1 percent a year for Taiwan and by more than 2 percent for Singapore.",
+hs_reason,新加坡,2002,,,,,hsieh2002_42,web page,"The reason for the large discrepancy for Singapore is because the return to capital has remained constant, despite the high rate of capital accumulation indicated by Singapore's national accounts.",
+hs_notexplained,新加坡,2002,,,,,hsieh2002_42,web page,"This discrepancy is not explained by financial market controls, capital income taxes, risk premium changes, and public investment subsidies.",
+hs_journal,东亚,2002,,92;3;502;526,,,hsieh2002_42,web page,"American Economic Review , American Economic Association, vol. 92(3), pages 502-526, June.",
+hs_restricted,东亚,2002,,,,,hsieh2002_42,web page,Access to full text is restricted to AEA members and institutional subscribers.,
+wp56_sengo,日本,1956,,,,,wp1956_42,web page,もはや「戦後」ではない。,結語
+wp56_modern,日本,1956,,,,,wp1956_42,web page,回復を通じての成長は終わった。今後の成長は近代化によって支えられる。,結語
+wp56_burden,日本,1956,,,,,wp1956_42,web page,その遂行に伴う負担は国民相互にその力に応じて分け合わねばならない。,"結語: the burden of modernisation, 'if modernisation is the only way the national economy should go'"
+wp56_title,日本,1956,,31,,,wp1956m42,web page,昭和31年度 年次経済報告,the page of the preface
+wp56_issued,日本,1956,,31;7;17,,,wp1956m42,web page,昭和３１年７月１７日発行,Showa 31 is 1956
+wp56_rights,日本,1994,,1994;1994,,,wp1956m42,web page,"All Rights Reserved, Copyright(c) 経済企画庁 １９９４ All Rights Reserved, Copyright(c) (社)経済企画協会 １９９４",the rights notation of the online edition
+wp61_title,日本,1961,,36,,,wp1961m42,web page,昭和36年度 年次経済報告 成長経済の課題,
+wp61_signed,日本,1961,,36;7;14,,,wp1961m42,web page,昭和３６年７月１４日 迫水 久常 ( 経済企画庁長官 ),the date and signer of the preface (経済白書の発表にあたって)
+wp61_plan,日本,1960,,35;12,,,wp1961_42,web page,昭和３５年１２月に政府決定をみた「国民所得倍増計画」はこのような均衡ある成長への道標となるべきものである。,結語; Showa 35 is 1960
+wp61_invest,日本,1961,,36;45,,,wp1961a42,web page,３６年度の民間設備投資の規模は「国民所得倍増計画」の最終年次の４５年度に匹敵するものとなろうとしている。,総説 序言: fiscal 1961 and fiscal 1970
+wp61_window,日本,1961,,,,,wp1961b42,web page,金融引締めが日銀窓口規制を通じて行われる結果、金融引線め期には都市銀行資金繰りの窮迫は著しくなるのが例であった。,金融構造の変化; '引線め' for '引締め' as printed on the page
+cao_rules,日本,2025,,1,,,cao_rules42,web page,権利表記の記載がない限り 公共データ利用規約（第1.0版）（デジタル庁） が適用されます。,
+cao_date,日本,2025,,7;3;25,,,cao_rules42,web page,令和7年3月25日現在,Reiwa 7 is 2025
+tw_martial,台湾,1949,,38;5;20;76;7;14,,,twlaw42,web page,本條例所稱戒嚴時期，台灣地區係指自民國三十八年五月二十日起至七十六年七月十四日止宣告戒嚴之期間,article 2; Minguo 38 is 1949 and Minguo 76 is 1987
+tw_title,台湾,1995,,,,,twlaw42,web page,法規名稱： 戒嚴時期人民受損權利回復條例,
+tw_dates,台湾,1995,,84;1;28;89;2;2,,,twlaw42,web page,公發布日： 民國 84 年 01 月 28 日 修正日期： 民國 89 年 02 月 02 日,"promulgated 1995-01-28, amended 2000-02-02"
+tw_ca9,台湾,2022,,,,,twcopyright42,web page,下列各款不得為著作權之標的︰ 一、憲法、法律、命令或公文。,article 9 of the Copyright Act
+wp_preston_life,美国,1926,,1926;1995,,,wbpreston42,web page,"Lewis Thompson Preston, 1926 - 1995.",
+wp_preston_term,美国,1991,,8;1;1991;4;1995,,,wbpreston42,web page,"8th President of the World Bank Group, September 1, 1991 - May 4, 1995",
+wp_preston_born,美国,1926,,5;1926,,,wbpreston42,web page,"Lewis Thompson Preston was born on August 5, 1926 in New York.",
+loc_preston,美国,,,,,,loc_preston42,authority record,"Preston, Lewis T.",LC no93035927; no dates in the heading
+loc_preston_note,美国,1995,,1991;1995,,,loc_preston42,authority record,t.p. (Lewis T. Preston) p. vi (Lew Preston; pres. World Bank Sept. 1991- ; d. May 1995),the source note of the record
+gnd_preston,美国,1995,,1995,,,gnd_preston42,authority record,1995,GND 11947932X; dateOfDeath; no dateOfBirth
+loc_park,韩国,,,1917;1979,,,loc_park42,authority record,"Park, Chung Hee, 1917-1979",LC n79058355
+loc_park_note,韩国,1979,,10;26;79,,,loc_park42,authority record,"t.p. (Park Chung Hee) p. 1 (assassinated, 10/26/79)",the source note of the record
+loc_lee,新加坡,,,1923;2015,,,loc_lee42,authority record,"Lee, Kuan Yew, 1923-2015",LC n50039577
+loc_lee_note,新加坡,,,,,,loc_lee42,authority record,founding father and first prime minister of Singapore,"the source note of the record (New York times, viewed Mar. 23, 2015)"
+gnd_lee,新加坡,,,1923;9;16,,,gnd_lee42,authority record,1923-09-16,GND 118997734; dateOfBirth; dateOfDeath '2015-03-23' (gnd_lee_d)
+gnd_lee_d,新加坡,,,2015;3;23,,,gnd_lee42,authority record,2015-03-23,dateOfDeath
+gnd_licence,新加坡,,,,,,gnd_lee42,authority record,http://creativecommons.org/publicdomain/zero/1.0/,the licence of the GND data as lobid.org gives it
+sl_use,新加坡,2026,,,,,sglicence42,web page,"You can use, access, download, copy, distribute, transmit, modify and adapt the datasets, or any derived analyses or applications, whether commercially or non-commercially (“Use”).",
+sl_attribution,新加坡,2026,,,,,sglicence42,web page,"You must include in your products, applications or websites that Use the datasets, a conspicuous notice acknowledging the source of the datasets and including a link to the most recent version of this Licence.",
+sl_official,新加坡,2026,,,,,sglicence42,web page,You must not use the datasets in a way that suggests any official status or that an Agency endorses you or your Use of the datasets.,
+wp56_hakusho,日本,1956,,31,,,wp1956m42,web page,昭和３１年度版経済白書,the page of the preface: the common name of the report
+wb_johnson_q,日本,1982,,,,,wb1993_42,p. 165 (PDF p. 178),Labor has been compensatedfor its decreasedpolitical role through wage policies tied to increasesin productivity,"the Bank quotes Johnson (1982, p. 151), row wb_johnson"
+wb_neoclassical,东亚,1993,,,,,wb1993_42,p. 9 (PDF p. 24),Adherentsof the neoclassicalviewstressthe HPAEs'successin gettingthe basicsright.,Overview
+wb_marketfail,东亚,1993,,,,,wb1993_42,p. 9 (PDF p. 24),"In contrast to the neoclassicalviev, whichacknowledgesrelativelyfew casesof market&ilure, revisionistscontend that markersconsistendy fail to guide investment to industrieschatwould generatethe highestgrowthfor the overall economy.","Overview; 'viev' for 'view', '&ilure' for 'failure', 'markersconsistendy' for 'markets consistently', 'chat' for 'that'"
+wb_lowgrowth,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),"Generally, financial repression is associated with low economic growth, especiallywhen realinterestratesare stronglynegative.",
+y2_fn79,新加坡,1974,,0.0;1974;1989,,,young1992_42,p. 37 (PDF p. 26),used Hong Kong's aggregateshare of labor(which is larger)to compute the SingaporeanTFP estimates (which raises the estimate of SingaporeanTFP to an averageof .000 between 1974and 1989),footnote 79: one of Young's sensitivity tests of Table 7
+wb_repdef,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),held deposit and lending rates belowmarketdearing levels-a practicetermed financialrepression.,Overview; the subject is 'most HPAE governments'; 'dearing' for 'clearing'
+wb_neo_detail,东亚,1993,,,,,wb1993_42,p. 9 (PDF p. 24),providinga stablemacroeconomicenvironmentand a reliablelegalframeworkto promote domesticand internationalcompetition.,Overview: what the adherents of the neoclassical view argue
+wb_invdriven,东亚,1993,,,,,wb1993_42,p. 57 (PDF p. 72),"The investment-driven economiesIndonesia, Malaysia, and Singapore-conform to the developing-econ","chapter 1, p. 57; the sentence goes on p. 58"
+wb_proddriven,东亚,1993,,,,,wb1993_42,p. 58 (PDF p. 73),"economies-Japan, Korea, Hong Kong, Tliailand, and Taiwan, China-are more unusual","chapter 1, p. 58: the productivity-driven economies; 'Tliailand' for 'Thailand'"
+y2_housing,新加坡,1992,,,,,young1992_42,p. 22 (PDF p. 11),Participants may use their fund balances to purchase housing,
+y2_list,新加坡,1968,,,,,young1992_42,p. 22 (PDF p. 11),"made issues such as promotion, internal transfer, recruitment, retirement, dismissal,",p. 22; the list ends on p. 23 (row y2_prerog)
+y2_hk_return,香港,1992,,20,,,young1992_42,p. 38 (PDF p. 27),"in Hong Kong has fluctuated through time, but remains over 20%.",the real return to capital (Table 8)
+kg_outpace,东亚,1994,,,,,krugman1994_42,p. 78 (PDF p. 18),growth in East Asia will continue to outpace growth in the West for the next decade and beyond.,"p. 78; on p. 77 the sentence begins 'barring a catastrophic political upheaval, it is likely that'"
+kg_allgrowth,新加坡,1994,,,,,krugman1994_42,p. 71 (PDF p. 11),all of Singapore's growth can be explained by increases in measured inputs.,
+kg_double,新加坡,1994,,,,,krugman1994_42,p. 71 (PDF p. 11),Singapore's growth has been based largely on one-time changes in behavior that cannot be repeated. Over the past generation the percentage of people employed has almost doubled; it cannot double again.,"the percentage of people employed, which 'has almost doubled' over the past generation"
+cb_rd_conjecture,韩国,1996,,,,,cb1996_42,p. 196 (PDF p. 62),"My conjecture,based at least on the Koreanand Taiwaneseexperiences, is that governmentswere heavily implicatedin many of these leaps to high-investmentequilibria.",Rodrik's comment
+cb_rd_hkonly,香港,1996,,,,,cb1996_42,p. 196 (PDF p. 62),Hong Kong is the only countryin the region that has not experienceda rise in its ratio of,"Rodrik's comment, p. 196; the sentence ends on p. 197 with 'investment to GDP'"
+cb_rd_guess,香港,1996,,,,,cb1996_42,p. 197 (PDF p. 63),"As a reasonablefirst guess, this might be because Hong Kong's governmenthas pursueda laissez-faire approachto economic policy",Rodrik's comment
+wb_august,东亚,1993,,1993,,,wb1993_42img,p. vii (PDF p. 8),,the signature of the foreword; the text layer reads 'Augur 1993' (row wb_signed); read on the page image: «Lewis T. Preston President The World Bank August 1993»
+wb_6090,东亚,1993,,60;90,,,wb1993_42,p. 58 (PDF p. 73),between60 and 90 percentof rtheiroutput growthctcrivres from accumulation of physicaland humanacapital.,"chapter 1: of the HPAEs; 'rtheiroutput growthctcrivres' for 'their output growth derives', 'humanacapital' for 'human capital'"
+wb_revisionists,东亚,1993,,1989;1989;1990,,,wb1993_42,p. 83 (PDF p. 97),"The revisionist view, proposed by Amsden (1989), Wade (1989, 1990), and others",
+wb_spread,东亚,1993,,,,,wb1993_42,p. 356 (PDF p. 367),"by limiting the spread between deposit rates and loan rates, govemments prevented banks from earning excessiverents.",'govemments' for 'governments'
+kg_slow,日本,1973,,3,,,krugman1994_42,p. 74 (PDF p. 14),and gdp per capita grew only 3 percent per year,"Japan, 1973-1992"
+kg_edu,新加坡,1966,,1966;1990;0.666667,,,krugman1994_42,p. 70 (PDF p. 10),"while in 1966 more than half the workers had no formal education at all, by 1990 two-thirds had completed secondary education","Singapore's work force, from Young (footnote 6)"
+y4_particip,东亚,1994,,1;1.2;1.3,,,young1994_42,p. 2 (PDF p. 4),"rising participation rates remove an average of 1% per annum from the per capita growth rate of Hong Kong. 1.2% and 1.3% per annum from Korea and Taiwan, respectively",
+y4_kr_invest,韩国,1950,,5;1950;20;30;1980;40;1991,,,young1994_42,p. 2 (PDF p. 4),"In South Korea, investmentrates, which were around 5% (in constant prices) in the early 1950s, exploded upto 20% in the mid-60s, reached 30% in the early 1980s, and were approaching 40% by 1991.",
+y4_tw_invest,台湾,1950,,10;1950;27;1975;20,,,young1994_42,p. 2 (PDF p. 4),"the constant price investment to GD? ratio, at around 10% in the early 1950s, grew steadily to a high of 27% in 1975, after which it fluctuated around a value of 20%.",Taiwan; 'GD?' for 'GDP'
+wb_jdb,日本,1951,,0.09;1951;0.01;1956,,,wb1993_42,p. 286 (PDF p. 297),"The Japan Development Bank, the main government lender,experiencedwrite-offsof a mere 0.09 percent of average loans outstanding in 1951-55 and just 0.01 percent in 1956-65",
+wb_hci_motive,韩国,1993,,,,,wb1993_42,p. 308 (PDF p. 319),both strategic-to increasedefensecapability-and economic,"the motivation of Korea's heavy and chemical industries (iron and steel, metal products, machinery, electronics and industrial chemicals)"
+wb_tw_public,台湾,1993,,,,,wb1993_42,p. 83 (PDF p. 97),"Taiwan, China, used public investment in large-scale manufacturing enterprises to ensure inputs for predominantly small and medium-scaleexportng industries.",'exportng' for 'exporting'
+wb_tw_sme,台湾,1993,,60,,,wb1993_42,p. 161 (PDF p. 174),"the SMEs also dominate the export sector, producing about 60 percent of the total value of exports","Taiwan, China"
+wb_korea_exp,韩国,1950,,1950;4;30,,,wb1993_42,p. 37 (PDF p. 52),In the 1950s even trade optimists were export pessimists and did not anticipate that Korea's exports would grow four times as fist as world trade during the next thirty years,the subject is 'In the 1950s even trade optimists were export pessimists and'; 'fist' for 'fast'
+wn_pushdef,东亚,1993,,,,,wbnews42,p. 2 (PDF p. 2),"The study says that ""export push"", a combination of fundamentals and interventions has been crucial to East Asia's success.",
+wb_integrated,东亚,1993,,1970,,,wb1993_42,p. 356 (PDF p. 367),"Since the early 1970s, developing economies have become ever more integrated with the global capital markeL While this has reduced government? already limited abiity to restrict capital flight and speculative capital inflows, it has also given them accessto less expensive capital",'markeL' for 'market'; the sentence goes on: this has reduced governments' already limited ability to restrict capital flight
+wb_jdb_why,日本,1993,,,,,wb1993_42,p. 286 (PDF p. 297),"Coupled with Japan's overall economic success, effltive pre-appraisal and monitoring resuited in very low loan losses.","'effltive' for 'effective', 'resuited' for 'resulted'"
+wp56_race,日本,1956,,,,,wp1956_42,web page,世界の二つの体制の間の対立も、原子兵器の競争から平和的競存に移った。平和的競存とは、経済成長率の闘いであり、生産性向上のせり合いである。,結語
+wp56_pain,日本,1956,,,,,wp1956_42,web page,近代化－－トランスフォーメーション－－とは、自らを改造する過程である。その手術は苦痛なしにはすまされない。,"結語: of modernisation, 'a process of remaking oneself'"
+wp61_fullemp,日本,1961,,,,,wp1961m42,web page,国民所得倍増計画は、国民のすべてに働く場所を与える完全雇用の計画であり、また生産性向上の計画である。,"the preface of 迫水久常, the Director-General of the Economic Planning Agency"
+wp61_lowwage,日本,1961,,,,,wp1961m42,web page,従来日本経済は、生産の面においては労働力の過剰従って労銀の低位を前提として、構成されたきらいがあり,the preface
+wp61_control,日本,1961,,,,,wp1961m42,web page,統制とは、権力者たる人間が神様の真似をすることであると思う。,the preface
+wp61_nopolitics,日本,1961,,,,,wp1961m42,web page,いわゆる政治的配慮を排して、経済研究者の立場に立って素直に観察し、記述するように指示した。,the preface: what the Director-General told the authors of the report
+y2_school,香港,1960,,1960;6.2;3.5;1985;8;5.6,,,young1992_42,p. 57 (PDF p. 46),"I estimate that the average years of school attendance for the adult population in 1960 was 6.2 for Hong Kong and 3.5 for Singapore, whereas in 1985 it was 8.0 for Hong Kong and 5.6 for Singapore.",Barro's comment
+y2_educated,香港,1992,,,,,young1992_42,p. 14 (PDF p. 3),The early postwar population of Hong Kong was considerably better educated than that of Singapore,
+y2_kr_35,东亚,1992,,35,,,young1992_42,p. 55 (PDF p. 44),"It is interesting that after all of the new work on growth, when we get down to cases, we find ourselves using the 35-year-old methods of growth accounting.",Krugman's comment
+cb_lesson,东亚,1996,,,,,cb1996_42,p. 136 (PDF p. 2),"If the accumulation view is correct, these experiences reinforce the lesson that to improve living standards requires investment, paid for in large part through forgone current consumption.",
+y4_agri,韩国,1994,,0.6;0.7,,,young1994_42,p. 2 (PDF p. 4),"removing agriculture from the analysis lowers the growth rate of outputper worker in Taiwan and South Korea by .6% and .7% per annum, respectively",
+y2_pioneer,新加坡,1959,,1959;40;5;10,,,young1992_42,p. 23 (PDF p. 12),"Under Pioneer Status, which was actually first introduced in 1959, firms (selected on the basis of capital expenditure and type of technology) are exempted from the 40% profits tax for a period of 5, 10, or more years.","Pioneer Status, 'first introduced in 1959'"
+y2_foreign,新加坡,1992,,,,,young1992_42,p. 23 (PDF p. 12),"In practice, because they are usually linked to sizable investments involving advanced technologies in new (targeted) industries, the overwhelming majority of participants are foreign.",
+loc_sakomizu,日本,,,1902;1977,,,loc_sakomizu42,authority record,"Sakomizu, Hisatsune, 1902-1977",LC n86097827
+wb_npa,日本,1993,,,,,wb1993_42,p. 170 (PDF p. 183),"Japan's prime minister names only his ministers and, except in a few caes, one of the two vice-nunisters in each ministry; the National PersonnelAuthority is responsiblefor the resrt","the sentence before: the National Personnel Authority, 'an independent body', sets the bureaucracy's pay scales and promotion policies, administers the examinations and makes most appointments; 'caes', 'vice-nunisters', 'resrt' for 'cases', 'vice-ministers', 'rest'"
+wb_park_educ,韩国,1960,,,,,wb1993_42,p. 160 (PDF p. 173),Park Chung Hee's export-promotion drive boosted demand for educated labor,'In the mid-1960s' (the text layer reads 'mid-I 960s')
+wb_korea_land1,韩国,1947,,1947,,,wb1993_42,p. 161 (PDF p. 174),"The first, initiated by U.S. forcesin 1947, distributed the land confiscatedfrom the Japanese at the end of Wurid War II to the tillersand put a ceiling on rents of other land.",
+wb_tw_rates,台湾,1949,,300;1949;8.5;1953;2;34;3,,,wb1993_42,p. 207 (PDF p. 219),"when Taiwan, China, raised real interest rates on bank deposits from a negative300 percent in 1949 to about 8.5 percent in 1953, the ratio of time and savingsdepositsto money stock rose from 2 to 34 percent in three years (Chiu 1992).",
+wb_responsive,东亚,1993,,,,,wb1993_42,p. 17 (PDF p. 32),"becausesavingsare nor very responsiveto marginal changesin positive real interestrates, HPAEgovernmentswere able to mildlyrepressinterest rateson depositswith a minimalimpact on savings",'nor' for 'not'
+kg_china78,中国,1978,,1978,,,krugman1994_42,p. 75 (PDF p. 15),"If one measures Chinese growth from the point at which it made a decisive turn toward the market, say 1978, there is little ques tion that there has been dramatic improvement in efficiency as well as rapid growth in inputs.",
+kg_china64,中国,1964,,1964,,,krugman1994_42,p. 75 (PDF p. 15),"If one instead measures growth from before the Cultural Revolution, say 1964, the picture looks more like the East Asian ""tigers"": only modest growth in efficiency",
+wn_gap,东亚,1993,,,,,wbnews42,p. 1 (PDF p. 1),they are the only economies in the world that have achieved rapid sustained growth while reducing the gap between the rich and poor.,
+wb_npa2,日本,1993,,,,,wb1993_42,p. 170 (PDF p. 183),"is further protecred fiom political pressure by the Natonal Personnel Authority, an independent body that sets the bureaucray's pay scales and promotdon policies, administers civil service exams, and makes most appointments.",
+wb_diet,日本,1993,,,,,wb1993_42,p. 168 (PDF p. 181),Japanesebureaucratsdraft laws in consultationwith the policycommitteesofthe rulingliberal Democratic Partyand privatesector representatives;the diet (parliament)merely ratifieswhatthe bureaucracyhasprepared.,
+wb_korea_land2,韩国,1950,,1950,,,wb1993_42,p. 161 (PDF p. 174),"The second, begun in 1950 and completed after the Korean War, was undertaken by the Korean governmentafter a lengthy debate in the legislatum",
+wb_tw_landlords,台湾,1993,,,,,wb1993_42,p. 161 (PDF p. 174),"Former landlords, as new shareholdersin state enterprises,had a vestedinterest in the successof the Taiwaneseauthoriies economic program.",
+wb_consumer,东亚,1993,,,,,wb1993_42,p. 16 (PDF p. 31),"Japan, Korea and Taiwan, China, all imposed stringent contrls and high interest rates on loans for consumer items, and levied stiff taxes on socalled luxury consumption.",'so-called' is broken at the end of a line
+wb_restrict,东亚,1993,,,,,wb1993_42,p. 219 (PDF p. 231),"Restrictons on consumer choices, induding the basic consumption-savings decision, have welfare costs.",
+wb_payoffs,东亚,1993,,,,,wb1993_42,p. 16 (PDF p. 31),"Savings, forced or not, generaed high payoffs based on consistendy high rates of return to investments.",
+wb_soviet,东亚,1993,,,,,wb1993_42,p. 16 (PDF p. 31),"In conwnt to other economies that have used compulsory savings, such as the fonrer Soviet Union, welfare costs were dearly offset by substantive benefits.",the page image (PDF p. 31) reads 'clearly offset'
+wb_failures,东亚,1993,,,,,wb1993_42,p. 219 (PDF p. 231),"Moreover, similar efforts in other economieshave been spectacularfailures.",
+wb_command,东亚,1993,,,,,wb1993_42,p. 219 (PDF p. 231),Examplesindude the Widespreaddeprivationand massivewaste associatedwith forced savingsin the now-defunctcommand economies.,
+wb_shared,东亚,1993,,,,,wb1993_42,p. 13 (PDF p. 28),"legitimacyand win the supportof the sociey at large,East Asian leadersestablished the principle of shared growth, promising that as the economy expanded all groupswould benefit.",
+wb_leaders,东亚,1993,,,,,wb1993_42,p. 13 (PDF p. 28),leadersof the HPAEshave tended to be either authoritarian or paternalisdtithey have also been willingto grant a voiceand genuineauthorityto a technocraticeliteand key leadersof the privatesector,
+wb_contests,东亚,1993,,,,,wb1993_42,p. 11 (PDF p. 26),some HPABs havegone a step furtherby creatingconteststhat combinecompetitionwiththe benefitsof cooperationamongfirmsandberweengovernmentand the privatesector,
+wb_councils,东亚,1993,,,,,wb1993_42,p. 11 (PDF p. 26),"such as accessto rationed credit for exporters, to very complex coordination of private investment in the government-business deliberationcouncilsofJapanand Korea",
+wb_contest_key,东亚,1993,,,,,wb1993_42,p. 11 (PDF p. 26),"The key featureof each contest, however,is that the governmentdistributes rewards-oftenaccessto caedit or foreignexchange-on the basisof performance",
+wb_evident,东亚,1993,,,,,wb1993_42,p. 207 (PDF p. 219),This is especialy evident for changesfrom highly negativeto positive real rates of interest.,
+kg_baseline,中国,1994,,,,,krugman1994_42,p. 75 (PDF p. 15),The philosophical problem is that it is unclear what year to use as a baseline.,
+wb_statebanks,韩国,1993,,,,,wb1993_42,p. 129 (PDF p. 142),Support for exports was also channeled through rhe stare-controlled banking system.,
+wb_bank_export,韩国,1993,,,,,wb1993_42,p. 129 (PDF p. 142),"Following explicit government directives, banks increasingly used export performance as the criterion of creditworthiness.",
+wb_hci_shift,韩国,1973,,1973;79,,,wb1993_42,p. 129 (PDF p. 142),"Heavyand Chemical Indostries Drive11973-791. The heavy and chemical industries (HCI)drive was a major policy shift, away from the neutral incentives of the takeoffperiod to a commitment by govremment to use all its levers to steer resources into specific sectors to rapidly alter the industrial structure.",the heading reads 'Heavy and Chemical Industries Drive (1973-79)' on the page
+wb_hci_six,韩国,1973,,6,,,wb1993_42,p. 129 (PDF p. 142),"Special legislation singled out six strategic industriessteel, petrochemicals, nonferrous metals, shipbuilding, electronics, and machinery-to receivesupport, induding tax incentives, detailed engineering, subsidized public services, and preferential financing.",
+wb_hci_partly,韩国,1993,,,,,wb1993_42,p. 129 (PDF p. 142),Korea was at least partly successful. One reason is that the government made dear fiom the outset that these industries were expected to become internationally competitive.,
+wb_hci_starved,韩国,1993,,,,,wb1993_42,p. 129 (PDF p. 142),"interventions were so pervasive that botdenecks emerged, largscale debts were incurred, and labor-intensive industries were starved of credit.",
+wb_hci_switch,韩国,1993,,,,,wb1993_42,p. 129 (PDF p. 142),"When the second oil shock hit, inflation was already high, and the exchange rate had apprecated; capacity utiliation in the :HC: seccor was low, and exports were faltering. The government switchled course.",
+wb_guidance,日本,1993,,,,,wb1993_42,p. 186 (PDF p. 199),"The principal instrument of the bureauicracyin managing this processhasbeenadministrative guidance,the useof threatsand rewards to induceprivatcpartiesto followor implementmeasures suggestedby the bureaucracy",
+wb_guidance_law,日本,1993,,,,,wb1993_42,p. 186 (PDF p. 199),Administrativeguidancedoesnot depend on any law or regulation.,
+wb_miti_skill,日本,1993,,,,,wb1993_42,p. 186 (PDF p. 199),MITEis wellkcnownfor havingemployedthis withgreatskill,
+y2_entrepot,香港,1992,,,,,young1992_42,p. 14 (PDF p. 3),"In the prewar era, both economies were British colonies that served as entrepot trading ports, with little domestic manufacturing activity.",
+y2_conduit,香港,1992,,,,,young1992_42,p. 14 (PDF p. 3),"Hong Kong processed trade between Mainland China and the rest of the world, and Singapore served as a conduit for world trade with Malaya and Indonesia.",
+y2_textiles,香港,1950,,1950,,,young1992_42,p. 25 (PDF p. 14),"the early 1950s witnessed the explosive growth of textiles, as refugee Shanghainese entrepreneurs opened factories in the colony.",
+y2_maximalist,新加坡,1992,,,,,young1992_42,p. 20 (PDF p. 9),"in the postwar era the government of Singapore has pursued maximalist policies involving widespread state participation in economic activity financed, in the main, by extensive taxation of labor income.",
+y2_stagnation,新加坡,1950,,1950;1960,,,young1992_42,p. 20 (PDF p. 9),"The 1950s and early 1960s were a period of economic stagnation in Singapore, as trade, which was the lifeblood of this entrepot economy, failed to expand.",
+wb_guidance_tool,日本,1960,,1960,,,wb1993_42,p. 186 (PDF p. 199),"Until the mid-1960s, administrativeguidancewas a powerfil4tool for Mm bureaucrats.",
+wb_miti_fx,日本,1993,,,,,wb1993_42,p. 186 (PDF p. 199),Mm had firmcontrolovertheallocationof foreignexchangeand overimportationthroughthe ForeignExchangeand Trade Control Law.,
+wb_liberalize,日本,1979,,1960;1979,,,wb1993_42,p. 186 (PDF p. 199),"But intermationalpressure,combinedwith the need to maintin an export-basedeconomy,led the governmentto graduallyliberalizethe rade and investmentregime.The processbeganin the mid1960sand continuedtill 1979,",
+kg_predicted,苏联,1994,,,,,krugman1994_42,p. 69 (PDF p. 9),"Long before the slow ing of Soviet growth became obvious, it was predicted on the basis of growth accounting.",
+kg_naive,苏联,1994,,,,,krugman1994_42,p. 69 (PDF p. 9),a useful cautionary tale about the dangers of naive extrapolation of past trends,
+wn_boosted,东亚,1993,,,,,wbnews42,p. 2 (PDF p. 2),"some governments, especially in northeast Asia, boosted growth by intervening in the economy where markets were weak, the report said.",
+y2_ahead,新加坡,1992,,,,,young1992_42,p. 16 (PDF p. 5),which are increasingly driving the economy ahead of its learning maturity into the production of goods in which it has lower and lower productivity,
+y2_masked,新加坡,1992,,,,,young1992_42,p. 16 (PDF p. 5),"although Singapore might be experiencing learning-induced improvements in total factor productivity within individual sectors, this is masked at the aggregate level by a movement into industries in which the economy is less productive",
+y2_kr_couldbe,新加坡,1992,,,,,young1992_42,p. 55 (PDF p. 44),"He suggests that Singapore has consistently pushed itself into technologies too far ahead of itself to benefit from learning by doing. This could be right, but there is no",Krugman's comment; the sentence goes on after the running head of p. 56
+y2_kr_noevidence,新加坡,1992,,,,,young1992_42,p. 56 (PDF p. 45),positive evidence for it in this paper. The main result is negative,
+y2_lowest,新加坡,1980,,1980,,,young1992_42,p. 38 (PDF p. 27),"Crude cross-national estimates of capital stocks (discussed later) suggest that by the mid-1980s, Singapore had one of the lowest returns to physical capital in the world.",
+y4_hours,东亚,1994,,,,,young1994_42,p. 7 (PDF p. 10),"For labour, one can reasonably assume that the flow of services is proportional to total hours of work",
+y4_weighting,东亚,1994,,1,,,young1994_42,p. 4 (PDF p. 7),"In weighting labour input by sex, age and educational characteristics (discussed further below), I have found that the improving educational attainment of the workforce contributes to about 1% per annum additional growth in labour input in each of these economies.",
+y4_hkhours,香港,1994,,,,,young1994_42,p. 2 (PDF p. 4),"with the exception of Hong Kong (where they fell), reported hours of work have remained roughly constant",
+kg_parallel,苏联,1950,,1950,,,krugman1994_42,p. 64 (PDF p. 4),Can there really be any parallel between the growth of Warsaw Pact nations in the 1950s and the spectacular Asian growth that now preoccupies policy intellectuals?,
+wb_takeoff,韩国,1961,,1961;73,,,wb1993_42,p. 127 (PDF p. 140),"Export Takeoff 1961-73). UnderPresidentPark,aggressive promotion of exports was combined with-classicimport protection at home.",the heading reads 'Export Takeoff (1961-73)' on the page
+wb_neutral,韩国,1993,,,,,wb1993_42,p. 128 (PDF p. 141),The trade regimewasbiased in fiavorof exports as a whole but essentiallyneutral with respectto dte composition of exports.,
