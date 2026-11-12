@@ -443,7 +443,7 @@ def check_readings(df: pd.DataFrame) -> None:
     assert src["rodrik1994_42img"]["format"] == "image" and src["rodrik1994_42img"]["url"].endswith("w4964.pdf")
 
 
-N_QUOTED, N_IMAGE = 133, 23
+N_QUOTED, N_IMAGE = 134, 23
 
 
 # ---------------------------------------------------------------------------------------------------
@@ -902,6 +902,8 @@ def world(F, Y, Q):
     has("wp61_signed", "迫水 久常 ( 経済企画庁長官 )")
     for rid in ("wp61_fullemp", "wp61_lowwage", "wp61_nopolitics", "wp61_control"):
         assert words_of(rid), rid
+    has("wp61_lowwage", "労働力の過剰従って労銀の低位を前提として", "きらいがあり")     # the hedge: 有…的倾向
+    say("他说，日本经济过去的生产，多少有以劳动力过剩、因而工资低为前提的倾向")
     has("wp61_control", "神")
     # the Four Tigers
     has("wb_fourtimes", "more than four times in Japan and the Four Tigers")
@@ -1011,6 +1013,8 @@ def state(F, Y, Q):
     said("日本存款的实际利率直到 1983 年都是负的，但很稳定", F["wb_japan_negative"][0])
     for rid in ("wb_controlled", "wb_savers", "wb_repdef", "wb_transfer", "wb_spread"):
         assert words_of(rid), rid
+    has("wb_controlled", "during much oF their rapid growth")                       # not the whole of it
+    say("所有高绩效经济体在高速增长的很长一段时间里都管制存贷款利率")
     # ex:eastasia-repression
     R = repression(**REP)
     said("教学输入：存款利率上限 4\\%，贷款利率上限 6\\%，通胀率 6\\%；没有上限时，存款的实际利率是 2\\%，贷款的实际利率是 4\\%",
@@ -1049,6 +1053,9 @@ def state(F, Y, Q):
     has("y2_maximalist", "financed, in the main, by extensive taxation of labor income")
     i60, y60, i84, y84 = F["y2_invest"]
     said("新加坡的投资占 GDP 的比例从 1960 年的 9\\% 升到 1984 年的 43\\%", y60, i60, y84, i84)
+    # Summers-Heston at constant international prices, not Young (1994)'s 11% -> 47% at constant (national) prices
+    assert "constant international prices" in column("note")["y2_invest"]
+    say("按不变的国际价格，新加坡的投资占 GDP 的比例从")
     said("香港一直在 20\\% 上下", F["y2_hk20"][0])
     y1, a1, b1, y2_, a2, b2 = F["y2_school"]
     said("Barro 在评论里估计，1960 年成人平均上学的年数香港是 6.2 年，新加坡是 3.5 年", y1, a1, b1)
@@ -1136,6 +1143,9 @@ def accounting_section(F, Y, Q):
     said("台湾在 1975 年最高，约 27\\%，此后在 20\\% 上下", t75, t27, t20)
     has("y4_hours", "proportional to total hours of work")
     has("y4_weighting", "weighting labour input by sex, age and educational characteristics")
+    has("y4_translog", "aggregate capital and labour input", "weighting the growth of each sub-input by its average marginal product")
+    assert "raw capital, weighted capital, raw labour, weighted labour" in column("note")["y4_t31"]
+    say("资本与劳动都分成几类，每类的增长按它的平均边际产出加权，他的表里叫加权资本与加权劳动")
     has("y4_log", "logarithmic, rather than geometric")
     said("设产出是$Y=A\\,K^{\\alpha}(hL)^{1-\\alpha}$", 1)                      # the exponent of the model
     said("$1-\\alpha$是劳动的份额", 1)
@@ -1218,6 +1228,7 @@ def accounting_section(F, Y, Q):
     said("台湾的对偶估计每年高出 1 个百分点，新加坡高出 2 个多百分点", *F["hs_exceed"])
     has("hs_journal", "American Economic Review", "vol. 92(3)")
     said("Hsieh（2002）用的正是这个办法", 2002)
+    say("他在摘要里说，韩国与香港的对偶估计与原始估计相近")
     assert Y["hs_dual"] == 2002
     said("Young 1992 年按自己的资本存量推算的回报却在下降", F["y2_volume"][0])
     has("y2_t8_8889", "1988-89 0.128")
@@ -1228,7 +1239,10 @@ def accounting_section(F, Y, Q):
     hi, lo = F["y2_t8_6970"][0], F["y2_t8_8889"][0]
     years_ = (1988 + 1989) / 2 - (1969 + 1970) / 2
     share = F["cb_young"][2]
-    said("（2）按 Young 的表 8，新加坡的回报 19 年里从 0.401 降到 0.128，资本份额取 0.53", 8, years_, hi, lo, share)
+    assert column("note")["y2_t8_6970"].startswith("Table 8") and column("note")["y2_t8_8889"].startswith("Table 8")
+    assert abs(share - (1 - F["y4_t41"][4])) < 1e-9                       # Young (1994)'s Table 4-1 gives the same
+    said("（2）按 Young 1992 年的表 8，新加坡的回报 19 年里从 0.401 降到 0.128，资本份额取 0.53", F["y2_volume"][0], 8,
+         years_, hi, lo, share)
     d1 = dual(sK, gr, gw)
     said("（1）$0.5\\times(-1\\%)+0.5\\times4\\%=1.5\\%$", sK, 1, 1 - sK, 100 * gw, 100 * d1)
     gret = math.log(lo / hi) / years_
@@ -1240,8 +1254,21 @@ def accounting_section(F, Y, Q):
     said("他用水泥进口推算出 1950 年代极高的建筑投资", F["y4_overestimates"][0])
     has("y2_kr_fickle", "notoriously fickle")
     e, a10, n10, _, _, a30, n30 = F["cb_rd_elastic"]
-    said("资本与劳动的替代弹性若是 0.5，算出的余量会随时间升高", e)
-    said("东亚的余量 10 年后是 1.93\\%，30 年后是 2.89\\%", n10, a10, n30, a30)
+    # Rodrik's own words (p. 193): the Cobb-Douglas share imposes an elasticity of one; below one, capital deepening
+    # lowers capital's share and raises the residual
+    has("cb_rd_unity", "imposes an elasticity of substitution", "of unity")
+    has("cb_rd_fall", "factor share of capital to fall over time")
+    has("cb_rd_residual", "would increase correspondingly")
+    said("Rodrik 说，Collins 与 Bosworth 用资本份额固定为 0.35 的生产函数，等于假定资本与劳动的替代弹性是 1",
+         F[CB_SHARE_ROW][0], 1)
+    said("他说，弹性若小于 1，资本越积越多，它的份额会随时间下降，归给生产率的余量就相应升高", 1)
+    # with sigma = 1 his Table B1 is Collins and Bosworth's own estimate, 'slightly over 1 percent' (their Table 7: 1.1)
+    one, y0, y1 = F["cb_rd_onepct"]
+    assert (one, y0, y1) == (1, 1960, 94) and one < F["cb_t7_ea"][5] < one + 0.5
+    has("cb_rd_onepct", "slightly over 1 percent")
+    said("按他的算例，弹性是 1 时东亚的余量每年略高于 1\\%，是 0.5 时 10 年后是 1.93\\%，30 年后是 2.89\\%", 1, one, e, n10,
+         a10, n30, a30)
+    assert a10 > F["cb_t7_ea"][5] and a30 > a10
     has("cb_rd_elastic", "would rise to 1.93 percent in ten years")
     has("cb_bosworth", "depends on the stability of capital's share, not on the elasticity of substitution")
 
@@ -1278,6 +1305,11 @@ def data_check(F, Y, Q):
     tfp = {c: A[c]["gA"] for c in young}
     assert min(tfp, key=tfp.get) == min(young, key=young.get) == "SGP"
     assert max(tfp, key=tfp.get) == max(young, key=young.get) == "JPN"                # 新加坡都最低，日本都最高
+    say("两头还在，中间变了。")
+    mid = ("HKG", "TWN", "KOR")
+    assert sorted(mid, key=lambda c: -young[c]) == ["HKG", "TWN", "KOR"]
+    assert sorted(mid, key=lambda c: -tfp[c]) == ["TWN", "KOR", "HKG"]
+    say("中间的三个，Young 依次是香港、台湾、韩国，Penn World Table 是台湾、韩国、香港（本书的计算）")
     said("Penn World Table 的新加坡是每年 0.7\\%，Young 是$-0.3\\%$（本书的计算）", tfp["SGP"], -young["SGP"])
     kr, tw, sg, hk = F["cb_young"]
     assert "Young (1995)" in column("note")["cb_young"]
@@ -1286,6 +1318,24 @@ def data_check(F, Y, Q):
     run = lab.loc[1951:2000]
     assert run.nunique() == 1 and lab.loc[2001] != run.iloc[0] and pd.isna(lab.loc[1950])
     said("Penn World Table 的香港是 0.53，台湾的劳动份额 1951—2000 年每年都是同一个数（本书的计算）", A["HKG"]["alpha"], 1951, 2000)
+    # Hong Kong: capital grows faster than labour and human capital, so a larger capital share lowers the residual,
+    # and Young's share closes most of the gap
+    H = A["HKG"]
+    assert H["gK"] > H["gL"] + H["gh"]
+    say("香港的资本比劳动与人力资本增长得快，资本的份额越大，余量就越小")
+    H37 = accounting("HKG", 1966, 1991, alpha=hk)
+    assert H["gA"] < H37["gA"] < young["HKG"] and young["HKG"] - H37["gA"] < 0.5 * (young["HKG"] - H["gA"])
+    say("香港的差距多半出在资本份额上")
+    said("改用 0.37，Penn World Table 的香港余量升到约 2.1\\%（本书的计算）", hk, H37["gA"])
+    # Singapore: PWT's capital share is above Young's, which by itself would lower PWT's residual, not raise it
+    S = A["SGP"]
+    y_sg = F["y4_t41"]
+    assert abs(1 - y_sg[4] - sg) < 1e-9 and S["alpha"] > sg
+    assert residual(y_sg[0], S["alpha"], y_sg[1], y_sg[2]) < y_sg[3]                 # Young's inputs, PWT's share
+    assert accounting("SGP", 1966, 1990, alpha=sg)["gA"] > S["gA"]                    # PWT's inputs, Young's share
+    said("Penn World Table 给它的资本份额是 0.58，比 Young 的还高，只看份额，余量应当更低（本书的计算）", S["alpha"])
+    assert S["gK"] < 100 * y_sg[1]
+    said("例如 Penn World Table 的资本每年增长约 10.1\\%，Young 的加权资本是 11.5\\%（本书的计算）", S["gK"], 100 * y_sg[1])
     has("y4_hkhours", "with the exception of Hong Kong (where they fell)")
     P = pwt()
     h0, h1 = P["HKG"].loc[1966, "avh"], P["HKG"].loc[1991, "avh"]
@@ -1317,6 +1367,8 @@ def data_check(F, Y, Q):
     S35 = accounting("SGP", 1960, 1994, share)
     said("用同样的 0.35，Penn World Table 给新加坡 1960—1994 年的余量是 1.8\\%（本书的计算）", share, 1960, 1994, S35["gA"])
     said("用数据库自己的份额，余量只有 0.9\\%（本书的计算）", accounting("SGP", 1960, 1994)["gA"])
+    assert abs(S35["gA"] - CB["SGP"]) < abs(accounting("SGP", 1960, 1994)["gA"] - CB["SGP"])
+    say("在新加坡上，Penn World Table 与 Collins 和 Bosworth 的分歧，多半出在资本份额上（本书的解读）")
     said("(a) Penn World Table 10.01 的分解（本书的计算）", 10.01)
     said("(b) 余量的几种估计：Young（1994）的表 8-1 与表 8-2", F["y4_date"][0], 8, 1, 8, 2)
     said("Collins 与 Bosworth（1996）表 6 的 1960—1994 年（统一资本份额 0.35），以及 Penn World Table 1960—1994 年按 0.35 的重算",
@@ -1328,6 +1380,9 @@ def data_check(F, Y, Q):
     has("wb_invdriven", "The investment-driven economiesIndonesia, Malaysia, and Singapore")
     has("wb_proddriven", "Japan, Korea, Hong Kong, Tliailand, and Taiwan, China")
     has("wb_ch1_dominant", "But it is nor the dom-inantfactor.")
+    # Singapore is behind in every set (in Collins and Bosworth it ties with Korea); the rest of the order differs
+    assert CB["SGP"] == min(CB.values())
+    say("几套估计都把新加坡放在后面，其余的次序与水平取决于份额与投入的量法")
 
 
 def debate(F, Y, Q):
@@ -1371,8 +1426,9 @@ def debate(F, Y, Q):
     has("cb_rd_hkonly", "Hong Kong")
     # exports
     y50, k, n30 = F["wb_korea_exp"]
-    said("1950 年代连对贸易乐观的人都没有料到，此后三十年韩国出口的增长会是世界贸易的四倍", y50)
-    assert told("此后三十年韩国出口的增长会是世界贸易的四倍", "此后", "年") == n30
+    has("wb_korea_exp", "four times as fist as world trade")                       # the rate, not the amount
+    said("1950 年代连对贸易乐观的人都没有料到，此后三十年韩国出口的增长速度会是世界贸易的四倍", y50)
+    assert told("此后三十年韩国出口的增长速度会是世界贸易的四倍", "此后", "年") == n30
     assert told("会是世界贸易的四倍", "贸易的", "倍") == k
     assert there("ch41_development", "是外向带来了更好的表现，还是更好的表现为外向铺了路\\cite{wdr1987}") == []
     said("世界银行 1987 年自己也说不清是外向带来了更好的表现", 1987)
@@ -1392,6 +1448,8 @@ def debate(F, Y, Q):
     assert told("三年里定期与储蓄存款", "", "年里") == three
     has("wb_responsive", "minimalimpact on savings")
     has("wb_notinhibit", "appaently")
+    assert "mild repression of interest rates at positive real levels" in column("note")["wb_notinhibit"]
+    say("他们无法断定把利率温和地压在正的实际水平上促进了东北亚的增长，只能说这看来没有妨碍增长")
     assert there("ch61_emcrises", "亚洲（1997）") == [1997]
     said("1997 年的亚洲危机在\\chref{ch:emcrises}", 1997)
     # each debate ends open (counts() checks the four sub-sections)
@@ -1476,6 +1534,9 @@ def legacy(F, Y, Q):
     assert there("ch58_japanbubble", "1980 年代后期的资产泡沫") == [1980]
     said("日本 1980 年代后期的泡沫与 1997 年的亚洲危机", 1980, 1997)
     said("世界银行 1993 年的判断是这场争论的一个起点（本书的解读）", F["wb_copyright"][0])
+    has("wb_promotion", "promotion of specific industries had little apparent impact")
+    has("wn_exportpush", "those associated with export push hold the most promise")
+    say("研究组看不出扶持特定产业的影响，却看好与出口推动相关的干预")
 
 
 def takeaways(F, Y, Q):

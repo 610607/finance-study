@@ -30,7 +30,8 @@ python3 tools/epub/build_epub.py --book 2 --check   # 一个分册，并用 epub
 
 - 带编号的公式、图、表、例题都要有 `\label`；没有标签的带编号公式在 EPUB 里没有编号（脚本会警告）。
 - 正文不要用 `\textsc` 与 `\underline`：转换器用 `\textsc` 标记框标题。
-- 新增宏或环境时，同时在 `build_epub.py` 的 `Converter` 里说明怎样改写，并用 `--check` 检验；`validate_source.py` 不检查 EPUB。
+- `\url{}` 与 `\href{}` 里的 `%`（如 `%7E`、`%20`）要写成 `\%`：转换器把 `%` 到行尾当作注释删去，一个没转义的 `%` 曾让 pandoc 丢掉整个参考文献（2026-11-12）。`validate_source.py` 检查这一条。
+- 新增宏或环境时，同时在 `build_epub.py` 的 `Converter` 里说明怎样改写，并用 `--check` 检验；`validate_source.py` 只查上面三条，不检查 EPUB 本身。
 - 看效果：解开 EPUB，用浏览器打开 `EPUB/text/*.xhtml`，或用任何阅读器（Apple Books、Calibre、Thorium）。阅读器自选字体，EPUB 不内嵌字体。
 
 ## 已知限制

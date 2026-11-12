@@ -1190,3 +1190,186 @@ Japanese case box and the ESRI series).
   the facts already checked with page numbers, the plan: opening on the World Bank's release of 26 September
   1993 and Preston's foreword) and `docs/agent_prompts/ch42_writer_brief.txt` (the brief; replace its scratchpad
   paths with the new session's).
+
+### Carried over from the editor's round on Chapter 42
+- A comparison of two sets of estimates says which ingredient differs before naming a cause. When the
+  book recomputes one source's figure with another's share or inputs, it swaps one ingredient at a
+  time and reports both swaps (Young's inputs with PWT's share, PWT's inputs with Young's share); a
+  cause that holds for one economy is not extended to the next without its own numbers.
+- A ranking claim is checked position by position: "the order still holds" is true only if every
+  place holds; say which ends hold and which middle places move.
+- Where a source makes the argument itself (Rodrik on the elasticity of substitution, p. 193), quote
+  the source's sentences and numbers; "本书的解读" is for what no source says.
+- A source's hedges and qualifiers are kept: "for much of the high-growth period", "somewhat of a
+  tendency", "mildly positive real rates", "in constant international prices". Dropping one turns a
+  qualified finding into a general one.
+- A sentence that says later numbers "confirmed" a judgement is the book's reading; say what
+  happened ("增长并没有停下来") and leave the verdict out unless a source gives it.
+- A term printed in a source's table (weighted capital, weighted labour) is explained where the text
+  first uses it, from the source's own definition.
+- The layout of a timeline or chart read on a page image (which entries stand above or below the
+  year line) is recorded in the row's note as seen, entry by entry.
+- A finding read only in an abstract says so in the sentence ("他在摘要里说"), not only in the 史料说明.
+- Quotations from web pages use the stable part of the page (heading, issue, authors), not navigation
+  text, which changes when a site is redesigned. Do not delete cache files: a bad download is
+  reported by `data/fetch/verify_web_quotes.py`, and the editor deletes it.
+
+## 第 43 章 `ch:planned` 成熟的计划经济：苏联、东欧、毛泽东时期的中国与南斯拉夫 (`zh/ch43_planned.tex`)
+
+A theory-and-history chapter, the last of Part 6. Kornai's shortage economy and the soft budget
+constraint are the theory; the guide question asks where inflation goes when prices are fixed by the
+state: into queues, forced substitution, falling quality, savings that cannot be spent, and, when the
+state raises prices openly, into unrest. The cases are the USSR from the reform of December 1947 to
+the 1970s (with the Kosygin reform of 1965), Eastern Europe (only where a source carries it), China's
+First Five-Year Plan, the Great Leap Forward and the famine of 1959–1961, and Yugoslavia's
+self-management. Model chapters: zh/ch31_soviet.tex (the narrative model for a planned economy and
+for a famine told with the range of estimates, why they differ, the causes each side gives, and who
+decided), zh/ch30_alternatives.tex (repressed inflation, `ex:alternatives-ceiling` and the compare
+box 公开通胀与被压抑的通胀, which this chapter builds on and does not repeat), zh/ch35_reconstruction.tex
+(`eq:reconstruction-overhang`, the overhang and its two cures), zh/ch40_solow.tex (the Soviet case box
+and `ex:solow-soviet`) and zh/ch42_eastasia.tex (the chapter before; its ending hands over this
+chapter's question).
+
+- Neighbours:
+  - Earlier chapters own: Ch 7 the price-ceiling pitfall `eq:greek-ceiling` (long-lasting price
+    controls and queues: FORWARD_REFS row), Ch 8 the salt and iron monopolies (a planned economy
+    setting prices: row), Ch 22 Marx's schemes and the input–output table (row), Ch 30 repressed
+    inflation (`sec:alternatives-repressed`: row), Ch 31 the first Soviet plans, material balances
+    (`eq:soviet-balance`), collectivization and the famine of 1932–33, the calculation debate,
+    Kantorovich and the origins of the soft budget constraint (rows), Ch 34 forced saving and deferred
+    pay (`eq:warfinance-gap`), Ch 35 the overhang (`eq:reconstruction-overhang`; the Soviet reform of
+    December 1947 is promised here: row), Ch 40 Soviet growth read with the Solow model (the slowdown,
+    Easterly and Fischer, Weitzman: row; use it in a sentence, do not re-tell), Ch 41 aid and planning
+    in poor countries (row), Ch 42 East Asia. Refer back with `\chref`, do not re-derive.
+  - Later chapters own: Ch 44 the natural rate (the ending hands over its question), Ch 52
+    hyperinflation (a clause at most), Ch 59 the end of the USSR and transition (the overhang of the
+    late 1980s, the price liberalization of 1992, Poland 1990, China's dual-track prices and the reforms
+    from 1978: a clause forward; this chapter stops before 1978 for China and with the 1970s for the
+    USSR), Ch 72 China's credit today. Each at most a sentence.
+- Owns:
+  - the theory: Kornai's shortage economy (1980: chronic shortage, forced substitution, queues,
+    suction; the firm's soft budget constraint, 1986; Kornai, Maskin and Roland 2003 if obtained), the
+    monetary overhang as the measure of repressed inflation (with `eq:reconstruction-overhang`), and
+    the disequilibrium debate over whether consumer markets in planned economies were in chronic excess
+    demand at all (Portes and Winter 1980 against Kornai, if the sources can be had: each side's own
+    words);
+  - the USSR after 1947: the currency reform of December 1947 and the end of rationing (Ch 35's
+    promise: the decree's own terms); retail prices fixed by the state, the price cuts of 1947–1954,
+    the open price rise of 1 June 1962 (meat and butter) and what followed in Novocherkassk (only what
+    archival or official sources can carry: who decided, who fired, how many died); savings deposits
+    growing faster than retail sales (Soviet statistical yearbooks or CIA and Joint Economic Committee
+    studies, which are US government works in the public domain); the Kosygin reform of 1965 (the
+    resolution of the CPSU Central Committee and the Council of Ministers: its own terms, sales and
+    profit as indicators) and how far it was carried out;
+  - Eastern Europe, only where a source carries it: Poland's open food price rises of December 1970
+    (and of 1976 and 1980) and the strikes that met them; Hungary's New Economic Mechanism of 1968.
+    A paragraph at most;
+  - China, 1953–1965: the First Five-Year Plan (1953–1957) and the unified purchase and sale of grain
+    (统购统销, 1953); the household registration regulations of January 1958; the Great Leap Forward:
+    the steel target, the people's communes and the communal dining halls (1958), the Lushan
+    conference of July–August 1959 (Peng Dehuai's letter; the campaign against "right
+    opportunism" that followed), grain output and state procurement in 1958–1961 and grain exports;
+    the famine of 1959–1961: its scale with the range of estimates and why they differ (the official
+    population and death-rate series, Coale 1984 on the National Academy Press, Ashton, Hill, Piazza
+    and Zeitz 1984, Peng 1987, Banister 1987, Cao Shuji, Yang Jisheng, Dikötter: those that can be
+    read, each with its own method), its causes (Lin 1990 on the right to exit the collective; Kung and
+    Lin 2003; Li and Yang 2005 on the diversion of resources; Meng, Qian and Yared 2015, NBER WP 16361,
+    on the inflexible procurement system and the positive correlation of death rates with grain output
+    per head; the weather), and the official verdict (the 1981 resolution on Party history, its own
+    words); the recovery policies of 1961–1962;
+  - Yugoslavia: the break with the Cominform (1948), the law on workers' self-management of 1950, the
+    reform of 1965, inflation and unemployment and the workers who went abroad; Ward's (1958) labour-
+    managed "Illyrian" firm as the theory of its firms.
+- Promises (FORWARD_REFS rows pointing to 43): from Ch 7 (long-lasting price controls and queues with
+  `eq:greek-ceiling`), Ch 8 (how a planned economy sets prices and runs production), Ch 22 (material
+  balances as the planners' input–output: done for Ch 31, open for Ch 43), Ch 30 (repressed inflation
+  as the normal state of planned economies), Ch 31 (Kantorovich and shadow prices in mature planned
+  economies; the soft budget constraint), Ch 35 (the Soviet economy after the reform of December 1947),
+  Ch 40 (how a planned economy works: the centre sets the investment rate; incentives against
+  diminishing returns), Ch 41 (mature planned economies, the Great Leap and its famine) and the rows
+  Ch 42 adds. Read each row with the passage it comes from; mark each done with the labels, or say why
+  a row passes on (Ch 59 takes what belongs to transition).
+- When it begins: Ch 42 ends with this chapter's question. Candidate openings: 1 June 1962, the open
+  rise in Soviet meat and butter prices and the strike at Novocherkassk the next day (a scene only if
+  official or archival sources give the date, the decision and the toll); the Beidaihe meeting of
+  August 1958 (the steel target and the communes); the Lushan conference of 1959. Choose what the
+  documents support and give the date and the scene the sources allow, nothing more.
+- Teaching (`eq:planned-…`, worked examples with teaching inputs or the sources' own numbers):
+  - the overhang with `eq:reconstruction-overhang` (use it, do not re-derive): the "hidden" price level
+    $M/(kY)$, and what it means when savings deposits grow faster than retail sales at fixed prices
+    (a worked example with the sources' own Soviet numbers if they can be had);
+  - Kornai's soft budget constraint: a two-period example of a project that loses money and is
+    refinanced because, once sunk, rescuing it costs the centre less than closing it (a Dewatripont–
+    Maskin type example with teaching inputs; credit the model to its authors as read);
+  - Ward's Illyrian firm: maximize income per worker $(pq(L)-R)/L$; the first-order condition and why
+    a higher output price can lower employment in the short run (derive it as the book's own model and
+    say in a clause whose model it is: Ward (1958) was not read, and Yusuf (1977), who reports it,
+    summarizes it as a model of under-investment, not of the supply response; what later work found
+    about real Yugoslav firms only where a source says so);
+  - the procurement arithmetic of 1959–1960 (grain output, procurement and what was left per head in
+    the countryside, from the official series), as Ch 31 did for the USSR in 1928 and 1932.
+- Compare boxes (Ch 30 already owns 公开通胀与被压抑的通胀: do not repeat it): 硬预算约束 vs 软预算约束
+  (Kornai's own terms); 苏联的柯西金改革 vs 南斯拉夫的自治 (what each changed: who set prices, who
+  kept profits, who chose investment), if the material earns it.
+- Contested questions (do not decide; each side's strongest case and its own concessions):
+  - was there chronic excess demand in consumer markets (Kornai against Portes and Winter, if read);
+  - the Great Leap famine: how many died (the estimates and why they differ: the baseline mortality,
+    the census years used, the births lost counted or not) and why (exit rights; resource diversion;
+    the procurement system and false reports; the weather, which the official verdict names and the
+    scholars weigh);
+  - did the Kosygin reform fail because it was half carried out, or because a planned economy cannot
+    take profit as its target (each side's own words);
+  - Yugoslavia: did self-management cause its unemployment and inflation (Ward's model against what
+    the firms did).
+- Political character (write_template rule 5): who decided and who paid. In the USSR the Central
+  Committee and the Council of Ministers fixed prices and the plan; in China Mao and the Party Centre
+  set the steel target, the communes and the procurement, and the Lushan conference turned criticism
+  into a purge; local cadres reported false output under pressure. Who paid: peasants through
+  procurement, the communal dining halls and the registration system that kept them on the land, and
+  with their lives in 1959–1961; consumers through queues and spoiled savings; workers who struck
+  against open price rises (Novocherkassk 1962, Poland 1970) and were shot. Say it plainly with the
+  sources' own words and numbers, without softening or inflating, and only what a source you read
+  supports; give the famine's toll with the range and the methods, as Ch 31 did for 1932–33.
+- Data and sources (journal issues, dates and document numbers in this list are leads, not evidence:
+  verify each; probed 2026-11-12: www.stats.gov.cn, data.stats.gov.cn, www.gov.cn, cpc.people.com.cn,
+  www.people.com.cn, www.cssn.cn, www.cia.gov, www.govinfo.gov, www.jec.senate.gov, www.marxists.org,
+  istmat.org, www.consultant.ru, www.prlib.ru, www.hist.msu.ru, www.osaarchivum.org, www.stat.gov.rs,
+  www.stat.gov.pl, www.ksh.hu, www.cbr.ru, kornai.com, www.kornai-janos.hu, real.mtak.hu,
+  mek.oszk.hu, nap.nationalacademies.org, www.nap.edu, pmc.ncbi.nlm.nih.gov, www.ncbi.nlm.nih.gov,
+  link.springer.com, www.wilsoncenter.org, www.hoover.org, zh.wikisource.org, ru.wikisource.org,
+  hathitrust.org, www.ndl.go.jp, digitalcommons.unl.edu, econpapers.repec.org, www.nber.org,
+  archive.org, www.rug.nl and dataverse.nl answered; www.journals.uchicago.edu (JPE),
+  onlinelibrary.wiley.com (Kyklos), academic.oup.com, www.cambridge.org, babel.hathitrust.org,
+  www.tandfonline.com, www.sciencedirect.com, papers.ssrn.com, www.bmj.com, www.rand.org,
+  www.wider.unu.edu and www.imf.org answered 403; docs.cntd.ru, digitalarchive.wilsoncenter.org,
+  www.econ.hu and www.nlc.cn did not answer; www.jstor.org answers with a bot check: do not try it):
+  - Soviet and Chinese laws, decrees and resolutions are official documents (Russian Civil Code art.
+    1259(6); PRC Copyright Law art. 5): record the text used and where; Party documents and speeches
+    published in collected works: short phrases, and record the edition;
+  - the National Bureau of Statistics (stats.gov.cn, data.stats.gov.cn): read the site's terms and
+    copy them verbatim; use its long series (population, birth and death rates, grain output) and
+    say which edition or table; a later reconstruction is named as such;
+  - CIA and Joint Economic Committee studies (US government works, public domain) for Soviet savings,
+    retail trade and prices; Soviet statistical yearbooks (Народное хозяйство СССР) where a scan can be
+    read (record the copy);
+  - Kornai, Portes–Winter, Ward, Lin, Kung–Lin, Li–Yang, Meng–Qian–Yared, Coale, Ashton et al., Peng,
+    Banister, Yang Jisheng, Dikötter, Wheatcroft, Hanson, Ellman: in copyright, short phrases only; cite
+    the version read (STYLE.md §3: the working paper if that is what was read); NBER: the © notice as
+    printed; the National Academy Press: read its terms;
+  - Maddison 2023 (cached; CC BY 4.0 with its citation policy: the original sources of each economy in
+    a bib item) for the USSR, China, Yugoslavia, Poland and Hungary.
+- Figures: China's crude birth and death rates, 1950–1970, with the famine years marked (the official
+  series; a reconstruction beside it only if obtained); grain output and state procurement, 1952–1965
+  (the official series); Soviet savings deposits against retail sales (if the data can be had); GDP per
+  head of the USSR, China, Yugoslavia, Poland and Hungary against Western Europe (Maddison, log scale).
+- Ending: return to the opening and hand over Ch 44's question “菲利普斯“菜单”为什么会漂移？” (read its
+  stub's guide box and copy the question exactly); the chapter closes Part 6.
+- Labels: `sec:planned-…`, `eq:planned-…`, `fig:planned_…`, `tab:planned-…`, `ex:planned-…`.
+- Length: 8,000–9,000 characters of main text.
+- Research already done: the editor collected sources while Chapter 42 was written (the author:
+  “可以在前一章写作时收集下一章资料”): `docs/agent_prompts/ch43_research.md` (sources with URLs, SHA-256 and
+  terms; facts read with page numbers: the NBS series in the 50-year compilation, Meng–Qian–Yared, the
+  1981 resolution, Smil, Kornai 1986 and KMR 2003, the FRUS telegram on the reform of December 1947, the
+  appeal of 1 June 1962 and the Leningrad Party report on reactions to it, the plenum resolution of
+  29 September 1965, the World Bank's report on Yugoslavia of 1978 and Yusuf 1977; leads and what was
+  not obtained). Confirm every fact on the document before use.
