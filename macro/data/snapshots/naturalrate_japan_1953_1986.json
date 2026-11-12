@@ -1,0 +1,36 @@
+{
+  "title": "Japan: the unemployment rate (Labour Force Survey) and the change over the year of the consumer price index, annual, 1953-1986 (Chapter 44: Japan in 1973-1974)",
+  "source": "e-Stat: 労働力調査 長期時系列データ 表番号 2-1 (長期時系列表２ 就業状態別15歳以上人口 － 全国, sheet 長期02); 2015年基準消費者物価指数 長期時系列データ 品目別価格指数 全国 年平均, 表番号 2: 持家の帰属家賃を除く総合指数 前年比（1948年～最新年） and 中分類指数 前年比（1971年～最新年） (総務省統計局)",
+  "url": "https://www.e-stat.go.jp/stat-search/files?tclass=000001226526&cycle=0",
+  "series": "unemp_pct: 完全失業率 (%), sheet 長期02, column 12; to 1972 without Okinawa, from 1973 with Okinawa (the workbook prints 1973 both ways); unemp_excl_okinawa_pct: the rows marked '*' in the year column (without Okinawa), 1953-1973; cpi_less_rent_pct: 持家の帰属家賃を除く総合, change over the year (%); cpi_all_pct: 総合, change over the year (%), from 1971",
+  "retrieved": "2026-11-12",
+  "license": "e-Stat 利用規約 (政府標準利用規約 第2.0版に準拠): 'また、数値データ、簡単な表・グラフ等は著作権の対象ではありませんので、これらについては本利用ルールの適用はなく、自由に利用できます。' 'コンテンツを利用する際は出典を記載してください。' 'コンテンツを編集・加工等して利用する場合は、上記出典とは別に、編集・加工等を行ったことを記載してください。' (the terms are quoted with their rows in naturalrate_facts.json). The book names the source as 出典：「労働力調査」（総務省統計局）、「消費者物価指数」（総務省統計局）を加工して作成.",
+  "used_in": [
+    44
+  ],
+  "fetch": "data/fetch/naturalrate44.py",
+  "notes": "Note 1 of the workbook's sheet ※注_Notes: '「年次」欄に「*」を付してある結果数値には、沖縄県分は含まれていない。沖縄の本土復帰により、1972年７月以降、沖縄県も調査の範囲に含まれた。' The '*' is the number format of the year cell (\\(0000\\)\"*\"); the fetch script reads it. Note 2 of the same sheet: the figures for 1953-1977 are the values for linking the series (時系列接続用数値) and differ from the annual reports of those years. The column 持家の帰属家賃を除く総合 of the file of 中分類指数 前年比 equals the file of 持家の帰属家賃を除く総合指数 前年比 for 1971-1986 (checked by the fetch script). Chapter 44 uses the CPI less imputed rent, which begins in 1948, for 1955-1985; all items begins in 1971 and is quoted for 1974 in the 史料说明 (23.2 against 24.5).",
+  "documents": {
+    "estatlt02_44": {
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000001082681&fileKind=0",
+      "format": "xlsx",
+      "sha256": "7ee865692c8882a8452c5d36f5c5111cb2f75ebee9d972205ebd4941eb5afdab",
+      "version": "労働力調査 長期時系列データ 表番号 2-1, 公開（更新）日 2026-01-30 (Excel workbook)",
+      "retrieved": "2026-11-12"
+    },
+    "estatcpixr44": {
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031431775&fileKind=1",
+      "format": "csv",
+      "sha256": "214378fec85a0a15a7d8c56c7928feae59119084a1e164b705a476c3b3bc249d",
+      "version": "2015年基準 持家の帰属家賃を除く総合指数 前年比（1948年～最新年）, 調査年月 2021年, 公開（更新）日 2022-01-21 (CSV, Shift_JIS)",
+      "retrieved": "2026-11-12"
+    },
+    "estatcpizny44": {
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000031431774&fileKind=1",
+      "format": "csv",
+      "sha256": "1bcf909df36f1c6d29a973180c475edb4877f5957cbb49083d1e84f3bc8092c3",
+      "version": "2015年基準 中分類指数 前年比（1971年～最新年）, 調査年月 2021年, 公開（更新）日 2022-01-21 (CSV, Shift_JIS)",
+      "retrieved": "2026-11-12"
+    }
+  }
+}
