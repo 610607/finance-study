@@ -1,4 +1,5 @@
-% 第 43 章骨架：导引框已定，正文待写。写作计划见 docs/PLAN.md“第 43 章”，写法见 docs/STYLE.md。
+% 第 43 章。数字与教学模型：checks/check_ch43.py；图：figsrc/fig_ch43.py。
+% 史料：planned_facts（取数脚本 data/fetch/planned43.py）。
 \chapter{成熟的计划经济：苏联、东欧、毛泽东时期的中国与南斯拉夫}\label{ch:planned}
 
 \begin{chapterguide}
@@ -12,4 +13,349 @@
 \guideprereq{\chref{ch:soviet}\enspace\nameref{ch:soviet}}
 \end{chapterguide}
 
-\chapterstub
+1962 年 6 月 1 日是星期五。那天，《东方曙光报》在第 1 版登出一封呼吁书\cite{zv1962}。这家报纸是格鲁吉亚共产党中央与格鲁吉亚劳动者代表苏维埃的机关报\cite{zv1962}。呼吁书的署名是苏共中央委员会与苏联部长会议，写给工人、集体农庄庄员、国营农场职工、知识分子与全体苏联人民\cite{zv1962}。两家机关在信里宣布，国家收购牛、猪、绵羊、山羊与家禽的价格平均提高 35\%\cite{zv1962}。肉与肉制品的零售价平均提高 30\%，黄油平均提高 25\%\cite{zv1962}。它们承认，涨价本身是“不可取的措施”，又说这是“临时的措施”\cite{zv1962}。同一版上，部长会议宣布糖的零售价平均降低 5\%，粘胶纤维布平均降低 20\%\cite{zv1962}。
+% 据: zv62_date, zv62_masthead, zv62_title, zv62_procure, zv62_35, zv62_retail, zv62_30, zv62_25, zv62_undesirable, zv62_temporary, zv62_sugar, zv62_viscose
+
+同一天，列宁格勒市委党组织部的信息组写好第 75 号情况汇报，送市委书记波波夫（G. I. Popov，生卒年未详）\cite{lenkom1962}。汇报的题目是劳动者对提高肉与黄油收购价、零售价的反应\cite{lenkom1962}。信息组写道，车间和科室组织了集体收听广播里的呼吁书，劳动者认为党和政府的措施正确而及时\cite{lenkom1962}。他们也记下了别的话。喀琅施塔得修建管理处的一名电工说：“共产主义我们建不成了，赶美国赶得太早了。”\cite{lenkom1962}
+% 据: lk_number, lk_date, lk_addressee, lk_title, lk_radio, lk_correct, lk_bogusov
+
+有人不肯上工。按信息组的记录，一家食品机械厂的车工到了车间，迟迟不开工，说他不同意提高零售价的决定\cite{lenkom1962}。有人找他谈话，指出他的行为不对，他才开始干活\cite{lenkom1962}。喀琅施塔得一个设计局的一名党员和一名预备党员要求马上开工会大会，主张削减机关开支和政府的别墅，不靠涨价\cite{lenkom1962}。党组织的委员会拒绝了他们，向他们讲明态度不对\cite{lenkom1962}。各单位还有人问，决定 5 月 17 日就作出了，为什么拖到 5 月 31 日才宣布\cite{lenkom1962}。干部们此前还在驳斥要涨价的说法\cite{lenkom1962}。
+% 据: lk_turner, lk_talk, lk_skb, lk_cuts, lk_refused, lk_dates, lk_rumour
+
+两家机关在呼吁书里也算了一笔账。卢布是苏联的货币单位。它们说，1961 年劳动者的货币收入比 1953 年多 420 亿卢布，增加了 87\%\cite{zv1962}。国营商业卖出的肉与肉制品，1953 年是 175.7 万吨，1961 年是 403.3 万吨\cite{zv1962}。按它们的说法，收入高了，人们想吃得好些，对肉、香肠与黄油自然有很高的需求\cite{zv1962}。它们又说，从前降价时没有足够的经济根据，肉与黄油降得比植物油、糖与土豆还多\cite{zv1962}。上一章末尾说，计划经济的政府管着几乎所有的价格（\chref{ch:eastasia}）。收入多了八成多，标价反而降过。计划经济里的“通胀”藏在哪里？
+% 据: zv62_income, zv62_87, zv62_sold, zv62_sold2, zv62_meat, zv62_demand, zv62_basis, zv62_cut
+
+\section{当时的世界}\label{sec:planned-world}
+
+1947 年 12 月 14 日，苏联换了货币，取消了配给，这在\chref{ch:reconstruction}已经讲过。当晚，美国驻莫斯科大使馆的代办在给国务卿的电报里说，配给卡废除了，除了农民市场与部分合作社的商品，零售价只有一个\cite{frus1947}。他说，现金按十比一兑换，政府没收了所有现金的 90\%，受打击最重的是农民\cite{frus1947}。戈比是辅币单位，100 戈比合 1 卢布。他提醒国务院，上一年 9 月配给的黑面包从 90 戈比提到 340 戈比\cite{frus1947}。那一年配给食品的价格平均提高了 180\%，低工资阶层的工资却几乎没涨\cite{frus1947}。肉、蔬菜、糖、油脂与鱼都留在配给价上，比一年前平均约高 200\%\cite{frus1947}。按他的说法，这次的新价格大体把上一年的涨价冻结了下来，苏联的宣传则把改革说成要人民作出的“最后的牺牲”\cite{frus1947}。
+% 据: fr47_title, fr47_date, fr47_radio, fr47_single, fr47_cash, fr47_expropriates, fr47_bread, fr47_180, fr47_200, fr47_freeze, fr47_sacrifice
+
+此后标价由国家定下，很少再动，与成本也不相干（本书的概括）。按两家机关的数，1961 年每公担活牛的生产成本是 88 卢布，国家的收购价只有 59.1 卢布\cite{zv1962}。公担是 100 公斤。活猪是 118 卢布对 82.3 卢布\cite{zv1962}。家禽是 133.5 卢布对 82.2 卢布\cite{zv1962}。收购价低于成本，农庄养得越多，亏得越多（本书的解读）。
+% 据: zv62_cattle, zv62_cattle88, zv62_cattle59, zv62_pigs, zv62_poultry, zv62_poultry2
+
+城里的标价也低于国家的花费。1961 年，国家收购、加工与销售每公担牛肉（按屠宰重）花 138.6 卢布，牛肉的平均零售价是 110.8 卢布\cite{zv1962}。猪肉是 167.2 卢布对 155.6 卢布\cite{zv1962}。每卖 1 公担牛肉，国家贴 27.8 卢布，约为零售价的四分之一（本书的计算）。两家机关说，国家从畜产品的买卖上亏损好几亿卢布\cite{zv1962}。按它们的说法，这时更低的零售价“只会打乱生产”\cite{zv1962}。零售价提高 30\% 以后，牛肉每公担约 144 卢布，才略高于国家的花费（本书的计算）。
+% 据: zv62_statecost, zv62_beefcost, zv62_beefretail, zv62_porkcost, zv62_pork, zv62_losses, zv62_lower, zv62_disorganize, zv62_30
+
+需求比供给涨得快。两家机关说，1953—1961 年苏联人口增加了 2,900 万，其中城市人口增加了 2,800 万\cite{zv1962}。同一时期，肉的产量（按屠宰重）从 580 万吨增加到 880 万吨\cite{zv1962}。国营商业卖出的肉增加到原来的 2.3 倍，产量只增加到 1.5 倍（本书的计算）。多卖的肉要从农庄手里收上来，收购价却低于成本（本书的解读）。
+% 据: zv62_population0, zv62_population, zv62_urban, zv62_slaughter, zv62_output, zv62_meat
+
+钱从哪里来？两家机关自己提了这个问题\cite{zv1962}。少分给庄员的劳动报酬，会挫伤他们的积极性\cite{zv1962}。从国防与工业里挪钱也不行，它们说，帝国主义还在，新的战争的危险也还在\cite{zv1962}。它们又说，近四年有 5000 万人、差不多全国人口的四分之一住进了新房，住宅也不能少盖\cite{zv1962}。收购价提高而零售价不动，靠提高伏特加、烟草等的价格来贴补，同样不行\cite{zv1962}。按它们的说法，肉不够的时候，这会给投机留下余地，居民现在已经要向借肉荒发财的人多付很多钱\cite{zv1962}。标价以外的那个价格，在这里露了一面（本书的解读）。
+% 据: zv62_where, zv62_wages, zv62_wages2, zv62_war, zv62_housing, zv62_quarter, zv62_vodka, zv62_vodka2, zv62_speculation, zv62_overpay
+
+谁决定，谁承担，这里看得清楚。定价的是党中央与部长会议，提高收购价是把钱转给集体农庄与国营农场，付钱的是城里买肉的人（本书的概括）。
+
+列宁格勒的汇报里，支持的话多是为了农业，也有人说，只要不打仗就行\cite{lenkom1962}。不满的话指向别处。一家电器厂的工长说，不该给糖和粘胶纤维布降价\cite{lenkom1962}。面包托拉斯一家修理厂的女工提议给高薪的人减薪，收走他们的别墅和汽车\cite{lenkom1962}。金属工厂的一名铣工说，车间的工人骂赫鲁晓夫（Nikita Khrushchev，1894—1971）给外国的援助太多\cite{lenkom1962,loc43}。波罗的海工厂有人问，赫鲁晓夫 8 年来为什么还没有把农业搞好\cite{lenkom1962}。
+% 据: lk_war, lk_shirkov, lk_shirkov2, lk_makarenko, lk_makarenko2, lk_panov, lk_baltic, loc_khrushchev
+
+东欧各国也是这样的计划经济，科尔奈的书讲的正是它们\cite{kornai1980}。新中国照苏联的样子建立了计划经济。Meng、Qian 与 Yared 说，当时约 80\% 的人口务农，政府把征购粮食看作发展的关键\cite{mqy2010}。
+% 据: k80_scope, mqy_soviet, mqy_agri
+
+南斯拉夫走了另一条路。世界银行的考察团在 1978 年的报告里写道，战后第一个计划的头两年产出增长很快，投资率升到 30\% 以上\cite{worldbank1978yu}。1948 年年中以后，它与苏联和情报局各国决裂，计划无法完成\cite{worldbank1978yu}。1950 年起，它尝试以社会所有制与工人自治为基础建立新的经济秩序\cite{worldbank1978yu}。考察团说，这样做的动机很复杂。在南斯拉夫人看来，自治体现了马克思主义设想的社会主义国家，工人按劳取酬，不再与生产资料的所有权分离\cite{worldbank1978yu}。自治也让一个多元的社会里不同的利益可以表达、协调\cite{worldbank1978yu}。
+% 据: wb78_mission, wb78_invest, wb78_break, wb78_1950a, wb78_1950, wb78_motive, wb78_marx, wb78_plural
+
+\section{短缺与被压抑的通胀}\label{sec:planned-shortage}
+
+匈牙利经济学家科尔奈（János Kornai，1928—2021）1980 年出版了《短缺经济学》\cite{kornai1980,loc43,gnd43}。他说，“短缺”是一大类现象的总称\cite{kornai1980}。最显眼的是在面包店、肉店门前排队，也有看不见的排队，比如等着装电话、等着住院\cite{kornai1980}。生产里也一样，缺劳力，缺材料，缺零件，缺电\cite{kornai1980}。他说，人们在诊所和商店里排队，丢掉了许多闲暇；短缺还影响人与人的关系，包括决定配给的人与领受配给的人之间的关系\cite{kornai1980}。文献里的叫法很多，被压抑的通胀是其中之一（\chref{ch:alternatives}），他自己又添了“抽吸”一词\cite{kornai1980}。他说这些叫法并不完全等同\cite{kornai1980}。
+% 据: k80_title, k80_shortage, k80_queue, k80_production, k80_leisure, k80_rationing, k80_names, k80_synonyms, loc_kornai, gnd_kornai
+
+他讲的是东欧的小国，书是根据匈牙利的经验写的，苏联因为幅员巨大而有的特点与南斯拉夫都不在其内\cite{kornai1980}。他还说，匈牙利 1968 年改革以后，企业的自主权扩大了，当期生产的计划指令取消了，市场的作用增加了\cite{kornai1980}。书里讲的主要是改革以前的传统体制\cite{kornai1980}。
+% 据: k80_scope, k80_hungary, k80_traditional
+
+科尔奈拿短缺与失业对照。他说，资本主义的问题是开工不足、总需求偏低与失业，社会主义经济的问题正好符号相反，是过热、总需求偏高与缺劳力\cite{kornai1980}。按他的说法，理解社会主义经济，短缺的地位就像研究资本主义时的失业\cite{kornai1980}。投资品市场的紧张，长期的国际收支逆差与外汇短缺，他也归入同一类现象\cite{kornai1980}。他还说，天天经历短缺的人容易把某一面看得太简单，从外面看的人只凭游客的印象，往往带着偏见\cite{kornai1980}。
+% 据: k80_sign, k80_central, k80_investment, k80_tourist
+
+\subsubsection{被迫替代}
+
+计划给企业规定了投入的组合，物资平衡表要在纸面上让每种物资的供给与需求相等（\chref{ch:soviet}）。实际短了一种投入，企业就得换做法。科尔奈举螺丝厂为例。工艺规定用 10 号钢，可这种钢用完了\cite{kornai1980}。厂里可以改用更贵的 11 号钢，也可以改用 9 号钢，螺丝就不那么耐用\cite{kornai1980}。他把这种因为缺货而改变投入组合的做法叫作被迫替代，说它看来是短缺经济里生产上最常见的即时调整\cite{kornai1980}。他在第 4 章讲买东西的过程，也用了这个说法\cite{kornai1980}。标价没有变，买到的东西变了，物价指数量不到（本书的解读）。
+% 据: k80_plan, k80_screw, k80_forced, k80_frequent, k80_ch4
+
+\subsubsection{货币过剩}
+
+标价不动，钱却越来越多，这与\chref{ch:greekroman}的式~\eqref{eq:greek-ceiling}是同一个逻辑。名义价格钉住了，需求每年往外移，短缺每年扩大（本书的解读）。被压抑的通胀可以用\chref{ch:reconstruction}的式~\eqref{eq:reconstruction-overhang}来量。价格固定在$\bar P$，居民愿意持有的货币是$k\bar PY$，多出来的$M-k\bar PY$就是过剩的货币。放开价格，市场出清的价格水平是$P=M/(kY)$。多出来的钱买不到东西，只能存着，这就是强制储蓄（本书的解读）。
+
+\begin{example}{藏起来的价格水平}\label{ex:planned-overhang}
+设 1953 年苏联的消费品市场没有货币过剩，居民的货币正好等于$k\bar PY$。（1）到 1961 年，居民的货币与收入一样增加 87\%（收入的增幅是呼吁书的数），按固定价格买得到的消费品只增加 50\%（教学用的假设），$k$不变。市场出清的价格水平比标价高多少？（2）过剩的货币占居民货币的几成？（3）肉类占消费支出的 20\%（教学用的假设），只把肉价提高 30\%，平均标价提高多少？
+\solution
+（1）$P/\bar P=1.87/1.50\approx1.25$，藏起来的价格水平比标价高约 25\%。（2）$1-1.50/1.87\approx0.20$，约两成。（3）$0.20\times30\%=6\%$，平均标价只提高 6\%，离 25\% 还远，过剩的货币大部分还在（本书的计算）。
+\end{example}
+% 据: zv62_87, zv62_30
+
+\subsubsection{软预算约束}
+
+钱多了为什么不在价格上露面？1986 年，科尔奈在《Kyklos》上专门讨论了软预算约束\cite{kornai1986}。他说，超出收入的开支由别的机构、通常是国家来付，企业又很有把握地这样预期，预算约束就软了\cite{kornai1986}。他把这种现象同国家对企业的“家长式”角色联在一起\cite{kornai1986}。\chref{ch:soviet}讲过，Gregory 与 Harrison 把软预算约束追溯到斯大林的工业化。
+% 据: k86_journal, k86_soft, k86_paternal
+
+科尔奈列了四种软化的办法，即可以讨价还价的补贴、可以讨价还价的税、不必认真偿还的信贷、按成本加成随时调整的行政价格\cite{kornai1986}。他说，在软约束的企业那里，货币多少是“被动的”，管理需求只有在预算约束足够硬时才起作用\cite{kornai1986}。企业的需求于是几乎没有边，短缺就成了常态（本书的解读）。\chref{ch:solow}用替代弹性低来读苏联的增长放缓，把激励的解释留了下来。软预算约束是一种激励上的解释，亏损的企业照样活着，就没有理由省着用资本（本书的解读）。
+% 据: k86_subsidy, k86_tax, k86_credit, k86_price, k86_passive, k86_classical
+
+Kornai、Maskin 与 Roland 2003 年把它写成一个承诺问题\cite{kmr2003}。一个项目先要投入 1。差项目到第二期没有回报，国家可以清算，拿回$R_L$，经理得到$B_L$\cite{kmr2003}。国家也可以再投入 1，第二期得到$R_p$，经理得到私人好处$B_p$\cite{kmr2003}。国家关心货币回报与经理的好处，还关心项目对经济其余部分的外部效应$E_p$，例如保住工人饭碗的政治好处\cite{kmr2003}。下面两式同时成立时，国家会给一个当初就不该做的项目续贷\cite{kmr2003}：
+\begin{keyeq}
+R_p+B_p+E_p-1>R_L+B_L ,\qquad R_p+B_p+E_p<2 .\label{eq:planned-sbc}
+\end{keyeq}
+他们说，前一式是事后的标准，第一笔投入已经沉没，后一式是事前的标准\cite{kmr2003}。他们把续贷的概率记作$s$，只要$sB_p+(1-s)B_L\ge0$，经理就会把差项目报上来\cite{kmr2003}。
+% 据: kmr_setup, kmr_poor, kmr_liquidate, kmr_refinance, kmr_welfare, kmr_political, kmr_ineq, kmr_exante, kmr_submit
+
+\begin{example}{一座保饭碗的工厂}\label{ex:planned-sbc}
+设$R_p=0.6$，$B_p=0.2$，$E_p=0.5$，$R_L=0.2$，$B_L=-0.1$（教学用的假设）。（1）差项目会不会续贷？它值不值得做？（2）经理报不报差项目？（3）若国家不在乎工人的饭碗，$E_p=0$呢？
+\solution
+（1）事后$0.6+0.2+0.5-1=0.3$，大于清算的$0.2-0.1=0.1$，国家续贷。事前$0.6+0.2+0.5=1.3<2$，这个项目当初就不该做。（2）国家必然续贷，$s=1$，经理的所得是$B_p=0.2\ge0$，他会报。国家若能让人相信续贷的概率低于$0.1/0.3\approx0.33$，他就不报（本书的计算）。（3）事后$0.6+0.2-1=-0.2<0.1$，国家清算，约束是硬的。软化约束的正是保饭碗的那$0.5$（本书的解读）。
+\end{example}
+
+\begin{compare}{硬预算约束与软预算约束}{硬预算约束}{软预算约束}
+\cmprow{补贴}{不随超支追加\cite{kornai1986}}{可以讨价还价，随超支调整\cite{kornai1986}}
+\cmprow{税}{规则统一，长期不变，严格征收\cite{kornai1986}}{规则可以商量，税率几乎按企业量身定做\cite{kornai1986}}
+\cmprow{信贷}{合同执行到底，可以破产、清算\cite{kornai1986}}{容忍拖欠，可以展期、重新安排\cite{kornai1986}}
+\cmprow{行政价格}{定下以后约束开支\cite{kornai1986}}{按成本加成，几乎自动随成本上调\cite{kornai1986}}
+\cmprow{货币政策}{管理需求起作用\cite{kornai1986}}{货币是“被动的”\cite{kornai1986}}
+\cmpsum{科尔奈说，税与信贷的软硬看规则能不能执行，与税率或利率的高低无关\cite{kornai1986}。}
+% 据: k86_subsidy, k86_tax, k86_credit, k86_price, k86_passive
+\end{compare}
+
+\begin{case}{匈牙利 · 1982 · 利润的再分配}
+匈牙利 1968 年起改革，计划指令取消了，预算约束仍然是软的\cite{kornai1980,kornai1986}。科尔奈与 Matits 主持的研究组研究了 1982 年全部国有企业的财务状况，共 1755 家\cite{kornai1986}。他们先算出补贴与纳税以前的“原始利润”，再看国家拿走多少、补回多少\cite{kornai1986}。1982 年，补贴总额相当于原始利润总额的 0.91 倍，税收总额相当于 1.27 倍\cite{kornai1986}。经手的是 276 种税与补贴\cite{kornai1986}。
+
+再分配把利润拉平了。原来亏损的企业，再分配以后只有 11\% 仍然亏损，77\% 变成低利润\cite{kornai1986}。原来高利润的企业，只有 11\% 仍是高利润，46\% 降到低利润\cite{kornai1986}。科尔奈说，每年有少数企业关门，关不关门与盈利无关，投资多少与盈利也毫无相关\cite{kornai1986}。决定补谁、税谁的是国家的各个机关，付账的是赚钱的企业（本书的概括）。
+% 据: k80_hungary, k86_after, k86_team, k86_firms, k86_original, k86_t1, k86_276, k86_t3_loss, k86_t3_high, k86_exit, k86_invest
+\end{case}
+
+\section{中国：从统购统销到大饥荒}\label{sec:planned-china}
+
+中国的计划经济靠粮食。Meng、Qian 与 Yared 转引 Eckstein 说，1950 年代工业化占了政府支出的 43\%\cite{mqy2010}。征购的粮食供应城里的工业人口，也出口到苏联换设备和技术\cite{mqy2010}。中共中央 1981 年的历史决议讲资本主义工商业的社会主义改造时，把粮棉统购统销列为“一系列必要的措施”之一\cite{res1981}。全会在决议里说，第一个五年计划期间市场繁荣，物价稳定\cite{res1981}。1953—1956 年，工业总产值平均每年增长 19.6\%，农业总产值增长 4.8\%\cite{res1981}。
+% 据: res_title, res_date, mqy_43, mqy_export, res_tonggou, res_market, res_ffyp
+
+农村一步步集体化。Meng 等人说，土地改革到集体化分三个阶段\cite{mqy2010}。1952 年起，政府鼓励六到九户农民组成互助组，把土地和资产合在一起用\cite{mqy2010}。1954 年前后是后来所说的初级合作社，各户的收益看它入股的土地、资产与出的劳力\cite{mqy2010}。这时农民要按定额、按规定的低价向政府卖粮，余下的可以拿到市场上卖\cite{mqy2010}。约 5\% 的土地留作自留地，出产全归农户\cite{mqy2010}。他们转引 Spence 说，1957 年，全国 83\% 的猪与家禽出自自留地\cite{mqy2010}。到了高级社，农民只凭劳动领口粮，多干并不多得\cite{mqy2010}。
+% 据: mqy_phases, mqy_mutual, mqy_lowlevel, mqy_return, mqy_quota, mqy_plots, mqy_83, mqy_highlevel, mqy_marginal
+
+1958 年，决定换了方向。全会在决议里说，那年通过的总路线反映了人民改变落后面貌的愿望，缺点是“忽视了客观的经济规律”\cite{res1981}。毛泽东（1893—1976）和中央与地方不少领导人急于求成，没有经过认真的调查研究和试点，就“轻率地发动了”大跃进和农村人民公社化运动\cite{res1981,loc43}。Meng 等人转引 Spence 说，到 1959 年，93\% 的农地实行高级集体化，自留地取消了\cite{mqy2010}。他们又转引 Fairbank 说，私人之间的买卖也被禁止\cite{mqy2010}。按他们转引 Becker 的说法，1958 年秋，村民被鼓励在公共食堂里想吃多少吃多少\cite{mqy2010}。
+% 据: res_line, res_wish, res_line2, res_haste, res_survey, res_rash, loc_mao, mqy_93, mqy_markets, mqy_eat
+
+钢是这场运动的中心。Smil 说，毛泽东把钢产量当作这场运动的核心，数千万农民被派去开矿、烧炭、砌土炉炼铁，炼出的大多是又脆又硬的生铁\cite{smil1999}。他说，新成立的公社种粮食的地也少了，而粮食当时提供中国人八成以上的食物热量\cite{smil1999}。各地报上创纪录的丰收，用来证明公社的优越\cite{smil1999}。按 Smil 的说法，这些夸大的数字又成了向城市多调粮食、办免费公共食堂的理由，到 1959 年春，三分之一的省份已经闹饥荒\cite{smil1999}。全会在决议里也说，高指标、瞎指挥、浮夸风和“共产风”是这次左倾错误的主要标志\cite{res1981}。
+% 据: smil_steel, smil_iron, smil_grain, smil_fabricated, smil_spring, smil_spring2, res_symptoms
+
+1959 年 7 月，中共中央政治局在庐山开会。全会在决议里说，从 1958 年底到庐山会议前期，毛泽东和党中央曾经努力纠正已经觉察到的错误\cite{res1981}。Meng 等人转引 Becker 说，彭德怀（1898—1974）那年春天下乡看过，在给毛泽东的私人信里讲了干活的劲头下降、劳力被调离农业、征购过头这些问题\cite{mqy2010,loc43}。他们说，毛泽东在庐山用这封信把彭德怀当作右倾分子整肃\cite{mqy2010}。决议的说法是，庐山会议后期，毛泽东“错误地发动了”对彭德怀的批判，进而在全党开展“反右倾”斗争\cite{res1981}。全会说，这场斗争在经济上打断了纠正左倾错误的进程，使错误延续了更长时间\cite{res1981}。
+% 据: res_lushan_early, res_lushan, res_interrupt, mqy_peng, mqy_letter, mqy_purge, loc_peng
+
+\subsubsection{征购}
+
+产量降了，征购却多了。按 Li 与 Yang 的数（Meng 等人的附表，原始来源是农业部 1989 年的资料），粮食产量从 1958 年的 2 亿吨降到 1959 年的 1.7 亿吨\cite{mqy2010}。征购量从 5200 万吨增加到 6400 万吨\cite{mqy2010}。征购占产量的比例从 26\% 升到约 38\%\cite{mqy2010}。1959 年的征购量是 1952—1976 年各年里最多的（本书的计算）。Meng 等人说，若 1959 年的产量照前几年每年 4\% 的速度增长，征购只占产量的 32\%\cite{mqy2010}。他们转引 Becker 说，饥荒的死亡大多发生在 1960 年 1 月和 2 月，是粮食征走以后的两三个月\cite{mqy2010}。每个农业劳动者留下的粮食，从 268 公斤降到 193 公斤\cite{mqy2010}。Meng 等人说，1959 年出口到苏联的粮食约 430 万吨，约为当年产量的 2.3\%\cite{mqy2010}。
+% 据: a8_1958, a8_1959, a8_source, mqy_38, mqy_32, mqy_janfeb, mqy_fn13, mqy_fn13b
+
+\fig{planned_grain}{中国的粮食产量与征购，1952—1976 年。(a) 产量与征购量（百万吨）。(b) 征购占产量的比例（\%），1959 年最高。数据：Li 与 Yang（2005），据 Meng、Qian 与 Yared（2010）附表 A8 的转引，原始来源是农业部（1989），24 个省的样本。}{fig:planned_grain}
+% 据: a8_title, a8_1952, a8_1953, a8_1954, a8_1955, a8_1956, a8_1957, a8_1958, a8_1959, a8_1960, a8_1961, a8_1962, a8_1963, a8_1964, a8_1965, a8_1966, a8_1967, a8_1968, a8_1969, a8_1970, a8_1971, a8_1972, a8_1973, a8_1974, a8_1975, a8_1976
+
+征购量是事先定下的。Meng、Qian 与 Yared 用“不灵活”来形容当时的征购制度，指政府难以收集新的信息、难以据此调整\cite{mqy2010}。他们说，征购按各地过去的产量定，总产量变了也调不过来\cite{mqy2010}。设第$i$个地区的产量是$Y_i$，征购定额$\bar Q_i$按正常年景的产量事先定下，留在当地的粮食是
+\begin{keyeq}
+C_i=Y_i-\bar Q_i .\label{eq:planned-quota}
+\end{keyeq}
+产量下降，定额不变，下降的部分全部落在留粮上（本书的推导）。产量高的地区定额也高，同样比例的减产，它留下的粮食减得更多（本书的推导）。
+% 据: mqy_inflexible, mqy_past
+
+\begin{example}{定额不变的一年}\label{ex:planned-quota}
+仿照 Meng、Qian 与 Yared 的算例，数是本书设的\cite{mqy2010}。甲、乙两个地区各需要 100 单位粮食才能活下去，人不许迁移。正常年景甲产 250，乙产 150，定额按正常年景定为甲 130、乙 30，两地各留 120，城里得 160。（1）这一年两地都减产 20\%，定额不变，两地各留多少？（2）若城里只拿 120，两地能不能都留够 100？
+\solution
+（1）甲产 200，留$200-130=70$；乙产 120，留$120-30=90$。产量高的甲反而缺得更多。（2）甲交 100、乙交 20，正好 120，两地各留 100（本书的计算）。粮食总量是够的，差在定额不变。
+\end{example}
+% 据: mqy_model, mqy_movement
+
+\subsubsection{饥荒有多大}
+
+官方的数字也显示了这场饥荒。按国家统计局的汇编，全国的死亡率 1957 年是每千人 10.8 人，1960 年是每千人 25.4 人\cite{nbs1999}。出生率从 1957 年的每千人 34.0 人降到 1961 年的每千人 18.0 人\cite{nbs1999}。1960 年的自然增长率是每千人 $-4.6$ 人，人口减少了\cite{nbs1999}。年底的总人口从 1959 年的 67,207 万降到 1961 年的 65,859 万（\figref{fig:planned_vital}）\cite{nbs1999}。
+% 据: nbs_1957, nbs_1960, nbs_1961, nbs_1959, nbs_title
+
+\fig{planned_vital}{中国的官方出生率与死亡率，1949—1970 年（每千人）。阴影是 1959—1961 年。数据：国家统计局国民经济综合统计司编《新中国五十年统计资料汇编》（1999）表 A-1；1952、1957、1962、1965 与 1970 年与《中国统计年鉴 2000》表 4-2 相同。}{fig:planned_vital}
+% 据: nbs_1949, nbs_1950, nbs_1951, nbs_1952, nbs_1953, nbs_1954, nbs_1955, nbs_1956, nbs_1957, nbs_1958, nbs_1959, nbs_1960, nbs_1961, nbs_1962, nbs_1963, nbs_1964, nbs_1965, nbs_1966, nbs_1967, nbs_1968, nbs_1969, nbs_1970, nb2_title, nb2_1952, nb2_1957, nb2_1962, nb2_1965, nb2_1970
+
+\begin{example}{官方数字里的超额死亡}\label{ex:planned-excess}
+用汇编的死亡率与年底人口，年中人口取前后两个年底的平均。（1）以 1957 年的每千人 10.8 人为正常的死亡率，1959—1961 年多死了多少人？（2）以 1956—1958 年的平均每千人 11.4 人为正常呢？
+\solution
+（1）1959 年$66{,}601\text{万}\times(14.59-10.80)/1000\approx252$万，1960 年$66{,}707\text{万}\times14.63/1000\approx976$万，1961 年$66{,}033\text{万}\times3.44/1000\approx227$万，合计约 1,460 万。（2）三年依次约 213 万、936 万与 188 万，合计约 1,340 万（本书的计算）。这只是登记了的死亡。
+\end{example}
+% 据: nbs_1956, nbs_1957, nbs_1958, nbs_1959, nbs_1960, nbs_1961
+
+学者的估计高得多。Smil 说，1982 年第一次可靠的人口普查公布了分年龄的人口，才能估计 1959—1961 年的超额死亡\cite{smil1999}。美国人口学者最初算出 1,650 万到 2,300 万\cite{smil1999}。后来更细的研究是 2,300 万到 3,000 万\cite{smil1999}。他说，未发表的中国材料暗示接近 4,000 万\cite{smil1999}。Meng、Qian 与 Yared 在正文里给的范围是 1,700 万到 3,000 万\cite{mqy2010}。他们在附录里列了五家的估计，从 Coale（1981）的 1,650 万到 Banister（1987）的 3,000 万，说差别来自估计方法不同（\tabref{tab:planned-toll}）\cite{mqy2010}。
+% 据: smil_census, smil_first, smil_later, mqy_range, mqy_five
+
+\begin{table}[tbp]
+\centering\small
+\caption{1959—1961 年中国饥荒的超额死亡：几种估计（万人）}\label{tab:planned-toll}
+\begin{tabularx}{\linewidth}{@{}l Y l@{}}
+\toprule
+估计 & 依据 & 来源 \\
+\midrule
+约 1,460 & 官方死亡率，以 1957 年为正常 & 本书的计算 \\
+约 1,340 & 官方死亡率，以 1956—1958 年的平均为正常 & 本书的计算 \\
+1,650—2,300 & 1982 年普查的分年龄人口，美国人口学者最初的计算 & Smil（1999） \\
+2,300—3,000 & 更细的人口重建 & Smil（1999） \\
+接近 4,000 & 未发表的中国材料 & Smil（1999） \\
+1,650—3,000 & 五家的估计（Coale、Yao、Peng、Ashton 等与 Banister），方法各不相同 & Meng、Qian 与 Yared（2010）附录 \\
+\bottomrule
+\end{tabularx}
+\datasource{国家统计局国民经济综合统计司编《新中国五十年统计资料汇编》表 A-1（\exref{ex:planned-excess}）；Smil（1999）；Meng、Qian 与 Yared（2010）数据附录。}
+\end{table}
+% 据: smil_first, smil_later, mqy_five
+
+估计相差这么大，有三个原因（本书的概括）。第一，官方的登记漏了死亡。Smil 说，官方数字大大低估了这三年出生的减少与死亡的增加\cite{smil1999}。Meng 等人也说，官方的数字少报了死亡、多报了产量\cite{mqy2010}。第二，什么算正常的死亡率，各人取法不同，\exref{ex:planned-excess}里换一个基准就差约 120 万。第三，少生的不算死亡。Smil 说，饿死的约 3,000 万，少生或推迟出生的也差不多这么多\cite{smil1999}。
+% 据: smil_underestimate, mqy_understated, smil_30m
+
+\subsubsection{为什么会饿死人}
+
+官方的结论写在 1981 年的决议里。全会说，主要由于大跃进和反右倾的错误，加上当时的自然灾害和苏联政府撕毁合同，国民经济在 1959 年到 1961 年“发生严重困难”\cite{res1981}。它说，国家和人民遭到重大损失，没有给出死亡人数\cite{res1981}。Meng 等人说，政府曾把饥荒归于 1959 年的坏天气与低产量，学者估计天气至多能解释饥荒的 14\% 到 50\%\cite{mqy2010}。
+% 据: res_verdict, mqy_weather_claim, mqy_weather
+
+学者们讲了几种机制。Meng 等人列举的有：粮食生产的劳力与播种面积减少，公共食堂，公社削弱了干活的劲头，以及 Lin（1990）说的农民失去了退出公社的权利\cite{mqy2010}。他们转述 Li 与 Yang 说，除了天气，过度征购和把劳力调去办农村工业也起了作用，过度征购又让 1960—1961 年的产量进一步下降\cite{mqy2010}。
+% 据: mqy_causes, mqy_lin, mqy_liyang, mqy_liyang2
+
+Meng、Qian 与 Yared 自己的发现更尖锐。他们算出，1959 年的粮食产量差不多是全国人口维持生存所需的三倍\cite{mqy2010}。他们估计，一个人一天约要 804 卡热量才不致饿死\cite{mqy2010}。卡在这里指千卡，是热量的单位。按每公斤粮食供 3,587 卡算，合每人每年 82 公斤粮食\cite{mqy2010}。按 27 个省的人口，1959 年维持生存要 4,800 万吨粮食，产量多出 9,900 万吨\cite{mqy2010}。人均产量越高的地区，死亡率反而越高，这与平常的负相关正好相反\cite{mqy2010}。他们的解释是定额不变的征购，即\exref{ex:planned-quota}的机制\cite{mqy2010}。城里的口粮减了，却从来没有出现大规模的饿死\cite{mqy2010}。
+% 据: mqy_three, mqy_804, mqy_3587, mqy_82, mqy_sample, mqy_99, mqy_reversal, mqy_inflexible, mqy_urban
+
+饥荒在冬天突然来临。Meng 等人说，很多人相信，粮食集中储存加重了农村的短缺\cite{mqy2010}。农民记得的是丰收和公共食堂里的饱饭，不知道征购以后粮食已经不多，也就没有去争粮食的支配权\cite{mqy2010}。冬天粮食一下子吃光了，许多人没有料到\cite{mqy2010}。他们转引 Spence 说，据信死者有一半是十岁以下的孩子\cite{mqy2010}。1960 年春，政府减了城市的口粮，等于默认了饥荒，又把调进城的劳力送回农业\cite{mqy2010}。送回的人太少，种子与有机肥也已经耗掉了\cite{mqy2010}。中央与地方政府还阻止灾区的人外出找粮，他们说这无疑加重了死亡\cite{mqy2010}。
+% 据: mqy_storage, mqy_suspicion, mqy_surprise, mqy_children, mqy_spring, mqy_returned, mqy_migration
+
+Smil 的结论最直接。他说，干旱只是一个因素，这主要是人为的灾难，毛泽东负最大的责任\cite{smil1999}。他举了三类做法。一是不承认饥荒，迟迟不求外援，政府差不多三年才采取行动。二是收走农民一切私人生产粮食的手段，把他们赶进管理混乱的公社，还继续出口粮食。三是优先供应城市和统治精英\cite{smil1999}。决定的是毛泽东与中央，付出生命的主要是农村的人（本书的概括）。
+% 据: smil_manmade, smil_omission, smil_three, smil_commission, smil_provision
+
+Smil 还追问，把这么多党政官员的所作所为都归到领袖一人身上，站得住吗\cite{smil1999}？他说的是那些执行命令的人，他们强行集体化，少种粮食，伪造收成统计，从明显在挨饿的农民手里强行拿走粮食\cite{smil1999}。按他的说法，德国花了两代人去理解第三帝国，中国直面这段过去的时候还没有到\cite{smil1999}。
+% 据: smil_bureaucracy, smil_orders, smil_germany, smil_turn
+
+Meng 等人则强调，政府并不想要这场饥荒\cite{mqy2010}。他们说，共产党靠承诺结束饥荒起家，主要的根基在农村，领导人也知道承受不起苏联那样的饥荒\cite{mqy2010}。不想要，并不等于没有责任（本书的解读）。
+% 据: mqy_unintended, mqy_rural, mqy_afford
+
+纠正从 1960 年冬开始。全会说，那年冬天党中央和毛泽东开始纠正农村工作中的左倾错误，决定对国民经济实行“调整、巩固、充实、提高”的方针\cite{res1981}。Meng 等人转引 Gittings 说，1959—1960 年政府在工业与军事上的开支减少了 30\%\cite{mqy2010}。Smil 说，1961 年以后回到比较理性的政策，包括进口粮食，饥荒才结束\cite{smil1999}。1962 年 1 月，七千人参加的扩大的中央工作会议初步总结了大跃进的教训\cite{res1981}。全会说，1962 年到 1966 年，国民经济得到了比较顺利的恢复和发展\cite{res1981}。
+% 据: res_winter, mqy_gittings, smil_imports, res_7000, res_recovery
+
+\begin{pitfall}[粮食总产量够吃，就不会饿死人]
+1959 年中国的人均粮食产量比前一年少了 15\%，Meng、Qian 与 Yared 算出，产量仍比避免死亡所需的多出至少 205\%\cite{mqy2010}。饿死人的地方偏偏是产量高的地区\cite{mqy2010}。粮食在谁手里、能不能流到缺粮的人那里，比总量要紧。Smil 引 Sen 的话说，“统治者从来不挨饿”\cite{smil1999}。
+% 据: mqy_15, mqy_205, mqy_reversal, smil_sen
+\end{pitfall}
+
+\section{改革：柯西金与南斯拉夫}\label{sec:planned-reform}
+
+苏联的改革从计划指标入手。1965 年 9 月 29 日，苏共中央全会通过关于改进工业管理、完善计划工作、加强经济刺激的决议\cite{zv1965}。全会批准了中央主席团拟定、由部长会议主席柯西金（Aleksey Kosygin，1904—1980）在报告里提出的措施\cite{zv1965,loc43}。全会在决议里说，管理工业时“行政方法压倒了经济方法”，企业的经济核算在很大程度上流于形式\cite{zv1965}。企业受数目繁多的计划指标约束，奖励办法很难让职工关心企业的总成绩\cite{zv1965}。
+% 据: zv65_issue, zv65_date, zv65_title, zv65_kosygin, zv65_admin, zv65_formal, zv65_indicators, zv65_bonus, loc_kosygin
+
+决议开出的办法有两条。一是减少从上面下达给企业的计划指标，用好利润、价格、奖金、信贷这些经济杠杆\cite{zv1965}。二是工业改为按部门管理，按工业部门设立全联盟部与联盟兼共和国部\cite{zv1965}。全会认为，按地区管理工业妨碍了部门的专业化与不同经济区企业之间的合理联系\cite{zv1965}。全会也说，党和政府今后仍在价格、劳动报酬与财政上执行统一的政策\cite{zv1965}。康托罗维奇说过，计划经济要分散决策，就得有一套合理的价格体系（\chref{ch:soviet}）。这次改革没有放开价格，预算约束也没有变硬（本书的解读）。
+% 据: zv65_fewer, zv65_levers, zv65_ministries, zv65_territorial, zv65_unified
+
+南斯拉夫走得远得多。世界银行考察团说，1954—1974 年它的实际社会产品平均每年增长 7.2\%，人口每年增长 1.1\%，1975 年人均收入达到 1,480 美元\cite{worldbank1978yu}。考察团说，早些年的国内储蓄约占国内生产总值的 30\%，是“消费上相当大的牺牲”\cite{worldbank1978yu}。社会部门的就业每年增长 3.7\%，私人农业的劳力份额从 1953 年的 66\% 降到 1975 年的 33\%\cite{worldbank1978yu}。
+% 据: wb78_gmp, wb78_gmp2, wb78_pop, wb78_1480, wb78_savings, wb78_employment, wb78_agri, wb78_agri2
+
+南斯拉夫的自治分两段。考察团说，自治始于 1950 年，写进了一部由工人集体管理国营企业的法律，目的是让工人对日常经营有越来越大的影响\cite{worldbank1978yu}。计划、价格与收入政策、财政与货币政策，仍然牢牢握在国家手里\cite{worldbank1978yu}。1963 年的宪法与 1965 年的改革（实际是 1964—1967 年的一系列措施）改了这一点\cite{worldbank1978yu}。投资基金不再由中央分配，改由自治的银行发放，宏观平衡的计划大体只作参考\cite{worldbank1978yu}。按考察团的说法，工人从此独立于国家管理自己的事，主要受市场的约束\cite{worldbank1978yu}。考察团也说，这次改革削弱了宏观管理，剩下的收入与价格政策被看作违背自治的精神，执行得三心二意\cite{worldbank1978yu}。
+% 据: wb78_law, wb78_purpose, wb78_state, wb78_1965, wb78_banks, wb78_indicative, wb78_market, wb78_weakened, wb78_halfhearted
+
+\subsubsection{伊利里亚企业}
+
+自治企业的目标是什么？Yusuf 转述说，Ward 1958 年的模型表明，自治企业的成员只追求收入，会抑制投资\cite{yusuf1977}。顺着这个思路，设企业由成员管理，产量是$q(L)$，价格是$p$，固定开支是$R$，成员要让每个人的收入$y=(pq(L)-R)/L$最大（本书的推导）。对$L$求导，得
+\begin{keyeq}
+p\,q'(L)=y=\frac{pq(L)-R}{L} .\label{eq:planned-illyria}
+\end{keyeq}
+新成员的边际产值要等于每个人的平均收入，企业才会多收一个人（本书的推导）。资本主义企业拿边际产值比工资，自治企业拿它比现有成员的收入。Yusuf 讲的是投资，价格变了产量怎样变，是本书顺着这个目标推出来的。Yusuf 也说，常有人提到，企业不愿合并、不愿多招人，因为那意味着要与别人分收入\cite{yusuf1977}。
+% 据: yu_ward0, yu_ward, yu_hire
+
+\begin{example}{价格上涨，产量下降}\label{ex:planned-illyria}
+设$q(L)=10\sqrt L$，$R=100$（教学用的假设）。（1）$p=1$时，自治企业有多少成员？产量与每人收入各是多少？（2）$p=1.25$呢？
+\solution
+由式~\eqref{eq:planned-illyria}，$5p\sqrt L=10p\sqrt L-R$，$\sqrt L=R/(5p)$。（1）$\sqrt L=20$，$L=400$，产量 200，每人收入$(200-100)/400=0.25$。（2）$\sqrt L=16$，$L=256$，产量 160，每人收入$(200-100)/256\approx0.39$（本书的计算）。价格上涨，现有的成员宁可少收人，产量反而下降了。
+\end{example}
+
+考察团的记录与模型有一部分吻合。他们说，1965 年以后社会部门的就业增长比以前慢，1965—1967 年企业为了提高劳动生产率，就业一度下降\cite{worldbank1978yu}。他们又说，这看来不是经济吸收就业的能力变差了\cite{worldbank1978yu}。1965 年放宽了出国的条件，出国做工吸收的劳力与社会部门差不多一样多\cite{worldbank1978yu}。到 1970 年代初，尽管每年有大批劳力离开农业、出国，公开的失业仍明显增加\cite{worldbank1978yu}。Yusuf 则说，按 Horvat 的研究，1960 年代投资不足从来不是问题，企业反倒投资过多\cite{yusuf1977}。
+% 据: wb78_slower, wb78_capacity, wb78_capacity2, wb78_rationalize, wb78_migration, wb78_unemployment, yu_horvat
+
+南斯拉夫的通胀是公开的。考察团说，1960 年代初以前，价格受国家相当严格的管制，很稳定\cite{worldbank1978yu}。价格放开以后，尤其是 1965 年以后，增长伴随着“越来越高的通胀”\cite{worldbank1978yu}。他们把原因之一归于体制内在的通胀倾向。工资易升难降，许多部门按成本加成定价，名义工资的上涨很快就变成价格的压力\cite{worldbank1978yu}。货币政策成了主要的工具，效果却打了折扣\cite{worldbank1978yu}。考察团说，企业之间可以互相赊账，抵消银根的收紧，企业又很少被迫清算，财务上的责任有限\cite{worldbank1978yu}。这就是科尔奈说的软预算约束，只是这里的通胀摆在了标价上（本书的解读）。
+% 据: wb78_controlled, wb78_inflation, wb78_after1965, wb78_bias, wb78_markup, wb78_translated, wb78_monetary, wb78_liquidation
+
+\begin{compare}{柯西金改革与南斯拉夫的自治}{柯西金改革（1965）}{南斯拉夫的自治}
+\cmprow{谁决定}{苏共中央全会，按部门设立的部\cite{zv1965}}{工人自治，社会所有制\cite{worldbank1978yu}}
+\cmprow{计划}{减少下达给企业的指标\cite{zv1965}}{1950 年起另建新的经济秩序\cite{worldbank1978yu}}
+\cmprow{价格}{价格政策仍由中央统一\cite{zv1965}}{1960 年代初以后放开\cite{worldbank1978yu}}
+\cmprow{通胀}{被压抑，标价不动}{公开，越来越高\cite{worldbank1978yu}}
+\cmprow{劳力}{国家安排}{1965 年以后出国做工，公开失业增加\cite{worldbank1978yu}}
+\cmpsum{两边都想用利润与价格调动企业。苏联只减了指标，南斯拉夫连价格也放了，通胀于是从排队里走到了标价上（本书的概括）。}
+% 据: zv65_ministries, zv65_fewer, zv65_unified, wb78_1950, wb78_controlled, wb78_inflation, wb78_migration, wb78_unemployment
+\end{compare}
+
+\section{数据检验与反例}\label{sec:planned-data}
+
+官方的数字可以拿两个版本对照。《中国统计年鉴 2000》表 4-2 的出生率与死亡率，1952、1957、1962、1965 与 1970 年，与 1999 年的汇编一致（本书的核对）\cite{nbs2000,nbs1999}。这张表没有列 1958—1961 年。两个版本同出一源，对得上并不证明登记完整（本书的解读）。统计能信多少，在\chref{ch:datareliability}。
+% 据: nb2_1952, nb2_1957, nb2_1962, nb2_1965, nb2_1970
+
+同一部汇编的数字是事后改过的。Meng 等人用的是汇编里的分省数据，他们说，国家统计局事后修正了这些数据，弥补当年的误报与缺漏\cite{mqy2010}。据他们所知，修正的具体做法没有文字记录，比较当年的报告与修正后的数，产量被大幅调低了\cite{mqy2010}。1958 年 8 月 1 日的《人民日报》说，湖北一个县的水稻亩产超过 7,500 公斤\cite{mqy2010}。亩是中国的面积单位，15 亩约合 1 公顷（本书的计算）。修正后的统计给出，那个省的粮食实际亩产接近 120 公斤\cite{mqy2010}。
+% 据: mqy_csdm50, mqy_revised, mqy_hubei, mqy_methods_unknown, mqy_120
+
+死亡的数字也有出入。Meng 等人说，与官方统计人员谈过以后，他们相信修正后的人口数据可能仍然少算了饥荒造成的人口损失\cite{mqy2010}。他们的数据里，1960 年的死亡率将近每千人 22 人，约为 1950 年代最低点的两倍\cite{mqy2010}。汇编的全国数是每千人 25.4 人。他们的分省数据只有 27 个省，四川、西藏与海南不在其内，两个数口径不同（本书的核对）\cite{mqy2010,nbs1999}。
+% 据: mqy_understate_pop, mqy_fn18, mqy_fn17, mqy_27, nbs_1960
+
+公开涨价在计划经济里是政治事件。1970 年 12 月 13 日，波兰政府宣布调整物价，有升有降\cite{frus1970}。美国驻华沙大使馆在 16 日的电报里说，街上的波兰人普遍认为这等于购买力减少一成到一成半\cite{frus1970}。据瑞典驻格但斯克领事的报告，14 日下午，格但斯克有八百到一千名工人示威，喊着打倒哥穆尔卡（Władysław Gomułka，1905—1982）的口号\cite{frus1970,loc43}。据报约有 300 人受伤，其中有民警，使馆说无法从独立的来源证实死人的报道\cite{frus1970}。
+% 据: fr70_date, fr70_announce, fr70_cut, fr70_workers, fr70_injured, loc_gomulka
+
+几天以后，哥穆尔卡和四名亲信成了替罪羊，盖莱克（Edward Gierek，1913—2001）接替了他\cite{frus1970,loc43}。美国总统的国家安全事务助理 20 日在给总统的备忘录里说，新的领导已经暗示要提高工资、重新审查经济计划\cite{frus1970}。备忘录还猜测，苏联领导人也许认为，是与西德的条约让哥穆尔卡以为可以把不得人心的涨价压给居民\cite{frus1970}。涨价一旦公开，账就算到了决定涨价的人头上（本书的解读）。
+% 据: fr70_memo, fr70_scapegoats, fr70_gierek, fr70_wages, fr70_treaty, loc_gierek
+
+\section{争论}\label{sec:planned-debate}
+
+\subsubsection{短缺是不是货币过剩}
+
+\exref{ex:planned-overhang}把短缺当作货币过剩来算，放开价格，或者收走多余的钱，短缺就消失了。科尔奈的看法不同。他说，被压抑的通胀与短缺这些叫法并不完全等同\cite{kornai1980}。在软约束的企业那里，货币是“被动的”，光收紧货币治不了短缺\cite{kornai1986}。两种看法各占多大分量，至今没有定论。
+% 据: k80_synonyms, k86_passive
+
+\subsubsection{饥荒的机制}
+
+决议把天灾与苏联撕毁合同列为次要原因，学者们把重点放在政策上\cite{res1981,smil1999}。在政策里面，激励、劳力调动、过度征购与定额不变各占多少，Meng、Qian 与 Yared 的发现与 Lin（1990）的解释侧重不同\cite{mqy2010}。各种机制的分量，至今没有定论。
+% 据: res_verdict, smil_manmade, mqy_causes, mqy_lin
+
+\subsubsection{自治企业会不会少投资}
+
+Ward 的模型说会，Horvat 的研究说 1960 年代企业反倒投资过多\cite{yusuf1977}。Yusuf 说，反驳 Ward 的人指出，模型假定工人完全不看重将来的收入，也只有一种生产要素\cite{yusuf1977}。自治企业的投资究竟偏多还是偏少，至今没有定论。
+% 据: yu_ward0, yu_horvat, yu_critique, yu_single
+
+\begin{deeper}[史料说明]
+\textbf{版本。}1962 年 6 月 1 日的呼吁书与 1965 年 9 月 29 日的全会决议，据格鲁吉亚国家议会图书馆数字图书馆里《东方曙光报》的扫描本。两期的文字层都把几栏混在一起，1965 年那期的词里还夹着空格，决议的引文按页面图像读。列宁格勒的情况汇报据 istmat.org 网站的录文，又对照了同一网站上的档案扫描件。中共 1981 年的决议据共产党员网转载的中国政府网版本。国家统计局的汇编据南加州大学图书馆网页上的扫描摘录，只用来核对。Meng、Qian 与 Yared（2010）用的是 NBER 第 16361 号工作论文。科尔奈 1980 年的书只读了第一卷。
+
+\textbf{转述与间接的证词。}Spence、Becker、Eckstein、Fairbank、Gittings 与 Li 与 Yang 的话，都是 Meng 等人的转引。Lin（1990）没有读，正文只按 Meng 等人的列举提到。Ward（1958）与 Horvat 的研究只据 Yusuf（1977）的转述。美国人口学者与后来的研究，只据 Smil 的概括。1958 年《人民日报》的亩产数、Coale 等五家的估计与国家统计局修正数据的情形，据 Meng 等人的转述。苏联的收入与肉类销量是呼吁书自己的数，没有找到别的来源。
+
+\textbf{没有取得的。}新切尔卡斯克 1962 年 6 月的事件，没有读到官方或档案的记载，正文不写。中国的户口登记条例与统购统销的决定，没有读到原文。苏联居民储蓄存款与零售额的系列、Portes 与 Winter（1980）对短缺的计量，都没有取得，\exref{ex:planned-overhang}因此用教学的假设。Coale（1984）需要登记电子邮件才能下载，没有取得。
+
+\textbf{几个证人不合。}Meng 等人的附表 A8 给 1959 年每个农业劳动者的留粮是 193 公斤，他们的脚注转述 Li 与 Yang 时，说 1959 年人均留粮 223 公斤，两处口径不同，正文只用附表。Meng 等人在第 1 页说死于饥荒的有 1,700 万到 3,000 万人，附录列的最低一家是 1,650 万，正文两处都照录。国家统计局汇编的表 A-1 里，1949 年的农业人口印作 9441 万，非农业人口印作 44726 万，以后各年也是这样，两栏的表头看来印反了，正文不用这两栏。同一张表印的 1969 年死亡率是每千人 8.63 人，按同一行的出生率 34.11 与自然增长率 26.08 算应是 8.03（本书的计算），三个数里有一个印错了，\figref{fig:planned_vital}照印的数画。代办 1947 年说黑面包从 90 戈比提到 340 戈比是涨了 275\%，按这两个数算是约 278\%（本书的计算），正文只用两个价格。
+\end{deeper}
+% 据: zv62_date, zv65_date, lk_scan, lk_scan_dates, lk_archive, res_source, nbs_title, nbs_compiler, nbs_table, nbs_title, mqy_number, k80_title, a8_1959, mqy_fn19, mqy_range, mqy_five, nbs_1949, nbs_1969, fr47_bread
+
+\section{今天还剩什么}\label{sec:planned-legacy}
+
+\textbf{软预算约束。}Kornai、Maskin 与 Roland 举的例子里，有 1970 年代波兰的诺瓦胡塔，也有英法之间的海峡隧道\cite{kmr2003}。他们说，事前与事后的标准不一致，归根到底是因为第一笔投资已经沉没，问题不在政府追求社会主义的目标\cite{kmr2003}。按他们的说法，有意思的问题倒是资本主义经济里为什么没有那么多软预算约束，一个可能的答案是资金的来源分散\cite{kmr2003}。转轨中的国有企业与银行怎样硬化预算约束，在\chref{ch:transition}。中国的信贷在\chref{ch:chinacredit}。
+% 据: kmr_examples, kmr_sunk, kmr_capitalist, kmr_dispersed
+
+\textbf{货币过剩。}标价不动，钱就积在居民手里。苏联末期的货币过剩与价格放开，在\chref{ch:transition}。公开的通胀走到极端是恶性通胀，在\chref{ch:hyperinflation}。
+
+\textbf{饥荒的教训。}粮食的总量与谁能吃到粮食是两回事。决议没有公布死亡人数，学者的估计相差一倍以上（\tabref{tab:planned-toll}）。毛泽东时期的统计能信多少，在\chref{ch:datareliability}。
+
+\begin{takeaways}
+\begin{itemize}
+\item 计划经济的标价由国家规定，很少调整。1953—1961 年苏联劳动者的货币收入增加 87\%，牛肉与猪肉的零售价却低于国家的花费。
+\item 被压抑的通胀藏在排队、被迫替代、变坏的质量与积在居民手里的货币里；按式~\eqref{eq:reconstruction-overhang}，藏起来的价格水平等于$M/(kY)$。
+\item 软预算约束是一个承诺问题。项目的第一笔投资沉没以后，续贷在事后合算，国家于是给事前就不该做的项目续贷。
+\item 1959—1961 年的中国饥荒，用官方死亡率算出的超额死亡约 1,340 万到 1,460 万，学者的估计从 1,650 万到 3,000 万，最高的接近 4,000 万。决定的是毛泽东与中央，付出生命的主要是农村的人。
+\item 柯西金改革减少了计划指标，价格仍由国家规定；南斯拉夫的自治放开了价格，通胀变成公开的，失业与出国做工也随之增加。
+\end{itemize}
+\end{takeaways}
+
+\begin{selfcheck}
+\begin{enumerate}
+\item 按\exref{ex:planned-overhang}，消费品若增加 70\%，藏起来的价格水平比标价高多少？
+\item 按\exref{ex:planned-sbc}，$E_p$至少要多大，国家才会续贷？
+\item 按\exref{ex:planned-quota}，两地都减产 10\%，定额不变，甲、乙各留多少？
+\item 按\exref{ex:planned-illyria}，$p=2$时自治企业有多少成员，产量多少？
+\item 以 1962—1965 年平均的每千人 10.3 人为正常的死亡率，\exref{ex:planned-excess}的超额死亡是多少？
+\item Meng、Qian 与 Yared 为什么说饥荒不是粮食总量不够造成的？
+\end{enumerate}
+\end{selfcheck}
+
+\begin{answers}
+\item $1.87/1.70=1.10$，高约 10\%。
+\item $0.6+0.2+E_p-1>0.1$，$E_p>0.3$。
+\item 甲产 225，留 95；乙产 135，留 105。
+\item $\sqrt L=10$，$L=100$，产量 100。
+\item 三年依次约 288 万、1,012 万与 262 万，合计约 1,560 万。
+\item 1959 年的产量约为维持生存所需的三倍，死亡却集中在人均产量高的地区；问题出在定额不变的征购与不许迁移。
+\end{answers}
+
+回到 1962 年 6 月 1 日的列宁格勒。两家工厂和一个设计院的人问，党和政府为什么走提高收购价与零售价的路，而不向人民借钱\cite{lenkom1962}。借钱是把多余的货币收走，涨价是把它花掉，两样都是让居民付账（本书的解读）。两家机关在呼吁书里还说，苏联早就解决了失业问题\cite{zv1962}。计划经济把通胀藏在排队里，失业也不公开（本书的解读）。1960 年，萨缪尔森与索洛把通胀与失业画成一张可以挑选的菜单，每一个点是一种失业率配一种通胀率（\chref{ch:phillips}）。菲利普斯“菜单”为什么会漂移？
+% 据: lk_loan, zv62_jobs

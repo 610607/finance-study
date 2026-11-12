@@ -1,0 +1,423 @@
+id,dynasty,year,year_note,value,unit,numeral,file,juan,quote,note
+zv62_date,苏联,1962,,1;1962,,,zv1962_43,p. 1 (PDF p. 1),"Пятница, 1 июня 1962 г.",the date line under the masthead; 1 June 1962 was a Friday
+zv62_masthead,苏联,1962,,,,,zv1962_43img,p. 1 (PDF p. 1),,the masthead; the text layer reads the Georgian lines as noise; read on the page image: «ЗАРЯ ВОСТОКА … ОРГАН ЦЕНТРАЛЬНОГО КОМИТЕТА КОМПАРТИИ ГРУЗИИ И СОВЕТОВ ДЕПУТАТОВ ТРУДЯЩИХСЯ ГРУЗИНСКОЙ ССР»
+zv62_title,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"ОБРАЩЕНИЕ ЦК КПСС иСовета Министров СССР ко всем рабочим и работницам, колхозникам и колхозницам, рабочим и работницам совхозов, советской интеллигенции, ко всему советскому народу",the heading of the appeal; 'иСовета' for 'и Совета' (a space lost in the text layer)
+zv62_procure,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),шили повысить закупочные цены на мясо крупного рогатого ско,the decision to raise the procurement prices; the line ends in 'ско-' (скота)
+zv62_35,苏联,1962,,35,,,zv1962_43,p. 1 (PDF p. 1),"та, свиней, овец, коз и птицу в среднем на 35 процентов","the next line of the same column: cattle, pigs, sheep, goats and poultry, 35 per cent on average"
+zv62_retail,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),временно решено повысить розничные цены на мясо и мясные,the retail prices of meat and meat products
+zv62_30,苏联,1962,,30,,,zv1962_43,p. 1 (PDF p. 1),"продукты в среднем на 30 процентов, а также на масло живот","the next line: 30 per cent on average, and butter"
+zv62_25,苏联,1962,,25,,,zv1962_43,p. 1 (PDF p. 1),ное в среднем на 25 процентов,the next line: butter 25 per cent on average
+zv62_undesirable,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"сознают, что само по себе повышение цен - мера нежелатель",the line ends in 'нежелатель-' (нежелательная)
+zv62_temporary,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"мясные продукты, а также на масло - это мера временная",
+zv62_sugar,苏联,1962,,5,,,zv1962_43,p. 1 (PDF p. 1),на сахар - в среднем на 5 процентов,'В Совете Министров СССР': the cut in the retail prices of sugar
+zv62_viscose,苏联,1962,,20,,,zv1962_43,p. 1 (PDF p. 1),на ткани из вискозной штапельной пряжи - в среднем на 20 процентов,the same notice: fabrics of viscose staple yarn
+zv62_income,苏联,1962,,1961,,,zv1962_43,p. 1 (PDF p. 1),В 1961 году они увеличились по срав,the money incomes of the working people ('денежные доходы трудящихся')
+zv62_87,苏联,1962,,1953;42;87,,,zv1962_43,p. 1 (PDF p. 1),"нению с 1953 годом на 42 миллиарда рублей, или на 87 про",the next line ends in 'про-' (процентов)
+zv62_sold,苏联,1962,,1953,,,zv1962_43,p. 1 (PDF p. 1),"Например, в 1953 году через государст",meat sold through state trade
+zv62_sold2,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),венную торговлю было продано мяса и мясных продуктов,the next line
+zv62_meat,苏联,1962,,1;757;1961;4;33,,,zv1962_43,p. 1 (PDF p. 1),"1 миллион 757 тысяч тонн, а в 1961 году- 4 миллиона 33 ты","1,757 thousand tonnes in 1953 and 4,033 thousand ('ты-сячи') in 1961"
+zv62_demand,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"высокий спрос на такие продукты питания, как мясо, колбас","'колбас-ные изделия, сливочное масло' on the next line"
+zv62_basis,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),в свое время без достаточных экономических обоснований были,the earlier cuts in the retail prices of meat and butter
+zv62_cut,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"снижены в большей степени, чем на такие продукты питания,","cut further than those of vegetable oil, sugar and potatoes"
+zv62_cattle,苏联,1962,,1,,,zv1962_43,p. 1 (PDF p. 1),Себестоимость 1 центнера крупного рогатого скота (в живом ве,"the cost of a centner of cattle, live weight"
+zv62_cattle88,苏联,1962,,1960;91.6;1961;88,,,zv1962_43,p. 1 (PDF p. 1),"се) в 1960 году равнялась 91,6 рубля, в 1961 году - 88","1960 91.6 rubles, 1961 88 (decimal comma)"
+zv62_cattle59,苏联,1962,,59.1,,,zv1962_43,p. 1 (PDF p. 1),"рублям, а закупочная цена - 59,1 рубля; себестоимость цент",the procurement price 59.1 rubles
+zv62_pigs,苏联,1962,,118;82.3,,,zv1962_43,p. 1 (PDF p. 1),"118 рублей, а закупочная цена - 82,3 рубля; птицы - себе","pigs: the cost in 1961 ('в прошлом году') 118 rubles, the procurement price 82.3"
+zv62_poultry,苏联,1962,,1960;140.5;1961;133.5,,,zv1962_43,p. 1 (PDF p. 1),"в 1960 году - 140.5 рубля, в 1961 году- 133,5",poultry: the cost 140.5 (1960) and 133.5 (1961)
+zv62_poultry2,苏联,1962,,82.2,,,zv1962_43,p. 1 (PDF p. 1),"рубля, а закупочная цена - 82,2 рубля.",poultry: the procurement price 82.2
+zv62_statecost,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"в минувшем году затраты государства на закупку,","the state's costs of procurement, processing and trade"
+zv62_beefcost,苏联,1962,,138.6,,,zv1962_43,p. 1 (PDF p. 1),"ном весе) составляли 138,6 рубля, а розничная цена за цент","per centner of beef, slaughter weight ('в убой-ном весе')"
+zv62_beefretail,苏联,1962,,110.8,,,zv1962_43,p. 1 (PDF p. 1),"нер говядины в среднем за все сорта - 110,8 рубля.","the average retail price of beef, all grades"
+zv62_porkcost,苏联,1962,,167.2,,,zv1962_43,p. 1 (PDF p. 1),"лись 167,2 рубля, а розничная цена за центнер в среднем за",pork: the state's costs ('обходи-лись') 167.2
+zv62_pork,苏联,1962,,155.6,,,zv1962_43,p. 1 (PDF p. 1),"все сорта - 155,6 рубля.",pork: the retail price 155.6
+zv62_losses,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),ми животноводства на многие сотни миллионов рублей.,the state's losses on livestock products
+zv62_lower,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"В этих условиях более низкие розничные цены на мясо, мяс",
+zv62_disorganize,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"ные продукты, масло только лишь дезорганизуют производство.",
+zv62_population0,苏联,1962,,1953,,,zv1962_43,p. 1 (PDF p. 1),"нашей страны, особенно городское, растет очень быстро. С 1953","the population of the country, especially the urban, grows very fast; with the next row: 'С 1953 по 1961 год'"
+zv62_population,苏联,1962,,1961;29,,,zv1962_43,p. 1 (PDF p. 1),"по 1961 год оно увеличилось на 29 миллионов, в том числе го","the population, 'С 1953 по 1961 год'"
+zv62_urban,苏联,1962,,28,,,zv1962_43,p. 1 (PDF p. 1),родское на 28 миллионов человек.,of which urban ('го-родское')
+zv62_slaughter,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),Производство мяса (в убойном весе) за это же время воз,"meat output, slaughter weight, 1953-1961"
+zv62_output,苏联,1962,,5;800;8;800,,,zv1962_43,p. 1 (PDF p. 1),росло с 5 миллионов 800 тысяч тонн до 8 миллионов'800 тысяч,"5,800 to 8,800 thousand tonnes; the text layer prints an apostrophe for the space before 800"
+zv62_where,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"огромные средства. Встает вопрос, откуда взять их?",
+zv62_wages,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"Может быть, следует пойти на то, чтобы уменьшить суммы",to cut the sums distributed in the kolkhozes by work
+zv62_wages2,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),к снижению материальной заинтересованности кол,'кол-хозников'
+zv62_war,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"ет империализм, сохраняется и опасность новых войн.",'Пока существу-ет империализм'
+zv62_housing,苏联,1962,,50,,,zv1962_43,p. 1 (PDF p. 1),Только за последние четыре года 50 миллионов совет,
+zv62_quarter,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"ских граждан, то есть почти четверть населения страны, спра",'спра-вили новоселье'
+zv62_vodka,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"средства на эти цели за счет повышения цен, например, на вод",
+zv62_vodka2,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"ку, табак и некоторые другие, изделия, то и в этом случае нель",
+zv62_speculation,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),для спекуляции и еще более затруднило бы решение задачи,
+zv62_overpay,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),"нуждено переплачивать значительные суммы лицам, которые,",'население вы-нуждено'
+zv62_jobs,苏联,1962,,,,,zv1962_43,p. 1 (PDF p. 1),У нас давно снята проблема безработи,'безработи-цы'
+lk_number,苏联,1962,,75,,,lenkom43,web page,ИНФОРМАЦИОННАЯ СВОДКА СЕКТОРА ИНФОРМАЦИИ ОТДЕЛА ПАТИЙНЫХ ОРГАНОВ ЛЕНИНГРАДСКОГО ГОРОДСКОГО КОМИТЕТА КПСС No75,"the heading of the report: the information summary of the information sector of the department of party organs of the Leningrad city committee of the CPSU, No. 75; 'ПАТИЙНЫХ' for 'ПАРТИЙНЫХ' (the scan, row lk_scan, prints 'ПАРТИЙНЫХ')"
+lk_date,苏联,1962,,1;1962,,,lenkom43,web page,No75 I июня 1962 г.,the date of the report; the transcription prints the typewriter's 'I' for '1'
+lk_addressee,苏联,1962,,,,,lenkom43,web page,"СЕКРЕТАРЮ ЛЕНИНГРАДСКОГО ГОРКОМА КПСС тов. ПОПОВУ Г.И,","the addressee, G. I. Popov, secretary of the city committee; 'Г.И,' for 'Г.И.' (the scan prints 'Г.И.')"
+lk_title,苏联,1962,,,,,lenkom43,web page,Отклики трудящихся на повышение закупочных и розничных цен на мясо и животное масло.,the subject of the report
+lk_radio,苏联,1962,,,,,lenkom43,web page,В цехах и отделах предприятий и организаций организовано коллективное прослушивание Обращения по радио,
+lk_correct,苏联,1962,,,,,lenkom43,web page,Трудящиеся Ленинграда считают правильными и своевременными меры,
+lk_bogusov,苏联,1962,,,,,lenkom43,web page,"Электрик ремонтно-строительного управления Кронштадта т. Богусов: - Коммунизм нам не построить, рано стали Америку догонять.",
+lk_turner,苏联,1962,,,,,lenkom43,web page,"Токарь завода ""Ленпищемаш"" Галиневский /б.п./, придя в цех, долго не приступал к работе, мотивируя свое поведение несогласием с постановлением о повышении розничных цен.",'б.п.': not a party member
+lk_talk,苏联,1962,,,,,lenkom43,web page,"После того как с ним провели беседу и указали на его неправильное поведение, он начал работать.",
+lk_skb,苏联,1962,,170,,,lenkom43,web page,"В организации СКБ-170 /Кронштадт/ начальник сектора, кандидат в члены КПСС т. Васюсин и инженер, член КПСС т. Пузин потребовали срочно собрать профсоюзное собрание","a candidate member and a member of the party, in a special design bureau (СКБ) at Kronstadt"
+lk_cuts,苏联,1962,,,,,lenkom43,web page,"Они считают, что поднимать сельское хозяйство надо, но не путем поднятия цен на продукты, а другими путями. В частности - путем сокращения расходов на содержание управленческого аппарата, на содержание различных правительственных дач",
+lk_refused,苏联,1962,,,,,lenkom43,web page,"Было собрано бюро партийной организации, где в профсоюзном собрании товарищам было отказано и разъяснено их неправильное отношение.",the bureau of the party organization
+lk_dates,苏联,1962,,17;31,,,lenkom43,web page,"На предприятиях спрашивают, почему постановление было принято I7 мая с.г., а объявили его лишь 3I мая, хотя все об этом уже знали.","the transcription prints the typewriter's 'I' for '1': 17 and 31 May (row lk_scan_dates, the scan)"
+lk_rumour,苏联,1962,,,,,lenkom43,web page,"Более того, хозяйственный и партийный актив разбивал мнение о возможности повышения закупочных и розничных цен на мясо и масло.",
+lk_war,苏联,1962,,,,,lenkom43,web page,"Самое главное, чтобы не было войны.",
+lk_shirkov,苏联,1962,,,,,lenkom43,web page,"Мастер завода ""Электрик"" Ширков: - Мы понимаем",a foreman of the 'Elektrik' plant
+lk_shirkov2,苏联,1962,,,,,lenkom43,web page,Но не надо было идти на снижение цен на штапель и сахар.,the same foreman
+lk_makarenko,苏联,1962,,,,,lenkom43,web page,Работница ремонтно-механического комбината треста хлебопечения Макаренко,
+lk_makarenko2,苏联,1962,,,,,lenkom43,web page,"Предложила резко снизить зарплату высокооплачиваемым, отобрать у них дачи и автомашины",
+lk_panov,苏联,1962,,19,,,lenkom43,web page,"Фрезеровщик цеха No 19 Металлического завода т. Панов сказал, что рабочие цеха ругают Н.С. Хрущева за оказываемую большую помощь другим странам.",
+lk_baltic,苏联,1962,,8,,,lenkom43,web page,На Балтийском заводе был задан вопрос: - Почему Н.С. Хрущев после Молотова и Маленкова за 8 лет не выправил положение с сельским хозяйством?,
+lk_loan,苏联,1962,,,,,lenkom43,web page,"Трудящиеся заводов Адмиралтейского, Балтийского, сотрудники института ""Водоканалпроект"" Фрунзенского района спрашивают, почему партия и правительство пошло по пути увеличения закупочных и розничных цен, а не нашли возможным обратиться к народу за займом.",two plants and the design institute 'Vodokanalproekt'
+lk_signature,苏联,1962,,,,,lenkom43,web page,Зав. отделом парторганов горкома КПСС п/п /Попов/,the signature: the head of the department of party organs
+lk_archive,苏联,1962,,25;89;65;155;160,,,lenkom43,web page,Архив: ЦГАИПД СПб. Ф. Р-25. Оп. 89. Д. 65. Л. 155-160,the archive reference printed under the transcription
+lk_licence,—,2026,,,,,lenkom43,web page,"Вся информация на сайте, если не указано другое, предоставляется на условиях лицензии Creative Commons BY-SA 4.0 .",the licence of istmat.org (its footer)
+lk_scan,苏联,1962,,,,,lenkomscan43,PDF p. 1,ОТДЕЛА ПАРТИЙНЫХ ОРГАНОВ ЛЕНИНГРАДСКОГО ГОРОДСКОГО КОМИТЕТА КПСС,the heading on the archive scan
+lk_scan2,苏联,1962,,,,,lenkomscan43,PDF p. 1,СЕКРЕТАРЮ ЛЕНИНГРАДСКОГО ГОРКОМА КПСС тов.ПОПОВУ Г.И.,the addressee on the scan
+lk_scan3,苏联,1962,,,,,lenkomscan43,PDF p. 1,"Коммунизм нам не построить, рано стали Америку до",the electrician's words on the scan (the line ends in 'до-')
+lk_declassified,苏联,1962,,,,,lenkomscan43,PDF p. 1,рассекречено,the archive's stamp: declassified
+lk_scan_dates,苏联,1962,,17;31,,,lenkomscan43img,PDF p. 6,,"the dates of the decision and of its announcement, typed with the letter I for the digit 1 (17 and 31 May); the text layer of the scan reads 'I? мая'; read on the page image: «почему постановление было принято I7 мая с.г., а объявили его лишь 3I мая»"
+fr47_title,苏联,1947,,,,,frus1947_43,web page,The Chargé in the Soviet Union ( Durbrow ) to the Secretary of State,the heading of the telegram
+fr47_date,苏联,1947,,14;1947;9,,,frus1947_43,web page,"Moscow , December 14, 1947-9 p. m.",the date line: 9 p.m.
+fr47_radio,苏联,1947,,3367;6,,,frus1947_43,web page,3367. At 6 tonight complicated new money price changes derationing decree announced by radio.,telegram 3367
+fr47_single,苏联,1947,,,,,frus1947_43,web page,( a ) Ration cards abolished. ( b ) Single price on rail products except peasant markets and certain cooperative goods.,'rail' for 'retail'
+fr47_cash,苏联,1947,,10;1,,,frus1947_43,web page,Cash in personal possession will be exchanged 10 old [rubles] for 1 new.,
+fr47_expropriates,苏联,1947,,90,,,frus1947_43,web page,"Expropriates 90 percent of all cash holdings. This will undoubtedly hit peasants hardest, as well as speculators.",
+fr47_bread,苏联,1946,,1946;90;340;275,,,frus1947_43,web page,"black bread raised September 1946 from 90 to 340 kopeks, an increase of 275 percent",340/90 is an increase of 278 per cent
+fr47_180,苏联,1946,,180,,,frus1947_43,web page,food ration prices last year were raised an average of 180 percent against insignificant wage rises in lower brackets.,
+fr47_200,苏联,1947,,200,,,frus1947_43,web page,"( b ) Meat, vegetables, sugar, fats, cakes and fish remain at current ration prices which are also considerably higher than year ago (average increase of about 200 percent).",
+fr47_freeze,苏联,1947,,,,,frus1947_43,web page,Thus present measure in general freezes ration increases of last year and even raises some food prices.,
+fr47_sacrifice,苏联,1947,,,,,frus1947_43,web page,"measures as ""last sacrifice"" to be demanded of Russian people, geater part of which is allegedly assumed by state.",'geater' for 'greater'
+fr70_date,波兰,1970,,16;1970;1430;3501,,,frus1970_43,web page,"Warsaw , December 16, 1970, 1430Z . 3501. Subject: Gdansk Riots.","telegram 3501 from the embassy in Warsaw, 1430 GMT"
+fr70_announce,波兰,1970,,13,,,frus1970_43,web page,in wake of December 13 public announcement of price changes (both up and down),
+fr70_cut,波兰,1970,,10;15,,,frus1970_43,web page,which Polish man in street generally regards as signifying 10 to 15 percent cut in purchasing power.,
+fr70_workers,波兰,1970,,800;1000;14,,,frus1970_43,web page,"A. Swedish Consul in Gdansk reports that 800 to 1000 workers demonstrated in Gdansk afternoon December 14 shouting ""Down with Gomulka """,
+fr70_injured,波兰,1970,,300,,,frus1970_43,web page,"Some 300 people including militia reported injured, but we cannot confirm reports of deaths from independent sources.",
+fr70_memo,波兰,1970,,1;20;1970,,,frus1970b_43,web page,"Memorandum From the Presidentʼs Assistant for National Security Affairs ( Kissinger ) to President Nixon 1 Washington , December 20, 1970 .",the heading; '1' is the mark of the source note
+fr70_scapegoats,波兰,1970,,4,,,frus1970b_43,web page,Gomulka and four of his close associates have become the scapegoats,
+fr70_wages,波兰,1970,,,,,frus1970b_43,web page,hinted at an increase in wages and a reexamination of the economic plan,the new leadership
+fr70_gierek,波兰,1970,,,,,frus1970b_43,web page,Edward Gierek who succeeds Gomulka,
+fr70_treaty,波兰,1970,,,,,frus1970b_43,web page,they may believe that the treaty with Germany led Gomulka to conclude he could press unpopular price increases on the population.,the Soviet leaders
+res_title,中国,1981,,,,,res1981_43,web page,关于建国以来党的若干历史问题的决议,the title
+res_date,中国,1981,,1981;6;27;11;6,,,res1981_43,web page,一九八一年六月二十七日中国共产党第十一届中央委员会第六次全体会议一致通过,adopted unanimously by the Sixth Plenary Session of the Eleventh Central Committee
+res_source,中国,2021,,,,,res1981_43,web page,来源：中国政府网,the page names its source: the website of the Central People's Government
+res_copyright,—,2021,,,,,res1981_43,web page,共产党员网 版权所有,the footer of 12371.cn
+res_tonggou,中国,1953,,,,,res1981_43,web page,粮棉统购统销等一系列必要的措施和步骤,in the paragraph on the socialist transformation of capitalist industry and commerce
+res_market,中国,1957,,,,,res1981_43,web page,市场繁荣，物价稳定,the First Five-Year Plan
+res_ffyp,中国,1956,,1953;1956;19.6;4.8,,,res1981_43,web page,从一九五三年到一九五六年，全国工业总产值平均每年递增百分之十九点六，农业总产值平均每年递增百分之四点八,
+res_line,中国,1958,,1958,,,res1981_43,web page,一九五八年，党的八大二次会议通过的社会主义建设总路线,
+res_wish,中国,1958,,,,,res1981_43,web page,反映了广大人民群众迫切要求改变我国经济文化落后状况的普遍愿望,
+res_line2,中国,1958,,,,,res1981_43,web page,其缺点是忽视了客观的经济规律,
+res_haste,中国,1958,,,,,res1981_43,web page,毛泽东同志、中央和地方不少领导同志在胜利面前滋长了骄傲自满情绪，急于求成,
+res_survey,中国,1958,,,,,res1981_43,web page,没有经过认真的调查研究和试点,
+res_rash,中国,1958,,,,,res1981_43,web page,就在总路线提出后轻率地发动了“大跃进”运动和农村人民公社化运动,
+res_symptoms,中国,1958,,,,,res1981_43,web page,以高指标、瞎指挥、浮夸风和“共产风”为主要标志的左倾错误严重地泛滥开来,
+res_lushan_early,中国,1959,,1958;1959;7,,,res1981_43,web page,从一九五八年底到一九五九年七月中央政治局庐山会议前期，毛泽东同志和党中央曾经努力领导全党纠正已经觉察到的错误,
+res_lushan,中国,1959,,,,,res1981_43,web page,庐山会议后期，毛泽东同志错误地发动了对彭德怀同志的批判，进而在全党错误地开展了“反右倾”斗争,
+res_interrupt,中国,1959,,,,,res1981_43,web page,在经济上打断了纠正左倾错误的进程，使错误延续了更长时间,
+res_verdict,中国,1961,,1959;1961,,,res1981_43,web page,主要由于“大跃进”和“反右倾”的错误，加上当时的自然灾害和苏联政府背信弃义地撕毁合同，我国国民经济在一九五九年到一九六一年发生严重困难，国家和人民遭到重大损失。,the official verdict
+res_winter,中国,1960,,1960,,,res1981_43,web page,一九六〇年冬，党中央和毛泽东同志开始纠正农村工作中的左倾错误，并且决定对国民经济实行“调整、巩固、充实、提高”的方针,
+res_7000,中国,1962,,1962;1;7000,,,res1981_43,web page,一九六二年一月召开的有七千人参加的扩大的中央工作会议，初步总结了“大跃进”中的经验教训,
+res_recovery,中国,1966,,1962;1966,,,res1981_43,web page,从一九六二年到一九六六年国民经济得到了比较顺利的恢复和发展,
+nbs_title,中国,1999,,50,,,nbs50_43,front matter (PDF p. 1),COMPREHENSIVE STATISTICAL DATA AND MATERIALS ON 50 YEARS OF NEW CHINA,the English title on the title page
+nbs_compiler,中国,1999,,,,,nbs50_43,front matter (PDF p. 1),国家统计局国民经济综合统计司编,the compiler
+nbs_edition,中国,1999,,1999;11;1,,,nbs50_43,front matter (PDF p. 1),版次/1999年11月第1版,"the first edition, November 1999 (中国统计出版社)"
+nbs_rights,—,1999,,,,,nbs50_43,front matter (PDF p. 1),"中国统计版图书,版权所有,侵权必究。",the press's rights notice
+nbs_table,中国,1999,,1,,,nbs50_43,p. 1,A-1全国人口状况POPULATION OF CHINA年底总人口(万人),"table A-1; its columns: the year, the year-end population (万人), male, female, agricultural, non-agricultural, then the birth rate, the death rate and the rate of natural increase (‰); the column heads were checked against an image of the page"
+nb2_title,中国,2000,,4;2,,,nbs2000_43,web page,4-2,"the table's number; its title, decoded as GB18030, reads '4-2 人口出生率、死亡率、自然增长率 单位：‰'"
+nb2_1952,中国,1952,,1952;37;17;20,,,nbs2000_43,web page,1952 37.00 17.00 20.00,"the birth rate, the death rate and the rate of natural increase (‰)"
+nb2_1957,中国,1957,,1957;34.03;10.8;23.23,,,nbs2000_43,web page,1957 34.03 10.80 23.23,
+nb2_1962,中国,1962,,1962;37.01;10.02;26.99,,,nbs2000_43,web page,1962 37.01 10.02 26.99,
+nb2_1965,中国,1965,,1965;37.88;9.5;28.38,,,nbs2000_43,web page,1965 37.88 9.50 28.38,
+nb2_1970,中国,1970,,1970;33.43;7.6;25.83,,,nbs2000_43,web page,1970 33.43 7.60 25.83,
+nbst_reprint,—,2022,,,,,nbsterms43,web page,"转载或引用本网内容,务必在显著位置注明转自(或引自)国家统计局网站(或中国统计信息网)字样,并标明本网网址:www.stats.gov.cn。",section 一
+nbst_copyright,—,2022,,,,,nbsterms43,web page,"本网所有内容,未经注明,版权一律归国家统计局网站(中国统计信息网)所有。",section 二.1
+nbst_fair,—,2022,,,,,nbsterms43,web page,"转载或引用本网内容必须是以新闻性或资料性公共免费信息为使用目的的合理、善意引用,不得对本网内容原意进行曲解、修改。",section 二.3
+nbst_data,—,2022,,,,,nbsterms43,web page,"1.用户可以在本网站下载和使用国家统计局发布的统计数据; 2.个人和组织机构应依法使用国家统计局网站发布的统计数据; 3.本网站通过""统计数据""栏目和统计数据库,提供了权威、准确的官方统计数据及相关指标解释,请准确使用。",section 三
+nbst_date,—,2022,,2022;9;2;17;13,,,nbsterms43,web page,2022/09/02 17:13来源:国家统计局,the date of the page
+nbs_1949,中国,1949,,1949;54167;28145;26022;9441;44726;36;20;16,,,nbs50_43,p. 1,1949 54167 28145 26022 9441 44726 36. 00 20. 00 16.00,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase; the column headed 农业 prints 9441 and the one headed 非农业 44726, and so in every year: the two heads look interchanged"
+nbs_1950,中国,1950,,1950;55196;28669;26527;9137;46059;37;18;19,,,nbs50_43,p. 1,1950 55196 28669 26527 9137 46059 37. 00 18. 00 19. 00,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1951,中国,1951,,1951;56300;29231;27069;8674;47626;37.8;17.8;20,,,nbs50_43,p. 1,1951 56300 29231 27069 8674 47626 37. 80 17. 80 20. 00,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1952,中国,1952,,1952;57482;29833;27649;8291;49191;37;17;20,,,nbs50_43,p. 1,1952 57482 29833 27649 8291 49191 37. 00 17. 00 20. 00,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1953,中国,1953,,1953;58796;30468;28328;8729;50067;37;14;23,,,nbs50_43,p. 1,1953 58796 30468 28328 8729 50067 37. 00 14. 00 23. 00,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1954,中国,1954,,1954;60266;31242;29024;9229;51037;37.97;13.18;24.79,,,nbs50_43,p. 1,1954 60266 31242 29024 9229 51037 37. 97 13. 18 24.79,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1955,中国,1955,,1955;61465;31809;29656;9335;52130;32.6;12.28;20.32,,,nbs50_43,p. 1,1955 61465 31809 29656 9335 52130 32. 60 12. 28 20. 32,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1956,中国,1956,,1956;62828;32536;30292;10002;52826;31.9;11.4;20.5,,,nbs50_43,p. 1,1956 62828 32536 30292 10002 52826 31. 90 11.40 20. 50,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1957,中国,1957,,1957;64653;33462;31184;10618;54035;34.03;10.8;23.23,,,nbs50_43,p. 1,1957 64653 33462 31184 10618 54035 34. 03 10. 80 23.23,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1958,中国,1958,,1958;65994;34195;31799;12210;53784;29.22;11.98;17.24,,,nbs50_43,p. 1,1958 65994 34195 31799 12210 53784 29. 22 11. 98 17. 24,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1959,中国,1959,,1959;67207;34890;32317;13567;53640;24.78;14.59;10.19,,,nbs50_43,p. 1,1959 67207 34890 32317 13567 53640 24. 78 14. 59 10. 19,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1960,中国,1960,,1960;66207;34283;31924;13731;52476;20.86;25.43;-4.57,,,nbs50_43,p. 1,1960 66207 34283 31924 13731 52476 20. 86 25. 43 -4. 57,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1961,中国,1961,,1961;65859;33880;31979;12415;53444;18.02;14.24;3.78,,,nbs50_43,p. 1,1961 65859 33880 31979 12415 53444 18. 02 14. 24 3. 78,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1962,中国,1962,,1962;67295;34517;32778;11271;56024;37.01;10.02;26.99,,,nbs50_43,p. 1,1962 67295 34517 32778 11271 56024 37.01 10. 02 26. 99,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1963,中国,1963,,1963;69172;35533;33639;11584;57588;43.37;10.04;33.33,,,nbs50_43,p. 1,1963 69172 35533 33639 11584 57588 43. 37 10. 04 33. 33,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1964,中国,1964,,1964;70499;36142;34357;11677;58822;39.14;11.5;27.64,,,nbs50_43,p. 1,1964 70499 36142 34357 11677 58822 39. 14 11.50 27. 64,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1965,中国,1965,,1965;72538;37128;35410;12122;60416;37.88;9.5;28.38,,,nbs50_43,p. 1,1965 72538 37128 35410 12122 60416 37. 88 9. 50 28. 38,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1966,中国,1966,,1966;74542;38189;36353;12340;62202;35.05;8.83;26.22,,,nbs50_43,p. 1,1966 74542 38189 36353 12340 62202 35.05 8. 83 26. 22,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1967,中国,1967,,1967;76368;39115;37253;12637;63731;33.96;8.43;25.53,,,nbs50_43,p. 1,1967 76368 39115 37253 12637 63731 33. 96 8. 43 25. 53,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1968,中国,1968,,1968;78534;40226;38308;12554;65980;35.59;8.21;27.38,,,nbs50_43,p. 1,1968 78534 40226 38308 12554 65980 35. 59 8. 21 27. 38,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1969,中国,1969,,1969;80671;41289;39382;12403;68268;34.11;8.63;26.08,,,nbs50_43,p. 1,1969 80671 41289 39382 12403 68268 34. 11 8. 63 26. 08,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+nbs_1970,中国,1970,,1970;82992;42686;40306;12660;70332;33.43;7.6;25.83,,,nbs50_43,p. 1,1970 82992 42686 40306 12660 70332 33. 43 7. 60 25.83,"the year, the year-end population, male, female, the two columns headed 农业 and 非农业, the birth rate, the death rate and the rate of natural increase"
+mqy_number,中国,2010,,,,,mqy2010_43,cover (PDF p. 1),NBER WORKING PAPER SERIES,the cover
+mqy_wp,中国,2010,,16361,,,mqy2010_43,cover (PDF p. 1),Working Paper 16361,the cover: the number
+mqy_date,中国,2010,,2010,,,mqy2010_43,cover (PDF p. 1),September 2010,the cover: the date
+mqy_title,中国,2010,,1959;61,,,mqy2010_43,cover (PDF p. 2),"The Institutional Causes of China's Great Famine, 1959-61",the title
+mqy_copyright,—,2010,,2010,,,mqy2010_43,cover (PDF p. 1),"© 2010 by Xin Meng, Nancy Qian, and Pierre Yared. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.",the © notice of the title page
+mqy_range,中国,1961,,17;30,,,mqy2010_43,p. 1 (PDF p. 3),Famine claimed the lives of between seventeen and thirty million people,the introduction; the line before: 'the Great'
+mqy_understated,中国,1961,,,,,mqy2010_43,p. 2 (PDF p. 4),the government has historically understated the severity of mortality from the famine and overstated,the next words: 'food production'
+mqy_15,中国,1959,,15;1958,,,mqy2010_43,p. 1 (PDF p. 3),subsistence needs even though per capita production had fallen by 15% relative to 1958.,per capita grain production
+mqy_205,中国,1959,,1959;205,,,mqy2010_43,p. 1 (PDF p. 3),estimates show that aggregate food production in 1959 was at least 205% above the amount,the next words: 'required to avoid mortality'
+mqy_inflexible,中国,1959,,,,,mqy2010_43,p. 1 (PDF p. 3),"The qualitative evidence suggests that government policy was inflexible, a term we use to refer to the government's difficulty in collecting and responding to new information.",
+mqy_past,中国,1959,,,,,mqy2010_43,p. 3 (PDF p. 5),government assigns an inflexible region-specific level of procurement based on expectations of regional production formed from observations of regional endowments for agricultural production or past production,the model
+mqy_model,中国,2010,,1,,,mqy2010_43,p. 3 (PDF p. 5),"To illustrate the model, we provide a stylized example in Table 1. There are three regions: two rural regions (A and B) and a city.",their example (its numbers are not used)
+mqy_movement,中国,1959,,,,,mqy2010_43,p. 3 (PDF p. 5),the government restricts population movements so that individuals from low production regions cannot move to high production regions,
+mqy_soviet,中国,1949,,,,,mqy2010_43,p. 7 (PDF p. 9),designed a centrally-planned economy similar to that of the Soviets,"'the New Communist government of China led by, amongst others, Party Chairman Mao Zedong (in power 1949-76)'"
+mqy_agri,中国,1955,,80,,,mqy2010_43,p. 7 (PDF p. 9),"approximately 80% of the population worked in agriculture, grain procurement was seen by the government as the key for development",
+mqy_43,中国,1955,,43;1950;1977;186,,,mqy2010_43,p. 7 (PDF p. 9),"which accounted for 43% of government spending during the 1950s (Eckstein, 1977: pp. 186)",industrialization
+mqy_export,中国,1955,,,,,mqy2010_43,p. 7 (PDF p. 9),exporting grain (mostly to the U.S.S.R.) in exchange for equipment and expertise,
+mqy_phases,中国,1952,,3;1952;6;9,,,mqy2010_43,p. 7 (PDF p. 9),They occurred in three phases. The first began in 1952 and encouraged farmers to form mutual aid teams of six to nine households.,the land reforms
+mqy_mutual,中国,1952,,,,,mqy2010_43,p. 7 (PDF p. 9),The households pooled their assets and land.,
+mqy_lowlevel,中国,1954,,1954,,,mqy2010_43,p. 7 (PDF p. 9),"The second phase began around 1954 and was later called ""low level collectivization"".",
+mqy_return,中国,1954,,,,,mqy2010_43,p. 7 (PDF p. 9),the return that each household was entitled to depended on the amount of land and assets it contributed to the pool as well as the amount of labor it provided.,
+mqy_quota,中国,1954,,,,,mqy2010_43,p. 7 (PDF p. 9),peasants were forced to sell a quota amount of grain to the government at a set low price and allowed to sell their remaining production in markets.,
+mqy_plots,中国,1954,,5,,,mqy2010_43,p. 7 (PDF p. 9),Approximately 5% of land was left to peasants as private plots from which they retained all of the production.,
+mqy_83,中国,1957,,1957;83;1991;531;50,,,mqy2010_43,p. 7 (PDF p. 9),"in 1957, these private plots produced 83% of China's pig and poultry (Spence, 1991: pp. 531-50).",
+mqy_highlevel,中国,1958,,,,,mqy2010_43,p. 8 (PDF p. 10),received food in return for their labor input,high level collectivization: 'they now only received food …' (the line is broken by a footnote)
+mqy_marginal,中国,1958,,,,,mqy2010_43,p. 8 (PDF p. 10),farmers were typically not rewarded for their marginal labor input,
+mqy_93,中国,1959,,1959;93;1991;549;50,,,mqy2010_43,p. 8 (PDF p. 10),"Private plots were abolished. By 1959, 93% of agricultural land was under high level collectivization (Spence, 1991: pp. 549-50).",
+mqy_markets,中国,1959,,1986;281;85,,,mqy2010_43,p. 8 (PDF p. 10),"Markets for private transactions were also banned (Fairbank, 1986: pp. 281-85).",
+mqy_eat,中国,1958,,1958;1996;80,,,mqy2010_43,p. 9 (PDF p. 11),"in the fall of 1958, villagers were encouraged to eat as much as they wanted from communal kitchens (Becker, 1996, pp. 80)",
+mqy_38,中国,1959,,38;2005,,,mqy2010_43,p. 9 (PDF p. 11),"in mid-October and November, approximately 38% of total production was procured by the central government (see Li and Yang, 2005)",
+mqy_32,中国,1959,,1959;4;32;26;1958,,,mqy2010_43,p. 9 (PDF p. 11),"Had production in 1959 grown at the same 4% per annum rate as the previous years (on average), procurement would have been 32% of production, a less severe increase from the 26% in 1958",
+mqy_janfeb,中国,1960,,1960;1996;94,,,mqy2010_43,p. 9 (PDF p. 11),"deaths occurred in January and February of 1960, two to three months after the grain was procured (Becker, 1996: pp. 94).",
+mqy_fn13,中国,1959,,1959;4.3,,,mqy2010_43,p. 7 (PDF p. 9),"For example, in 1959, approximately 4.3 million tons were exported to the U.S.S.R., which was approximately",footnote 13; it ends on the next page: '2.3% of total production.' (row mqy_fn13b)
+mqy_fn13b,中国,1959,,2.3,,,mqy2010_43,p. 7 (PDF p. 9),2.3% of total production.,the end of footnote 13
+mqy_weather_claim,中国,1959,,1959,,,mqy2010_43,p. 9 (PDF p. 11),The Chinese government has claimed that the famine was a result of bad weather and low production in 1959,
+mqy_weather,中国,1959,,14;50;2005;1995,,,mqy2010_43,p. 9 (PDF p. 11),"bad can weather can explain at most 14-50% of the famine (Li and Yang, 2005; Kueh, 1995).",'bad can weather' as printed
+mqy_causes,中国,1959,,,,,mqy2010_43,p. 9 (PDF p. 11),such as labor and acreage reductions in grain production,"the Great Leap Forward era policies; also communal dining, reduced work incentives and the denial of the right to exit"
+mqy_lin,中国,1959,,1990,,,mqy2010_43,p. 9 (PDF p. 11),"the denial of peasants' rights to exit from the commune (Lin, 1990).",
+mqy_liyang,中国,1959,,,,,mqy2010_43,p. 10 (PDF p. 12),"find that in addition to weather, the relevant factors were over-procurement and the diversion of labor away from agriculture for projects such as rural industrialization during the Great Leap Forward.",Li and Yang (2005)
+mqy_liyang2,中国,1961,,1960;61,,,mqy2010_43,p. 10 (PDF p. 12),they argue that over-procurement weakened the agricultural labor force and caused further drops in food production from 1960-61.,
+mqy_fn17,中国,1959,,27;1959,,,mqy2010_43,p. 9 (PDF p. 11),"In our data, which includes production of 27 provinces in 1959 (all except Tibet, Hainan and Sichuan), we",footnote 17
+mqy_fn18,中国,1960,,1960;22;1000;1950;10;1000,,,mqy2010_43,p. 9 (PDF p. 11),"a dramatic increase in mortality rates in 1960, which was almost 22 per 1,000, twice as high as the low point for mortality rates during the 1950s (~10 per 1,000).",footnote 18
+mqy_fn19,中国,1959,,1959;223;1960;212,,,mqy2010_43,p. 10 (PDF p. 12),in 1959 to be 223 kg per person and in 1960 to be 212 kg per person.,footnote 19: Li and Yang's grain retention after procurement
+mqy_children,中国,1960,,0.5;10,,,mqy2010_43,p. 10 (PDF p. 12),"Half of the deaths are believed to have been of children under ten years of age (Spence, 1991: pp. 583).",
+mqy_storage,中国,1960,,,,,mqy2010_43,p. 10 (PDF p. 12),Many believe that communal food storage exacerbated the shortage of food in the countryside,
+mqy_suspicion,中国,1960,,,,,mqy2010_43,p. 10 (PDF p. 12),"peasants, not realizing the extent of food scarcity after procurement, did not fight the collective for control over the food supplies",
+mqy_surprise,中国,1960,,,,,mqy2010_43,p. 10 (PDF p. 12),"To many, it was a surprise when the food suddenly and completely ran out during the winter months",
+mqy_spring,中国,1960,,1960,,,mqy2010_43,p. 11 (PDF p. 13),of 1960. The government implicitly acknowledged the famine by reducing food rations for urban areas,'as early as the spring of 1960' (the sentence is broken by footnotes)
+mqy_urban,中国,1960,,,,,mqy2010_43,p. 11 (PDF p. 13),urban areas never experienced extreme famine or mass starvation.,
+mqy_returned,中国,1960,,,,,mqy2010_43,p. 11 (PDF p. 13),the number of returned workers was small relative to the demands of the agriculture sector and organic inputs to production such as seeds and organic fertilizer had been consumed,
+mqy_gittings,中国,1960,,30;1959;1960;1967;309,,,mqy2010_43,p. 11 (PDF p. 13),"investment in industry and military expenditures which decreased by 30% from 1959 to 1960 (Gittings, 1967: pp. 309)",
+mqy_rural,中国,1957,,,,,mqy2010_43,p. 11 (PDF p. 13),the communist party rose to power promising to end famines and the Communist party's primary stronghold was the rural population.,
+mqy_afford,中国,1959,,,,,mqy2010_43,p. 11 (PDF p. 13),China was aware that they could not politically afford to implement a policy that would cause a famine like what occurred in the U.S.S.R.,
+mqy_unintended,中国,1959,,,,,mqy2010_43,p. 11 (PDF p. 13),it hard to believe that the government intended for the famine to occur.,
+mqy_migration,中国,1960,,,,,mqy2010_43,p. 11 (PDF p. 13),The central and local governments together prevented the population of famine stricken regions from migrating to other regions in search for food. This undoubtedly exaggerated mortality rates,
+mqy_csdm50,中国,1999,,50;50;1999,,,mqy2010_43,p. 12 (PDF p. 14),are from the Comprehensive Statistical Data and Materials on 50 years of New China (CSDM50) published by the China Statistical Press in 1999.,
+mqy_revised,中国,1999,,,,,mqy2010_43,p. 12 (PDF p. 14),These data have been retrospectively corrected by the National Bureau of Statistics (NBS) to account for mis-reporting or missing data from past contemporaneous reports.,
+mqy_27,中国,1959,,,,,mqy2010_43,p. 12 (PDF p. 14),"Our province analysis excludes Sichuan, Tibet and Hainan.",footnote 27
+mqy_understate_pop,中国,1960,,,,,mqy2010_43,p. 13 (PDF p. 15),"From discussions with official statisticians, we believe that the population data may still understate population losses from the famine",
+mqy_804,中国,1959,,804,,,mqy2010_43,p. 17 (PDF p. 19),the average need to stay alive is approximately 804 calories per day.,
+mqy_3587,中国,1959,,3587,,,mqy2010_43,p. 17 (PDF p. 19),"grain in the mix and form as consumed by the average Chinese worker provides 3,587 calories.",the estimate of the Ministry of Health
+mqy_82,中国,1959,,82;365;3587,,,mqy2010_43,p. 17 (PDF p. 19),find that 82 (365× 3587,"the formula 82 = 365 × 804/3587 kg a year, as the text layer breaks it"
+mqy_sample,中国,1959,,27,,,mqy2010_43,p. 17 (PDF p. 19),The estimated population food need and food production over time from our sample of 27 provinces,Figure 3 and appendix table A3: the 27 provinces of the computation
+mqy_99,中国,1959,,99;48,,,mqy2010_43,p. 17 (PDF p. 19),there was a 99 million ton surplus above the 48 million tons required.,the 27 provinces
+mqy_three,中国,1959,,3,,,mqy2010_43,p. 17 (PDF p. 19),Production was almost three times as much as what was needed to keep the entire population alive.,
+mqy_reversal,中国,1959,,,,,mqy2010_43,cover (PDF p. 2),"regions with higher per capita food production that year suffered higher famine mortality rates, a surprising reversal of a typically negative correlation",the abstract
+mqy_methods_unknown,中国,1999,,,,,mqy2010_43,p. 44 (PDF p. 46),the details of how the revisions are made in practice have not been documented.,the data appendix
+mqy_hubei,中国,1958,,1;1958;7500;0.067,,,mqy2010_43,p. 44 (PDF p. 46),"For example, The People's Daily (August 1, 1958), claimed that ""Rice production exceeded 7500 kg per mu (0.067 hectare)"" for a county in Hubei province.",
+mqy_120,中国,1958,,120,,,mqy2010_43,p. 44 (PDF p. 46),The revised statistics report that actual grain output in that province was closer to being 120 kg per mu.,
+mqy_five,中国,1961,,16.5;1981;30;1987;18.5;1999;23;1987;29;1984,,,mqy2010_43,p. 44 (PDF p. 46),"Famine induced total mortality numbers vary between 16.5 million (Coale, 1981) to 30 million (Banister, 1987) due to different estimation methods (e.g., 18.5 million in Yao, 1999; 23 million in Peng, 1987; and 29 million in Ashton et al., 1984).",the data appendix
+mqy_peng,中国,1959,,1959,,,mqy2010_43,p. 27 (PDF p. 29),with the exception of Peng Dehuai who did a tour of the countryside during the spring of 1959,the appendix on the political climate
+mqy_letter,中国,1959,,,,,mqy2010_43,p. 27 (PDF p. 29),"Peng discretely reported these problems to Communist Party Chairman Mao Zedong in a personal letter. The problems he mentioned included reduced incentives to work, a diversion of labor away from agriculture, and over-procurement of grain",
+mqy_purge,中国,1959,,1959,,,mqy2010_43,p. 27 (PDF p. 29),Mao used the contents of this letter to purge Peng as a rightist at the historic Lushan conference in July of 1959.,"(Becker, 1996, pp. 87-92)"
+a8_title,中国,1976,,8;2005,,,mqy2010_43,Table A8 (PDF p. 71),Table A8: Historical Production and Procurement from Li and Yang (2005),
+a8_source,中国,1976,,2005;1989;24,,,mqy2010_43,Table A8 (PDF p. 71),Source: Li and Yang (2005); Original Sources: Ministry of Agriculture (1989). Sample of 24 provinces.,
+a8_1952,中国,1952,,1952;164;260;33;20.12,,,mqy2010_43,Table A8 (PDF p. 71),1952 164 260 33 20.12%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1953,中国,1953,,1953;167;0.02;242;47;28.14,,,mqy2010_43,Table A8 (PDF p. 71),1953 167 0.02 242 47 28.14%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1954,中国,1954,,1954;170;0.02;228;51;30,,,mqy2010_43,Table A8 (PDF p. 71),1954 170 0.02 228 51 30.00%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1955,中国,1955,,1955;184;0.08;256;48;26.09,,,mqy2010_43,Table A8 (PDF p. 71),1955 184 0.08 256 48 26.09%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1956,中国,1956,,1956;193;0.05;0.04;284;40;20.73,,,mqy2010_43,Table A8 (PDF p. 71),1956 193 0.05 0.04 284 40 20.73%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1957,中国,1957,,1957;195;0.01;0.04;273;46;23.59,,,mqy2010_43,Table A8 (PDF p. 71),1957 195 0.01 0.04 273 46 23.59%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1958,中国,1958,,1958;200;0.03;0.04;268;52;26,,,mqy2010_43,Table A8 (PDF p. 71),1958 200 0.03 0.04 268 52 26.00%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1959,中国,1959,,1959;170;-0.15;-0.02;193;64;37.65,,,mqy2010_43,Table A8 (PDF p. 71),1959 170 -0.15 -0.02 193 64 37.65%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1960,中国,1960,,1960;143;-0.16;-0.07;182;47;32.87,,,mqy2010_43,Table A8 (PDF p. 71),1960 143 -0.16 -0.07 182 47 32.87%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1961,中国,1961,,1961;148;0.03;-0.06;209;37;25,,,mqy2010_43,Table A8 (PDF p. 71),1961 148 0.03 -0.06 209 37 25.00%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1962,中国,1962,,1962;160;0.08;-0.05;229;32;20,,,mqy2010_43,Table A8 (PDF p. 71),1962 160 0.08 -0.05 229 32 20.00%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1963,中国,1963,,1963;170;0.06;0;231;37;21.76,,,mqy2010_43,Table A8 (PDF p. 71),1963 170 0.06 0.00 231 37 21.76%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1964,中国,1964,,1964;188;0.11;0.07;256;40;21.28,,,mqy2010_43,Table A8 (PDF p. 71),1964 188 0.11 0.07 256 40 21.28%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1965,中国,1965,,1965;195;0.04;0.07;261;39;20,,,mqy2010_43,Table A8 (PDF p. 71),1965 195 0.04 0.07 261 39 20.00%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1966,中国,1966,,1966;214;0.1;0.08;282;41;19.16,,,mqy2010_43,Table A8 (PDF p. 71),1966 214 0.10 0.08 282 41 19.16%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1967,中国,1967,,1967;218;0.02;0.06;281;41;18.81,,,mqy2010_43,Table A8 (PDF p. 71),1967 218 0.02 0.06 281 41 18.81%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1968,中国,1968,,1968;209;-0.04;0.03;261;40;19.14,,,mqy2010_43,Table A8 (PDF p. 71),1968 209 -0.04 0.03 261 40 19.14%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1969,中国,1969,,1969;211;0.01;0.02;259;38;18.01,,,mqy2010_43,Table A8 (PDF p. 71),1969 211 0.01 0.02 259 38 18.01%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1970,中国,1970,,1970;240;0.14;0.03;282;46;19.17,,,mqy2010_43,Table A8 (PDF p. 71),1970 240 0.14 0.03 282 46 19.17%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1971,中国,1971,,1971;250;0.04;0.04;293;44;17.6,,,mqy2010_43,Table A8 (PDF p. 71),1971 250 0.04 0.04 293 44 17.60%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1972,中国,1972,,1972;241;-0.04;0.04;298;39;16.18,,,mqy2010_43,Table A8 (PDF p. 71),1972 241 -0.04 0.04 298 39 16.18%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1973,中国,1973,,1973;265;0.1;0.06;293;48;18.11,,,mqy2010_43,Table A8 (PDF p. 71),1973 265 0.10 0.06 293 48 18.11%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1974,中国,1974,,1974;275;0.04;0.04;303;47;17.09,,,mqy2010_43,Table A8 (PDF p. 71),1974 275 0.04 0.04 303 47 17.09%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1975,中国,1975,,1975;285;0.04;0.03;304;53;18.6,,,mqy2010_43,Table A8 (PDF p. 71),1975 285 0.04 0.03 304 53 18.60%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+a8_1976,中国,1976,,1976;286;0;0.04;306;49;17.13,,,mqy2010_43,Table A8 (PDF p. 71),1976 286 0.00 0.04 306 49 17.13%,"production (million tonnes), its growth rate and four-year moving average, retained grain (kg per agricultural labourer), procurement (million tonnes), procurement as a percentage of production"
+smil_cite,中国,1999,,1999;18;319;7225;1619;1621,,,smil1999_43,pp. 1619-1621 (web page),BMJ . 1999 Dec 18;319(7225):1619–1621.,the citation line of the PMC page
+smil_title,中国,1999,,40,,,smil1999_43,pp. 1619-1621 (web page),China's great famine: 40 years later,the title
+smil_copyright,—,1999,,1999,,,smil1999_43,pp. 1619-1621 (web page),"Copyright © 1999, British Medical Journal",the copyright line of the PMC page
+smil_30m,中国,1961,,1959;1961;30,,,smil1999_43,pp. 1619-1621 (web page),between the spring of 1959 and the end of 1961 some 30 million Chinese starved to death and about the same number of births were lost or postponed.,
+smil_manmade,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),"Although drought was a contributory factor, this was largely a manmade catastrophe for which Mao Zedong bears the greatest responsibility",the summary points
+smil_steel,中国,1958,,,,,smil1999_43,pp. 1619-1621 (web page),made steel production the centrepiece of this deluded effort.,Mao
+smil_iron,中国,1958,,,,,smil1999_43,pp. 1619-1621 (web page),"tens of millions of peasants were ordered to mine local deposits of iron ore and limestone, to cut trees for charcoal, to build simple clay furnaces, and to smelt metal. This frenzied enterprise did not produce steel but mostly lumps of brittle cast iron unfit for even simple tools.",
+smil_grain,中国,1958,,80,,,smil1999_43,pp. 1619-1621 (web page),"newly formed agricultural communes planted less land to grain, which at that time was the source of more than 80% of China's food energy.",
+smil_fabricated,中国,1958,,,,,smil1999_43,pp. 1619-1621 (web page),fabricated reports of record grain harvests were issued to demonstrate the superiority of communal farming.,
+smil_spring,中国,1959,,,,,smil1999_43,pp. 1619-1621 (web page),These gross exaggerations were then used to justify the expropriation of higher shares of grain for cities and the establishment of wasteful communal mess halls serving free meals.,
+smil_spring2,中国,1959,,1959;0.333333,,,smil1999_43,pp. 1619-1621 (web page),by the spring of 1959 there was famine in a third of China's provinces.,
+smil_omission,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),The greatest omission was the failure of China's rulers to acknowledge the famine and promptly to secure foreign food aid.,
+smil_three,中国,1961,,3,,,smil1999_43,pp. 1619-1621 (web page),the Chinese government took nearly three years to act.,
+smil_commission,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),"Taking away all means of private food production (in some places even cooking utensils), forcing peasants into mismanaged communes, and continuing food exports were the worst acts of commission.",
+smil_provision,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),Preferential supply of food to cities and to the ruling elite was the deliberate act of selective provision.,
+smil_sen,中国,1995,,,,,smil1999_43,pp. 1619-1621 (web page),The rulers never starve.,"Smil quotes Sen (1995), 'Nobody need starve', Granta 52"
+smil_imports,中国,1961,,1961,,,smil1999_43,pp. 1619-1621 (web page),"Only a return to more rational economic policies after 1961, including imports of grain, ended the famine.",
+smil_census,中国,1982,,1982,,,smil1999_43,pp. 1619-1621 (web page),single year age distributions from the country's first highly reliable population census in 1982.,
+smil_first,中国,1961,,16.5;23,,,smil1999_43,pp. 1619-1621 (web page),the first calculations by American demographers put the toll at between 16.5 and 23 million.,excess deaths 1959-1961
+smil_later,中国,1961,,23;30;40,,,smil1999_43,pp. 1619-1621 (web page),"More detailed later studies came up with 23 to 30 million excess deaths, and unpublished Chinese materials hint at totals closer to 40 million.",
+smil_underestimate,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),the official Chinese figures for the three famine years greatly underestimate both the fall in fertility and the rise in mortality,
+smil_bureaucracy,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),How tenable is it to excuse the actions of so many people throughout the party and state bureaucracy by blaming solely their leader?,
+smil_orders,中国,1961,,,,,smil1999_43,pp. 1619-1621 (web page),"Had they no other choice but to follow orders and to carry out, often against resistance, mindless collectivisation and reduced planting of grain, to falsify harvest statistics, and to forcibly take grain away from evidently starving peasants?",
+smil_germany,中国,1999,,2,,,smil1999_43,pp. 1619-1621 (web page),Germany has spent two generations trying to understand the horrors of the Third Reich and to atone for its transgressions.,
+smil_turn,中国,1999,,,,,smil1999_43,pp. 1619-1621 (web page),China's turn is yet to come.,
+k80_title,匈牙利,1980,,1980,,,kornai1980_43img,title page (PDF p. 4),,the title page; read on the page image: «ECONOMICS OF SHORTAGE Volume A JANOS KORNAI Professor of Economics Institute of Economics Hungarian Academy of Sciences 1980 NORTH-HOLLAND PUBLISHING COMPANY AMSTERDAM · NEW YORK · OXFORD»
+k80_copyright,—,1980,,1980,,,kornai1980_43img,copyright page (PDF p. 5),,"the copyright page; read on the page image: «© NORTH-HOLLAND PUBLISHING COMPANY - 1980 All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording or otherwise, without the prior permission of the copyright owner.»"
+k80_shortage,匈牙利,1980,,,,,kornai1980_43img,p. 1 (PDF p. 22),,read on the page image: «The word “shortage” in the title of the present book is a summary denomination of a large group of phenomena»
+k80_queue,匈牙利,1980,,,,,kornai1980_43img,p. 1 (PDF p. 22),,"read on the page image: «queuing up in the strict sense of the word in front of the baker’s or the butcher’s shop; it may also be notional queuing, such as waiting for the installation of a telephone or admission to a hospital.»"
+k80_production,匈牙利,1980,,,,,kornai1980_43img,p. 1 (PDF p. 22),,"read on the page image: «Similar phenomena in production are labor shortage, shortage of material, of parts, or of electric current.»"
+k80_investment,匈牙利,1980,,,,,kornai1980_43img,p. 1 (PDF p. 22),,read on the page image: «tensions on the market for investment goods since their demand usually exceeds supply; a chronic deficit in the balance of payments and the concomitant shortage of foreign currency.»
+k80_names,匈牙利,1980,,2,,,kornai1980_43img,p. 1 (PDF p. 22),,read on the page image: «“seller’s market”; “repressed inflation”; “taut planning”; “overambitious planning”; and “overheating” of the economy. The author of the present book has introduced two further expressions: “rush” in growth and “suction” on the market.»
+k80_synonyms,匈牙利,1980,,,,,kornai1980_43img,p. 1 (PDF p. 22),,read on the page image: «These denominations are not all fully identical; they are not simply synonyms.»
+k80_leisure,匈牙利,1980,,,,,kornai1980_43img,p. 2 (PDF p. 23),,read on the page image: «Much leisure time is lost waiting in the doctor’s surgery or in a shop.»
+k80_rationing,匈牙利,1980,,,,,kornai1980_43img,p. 2 (PDF p. 23),,"read on the page image: «Shortages, in the final analysis, affect human relationships: the relations of consumer and producer, seller and buyer, the person deciding about rationing, and those receiving the rations.»"
+k80_scope,匈牙利,1980,,,,,kornai1980_43img,p. 2 (PDF p. 23),,"read on the page image: «I consider mainly the small Eastern European countries. Although these are similar to the Soviet economy, the latter also displays special features which are explained by the huge dimensions of the Soviet Union. My book does not deal with these special features. Yugoslavia is also omitted from the examination because its system is essentially different»"
+k80_hungary,匈牙利,1968,,1968,,,kornai1980_43img,p. 3 (PDF p. 24),,"read on the page image: «with particular clarity in Hungary: since the 1968 reform, autonomy of firms has grown, plan directives for current production have been eliminated, and the role of markets has increased.»"
+k80_traditional,匈牙利,1968,,,,,kornai1980_43img,p. 3 (PDF p. 24),,"read on the page image: «the traditional socialist economic management system prior to the reform, or with the postreform system. The book is concerned mostly with the former»"
+k80_sign,匈牙利,1980,,,,,kornai1980_43img,p. 5 (PDF p. 26),,"read on the page image: «The problem of a socialist economy — if in this chapter I may put the point in a somewhat oversimplified way—is just of the reverse sign. That is, instead of underutilization, “overheating”; instead of the comparatively low level of aggregate demand, its comparatively high level; instead of unemployment, labor shortage»"
+k80_central,匈牙利,1980,,,,,kornai1980_43img,p. 5 (PDF p. 26),,"read on the page image: «Shortage plays a similarly central role in understanding a number of problems of a socialist economy, as does the analysis of unemployment in studying capitalism.»"
+k80_tourist,匈牙利,1980,,,,,kornai1980_43img,p. 5 (PDF p. 26),,"read on the page image: «Those who experience the symptoms of shortage directly and every day may oversimplify one or other aspect of them. And those who live in another social system and approach the subject from the outside, e.g. relying on superficial “tourist’s experience”, … usually have biased stereotypes in their mind.»"
+k80_ch4,匈牙利,1980,,4;65;4.2;67,,,kornai1980_43img,contents (PDF p. 9),,read on the page image: «4. The buyer: Shopping process 65 … 4.2. Beginning of the shopping process: Success or forced substitution 67»
+k80_plan,匈牙利,1980,,,,,kornai1980_43img,p. 36 (PDF p. 57),,section 2.7; read on the page image: «Now we have explained what happens if fulfillment of the plan hits a resource constraint and the firm insists on the input combination specified in the plan.»
+k80_screw,匈牙利,1980,,10;11;9;10,,,kornai1980_43img,pp. 36-37 (PDF pp. 57-58),,"read on the page image: «the screw factory uses steel of quality 10 according to the technological standard for a certain type of screw. Now suppose this quality of steel ran out of stock … the firm could decide to use quality 11 instead. It is a higher quality, therefore the material costs more. … that steel of quality 9 is used instead of quality 10. The screw will be less durable.»"
+k80_forced,匈牙利,1980,,,,,kornai1980_43img,p. 37 (PDF p. 58),,read on the page image: «In what follows this alteration of input combination as a result of shortage will be called forced substitution.»
+k80_frequent,匈牙利,1980,,,,,kornai1980_43img,p. 37 (PDF p. 58),,read on the page image: «it appears that in a shortage economy forced substitution is the most frequent and most important form of instantaneous adjustment in production.»
+k86_journal,匈牙利,1986,,39;1986;1;3;30,,,kornai1986_43img,p. 3 (PDF p. 1),,"the running head; read on the page image: «KYKLOS, Vol. 39 - 1986 - Fasc. 1, 3-30»"
+k86_title,匈牙利,1986,,,,,kornai1986_43img,p. 3 (PDF p. 1),,read on the page image: «The Soft Budget Constraint JANOS KORNAI»
+k86_copyright,—,2001,,2001,,,kornai1986_43img,every page (PDF p. 2),,the footer the scan carries on its pages; read on the page image: «Copyright © 2001 All Rights Reserved»
+k86_paternal,匈牙利,1986,,,,,kornai1986_43img,p. 3 (PDF p. 1),,read on the page image: «The ‘soft budget constraint’ syndrome is usually associated with the paternalistic role of the State towards economic organizations»
+k86_soft,匈牙利,1986,,,,,kornai1986_43img,p. 4 (PDF p. 2),,"read on the page image: «because excess expenditure over earnings will be paid by some other institution, typically by the State. A further condition of ‘softening’ is that the decision-maker expects such external financial assistance with high probability»"
+k86_subsidy,匈牙利,1986,,1,,,kornai1986_43img,p. 5 (PDF p. 3),,"read on the page image: «1. Soft subsidies granted by national or local governments. The subsidy is soft if it is negotiable, subject to bargaining, lobbying, etc. The subsidy is adjusted to past, present or future cost overruns.»"
+k86_tax,匈牙利,1986,,2,,,kornai1986_43img,p. 6 (PDF p. 4),,"read on the page image: «2. Soft taxation. The attribute soft does not refer to the rate of taxation. Even with a low tax rate the taxation system can be hard, if rules are uniform, fixed for a long period and the payment of taxes rigorously enforced. … The tax rates are not uniform, but almost tailor-made»"
+k86_credit,匈牙利,1986,,3,,,kornai1986_43img,p. 6 (PDF p. 4),,"read on the page image: «3. Soft credit. Again, softness does not refer to the magnitude of the interest rate. … Enforcement of the credit contract continues to the bitter end: harsh sanctions in case of insolvency, including receivership, bankruptcy … the credit system can be soft even with high interest rates, if the fulfillment of a credit contract is not enforced, unreliable debt service is tolerated, and postponement and rescheduling are in order.»"
+k86_price,匈牙利,1986,,4,,,kornai1986_43img,p. 6 (PDF p. 4),,"read on the page image: «4. Soft administrative prices. … The administrative price is hard if, once set, it restricts expenditure and does not automatically adjust to cost increases. An administrative price is soft if it is set according to some permissive ‘cost plus’ principle, that almost automatically adjusts the price to costs.»"
+k86_passive,匈牙利,1986,,,,,kornai1986_43img,p. 13 (PDF p. 11),,read on the page image: «In the sphere of microunits with a soft budget constraint money is more or less ‘passive’ … Demand management works only if it is associated with sufficiently hard budget constraints.»
+k86_after,匈牙利,1986,,,,,kornai1986_43img,p. 13 (PDF p. 11),,"read on the page image: «It is more challenging to study what is happening in Yugoslavia, in Hungary and China which were the pioneering countries in introducing decentralization reforms associated with a larger role of profit incentives. If we observe – as is the case – that the budget constraint in these three economies is still rather soft»"
+k86_classical,匈牙利,1986,,,,,kornai1986_43img,p. 13 (PDF p. 11),,"read on the page image: «A loss-making firm or a whole sector can survive indefinitely, provided that the higher organs of the State want it.»"
+k86_firms,匈牙利,1982,,1755;1982,,,kornai1986_43img,p. 14 (PDF p. 12),,read on the page image: «In Hungary a research team is studying the financial situation of all State-owned enterprises (1755 firms in 1982)»
+k86_team,匈牙利,1982,,,,,kornai1986_43img,p. 14 (PDF p. 12),,footnote 14; read on the page image: «The study is directed by the author and by A. Matits.»
+k86_original,匈牙利,1982,,1,,,kornai1986_43img,p. 14 (PDF p. 12),,read on the page image: «1. Original profit. This is a hypothetical number: profit before receiving any kind of subsidies from the State and before paying any kind of taxes to the State.»
+k86_t1,匈牙利,1982,,1980;1.09;1.28;1982;0.91;1.27,,,kornai1986_43img,p. 15 (PDF p. 13),,"Table 1, 'Relative size of fiscal redistribution in Hungary': total subsidies and total taxes per total original profit; read on the page image: «1980 1.09 1.28 1982 0.91 1.27»"
+k86_276,匈牙利,1982,,276,,,kornai1986_43img,p. 15 (PDF p. 13),,read on the page image: «there are in total 276 types of taxes and subsidies used»
+k86_t3_loss,匈牙利,1982,,0.11;0.77;0.06;0.06,,,kornai1986_43img,p. 17 (PDF p. 15),,"Table 3, 'Transition probabilities due to fiscal redistribution in Hungary in 1982': from loss-maker to loss-maker, low, medium and high final profitability; read on the page image: «Loss-maker 0.11 0.77 0.06 0.06»"
+k86_t3_high,匈牙利,1982,,0;0.46;0.43;0.11,,,kornai1986_43img,p. 17 (PDF p. 15),,Table 3: from high original profitability; read on the page image: «High profitability 0 0.46 0.43 0.11»
+k86_exit,匈牙利,1982,,,,,kornai1986_43img,p. 17 (PDF p. 15),,"read on the page image: «Every year a few Hungarian State-owned firms go out of business. … Our analysis as well as other studies, have shown that exit is not related to profitability.»"
+k86_invest,匈牙利,1982,,,,,kornai1986_43img,p. 17 (PDF p. 15),,read on the page image: «The table clearly demonstrates that investment activity is not correlated with profitability at all.»
+zv65_issue,苏联,1965,,232;12468;2;1;1965,,,zv1965_43img,p. 1 (PDF p. 1),,"the date line; read on the page image: «№ 232 (12468) Цена 2 коп. Пятница, 1 октября 1965 года»"
+zv65_title,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,"the heading of the resolution; read on the page image: «ОБ УЛУЧШЕНИИ УПРАВЛЕНИЯ ПРОМЫШЛЕННОСТЬЮ, СОВЕРШЕНСТВОВАНИИ ПЛАНИРОВАНИЯ И УСИЛЕНИИ ЭКОНОМИЧЕСКОГО СТИМУЛИРОВАНИЯ ПРОМЫШЛЕННОГО ПРОИЗВОДСТВА»"
+zv65_date,苏联,1965,,29;1965,,,zv1965_43img,p. 1 (PDF p. 1),,"read on the page image: «Постановление Пленума ЦК КПСС, принятое 29 сентября 1965 года»"
+zv65_admin,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,"read on the page image: «Серьезным недостатком в руководстве промышленностью является то, что в нем превалировали административные методы в ущерб экономическим.»"
+zv65_formal,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,read on the page image: «Хозрасчет на предприятиях носит во многом формальный характер»
+zv65_indicators,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,read on the page image: «Работа предприятий регламентируется большим числом плановых показателей»
+zv65_bonus,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,read on the page image: «Система материального поощрения работников промышленности слабо заинтересовывает их в улучшении общих итогов работы предприятий»
+zv65_territorial,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,"read on the page image: «Управление промышленностью по территориальному принципу … в то же время сдерживало развитие отраслевой специализации и рациональных производственных связей между предприятиями, находящимися в разных экономических районах»"
+zv65_ministries,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,"read on the page image: «организовать управление промышленностью по отраслевому принципу, образовать союзно-республиканские и общесоюзные министерства по отраслям промышленности.»"
+zv65_fewer,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,"read on the page image: «сократить число плановых показателей, утверждаемых предприятиям сверху»"
+zv65_levers,苏联,1965,,,,,zv1965_43img,p. 1 (PDF p. 1),,"read on the page image: «улучшить использование таких важнейших экономических рычагов, как прибыль, цена, премия, кредит.»"
+zv65_unified,苏联,1965,,,,,zv1965_43img,p. 2 (PDF p. 2),,"read on the page image: «партия и Советское правительство будут и впредь проводить единую политику в области планирования главных направлений развития производства, технического прогресса, капитальных вложений, цен, оплаты труда и финансов.»"
+zv65_kosygin,苏联,1965,,,,,zv1965_43img,p. 2 (PDF p. 2),,"'А. Н..' as printed; read on the page image: «Пленум одобряет разработанные Президиумом ЦК КПСС и изложенные в докладе члена Президиума ЦК КПСС, Председателя Совета Министров СССР тов. Косыгина А. Н.. мероприятия по улучшению управления промышленностью»"
+kmr_cite,—,2003,,2003;1095;1136,,,kmr2003_43,p. 1095 (PDF p. 1),Journal of Economic Literature Vol. XLI (December 2003) pp. 1095–1136,the head of the first page
+kmr_title,—,2003,,,,,kmr2003_43,p. 1095 (PDF p. 1),Understanding the Soft Budget Constraint,
+kmr_setup,—,2003,,1,,,kmr2003_43,p. 1108 (PDF p. 14),Set-up funding costs 1.,the model of section 3
+kmr_poor,—,2003,,2,,,kmr2003_43,p. 1108 (PDF p. 14),a funded poor project yields a zero monetary return by the beginning of period 2.,
+kmr_liquidate,—,2003,,,,,kmr2003_43,p. 1108 (PDF p. 14),"Faced with a poor project, the center could liquidate the enterprise's assets, in which case it obtains a liquidation value",
+kmr_refinance,—,2003,,1,,,kmr2003_43,p. 1108 (PDF p. 14),The center alternatively could refinance the project by injecting additional capital of 1.,
+kmr_submit,—,2003,,,,,kmr2003_43,p. 1109 (PDF p. 15),then the manager will submit a poor project if and only if,the condition s·B_p + (1 − s)·B_L ≥ 0 follows; the text layer garbles it
+kmr_welfare,—,2003,,,,,kmr2003_43,p. 1110 (PDF p. 16),"the project's net monetary return, plus the private benefit to enterprises, plus the external effect E of the project on the rest of the economy.",
+kmr_political,—,2003,,,,,kmr2003_43,p. 1110 (PDF p. 16),The last term might include such things as the political benefit of keeping project workers employed.,
+kmr_ineq,—,2003,,1;2,,,kmr2003_43,p. 1110 (PDF p. 16),"Observe that if (1) and (2) both hold, the government will choose to refinance a poor project, even though that project is inefficient and would not have been financed in the first place had its type been known.","(1) is R_p + B_p + E_p − 1 > R_L + B_L and (2) is 1 > R_p + B_p + E_p − 1, garbled by the text layer"
+kmr_exante,—,2003,,2;1;1,,,kmr2003_43,p. 1110 (PDF p. 16),"The discrepancy arises because (2) represents an ex ante criterion; by contrast, (1) is an ex post criterion, one that arises after an investment of 1 has already been sunk in the project.",
+kmr_sunk,—,2003,,,,,kmr2003_43,p. 1110 (PDF p. 16),"Hence, the SBC problem is not due to the socialist objective function that we have assumed for the government.",
+kmr_capitalist,—,2003,,,,,kmr2003_43,p. 1110 (PDF p. 16),"the interesting question in the end is not why we observe the SBC syndrome in socialist economies, but rather why such constraints are not more prevalent in capitalist economies.",
+kmr_dispersed,—,2003,,,,,kmr2003_43,p. 1110 (PDF p. 16),"one possible answer is that, in capitalist economies, sources of funding (i.e., S-organizations) are typically dispersed",
+kmr_examples,—,1970,,1970,,,kmr2003_43,p. 1111 (PDF p. 17),case of a huge steel combinate like Nowa Huta in Poland in the 1970s or the Eurotunnel between France and Britain,
+loc_gierek,—,2026,,1913;2001,,,loc_gierek43,n50028021,"Gierek, Edward, 1913-2001",the authorized heading
+loc_gomulka,—,2026,,1905;1982,,,loc_gomulka43,n50034485,"Gomułka, Władysław, 1905-1982",the authorized heading
+loc_khrushchev,—,2026,,1894;1971,,,loc_khrushchev43,n80021705,"Khrushchev, Nikita Sergeevich, 1894-1971",the authorized heading
+loc_kornai,—,2026,,,,,loc_kornai43,n50043280,"Kornai, János",the authorized heading carries no dates; its source note gives 'b. 1-21-28' (row loc_kornai_note)
+loc_kornai_note,—,2026,,1;21;28,,,loc_kornai43,n50043280,b. 1-21-28,born 21 January 1928
+loc_kosygin,—,2026,,1904;1980,,,loc_kosygin43,n50042693,"Kosygin, Aleksey Nikolayevich, 1904-1980",the authorized heading
+loc_mao,—,2026,,1893;1976,,,loc_mao43,n78087649,"Mao, Zedong, 1893-1976",the authorized heading
+loc_peng,—,2026,,1898;1974,,,loc_peng43,n81063473,"Peng, Dehuai, 1898-1974",the authorized heading
+gnd_kornai,—,2026,,2021;1928,,,gnd_kornai43,GND 115604685,Männlich 2021 1928,"the record's gender, dateOfDeath (2021) and dateOfBirth (1928), in the order of the JSON record"
+gnd_name,—,2026,,,,,gnd_kornai43,GND 115604685,"Kornai, János",the preferred name
+gnd_licence,—,2026,,,,,gnd_kornai43,GND 115604685,http://creativecommons.org/publicdomain/zero/1.0/,the licence of the record's data (CC0 1.0)
+wb78_number,南斯拉夫,1978,,1615,,,wb1978_43,cover (PDF p. 1),Report No. 1615a-YU,the report's number
+wb78_date,南斯拉夫,1978,,1;21;1978,,,wb1978_43,cover (PDF p. 1),"Part 1: An Economic System in Evolution March 21, 1978",
+wb78_title,南斯拉夫,1978,,,,,wb1978_43,cover (PDF p. 1),Yugoslavia: Self-Management Socialism and the Challen1rs of Develonment,'Challen1rs of Develonment' for 'Challenges of Development'
+wb78_restricted,—,1978,,,,,wb1978_43,cover (PDF p. 1),This document has a restricted distribution and may hb used by recipients only in the performance of their official duties.,the notice of the time on the cover ('hb' for 'be'); the copy is stamped 'Public Disclosure Authorized' (row wb78_disclosure)
+wb78_disclosure,—,1978,,,,,wb1978_43,cover (PDF p. 1),Public Disclosure Authorized,the stamp on the cover
+wb78_mission,南斯拉夫,1976,,1976,,,wb1978_43,preface (PDF p. 17),This report was prepared by an economic mission that visited Yugoslavia in October and November 1976.,
+wb78_invest,南斯拉夫,1948,,2;30,,,wb1978_43,p. 2 (PDF p. 20),"In the first two years of the plan, output increased impressively, and the investment ratio rose to more than 30 percent.","the first postwar plan, 1946-1951"
+wb78_break,南斯拉夫,1948,,1948,,,wb1978_43,p. 2 (PDF p. 20),"after mid-1948, the break with the Soviet Union and the other Cominform countries prevented fulfillment of the plan.",
+wb78_1950,南斯拉夫,1950,,,,,wb1978_43,p. 2 (PDF p. 20),attempted to establish a new economic order based on a system of workers' selfmanagement characterized by social ownership and control of the means of production.,"'In 1950, Yugoslavia embarked on a unique path of development: it' (row wb78_1950a)"
+wb78_1950a,南斯拉夫,1950,,1950,,,wb1978_43,p. 2 (PDF p. 20),"In 1950, Yugoslavia embarked on a unique path of development: it",
+wb78_motive,南斯拉夫,1950,,,,,wb1978_43,p. 2 (PDF p. 20),The motivation underlying this decision was complex.,
+wb78_marx,南斯拉夫,1950,,,,,wb1978_43,p. 2 (PDF p. 20),a state in which workers would receive according to their labor and there would no longer be any alienation based on a separation of workers from the ownership of the means of production.,self-management 'was perceived as an embodiment of the spirit of the socialist state envisioned by Marxist philosophy'
+wb78_plural,南斯拉夫,1950,,,,,wb1978_43,p. 2 (PDF p. 20),"an ingenious way of dealing with the pluralistic character of Yugoslav society; differing interests can be voiced, respected, and harmonized.",
+wb78_gmp,南斯拉夫,1974,,1954;1974,,,wb1978_43,p. 3 (PDF p. 21),"Between 1954 and 1974, growth in Yugoslavia's real gross material",the next line: 'product (GMP) averaged 7.2 percent a year' (row wb78_gmp2)
+wb78_gmp2,南斯拉夫,1974,,7.2,,,wb1978_43,p. 3 (PDF p. 21),product (GMP) averaged 7.2 percent a year.,
+wb78_pop,南斯拉夫,1974,,1.1,,,wb1978_43,p. 3 (PDF p. 21),"a low and declining population growth rate, which averaged 1.1 percent a year during this period",
+wb78_1480,南斯拉夫,1975,,1480;1975,,,wb1978_43,p. 3 (PDF p. 21),"resulted in per capita income reaching US$1,480 by 1975",
+wb78_savings,南斯拉夫,1974,,30,,,wb1978_43,p. 3 (PDF p. 21),Domestic savings rates averaged about 30 percent of gross domestic product in earlier years--a considerable sacrifice in consumption.,
+wb78_employment,南斯拉夫,1974,,3.7;1954;1974,,,wb1978_43,p. 3 (PDF p. 21),Employment in the modern social sector increased 3.7 percent a year between 1954 and 1974,
+wb78_agri,南斯拉夫,1975,,66;33,,,wb1978_43,p. 3 (PDF p. 21),in the private agricultural sector declined from 66 percent to 33 percent,the share of the labour force; the years follow two lines later: 'between 1953 and 1975.' (row wb78_agri2)
+wb78_agri2,南斯拉夫,1975,,1953;1975,,,wb1978_43,p. 3 (PDF p. 21),between 1953 and 1975.,
+wb78_law,南斯拉夫,1950,,1950,,,wb1978_43,p. 6 (PDF p. 24),"Self-management'was initiated in 1950 and codified in the ""Law on",the law on the management of state enterprises by workers' collectives
+wb78_purpose,南斯拉夫,1950,,,,,wb1978_43,p. 6 (PDF p. 24),Its purpose was to ensure that workers achieved growing influence in the day-to-day operation of thpir work places.,'thpir' for 'their'
+wb78_state,南斯拉夫,1950,,,,,wb1978_43,p. 6 (PDF p. 24),"such as planning, price and incomes policies, and fiscal and monetary noliries, ramainpd firmly in the hands of the State.","'noliries, ramainpd' for 'policies, remained'"
+wb78_1965,南斯拉夫,1965,,1963;1965;1964;1967,,,wb1978_43,p. 7 (PDF p. 25),"Tne Constitution of 1963 set the stage, and the ""economic reforms"" of 1965 (in fact, a series of economic measures taken between ;964 and 1967)",'Tne' for 'The' and ';964' for '1964' (the page image reads 'between 1964 and 1967')
+wb78_banks,南斯拉夫,1965,,,,,wb1978_43,p. 7 (PDF p. 25),abandoning central allocation of investment funds in favor of a self-managed banking sector,
+wb78_indicative,南斯拉夫,1965,,,,,wb1978_43,p. 7 (PDF p. 25),"of ""global balances"" (macroaggregates) to a largely ""indicative"" rather than",
+wb78_market,南斯拉夫,1965,,,,,wb1978_43,p. 7 (PDF p. 25),workers were to manage their affairs independent of the State and subject principally to the impersonal forces of the marketplace.,'under the 1965 reforms'
+wb78_weakened,南斯拉夫,1965,,,,,wb1978_43,p. 7 (PDF p. 25),weakened macro-economic management by reducing the number of macro-economic,the 1965 reforms
+wb78_halfhearted,南斯拉夫,1965,,,,,wb1978_43,p. 7 (PDF p. 25),"were perceived as implicitly running counter to the spirit of self-management, and consequently they were pursued halfheartedly and erratically.",the incomes and price policies
+wb78_bias,南斯拉夫,1965,,,,,wb1978_43,p. 8 (PDF p. 26),"partly, it was because of the built-in inflationary bias of the system.",
+wb78_controlled,南斯拉夫,1962,,1960,,,wb1978_43,p. 8 (PDF p. 26),"Until the early 1960s, prices had been fairly tightly controlled by the State, so there was a high degree of price stability.",
+wb78_inflation,南斯拉夫,1965,,,,,wb1978_43,p. 8 (PDF p. 26),"With the liberalization of prices, however, economic growth increasingly was accompanied by high and rising rates of inflation.",
+wb78_after1965,南斯拉夫,1965,,1965,,,wb1978_43,p. 8 (PDF p. 26),"With the liberalization of prices, particularly after 1965, the",
+wb78_markup,南斯拉夫,1965,,,,,wb1978_43,p. 8 (PDF p. 26),"The response of wages to labor market conditions was much stronger in the upward than in the downward direction, and prices in many sectors of production were set on the basis of cost (cost mark-up pricing) rather than demand",
+wb78_translated,南斯拉夫,1965,,,,,wb1978_43,p. 8 (PDF p. 26),were quickly translated into price pressures.,the nominal wage increases
+wb78_monetary,南斯拉夫,1965,,,,,wb1978_43,p. 9 (PDF p. 27),"policy became the principal, and often the only, policy instrument available, but it had significant shortcomings.",'Monetary' ends the line before
+wb78_liquidation,南斯拉夫,1965,,,,,wb1978_43,p. 9 (PDF p. 27),"Enterprises could dampen the effect of restricting the money supply by building up credits among themselves. This practice was aggravated and sustained because enterprises were rarely forced into liquidation; thus, their financial accountability was limited.",
+wb78_slower,南斯拉夫,1967,,1965,,,wb1978_43,p. 10 (PDF p. 28),"After 1965, employment in the social sector",
+wb78_capacity,南斯拉夫,1967,,,,,wb1978_43,p. 10 (PDF p. 28),"grew less rapidly than before, but this does not appear to have been due to a","the line continues, after a heading the text layer inserts, with 'deterioration in the employment-generating capacity of the economy.' (row wb78_capacity2)"
+wb78_capacity2,南斯拉夫,1967,,,,,wb1978_43,p. 10 (PDF p. 28),deterioration in the employment-generating capacity of the economy.,
+wb78_rationalize,南斯拉夫,1967,,1965;1967,,,wb1978_43,p. 10 (PDF p. 28),"1965 and 1967, there was a once-and-for-all decline in employment as enterprises attempted to rationalize production and to increase labor productivity.",
+wb78_migration,南斯拉夫,1965,,1965,,,wb1978_43,p. 11 (PDF p. 29),"Conditions for external migration were considerably liberalized in 1965, and migration abroad became virtually as important as the social sector in absorbing labor.",
+wb78_unemployment,南斯拉夫,1972,,1970,,,wb1978_43,p. 11 (PDF p. 29),"Thus, by the early 1970s, despite large annual transfers of labor from the private agricultural sector to the social sector and abroad, the rate of open unemployment began to increase appreciably",
+wb78_landing,南斯拉夫,1978,,1;6,,,wbland1978_43,web page,Yugoslavia - Self management socialism and the challenges of development (Vol. 1 of 6) : An economic system in evolution,the title on the landing page; its static HTML prints no rights statement
+yu_series,南斯拉夫,1977,,44,,,yusuf1977_43,cover (PDF p. 1),DOMESTIC FNANCE STUDI2S NO. 44,'FNANCE STUDI2S' for 'FINANCE STUDIES'
+yu_title,南斯拉夫,1977,,,,,yusuf1977_43,cover (PDF p. 1),Understanding Self-Management in Yugoslavia,
+yu_date,南斯拉夫,1977,,1977,,,yusuf1977_43,cover (PDF p. 1),Shahid Yusuf November 1977,
+yu_disclosure,—,1977,,,,,yusuf1977_43,cover (PDF p. 1),Public Disclosure Authorized,the stamp on the cover
+yu_ward,南斯拉夫,1958,,,,,yusuf1977_43,p. 16 (PDF p. 23),simple model which showed that straightforward income maximization by the members of a self-managed firm would discourage investment,"'Many years ago, Benjamin Ward (Ward 1958, 1967)developed a' (row yu_ward0)"
+yu_ward0,南斯拉夫,1958,,1958;1967,,,yusuf1977_43,p. 16 (PDF p. 23),"Many years ago, Benjamin Ward (Ward 1958, 1967)developed a",
+yu_critique,南斯拉夫,1970,,,,,yusuf1977_43,p. 17 (PDF p. 24),It assumed that workers attached no weight to future income.,
+yu_single,南斯拉夫,1970,,,,,yusuf1977_43,p. 17 (PDF p. 24),"Similarly, the removal of the single factor assumption changed the outcome predicted by the model.",
+yu_horvat,南斯拉夫,1969,,,,,yusuf1977_43,p. 17 (PDF p. 24),"During the sixties, according to Horvat, underinvestment was never a problem, if anything, enterprises were investing too much.",the text layer joins 'under-' at the line end
+yu_hire,南斯拉夫,1977,,,,,yusuf1977_43,p. 19 (PDF p. 26),firms are disinclined to amalgamate or expand employment because it would mean sharing income with others,
+yu_landing,南斯拉夫,1977,,,,,wblandyusuf43,web page,Understanding self-management in Yugoslavia,the title on the landing page; its static HTML prints no rights statement
