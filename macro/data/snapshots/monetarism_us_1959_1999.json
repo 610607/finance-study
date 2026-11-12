@@ -1,0 +1,29 @@
+{
+  "title": "United States: GDP and the December averages of M1 and M2, annual, 1959-1999 (Chapter 45: the velocity of money)",
+  "source": "Economic Report of the President, February 2000, tables B-1 (Gross domestic product, 1959-99) and B-67 (Money stock and debt measures, 1959-99), GovInfo; the tables' sources: Department of Commerce, Bureau of Economic Analysis (B-1), Board of Governors of the Federal Reserve System (B-67)",
+  "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table67.pdf",
+  "series": "gdp_bn: gross domestic product, billions of dollars (B-1, first column; 1999 preliminary); m1_dec_bn: M1, billions of dollars, December, average of daily figures, seasonally adjusted (B-67, first column); m2_dec_bn: M2, the same (B-67, second column)",
+  "retrieved": "2026-11-12",
+  "license": "A work of the United States government, in the public domain (17 U.S.C. § 105).",
+  "used_in": [
+    45
+  ],
+  "fetch": "data/fetch/monetarism45.py",
+  "notes": "Read from the -layout text of the two PDFs (the default text run scatters the columns); the figures print thousands with commas, the preliminary year as '1999 p'. The yearly rows of B-67 are the December figures (its note: annual changes are from December to December), so the velocity of the chapter (GDP of the year over the money stock of December) differs a little from one computed with annual averages of the money stock. Chapter 45 uses the series in its text (the velocity of M1 in 1959, 1981, 1982 and 1986) and in Figure monetarism_velocity; the rows erp_b1_* and erp_b67_* of monetarism_facts quote the lines of the years the text and the checks name.",
+  "documents": {
+    "erpb1_45": {
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table1.pdf",
+      "format": "pdf",
+      "sha256": "60083dd75d852bcd9a4eef25f8d87d7d6889717d6c99d54c792f5b0fe922ee7f",
+      "version": "Table B-1, Gross domestic product, 1959-99, printed pp. 306-307 (two-page PDF; the yearly rows are on p. 306)",
+      "retrieved": "2026-11-12"
+    },
+    "erpb67_45": {
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table67.pdf",
+      "format": "pdf",
+      "sha256": "ed03fb979d3088090c34832f69fe48ec191f5ee0d841c1dde4ade308a288d515",
+      "version": "Table B-67, Money stock and debt measures, 1959-99, printed p. 385 (one-page PDF)",
+      "retrieved": "2026-11-12"
+    }
+  }
+}

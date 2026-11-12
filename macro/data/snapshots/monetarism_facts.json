@@ -1,0 +1,352 @@
+{
+  "title": "Monetarism and monetary targets: quotations of Friedman and Schwartz (1963, with Minsky's comment), Friedman (1968), Poole and Lieberman (1972), Modigliani and Papademos (1975), Goldfeld (1976), the Federal Open Market Committee (1979, 1982), the Budget statements of 1980, 1986 and 1987 (Hansard), the Bank of England (1981, 1986), Bouey (1982), Moses (1983), Rich (2003), Gerberding, Worms and Seitz (2004), the Economic Report of the President (2000, tables B-1 and B-67), the licences of the sites and the records of the persons named",
+  "source": "nber.org; aeaweb.org (AER 58(1), 1968); brookings.edu (BPEA 1972(2), 1975(1), 1976(3)); federalreserve.gov (FOMC records); api.parliament.uk (historic Hansard); bankofengland.co.uk (Quarterly Bulletin 1981, 1986); oar-rao.bank-banque-canada.ca (Bouey 1982); bankofcanada.ca; rba.gov.au (RDP 8301); ecb.europa.eu (WP 236); bundesbank.de (DP 25/2004); govinfo.gov (ERP 2000); id.loc.gov; lobid.org (GND)",
+  "url": "https://www.nber.org/chapters/c5179.pdf",
+  "series": "id, dynasty (the country), year, year_note, value (the numbers the quotation prints, ';'-separated, read by checks/check_ch45.py), unit, numeral, file (the key of the document in 'sources'), juan (the printed page and the PDF page, the Hansard column 'c. N', 'web page' or 'authority record'), quote (verbatim from the text layer, including its misreadings), note (what the row says)",
+  "retrieved": "2026-11-12",
+  "license": "Short quotations for teaching and criticism; no photographs are used and no chart of any source is reproduced (the figures of the chapter are drawn from the numbers of the rows and of monetarism_us_1959_1999). Friedman (1968) is © American Economic Association (rows f68_*); the AEA's copyright page says: 'Permission to make digital or hard copies for personal or classroom use of an American Economic Association publication, in part or whole, is granted without fee provided that copies are not distributed except for classroom use and that the first page includes the citation and appropriate copyright notice.' (row aea_terms) The book quotes short phrases only and paraphrases the rest. Friedman and Schwartz with the comments on their paper (rows fs_*, mk_*) are read in NBER's PDF: 'This PDF is a selection from an out-of-print volume from the National Bureau of Economic Research' (row fs_cover); short phrases only, the rest paraphrased. Goldfeld (1976), Poole and Lieberman (1972) and Modigliani and Papademos (1975) (rows gf_*, pl_*, mp_*) are © The Brookings Institution; the terms of brookings.edu: 'All content included on this site, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, is the property of Brookings or its content suppliers and protected by all applicable proprietary rights laws.' (row brookings_terms) Short phrases only. Gerberding, Worms and Seitz (2004), Deutsche Bundesbank (rows gwz_*): 'Reproduction permitted only if source is stated.' (row bundesbank_repro); the source is stated in the text, under the table and in the bibliography. Rich (2003), ECB Working Paper 236 (rows rich_*): '© European Central Bank, 2003' (row ecb_copy); 'Reproduction for educational and non-commercial purposes is permitted provided that the source is acknowledged.' (row ecb_repro); the source is acknowledged in the text, under the table and in the bibliography. Moses (1983), Reserve Bank of Australia (rows moses_*): the RBA's copyright page: 'With exception of the Excluded Material, all RBA Material is provided under a Creative Commons Attribution 4.0 International License (CC BY 4.0 Licence ) and may be used in accordance with the terms of that licence.' (row rba_licence) The RBA asks for the attribution 'Source : Reserve Bank of Australia [year] OR Source : RBA [year]' (row rba_attrib); the book attributes the paper as 'Source: Reserve Bank of Australia 1983'. Goodhart's sentence that Moses quotes (row moses_rule) is third-party material within the paper: the book gives it as one short quotation. The Bank of England (rows qb81_*, lp86_*): the Bank's legal page: 'Unless otherwise stated, the copyright and any other rights in the contents of the Resources, including but not limited to images, text and data, are owned by the Governor and Company of the Bank of England.' (row boe_legal_copyright) 'The Bank typically grants permission for non-commercial re-use of the Resources, particularly in an academic or education context.' (row boe_legal_permission) The book uses numbers and short phrases with the source named and reproduces no chart. The Bank of Canada (rows bou_*, boud_*): the Bank's terms: 'the Bank permits you to freely use, copy, distribute and transmit its website content under the following terms:' (row boc_permit) '1.1. Attribution You must attribute the Bank of Canada as the source of the content, and indicate if changes were made.' (row boc_attrib) The book attributes the Bank of Canada as the source and says that Bouey's words are translated into Chinese (the change made). Hansard (rows h80_*, law86_*, law87_*): 'Contains Parliamentary information licensed under the Open Parliament Licence v3.0.'; the historic Hansard pages read '© UK Parliament' (row hansard_copyright). The records of the Federal Open Market Committee (rows fomc79_*, fomc82f_*, fomc82o_*) and the Economic Report of the President (rows erp_* and the series of monetarism_us_1959_1999) are works of the United States government, in the public domain (17 U.S.C. § 105). The authority records of the Library of Congress (rows loc_*) are public data; those of the GND (rows gnd_*) are served by lobid.org under CC0 1.0.",
+  "used_in": [
+    45
+  ],
+  "fetch": "data/fetch/monetarism45.py",
+  "citation": "Each row is cited to its document in the bibliography block of Chapter 45 (references_zh.tex): friedmanschwartz1963, poolelieberman1972, goldfeld1976, fomc1979, fomc1982a, fomc1982b, hansard1980, hansard1986, hansard1987, boe1981, leighpemberton1986, bouey1982a, bouey1982b, moses1983, rich2003, gerberding2004, erp2000b, loc45, gnd45; Friedman (1968) and Modigliani and Papademos (1975) are the shared items friedman1968 and modigliani1975. The terms of the AEA, Brookings, the Bank of England, the Bank of Canada and the RBA are cited with the works they cover.",
+  "notes": "Every quotation is copied from the text layer of the document as data/fetch/verify_web_quotes.py extracts it (pdftotext with and without -layout, tags removed from web pages, whitespace and Unicode compatibility forms normalized), so the misreadings of the scans stay in the quotations; the rows say what each misreading stands for. The text layers of the AEA and Brookings scans join many words ('inappropriatetargetsframedin', 'unemploymentpercentage'). Named misreadings: 'MO' for 'M0' (law86_broad); 'braod' as printed (law86_narrow); 'has/allen' for 'has fallen' (lp86_velocity); 'nee1s' for 'needs' (lp86_facile); '(I)' for the footnote mark 1 (lp86_lecture); 'inMarch' for 'in March' (lp86_peak2); '197 1-73' for '1971-73' (lp86_rose); '17!-' for '17½' (qb81_garble); 'IO' for '10' (qb81_target); 'tenns' for 'terms' (qb81_real); 'from14% to12 %' for 'from 14% to 12%' (qb81_mlr); 'to20%' for 'to 20%' (qb81_25); 'Ml' for 'M1' (bou_1975, bou_reliable, bou_shifts, boud_stable, boud_1975, boud_pilot, fomc82f_ml, gf_clearly, moses_three); 'guLideor' for 'guide or' (f68_total); 'tnough' for 'though' (pl_superior); 'bo+ biY' for 'b0 + b1Y' (pl_eq1); 'Jourlial' for 'Journal' (pl_qje2); 'Econtomics' for 'Economics' (pl_qje2); 'GOP' for 'GDP' (moses_credit); 'Swissfranc' for 'Swiss franc' (rich_80). The rows read on page images (sources fs1963img_45, pl1972img_45, qb1981img_45) are typed from 200-dpi renders, with the fractions as printed ('17½%', '£13½ billion'); the text-layer row qb81_garble keeps the misreading the text names. The numbers of rows lp86_rose (1971-73), qb81_target (6-10 per cent), mk_cycles (twenty-one cycles between 1870 and 1960, six of them deep depressions) and moses_minsky (Minsky 1957, p. 171) are read by rules (checks/check_ch45.py, READINGS); rows fs_props, gwz_three, pl_eq1, pl_eq5, pl_loss, qb81_garble and lp86_facile have no number to read (their figures number propositions, equations and terms, or are misread). Table 10 of Gerberding, Worms and Seitz (rows gwz_t1975 to gwz_t1998) gives the year, the target in the course of the year (fourth quarter over fourth quarter; 1977 and 1978 in brackets, from the Annual Reports), the annual average, the midyear review, the assumptions for the half-years and the actual growth in the course of the year (1976-1978: the annual average). The target variable is the central bank money stock in 1975-1987 and M3 from 1988 (rows gwz_t10head, gwz_t10m3). Table 1 of Rich (rows rich_t1975 to rich_t1990; no monetary target in 1979, row rich_t1979) gives annual averages of year-on-year monthly rates of change unless its comments say otherwise (row rich_t1note): 1980 is measured over the level of November 1979 (and -2.0 per cent November over November), 1989 over the fourth quarter of 1988, 1990 as the year-on-year change of the fourth-quarter level. M1 is the definition of 1975 (row rich_t1m1); MBA is the adjusted monetary base (row rich_mba), MBS the seasonally adjusted base (rows rich_mbsa, rich_mbsa_def). The private-use glyphs that the text layer gives for the dashes of the row of 1979 are not quoted. The home address and e-mail address that Rich's paper prints on p. 1 (PDF p. 2) are not copied. Poole (1970) in the Quarterly Journal of Economics is cited as Poole and Lieberman report it (rows pl_qje, pl_qje2, pl_poole0); the article itself was not read. Goodhart (1975) is cited as Moses quotes it (rows moses_rule, moses_ref); the paper itself was not read. Minsky (1957) is cited as Moses quotes it (row moses_minsky). The web pages of aeaweb.org, brookings.edu, the Bank of England, the Bank of Canada, the RBA, the Hansard pages and the authority records change from time to time (dates, scripts, record updates): a different hash of one of them is reported by data/fetch/monetarism45.py but does not stop it; the quotations are then checked by verify_web_quotes.py. The PDFs must keep their hashes.",
+  "sources": {
+    "aeaterms_45": {
+      "url": "https://www.aeaweb.org/journals/copyright",
+      "format": "html",
+      "sha256": "3f0d81906fc12300ba37abec21865a6eed3800abd584795f147fbdba0fc1bda6",
+      "version": "the AEA's page 'Copyright and Permissions'",
+      "retrieved": "2026-11-12"
+    },
+    "bocterms_45": {
+      "url": "https://www.bankofcanada.ca/terms/",
+      "format": "html",
+      "sha256": "d16d93b4491602ea6eda7cd9c1a1a518561afc1120122a75f71da6e18510d797",
+      "version": "Bank of Canada, 'Terms of Use, Disclosures and Disclaimers' (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "boelegal_45": {
+      "url": "https://www.bankofengland.co.uk/legal",
+      "format": "html",
+      "sha256": "1d21746bf15bf0f978d965a1a273d2dbade6a3c36cd0a1d00118f6ffa348205b",
+      "version": "the Bank of England's page 'Legal' (copyright and re-use of its resources)",
+      "retrieved": "2026-11-12"
+    },
+    "bouey1982d_45": {
+      "url": "https://oar-rao.bank-banque-canada.ca/record/2283/files/Bouey_1982_December.pdf",
+      "format": "pdf",
+      "sha256": "9b09c7827254e9590d22062b4a9acc3fcfab66ddfa0b310c95d0621277056822",
+      "version": "Gerald K. Bouey, statement prepared for his appearance before the Standing Senate Committee on National Finance, Wednesday, December 8th, 1982, from the Bank of Canada's open archive (7 PDF pages: PDF p. 1 is the cover, page number = PDF page - 1)",
+      "retrieved": "2026-11-12"
+    },
+    "bouey1982n_45": {
+      "url": "https://oar-rao.bank-banque-canada.ca/record/2291/files/Bouey_1982_November.pdf",
+      "format": "pdf",
+      "sha256": "a787e1c0d232a873822cd3a63c4b83f1f770a45362cfa1b0265c51671b6bba93",
+      "version": "Gerald K. Bouey, 'Recovering from Inflation', notes for remarks to the Canadian Club, Toronto, November 29, 1982, from the Bank of Canada's open archive (11 PDF pages: PDF p. 1 is the cover, page number = PDF page - 1)",
+      "retrieved": "2026-11-12"
+    },
+    "brookingsterms_45": {
+      "url": "https://www.brookings.edu/terms-of-use/",
+      "format": "html",
+      "sha256": "f101167cfb54025458718f494412d9be35b74e4e770a6178fa928945aee4b735",
+      "version": "the terms of use of brookings.edu",
+      "retrieved": "2026-11-12"
+    },
+    "erpb1_45": {
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table1.pdf",
+      "format": "pdf",
+      "sha256": "60083dd75d852bcd9a4eef25f8d87d7d6889717d6c99d54c792f5b0fe922ee7f",
+      "version": "Economic Report of the President, February 2000, Table B-1, Gross domestic product, 1959-99, printed pp. 306-307 (two-page PDF from GovInfo; the rows are read in the -layout run)",
+      "retrieved": "2026-11-12"
+    },
+    "erpb67_45": {
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table67.pdf",
+      "format": "pdf",
+      "sha256": "ed03fb979d3088090c34832f69fe48ec191f5ee0d841c1dde4ade308a288d515",
+      "version": "Economic Report of the President, February 2000, Table B-67, Money stock and debt measures, 1959-99, printed p. 385 (one-page PDF from GovInfo; the rows are read in the -layout run)",
+      "retrieved": "2026-11-12"
+    },
+    "f1968_45": {
+      "url": "https://www.aeaweb.org/aer/top20/58.1.1-17.pdf",
+      "format": "pdf",
+      "sha256": "f3f15eb64eed66d7f0f5d209687d0d8d82dc97bb1ef9344b478e03712d891190",
+      "version": "Milton Friedman, 'The Role of Monetary Policy', American Economic Review 58(1), March 1968, pp. 1-17 (a scan of the printed pages with a text layer, 17 PDF pages; the printed page numbers equal the PDF page numbers), from the AEA's 'Top 20' collection",
+      "retrieved": "2026-11-12"
+    },
+    "fomc1979_45": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcropa19791006.pdf",
+      "format": "pdf",
+      "sha256": "5e158efface8c7b5b75a8988aa2205240f690000e79d5ce7addb9c84cb831024",
+      "version": "Federal Open Market Committee, record of policy actions of the meeting of October 6, 1979, with the Board's press release of November 23, 1979 (10 PDF pages, cited by PDF page)",
+      "retrieved": "2026-11-12"
+    },
+    "fomc1982f_45": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcropa19820202.pdf",
+      "format": "pdf",
+      "sha256": "bcd94d387e0dfee463c30c8f10f328d0dcd7163a4ec40ef6a9e9c134adb5543e",
+      "version": "Federal Open Market Committee, record of policy actions of the meeting of February 1-2, 1982, with the press release of April 2, 1982 (15 PDF pages, cited by PDF page)",
+      "retrieved": "2026-11-12"
+    },
+    "fomc1982o_45": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/files/fomcropa19821005.pdf",
+      "format": "pdf",
+      "sha256": "18838e845100c17ed29c4cf407214ac1c6a2adf72b750b7d6bf685841a4e6742",
+      "version": "Federal Open Market Committee, record of policy actions of the meeting of October 5, 1982, with the press release of November 19, 1982 (14 PDF pages, cited by PDF page)",
+      "retrieved": "2026-11-12"
+    },
+    "fs1963_45": {
+      "url": "https://www.nber.org/chapters/c5179.pdf",
+      "format": "pdf",
+      "sha256": "96f45c2b7a557da732d186e74530ae3b02ae7eaa06a83ed9b0e4b2d189a0fe48",
+      "version": "Milton Friedman and Anna J. Schwartz, 'Money and Business Cycles', with the comment that follows it (Hyman P. Minsky's, from printed p. 64), in Universities-National Bureau Committee for Economic Research, The State of Monetary Economics (NBER, publication date 1965), chapter pp. 32-78: NBER's PDF of the chapter (a scan with a text layer, 48 PDF pages; PDF p. 1 is NBER's cover sheet, printed page = PDF page + 30)",
+      "retrieved": "2026-11-12"
+    },
+    "fs1963img_45": {
+      "url": "https://www.nber.org/chapters/c5179.pdf",
+      "format": "image",
+      "sha256": "96f45c2b7a557da732d186e74530ae3b02ae7eaa06a83ed9b0e4b2d189a0fe48",
+      "version": "the same PDF, pages read on images rendered with pdftoppm at 200 dpi: PDF p. 4 (printed p. 34, the table of the major exceptions), PDF pp. 23-24 (printed pp. 53-54), PDF p. 35 (printed p. 65, Minsky's comment); the two columns of these pages interleave in the text layer",
+      "retrieved": "2026-11-12"
+    },
+    "gf1976_45": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1976/12/1976c_bpea_goldfeld_fand_brainard.pdf",
+      "format": "pdf",
+      "sha256": "f9ace33f9c41f8866cdfdc35d04eec0baba9598a571d8f30adc8b294c732f9f9",
+      "version": "Stephen M. Goldfeld, 'The Case of the Missing Money', Brookings Papers on Economic Activity 1976(3), printed pp. 683-739 with the comments and discussion (a scan with a text layer, 57 PDF pages: printed page = PDF page + 682)",
+      "retrieved": "2026-11-12"
+    },
+    "gnd_lawson45": {
+      "url": "https://lobid.org/gnd/170553051.json",
+      "format": "json",
+      "sha256": "74425fb6a3cb0df01d6d99c5e66abb3bc23d2163b35b0708dc09ab6cedbba438",
+      "version": "Gemeinsame Normdatei, record 170553051, as lobid.org serves it (JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "gnd_minsky45": {
+      "url": "https://lobid.org/gnd/119125536.json",
+      "format": "json",
+      "sha256": "85e94073a576734e94f998fa41bd741470d9ffbbe090cc42f90f84cd80a4f1f7",
+      "version": "Gemeinsame Normdatei, record 119125536, as lobid.org serves it (JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "gnd_volcker45": {
+      "url": "https://lobid.org/gnd/119474301.json",
+      "format": "json",
+      "sha256": "5d53ff66d34927176787d6cc74cbcc63464f8d3025d02436bca6456f3a158c2d",
+      "version": "Gemeinsame Normdatei, record 119474301, as lobid.org serves it (JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "gwz2004_45": {
+      "url": "https://www.bundesbank.de/resource/blob/703168/056f4743f6207a32c4aaf897e10e9df2/472B63F073F071307366337C94F8C870/2004-09-23-dkp-25-data.pdf",
+      "format": "pdf",
+      "sha256": "7ef0533d3b912ced769d248781201087c49b0536346f8668e9964775230bbc99",
+      "version": "Christina Gerberding, Andreas Worms and Franz Seitz, 'How the Bundesbank really conducted monetary policy: An analysis based on real-time data', Deutsche Bundesbank, Discussion Paper Series 1: Studies of the Economic Research Centre, No 25/2004 (64 PDF pages: PDF pp. 1-10 are the unnumbered front matter, printed page = PDF page - 10; Table 10 on printed p. 45 read in the -layout run and checked on an image of the page)",
+      "retrieved": "2026-11-12"
+    },
+    "hansard1980_45": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1980/mar/26/the-medium-term-strategy-and-the",
+      "format": "html",
+      "sha256": "c9d81c3b57411817dc10a6ff4821085f88fec00e8968509f1cf77e32cee49391",
+      "version": "House of Commons, HC Deb 26 March 1980 vol 981 cc1442-6, 'The Medium-Term Strategy and the Monetary Target' (the Budget statement), UK Parliament's historic Hansard site (the page as served on 2026-11-12; its last line carries a script whose token changes from one download to the next, so the hash is of the copy read)",
+      "retrieved": "2026-11-12"
+    },
+    "hansard1980r_45": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1980/mar/26/retrospect",
+      "format": "html",
+      "sha256": "9316b5275dd3a563566a3b2480f130482ed58af60ff277bf3446967b44a542d5",
+      "version": "House of Commons, HC Deb 26 March 1980 vol 981 cc1439-42, 'Retrospect' (the opening section of the same Budget statement), UK Parliament's historic Hansard site (the page as served on 2026-11-12; its last line carries a script whose token changes from one download to the next, so the hash is of the copy read)",
+      "retrieved": "2026-11-12"
+    },
+    "hansard1986_45": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1986/mar/18/monetary-policy",
+      "format": "html",
+      "sha256": "779e85a7b420d3e0b62f7b2e6ab186ddecd56deedd3d14e994f9b9944909a8d9",
+      "version": "House of Commons, HC Deb 18 March 1986 vol 94 cc169-70, 'Monetary Policy' (the Budget statement), UK Parliament's historic Hansard site (the page as served on 2026-11-12; its last line carries a script whose token changes from one download to the next, so the hash is of the copy read)",
+      "retrieved": "2026-11-12"
+    },
+    "hansard1986b_45": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1986/mar/18/budget-statement",
+      "format": "html",
+      "sha256": "381ddae14bcee2c942fd1e32089bee574e56dd88a3292b626fc35104217d6377",
+      "version": "House of Commons, HC Deb 18 March 1986 vol 94 c166, 'Budget Statement' (the opening of the statement), UK Parliament's historic Hansard site (the page as served on 2026-11-12; its last line carries a script whose token changes from one download to the next, so the hash is of the copy read)",
+      "retrieved": "2026-11-12"
+    },
+    "hansard1987_45": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1987/mar/17/monetary-policy",
+      "format": "html",
+      "sha256": "44e2b610dc2bc9fe84ccc822e3385f2115ecd5287a0e1ce02419a42668951f8f",
+      "version": "House of Commons, HC Deb 17 March 1987 vol 112 c817, 'Monetary Policy' (the Budget statement), UK Parliament's historic Hansard site (the page as served on 2026-11-12; its last line carries a script whose token changes from one download to the next, so the hash is of the copy read)",
+      "retrieved": "2026-11-12"
+    },
+    "hansard1987b_45": {
+      "url": "https://api.parliament.uk/historic-hansard/commons/1987/mar/17/budget-statement",
+      "format": "html",
+      "sha256": "c626903376875f7721d222a66a7258d084b530711b71769ad577f528f78ac7e0",
+      "version": "House of Commons, HC Deb 17 March 1987 vol 112 c815, 'Budget Statement' (the opening of the statement), UK Parliament's historic Hansard site (the page as served on 2026-11-12; its last line carries a script whose token changes from one download to the next, so the hash is of the copy read)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_bouey45": {
+      "url": "https://id.loc.gov/authorities/names/n88614765.madsrdf.json",
+      "format": "json",
+      "sha256": "f5f65842f1033c7e4f6f62ffee09bc54843bbd8d7363207d620962299ae422c3",
+      "version": "Library of Congress Name Authority File, record n88614765 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_fisher45": {
+      "url": "https://id.loc.gov/authorities/names/n50005294.madsrdf.json",
+      "format": "json",
+      "sha256": "be10dd7e18d478e81272dae97b6ef3f77d9dfe16fe27cd6abcf7f080f2fb065b",
+      "version": "Library of Congress Name Authority File, record n50005294 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_friedman45": {
+      "url": "https://id.loc.gov/authorities/names/n79117948.madsrdf.json",
+      "format": "json",
+      "sha256": "1157d1076598fad29c980bca0c15dd1b825b897e85150438ac9b920c1e60c4c5",
+      "version": "Library of Congress Name Authority File, record n79117948 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_goodhart45": {
+      "url": "https://id.loc.gov/authorities/names/n50035286.madsrdf.json",
+      "format": "json",
+      "sha256": "c94c38c04241cb8f6acd2dff402a78495b5642ca33c87c7b2e38d3a6281c4320",
+      "version": "Library of Congress Name Authority File, record n50035286 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_howe45": {
+      "url": "https://id.loc.gov/authorities/names/n86128063.madsrdf.json",
+      "format": "json",
+      "sha256": "cbdca28fa92153653d5076500c6ee9e8a5245c889c2f1616ffa3b208a0b37211",
+      "version": "Library of Congress Name Authority File, record n86128063 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_lawson45": {
+      "url": "https://id.loc.gov/authorities/names/n82253955.madsrdf.json",
+      "format": "json",
+      "sha256": "94641725bce7ebeda99cbaba565947987406d66e00c93c6bf049b8a05dc82f5c",
+      "version": "Library of Congress Name Authority File, record n82253955 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_leighpemberton45": {
+      "url": "https://id.loc.gov/authorities/names/nr89017958.madsrdf.json",
+      "format": "json",
+      "sha256": "c19d388bcd885eacf8ef71fa6d83d742e84e72f76119c0edd70225f537ace3d1",
+      "version": "Library of Congress Name Authority File, record nr89017958 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_minsky45": {
+      "url": "https://id.loc.gov/authorities/names/n82110156.madsrdf.json",
+      "format": "json",
+      "sha256": "15fb17ff00dc3de58f068c36543adc7b29e0be9df2561061d43459442d480ff6",
+      "version": "Library of Congress Name Authority File, record n82110156 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_modigliani45": {
+      "url": "https://id.loc.gov/authorities/names/n78090530.madsrdf.json",
+      "format": "json",
+      "sha256": "1aeec4b6d6a15eb7b5e8ffc68e64901b6e11cd4c266d0138af3ddb2fe353d282",
+      "version": "Library of Congress Name Authority File, record n78090530 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_poole45": {
+      "url": "https://id.loc.gov/authorities/names/n78056350.madsrdf.json",
+      "format": "json",
+      "sha256": "fc6bc2da881476e1e05ce07fee48c80dc036ca79977ad5afadc33378ebee9bd5",
+      "version": "Library of Congress Name Authority File, record n78056350 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_samuelson45": {
+      "url": "https://id.loc.gov/authorities/names/n50019332.madsrdf.json",
+      "format": "json",
+      "sha256": "f473b717d75cb602cb0ca6459e0dd325b6ffda6f7434165ae6b1b963e4488784",
+      "version": "Library of Congress Name Authority File, record n50019332 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_schwartz45": {
+      "url": "https://id.loc.gov/authorities/names/n50004120.madsrdf.json",
+      "format": "json",
+      "sha256": "2936f8201f29d2de1e55ff8e6ab192686ace69b31835116c5c9e045f7a517859",
+      "version": "Library of Congress Name Authority File, record n50004120 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_thatcher45": {
+      "url": "https://id.loc.gov/authorities/names/n50000017.madsrdf.json",
+      "format": "json",
+      "sha256": "f0e262737186cdca8ebc92ca1a43b53ac19217ae030edb15f1e0342bede31d89",
+      "version": "Library of Congress Name Authority File, record n50000017 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "loc_volcker45": {
+      "url": "https://id.loc.gov/authorities/names/n78057465.madsrdf.json",
+      "format": "json",
+      "sha256": "afc9311f6b589e666c0a296922ac4f00a23e3a57505421316a48cea0da6d0543",
+      "version": "Library of Congress Name Authority File, record n78057465 (MADS/RDF JSON)",
+      "retrieved": "2026-11-12"
+    },
+    "lp1986_45": {
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/1986/financial-change-and-broad-money.pdf",
+      "format": "pdf",
+      "sha256": "30205882ec4b6ebf56c6480d04786166126d0bea325353800cf4079090f4b0c7",
+      "version": "'Financial change and broad money', the Governor's Loughborough University Banking Centre Lecture in Finance (22 October 1986), Bank of England Quarterly Bulletin, December 1986, printed pp. 499-507 (a scan with a text layer, 9 PDF pages: printed page = PDF page + 498)",
+      "retrieved": "2026-11-12"
+    },
+    "moses1983_45": {
+      "url": "https://www.rba.gov.au/publications/rdp/1983/pdf/rdp8301.pdf",
+      "format": "pdf",
+      "sha256": "e662c19279eeacd8597b497b38304778fe7e7e9cb537a23d082dfaea1a904c4a",
+      "version": "Carolyn J. Moses, 'Financial Innovations and Monetary Policy: A Preliminary Survey', Reserve Bank of Australia, Research Discussion Paper 8301, May 1983 (a scan with a text layer, 20 PDF pages: PDF pp. 1-2 are the unnumbered title page and abstract, printed page = PDF page - 2)",
+      "retrieved": "2026-11-12"
+    },
+    "mp1975_45": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1975/01/1975a_bpea_modigliani_papdemos.pdf",
+      "format": "pdf",
+      "sha256": "67068e395564b8db0e8217dd95f084e6f2897edb048cd59fd92b2a8ea5354de4",
+      "version": "Franco Modigliani and Lucas Papademos, 'Targets for Monetary Policy in the Coming Year', Brookings Papers on Economic Activity 1975(1), printed pp. 141-165 with the discussion (a scan with a text layer, 26 PDF pages: PDF pp. 1-8 are printed pp. 141-148, PDF p. 9 an unnumbered erratum slip, PDF pp. 10-26 printed pp. 149-165)",
+      "retrieved": "2026-11-12"
+    },
+    "pl1972_45": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1972/06/1972b_bpea_poole_lieberman_fand_goldfeld.pdf",
+      "format": "pdf",
+      "sha256": "3a5b16d7d033dfabf3d5a237d9dfcd045fd051d706b7b200f615f26b4d917d93",
+      "version": "William Poole and Charles Lieberman, 'Improving Monetary Control', Brookings Papers on Economic Activity 1972(2), printed pp. 293-342 with the comments and discussion (a scan with a text layer, 50 PDF pages: printed page = PDF page + 292)",
+      "retrieved": "2026-11-12"
+    },
+    "pl1972img_45": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1972/06/1972b_bpea_poole_lieberman_fand_goldfeld.pdf",
+      "format": "image",
+      "sha256": "3a5b16d7d033dfabf3d5a237d9dfcd045fd051d706b7b200f615f26b4d917d93",
+      "version": "the same PDF, page read on an image rendered with pdftoppm at 200 dpi: PDF p. 6 (printed p. 298, equation (5) and the loss function, whose subscripts and fractions the text layer loses)",
+      "retrieved": "2026-11-12"
+    },
+    "qb1981_45": {
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/1981/economic-commentary-qb-1981-q1.pdf",
+      "format": "pdf",
+      "sha256": "a3d1cd7bf4ceb23c7d2bccc1450d32bc8717e598455155b4c60f061a6b7b04cf",
+      "version": "Bank of England, 'Economic commentary', Quarterly Bulletin, March 1981, printed pp. 3-22 (a scan with a text layer, 20 PDF pages: printed page = PDF page + 2)",
+      "retrieved": "2026-11-12"
+    },
+    "qb1981img_45": {
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/quarterly-bulletin/1981/economic-commentary-qb-1981-q1.pdf",
+      "format": "image",
+      "sha256": "a3d1cd7bf4ceb23c7d2bccc1450d32bc8717e598455155b4c60f061a6b7b04cf",
+      "version": "the same PDF, page read on an image rendered with pdftoppm at 200 dpi: PDF p. 1 (printed p. 3), whose fractions the text layer misreads",
+      "retrieved": "2026-11-12"
+    },
+    "rbacopyright_45": {
+      "url": "https://www.rba.gov.au/copyright/",
+      "format": "html",
+      "sha256": "14f27b607eac574771ee70d035d64165eb7a125c99f06e9e785cd768c38c12de",
+      "version": "Reserve Bank of Australia, 'Copyright and Disclaimer Notice' (web page)",
+      "retrieved": "2026-11-12"
+    },
+    "rich2003_45": {
+      "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp236.pdf",
+      "format": "pdf",
+      "sha256": "9e3e2846f2d438d8734fba859fad250b67ad80e85e55e11be0f3b8fe2fed7f36",
+      "version": "Georg Rich, 'Swiss Monetary Targeting 1974-1996: The Role of Internal Policy Analysis', European Central Bank Working Paper No. 236, June 2003 (60 PDF pages: PDF p. 1 is the cover, printed page = PDF page - 1; Table 1 on printed p. 18 read in the -layout run and checked on an image of the page)",
+      "retrieved": "2026-11-12"
+    }
+  }
+}
