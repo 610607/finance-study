@@ -307,7 +307,7 @@ MISPRINTS = [("law86_broad", "MO", "'MO' for 'M0'"),
              ("pl_qje2", "Econtomics", "'Econtomics' for 'Economics'"),
              ("moses_credit", "GOP", "'GOP' for 'GDP'"),
              ("rich_80", "Swissfranc", "'Swissfranc' for 'Swiss franc'")]
-N_QUOTED = 192
+N_QUOTED = 199
 
 
 def check_readings(df: pd.DataFrame) -> None:
@@ -535,7 +535,7 @@ SC = dict(pi=2.0, y=3.0, v=-1.0, v_fast=-3.0, sv=3.0)       # self-checks 1-3
 POOLE = dict(a1=-1.0, b1=1.0, b2=-0.5, su=1.0, sv=(1.0, 4.0))  # ex:monetarism-poole and Figure monetarism_poole
 VLINES = (1979, 1982, 1986)                                 # the vertical lines of Figure monetarism_velocity
 
-EQ_TARGET = r"m^{*}=\pi^{*}+y^{*}-v^{*} .\label{eq:monetarism-target}"
+EQ_TARGET = r"g_M^{\mathrm{T}}=\pi^{\mathrm{T}}+\bar{g}_Y-\bar{g}_V .\label{eq:monetarism-target}"
 EQ_POOLE = (r"\sigma^{2}_{Y,r}=\sigma^{2}_{u},\qquad" "\n"
             r"\sigma^{2}_{Y,M}=\frac{b_2^{2}\,\sigma^{2}_{u}+a_1^{2}\,\sigma^{2}_{v}}{(a_1b_1+b_2)^{2}} ."
             r"\label{eq:monetarism-poole}")
@@ -640,6 +640,8 @@ def opening(F, Y, Q):
     said("1980 年 3 月 26 日是星期三", y, m, d)
     has("h80_speaker", "Chancellor of the Exchequer (Sir Geoffrey Howe)")
     has("h80_red", "part II of the Financial Statement and Budget Report", "Red Book")
+    has("h80_mtfs", "the medium-term financial strategy")
+    say("政府的中期财政战略（medium-term financial strategy）写在预算报告的第二部分")
     has("h80_heart", "a target for a steadily declining growth of the money supply")
     has("h80_monetarism", "accommodated by an excessive expansion of money and credit")
     has("law86_broad", "sterling M3")
@@ -680,7 +682,7 @@ def opening(F, Y, Q):
 def world(F, Y, Q):
     has("fs_title", "MONEY AND BUSINESS CYCLES")
     has("fs_authors", "Milton Friedman and Anna J. Schwartz")
-    said("那时两人的《美国货币史》正在付印，注明 1963 年", F["fs_press"][2])
+    said("那时两人的《美国货币史》正在付印，文中注明的年份是 1963 年", F["fs_press"][2])
     has("fs_dance", "Irving Fisher", "a dance of the dollar")
     has("fs_samuelson", "best selling textbook", "is investment")
     has("fs_passive", "purely passive role")
@@ -694,6 +696,14 @@ def world(F, Y, Q):
     lo, hi = min(six, key=lambda x: x[2]), max(six, key=lambda x: x[2])
     said("重大的例外只有六次，下降最少的是 1937—1938 年，降了 2.4\\%", *lo)
     said("下降最多的是 1929—1933 年，降了 35.2\\%", *hi)
+    # Chapter 28's figure for the same contraction: the same money (F&S's estimates), annual averages of 1929 and 1933
+    # against the decline over the whole exception (fs_exceptions: "the percentage decline during each exception")
+    has("fs_exceptions", "the percentage decline during each exception")
+    assert "这里的广义货币，是公众手中的通货加上商业银行的活期与定期存款。数字来自弗里德曼与施瓦茨的估计" \
+        in chapter("ch28_depressionus")
+    c28 = there("ch28_depressionus", "按年平均，广义货币 1929 年是 466 亿美元，1933 年是 322 亿美元，降了 30.9\\%")
+    assert (c28[0], c28[2]) == hi[:2] and c28[4] < hi[2]                         # 所以更大
+    said("那一章按 1929 与 1933 两年的年平均算，降了 30.9\\%", c28[0], c28[2], c28[4])
     has("fs_major", "major as judged by other indicators")
     has("fs_props", "necessary and sufficient condition", "long secular changes",
         "periods roughly the length of business cycles")
@@ -740,10 +750,10 @@ def theory(F, Y, Q):
     said("设央行能容忍的通胀是 2\\%，潜在产出每年增长 2.5\\%，流通速度每年下降 1\\%", EX["pi"], EX["y"], -EX["v"])
     said("若流通速度实际每年下降 4\\%", -EX["v_fast"])
     said("要得到 2\\% 的通胀", EX["pi"])
-    said("$m^{*}=2+2.5-(-1)=5.5\\%$", EX["pi"], EX["y"], -EX["v"], m)
+    said("$g_M^{\\mathrm{T}}=2+2.5-(-1)=5.5\\%$", EX["pi"], EX["y"], -EX["v"], m)
     assert pi_fast < 0                                                           # 物价反而下降
-    said("$\\pi=5.5+(-4)-2.5=-1\\%$", m, -EX["v_fast"], EX["y"], -pi_fast)
-    said("$m=2+2.5+4=8.5\\%$，比原来的目标高 3 个百分点", EX["pi"], EX["y"], -EX["v_fast"], m_need, m_need - m)
+    said("$\\pi\\approx5.5+(-4)-2.5=-1\\%$", m, -EX["v_fast"], EX["y"], -pi_fast)
+    said("$g_M=2+2.5+4=8.5\\%$，比原来的目标高 3 个百分点", EX["pi"], EX["y"], -EX["v_fast"], m_need, m_need - m)
     # the pitfall: the Governor's velocity is the example's
     has("lp86_facile", "too facile", "frequently adjusted or overridden")
     has("lp86_relax", "mistaken by those with an over-simple approach to these questions for a policy relaxation")
@@ -836,7 +846,7 @@ def america(F, Y, Q):
     said("投赞成票的是沃尔克等 12 人，没有反对票", len(yes))
     has("fomc79_after", "after the meeting of the Committee")
     has("fomc79_marginal", "managed liabilities")
-    said("会后，理事会把贴现率从 11\\% 提到 12\\%，对管理负债的增加额设了 8\\% 的边际准备金要求",
+    said("会后，联邦储备理事会把贴现率从 11\\% 提到 12\\%，对管理负债的增加额设了 8\\% 的边际准备金要求",
          *F["fomc79_board"], F["fomc79_marginal"][0])
     has("fomc79_confidence", "increase confidence at home and abroad")
     # February 1982
@@ -911,9 +921,14 @@ def america(F, Y, Q):
     said("22 年里平均每年上升约 3.2\\%", 1981 - 1959, g)
     said("1982 年它下降 4.3\\%，1986 年又下降 9.6\\%", 1982, -growth(1982), 1986, -growth(1986))
     said("M1 的流通速度若照 1981 年以前的趋势走", 1981)
+    assert growth(1982) < 0 < g                                                  # 本该继续上升。它反而下降了
 
 
 def britain(F, Y, Q):
+    # who decided: the Prime Minister after the general election of 1979 (the editor's round)
+    has("loc_thatcher", "Prime Minister", "1979 general election")
+    said("英国的目标是谁定的？1979 年的大选以后", F["loc_thatcher"][0])
+    say("出任首相\\cite{loc45}")
     has("h80_priority", "the first priority")
     has("h80_illusion", "It is an illusion")
     has("h80_path", "a four-year path for monetary growth, public spending and tax policies")
@@ -993,6 +1008,8 @@ def britain(F, Y, Q):
     has("bou_drop", "no longer has a target range for it")
     has("bou_regret", "I regret this development")
     has("bou_strains", "high unemployment", "many business failures")
+    has("bou_outofhand", "the result of having allowed inflation to get so far out of hand")
+    say("他认为，这个结果首先要归咎于当初让通胀失控得太厉害")
     has("bou_why", "systematically related to the trend of total spending")
     has("bou_dollar", "the exchange rate")
     said("Bouey 在 12 月说", month("boud_date", "December"))
@@ -1139,9 +1156,18 @@ def test(F, Y, Q):
     said("1978 年的目标超出 10 个百分点以上", *F["rich_explosive"])
     has("rich_1988", "massive reduction in the demand for base money")
     has("rich_sic", "world's first real-time gross settlement system")
-    said("1988 年，瑞士的银行与央行推出世界上第一个实时全额结算系统", F["rich_1988"][0])
-    assert all(rich(y)["outcome"] < 0 for y in (1988, 1989, 1990))
-    said("表中 1988—1990 年的负增长就是这样来的", 1988, 1990)
+    has("rich_1988", "at the beginning of 1988")
+    said("1988 年初，瑞士的银行与央行推出世界上第一个实时全额结算系统", F["rich_1988"][0])
+    # only 1988: Rich (pp. 34-36) puts about half of the 1989 miss and most of the 1990 miss down to a tighter course
+    assert rich(1988)["outcome"] < 0
+    said("表中 1988 年的负增长就是这样来的", F["rich_1988"][0])
+    # 1989 and 1990 (the editor's round): the SNB's own split of the 1989 miss, and the tighter course of 1990
+    has("rich_1989half", "about half of the deviation from the target to its tighter course",
+        "further decline in bank demand for base money")
+    has("rich_1990tight", "no longer reflected shifts in demand for base money", "tighter course")
+    assert rich(1989)["outcome"] < rich(1989)["target"] and rich(1990)["outcome"] < rich(1990)["target"]
+    said("1989 年又没有达到目标", F["rich_1989half"][0])
+    said("1990 年的落空已经与基础货币的需求无关", F["rich_1990tight"][0])
     said("联邦德国与瑞士 · 1975—1999 · 守着货币目标的两家央行", GWZ_YEARS[0], F["rich_1999"][0])
     has("rich_formerly", "head of the economic division of the Swiss National Bank")
     has("rich_trend", "reduce the inflation trend to low levels")
@@ -1149,6 +1175,17 @@ def test(F, Y, Q):
     has("rich_1999", "At the end of 1999", "inflation forecasts")
     said("1999 年底，瑞士国家银行放弃货币目标", F["rich_1999"][0])
     said("联邦银行的年度目标公布到 1998 年为止", GWZ_YEARS[-1])
+    # the euro (the editor's round): the decision of 2 May 1998 and Stage Three from 1 January 1999
+    E = F["ecbemu_eleven"]
+    has("ecbemu_eleven", "Heads of State or Government", "unanimously decided", "11 Member States",
+        "adoption of the single currency on 1 January 1999")
+    has("ecbemu_germany", "Germany")
+    has("ecbemu_stage3", "STAGE THREE starting 1 Jan 1999",
+        "Conduct of the single monetary policy by the European System of Central Banks")
+    assert E[4] == GWZ_YEARS[-1] + 1 == F["ecbemu_stage3"][1] and E[3] == F["ecbemu_stage3"][0]
+    said("1998 年 5 月 2 日，欧盟各国首脑一致认定，德国等 11 个成员国符合条件，1999 年 1 月 1 日起采用单一货币",
+         E[1], month("ecbemu_eleven", "May"), E[0], E[2], E[4], month("ecbemu_eleven", "January"), E[3])
+    say("从这一天起，统一的货币政策由欧洲中央银行体系执行")
 
 
 def debate(F, Y, Q):
@@ -1173,6 +1210,14 @@ def debate(F, Y, Q):
     said("Bouey 在 1982 年 12 月 8 日对参议院的委员会说", y, month("boud_date", "December"), d)
     has("boud_technical", "solely for these technical reasons")
     has("boud_pilot", "automatic pilot")
+    # the side that the targets were never kept, in the US and the UK too (the editor's round)
+    has("fomc82o_dissent", "Mr. Black dissented", "restraining monetary growth")
+    has("fomc82o_ford", "Mr. Ford dissented", "more firmly directed")
+    said("在美国，1982 年 10 月投反对票的三人里，有两人是想更坚决地压住货币增长",
+         F["fomc82o_date"][1], month("fomc82o_date", "October"))
+    has("lp86_twoofsix", "Only two of the past six annual target rates")
+    has("law86_low", "the range was set too low")
+    said("在英国，£M3 的目标多半没有达到，1986 年的区间又调高了", F["law86_date"][1])
     has("gwz_cgg_challenge", "Clarida and Gertler (1997)")
     has("gwz_cgg_test", "gap between the actual money stock and the announced target path")
     has("gwz_realtime", "highly sig")
@@ -1215,7 +1260,14 @@ def deeper(F, Y, Q):
          F["gwz_t10"][0], page("gwz_t10"))
     said("表 B-67 的 M1 是 12 月的日平均数", month("erp_b67_december", "December"))
     said("流通速度因此用 12 月的 M1 计算", month("erp_b67_december", "December"))
-    said("联邦银行为什么在 1998 年以后不再公布目标", GWZ_YEARS[-1])
+    # the editor's round: the vintages of M1, the measure of the Governor's inflation, the ECB's pages
+    said("联邦公开市场委员会说的 1981 年 M1-B 增长是当时的数，并按转入 NOW 账户的影响作了调整", F["fomc82f_m1b"][1])
+    said("与 2000 年《总统经济报告》里修订过的 M1 不是同一个数", year_in("erpb1_45", r"February (\d{4})"))
+    said("利-彭伯顿说的通胀高峰与降到 10\\% 以下的月份，看来是按月的同比涨幅", F["lp86_peak"][1])
+    said("欧洲中央银行的策略据它 1998 年 10 月 13 日的新闻稿", F["ecb98_date"][1], month("ecb98_date", "October"),
+         F["ecb98_date"][0])
+    has("ecb_terms", "the ECB must be cited as the source")
+    has("ecb98_repro", "provided that the source is acknowledged")
     has("rba_licence", "CC BY 4.0")
     has("rba_attrib", "Source : Reserve Bank of Australia [year]")
     said("按 CC BY 4.0 使用，来源：Reserve Bank of Australia 1983", F["rba_licence"][1], F["moses_title"][1])
@@ -1229,6 +1281,12 @@ def legacy(F, Y, Q):
     said("1970 年代各国央行管的，正是不兑现的纸币", 1970)
     said("Moses 1983 年主张看一系列金融变量", F["moses_title"][1])
     said("劳森 1987 年按狭义货币、广义货币与汇率定利率", F["law87_date"][1])
+    # the ECB's strategy of 13 October 1998 (the editor's round)
+    d_, y_ = F["ecb98_date"]
+    has("ecb98_money", "money will be assigned a prominent role", "reference value for the growth of a broad")
+    has("ecb98_mech", "does not imply a commitment to mechanistically correct deviations over the short term")
+    said("欧洲中央银行 1998 年 10 月 13 日定下的策略仍给货币一个突出的角色", y_, month("ecb98_date", "October"), d_)
+    say("参考值并不意味着要在短期里机械地纠正偏差")
     has("f68_known", "stated and known rate")
     said("弗里德曼 1968 年要的是一个公布出来、人所共知的增长率", year_in("f1968_45", r"March (\d{4})"))
 
@@ -1267,6 +1325,10 @@ def selfcheck(F, Y, Q):
 def ending(F, Y, Q):
     d, y = F["h80_date"]
     said("回到 1980 年 3 月 26 日的下院", y, month("h80_date", "March"), d)
+    # how much of the opening's question is answered: two of six £M3 targets met, the inflation down
+    has("lp86_twoofsix", "Only two of the past six annual target rates of growth for £M3 have been achieved")
+    assert F["lp86_peak2"][1] < F["lp86_peak"][1] < F["lp86_peak"][0]
+    say("此后六个年度的£M3 目标只达成了两个，通胀却降了下来", "开场的问题因此只能回答一半")
     has("h80_us", "similar remedies", "the United States a fortnight ago")
     has("rich_floatdate", "January 1973", "float the Swiss franc")
     has("rich_float", "gained full control of the money supply")
@@ -1309,7 +1371,9 @@ LIVES = {"Geoffrey Howe，1926—2015": (("loc_howe", 0), ("loc_howe", 1), "loc_
          "Paul A. Volcker，1927—2019": (("loc_volcker_b", 0), ("loc_volcker_d", 0), "loc_volcker_head", "Volcker, Paul A."),
          "Nigel Lawson，1932—2023": (("gnd_lawson_b", 0), ("gnd_lawson_d", 0), "loc_lawson_head", "Lawson, Nigel"),
          "Gerald K. Bouey，1920—2004": (("loc_bouey", 0), ("loc_bouey", 1), "loc_bouey_head", "Bouey, Gerald K."),
-         "Hyman P. Minsky，1919—1996": (("gnd_minsky_b", 0), ("gnd_minsky_d", 0), "loc_minsky_head", "Minsky, Hyman P.")}
+         "Hyman P. Minsky，1919—1996": (("gnd_minsky_b", 0), ("gnd_minsky_d", 0), "loc_minsky_head", "Minsky, Hyman P."),
+         "Margaret Thatcher，1925—2013": (("loc_thatcher_b", 0), ("loc_thatcher_d", 0), "loc_thatcher_head",
+                                         "Thatcher, Margaret")}
 # born only (no death date in the record): words -> (row of the birth year, index), row of the heading, heading
 BORN = {"William Poole，1937 年生": (("loc_poole", 0), "loc_poole", "Poole, William"),
         "Charles Goodhart，1936 年生": (("loc_goodhart", 2), "loc_goodhart_head", "Goodhart, C. A. E.")}
@@ -1320,6 +1384,8 @@ EVENTS = [("钱多则物贵，这个道理在《管子》里已经有了（\\chr
            "1930 年秋天到 1933 年冬天，货币存量下降了近 30\\%"),
           ("就是\\chref{ch:depressionus}讲过的那次收缩（\\secref{sec:depressionus-money}）", "ch28_depressionus",
            "\\label{sec:depressionus-money}"),
+          ("那一章按 1929 与 1933 两年的年平均算，降了 30.9\\%", "ch28_depressionus",
+           "按年平均，广义货币 1929 年是 466 亿美元，1933 年是 322 亿美元，降了 30.9\\%"),
           ("\\chref{ch:naturalrate}讲过他 1967 年 12 月的会长演说", "ch44_naturalrate", "1967 年 12 月 29 日是星期五"),
           ("他提议的数字在\\chref{ch:naturalrate}的结尾已经讲过", "ch44_naturalrate",
            "现金加全部商业银行存款每年约要增长 3\\% 到 5\\%"),
@@ -1332,7 +1398,7 @@ EVENTS = [("钱多则物贵，这个道理在《管子》里已经有了（\\chr
            "1976 年 9 月 28 日在工党大会上的话"),
           ("\\chref{ch:naturalrate}讲过，英国的失业率 1981 年是 9.6\\%，1983 年到了 11.5\\%", "ch44_naturalrate",
            "1981 年是 9.6\\%，1983 年到了 11.5\\%"),
-          ("\\chref{ch:silver}的式~\\eqref{eq:silver-qty}写的是$g_P\\approx g_M+g_V-g_Y$", "ch13_silver",
+          ("\\chref{ch:silver}的式~\\eqref{eq:silver-qty}把它写成增长率，$g_P\\approx g_M+g_V-g_Y$", "ch13_silver",
            "g_P\\approx g_M+g_V-g_Y .\\label{eq:silver-qty}"),
           ("\\chref{ch:bullion}的交易方程式~\\eqref{eq:bullion-exchange}是一个恒等式", "ch19_bullion",
            "交易方程是恒等式"),
@@ -1405,7 +1471,7 @@ def book(F, Q):
 
 
 # the bibliography item of each source of the snapshots (the authority records: loc45 and gnd45; the AEA's terms are
-# named in the block's comment, beside the shared item friedman1968)
+# merged by the editor into the shared item friedman1968)
 ITEM_OF = {"bocterms_45": "bouey1982a", "boelegal_45": "boe1981", "bouey1982d_45": "bouey1982b",
            "bouey1982n_45": "bouey1982a", "brookingsterms_45": "poolelieberman1972", "erpb1_45": "erp2000b",
            "erpb67_45": "erp2000b", "f1968_45": "friedman1968", "fomc1979_45": "fomc1979",
@@ -1415,9 +1481,10 @@ ITEM_OF = {"bocterms_45": "bouey1982a", "boelegal_45": "boe1981", "bouey1982d_45
            "hansard1986b_45": "hansard1986", "hansard1987_45": "hansard1987", "hansard1987b_45": "hansard1987",
            "lp1986_45": "leighpemberton1986", "moses1983_45": "moses1983", "mp1975_45": "modigliani1975",
            "pl1972_45": "poolelieberman1972", "pl1972img_45": "poolelieberman1972", "qb1981_45": "boe1981",
-           "qb1981img_45": "boe1981", "rbacopyright_45": "moses1983", "rich2003_45": "rich2003"}
+           "qb1981img_45": "boe1981", "rbacopyright_45": "moses1983", "rich2003_45": "rich2003",
+           "ecbemu_45": "ecbemu", "ecb1998_45": "ecb1998", "ecbterms_45": "ecbemu"}
 # the items shared with Chapter 44, outside the block: Friedman (1968) and Modigliani and Papademos (1975); the copies
-# read for Chapter 45 have the same hashes, and the block's comment names the pages of Chapter 45
+# read for Chapter 45 have the same hashes; the editor merged the pages of Chapter 45 into the items
 SHARED = {"friedman1968", "modigliani1975"}
 # the sources of each item whose pages it names
 PAGES = {"friedmanschwartz1963": ("fs1963_45", "fs1963img_45"), "poolelieberman1972": ("pl1972_45", "pl1972img_45"),
@@ -1488,7 +1555,7 @@ def witnesses(F, Q):
     lic = m["license"]
     lic_rows = ("aea_terms", "fs_cover", "brookings_terms", "bundesbank_repro", "ecb_copy", "ecb_repro", "rba_licence",
                 "rba_attrib", "boe_legal_copyright", "boe_legal_permission", "boc_permit", "boc_attrib",
-                "hansard_copyright")
+                "hansard_copyright", "ecb_terms", "ecb98_repro")
     for rid in lic_rows:
         assert re.search(r"\brows? [^)]*\b" + rid + r"\b", lic), rid
         assert words_of(rid) in lic, rid
@@ -1507,7 +1574,8 @@ def witnesses(F, Q):
                       ("boe_legal_permission", ("boe1981", "leighpemberton1986")),
                       ("boc_permit", ("bouey1982a", "bouey1982b")), ("boc_attrib", ("bouey1982a", "bouey1982b")),
                       ("fs_cover", ("friedmanschwartz1963",)),
-                      ("hansard_copyright", ("hansard1980", "hansard1986", "hansard1987"))):
+                      ("hansard_copyright", ("hansard1980", "hansard1986", "hansard1987")),
+                      ("ecb_terms", ("ecbemu", "ecb1998")), ("ecb98_repro", ("ecb1998",))):
         for key in keys:
             assert words_of(rid) in unescape(items[key]), (rid, key)
     for key in ("hansard1980", "hansard1986", "hansard1987"):
@@ -1520,7 +1588,7 @@ def witnesses(F, Q):
     # every source is named by its URL and SHA-256 (the authority records by their URLs)
     for key, s in documents().items():
         if key == "aeaterms_45":
-            assert s["url"] in text and s["sha256"] in text, key                  # the block's comment
+            assert s["url"] in allitems["friedman1968"] and s["sha256"] in allitems["friedman1968"], key  # merged
             continue
         item = "loc45" if key.startswith("loc_") else "gnd45" if key.startswith("gnd_") else ITEM_OF[key]
         assert unescape(s["url"]) in unescape(allitems[item]), key
@@ -1538,8 +1606,8 @@ def witnesses(F, Q):
         assert f"PDF 第 {pdf(srcs)} 页" in items[key], (key, pdf(srcs))
     for key, srcs in COLUMNS.items():
         assert f"第 {cols(srcs)} 栏" in items[key], (key, cols(srcs))
-    for key, src in (("friedman1968", "f1968_45"), ("modigliani1975", "mp1975_45")):
-        assert f"{key} 的第 {printed((src,))} 页（PDF 第 {pdf((src,))} 页）" in text, key
+    for key, src in (("friedman1968", "f1968_45"), ("modigliani1975", "mp1975_45")):     # merged by the editor
+        assert f"第 45 章用第 {printed((src,))} 页（PDF 第 {pdf((src,))} 页）" in allitems[key], key
     assert "第 306—307 页" in items["erp2000b"] and "第 385 页" in items["erp2000b"]
     assert page("erp_b1_title") == 306 and page("erp_b67_title") == 385
     for words, (_, _, head_row, _) in LIVES.items():

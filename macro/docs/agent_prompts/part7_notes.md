@@ -221,3 +221,31 @@ zh/ch39_consumption.tex (theory tested against data, debates ending “至今没
   (read its stub's guide box and copy the question exactly).
 - Labels: `sec:monetarism-…`, `eq:monetarism-…`, `fig:monetarism_…`, `tab:monetarism-…`, `ex:monetarism-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 45
+
+- Use the book's notation. Appendix B keeps the star for the neutral rate, and lower-case $y$ means the output gap
+  from Ch 44 on. Ch 45's growth-rate quantity equation therefore takes Ch 13's $g_M$, $g_V$, $g_Y$, with a
+  superscript T for targets and a bar for trends. $v$ stays with Poole's money-demand disturbance.
+- A summary of a source's numbers covers only the years the source explains. Rich ties only the 1988 undershoot to
+  the new payment system. The 1989 miss was half a deliberately tighter course, and 1990 was mainly a tighter
+  course. Give each year its own cause, and keep figure labels to the same years.
+- A parliamentary aside is not a scene. “—Opposition Members may laugh—” is Howe's own words in mid-sentence; the
+  record has no laughter.
+- When an institution stops doing something, say why, with a source: the Bundesbank's targets end because Stage
+  Three of EMU began on 1 January 1999 (the ECB's EMU history page). Do not leave “the sources do not say” when a
+  primary page says it.
+- In a debate, each side is argued from the record of every country it concerns. “The targets were never really
+  kept” needs the US (two of the three dissenters of October 1982 wanted firmer restraint) and the UK (most
+  targets missed, the range raised in 1986), not only the Bundesbank.
+- A learning goal that names a government (撒切尔政府) must be met in the text: name the head of government, with
+  dates from an authority record.
+- Use a speech's own name for a policy (“the medium-term financial strategy”), not a paraphrase that sounds like a
+  different policy.
+- When two chapters give different numbers for the same event (28: 30.9%; 45: 35.2%), say in the text what each
+  measures.
+- State the vintage and the measure when two series differ: the FOMC's real-time, shift-adjusted M1-B against the
+  ERP 2000 revised M1; a month's year-on-year inflation against an annual average.
+- Who paid includes who the speaker blames: Bouey puts the costs down to inflation having been allowed to get out
+  of hand.
+- STYLE.md §7.1 applies to teaching figures too: a panel's second series is AMBER, dashed, with squares.

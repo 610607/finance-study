@@ -1,8 +1,9 @@
 """Figures for Chapter 45 (货币主义).
 
 Style as in fig_ch44.py (docs/STYLE.md §7): bold "(a) …" panel titles that state the point, direct labels in the colour
-of their series, no legends. Money and its velocity are MONEY, the second aggregate (M2) AMBER, the interest-rate
-target and the misses of a target PRICE, targets and reference lines MUTED. All numbers come from checks/check_ch45.py:
+of their series, no legends. Money and its velocity are MONEY, the second aggregate (M2) and the interest-rate target
+AMBER (in Poole's panel dashed with squares, the second series of STYLE.md §7.1), the misses of a target PRICE, targets
+and reference lines MUTED. All numbers come from checks/check_ch45.py:
 the American series of tables B-1 and B-67 (us()), Table 10 of Gerberding, Worms and Seitz (gwz()), Table 1 of Rich
 (rich()) and Poole's variances with the teaching inputs of ex:monetarism-poole (poole_var(), POOLE).
 """
@@ -127,7 +128,7 @@ def monetarism_targets():
     _text(a2, 1977.6, r78["outcome"], T("1978 年：16.2%", "1978: 16.2%"), MONEY, ha="right")
     assert r78["outcome"] == 16.2
     _text(a2, 1980.4, 12.0, T("方块：目标　圆点：实际", "squares: target   dots: outcome"), INK)
-    _text(a2, 1987.7, -4.2, T("1988 年起：新的支付系统", "from 1988: new payment system"), MONEY, ha="right", size=7.6)
+    _text(a2, 1987.7, -4.2, T("1988 年：新的支付系统", "1988: new payment system"), MONEY, ha="right", size=7.6)
     a2.set_xlim(1974.3, 1990.7)
     a2.set_xticks(range(1975, 1991, 3))
     a2.set_ylim(-6, 18)
@@ -152,8 +153,11 @@ def monetarism_poole():
     fig.subplots_adjust(left=0.085, right=0.985, top=0.89, bottom=0.16)
     _grid(ax)
     ax.axvspan(0, s, color=tint(MONEY, 0.08), lw=0, zorder=1)
-    ax.axvspan(s, 5, color=tint(PRICE, 0.07), lw=0, zorder=1)
-    ax.plot(x, np.full_like(x, su), color=PRICE, lw=1.8, zorder=4)
+    ax.axvspan(s, 5, color=tint(AMBER, 0.07), lw=0, zorder=1)
+    # the second series of the panel: AMBER, dashed, squares (STYLE.md §7.1)
+    ax.plot(x, np.full_like(x, su), color=AMBER, lw=1.8, dashes=(4, 2), zorder=4)
+    ax.plot([0.5, 1.5, 2.5, 3.5, 4.5], [su] * 5, ls="none", marker="s", ms=5.0, color=AMBER, mec="white", mew=0.6,
+            zorder=5)
     ax.plot(x, ym, color=MONEY, lw=1.8, zorder=4)
     ax.axvline(s, color=MUTED, lw=0.8, ls=(0, (3, 2)), zorder=3)
     for v in (*P["sv"], s):
@@ -161,9 +165,9 @@ def monetarism_poole():
     _text(ax, 1.0, C.poole_var(a1, b1, b2, su, 1.0) - 0.16, "0.56", MONEY, ha="center")
     _text(ax, 4.0, C.poole_var(a1, b1, b2, su, 4.0) + 0.17, "1.89", MONEY, ha="center")
     _text(ax, 3.35, 1.85, T("盯货币", "money target"), MONEY, ha="right", weight="bold")
-    _text(ax, 4.95, su - 0.17, T("盯利率", "rate target"), PRICE, ha="right", weight="bold")
+    _text(ax, 4.95, su - 0.17, T("盯利率", "rate target"), AMBER, ha="right", weight="bold")
     _text(ax, 0.1, 2.05, T("盯货币更稳", "money target\nsteadier"), MONEY)
-    _text(ax, s + 0.1, 0.3, T("盯利率更稳", "rate target steadier"), PRICE)
+    _text(ax, s + 0.1, 0.3, T("盯利率更稳", "rate target steadier"), AMBER)
     ax.set_xlim(0, 5)
     ax.set_ylim(0, 2.5)
     ax.set_xticks([0, 1, 2, 3, 4, 5])
