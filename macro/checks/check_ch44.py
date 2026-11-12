@@ -647,6 +647,12 @@ def opening(F, Y, Q):
          *there("ch38_phillips", "B 点失业 3\\%，物价每年涨约 4.5\\%"))
     said("到了 1975 年，失业升到 8.5\\%，物价仍涨 9.1\\%", 1975, b40(1975)["all"], b62(1975)["year"])
     said("1980 年，失业 7.1\\%，物价涨 13.5\\%", 1980, b40(1980)["all"], b62(1980)["year"])
+    # 1967 is near Samuelson and Solow's menu (the straight line from A to B of Ch 38's figure), the later points are not
+    ua, ub, pb = there("ch38_phillips", "A 点物价稳定，失业约 5.5\\%；B 点失业 3\\%，物价每年涨约 4.5\\%")
+    menu = lambda u: pb * (ua - u) / (ua - ub)
+    said("1967 年的点还在菜单附近，后面几个点都不在菜单上（本书的解读）", 1967)
+    assert abs(b62(1967)["year"] - menu(b40(1967)["all"])) < 0.5
+    assert all(b62(y)["year"] - menu(b40(y)["all"]) > 1.5 for y in (1969, 1975, 1980))
     assert paragraph("那几年美国的失业离 3\\% 不远").endswith(GUIDE)              # the opening ends with the question
 
 
@@ -691,6 +697,13 @@ def world(F, Y, Q):
 
 
 def friedman(F, Y, Q):
+    # the basic problem of a natural-rate target (editor, after the review)
+    has("f68_basic", "the basic problem", "determinate policy")
+    has("f68_reasons", "reasons other than monetary policy")
+    has("f68_random", "random walk")
+    assert page("f68_basic") == page("f68_reasons") == 10 and page("f68_random") == 11
+    say("他说，根本的问题还不在这里。即使知道自然率，想把市场的失业率钉在那里，也得不出一个确定的政策",
+        "货币增长就会像随机游走一样被推来推去")
     said("假如人人都预期物价每年涨 75\\% 以上", F["f68_brazil75"][0])
     said("巴西把物价的涨幅压到每年约 45\\% 时", F["f68_brazil45"][0])
     said("弗里德曼 1976 年回忆", F["f76_date"][1])
@@ -764,7 +777,8 @@ def cost(F, Y, Q):
     s = sacrifice(D["start"], D["end"], a)
     assert len(slow) * (D["slow"] - un) == len(fast) * (D["fast"] - un) == s
     said("都是$(10-4)/0.5=12$个百分点·年", D["start"], D["end"], a, s)
-    said("累计少生产$3.2\\times12=38.4\\%$个年产出，牺牲率是$38.4/6=6.4$", c, s, c * s, c * s, D["start"] - D["end"],
+    said("累计少生产的产出是一年产出的$3.2\\times12=38.4\\%$，牺牲率是$38.4/6=6.4$", c, s, c * s, c * s,
+         D["start"] - D["end"],
          c * s / (D["start"] - D["end"]))
     said("$\\alpha=0.5$，$u^{n}=6\\%$，通胀从 10\\% 降到 4\\%，预期按上一年的通胀形成", a, un, D["start"], D["end"])
     said("两种办法累计多出的失业都是 12 个百分点·年", s)
@@ -887,7 +901,8 @@ def niru(F, Y, Q):
          F["mp_five"][1], cardinal("eight"), F["mp_five"][2], F["mp_five"][3])
     has("mp_43", "In nine years", "all but two")
     said("等于或低于 4.3\\% 的 9 年里，除了两年，通胀都明显上升", F["mp_43"][0], cardinal("nine"))
-    said("他们用回归估出 4.88\\%", F["mp_488"][2])
+    has("mp_488", "\"negligible\"rate of inflation", "we use 2 percent")
+    said("他们先取 2\\% 作为可以忽略的通胀率，再用回归解出 4.88\\%", F["mp_488"][0], F["mp_488"][2])
     said("按当时的劳动力构成，还要加 0.8 个百分点", F["mp_08"][0])
     assert round(F["mp_488"][2] + F["mp_08"][0], 1) == F["mp_08"][2]
     said("按官方的失业率，NIRU 当时估计略高于 5.5\\%", F["mp_55"][0])
@@ -916,6 +931,7 @@ def britain_japan(F, Y, Q):
          U.loc[1983, "unemp_pct"])
     said("物价的涨幅 1980 年仍有 15.2\\%，1983 年降到 4.9\\%", 1980, U.loc[1980, "cpi_infl_pct"], 1983,
          U.loc[1983, "cpi_infl_pct"])
+    said("卡拉汉 1976 年的那番话，正说在这两段之间", F["f76_callaghan_date"][1])
     m = load_snapshot("boe_millennium_uk_1954_1986")[1]
     assert "LFS/claimant-count discrepancy in female unemployment" in m["series"]
     say("女性失业按劳动力调查与申领人数之差调整过")
@@ -977,14 +993,16 @@ def britain_japan(F, Y, Q):
          showa(F["wp_m2b"][0]), showa(F["wp_m2b"][1]))
     said("企划厅说，1973 年度的政策以总需要抑制为轴", showa(F["wp_axis"][0]))
     said("公定贴现率从 4 月到 12 月提高 5 次，从 4.25\\% 升到 9\\%", *F["wp_discount"])
-    said("过去紧缩时，提高的幅度只在 1\\% 左右", F["wp_past"][0])
+    said("过去紧缩时，提高的幅度只在 1 个百分点左右", F["wp_past"][0])                # a rate: 1％ is a point
     r = F["wp_reserve"]
     assert (showa(r[2]) - showa(r[0])) * 12 + r[3] - r[1] == 12                   # 一年里
     said("存款准备率也在一年里提高了 5 次", r[4])
     has("wp_window", "相互銀行や上位信用金庫")
     said("收入低的阶层进入 1974 年以后", showa(F["wp_classes"][0]))
-    said("10 月又决定把生活扶助的标准提高 5\\%", *F["wp_assistance"])
-    say("决定压住需求的是日本银行与政府（本书的概括）", "付代价的是收入低的家庭")
+    # the paper is of August 1974 (昭和49年) and speaks of fiscal 1973 (48年度): its October is October 1973
+    assert F["wp_assistance"][0] > F["wp_date"][1]
+    said("1973 年 10 月又决定把生活扶助的标准提高 5\\%", showa(F["wp_date"][0]) - 1, *F["wp_assistance"])
+    say("决定压住需求的是日本银行与政府（本书的概括）", "代价更重地落在收入低的家庭身上")
     said("1975—1978 年，通胀从 11.8\\% 降到 3.8\\%", 1975, 1978, J.loc[1975, "cpi_less_rent_pct"],
          J.loc[1978, "cpi_less_rent_pct"])
     said("失业只从 1.9\\% 升到 2.2\\%", J.loc[1975, "unemp_pct"], J.loc[1978, "unemp_pct"])
@@ -1003,10 +1021,17 @@ def debate(F, Y, Q):
     said("弗里德曼 1976 年说，区分意外的需求变动", y76)
     has("f76_phelps", "E. S. Phelps and myself")
     said("弗里德曼 1976 年的说法是，需求意外加速", y76)
-    said("在菲尔普斯 1968 年的模型里", F["ph_1968"][0])
+    # Phelps's velocity shock, neutral once expectations are correct (editor, after the review)
+    has("ph_velocity", "velocity of money", "correspondingly higher paths")
+    has("ph_neutral", "neutral for quantities and relative prices", "correct expectations")
+    has("ph_perceive", "no way of perceiving such neutrality at the start")
+    assert page("ph_velocity") == page("ph_neutral") == page("ph_perceive") == 347
+    say("这个冲击对产量与相对价格就是中性的", "可是开头他们无从察觉这种中性",
+        "预期追上来以后，需求的增加不再改变就业，长期的曲线也就是竖直的（本书的解读）")
+    said("在菲尔普斯从 1968 年起建的几个模型里", F["ph_1968"][0])           # his note 13: 1968 fused with Phelps-Winter 1970
     said("他的模型常被看作与弗里德曼 1968 年的模型基本相同", F["ph_identical"][0])
     said("NIRU 在 1953—1971 年是稳定的", F["mp_stable"][0], 1900 + F["mp_stable"][1])
-    said("Gordon 检验了按构成加权的自然失业率在 1970 年代上移的假说", F["gk_fn20"][0])
+    said("据 Gordon 与 King 的注，Gordon 检验了按构成加权的自然失业率在 1970 年代上移的假说", F["gk_fn20"][0])
     has("gk_fn20", "tests and rejects")
     said("大约 1950—1970 年，日本与英国的平均失业都很低", *F["f76_japan_uk"])
     S = stats()
@@ -1019,7 +1044,10 @@ def debate(F, Y, Q):
     has("gk_half", "roughly half")
     assert F["gk_43"][1] == F["gk_ratios"][1] == F["gk_prefer"][0]
     said("他们的基本模型给出的贴现牺牲率是 4.3", F["gk_ratios"][1])
-    said("它依次升到 5.8、7.2 与 9.9", F["gk_43"][2], F["gk_72"][0], F["gk_99"][0])
+    has("gk_channels", "relative price of importsand", "food and energy", "appreciationin the effective exchange rate")
+    assert page("gk_channels") == page("gk_43") == 236
+    say("还压低进口品与食品、能源的相对价格，让美元的有效汇率升值")
+    said("切断这些渠道，牺牲率依次升到 5.8、7.2 与 9.9", F["gk_43"][2], F["gk_72"][0], F["gk_99"][0])
     assert F["gk_99"][1] == F["gk_okun_range"][2]                                  # 接近奥肯的平均数
     has("gk_prefer", "which we prefer")
     said("他们偏爱 5.8 这个数", F["gk_prefer"][1])
@@ -1035,6 +1063,16 @@ def debate(F, Y, Q):
     said("贴现的福利收益不大可能接近 1 万亿美元", F["gk_welfare"][1] * 1e9)
     said("比这 1 万亿美元还多", F["gk_world"][0] * 1e9)
     said("与 1970 年代油价冲击、生产率放慢", F["gk_aversion"][0])
+    # credibility in the discussion (editor, after the review)
+    has("gk_fellner", "not a credible policy")
+    has("gk_accommodated", "will be accommodated")
+    has("gk_commit", "commitmentto reducethe rateof inflation")
+    has("gk_reply", "Gordon responded", "feasible policy", "randomshocks")
+    has("gk_steadfast", "steadfastpursuitof disinflation", "reduce the real costs of disinflation")
+    for rid in ("gk_fellner", "gk_accommodated", "gk_commit", "gk_reply", "gk_steadfast", "gk_sims"):
+        assert page(rid) == 243, rid
+    say("Fellner 说，把通胀稳在当时的水平不是可信的政策", "Gordon 回答，只要当局表明不再容忍通胀继续上升",
+        "坚定地反通胀能让人相信将来与过去不同")
     has("gk_sims", "muchhigherthanthat estimatedby Gordonand King")
     has("gk_sims2", "ignores fiscal policy", "Federal Reserve", "growingdeficits")
 
@@ -1063,6 +1101,9 @@ def deeper(F, Y, Q):
     J = jp()
     said("日本 1974 年的消费物价，不含自有住房估算房租的指数涨 24.5\\%，综合指数涨 23.2\\%", 1974,
          J.loc[1974, "cpi_less_rent_pct"], J.loc[1974, "cpi_all_pct"])
+    link = re.search(r"figures for (\d{4})-(\d{4}) are the values for linking the series \(時系列接続用数値\)",
+                     load_snapshot("naturalrate_japan_1953_1986")[1]["notes"])
+    said("劳动力调查 1953—1977 年的数是为衔接后来的系列而调整过的数，与当年公布的年报不同", *map(int, link.groups()))
     said("日本 1973 年的失业率，表里有不含冲绳与含冲绳两个数，1.2\\% 与 1.3\\%", 1973,
          J.loc[1973, "unemp_excl_okinawa_pct"], J.loc[1973, "unemp_pct"])
     one, t71 = F["f76_one"], F["f76_t1971"]
@@ -1343,7 +1384,7 @@ def witnesses(F, Q):
         item = "loc44" if key.startswith("loc_") else "gnd44" if key.startswith("gnd_") else ITEM_OF[key]
         assert unescape(s["url"]) in unescape(allitems[item]), key
         if item in SHARED:
-            assert s["sha256"] in text, key                                       # in the block's own lines
+            assert s["sha256"] in allitems[item], key                             # merged into the shared item
         elif not key.startswith(("loc_", "gnd_")):
             assert s["sha256"] in items[item], key
     # the pages of each work, as the snapshot's rows have them
@@ -1351,7 +1392,7 @@ def witnesses(F, Q):
                       ("modigliani1975", ("mp1975_44",)), ("gordon1982", ("gk1982_44",))):
         assert f"第 {printed(srcs)} 页" in items[key], (key, printed(srcs))
         assert f"PDF 第 {pdf(srcs)} 页" in items[key], (key, pdf(srcs))
-    assert f"第 {printed(('f1976_44',))} 页" in text                               # Chapter 44's pages of the lecture
+    assert f"第 44 章用第 {printed(('f1976_44',))} 页" in allitems["friedman1976"]    # Chapter 44's pages of the lecture
     assert "勘误" in items["modigliani1975"]
     for words, (_, _, head_row, _) in LIVES.items():
         if head_row.startswith("loc_") and head_row != "loc_phelps":
@@ -1400,7 +1441,7 @@ def counts() -> None:
     # who decided and who paid
     for words in ("1974 年的紧缩是谁定的？", "谁让通胀升高？",
                   "决定紧缩的是货币当局，失业升得最多的是本来就最容易失业的人（本书的概括）",
-                  "决定压住需求的是日本银行与政府（本书的概括）", "付代价的是收入低的家庭",
+                  "决定压住需求的是日本银行与政府（本书的概括）", "代价更重地落在收入低的家庭身上",
                   "代价落在失业的人身上"):
         assert words in main_, words
     # documents are not the subjects of sentences: the author is named
