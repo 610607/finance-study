@@ -1413,6 +1413,7 @@ def deeper(F, Y, Q):
 def legacy(F, Y, Q):
     said("早在 1939 年，他就写了一篇论文", F["nb75_1939"][0])
     said("1975 年的诺贝尔经济学奖", Y["nb75_prize"])
+    said("1965 年苏联的改革有没有照这个思路去改价格，在\\chref{ch:planned}", 1965)   # the reform of 29 September 1965: Ch 43, zv65_date
     said("1973 年的颁奖公告说", Y["nb73_planning"])
     ts, cia, kh = F["h93_t1_2840"]
     assert ts / cia > told("官方的增长率是西方重估的两倍多", "重估的", "倍多")

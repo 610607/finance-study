@@ -340,7 +340,7 @@ TRANSLATIONS = {
     "共产主义我们建不成了，赶美国赶得太早了。": "lk_bogusov",
     "最后的牺牲": "fr47_sacrifice",
     "只会打乱生产": "zv62_disorganize",
-    "短缺": "k80_shortage",
+    "冲刺": "k80_names",
     "抽吸": "k80_names",
     "家长式": "k86_paternal",
     "被动的": "k86_passive",
@@ -367,7 +367,6 @@ KEYWORDS = {
     "lk_bogusov": ["Коммунизм нам не построить, рано стали Америку догонять."],
     "fr47_sacrifice": ['"last sacrifice"'],
     "zv62_disorganize": ["только лишь дезорганизуют производство"],
-    "k80_shortage": ["“shortage”"],
     "k80_names": ["“suction”"],
     "k86_paternal": ["paternalistic role"],
     "k86_passive": ["‘passive’"],
@@ -694,25 +693,32 @@ def world(F, Y, Q):
     has("fr47_single", "Ration cards abolished", "except peasant markets and certain cooperative goods")
     assert F["fr47_cash"] == [10, 1]
     assert told("现金按十比一兑换", "按", "比") == F["fr47_cash"][0]
-    said("政府没收了所有现金的 90\\%，受打击最重的是农民", F["fr47_expropriates"][0])
-    has("fr47_expropriates", "hit peasants hardest")
+    said("政府没收了所有现金的 90\\%，受打击最重的是农民，投机者也一样", F["fr47_expropriates"][0])
+    has("fr47_expropriates", "hit peasants hardest, as well as speculators")
     said("戈比是辅币单位，100 戈比合 1 卢布", KOPECKS, 1)
     yb, k0, k1, pct = F["fr47_bread"]
     assert yb == y - 1 and Y["fr47_bread"] == yb
     said("上一年 9 月配给的黑面包从 90 戈比提到 340 戈比", month("fr47_bread", "September"), k0, k1)
-    said("那一年配给食品的价格平均提高了 180\\%，低工资阶层的工资却几乎没涨", F["fr47_180"][0])
+    said("上一年配给食品的价格平均提高了 180\\%，低工资阶层的工资却几乎没涨", F["fr47_180"][0])
+    # the chargé advises what to stress against the Soviet line: framed as his advice (editor, 2026-11-12)
+    say("代办建议，针对这套说法要强调几件事")
+    has("fr47_emphasis", "In view this propaganda line emphasis should be placed on fact that")
+    say("城里不少人的现金储蓄也要受损")
+    has("fr47_urban", "cash savings of appreciable number of urban population will also be hit")
     has("fr47_180", "last year", "insignificant wage rises in lower brackets")
     has("fr47_200", "Meat, vegetables, sugar, fats, cakes and fish remain at current ration prices")
     said("肉、蔬菜、糖、油脂与鱼都留在配给价上，比一年前平均约高 200\\%", F["fr47_200"][0])
     has("fr47_freeze", "freezes ration increases of last year")
     # the prices of 1961 against the costs
-    said("此后标价由国家定下，很少再动，与成本也不相干（本书的概括）")
+    said("此后标价由国家定下，与成本不相干（本书的概括）")
+    assert "很少再动" not in tex_text()          # the appeal itself recalls the price cuts after 1947 (zv62_cut)
     _, _, y61, c88 = F["zv62_cattle88"]
     said("按两家机关的数，1961 年每公担活牛的生产成本是 88 卢布，国家的收购价只有 59.1 卢布", y61, c88,
          F["zv62_cattle59"][0])
     has("zv62_cattle", "Себестоимость 1 центнера крупного рогатого скота (в живом ве")
     said("公担是 100 公斤", CENTNER)
-    said("活猪是 118 卢布对 82.3 卢布", *F["zv62_pigs"])
+    said("猪是 118 卢布对 82.3 卢布", *F["zv62_pigs"])        # 'свинины': the appeal gives live weight for cattle only
+    assert "活猪" not in tex_text()
     said("家禽是 133.5 卢布对 82.2 卢布", F["zv62_poultry"][3], F["zv62_poultry2"][0])
     has("zv62_statecost", "в минувшем году затраты государства на закупку")
     cost, retail = F["zv62_beefcost"][0], F["zv62_beefretail"][0]
@@ -724,7 +730,8 @@ def world(F, Y, Q):
     assert abs(told("约为零售价的四分之一", "零售价的") - sub / retail) < 0.01
     has("zv62_losses", "на многие сотни миллионов рублей")
     new = retail * (1 + F["zv62_30"][0] / 100)
-    said("零售价提高 30\\% 以后，牛肉每公担约 144 卢布，才略高于国家的花费（本书的计算）", F["zv62_30"][0], new)
+    # 30 per cent is the average rise for meat and meat products, not a price of beef the appeal prints
+    said("牛肉的零售价若按平均幅度提高 30\\%，每公担约 144 卢布，才略高于国家的花费（本书的计算）", F["zv62_30"][0], new)
     assert cost < new < cost * 1.05
     # demand against supply
     has("zv62_population0", "особенно городское, растет очень быстро. С 1953")
@@ -771,7 +778,10 @@ def shortage(F, Y, Q):
     has("k80_production", "labor shortage, shortage of material, of parts, or of electric current")
     has("k80_names", "“repressed inflation”", "introduced two further expressions")
     said("他还说，匈牙利 1968 年改革以后，企业的自主权扩大了", F["k80_hungary"][0])
-    has("k80_sign", "of the reverse sign", "underutilization", "“overheating”")
+    has("k80_sign", "of the reverse sign", "underutilization", "“overheating”", "somewhat oversimplified")
+    say("科尔奈拿短缺与失业对照，并说这样讲有些简化")
+    has("k80_scope", "I consider mainly the small Eastern European countries")
+    say("他讲的主要是东欧的小国")
     has("k80_tourist", "“tourist’s experience”")
     # forced substitution
     q10, q11, q9, _ = F["k80_screw"]
@@ -829,18 +839,20 @@ def shortage(F, Y, Q):
     # the case box: Hungary 1982
     yk, n = F["k86_firms"][1], F["k86_firms"][0]
     said("\\begin{case}{匈牙利 · 1982 · 利润的再分配}", yk)
-    said("匈牙利 1968 年起改革，计划指令取消了，预算约束仍然是软的", F["k80_hungary"][0])
+    said("匈牙利 1968 年起改革，当期生产的计划指令取消了，预算约束仍然是软的", F["k80_hungary"][0])
+    has("k80_hungary", "plan directives for current production have been eliminated")
     has("k86_firms", "all State-owned enterprises")
     has("k86_team", "directed by the author and by A. Matits")
     said("科尔奈与 Matits 主持的研究组研究了 1982 年全部国有企业的财务状况，共 1755 家", yk, n)
     t1 = F["k86_t1"]
     assert t1[3] == yk
     said("1982 年，补贴总额相当于原始利润总额的 0.91 倍，税收总额相当于 1.27 倍", t1[3], t1[4], t1[5])
-    said("经手的是 276 种税与补贴", F["k86_276"][0])
+    said("用到的税与补贴共有 276 种", F["k86_276"][0])
     loss, high = F["k86_t3_loss"], F["k86_t3_high"]
     assert np.isclose(sum(loss), 1) and np.isclose(sum(high), 1)
-    said("原来亏损的企业，再分配以后只有 11\\% 仍然亏损，77\\% 变成低利润", 100 * loss[0], 100 * loss[1])
-    said("原来高利润的企业，只有 11\\% 仍是高利润，46\\% 降到低利润", 100 * high[3], 100 * high[1])
+    # table 3 classes the firms by profitability (profit over capital), so the text says 利润率
+    said("原来亏损的企业，再分配以后只有 11\\% 仍然亏损，77\\% 变成低利润率", 100 * loss[0], 100 * loss[1])
+    said("原来高利润率的企业，只有 11\\% 仍是高利润率，46\\% 降到低利润率", 100 * high[3], 100 * high[1])
     has("k86_t3_loss", "Loss-maker")
     has("k86_t3_high", "High profitability")
     has("k86_exit", "exit is not related to profitability")
@@ -879,6 +891,8 @@ def china(F, Y, Q):
     # Smil on the Leap
     has("smil_steel", "steel production the centrepiece")
     has("smil_iron", "tens of millions of peasants", "brittle cast iron")
+    has("smil_fabricated", "fabricated reports of record grain harvests")
+    say("炼出的大多是发脆的生铁块", "各地虚报创纪录的丰收")
     assert told("粮食当时提供中国人八成以上的食物热量", "提供中国人", "以上") == F["smil_grain"][0] / 100
     has("smil_grain", "more than 80%")
     y, third = F["smil_spring2"]
@@ -971,7 +985,7 @@ def china(F, Y, Q):
          e1[2])
     said("合计约 1,460 万", sum(e1) * 1e4, slack=5)
     said("三年依次约 213 万、936 万与 188 万，合计约 1,340 万（本书的计算）", *(x * 1e4 for x in e2), sum(e2) * 1e4, slack=3)
-    say("这只是登记了的死亡")
+    say("这只是官方数字里的超额死亡")
     # the scholars' estimates
     said("Smil 说，1982 年第一次可靠的人口普查公布了分年龄的人口，才能估计 1959—1961 年的超额死亡", F["smil_census"][0],
          F["smil_30m"][0], F["smil_30m"][1])
@@ -1039,7 +1053,8 @@ def china(F, Y, Q):
     # the correction
     said("纠正从 1960 年冬开始", F["res_winter"][0])
     p30, g0, g1 = F["mqy_gittings"][:3]
-    said("Meng 等人转引 Gittings 说，1959—1960 年政府在工业与军事上的开支减少了 30\\%", g0, g1, p30)
+    said("Meng 等人转引 Gittings 说，从 1959 年到 1960 年，工业投资与军费减少了 30\\%", g0, g1, p30)
+    has("mqy_gittings", "investment in industry and military expenditures")
     said("Smil 说，1961 年以后回到比较理性的政策", F["smil_imports"][0])
     y, mo, n = F["res_7000"]
     said("1962 年 1 月，七千人参加的扩大的中央工作会议初步总结了大跃进的教训", y, mo)
@@ -1048,6 +1063,8 @@ def china(F, Y, Q):
     # the pitfall
     p15, y58 = F["mqy_15"]
     has("mqy_15", "per capita production had fallen by 15%")
+    has("mqy_reversal", "regions with higher per capita food production that year suffered higher famine mortality")
+    say("人均产量越高的地区，饥荒的死亡率反而越高")
     said("1959 年中国的人均粮食产量比前一年少了 15\\%，Meng、Qian 与 Yared 算出，产量仍比避免死亡所需的多出至少 205\\%",
          F["mqy_205"][0], p15, F["mqy_205"][1])
     assert y58 + 1 == F["mqy_205"][0]
@@ -1151,6 +1168,9 @@ def data_check(F, Y, Q):
     assert told("哥穆尔卡和四名亲信成了替罪羊", "和", "名") == F["fr70_scapegoats"][0]
     said("美国总统的国家安全事务助理 20 日在给总统的备忘录里说", F["fr70_memo"][1])
     has("fr70_memo", "Kissinger", "President Nixon")
+    # 替罪羊 is the memorandum's judgement: it is told as what the memorandum says
+    say("美国总统的国家安全事务助理 20 日在给总统的备忘录里说，哥穆尔卡和四名亲信成了替罪羊")
+    has("fr70_scapegoats", "have become the scapegoats")
 
 
 def debate(F, Y, Q):
@@ -1192,6 +1212,7 @@ def deeper(F, Y, Q):
     said("同一张表印的 1969 年死亡率是每千人 8.63 人，按同一行的出生率 34.11 与自然增长率 26.08 算应是 8.03（本书的计算）",
          v69[0], v69[7], v69[6], v69[8], v69[6] - v69[8])
     assert v69[0] == MISPRINTED_CDR
+    said("1969 年的死亡率照原表印的 8.63 画，按同一行的出生率与自然增长率算应是 8.03", v69[0], v69[7], v69[6] - v69[8])
     yb, k0, k1, pct = F["fr47_bread"]
     said("代办 1947 年说黑面包从 90 戈比提到 340 戈比是涨了 275\\%，按这两个数算是约 278\\%（本书的计算）",
          F["fr47_date"][1], k0, k1, pct, 100 * (k1 / k0 - 1))
@@ -1245,6 +1266,10 @@ def ending(F, Y, Q):
     has("lk_loan", "обратиться к народу за займом", "Адмиралтейского, Балтийского", "Водоканалпроект")
     say("两家工厂和一个设计院的人问")
     has("zv62_jobs", "снята проблема безработи")
+    # Kornai: labour shortage, not unemployment (k80_sign); unemployment came into the open in Yugoslavia
+    has("wb78_unemployment", "the rate of open unemployment began to increase")
+    say("计划经济把通胀藏在排队里，到了放开价格的南斯拉夫，通胀与失业都摆到了明处（本书的解读）")
+    say("借钱是用国家的欠条把多余的货币收走，日后要还；涨价是让同样的钱少买东西，持有货币的居民当场付账（本书的解读）")
     said("1960 年，萨缪尔森与索洛把通胀与失业画成一张可以挑选的菜单，每一个点是一种失业率配一种通胀率（\\chref{ch:phillips}）",
          *there("ch38_phillips", "解释萨缪尔森与索洛（1960）怎样把它变成政策菜单"))
     assert "菜单上的每一个点，都是一种失业率配一种通胀率" in chapter("ch38_phillips")
@@ -1513,7 +1538,8 @@ def counts() -> None:
     for words in ("谁决定，谁承担，这里看得清楚", "定价的是党中央与部长会议", "付钱的是城里买肉的人（本书的概括）",
                   "决定补谁、税谁的是国家的各个机关，付账的是赚钱的企业（本书的概括）",
                   "决定的是毛泽东与中央，付出生命的主要是农村的人（本书的概括）",
-                  "账就算到了决定涨价的人头上（本书的解读）", "两样都是让居民付账（本书的解读）"):
+                  "账就算到了决定涨价的人头上（本书的解读）",
+                  "涨价是让同样的钱少买东西，持有货币的居民当场付账（本书的解读）"):
         assert words in main_, words
     # documents are not the subjects of sentences: the author is named
     for bad in ("报告说", "电报说", "备忘录说", "决议说", "呼吁书说", "汇报说", "论文说", "书里说", "表说"):

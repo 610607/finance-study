@@ -1373,3 +1373,29 @@ chapter's question).
   appeal of 1 June 1962 and the Leningrad Party report on reactions to it, the plenum resolution of
   29 September 1965, the World Bank's report on Yugoslavia of 1978 and Yusuf 1977; leads and what was
   not obtained). Confirm every fact on the document before use.
+
+### Carried over from the editor's round on Chapter 43
+
+- A source's advice is reported as advice. The US chargé's telegram of 14 December 1947 lists what American
+  propaganda should stress against the Soviet line (“In view this propaganda line emphasis should be placed
+  on…”); the draft told the three points as plain statements. Write “代办建议……强调” and keep the qualifying
+  sentence that follows (urban cash savers hit too). Read the sentence before and after every quoted row.
+- Check the economics of one-line glosses, above all in the ending. “涨价是把它花掉” was wrong: a price rise
+  does not spend an overhang, it lowers what the money buys, and the holders pay at once; a loan is a debt to
+  be repaid (`eq:reconstruction-overhang`).
+- The ending adds no claim the chapter's own sources contradict. “失业也不公开” had no source and ran against
+  Kornai (labour shortage, not unemployment); the reviewer replaced it with the World Bank's open inflation and
+  unemployment in Yugoslavia after prices were freed.
+- Keep the author's own scope and hedges: Kornai wrote “mainly” about the small East European countries, called
+  his comparison “somewhat oversimplified”, and said other tensions are “obviously related to” shortage, not the
+  same thing. When a source introduces two terms (“rush” and “suction”), give both or say one of two.
+- Say what a statistic measures: MQY report that famine mortality RATES were higher where per-capita output was
+  higher, not that deaths happened where output was high; Smil and MQY say official figures understate
+  mortality, not that registration missed deaths. Translate a source's adjective exactly (“brittle cast iron”,
+  “fabricated reports”).
+- A figure that plots a value known to be misprinted says so in its caption, not only in the notes box.
+- When a chapter tells less than an earlier chapter's pointer promised (Ch 31: “成熟的计划经济怎样用这些办法，
+  是\chref{ch:planned}的题目”, against one sentence on Kantorovich), the editor changes the earlier pointer, its
+  check, and the FORWARD_REFS row; the writer reports it.
+- A term in quotation marks counts as a quotation for NARRATIVE §10.3: at most two in a paragraph (the editor's
+  “冲刺” made three; the quotation marks on 短缺 were dropped).
