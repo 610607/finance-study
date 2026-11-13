@@ -1,0 +1,13 @@
+{
+  "title": "British unemployment and average weekly earnings, annual, 1860-1958 (Chapter 38: the revised series against Phillips's curve)",
+  "source": "Bank of England, 'A millennium of macroeconomic data for the UK' (version 3.1): sheets 'A50. Employment & unemployment' and 'A47. Wages and prices'",
+  "url": "https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx",
+  "series": "union_unemp_pct: the unemployment rate based on unions that offered unemployment benefit schemes to their members, Feinstein (1972) and the Board of Trade (adjusted), per cent, 1860-1920 (A50, column 16; blank from 1921); civilian_unemp_pct: the unemployment rate defined as a per cent of the civilian working population, Feinstein (1972), 1920-1958 (A50, column 46; blank before 1920); weekly_earnings_1913_100: average weekly wage earnings of the UK, 1913 = 100 (A47, column 55: C. H. Feinstein, National Income, Expenditure and Output of the United Kingdom 1855-1965, Table 65, pp. T140-T141)",
+  "retrieved": "2026-10-29",
+  "license": "The workbook asks users to cite the underlying sources ('When using this data, please cite this source'). The Bank of England publishes it as a research dataset; a subset is stored here for teaching, with attribution to the Bank of England and to the authors of the series named in sheets A50 and A47 (Feinstein 1972 and the Board of Trade for unemployment; Feinstein, National Income, Expenditure and Output of the United Kingdom 1855-1965, Table 65, for average weekly earnings).",
+  "used_in": [
+    38
+  ],
+  "fetch": "data/fetch/boe_millennium_gb38.py",
+  "notes": "Workbook SHA-256 4c23dd392a498691eac92659aec283fb43f28118bd80511dc87fc595974195eb (the copy used for Chapters 19-34). Chapter 38 recomputes Phillips's six crosses for 1861-1913 from these series: the rate of change of earnings in year t is the first central difference (E[t+1]-E[t-1])/2 as a percentage of E[t], as Phillips computed it from the wage-rate index (phillips_facts, rows ph_central and ph_1861), so 1860 and 1914 of the workbook are read for the first and last years; the years are grouped by the union unemployment rate in Phillips's intervals, the upper bound included (row ph_crosses). The figure also shows 1948-1957 with the civilian rate, which is not the Ministry of Labour's rate for Great Britain that Phillips used (row ph_1948src). Average weekly earnings include overtime and other parts of pay; they are not the wage-rate indexes of Phillips (rows ph_pbh, ph_1948wage)."
+}

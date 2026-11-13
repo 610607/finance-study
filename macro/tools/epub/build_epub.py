@@ -213,6 +213,11 @@ class Converter:
 
     # -- references ---------------------------------------------------------
     def link(self, label: str, text: str) -> str:
+        # pandoc 3.1 does not carry a figure's id across the files it splits the book into: a link to a figure of
+        # another chapter would point at a fragment that file lacks (epubcheck RSC-012), so it is printed as text
+        if label.startswith("fig:") and self.chapter is not None \
+                and not self.n.num(label).startswith(f"{self.chapter}."):
+            return text
         if label in self.included:
             return f"\\hyperref[{sanitize(label)}]{{{text}}}"
         return text
@@ -411,6 +416,9 @@ class Converter:
         # pandoc writes \tfrac and \dfrac as <mfrac displaystyle=...>, which EPUB's MathML 3 schema
         # rejects; inline math is text style and display math display style anyway.
         s = re.sub(r"\\[td]frac(?![A-Za-z])", r"\\frac", s)
+        # pandoc 3.1's texmath does not know \Bigl, \Bigr, \biggl … and leaves the whole formula as raw TeX;
+        # it knows \Big and \bigg, which draw the same delimiters (only the PDF's spacing differs)
+        s = re.sub(r"\\(Big|bigg|Bigg)[lrm](?![A-Za-z])", r"\\\1", s)
         s = self.headings(s)
         s = self.boxes(s)
         s = self.floats(s)

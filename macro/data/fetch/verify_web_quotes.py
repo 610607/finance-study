@@ -24,7 +24,9 @@ but the quotations are still searched. Text and quotation are compared after nor
 whitespace (a space next to a Chinese character is dropped), line-end hyphenation, typographic quotes
 and dashes, and Unicode compatibility forms.
 A site that cannot be reached is reported, not counted as a failure: network access differs
-between sessions (docs/WORKFLOW.md §0).
+between sessions (docs/WORKFLOW.md §0). So is a "pdf" source whose download is not a PDF (a site may
+answer a script with a bot-check or error page): it is not cached, and a cached file that is not a PDF
+is reported with its path, so that it can be deleted and fetched again by hand.
 """
 from __future__ import annotations
 
@@ -86,6 +88,10 @@ def text_of(path: Path, fmt: str) -> str:
     return raw
 
 
+def is_pdf(data: bytes) -> bool:
+    return b"%PDF-" in data[:1024]
+
+
 def fetch(key: str, src: dict, offline: bool) -> tuple[Path | None, str]:
     CACHE.mkdir(parents=True, exist_ok=True)
     path = CACHE / f"{key}.{src['format']}"
@@ -96,9 +102,14 @@ def fetch(key: str, src: dict, offline: bool) -> tuple[Path | None, str]:
             # a few hosts refuse browser-like agents (FRASER accepts curl's): a source may name its own
             req = urllib.request.Request(src["url"], headers={"User-Agent": src.get("user_agent", UA)})
             with urllib.request.urlopen(req, timeout=90) as r:
-                path.write_bytes(r.read())
+                body, ctype = r.read(), r.headers.get("Content-Type", "?")
         except Exception as e:  # noqa: BLE001 - any network failure is reported, not fatal
             return None, f"cannot download ({e.__class__.__name__}: {e})"
+        if src["format"] == "pdf" and not is_pdf(body):
+            return None, f"the download is not a PDF ({ctype}; a bot-check or error page?): not cached"
+        path.write_bytes(body)
+    if src["format"] == "pdf" and not is_pdf(path.read_bytes()):
+        return None, f"the cached file is not a PDF (a bot-check or error page?): delete {path} and fetch it again"
     digest = hashlib.sha256(path.read_bytes()).hexdigest()
     if src.get("sha256") and digest != src["sha256"]:
         return path, f"SHA-256 differs from the recorded one ({digest[:12]}… vs {src['sha256'][:12]}…)"

@@ -7,7 +7,8 @@
   "license": "Quotations for criticism and teaching. BEA documents are works of the US government. The CBSL permits reproduction of its Bulletin with due credit (row cbsl_terms); the Annual Report and the Ministry of Finance FAQ are official publications quoted briefly with attribution. The NBER working papers are quoted in short passages with full credit, as NBER's notice allows ('Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including (c) notice, is given to the source'). SAFE's 2016 balance-of-payments report and its annual report for 2015 are quoted in a few sentences with the source stated; SAFE's legal statement (row safe_terms) bars commercial reproduction of its content, so no SAFE data file is part of this repository.",
   "used_in": [
     1,
-    5
+    5,
+    37
   ],
   "fetch": "data/fetch/verify_web_quotes.py checks every row",
   "notes": "Values are the numbers the text uses, in the order they appear. Rows of tables quote the row as pdftotext prints it (label and values separated by spaces). The CBSL Annual Report is set in two columns; long sentences that the text layer interleaves with the other column are quoted in contiguous fragments (rows lk_dep_april and lk_dep_april2, lk_swap_val and lk_swap_val2, lk_swap_inacc and lk_swap_cond). SAFE's 2016 figures are as first published; WDI (snapshot wb_external_annual) has the revised figures used for calculations.",

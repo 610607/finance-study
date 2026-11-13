@@ -7,7 +7,8 @@
   "license": "BIS Data Portal terms (https://data.bis.org/help/legal, 2026-10-14): 'The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation'. The Chinese labels in the book are not an official BIS translation.",
   "citation": "Source: BIS, bilateral exchange rates (WS_XRU) and effective exchange rates (WS_EER).",
   "used_in": [
-    5
+    5,
+    37
   ],
   "fetch": "data/fetch/bis_fx.py",
   "notes": "Bilateral rates are units of national currency per US dollar (a rise is a depreciation of the national currency, as e in the book). The effective rates are indices, 2020 = 100 (the 2020 mean of cn_reer is 100.0), and rise when the currency appreciates: the opposite direction to e. The real effective rates are CPI-based. SHA-256 of the 2026-10-14 responses: lkr_usd_eop 08af181dbfc5685ec0e81df89a3a51bd4a6d0df2552aa669d55c136bed92491f; lkr_usd_avg 7f06422ca7e7e538781223b8ac6b4ce8c6a14d899a85ba85959e9612f4fcb987; cny_usd_avg dbb05561d31afa8bf10b9dc91c8f41f84fe28e5341600f9fd0e5efee108bd98d; cn_neer 47d8e53ef89e78f995eabb20363e23bd5910d5ea192b25b791bdcb9d907df227; cn_reer c3363e1d4bb3365dee4ea2bfae38aefdcd456701227a53e71c219995982aab72; us_reer 661741ce789447463d9591ed4ace575c8bf937242de047ee2e86df233eeb3996."

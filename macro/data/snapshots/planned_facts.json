@@ -1,0 +1,226 @@
+{
+ "title": "Planned economies: quotations of the Soviet appeal of 1 June 1962 and the resolution of 29 September 1965 (Заря Востока), a Leningrad party report of 1 June 1962, FRUS telegrams of 1947 and 1970, the CPC resolution of 1981, the official vital rates of China, Meng, Qian and Yared (2010), Smil (1999), Kornai (1980, 1986), Kornai, Maskin and Roland (2003), the World Bank on Yugoslavia (1978) and Yusuf (1977), and the records of the persons named",
+ "source": "Заря Востока, 1 June 1962 and 1 October 1965 (dspace.nplg.gov.ge); ЦГАИПД СПб. Ф. Р-25. Оп. 89. Д. 65. Л. 155-160 as published on istmat.org; Foreign Relations of the United States 1947 vol. IV and 1969-1976 vol. XXIX (history.state.gov); 关于建国以来党的若干历史问题的决议 (12371.cn, from 中国政府网); 新中国五十年统计资料汇编 (1999), table A-1 (a third-party scan on scalar.usc.edu, read to verify only) and 中国统计年鉴 2000, table 4-2 (stats.gov.cn); NBER Working Paper 16361 (nber.org); BMJ 319: 1619-1621 (PubMed Central); Kornai (1980) vol. A, Kornai (1986) and Kornai, Maskin and Roland (2003) (kornai-janos.hu); World Bank Report 1615a-YU and Domestic Finance Studies No. 44 (documents.worldbank.org); id.loc.gov; lobid.org (GND)",
+ "url": "https://dspace.nplg.gov.ge/bitstream/1234/502639/1/Zaria_Vostoka_1962_N126.pdf",
+ "series": "id, dynasty (the country), year, year_note, value (the numbers the quotation prints, ';'-separated, read by checks/check_ch43.py), unit, numeral, file (the key of the document in 'sources'), juan (the printed page and the PDF page, or 'web page'), quote (verbatim from the text layer, including its misreadings; empty for a row read on a page image), note (what the row says; for a page image its transcription between « and »)",
+ "retrieved": "2026-11-12",
+ "license": "Official documents. The appeal of the CC of the CPSU and the USSR Council of Ministers of 31 May 1962 (rows zv62_*) and the resolution of the plenum of the CC of the CPSU of 29 September 1965 (rows zv65_*) are official documents of the USSR, not objects of copyright (Civil Code of the Russian Federation, art. 1259(6)); the text used is that printed in Заря Востока, № 126 (11446), 1 June 1962, p. 1, and № 232 (12468), 1 October 1965, pp. 1-2, in the scans of the National Parliamentary Library of Georgia (URLs, dates and SHA-256 in 'sources'). The resolution of the CPC of 27 June 1981 (rows res_*) is a resolution of the PRC's ruling party, quoted in short phrases as an official document (PRC Copyright Law, art. 5); the edition used is the text on 共产党员网, which names its source (row res_source) '来源：中国政府网' and carries the footer (row res_copyright) '共产党员网 版权所有'. Archival record: the report of the Leningrad city committee of 1 June 1962 (rows lk_*) is published on istmat.org as an archival document with the reference (row lk_archive) 'Архив: ЦГАИПД СПб. Ф. Р-25. Оп. 89. Д. 65. Л. 155-160'; the site's own content is licensed (row lk_licence) 'Вся информация на сайте, если не указано другое, предоставляется на условиях лицензии Creative Commons BY-SA 4.0 .' The document itself is an official record of a CPSU body, cited with its archive reference and its publication; it is quoted in short phrases and one sentence of a worker's words. US government works: FRUS (rows fr47_*, fr70_*) is a publication of the US Department of State, a work of the US government in the public domain (17 U.S.C. § 105). The National Bureau of Statistics of China: 新中国五十年统计资料汇编 prints (row nbs_rights) '中国统计版图书,版权所有,侵权必究。'; the copy read is a third-party scan on scalar.usc.edu, used to verify the official numbers only and never committed (URL, date and SHA-256 in 'sources'); the book is cited. The terms of stats.gov.cn (rows nbst_*), copied verbatim: section 一 '转载或引用本网内容,务必在显著位置注明转自(或引自)国家统计局网站(或中国统计信息网)字样,并标明本网网址:www.stats.gov.cn。'; section 二.1 '本网所有内容,未经注明,版权一律归国家统计局网站(中国统计信息网)所有。'; section 二.3 '转载或引用本网内容必须是以新闻性或资料性公共免费信息为使用目的的合理、善意引用,不得对本网内容原意进行曲解、修改。'; section 三 '1.用户可以在本网站下载和使用国家统计局发布的统计数据; 2.个人和组织机构应依法使用国家统计局网站发布的统计数据; 3.本网站通过\"统计数据\"栏目和统计数据库,提供了权威、准确的官方统计数据及相关指标解释,请准确使用。' (the page is dated '2022/09/02 17:13来源:国家统计局', row nbst_date). The chapter uses the statistical data of tables A-1 and 4-2 with the source named. Modern scholars, in copyright: short phrases only, otherwise paraphrase, the pages cited. NBER Working Paper 16361 prints (row mqy_copyright) '© 2010 by Xin Meng, Nancy Qian, and Pierre Yared. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' Smil (1999): the PMC page prints (row smil_copyright) 'Copyright © 1999, British Medical Journal'. Kornai (1980): the copyright page prints (row k80_copyright, read on the page image) '© NORTH-HOLLAND PUBLISHING COMPANY - 1980 All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording or otherwise, without the prior permission of the copyright owner.' Kornai (1986): the scan carries on its pages (row k86_copyright, read on the page image) 'Copyright © 2001 All Rights Reserved'. Kornai, Maskin and Roland (2003): the PDF on kornai-janos.hu prints no © notice; it is an article of the Journal of Economic Literature (American Economic Association), in copyright: short phrases only. World Bank: the report 1615a-YU (1978) and Yusuf (1977) carry 'Public Disclosure Authorized' stamps (rows wb78_disclosure, yu_disclosure); the 1978 report's cover still carries the notice of its time (row wb78_restricted) 'This document has a restricted distribution and may hb used by recipients only in the performance of their official duties.' The documents' landing pages (rows wb78_landing, yu_landing) print in their static HTML only the title: the rights field of the pages is filled by a script from search.worldbank.org, which answered the network probe as blocked, so no rights statement could be copied from them. Both are treated as in copyright: short phrases only, the pages cited. Authority records: the Library of Congress Name Authority File (id.loc.gov) is a US government work; the GND record gives its licence as (row gnd_licence) 'http://creativecommons.org/publicdomain/zero/1.0/' (CC0 1.0); the record's photograph (licensed CC BY-SA 4.0) is not used. No photographs are used.",
+ "used_in": [
+  43
+ ],
+ "fetch": "data/fetch/planned43.py",
+ "citation": "Each row is cited to its document in the bibliography block of Chapter 43 (references_zh.tex): zv1962, lenkom1962, frus1947, frus1970, res1981, nbs1999, nbs2000, mqy2010, smil1999, kornai1980, kornai1986, kmr2003, zv1965, worldbank1978yu, yusuf1977, loc43, gnd43. The table A8 of Meng, Qian and Yared (rows a8_*) reproduces Li and Yang (2005), whose source is the Ministry of Agriculture (1989): it is cited as Meng, Qian and Yared's table, not to Li and Yang, which was not read.",
+ "notes": "Every quotation is copied from the text layer of the document as data/fetch/verify_web_quotes.py extracts it (pdftotext with and without -layout, tags removed from web pages, whitespace and Unicode compatibility forms normalized), so the misreadings of the scans stay in the quotations; the rows say what each misreading stands for. The scans of Kornai (1980) and Kornai (1986) have no text layer, and the text layer of Заря Востока of 1 October 1965 splits its words into letters; their rows, the masthead of Заря Востока of 1 June 1962 (row zv62_masthead) and the dates of the Leningrad scan (row lk_scan_dates) were read on page images rendered with pdftoppm (with tesseract's OCR as a draft); their transcriptions are in the notes between « and », and a reviewer checks them by eye. The numbers of these rows were read on the images: the steel qualities 10, 11 and 9 of Kornai (1980) pp. 36-37, the year 1968 of p. 3; the 1755 firms, table 1 (0.91 and 1.27 for 1982) and table 3 (the rows of the loss-makers and of the high-profitability firms) of Kornai (1986) pp. 14-17; the date 29 сентября 1965 and the issue number of Заря Востока; 17 and 31 May on the Leningrad scan. The text layers misread: 'ПАТИЙНЫХ' for 'ПАРТИЙНЫХ' (lk_number), 'Г.И,' for 'Г.И.' (lk_addressee); the transcription on istmat.org keeps the typewriter's capital 'I' for the digit '1' (lk_date, lk_dates), as the scan prints it (row lk_scan_dates); 'иСовета' for 'и Совета' (zv62_title) and 'миллионов'800' for 'миллионов 800' (zv62_output) in Заря Востока; 'rail' for 'retail' (fr47_single) and 'geater' for 'greater' (fr47_sacrifice) as FRUS prints the telegram; 'bad can weather' for 'bad weather' (mqy_weather) as the working paper prints it; the layout text of table A-1 spaces many decimals, '20. 86' for '20.86' (nbs_1960, and so in other rows nbs_*); 'Challen1rs of Develonment' for 'Challenges of Development' (wb78_title), 'hb' for 'be' (wb78_restricted), 'thpir' for 'their' (wb78_purpose), 'noliries, ramainpd' for 'policies, remained' (wb78_state), 'Tne' and ';964' for 'The' and '1964' (wb78_1965, the page image reads 'between 1964 and 1967'), 'FNANCE STUDI2S' for 'FINANCE STUDIES' (yu_series). The Russian newspaper prints decimal commas ('91,6'), read as decimal points. In table A-1 of the 1999 compilation the column headed 农业 prints the smaller numbers (9441 in 1949) and the one headed 非农业 the larger (44726), in every year: the heads look interchanged, and the chapter does not use these two columns (row nbs_1949). The text layer of table A-1 reads '33462' for '33469' (nbs_1957), the men of 1957 as the page image prints them (33469 + 31184 = 64653); the chapter does not use that column. In table A-1 the death rate of 1969 is printed 8.63 (nbs_1969), as the page image shows; the birth rate 34.11 less the rate of natural increase 26.08 of the same row gives 8.03, so one of the three is misprinted; the figure draws the death rate as printed and the text does not use the year. The scan of the compilation on scalar.usc.edu is a third-party copy, read to verify the official numbers; the five years that table 4-2 of the 2000 yearbook also gives agree with it (rows nb2_*). The famine years 1958-1961 are not in table 4-2. Meng, Qian and Yared (2010) is the NBER working paper, not the article of 2015 in the Review of Economic Studies, which was not read; their table A8 reproduces Li and Yang (2005), 24 provinces; their footnote 19 gives Li and Yang's retention after procurement as 223 kg per person in 1959, on another basis than the table's 193 kg per agricultural labourer (rows mqy_fn19, a8_1959). Their page 1 gives 17 to 30 million deaths, their data appendix 16.5 to 30 million (rows mqy_range, mqy_five). Kornai (1980) is volume A only (volume B was not read). The landing pages of the World Bank render their metadata by script; their static HTML gives only the title. The chargé's 275 per cent for bread (row fr47_bread) is 278 per cent by his two prices. The life dates of G. I. Popov, the addressee of the Leningrad report, were not found in an authority record: the text says 生卒年未详.",
+ "sources": {
+  "zv1962_43": {
+   "url": "https://dspace.nplg.gov.ge/bitstream/1234/502639/1/Zaria_Vostoka_1962_N126.pdf",
+   "format": "pdf",
+   "sha256": "974f7f76f0558d485701eadbeef3789f1137afb32c991c59f9819398a14583c0",
+   "version": "Заря Востока, № 126 (11446), Friday 1 June 1962, p. 1: the appeal of the CC of the CPSU and the USSR Council of Ministers and the notice of the Council of Ministers (the scan in the digital library of the National Parliamentary Library of Georgia, 4 pages)",
+   "retrieved": "2026-11-12"
+  },
+  "zv1962_43img": {
+   "url": "https://dspace.nplg.gov.ge/bitstream/1234/502639/1/Zaria_Vostoka_1962_N126.pdf",
+   "format": "image",
+   "sha256": "974f7f76f0558d485701eadbeef3789f1137afb32c991c59f9819398a14583c0",
+   "version": "the same scan, p. 1 read on an image rendered with pdftoppm (the masthead)",
+   "retrieved": "2026-11-12"
+  },
+  "lenkom43": {
+   "url": "https://istmat.org/node/69040",
+   "format": "html",
+   "sha256": "09e1905014cf207f624eb19a73ef90e0a5f7c6eecf76e7d60d39ff4ef4e5c25f",
+   "version": "Информационная сводка сектора информации отдела партийных органов Ленинградского горкома КПСС № 75, 1 June 1962, the transcription published on istmat.org (archive: ЦГАИПД СПб. Ф. Р-25. Оп. 89. Д. 65. Л. 155-160)",
+   "retrieved": "2026-11-12"
+  },
+  "lenkomscan43": {
+   "url": "https://istmat.org/files/uploads/69040/cgaipd_spb._f._r-25._op._89._d._65._l._155-160.pdf",
+   "format": "pdf",
+   "sha256": "388b4cf55a40fc1dafc428139965d598f8a442b7e0cfd98f585440970fef8b25",
+   "version": "the scan of the same file published on istmat.org (6 pages, with a text layer)",
+   "retrieved": "2026-11-12"
+  },
+  "lenkomscan43img": {
+   "url": "https://istmat.org/files/uploads/69040/cgaipd_spb._f._r-25._op._89._d._65._l._155-160.pdf",
+   "format": "image",
+   "sha256": "388b4cf55a40fc1dafc428139965d598f8a442b7e0cfd98f585440970fef8b25",
+   "version": "the same scan, PDF p. 6 read on an image rendered with pdftoppm",
+   "retrieved": "2026-11-12"
+  },
+  "frus1947_43": {
+   "url": "https://history.state.gov/historicaldocuments/frus1947v04/d436",
+   "format": "html",
+   "sha256": "41a3e7f86f9e90b58881223b284a82e012f9f7a5744a3a1a4fb7ab3bd83b5ef7",
+   "version": "Foreign Relations of the United States, 1947, Volume IV, Eastern Europe; the Soviet Union, document 436: telegram 3367 of the chargé in Moscow (Durbrow) to the Secretary of State, 14 December 1947 (web page of the Office of the Historian)",
+   "retrieved": "2026-11-12"
+  },
+  "frus1970_43": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v29/d142",
+   "format": "html",
+   "sha256": "fa949b3c2e8d5f1bc3a75d0bfc225fe659167d1a46c7e11afae0f0ea54ee66f7",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume XXIX, Eastern Europe; Eastern Mediterranean, 1969-1972, document 142: telegram 3501 from the embassy in Warsaw, 16 December 1970 (web page)",
+   "retrieved": "2026-11-12"
+  },
+  "frus1970b_43": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v29/d145",
+   "format": "html",
+   "sha256": "f908c31efa623e2b285c31f38276821092756d0c4fb717686e98d3c489de65a0",
+   "version": "the same volume, document 145: memorandum from Kissinger to President Nixon, 20 December 1970 (web page)",
+   "retrieved": "2026-11-12"
+  },
+  "res1981_43": {
+   "url": "https://www.12371.cn/2021/11/09/ARTI1636454249781129.shtml",
+   "format": "html",
+   "sha256": "af0ca3335827187455dc50df4959bfb95db2c8b49811461a9bcb38e010f3f8d2",
+   "version": "关于建国以来党的若干历史问题的决议（一九八一年六月二十七日中国共产党第十一届中央委员会第六次全体会议一致通过）, the text on 共产党员网 (12371.cn, 9 November 2021), from 中国政府网",
+   "retrieved": "2026-11-12"
+  },
+  "nbs50_43": {
+   "url": "https://scalar.usc.edu/works/chinese-studies-reference-collection/media/HA4631%20.H75%20%E6%96%B0%E4%B8%AD%E5%9B%BD%E4%BA%94%E5%8D%81%E5%B9%B4%E7%BB%9F%E8%AE%A1%E8%B5%84%E6%96%99%E6%B1%87%E7%BC%96_OCR.pdf",
+   "format": "pdf",
+   "sha256": "bf93d80536dcc4f9ec795af407bc2f579f5b4811d1b46ab39ca20334943c1e71",
+   "version": "国家统计局国民经济综合统计司编《新中国五十年统计资料汇编》（中国统计出版社，1999 年 11 月第 1 版）: the front matter and table A-1 (p. 1) in a scanned excerpt with an OCR text layer on the USC Libraries' Scalar site (a third-party copy, read to verify the official numbers only; the book is cited; the file is not committed)",
+   "retrieved": "2026-11-12"
+  },
+  "nbs2000_43": {
+   "url": "https://www.stats.gov.cn/sj/ndsj/zgnj/2000/D02c.htm",
+   "format": "html",
+   "sha256": "d951679cb77899d313d659e1017783ae5679932f1a0d435cf1d2aed8950b37ea",
+   "version": "国家统计局, 中国统计年鉴 2000, table 4-2 (web page, GB18030)",
+   "retrieved": "2026-11-12"
+  },
+  "nbsterms43": {
+   "url": "https://www.stats.gov.cn/wzgl/202302/t20230217_1912857.html",
+   "format": "html",
+   "sha256": "fcb330d080046d9700e53c9a6416b3a97ca52a5cea770e7d467c2ea98589b5fe",
+   "version": "国家统计局网站, 版权与免责声明 (web page dated 2022/09/02)",
+   "retrieved": "2026-11-12"
+  },
+  "mqy2010_43": {
+   "url": "https://www.nber.org/system/files/working_papers/w16361/w16361.pdf",
+   "format": "pdf",
+   "sha256": "d6bffc17a1a9cf9c1670a2b9da6cd1e5ec77cbd67be54c327de44ead7607968a",
+   "version": "Xin Meng, Nancy Qian and Pierre Yared, 'The Institutional Causes of China's Great Famine, 1959-61', NBER Working Paper No. 16361, September 2010 (the NBER's PDF, 71 pages; printed page = PDF page - 2; table A8 on PDF p. 71)",
+   "retrieved": "2026-11-12"
+  },
+  "smil1999_43": {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1127087/",
+   "format": "html",
+   "sha256": "37e1b70c2efde341f525457ed9e0701aaa4d1181c6fdfd69eac903b01642a9f2",
+   "version": "Vaclav Smil, 'China's great famine: 40 years later', BMJ 319 (7225): 1619-1621, 18 December 1999 (the article on PubMed Central)",
+   "retrieved": "2026-11-12"
+  },
+  "kornai1980_43img": {
+   "url": "https://www.kornai-janos.hu/media/konyvek_cikkek/w20825/Kornai1980-Economics-of-shortage-Vol.A.pdf",
+   "format": "image",
+   "sha256": "b6729abcb88104a34633b15159eae386a81aec83508a690606c4bac8a1153f7e",
+   "version": "János Kornai, Economics of Shortage, Volume A, North-Holland 1980 (a scan without a text layer on kornai-janos.hu, 317 pages; printed page = PDF page - 21); pages read on images rendered with pdftoppm and OCR (tesseract), the transcriptions checked against the images",
+   "retrieved": "2026-11-12"
+  },
+  "kornai1986_43img": {
+   "url": "https://www.kornai-janos.hu/media/konyvek_cikkek/w20825/Kornai1986_The_Soft_budget_Constraint_-_Kyklos.pdf",
+   "format": "image",
+   "sha256": "84285a1404e2da563819537bfb9879251a1502854197c002bccb756906e51fb1",
+   "version": "János Kornai, 'The Soft Budget Constraint', Kyklos 39 (1): 3-30, 1986 (a scan without a text layer on kornai-janos.hu; printed page = PDF page + 2); pages read on images rendered with pdftoppm and OCR, the transcriptions and the numbers of tables 1 and 3 checked against the images",
+   "retrieved": "2026-11-12"
+  },
+  "kmr2003_43": {
+   "url": "https://www.kornai-janos.hu/media/konyvek_cikkek/w20825/Kornai-Maskin-Roland2003_Understanding_the_SBC_-_JEconLit.pdf",
+   "format": "pdf",
+   "sha256": "f35e3c314a8533292f259d37cdf93d1b425913d18d7ae08fb3f4865ead4723c6",
+   "version": "János Kornai, Eric Maskin and Gérard Roland, 'Understanding the Soft Budget Constraint', Journal of Economic Literature 41 (4): 1095-1136, December 2003 (the PDF on kornai-janos.hu, 42 pages)",
+   "retrieved": "2026-11-12"
+  },
+  "zv1965_43img": {
+   "url": "https://dspace.nplg.gov.ge/bitstream/1234/506362/1/Zaria_Vostoka_1965_N232.pdf",
+   "format": "image",
+   "sha256": "7bf9a70b2e7143e8f35684a860104348dd2d056b756e5c3bbfe5b17d64668338",
+   "version": "Заря Востока, № 232 (12468), Friday 1 October 1965, pp. 1-2: the resolution of the plenum of the CC of the CPSU of 29 September 1965 (the scan in the digital library of the National Parliamentary Library of Georgia; its text layer splits the words, so the rows are read on images rendered with pdftoppm)",
+   "retrieved": "2026-11-12"
+  },
+  "wb1978_43": {
+   "url": "https://documents.worldbank.org/curated/en/134111468101968175/pdf/multi0page.pdf",
+   "format": "pdf",
+   "sha256": "7785580cfce85dafea9edf7e490d796e99d9ceae86638a9c589907fae33a6dd3",
+   "version": "World Bank, Yugoslavia: Self-Management Socialism and the Challenges of Development, Report No. 1615a-YU, Volume I, Part 1: An Economic System in Evolution, 21 March 1978 (the scan on documents.worldbank.org; printed page = PDF page - 18)",
+   "retrieved": "2026-11-12"
+  },
+  "wbland1978_43": {
+   "url": "https://documents.worldbank.org/curated/en/134111468101968175",
+   "format": "html",
+   "sha256": "02072740e8b55adeb97d1bc5f884292b94ff019775450fdf66574dd90a3aefc6",
+   "version": "the document's landing page on documents.worldbank.org (static HTML)",
+   "retrieved": "2026-11-12"
+  },
+  "yusuf1977_43": {
+   "url": "https://documents.worldbank.org/curated/en/532061468915640475/pdf/Understanding-self-management-in-Yugoslavia.pdf",
+   "format": "pdf",
+   "sha256": "8cd3d8fa600e7b0062292a9e9b4868b3954c4738fa7461a51af7898c85408877",
+   "version": "Shahid Yusuf, Understanding Self-Management in Yugoslavia, World Bank Domestic Finance Studies No. 44, November 1977 (the scan on documents.worldbank.org; printed page = PDF page - 7)",
+   "retrieved": "2026-11-12"
+  },
+  "wblandyusuf43": {
+   "url": "https://documents.worldbank.org/curated/en/532061468915640475",
+   "format": "html",
+   "sha256": "1ecc5c19cd772ce43147e21b3ca8ebad56be67183acfcaf3d326406ab6776c45",
+   "version": "the document's landing page on documents.worldbank.org (static HTML)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_gierek43": {
+   "url": "https://id.loc.gov/authorities/names/n50028021.madsrdf.json",
+   "format": "json",
+   "sha256": "eb2e8bd74d06dd7199d3f68e47282aa4d57c126dd9d898f1fd78b1e7708f9d51",
+   "version": "Library of Congress Name Authority File, record n50028021 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_gomulka43": {
+   "url": "https://id.loc.gov/authorities/names/n50034485.madsrdf.json",
+   "format": "json",
+   "sha256": "2d5a13b2b715c044919d047734264b0b0ba151e8f6e62188e4ba7e28bf6f3ff2",
+   "version": "Library of Congress Name Authority File, record n50034485 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_khrushchev43": {
+   "url": "https://id.loc.gov/authorities/names/n80021705.madsrdf.json",
+   "format": "json",
+   "sha256": "1fcc2f69b218bd59b8b5f4884c41793b5fb77a8861cb20bada162ae4ef666eac",
+   "version": "Library of Congress Name Authority File, record n80021705 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_kornai43": {
+   "url": "https://id.loc.gov/authorities/names/n50043280.madsrdf.json",
+   "format": "json",
+   "sha256": "027891e5b2139554afbe723e98087d31e42ab2a7a519808a313cf767483ed0d6",
+   "version": "Library of Congress Name Authority File, record n50043280 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_kosygin43": {
+   "url": "https://id.loc.gov/authorities/names/n50042693.madsrdf.json",
+   "format": "json",
+   "sha256": "336e190bb3cae6de84ff4891d40e5566855d44bbb2ae4a0abdaa1ef5c265c32e",
+   "version": "Library of Congress Name Authority File, record n50042693 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_mao43": {
+   "url": "https://id.loc.gov/authorities/names/n78087649.madsrdf.json",
+   "format": "json",
+   "sha256": "6b858c4ce5087b0a2524c9a2bb990c5d1b98fdf020d01843d671901c73d971dd",
+   "version": "Library of Congress Name Authority File, record n78087649 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "loc_peng43": {
+   "url": "https://id.loc.gov/authorities/names/n81063473.madsrdf.json",
+   "format": "json",
+   "sha256": "395d8a7406b19d6b65530fc773969194ec10eb5d4b1f9748aafe0ac632b3cbbc",
+   "version": "Library of Congress Name Authority File, record n81063473 (MADS/RDF JSON)",
+   "retrieved": "2026-11-12"
+  },
+  "gnd_kornai43": {
+   "url": "https://lobid.org/gnd/115604685.json",
+   "format": "json",
+   "sha256": "8165911dbe209104c86f4e7406fa3ba3696c80817e3be15d1a7843fcfbae6377",
+   "version": "Gemeinsame Normdatei, record 115604685 (Kornai, János), as lobid.org serves it (JSON)",
+   "retrieved": "2026-11-12"
+  }
+ }
+}

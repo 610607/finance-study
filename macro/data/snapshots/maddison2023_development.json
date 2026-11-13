@@ -1,0 +1,37 @@
+{
+  "title": "GDP per head of Argentina, Brazil, Mexico, India, Ghana and the Republic of Korea, 1950-2022 (Maddison Project Database 2023)",
+  "source": "Maddison Project Database, version 2023 (J. Bolt and J. L. van Zanden), workbook 'mpd2023_web.xlsx', sheet 'Full data', DataverseNL, doi:10.34894/INZBF2",
+  "url": "https://dataverse.nl/api/access/datafile/421302",
+  "series": "country (ISO code), year, gdppc_2011usd ('gdppc': real GDP per head in 2011 international dollars), pop_thousands ('pop': mid-year population, thousands)",
+  "retrieved": "2026-11-06",
+  "license": "CC BY 4.0 (DataverseNL). The workbook's 'Notes' sheet sets a citation policy: 'CONDITIONS UNDER WHICH ALL ORIGINAL PAPERS MUST BE CITED: a) If the data is shown in any graphical form b) If subsets of the full dataset that include less than a dozen (12) countries are used for statistical analysis or any other purposes'. The chapter shows the data in a figure and a table of six economies and cites the original sources listed in 'sources_by_country' (copied from the sheets 'Sources' and 'Maddison original sources', the rows whose period covers any of 1950-2022) and the general source of the sheet 'Sources' for the years from 2008 ('sources_all').",
+  "used_in": [
+    41
+  ],
+  "fetch": "data/fetch/maddison2023_development41.py",
+  "notes": "Workbook SHA-256 ecc5916ca12789b983fc4be437f8a354bbf4291323605324ac3e0aea4c57cbb6 (the copy of Chapter 21). The sheet 'Sources' lists, for these six economies, only the sources whose period touches 1950 or later shown in 'sources_by_country'; for the other years after 1950 the workbook names no source by country, apart from its general line for 2008-2022 ('sources_all'). The chapter's growth rates are compound annual rates between the years shown (本书的计算). Ghana's GDP per head is highest before 1990 in 1971 and lowest after 1950 in 1983; the territory behind each figure is not stated in the workbook.",
+  "citation": "Bolt, J. and J. L. van Zanden (2024), 'Maddison style estimates of the evolution of the world economy: A new 2023 update', Journal of Economic Surveys, doi:10.1111/joes.12618",
+  "sources_all": [
+    "Sources: GDP pc: 2008 - 2022: Total Economy Database the Conference Board for all countries included in TED. Otherwise UN national accounts statistics"
+  ],
+  "sources_by_country": {
+    "ARG": [
+      "Maddison original sources, 1913-1950: IEERAL, \"Estadísticas de la evolución económica de Argentina, 1913-84\", Estudios, Buenos Aires, July-September, 1986."
+    ],
+    "BRA": [
+      "Maddison original sources, 1900-1950: A. Maddison and Associates, The Political Economy of Poverty, Equity and Growth: Brazil and Mexico, Oxford University Press, New York 1992;"
+    ],
+    "MEX": [
+      "Sources, 1895–2003: Barro, R.J. and J.F. Ursua, (2008). “Macroeconomic Crises since 1870” Brookings Papers on Economic Activity, Economic Studies Program, The Brookings Institution, vol. 39(1 (Spring), pages 255-350"
+    ],
+    "IND": [
+      "Maddison original sources, 1946-50: A. Maddison, Class Structure and Economic Growth: India and Pakistan Since the Moghuls, Allen and Unwin, London, 1971, p. 169."
+    ],
+    "GHA": [
+      "Sources, 1885-1950: Broadberry, S., & Gardner, L. (2022). Economic growth in Sub-Saharan Africa, 1885–2008: Evidence from eight countries. Explorations in Economic History, 83, 101424."
+    ],
+    "KOR": [
+      "Sources, 1911-1990: Cha, M.S., Kim, N.N., Park, K.-J., Park, Y. (Eds.) (2020), Historical Statistics of Korea. Studies in Economic History, New York: Springer Publishing"
+    ]
+  }
+}

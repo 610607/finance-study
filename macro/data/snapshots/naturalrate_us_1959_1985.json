@@ -1,0 +1,29 @@
+{
+  "title": "United States: the civilian unemployment rate and the change of the consumer price index (CPI-U), annual, 1959-1985 (Chapter 44: the drifting Phillips curve)",
+  "source": "Economic Report of the President, February 2000, tables B-40 (Civilian unemployment rate, 1950-99) and B-62 (Changes in consumer price indexes for commodities and services, 1929-99), GovInfo; the tables' source: Department of Labor, Bureau of Labor Statistics",
+  "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table40.pdf",
+  "series": "unemp_pct: the civilian unemployment rate, all civilian workers, per cent, annual average (B-40, first column); cpi_dec_dec_pct: all items (CPI-U), percent change December to December (B-62, first column); cpi_year_pct: all items (CPI-U), percent change year to year (B-62, second column)",
+  "retrieved": "2026-11-12",
+  "license": "A work of the United States government, in the public domain (17 U.S.C. § 105).",
+  "used_in": [
+    44
+  ],
+  "fetch": "data/fetch/naturalrate44.py",
+  "notes": "Read from the -layout text of the two one-page PDFs (the default text run scatters the columns); B-62 prints decimals below one with a leading point ('.7') and its minus sign as U+2212. Chapter 44 uses the year-to-year change (the change of the annual averages) in its text and Figure naturalrate_us (Table tab:naturalrate-seven is Friedman's own table, not this series); Chapter 38 used the CPI for urban wage earners and clerical workers to 1969 (ERP 1971), whose change in 1969 is about 5.4 per cent against 5.5 here. The rows b40_* and b62_* of naturalrate_facts quote the lines of the years the text names.",
+  "documents": {
+    "erpb40_44": {
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table40.pdf",
+      "format": "pdf",
+      "sha256": "9e36acde13e9ad44d6fe216cf8e9b5989f8fd8ce35453491608cd9051b4ad179",
+      "version": "Table B-40, printed p. 354 (one-page PDF)",
+      "retrieved": "2026-11-12"
+    },
+    "erpb62_44": {
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2000/pdf/ERP-2000-table62.pdf",
+      "format": "pdf",
+      "sha256": "69a5b44303e10628cc6b11a81e0c55bee34fa9bcae50dcf27e74c5f0e60a3d31",
+      "version": "Table B-62, printed p. 378 (one-page PDF)",
+      "retrieved": "2026-11-12"
+    }
+  }
+}

@@ -4,9 +4,9 @@
 #   bash tools/setup_env.sh            # from macro/
 #
 # What it does (each step is skipped when already done):
-#   0. System packages, when xelatex, the Noto CJK fonts, pandoc, pdftoppm or java are missing and
-#      apt-get can be used (root, or passwordless sudo): TeX Live (XeLaTeX, latex-extra, Chinese),
-#      Noto CJK, Inter, the TeX Gyre fallback fonts, poppler, pandoc and a Java runtime. The cloud
+#   0. System packages, when xelatex, the ZapfDingbats metrics (pzdr.tfm), the Noto CJK fonts,
+#      pandoc, pdftoppm or java are missing and apt-get can be used (root, or passwordless sudo):
+#      TeX Live (XeLaTeX, latex-extra, Chinese, fonts-recommended), Noto CJK, Inter, the TeX Gyre fallback fonts, poppler, pandoc and a Java runtime. The cloud
 #      containers used in October 2026 had none of TeX Live; this step takes about five minutes.
 #   1. Python packages from requirements.txt.
 #   2. xeCJK and ctexhook, if TeX Live lacks them (e.g. a container without texlive-lang-chinese
@@ -33,7 +33,7 @@ CTEXKIT_TAG=xeCJK-v3.9.1
 EPUBCHECK_VERSION=5.1.0
 STIX_TAG=v2.13b171
 STIX_COMMIT=744a22a4dd626cd14d75728aef34fc8ad7c85db0
-APT_PACKAGES="texlive-xetex texlive-latex-extra texlive-lang-chinese fonts-noto-cjk fonts-texgyre
+APT_PACKAGES="texlive-xetex texlive-latex-extra texlive-lang-chinese texlive-fonts-recommended fonts-noto-cjk fonts-texgyre
   fonts-inter fonts-dejavu-core fonts-lmodern poppler-utils pandoc default-jre-headless fontconfig"
 mkdir -p "$CACHE_DIR"
 here="$(cd "$(dirname "$0")/.." && pwd)"
@@ -43,6 +43,8 @@ echo "== 0. System packages"
 has_font() { grep -qF "$1" <<<"$(fc-list : family 2>/dev/null || true)"; }
 missing=""
 command -v xelatex >/dev/null || missing="$missing xelatex"
+# pzdr.tfm (ZapfDingbats, texlive-fonts-recommended): a container of November 2026 had TeX Live without it
+kpsewhich pzdr.tfm >/dev/null 2>&1 || missing="$missing pzdr"
 has_font "Noto Serif CJK SC" || missing="$missing noto-cjk"
 command -v pandoc >/dev/null || missing="$missing pandoc"
 command -v pdftoppm >/dev/null || missing="$missing pdftoppm"

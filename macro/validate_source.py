@@ -289,6 +289,14 @@ def check_epub_rules(errors: list[str], warnings: list[str]) -> None:
                 if "\\label{" not in m.group(1):
                     line = t[:m.start()].count("\n") + 1
                     warnings.append(f"zh/{f.name}:{line}: numbered {env} without \\label (no number in the EPUB)")
+    # The EPUB converter strips "%" to the end of the line as a comment: an unescaped "%" in a \url (e.g. "%7E")
+    # cut the bibliography item in two and pandoc dropped the whole bibliography (2026-11-12). Write "\%".
+    files = sorted((ROOT / "zh").glob("*.tex")) + [ROOT / "references_zh.tex"]
+    for f in files:
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            for m in re.finditer(r"\\(?:url|href)\{[^}]*\}", line):
+                if re.search(r"(?<!\\)%", m.group(0)):
+                    errors.append(f"{f.relative_to(ROOT)}:{n}: unescaped % in {m.group(0)[:60]}…: write \\% (docs/EPUB.md)")
 
 
 def main() -> int:

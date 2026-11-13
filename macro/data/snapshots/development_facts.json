@@ -1,0 +1,268 @@
+{
+  "title": "Quotations for Chapter 41: Lewis (1954); Lewis's autobiography and Nobel lecture, Schultz's Nobel lecture and the facts of the prize of 1979; Prebisch (1950); the World Development Report 1987; Easterly (1997); Murphy, Shleifer and Vishny (1988); the Indian Planning Commission (1956, 1958, 1961); the Ghanaian Seven-Year Plan (1963); two World Bank reports on Ghana (1967, 1970); the terms of the United Nations and the Indian and Ghanaian copyright acts; life dates",
+  "source": "The Manchester School (archive.org); NobelPrize.org; United Nations (archive.org; un.org); The World Bank (World Development Report 1987; Policy Research Working Papers; reports PA-43a and AF-57a); National Bureau of Economic Research; Planning Commission, Government of India (archive.org); Office of the Planning Commission, Ghana (archive.org); Indian Kanoon; ARIPO; Library of Congress; Deutsche Nationalbibliothek",
+  "url": "https://archive.org/download/manchester-school_1954_22/manchester-school_1954_22.pdf",
+  "series": "quotations (column quote) with their page (column juan) and the numbers read from them (column value, ';'-separated, by the READINGS of checks/check_ch41.py); a row read on a page image has no quotation and its transcription between « and » in the note; column dynasty holds the country of the source or of the person",
+  "retrieved": "2026-11-06",
+  "license": "NobelPrize.org: Lewis's autobiography (row lb_copyright), his lecture of 8 December 1979 (row ll_copyright) and Schultz's lecture of the same day (row sc_copyright) each print 'Copyright © The Nobel Foundation 1979'; the page of facts of Lewis's prize: facts of the prize. Short phrases only, the pages cited. Lewis (1954), The Manchester School of Economic and Social Studies 22 (Lewis died in 1991: in copyright), read to verify in the scan of the volume on archive.org, whose record states no rights (the address, the date and the SHA-256 of the copy are recorded in the notes; the copy is not committed; the journal is cited). Short phrases only, otherwise paraphrased with '% 据:' anchors. United Nations: Prebisch (1950), document E/CN.12/89/Rev.1, a United Nations publication (Sales No. 50.II.G.2) that prints no copyright notice (row pb_symbol), read to verify in a scan on archive.org (not committed). The terms of use of the United Nations' site (row un_terms): 'The United Nations grants permission to Users to visit the Site and to download and copy the information, documents and materials (collectively, \"Materials\") from the Site for the User's personal, non-commercial use, without any right to resell or redistribute them or to compile or create derivative works therefrom'. Its copyright page (row un_copyright): 'Copyright © United Nations All rights reserved. None of the materials provided on this web site may be used, reproduced or transmitted, in whole or in part, in any form or by any means,' Short phrases only, the document cited. The World Bank: the World Development Report 1987, whose back of the title page prints (rows wd_copyright, wd_rights) '© 1987 by the International Bank for Reconstruction and Development / The World Bank' and 'All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior permission of Oxford University Press.'; Easterly (1997), Policy Research Working Paper 1807, whose page of summary findings prints (row ea_series, read on the page image) 'The Policy Research Working Paper Series disseminates the findings of work in progress to encourage the exchange of ideas about development issues. An objective of the series is to get the findings out quickly, even if the presentations are less than fully polished. The papers carry the names of the authors and should be cited accordingly. The findings, interpretations, and conclusions expressed in this paper are entirely those of the authors. They do not necessarily represent the view of the World Bank, its Executive Directors, or the countries they represent.'; the reports PA-43a (1970) and AF-57a (1967), whose covers print (rows wc_rights, wc_rights2, ws_rights) 'This report was prepared for use within the Bank and its affiliated organizations. They do not accept responsibility for its accuracy or completeness. The report may not be published nor may it be quoted as representing their views.' The statements are copied into the bibliography. Short phrases only, the documents cited. National Bureau of Economic Research: Murphy, Shleifer and Vishny (1988), Working Paper 2708, prints no © notice; its cover says (row ms_opinions) 'Any opinions expressed are those of the authors not those of the National Bureau of Economic Research.' Short quotations only, the paper cited. Government of India: the Planning Commission's draft outline of the Second Plan (1956), its reappraisal (1958) and the Third Plan (1961), read in the microfilm scans on archive.org (text layers and one page image). The Copyright Act, 1957, section 52(1)(q)(iii) (rows il_title, il_q3) allows the reproduction or publication of 'the report of any committee, commission, council, board or other like body appointed by the Legislature, unless the reproduction or publication of such report is prohibited by the Government;' The book has not established that the plans are such reports: short phrases only, the documents cited (the PDF of India Code timed out and copyright.gov.in failed the TLS check; the section was read on Indian Kanoon). Ghana: the Office of the Planning Commission's outline of the Seven-Year Plan (1963), read in the microfilm scan on archive.org. The Copyright Act, 2005 (Act 690; row gl_act) vests the copyright of a work made by or under the direction or control of the President in the President on behalf of and in trust for the people of the Republic (section 3, row gl_s3), makes 'a report made by a commission of enquiry appointed by the Government' a public benefit work (section 8(1)(c), row gl_s8) and permits the inclusion of quotations with an indication of the source and the name of the author (section 19(1)(b), row gl_s19), compatible with fair practice (row gl_fair). Short phrases only, the source and its author named (GhaLII and WIPO Lex refused access; the act was read in ARIPO's PDF). Library of Congress Name Authority File: public data. Gemeinsame Normdatei (row gnd_licence): 'http://creativecommons.org/publicdomain/zero/1.0/'. The data snapshot maddison2023_development (Maddison Project Database 2023, CC BY 4.0) has its own .json.",
+  "used_in": [
+    41
+  ],
+  "fetch": "data/fetch/development41.py",
+  "citation": "the works listed in the bibliography block of Chapter 41 (references_zh.tex)",
+  "notes": "Pages (column juan): Lewis (1954) prints page N on PDF page N+4 of the scan of volume 22 (the contents of no. 2 on PDF page 3); Prebisch (1950) page N on PDF page N+4 (the title page on PDF page 1, the back of the title page on PDF page 2, the letter of transmittal, p. v, on PDF page 4); the World Development Report 1987 page N on PDF page N+14 (the back of the title page, p. iv, on PDF page 4); Murphy, Shleifer and Vishny (1988) page N on PDF page N+2 (the cover and the abstract on PDF pages 1 and 2); Easterly (1997) by PDF page, with the printed page where a row is read on a page image (p. 7 on PDF page 9, p. 21 on PDF page 26); the report PA-43a page N on PDF page N+6; the report AF-57a and Act 690 by PDF page; the text layers of the Indian and Ghanaian plans have no PDF pages: the rows give the printed page where the text layer shows it, otherwise the part of the document; the web pages and the authority records have no pages. Copies read on third-party sites (not committed): lewis1954ms41 https://archive.org/download/manchester-school_1954_22/manchester-school_1954_22.pdf (the scan of The Manchester School 22 on archive.org) read on 2026-11-06, SHA-256 8bb3d29bf3acbc59e0be58b51ba3154eaa5fd54980abeb50c9a8c70435d0e3c9; prebisch41 https://archive.org/download/1950-prebisch-un-the-economic-development-of-latin-america-and-its-principal-problems/1950%20Prebisch%20%5BUN%5D%20The%20Economic%20Development%20of%20Latin%20America%20and%20Its%20Principal%20Problems.pdf (a scan of the United Nations document on archive.org) read on 2026-11-06, SHA-256 78fe51f34ebbb2d9f6495309b0c0f2363eb81cb2805e1d13d04e5d925bd74f25; the microfilm scans of the Indian and Ghanaian documents on archive.org (india1956_41, india1958_41, india1958img41, india1961_41, india1961img41, ghana1963_41), whose addresses and hashes are in 'sources'. Rows read on page images (no quotation, the transcription between « and » in the note): Table 1 of Prebisch (p. 9), the sentence of p. 12 and the back of the title page, whose text layer misreads figures; Figure 5.1 of the World Development Report 1987 (p. 83), a table of four coloured columns; the series statement (PDF p. 2) and two passages of pp. 7 and 21 of Easterly (1997), whose text layer runs words together; the equations (6)-(10) of Murphy, Shleifer and Vishny (pp. 11-13); p. 51 of the Third Plan, whose text layer misreads the decimals; para. 2 of the reappraisal of 1958 (PDF p. 6), whose text layer leaves out its first line and misreads the outlay of Part A; paras. 3.06 and 3.07 of the report PA-43a, whose text layer runs words together (the rows quoted from that report avoid the words run together). Misreadings of the text layers and misprints, each as printed in the quotation: 'itseli' for 'itself' (lw_central); 'proportion,of' without a space (lw_grow); 'Spani1h' for 'Spanish' (pb_spanish); 'I860's' for '1860's' (pb_63); 'resiotance' for 'resistance' (pb_rigid); '86.5' for '36.5' (pb_365_ocr), as the page image shows (pb_365); 'groupsincremental' for 'groups—incremental' (wd_icor73); 'modem' for 'modern' (ea_kamarck); 'respettively' for 'respectively' (in_crore); a stray ':' (in_crore); a stray '.' (in_savings); '1055-56' for '1955-56' (in_percapita); 'tke' for 'the' (i8_areas); '11:5' for '11·5' (i3_ocr); '8°5' for '8·5' (i3_ocr), as the page image shows (i3_growth, i3_savings); '4600' for '4500' (i8_ocr), as the page image shows (i8_resolution); '@conomy' for 'economy' (gh_savings); '£6476' for '£G476' (gh_split); '.. es es' for the leaders of the table (gh_deficit); '$1. 40' for '$1.40' (ws_newcedi). The decimals with a raised point of the Third Plan (11·5, 8·5) are read by the rule 'mdot' of checks/check_ch41.py. The report PA-43a prints the new cedi as 'N₵'; its text layer reads 'NC', 'NV' or 'NO' (wc_reserve). Disagreements kept as printed: Prebisch's p. 8 compares the 1930's with the 1860's (pb_63) although Table 1 starts at 1876-80 (pb_t1_all), and p. 12 gives a deterioration of 36.5 per cent from the 1870's to the 1930's (pb_365), while the table's 64.1 for 1936-38 is a fall of 35.9 per cent from 1876-80; the mean of the table's two periods of the 1930's, (62.0 + 64.1)/2 = 63.05, gives both the 63 per cent and the 58.6 per cent more of p. 8 (the book's calculation; the chapter does not decide which comparison Prebisch made); Easterly's note 6 (ea_fn6) gives p. 139, the first page of Lewis's article, for the sentence of p. 155 (lw_rapid); the Library of Congress gives Rostow's death as 2003-02-14 (loc_rostow_d), the GND as 2003-02-13 (gnd_rostow_d), and the chapter gives the year only; the Library of Congress's record of Rosenstein-Rodan has no dates (loc_rr), the years are the GND's (gnd_rr_born, gnd_rr); the text layer of the reappraisal of 1958 reads the outlay of Part A in para. 2 as 'Rs. 4600 crores' (i8_ocr); the page image of PDF p. 6 prints 'Rs. 4500 crores' (i8_resolution), as para. 4 has it (i8_ceiling). The letter of transmittal of Prebisch (1950) is signed by Gustavo Martínez Cabañas (pb_signer, printed without accents); no authority record with his dates was found, so the chapter gives none. Schultz's lecture does not name Lewis: the first debate pairs them, as the 史料说明 says. The World Bank's incremental capital-output ratio is gross investment over the increase in GDP (wd_icor_def, wd_icor_def2), the Third Plan's 14 per cent is net investment (i3_growth): ex:development-gap says so. Single witnesses: the values of Prebisch's Table 1; the figures of the Indian plans (1956, 1958, 1961) and of the Ghanaian outline (1963); the figures of the cocoa marketing board in the report PA-43a; the groups, growth rates, incremental capital-output ratios and saving rates of the World Development Report 1987; Easterly's tests; the life dates of Rosenstein-Rodan. Not read (the chapter names them only through the works above): Singer (1950), Rosenstein-Rodan (1943), Rostow (1956, 1960), Nurkse (1953), Hirschman (1958), Schultz (1964), Krueger (1974), Little, Scitovsky and Scott (1970), the United Nations document E/CN.1/Sub.3/W.5 (1949); the full Second Five Year Plan on the site of NITI Aayog asks for a login.",
+  "sources": {
+    "lewis1954ms41": {
+      "url": "https://archive.org/download/manchester-school_1954_22/manchester-school_1954_22.pdf",
+      "format": "pdf",
+      "sha256": "8bb3d29bf3acbc59e0be58b51ba3154eaa5fd54980abeb50c9a8c70435d0e3c9",
+      "version": "W. Arthur Lewis, 'Economic Development with Unlimited Supplies of Labour', The Manchester School of Economic and Social Studies 22 (2), May 1954, pp. 139-191; the scan of volume 22 on archive.org (item manchester-school_1954_22), read to verify, not committed",
+      "retrieved": "2026-11-06"
+    },
+    "lewisbio41": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1979/lewis/biographical/",
+      "format": "html",
+      "sha256": "5e51a4c4f5b46b273c0d715bb6dbd1cd7ce5348491d74545140b9aa52b16e59c",
+      "version": "Sir Arthur Lewis, Biographical, NobelPrize.org (written for Les Prix Nobel 1979; web page, with the copyright notice of the text)",
+      "retrieved": "2026-11-06"
+    },
+    "lewis1979_41": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1979/lewis/lecture/",
+      "format": "html",
+      "sha256": "37e5749e4932bc96d3ac704015593da660faa8418cdf85243354460a03e6936b",
+      "version": "W. Arthur Lewis, 'The Slowing Down of the Engine of Growth', Lecture to the memory of Alfred Nobel, December 8, 1979, NobelPrize.org, Prize lecture (web page, with the copyright notice of the lecture)",
+      "retrieved": "2026-11-06"
+    },
+    "nobelfacts41": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1979/lewis/facts/",
+      "format": "html",
+      "sha256": "4d61499499e40c5f30e5f493c1bfdce910fd2dbd538690f6a4c3f13058458631",
+      "version": "NobelPrize.org, Sir Arthur Lewis, Facts (web page)",
+      "retrieved": "2026-11-06"
+    },
+    "schultz1979_41": {
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/1979/schultz/lecture/",
+      "format": "html",
+      "sha256": "33ae4aeb6e74e5e467dca9fc1fded3687e56cb7e20e08db7ac00e3ec34d994dc",
+      "version": "Theodore W. Schultz, 'The Economics of Being Poor', Lecture to the memory of Alfred Nobel, December 8, 1979, NobelPrize.org, Prize lecture (web page, with the copyright notice of the lecture)",
+      "retrieved": "2026-11-06"
+    },
+    "prebisch41": {
+      "url": "https://archive.org/download/1950-prebisch-un-the-economic-development-of-latin-america-and-its-principal-problems/1950%20Prebisch%20%5BUN%5D%20The%20Economic%20Development%20of%20Latin%20America%20and%20Its%20Principal%20Problems.pdf",
+      "format": "pdf",
+      "sha256": "78fe51f34ebbb2d9f6495309b0c0f2363eb81cb2805e1d13d04e5d925bd74f25",
+      "version": "United Nations, Department of Economic Affairs, The Economic Development of Latin America and its Principal Problems (by Raúl Prebisch), E/CN.12/89/Rev.1, Lake Success, 27 April 1950; a scan on archive.org, read to verify, not committed",
+      "retrieved": "2026-11-06"
+    },
+    "prebisch41img": {
+      "url": "https://archive.org/download/1950-prebisch-un-the-economic-development-of-latin-america-and-its-principal-problems/1950%20Prebisch%20%5BUN%5D%20The%20Economic%20Development%20of%20Latin%20America%20and%20Its%20Principal%20Problems.pdf",
+      "format": "image",
+      "sha256": "78fe51f34ebbb2d9f6495309b0c0f2363eb81cb2805e1d13d04e5d925bd74f25",
+      "version": "the same PDF, read on the page images of PDF pp. 2, 13 and 16 (the back of the title page, Table 1 on p. 9, p. 12)",
+      "retrieved": "2026-11-06"
+    },
+    "wdr1987_41": {
+      "url": "https://documents.worldbank.org/curated/en/458211468158384680/pdf/105960REPLACEMENT0WDR01987.pdf",
+      "format": "pdf",
+      "sha256": "c97fc9bc4bed82790ddc64ae8f8a48f26f63478ba053e7c1ebfa6ed8ebc96e76",
+      "version": "The World Bank, World Development Report 1987 (Oxford University Press, 1987), the PDF of the World Bank's Documents & Reports",
+      "retrieved": "2026-11-06"
+    },
+    "wdr1987_41img": {
+      "url": "https://documents.worldbank.org/curated/en/458211468158384680/pdf/105960REPLACEMENT0WDR01987.pdf",
+      "format": "image",
+      "sha256": "c97fc9bc4bed82790ddc64ae8f8a48f26f63478ba053e7c1ebfa6ed8ebc96e76",
+      "version": "the same PDF, Figure 5.1 read on the page image of PDF p. 97 (p. 83)",
+      "retrieved": "2026-11-06"
+    },
+    "easterly41": {
+      "url": "https://documents.worldbank.org/curated/en/494271468739201862/pdf/multi-page.pdf",
+      "format": "pdf",
+      "sha256": "93e97a534c7c553d9668ce30cac55da20965226438051ea994058b5a41405f15",
+      "version": "William Easterly, 'The Ghost of Financing Gap: How the Harrod-Domar Growth Model Still Haunts Development Economics', Policy Research Working Paper 1807, The World Bank, Development Research Group, August 1997, the PDF of the World Bank's Documents & Reports",
+      "retrieved": "2026-11-06"
+    },
+    "easterly41img": {
+      "url": "https://documents.worldbank.org/curated/en/494271468739201862/pdf/multi-page.pdf",
+      "format": "image",
+      "sha256": "93e97a534c7c553d9668ce30cac55da20965226438051ea994058b5a41405f15",
+      "version": "the same PDF, read on the page images of PDF pp. 2, 9 and 26",
+      "retrieved": "2026-11-06"
+    },
+    "msv41": {
+      "url": "https://www.nber.org/system/files/working_papers/w2708/w2708.pdf",
+      "format": "pdf",
+      "sha256": "70ae1427805470b77b40595f6995bac96ad9e7efb842261f57b36b1191b4d8dc",
+      "version": "Kevin M. Murphy, Andrei Shleifer and Robert Vishny, 'Industrialization and the Big Push', NBER Working Paper 2708, September 1988, the NBER's PDF",
+      "retrieved": "2026-11-06"
+    },
+    "msv41img": {
+      "url": "https://www.nber.org/system/files/working_papers/w2708/w2708.pdf",
+      "format": "image",
+      "sha256": "70ae1427805470b77b40595f6995bac96ad9e7efb842261f57b36b1191b4d8dc",
+      "version": "the same PDF, the equations read on the page images of PDF pp. 13-15 (pp. 11-13)",
+      "retrieved": "2026-11-06"
+    },
+    "india1956_41": {
+      "url": "https://archive.org/download/micro_IA40244302_0071/micro_IA40244302_0071_djvu.txt",
+      "format": "txt",
+      "sha256": "aac5a0fa5d2113b0c23ce51d6b8996127beaa4f0629904b64746cdfb47708c9e",
+      "version": "Planning Commission, Government of India, Second Five Year Plan: A Draft Outline (February 1956); the text layer of the microfilm scan on archive.org (item micro_IA40244302_0071)",
+      "retrieved": "2026-11-06"
+    },
+    "india1958_41": {
+      "url": "https://archive.org/download/micro_IA40244302_0062/micro_IA40244302_0062_djvu.txt",
+      "format": "txt",
+      "sha256": "8ef0ba597ab5250d690dcfb783b71aa7622c762294d3051600059615b3a00bcc",
+      "version": "Planning Commission, Government of India, Reappraisal of the Second Five Year Plan: A Résumé (September 1958); the text layer of the microfilm scan on archive.org (item micro_IA40244302_0062)",
+      "retrieved": "2026-11-06"
+    },
+    "india1958img41": {
+      "url": "https://archive.org/download/micro_IA40244302_0062/micro_IA40244302_0062.pdf",
+      "format": "image",
+      "sha256": "a8e6d12f3cdef9c2fa01024f92addf128eec992d35e50ef978198ebab5015249",
+      "version": "the PDF of the same microfilm scan (archive.org item micro_IA40244302_0062), 38 pages; paras. 1-2 read on the page image of PDF p. 6",
+      "retrieved": "2026-11-06"
+    },
+    "india1961_41": {
+      "url": "https://archive.org/download/micro_IA40244302_0016/micro_IA40244302_0016_djvu.txt",
+      "format": "txt",
+      "sha256": "15f86539d1520be409995ec4bda7f99a72e3c45cdec8aa4051306b0d1c521c2c",
+      "version": "Planning Commission, Government of India, Third Five Year Plan (1961); the text layer of the microfilm scan on archive.org (item micro_IA40244302_0016)",
+      "retrieved": "2026-11-06"
+    },
+    "india1961img41": {
+      "url": "https://archive.org/download/micro_IA40244302_0016/page/n70.jpg",
+      "format": "image",
+      "sha256": "8da391144e0b71792bfc56237bff5b501a7a1b1f6a08ab96d13fe6d0001d5dd7",
+      "version": "the page image of p. 51 of the same scan (archive.org's image n70 of the item)",
+      "retrieved": "2026-11-06"
+    },
+    "ghana1963_41": {
+      "url": "https://archive.org/download/micro_IA40244301_0028/micro_IA40244301_0028_djvu.txt",
+      "format": "txt",
+      "sha256": "d3de75a5ed960d8c5cb891b1587d9268b2b56c5189706750db2d7304f34bc1e8",
+      "version": "Office of the Planning Commission, Ghana, Seven-Year Development Plan: A Brief Outline (December 1963); the text layer of the microfilm scan on archive.org (item micro_IA40244301_0028)",
+      "retrieved": "2026-11-06"
+    },
+    "wbcocoa41": {
+      "url": "https://documents.worldbank.org/curated/en/253731468034830818/pdf/multi-page.pdf",
+      "format": "pdf",
+      "sha256": "6ef49c995782cac95205e09fd901bb62175c9f693b61935d5b2f24eee132b76c",
+      "version": "The World Bank (IBRD and IDA), Agriculture Projects Department, Ghana: Eastern Region Cocoa Project, Report No. PA-43a, June 3, 1970, the PDF of the World Bank's Documents & Reports",
+      "retrieved": "2026-11-06"
+    },
+    "wbcocoa41img": {
+      "url": "https://documents.worldbank.org/curated/en/253731468034830818/pdf/multi-page.pdf",
+      "format": "image",
+      "sha256": "6ef49c995782cac95205e09fd901bb62175c9f693b61935d5b2f24eee132b76c",
+      "version": "the same PDF, paras. 3.06 and 3.07 read on the page images of PDF pp. 10 and 11 (pp. 4-5)",
+      "retrieved": "2026-11-06"
+    },
+    "wbstab41": {
+      "url": "https://documents.worldbank.org/curated/en/572661468032079568/pdf/multi-page.pdf",
+      "format": "pdf",
+      "sha256": "1c7e098772e4642968c31f0f92efe655fc48557292ac24467a27fda9f3feb883",
+      "version": "The World Bank (IBRD and IDA), Africa Department, Stabilization and Development in Ghana, Report No. AF-57a, March 14, 1967, the PDF of the World Bank's Documents & Reports",
+      "retrieved": "2026-11-06"
+    },
+    "untou41": {
+      "url": "https://www.un.org/en/about-us/terms-of-use",
+      "format": "html",
+      "sha256": "45466a760b1254394009a34cfe607b80a27814eb891d8e8faf2e1f8b9694a130",
+      "version": "United Nations, Terms of Use (web page)",
+      "retrieved": "2026-11-06"
+    },
+    "uncopyright41": {
+      "url": "https://www.un.org/en/about-us/copyright",
+      "format": "html",
+      "sha256": "a862dbb1b32b28ec3ca3a7af249579fdc57bb0355b54a3f9d8ac7212c003c159",
+      "version": "United Nations, Copyright (web page)",
+      "retrieved": "2026-11-06"
+    },
+    "indialaw41": {
+      "url": "https://indiankanoon.org/doc/648494/",
+      "format": "html",
+      "sha256": "4619b04fbf6719a0bde016e46ae7d1f08bddd61b238d34c31c9c40aed5d8fda4",
+      "version": "The Copyright Act, 1957 (India), section 52(1)(q), Indian Kanoon (web page)",
+      "retrieved": "2026-11-06"
+    },
+    "ghanalaw41": {
+      "url": "https://aripo.org/storage/resources-member-state-laws/1674643138_phpg6pgca.pdf",
+      "format": "pdf",
+      "sha256": "c850d375fdd4ef53b2f7e4ca2937abd202722751ed70886342d73816d0006f8a",
+      "version": "Copyright Act, 2005 (Act 690), Republic of Ghana, the PDF in ARIPO's collection of the member states' laws",
+      "retrieved": "2026-11-06"
+    },
+    "loc_schultz41": {
+      "url": "https://id.loc.gov/authorities/names/n50008961.madsrdf.json",
+      "format": "json",
+      "sha256": "a9c0994ca3ee78952ac155317669df88b5c14d7552e8e0a0712555fb2aa68a79",
+      "version": "Library of Congress Name Authority File, record n50008961 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_mahalanobis41": {
+      "url": "https://id.loc.gov/authorities/names/n83130910.madsrdf.json",
+      "format": "json",
+      "sha256": "f3ba29c08ea864f97e94e1c0c479ebcf3bb61af9bd2697f7713447ad46b26437",
+      "version": "Library of Congress Name Authority File, record n83130910 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_nkrumah41": {
+      "url": "https://id.loc.gov/authorities/names/n79065621.madsrdf.json",
+      "format": "json",
+      "sha256": "96d9299ff1a59762e304ca11bf9b78b42ab6bbdf31313c6ab6bef0b3fb2e539a",
+      "version": "Library of Congress Name Authority File, record n79065621 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_rr41": {
+      "url": "https://id.loc.gov/authorities/names/n80107182.madsrdf.json",
+      "format": "json",
+      "sha256": "d36987b4ef71f2ba2f1aa05db002a99ec19031004f5398c26da16adfb01ce2eb",
+      "version": "Library of Congress Name Authority File, record n80107182 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "loc_rostow41": {
+      "url": "https://id.loc.gov/authorities/names/n79100860.madsrdf.json",
+      "format": "json",
+      "sha256": "32897e00f6468b7a7429f269ef51dcdfe9758f918b0fc7989c38fe2276e613de",
+      "version": "Library of Congress Name Authority File, record n79100860 (MADS/RDF JSON from id.loc.gov)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_schultz41": {
+      "url": "https://lobid.org/gnd/101603347.json",
+      "format": "json",
+      "sha256": "1d9f7b6ee9851826914fa391a996a69698d48fabd028c03ec45b02765e99ac42",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 101603347 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_mahalanobis41": {
+      "url": "https://lobid.org/gnd/120261804.json",
+      "format": "json",
+      "sha256": "91383c86a9078b1bf6a7d06f85558d1c45fc59c71fc5bd170771e9ce67372a44",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 120261804 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_nkrumah41": {
+      "url": "https://lobid.org/gnd/118588354.json",
+      "format": "json",
+      "sha256": "5c4e223fa01db59fedcb35afe6dd22508938c06db22564bd7d47631c1742f6fc",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 118588354 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_rr41": {
+      "url": "https://lobid.org/gnd/139266275.json",
+      "format": "json",
+      "sha256": "37b8fabd5b35c4dcb2183343f9973c12947c2561f80ec31c9846401f9c6e32f7",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 139266275 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    },
+    "gnd_rostow41": {
+      "url": "https://lobid.org/gnd/123585201.json",
+      "format": "json",
+      "sha256": "721646993481399a402d9928d217c7c6ed2f373d2627d7f78fd74b626f30d577",
+      "version": "Deutsche Nationalbibliothek, Gemeinsame Normdatei, record 123585201 (JSON from lobid.org)",
+      "retrieved": "2026-11-06"
+    }
+  }
+}
