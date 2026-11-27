@@ -365,3 +365,119 @@ zh/ch38_phillips.tex / zh/ch44_naturalrate.tex for a model tested against data.
 - A figure that marks a point the text does not mention: say it in the text or leave the mark out.
 - A chapter's pages in a shared bibliography item go into that item as “第 NN 章另用第 … 页（PDF 第 … 页）”, after the
   earlier chapters' pages, so that every chapter's check still finds its own pages.
+
+## 第 47 章 `ch:oil` 石油危机与滞胀 (`zh/ch47_oil.tex`)
+
+A history-theory-and-test chapter in two halves. The guide question asks why an oil shock raises inflation and
+unemployment together, and why oil producers fall under a “resource curse”. The first half is the importers' side:
+the shocks of 1973–1974 and 1979–1980, the supply shock in Ch 44's Phillips curve, and the choice to accommodate or
+resist. The second half is the producers' side: where the money went (petrodollar recycling, a hand-over to
+Ch 51), Corden and Neary's model of the Dutch disease, and whether the resource curse is real. Model chapters:
+zh/ch44_naturalrate.tex (the expectations-augmented curve `eq:naturalrate-curve`, the accelerationist form
+`eq:naturalrate-accel`, the sacrifice ratio `eq:naturalrate-sacrifice` and Okun's law `eq:phillips-okun`: extend
+them, do not re-derive), zh/ch05_external.tex (the real exchange rate `eq:external-real`), zh/ch46_floating.tex
+(the chapter before; its ending hands over this chapter's question), zh/ch41_development.tex and
+zh/ch40_solow.tex (growth regressions with PWT and WDI: the data-test machinery), and zh/ch45_monetarism.tex for a
+case box built on a central bank's own history.
+
+- Neighbours:
+  - Earlier chapters own: Ch 5 the real exchange rate and the current account; Ch 13 Spain's dependence on silver
+    revenue (its row points here: governments that live on a volatile revenue from under the ground); Ch 7 Athens'
+    Laurion windfall (share it out or invest it: its row points here); Ch 38 the word “stagflation” and the drift of
+    the menu; Ch 42 Japan's high growth to 1973 (its row: the oil shock as the end of high growth, 3% a year against
+    8.9%: keep Ch 42's numbers as Ch 42 states them); Ch 44 the 1970s test, Friedman's (1976) view that the oil
+    crisis alone cannot explain the rise of inflation and unemployment, and Gordon and King's (1982) sacrifice ratio
+    (`gordon1982`: a different paper from Gordon 1975); Ch 45 the money targets, the Bundesbank's from December 1974
+    and the SNB's, and Switzerland's output fall of 7.5% in 1975 (Rich 2003); Ch 46 the end of Bretton Woods and
+    general floating from March 1973 (OPEC's prices were set in dollars: say so only with a source). FORWARD_REFS
+    rows point here from Ch 7, 13, 38, 42, 44, 45 and 46 (Ch 46's ending: the Bank of Japan's remark that oil
+    producers holding dollars were likely to sell them): read each with its passage and keep it.
+  - Later chapters own: Ch 48 rational expectations (the ending hands over); Ch 49 the Volcker disinflation of
+    1979–1982 and the Bundesbank's credibility (1979 here only as the second shock; Volcker in a clause); Ch 50 the
+    budget constraint; Ch 51 Latin America's debt crisis (the syndicated loans, floating rates and Mexico 1982: here
+    one paragraph on recycling and the BIS's warning of 1980, no more); Ch 53 real business cycles (oil as a
+    technology shock: at most a clause); Ch 55 supply shocks in the three-equation model; Ch 62 the oil exporters'
+    surpluses of the 2000s; Ch 74 the energy shock of 2021–2023; Ch 78 supply shocks and “looking through” them.
+    Each at most a sentence.
+- Owns:
+  - the first shock, from the records: the war of 6 October 1973 and the WSAG's view of an embargo (FRUS); the Gulf
+    producers' posted-price decision of 16 October and OAPEC's production cuts of 17 October (“not less than 5% a
+    month”), the embargo on the United States and the Netherlands, the November cut of 25%; the Tehran price of 23
+    December; the scale (Hamilton's 7.5% of world output; the BIS's “take” of $1.75 → $7; the CIA's and the BIS's
+    estimates of the importers' extra bill and its size relative to GNP). The price numbers differ among the sources
+    ($5.11 or $5.12; $11.65 or $11.60): say which source gives which, or round with a footnote;
+  - the model: add a supply-shock term to Ch 44's curve ($\pi_t=\pi^{e}_t-\alpha(u_t-u^{n})+s_t$ or the form the
+    writer derives; say it is the book's extension and why: a rise in the real price of an imported input raises
+    firms' costs at a given unemployment), and a demand side that policy controls (Gordon's nominal-income growth, or
+    Ch 44's own devices). Show the two extreme policies: hold nominal demand (inflation rises on impact, unemployment
+    rises, then both return as the shock passes) and accommodate fully (unemployment unchanged, inflation higher
+    and, with adaptive expectations, it stays higher: Gordon's “permanent” case). The terms-of-trade loss (a tax paid
+    to the producers, BIS 1980; about 3% of GNP for Europe and Japan, the CIA in January 1974, and Japan's 3% of GNE,
+    the Bank of Japan): why no policy can restore the real income lost. A worked example with teaching inputs
+    (state them) and a figure of the paths under the two policies;
+  - compare boxes (PLAN): 需求冲击 vs 供给冲击 (the sign of the comovement of inflation and unemployment; what a
+    monetary contraction does to each); 迁就 vs 不迁就 (BIS 1980's own sentence on accommodation and resistance and
+    Gordon's conclusions, with the countries that did each, from the BIS 1980 statement that most countries chose to
+    support demand in 1973–74);
+  - the countries' responses and results (goal 2): inflation and growth in the G7 and Switzerland, 1970–1985, with
+    both shocks marked (WDI consumer prices, PWT 10.01 growth: WDI's 1970s growth rates for Switzerland and Japan are
+    unreliable, see ch47_research.md); what the BIS says each did in 1973–74 and in 1979–80; no ranking beyond what
+    the numbers and the BIS support;
+  - case box, non-Anglo-American (PLAN): 日本 · 1973—1980 · 两次石油危机 (the Bank of Japan's history: the 2-point
+    discount-rate rise of 22 December 1973, 狂乱物价 and its origin in Fukuda's words of 12 January 1974, the run on
+    the Toyokawa credit union, wholesale prices +37% and the first negative growth since 1947, the wage round of
+    1974; then the second shock: the 予防的 stance of 1979 against the money growth of 1971–72, and the outcome;
+    who paid: households and wage earners in 1974, the unemployed);
+  - petrodollar recycling (goal 3): OPEC's current surplus of about $70 billion in 1974, its placement (the BIS:
+    dollar and sterling reserves, the bulk in the Euro-currency market, US banks' loans), the non-oil developing
+    countries' deficit; BIS 1980's warning that recycling would be harder the second time and that the banks were
+    already burdened with third-world risks. Hand over to Ch 51 in a sentence, with the PLAN's words (浮动利率银团贷款,
+    1982 年墨西哥): do not tell the debt crisis;
+  - the model of the Dutch disease (goal 4): Corden and Neary's three sectors (a booming energy sector and
+    manufactures, both traded at world prices, and non-traded services), the real exchange rate as the relative price
+    of non-traded to traded goods (relate it to Ch 5's $q$ in a sentence; do not reuse $q$ for it), the
+    resource-movement effect and the spending effect, direct and indirect de-industrialization. Paraphrase only (the
+    IIASA paper's cover forbids quotation without permission), set it up in the book's own notation with a worked
+    example and a figure or a table of the two effects;
+  - case boxes, non-Anglo-American (PLAN): 荷兰 · 1959—1982 · 格罗宁根的天然气 (the Slochteren field of 1959,
+    Hutchison's BIS paper, WDI's manufacturing share and fuel exports; Hutchison's conclusion as he states it: for
+    the Netherlands little systematic, long-term harm to manufacturing, the effects early, episodic and transitory) and 尼日利亚 · 1970—1985 · 石油繁荣 (WDI's export composition:
+    fuel 58% → 93% of merchandise exports, food and raw materials down to a few percent; Budina, Pang and van
+    Wijnbergen on spending volatility and debt overhang: the windfall spent by 1976, capital spending six times its
+    1970 level, debt and reserves 1980–83). Who paid: as the sources say; a claim about farmers or workers needs a
+    source that says it;
+  - the data test (goal 4): does resource dependence predict slower growth, and does the answer depend on the
+    period? Resource rents (WDI, % of GDP, measured at the start of each window) against PWT growth per head with
+    log initial income, for 1970–1990 and 1990–2019, computed in the check script and stated as the book's
+    computation; set against Sachs and Warner's coefficient (their Table 1; one standard deviation is about 0.9
+    points a year) and against the counterexamples (Botswana, Norway, Malaysia). State the sample, mark the Gulf
+    states, and say what a cross-country regression cannot show (causality, the quality of institutions);
+  - debates (each ending “至今没有定论。”): whether oil caused the Great Stagflation (Barsky and Kilian's monetary
+    alternative against Hamilton's record of shocks and recessions; Bernanke, Gertler and Watson on the monetary
+    response; Blanchard and Galí's four reasons why the 2000s differed); whether the resource curse is real and what
+    carries it (Sachs and Warner; Mehlum, Moene and Torvik's institutions; Budina et al.'s volatility and
+    Hutchison's weak evidence against the Dutch disease as the channel). Give each side only as a source states it.
+- Who decided and who paid: name the decision-makers from the records (the OAPEC ministers in Kuwait on 17 October
+  1973 and King Faisal and Yamani as FRUS names them; the Shah at Tehran on 23 December; Nixon and Kissinger;
+  Japan's Finance Minister Fukuda and the Bank of Japan's Policy Board and governors, Sasaki and Morinaga, with dates
+  from an authority record; the BIS's “main industrial countries”); who paid: the importers' consumers (the
+  terms-of-trade “tax”), the non-oil developing countries (the BIS's deficits; India's plan in the Shah's words as
+  Helms reports them), Japan's households and wage earners in 1974, the unemployed of 1974–1975 and 1980–1982 in the
+  importing countries, and in Nigeria those the sources name. No stronger than the sources.
+- Data and sources: start from `docs/agent_prompts/ch47_research.md` (the editor's research, collected while Ch 46
+  was written; confirm every fact on the document). Terms: US government works (FRUS: public domain); the BIS
+  (publications: limited extracts with the BIS cited and the translation statement); the Bank of Japan (source
+  “Bank of Japan”; its history: short phrases); NBER working papers (the © notice exactly as printed, short
+  sections); Brookings Papers (short phrases); the IIASA paper (no quotation); the Oslo memorandum (no licence:
+  short phrases); the World Bank PRWP (CC BY 3.0 IGO) and the Pink Sheet and WDI (CC BY 4.0); PWT 10.01 (CC BY 4.0,
+  its citation).
+- Figures: the real and nominal price of crude oil, 1960–2024 (Pink Sheet; 1973–74 and 1979–80 shaded); inflation
+  and growth of the major countries, 1970–1985; the teaching model's paths under accommodation and non-accommodation;
+  the Dutch-disease effects; the data-test scatter for the two windows; Nigeria's export composition if it adds to the
+  text.
+- Ending: return to the opening and hand over Ch 48's question “人们会预期政策时，政策还有效吗？用历史数据估计的模型，为什么会在
+  政策改变后失效？” (read its stub's guide box and copy the question exactly). A link from the shocks to rational
+  expectations (the models of the 1960s failed in the 1970s) only with a source, or marked 本书的解读.
+- Labels: `sec:oil-…`, `eq:oil-…`, `fig:oil_…`, `tab:oil-…`, `ex:oil-…`.
+- Length: 8,000–9,000 characters of main text (two halves: keep each to its goals; the history of the embargo is
+  context, not the chapter).
