@@ -229,7 +229,7 @@ MISPRINTS = [("b74_1165", "P e r", "'P e r' for 'per'"),
              ("gd_title", "Alternative Responses of External Policy Supply to Shocks",
               "'Alternative Responses of External Policy Supply to Shocks' for 'Alternative Responses of Policy to "
               "External Supply Shocks'")]
-N_QUOTED = 145
+N_QUOTED = 147
 PARAPHRASED = "cordenneary1982_47"                # its cover forbids quotation: the rows say in their notes what is used
 
 
@@ -568,8 +568,8 @@ def fit_line(a: int, b: int, rents_: np.ndarray) -> np.ndarray:
 # ---------------------------------------------------------------------------------------------------
 # The teaching models
 EX = dict(alpha=0.5, beta=0.5, un=6.0, gbar=3.0, x=7.0, pi0=4.0, s1=4.0)   # ex:oil-paths and Figure oil_paths
-EQ_CURVE = "\\pi_t=\\pi^{e}_t-\\alpha\\,(u_t-u^{n})+s_t .\\label{eq:oil-curve}"
-EQ_CHOICE = ("\\sum_{t=1}^{T}(u_t-u^{n})=\\frac{\\pi_0-\\pi_T+\\sum_{t=1}^{T}s_t}{\\alpha} .\\label{eq:oil-choice}")
+EQ_CURVE = "\\pi_t=\\pi^{e}_t-\\alpha\\,(u_t-u^{n})+\\varepsilon_t .\\label{eq:oil-curve}"
+EQ_CHOICE = ("\\sum_{t=1}^{T}(u_t-u^{n})=\\frac{\\pi_0-\\pi_T+\\sum_{t=1}^{T}\\varepsilon_t}{\\alpha} .\\label{eq:oil-choice}")
 EQ_TOT = "\\frac{\\Delta Y}{Y}\\approx-\\omega\\,\\frac{\\Delta p_{o}}{p_{o}} ,\\label{eq:oil-tot}"
 OKUN = "$u_t-u_{t-1}=-\\beta\\,(x_t-\\pi_t-\\bar g)$"
 
@@ -785,6 +785,10 @@ def world(F, Y, Q):
     said("同一种油运到欧洲的到岸价，从 3.65 美元升到 8.9 美元", *F["b74_cif"])
     cif = F["b74_cif"][1] / F["b74_cif"][0]
     assert T[1] / T[0] == 4 and 2 < cif < 3                                       # 翻了两番；一倍多
+    rest = [F["b74_cif"][i] - T[i] for i in (0, 1)]
+    assert np.isclose(rest[0], rest[1])                                          # 前后都是 1.90 美元
+    said("到岸价减去产油国的所得，前后都是每桶 1.90 美元，石油公司与运费分到的钱没有变，占到岸价的比例却从约 52\\% 降到约 21\\%",
+         rest[1], 100 * rest[0] / F["b74_cif"][0], 100 * rest[1] / F["b74_cif"][1])
     said("日本是 70\\%，西欧平均约 60\\%，美国只有 10\\%", *F["b74_dep"], F["b74_dep_us"][0])
     has("b74_cpi", "nearly 4 per cent")
     said("在多数欧洲国家是 2\\% 到 3\\%，在日本接近 4\\%", *F["b74_cpi"])
@@ -826,8 +830,8 @@ def world(F, Y, Q):
     said("BIS 1980 年说，这一次油价的实际涨幅与 1973—1974 年是同一个量级", report("bis1980_47"), F["b80_real"][0],
          1900 + F["b80_real"][1])
     said("按世界银行的年均价，1980 年是每桶 36.9 美元", 1980, nominal(1980))
-    assert nominal(1986) < nominal(1980) / 2
-    said("1986 年油价跌回 14.4 美元", 1986, nominal(1986))
+    assert nominal(1986) < nominal(1980) / 2 and abs(nominal(1986) - nominal(1978)) < 2   # 跌回；相差不远
+    said("到 1986 年，年均价跌回每桶 14.4 美元，与 1978 年的 12.9 美元相差不远", 1986, nominal(1986), 1978, nominal(1978))
 
 
 def model(F, Y, Q):
@@ -853,17 +857,18 @@ def model(F, Y, Q):
     said("实际价格没有变，1984 年油价还跌了", 1984)
     said("油价只说明得了 1980 年", 1980)
     said("约合 GNP 的 2\\% 到 3\\%", F["bj_ratio"][1], F["f277_loss"][0])
-    said("CIA 1973 年 10 月认为就业起初不受影响", F["f223_date"][1], month("f223_date", "October"))
-    said("CIA 1974 年 1 月担心产出下降与失业增加", F["f277_date"][0], month("f277_date", "January"))
+    say("左边是各年失业高出自然率的百分点之和，单位与\\chref{ch:naturalrate}一样，是百分点·年")
+    assert "单位是百分点·年" in chapter("ch44_naturalrate")
+    assert "当时的看法" not in tex_text()
     has("f277_unless", "declining output", "increased unemployment")
-    said("只有在 $s_t=0$ 时", 0)
-    said("$s_t>0$ 时通胀与失业一起上升", 0)
+    said("只有在 $\\varepsilon_t=0$ 时", 0)
+    said("$\\varepsilon_t>0$ 时通胀与失业一起上升", 0)
     # ex:oil-paths
     E, P, A = EX, paths(80), paths(10, accommodate=True)
     assert E["x"] == E["pi0"] + E["gbar"]                                       # inflation steady at 4%
     said("设 $\\alpha=0.5$，$\\beta=0.5$，$u^{n}=6\\%$，$\\bar g=3\\%$，名义需求原来每年增长 7\\%，通胀稳定在 4\\%",
          E["alpha"], E["beta"], E["un"], E["gbar"], E["x"], E["pi0"])
-    said("第 1 年来了一次冲击，$s_1=4$，以后 $s_t=0$", 1, E["s1"], 0)
+    said("第 1 年来了一次冲击，$\\varepsilon_1=4$，以后 $\\varepsilon_t=0$", 1, E["s1"], 0)
     said("不迁就，名义需求仍增长 7\\%，头两年的通胀与失业是多少", E["x"])
     said("只让通胀最后停在 6\\%，又是多少", 6)
     said("第 1 年 $\\pi_1=4-0.5\\,(u_1-6)+4$，$u_1=6+0.5\\,(\\pi_1-4)$，解得 $\\pi_1=7.2$，$u_1=7.6$", 1, E["pi0"],
@@ -878,7 +883,7 @@ def model(F, Y, Q):
          (A["u"] - E["un"]).sum())
     said("通胀停在 6\\% 时是 $(4-6+4)/0.5=4$ 个百分点·年", 6, E["pi0"], 6, E["s1"], E["alpha"],
          (E["pi0"] - 6 + E["s1"]) / E["alpha"])
-    said("蓝色实线是不迁就，名义需求每年增长 7\\%；琥珀色虚线是完全迁就，失业守在自然率 6\\%。第 1 年的供给冲击 $s_1=4$", E["x"],
+    said("蓝色实线是不迁就，名义需求每年增长 7\\%；琥珀色虚线是完全迁就，失业守在自然率 6\\%。第 1 年的供给冲击 $\\varepsilon_1=4$", E["x"],
          E["un"], 1, E["s1"])
     said("不迁就，第 1 年通胀升到 7.2\\%，失业升到 7.6\\%", 1, P["pi"][1], P["u"][1])
     assert int(np.argmax(P["u"])) == 3
@@ -895,6 +900,17 @@ def model(F, Y, Q):
     has("gd_level", "but not the rate of inflation", "adaptivenonfarmexpectations")
     has("gd_cartel", "unbreakableoil cartel", "permanentreductionin supply")
     said("不一定。Gordon 1975 年分析了几种情形", Y["gd_level"])
+    has("gd_temporary", "failureis temporary", "feedsthroughto")                  # 暂时的歉收：回落也传进预期
+    say("相当于 Gordon 说的永久的减产，所以迁就以后通胀停在高处")
+    E = EX                                                                       # the price falls back in year 2
+    eps = [0.0, E["s1"], -E["s1"]] + [0.0] * 5
+    pi = [E["pi0"]]
+    for e in eps[1:]:
+        pi.append(pi[-1] + e)                                                    # accommodation: u = u^n
+    assert pi[1] == E["pi0"] + E["s1"] and pi[2] == pi[-1] == E["pi0"]
+    gap = sum(x - E["pi0"] for x in pi)                                          # the price level, in log points
+    said("若油价第 2 年跌回原处，$\\varepsilon_2=-4$，完全迁就时第 1 年的通胀是 8\\%，第 2 年回到 4\\%，物价水平却比原来高了约 4\\%",
+         2, E["s1"], 1, pi[1], 2, pi[2], gap)
 
 
 def policy(F, Y, Q):
@@ -951,7 +967,7 @@ def policy(F, Y, Q):
         assert max(range(1976, SPAN[1] + 1), key=lambda y: cpi(c, y)) == 1981, c
     said("联邦德国与瑞士的通胀，最高分别是 1981 年的 6.3\\% 与 6.5\\%，美国 1980 年是 13.5\\%", 1981, cpi("DEU", 1981),
          cpi("CHE", 1981), 1980, cpi("USA", 1980))
-    said("两国从 1975 年起公布货币增长的目标", 1975)
+    said("两国从 1975 年起有了货币增长的目标", 1975)
     said("按 Penn World Table，美国 1982 年下降 1.8\\%，加拿大下降 3.2\\%", 1982, growth("USA", 1982), growth("CAN", 1982))
     G = {(c, y): growth(c, y) for c in G8 for y in range(SPAN[0], SPAN[1] + 1)}
     assert min(G, key=G.get) == ("CHE", 1975)                                    # 瑞士下降得最急
@@ -1000,6 +1016,9 @@ def japan(F, Y, Q):
     said("批发物价到 2 月比上年同月上涨 37.0\\%，1974 年平均上涨 31.3\\%", F["bj_wpi"][0], F["bj_wpi"][1],
          showa(F["bj_cpi"][0]), F["bj_wpiavg"][0])
     said("消费物价 1974 年平均上涨 24.5\\%", showa(F["bj_cpi"][0]), F["bj_cpi"][2])
+    assert round(cpi("JPN", 1974), 1) < F["bj_cpi"][2] and "全国" in Q["bj_cpi"]
+    said("前面按世界发展指标写的是 23.2\\%", cpi("JPN", 1974))
+    has("bj_wage", "かつてない大幅賃上げ")                                          # 工资的涨幅也是从来没有过的
     assert F["bj_t35"][7] == -F["bj_gne"][1]                                    # the table of p. 520 agrees
     said("实际国民总支出比上年减少 1.2\\%，是 1947 年以来第一次负增长", F["bj_gne"][1], showa(F["bj_gne"][2]))
     has("bj_transfer", "交易条件の悪化", "産油国")
@@ -1010,12 +1029,18 @@ def japan(F, Y, Q):
     said("完全失业者原来是 60 万到 70 万人，1975 年起急增到 100 万人上下", U[1] * 1e4, U[2] * 1e4, showa(U[3]), U[4] * 1e4)
     G = F["bj_governor"]
     assert G[3] == G[2] + 1                                                      # 次日
-    said("1974 年 12 月 16 日，总裁任满退任，次日森永贞一郎（1910—1986）接任", showa(G[0]), G[1], G[2], *F["ndl_morinaga"])
+    has("bj_governor", "佐々木本行総裁", "任期満了")
+    has("bj_sasaki_name", "佐々木直", "激動期の日銀")
+    assert "note 44" in column("juan")["bj_sasaki_name"] and "佐々木元総裁" in column("note")["bj_sasaki_name"]
+    there("ch46_floating", "日本银行总裁佐佐木直（生卒年未详）")
+    said("1974 年 12 月 16 日，总裁佐佐木直（生卒年未详）任满退任，次日森永贞一郎（1910—1986）接任", showa(G[0]), G[1], G[2],
+         *F["ndl_morinaga"])
     A = F["bj_apr78"]
     has("bj_apr78", "4月初め")
     said("1978 年 4 月初，它定下方针", showa(A[0]), A[3])
     has("bj_failure", "「不況」下であっても", "引締めの方向に転換")
     said("不重犯“昭和 46—47 年的失败”", *F["bj_failure"])
+    said("昭和 46—47 年是 1971—1972 年", *F["bj_failure"], showa(F["bj_failure"][0]), showa(F["bj_failure"][1]))
     has("bj_morinaga", "森永総裁", "これ以上緩和を加速しない")
     said("1979 年 1 月 23 日，森永说今后不再加大放松的力度", Y["bj_morinaga"], *F["bj_morinaga"])
     has("bj_amaki", "強い反省", "政策対応が遅れた")
@@ -1034,7 +1059,20 @@ def japan(F, Y, Q):
     has("bj_wages", "労働生産性のすう勢")
     R = F["bj_ratio"]
     assert abs(R[3] - R[1]) < 0.5                                                # 冲击的规模差不多
+    has("bj_ratio", "原油値上げによる石油代金増加額")
+    assert "note 3" in column("note")["bj_ratio"]                                 # 它在注里另算了
     said("第一次是 2.0\\%，第二次是 2.2\\%", R[1], R[3])
+    J = F["bj_transfer"]
+    has("bj_transfer", "輸入原油代金支払い増加額")                                 # another sum than the note's
+    assert R[1] < J[2]
+    Y1, M = F["bj_ratio_years"], F["bj_ratio_method"]
+    has("bj_ratio_years", "両暦年")
+    has("bj_ratio_method", "輸出入単価")
+    assert page("bj_ratio_years") == page("bj_ratio") and page("bj_ratio_method") == page("bj_ratio") + 1
+    assert Y1[1] == J[0] and showa(M[0]) == showa(Y1[0]) - 1                     # 1973—74 against 1972
+    said("注里说，第一次的比例按 1973、1974 两年合计", showa(Y1[0]), showa(Y1[1]))
+    said("减去进出口单价若与 1972 年相同时的净进口额", showa(M[0]))
+    said("前面的约 3\\% 只算 1974 年一年进口原油多付的款项", J[2], showa(J[0]))
 
 
 def recycling(F, Y, Q):
@@ -1052,8 +1090,11 @@ def recycling(F, Y, Q):
     has("f277_spend", "far exceed their spending capability")
     T, V = F["b75_ton"], F["b75_value"]
     has("b75_value", "milliard")
-    said("BIS 1975 年的数字相近，OPEC 原油出口的平均价格从 1973 年的每吨约 20 美元升到 1974 年的 77 美元，石油出口额从约 320 亿美元升到 "
-         "1150 亿美元", report("bis1975_47"), T[1], T[0], T[3], T[2], V[0] * 1e9, V[1] * 1e9)
+    has("b75_value", "value of OPEC oil exports")
+    said("BIS 1975 年算的是 OPEC 的石油出口额。它说，OPEC 原油出口的平均价格从 1973 年的每吨约 20 美元升到 1974 年的 77 美元，石油出口额从约 "
+         "320 亿美元升到 1150 亿美元", report("bis1975_47"), T[1], T[0], T[3], T[2], V[0] * 1e9, V[1] * 1e9)
+    assert abs(V[1] / V[0] - 3.5) < 0.15                                         # 与 CIA 的 3.5 倍相近
+    said("出口额涨到上一年的约 3.6 倍，与 CIA 的估计相近", V[1] / V[0])
     S = F["b75_surplus"]
     said("OPEC 国家的经常账户盈余 1974 年约 700 亿美元，上一年不到 50 亿美元", S[1], S[0] * 1e9, S[2] * 1e9)
     has("b75_ldc", "non-oil developing countries", "much more onerous")
@@ -1140,6 +1181,9 @@ def dutch_disease(F, Y, Q):
         assert v[0] == 10 and sum(v[1:]) == 100, c                              # 10 quarters ahead; the shares add up
     said("10 个季度后，能源价格的冲击在荷兰解释 9\\%，在挪威解释 5\\%，在英国解释 23\\%", H["nl"][0], H["nl"][1], H["no"][1],
          H["uk"][1])
+    has("hu_t4", "Real energy price Petroleum/ natural gas")                     # the second column is petroleum/gas
+    assert max(H, key=lambda c: H[c][2]) == "no"                                 # 挪威最高
+    said("表里石油与天然气一项在三国分别解释 7\\%、10\\% 与 5\\%，挪威最高", H["nl"][2], H["no"][2], H["uk"][2])
     has("hu_weak", "only weak support", "Most support", "is found in Norway")
     has("hu_nl", "very little systematic and long-term net adverse consequences")
     has("hu_episodic", "initial stages", "episodic and transitory", "vary widely")
@@ -1182,8 +1226,10 @@ def test(F, Y, Q):
     said("可这个回归只解释了各国增长差异的约 13\\%", 100 * R1["r2"])
     said("1990—2019 年有 159 个经济体，系数只有约 $-0.02$，高一个标准差只低约 0.3 个百分点", *PERIODS[1], R2["n"], R2["b"],
          R2["onesd"])
-    assert set(GULF) <= set(R2["codes"]) and abs(R2g["t"]) < 1.96 < abs(R2["t"])   # 不再显著
-    said("去掉 6 个海湾国家，t 值降到约 $-1.6$", len(GULF), R2g["t"])
+    assert set(GULF) <= set(R2["codes"]) and abs(R2g["t"]) < 1.96 < abs(R2["t"])
+    assert abs(R2["t1"]) < 1.96                                                  # 稳健的标准误：已不显著
+    said("t 值约是 $-2.2$，改用稳健的标准误只有约 $-1.9$，在 5\\% 的水平上已不显著", R2["t"], R2["t1"], 5)
+    said("去掉 6 个海湾国家，按通常的标准误 t 值也降到约 $-1.6$", len(GULF), R2g["t"])
     rents90 = [rent(c, 1990) for c in GULF]
     g90 = [per_head(c, *PERIODS[1]) for c in GULF]
     assert min(rents90) >= 36 > min(rents90) - 1
@@ -1208,6 +1254,9 @@ def test(F, Y, Q):
          per_head("MYS", *PERIODS[0]))
     said("博茨瓦纳 1970 年的租金只占 GDP 的约 3\\%，此后 20 年人均每年增长约 9.0\\%", 1970, rent("BWA", 1970), 20,
          per_head("BWA", *PERIODS[0]))
+    said("它 1990 年的租金也只有约 2\\%", 1990, rent("BWA", 1990))
+    say("Sachs 与 Warner 却说它也许属于资源依赖最高的四分之一")                     # sw_exceptions: probably included
+    say("出口量的是一国卖出多少初级产品，其中也有农产品", "世界发展指标的租金只算石油、天然气、煤、矿产与森林")
     assert rent("NOR", 1970) < 1
     said("挪威 1970 年的租金不到 GDP 的 1\\%", 1970, 1)
     said("到 1990 年，挪威的租金是 8.0\\%，此后人均每年增长约 1.5\\%", 1990, rent("NOR", 1990), per_head("NOR", *PERIODS[1]))
@@ -1229,7 +1278,7 @@ def debate(F, Y, Q):
     has("bgw_perse", "per se, were not a major cause")
     has("bgw_policy", "in some cases, nearly all")
     has("bgw_both", "nonmoney, nonoil disturbances")
-    said("Bernanke、Gertler 与 Watson 1997 年认为", Y["bgw_perse"])
+    said("Bernanke、Gertler 与 Watson 1997 年看的是货币政策怎样回应油价", Y["bgw_perse"])
     said("2000 年代的经验又添了一层", 2000)
     assert real(2008) > real(1980)
     said("2008 年的油价是每桶 94.3 美元，高过 1980 年的 56.5 美元", 2008, real(2008), 1980, real(1980))
@@ -1285,23 +1334,29 @@ def deeper(F, Y, Q):
          report("bis1980_47"))
     assert "第6巻" in src["boj614img_47"]["version"]
     said("日本银行的《日本银行百年史》第 6 卷也没有", 6)
-    said("Sachs 与 Warner 的起点年，摘要与正文一处说是 1971 年，另一处说是 1970 年，正文用 1970 年", F["sw_abstract"][0],
-         F["sw_sxp"][0], F["sw_period"][1])
+    assert page("sw_sxp") == page("sw_sd") == page("sw_period")
+    said("Sachs 与 Warner 的起点年，摘要说是 1971 年。第 8 页说资源依赖量的是 1970 年的比例，报均值时又写 1971 年，正文按回归的时期用 1970 年",
+         F["sw_abstract"][0], page("sw_sxp"), F["sw_sxp"][0], F["sw_sd"][0], F["sw_period"][1])
     assert F["sw_sd"][0] == F["sw_abstract"][0]
     has("cn_cover", "NOT FOR QUOTATION WITHOUT PERMISSION OF THE AUTHOR")
     said("Rich 说瑞士 1975 年的产出下降 7.5\\%，Penn World Table 是 7.3\\%", F["rich_drop"][1], F["rich_drop"][0],
          growth("CHE", 1975))
     u74 = there("ch44_naturalrate", "1974 年通胀跳到 11.0\\%")
     assert round(cpi("USA", 1974), 2) == 11.05 and round(cpi("USA", 1974), 1) != u74[1]
-    said("美国 1974 年的通胀，世界发展指标是 11.1\\%，\\chref{ch:naturalrate}按总统经济报告写作 11.0\\%，四舍五入以前是 11.05\\%",
-         1974, cpi("USA", 1974), u74[1], cpi("USA", 1974))
-    said("日本银行的行史只写了 1974 年底退任的总裁的姓", showa(F["bj_governor"][0]))
+    said("美国 1974 年的通胀，世界发展指标是 11.05\\%，四舍五入是 11.1\\%，\\chref{ch:naturalrate}按总统经济报告写作 11.0\\%",
+         1974, cpi("USA", 1974), cpi("USA", 1974), u74[1])
+    has("bj_governor", "佐々木")
+    said("日本银行的行史在这一节只写了 1974 年底退任的总裁的姓", showa(F["bj_governor"][0]))
+    said("他的全名佐佐木直见同卷第 318 页的注 44", page("bj_sasaki_name"), 44)
+    assert ("NY.GDP.TOTL.RT.ZS", "BWA", 1970) in wdi_values() and max(rent("BWA", y) for y in (1970, 1990)) < 5
+    said("博茨瓦纳 1970 年与 1990 年的租金都很低", 1970, 1990)
+    has("wdi_rents_def", "mineral rents")
     D = {d["cell"] + d["sheet"]: d["text"] for d in data_meta("oil_pinksheet")["definitions"]}
     upd = re.fullmatch(r"Updated on (\w+) (\d+), (\d{4})", D["A4Annual Prices (Nominal)"])
     has("ps_link", "November 2026")
     said("世界银行的年度工作簿印的更新日期是 2026 年 9 月 2 日，网页上的链接却写作 2026 年 11 月", int(upd.group(3)),
          MONTHS.index(upd.group(1)) + 1, int(upd.group(2)), F["ps_link"][0], MONTHS.index("November") + 1)
-    said("数值与 1974 年等年份的通行数字相合", 1974)
+    assert "Cover lists sheets the workbook does not contain (the monthly prices)" in data_meta("oil_pinksheet")["notes"]
     has("wdi_rents_def", "oil rents, natural gas rents, coal rents", "mineral rents, and forest rents")
 
 
@@ -1314,7 +1369,8 @@ def legacy(F, Y, Q):
     said("按世界银行的实际价格，1998 年每桶只有 15.9 美元，2012 年是 95.3 美元，2020 年又跌到 42.1 美元", 1998, real(1998),
          2012, real(2012), 2020, real(2020))
     assert real(1998) == min(real(y) for y in range(1986, 2026))                # 1986 年以后最低
-    said("它自己把这归于记取了 1971—1972 年的教训", showa(F["bj_failure"][0]), showa(F["bj_failure"][1]))
+    has("bj_early", "早めに金融政策")
+    said("早动手的方针就是要不重犯 1971—1972 年的失败", showa(F["bj_failure"][0]), showa(F["bj_failure"][1]))
     said("BIS 1980 年也说，靠追求增长走不出滞胀", report("bis1980_47"))
     has("bu_more", "more volatile than oil income")
 
@@ -1332,7 +1388,7 @@ def takeaways(F, Y, Q):
 
 
 def selfcheck(F, Y, Q):
-    said("若冲击是 $s_1=2$，不迁就时累计多出多少失业", 2)
+    said("若冲击是 $\\varepsilon_1=2$，不迁就时累计多出多少失业", 2)
     said("净石油进口占 GNP 的 2\\%，油价涨 150\\%", 2, 150)
     said("若 $p_EA_E$ 从 0.5 升到 1.5，繁荣后 $L_M$ 是多少", 0.5, 1.5)
     said("Sachs 与 Warner 的系数是 $-6.920$，资源依赖高出 0.05，人均增长每年约低多少", F["sw_coef"][0], 0.05)
@@ -1398,13 +1454,13 @@ EVENTS = [("先回到\\chref{ch:naturalrate}的式~\\eqref{eq:naturalrate-curve}
            "可是失业在 7\\% 以上的 9 年里，1977、1980 与 1984 年的通胀仍在上升"),
           ("\\chref{ch:naturalrate}讲过，弗里德曼 1976 年也说光凭石油危机解释不了通胀与失业一起上升", "ch44_naturalrate",
            "石油危机同时冲击了七国，可他说，五年的平均与逐年的数据都表明，光凭它解释不了这个现象"),
-          ("美国 1974 年的通胀，世界发展指标是 11.1\\%，\\chref{ch:naturalrate}按总统经济报告写作 11.0\\%", "ch44_naturalrate",
+          ("四舍五入是 11.1\\%，\\chref{ch:naturalrate}按总统经济报告写作 11.0\\%", "ch44_naturalrate",
            "1974 年通胀跳到 11.0\\%，失业还只有 5.6\\%\\cite{erp2000}"),
           ("\\chref{ch:floating}的结尾讲过，以美元收款的产油国，美元贬值就等于油卖得便宜了", "ch46_floating",
            "产油国若以美元收款，美元贬值就等于石油卖得便宜了（本书的解读）"),
-          ("两国从 1975 年起公布货币增长的目标，这是\\chref{ch:monetarism}的题目", "ch45_monetarism",
+          ("两国从 1975 年起有了货币增长的目标，这是\\chref{ch:monetarism}的题目", "ch45_monetarism",
            "联邦德国的联邦银行也从 1975 年起每年公布货币目标"),
-          ("两国从 1975 年起公布货币增长的目标，这是\\chref{ch:monetarism}的题目", "ch45_monetarism",
+          ("两国从 1975 年起有了货币增长的目标，这是\\chref{ch:monetarism}的题目", "ch45_monetarism",
            "瑞士国家银行在 1974 年底定下 1975 年 M1 增长 6\\% 的目标"),
           ("\\chref{ch:monetarism}引 Rich 说产出下降 7.5\\%，那是石油冲击加上紧缩的货币政策的结果", "ch45_monetarism",
            "1975 年，石油冲击加上紧缩的货币政策，使产出下降 7.5\\%，是二战以后最急的下降"),
@@ -1415,7 +1471,8 @@ EVENTS = [("先回到\\chref{ch:naturalrate}的式~\\eqref{eq:naturalrate-curve}
           ("又怎样走到 1982 年的墨西哥危机，在\\chref{ch:latamdebt}", "ch51_latamdebt",
            "追踪石油美元回流、浮动利率银团贷款与 1982 年墨西哥危机"),
           ("美联储这几年的紧缩在\\chref{ch:credibility}", "ch49_credibility", "用沃尔克反通胀（1979—1982）估算牺牲率"),
-          ("紧缩靠的是让人们相信通胀会降下来，这是\\chref{ch:credibility}的题目", "ch49_credibility", "并讨论可信度的作用"),
+          ("人们信不信通胀会降下来，会不会改变紧缩的代价？这是\\chref{ch:credibility}的题目", "ch49_credibility",
+           "并讨论可信度的作用"),
           ("实际经济周期理论把衰退看作对技术冲击的反应，在\\chref{ch:rbc}", "ch53_rbc", "衰退会不会只是经济对技术冲击的最优反应？"),
           ("三方程模型里的供给冲击在\\chref{ch:consensus}", "ch55_consensus", "用模型分析需求冲击与供给冲击下的政策取舍"),
           ("2000 年代产油国的巨额盈余在\\chref{ch:moderation}", "ch62_moderation", "全球储蓄过剩论与全球失衡之争"),
@@ -1467,15 +1524,15 @@ ITEM_OF = {**{f"frus36d{n}_47": "frus47" for n in (209, 216, 220, 223, 271, 273,
            "barskykilian2001img_47": "barskykilian2001", "sachswarner1995img_47": "sachswarner1995",
            "cordenneary1982_47": "cordenneary1982", "mmt2002_47": "mmt2002", "budina2007_47": "budina2007",
            "okrbudina_47": "budina2007", "rich2003_47": "rich2003",
-           "boj614img_47": "boj1986b", "boj621img_47": "boj1986b", "boj63img_47": "boj1986b",
-           "bojcopyright_47": "boj1986b",
+           "boj612img_47": "boj1986", "boj614img_47": "boj1986", "boj621img_47": "boj1986",
+           "boj63img_47": "boj1986", "bojcopyright_47": "boj1986",
            **{k: "wdi47" for k in ("wdicpi_47", "wdifuel_47", "wdifood_47", "wdiagri_47", "wdimanf_47", "wdirents_47",
                                    "wdimeta_47", "wdicountries_47")},
            "wbcommodity_47": "pinksheet2026", "wblicenses_47": "pinksheet2026", "pinksheet_47": "pinksheet2026",
            "pwtrecord_47": "pwt1001", "pwt1001_xlsx": "pwt1001"}
 # the items of other chapters, outside the block: the same copies (the same SHA-256); the block asks the editor to add
 # the pages of Chapter 47
-SHARED = {"bis1974": "第 46 章", "rich2003": "第 45 章", "pwt1001": "第 40 章"}
+SHARED = {"bis1974": "第 46 章", "rich2003": "第 45 章", "pwt1001": "第 40 章", "boj1986": "第 46 章"}
 SHARED_COPY = {"bis1974": "bis1974_47", "rich2003": "rich2003_47"}        # the PDFs whose pages the block's note lists
 # the sources of each item whose pages it names (printed pages and PDF pages), by PDF
 PAGES = {"bis1975": (("bis1975_47",),), "bis1980": (("bis1980_47",),), "hutchison1990": (("hutchison1990img_47",),),
@@ -1483,7 +1540,7 @@ PAGES = {"bis1975": (("bis1975_47",),), "bis1980": (("bis1980_47",),), "hutchiso
          "blanchardgali2007": (("blanchardgali2007_47",),), "barskykilian2001": (("barskykilian2001img_47",),),
          "sachswarner1995": (("sachswarner1995img_47",),), "cordenneary1982": (("cordenneary1982_47",),),
          "mmt2002": (("mmt2002_47",),), "budina2007": (("budina2007_47",),),
-         "boj1986b": (("boj614img_47",), ("boj621img_47",), ("boj63img_47",))}
+         "boj1986": (("boj612img_47",), ("boj614img_47",), ("boj621img_47",), ("boj63img_47",))}
 
 
 def runs(ps) -> str:
@@ -1579,20 +1636,20 @@ def witnesses(F, Q):
     assert f"共 {len(items)} 条" in text
     unescape = lambda s: re.sub(r"\\([$%&_#~])", r"\1", re.sub(r"\\url\{([^}]*)\}", r"\1", s)).replace("--", "-")  # noqa: E731
     for rid, keys in (("bis_reuse", ("bis1975",)), ("bis_translation", ("bis1975",)), ("bis_original", ("bis1975",)),
-                      ("boj_terms", ("boj1986b",)), ("hm_copyright", ("hamilton2011",)),
+                      ("boj_terms", ("boj1986",)), ("hm_copyright", ("hamilton2011",)),
                       ("bg_copyright", ("blanchardgali2007",)), ("sw_copyright", ("sachswarner1995",)),
                       ("bk_copyright", ("barskykilian2001",)), ("cn_cover", ("cordenneary1982",)),
                       ("okr_license", ("budina2007",)), ("wb_cc", ("pinksheet2026",)), ("wb_attr", ("pinksheet2026",)),
                       ("wdi_license", ("wdi47",))):
         for key in keys:
-            assert words_of(rid) in unescape(items[key]), (rid, key)
+            assert words_of(rid) in unescape(allitems[key]), (rid, key)
     for key in ("bis1975", "bis1980", "hutchison1990"):
         assert "the original content can be found at" in items[key], key
         assert "不是国际清算银行的官方译文" in items[key] and "This translation is not an official BIS translation" \
             in items[key], key
         assert "以国际清算银行为来源" in items[key], key
     assert "公有领域" in items["frus47"] and "17 U.S.C. § 105" in items["frus47"]
-    assert "来源：日本银行" in items["boj1986b"] and "CC BY 3.0 IGO" in items["budina2007"]
+    assert "来源：日本银行" in allitems["boj1986"] and "CC BY 3.0 IGO" in items["budina2007"]
     for key in ("pinksheet2026", "wdi47"):
         assert "CC BY 4.0" in items[key] and "本书" in items[key], key
     assert "只转述，不引原文" in items["cordenneary1982"] and "Economic Journal" in items["cordenneary1982"]
@@ -1612,7 +1669,7 @@ def witnesses(F, Q):
     # the pages of each work, as the snapshot's rows have them
     for key, groups in PAGES.items():
         for srcs in groups:
-            assert pages_words(srcs) in items[key], (key, pages_words(srcs))
+            assert pages_words(srcs) in allitems[key], (key, pages_words(srcs))
     assert {k for g in PAGES.values() for s in g for k in s} == {k for k, s in meta()["sources"].items()
                                                                  if s["format"] in ("pdf", "image")} - set(SHARED_COPY.values())
     for key, src in SHARED_COPY.items():                                        # the editor adds them

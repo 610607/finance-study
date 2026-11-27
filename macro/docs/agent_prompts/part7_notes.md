@@ -406,7 +406,7 @@ case box built on a central bank's own history.
     December; the scale (Hamilton's 7.5% of world output; the BIS's “take” of $1.75 → $7; the CIA's and the BIS's
     estimates of the importers' extra bill and its size relative to GNP). The price numbers differ among the sources
     ($5.11 or $5.12; $11.65 or $11.60): say which source gives which, or round with a footnote;
-  - the model: add a supply-shock term to Ch 44's curve ($\pi_t=\pi^{e}_t-\alpha(u_t-u^{n})+s_t$ or the form the
+  - the model: add a supply-shock term to Ch 44's curve ($\pi_t=\pi^{e}_t-\alpha(u_t-u^{n})+\varepsilon_t$ as written, not $s_t$: Appendix B's $s$ is the primary surplus; or the form the
     writer derives; say it is the book's extension and why: a rise in the real price of an imported input raises
     firms' costs at a given unemployment), and a demand side that policy controls (Gordon's nominal-income growth, or
     Ch 44's own devices). Show the two extreme policies: hold nominal demand (inflation rises on impact, unemployment
@@ -481,3 +481,24 @@ case box built on a central bank's own history.
 - Labels: `sec:oil-…`, `eq:oil-…`, `fig:oil_…`, `tab:oil-…`, `ex:oil-…`.
 - Length: 8,000–9,000 characters of main text (two halves: keep each to its goals; the history of the embargo is
   context, not the chapter).
+
+### Carried over from the editor's round on Chapter 47
+
+- Before using a symbol, check Appendix B's table (`tab:app-symbols`): $s$ is the primary surplus, so Chapter 47's
+  supply shock is $\varepsilon_t$ (NARRATIVE: when symbols collide, change the symbol). Chapter 55 should keep
+  $\varepsilon_t$ for a supply shock.
+- When the book contrasts its own model with a source's result, read the source's conditions first. Gordon's
+  “the price level, not the rate” is for a temporary shock (the crop failure ends and prices fall back); the
+  chapter's example, where the oil price never falls back, is his permanent case, not “more extreme”. Show the other
+  case with the model when it is one line of arithmetic.
+- One source that gives two numbers for what looks like the same thing (the Bank of Japan's 3% and 2.0%): find its
+  definitions (a footnote, a table note, the next page) and say in the text how they differ.
+- A person named in an earlier chapter is named the same way, with the same source for the name (佐佐木直, note 44 of
+  the Bank of Japan's history, p. 318).
+- One bibliography item per work: the later chapter's sections and pages of the same volume go into the earlier item
+  (`boj1986`), even when they come from other PDF files.
+- A compare box sets the two sides against each other: a row whose two cells are both about one side (the CIA's
+  two views of the oil shock) does not belong in it.
+- “Who paid” names those who bore a cost; a group that gained in the source (wage earners' 32.9% in 1974) is not
+  listed there.
+- A coefficient is “significant” only under the standard errors the chapter uses elsewhere (robust in both windows).
