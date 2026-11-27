@@ -1,0 +1,78 @@
+{
+ "title": "Monthly exchange rates against the US dollar (yen, mark, Swiss franc, sterling) and consumer prices of the United States, Japan, Germany, Switzerland and the United Kingdom, December 1959 - December 1985 (Chapter 46: floating rates and their volatility)",
+ "source": "Bank for International Settlements, BIS Data Portal: bilateral exchange rates (WS_XRU, monthly averages of observations through the period) and long series of consumer prices (WS_LONG_CPI, index 2010 = 100), CSV answers of the SDMX API (stats.bis.org)",
+ "url": "https://data.bis.org/topics/XRU",
+ "series": "month (YYYY-MM); jpy: yen per US dollar; deu_eur: Germany in euro per US dollar, the BIS's conversion of the Deutsche Mark at the fixed rate (the mark = deu_eur x 1.95583); chf: Swiss francs per US dollar; gbp: pounds sterling per US dollar; cpi_us, cpi_jp, cpi_de, cpi_ch, cpi_gb: consumer price indices, 2010 = 100. The values are copied as the API prints them.",
+ "retrieved": "2026-11-27",
+ "license": "Source: BIS (Bank for International Settlements), BIS Data Portal. The Data Portal's terms (https://data.bis.org/help/legal): 'The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation' (row bisdata_terms) The labels of the chapter's figures are the book's Chinese, not an official BIS translation.",
+ "used_in": [
+  46
+ ],
+ "fetch": "data/fetch/floating46.py",
+ "notes": "Chapter 46 uses the series in its text (the yen in July 1971, January and March 1973, October 1978, October 1982 and February 1985; the Swiss franc in October 1978; sterling in February 1985), in Figure floating_rates (1965-1985, index of the 1970 average = 100) and in Figure floating_volatility and the text's standard deviations: the monthly changes of the logarithms of the nominal rate, of the real rate (the nominal rate times the American CPI over the home CPI, eq:external-real) and of the ratio of the two price levels, times 100, January 1960 - December 1970 (132 changes) and January 1974 - December 1985 (144 changes), standard deviations with ddof = 1. The consumer prices of the 1960s often stay unchanged for some months (the British index in 76 of the 132 changes of 1960-1970). The rows bisdata_* of floating_facts quote the lines of the months the text names.",
+ "documents": {
+  "bisxrujp_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.JP.JPY.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "01dd878e09085c6f66a14693c0f881d6afba2e32c5f0e0f359df5043b0af18d9",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.JP.JPY.A (yen per US dollar), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "bisxrude_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.DE.EUR.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "287471586b87a73a32a1867bdfb29e3135879df9881e97dcedc625cb800a04ec",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.DE.EUR.A (Germany, euro per US dollar (the mark converted at 1.95583)), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "bisxruch_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.CH.CHF.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "de8f789a4a4f539804b71942d1e0af79b2798fb90ef369a75d8cb9fe1a4795c8",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.CH.CHF.A (Swiss francs per US dollar), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "bisxrugb_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.GB.GBP.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "18d99354edc1f80301233f54d9378a8aae18faeba8b0d56b1725a08344f3015a",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.GB.GBP.A (pounds sterling per US dollar), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "biscpius_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.US.628?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "c6286e05cf37f5f3d4b972aecf056c19d6cbfc21618b42d73323cb0ecad5c426",
+   "version": "BIS Data Portal, dataflow WS_LONG_CPI, series M.US.628 (United States, consumer prices, index 2010 = 100), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "biscpijp_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.JP.628?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "c14f9e67d0cd40da45a379f062ba8a5185792e5c499e4d649ce58778577f25d8",
+   "version": "BIS Data Portal, dataflow WS_LONG_CPI, series M.JP.628 (Japan, consumer prices, index 2010 = 100), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "biscpide_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.DE.628?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "aa51879b3df93d2bea3314f14f355904046923048778fb14968c3ab856b3a1a4",
+   "version": "BIS Data Portal, dataflow WS_LONG_CPI, series M.DE.628 (Germany, consumer prices, index 2010 = 100), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "biscpich_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.CH.628?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "78590e40b3a451dfc9518f412a04dbb86f7ce891f2d4c7077305def4b2e6081e",
+   "version": "BIS Data Portal, dataflow WS_LONG_CPI, series M.CH.628 (Switzerland, consumer prices, index 2010 = 100), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "biscpigb_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.GB.628?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "13f9f58cf71ee3afff332ecb05f54c3570e9f3a579230dc0e9ee1a6376738d1a",
+   "version": "BIS Data Portal, dataflow WS_LONG_CPI, series M.GB.628 (United Kingdom, consumer prices, index 2010 = 100), monthly; CSV answer of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  }
+ }
+}

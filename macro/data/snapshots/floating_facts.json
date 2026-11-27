@@ -1,0 +1,380 @@
+{
+ "title": "The end of Bretton Woods and floating exchange rates: quotations of Nixon (1971), FRUS 1969-1976 vols. III and XXXI, the BIS Annual Reports of 1972, 1973, 1974 and 1976, Dornbusch (1976), Meese and Rogoff (1981, 1983), the Bank of Japan's history (vol. 6), the Economic Planning Agency (1972), the Council resolution of 21 March 1972, Rich (2003), Powell (2005), lines of the BIS Data Portal, the licences of the sites and the records of the persons named",
+ "source": "presidency.ucsb.edu (Public Papers); history.state.gov (FRUS); bis.org (Annual Reports, terms); stats.bis.org and data.bis.org (Data Portal); users.ssc.wisc.edu (third-party copies of Dornbusch 1976 and Meese-Rogoff 1983, verification only); federalreserve.gov (IFDP 184); boj.or.jp (日本銀行百年史); www5.cao.go.jp, cao.go.jp, digital.go.jp; eur-lex.europa.eu; ecb.europa.eu; bankofcanada.ca; id.loc.gov",
+ "url": "https://www.bis.org/publications/annual-report-1973.pdf",
+ "series": "id, dynasty (the country), year, year_note, value (the numbers the quotation prints, ';'-separated, read by checks/check_ch46.py), unit, numeral, file (the key of the document in 'sources'), juan (the printed page and the PDF page, 'web page' or 'authority record'), quote (verbatim from the text layer, including its misreadings, or typed from the page image for the sources of format 'image'), note (what the row says)",
+ "retrieved": "2026-11-27",
+ "license": "Short quotations for teaching and criticism; no photographs are used and no chart or table of any source is reproduced as an image (the figures of the chapter are drawn from the BIS series and from the book's own calculations; the table of the chapter retypes, in Chinese, the numbers of the BIS table of 1972). Nixon's address and remarks (Public Papers of the Presidents, read on the American Presidency Project) and the FRUS documents (Office of the Historian) are works of the United States government, in the public domain (17 U.S.C. § 105); the memoirs that FRUS quotes (Kissinger, Safire) are paraphrased only. BIS Annual Reports of 1972, 1973, 1974 and 1976 (rows b72_*, b73_*, b74_*, b76_*): the BIS terms say 'Users may reproduce a limited extract of BIS Material (other than the statistics published in the BIS Data Portal ) in other publications or products free of charge, provided the BIS is cited as the source.' (row bis_reuse) 'With respect to translations, Users must include a statement that the translation is not an official BIS translation, and that the BIS does not guarantee its accuracy or completeness.' (row bis_translation) 'Users must also add a note that \"the original content can be found at [link to the BIS website]\".' (row bis_original) The book cites the BIS as the source, says that its Chinese is not an official BIS translation, and gives the links of the original content in the bibliography. BIS statistics (the five series of floating_bis_1959_1985 and the rows bisdata_*): the Data Portal's terms say 'The use of the statistics is unrestricted, provided that: if the statistics are reproduced, the BIS must be cited in your publication or product as the source of the statistics; if the statistics will be translated into another language, a statement must be included in your publication or product that the translation is not an official BIS translation' (row bisdata_terms) Dornbusch (1976), 'Expectations and Exchange Rate Dynamics', is '© 1976 by The University of Chicago. All rights reserved.'; the text layer of the copy read prints '() 1976 by The University of Chicago. All rights reserved.' (row db_copyright) Meese and Rogoff (1983) is © North-Holland: 'North-Holland Publishing Company' (row mr_publisher) Both articles are read in third-party copies on course pages of the University of Wisconsin, to verify only; the copies are not committed or redistributed; the book quotes short phrases and paraphrases the rest. IFDP 184 (Meese and Rogoff, 1981), the earlier version of the article: 'NOTE: International Finance Discussion Papers are preliminary materials circulated to stimulate discussion and critical comment. References in publications to International Finance Discussion Papers (other than an acknowledgment by a writer that he has had access to unpublished material) should be cleared with the author or authors.' (row ifdp_cover) The book cites it only as the earlier version and takes every result from the article of 1983. The Bank of Japan's history (rows boj_*), the Bank's own work: 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row boj_terms) The book names the source, the Bank of Japan, and quotes short phrases only. The Economic Planning Agency's white paper of 1972 on the Cabinet Office's site (rows epa_*): '当ウェブサイトで公開している情報（以下「コンテンツ」という。）の著作権は、特記されていない限り内閣府に帰属し、権利表記の記載がない限り 公共データ利用規約（第1.0版）（デジタル庁） が適用されます。' (row cao_rule) '令和7年3月25日現在' (row cao_date) The public data licence (version 1.0) says 'なお、数値データ、簡単な表・グラフ等は著作権による保護の対象ではありませんので、これらについては本利用ルールの適用はなく、自由に利用できます。' (row pdl_numbers) '本コンテンツを利用する際は出典を記載してください。' (row pdl_source) '利用する場合は、上記出典とは別に、編集・加工等を行ったこと及びその主体を記載してください。' (row pdl_edit) The pages read carry no notice of other rights. OJ C 38 of 18 April 1972, read in French on EUR-Lex (rows oj_*): '© European Union, 1998-2026' (row eurlex_copy) 'The Commission's document reuse policy is based on Decision 2011/833/EU .' (row eurlex_policy) 'Unless otherwise specified, you can re-use the legal documents published in EUR-Lex for commercial or non-commercial purposes.' (row eurlex_reuse) 'This means that you can re-use the content provided you acknowledge the source and indicate any changes you have made.' (row eurlex_ack) The Chinese of the resolution is the book's translation from the French. Rich (2003), ECB Working Paper 236 (rows rich_*): '© European Central Bank, 2003' (row ecb_copy) 'Reproduction for educational and non-commercial purposes is permitted provided that the source is acknowledged.' (row ecb_repro) Powell (2005), Bank of Canada (rows pw_*): 'the Bank permits you to freely use, copy, distribute and transmit its website content under the following terms:' (row boc_permit) '1.1. Attribution You must attribute the Bank of Canada as the source of the content, and indicate if changes were made.' (row boc_attrib) The authority records of the Library of Congress (rows loc_*) are public data.",
+ "used_in": [
+  46
+ ],
+ "fetch": "data/fetch/floating46.py",
+ "citation": "Each row is cited to its document in the bibliography block of Chapter 46 (references_zh.tex): nixon1971, nixon1971b, frus46a, frus46b, bis1972, bis1973, bis1974, bis1976, bisdata46, dornbusch1976, meeserogoff1983, meese1981, boj1986, epa1972, ojc1972, loc46; Rich (2003) and Powell (2005) are the items rich2003 (Chapter 45) and powell2005 (Chapter 37), the same copies; the editor merges the pages of Chapter 46 into them.",
+ "notes": "Every quotation of a source that is not 'image' is copied from the text of the document as data/fetch/verify_web_quotes.py extracts it (pdftotext with and without -layout, tags removed from web pages, all strings of a JSON record, whitespace and Unicode compatibility forms normalized), so the misreadings of the scans stay in the quotations. Named misreadings: 'X' for 'Y' (row): '2%' for '2¼' (b72_margins); '414' for '4½' (b72_margins); '2 %' for '2¼' (b73_margin); 'n t h' for '11th' (b73_denmark); 'ist' for '1st' (b73_emcf); 'schillin9' for 'schilling' (b72t_ats); 'pet\"' for 'per' (b72t_units); 'was , very' for 'was very' (b72_weak); '()' for '©' (db_copyright); '1/,W' for '1/λθ' (db_eq16); 'flexible-price(FrenkelBilson)' for 'flexible-price (Frenkel-Bilson)' (mr_models); '1 e r' for '1er' (oj_225); '°/o' for '%' (oj_225). The text layers of the BIS reports print 'per cent,' for 'per cent.' and split ordinals ('23 rd August', '15 th August'); the FRUS pages put a space before a comma or a full stop after a linked name ('Connally ,') and mark the page breaks of the printed volume ('[Page 581]'); the Public Papers print a footnote mark '1' after 'agreement' (nxs_most) and '5: 48 p.m.' (nxs_note). The rows of the sources bis1972img_46, bis1973img_46, dornbusch1976img_46, meeserogoff1983img_46, ifdp184img_46, boj612img_46 and boj613img_46 are typed from page images rendered with pdftoppm (150-300 dpi): the BIS pages whose text layer spaces its letters or misreads the fractions (PDF pp. 30, 142, 143 of 1973; pp. 35-36 of 1972), Dornbusch's equations (the text layer misreads the Greek letters), Table 1 of Meese and Rogoff (printed sideways), the cover of IFDP 184 and the pages of the Bank of Japan's history (scans without a text layer; tesseract with jpn only found the passages, every quotation was typed from the image). The numbers of the BIS table of 1972 (rows b72t_*, from the -layout text) were checked against the image of PDF p. 36. Readings of the numbers (checks/check_ch46.py, READINGS): b72_margins: '1' read as printed, '2%' as 2¼ and '414' as 4½ (the image row b72i_margins prints them); b73_margin: '2 %' as 2¼ (checked on the image of PDF p. 31); b73_denmark: 'n t h' as 11; b73_emcf: 'ist' as 1; oj_225: the French decimal comma of '2,25' (and '1 e r' as 1); f211_11: 'eleven' as 11; b72t_ats: the figures after the name (the '9' of 'schillin9' is no number); b72t_itl, b72t_sek, b72t_usd: the BIS table prints its minus sign as a dash followed by a space ('— 1.0'), read as negative; db_eq15: only the number of the equation; b72_exporters: '- 28 -' is the page number inside the sentence, not read; nxs_most: the '1' is the footnote mark of the Public Papers, not read; bisdata_jpy, bisdata_jpy7301, bisdata_jpy7303, bisdata_jpy7810, bisdata_jpy8210, bisdata_jpy8502, bisdata_chf, bisdata_gbp: the month (year, month) and the value of a line of the API's CSV. Dates that differ between the sources are kept as each prints them: the second devaluation of the dollar was announced on the evening of 12 February 1973 (f12_evening; boj_feb12) or on 13 February (b73i_devalue); the joint float was decided on 12 March (b73_joint) or concluded on 11 March (b73i_concluded, f35_march11, boj_march11); the margin of the joint float is 2¼ per cent on either side of the cross rates in the BIS report (b73_margin) and 1.125 per cent above and below in the Bank of Japan's history (boj_march11). The Library of Congress has no authority record giving the dates of 佐々木直 (the record 'Sasaki, Tadashi' found is of another person); the chapter prints his dates as unknown.",
+ "sources": {
+  "nixon1971_46": {
+   "url": "https://www.presidency.ucsb.edu/documents/address-the-nation-outlining-new-economic-policy-the-challenge-peace",
+   "format": "html",
+   "sha256": "0c85275963fd4ed5c2192d12eaf2011db46d8d2e7180e33236dd7458e3c82857",
+   "version": "Richard Nixon, 'Address to the Nation Outlining a New Economic Policy: \"The Challenge of Peace.\"', August 15, 1971, Public Papers of the Presidents, as published by the American Presidency Project (UC Santa Barbara; web page)",
+   "retrieved": "2026-11-27"
+  },
+  "nixon1971b_46": {
+   "url": "https://www.presidency.ucsb.edu/documents/remarks-announcing-monetary-agreement-following-meeting-the-group-ten",
+   "format": "html",
+   "sha256": "67badd751d97287478ac63af5ae9d851841835f65a1ffc42e02094f80ff98844",
+   "version": "Richard Nixon, 'Remarks Announcing a Monetary Agreement Following a Meeting of the Group of Ten', December 18, 1971, Public Papers of the Presidents, as published by the American Presidency Project (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus3d164_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v03/d164",
+   "format": "html",
+   "sha256": "62ef5f1b95b22c0d1964f405369bab3065f74a907c02e71cfcf187d6524f0f7c",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume III, Foreign Economic Policy; International Monetary Policy, 1969-1972, Document 164, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus3d165_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v03/d165",
+   "format": "html",
+   "sha256": "c1fbc71b2083e39cc1dab3de6f23c4d681a219ffc5048e5ffc4289d84cf91981",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume III, Foreign Economic Policy; International Monetary Policy, 1969-1972, Document 165, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus3d168_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v03/d168",
+   "format": "html",
+   "sha256": "4f45db838e671234680c1d92cf20d8fe5f38cce4545b649775ddbba47f3d9845",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume III, Foreign Economic Policy; International Monetary Policy, 1969-1972, Document 168, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus3d211_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v03/d211",
+   "format": "html",
+   "sha256": "df727f5eaacea4b1aa7787035eadc07ee3da16947e5ceecfc04e8c4911bb4c76",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume III, Foreign Economic Policy; International Monetary Policy, 1969-1972, Document 211, telegram from Secretary of the Treasury Connally in Rome, 30 November 1971 (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus3d221_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v03/d221",
+   "format": "html",
+   "sha256": "31e00b829dc4edc434787e02d79963531ceef6c38899576b98238071a98086c8",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume III, Foreign Economic Policy; International Monetary Policy, 1969-1972, Document 221, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus31d12_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v31/d12",
+   "format": "html",
+   "sha256": "f090404befbcbd4beba479756d5aa81b37b044b2678b772c9dc130f9b449a942",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume XXXI, Foreign Economic Policy, 1973-1976, Document 12, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus31d14_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v31/d14",
+   "format": "html",
+   "sha256": "334310f89d234fbcb3e2a221691d4f4f492d67f05ae127ad4284c68cd42f1178",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume XXXI, Foreign Economic Policy, 1973-1976, Document 14, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus31d33_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v31/d33",
+   "format": "html",
+   "sha256": "cd4407255a9464da5edbaf4b7439a36400a6426b75d9968d75308084ca434178",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume XXXI, Foreign Economic Policy, 1973-1976, Document 33, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "frus31d35_46": {
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v31/d35",
+   "format": "html",
+   "sha256": "bc9faa58e1fa12d83106a4019ef0bc4c3cd71497c460d0ede441084910decfa8",
+   "version": "Foreign Relations of the United States, 1969-1976, Volume XXXI, Foreign Economic Policy, 1973-1976, Document 35, Editorial Note (Office of the Historian, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "bis1972_46": {
+   "url": "https://www.bis.org/publications/annual-report-1972.pdf",
+   "format": "pdf",
+   "sha256": "e11de7490ede5b4766bf88aa6dccb55ce4dfe638d471e65f9fe7f7fc61155ec4",
+   "version": "Bank for International Settlements, Forty-second Annual Report, 1st April 1971-31st March 1972 (Basle, 12th June 1972), scan with a text layer on the BIS website (printed page = PDF page - 6)",
+   "retrieved": "2026-11-27"
+  },
+  "bis1972img_46": {
+   "url": "https://www.bis.org/publications/annual-report-1972.pdf",
+   "format": "image",
+   "sha256": "e11de7490ede5b4766bf88aa6dccb55ce4dfe638d471e65f9fe7f7fc61155ec4",
+   "version": "the same PDF, pages 29-30 (PDF pp. 35-36) read on images rendered with pdftoppm",
+   "retrieved": "2026-11-27"
+  },
+  "bis1973_46": {
+   "url": "https://www.bis.org/publications/annual-report-1973.pdf",
+   "format": "pdf",
+   "sha256": "7e1a49452131ed08b65b7674f09ccacef17234b38d560a4b42469c2bf35d5fa8",
+   "version": "Bank for International Settlements, Forty-third Annual Report, 1st April 1972-31st March 1973 (Basle, 18th June 1973), scan with a text layer on the BIS website (printed page = PDF page - 6)",
+   "retrieved": "2026-11-27"
+  },
+  "bis1973img_46": {
+   "url": "https://www.bis.org/publications/annual-report-1973.pdf",
+   "format": "image",
+   "sha256": "7e1a49452131ed08b65b7674f09ccacef17234b38d560a4b42469c2bf35d5fa8",
+   "version": "the same PDF, pages 24, 136 and 137 (PDF pp. 30, 142, 143) read on images rendered with pdftoppm (the text layer of page 24 spaces its letters)",
+   "retrieved": "2026-11-27"
+  },
+  "bis1974_46": {
+   "url": "https://www.bis.org/publications/annual-report-1974.pdf",
+   "format": "pdf",
+   "sha256": "30201ed3edb255443e13a9d45776dd070d41f4aa2e50d0c4c7d17c88219385d7",
+   "version": "Bank for International Settlements, Forty-fourth Annual Report, 1st April 1973-31st March 1974, scan with a text layer on the BIS website (printed page = PDF page - 6)",
+   "retrieved": "2026-11-27"
+  },
+  "bis1976_46": {
+   "url": "https://www.bis.org/publications/annual-report-1976.pdf",
+   "format": "pdf",
+   "sha256": "ed0cc65fe17374b4cb68a004287f0b561fd908e5e8adacb4ae31c50d657486ca",
+   "version": "Bank for International Settlements, Forty-sixth Annual Report, 1st April 1975-31st March 1976, scan with a text layer on the BIS website (printed page = PDF page - 6)",
+   "retrieved": "2026-11-27"
+  },
+  "bisterms_46": {
+   "url": "https://www.bis.org/about/terms-conditions",
+   "format": "html",
+   "sha256": "991b4821e5e5833da10e8634600a3ff080092d8fd84af2ad4f8d8ff151891107",
+   "version": "BIS, 'Terms & conditions' (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "bislegal_46": {
+   "url": "https://data.bis.org/help/legal",
+   "format": "html",
+   "sha256": "a7c09b1c978bee3e147644e6a69de9e3193ce4820df1e97c266a9b8faf1520f5",
+   "version": "BIS Data Portal, 'Legal' (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "bisxrujp_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.JP.JPY.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "01dd878e09085c6f66a14693c0f881d6afba2e32c5f0e0f359df5043b0af18d9",
+   "version": "BIS Data Portal, dataflow WS_XRU (bilateral exchange rates), series M.JP.JPY.A, CSV of the SDMX API with labels",
+   "retrieved": "2026-11-27"
+  },
+  "bisxrude_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.DE.EUR.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "287471586b87a73a32a1867bdfb29e3135879df9881e97dcedc625cb800a04ec",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.DE.EUR.A (Germany, in euro), CSV with labels",
+   "retrieved": "2026-11-27"
+  },
+  "bisxruch_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.CH.CHF.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "de8f789a4a4f539804b71942d1e0af79b2798fb90ef369a75d8cb9fe1a4795c8",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.CH.CHF.A, CSV with labels",
+   "retrieved": "2026-11-27"
+  },
+  "bisxrugb_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.GB.GBP.A?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "18d99354edc1f80301233f54d9378a8aae18faeba8b0d56b1725a08344f3015a",
+   "version": "BIS Data Portal, dataflow WS_XRU, series M.GB.GBP.A, CSV with labels",
+   "retrieved": "2026-11-27"
+  },
+  "biscpius_46": {
+   "url": "https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.US.628?format=csv&labels=both",
+   "format": "txt",
+   "sha256": "c6286e05cf37f5f3d4b972aecf056c19d6cbfc21618b42d73323cb0ecad5c426",
+   "version": "BIS Data Portal, dataflow WS_LONG_CPI (long consumer prices), series M.US.628 (index), CSV with labels",
+   "retrieved": "2026-11-27"
+  },
+  "dornbusch1976_46": {
+   "url": "https://users.ssc.wisc.edu/~cengel/IMF/DornbuschJPE1976.pdf",
+   "format": "pdf",
+   "sha256": "f6a4c668b46d0ad1e287c1a23223d46e3432d06b676f5da8672a5adea27f89de",
+   "version": "Rudiger Dornbusch, 'Expectations and Exchange Rate Dynamics', Journal of Political Economy 84(6), December 1976, pp. 1161-1176: a third-party copy of the JSTOR PDF on a course page of the University of Wisconsin, read to verify only and not distributed (printed page = PDF page + 1159)",
+   "retrieved": "2026-11-27"
+  },
+  "dornbusch1976img_46": {
+   "url": "https://users.ssc.wisc.edu/~cengel/IMF/DornbuschJPE1976.pdf",
+   "format": "image",
+   "sha256": "f6a4c668b46d0ad1e287c1a23223d46e3432d06b676f5da8672a5adea27f89de",
+   "version": "the same PDF, pages 1163, 1164 and 1167 (PDF pp. 4, 5, 8): the equations read on images rendered with pdftoppm (the text layer misreads the Greek letters)",
+   "retrieved": "2026-11-27"
+  },
+  "meeserogoff1983_46": {
+   "url": "https://users.ssc.wisc.edu/~behansen/390/MeeseRogoff.pdf",
+   "format": "pdf",
+   "sha256": "a77da74666890db4476b10f11a7e96334ad8009b38ae0fe41304a280102a74f2",
+   "version": "Richard A. Meese and Kenneth Rogoff, 'Empirical Exchange Rate Models of the Seventies: Do They Fit Out of Sample?', Journal of International Economics 14 (1983), pp. 3-24: a third-party copy (a scan with a text layer) on a course page of the University of Wisconsin, read to verify only and not distributed (printed page = PDF page + 2)",
+   "retrieved": "2026-11-27"
+  },
+  "meeserogoff1983img_46": {
+   "url": "https://users.ssc.wisc.edu/~behansen/390/MeeseRogoff.pdf",
+   "format": "image",
+   "sha256": "a77da74666890db4476b10f11a7e96334ad8009b38ae0fe41304a280102a74f2",
+   "version": "the same PDF, Table 1 on page 13 (PDF p. 11), printed sideways, read on an image rendered with pdftoppm and rotated",
+   "retrieved": "2026-11-27"
+  },
+  "ifdp184img_46": {
+   "url": "https://www.federalreserve.gov/pubs/ifdp/1981/184/ifdp184.pdf",
+   "format": "image",
+   "sha256": "4ebe2dbc114887096d073a397f634679a1f11c3c2fe8ec84a1288494bfa8f09f",
+   "version": "Richard Meese and Kenneth Rogoff, 'Empirical Exchange Rate Models of the Seventies: Are Any Fit to Survive?', International Finance Discussion Papers 184, Board of Governors of the Federal Reserve System, June 1981: a scan without a text layer, the cover read on an image",
+   "retrieved": "2026-11-27"
+  },
+  "ifdp184land_46": {
+   "url": "https://www.federalreserve.gov/econres/ifdp/empirical-exchange-rate-models-of-the-seventies-are-any-fit-to-survive.htm",
+   "format": "html",
+   "sha256": "85441024001e4e6d7ed58e20311dea6a6776c3c5332e12f85a7c86df30180b0a",
+   "version": "Board of Governors of the Federal Reserve System, the page of IFDP 184 (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "boj612img_46": {
+   "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku6_6_1_2.pdf",
+   "format": "image",
+   "sha256": "30673ecb9cbe4361c984aad95f4f1d7fd229e4f62d580d3fc5451683d224af5c",
+   "version": "日本銀行百年史編纂委員会編『日本銀行百年史』第6巻（日本銀行、1986年）、第6章1(2)「ニクソン・ショックと円切上げ」(pp. 318-345, 28 PDF pages without a text layer; printed page = PDF page + 317), read on images rendered with pdftoppm (tesseract jpn only to find the passages)",
+   "retrieved": "2026-11-27"
+  },
+  "boj613img_46": {
+   "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku6_6_1_3.pdf",
+   "format": "image",
+   "sha256": "a965b68afa536dd7b5019efb80f902fe106ea63e95898aa670c18f15ca8642b6",
+   "version": "同第6章1(3)「世界的なフロート制移行」 (from p. 345; PDF without a text layer; printed page = PDF page + 344), read on images rendered with pdftoppm",
+   "retrieved": "2026-11-27"
+  },
+  "bojcopyright_46": {
+   "url": "https://www.boj.or.jp/en/copyright.htm",
+   "format": "html",
+   "sha256": "2e6f9c30181f0fab5b33ec78561fea8e9c0c471fc2494166707e6f4de2c40dec",
+   "version": "Bank of Japan, 'Copyright, Disclaimer, and Other Related Matters' (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "epa1972_46": {
+   "url": "https://www5.cao.go.jp/keizai3/keizaiwp/wp-je72/wp-je72-00203.html",
+   "format": "html",
+   "sha256": "c7471dc1a7c6a7da1a0d4284e8dc7d96d6341c2b1ea551f95e740176a9c990c4",
+   "version": "経済企画庁『昭和47年 年次経済報告 新しい福祉社会の建設』第2章第3節 (内閣府ウェブサイト, web page)",
+   "retrieved": "2026-11-27"
+  },
+  "caorule_46": {
+   "url": "https://www.cao.go.jp/notice/rule.html",
+   "format": "html",
+   "sha256": "d331a62f2c196033c27cd11ca5f1501a9c0d4e6c711aba3dd15a4ab122c240a9",
+   "version": "内閣府ホームページ利用規約 (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "pdl_46": {
+   "url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+   "format": "html",
+   "sha256": "841880fcebb9be6d29ae5dff89037510f33c01e8c5c2ebc24fe5182be936d9ac",
+   "version": "デジタル庁、公共データ利用規約（第1.0版） (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "ojc38_46": {
+   "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=OJ:C:1972:038:FULL",
+   "format": "pdf",
+   "sha256": "03bf8797197098e63f2dc9abe8bfcc2b325b9d812972cff0e63456c6e63ceaa2",
+   "version": "Journal officiel des Communautés européennes, C 38, 18 avril 1972, édition de langue française (EUR-Lex; 31 PDF pages: PDF p. 1 is the cover with the contents, printed page C 38/N = PDF page - 2)",
+   "retrieved": "2026-11-27"
+  },
+  "eurlexlegal_46": {
+   "url": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html",
+   "format": "html",
+   "sha256": "a34ed1b5868754be2c4238fa47c8fccdb8509ad68598f736fbb53f806a583a06",
+   "version": "EUR-Lex, 'Legal notice' (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "rich2003_46": {
+   "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp236.pdf",
+   "format": "pdf",
+   "sha256": "9e3e2846f2d438d8734fba859fad250b67ad80e85e55e11be0f3b8fe2fed7f36",
+   "version": "Georg Rich, 'Swiss Monetary Targeting 1974-1996: The Role of Internal Policy Analysis', European Central Bank Working Paper No. 236, June 2003 (printed page = PDF page - 1; the copy of Chapter 45)",
+   "retrieved": "2026-11-27"
+  },
+  "powell2005_46": {
+   "url": "https://www.bankofcanada.ca/wp-content/uploads/2010/07/dollar_book.pdf",
+   "format": "pdf",
+   "sha256": "8482a3e1b320c593c641bef7d1dd88b68f6fffd54281ed8903a38701268be811",
+   "version": "James Powell, A History of the Canadian Dollar, Bank of Canada, December 2005 (printed page = PDF page - 6; the copy of Chapter 37)",
+   "retrieved": "2026-11-27"
+  },
+  "bocterms_46": {
+   "url": "https://www.bankofcanada.ca/terms/",
+   "format": "html",
+   "sha256": "b072924685fc5a3ced2077a55b4e9b22c991cc4201a7740427dfc59b8d6ff1c1",
+   "version": "Bank of Canada, 'Terms of Use, Disclosures and Disclaimers' (web page)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_nixon46": {
+   "url": "https://id.loc.gov/authorities/names/n79018757.madsrdf.json",
+   "format": "json",
+   "sha256": "a7674abd4f3e7fd4342bcfb6dfa3bafc93bf117df1f926a8a4609868c5e9b313",
+   "version": "Library of Congress Name Authority File, record n79018757 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_connally46": {
+   "url": "https://id.loc.gov/authorities/names/n80097483.madsrdf.json",
+   "format": "json",
+   "sha256": "6207b157409d64addc8b2f2692ce856439aaeb70a0ca9afd01ec31efe897d3fe",
+   "version": "Library of Congress Name Authority File, record n80097483 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_shultz46": {
+   "url": "https://id.loc.gov/authorities/names/n50022917.madsrdf.json",
+   "format": "json",
+   "sha256": "8d017939d78357efeb7a3dd645be42d84ab3b4c7af998eee9b2bcc51d80023df",
+   "version": "Library of Congress Name Authority File, record n50022917 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_burns46": {
+   "url": "https://id.loc.gov/authorities/names/n79064753.madsrdf.json",
+   "format": "json",
+   "sha256": "f754e55b30e40ab8c1913bf782eb3c1ac16866ee4652056d47873af29a2e1795",
+   "version": "Library of Congress Name Authority File, record n79064753 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_stein46": {
+   "url": "https://id.loc.gov/authorities/names/n50020799.madsrdf.json",
+   "format": "json",
+   "sha256": "33b3777a751b8d81a917f5782baefeb0ded9cd3fcb53a1c9bd13ef474b6f26f2",
+   "version": "Library of Congress Name Authority File, record n50020799 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_kissinger46": {
+   "url": "https://id.loc.gov/authorities/names/n79018911.madsrdf.json",
+   "format": "json",
+   "sha256": "8a6651c3e3e92717121afecf5b90d2dcf682a7e3fd59f82b9f257064083d1b1b",
+   "version": "Library of Congress Name Authority File, record n79018911 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_simon46": {
+   "url": "https://id.loc.gov/authorities/names/n50023679.madsrdf.json",
+   "format": "json",
+   "sha256": "eca41a4ed6c8b6e9742b1d1629ab89b8fe1a0bb15f36f6a50b70880675264506",
+   "version": "Library of Congress Name Authority File, record n50023679 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_dornbusch46": {
+   "url": "https://id.loc.gov/authorities/names/n77003489.madsrdf.json",
+   "format": "json",
+   "sha256": "522b4e09c24c6ca95b08ec680a90712f3839fe29179f8a70db1a074379c6338d",
+   "version": "Library of Congress Name Authority File, record n77003489 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_volcker46": {
+   "url": "https://id.loc.gov/authorities/names/n78057465.madsrdf.json",
+   "format": "json",
+   "sha256": "afc9311f6b589e666c0a296922ac4f00a23e3a57505421316a48cea0da6d0543",
+   "version": "Library of Congress Name Authority File, record n78057465 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_mizuta46": {
+   "url": "https://id.loc.gov/authorities/names/nr96026314.madsrdf.json",
+   "format": "json",
+   "sha256": "0e451bca3b02f92754d597d3d716871d27548b2a397fa1542f321840d6105093",
+   "version": "Library of Congress Name Authority File, record nr96026314 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  },
+  "loc_aichi46": {
+   "url": "https://id.loc.gov/authorities/names/n83231425.madsrdf.json",
+   "format": "json",
+   "sha256": "83a6af4e27c5aa91013408e1b1d0b6843d00a754708e6afbeed07eeba5ad9d43",
+   "version": "Library of Congress Name Authority File, record n83231425 (MADS/RDF JSON)",
+   "retrieved": "2026-11-27"
+  }
+ }
+}
