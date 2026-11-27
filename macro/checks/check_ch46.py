@@ -246,7 +246,7 @@ MISPRINTS = [("b72_margins", "2%", "'2%' for '2¼'"),
                                                              "(Frenkel-Bilson)'"),
              ("oj_225", "1 e r", "'1 e r' for '1er'"),
              ("oj_225", "°/o", "'°/o' for '%'")]
-N_QUOTED = 187
+N_QUOTED = 190
 
 
 def check_readings(df: pd.DataFrame) -> None:
@@ -713,6 +713,9 @@ def world(F, Y, Q):
     T = F["f168_time"]
     has("f168_time", "Camp David", "economic advisers", "White House staff")
     said("8 月 13 日下午，尼克松在戴维营与经济顾问及白宫幕僚开会", month("f168_time", "August"), T[3])
+    # the editor's round: the meeting detailed a programme already agreed on 2 and 12 August (Documents 164, 165)
+    said("会是为尼克松 8 月 2 日与 12 日已经同意的新经济政策定下细节", month("f168_detail", "August"), *F["f168_detail"])
+    assert tuple(F["f168_detail"]) == (F["f164_aug2"][0], F["f165_aug12"][0]), (F["f164_aug2"], F["f165_aug12"])
     assert T[0] == 3 and T[2] == 7                                              # 3:15 to 7 p.m.: the afternoon
     names = [n.strip() for n in re.split(r",|\band\b", words_of("f168_diary").split("August 13,")[1]
                                          .replace("attended", "")) if n.strip()]
@@ -729,6 +732,7 @@ def world(F, Y, Q):
     # Canada
     said("\\chref{ch:mundell}讲过加拿大 1950 年代的浮动", *there("ch37_mundell", "加拿大 1950 年代的浮动"))
     said("1970 年 5 月 31 日，加拿大的财政部长宣布", F["pw_may31"][1], month("pw_may31", "May"), F["pw_may31"][0])
+    has("pw_may31", "cease purchasing sufficient U.S. dollars")                 # 不再买入足以守住平价的美元
 
 
 def smithsonian(F, Y, Q):
@@ -762,7 +766,7 @@ def smithsonian(F, Y, Q):
     M = F["b72i_margins"]
     assert M == F["b72_margins"] and M[2] == 2 * M[1]
     said("对美元的波动幅度从平价上下各 1\\% 放宽到各 2.25\\%，上下限之间的距离达到 4.5\\%", *M)
-    said("央行不必等汇率离开中心 1\\% 就入市", M[0])
+    said("汇率离开中心 1\\% 时央行还不必入市", M[0])
     J = F["b72t_jpy"]
     assert np.isclose(J[2] * (1 - M[1] / 100), J[4], atol=0.005)               # the lower limit: 308 less 2.25%
     said("按表中日元的中心汇率 308 日元，上下各 2.25\\%，下限约是 301.1 日元", J[2], M[1], J[4])
@@ -806,8 +810,21 @@ def smithsonian(F, Y, Q):
     has("f221_france", "financial franc would not be bound")
     assert day(F["b72_bill"][1], 5, F["b72_imf"][0]) == "Friday"
     has("b72_imf", "Friday, 5 th May")
-    said("1972 年 4 月 3 日，尼克松签署了改变美元平价的法案，美国 5 月 5 日正式通知国际货币基金组织",
-         F["b72_bill"][1], month("b72_bill", "April"), F["b72_bill"][0], month("b72_imf", "May"), F["b72_imf"][0])
+    # the BIS dates the signing 3 April 1972; the statute (Public Law 92-268, 86 Stat. 116) is approved March 31,
+    # 1972 (its margin date and last line, read on the page image): the text follows the statute and names the BIS date
+    has("b72_bill", "signed the bill authorising and directing the promised change in the par value of the dollar",
+        "3rd April")
+    has("pvma_date", "March")
+    has("pvma_38", "$1 equals one thirty-eighth of a fine troy ounce")      # $38 an ounce, Connally's 38
+    assert F["pvma_date"][1] == F["b72_bill"][1] and F["pvma_38"][0] == 1
+    assert day(F["pvma_date"][1], 3, F["pvma_date"][0]) == "Friday"
+    said("1972 年 3 月 31 日，尼克松签署了国会通过的《平价修改法》，授权财政部长把美元的平价定为每盎司黄金 38 美元",
+         F["pvma_date"][1], month("pvma_date", "March"), F["pvma_date"][0], F["f221_38"][0])
+    said("美国 5 月 5 日正式通知国际货币基金组织", month("b72_imf", "May"), F["b72_imf"][0])
+    said("BIS 1972 年的年报把尼克松签署平价法案的日子记作 4 月 3 日，法律文本记作 3 月 31 日", report("bis1972_46"), 4,
+         F["b72_bill"][0], 3, F["pvma_date"][0])
+    say("这个序列在浮动以前多半记的是平价，前一个数因此偏小（本书的核对）",
+        "英国的倍数最小，部分是因为英国早年的物价指数取整较粗，浮动以前的波动被放大了（本书的核对）")
     said("1972 年 6 月 23 日起，英国停止按固定的价格买卖美元", F["b73_sterling"][1], month("b73_sterling", "June"),
          F["b73_sterling"][0])
     yb73 = report("bis1973_46")
@@ -864,6 +881,7 @@ def smithsonian(F, Y, Q):
     said("1976 年 1 月，国际货币基金组织理事会的临时委员会在牙买加完成协议", F["b76_jamaica"][0],
          month("b76_jamaica", "January"))
     has("b76_gold", "The official price will be abolished")
+    has("b76_article4", "The new Article IV will allow")                         # 将让……也将取消
     said("日本守着 360 日元", F["boj_360"][2])
 
 
@@ -877,7 +895,8 @@ def japan(F, Y, Q):
     said("是日本时间 8 月 16 日（星期一）上午 10 点", B[2], B[3], B[4])
     said("17 日以后照常开市", F["boj_decision"][0])
     K = F["boj_11days"]
-    said("8 月 16 日到 27 日的 11 天里（星期日除外），平衡用的美元买入近 40 亿美元，约相当于当时 4 个月的进口，外汇储备"
+    has("boj_11days", "平衡買い")
+    said("8 月 16 日到 27 日的 11 天里（星期日除外），当局为守住平价买入的美元近 40 亿美元，约相当于当时 4 个月的进口，外汇储备"
          "从不到 80 亿美元猛增到 120 亿美元", K[0], K[1], K[2], K[3], K[4] * 1e8, K[5], K[6] * 1e8, K[7] * 1e8)
     assert sum(day(B[1], 8, d_) != "Sunday" for d_ in range(int(K[1]), int(K[2]) + 1)) == K[3]
     assert np.isclose(F["b72_4bn"][0] * 1e9, K[4] * 1e8) and F["b72_4bn"][1] == F["boj_float"][3]   # BIS: $4 milliard
@@ -898,7 +917,8 @@ def japan(F, Y, Q):
     said("1973 年 2 月 10 日（星期六）", y73, *F["boj_feb10"])
     said("日本时间 2 月 13 日各国达成协议", *F["boj_feb13"])
     has("boj_aichi", "固定相場に復帰したい")
-    said("日元随即升到 263 日元台", F["boj_263"][0])
+    has("boj_263", "フロート移行後も", "一時的ながら")
+    said("日元浮动以后继续走强，一度升到 263 日元台", F["boj_263"][0])
 
 
 def europe(F, Y, Q):
@@ -1050,6 +1070,10 @@ def test(F, Y, Q):
     assert F["bisdata_jpy8210"][0] - F["bisdata_jpy7810"][0] == 4
     said("这四年里美元涨了约 47\\%", (F["bisdata_jpy8210"][2] / F["bisdata_jpy7810"][2] - 1) * 100)
     said("瑞士法郎 1978 年 10 月升到 1.54 法郎", *F["bisdata_chf"])
+    dm = flo["deu_eur"] * MARK
+    lo = dm.idxmin()
+    assert lo > pd.Period("1978-10", freq="M")                                   # 来得晚一些
+    said("马克的最高点来得晚一些，1980 年 1 月是每美元 1.72 马克", lo.year, lo.month, dm[lo])
     assert F["bisdata_chf"][:2] == [F["rich_80"][0], month("rich_80", "October")]   # 正是改盯汇率的时候
     said("英镑 1985 年 2 月跌到每英镑约合 1.10 美元", F["bisdata_gbp"][0], F["bisdata_gbp"][1], 1 / F["bisdata_gbp"][2])
     said("美元 1980 年代前期的上涨在\\chref{ch:credibility}", 1980)
@@ -1123,6 +1147,7 @@ def debate(F, Y, Q):
     said("3 月 14 日，基辛格在电话里对财政部副部长西蒙", month("f33_date", "March"), F["f33_date"][0])
     assert F["f33_date"][1] == y73
     has("f33_simon", "Deputy Secretary of the Treasury William Simon")
+    has("f33_prevent", "to prevent a united European position", "without showing our hand")
     said("15 日晚上，他又说", F["f35_paris"][0] - 1)
     yb76 = report("bis1976_46")
     said("BIS 1976 年说，1975—1976 年央行的干预", yb76, F["b76_intervention"][0], 1900 + F["b76_intervention"][1])
@@ -1157,6 +1182,9 @@ def deeper(F, Y, Q):
     said("日本银行的《日本银行百年史》第 6 卷", year_in("boj612img_46", r"第(\d)巻"))
     said("共同浮动的窄幅，BIS 1973 年的年报说是名义交叉汇率上下各 2.25\\%，日本银行的行史说是上下各 1.125\\%",
          report("bis1973_46"), F["b73_margin"][0], F["boj_march11"][3])
+    assert 2 * F["boj_march11"][3] == F["b73_margin"][0]                         # half the spread on either side
+    said("每种货币离共同的中线都不超过 1.125\\%，任何两种货币之间的差距就不超过 2.25\\%", F["boj_march11"][3],
+         F["b73_margin"][0])
     has("loc_mizuta", "Mizuta, Mikio")
     has("db_copyright", "1976 by The University of Chicago. All rights reserved.")
     has("mr_publisher", "North-Holland")
@@ -1176,12 +1204,34 @@ def deeper(F, Y, Q):
         int((np.log(S.loc[FIXED[0]:FIXED[1], "cpi_gb"]).diff().dropna() == 0).sum())
     said("1960 年代各国的消费者价格指数常常几个月不变，英国 1960—1970 年的 132 个月度变化里有 76 个是零", 1960, 1960,
          1970, len(changes("gbp", FIXED)), zeros)
+    steps = {}
+    for c in ("cpi_us", *RATES.values()):                                       # the smallest change, % of the level
+        x = S.loc[FIXED[0]:FIXED[1], c]
+        d_ = (x.diff() / x.shift()).dropna().abs() * 100
+        steps[c] = float(d_[d_ > 0].min())
+    assert steps["cpi_gb"] > 0.75 and max(v for c, v in steps.items() if c != "cpi_gb") < 0.35, steps
+    said("英国的指数一动至少约 0.8\\%，看来源头的数字取整较粗，1960 年代英国物价之比与实际汇率的标准差因此偏大",
+         steps["cpi_gb"], 1960, slack=0.05)
+    # rounding a smooth index to that step inflates the standard deviation of its monthly changes
+    gb = np.log(S.loc[FIXED[0]:FIXED[1], "cpi_gb"])
+    t_ = np.arange(len(gb))
+    smooth = np.exp(np.polyval(np.polyfit(t_, gb.values, 3), t_))
+    rough = np.round(smooth / (smooth[0] * steps["cpi_gb"] / 100)) * smooth[0] * steps["cpi_gb"] / 100
+    assert np.diff(np.log(rough)).std(ddof=1) > 2 * np.diff(np.log(smooth)).std(ddof=1)   # 因此偏大
+    V = {c: (volatility(c, FIXED), volatility(c, FLOAT)) for c in RATES}
+    assert min(RATES, key=lambda c: V[c][1]["real"] / V[c][0]["real"]) == "gbp"      # the smallest 倍数 is sterling's
+    yen = S["jpy"]
+    at = yen[yen == 360].index
+    assert len(at) == at[-1].ordinal - at[0].ordinal + 1 and at[0] == yen.index[0]   # one run, from the first month
+    assert (yen.loc[at[-1] + 1:FIXED[1]] < 360).all()
+    said("日元 1959 年 12 月到 1969 年 11 月的 120 个月都正好是 360 日元", at[0].year, at[0].month, at[-1].year,
+         at[-1].month, len(at), F["boj_360"][2])
+    said("1960 年代日元名义汇率的标准差因此偏小", 1960)
 
 
 def legacy(F, Y, Q):
     has("b76_article4", "exchange rate arrangements of their choice")
     said("1985 年的广场协议在\\chref{ch:japanbubble}", *there("ch58_japanbubble", "追踪广场协议（1985）"))
-    said("1971 年那种一个星期就买进几十亿美元的事", F["nx_date"][1])
     said("BIS 1976 年看到的就是这样一种局面", report("bis1976_46"))
     has("rich_7", "about 7 percent early in 1973")
     said("并用它来对付 1973 年初已升到约 7\\% 的通胀", F["rich_7"][1], F["rich_7"][0])
@@ -1192,6 +1242,10 @@ def takeaways(F, Y, Q):
     d, y = F["nx_date"]
     said("1971 年 8 月 15 日，美国停止美元兑换黄金，加征 10\\% 的进口附加税", y, month("nx_date", "August"), d,
          F["nx_surcharge"][0])
+    # the decision was not made at Camp David (FRUS: the meeting detailed a programme agreed on 2 and 12 August)
+    say("方案的主要设计者是康纳利，国务院与国家安全委员会都没有参与")
+    has("f164_architect", "primary architect")
+    has("f168_absent", "were not represented at the Camp David meeting")
     said("史密森协定让美元对黄金贬值 7.9\\%，波动幅度放宽到平价上下各 2.25\\%", F["b72_smithsonian"][0],
          F["b72i_margins"][1])
     said("1973 年 3 月主要货币转向浮动，1976 年的牙买加协议承认了这个局面", F["f35_paris"][1], 3, F["b76_jamaica"][0])
@@ -1225,7 +1279,8 @@ def selfcheck(F, Y, Q):
 def ending(F, Y, Q):
     d, y = F["nx_date"]
     said("回到 1971 年 8 月 15 日的晚上", y, month("nx_date", "August"), d)
-    said("尼克松在 1973 年 2 月还提醒部下强调这一点", year_in("frus31d12_46", r"Policy, (\d{4})-"),
+    has("nx_tomorrow", "worth just as much tomorrow as it is today")
+    said("他在 1973 年 2 月还提醒部下强调这一点", year_in("frus31d12_46", r"Policy, (\d{4})-"),
          month("f12_evening", "February"))
     J3 = F["bisdata_jpy7303"]
     assert 260 < J3[2] < 270
@@ -1287,7 +1342,7 @@ EVENTS = [("1946 年起，金价是每盎司 35 美元，盎司是称黄金用�
           ("这个模型与蒙代尔—弗莱明模型问的不是一件事。那里物价固定", "ch37_mundell", "又假定短期里价格不动"),
           ("下面沿用\\chref{ch:external}的记号", "ch05_external", "汇率 $e$"),
           ("即式~\\eqref{eq:external-real}取对数", "ch05_external", "q=\\frac{e\\,P^{f}}{P},\\label{eq:external-real}"),
-          ("式~\\eqref{eq:external-uip}取对数就是 $i=i^{f}+x$", "ch05_external",
+          ("式~\\eqref{eq:external-uip}取对数并略去小项，就是 $i=i^{f}+x$", "ch05_external",
            "\\frac{\\E_t e_{t+1}}{e_t}=\\frac{1+i}{1+i^{f}} .\\label{eq:external-uip}"),
           ("购买力平价成立", "ch05_external", "\\label{eq:external-ppp}"),
           ("\\chref{ch:external}讲过非抛补利率平价的失败（\\secref{sec:external-test}）", "ch05_external",
@@ -1347,7 +1402,7 @@ ITEM_OF = {"nixon1971_46": "nixon1971", "nixon1971b_46": "nixon1971b",
            "bis1974_46": "bis1974", "bis1976_46": "bis1976", "bisterms_46": "bis1972", "bislegal_46": "bisdata46",
            **{k: "bisdata46" for k in ("bisxrujp_46", "bisxrude_46", "bisxruch_46", "bisxrugb_46", "biscpius_46",
                                        "biscpijp_46", "biscpide_46", "biscpich_46", "biscpigb_46")},
-           "dornbusch1976_46": "dornbusch1976", "dornbusch1976img_46": "dornbusch1976",
+           "pvma1972_46": "pvma1972", "pvma1972img_46": "pvma1972", "dornbusch1976_46": "dornbusch1976", "dornbusch1976img_46": "dornbusch1976",
            "meeserogoff1983_46": "meeserogoff1983", "meeserogoff1983img_46": "meeserogoff1983",
            "ifdp184img_46": "meese1981", "ifdp184land_46": "meese1981",
            "boj612img_46": "boj1986", "boj613img_46": "boj1986", "bojcopyright_46": "boj1986",
@@ -1360,7 +1415,7 @@ SHARED = {"powell2005": ("mundell_facts", "powell2005"), "rich2003": ("monetaris
 SHARED_COPY = {"powell2005": "powell2005_46", "rich2003": "rich2003_46"}       # the copies of the other chapters
 # the sources of each item whose pages it names (printed pages and PDF pages), by PDF
 PAGES = {"bis1972": (("bis1972_46", "bis1972img_46"),), "bis1973": (("bis1973_46", "bis1973img_46"),),
-         "bis1974": (("bis1974_46",),), "bis1976": (("bis1976_46",),),
+         "bis1974": (("bis1974_46",),), "bis1976": (("bis1976_46",),), "pvma1972": (("pvma1972_46", "pvma1972img_46"),),
          "dornbusch1976": (("dornbusch1976_46", "dornbusch1976img_46"),),
          "meeserogoff1983": (("meeserogoff1983_46", "meeserogoff1983img_46"),),
          "boj1986": (("boj612img_46",), ("boj613img_46",)), "ojc1972": (("ojc38_46",),),
@@ -1455,7 +1510,7 @@ def witnesses(F, Q):
             in items[key], key
         assert "以国际清算银行为来源" in items[key], key
     assert "不是国际清算银行的官方译文" in items["bisdata46"] and "来源：国际清算银行" in items["bisdata46"]
-    for key in ("nixon1971", "nixon1971b", "frus46a", "frus46b"):
+    for key in ("nixon1971", "nixon1971b", "frus46a", "frus46b", "pvma1972"):
         assert "公有领域" in items[key] and "17 U.S.C. § 105" in items[key], key
     assert "Decision 2011/833/EU" in items["ojc1972"] and "本书据法文本翻译" in items["ojc1972"]
     assert "来源：日本银行" in items["boj1986"] and "出典：経済企画庁" in items["epa1972"]

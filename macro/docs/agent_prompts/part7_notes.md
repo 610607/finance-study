@@ -346,3 +346,22 @@ zh/ch38_phillips.tex / zh/ch44_naturalrate.tex for a model tested against data.
   with a source, or marked 本书的解读.
 - Labels: `sec:floating-…`, `eq:floating-…`, `fig:floating_…`, `tab:floating-…`, `ex:floating-…`.
 - Length: 8,000–9,000 characters of main text.
+
+### Carried over from the editor's round on Chapter 46
+
+- A takeaway or an ending says no more than the body. “The decision was made at Camp David” was wrong by the chapter's
+  own story (the programme was agreed on 2 and 12 August; FRUS says Camp David was to detail it); “the dollar did not
+  buy less” was the book asserting Nixon's claim against the BIS's own words on import prices. Re-read the takeaways
+  and the ending against the sections before finishing.
+- When a secondary source and a primary document disagree on a date, find the primary (the statute, the decree, the
+  minutes) and follow it; name the other date in the 史料说明. The BIS printed 3 April 1972 for a law approved on
+  31 March.
+- Two sources that seem to disagree may describe the same rule in two ways (±1.125% from a common midline is at most
+  2.25% between any two currencies). Work it out before calling it a discrepancy.
+- A data artefact that drives a computed result belongs in the main text, in a clause, where the result is stated
+  (the yen recorded at its parity for ten years; the UK CPI's coarse rounding), not only in the 史料说明.
+- Watch sentences that state the opposite of what is meant (“央行不必等汇率离开中心 1% 就入市”); read each 本书的解读
+  sentence once for its direction.
+- A figure that marks a point the text does not mention: say it in the text or leave the mark out.
+- A chapter's pages in a shared bibliography item go into that item as “第 NN 章另用第 … 页（PDF 第 … 页）”, after the
+  earlier chapters' pages, so that every chapter's check still finds its own pages.
