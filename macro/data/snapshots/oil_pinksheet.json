@@ -1,0 +1,60 @@
+{
+  "title": "World Bank Commodity Price Data (The Pink Sheet): the annual crude-oil price, nominal and real 2010 US dollars a barrel, 1960-2025",
+  "source": "World Bank, Commodity Markets, 'Annual prices' workbook CMO-Historical-Data-Annual.xlsx (the cell A4 of its price sheets: 'Updated on September 02, 2026'; the page links it as 'Annual prices November 2026 (XLS)', row ps_link of oil_facts)",
+  "url": "https://www.worldbank.org/en/research/commodity-markets",
+  "series": "year; crude_nominal (sheet 'Annual Prices (Nominal)', 'annual prices, 1960 to present, nominal US dollars', column 'Crude oil, average', '($/bbl)'); crude_real (sheet 'Annual Prices (Real)', 'annual prices, 1960 to present, real 2010 US dollars', the same column). The sheet Description defines the column: 'Crude oil, average spot price of Brent, Dubai and West Texas  Intermediate, equally weighed'; the sheet Definitions: 'Constant prices are prices which are deflated by the Manufacturers Unit Value Index (MUV).' The values are those the workbook stores (repr of the float).",
+  "retrieved": "2026-11-27",
+  "license": "CC BY 4.0. The World Bank's page of the Pink Sheet (https://www.worldbank.org/en/research/commodity-markets, read on 2026-11-27) lists under 'Using this Data': 'Summary terms of use' (https://data.worldbank.org/summary-terms-of-use), 'Terms of use for Datasets' (https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets) and 'Data Access and Licensing' (https://datacatalog.worldbank.org/public-licenses#cc-by). That page says: 'The World Bank Group makes data publicly available according to open data standards and licenses datasets under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).' and 'Users are only obligated to give appropriate credit (attribution) and indicate if they have made any changes, including translations.' (rows ps_using, wb_cc and wb_attr of oil_facts). The book credits the World Bank under each figure and in the bibliography (pinksheet2026) and says that the ratios and the conversions are its own calculation.",
+  "used_in": [
+    47
+  ],
+  "fetch": "data/fetch/oil47.py",
+  "citation": "World Bank, Commodity Price Data (The Pink Sheet), annual prices, updated September 2, 2026 (bibitem pinksheet2026 of Chapter 47)",
+  "notes": "The workbook's sheet Cover lists sheets the workbook does not contain (the monthly prices); the sheet Definitions lists the fifteen exporters of the MUV index with 'Pailand' for 'Thailand' and writes 'Pe' for 'The'. The cell A4 says 'Updated on September 02, 2026' although the page names the link 'Annual prices November 2026'. data/fetch/oil47.py checks the cells of 'definitions' before it reads the data.",
+  "definitions": [
+    {
+      "sheet": "Annual Prices (Nominal)",
+      "cell": "A2",
+      "text": "annual prices, 1960 to present, nominal US dollars"
+    },
+    {
+      "sheet": "Annual Prices (Nominal)",
+      "cell": "A4",
+      "text": "Updated on September 02, 2026"
+    },
+    {
+      "sheet": "Annual Prices (Real)",
+      "cell": "A2",
+      "text": "annual prices, 1960 to present, real 2010 US dollars"
+    },
+    {
+      "sheet": "Annual Prices (Real)",
+      "cell": "A4",
+      "text": "Updated on September 02, 2026"
+    },
+    {
+      "sheet": "Description",
+      "cell": "B7",
+      "text": "Crude oil, average spot price of Brent, Dubai and West Texas  Intermediate, equally weighed"
+    },
+    {
+      "sheet": "Definitions",
+      "cell": "A4",
+      "text": "Constant prices are prices which are deflated by the Manufacturers Unit Value Index (MUV)."
+    },
+    {
+      "sheet": "Definitions",
+      "cell": "A6",
+      "text": "MUV is the unit value index in U.S. dollar terms of manufactures exported from fifteen countries: Brazil, Canada, China, Germany, France, India, Italy, Japan, Mexico, Republic of Korea, South Africa, Spain, Pailand, the United Kingdom, and the United States."
+    }
+  ],
+  "documents": {
+    "pinksheet_47": {
+      "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Annual.xlsx",
+      "format": "xlsx",
+      "sha256": "320b6871339f9042644840df0249e1216f31b873cb731c0a01781232e8a8975d",
+      "version": "CMO-Historical-Data-Annual.xlsx, updated on September 02, 2026",
+      "retrieved": "2026-11-27"
+    }
+  }
+}

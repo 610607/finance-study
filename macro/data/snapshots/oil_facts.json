@@ -1,0 +1,331 @@
+{
+  "title": "The oil crises and stagflation: quotations of FRUS 1969-1976 vol. XXXVI, the BIS Annual Reports of 1974, 1975 and 1980, Hutchison (1990), Gordon (1975), Bernanke, Gertler and Watson (1997), Hamilton (2011), Blanchard and Gali (2007), Barsky and Kilian (2001), Sachs and Warner (1995), Corden and Neary (1982, cover only), Mehlum, Moene and Torvik (2002), Budina, Pang and van Wijnbergen (2007), Rich (2003), the Bank of Japan's history (vol. 6), the World Bank's indicator names and pages, the licences of the sites and the records of the persons named",
+  "source": "history.state.gov (FRUS); bis.org (Annual Reports, Working Paper 13, terms); brookings.edu (BPEA); nber.org (working papers); pure.iiasa.ac.at; econwpa.ub.uni-muenchen.de; openknowledge.worldbank.org; ecb.europa.eu; boj.or.jp (日本銀行百年史, terms); api.worldbank.org; worldbank.org; datacatalog.worldbank.org; dataverse.nl; id.loc.gov; lobid.org; id.ndl.go.jp",
+  "url": "https://history.state.gov/historicaldocuments/frus1969-76v36",
+  "series": "id, dynasty (the country), year, year_note, value (the numbers the quotation prints, ';'-separated, read by checks/check_ch47.py), unit, numeral, file (the key of the document in 'sources'), juan (the printed page and the PDF page, 'web page', 'API record', 'repository record' or 'authority record'), quote (verbatim from the text layer, including its misreadings, or typed from the page image for the sources of format 'image'; empty for the paraphrased rows of Corden and Neary), note (what the row says)",
+  "retrieved": "2026-11-27",
+  "license": "Short quotations for teaching and criticism; no photographs are used and no chart or table of any source is reproduced as an image (the figures of the chapter are drawn from the World Bank's and PWT's data and the book's own calculations). The FRUS documents (Office of the Historian) are works of the United States government, in the public domain (17 U.S.C. § 105); the memoir that FRUS quotes (Kissinger) is paraphrased only. BIS Annual Reports of 1974, 1975 and 1980 and BIS Working Paper 13 (rows b74_*, b74t_*, b75_*, b80_*, hu_*): the BIS terms say 'Users may reproduce a limited extract of BIS Material (other than the statistics published in the BIS Data Portal ) in other publications or products free of charge, provided the BIS is cited as the source.' (row bis_reuse) 'With respect to translations, Users must include a statement that the translation is not an official BIS translation, and that the BIS does not guarantee its accuracy or completeness.' (row bis_translation) 'Users must also add a note that \"the original content can be found at [link to the BIS website]\".' (row bis_original) The book cites the BIS as the source, says that its Chinese is not an official BIS translation, and gives the links of the original content in the bibliography. The Bank of Japan's history (rows bj_*), the Bank's own work: 'The information included in the site may be copied or reproduced with the exceptions below. When copying or reproducing, the source, the Bank of Japan, should be explicitly credited.' (row boj_terms) The book names the source, the Bank of Japan, and quotes short phrases only. NBER working papers, each with the notice of its first page, copied verbatim: Hamilton (2011): '© 2011 by James D. Hamilton. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row hm_copyright) Blanchard and Gali (2007): '© 2007 by Olivier J. Blanchard and Jordi Gali. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row bg_copyright) Sachs and Warner (1995): '© 1995 by Jeffrey D. Sachs and Andrew M. Warner. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row sw_copyright) Barsky and Kilian (2001): '© 2001 by Robert B. Barsky and Lutz Kilian. All rights reserved. Short sections of text, not to exceed two paragraphs, may be quoted without explicit permission provided that full credit, including © notice, is given to the source.' (row bk_copyright) The book paraphrases them and gives full credit with the notice in the bibliography. Gordon (1975) and Bernanke, Gertler and Watson (1997), Brookings Papers on Economic Activity, and Mehlum, Moene and Torvik (2002), whose memorandum states no licence: short phrases only, the rest paraphrased. Corden and Neary (1982), IIASA CP-82-58, whose cover says 'NOT FOR QUOTATION WITHOUT PERMISSION OF THE AUTHOR' (row cn_cover): the book and this snapshot quote nothing of it but its cover; the rows cn_* say in their notes, in English, what the book paraphrases and where. Budina, Pang and van Wijnbergen (2007), World Bank PRWP 4256: 'Policy Research Working Paper; No. 4256 CC BY 3.0 IGO World Bank http://creativecommons.org/licenses/by/3.0/igo/' (row okr_license); the book attributes the work to its authors and the World Bank under CC BY 3.0 IGO and says that its Chinese is the book's own translation. Rich (2003), ECB Working Paper 236 (row rich_drop): 'Reproduction for educational and non-commercial purposes is permitted provided that the source is acknowledged.' (row rich_repro); the source is acknowledged in the text and the bibliography. World Bank data (the Pink Sheet's annual workbook, oil_pinksheet; the World Development Indicators, oil_wdi): the commodity-markets page lists under 'Using this Data Summary terms of use Terms of use for Datasets Data Access and Licensing' (row ps_using), its 'Data Access and Licensing' linking to https://datacatalog.worldbank.org/public-licenses#cc-by; that page says 'The World Bank Group makes data publicly available according to open data standards and licenses datasets under the Creative Commons Attribution 4.0 International license (CC-BY 4.0).' (row wb_cc) 'Users are only obligated to give appropriate credit (attribution) and indicate if they have made any changes, including translations.' (row wb_attr) The metadata of the rents say 'License_Type CC BY-4.0 License_URL https://datacatalog.worldbank.org/public-licenses#cc-by' (row wdi_license). Penn World Table 10.01 (oil_pwt): 'CC-BY-4.0 http://creativecommons.org/licenses/by/4.0' (row pwt_license) and 'When using these data (for whatever purpose), please make the following reference: Feenstra, Robert C., Robert Inklaar and Marcel P. Timmer (2015), \"The Next Generation of the Penn World Table\" American Economic Review, 105(10), 3150-3182, DOI: 10.1257/aer.20130954' (row pwt_cite). The authority records of the Library of Congress (rows loc_*), the Deutsche Nationalbibliothek (CC0, rows gnd_*) and the National Diet Library (row ndl_morinaga) are public data.",
+  "used_in": [
+    47
+  ],
+  "fetch": "data/fetch/oil47.py",
+  "citation": "Each row is cited to its document in the bibliography block of Chapter 47 (references_zh.tex): frus47, bis1975, bis1980, hutchison1990, gordon1975, bgw1997, hamilton2011, blanchardgali2007, barskykilian2001, sachswarner1995, cordenneary1982, mmt2002, budina2007, boj1986b, pinksheet2026, wdi47, loc47; the BIS report of 1974, Rich (2003) and Penn World Table 10.01 are the items bis1974 (Chapter 46), rich2003 (Chapter 45) and pwt1001 (Chapter 40), the same copies; the editor merges the pages of Chapter 47 into them.",
+  "notes": "Every quotation of a source that is not 'image' is copied from the text of the document as data/fetch/verify_web_quotes.py extracts it (pdftotext with and without -layout, tags removed from web pages, all strings of a JSON record, whitespace and Unicode compatibility forms normalized), so the misreadings of the scans stay in the quotations. Named misreadings: 'X' for 'Y' (row): 'P e r' for 'per' (b74_1165); 'ist' for '1st' (b74_1165); 'c o u n t r i e s' for 'countries' (b74t_head); 'D u r i n g' for 'During' (b75_banks); 't o' for 'to' (b75_banks); 'last , year' for 'last year' (b75_fiscal); 'Alternative Responses of External Policy Supply to Shocks' for 'Alternative Responses of Policy to External Supply Shocks' (gd_title). The text layers of the BIS reports print 'per cent,' for 'per cent.' and split ordinals ('23 rd December'); the text layer of Gordon (1975) runs words together ('reductionsin suppliesof'); the FRUS pages put a space before a comma or a full stop after a linked name ('Atherton ,'), print the footnote marks of the edition as figures after a title ('Agency 1 Washington') and mark the page breaks of the printed volume ('[Page 623]'). The rows of the sources boj614img_47, boj621img_47, boj63img_47 (the Bank of Japan's history, scans without a text layer), hutchison1990img_47 (no text layer), sachswarner1995img_47 and barskykilian2001img_47 (garbled text layers) are typed from page images rendered with pdftoppm (150-300 dpi); tesseract (jpn, eng) only found the passages, and every quotation and number was read on the image (the OCR's '1月28日' is '1月23日' on the image of p. 497, its '世きに失し' is '甘きに失し' on p. 498, and its page '519' is p. 518). The circled numerals and note marks of the Bank of Japan's pages are not typed. In hu_t4_no, hu_t4_nl and hu_t4_uk '…' stands for the rows of 1 and 4 quarters ahead, not typed. Readings of the numbers (checks/check_ch47.py, READINGS): f223_date, f277_date, f273_date: the date only (the '1' after the title is the footnote mark of the edition); f223_bills and f277_receipts: the amounts only (the page breaks of the printed volume are not read); b74_1165: 'ist' as 1; bj_t35: the years of the head (昭和48-55) and the row, whose minus sign is printed apart from its figure ('− 1.2'), read as negative. The rows of Corden and Neary (cn_*) other than the cover carry no quotation: the cover forbids quotation without the authors' permission, so their notes say in English what the book paraphrases and on which PDF page. Dates and numbers that differ between the sources are kept as each prints them: the posted price of 16 October 1973 is $5.12 in the Bank of Japan (bj_1016) and $5.11 in the BIS (b74_posted); the price of 23 December is $11.65 in the Bank of Japan and the BIS (bj_1223, b74_1165) and $11.60 in the editors' note of FRUS (f271_1160); Sachs and Warner's base year is 1971 in their abstract and sw_sd, 1970 on p. 8 (sw_period, sw_sxp). The text says which it uses. The Bank of Japan names the governor who retired in December 1974 by his surname only (bj_governor); the book does not name him.",
+  "sources": {
+    "frus36d209_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d209",
+      "format": "html",
+      "sha256": "877efb71381e486e8ad2b9c10c03e401831ad8fbd2b5d6b6e9ca6b591adc3a61",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 209, Editorial Note (Office of the Historian, web page)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36d216_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d216",
+      "format": "html",
+      "sha256": "3185a25cd255a141743739ef36c292792dbf9862cabf1e8e3a611917ee06144d",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 216, Editorial Note (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36d220_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d220",
+      "format": "html",
+      "sha256": "394ef9e5d682878eb6ae5496fc7c2fe44331aef0c3127f72b854cfe5a81f0382",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 220, Minutes of the Secretary of State's Staff Meeting, Washington, October 18, 1973, 12:10 p.m. (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36d223_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d223",
+      "format": "html",
+      "sha256": "ea6bdb26af34b7773a6a962e34cad8b7be110a249cadbe2d4c87a1fa9408f405",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 223, Memorandum Prepared in the Office of Economic Research, Central Intelligence Agency, Washington, October 19, 1973 (web page; the edition omits parts)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36d271_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d271",
+      "format": "html",
+      "sha256": "e5f9714b28c409dc8e164bc8de7312f2420d877777e4d197c1314a23c0e29cd8",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 271, Telegram From the Embassy in Iran to the Department of State, Tehran, December 26, 1973, with the editors' footnotes (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36d273_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d273",
+      "format": "html",
+      "sha256": "64a89882cef5d22e63e4366b37ab1abef2ee595e26074c40b8f8f9dfc1c92f41",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 273, Telegram From the Department of State to the Embassy in Saudi Arabia, Washington, December 28, 1973, with the editors' footnotes (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36d277_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/d277",
+      "format": "html",
+      "sha256": "fac434e97f13431860ff1a98f754d18ad16b9c684ec9231a63613909cba6d482",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Document 277, Paper Prepared in the Office of Economic Research, Central Intelligence Agency, Washington, January 1974 (web page; the edition prints the summary and the introduction only)",
+      "retrieved": "2026-11-27"
+    },
+    "frus36persons_47": {
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v36/persons",
+      "format": "html",
+      "sha256": "f2b87a7a6de3c40f900f2154d109c21ff45ce05f37f119810fe1932e7fc45232",
+      "version": "Foreign Relations of the United States, 1969-1976, Volume XXXVI, Energy Crisis, 1969-1974, Persons (the list of persons of the volume, web page)",
+      "retrieved": "2026-11-27"
+    },
+    "bis1974_47": {
+      "url": "https://www.bis.org/publications/annual-report-1974.pdf",
+      "format": "pdf",
+      "sha256": "30201ed3edb255443e13a9d45776dd070d41f4aa2e50d0c4c7d17c88219385d7",
+      "version": "Bank for International Settlements, Forty-fourth Annual Report, 1st April 1973-31st March 1974 (Basle, 10th June 1974), scan with a text layer on the BIS website (printed page = PDF page - 6); the same copy as Chapter 46's bis1974_46",
+      "retrieved": "2026-11-27"
+    },
+    "bis1975_47": {
+      "url": "https://www.bis.org/publications/annual-report-1975.pdf",
+      "format": "pdf",
+      "sha256": "cbe8ce20a92fa9675d76e351b476b5f139062d8a5a5de35649d62dd39324bbb6",
+      "version": "Bank for International Settlements, Forty-fifth Annual Report, 1st April 1974-31st March 1975 (Basle, 9th June 1975), scan with a text layer on the BIS website (printed page = PDF page - 6)",
+      "retrieved": "2026-11-27"
+    },
+    "bis1980_47": {
+      "url": "https://www.bis.org/publications/annual-report-1980.pdf",
+      "format": "pdf",
+      "sha256": "5aeb6504a63d275e807d127ee26ec9ab3075dca023b827a83f7bc6eda1e3865f",
+      "version": "Bank for International Settlements, Fiftieth Annual Report, 1st April 1979-31st March 1980 (Basle, 9th June 1980), scan with a text layer on the BIS website (printed page = PDF page - 6)",
+      "retrieved": "2026-11-27"
+    },
+    "hutchison1990img_47": {
+      "url": "https://www.bis.org/publications/working-paper-13-manufacturing-sector-resiliency-energy-booms-empirical-evidence-norway-netherlands-and-united-kingdom.pdf",
+      "format": "image",
+      "sha256": "101c1b10da98b44991978fa7767227adb8e31aa2c07f835e4de1eb363e1eb1ad",
+      "version": "Michael M. Hutchison, 'Manufacturing Sector Resiliency to Energy Booms: Empirical Evidence from Norway, the Netherlands and the United Kingdom', BIS Working Papers No. 13, September 1990 (68 PDF pages, a scan without a text layer: p. 1 is PDF p. 7, Table 4 is p. 34a, PDF p. 54; read on images rendered with pdftoppm, tesseract only to find the passages)",
+      "retrieved": "2026-11-27"
+    },
+    "gordon1975_47": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1975/01/1975a_bpea_gordon.pdf",
+      "format": "pdf",
+      "sha256": "b38005ad81b0acec9c30fe13585ede79b4371c3244f36142bf5ca11266464cf0",
+      "version": "Robert J. Gordon, 'Alternative Responses of Policy to External Supply Shocks', Brookings Papers on Economic Activity 1975:1, pp. 183-206 (scan on the Brookings site with a text layer that runs words together; printed page = PDF page + 182)",
+      "retrieved": "2026-11-27"
+    },
+    "bgw1997_47": {
+      "url": "https://www.brookings.edu/wp-content/uploads/1997/01/1997a_bpea_bernanke_gertler_watson_sims_friedman.pdf",
+      "format": "pdf",
+      "sha256": "c9386a5088bb5ce6f2fac87f68f5d6e22d447c0884f175379162c23e36109019",
+      "version": "Ben S. Bernanke, Mark Gertler and Mark Watson, 'Systematic Monetary Policy and the Effects of Oil Price Shocks', Brookings Papers on Economic Activity 1997:1, pp. 91-157, with the comments of Sims and Friedman (scan with a text layer; printed page = PDF page + 90)",
+      "retrieved": "2026-11-27"
+    },
+    "hamilton2011_47": {
+      "url": "https://www.nber.org/system/files/working_papers/w16790/w16790.pdf",
+      "format": "pdf",
+      "sha256": "54b37f977d8fb5a5b582e8c915d4a1f745c7fadef17913eaa6c398e59779c7cb",
+      "version": "James D. Hamilton, 'Historical Oil Shocks', NBER Working Paper 16790, February 2011 (printed page = PDF page - 1)",
+      "retrieved": "2026-11-27"
+    },
+    "blanchardgali2007_47": {
+      "url": "https://www.nber.org/system/files/working_papers/w13368/w13368.pdf",
+      "format": "pdf",
+      "sha256": "eb6dfda7a2db7da1dfbce7129c31903564a6aa2294823f4dce2d69dbb5fea52e",
+      "version": "Olivier J. Blanchard and Jordi Gali, 'The Macroeconomic Effects of Oil Shocks: Why are the 2000s So Different from the 1970s?', NBER Working Paper 13368, September 2007 (PDF p. 1 the cover, PDF p. 2 the abstract; printed page = PDF page - 1)",
+      "retrieved": "2026-11-27"
+    },
+    "barskykilian2001img_47": {
+      "url": "https://www.nber.org/system/files/working_papers/w8389/w8389.pdf",
+      "format": "image",
+      "sha256": "50663b4b356efd2eb4fb63c18b36ffa3487a1db52950bb52ec67cce25816d657",
+      "version": "Robert B. Barsky and Lutz Kilian, 'Do We Really Know that Oil Caused the Great Stagflation? A Monetary Alternative', NBER Working Paper 8389, July 2001: a scan without a usable text layer (the one it has is garbled); the cover and the abstract (PDF pp. 1-2) read on images rendered with pdftoppm",
+      "retrieved": "2026-11-27"
+    },
+    "sachswarner1995img_47": {
+      "url": "https://www.nber.org/system/files/working_papers/w5398/w5398.pdf",
+      "format": "image",
+      "sha256": "8431cd6fbabe0e39644954247db7c9f8d988764404ad4aa39a6114c4995fe7cd",
+      "version": "Jeffrey D. Sachs and Andrew M. Warner, 'Natural Resource Abundance and Economic Growth', NBER Working Paper 5398, December 1995: a scan without a usable text layer (the one it has is garbled); PDF pp. 1, 2, 9 and 17 (printed pp. 8 and 16; printed page = PDF page - 1) read on images rendered with pdftoppm",
+      "retrieved": "2026-11-27"
+    },
+    "cordenneary1982_47": {
+      "url": "https://pure.iiasa.ac.at/id/eprint/2060/1/CP-82-058.pdf",
+      "format": "pdf",
+      "sha256": "d85b7d759ac8b4100a5a37f65285f680f877d143bb6b1a885cb43cecdbde6388",
+      "version": "W. M. Corden and J. P. Neary, 'Booming Sector and De-industrialisation in a Small Open Economy', IIASA Collaborative Paper CP-82-58, September 1982 (46 PDF pages; the text layer prints no page numbers, the rows give PDF pages; the version published in the Economic Journal was not obtained)",
+      "retrieved": "2026-11-27"
+    },
+    "mmt2002_47": {
+      "url": "https://econwpa.ub.uni-muenchen.de/econ-wp/dev/papers/0210/0210003.pdf",
+      "format": "pdf",
+      "sha256": "63a738c1b79f936f400febfc26a4685809cb54458c3926ba262604cd4d7c1b25",
+      "version": "Halvor Mehlum, Kalle Moene and Ragnar Torvik, 'Institutions and the resource curse', Memorandum No 29/2002, Department of Economics, University of Oslo, as deposited in EconWPA (PDF p. 4 the abstract; printed page = PDF page - 4)",
+      "retrieved": "2026-11-27"
+    },
+    "budina2007_47": {
+      "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/0034955b-aac8-5eab-a8f0-b1e9b066cbca/content",
+      "format": "pdf",
+      "sha256": "9caaa9d7a0844449ce565915e9777fded6b1965b1cdcc925b88656fa5d1e3faa",
+      "version": "Nina Budina, Gaobo Pang and Sweder van Wijnbergen, 'Nigeria's Growth Record: Dutch Disease or Debt Overhang?', World Bank Policy Research Working Paper 4256, June 2007 (Open Knowledge Repository; printed page = PDF page)",
+      "retrieved": "2026-11-27"
+    },
+    "okrbudina_47": {
+      "url": "https://openknowledge.worldbank.org/server/api/pid/find?id=hdl:10986/7418",
+      "format": "json",
+      "sha256": "113a955452ee8597969f8c71b8ef7b2af6352d633ab04c560f317500aead9e29",
+      "version": "the Open Knowledge Repository's record of PRWP 4256 (handle 10986/7418, JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "rich2003_47": {
+      "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp236.pdf",
+      "format": "pdf",
+      "sha256": "9e3e2846f2d438d8734fba859fad250b67ad80e85e55e11be0f3b8fe2fed7f36",
+      "version": "Georg Rich, 'Swiss Monetary Targeting 1974-1996: The Role of Internal Policy Analysis', European Central Bank Working Paper No. 236, June 2003 (printed page = PDF page - 1); the same copy as Chapter 45's rich2003_45",
+      "retrieved": "2026-11-27"
+    },
+    "boj614img_47": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku6_6_1_4.pdf",
+      "format": "image",
+      "sha256": "f503befdba25d93bb0946eeb91d8403529bbaa56a3dd3d5bcc0dc9f1db813cdb",
+      "version": "日本銀行百年史編纂委員会編『日本銀行百年史』第6巻（日本銀行、1986年）、第6章1(4)（PDF without a text layer; printed page = PDF page + 394), read on images rendered with pdftoppm (tesseract jpn only to find the passages)",
+      "retrieved": "2026-11-27"
+    },
+    "boj621img_47": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku6_6_2_1.pdf",
+      "format": "image",
+      "sha256": "3c3770224b323075b72b6e4b6fcda8d829745cb9c795baf3a13d3439280e2889",
+      "version": "日本銀行百年史編纂委員会編『日本銀行百年史』第6巻（日本銀行、1986年）、第6章2(1)（PDF without a text layer; printed page = PDF page + 437), read on images rendered with pdftoppm",
+      "retrieved": "2026-11-27"
+    },
+    "boj63img_47": {
+      "url": "https://www.boj.or.jp/about/outline/history/hyakunen/data/hyaku6_6_3.pdf",
+      "format": "image",
+      "sha256": "fa7bdb1ef33b42781dff1cfd1d58c47e0079071f2afea6bebd151beb24dc5896",
+      "version": "日本銀行百年史編纂委員会編『日本銀行百年史』第6巻（日本銀行、1986年）、第6章3（PDF without a text layer; printed page = PDF page + 488), read on images rendered with pdftoppm",
+      "retrieved": "2026-11-27"
+    },
+    "wdicpi_47": {
+      "url": "https://api.worldbank.org/v2/country/USA;JPN;DEU;FRA;GBR;ITA;CAN;CHE/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1965:1990",
+      "format": "json",
+      "sha256": "5d8f08888d0ce1fac429ff24b24d0850b4dcbda3841387c679336aef837e2756",
+      "version": "World Bank, World Development Indicators API (v2), FP.CPI.TOTL.ZG, lastupdated 2026-11-11",
+      "retrieved": "2026-11-27"
+    },
+    "wdifuel_47": {
+      "url": "https://api.worldbank.org/v2/country/NGA;NLD;NOR;GBR/indicator/TX.VAL.FUEL.ZS.UN?format=json&per_page=20000&date=1960:1990",
+      "format": "json",
+      "sha256": "e7c9b14196371b942710efb041aaff91335505f3861656a8c6f7835a81bb8100",
+      "version": "World Development Indicators API (v2), TX.VAL.FUEL.ZS.UN, lastupdated 2026-11-11",
+      "retrieved": "2026-11-27"
+    },
+    "wdifood_47": {
+      "url": "https://api.worldbank.org/v2/country/NGA;NLD;NOR;GBR/indicator/TX.VAL.FOOD.ZS.UN?format=json&per_page=20000&date=1960:1990",
+      "format": "json",
+      "sha256": "207a2f00824c21cb396b124d56652489123838aff93cba18380cb612b30afc02",
+      "version": "World Development Indicators API (v2), TX.VAL.FOOD.ZS.UN, lastupdated 2026-11-11",
+      "retrieved": "2026-11-27"
+    },
+    "wdiagri_47": {
+      "url": "https://api.worldbank.org/v2/country/NGA;NLD;NOR;GBR/indicator/TX.VAL.AGRI.ZS.UN?format=json&per_page=20000&date=1960:1990",
+      "format": "json",
+      "sha256": "fc71f8a3616927a6218360be93f9a38150c34655bb814c487e8f12687cdf9ce5",
+      "version": "World Development Indicators API (v2), TX.VAL.AGRI.ZS.UN, lastupdated 2026-11-11",
+      "retrieved": "2026-11-27"
+    },
+    "wdimanf_47": {
+      "url": "https://api.worldbank.org/v2/country/NGA;NLD;NOR;GBR/indicator/NV.IND.MANF.ZS?format=json&per_page=20000&date=1960:1990",
+      "format": "json",
+      "sha256": "91cc13514ad4a240f7a488ab8639fb4005a681eaa39ebb0762362ad50214f7c4",
+      "version": "World Development Indicators API (v2), NV.IND.MANF.ZS, lastupdated 2026-11-11",
+      "retrieved": "2026-11-27"
+    },
+    "wdirents_47": {
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.TOTL.RT.ZS?format=json&per_page=20000&date=1970:1990",
+      "format": "json",
+      "sha256": "85dd17fb23142d0fa21d78044334bd8a83fa68a7bf05387c0eacb4a88935bf3e",
+      "version": "World Development Indicators API (v2), NY.GDP.TOTL.RT.ZS, all economies, lastupdated 2026-11-11",
+      "retrieved": "2026-11-27"
+    },
+    "wdimeta_47": {
+      "url": "https://api.worldbank.org/v2/sources/2/series/NY.GDP.TOTL.RT.ZS/metadata?format=json",
+      "format": "json",
+      "sha256": "13f0666b7b4e150a7f04caa43cbc33c55ed64fd838882b5e856470988b867d83",
+      "version": "World Development Indicators API (v2), the metadata of NY.GDP.TOTL.RT.ZS",
+      "retrieved": "2026-11-27"
+    },
+    "wbcommodity_47": {
+      "url": "https://www.worldbank.org/en/research/commodity-markets",
+      "format": "html",
+      "sha256": "5a48ab48919008e908e3168d404035bfdba042149637f16606eda8758ae9cf95",
+      "version": "World Bank, Commodity Markets (the page of the Pink Sheet data, web page)",
+      "retrieved": "2026-11-27"
+    },
+    "wblicenses_47": {
+      "url": "https://datacatalog.worldbank.org/public-licenses",
+      "format": "html",
+      "sha256": "f7106582fe705d8ea31c2bd7ef726636942b870104a88d882563b16bcece3910",
+      "version": "World Bank Data Catalog, Licenses (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "pwtrecord_47": {
+      "url": "https://dataverse.nl/api/datasets/:persistentId/?persistentId=doi:10.34894/QT5BCC",
+      "format": "json",
+      "sha256": "7e15a79a695e41e32eee458dffe71f462d14248d22cc3a88db37c0e343efdb64",
+      "version": "DataverseNL record of Penn World Table version 10.01 (doi:10.34894/QT5BCC, JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "bisterms_47": {
+      "url": "https://www.bis.org/about/terms-conditions",
+      "format": "html",
+      "sha256": "991b4821e5e5833da10e8634600a3ff080092d8fd84af2ad4f8d8ff151891107",
+      "version": "Bank for International Settlements, Terms and conditions (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "bojcopyright_47": {
+      "url": "https://www.boj.or.jp/en/copyright.htm",
+      "format": "html",
+      "sha256": "2e6f9c30181f0fab5b33ec78561fea8e9c0c471fc2494166707e6f4de2c40dec",
+      "version": "Bank of Japan, Copyright (web page)",
+      "retrieved": "2026-11-27"
+    },
+    "loc_kissinger47": {
+      "url": "https://id.loc.gov/authorities/names/n79018911.madsrdf.json",
+      "format": "json",
+      "sha256": "8a6651c3e3e92717121afecf5b90d2dcf682a7e3fd59f82b9f257064083d1b1b",
+      "version": "Library of Congress Name Authority File, record n79018911 (MADS/RDF JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "loc_faisal47": {
+      "url": "https://id.loc.gov/authorities/names/n50047902.madsrdf.json",
+      "format": "json",
+      "sha256": "3feaa73efbf527307d438726fe19b761a9385fea557b2971296d3988f07dabb6",
+      "version": "Library of Congress Name Authority File, record n50047902 (MADS/RDF JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "loc_shah47": {
+      "url": "https://id.loc.gov/authorities/names/n79039761.madsrdf.json",
+      "format": "json",
+      "sha256": "4af978068b3736dd96554648bb6f1540292a7f7f8ace75f2395d813b95cca576",
+      "version": "Library of Congress Name Authority File, record n79039761 (MADS/RDF JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "loc_fukuda47": {
+      "url": "https://id.loc.gov/authorities/names/n81109118.madsrdf.json",
+      "format": "json",
+      "sha256": "902d2bfd4e88a053ed36021ea41db299bd32a53a3592f04337de8b8eb82e06a5",
+      "version": "Library of Congress Name Authority File, record n81109118 (MADS/RDF JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "loc_aichi47": {
+      "url": "https://id.loc.gov/authorities/names/n83231425.madsrdf.json",
+      "format": "json",
+      "sha256": "83a6af4e27c5aa91013408e1b1d0b6843d00a754708e6afbeed07eeba5ad9d43",
+      "version": "Library of Congress Name Authority File, record n83231425 (MADS/RDF JSON)",
+      "retrieved": "2026-11-27"
+    },
+    "gnd_yamani47": {
+      "url": "https://lobid.org/gnd/118903853.json",
+      "format": "json",
+      "sha256": "9831d9398b10533194da14368c63f4e4c89ee64a688b74ec4b0f0f75aa1d61fd",
+      "version": "Gemeinsame Normdatei of the Deutsche Nationalbibliothek, record 118903853, as served by lobid-gnd (JSON-LD)",
+      "retrieved": "2026-11-27"
+    },
+    "ndl_morinaga47": {
+      "url": "https://id.ndl.go.jp/auth/ndlna/00047320.json",
+      "format": "json",
+      "sha256": "5bd7b0afd5a00052f2dbb60b289177d2f870854da5af48d954e2f7668c3f4eaf",
+      "version": "Web NDL Authorities, record 00047320 (JSON)",
+      "retrieved": "2026-11-27"
+    }
+  }
+}
