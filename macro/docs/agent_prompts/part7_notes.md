@@ -249,3 +249,100 @@ zh/ch39_consumption.tex (theory tested against data, debates ending “至今没
 - Who paid includes who the speaker blames: Bouey puts the costs down to inflation having been allowed to get out
   of hand.
 - STYLE.md §7.1 applies to teaching figures too: a panel's second series is AMBER, dashed, with squares.
+
+## 第 46 章 `ch:floating` 布雷顿森林解体与浮动汇率 (`zh/ch46_floating.tex`)
+
+A history-and-theory chapter. The guide question asks why the dollar was cut loose from gold and why floating
+exchange rates “overshoot”. The history runs from the closing of the gold window on 15 August 1971 through the
+Smithsonian agreement (18 December 1971), the snake (April 1972) and the second devaluation (February 1973) to
+general floating (March 1973) and its legal acceptance at Jamaica (January 1976). The theory is Dornbusch's
+overshooting model (1976). The test is how floating rates behaved: far more volatile than prices, and (Meese and
+Rogoff 1983) no better forecast by the models than by a random walk. Model chapters: zh/ch36_brettonwoods.tex (the
+system to 15 August 1971; its legacy hands the break-up on: do not retell Triffin, the gold pool or its debates),
+zh/ch37_mundell.tex (the open-economy IS–LM, Canada's float, the trilemma: point back), zh/ch05_external.tex (the
+real exchange rate `eq:external-real`, PPP `eq:external-ppp`, UIP `eq:external-uip` and its failure: reuse, do not
+re-derive), zh/ch45_monetarism.tex (the chapter before; its ending hands over this chapter's question), and
+zh/ch38_phillips.tex / zh/ch44_naturalrate.tex for a model tested against data.
+
+- Neighbours:
+  - Earlier chapters own: Ch 5 the exchange-rate definitions, PPP, UIP and the forward-premium puzzle
+    (`sec:external-rates`, `sec:external-test`); Ch 23 the gold standard; Ch 36 Bretton Woods to 15 August 1971
+    (the par values, the gold pool, the two-tier market, the mark's floats of 1969 and May 1971, the debate 缺陷在设计还是
+    在美国的政策 and whether surplus countries should adjust); Ch 37 Mundell–Fleming, Canada 1950–1962 and the debate
+    whether Canada's float was a success; Ch 42 Japan's 360 yen and its high growth; Ch 45 the money targets of
+    1975–1999, the SNB and the Bundesbank. FORWARD_REFS rows point here from Ch 5, 36, 37, 42 and 45: read each with
+    its passage and keep it (Ch 37: Canada's float of the 1950s as the precedent, and overshooting with slow prices
+    and rational expectations; Ch 42: the yen's move to floating closing the single-rate years; Ch 45: the Swiss
+    exchange-rate target of October 1978 told here).
+  - Later chapters own: Ch 47 the oil shocks (OPEC's prices and the petrodollars: a clause at the end), Ch 48 rational
+    expectations (Dornbusch's “consistent expectations” are perfect foresight: say so and point forward, do not
+    teach rational expectations here), Ch 49 the Volcker disinflation (the dollar's rise of 1980–1985 at most a
+    clause), Ch 58 the Plaza agreement and Japan's bubble, Ch 60 the European Monetary System of 1979 and the euro,
+    Ch 61 emerging-market crises, the hierarchy chapter (the dollar's role). Each at most a sentence.
+- Owns:
+  - the decision of August 1971, from the records: the Camp David meeting of 13–15 August (who was there by the
+    President's Daily Diary; State and the NSC not represented; Connally as the architect of the package in the
+    tapes of 2 August; Burns's lonely attempt to keep the gold window open as the FRUS editor summarizes Haldeman's
+    notes; Stein's recollection that it was unclear whether closing the window meant floating); the address of
+    Sunday 15 August, 9 p.m. (its words on convertibility, “devaluation” and the surcharge); the BIS's account of
+    the run that preceded it (the 1970 deficit, the opposite monetary policies of 1969–1970, the congressional
+    sub-committee report of 6 August);
+  - the Smithsonian agreement and its collapse: Connally's G-10 package of 30 November (the 11% demand), the US
+    projection of a $13 billion swing against the IMF–OECD $9 billion, the realignment table (a table in the
+    chapter: BIS 1972's “Realignment of leading currencies”, with the source and its notes), Nixon's “most significant
+    monetary agreement in the history of the world”, the wider margins, sterling's float of June 1972, the February
+    1973 devaluation, the joint float of March 1973 (the date discrepancy among the sources: say so), Kissinger's
+    political reasons as FRUS quotes him, Jamaica (BIS 1976);
+  - the model: Dornbusch (1976) in the book's notation (Appendix B: $e$ the home-currency price of foreign
+    currency, $q$ the real rate, $i^{f}$ the foreign interest rate, $P^{f}$, $\E_t$; logs in lower case only if
+    the text says so once and keeps it; give Dornbusch's own symbols in a sentence): UIP, regressive expectations
+    that are consistent with the model's own path (perfect foresight), money-market equilibrium with the price level
+    fixed in the short run, slow price adjustment; the long run (PPP and money neutrality, back to Ch 5 and Ch 45),
+    the impact of a money increase and the overshooting result (the exchange rate jumps by more than the money
+    increase, by the factor $1+1/(\lambda\theta)$ in Dornbusch's symbols), then appreciation while prices rise; the
+    variable-output case that dampens it (Part V) in a sentence. A worked example with teaching inputs (state them)
+    and a figure of the time paths of $e$, $p$ and $i$ after a money increase;
+  - compare box 固定汇率下的调整与浮动汇率下的调整 (PLAN): who moves (reserves and money stock under a peg, the exchange
+    rate under a float), how fast, who bears it, with the chapter's own cases;
+  - case boxes, non-Anglo-American (PLAN): 日本 · 1971—1973 · 360 日元的终结 (the Bank of Japan's history and the
+    1972 white paper: the market kept open by the Finance Minister's decision, nearly $4 billion bought in 11 days,
+    the float of 28 August, 308 yen at the Smithsonian, the float of February 1973; who paid: the reserves bought at
+    the old rate, exporters and the small export districts that cut piece rates and lengthened hours; Sasaki's
+    later view as the history reports it); 欧洲 · 1972—1976 · 蛇形浮动 (the Council resolution of 21 March 1972 in
+    the Official Journal, the snake in the tunnel from 24 April 1972, who joined and who left when, the joint float,
+    the EMCF; the Swiss franc's float of January 1973 and the SNB's exchange-rate target of October 1978 through Rich
+    2003, the story Ch 45 left here). The EMS of 1979 is Ch 60's: a clause;
+  - the data test: monthly exchange rates and consumer prices from the BIS Data Portal (bilateral rates against
+    the dollar, long CPI series): the volatility of monthly changes in the nominal and the real rate (Ch 5's $q$)
+    against that of relative prices, before (1960–1970) and after (1974–1985) the break, computed in the check
+    script and stated as the book's computation; Meese and Rogoff's finding in their words (short phrases) and
+    their Table 1; what the overshooting model can and cannot explain of the pattern;
+  - debates (each ending “至今没有定论。”; not the Ch 36 or Ch 37 debates): candidates, chosen by what the sources
+    support: why the Smithsonian rates lasted only fourteen months (rates not moved enough, the US not adjusting,
+    the speculation the wider margins invited: the BIS 1973, the Bank of Japan's history, the FRUS records); whether
+    the overshooting model explains floating-rate volatility (Dornbusch's claim against Meese and Rogoff, and the
+    reasons the IFDP gives for unstable structure); whether floating rates should be managed (the US policy of
+    non-intervention and Kissinger's aims in March 1973; the G-10's agreement of 16 March that floating could be
+    managed by intervention; why other countries would not let their currencies float freely in 1971, BIS 1972;
+    Switzerland's return to an exchange-rate target in 1978). Give each side only as a source states it.
+- Who decided and who paid: name the decision-makers from the records (Nixon, Connally, Shultz, Burns and Volcker
+  at Camp David; the G-10 ministers and governors; Japan's Finance Minister Mizuta and Governor Sasaki; the
+  Council and governments of the Six; Aichi in 1973); who paid: the trading partners hit by the 10% surcharge, the
+  central banks that bought dollars at the old rates (Germany, Japan, Switzerland: the BIS figures), Japan's small
+  exporters and their workers (the 1972 white paper), exporters under a rising currency (the BIS 1972 on political
+  opposition from exporters). Say so with the sources' words and numbers, no stronger than the sources.
+- Data and sources: start from `docs/agent_prompts/ch46_research.md` (the editor's research, collected before the
+  writer started; confirm every fact on the document). Terms: US government works (FRUS, the Public Papers via the
+  American Presidency Project: public domain); the BIS (publications: limited extracts with the BIS cited and the
+  translation statement; statistics: the Data Portal's terms, verbatim); the Bank of Japan (source “Bank of
+  Japan”; its history: short phrases); the Cabinet Office (as for Ch 44); EUR-Lex (Decision 2011/833/EU,
+  acknowledge the source); Dornbusch (JPE, © University of Chicago) and Meese–Rogoff (JIE, © North-Holland) read in
+  third-party copies, to verify only, never committed, short phrases; the IFDP's cover note on references.
+- Figures: exchange rates of the yen, the mark, the Swiss franc and sterling against the dollar, monthly, 1965–1985
+  (index or log scale, with 15 August 1971, 18 December 1971 and 19 March 1973 marked); the overshooting paths
+  (teaching model); the volatility comparison (nominal, real and relative prices, before and after).
+- Ending: return to the opening and hand over Ch 47's question “油价冲击为什么同时推高通胀和失业？产油国为什么会被“资源诅咒”？”
+  (read its stub's guide box and copy the question exactly). A link to oil (OPEC's prices were set in dollars) only
+  with a source, or marked 本书的解读.
+- Labels: `sec:floating-…`, `eq:floating-…`, `fig:floating_…`, `tab:floating-…`, `ex:floating-…`.
+- Length: 8,000–9,000 characters of main text.
